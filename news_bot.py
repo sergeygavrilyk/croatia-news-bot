@@ -34,7 +34,7 @@ FEEDS_FILE = 'feeds.json'
 
 MAX_HISTORY_SIZE = 1000 
 MAX_AGE_SECONDS = 86400 # 24 години
-BATCH_SIZE = 15 # МЕГА-БАТЧИНГ: обробляємо до 15 новин за 1 запит до AI
+BATCH_SIZE = 20 # МЕГА-БАТЧИНГ: обробляємо до 20 новин за 1 запит до AI
 # ===================================================
 
 client = genai.Client(api_key=GEMINI_API_KEY)
