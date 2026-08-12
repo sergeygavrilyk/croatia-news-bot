@@ -96,19 +96,34 @@ def get_source_name(url):
 
 # ================= РОЗУМНА ФІЛЬТРАЦІЯ (PYTHON) =================
 def is_quality_article(title, description):
-    """Фільтрує новини, відсікаючи сміття, рекламу та короткі замітки"""
-    unwanted_keywords = ['oglasi', 'sponzorirani', 'promo', 'redikul', 'horoskop', 'plaćeni oglas']
-    title_lower = title.lower()
+    """Розширена фільтрація новин: відсікає сміття, рекламу, клікбейт та короткі замітки"""
+    unwanted_keywords = [
+        'oglasi', 'sponzorirani', 'promo', 'redikul', 'horoskop', 
+        'plaćeni oglas', 'nagradna igra', 'native', 'pr vijesti',
+        'foto', 'video'
+    ]
     
-    # Відсікаємо за стоп-словами
+    title_lower = title.lower()
+    desc_lower = description.lower() if description else ""
+    
     for word in unwanted_keywords:
-        if word in title_lower:
+        if f" {word} " in f" {title_lower} " or f" {word} " in f" {desc_lower} ":
             return False
             
-    # Відсікаємо занадто короткі заголовки (менше 15 символів)
     if len(title.strip()) < 15:
         return False
+    if len(desc_lower.strip()) < 20: 
+        return False
         
+    if "!!!" in title or "???" in title:
+        return False
+        
+    letters = [c for c in title if c.isalpha()]
+    if letters:
+        caps_ratio = sum(1 for c in letters if c.isupper()) / len(letters)
+        if caps_ratio > 0.4: 
+            return False
+            
     return True
 
 # ================= ФАЗА 1: ПАРСИНГ ТА ФІЛЬТРАЦІЯ =================
@@ -117,6 +132,10 @@ def scrape_feeds():
     history_urls = load_history(HISTORY_FILE)
     history_titles = load_history(TITLES_FILE)
     backlog = load_backlog()
+    
+    # Видаляємо з беклогу новини, які висять там довше 24 годин
+    current_time = time.time()
+    backlog = [item for item in backlog if current_time - item.get('timestamp', current_time) <= MAX_AGE_SECONDS]
     
     backlog_urls = [item['url'] for item in backlog]
     new_items_count = 0
@@ -138,26 +157,28 @@ def scrape_feeds():
             
             if url in history_urls or title in history_titles or url in backlog_urls:
                 continue
-                
+            
+            article_time = time.time()
             if hasattr(entry, 'published_parsed') and entry.published_parsed:
                 article_time = calendar.timegm(entry.published_parsed)
-                if time.time() - article_time > MAX_AGE_SECONDS: continue
+                if current_time - article_time > MAX_AGE_SECONDS: continue
             
             description = entry.get('summary', title)
             
-            # ЗАСТОСОВУЄМО РОЗУМНУ ФІЛЬТРАЦІЮ ПЕРЕД ЗБЕРЕЖЕННЯМ
             if not is_quality_article(title, description):
                 logging.info(f"Відфільтровано як неякісну/рекламу: {title}")
                 continue
 
             image_url = extract_image_url(entry)
             
+            # Зберігаємо новину разом із часом публікації (timestamp) для сортування
             backlog.append({
                 'title': title,
                 'description': description,
                 'url': url,
                 'image_url': image_url,
-                'source': source_name
+                'source': source_name,
+                'timestamp': article_time
             })
             backlog_urls.append(url)
             new_items_count += 1
@@ -165,18 +186,78 @@ def scrape_feeds():
     save_backlog(backlog)
     logging.info(f"📊 МЕТРИКА ПАРСИНГУ: Пройшли фільтрацію і додані в беклог: {new_items_count} | 📌 Всього у черзі: {len(backlog)}")
 
-# ================= ФАЗА 2: МЕГА-БАТЧИНГ ТА API =================
+
+# ================= ФАЗА 2: МЕГА-БАТЧИНГ ТА API (КВОТУВАННЯ) =================
 def process_backlog():
     backlog = load_backlog()
     if not backlog:
         logging.info("Беклог порожній. Немає що публікувати.")
         return
 
-    # Беремо великий батч (до 15 новин)
-    batch = backlog[:BATCH_SIZE]
-    logging.info(f"--- Етап 2: Мега-батч обробка ({len(batch)} новин одним запитом) ---")
+    # 1. Сортуємо всі новини за свіжістю (новіші - перші)
+    backlog.sort(key=lambda x: x.get('timestamp', 0), reverse=True)
 
-    prompt = f"Ось список із {len(batch)} новин. Твоє завдання — перекласти кожну українською мовою та адаптувати для Telegram-посту.\n\n"
+    # 2. Налаштовуємо ідеальні квоти для 20 новин
+    QUOTAS = {
+        'Національні': 10,
+        'Економіка': 5,
+        'Надзвичайні події': 1,
+        'Спорт': 1,
+        'Погода': 1,
+        'Концерти': 1,
+        'Інше': 1
+    }
+    
+    # 3. Розкладаємо новини по категоріях
+    categorized_news = {cat: [] for cat in QUOTAS.keys()}
+    # Додаємо резервну категорію, якщо у feeds.json буде щось нестандартне
+    categorized_news['Без категорії'] = [] 
+
+    for item in backlog:
+        cat = item.get('category', 'Без категорії')
+        if cat in categorized_news:
+            categorized_news[cat].append(item)
+        else:
+            categorized_news['Без категорії'].append(item)
+
+    # 4. Формуємо фінальний батч за квотами
+    batch = []
+    remaining_slots = 0 # Сюди запишемо порожні місця, якщо в якійсь категорії не було новин
+
+    for cat, limit in QUOTAS.items():
+        # Беремо новини згідно з лімітом
+        selected = categorized_news[cat][:limit]
+        batch.extend(selected)
+        
+        # Видаляємо вибрані новини зі списку, щоб не взяти їх повторно
+        categorized_news[cat] = categorized_news[cat][len(selected):]
+        
+        # Рахуємо, скільки місць залишилося порожніми
+        remaining_slots += (limit - len(selected))
+
+    # 5. Якщо 20 новин не набралося, добиваємо залишок з Національних, Іншого або будь-чого
+    if remaining_slots > 0:
+        fallback_categories = ['Національні', 'Інше', 'Економіка', 'Спорт', 'Без категорії']
+        for cat in fallback_categories:
+            if remaining_slots <= 0:
+                break
+            available = categorized_news[cat]
+            if available:
+                fillers = available[:remaining_slots]
+                batch.extend(fillers)
+                categorized_news[cat] = categorized_news[cat][len(fillers):]
+                remaining_slots -= len(fillers)
+
+    # Фінальне сортування батчу за часом, щоб у Telegram вони йшли логічно
+    batch.sort(key=lambda x: x.get('timestamp', 0), reverse=True)
+    
+    # Запобіжник, щоб точно не перевищити BATCH_SIZE (20)
+    batch = batch[:BATCH_SIZE]
+
+    logging.info(f"--- Етап 2: Відібрано {len(batch)} новин за квотами ---")
+
+    # Далі йде стандартний промпт для Gemini...
+    prompt = f"Ось список із {len(batch)} новин. Твоє завдання — перекласти кожну українською мовою...\n\n"
     for idx, item in enumerate(batch):
         prompt += f"=== НОВИНА {idx+1} ===\nЗаголовок: {item['title']}\nОпис: {item['description']}\n\n"
     
@@ -188,9 +269,10 @@ def process_backlog():
     4. Без зайвого форматування Markdown (* або _), тільки базові HTML-теги.
     
     ВАЖЛИВО: Обов'язково розділяй відповіді для кожної новини строго рядком `|||`. 
-    У тебе має вийти рівно {len(batch)} блоків тексту, розділених тегом `|||`. Не пиши жодних вступних чи завершальних слів загалом.
+    У тебе має вийти рівно {len(batch)} блоків тексту, розділених тегом `|||`. Не пиши жодних вступних чи завершальних слів.
     """
 
+    # ... Тут залишається ваш попередній код виклику Gemini API та відправки в Telegram (for attempt in range(3)...)
     generated_texts = []
     start_time = time.time()
 
@@ -249,7 +331,7 @@ def process_backlog():
             history_titles = save_to_history(history_titles, item['title'], TITLES_FILE)
             successful_urls.append(item['url'])
             published_count += 1
-            time.sleep(10) # Коротка пауза між повідомленнями, щоб не отримати спам-блок від Telegram
+            time.sleep(10)
         else:
             logging.error(f"❌ Помилка публікації: {item['title']}")
 
