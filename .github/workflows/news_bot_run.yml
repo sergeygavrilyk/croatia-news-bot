@@ -2,9 +2,9 @@ name: Croatia News Automator
 
 on:
   schedule:
-    # Запуск кожні 30 хвилин за стандартом Cron
-    - cron: '*/30 * * * *' 
-  workflow_dispatch: # Кнопка для ручного запуску
+    # Запуск кожні 3 години (8 разів на добу - ідеально для ліміту 20)
+    - cron: '0 */3 * * *'
+  workflow_dispatch: # Цей рядок залишає кнопку для ручного запуску
 
 jobs:
   run-bot:
