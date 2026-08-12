@@ -27,12 +27,6 @@ if not all([TELEGRAM_BOT_TOKEN, TELEGRAM_CHANNEL_ID, GEMINI_API_KEY]):
     logging.error("Критична помилка: не знайдено базові токени у файлі .env!")
     exit(1)
 
-# Резервний список на випадок відсутності feeds.json
-RSS_FEEDS = [
-    {'name': 'Index.hr', 'url': 'https://www.index.hr/rss'},       
-    {'name': 'Jutarnji List', 'url': 'https://www.jutarnji.hr/rss'},    
-]
-
 HISTORY_FILE = 'posted_news.txt'
 TITLES_FILE = 'posted_titles.txt'
 BACKLOG_FILE = 'news_backlog.json'
@@ -40,7 +34,7 @@ FEEDS_FILE = 'feeds.json'
 
 MAX_HISTORY_SIZE = 1000 
 MAX_AGE_SECONDS = 86400 # 24 години
-BATCH_SIZE = 3 # WIP-ліміт для батчингу
+BATCH_SIZE = 15 # МЕГА-БАТЧИНГ: обробляємо до 15 новин за 1 запит до AI
 # ===================================================
 
 client = genai.Client(api_key=GEMINI_API_KEY)
@@ -74,17 +68,14 @@ def save_backlog(backlog):
         json.dump(backlog, f, ensure_ascii=False, indent=4)
 
 def get_rss_feeds():
-    """Читає список RSS з файлу feeds.json"""
     if not os.path.exists(FEEDS_FILE):
-        logging.warning("Файл feeds.json не знайдено, використовую список за замовчуванням")
-        return RSS_FEEDS
+        return []
     try:
         with open(FEEDS_FILE, 'r', encoding='utf-8') as f:
-            data = json.load(f)
-            return data
+            return json.load(f)
     except Exception as e:
-        logging.error(f"Помилка читання feeds.json: {e}. Використовую стандартні джерела.")
-        return RSS_FEEDS
+        logging.error(f"Помилка читання feeds.json: {e}")
+        return []
 
 def extract_image_url(entry):
     if 'media_content' in entry and len(entry.media_content) > 0:
@@ -95,19 +86,34 @@ def extract_image_url(entry):
     return None
 
 def get_source_name(url):
-    """Витягує гарну назву ресурсу з посилання (наприклад, index.hr -> Index.hr)"""
     try:
         parsed_uri = urlparse(url)
         domain = parsed_uri.netloc
-        if domain.startswith('www.'):
-            domain = domain[4:]
+        if domain.startswith('www.'): domain = domain[4:]
         return domain.capitalize()
     except:
         return "Джерело"
 
-# ================= ФАЗА 1: ПАРСИНГ =================
+# ================= РОЗУМНА ФІЛЬТРАЦІЯ (PYTHON) =================
+def is_quality_article(title, description):
+    """Фільтрує новини, відсікаючи сміття, рекламу та короткі замітки"""
+    unwanted_keywords = ['oglasi', 'sponzorirani', 'promo', 'redikul', 'horoskop', 'plaćeni oglas']
+    title_lower = title.lower()
+    
+    # Відсікаємо за стоп-словами
+    for word in unwanted_keywords:
+        if word in title_lower:
+            return False
+            
+    # Відсікаємо занадто короткі заголовки (менше 15 символів)
+    if len(title.strip()) < 15:
+        return False
+        
+    return True
+
+# ================= ФАЗА 1: ПАРСИНГ ТА ФІЛЬТРАЦІЯ =================
 def scrape_feeds():
-    logging.info("--- Етап 1: Парсинг стрічок ---")
+    logging.info("--- Етап 1: Парсинг стрічок та фільтрація ---")
     history_urls = load_history(HISTORY_FILE)
     history_titles = load_history(TITLES_FILE)
     backlog = load_backlog()
@@ -115,7 +121,6 @@ def scrape_feeds():
     backlog_urls = [item['url'] for item in backlog]
     new_items_count = 0
 
-    # Отримуємо актуальний список джерел з конфігу
     feeds_list = get_rss_feeds()
 
     for feed_item in feeds_list:
@@ -127,7 +132,7 @@ def scrape_feeds():
             logging.error(f"Не вдалося зчитати RSS {feed_url}: {e}")
             continue
             
-        for entry in feed.entries[:10]:
+        for entry in feed.entries[:15]: 
             url = entry.link
             title = entry.title
             
@@ -139,6 +144,12 @@ def scrape_feeds():
                 if time.time() - article_time > MAX_AGE_SECONDS: continue
             
             description = entry.get('summary', title)
+            
+            # ЗАСТОСОВУЄМО РОЗУМНУ ФІЛЬТРАЦІЮ ПЕРЕД ЗБЕРЕЖЕННЯМ
+            if not is_quality_article(title, description):
+                logging.info(f"Відфільтровано як неякісну/рекламу: {title}")
+                continue
+
             image_url = extract_image_url(entry)
             
             backlog.append({
@@ -150,36 +161,34 @@ def scrape_feeds():
             })
             backlog_urls.append(url)
             new_items_count += 1
-            logging.info(f"Додано в беклог [{source_name}]: {title}")
 
     save_backlog(backlog)
-    logging.info(f"📊 МЕТРИКА ПАРСИНГУ: Знайдено нових статей: {new_items_count} | 📌 Всього неопублікованих у черзі (беклозі): {len(backlog)}")
+    logging.info(f"📊 МЕТРИКА ПАРСИНГУ: Пройшли фільтрацію і додані в беклог: {new_items_count} | 📌 Всього у черзі: {len(backlog)}")
 
-# ================= ФАЗА 2: БАТЧИНГ ТА МЕТРИКИ API =================
+# ================= ФАЗА 2: МЕГА-БАТЧИНГ ТА API =================
 def process_backlog():
     backlog = load_backlog()
     if not backlog:
         logging.info("Беклог порожній. Немає що публікувати.")
         return
 
+    # Беремо великий батч (до 15 новин)
     batch = backlog[:BATCH_SIZE]
-    logging.info(f"--- Етап 2: Обробка батчу ({len(batch)} новин) ---")
+    logging.info(f"--- Етап 2: Мега-батч обробка ({len(batch)} новин одним запитом) ---")
 
-    prompt = "Ось список новин:\n\n"
+    prompt = f"Ось список із {len(batch)} новин. Твоє завдання — перекласти кожну українською мовою та адаптувати для Telegram-посту.\n\n"
     for idx, item in enumerate(batch):
-        prompt += f"--- НОВИНА {idx+1} ---\nЗаголовок: {item['title']}\nТекст: {item['description']}\n\n"
+        prompt += f"=== НОВИНА {idx+1} ===\nЗаголовок: {item['title']}\nОпис: {item['description']}\n\n"
     
-    prompt += """
-    Твоє завдання:
-    Переклади кожну новину українською мовою та зроби короткий адаптований пост.
-    Для кожної новини:
-    1. Напиши привабливий заголовок (в тегах <b>).
-    2. Коротко виклади суть (1-2 абзаци).
-    3. Додай 2-3 релевантні хештеги в кінці.
-    4. Не використовуй Markdown (* або _), тільки базові HTML-теги.
+    prompt += f"""
+    Для кожної новини зроби:
+    1. Привабливий заголовок (в тегах <b>).
+    2. Коротко суть (1-2 абзаци).
+    3. 2-3 релевантні хештеги.
+    4. Без зайвого форматування Markdown (* або _), тільки базові HTML-теги.
     
-    ВАЖЛИВО: Розділяй відповіді для кожної новини строго рядком `|||`. 
-    Не пиши жодних вступних чи завершальних слів загалом. Тільки текст постів та роздільники `|||`.
+    ВАЖЛИВО: Обов'язково розділяй відповіді для кожної новини строго рядком `|||`. 
+    У тебе має вийти рівно {len(batch)} блоків тексту, розділених тегом `|||`. Не пиши жодних вступних чи завершальних слів загалом.
     """
 
     generated_texts = []
@@ -187,7 +196,7 @@ def process_backlog():
 
     for attempt in range(3):
         try:
-            logging.info("Відправка пакетного запиту до Gemini API...")
+            logging.info("Відправка мега-пакетного запиту до Gemini API...")
             response = client.models.generate_content(
                 model='gemini-3.5-flash-lite',
                 contents=prompt
@@ -219,7 +228,7 @@ def process_backlog():
                 break
     
     if not generated_texts:
-        logging.error("Не вдалося отримати/обробити пакет від Gemini.")
+        logging.error("Не вдалося отримати/обробити мега-пакет від Gemini.")
         return
 
     history_urls = load_history(HISTORY_FILE)
@@ -240,14 +249,14 @@ def process_backlog():
             history_titles = save_to_history(history_titles, item['title'], TITLES_FILE)
             successful_urls.append(item['url'])
             published_count += 1
-            time.sleep(10)
+            time.sleep(10) # Коротка пауза між повідомленнями, щоб не отримати спам-блок від Telegram
         else:
             logging.error(f"❌ Помилка публікації: {item['title']}")
 
     remaining_backlog = [item for item in backlog if item['url'] not in successful_urls]
     save_backlog(remaining_backlog)
     
-    logging.info(f"📊 МЕТРИКА PUBLISHER (Throughput): Опубліковано {published_count}/{len(batch)} статей. 📌 Залишилось неопублікованих у беклозі: {len(remaining_backlog)}.")
+    logging.info(f"📊 МЕТРИКА PUBLISHER: Опубліковано {published_count}/{len(batch)} статей. 📌 Залишилось у черзі: {len(remaining_backlog)}.")
 
 def send_to_telegram(text, url, source_name, image_url=None):
     if image_url and len(text) > 850: text = text[:850] + "...\n<i>(Текст обрізано)</i>"
