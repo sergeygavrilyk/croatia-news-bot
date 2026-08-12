@@ -1,0 +1,20 @@
+[
+  {"name": "Index.hr", "url": "https://www.index.hr/rss"},
+  {"name": "Jutarnji List", "url": "https://www.jutarnji.hr/rss"},
+  {"name": "ZADAR News", "url": "https://www.zadarnews.hr/rss/"},
+  {"name": "Zadarski List", "url": "https://www.novilist.hr/feed/?post_type=zadarski-list"}
+  {"name": "Index.hr", "url": "https://www.index.hr/rss"},
+  {"name": "Jutarnji List", "url": "https://www.jutarnji.hr/rss"},
+  {"name": "Večernji List", "url": "https://www.vecernji.hr/rss/vijesti-hrvatska"},
+  {"name": "Dnevnik.hr", "url": "https://dnevnik.hr/rss/feeds/vijesti.xml"},
+  {"name": "Nacional", "url": "https://www.nacional.hr/feed/"},
+  {"name": "Poslovni Dnevnik", "url": "https://www.poslovni.hr/feed/"},
+  {"name": "Slobodna Dalmacija", "url": "https://slobodnadalmacija.hr/feed"},
+  {"name": "HRT Vijesti", "url": "https://vijesti.hrt.hr/feed"},
+  {"name": "Net.hr", "url": "https://net.hr/feed/"},
+  {"name": "Tportal.hr", "url": "https://www.tportal.hr/rss/vijesti.xml"},
+  {"name": "Glas Slavonije", "url": "https://www.glas-slavonije.hr/rss/vijesti.xml"},
+  {"name": "Novi List", "url": "https://www.novilist.hr/feed/"},
+  {"name": "Index.hr - Sport", "url": "https://www.index.hr/rss/sport"},
+  {"name": "Poslovni - Ekonomija", "url": "https://www.poslovni.hr/feed/gospodarstvo"}
+]
