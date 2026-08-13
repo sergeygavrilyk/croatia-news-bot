@@ -35,6 +35,10 @@ FEEDS_FILE = 'feeds.json'
 MAX_HISTORY_SIZE = 1000 
 MAX_AGE_SECONDS = 43200 # 12 годин (тільки свіжі новини)
 BATCH_SIZE = 5 # 5 новин за один запуск
+
+# Налаштування моделей для fallback-механізму
+PRIMARY_MODEL = 'gemini-3.5-flash-lite'
+FALLBACK_MODEL = 'gemini-3.5-flash'
 # ===================================================
 
 client = genai.Client(api_key=GEMINI_API_KEY)
@@ -128,7 +132,7 @@ def deduplicate_news(client, articles):
     
     try:
         response = client.models.generate_content(
-            model='gemini-3.5-flash-lite', 
+            model=PRIMARY_MODEL, 
             contents=prompt,
             config={"response_mime_type": "application/json"}
         )
@@ -262,14 +266,43 @@ def process_backlog():
     """
 
     generated_texts = []
-    for _ in range(3):
-        try:
-            response = client.models.generate_content(model='gemini-3.5-flash-lite', contents=prompt)
-            generated_texts = [t.strip() for t in response.text.strip().split('|||') if t.strip()]
+    models_to_try = [PRIMARY_MODEL, FALLBACK_MODEL]
+
+    # БЕЗПЕЧНА ПАУЗА ДЛЯ ЗАХИСТУ ВІД ЛІМІТУ RPM (5 запитів/хв)
+    logging.info("Очікування перед викликом Gemini API (захист від RPM ліміту)...")
+    time.sleep(15)
+
+    for model_name in models_to_try:
+        success = False
+        for attempt in range(2):
+            try:
+                logging.info(f"Спроба генерації через модель: {model_name} (Спроба {attempt + 1})")
+                response = client.models.generate_content(model=model_name, contents=prompt)
+                
+                raw_text = response.text.strip()
+                generated_texts = [t.strip() for t in raw_text.split('|||') if t.strip()]
+                
+                if generated_texts:
+                    logging.info(f"Успішно згенеровано за допомогою моделі: {model_name}")
+                    success = True
+                    break
+            except Exception as e:
+                error_str = str(e)
+                if '429' in error_str or 'RESOURCE_EXHAUSTED' in error_str:
+                    logging.warning(f"Ліміти вичерпано для {model_name}. Пауза 30с... (Спроба {attempt + 1}/2)")
+                    time.sleep(30)
+                else:
+                    logging.error(f"Помилка моделі {model_name}: {e}")
+                    break
+        
+        if success:
             break
-        except Exception as e: time.sleep(60)
-    
-    if not generated_texts: return
+        else:
+            logging.warning(f"⚠️ Перемикаємося на резервну модель ({FALLBACK_MODEL})...")
+
+    if not generated_texts:
+        logging.error("Не вдалося отримати текст ні від основної, ні від резервної моделі.")
+        return
 
     history_urls = load_history(HISTORY_FILE)
     history_titles = load_history(TITLES_FILE)
@@ -281,6 +314,7 @@ def process_backlog():
             history_urls = save_to_history(history_urls, item['url'], HISTORY_FILE)
             history_titles = save_to_history(history_titles, item['title'], TITLES_FILE)
             successful_urls.append(item['url'])
+            # Затримка між публікаціями в Telegram (тримаємо в межах 45 секунд, щоб не перевищити ліміти GitHub)
             time.sleep(45)
 
     # 4. ЧИСТКА БЕКЛОГУ (зберігаємо лише топ-30 найсвіжіших)
