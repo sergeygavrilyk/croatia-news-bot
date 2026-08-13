@@ -31,6 +31,7 @@ HISTORY_FILE = 'posted_news.txt'
 TITLES_FILE = 'posted_titles.txt'
 BACKLOG_FILE = 'news_backlog.json'
 FEEDS_FILE = 'feeds.json'
+ANALYTICS_FILE = 'analytics.json' # <--- ДОДАТИ ЦЕЙ РЯДОК
 
 MAX_HISTORY_SIZE = 1000 
 MAX_AGE_SECONDS = 43200 # 12 годин (тільки свіжі новини)
@@ -66,6 +67,33 @@ def load_backlog():
 def save_backlog(backlog):
     with open(BACKLOG_FILE, 'w', encoding='utf-8') as f:
         json.dump(backlog, f, ensure_ascii=False, indent=4)
+def load_analytics():
+    if not os.path.exists(ANALYTICS_FILE): return []
+    try:
+        with open(ANALYTICS_FILE, 'r', encoding='utf-8') as f: return json.load(f)
+    except: return []
+
+def save_analytics(stats):
+    history = load_analytics()
+    history.append(stats)
+    # Зберігаємо лише останні 100 запусків, щоб файл не розростався
+    with open(ANALYTICS_FILE, 'w', encoding='utf-8') as f:
+        json.dump(history[-100:], f, ensure_ascii=False, indent=4)
+
+def send_analytics_to_admin(stats):
+    if not ADMIN_CHAT_ID: return
+    message = (
+        f"📊 <b>Звіт про роботу бота</b>\n\n"
+        f"⏱ Час виконання: {stats['execution_time']} сек\n"
+        f"📥 Новин у беклозі: {stats['backlog_size']}\n"
+        f"🗑 Відсіяно дублікатів: {stats['duplicates_removed']}\n"
+        f"✅ Опубліковано: {stats['published_count']}\n"
+        f"⚠️ Помилок: {stats['errors_count']}"
+    )
+    api_url = f"https://api.telegram.org/bot{TELEGRAM_BOT_TOKEN}/sendMessage"
+    try:
+        requests.post(api_url, data={'chat_id': ADMIN_CHAT_ID, 'text': message, 'parse_mode': 'HTML'})
+    except: pass
 
 def get_rss_feeds():
     if not os.path.exists(FEEDS_FILE): return []
@@ -198,7 +226,7 @@ def scrape_feeds():
             backlog_urls.append(url)
     save_backlog(backlog)
 
-def process_backlog():
+def process_backlog(stats=None):
     backlog = load_backlog()
     if not backlog: return
 
@@ -221,7 +249,10 @@ def process_backlog():
             break
 
     # 4. Перевірка на дублікати (якщо залишились після фільтру джерел)
+    len_before = len(batch)
     batch = deduplicate_news(client, batch)
+    if stats is not None:
+        stats["duplicates_removed"] += (len_before - len(batch))
 
     if not batch: return
 
@@ -275,6 +306,11 @@ def process_backlog():
             history_urls = save_to_history(history_urls, item['url'], HISTORY_FILE)
             history_titles = save_to_history(history_titles, item['title'], TITLES_FILE)
             successful_urls.append(item['url'])
+            
+            # Збільшуємо лічильник успішних публікацій
+            if stats is not None:
+                stats["published_count"] += 1
+                
             time.sleep(45)
 
     # 4. ЧИСТКА БЕКЛОГУ (зберігаємо лише топ-30 найсвіжіших)
@@ -302,9 +338,35 @@ def send_to_telegram(text, url, source_name, image_url=None):
     except: return False
 
 def main():
-    scrape_feeds()
-    process_backlog()
+    start_time = time.time()
+    
+    # Глобальний словник для збору статистики поточного запуску
+    stats = {
+        "timestamp": time.strftime('%Y-%m-%d %H:%M:%S'),
+        "backlog_size": 0,
+        "duplicates_removed": 0,
+        "published_count": 0,
+        "errors_count": 0,
+        "execution_time": 0
+    }
+
+    try:
+        scrape_feeds()
+        stats["backlog_size"] = len(load_backlog())
+        
+        # Ми передамо stats у process_backlog, щоб там оновити лічильники
+        process_backlog(stats)
+        
+    except Exception as e:
+        stats["errors_count"] += 1
+        send_alert_to_admin(f"Скрипт впав з помилкою: {e}")
+    finally:
+        stats["execution_time"] = round(time.time() - start_time, 1)
+        save_analytics(stats)
+        
+        # Відправляємо звіт в адмінку, тільки якщо щось було опубліковано або були помилки
+        if stats["published_count"] > 0 or stats["errors_count"] > 0:
+            send_analytics_to_admin(stats)
 
 if __name__ == "__main__":
-    try: main()
-    except Exception as e: send_alert_to_admin(f"Скрипт впав з помилкою: {e}")
+    main()
