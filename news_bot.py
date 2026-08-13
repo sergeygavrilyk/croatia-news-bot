@@ -281,7 +281,7 @@ def process_backlog():
             history_urls = save_to_history(history_urls, item['url'], HISTORY_FILE)
             history_titles = save_to_history(history_titles, item['title'], TITLES_FILE)
             successful_urls.append(item['url'])
-            time.sleep(10)
+            time.sleep(45)
 
     # 4. ЧИСТКА БЕКЛОГУ (зберігаємо лише топ-30 найсвіжіших)
     remaining_backlog = [item for item in backlog if item['url'] not in successful_urls]
