@@ -1,5 +1,477 @@
 [
     {
+        "title": "EU želi smanjiti ovisnost o Visi i Mastercardu. Digitalni euro trebao bi biti odgovor",
+        "description": "EU RAZVIJA digitalni euro i vlastite platne sustave kako bi smanjila ovisnost o američkim divovima Visi i Mastercardu, jačajući tako svoj financijski suverenitet i smanjujući troškove.",
+        "url": "https://www.index.hr/vijesti/clanak/eu-zeli-smanjiti-ovisnost-o-visi-i-mastercardu-digitalni-euro-trebao-bi-biti-odgovor/2823248.aspx",
+        "image_url": null,
+        "source": "Index.hr",
+        "timestamp": 1786600320
+    },
+    {
+        "title": "Nakon pomrčine stigli Perzeidi: Ovako je izgledalo nebo iznad Zagreba",
+        "description": "NAKON djelomične pomrčine Sunca, nebo iznad Hrvatske obasjali su spektakularni Perzeidi.",
+        "url": "https://www.index.hr/magazin/clanak/nakon-pomrcine-nebo-iznad-hrvatske-zasuli-su-meteori/2823246.aspx",
+        "image_url": null,
+        "source": "Index.hr",
+        "timestamp": 1786600140
+    },
+    {
+        "title": "Zaboravite na zamorno guljenje: Recept za zdravu i jednostavnu salatu od jaja",
+        "description": "Komadići ljuske koji se tvrdoglavo drže bjelanjka i upropaštavaju savršeno kuhano jaje frustracija su koju poznaju mnogi",
+        "url": "https://net.hr/magazin/kuhinja-i-recepti/zaboravite-na-zamorno-guljenje-recept-za-zdravu-i-jednostavnu-salatu-od-jaja-e28a6db0-9640-11f1-936f-9600040c8f8e",
+        "image_url": "https://net.hr/media/2026/08/12/1573726/H-b8968c2e-2958-4813-a36c-9496561d60e6-1200.webp",
+        "source": "Net.hr",
+        "timestamp": 1786600045
+    },
+    {
+        "title": "Kako je Europa dobila novu državu? Norvežanima je bilo dosta dominacije Šveđana",
+        "description": "NA DANAŠNJI dan Norveška je napustila uniju sa Švedskom i postala samostalna zemlja.",
+        "url": "https://www.index.hr/vijesti/clanak/kako-je-europa-dobila-novu-drzavu-norvezanima-je-bilo-dosta-dominacije-svedjana/2590045.aspx",
+        "image_url": null,
+        "source": "Index.hr",
+        "timestamp": 1786599974
+    },
+    {
+        "title": "Baturina zaludio navijače, pogledajte njegovu majstoriju protiv Arsenala: ‘Poslao je klince na pod...‘",
+        "description": "Martin Baturina ponovno je privukao veliku pažnju na Otoku. Hrvatski reprezentativac bio je jedan od najzapaženijih igrača u prijateljskom susretu Coma i Arsenala na Emiratesu, a posebno će se pamtiti njegova majstorija za 1:1. Baturina je u 43. minuti uzeo loptu na lijevoj strani, krenuo prema sred...",
+        "url": "https://slobodnadalmacija.hr/sport/strani-nogomet/baturina-zaludio-navijace-pogledajte-njegovu-majstoriju-protiv-arsenala-poslao-je-klince-na-pod-1573241",
+        "image_url": "https://static.slobodnadalmacija.hr/images/slike/2026/08/13/32294635.jpg",
+        "source": "Slobodna Dalmacija",
+        "timestamp": 1786599954
+    },
+    {
+        "title": "DS Smith Hrvatska privodi kraju investiciju od 15 milijuna eura",
+        "description": "Ulaganje će unaprijediti proizvodne kapacitete i učinkovitost poslovanja.",
+        "url": "https://www.poslovni.hr/domace/ds-smith-hrvatska-privodi-kraju-investiciju-od-15-mil-eura-u-beliscu-4550879",
+        "image_url": "https://www.poslovni.hr/wp-content/uploads/2026/08/2ds-800x500.jpg",
+        "source": "Poslovni Dnevnik",
+        "timestamp": 1786599949
+    },
+    {
+        "title": "Potraga za nestalim Portugalcima ušla u drugi dan: Objavljeni novi detalji",
+        "description": "Sve najnovije informacije pratite na portalu Net.hr",
+        "url": "https://net.hr/danas/vijesti/uzivo-drugi-dan-potrage-za-portugalcima-kod-senja-c8e0f88a-96d4-11f1-936f-9600040c8f8e",
+        "image_url": "https://net.hr/media/2026/08/13/1573962/8122b080-0bb5-44ca-b993-4df395860890.gif",
+        "source": "Net.hr",
+        "timestamp": 1786599840
+    },
+    {
+        "title": "Stižu nova pravila: Cijena kave bi mogla porasti i do 300 posto, a ona je samo jedna u nizu",
+        "description": "Kava, sok od naranče ili palačinke mogli bi postati osjetno skuplji ako Bruxelles provede plan prema kojem bi se i uvozna hrana morala uskladiti sa strogim pravilima Europske unije o pesticidima.",
+        "url": "https://www.poslovni.hr/europska-unija/stizu-nova-pravila-cijena-kave-bi-mogla-porasti-i-do-300-posto-a-ona-je-samo-jedna-u-nizu-4550894",
+        "image_url": "https://www.poslovni.hr/wp-content/uploads/2026/08/rosalind-chang-SJPdsf2xO7U-unsplash-800x500.jpg",
+        "source": "Poslovni Dnevnik",
+        "timestamp": 1786599815
+    },
+    {
+        "title": "‘Tommyjev‘ projekt donosi preporod na Trsteniku; gradit će se zgrada, garaža, dobit ćemo i novi kotarski trg...",
+        "description": "U slučaju da rješavanje preostalih imovinskopravnih odnosa i mijenjanje DPU-a prođe glatko, za pola godine moglo bi započeti konkretno projektiranje zahvata P13 na Trsteniku. Čak više od 90 posto troškova daljnje dokumentacije je \"Tommyjeva\" dužnost, dok su kotarski trg i promenada trošak Grada. Dra...",
+        "url": "https://slobodnadalmacija.hr/split-i-zupanija/split/tommyjev-projekt-na-trsteniku-ide-dalje-grad-otkrio-detalje-o-zgradi-garazi-prometu-i-novom-kotarskom-trgu-1573240",
+        "image_url": "https://static.slobodnadalmacija.hr/images/slike/2026/08/10/29486835.jpg",
+        "source": "Slobodna Dalmacija",
+        "timestamp": 1786599560
+    },
+    {
+        "title": "Zbog jakog vjetra, u priobalju zabrana za pojedine skupine vozila",
+        "description": "<p>bog jakog vjetra zabrane su za pojedine skupine vozila na cestama u priobalju. Na većini ostalih cesta vozi se bez posebnih ograničenja. Zastoji su povremeno na dionicama cesta gdje traju radovi, izvijestili su iz Hrvatskog auto-kluba (HAK) u [&#8230;]</p>\n<p>Objava <a href=\"https://www.novilist.hr/novosti/hrvatska/zbog-jakog-vjetra-u-priobalju-zabrana-za-pojedine-skupine-vozila/\">Zbog jakog vjetra, u priobalju zabrana za pojedine skupine vozila</a> pojavila se prvi puta na <a href=\"https://www.novilist.hr\">Novi list</a>.</p>",
+        "url": "https://www.novilist.hr/novosti/hrvatska/zbog-jakog-vjetra-u-priobalju-zabrana-za-pojedine-skupine-vozila/",
+        "image_url": "https://www.novilist.hr/wp-content/uploads/2026/08/cam.jpg",
+        "source": "Zadarski List",
+        "timestamp": 1786599537
+    },
+    {
+        "title": "Svinjetina ispod 3 eura: Dalmatinci će danas pohrliti u ovu trgovinu - razlika u cijeni je nevjerojatna",
+        "description": "Cijene svinjetine i dalje značajno variraju od trgovine do trgovine, a kupci koji prije odlaska u nabavu usporede akcijske ponude mogu ostvariti primjetnu uštedu. Provjerili smo aktualne cijene u Lidlu, Kauflandu, Konzumu, Plodinama i SPAR-u te usporedili nekoliko najtraženijih komada svinjskog mesa...",
+        "url": "https://slobodnadalmacija.hr/split-i-zupanija/sd-takujin/svinjetina-ispod-3-necete-vjerovati-koliko-danas-kosta-kilogram-u-ovoj-trgovini-1573239",
+        "image_url": "https://static.slobodnadalmacija.hr/images/slike/2026/08/13/31454755.jpg",
+        "source": "Slobodna Dalmacija",
+        "timestamp": 1786599505
+    },
+    {
+        "title": "Svinjetina ispod 3 eura: Danas vrijedi pohrliti u ovu trgovinu - razlika u cijeni je nevjerojatna",
+        "description": "Cijene svinjetine i dalje značajno variraju od trgovine do trgovine, a kupci koji prije odlaska u nabavu usporede akcijske ponude mogu ostvariti primjetnu uštedu. Provjerili smo aktualne cijene u Lidlu, Kauflandu, Konzumu, Plodinama i SPAR-u te usporedili nekoliko najtraženijih komada svinjskog mesa...",
+        "url": "https://slobodnadalmacija.hr/dubrovnik/vijesti/hrvatska-i-svijet/svinjetina-ispod-3-necete-vjerovati-koliko-danas-kosta-kilogram-u-ovoj-trgovini-1573247",
+        "image_url": "https://static.slobodnadalmacija.hr/images/slike/2026/08/13/31454755.jpg",
+        "source": "Slobodna Dalmacija",
+        "timestamp": 1786599480
+    },
+    {
+        "title": "Pavić i Arevalo u finalu Montreala",
+        "description": "<p>Mate Pavić i njegov partner iz Salvadora Marcelo Arevalo igrat će u finalu ATP Masters 1000 turnira u Montrealu. Hrvatsko- salvadorski dvojac je u polufinalu nadjačao francusku kombinaciju Theo Arribage/Albano Olivetti 6-4, 6-4 te tako do završnice došao [&#8230;]</p>\n<p>Objava <a href=\"https://www.novilist.hr/sport/ostali-sportovi/pavic-i-arevalo-u-finalu-montreala/\">Pavić i Arevalo u finalu Montreala</a> pojavila se prvi puta na <a href=\"https://www.novilist.hr\">Novi list</a>.</p>",
+        "url": "https://www.novilist.hr/sport/ostali-sportovi/pavic-i-arevalo-u-finalu-montreala/",
+        "image_url": "https://www.novilist.hr/wp-content/uploads/2026/08/HN20260810878492-717x478.jpg",
+        "source": "Zadarski List",
+        "timestamp": 1786599390
+    },
+    {
+        "title": "Talijani se naklonili Baturini: 'Ovo je klasa koja nam treba'",
+        "description": "Posebno su ga pohvalili iz La Gazzette dello Sport",
+        "url": "https://net.hr/sport/nogomet/talijani-se-naklonili-martinu-baturini-e32dc584-96d7-11f1-936f-9600040c8f8e",
+        "image_url": "https://net.hr/media/2026/08/13/1573959/H-209b5c22-a354-4f19-989c-245075b5d8a5-1200.webp",
+        "source": "Net.hr",
+        "timestamp": 1786599146
+    },
+    {
+        "title": "Kraj toplinskog vala i nagli obrat, temperature bi mogle pasti desetak stupnjeva",
+        "description": "Donosimo vremensku prognozu naše meteorologinje Tee Blažević.",
+        "url": "https://n1info.hr/vrijeme/vremenska-prognoza-1382026/",
+        "image_url": "https://n1info.hr/media/images/2026/8/13/1786599047_PXL_280725_136085292.width-1200.jpg",
+        "source": "N1 Info - Погода",
+        "timestamp": 1786599074
+    },
+    {
+        "title": "Mel Gibson otkrio prve detalje o ‘Smrtonosnom oružju 5‘: ‘Scenarij je bolji od svih prethodnih‘",
+        "description": "Nakon godina nagađanja, odgađanja i neizvjesnosti, \"Smrtonosno oružje 5\" napokon je dobilo konkretniji oblik. Mel Gibson potvrdio je da će režirati peti nastavak kultne akcijske franšize, a otkrio je i prve detalje priče koja će ponovno okupiti Martina Riggsa i Rogera Murtaugha. Gibson je o projektu...",
+        "url": "https://slobodnadalmacija.hr/mozaik/scena/showbiz/mel-gibson-otkrio-je-prve-detalje-o-smrtonosnom-oruzju-5-scenarij-je-bolji-od-svih-prethodnih-1573237",
+        "image_url": "https://static.slobodnadalmacija.hr/images/slike/2026/08/12/32290608.jpg",
+        "source": "Slobodna Dalmacija",
+        "timestamp": 1786599060
+    },
+    {
+        "title": "O kornjači koja sije strah u Kaštelima oglasilo se i Ministarstvo, dali su jasne upute: ‘Ako se pojavi...‘",
+        "description": "Nakon što je u nedjelju u Kaštel Lukšiću zabilježen peti slučaj ugriza kupača, priča s glavatom želvom dobila je i službeni nastavak. Ministarstvo zaštite okoliša i zelene tranzicije jedino je tijelo u Hrvatskoj nadležno za postupanje i donošenje odluka kad je riječ o ovoj strogo zaštićenoj vrsti. I...",
+        "url": "https://slobodnadalmacija.hr/split-i-zupanija/obala/nakon-petog-ugriza-oglasilo-se-ministarstvo-evo-sto-kazu-o-kornjaci-koja-gricka-kupace-u-kastelima-1573236",
+        "image_url": "https://static.slobodnadalmacija.hr/images/slike/2026/08/12/32290227.jpg",
+        "source": "Slobodna Dalmacija",
+        "timestamp": 1786598834
+    },
+    {
+        "title": "Messi ponovno zaigrao nakon smrti oca: Navijači ga dočekali velikim pljeskom",
+        "description": "Nekoliko sati ranije Messi se emotivnom objavom oprostio od oca",
+        "url": "https://net.hr/sport/nogomet/lionel-messi-ponovno-zaigrao-nakon-smrti-oca-c2c610d1-96d6-11f1-936f-9600040c8f8e",
+        "image_url": "https://net.hr/media/2026/08/13/1573956/H-f3c661d3-fa9e-4ca7-b1a9-aed57f0c6fc7-1200.webp",
+        "source": "Net.hr",
+        "timestamp": 1786598685
+    },
+    {
+        "title": "Veliki skandal: S izložbe ukradeno 210 pozlaćenih kipića Mozarta",
+        "description": "Hoerl vjeruje da skulpture visoke 50 centimetrara nisu ukrali turisti.",
+        "url": "https://www.poslovni.hr/europska-unija/veliki-skandal-s-izlozbe-ukradeno-210-pozlacenih-kipica-mozarta-4550891",
+        "image_url": "https://www.poslovni.hr/wp-content/uploads/2026/08/1786550556_000_C29B8HM.format-avif.width-1200-800x500.jpg",
+        "source": "Poslovni Dnevnik",
+        "timestamp": 1786598643
+    },
+    {
+        "title": "Snimka koja raduje: Sjedeći u restoranu iznad mora ugledao i snimio sredozemnu medvjedicu",
+        "description": "<p>Nikolaj Knežević nam je poslao snimku sredozemne medvjedice koja je snimljena u uvali Jaz ispred Budve. &#8216;Morskog čovika&#8217; je snimo Nikola Ružić koji je sjedeći u restoranu, u moru vidio nešto neobično što je odlučio zabilježiti. Premda je [&#8230;]</p>\n<p>Objava <a href=\"https://www.novilist.hr/more/snimka-koja-raduje-sjedeci-u-restoranu-iznad-mora-ugledao-i-snimio-sredozemnu-medvjedicu/\">Snimka koja raduje: Sjedeći u restoranu iznad mora ugledao i snimio sredozemnu medvjedicu</a> pojavila se prvi puta na <a href=\"https://www.novilist.hr\">Novi list</a>.</p>",
+        "url": "https://www.novilist.hr/more/snimka-koja-raduje-sjedeci-u-restoranu-iznad-mora-ugledao-i-snimio-sredozemnu-medvjedicu/",
+        "image_url": "https://www.novilist.hr/wp-content/uploads/2026/08/NLR3396-UVODNA.jpg",
+        "source": "Zadarski List",
+        "timestamp": 1786598399
+    },
+    {
+        "title": "Putin u odori spreman za rat? ‘Raste potencijal za sukobe, NATO prodire u regiju. Novi oružani sustavi prijete Rusiji‘",
+        "description": "Rusija će odgovoriti na isti način ako zapadne zemlje zaplijene njezine trgovačke brodove, zaprijetio je ruski predsjednik Vladimir Putin, noseći vojnu odoru tijekom posjeta otoku Sahalin. Naime, on je stigao na teritorij uz sjeveroistočnu obalu Azije kako bi promatrao završnu fazu vježbi ruske Paci...",
+        "url": "https://slobodnadalmacija.hr/vijesti/svijet/putin-u-uniformi-spreman-za-rat-raste-potencijal-za-sukobe-nato-prodire-u-regiju-novi-oruzani-sustavi-prijete-rusiji-1573235",
+        "image_url": "https://static.slobodnadalmacija.hr/images/slike/2026/08/13/32294622.jpg",
+        "source": "Slobodna Dalmacija",
+        "timestamp": 1786598299
+    },
+    {
+        "title": "Rijeka večeras brani prednost u Finskoj: Evo gdje gledati utakmicu",
+        "description": "Ako prođe, Rijeka će u play-offu igrati protiv pobjednika dvoboja Bohemiansa i Midtjyllanda",
+        "url": "https://net.hr/sport/nogomet/evo-gdje-gledati-utakmicu-ilves-rijeka-acce091a-96d5-11f1-936f-9600040c8f8e",
+        "image_url": "https://net.hr/media/2026/08/13/1573954/H-af1609cb-c9b4-4df7-9153-e2c9d2c7daa0-1200.webp",
+        "source": "Net.hr",
+        "timestamp": 1786598160
+    },
+    {
+        "title": "Kamo je Dalić otišao po novi veliki uspjeh i milijune kakve još nije zaradio? Za svaki gol ide Rolls-Royce...",
+        "description": "Nogometni savez Ujedinjenih Arapskih Emirata je u srijedu, 12. kolovoza, službeno objavio da je hrvatski stručnjak Zlatko Dalić (59), novi izbornik njihove reprezentacije s ugovorom do 2030. godine. Time je formalizirano ono što se već mjesecima znalo, čak i prije Svjetskog prvenstva u Americi, Kana...",
+        "url": "https://slobodnadalmacija.hr/sport/strani-nogomet/kamo-je-dalic-otisao-po-novi-veliki-uspjeh-i-milijune-kakve-jos-nije-zaradio-za-svaki-gol-ide-rolls-royce-1573233",
+        "image_url": "https://static.slobodnadalmacija.hr/images/slike/2026/08/13/32063467.jpg",
+        "source": "Slobodna Dalmacija",
+        "timestamp": 1786598122
+    },
+    {
+        "title": "Podignuta tužba protiv Trumpa, naplaćuje 100.000$ za privilegiran pristup njegovim objavama",
+        "description": "<p>Podignuta je tužba protiv američkog predsjednika Donalda Trumpa zbog naknade za brži pristup njegovim objavama na društvenoj mreži Truth Social, pri čemu dvije organizacije tvrde da je povlašteni pristup službenim informacijama kršenje američkog ustava, javlja u četvrtak njemačka [&#8230;]</p>\n<p>Objava <a href=\"https://www.novilist.hr/novosti/svijet/podignuta-tuzba-protiv-trumpa-naplacuje-100-000-za-privilegiran-pristup-njegovim-objavama/\">Podignuta tužba protiv Trumpa, naplaćuje 100.000$ za privilegiran pristup njegovim objavama</a> pojavila se prvi puta na <a href=\"https://www.novilist.hr\">Novi list</a>.</p>",
+        "url": "https://www.novilist.hr/novosti/svijet/podignuta-tuzba-protiv-trumpa-naplacuje-100-000-za-privilegiran-pristup-njegovim-objavama/",
+        "image_url": "https://www.novilist.hr/wp-content/uploads/2026/08/HN20260808872462-717x478.jpg",
+        "source": "Zadarski List",
+        "timestamp": 1786597250
+    },
+    {
+        "title": "Trumpova glasnogovornica napušta dužnost",
+        "description": "<p>Američki predsjednik Donald Trump je u srijedu rekao da će glasnogovornica Bijele kuće Karoline Leavitt odstupiti sa svoje dužnosti krajem mjeseca kako bi više vremena provodila sa svojom obitelji. &#8220;Biti glasnogovornica Bijele kuće tijekom proteklih godinu i po [&#8230;]</p>\n<p>Objava <a href=\"https://www.novilist.hr/novosti/svijet/trumpova-glasnogovornica-napusta-duznost/\">Trumpova glasnogovornica napušta dužnost</a> pojavila se prvi puta na <a href=\"https://www.novilist.hr\">Novi list</a>.</p>",
+        "url": "https://www.novilist.hr/novosti/svijet/trumpova-glasnogovornica-napusta-duznost/",
+        "image_url": "https://www.novilist.hr/wp-content/uploads/2026/08/HN20260812883798-717x478.jpg",
+        "source": "Zadarski List",
+        "timestamp": 1786597080
+    },
+    {
+        "title": "Ukrajina pogodila ratne brodove u Novorosijsku. Spaljuje se posljednje utočište Crnomorske flote",
+        "description": "<p>U velikom ukrajinskom napadu na rusku crnomorsku luku Novorosijsk u srijedu pogođeni su ratni brodovi u pomorskoj bazi, a dva velika žitna terminala morala su obustaviti rad, objavili su ruski i ukrajinski dužnosnici te izvori iz industrije žita. [&#8230;]</p>\n<p>Objava <a href=\"https://www.novilist.hr/novosti/svijet/ukrajina-pogodila-ratne-brodove-u-novorosijsku-spaljuje-se-posljednje-utociste-crnomorske-flote/\">Ukrajina pogodila ratne brodove u Novorosijsku. Spaljuje se posljednje utočište Crnomorske flote</a> pojavila se prvi puta na <a href=\"https://www.novilist.hr\">Novi list</a>.</p>",
+        "url": "https://www.novilist.hr/novosti/svijet/ukrajina-pogodila-ratne-brodove-u-novorosijsku-spaljuje-se-posljednje-utociste-crnomorske-flote/",
+        "image_url": "https://www.novilist.hr/wp-content/uploads/2026/08/HN20260812883688-717x478.jpg",
+        "source": "Zadarski List",
+        "timestamp": 1786596959
+    },
+    {
+        "title": "Prisustvo metala i PFAS spojeva u vodi za piće provjeravat će se jednom mjesečno",
+        "description": "<p>Nastavni zavod za javno zdravstvo Primorsko-goranske županije provest će, po nalogu župana Ivice Lukanovića, dodatni nadzor ispravnosti pitke vode na otoku Rabu, koji se vodom opskrbljuje s područja Like. Župan Lukanović zatražio je takav nadzor zbog ekološke krize [&#8230;]</p>\n<p>Objava <a href=\"https://www.novilist.hr/novosti/hrvatska/prisustvo-metala-i-pfas-spojeva-u-vodi-za-pice-provjeravat-ce-se-jednom-mjesecno/\">Prisustvo metala i PFAS spojeva u vodi za piće provjeravat će se jednom mjesečno</a> pojavila se prvi puta na <a href=\"https://www.novilist.hr\">Novi list</a>.</p>",
+        "url": "https://www.novilist.hr/novosti/hrvatska/prisustvo-metala-i-pfas-spojeva-u-vodi-za-pice-provjeravat-ce-se-jednom-mjesecno/",
+        "image_url": "https://www.novilist.hr/wp-content/uploads/2026/08/12425736-717x478.jpg",
+        "source": "Zadarski List",
+        "timestamp": 1786596054
+    },
+    {
+        "title": "Last minute spašava kolovoz, a pri odabiru se traži bolji omjer cijene i kvalitete",
+        "description": "Turistički srpanj bolji od očekivanja, a naznake govore da bi takva mogla biti i druga polovica ljeta.",
+        "url": "https://www.poslovni.hr/hrvatska/last-minute-spasava-kolovoz-a-pri-odabiru-se-trazi-bolji-omjer-cijene-i-kvalitete-4550773",
+        "image_url": "https://www.poslovni.hr/wp-content/uploads/2026/08/3glavina-800x500.jpg",
+        "source": "Poslovni Dnevnik",
+        "timestamp": 1786593600
+    },
+    {
+        "title": "Šešok i još osam kandidata u utrci za preuzimanje pulskog Uljanika",
+        "description": "Prodaja 97-postotnog udjela u zadnjem državnom brodogradilištu ulazi u finiš, u utorak predaja ponuda CERP-u.",
+        "url": "https://www.poslovni.hr/hrvatska/sesok-i-jos-osam-kandidata-u-utrci-za-preuzimanje-pulskog-uljanika-4550881",
+        "image_url": "https://www.poslovni.hr/wp-content/uploads/2026/08/1glavna-5-800x500.jpg",
+        "source": "Poslovni Dnevnik",
+        "timestamp": 1786564860
+    },
+    {
+        "title": "Zašto je Zelenski otišao u Beograd i što je time dobio Vučić?",
+        "description": "Iza službenog posjeta kriju se isporuke streljiva, europske ambicije Srbije i sve vidljiviji gubitak ruskog utjecaja u regiji.",
+        "url": "https://www.poslovni.hr/regija/zasto-je-zelenski-otisao-u-beograd-i-sto-je-time-dobio-vucic-4550854",
+        "image_url": "https://www.poslovni.hr/wp-content/uploads/2026/08/10zelenski-800x500.jpg",
+        "source": "Poslovni Dnevnik",
+        "timestamp": 1786564800
+    },
+    {
+        "title": "Kineski dobavljači sve dublje ulaze u europsku autoindustriju, Bruxelles strahuje za opskrbne lance",
+        "description": "Kineske kompanije preuzele su više od 130 europskih proizvođača autodijelova.",
+        "url": "https://www.poslovni.hr/svijet/kineski-dobavljaci-sve-dublje-ulaze-u-europsku-autoindustriju-bruxelles-strahuje-za-opskrbne-lance-4550852",
+        "image_url": "https://www.poslovni.hr/wp-content/uploads/2026/08/11auto-800x500.jpg",
+        "source": "Poslovni Dnevnik",
+        "timestamp": 1786564800
+    },
+    {
+        "title": "Logistička tvrtka euShipments Group preuzima konkurenta FHB",
+        "description": "Kompanija će biti u potpunosti integrirana u mrežu euShipments Groupa, dok će postojeći rukovodeći tim nastaviti upravljati preuzetom kompanijom.",
+        "url": "https://www.poslovni.hr/domace/logisticka-tvrtka-eushipments-group-preuzima-konkurenta-fhb-4550884",
+        "image_url": "https://www.poslovni.hr/wp-content/uploads/2026/08/3fhb-800x500.jpg",
+        "source": "Poslovni Dnevnik",
+        "timestamp": 1786564800
+    },
+    {
+        "title": "Vruće ljeto moglo bi gospodarstva EU koštati 180 milijardi eura",
+        "description": "Proizvod po radniku pada kada temperature prijeđu otprilike 25°C do 30°C, s najvećim gubicima u vanjskim i fizički zahtjevnim poslovima.",
+        "url": "https://www.poslovni.hr/trzista/vruce-ljeto-moglo-bi-gospodarstva-eu-kostati-180-milijardi-eura-4550875",
+        "image_url": "https://www.poslovni.hr/wp-content/uploads/2026/08/13ljeto-800x500.jpg",
+        "source": "Poslovni Dnevnik",
+        "timestamp": 1786564800
+    },
+    {
+        "title": "Kriza bi urušila osiguranja i fondove, ali ne i cijene nekretnina",
+        "description": "Pogoršanje makroekonomskih uvjeta odrazilo bi se i na javne financije.",
+        "url": "https://www.poslovni.hr/nekretnine/kriza-bi-urusila-osiguranja-i-fondove-ali-ne-i-cijene-nekretnina-4550866",
+        "image_url": "https://www.poslovni.hr/wp-content/uploads/2026/08/6kriza-800x500.jpg",
+        "source": "Poslovni Dnevnik",
+        "timestamp": 1786564800
+    },
+    {
+        "title": "Crna Gora na Forbesovoj listi ‘najmjesta’ za umirovljenike iz SAD-a",
+        "description": "Glavni grad Podgorica, kao i obalni gradovi Bar, Perast i Tivat, ističu se među atraktivnim mjestima za umirovljenje, zaključuje Forbes.",
+        "url": "https://www.poslovni.hr/regija/crna-gora-na-forbesovoj-listi-najmjesta-za-umirovljenike-iz-sad-a-4550869",
+        "image_url": "https://www.poslovni.hr/wp-content/uploads/2026/08/9gora-800x500.jpg",
+        "source": "Poslovni Dnevnik",
+        "timestamp": 1786564800
+    },
+    {
+        "title": "Veliki interes za električna vozila dokazuje da je tržište zrelo – Slovenija ukida subvencije",
+        "description": "Tehnologija električnih automobila se razvija pa će povoljniji modeli uskoro postati šire dostupni.",
+        "url": "https://www.poslovni.hr/regija/veliki-interes-za-elektricna-vozila-dokazuje-da-je-trziste-zrelo-slovenija-ukida-subvencije-4550871",
+        "image_url": "https://www.poslovni.hr/wp-content/uploads/2026/08/9subve-800x500.jpg",
+        "source": "Poslovni Dnevnik",
+        "timestamp": 1786564800
+    },
+    {
+        "title": "‘Cilj robota nije zamjena, nego rasterećenje kako bi se osoblje posvetilo gostu i kvaliteti’",
+        "description": "Softverska tvrtka Utiliter našla se na prestižnoj listi najbrže rastućih tehnoloških kompanija.",
+        "url": "https://www.poslovni.hr/domace/cilj-robota-nije-zamjena-nego-rasterecenje-kako-bi-se-osoblje-posvetilo-gostu-i-kvaliteti-4550863",
+        "image_url": "https://www.poslovni.hr/wp-content/uploads/2026/08/7buntic-800x500.jpg",
+        "source": "Poslovni Dnevnik",
+        "timestamp": 1786564800
+    },
+    {
+        "title": "NOŽ U LEĐA ‘Plenković je nazvao Primorca, koji mu je rekao: ‘Izgubio sam zbog onih tvojih izdajica u HDZ-u”",
+        "description": "Pola sata nakon što je Dragan Primorac izgubio izbore za predsjednika HOO-a, nazvao ga je premijer Plenković, kaže izvor blizak Primorcu. Primorac nije skrivao da se ljuti na HDZ Pola sata nakon što je izgubio u utrci za predsjednika Hrvatskog olimpijskog odbora, Dragana Primorca nazvao je premijer Andrej Plenković. Tu su informaciju Nacionalu potvrdila dva [&#8230;]",
+        "url": "https://www.nacional.hr/noz-u-leda-plenkovic-je-nazvao-primorca-koji-mu-je-rekao-izgubio-sam-zbog-onih-tvojih-izdajica-u-hdz-u/",
+        "image_url": "https://www.nacional.hr/wp-content/uploads/2026/08/PXL_290726_155952492-copy_2-copy1-1024x681.jpg",
+        "source": "Nacional",
+        "timestamp": 1786563541
+    },
+    {
+        "title": "EKOLOŠKA KATASTROFA Naftna mrlja veličine Istre stigla do obala Omana, havariju uzrokovao ruski ‘tanker u sjeni’",
+        "description": "Golema naftna mrlja iz oštećenog tankera počela je stizati do obale Omana, potvrdila je omanska agencija za zaštitu okoliša. Incident prijeti da postane jedna od najgorih ekoloških katastrofa u svijetu u posljednjih nekoliko godina, nakon što se mrlja tjednima širila gotovo bez ikakva nadzora, javlja HRT. Mrlja veličine Istre Nafta bi mogla zahvatiti 40 kilometara [&#8230;]",
+        "url": "https://www.nacional.hr/ekoloska-katastrofa-naftna-mrlja-velicine-istre-stigla-do-obala-omana-havariju-uzrokovao-ruski-tanker-u-sjeni/",
+        "image_url": "https://www.nacional.hr/wp-content/uploads/2026/08/None_050626_153099058-1024x684.jpg",
+        "source": "Nacional",
+        "timestamp": 1786563251
+    },
+    {
+        "title": "TEŠKA PROMETNA NESREĆA Auto kod Sinja sletio u provaliju, dvoje mrtvih",
+        "description": "Dvije osobe poginule su u teškoj prometnoj nesreći koja se dogodila u srijedu malo poslije 19 sati na sinjskom području. Prema prvim informacijama policije, nesreća se dogodila na državnoj cesti D1 u mjestu Podosoje, gdje je vozilo izletjelo s kolnika i završilo u provaliji. Policija na mjestu nesreće obavlja očevid nakon kojeg bi trebalo biti [&#8230;]",
+        "url": "https://www.nacional.hr/teska-prometna-nesreca-auto-kod-sinja-sletio-u-provaliju-dvoje-mrtvih/",
+        "image_url": "https://www.nacional.hr/wp-content/uploads/2026/08/PXL_120329_706-1024x683.jpg",
+        "source": "Nacional",
+        "timestamp": 1786560805
+    },
+    {
+        "title": "NOVI MIGRANTSKI VAL? Maroko uhitio osumnjičene za novi pokušaj upada u Ceutu. Evo kad su planirali ući u EU",
+        "description": "Ceuta\nFOTO: JNA PRESS/SIPA USA",
+        "url": "https://www.nacional.hr/novi-migrantski-val-maroko-uhitio-osumnjicene-za-novi-pokusaj-upada-u-ceutu-evo-kad-su-planirali-uci-u-eu/",
+        "image_url": "https://www.nacional.hr/wp-content/uploads/2026/08/None_110826_156499532-1024x683.jpg",
+        "source": "Nacional",
+        "timestamp": 1786559998
+    },
+    {
+        "title": "Dvije osobe poginule u nesreći kod Sinja, vozilo sletjelo u provaliju",
+        "description": "Dvije osobe smrtno su stradale u prometnoj nesreći koja se malo poslije 19 sati dogodila na sinjskom području, u mjestu Podosoje.",
+        "url": "https://n1info.hr/crna-kronika/dvije-osobe-poginule-u-nesreci-kod-sinja-vozilo-sletjelo-u-provaliju/",
+        "image_url": "https://n1info.hr/media/images/2026/7/3/1783080803_PXL_020726_154659156.width-1200.jpg",
+        "source": "N1 Info - Надзвичайні події",
+        "timestamp": 1786559155
+    },
+    {
+        "title": "Zadarska bolnica dijeli 43 stipendije za medicinare, primalje, laborante i kuhare, u posljednje dvije godine tek četiri prijave",
+        "description": "Opća bolnica Zadar i ove je godine otvorila vrata budućim medicinskim sestrama, primaljama, laboratorijskim tehničarima i kuharima. Za školsku i akademsku godinu 2026./2027. raspisan je natječaj za ukupno 43 stipendije, no pitanje je hoće li ovoga puta interes biti veći. Na prvi natječaj za stipendije zadarske bolnice javile su se samo tri učenice petog razreda [&#8230;]",
+        "url": "https://www.057info.hr/vijesti/2026-08-12/zadarska-bolnica-dijeli-43-stipendije-za-medicinare-primalje-laborante-i-kuhare-u-posljednje-dvije-godine-tek-cetiri-prijave/",
+        "image_url": null,
+        "source": "057info",
+        "timestamp": 1786557255
+    },
+    {
+        "title": "Požar u Dubrovniku izazvao ilegalni vatromet, građani tvrde da se triput pucalo: \"Ne znam što im je bilo...\"",
+        "description": "Dubrovačka policija potvrdila je da je požar koji je sinoć izbio na Gorici sv. Vlaha izazvan nezakonitim izvođenjem vatrometa, a izgorjelo je oko šest",
+        "url": "https://n1info.hr/crna-kronika/poar-u-dubrovniku-izazvao-ilegalni-vatromet-graani-tvrde-da-se-triput-pucalo-ne-znam-to-im-je-bilo/",
+        "image_url": "https://n1info.hr/media/images/2026/8/12/1786556701_PXL_230322_92646587.width-1200.jpg",
+        "source": "N1 Info - Надзвичайні події",
+        "timestamp": 1786556752
+    },
+    {
+        "title": "PEPEO ZASUO AERODROME Erupcija Etne poremetila zračni promet, otkazano 700 letova. Putnici očajni",
+        "description": "Erupcija Etne već sedmi dan stvara velike probleme u zračnom prometu na Siciliji. U zračnoj luci Catania od početka poremećaja otkazano je oko 700 letova, piše Dnevnik.hr. Letovi kasne danima Letovi danima kasne, otkazuju se ili preusmjeravaju prema drugim zračnim lukama na Siciliji, zbog čega su tisuće putnika suočene s dugim čekanjima i promjenama planova [&#8230;]",
+        "url": "https://www.nacional.hr/pepeo-zasuo-aerodrome-erupcija-etne-poremetila-zracni-promet-otkazano-700-letova-putnici-ocajni/",
+        "image_url": "https://www.nacional.hr/wp-content/uploads/2026/08/None_300726_155998781-1024x683.jpg",
+        "source": "Nacional",
+        "timestamp": 1786556498
+    },
+    {
+        "title": "OD DANAS I SLUŽBENO Dalić preuzeo nogometnu reprezentaciju Emirata. Ovo su mu prvi zadaci",
+        "description": "Bivši hrvatski izbornik Zlatko Dalić u srijedu je i službeno imenovan izbornikom Ujedinjenih Arapskih Emirata, objavio je nogometni savez te zemlje (UAEFA). Pedesetdevetogodišnjak je napustio mjesto izbornika Hrvatske u srpnju nakon što je Hrvatska na Svjetskom prvenstvu završila put u osmini finala porazom od Portugala 2-1. &#8220;Dobrodošao, Zlatko Daliću. Nogometni savez UAE s ponosom objavljuje [&#8230;]",
+        "url": "https://www.nacional.hr/od-danas-i-sluzbeno-dalic-preuzeo-nogometnu-reprezentaciju-emirata-ovo-su-mu-prvi-zadaci/",
+        "image_url": "https://www.nacional.hr/wp-content/uploads/2026/08/PXL_181124_124319526-1024x683.jpg",
+        "source": "Nacional",
+        "timestamp": 1786553564
+    },
+    {
+        "title": "Usred paklenih vrućina Ukrajinac na plaži u Preku spaljivao grane",
+        "description": "Jučer, 11. kolovoza oko 16.10 sati u Preku na otvorenom prostoru, na plaži 40-godišnji državljanin Ukrajine spaljivao je granje, a da prethodno nije poduzeo zakonski propisane mjere zaštite od nastanka požara. Zbog utvrđenog prekršaja muškarac je sankcioniran sukladno odredbama Zakona o zaštiti od požara. Podsjećamo da je Sukladno županijskoj Odluci o uvjetima loženja vatre na [&#8230;]",
+        "url": "https://www.057info.hr/vijesti/2026-08-12/usred-paklenih-vrucina-ukrajinac-na-plazi-u-preku-spaljivao-grane/",
+        "image_url": null,
+        "source": "057info",
+        "timestamp": 1786553346
+    },
+    {
+        "title": "SJEVERNOAFRIČKE ENKLAVE Maroko traži da mu Španjolska ‘vrati’ Ceutu i Melillu. Evo što kažu u Madridu",
+        "description": "Status sjevernoafričkih enklava Ceute i Melille kao španjolskih teritorija nije predmet rasprave, poručili su u srijedu španjolski dužnosnici, nakon što je marokanski ministar pravosuđa istaknuo kako Maroko polaže pravo na suverenitet nad tim gradovima. Ministar Abdellatif Ouahbi je u izjavi za televiziju Asharq javno pokrenuo to sporno pitanje, prvi put od granične krize u Ceuti [&#8230;]",
+        "url": "https://www.nacional.hr/sjevernoafricke-enklave-maroko-trazi-da-mu-spanjolska-vrati-ceutu-i-melillu-evo-sto-kazu-u-madridu/",
+        "image_url": "https://www.nacional.hr/wp-content/uploads/2026/08/None_100826_156494931-1024x683.jpg",
+        "source": "Nacional",
+        "timestamp": 1786552762
+    },
+    {
+        "title": "Traže se svjedoci nesreće između Polače i Zapužana nakon koje je počinitelj pobjegao s mjesta događaja",
+        "description": "U subotu, 8. kolovoza oko 20.30 sati na državnoj cesti DC-503 na dionici između Polače i Zapužana dogodila se prometna nesreća u kojoj je ozlijeđen muškarac koji se u trenutku prometne nesreće nalazio na kolniku pored svog vozila. U prometnoj nesreći 37-godišnji muškarac je zadobio tešku tjelesnu ozljedu, dok se zasad nepoznati vozač, nakon prometne [&#8230;]",
+        "url": "https://www.057info.hr/flash_2/2026-08-12/traze-se-svjedoci-nesrece-izmedu-polace-i-zapuzana-nakon-koje-je-pocinitelj-pobjegao-s-mjesta-dogadaja/",
+        "image_url": null,
+        "source": "057info",
+        "timestamp": 1786549744
+    },
+    {
+        "title": "Policija privela i prijavila 45-godišnjaka koji je u Sukošanu nakon svađe autom automobilom krenuo na Nijemca",
+        "description": "Iz Policijske postaje Zadar s ispostavom Nin proveli su kriminalističko istraživanje nad 45-godišnjim hrvatskim državljaninom zbog sumnje da je svojim protupravnim ponašanjem ostvario obilježja kaznenog djela Dovođenje u opasnost života i imovine općeopasnom radnjom ili sredstvom. Sumnjiči ga se da je 24. srpnja 2026. godine oko 19 sati u Sukošanu zbog prethodnih nesuglasica u prometu i [&#8230;]",
+        "url": "https://www.057info.hr/vijesti/2026-08-12/policija-privela-i-prijavila-45-godisnjaka-koji-je-u-sukosanu-nakon-svade-autom-automobilom-krenuo-na-nijemca/",
+        "image_url": null,
+        "source": "057info",
+        "timestamp": 1786549473
+    },
+    {
+        "title": "Druga misa za Filipince na zadarskom području večeras u crkvi sv. Šime",
+        "description": "Danas, u srijedu, 12. kolovoza, misno slavlje za Filipince koji žive na zadarskom području počinje u 19,30 sati u crkvi sv. Šime u Zadru. To je drugi put da se misa slavi u Šimunovom svetištu u Zadru, nakon što je bila u srpnju, organizirano za filipinske vjernike, na njihovom materinjem filipinskom jeziku, i da misu [&#8230;]",
+        "url": "https://www.057info.hr/vijesti/2026-08-12/druga-misa-za-filipince-na-zadarskom-podrucju-veceras-u-crkvi-sv-sime/",
+        "image_url": null,
+        "source": "057info",
+        "timestamp": 1786547706
+    },
+    {
+        "title": "Požar kod Lučkog proširio se na obje strane: Gusti dim nadvio se nad autocestom",
+        "description": "Požar suhe trave i niskog raslinja izbio je u srijedu poslijepodne u neposrednoj blizini autoceste kod Lučkog, na području Kanalske ulice. Vatra se pr",
+        "url": "https://n1info.hr/crna-kronika/pozar-kod-luckog-prosirio-se-na-obje-strane-gusti-dim-nadvio-se-nad-autocestom/",
+        "image_url": "https://n1info.hr/media/images/2026/8/12/1786547793_63371385-pozar-kod-luckog.width-1200.jpg",
+        "source": "N1 Info - Надзвичайні події",
+        "timestamp": 1786547432
+    },
+    {
+        "title": "Iz Prizme pozivaju mlade od 14 do 30 godina da prikažu kako svojim očima vide Europsku uniju",
+        "description": "U okviru međunarodnog projekta „Democracy for Youth: Empowering Active Citizenship“, otvoren je poziv za mlade pod nazivom „Europske vrijednosti očima mladih“. Udruga Prizma poziva mlade u dobi od 14 do 30 godina s boravištem u Europskoj uniji da kroz vizualnu umjetnost i svoj stvaralački rad izraze vlastitu viziju temeljnih vrijednosti Unije, poput ljudskog dostojanstva, slobode, [&#8230;]",
+        "url": "https://www.057info.hr/vijesti/2026-08-12/iz-prizme-pozivaju-mlade-od-14-do-30-godina-da-prikazu-kako-svojim-ocima-vide-europsku-uniju/",
+        "image_url": null,
+        "source": "057info",
+        "timestamp": 1786547381
+    },
+    {
+        "title": "Udruga životinja kazneno prijavila nemarnog posjednika krave i teleta iz Pakoštana",
+        "description": "Povodom mučnog slučaja nedaleko od Biograda, gdje su krava i tele tjednima bili ostavljeni bez ikakve skrbi i pitke vode, zbog čega je krava umrla u teškim mukama, udruga Prijatelji životinja podnijela je Općinskom državnom odvjetništvu u Zadru kaznenu prijavu protiv posjednika krave i teleta zbog kaznenih djela mučenja i napuštanja životinja. Kako navode u [&#8230;]",
+        "url": "https://www.057info.hr/flash_2/2026-08-12/udruga-zivotinja-kazneno-prijavila-nemarnog-posjednika-krave-i-teleta-iz-pakostana/",
+        "image_url": null,
+        "source": "057info",
+        "timestamp": 1786546785
+    },
+    {
+        "title": "Županija odbila dozvolu IzoExco za gospodarenje otpadom –  izdana je građevinska dozvola za skladištenje sirovina za građevinski kamen, a ne za odlaganje otpada",
+        "description": "Zadarska županija odbila je zahtjev tvrtke IzoExco za izdavanje dozvole za gospodarenje otpadom, čime je jasno potvrđeno da navedena tvrtka od Županije nije dobila dozvolu za obavljanje djelatnosti gospodarenja otpadom na predmetnoj lokaciji, oglasili su se iz Ureda župana nakon što se iz uskočkog slučaja Gospić, medijski počeo spominjati i Benkovac iz istog posla. &#8220;Važno [&#8230;]",
+        "url": "https://www.057info.hr/vijesti/2026-08-12/zupanija-odbila-dozvolu-izoexco-za-gospodarenje-otpadom-izdana-je-gradevinska-dozvola-za-skladistenje-sirovina-za-gradevinski-kamen-a-ne-za-odlaganje-otpada/",
+        "image_url": null,
+        "source": "057info",
+        "timestamp": 1786545678
+    },
+    {
+        "title": "Policija uhitila Hrvata zbog serije pljački bankomata u Sloveniji. Imao je eksploziv",
+        "description": "Slovenska policija uhitila je 51-godišnjeg hrvatskog državljanina kojeg sumnjiči za pet kaznenih djela velikih krađa, nakon višemjesečnih napada na ba",
+        "url": "https://n1info.hr/svijet/policija-uhitila-hrvata-zbog-serije-pljacki-bankomata-u-sloveniji-imao-je-eksploziv/",
+        "image_url": "https://n1info.hr/media/images/2026/8/12/1786544763_PXL_BOB_300125_127492466.width-1200.jpg",
+        "source": "N1 Info - Надзвичайні події",
+        "timestamp": 1786544929
+    },
+    {
+        "title": "Radeta aktualizirao s Gospićem snimku šlepera stranih tvrtki koji prekrcavaju tone otpad koji je završio na zatvorenom odlagalištu u Diklu",
+        "description": "Više od 150.000 tona otpada završilo je na Diklu od 2022. godine. Nakon svega što je otkriveno u Gospiću, Zadar mora dobiti odgovor što se zapravo godinama dovozilo na njegovo odlagalište, navodi se u objavi gradskog vijećnika Daniela Radete koji se sa skupinom oporbenih vijećnika bavi tom temom. U Gospiću se otpad vodio kao&#160;19 12 [&#8230;]",
+        "url": "https://www.057info.hr/flash_2/2026-08-12/radeta-aktualizirao-s-gospicem-snimku-slepera-stranih-tvrtki-koji-prekrcavaju-tone-otpad-koji-je-zavrsio-na-zatvorenom-odlagalistu-u-diklu/",
+        "image_url": null,
+        "source": "057info",
+        "timestamp": 1786539308
+    },
+    {
+        "title": "Napao policajku i prijetio joj smrću, kazneno je prijavljen",
+        "description": "Zagrebačka policija objavila je kako je podnijela kaznenu prijavu protiv 67-godišnjaka zbog prisile prema službenoj osobi, nakon što je u policijskoj",
+        "url": "https://n1info.hr/crna-kronika/napao-policajku-i-prijetio-joj-smrcu-kazneno-je-prijavljen/",
+        "image_url": "https://n1info.hr/media/images/2026/8/12/1786523397_PXL_061015_11825914.width-1200.jpg",
+        "source": "N1 Info - Надзвичайні події",
+        "timestamp": 1786523411
+    },
+    {
+        "title": "Dječak ozlijeđen nakon pada s električnog romobila, policija podnosi prijavu protiv roditelja",
+        "description": "Dvanaestogodišnji dječak ozlijeđen je u utorak navečer u Varaždinu nakon što je izgubio nadzor nad električnim romobilom snage gotovo 1000 vati, koji",
+        "url": "https://n1info.hr/crna-kronika/djecak-ozlijedjen-nakon-pada-s-elektricnog-romobila-policija-podnosi-prijavu-protiv-roditelja/",
+        "image_url": "https://n1info.hr/media/images/2026/8/12/1786522908_yiting-he-lFDxyNeCsbw-unsplash.width-1200.jpg",
+        "source": "N1 Info - Надзвичайні події",
+        "timestamp": 1786523013
+    },
+    {
         "title": "Španjolska ministrica: Ceuta i Melilla nisu samo španjolske, one su superšpanjolske",
         "description": "ŠPANJOLSKA odlučno odbacuje marokanske pretenzije na Ceutu i Melillu.",
         "url": "https://www.index.hr/vijesti/clanak/spanjolska-ministrica-ceuta-i-melilla-nisu-samo-spanjolske-one-su-superspanjolske/2823143.aspx",
