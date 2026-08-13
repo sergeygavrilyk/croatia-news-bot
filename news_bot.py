@@ -5,7 +5,6 @@ import time
 import calendar
 import logging
 import json
-import math
 from urllib.parse import urlparse
 from dotenv import load_dotenv
 from google import genai
@@ -104,54 +103,45 @@ def is_quality_article(title, description):
     if letters and (sum(1 for c in letters if c.isupper()) / len(letters)) > 0.4: return False
     return True
 
-def cosine_similarity(vec1, vec2):
-    dot_product = sum(a * b for a, b in zip(vec1, vec2))
-    magnitude1 = math.sqrt(sum(a * a for a in vec1))
-    magnitude2 = math.sqrt(sum(b * b for b in vec2))
-    if magnitude1 == 0 or magnitude2 == 0: return 0.0
-    return dot_product / (magnitude1 * magnitude2)
-
-def filter_by_embeddings(client, articles, threshold=0.85):
-    if not articles: return []
-    texts = [a.get("title", "") for a in articles]
-    try:
-        response = client.models.embed_content(model="text-embedding-004", contents=texts)
-        embeddings = [emb.values for emb in response.embeddings]
-    except Exception as e:
-        logging.error(f"Помилка ембеддінгів: {e}")
-        return articles 
-    
-    unique_articles = []
-    for i, article in enumerate(articles):
-        is_duplicate = False
-        for u_article in unique_articles:
-            if cosine_similarity(embeddings[i], u_article["embedding"]) >= threshold:
-                is_duplicate = True
-                break
-        if not is_duplicate:
-            article_copy = article.copy()
-            article_copy["embedding"] = embeddings[i]
-            unique_articles.append(article_copy)
-            
-    for u in unique_articles: del u["embedding"]
-    return unique_articles
-
-def filter_by_gemini(client, articles):
-    if not articles or len(articles) <= 1: return articles
-    prompt_data = [{"id": i, "title": a["title"]} for i, a in enumerate(articles)]
-    prompt = f"Ось список новин JSON. Знайди дублікати (одна подія). Поверни СУВОРО масив JSON з ID новин, які треба ЗАЛИШИТИ.\nНовини:\n{json.dumps(prompt_data, ensure_ascii=False, indent=2)}\nПриклад: [0, 2, 5]"
-    try:
-        response = client.models.generate_content(model='gemini-3.5-flash-lite', contents=prompt, config={"response_mime_type": "application/json"})
-        keep_ids = json.loads(response.text)
-        return [articles[i] for i in keep_ids if i < len(articles)]
-    except Exception as e:
-        logging.error(f"Помилка Gemini дедуплікації: {e}")
+# ================= СИСТЕМА ДЕДУПЛІКАЦІЇ (ТІЛЬКИ GEMINI) =================
+def deduplicate_news(client, articles):
+    """Мовна модель вичищає смислові дублікати серед відібраних новин"""
+    if not articles or len(articles) <= 1: 
         return articles
-
-def deduplicate_news(client, raw_articles):
-    if not raw_articles: return []
-    stage1 = filter_by_embeddings(client, raw_articles, threshold=0.85)
-    return filter_by_gemini(client, stage1)
+        
+    logging.info("Аналіз на дублікати через Gemini...")
+    prompt_data = [{"id": i, "title": a["title"]} for i, a in enumerate(articles)]
+    
+    prompt = f"""
+    Ось список новин у форматі JSON (ID, Заголовок). 
+    Твоє завдання: знайти новини, які висвітлюють одну й ту саму подію (наприклад, пожежа в одному місті, або однакова політична заява).
+    З кожної групи дублікатів залиш лише ОДНУ новину з найінформативнішим заголовком.
+    
+    Поверни результат СУВОРО як масив JSON з ID новин, які треба ЗАЛИШИТИ. Більше ніякого тексту.
+    
+    Новини:
+    {json.dumps(prompt_data, ensure_ascii=False, indent=2)}
+    
+    Приклад ідеальної відповіді:
+    [0, 2, 4]
+    """
+    
+    try:
+        response = client.models.generate_content(
+            model='gemini-3.5-flash-lite', 
+            contents=prompt,
+            config={"response_mime_type": "application/json"}
+        )
+        
+        keep_ids = json.loads(response.text)
+        filtered_articles = [articles[i] for i in keep_ids if i < len(articles)]
+        removed_count = len(articles) - len(filtered_articles)
+        if removed_count > 0:
+            logging.info(f"🗑️ [Gemini] Видалено дублікатів: {removed_count}")
+        return filtered_articles
+    except Exception as e:
+        logging.error(f"Помилка дедуплікації: {e}")
+        return articles
 
 def prioritize_ukraine_news(backlog_items):
     """Шукає новини про Україну та ставить їх у пріоритет (на початок списку)"""
@@ -208,10 +198,10 @@ def process_backlog():
     backlog = load_backlog()
     if not backlog: return
 
-    # 1. Спочатку сортуємо всі новини за часом (найсвіжіші зверху)
+    # 1. Сортуємо всі новини за часом (найсвіжіші зверху)
     backlog.sort(key=lambda x: x.get('timestamp', 0), reverse=True)
     
-    # 2. Підіймаємо новини про Україну на перше місце (всередині вони теж будуть відсортовані за часом)
+    # 2. Підіймаємо новини про Україну на перше місце
     backlog = prioritize_ukraine_news(backlog)
 
     # 3. Розподіл по категоріям (квоти: 2 + 1 + 1 + 1 = 5)
@@ -233,19 +223,15 @@ def process_backlog():
         categorized_news[cat] = categorized_news[cat][len(selected):]
         remaining_slots += (limit - len(selected))
 
-    # Якщо якихось категорій не вистачило, добираємо з інших (пріоритетні та найсвіжіші)
+    # Добираємо залишок
     if remaining_slots > 0:
         leftovers = []
-        for cat in categorized_news.values():
-            leftovers.extend(cat)
-        # Знову сортуємо залишки: спочатку Україна, потім свіжість
+        for cat in categorized_news.values(): leftovers.extend(cat)
         leftovers = prioritize_ukraine_news(sorted(leftovers, key=lambda x: x.get('timestamp', 0), reverse=True))
         batch.extend(leftovers[:remaining_slots])
 
-    # Фінальне сортування батчу, щоб новини про Україну 100% публікувалися першими
+    # Фінальне сортування і обрізка до 5
     batch = prioritize_ukraine_news(batch)[:BATCH_SIZE]
-    
-    # Дедуплікація
     batch = deduplicate_news(client, batch)
 
     if not batch: return
@@ -297,7 +283,7 @@ def process_backlog():
             successful_urls.append(item['url'])
             time.sleep(10)
 
-    # 4. ЧИСТКА БЕКЛОГУ (зберігаємо лише топ-30 найсвіжіших невикористаних новин)
+    # 4. ЧИСТКА БЕКЛОГУ (зберігаємо лише топ-30 найсвіжіших)
     remaining_backlog = [item for item in backlog if item['url'] not in successful_urls]
     remaining_backlog.sort(key=lambda x: x.get('timestamp', 0), reverse=True)
     save_backlog(remaining_backlog[:30])
