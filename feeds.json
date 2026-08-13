@@ -11,6 +11,5 @@
   {"name": "Zadarski List", "url": "https://www.novilist.hr/feed/?post_type=zadarski-list", "category": "Регіональні"},
   {"name": "057info", "url": "https://www.057info.hr/feed/", "category": "Регіональні"},
   {"name": "Slobodna Dalmacija", "url": "https://slobodnadalmacija.hr/feed", "category": "Регіональні"},
-  {"name": "Večernji List - Кримінал", "url": "https://www.vecernji.hr/rss/vijesti-crna-kronika", "category": "Надзвичайні події"},
- 
+  {"name": "Večernji List - Кримінал", "url": "https://www.vecernji.hr/rss/vijesti-crna-kronika", "category": "Надзвичайні події"}
 ]
