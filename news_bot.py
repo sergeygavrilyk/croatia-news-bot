@@ -5,6 +5,7 @@ import time
 import calendar
 import logging
 import json
+import re  # <--- Додайте цей рядок
 from urllib.parse import urlparse
 from dotenv import load_dotenv
 from google import genai
@@ -119,18 +120,21 @@ def get_source_name(url):
         return domain.capitalize()
     except: return "Джерело"
 
-def is_quality_article(title, description):
-    # Додано спортивні стоп-слова
+def is_quality_article(title, description, url):
     unwanted_keywords = [
         'oglasi', 'sponzorirani', 'promo', 'redikul', 'horoskop', 'plaćeni oglas', 
         'nagradna igra', 'native', 'pr vijesti', 'foto', 'video',
         'sport', 'nogomet', 'košarka', 'tenis', 'utakmica', 'hnl', 'liga prvaka'
     ]
-    title_lower = title.lower()
-    desc_lower = description.lower() if description else ""
+    # Об'єднуємо заголовок, опис та URL в один рядок для перевірки
+    text_to_check = f"{title} {description} {url}".lower()
+    
     for word in unwanted_keywords:
-        if f" {word} " in f" {title_lower} " or f" {word} " in f" {desc_lower} ": return False
-    if len(title.strip()) < 15 or len(desc_lower.strip()) < 20: return False
+        # \b шукає слово цілком, ігноруючи коми, крапки та слеші
+        if re.search(rf'\b{word}\b', text_to_check):
+            return False
+            
+    if len(title.strip()) < 15 or len(text_to_check.strip()) < 20: return False
     if "!!!" in title or "???" in title: return False
     letters = [c for c in title if c.isalpha()]
     if letters and (sum(1 for c in letters if c.isupper()) / len(letters)) > 0.4: return False
@@ -217,7 +221,7 @@ def scrape_feeds():
                 if current_time - article_time > MAX_AGE_SECONDS: continue
             
             description = entry.get('summary', title)
-            if not is_quality_article(title, description): continue
+            if not is_quality_article(title, description, url): continue
 
             backlog.append({
                 'title': title, 'description': description, 'url': url,
