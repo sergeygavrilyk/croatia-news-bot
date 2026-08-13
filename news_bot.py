@@ -141,26 +141,29 @@ def is_quality_article(title, description, url):
     return True
 
 # ================= СИСТЕМА ДЕДУПЛІКАЦІЇ (ТІЛЬКИ GEMINI) =================
-def deduplicate_news(client, articles):
-    """Мовна модель вичищає смислові дублікати серед відібраних новин"""
-    if not articles or len(articles) <= 1: 
+def deduplicate_news(client, articles, history_titles=None):
+    """Мовна модель вичищає смислові дублікати та звіряє з історією публікацій"""
+    if not articles: 
         return articles
         
-    logging.info("Аналіз на дублікати через Gemini...")
+    logging.info("Аналіз на дублікати (включно з історією) через Gemini...")
+    
+    # Беремо 15 останніх заголовків, які ми вже публікували
+    recent_history = history_titles[-15:] if history_titles else []
     prompt_data = [{"id": i, "title": a["title"]} for i, a in enumerate(articles)]
     
     prompt = f"""
-    Ось список новин у форматі JSON (ID, Заголовок). 
-    Твоє завдання: знайти новини, які висвітлюють одну й ту саму подію (наприклад, пожежа в одному місті, або однакова політична заява).
-    З кожної групи дублікатів залиш лише ОДНУ новину з найінформативнішим заголовком.
-    
-    Поверни результат СУВОРО як масив JSON з ID новин, які треба ЗАЛИШИТИ. Більше ніякого тексту.
-    
-    Новини:
+    Ось список новин (ID, Заголовок), які претендують на публікацію:
     {json.dumps(prompt_data, ensure_ascii=False, indent=2)}
     
-    Приклад ідеальної відповіді:
-    [0, 2]
+    Ось ІСТОРІЯ - список із {len(recent_history)} останніх опублікованих нами новин:
+    {json.dumps(recent_history, ensure_ascii=False, indent=2)}
+    
+    Твоє завдання:
+    1. ЗНАЙТИ ВНУТРІШНІ ДУБЛІКАТИ: Якщо кілька новин-претендентів описують одну подію (наприклад, скандал із відходами, заяви різних політиків про одне й те саме), залиши серед них лише ОДНУ.
+    2. ПОРІВНЯТИ З ІСТОРІЄЮ: Якщо новина-претендент стосується події, про яку ми ВЖЕ писали в Історії, її треба ВІДХИЛИТИ повністю.
+    
+    Поверни результат СУВОРО як масив JSON з ID новин, які треба ЗАЛИШИТИ. Більше ніякого тексту.
     """
     
     try:
@@ -174,7 +177,7 @@ def deduplicate_news(client, articles):
         filtered_articles = [articles[i] for i in keep_ids if i < len(articles)]
         removed_count = len(articles) - len(filtered_articles)
         if removed_count > 0:
-            logging.info(f"🗑️ [Gemini] Видалено дублікатів: {removed_count}")
+            logging.info(f"🗑️ [Gemini] Відсіяно як дублікати (або вже було): {removed_count}")
         return filtered_articles
     except Exception as e:
         logging.error(f"Помилка дедуплікації: {e}")
@@ -240,23 +243,26 @@ def process_backlog(stats=None):
     # 2. Підіймаємо новини про Україну на перше місце
     backlog = prioritize_ukraine_news(backlog)
 
-    # 3. Вибираємо по одній новині з кожного джерела (максимум BATCH_SIZE)
+    # 3. Відбираємо топ-15 найсвіжіших для глибокого аналізу
+    candidate_batch = backlog[:15]
+    history_titles = load_history(TITLES_FILE) # Завантажуємо історію
+
+    # 4. Перевірка на дублікати (включно з історією минулих публікацій)
+    len_before = len(candidate_batch)
+    candidate_batch = deduplicate_news(client, candidate_batch, history_titles)
+    if stats is not None:
+        stats["duplicates_removed"] += (len_before - len(candidate_batch))
+
+    # 5. З відфільтрованих беремо максимум BATCH_SIZE з унікальних джерел
     batch = []
     used_sources = set()
-
-    for item in backlog:
+    for item in candidate_batch:
         source = item.get('source')
         if source not in used_sources:
             batch.append(item)
             used_sources.add(source)
         if len(batch) >= BATCH_SIZE:
             break
-
-    # 4. Перевірка на дублікати (якщо залишились після фільтру джерел)
-    len_before = len(batch)
-    batch = deduplicate_news(client, batch)
-    if stats is not None:
-        stats["duplicates_removed"] += (len_before - len(batch))
 
     if not batch: return
 
@@ -301,7 +307,7 @@ def process_backlog(stats=None):
     if not generated_texts: return
 
     history_urls = load_history(HISTORY_FILE)
-    history_titles = load_history(TITLES_FILE)
+    history_titles = load_history(TITLES_FILE) # Оновлюємо історію перед збереженням
     successful_urls = []
 
     for idx, item in enumerate(batch):
