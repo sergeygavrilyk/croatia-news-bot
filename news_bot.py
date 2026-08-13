@@ -5,6 +5,7 @@ import time
 import calendar
 import logging
 import json
+import math
 from urllib.parse import urlparse
 from dotenv import load_dotenv
 from google import genai
@@ -126,6 +127,110 @@ def is_quality_article(title, description):
             
     return True
 
+# ================= СИСТЕМА ДЕДУПЛІКАЦІЇ (ВЕКТОРИ + GEMINI) =================
+def cosine_similarity(vec1, vec2):
+    """Обчислює математичну схожість між двома векторами (від 0.0 до 1.0)"""
+    dot_product = sum(a * b for a, b in zip(vec1, vec2))
+    magnitude1 = math.sqrt(sum(a * a for a in vec1))
+    magnitude2 = math.sqrt(sum(b * b for b in vec2))
+    if magnitude1 == 0 or magnitude2 == 0:
+        return 0.0
+    return dot_product / (magnitude1 * magnitude2)
+
+def filter_by_embeddings(client, articles, threshold=0.85):
+    """Етап 1: Швидко відсіює точні семантичні дублікати за допомогою Embeddings API"""
+    if not articles:
+        return []
+        
+    logging.info("Триває Етап 1 (Дедуплікація): Векторний аналіз схожості...")
+    texts = [article.get("title", "") for article in articles]
+    
+    try:
+        response = client.models.embed_content(
+            model="text-embedding-004",
+            contents=texts
+        )
+        embeddings = [emb.values for emb in response.embeddings]
+    except Exception as e:
+        logging.error(f"Помилка генерації ембеддінгів: {e}")
+        return articles # У разі збою пропускаємо цей етап без зупинки бота
+    
+    unique_articles = []
+    for i, article in enumerate(articles):
+        is_duplicate = False
+        for unique_article in unique_articles:
+            sim = cosine_similarity(embeddings[i], unique_article["embedding"])
+            if sim >= threshold:
+                is_duplicate = True
+                logging.info(f"🗑️ [Вектор] Видалено дублікат: {article['title']} (Схожість: {sim:.2f})")
+                break
+        
+        if not is_duplicate:
+            article_copy = article.copy()
+            article_copy["embedding"] = embeddings[i]
+            unique_articles.append(article_copy)
+            
+    for u in unique_articles:
+        del u["embedding"]
+        
+    return unique_articles
+
+def filter_by_gemini(client, articles):
+    """Етап 2: Мовна модель фінально вичищає складні смислові дублікати"""
+    if not articles or len(articles) <= 1:
+        return articles
+        
+    logging.info("Триває Етап 2 (Дедуплікація): Семантичний аналіз через Gemini...")
+    
+    prompt_data = [{"id": i, "title": a["title"]} for i, a in enumerate(articles)]
+    
+    prompt = f"""
+    Ось список новин у форматі JSON (ID, Заголовок). 
+    Твоє завдання: знайти новини, які висвітлюють одну й ту саму подію (наприклад, пожежа в одному місті, або однакова політична заява).
+    З кожної групи дублікатів залиш лише ОДНУ новину з найінформативнішим заголовком.
+    
+    Поверни результат СУВОРО як масив JSON з ID новин, які треба ЗАЛИШИТИ. Більше ніякого тексту.
+    
+    Новини:
+    {json.dumps(prompt_data, ensure_ascii=False, indent=2)}
+    
+    Приклад ідеальної відповіді:
+    [0, 2, 5, 8]
+    """
+    
+    try:
+        response = client.models.generate_content(
+            model='gemini-3.5-flash-lite', 
+            contents=prompt,
+            config={"response_mime_type": "application/json"}
+        )
+        
+        keep_ids = json.loads(response.text)
+        filtered_articles = [articles[i] for i in keep_ids if i < len(articles)]
+        
+        removed_count = len(articles) - len(filtered_articles)
+        if removed_count > 0:
+            logging.info(f"🗑️ [Gemini] Видалено складних дублікатів: {removed_count}")
+            
+        return filtered_articles
+        
+    except Exception as e:
+        logging.error(f"Помилка на етапі Gemini дедуплікації: {e}")
+        return articles
+
+def deduplicate_news(client, raw_articles):
+    """Головний конвеєр об'єднаної дедуплікації"""
+    if not raw_articles:
+        return []
+    
+    logging.info(f"\n--- ПОЧАТОК ДЕДУПЛІКАЦІЇ ({len(raw_articles)} новин у вибірці) ---")
+    stage1_articles = filter_by_embeddings(client, raw_articles, threshold=0.85)
+    final_articles = filter_by_gemini(client, stage1_articles)
+    logging.info(f"--- ДЕДУПЛІКАЦІЮ ЗАВЕРШЕНО: Залишилось унікальних новин: {len(final_articles)} ---\n")
+    
+    return final_articles
+
+
 # ================= ФАЗА 1: ПАРСИНГ ТА ФІЛЬТРАЦІЯ =================
 def scrape_feeds():
     logging.info("--- Етап 1: Парсинг стрічок та фільтрація ---")
@@ -133,7 +238,6 @@ def scrape_feeds():
     history_titles = load_history(TITLES_FILE)
     backlog = load_backlog()
     
-    # Видаляємо з беклогу новини, які висять там довше 24 годин
     current_time = time.time()
     backlog = [item for item in backlog if current_time - item.get('timestamp', current_time) <= MAX_AGE_SECONDS]
     
@@ -171,7 +275,6 @@ def scrape_feeds():
 
             image_url = extract_image_url(entry)
             
-            # Зберігаємо новину разом із часом публікації (timestamp) для сортування
             backlog.append({
                 'title': title,
                 'description': description,
@@ -194,10 +297,8 @@ def process_backlog():
         logging.info("Беклог порожній. Немає що публікувати.")
         return
 
-    # 1. Сортуємо всі новини за свіжістю (новіші - перші)
     backlog.sort(key=lambda x: x.get('timestamp', 0), reverse=True)
 
-    # 2. Налаштовуємо ідеальні квоти для 30 новин
     QUOTAS = {
         'Національні': 10,
         'Регіональні': 10,
@@ -207,7 +308,6 @@ def process_backlog():
         'Концерти': 3
     }
     
-    # 3. Розкладаємо новини по категоріях
     categorized_news = {cat: [] for cat in QUOTAS.keys()}
     categorized_news['Без категорії'] = [] 
 
@@ -218,7 +318,6 @@ def process_backlog():
         else:
             categorized_news['Без категорії'].append(item)
 
-    # 4. Формуємо фінальний батч за квотами
     batch = []
     remaining_slots = 0 
 
@@ -229,9 +328,7 @@ def process_backlog():
         categorized_news[cat] = categorized_news[cat][len(selected):]
         remaining_slots += (limit - len(selected))
 
-    # 5. Якщо 30 новин не набралося, добиваємо залишок
     if remaining_slots > 0:
-        # Резервний список джерел (звідки брати, якщо є вільні місця)
         fallback_categories = ['Національні', 'Регіональні', 'Економіка', 'Без категорії']
         for cat in fallback_categories:
             if remaining_slots <= 0:
@@ -243,21 +340,22 @@ def process_backlog():
                 categorized_news[cat] = categorized_news[cat][len(fillers):]
                 remaining_slots -= len(fillers)
 
-    # Фінальне сортування батчу за часом, щоб у Telegram вони йшли логічно
     batch.sort(key=lambda x: x.get('timestamp', 0), reverse=True)
-    
-    # Запобіжник, щоб точно не перевищити BATCH_SIZE (30)
     batch = batch[:BATCH_SIZE]
 
     logging.info(f"--- Етап 2: Відібрано {len(batch)} новин за квотами ---")
 
-    # Далі йде стандартний промпт для Gemini...
+    # --- ЗАСТОСОВУЄМО ДВОСТУПЕНЕВИЙ ФІЛЬТР ДЕДУПЛІКАЦІЇ ---
+    batch = deduplicate_news(client, batch)
+
+    if not batch:
+        logging.info("Після дедуплікації не залишилося новин для публікації.")
+        return
+
     prompt = f"Ось список із {len(batch)} новин. Твоє завдання — перекласти кожну українською мовою та адаптувати для Telegram-посту.\n\n"
     
     for idx, item in enumerate(batch):
-        # Витягуємо категорію (якщо її немає, ставимо "Новини")
         cat = item.get('category', 'Новини')
-        # Видаляємо пробіли для хештегу (наприклад, "Надзвичайні події" -> "НадзвичайніПодії")
         cat_hashtag = cat.replace(" ", "") 
         
         prompt += f"=== НОВИНА {idx+1} ===\nКатегорія: #{cat_hashtag}\nЗаголовок: {item['title']}\nОпис: {item['description']}\n\n"
@@ -273,7 +371,6 @@ def process_backlog():
     У тебе має вийти рівно {len(batch)} блоків тексту, розділених тегом `|||`. Не пиши жодних вступних чи завершальних слів.
     """
 
-    # ... Тут залишається ваш попередній код виклику Gemini API та відправки в Telegram (for attempt in range(3)...)
     generated_texts = []
     start_time = time.time()
 
