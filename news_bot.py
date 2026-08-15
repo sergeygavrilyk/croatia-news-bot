@@ -121,11 +121,22 @@ def get_source_name(url):
     except: return "Джерело"
 
 def is_quality_article(title, description, url):
+    # 1. Швидкий фільтр за URL (відкидаємо непотрібні рубрики)
+    unwanted_url_categories = [
+        '/svijet/', '/sport/', '/zabava/', '/kultura/', 
+        '/scena/', '/lifestyle/', '/magazin/', '/showbiz/'
+    ]
+    url_lower = url.lower()
+    if any(category in url_lower for category in unwanted_url_categories):
+        return False
+
+    # 2. Фільтр за ключовими словами в тексті та заголовку
     unwanted_keywords = [
         'oglasi', 'sponzorirani', 'promo', 'redikul', 'horoskop', 'plaćeni oglas', 
         'nagradna igra', 'native', 'pr vijesti', 'foto', 'video',
         'sport', 'nogomet', 'košarka', 'tenis', 'utakmica', 'hnl', 'liga prvaka'
     ]
+    
     # Об'єднуємо заголовок, опис та URL в один рядок для перевірки
     text_to_check = f"{title} {description} {url}".lower()
     
@@ -134,10 +145,14 @@ def is_quality_article(title, description, url):
         if re.search(rf'\b{word}\b', text_to_check):
             return False
             
+    # 3. Базові перевірки на якість тексту
     if len(title.strip()) < 15 or len(text_to_check.strip()) < 20: return False
     if "!!!" in title or "???" in title: return False
+    
+    # Захист від заголовків, написаних КАПСОМ (якщо більше 40% літер великі)
     letters = [c for c in title if c.isalpha()]
     if letters and (sum(1 for c in letters if c.isupper()) / len(letters)) > 0.4: return False
+    
     return True
 
 # ================= СИСТЕМА ДЕДУПЛІКАЦІЇ (ТІЛЬКИ GEMINI) =================
@@ -160,8 +175,9 @@ def deduplicate_news(client, articles, history_titles=None):
     {json.dumps(recent_history, ensure_ascii=False, indent=2)}
     
     Твоє завдання:
-    1. ЗНАЙТИ ВНУТРІШНІ ДУБЛІКАТИ: Якщо кілька новин-претендентів описують одну подію (наприклад, скандал із відходами, заяви різних політиків про одне й те саме), залиши серед них лише ОДНУ.
-    2. ПОРІВНЯТИ З ІСТОРІЄЮ: Якщо новина-претендент стосується події, про яку ми ВЖЕ писали в Історії, її треба ВІДХИЛИТИ повністю.
+    1. ГЕОГРАФІЧНИЙ ТА ТЕМАТИЧНИЙ ФІЛЬТР (ВАЖЛИВО!): Безжально відхиляй новини, які НЕ стосуються Хорватії, українців, біженців або безпосередньо України. Новини про світові події (наприклад, пожежі в Бельгії, розливи нафти в Ірані, вибори в США тощо), які не мають прямого впливу на життя в Хорватії, — ВІДХИЛЯТИ.
+    2. ЗНАЙТИ ВНУТРІШНІ ДУБЛІКАТИ: Якщо кілька новин-претендентів описують одну подію, залиши серед них лише ОДНУ.
+    3. ПОРІВНЯТИ З ІСТОРІЄЮ: Якщо новина-претендент стосується події, про яку ми ВЖЕ писали в Історії, її треба ВІДХИЛИТИ повністю.
     
     Поверни результат СУВОРО як масив JSON з ID новин, які треба ЗАЛИШИТИ. Більше ніякого тексту.
     """
@@ -366,8 +382,13 @@ def process_backlog(stats=None):
     save_backlog(remaining_backlog[:30])
 
 def send_to_telegram(text, url, source_name, image_url=None):
-    if image_url and len(text) > 920: text = text[:920] + "...\n<i>(Текст обрізано)</i>"
-    elif not image_url and len(text) > 3900: text = text[:3900] + "...\n<i>(Текст обрізано)</i>"
+    # Більш елегантне повідомлення про продовження читання
+    crop_msg = "...\n\n👉 <i>Повні деталі читайте за посиланням нижче</i> 👇"
+    
+    if image_url and len(text) > 920: 
+        text = text[:920] + crop_msg
+    elif not image_url and len(text) > 3900: 
+        text = text[:3900] + crop_msg
     
     full_message = f"{text}\n\n🔗 Джерело: <a href='{url}'>{source_name}</a>"
     payload = {'chat_id': TELEGRAM_CHANNEL_ID, 'parse_mode': 'HTML'}
