@@ -243,8 +243,8 @@ def process_backlog(stats=None):
     # 2. Підіймаємо новини про Україну на перше місце
     backlog = prioritize_ukraine_news(backlog)
 
-    # 3. Відбираємо топ-15 найсвіжіших для глибокого аналізу
-    candidate_batch = backlog[:15]
+    # 3. Відбираємо топ-20 найсвіжіших для глибокого аналізу (було 15)
+    candidate_batch = backlog[:20]
     history_titles = load_history(TITLES_FILE) # Завантажуємо історію
 
     # 4. Перевірка на дублікати (включно з історією минулих публікацій)
@@ -253,16 +253,32 @@ def process_backlog(stats=None):
     if stats is not None:
         stats["duplicates_removed"] += (len_before - len(candidate_batch))
 
-    # 5. З відфільтрованих беремо максимум BATCH_SIZE з унікальних джерел
+    # 5. Відбір новин: беремо до 3 новин з ОДНОГО джерела, змінюючи джерело щогодини (по колу)
+    all_feeds = get_rss_feeds()
+    all_sources = list(dict.fromkeys(f.get('name', get_source_name(f['url'])) for f in all_feeds))
+    all_sources.sort() # Стабільний алфавітний порядок джерел
+    
     batch = []
-    used_sources = set()
-    for item in candidate_batch:
-        source = item.get('source')
-        if source not in used_sources:
-            batch.append(item)
-            used_sources.add(source)
-        if len(batch) >= BATCH_SIZE:
-            break
+    if all_sources:
+        # Використовуємо поточну годину (UTC) для вибору джерела по колу
+        current_hour = time.gmtime().tm_hour
+        
+        # Шукаємо джерело по черзі. Якщо у цільового джерела немає новин, беремо наступне
+        for i in range(len(all_sources)):
+            idx = (current_hour + i) % len(all_sources)
+            target_source = all_sources[idx]
+            
+            source_news = [item for item in candidate_batch if item.get('source') == target_source]
+            if source_news:
+                batch = source_news[:BATCH_SIZE]
+                logging.info(f"🔄 Обрано джерело по колу ({target_source}): взято {len(batch)} новин")
+                break
+                
+    # Резервний механізм (на випадок помилок з фідами)
+    if not batch and candidate_batch:
+        first_source = candidate_batch[0].get('source')
+        batch = [item for item in candidate_batch if item.get('source') == first_source][:BATCH_SIZE]
+        logging.info(f"⚠️ Обрано резервне джерело ({first_source}): взято {len(batch)} новин")
 
     if not batch: return
 
@@ -327,7 +343,6 @@ def process_backlog(stats=None):
     remaining_backlog = [item for item in backlog if item['url'] not in successful_urls]
     remaining_backlog.sort(key=lambda x: x.get('timestamp', 0), reverse=True)
     save_backlog(remaining_backlog[:30])
-
 def send_to_telegram(text, url, source_name, image_url=None):
     if image_url and len(text) > 920: text = text[:920] + "...\n<i>(Текст обрізано)</i>"
     elif not image_url and len(text) > 3900: text = text[:3900] + "...\n<i>(Текст обрізано)</i>"
