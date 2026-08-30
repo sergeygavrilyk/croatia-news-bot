@@ -192,12 +192,15 @@ def deduplicate_news(client, articles, history_titles=None):
         raw_ids = json.loads(response.text)
         keep_ids = []
         
-        # Стійкий парсинг: витягуємо ID незалежно від того, як їх повернула Gemini
+        # Стійкий парсинг: витягуємо ID
         for item in raw_ids:
             if isinstance(item, dict) and 'id' in item:
                 keep_ids.append(int(item['id']))
             elif isinstance(item, (int, str)) and str(item).isdigit():
                 keep_ids.append(int(item))
+                
+        # ЖОРСТКИЙ ЗАХИСТ: прибираємо дублікати ID, якщо Gemini помилилася і повернула одне число двічі
+        keep_ids = list(set(keep_ids))
                 
         filtered_articles = [articles[i] for i in keep_ids if i < len(articles)]
         
