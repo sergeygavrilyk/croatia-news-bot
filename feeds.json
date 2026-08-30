@@ -1,7 +1,17 @@
 [
-  
-  {"name": "ZADAR News", "url": "https://www.zadarnews.hr/rss/", "category": "Регіональні"},
-  {"name": "Zadarski List", "url": "https://www.novilist.hr/feed/?post_type=zadarski-list", "category": "Регіональні"},
-  {"name": "057info", "url": "https://www.057info.hr/feed/", "category": "Регіональні"}
-  
+  {
+    "name": "ZADAR News",
+    "url": "https://www.zadarnews.hr/rss/",
+    "category": "Регіональні"
+  },
+  {
+    "name": "Slobodna Dalmacija",
+    "url": "https://slobodnadalmacija.hr/feed",
+    "category": "Регіональні"
+  },
+  {
+    "name": "057info",
+    "url": "https://www.057info.hr/feed/",
+    "category": "Регіональні"
+  }
 ]
