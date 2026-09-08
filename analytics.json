@@ -1,0 +1,10 @@
+[
+    {
+        "timestamp": "2026-09-08 12:09:15",
+        "backlog_size": 20,
+        "duplicates_removed": 5,
+        "published_count": 3,
+        "errors_count": 0,
+        "execution_time": 159.6
+    }
+]
