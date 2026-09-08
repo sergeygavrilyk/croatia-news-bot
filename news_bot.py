@@ -82,7 +82,9 @@ def save_analytics(stats):
         json.dump(history[-100:], f, ensure_ascii=False, indent=4)
 
 def send_analytics_to_admin(stats):
-    if not ADMIN_CHAT_ID: return
+    if not ADMIN_CHAT_ID: 
+        logging.warning("ADMIN_CHAT_ID не налаштовано")
+        return
     message = (
         f"📊 <b>Звіт про роботу бота</b>\n\n"
         f"⏱ Час виконання: {stats['execution_time']} сек\n"
@@ -93,8 +95,11 @@ def send_analytics_to_admin(stats):
     )
     api_url = f"https://api.telegram.org/bot{TELEGRAM_BOT_TOKEN}/sendMessage"
     try:
-        requests.post(api_url, data={'chat_id': ADMIN_CHAT_ID, 'text': message, 'parse_mode': 'HTML'})
-    except: pass
+        response = requests.post(api_url, data={'chat_id': ADMIN_CHAT_ID, 'text': message, 'parse_mode': 'HTML'})
+        if response.status_code != 200:
+            logging.error(f"Помилка відправки в Telegram: {response.text}")
+    except Exception as e: 
+        logging.error(f"Збій з'єднання з Telegram API: {e}")
 
 def get_rss_feeds():
     if not os.path.exists(FEEDS_FILE): return []
@@ -270,63 +275,73 @@ def process_backlog(stats=None):
     # 1. Сортуємо всі новини за часом (найсвіжіші зверху)
     backlog.sort(key=lambda x: x.get('timestamp', 0), reverse=True)
     
-    # 2. Підіймаємо новини про Україну на перше місце
-    backlog = prioritize_ukraine_news(backlog)
+    # 2. Визначаємо правильний порядок джерел на цю годину
+    all_feeds = get_rss_feeds()
+    all_sources = list(dict.fromkeys(f.get('name', get_source_name(f['url'])) for f in all_feeds))
+    all_sources.sort()
+    
+    if not all_sources: return
+    
+    current_hour = time.gmtime().tm_hour
+    
+    # Створюємо впорядкований список джерел (Головне -> Резерв 1 -> Резерв 2)
+    ordered_sources = []
+    for i in range(len(all_sources)):
+        idx = (current_hour + i) % len(all_sources)
+        ordered_sources.append(all_sources[idx])
+        
+    target_source = ordered_sources[0]
 
-    # 3. Відбираємо топ-15 найсвіжіших для глибокого аналізу
-    candidate_batch = backlog[:15]
-    history_titles = load_history(TITLES_FILE) # Завантажуємо історію
+    # 3. ІНТЕЛЕКТУАЛЬНЕ ФОРМУВАННЯ ВІДБІРКИ (до 15 штук)
+    candidate_batch = []
+    used_urls = set()
+    
+    # КРОК 3.1: Пріоритет України (з будь-якого джерела)
+    ukraine_keywords = ['ukrajin', 'zelensk', 'kijev', 'rat']
+    for item in backlog:
+        text_context = (item.get('title', '') + " " + item.get('description', '')).lower()
+        if any(kw in text_context for kw in ukraine_keywords):
+            if item['url'] not in used_urls:
+                candidate_batch.append(item)
+                used_urls.add(item['url'])
+                
+    # КРОК 3.2: Заповнюємо залишок місць згідно з пріоритетом джерел
+    for src in ordered_sources:
+        for item in backlog:
+            if item.get('source') == src and item['url'] not in used_urls:
+                candidate_batch.append(item)
+                used_urls.add(item['url'])
+            # Жорсткий ліміт для економії токенів Gemini
+            if len(candidate_batch) >= 15:
+                break
+        if len(candidate_batch) >= 15:
+            break
+            
+    # Відрізаємо рівно 15 (на випадок переповнення)
+    candidate_batch = candidate_batch[:15]
+    if not candidate_batch: return
 
-    # 4. Перевірка на дублікати (включно з історією минулих публікацій)
+    # 4. ДЕДУПЛІКАЦІЯ (перевірка через ШІ)
+    history_titles = load_history(TITLES_FILE)
     len_before = len(candidate_batch)
     candidate_batch = deduplicate_news(client, candidate_batch, history_titles)
+    
     if stats is not None:
         stats["duplicates_removed"] += (len_before - len(candidate_batch))
 
-    # 5. Відбір новин: беремо до 3 новин, рухаючись по джерелах по колу
-    all_feeds = get_rss_feeds()
-    all_sources = list(dict.fromkeys(f.get('name', get_source_name(f['url'])) for f in all_feeds))
-    all_sources.sort() # Стабільний алфавітний порядок джерел
+    # 5. ФІНАЛЬНИЙ ВІДБІР (ТОП-3)
+    batch = candidate_batch[:BATCH_SIZE]
+    if not batch: return
     
-    batch = []
-    used_sources_log = []
-    
-    if all_sources:
-        # Використовуємо поточну годину (UTC) для стартового джерела
-        current_hour = time.gmtime().tm_hour
-        
-        # Проходимо по всіх джерелах, починаючи з того, чия зараз черга
-        for i in range(len(all_sources)):
-            idx = (current_hour + i) % len(all_sources)
-            target_source = all_sources[idx]
-            
-            # Шукаємо новини з цього джерела
-            source_news = [item for item in candidate_batch if item.get('source') == target_source and item not in batch]
-            
-            for item in source_news:
-                batch.append(item)
-                if target_source not in used_sources_log:
-                    used_sources_log.append(target_source)
-                # Якщо набрали 3 новини - повністю зупиняємо пошук
-                if len(batch) >= BATCH_SIZE:
-                    break
-                    
-            if len(batch) >= BATCH_SIZE:
-                break
-                
-        if batch:
-            logging.info(f"🔄 Обрано джерела по колу ({', '.join(used_sources_log)}): взято {len(batch)} новин")
-            
-    # Резервний механізм (на випадок помилок)
-    if not batch and candidate_batch:
-        batch = candidate_batch[:BATCH_SIZE]
-        logging.info(f"⚠️ Обрано резервні новини: взято {len(batch)} новин")
+    used_sources_log = list(dict.fromkeys(item.get('source') for item in batch))
+    logging.info(f"🔄 Обрано {len(batch)} новин. Головне джерело: {target_source}. Фактичні джерела: {', '.join(used_sources_log)}")
 
-    # СУВОРИЙ ПРОМПТ РЕДАКТОРА
+    # 6. СУВОРИЙ ПРОМПТ РЕДАКТОРА
     prompt = f"Ось список із {len(batch)} новин. Ти — досвідчений головний редактор Telegram-каналу для українців, які живуть у Хорватії (діаспора, біженці). Твоє завдання — перекласти та адаптувати ці новини українською мовою.\n\n"
     prompt += """СУВОРІ ПРАВИЛА КОНТЕКСТУ ТА ПРІОРИТЕТІВ:
     1. ГЕОГРАФІЯ: Всі події відбуваються в Хорватії або світі. "Хорвати" — це місцеві жителі. НІКОЛИ не замінюй слова "хорвати" або "Хорватія" на "українці" чи "Україна", якщо цього немає в оригінальному тексті. Зберігай оригінальний контекст!
     2. ПРІОРИТЕТ "УКРАЇНА": Якщо в оригінальній новині згадується Україна, війна або біженці — постав емодзі 🇺🇦 на самий початок заголовка та винеси цю інформацію у перший абзац.
+    3. ЧИСТОТА МОВИ (КРИТИЧНО ВАЖЛИВО): Використовуй ВИКЛЮЧНО стандартний український алфавіт. Суворо заборонено використовувати літери з інших алфавітів (іврит, арабська, російські 'ы', 'э', 'ъ' тощо) всередині українських слів.
     """
     
     for idx, item in enumerate(batch):
@@ -347,7 +362,6 @@ def process_backlog(stats=None):
 
     generated_texts = []
     
-    # Пауза перед викликом для захисту від лімітів RPM
     logging.info("Очікування перед викликом Gemini API...")
     time.sleep(15)
 
@@ -363,7 +377,7 @@ def process_backlog(stats=None):
     if not generated_texts: return
 
     history_urls = load_history(HISTORY_FILE)
-    history_titles = load_history(TITLES_FILE) # Оновлюємо історію перед збереженням
+    history_titles = load_history(TITLES_FILE) 
     successful_urls = []
 
     for idx, item in enumerate(batch):
@@ -373,13 +387,12 @@ def process_backlog(stats=None):
             history_titles = save_to_history(history_titles, item['title'], TITLES_FILE)
             successful_urls.append(item['url'])
             
-            # Збільшуємо лічильник успішних публікацій
             if stats is not None:
                 stats["published_count"] += 1
                 
             time.sleep(45)
 
-    # 4. ЧИСТКА БЕКЛОГУ (зберігаємо лише топ-30 найсвіжіших)
+    # 7. ЧИСТКА БЕКЛОГУ
     remaining_backlog = [item for item in backlog if item['url'] not in successful_urls]
     remaining_backlog.sort(key=lambda x: x.get('timestamp', 0), reverse=True)
     save_backlog(remaining_backlog[:30])
