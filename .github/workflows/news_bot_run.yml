@@ -48,14 +48,14 @@ jobs:
         git config --global user.email "github-actions[bot]@users.noreply.github.com"
         
         # Створюємо файли стану, якщо вони ще не існують
-        touch posted_news.txt posted_titles.txt news_backlog.json
+        touch posted_news.txt posted_titles.txt news_backlog.json analytics.json
         
-        # Додаємо всі файли стану (історію та чергу)
-        git add posted_news.txt posted_titles.txt news_backlog.json
+        # Додаємо всі файли стану (історію, чергу та аналітику)
+        git add posted_news.txt posted_titles.txt news_backlog.json analytics.json
         
         # Зберігаємо зміни тільки якщо є нові дані
         if ! git diff --staged --quiet; then
-          git commit -m "Update news history and backlog state [skip ci]"
+          git commit -m "Update news history, backlog and analytics state [skip ci]"
           git pull --rebase origin ${GITHUB_REF_NAME}
           git push
         else
