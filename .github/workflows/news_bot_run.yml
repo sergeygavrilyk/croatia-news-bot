@@ -47,11 +47,11 @@ jobs:
         git config --global user.name "github-actions[bot]"
         git config --global user.email "github-actions[bot]@users.noreply.github.com"
         
-        # Створюємо файли стану, якщо вони ще не існують
-        touch posted_news.txt posted_titles.txt news_backlog.json
+       # Створюємо файли стану, якщо вони ще не існують
+        touch posted_news.txt posted_titles.txt news_backlog.json analytics.json
         
         # Додаємо всі файли стану (історію та чергу)
-        git add posted_news.txt posted_titles.txt news_backlog.json
+        git add posted_news.txt posted_titles.txt news_backlog.json analytics.json
         
         # Зберігаємо зміни тільки якщо є нові дані
         if ! git diff --staged --quiet; then
