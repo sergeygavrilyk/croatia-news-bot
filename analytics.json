@@ -84,5 +84,33 @@
         },
         "errors_count": 0,
         "gemini_retries": 0
+    },
+    {
+        "timestamp": "2026-09-09 15:01:21",
+        "execution_time": 282.7,
+        "funnel": {
+            "scraped_total": 10,
+            "rejected_by_keywords": 2,
+            "duplicates_removed_by_ai": 1
+        },
+        "backlog": {
+            "total_size": 15,
+            "sources": {
+                "Zadarski list": 9,
+                "Slobodna Dalmacija": 6
+            }
+        },
+        "published": {
+            "total": 3,
+            "ukraine_priority": 1,
+            "with_images": 3,
+            "text_only": 0,
+            "sources": {
+                "Slobodna Dalmacija": 1,
+                "Zadarski list": 2
+            }
+        },
+        "errors_count": 0,
+        "gemini_retries": 0
     }
 ]
