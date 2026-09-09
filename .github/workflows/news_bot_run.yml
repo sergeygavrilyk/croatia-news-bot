@@ -47,7 +47,7 @@ jobs:
         git config --global user.name "github-actions[bot]"
         git config --global user.email "github-actions[bot]@users.noreply.github.com"
         
-       # Створюємо файли стану, якщо вони ще не існують
+        # Створюємо файли стану, якщо вони ще не існують
         touch posted_news.txt posted_titles.txt news_backlog.json analytics.json
         
         # Додаємо всі файли стану (історію та чергу)
