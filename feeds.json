@@ -6,12 +6,12 @@
   },
   {
     "name": "Zadarski list",
-    "url": "https://zadarskilist.novilist.hr/feed/",
+    "url": "https://www.novilist.hr/feed/?post_type=zadarski-list",
     "category": "Регіональні"
   },
   {
     "name": "057info",
-    "url": "https://www.057info.hr/rss",
+    "url": "https://www.057info.hr/feed/",
     "category": "Регіональні"
   }
 ]
