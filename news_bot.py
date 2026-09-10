@@ -182,7 +182,7 @@ def deduplicate_news(client, articles, history_titles=None):
     {json.dumps(recent_history, ensure_ascii=False, indent=2)}
     
     Твоє завдання:
-    1. ГЕОГРАФІЧНИЙ ТА ТЕМАТИЧНИЙ ФІЛЬТР (ВАЖЛИВО!): Безжально відхиляй новини, які НЕ стосуються Хорватії, українців, біженців або безпосередньо України. Новини про світові події, які не мають прямого впливу на життя в Хорватії — ВІДХИЛЯТИ.
+    1. ГЕОГРАФІЧНИЙ ТА ТЕМАТИЧНИЙ ФІЛЬТР (ВАЖЛИВО!): Безжально відхиляй новини, які НЕ стосуються Хорватії, українців, біженців або безпосередньо України. Новини про світові події, які не мають прямого впливу на життя українців в Хорватії — ВІДХИЛЯТИ.
     2. ЗНАЙТИ ВНУТРІШНІ ДУБЛІКАТИ: Якщо кілька новин-претендентів описують одну подію, залиши серед них лише ОДНУ.
     3. ПОРІВНЯТИ З ІСТОРІЄЮ: Якщо новина-претендент стосується події, про яку ми ВЖЕ писали в Історії, її треба ВІДХИЛИТИ повністю.
     
@@ -216,13 +216,20 @@ def deduplicate_news(client, articles, history_titles=None):
         return articles
 
 def prioritize_ukraine_news(backlog_items):
-    keywords = ['ukrajin', 'zelensk', 'kijev', 'rat']
+    keywords = [
+        'ukrajin', 'ukrajinci', 'ukrajinsk', 'zelensk', 'zelenškij', 'kijev', 'rat', 
+        'sukob', 'agresija', 'napad', 'izbjeglic', 'humanitar','migrant', 'pomoć'
+    ]
     ukraine_news = []
     other_news = []
+    
     for item in backlog_items:
         text_context = (item.get('title', '') + " " + item.get('description', '')).lower()
-        if any(kw in text_context for kw in keywords): ukraine_news.append(item)
-        else: other_news.append(item)
+        if any(kw in text_context for kw in keywords):
+            ukraine_news.append(item)
+        else:
+            other_news.append(item)
+            
     return ukraine_news + other_news
 
 def scrape_feeds(stats=None):
