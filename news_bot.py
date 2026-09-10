@@ -45,6 +45,43 @@ BATCH_SIZE = 3 # 3 новини за один запуск
 
 client = genai.Client(api_key=GEMINI_API_KEY)
 
+def send_admin_alert(message):
+    """Відправляє сповіщення про помилку адміністратору."""
+    admin_id = os.getenv('ADMIN_CHAT_ID')
+    token = os.getenv('TELEGRAM_BOT_TOKEN')
+    if admin_id and token:
+        try:
+            requests.post(f"https://api.telegram.org/bot{token}/sendMessage", 
+                          json={"chat_id": admin_id, "text": f"⚠️ Алярм бота:\n{message}"})
+        except Exception as e:
+            logging.error(f"Не вдалося відправити алерт адміну: {e}")
+
+def trim_history(filename, max_lines=1000):
+    """Очищує старі записи, залишаючи лише останні max_lines."""
+    try:
+        if os.path.exists(filename):
+            with open(filename, 'r', encoding='utf-8') as f:
+                lines = f.readlines()
+            if len(lines) > max_lines:
+                with open(filename, 'w', encoding='utf-8') as f:
+                    f.writelines(lines[-max_lines:])
+    except Exception as e:
+        logging.error(f"Помилка обрізки файлу {filename}: {e}")
+
+def generate_hashtags(item):
+    """Генерує хештеги на основі тексту новини."""
+    tags = []
+    text_context = (item.get('title', '') + " " + item.get('description', '') + " " + item.get('source', '')).lower()
+    
+    if any(kw in text_context for kw in ['zadar', 'zadarsk', '057info']):
+        tags.append('#Zadar')
+    if any(kw in text_context for kw in ['direktiva', 'zaštita', 'status']):
+        tags.append('#ТимчасовийЗахист')
+    if any(kw in text_context for kw in ['ukrajin', 'kijev', 'zelensk']):
+        tags.append('#Україна')
+        
+    return "\n\n" + " ".join(tags) if tags else ""
+
 def send_alert_to_admin(message):
     if not ADMIN_CHAT_ID: return
     api_url = f"https://api.telegram.org/bot{TELEGRAM_BOT_TOKEN}/sendMessage"
@@ -189,37 +226,42 @@ def deduplicate_news(client, articles, history_titles=None):
     1. ГЕОГРАФІЧНИЙ ТА ТЕМАТИЧНИЙ ФІЛЬТР (ВАЖЛИВО!): Безжально відхиляй новини, які НЕ стосуються Хорватії, українців, біженців або безпосередньо України. Новини про світові події, які не мають прямого впливу на життя українців в Хорватії — ВІДХИЛЯТИ.
     2. АБСОЛЮТНИЙ ПРІОРИТЕТ (ДИРЕКТИВА 2001/55/ЄС): Будь-які новини, що стосуються Директиви Ради 2001/55/ЄС (Тимчасовий захист / Privremena zaštita), статусу переміщених осіб, продовження терміну дії документів, соціальних прав або допомоги українським біженцям, ОБОВ'ЯЗКОВО ЗАЛИШАТИ.
     3. ЗНАЙТИ ВНУТРІШНІ ДУБЛІКАТИ: Якщо кілька новин-претендентів описують одну подію, залиши серед них лише ОДНУ.
-    4. ПОРІВНЯТИ З ІСТОРІЄЮ: Якщо новина-претендент стосується події, про яку ми ВЖЕ писали в Історії, її треба ВІДХИЛИТИ повністю.
+    4. ПОРІВНЯТИ З ІСТОРІЄЮ: Якщо новина-претендент стосується події, про яку ми ВЖЕ писали в Історії, її треба ВІДХИЛИТИ повністю (окрім життєво важливих оновлень щодо Директиви 2001/55/ЄС, які треба пропускати завжди).
     
     Поверни результат СУВОРО як масив JSON з ID новин, які треба ЗАЛИШИТИ. Більше ніякого тексту.
     """
     
-    try:
-        response = client.models.generate_content(
-            model='gemini-3.5-flash-lite', 
-            contents=prompt,
-            config={"response_mime_type": "application/json"}
-        )
-        
-        raw_ids = json.loads(response.text)
-        keep_ids = []
-        
-        for item in raw_ids:
-            if isinstance(item, dict) and 'id' in item: keep_ids.append(int(item['id']))
-            elif isinstance(item, (int, str)) and str(item).isdigit(): keep_ids.append(int(item))
-                
-        keep_ids = list(set(keep_ids))
-        filtered_articles = [articles[i] for i in keep_ids if i < len(articles)]
-        
-        removed_count = len(articles) - len(filtered_articles)
-        if removed_count > 0:
-            logging.info(f"🗑️ [Gemini] Відсіяно як дублікати (або вже було): {removed_count}")
-        return filtered_articles
-        
-    except Exception as e:
-        logging.error(f"Помилка дедуплікації: {e}")
-        return articles
-
+    max_retries = 3
+    for attempt in range(max_retries):
+        try:
+            response = client.models.generate_content(
+                model='gemini-3.5-flash-lite', 
+                contents=prompt,
+                config={"response_mime_type": "application/json"}
+            )
+            
+            raw_ids = json.loads(response.text)
+            keep_ids = []
+            
+            for item in raw_ids:
+                if isinstance(item, dict) and 'id' in item: keep_ids.append(int(item['id']))
+                elif isinstance(item, (int, str)) and str(item).isdigit(): keep_ids.append(int(item))
+                    
+            keep_ids = list(set(keep_ids))
+            filtered_articles = [articles[i] for i in keep_ids if i < len(articles)]
+            
+            removed_count = len(articles) - len(filtered_articles)
+            if removed_count > 0:
+                logging.info(f"🗑️ [Gemini] Відсіяно як дублікати (або вже було): {removed_count}")
+            return filtered_articles
+            
+        except Exception as e:
+            logging.error(f"Помилка дедуплікації (спроба {attempt+1}/{max_retries}): {e}")
+            if attempt < max_retries - 1:
+                time.sleep(10)
+            else:
+                send_admin_alert(f"Gemini API недоступний після {max_retries} спроб. Помилка: {e}")
+                return articles # Віддаємо все без фільтрації, щоб не втратити новини
 def prioritize_ukraine_news(backlog_items):
     keywords = [
         'ukrajin', 'Ukrajinac','Ukrajinka', 'Dijaspora','Obnova', 'ukrajinci', 'ukrajinsk', 'zelensk', 'zelenškij', 'kijev', 'pomoć', 'Ukrajina',  'Odesa', 'Direktiva', 'Privremena', 'Zaštita', 'rat', 
@@ -296,10 +338,19 @@ def process_backlog(stats=None):
     candidate_batch = []
     used_urls = set()
     
-    ukraine_keywords = ['ukrajin', 'zelensk', 'kijev', 'rat']
-    for item in backlog:
+    # Використовуємо вашу єдину функцію з розширеним списком слів
+    ukraine_items = prioritize_ukraine_news(backlog) 
+    
+    for item in ukraine_items:
+        # Оскільки prioritize_ukraine_news повертає спочатку пріоритетні, а потім інші, 
+        # ми просто відбираємо ті, що містять ключові слова (пріоритетні)
         text_context = (item.get('title', '') + " " + item.get('description', '')).lower()
-        if any(kw in text_context for kw in ukraine_keywords):
+        if any(kw in text_context for kw in [
+            'ukrajin', 'ukrajinac','ukrajinka', 'dijaspora','obnova', 'ukrajinci', 'ukrajinsk', 
+            'zelensk', 'zelenškij', 'kijev', 'pomoć', 'ukrajina', 'odesa', 'direktiva', 
+            'privremena', 'zaštita', 'rat', 'sukob', 'agresija', 'napad', 'izbjeglic', 
+            'humanitar', 'migrant', 'izbjeglice'
+        ]):
             if item['url'] not in used_urls:
                 candidate_batch.append(item)
                 used_urls.add(item['url'])
@@ -331,8 +382,9 @@ def process_backlog(stats=None):
     prompt = f"Ось список із {len(batch)} новин. Ти — досвідчений головний редактор Telegram-каналу для українців, які живуть у Хорватії (діаспора, біженці). Твоє завдання — перекласти та адаптувати ці новини українською мовою.\n\n"
     prompt += """СУВОРІ ПРАВИЛА КОНТЕКСТУ ТА ПРІОРИТЕТІВ:
     1. ГЕОГРАФІЯ: Всі події відбуваються в Хорватії або світі. "Хорвати" — це місцеві жителі. НІКОЛИ не замінюй слова "хорвати" або "Хорватія" на "українці" чи "Україна", якщо цього немає в оригінальному тексті.
-    2. ПРІОРИТЕТ "УКРАЇНА": Якщо в оригінальній новині згадується Україна, війна або біженці — постав емодзі 🇺🇦 на самий початок заголовка та винеси цю інформацію у перший абзац.
-    3. ЧИСТОТА МОВИ: Використовуй ВИКЛЮЧНО стандартний український алфавіт.
+    2. АБСОЛЮТНИЙ ПРІОРИТЕТ (ДИРЕКТИВА 2001/55/ЄС): Будь-які новини, що стосуються Директиви Ради 2001/55/ЄС (Тимчасовий захист / Privremena zaštita), статусу переміщених осіб, продовження терміну дії документів, соціальних прав або допомоги українським біженцям, ОБОВ'ЯЗКОВО ЗАЛИШАТИ.
+    3. ПРІОРИТЕТ "УКРАЇНА": Якщо в оригінальній новині згадується Україна, війна або біженці — постав емодзі 🇺🇦 на самий початок заголовка та винеси цю інформацію у перший абзац.
+    4. ЧИСТОТА МОВИ: Використовуй ВИКЛЮЧНО стандартний український алфавіт.
     """
     
     for idx, item in enumerate(batch):
@@ -372,7 +424,11 @@ def process_backlog(stats=None):
 
     for idx, item in enumerate(batch):
         if idx >= len(generated_texts): break 
-        if send_to_telegram(generated_texts[idx], item['url'], item.get('source', 'Джерело'), item['image_url']):
+        
+        # Додаємо згенеровані хештеги до тексту від ШІ
+        final_text = generated_texts[idx] + generate_hashtags(item)
+        
+        if send_to_telegram(final_text, item['url'], item.get('source', 'Джерело'), item['image_url']):
             history_urls = save_to_history(history_urls, item['url'], HISTORY_FILE)
             history_titles = save_to_history(history_titles, item['title'], TITLES_FILE)
             successful_urls.append(item['url'])
@@ -462,7 +518,12 @@ def main():
     except Exception as e:
         stats["errors_count"] += 1
         send_alert_to_admin(f"Скрипт впав з помилкою: {e}")
-    finally:
+
+finally:
+        # Очищуємо історію від старих записів
+        trim_history(HISTORY_FILE, MAX_HISTORY_SIZE)
+        trim_history(TITLES_FILE, MAX_HISTORY_SIZE)
+        
         stats["execution_time"] = round(time.time() - start_time, 1)
         save_analytics(stats)
         
