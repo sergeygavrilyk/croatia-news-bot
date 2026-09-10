@@ -45,16 +45,6 @@ BATCH_SIZE = 3 # 3 новини за один запуск
 
 client = genai.Client(api_key=GEMINI_API_KEY)
 
-def send_admin_alert(message):
-    """Відправляє сповіщення про помилку адміністратору."""
-    admin_id = os.getenv('ADMIN_CHAT_ID')
-    token = os.getenv('TELEGRAM_BOT_TOKEN')
-    if admin_id and token:
-        try:
-            requests.post(f"https://api.telegram.org/bot{token}/sendMessage", 
-                          json={"chat_id": admin_id, "text": f"⚠️ Алярм бота:\n{message}"})
-        except Exception as e:
-            logging.error(f"Не вдалося відправити алерт адміну: {e}")
 
 def trim_history(filename, max_lines=1000):
     """Очищує старі записи, залишаючи лише останні max_lines."""
@@ -260,7 +250,7 @@ def deduplicate_news(client, articles, history_titles=None):
             if attempt < max_retries - 1:
                 time.sleep(10)
             else:
-                send_admin_alert(f"Gemini API недоступний після {max_retries} спроб. Помилка: {e}")
+                send_alert_to_admin(f"Gemini API недоступний після {max_retries} спроб. Помилка: {e}")
                 return articles # Віддаємо все без фільтрації, щоб не втратити новини
 def prioritize_ukraine_news(backlog_items):
     keywords = [
@@ -397,8 +387,7 @@ def process_backlog(stats=None):
     2. Об'єм тексту СУВОРО залежить від параметра "Має картинку":
        - Якщо "Має картинку: Так" -> напиши детальний текст на 800–900 символів.
        - Якщо "Має картинку: Ні" -> напиши великий лонгрід до 3000-3500 символів.
-    3. Хештеги: Напиши 1-3 релевантні хештеги.
-    4. Тільки базові HTML-теги.
+    3. Тільки базові HTML-теги.
     ВАЖЛИВО: Обов'язково розділяй відповіді для кожної новини строго рядком `|||`.
     """
 
@@ -519,7 +508,7 @@ def main():
         stats["errors_count"] += 1
         send_alert_to_admin(f"Скрипт впав з помилкою: {e}")
 
-finally:
+    finally:
         # Очищуємо історію від старих записів
         trim_history(HISTORY_FILE, MAX_HISTORY_SIZE)
         trim_history(TITLES_FILE, MAX_HISTORY_SIZE)
