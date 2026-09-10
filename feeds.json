@@ -1,7 +1,7 @@
 [
   {
     "name": "ZADAR News",
-    "url": "https://www.zadarnews.hr/rss/",
+    "url": "https://www.zadarnews.hr/latest/rss/",
     "category": "Регіональні"
   },
   {
@@ -11,7 +11,7 @@
   },
   {
     "name": "057info",
-    "url": "https://www.057info.hr/feed/",
+    "url": "https://www.057info.hr/rss",
     "category": "Регіональні"
   }
 ]
