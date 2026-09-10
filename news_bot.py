@@ -218,7 +218,7 @@ def deduplicate_news(client, articles, history_titles=None):
 
 def prioritize_ukraine_news(backlog_items):
     keywords = [
-        'ukrajin', 'Ukrajinac','Ukrajinka', 'Dijaspora','Obnova', 'ukrajinci', 'ukrajinsk', 'zelensk', 'zelenškij', 'kijev', 'pomoć', 'Ukrajina', , 'Odesa', 'Direktiva', 'Privremena', 'Zaštita', 'rat', 
+        'ukrajin', 'Ukrajinac','Ukrajinka', 'Dijaspora','Obnova', 'ukrajinci', 'ukrajinsk', 'zelensk', 'zelenškij', 'kijev', 'pomoć', 'Ukrajina',  'Odesa', 'Direktiva', 'Privremena', 'Zaštita', 'rat', 
         'sukob', 'agresija', 'napad', 'izbjeglic', 'humanitar','migrant', 'Izbjeglice'
     ]
     ukraine_news = []
