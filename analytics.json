@@ -244,5 +244,31 @@
         },
         "errors_count": 0,
         "gemini_retries": 0
+    },
+    {
+        "timestamp": "2026-09-10 08:01:05",
+        "execution_time": 110.8,
+        "funnel": {
+            "scraped_total": 10,
+            "rejected_by_keywords": 4,
+            "duplicates_removed_by_ai": 1
+        },
+        "backlog": {
+            "total_size": 3,
+            "sources": {
+                "Zadarski list": 3
+            }
+        },
+        "published": {
+            "total": 2,
+            "ukraine_priority": 2,
+            "with_images": 2,
+            "text_only": 0,
+            "sources": {
+                "Zadarski list": 2
+            }
+        },
+        "errors_count": 0,
+        "gemini_retries": 0
     }
 ]
