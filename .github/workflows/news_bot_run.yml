@@ -1,11 +1,6 @@
 name: Croatia News Automator
 
 on:
-  schedule:
-    # Запуск на 14-й хвилині кожної години з 07:00 до 16:00 UTC (уникаємо черг GitHub)
-    - cron: '14 7-16 * * *'
-    # Запуск на 14-й хвилині о 19:00 UTC
-    - cron: '14 19 * * *'
   workflow_dispatch:
 
 jobs:
