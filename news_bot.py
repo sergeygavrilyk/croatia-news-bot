@@ -9,6 +9,7 @@ import re
 from urllib.parse import urlparse
 from dotenv import load_dotenv
 from google import genai
+import cloudscraper  # ДОДАТИ ЦЕЙ РЯДОК
 
 # Додаємо маскування під звичайний браузер, щоб сайти не блокували бота
 feedparser.USER_AGENT = 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36'
@@ -286,11 +287,31 @@ def scrape_feeds(stats=None):
     backlog = [item for item in backlog if current_time - item.get('timestamp', current_time) <= MAX_AGE_SECONDS]
     backlog_urls = [item['url'] for item in backlog]
 
+    # Створюємо "браузер", який імітує реальну людину для обходу Cloudflare
+    scraper = cloudscraper.create_scraper(browser={'browser': 'chrome', 'platform': 'windows', 'mobile': False})
+
     for feed_item in get_rss_feeds():
         feed_url = feed_item['url']
         source_name = feed_item.get('name', get_source_name(feed_url))
-        try: feed = feedparser.parse(feed_url)
-        except: continue
+        
+        try: 
+            # 1. Завантажуємо сторінку через обхідник
+            response = scraper.get(feed_url, timeout=15)
+            
+            if response.status_code not in [200, 301, 302]:
+                logging.error(f"❌ Помилка доступу до {feed_url}: HTTP статус {response.status_code}")
+                continue
+                
+            # 2. Віддаємо сирий текст у feedparser
+            feed = feedparser.parse(response.text)
+            
+            if not feed.entries:
+                logging.warning(f"⚠️ Фід порожній (немає новин): {feed_url}")
+                continue
+                
+        except Exception as e: 
+            logging.error(f"❌ Збій парсингу {feed_url}: {e}")
+            continue
             
         for entry in feed.entries[:15]: 
             if stats is not None: stats["funnel"]["scraped_total"] += 1
