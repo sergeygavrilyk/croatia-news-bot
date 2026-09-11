@@ -520,5 +520,32 @@
         },
         "errors_count": 0,
         "gemini_retries": 0
+    },
+    {
+        "timestamp": "2026-09-11 08:17:30",
+        "execution_time": 112.0,
+        "funnel": {
+            "scraped_total": 20,
+            "rejected_by_keywords": 5,
+            "duplicates_removed_by_ai": 9
+        },
+        "backlog": {
+            "total_size": 11,
+            "sources": {
+                "Zadarski list": 6,
+                "Antena Zadar": 5
+            }
+        },
+        "published": {
+            "total": 2,
+            "ukraine_priority": 0,
+            "with_images": 2,
+            "text_only": 0,
+            "sources": {
+                "Zadarski list": 2
+            }
+        },
+        "errors_count": 0,
+        "gemini_retries": 0
     }
 ]
