@@ -234,6 +234,10 @@ def deduplicate_news(client, articles, history_titles=None):
                 config={"response_mime_type": "application/json"}
             )
             
+            # ДОДАТИ ЦІ ДВА РЯДКИ:
+            logging.info(f"Промпт до Gemini містив {len(articles)} новин.")
+            logging.info(f"Відповідь Gemini: {response.text}")
+            
             raw_ids = json.loads(response.text)
             keep_ids = []
             
@@ -316,6 +320,14 @@ def process_backlog(stats=None):
     backlog = load_backlog()
     if not backlog: return
 
+    # 1. Оголошуємо ключові слова один раз для всієї функції
+    ukraine_keywords = [
+        'ukrajin', 'ukrajinac','ukrajinka', 'dijaspora','obnova', 'ukrajinci', 'ukrajinsk', 
+        'zelensk', 'zelenškij', 'kijev', 'pomoć', 'ukrajina', 'odesa', 'direktiva', 
+        'privremena', 'zaštita', 'rat', 'sukob', 'agresija', 'napad', 'izbjeglic', 
+        'humanitar', 'migrant', 'izbjeglice'
+    ]
+
     backlog.sort(key=lambda x: x.get('timestamp', 0), reverse=True)
     all_feeds = get_rss_feeds()
     all_sources = list(dict.fromkeys(f.get('name', get_source_name(f['url'])) for f in all_feeds))
@@ -332,19 +344,12 @@ def process_backlog(stats=None):
     candidate_batch = []
     used_urls = set()
     
-    # Використовуємо вашу єдину функцію з розширеним списком слів
     ukraine_items = prioritize_ukraine_news(backlog) 
     
+    # 2. Використовуємо нашу змінну для пошуку пріоритетів
     for item in ukraine_items:
-        # Оскільки prioritize_ukraine_news повертає спочатку пріоритетні, а потім інші, 
-        # ми просто відбираємо ті, що містять ключові слова (пріоритетні)
         text_context = (item.get('title', '') + " " + item.get('description', '')).lower()
-        if any(kw in text_context for kw in [
-            'ukrajin', 'ukrajinac','ukrajinka', 'dijaspora','obnova', 'ukrajinci', 'ukrajinsk', 
-            'zelensk', 'zelenškij', 'kijev', 'pomoć', 'ukrajina', 'odesa', 'direktiva', 
-            'privremena', 'zaštita', 'rat', 'sukob', 'agresija', 'napad', 'izbjeglic', 
-            'humanitar', 'migrant', 'izbjeglice'
-        ]):
+        if any(kw in text_context for kw in ukraine_keywords):
             if item['url'] not in used_urls:
                 candidate_batch.append(item)
                 used_urls.add(item['url'])
@@ -418,7 +423,6 @@ def process_backlog(stats=None):
     for idx, item in enumerate(batch):
         if idx >= len(generated_texts): break 
         
-        # Додаємо згенеровані хештеги до тексту від ШІ
         final_text = generated_texts[idx] + generate_hashtags(item)
         
         if send_to_telegram(final_text, item['url'], item.get('source', 'Джерело'), item['image_url']):
@@ -429,6 +433,7 @@ def process_backlog(stats=None):
             if stats is not None:
                 stats["published"]["total"] += 1
                 
+                # 3. Тут змінна ukraine_keywords успішно спрацює і бот не впаде
                 text_context = (item.get('title', '') + " " + item.get('description', '')).lower()
                 if any(kw in text_context for kw in ukraine_keywords):
                     stats["published"]["ukraine_priority"] += 1
