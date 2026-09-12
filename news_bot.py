@@ -429,15 +429,30 @@ def process_backlog(stats=None):
 
     for attempt in range(3):
         try:
-            response = client.models.generate_content(model='gemini-3.5-flash-lite', contents=prompt)
+            response = client.models.generate_content(model='gemini-3.6-flash', contents=prompt)
+            
+            # ДОДАНО: Виводимо сиру відповідь ШІ в лог, щоб бачити проблему
+            logging.info(f"Текст від Gemini:\n{response.text}") 
+            
             generated_texts = [t.strip() for t in response.text.strip().split('|||') if t.strip()]
-            break
+            
+            # ДОДАНО: Перевірка, чи співпадає кількість текстів з кількістю новин
+            if len(generated_texts) == len(batch):
+                break
+            else:
+                logging.warning(f"Gemini повернув {len(generated_texts)} текстів, а треба {len(batch)}. Повторна спроба...")
+                if stats is not None: stats["gemini_retries"] += 1
+                time.sleep(15)
+                
         except Exception as e:
             logging.warning(f"Помилка Gemini API: {e}. Очікування 60с (Спроба {attempt+1}/3)")
             if stats is not None: stats["gemini_retries"] += 1
             time.sleep(60)
-    
-    if not generated_texts: return
+            
+    if not generated_texts: 
+        logging.error("❌ Не вдалося згенерувати тексти після 3 спроб. Скасування публікації.")
+        if stats is not None: stats["errors_count"] += 1  # ДОДАНО
+        return
 
     history_urls = load_history(HISTORY_FILE)
     history_titles = load_history(TITLES_FILE) 
@@ -468,6 +483,9 @@ def process_backlog(stats=None):
                 stats["published"]["sources"][src] = stats["published"]["sources"].get(src, 0) + 1
                 
             time.sleep(45)
+        else:
+            # ДОДАНО: Фіксуємо помилку, якщо Telegram не прийняв текст
+            if stats is not None: stats["errors_count"] += 1
 
     # 2. Залишаємо тільки ті новини, які ще взагалі НЕ розглядалися ШІ
     remaining_backlog = [item for item in backlog if item['url'] not in evaluated_urls]
@@ -494,8 +512,14 @@ def send_to_telegram(text, url, source_name, image_url=None):
         api_url = f"https://api.telegram.org/bot{TELEGRAM_BOT_TOKEN}/sendMessage"
     
     try:
-        return requests.post(api_url, data=payload).status_code == 200
-    except: return False
+        resp = requests.post(api_url, data=payload)
+        if resp.status_code != 200:
+            # ДОДАНО: Тепер ми побачимо в логах, якщо Telegram забракує HTML-теги
+            logging.error(f"❌ Telegram відхилив повідомлення: {resp.text}")
+        return resp.status_code == 200
+    except Exception as e: 
+        logging.error(f"❌ Критична помилка відправки в Telegram: {e}")
+        return False
 
 def main():
     start_time = time.time()
