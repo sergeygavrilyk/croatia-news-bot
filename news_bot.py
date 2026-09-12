@@ -170,8 +170,7 @@ def get_source_name(url):
 
 def is_quality_article(title, description, url):
     unwanted_url_categories = [
-        '/svijet/', '/sport/', '/zabava/', '/kultura/', 
-        '/scena/', '/lifestyle/', '/magazin/', '/showbiz/'
+        '/sport/', '/scena/', '/lifestyle/', '/magazin/'
     ]
     url_lower = url.lower()
     if any(category in url_lower for category in unwanted_url_categories):
@@ -204,7 +203,7 @@ def deduplicate_news(client, articles, history_titles=None):
     logging.info("Аналіз на дублікати (включно з історією) через Gemini...")
     
     recent_history = history_titles[-15:] if history_titles else []
-    prompt_data = [{"id": i, "title": a["title"]} for i, a in enumerate(articles)]
+    prompt_data = [{"id": i, "title": a["title"], "description": a.get("description", "")} for i, a in enumerate(articles)]
     
     prompt = f"""
     Ось список новин (ID, Заголовок), які претендують на публікацію:
