@@ -11,9 +11,8 @@ from dotenv import load_dotenv
 from google import genai
 import cloudscraper  
 
-# Додаємо маскування під звичайний браузер, щоб сайти не блокували бота
+# Додаємо маскування під звичайний браузер
 feedparser.USER_AGENT = 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36'
-
 
 # ================= 1. НАЛАШТУВАННЯ =================
 logging.basicConfig(
@@ -48,7 +47,6 @@ client = genai.Client(api_key=GEMINI_API_KEY)
 
 
 def trim_history(filename, max_lines=1000):
-    """Очищує старі записи, залишаючи лише останні max_lines."""
     try:
         if os.path.exists(filename):
             with open(filename, 'r', encoding='utf-8') as f:
@@ -60,7 +58,6 @@ def trim_history(filename, max_lines=1000):
         logging.error(f"Помилка обрізки файлу {filename}: {e}")
 
 def generate_hashtags(item):
-    """Генерує хештеги на основі тексту новини."""
     tags = []
     text_context = (item.get('title', '') + " " + item.get('description', '') + " " + item.get('source', '')).lower()
     
@@ -118,15 +115,18 @@ def send_analytics_to_admin(stats):
         logging.warning("ADMIN_CHAT_ID не налаштовано")
         return
         
+    scraped_src_str = ", ".join([f"{k}: {v}" for k, v in stats['funnel'].get('scraped_by_source', {}).items()]) if stats['funnel'].get('scraped_by_source') else "Немає"
     backlog_src_str = ", ".join([f"{k}: {v}" for k, v in stats['backlog']['sources'].items()]) if stats['backlog']['sources'] else "Порожньо"
     pub_src_str = ", ".join([f"{k}: {v}" for k, v in stats['published']['sources'].items()]) if stats['published']['sources'] else "Немає"
 
     message = (
-        f"📊 <b>Розширений звіт бота</b>\n\n"
+        f"📊 <b>Розширений звіт бота (Хорватія)</b>\n\n"
         f"⏱ Час виконання: {stats['execution_time']} сек\n"
         f"⚠️ Помилок: {stats['errors_count']} | Ретраїв Gemini: {stats['gemini_retries']}\n\n"
         f"🔍 <b>Воронка фільтрації:</b>\n"
         f"▪️ Знайдено в RSS: {stats['funnel']['scraped_total']}\n"
+        f"▪️ По джерелах: {scraped_src_str}\n"
+        f"▪️ Пропущено (старі/вже в історії): {stats['funnel']['already_seen']}\n"
         f"▪️ Відсіяно фільтрами (код): {stats['funnel']['rejected_by_keywords']}\n"
         f"▪️ Відсіяно Gemini (дублі/історія): {stats['funnel']['duplicates_removed_by_ai']}\n\n"
         f"📥 <b>Беклог (очікують ШІ-валідації: {stats['backlog']['total_size']}):</b>\n"
@@ -202,25 +202,29 @@ def deduplicate_news(client, articles, history_titles=None):
         
     logging.info("Аналіз на дублікати (включно з історією) через Gemini...")
     
-    recent_history = history_titles[-25:] if history_titles else []
+    recent_history = history_titles[-75:] if history_titles else []
     prompt_data = [{"id": i, "title": a["title"], "description": a.get("description", "")} for i, a in enumerate(articles)]
     
     prompt = f"""
-    Ось список новин (ID, Заголовок), які претендують на публікацію:
-    {json.dumps(prompt_data, ensure_ascii=False, indent=2)}
-    
-    Ось ІСТОРІЯ - список із {len(recent_history)} останніх опублікованих нами новин:
-    {json.dumps(recent_history, ensure_ascii=False, indent=2)}
-    
-    Твоє завдання:
-    1. ЩО ЗАЛИШАТИ (ТЕМАТИКА): Ти ПОВИНЕН залишати новини, якщо це: 
+    Ти — суворий головний редактор. Твоє завдання — відфільтрувати список новин-кандидатів.
+
+    ПРАВИЛА ВІДБОРУ:
+    1. ТЕМАТИКА: Ти ПОВИНЕН залишати новини, якщо це:
        - Важливі хорватські новини (місцеві події, суспільство, економіка, кримінал, надзвичайні ситуації).
        - Життя українців та українців-біженців у Хорватії.
        - Хорватські новини про події в Україні.
-    2. ЩО ВІДХИЛЯТИ (СТОП-ТЕМИ): БЕЗЖАЛЬНО ВІДХИЛЯЙ світові новини (якщо немає прив'язки до Хорватії/України), а також будь-який спорт (футбол, матчі, теніс), шоу-бізнес, розваги, гороскопи та рекламу.
+    2. СТОП-ТЕМИ: БЕЗЖАЛЬНО ВІДХИЛЯЙ світові новини (якщо немає прив'язки до Хорватії/України), а також будь-який спорт (футбол, матчі, теніс), шоу-бізнес, розваги, гороскопи та рекламу.
     3. АБСОЛЮТНИЙ ПРІОРИТЕТ (ДИРЕКТИВА 2001/55/ЄС): Новини про тимчасовий захист, документи, права чи допомогу біженцям ОБОВ'ЯЗКОВО ЗАЛИШАТИ.
-    4. ЗНАЙТИ ВНУТРІШНІ ДУБЛІКАТИ: Якщо кілька новин-претендентів описують одну подію, залиши серед них лише ОДНУ.
-    5. ПОРІВНЯТИ З ІСТОРІЄЮ: Якщо новина стосується події, про яку ми ВЖЕ писали в Історії, її треба ВІДХИЛИТИ повністю (окрім життєво важливих оновлень щодо Директиви 2001/55/ЄС).
+    4. ВНУТРІШНІ ДУБЛІ: Якщо кілька новин-кандидатів описують одну подію, залиши лише ОДНУ — ту, що має найбільш інформативний опис.
+    5. ІСТОРІЯ: Якщо подія вже згадується у списку <HISTORY>, відхиляй нові статті про неї повністю (окрім життєво важливих оновлень щодо Директиви 2001/55/ЄС).
+
+    <CANDIDATES>
+    {json.dumps(prompt_data, ensure_ascii=False, indent=2)}
+    </CANDIDATES>
+
+    <HISTORY>
+    {json.dumps(recent_history, ensure_ascii=False, indent=2)}
+    </HISTORY>
     
     Поверни результат СУВОРО як масив JSON з ID новин, які треба ЗАЛИШИТИ. Більше ніякого тексту.
     """
@@ -234,7 +238,6 @@ def deduplicate_news(client, articles, history_titles=None):
                 config={"response_mime_type": "application/json"}
             )
             
-            # ДОДАТИ ЦІ ДВА РЯДКИ:
             logging.info(f"Промпт до Gemini містив {len(articles)} новин.")
             logging.info(f"Відповідь Gemini: {response.text}")
             
@@ -250,7 +253,7 @@ def deduplicate_news(client, articles, history_titles=None):
             
             removed_count = len(articles) - len(filtered_articles)
             if removed_count > 0:
-                logging.info(f"🗑️ [Gemini] Відсіяно як дублікати (або вже було): {removed_count}")
+                logging.info(f"🗑️ [Gemini] Відсіяно як дублікати/спам (або вже було): {removed_count}")
             return filtered_articles
             
         except Exception as e:
@@ -259,18 +262,21 @@ def deduplicate_news(client, articles, history_titles=None):
                 time.sleep(10)
             else:
                 send_alert_to_admin(f"Gemini API недоступний після {max_retries} спроб. Помилка: {e}")
-                return articles # Віддаємо все без фільтрації, щоб не втратити новини
+                return [] # БЕЗПЕЧНИЙ ЗБІЙ: не пускаємо спам
+
 def prioritize_ukraine_news(backlog_items):
-    keywords = [
-        'ukrajin', 'Ukrajinac','Ukrajinka', 'Dijaspora', 'ukrajinci', 'ukrajinsk', 'zelensk', 'zelenškij', 'kijev', 'pomoć', 'Ukrajina',  'Odesa', 'Direktiva', 'Privremena', 'Zaštita',  
-         'izbjeglic', 'humanitar','migrant', 'Izbjeglice'
+    ukraine_keywords = [
+        r'\bukrajin', r'\bdijaspor', r'\bzelensk', r'\bzelenšk', r'\bkijev', 
+        r'\bpomoć', r'\bodesa', r'\bdirektiv', r'\bprivremen', r'\bzaštit', 
+        r'\bizbjeglic', r'\bhumanitar', r'\bmigrant'
     ]
+    
     ukraine_news = []
     other_news = []
     
     for item in backlog_items:
         text_context = (item.get('title', '') + " " + item.get('description', '')).lower()
-        if any(kw in text_context for kw in keywords):
+        if any(re.search(kw, text_context) for kw in ukraine_keywords):
             ukraine_news.append(item)
         else:
             other_news.append(item)
@@ -286,15 +292,18 @@ def scrape_feeds(stats=None):
     backlog = [item for item in backlog if current_time - item.get('timestamp', current_time) <= MAX_AGE_SECONDS]
     backlog_urls = [item['url'] for item in backlog]
 
-    # Створюємо "браузер", який імітує реальну людину для обходу Cloudflare
     scraper = cloudscraper.create_scraper(browser={'browser': 'chrome', 'platform': 'windows', 'mobile': False})
 
     for feed_item in get_rss_feeds():
         feed_url = feed_item['url']
         source_name = feed_item.get('name', get_source_name(feed_url))
         
+        if stats is not None and "scraped_by_source" not in stats["funnel"]:
+            stats["funnel"]["scraped_by_source"] = {}
+            
+        source_count = 0  # ВИПРАВЛЕНО: Ініціалізуємо змінну перед циклом
+        
         try: 
-            # Додаємо заголовки, щоб сервер Moldovalive зрозумів, що ми RSS-читалка, а не браузер
             headers = {
                 'Accept': 'application/rss+xml, application/xml, text/xml, */*'
             }
@@ -304,7 +313,6 @@ def scrape_feeds(stats=None):
                 logging.error(f"❌ Помилка доступу до {feed_url}: HTTP статус {response.status_code}")
                 continue
                 
-            # 2. Віддаємо сирий текст у feedparser
             feed = feedparser.parse(response.text)
             
             if not feed.entries:
@@ -317,13 +325,15 @@ def scrape_feeds(stats=None):
             
         for entry in feed.entries[:15]: 
             if stats is not None: stats["funnel"]["scraped_total"] += 1
-            source_count += 1  # <--- ПЕРЕНЕСЛИ СЮДИ: Рахуємо всі фактично знайдені статті
+            source_count += 1
             
             url = entry.link
-                
-            url = entry.link
             title = entry.title
-            if url in history_urls or title in history_titles or url in backlog_urls: continue
+            
+            if url in history_urls or title in history_titles or url in backlog_urls: 
+                if stats is not None and "already_seen" in stats["funnel"]:
+                    stats["funnel"]["already_seen"] += 1
+                continue
             
             article_time = time.time()
             if hasattr(entry, 'published_parsed') and entry.published_parsed:
@@ -340,16 +350,20 @@ def scrape_feeds(stats=None):
                 'image_url': extract_image_url(entry), 'source': source_name, 'timestamp': article_time
             })
             backlog_urls.append(url)
+            
+        if stats is not None:
+            stats["funnel"]["scraped_by_source"][source_name] = source_count
+            
     save_backlog(backlog)
 
 def process_backlog(stats=None):
     backlog = load_backlog()
     if not backlog: return
 
-    # 1. Очищений список з маркерами початку слова (\b)
     ukraine_keywords = [
-        r'\bukrajin', r'\bzelensk', r'\bkijev', r'\bodesa', r'\bdijaspora',
-        r'\bprivremen', r'\bzaštit', r'\bizbjeglic', r'\bukrajinc'
+        r'\bukrajin', r'\bdijaspor', r'\bzelensk', r'\bzelenšk', r'\bkijev', 
+        r'\bpomoć', r'\bodesa', r'\bdirektiv', r'\bprivremen', r'\bzaštit', 
+        r'\bizbjeglic', r'\bhumanitar', r'\bmigrant'
     ]
 
     backlog.sort(key=lambda x: x.get('timestamp', 0), reverse=True)
@@ -370,10 +384,8 @@ def process_backlog(stats=None):
     
     ukraine_items = prioritize_ukraine_news(backlog) 
     
-    # 2. Використовуємо нашу змінну для пошуку пріоритетів
     for item in ukraine_items:
         text_context = (item.get('title', '') + " " + item.get('description', '')).lower()
-        # Нова розумна перевірка:
         if any(re.search(kw, text_context) for kw in ukraine_keywords):
             if item['url'] not in used_urls:
                 candidate_batch.append(item)
@@ -390,7 +402,6 @@ def process_backlog(stats=None):
     candidate_batch = candidate_batch[:25]
     if not candidate_batch: return
 
-    # 1. Запам'ятовуємо всі URL, які пішли на оцінку до Gemini (до того, як він їх відсіє)
     evaluated_urls = {item['url'] for item in candidate_batch}
 
     history_titles = load_history(TITLES_FILE)
@@ -411,7 +422,7 @@ def process_backlog(stats=None):
     1. ГЕОГРАФІЯ: Всі події відбуваються в Хорватії або світі. "Хорвати" — це місцеві жителі. НІКОЛИ не замінюй слова "хорвати" або "Хорватія" на "українці" чи "Україна", якщо цього немає в оригінальному тексті.
     2. АБСОЛЮТНИЙ ПРІОРИТЕТ (ДИРЕКТИВА 2001/55/ЄС): Будь-які новини, що стосуються Директиви Ради 2001/55/ЄС (Тимчасовий захист / Privremena zaštita), статусу переміщених осіб, продовження терміну дії документів, соціальних прав або допомоги українським біженцям, ОБОВ'ЯЗКОВО ЗАЛИШАТИ.
     3. ПРІОРИТЕТ "УКРАЇНА": Якщо в оригінальній новині згадується Україна, українці, війна або біженці — постав емодзі 🇺🇦 на самий початок заголовка та винеси цю інформацію у перший абзац.
-    4. ЧИСТОТА МОВИ: Використовуй ВИКЛЮЧНО стандартний український алфавіт.
+    4. ЧИСТОТА МОВИ: Перекладай українською мовою АБСОЛЮТНО ВЕСЬ текст, включаючи пряму мову та цитати спікерів. Використовуй ВИКЛЮЧНО стандартний український алфавіт. Жодного хорватського слова не повинно залишитись.
     5. ТОПОНІМИ ТА ІМЕНА: Усі хорватські імена, прізвища, назви вулиць та міст (наприклад, Задар, Спліт, Загреб) обов'язково транслітеруй українською мовою. Не залишай латинські літери в тексті.
     6. СТИЛЬ ТА СТРУКТУРА: Пиши у стилі сучасного новинного Telegram-каналу. Абзаци мають бути короткими (не більше 3-4 речень). Головну думку подавай у першому абзаці (принцип перевернутої піраміди).
     7. НІЯКОГО ШІ-КОНТЕКСТУ: Видавай СУВОРО лише готовий текст новини. Жодних вступних фраз, привітань, коментарів чи висновків від себе. Зберігай абсолютну журналістську об'єктивність.
@@ -447,12 +458,10 @@ def process_backlog(stats=None):
         try:
             response = client.models.generate_content(model='gemini-3.5-flash-lite', contents=prompt)
             
-            # ДОДАНО: Виводимо сиру відповідь ШІ в лог, щоб бачити проблему
             logging.info(f"Текст від Gemini:\n{response.text}") 
             
             generated_texts = [t.strip() for t in response.text.strip().split('|||') if t.strip()]
             
-            # ДОДАНО: Перевірка, чи співпадає кількість текстів з кількістю новин
             if len(generated_texts) == len(batch):
                 break
             else:
@@ -467,7 +476,7 @@ def process_backlog(stats=None):
             
     if not generated_texts: 
         logging.error("❌ Не вдалося згенерувати тексти після 3 спроб. Скасування публікації.")
-        if stats is not None: stats["errors_count"] += 1  # ДОДАНО
+        if stats is not None: stats["errors_count"] += 1  
         return
 
     history_urls = load_history(HISTORY_FILE)
@@ -479,7 +488,6 @@ def process_backlog(stats=None):
         
         tags = generate_hashtags(item)
         
-        # Передаємо текст від ШІ та хештеги окремо
         if send_to_telegram(generated_texts[idx], item['url'], item.get('source', 'Джерело'), item['image_url'], tags):
             history_urls = save_to_history(history_urls, item['url'], HISTORY_FILE)
             history_titles = save_to_history(history_titles, item['title'], TITLES_FILE)
@@ -489,13 +497,8 @@ def process_backlog(stats=None):
                 stats["published"]["total"] += 1
                 
                 text_context = (item.get('title', '') + " " + item.get('description', '')).lower()
-                # Нова розумна перевірка:
+                # ВИПРАВЛЕНО: Прибрано подвійну перевірку, залишено надійний Regex
                 if any(re.search(kw, text_context) for kw in ukraine_keywords):
-                    stats["published"]["ukraine_priority"] += 1
-                
-                # 3. Тут змінна ukraine_keywords успішно спрацює і бот не впаде
-                text_context = (item.get('title', '') + " " + item.get('description', '')).lower()
-                if any(kw in text_context for kw in ukraine_keywords):
                     stats["published"]["ukraine_priority"] += 1
                 
                 if item.get('image_url'): stats["published"]["with_images"] += 1
@@ -506,10 +509,8 @@ def process_backlog(stats=None):
                 
             time.sleep(45)
         else:
-            # ДОДАНО: Фіксуємо помилку, якщо Telegram не прийняв текст
             if stats is not None: stats["errors_count"] += 1
 
-    # 2. Залишаємо тільки ті новини, які ще взагалі НЕ розглядалися ШІ
     remaining_backlog = [item for item in backlog if item['url'] not in evaluated_urls]
     remaining_backlog.sort(key=lambda x: x.get('timestamp', 0), reverse=True)
     save_backlog(remaining_backlog[:30])
@@ -517,7 +518,6 @@ def process_backlog(stats=None):
 def send_to_telegram(text, url, source_name, image_url=None, tags=""):
     crop_msg = "...\n\n👉 <i>Повні деталі читайте за посиланням нижче</i> 👇"
     
-    # Вираховуємо безпечний ліміт з урахуванням довжини хештегів
     safe_caption_limit = 920 - len(tags)
     
     if image_url and len(text) > safe_caption_limit: 
@@ -525,7 +525,6 @@ def send_to_telegram(text, url, source_name, image_url=None, tags=""):
     elif not image_url and len(text) > 3900: 
         text = text[:3900] + crop_msg
     
-    # Додаємо хештеги ВЖЕ ПІСЛЯ обрізки, перед посиланням на джерело
     full_message = f"{text}{tags}\n\n🔗 Джерело: <a href='{url}'>{source_name}</a>"
     
     payload = {'chat_id': TELEGRAM_CHANNEL_ID, 'parse_mode': 'HTML'}
@@ -555,6 +554,8 @@ def main():
         "execution_time": 0,
         "funnel": {
             "scraped_total": 0,
+            "scraped_by_source": {},  # ВИПРАВЛЕНО: Додано відсутній лічильник
+            "already_seen": 0,        # ВИПРАВЛЕНО: Додано відсутній лічильник
             "rejected_by_keywords": 0,
             "duplicates_removed_by_ai": 0
         },
@@ -592,7 +593,6 @@ def main():
         send_alert_to_admin(f"Скрипт впав з помилкою: {e}")
 
     finally:
-        # Очищуємо історію від старих записів
         trim_history(HISTORY_FILE, MAX_HISTORY_SIZE)
         trim_history(TITLES_FILE, MAX_HISTORY_SIZE)
         
