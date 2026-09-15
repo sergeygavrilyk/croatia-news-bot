@@ -6,6 +6,7 @@ import calendar
 import logging
 import json
 import re
+import random
 from urllib.parse import urlparse
 from dotenv import load_dotenv
 from google import genai
@@ -394,12 +395,13 @@ def process_backlog(stats=None):
     all_sources.sort()
     if not all_sources: return
     
-    current_hour = time.gmtime().tm_hour
-    ordered_sources = []
-    for i in range(len(all_sources)):
-        idx = (current_hour + i) % len(all_sources)
-        ordered_sources.append(all_sources[idx])
+    import random
+    
+    ordered_sources = all_sources.copy()
+    random.shuffle(ordered_sources) # Випадково перемішуємо джерела при кожному запуску
     target_source = ordered_sources[0]
+    
+    logging.info(f"🎲 Рандомний порядок джерел на цей запуск: {ordered_sources}")
 
     candidate_batch = []
     used_urls = set()
