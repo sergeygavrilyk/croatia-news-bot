@@ -2157,5 +2157,43 @@
         },
         "errors_count": 0,
         "gemini_retries": 0
+    },
+    {
+        "timestamp": "2026-09-15 15:07:31",
+        "execution_time": 162.1,
+        "funnel": {
+            "scraped_total": 45,
+            "scraped_by_source": {
+                "Antena Zadar": 10,
+                "023": 10,
+                "Slobodna dalmacija": 15,
+                "Zadarski list": 10
+            },
+            "already_seen": 20,
+            "rejected_by_keywords": 3,
+            "duplicates_removed_by_ai": 15
+        },
+        "backlog": {
+            "total_size": 51,
+            "sources": {
+                "Zadarski list": 24,
+                "Antena Zadar": 10,
+                "023": 6,
+                "Slobodna dalmacija": 11
+            }
+        },
+        "published": {
+            "total": 3,
+            "ukraine_priority": 1,
+            "with_images": 1,
+            "text_only": 2,
+            "sources": {
+                "Antena Zadar": 1,
+                "023": 1,
+                "Slobodna dalmacija": 1
+            }
+        },
+        "errors_count": 0,
+        "gemini_retries": 0
     }
 ]
