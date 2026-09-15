@@ -260,7 +260,7 @@ def deduplicate_news(client, articles, history_titles=None):
             else:
                 send_alert_to_admin(f"Gemini API недоступний після {max_retries} спроб. Помилка: {e}")
                 return [] # БЕЗПЕЧНИЙ ЗБІЙ: не пускаємо спам
-            else: return []
+
 def prioritize_ukraine_news(backlog_items):
     ukraine_keywords = [
         r'\bukrajin', r'\bdijaspor', r'\bzelensk', r'\bzelenšk', r'\bkijev', 
