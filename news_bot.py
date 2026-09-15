@@ -61,10 +61,14 @@ def generate_hashtags(item):
     tags = []
     text_context = (item.get('title', '') + " " + item.get('description', '') + " " + item.get('source', '')).lower()
     
+    # Використовуємо точніші словосполучення замість загальних слів
     if any(kw in text_context for kw in ['zadar', 'zadarsk', '057info']):
         tags.append('#Zadar')
-    if any(kw in text_context for kw in ['direktiva', 'zaštita', 'status']):
+        
+    # Замінили 'zaštita' та 'status' на точні юридичні терміни
+    if any(kw in text_context for kw in ['direktiva', 'privremena zaštita', 'status izbjeglice']):
         tags.append('#ТимчасовийЗахист')
+        
     if any(kw in text_context for kw in ['ukrajin', 'kijev', 'zelensk']):
         tags.append('#Україна')
         
