@@ -209,14 +209,11 @@ def deduplicate_news(client, articles, history_titles=None):
     Ти — суворий головний редактор. Твоє завдання — відфільтрувати список новин-кандидатів.
 
     ПРАВИЛА ВІДБОРУ:
-    1. ТЕМАТИКА: Ти ПОВИНЕН залишати новини, якщо це:
-       - Важливі хорватські новини (місцеві події, суспільство, економіка, кримінал, надзвичайні ситуації).
-       - Життя українців та українців-біженців у Хорватії.
-       - Хорватські новини про події в Україні.
-    2. СТОП-ТЕМИ: БЕЗЖАЛЬНО ВІДХИЛЯЙ світові новини (якщо немає прив'язки до Хорватії/України), а також будь-який спорт (футбол, матчі, теніс), шоу-бізнес, розваги, гороскопи та рекламу.
-    3. АБСОЛЮТНИЙ ПРІОРИТЕТ (ДИРЕКТИВА 2001/55/ЄС): Новини про тимчасовий захист, документи, права чи допомогу біженцям ОБОВ'ЯЗКОВО ЗАЛИШАТИ.
-    4. ВНУТРІШНІ ДУБЛІ: Якщо кілька новин-кандидатів описують одну подію, залиши лише ОДНУ — ту, що має найбільш інформативний опис.
-    5. ІСТОРІЯ: Якщо подія вже згадується у списку <HISTORY>, відхиляй нові статті про неї повністю (окрім життєво важливих оновлень щодо Директиви 2001/55/ЄС).
+    1. ТЕМАТИКА: Залишай важливі хорватські новини (економіка, суспільство, кримінал) та новини про українців у Хорватії.
+    2. СТОП-ТЕМИ: БЕЗЖАЛЬНО ВІДХИЛЯЙ світові новини (без прив'язки до Хорватії), весь спорт, шоу-бізнес та рекламу.
+    3. АБСОЛЮТНИЙ ПРІОРИТЕТ: Новини про Директиву 2001/55/ЄС, документи та допомогу біженцям ОБОВ'ЯЗКОВО ЗАЛИШАТИ.
+    4. ВНУТРІШНІ ДУБЛІ (КРИТИЧНО!): У списку <CANDIDATES> є новини з РІЗНИХ джерел. Вони можуть мати різні заголовки, але описувати ОДНУ подію. Зіставляй їх за ЗМІСТОМ. З групи дублікатів залишай лише ОДИН ID (найінформативніший).
+    5. ІСТОРІЯ: Якщо суть події вже згадується у списку <HISTORY>, відхиляй нові статті повністю.
 
     <CANDIDATES>
     {json.dumps(prompt_data, ensure_ascii=False, indent=2)}
@@ -238,9 +235,6 @@ def deduplicate_news(client, articles, history_titles=None):
                 config={"response_mime_type": "application/json"}
             )
             
-            logging.info(f"Промпт до Gemini містив {len(articles)} новин.")
-            logging.info(f"Відповідь Gemini: {response.text}")
-            
             raw_ids = json.loads(response.text)
             keep_ids = []
             
@@ -258,12 +252,8 @@ def deduplicate_news(client, articles, history_titles=None):
             
         except Exception as e:
             logging.error(f"Помилка дедуплікації (спроба {attempt+1}/{max_retries}): {e}")
-            if attempt < max_retries - 1:
-                time.sleep(10)
-            else:
-                send_alert_to_admin(f"Gemini API недоступний після {max_retries} спроб. Помилка: {e}")
-                return [] # БЕЗПЕЧНИЙ ЗБІЙ: не пускаємо спам
-
+            if attempt < max_retries - 1: time.sleep(10)
+            else: return []
 def prioritize_ukraine_news(backlog_items):
     ukraine_keywords = [
         r'\bukrajin', r'\bdijaspor', r'\bzelensk', r'\bzelenšk', r'\bkijev', 
@@ -391,13 +381,18 @@ def process_backlog(stats=None):
                 candidate_batch.append(item)
                 used_urls.add(item['url'])
                 
-    for src in ordered_sources:
-        for item in backlog:
-            if item.get('source') == src and item['url'] not in used_urls:
-                candidate_batch.append(item)
-                used_urls.add(item['url'])
+    # --- ВИПРАВЛЕНИЙ АЛГОРИТМ ЧЕРГИ (Рівномірний розподіл по 1 новині) ---
+    while len(candidate_batch) < 25:
+        added_this_round = False
+        for src in ordered_sources:
+            for item in backlog:
+                if item.get('source') == src and item['url'] not in used_urls:
+                    candidate_batch.append(item)
+                    used_urls.add(item['url'])
+                    added_this_round = True
+                    break  # Взяли 1 новину з джерела — йдемо до наступного джерела
             if len(candidate_batch) >= 25: break
-        if len(candidate_batch) >= 25: break
+        if not added_this_round: break # Якщо всі джерела порожні — виходимо
             
     candidate_batch = candidate_batch[:25]
     if not candidate_batch: return
@@ -460,7 +455,9 @@ def process_backlog(stats=None):
             
             logging.info(f"Текст від Gemini:\n{response.text}") 
             
-            generated_texts = [t.strip() for t in response.text.strip().split('|||') if t.strip()]
+            # --- ЖОРСТКЕ ВИДАЛЕННЯ ГАЛЮЦИНАЦІЙ ---
+            clean_text = response.text.replace('ב', 'б').replace('є́', 'є').replace('і́', 'і')
+            generated_texts = [t.strip() for t in clean_text.strip().split('|||') if t.strip()]
             
             if len(generated_texts) == len(batch):
                 break
@@ -497,7 +494,6 @@ def process_backlog(stats=None):
                 stats["published"]["total"] += 1
                 
                 text_context = (item.get('title', '') + " " + item.get('description', '')).lower()
-                # ВИПРАВЛЕНО: Прибрано подвійну перевірку, залишено надійний Regex
                 if any(re.search(kw, text_context) for kw in ukraine_keywords):
                     stats["published"]["ukraine_priority"] += 1
                 
@@ -516,10 +512,14 @@ def process_backlog(stats=None):
     save_backlog(remaining_backlog[:30])
 
 def send_to_telegram(text, url, source_name, image_url=None, tags=""):
+    # Фінальний рубіж очищення від галюцинацій ШІ
+    text = text.replace('ב', 'б').replace('є́', 'є').replace('і́', 'і')
+    
     crop_msg = "...\n\n👉 <i>Повні деталі читайте за посиланням нижче</i> 👇"
     
     safe_caption_limit = 920 - len(tags)
     
+    # Обрізка тексту (тут можуть розірватися HTML-теги)
     if image_url and len(text) > safe_caption_limit: 
         text = text[:safe_caption_limit] + crop_msg
     elif not image_url and len(text) > 3900: 
@@ -539,8 +539,16 @@ def send_to_telegram(text, url, source_name, image_url=None, tags=""):
     
     try:
         resp = requests.post(api_url, data=payload)
+        
+        # ЗАХИСТ ВІД ЗЛАМАНИХ ТЕГІВ: Якщо Telegram лається на розмітку
+        if resp.status_code == 400 and "parse entities" in resp.text.lower():
+            logging.warning("⚠️ Помилка HTML-розмітки (ймовірно через обрізку тексту). Відправляємо без HTML...")
+            del payload['parse_mode'] # Видаляємо вимогу HTML
+            resp = requests.post(api_url, data=payload) # Пробуємо ще раз
+            
         if resp.status_code != 200:
             logging.error(f"❌ Telegram відхилив повідомлення: {resp.text}")
+            
         return resp.status_code == 200
     except Exception as e: 
         logging.error(f"❌ Критична помилка відправки в Telegram: {e}")
