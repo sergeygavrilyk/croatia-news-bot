@@ -235,6 +235,9 @@ def deduplicate_news(client, articles, history_titles=None):
                 config={"response_mime_type": "application/json"}
             )
             
+            logging.info(f"Промпт до Gemini містив {len(articles)} новин.")
+            logging.info(f"Відповідь Gemini: {response.text}")
+            
             raw_ids = json.loads(response.text)
             keep_ids = []
             
@@ -252,7 +255,11 @@ def deduplicate_news(client, articles, history_titles=None):
             
         except Exception as e:
             logging.error(f"Помилка дедуплікації (спроба {attempt+1}/{max_retries}): {e}")
-            if attempt < max_retries - 1: time.sleep(10)
+            if attempt < max_retries - 1:
+                time.sleep(10)
+            else:
+                send_alert_to_admin(f"Gemini API недоступний після {max_retries} спроб. Помилка: {e}")
+                return [] # БЕЗПЕЧНИЙ ЗБІЙ: не пускаємо спам
             else: return []
 def prioritize_ukraine_news(backlog_items):
     ukraine_keywords = [
