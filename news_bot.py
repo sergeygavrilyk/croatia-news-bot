@@ -210,7 +210,10 @@ def deduplicate_news(client, articles, history_titles=None):
     
     recent_history = history_titles[-75:] if history_titles else []
     prompt_data = [{"id": i, "title": a["title"], "description": a.get("description", "")} for i, a in enumerate(articles)]
-    
+    # 1. ДОДАЄМО ЛОГУВАННЯ ЗАГОЛОВКІВ (Щоб ви бачили, що саме він відхиляє)
+    titles_log = "\n".join([f"[{i}] {a['title']}" for i, a in enumerate(articles)])
+    logging.info(f"📋 Кандидати на фільтрацію:\n{titles_log}")
+
     prompt = f"""
     Ти — суворий і безжальний головний редактор. Твоє завдання — відфільтрувати список новин-кандидатів.
 
@@ -252,18 +255,20 @@ def deduplicate_news(client, articles, history_titles=None):
     for attempt in range(max_retries):
         try:
             response = client.models.generate_content(
-    model='gemini-3.5-flash-lite', 
-    contents=prompt,
-    config=types.GenerateContentConfig(
-        response_mime_type="application/json",
-        safety_settings=[
-            types.SafetySetting(category="HARM_CATEGORY_HARASSMENT", threshold="BLOCK_NONE"),
-            types.SafetySetting(category="HARM_CATEGORY_HATE_SPEECH", threshold="BLOCK_NONE"),
-            types.SafetySetting(category="HARM_CATEGORY_SEXUALLY_EXPLICIT", threshold="BLOCK_NONE"),
-            types.SafetySetting(category="HARM_CATEGORY_DANGEROUS_CONTENT", threshold="BLOCK_NONE"),
-        ]
-    )
-)
+                model='gemini-3.5-flash-lite', 
+                contents=prompt,
+                # 2. ДОДАЄМО ТЕМПЕРАТУРУ 0.0 ДЛЯ СТАБІЛЬНОСТІ
+                config=types.GenerateContentConfig(
+                    response_mime_type="application/json",
+                    temperature=0.0, 
+                    safety_settings=[
+                        types.SafetySetting(category="HARM_CATEGORY_HARASSMENT", threshold="BLOCK_NONE"),
+                        types.SafetySetting(category="HARM_CATEGORY_HATE_SPEECH", threshold="BLOCK_NONE"),
+                        types.SafetySetting(category="HARM_CATEGORY_SEXUALLY_EXPLICIT", threshold="BLOCK_NONE"),
+                        types.SafetySetting(category="HARM_CATEGORY_DANGEROUS_CONTENT", threshold="BLOCK_NONE"),
+                    ]
+                )
+            )
             
             logging.info(f"Промпт до Gemini містив {len(articles)} новин.")
             logging.info(f"Відповідь Gemini: {response.text}")
