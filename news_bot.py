@@ -10,6 +10,7 @@ import random
 from urllib.parse import urlparse
 from dotenv import load_dotenv
 from google import genai
+from google.genai import types  # ДОДАЄМО ЦЕ
 import cloudscraper  
 
 # Додаємо маскування під звичайний браузер
@@ -251,10 +252,18 @@ def deduplicate_news(client, articles, history_titles=None):
     for attempt in range(max_retries):
         try:
             response = client.models.generate_content(
-                model='gemini-3.5-flash-lite', 
-                contents=prompt,
-                config={"response_mime_type": "application/json"}
-            )
+    model='gemini-3.5-flash-lite', 
+    contents=prompt,
+    config=types.GenerateContentConfig(
+        response_mime_type="application/json",
+        safety_settings=[
+            types.SafetySetting(category="HARM_CATEGORY_HARASSMENT", threshold="BLOCK_NONE"),
+            types.SafetySetting(category="HARM_CATEGORY_HATE_SPEECH", threshold="BLOCK_NONE"),
+            types.SafetySetting(category="HARM_CATEGORY_SEXUALLY_EXPLICIT", threshold="BLOCK_NONE"),
+            types.SafetySetting(category="HARM_CATEGORY_DANGEROUS_CONTENT", threshold="BLOCK_NONE"),
+        ]
+    )
+)
             
             logging.info(f"Промпт до Gemini містив {len(articles)} новин.")
             logging.info(f"Відповідь Gemini: {response.text}")
@@ -485,7 +494,18 @@ def process_backlog(stats=None):
 
     for attempt in range(3):
         try:
-            response = client.models.generate_content(model='gemini-3.5-flash-lite', contents=prompt)
+            response = client.models.generate_content(
+    model='gemini-3.5-flash-lite', 
+    contents=prompt,
+    config=types.GenerateContentConfig(
+        safety_settings=[
+            types.SafetySetting(category="HARM_CATEGORY_HARASSMENT", threshold="BLOCK_NONE"),
+            types.SafetySetting(category="HARM_CATEGORY_HATE_SPEECH", threshold="BLOCK_NONE"),
+            types.SafetySetting(category="HARM_CATEGORY_SEXUALLY_EXPLICIT", threshold="BLOCK_NONE"),
+            types.SafetySetting(category="HARM_CATEGORY_DANGEROUS_CONTENT", threshold="BLOCK_NONE"),
+        ]
+    )
+)
             
             logging.info(f"Текст від Gemini:\n{response.text}") 
             
