@@ -73,4 +73,4 @@ class TestBotLogic:
     def test_get_source_name(self):
         assert get_source_name("https://www.antenazadar.hr/clanak/123") == "Antenazadar.hr"
         assert get_source_name("https://slobodnadalmacija.hr/vijesti") == "Slobodnadalmacija.hr"
-        assert get_source_name("invalid_url") == "Джерело"
+        assert get_source_name("invalid_url") == ""
