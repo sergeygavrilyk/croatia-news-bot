@@ -1,32 +1,5 @@
 [
     {
-        "timestamp": "2026-09-09 19:01:13",
-        "execution_time": 197.6,
-        "funnel": {
-            "scraped_total": 10,
-            "rejected_by_keywords": 3,
-            "duplicates_removed_by_ai": 4
-        },
-        "backlog": {
-            "total_size": 13,
-            "sources": {
-                "Slobodna Dalmacija": 5,
-                "Zadarski list": 8
-            }
-        },
-        "published": {
-            "total": 3,
-            "ukraine_priority": 0,
-            "with_images": 3,
-            "text_only": 0,
-            "sources": {
-                "Zadarski list": 3
-            }
-        },
-        "errors_count": 0,
-        "gemini_retries": 0
-    },
-    {
         "timestamp": "2026-09-09 21:40:26",
         "execution_time": 1.4,
         "funnel": {
@@ -3261,6 +3234,43 @@
             "sources": {
                 "Slobodna dalmacija": 2,
                 "023": 1
+            }
+        },
+        "errors_count": 0,
+        "gemini_retries": 0
+    },
+    {
+        "timestamp": "2026-09-18 15:01:09",
+        "execution_time": 190.9,
+        "funnel": {
+            "scraped_total": 45,
+            "scraped_by_source": {
+                "Antena Zadar": 10,
+                "023": 10,
+                "Slobodna dalmacija": 15,
+                "Zadarski list": 10
+            },
+            "already_seen": 14,
+            "rejected_by_keywords": 3,
+            "duplicates_removed_by_ai": 10
+        },
+        "backlog": {
+            "total_size": 58,
+            "sources": {
+                "Zadarski list": 26,
+                "Slobodna dalmacija": 16,
+                "Antena Zadar": 12,
+                "023": 4
+            }
+        },
+        "published": {
+            "total": 3,
+            "ukraine_priority": 0,
+            "with_images": 2,
+            "text_only": 1,
+            "sources": {
+                "Zadarski list": 2,
+                "Antena Zadar": 1
             }
         },
         "errors_count": 0,
