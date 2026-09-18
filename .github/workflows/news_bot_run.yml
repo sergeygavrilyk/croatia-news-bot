@@ -1,3 +1,20 @@
+- name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+          pip install pytest  # ДОДАТИ ЦЕЙ РЯДОК
+
+      - name: Run Unit Tests
+        run: pytest test_bot.py -v  # ДОДАТИ ЦЕЙ БЛОК. Він зупинить скрипт, якщо тести впадуть.
+
+      - name: Run Bot
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHANNEL_ID: ${{ secrets.TELEGRAM_CHANNEL_ID }}
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          ADMIN_CHAT_ID: ${{ secrets.ADMIN_CHAT_ID }}
+        run: python news_bot.py
+
 name: Croatia News Automator
 
 on:

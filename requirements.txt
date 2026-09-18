@@ -1,3 +1,4 @@
+pytest
 feedparser
 requests
 google-genai
