@@ -30,9 +30,6 @@ TELEGRAM_CHANNEL_ID = os.getenv('TELEGRAM_CHANNEL_ID')
 GEMINI_API_KEY = os.getenv('GEMINI_API_KEY')
 ADMIN_CHAT_ID = os.getenv('ADMIN_CHAT_ID') 
 
-if not all([TELEGRAM_BOT_TOKEN, TELEGRAM_CHANNEL_ID, GEMINI_API_KEY]):
-    logging.error("Критична помилка: не знайдено базові токени у файлі .env!")
-    exit(1)
 
 HISTORY_FILE = 'posted_news.txt'
 TITLES_FILE = 'posted_titles.txt'
@@ -627,6 +624,10 @@ def send_to_telegram(text, url, source_name, image_url=None, tags=""):
         return False
 
 def main():
+# Перевіряємо токени тут, коли скрипт безпосередньо запускається
+    if not all([TELEGRAM_BOT_TOKEN, TELEGRAM_CHANNEL_ID, GEMINI_API_KEY]):
+        logging.error("Критична помилка: не знайдено базові токени у файлі .env!")
+        exit(1)
     start_time = time.time()
     
     stats = {
