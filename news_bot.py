@@ -489,6 +489,10 @@ def process_backlog(stats=None):
             
             logging.info(f"Текст від Gemini:\n{response.text}") 
             
+            # ЗАХИСТ ВІД ПОРОЖНЬОЇ ВІДПОВІДІ (Safety Filters)
+            if not response or not response.text:
+                raise ValueError("Gemini повернув порожню відповідь (None). Ймовірно, спрацювали фільтри безпеки на вміст новин.")
+            
             # --- ЖОРСТКЕ ВИДАЛЕННЯ ГАЛЮЦИНАЦІЙ ---
             clean_text = response.text.replace('ב', 'б').replace('є́', 'є').replace('і́', 'і')
             generated_texts = [t.strip() for t in clean_text.strip().split('|||') if t.strip()]
