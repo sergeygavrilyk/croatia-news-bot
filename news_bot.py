@@ -251,7 +251,7 @@ def deduplicate_news(client, articles, history_titles=None):
                 )
             )
             
-	    # ДОДАЄМО ЗАХИСТ ТУТ
+            # ДОДАЄМО ЗАХИСТ ТУТ
             if not response or not getattr(response, 'text', None):
                 raise ValueError("Gemini повернув порожню відповідь (None) під час дедуплікації.")
 
@@ -458,7 +458,7 @@ def process_backlog(stats=None):
     6. СТИЛЬ ТА СТРУКТУРА: Пиши у стилі сучасного новинного Telegram-каналу. Абзаци мають бути короткими (не більше 3-4 речень). Головну думку подавай у першому абзаці (принцип перевернутої піраміди).
     7. НІЯКОГО ШІ-КОНТЕКСТУ: Видавай СУВОРО лише готовий текст новини. Жодних вступних фраз, привітань, коментарів чи висновків від себе. Зберігай абсолютну журналістську об'єктивність.
     8. АКЦЕНТИ: Виділяй жирним шрифтом (в тегах <b>) ключові суми штрафів, дати, імена посадовців або назви законів, щоб текст було зручно читати.
-    9.ХЕШТЕГИ: В самому кінці тексту обов'язково додай 2-3 хештеги з нового рядка. Перший хештег — це місто або регіон події оригінальною латиницею (наприклад, #Zadar, #Rijeka, #Zagreb, #Split). Якщо точне місто невідоме — пиши #Hrvatska. Другі хештеги — тематичні (наприклад, #Україна, #ТимчасовийЗахист, #Кримінал, #ДТП, #Суспільство).
+    9. ХЕШТЕГИ: В самому кінці тексту обов'язково додай 2-3 хештеги з нового рядка. Перший хештег — це місто або регіон події оригінальною латиницею (наприклад, #Zadar, #Rijeka, #Zagreb, #Split). Якщо точне місто невідоме — пиши #Hrvatska. Другі хештеги — тематичні (наприклад, #Україна, #ТимчасовийЗахист, #Кримінал, #ДТП, #Суспільство).
     """
     
     for idx, item in enumerate(batch):
@@ -489,17 +489,17 @@ def process_backlog(stats=None):
     for attempt in range(3):
         try:
             response = client.models.generate_content(
-    model='gemini-3.5-flash-lite', 
-    contents=prompt,
-    config=types.GenerateContentConfig(
-        safety_settings=[
-            types.SafetySetting(category="HARM_CATEGORY_HARASSMENT", threshold="BLOCK_NONE"),
-            types.SafetySetting(category="HARM_CATEGORY_HATE_SPEECH", threshold="BLOCK_NONE"),
-            types.SafetySetting(category="HARM_CATEGORY_SEXUALLY_EXPLICIT", threshold="BLOCK_NONE"),
-            types.SafetySetting(category="HARM_CATEGORY_DANGEROUS_CONTENT", threshold="BLOCK_NONE"),
-        ]
-    )
-)
+                model='gemini-3.5-flash-lite', 
+                contents=prompt,
+                config=types.GenerateContentConfig(
+                    safety_settings=[
+                        types.SafetySetting(category="HARM_CATEGORY_HARASSMENT", threshold="BLOCK_NONE"),
+                        types.SafetySetting(category="HARM_CATEGORY_HATE_SPEECH", threshold="BLOCK_NONE"),
+                        types.SafetySetting(category="HARM_CATEGORY_SEXUALLY_EXPLICIT", threshold="BLOCK_NONE"),
+                        types.SafetySetting(category="HARM_CATEGORY_DANGEROUS_CONTENT", threshold="BLOCK_NONE"),
+                    ]
+                )
+            )
             
             # 1. СПОЧАТКУ ЗАХИСТ ВІД ПОРОЖНЬОЇ ВІДПОВІДІ (Safety Filters)
             if not response or not getattr(response, 'text', None):
@@ -535,8 +535,6 @@ def process_backlog(stats=None):
 
     for idx, item in enumerate(batch):
         if idx >= len(generated_texts): break 
-        
-        # ВИДАЛЯЄМО РЯДОК: tags = generate_hashtags(item)
         
         # Передаємо порожні tags, оскільки Gemini тепер генерує їх прямо в тексті
         if send_to_telegram(generated_texts[idx], item['url'], item.get('source', 'Джерело'), item['image_url'], tags=""):
@@ -609,7 +607,7 @@ def send_to_telegram(text, url, source_name, image_url=None, tags=""):
         return False
 
 def main():
-# Перевіряємо токени тут, коли скрипт безпосередньо запускається
+    # Перевіряємо токени тут, коли скрипт безпосередньо запускається
     if not all([TELEGRAM_BOT_TOKEN, TELEGRAM_CHANNEL_ID, GEMINI_API_KEY]):
         logging.error("Критична помилка: не знайдено базові токени у файлі .env!")
         exit(1)
