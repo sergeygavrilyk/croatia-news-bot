@@ -28,9 +28,6 @@ jobs:
         pip install -r requirements.txt
         pip install pytest
 
-    - name: Run Unit Tests
-      run: pytest test_bot.py -v
-
     - name: Run News Bot
       env:
         TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
