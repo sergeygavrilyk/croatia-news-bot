@@ -56,23 +56,6 @@ def trim_history(filename, max_lines=1000):
     except Exception as e:
         logging.error(f"Помилка обрізки файлу {filename}: {e}")
 
-def generate_hashtags(item):
-    tags = []
-    text_context = (item.get('title', '') + " " + item.get('description', '') + " " + item.get('source', '')).lower()
-    
-    # Використовуємо точніші словосполучення замість загальних слів
-    if any(kw in text_context for kw in ['zadar', 'zadarsk', '057info']):
-        tags.append('#Zadar')
-        
-    # Замінили 'zaštita' та 'status' на точні юридичні терміни
-    if any(kw in text_context for kw in ['direktiva', 'privremena zaštita', 'status izbjeglice']):
-        tags.append('#ТимчасовийЗахист')
-        
-    if any(kw in text_context for kw in ['ukrajin', 'kijev', 'zelensk']):
-        tags.append('#Україна')
-        
-    return "\n\n" + " ".join(tags) if tags else ""
-
 def send_alert_to_admin(message):
     if not ADMIN_CHAT_ID: return
     api_url = f"https://api.telegram.org/bot{TELEGRAM_BOT_TOKEN}/sendMessage"
@@ -475,6 +458,7 @@ def process_backlog(stats=None):
     6. СТИЛЬ ТА СТРУКТУРА: Пиши у стилі сучасного новинного Telegram-каналу. Абзаци мають бути короткими (не більше 3-4 речень). Головну думку подавай у першому абзаці (принцип перевернутої піраміди).
     7. НІЯКОГО ШІ-КОНТЕКСТУ: Видавай СУВОРО лише готовий текст новини. Жодних вступних фраз, привітань, коментарів чи висновків від себе. Зберігай абсолютну журналістську об'єктивність.
     8. АКЦЕНТИ: Виділяй жирним шрифтом (в тегах <b>) ключові суми штрафів, дати, імена посадовців або назви законів, щоб текст було зручно читати.
+    9.ХЕШТЕГИ: В самому кінці тексту обов'язково додай 2-3 хештеги з нового рядка. Перший хештег — це місто або регіон події оригінальною латиницею (наприклад, #Zadar, #Rijeka, #Zagreb, #Split). Якщо точне місто невідоме — пиши #Hrvatska. Другі хештеги — тематичні (наприклад, #Україна, #ТимчасовийЗахист, #Кримінал, #ДТП, #Суспільство).
     """
     
     for idx, item in enumerate(batch):
@@ -552,9 +536,10 @@ def process_backlog(stats=None):
     for idx, item in enumerate(batch):
         if idx >= len(generated_texts): break 
         
-        tags = generate_hashtags(item)
+        # ВИДАЛЯЄМО РЯДОК: tags = generate_hashtags(item)
         
-        if send_to_telegram(generated_texts[idx], item['url'], item.get('source', 'Джерело'), item['image_url'], tags):
+        # Передаємо порожні tags, оскільки Gemini тепер генерує їх прямо в тексті
+        if send_to_telegram(generated_texts[idx], item['url'], item.get('source', 'Джерело'), item['image_url'], tags=""):
             history_urls = save_to_history(history_urls, item['url'], HISTORY_FILE)
             history_titles = save_to_history(history_titles, item['title'], TITLES_FILE)
             successful_urls.append(item['url'])
