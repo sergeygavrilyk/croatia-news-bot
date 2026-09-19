@@ -1,31 +1,5 @@
 [
     {
-        "timestamp": "2026-09-10 08:01:05",
-        "execution_time": 110.8,
-        "funnel": {
-            "scraped_total": 10,
-            "rejected_by_keywords": 4,
-            "duplicates_removed_by_ai": 1
-        },
-        "backlog": {
-            "total_size": 3,
-            "sources": {
-                "Zadarski list": 3
-            }
-        },
-        "published": {
-            "total": 2,
-            "ukraine_priority": 2,
-            "with_images": 2,
-            "text_only": 0,
-            "sources": {
-                "Zadarski list": 2
-            }
-        },
-        "errors_count": 0,
-        "gemini_retries": 0
-    },
-    {
         "timestamp": "2026-09-10 09:01:44",
         "execution_time": 2.6,
         "funnel": {
@@ -3292,6 +3266,40 @@
                 "Antena Zadar": 1,
                 "Zadarski list": 2
             }
+        },
+        "errors_count": 0,
+        "gemini_retries": 0
+    },
+    {
+        "timestamp": "2026-09-19 07:01:03",
+        "execution_time": 4.5,
+        "funnel": {
+            "scraped_total": 45,
+            "scraped_by_source": {
+                "Antena Zadar": 10,
+                "023": 10,
+                "Slobodna dalmacija": 15,
+                "Zadarski list": 10
+            },
+            "already_seen": 3,
+            "rejected_by_keywords": 2,
+            "duplicates_removed_by_ai": 25
+        },
+        "backlog": {
+            "total_size": 27,
+            "sources": {
+                "Antena Zadar": 2,
+                "023": 9,
+                "Slobodna dalmacija": 7,
+                "Zadarski list": 9
+            }
+        },
+        "published": {
+            "total": 0,
+            "ukraine_priority": 0,
+            "with_images": 0,
+            "text_only": 0,
+            "sources": {}
         },
         "errors_count": 0,
         "gemini_retries": 0
