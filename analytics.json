@@ -1,31 +1,5 @@
 [
     {
-        "timestamp": "2026-09-11 08:01:11",
-        "execution_time": 158.8,
-        "funnel": {
-            "scraped_total": 25,
-            "rejected_by_keywords": 4,
-            "duplicates_removed_by_ai": 4
-        },
-        "backlog": {
-            "total_size": 9,
-            "sources": {
-                "Zadarski list": 9
-            }
-        },
-        "published": {
-            "total": 3,
-            "ukraine_priority": 1,
-            "with_images": 3,
-            "text_only": 0,
-            "sources": {
-                "Zadarski list": 3
-            }
-        },
-        "errors_count": 0,
-        "gemini_retries": 0
-    },
-    {
         "timestamp": "2026-09-11 08:17:30",
         "execution_time": 112.0,
         "funnel": {
@@ -3405,6 +3379,44 @@
             "with_images": 0,
             "text_only": 0,
             "sources": {}
+        },
+        "errors_count": 0,
+        "gemini_retries": 0
+    },
+    {
+        "timestamp": "2026-09-19 19:01:07",
+        "execution_time": 162.0,
+        "funnel": {
+            "scraped_total": 45,
+            "scraped_by_source": {
+                "Antena Zadar": 10,
+                "023": 10,
+                "Slobodna dalmacija": 15,
+                "Zadarski list": 10
+            },
+            "already_seen": 24,
+            "rejected_by_keywords": 7,
+            "duplicates_removed_by_ai": 8
+        },
+        "backlog": {
+            "total_size": 55,
+            "sources": {
+                "Zadarski list": 17,
+                "Slobodna dalmacija": 26,
+                "Antena Zadar": 8,
+                "023": 4
+            }
+        },
+        "published": {
+            "total": 3,
+            "ukraine_priority": 0,
+            "with_images": 1,
+            "text_only": 2,
+            "sources": {
+                "Slobodna dalmacija": 1,
+                "023": 1,
+                "Antena Zadar": 1
+            }
         },
         "errors_count": 0,
         "gemini_retries": 0
