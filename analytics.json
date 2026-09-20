@@ -1,34 +1,5 @@
 [
     {
-        "timestamp": "2026-09-11 14:01:12",
-        "execution_time": 187.0,
-        "funnel": {
-            "scraped_total": 45,
-            "rejected_by_keywords": 11,
-            "duplicates_removed_by_ai": 7
-        },
-        "backlog": {
-            "total_size": 46,
-            "sources": {
-                "Zadarski list": 23,
-                "Slobodna dalmacija": 9,
-                "Antena Zadar": 6,
-                "023": 8
-            }
-        },
-        "published": {
-            "total": 3,
-            "ukraine_priority": 3,
-            "with_images": 3,
-            "text_only": 0,
-            "sources": {
-                "Zadarski list": 3
-            }
-        },
-        "errors_count": 0,
-        "gemini_retries": 0
-    },
-    {
         "timestamp": "2026-09-11 15:01:12",
         "execution_time": 224.0,
         "funnel": {
@@ -3452,6 +3423,43 @@
                 "023": 1,
                 "Slobodna dalmacija": 1,
                 "Antena Zadar": 1
+            }
+        },
+        "errors_count": 0,
+        "gemini_retries": 0
+    },
+    {
+        "timestamp": "2026-09-20 13:01:07",
+        "execution_time": 162.3,
+        "funnel": {
+            "scraped_total": 45,
+            "scraped_by_source": {
+                "Antena Zadar": 10,
+                "023": 10,
+                "Slobodna dalmacija": 15,
+                "Zadarski list": 10
+            },
+            "already_seen": 12,
+            "rejected_by_keywords": 8,
+            "duplicates_removed_by_ai": 19
+        },
+        "backlog": {
+            "total_size": 32,
+            "sources": {
+                "Slobodna dalmacija": 12,
+                "Zadarski list": 12,
+                "Antena Zadar": 4,
+                "023": 4
+            }
+        },
+        "published": {
+            "total": 3,
+            "ukraine_priority": 0,
+            "with_images": 0,
+            "text_only": 3,
+            "sources": {
+                "Antena Zadar": 2,
+                "023": 1
             }
         },
         "errors_count": 0,
