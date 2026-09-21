@@ -1,32 +1,5 @@
 [
     {
-        "timestamp": "2026-09-12 12:34:44",
-        "execution_time": 33.9,
-        "funnel": {
-            "scraped_total": 45,
-            "rejected_by_keywords": 4,
-            "duplicates_removed_by_ai": 3
-        },
-        "backlog": {
-            "total_size": 39,
-            "sources": {
-                "Zadarski list": 17,
-                "Slobodna dalmacija": 9,
-                "Antena Zadar": 7,
-                "023": 6
-            }
-        },
-        "published": {
-            "total": 0,
-            "ukraine_priority": 0,
-            "with_images": 0,
-            "text_only": 0,
-            "sources": {}
-        },
-        "errors_count": 0,
-        "gemini_retries": 0
-    },
-    {
         "timestamp": "2026-09-12 13:01:19",
         "execution_time": 67.5,
         "funnel": {
@@ -3519,6 +3492,44 @@
             "with_images": 0,
             "text_only": 0,
             "sources": {}
+        },
+        "errors_count": 0,
+        "gemini_retries": 0
+    },
+    {
+        "timestamp": "2026-09-21 12:01:08",
+        "execution_time": 236.8,
+        "funnel": {
+            "scraped_total": 45,
+            "scraped_by_source": {
+                "Antena Zadar": 10,
+                "023": 10,
+                "Slobodna dalmacija": 15,
+                "Zadarski list": 10
+            },
+            "already_seen": 20,
+            "rejected_by_keywords": 7,
+            "duplicates_removed_by_ai": 20
+        },
+        "backlog": {
+            "total_size": 81,
+            "sources": {
+                "Slobodna dalmacija": 26,
+                "023": 21,
+                "Antena Zadar": 10,
+                "Zadarski list": 24
+            }
+        },
+        "published": {
+            "total": 3,
+            "ukraine_priority": 0,
+            "with_images": 1,
+            "text_only": 2,
+            "sources": {
+                "Zadarski list": 1,
+                "023": 1,
+                "Antena Zadar": 1
+            }
         },
         "errors_count": 0,
         "gemini_retries": 0
