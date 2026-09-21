@@ -1,34 +1,5 @@
 [
     {
-        "timestamp": "2026-09-12 12:01:15",
-        "execution_time": 180.1,
-        "funnel": {
-            "scraped_total": 45,
-            "rejected_by_keywords": 6,
-            "duplicates_removed_by_ai": 9
-        },
-        "backlog": {
-            "total_size": 42,
-            "sources": {
-                "Antena Zadar": 7,
-                "Zadarski list": 16,
-                "Slobodna dalmacija": 13,
-                "023": 6
-            }
-        },
-        "published": {
-            "total": 3,
-            "ukraine_priority": 3,
-            "with_images": 3,
-            "text_only": 0,
-            "sources": {
-                "Slobodna dalmacija": 3
-            }
-        },
-        "errors_count": 0,
-        "gemini_retries": 0
-    },
-    {
         "timestamp": "2026-09-12 12:34:44",
         "execution_time": 33.9,
         "funnel": {
@@ -3506,6 +3477,40 @@
                 "023": 13,
                 "Antena Zadar": 9,
                 "Zadarski list": 8
+            }
+        },
+        "published": {
+            "total": 0,
+            "ukraine_priority": 0,
+            "with_images": 0,
+            "text_only": 0,
+            "sources": {}
+        },
+        "errors_count": 0,
+        "gemini_retries": 0
+    },
+    {
+        "timestamp": "2026-09-21 11:01:09",
+        "execution_time": 5.8,
+        "funnel": {
+            "scraped_total": 45,
+            "scraped_by_source": {
+                "Antena Zadar": 10,
+                "023": 10,
+                "Slobodna dalmacija": 15,
+                "Zadarski list": 10
+            },
+            "already_seen": 21,
+            "rejected_by_keywords": 4,
+            "duplicates_removed_by_ai": 25
+        },
+        "backlog": {
+            "total_size": 63,
+            "sources": {
+                "Slobodna dalmacija": 20,
+                "023": 16,
+                "Antena Zadar": 10,
+                "Zadarski list": 17
             }
         },
         "published": {
