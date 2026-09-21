@@ -1,34 +1,5 @@
 [
     {
-        "timestamp": "2026-09-12 10:01:07",
-        "execution_time": 67.6,
-        "funnel": {
-            "scraped_total": 45,
-            "rejected_by_keywords": 6,
-            "duplicates_removed_by_ai": 14
-        },
-        "backlog": {
-            "total_size": 39,
-            "sources": {
-                "023": 6,
-                "Slobodna dalmacija": 10,
-                "Zadarski list": 17,
-                "Antena Zadar": 6
-            }
-        },
-        "published": {
-            "total": 1,
-            "ukraine_priority": 1,
-            "with_images": 1,
-            "text_only": 0,
-            "sources": {
-                "Slobodna dalmacija": 1
-            }
-        },
-        "errors_count": 0,
-        "gemini_retries": 0
-    },
-    {
         "timestamp": "2026-09-12 11:01:09",
         "execution_time": 77.6,
         "funnel": {
@@ -3500,6 +3471,43 @@
             "sources": {
                 "Zadarski list": 2,
                 "Slobodna dalmacija": 1
+            }
+        },
+        "errors_count": 0,
+        "gemini_retries": 0
+    },
+    {
+        "timestamp": "2026-09-21 09:01:14",
+        "execution_time": 161.3,
+        "funnel": {
+            "scraped_total": 45,
+            "scraped_by_source": {
+                "Antena Zadar": 10,
+                "023": 10,
+                "Slobodna dalmacija": 15,
+                "Zadarski list": 10
+            },
+            "already_seen": 6,
+            "rejected_by_keywords": 5,
+            "duplicates_removed_by_ai": 19
+        },
+        "backlog": {
+            "total_size": 34,
+            "sources": {
+                "Slobodna dalmacija": 10,
+                "023": 12,
+                "Antena Zadar": 7,
+                "Zadarski list": 5
+            }
+        },
+        "published": {
+            "total": 3,
+            "ukraine_priority": 0,
+            "with_images": 2,
+            "text_only": 1,
+            "sources": {
+                "Slobodna dalmacija": 2,
+                "023": 1
             }
         },
         "errors_count": 0,
