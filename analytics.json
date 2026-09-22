@@ -1,36 +1,5 @@
 [
     {
-        "timestamp": "2026-09-13 13:01:06",
-        "execution_time": 196.9,
-        "funnel": {
-            "scraped_total": 45,
-            "rejected_by_keywords": 3,
-            "duplicates_removed_by_ai": 22
-        },
-        "backlog": {
-            "total_size": 40,
-            "sources": {
-                "Antena Zadar": 10,
-                "023": 3,
-                "Slobodna dalmacija": 11,
-                "Zadarski list": 16
-            }
-        },
-        "published": {
-            "total": 3,
-            "ukraine_priority": 2,
-            "with_images": 2,
-            "text_only": 1,
-            "sources": {
-                "Slobodna dalmacija": 1,
-                "Zadarski list": 1,
-                "Antena Zadar": 1
-            }
-        },
-        "errors_count": 0,
-        "gemini_retries": 0
-    },
-    {
         "timestamp": "2026-09-13 14:01:08",
         "execution_time": 133.5,
         "funnel": {
@@ -3610,6 +3579,43 @@
             "sources": {
                 "Zadarski list": 1,
                 "Slobodna dalmacija": 1,
+                "023": 1
+            }
+        },
+        "errors_count": 0,
+        "gemini_retries": 0
+    },
+    {
+        "timestamp": "2026-09-22 12:01:18",
+        "execution_time": 247.3,
+        "funnel": {
+            "scraped_total": 45,
+            "scraped_by_source": {
+                "Antena Zadar": 10,
+                "023": 10,
+                "Slobodna dalmacija": 15,
+                "Zadarski list": 10
+            },
+            "already_seen": 10,
+            "rejected_by_keywords": 5,
+            "duplicates_removed_by_ai": 16
+        },
+        "backlog": {
+            "total_size": 51,
+            "sources": {
+                "023": 14,
+                "Slobodna dalmacija": 18,
+                "Zadarski list": 13,
+                "Antena Zadar": 6
+            }
+        },
+        "published": {
+            "total": 3,
+            "ukraine_priority": 0,
+            "with_images": 2,
+            "text_only": 1,
+            "sources": {
+                "Zadarski list": 2,
                 "023": 1
             }
         },
