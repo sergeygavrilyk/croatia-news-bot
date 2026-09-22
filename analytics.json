@@ -1,35 +1,5 @@
 [
     {
-        "timestamp": "2026-09-13 08:01:14",
-        "execution_time": 127.1,
-        "funnel": {
-            "scraped_total": 45,
-            "rejected_by_keywords": 3,
-            "duplicates_removed_by_ai": 17
-        },
-        "backlog": {
-            "total_size": 19,
-            "sources": {
-                "Antena Zadar": 4,
-                "023": 3,
-                "Slobodna dalmacija": 4,
-                "Zadarski list": 8
-            }
-        },
-        "published": {
-            "total": 2,
-            "ukraine_priority": 1,
-            "with_images": 2,
-            "text_only": 0,
-            "sources": {
-                "Slobodna dalmacija": 1,
-                "Zadarski list": 1
-            }
-        },
-        "errors_count": 0,
-        "gemini_retries": 0
-    },
-    {
         "timestamp": "2026-09-13 10:01:31",
         "execution_time": 176.3,
         "funnel": {
@@ -3578,6 +3548,44 @@
                 "Antena Zadar": 1,
                 "Slobodna dalmacija": 1,
                 "023": 1
+            }
+        },
+        "errors_count": 0,
+        "gemini_retries": 0
+    },
+    {
+        "timestamp": "2026-09-22 08:01:05",
+        "execution_time": 160.2,
+        "funnel": {
+            "scraped_total": 45,
+            "scraped_by_source": {
+                "Antena Zadar": 10,
+                "023": 10,
+                "Slobodna dalmacija": 15,
+                "Zadarski list": 10
+            },
+            "already_seen": 4,
+            "rejected_by_keywords": 2,
+            "duplicates_removed_by_ai": 20
+        },
+        "backlog": {
+            "total_size": 30,
+            "sources": {
+                "Zadarski list": 10,
+                "Slobodna dalmacija": 8,
+                "Antena Zadar": 4,
+                "023": 8
+            }
+        },
+        "published": {
+            "total": 3,
+            "ukraine_priority": 0,
+            "with_images": 1,
+            "text_only": 2,
+            "sources": {
+                "Zadarski list": 1,
+                "023": 1,
+                "Antena Zadar": 1
             }
         },
         "errors_count": 0,
