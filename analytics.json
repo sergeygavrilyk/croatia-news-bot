@@ -1,35 +1,5 @@
 [
     {
-        "timestamp": "2026-09-13 14:01:08",
-        "execution_time": 133.5,
-        "funnel": {
-            "scraped_total": 45,
-            "rejected_by_keywords": 3,
-            "duplicates_removed_by_ai": 14
-        },
-        "backlog": {
-            "total_size": 40,
-            "sources": {
-                "Zadarski list": 18,
-                "023": 3,
-                "Antena Zadar": 8,
-                "Slobodna dalmacija": 11
-            }
-        },
-        "published": {
-            "total": 2,
-            "ukraine_priority": 2,
-            "with_images": 2,
-            "text_only": 0,
-            "sources": {
-                "Slobodna dalmacija": 1,
-                "Zadarski list": 1
-            }
-        },
-        "errors_count": 1,
-        "gemini_retries": 0
-    },
-    {
         "timestamp": "2026-09-13 15:01:12",
         "execution_time": 204.1,
         "funnel": {
@@ -3620,6 +3590,42 @@
             }
         },
         "errors_count": 0,
+        "gemini_retries": 0
+    },
+    {
+        "timestamp": "2026-09-22 13:01:11",
+        "execution_time": 136.6,
+        "funnel": {
+            "scraped_total": 45,
+            "scraped_by_source": {
+                "Antena Zadar": 10,
+                "023": 10,
+                "Slobodna dalmacija": 15,
+                "Zadarski list": 10
+            },
+            "already_seen": 12,
+            "rejected_by_keywords": 2,
+            "duplicates_removed_by_ai": 20
+        },
+        "backlog": {
+            "total_size": 57,
+            "sources": {
+                "Slobodna dalmacija": 23,
+                "023": 13,
+                "Zadarski list": 14,
+                "Antena Zadar": 7
+            }
+        },
+        "published": {
+            "total": 2,
+            "ukraine_priority": 0,
+            "with_images": 2,
+            "text_only": 0,
+            "sources": {
+                "Zadarski list": 2
+            }
+        },
+        "errors_count": 1,
         "gemini_retries": 0
     }
 ]
