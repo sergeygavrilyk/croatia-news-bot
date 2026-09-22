@@ -1,32 +1,5 @@
 [
     {
-        "timestamp": "2026-09-13 12:01:11",
-        "execution_time": 5.0,
-        "funnel": {
-            "scraped_total": 45,
-            "rejected_by_keywords": 4,
-            "duplicates_removed_by_ai": 25
-        },
-        "backlog": {
-            "total_size": 28,
-            "sources": {
-                "Antena Zadar": 8,
-                "023": 3,
-                "Slobodna dalmacija": 9,
-                "Zadarski list": 8
-            }
-        },
-        "published": {
-            "total": 0,
-            "ukraine_priority": 0,
-            "with_images": 0,
-            "text_only": 0,
-            "sources": {}
-        },
-        "errors_count": 0,
-        "gemini_retries": 0
-    },
-    {
         "timestamp": "2026-09-13 13:01:06",
         "execution_time": 196.9,
         "funnel": {
@@ -3599,6 +3572,44 @@
             "text_only": 1,
             "sources": {
                 "Slobodna dalmacija": 2,
+                "023": 1
+            }
+        },
+        "errors_count": 0,
+        "gemini_retries": 0
+    },
+    {
+        "timestamp": "2026-09-22 11:01:10",
+        "execution_time": 192.3,
+        "funnel": {
+            "scraped_total": 45,
+            "scraped_by_source": {
+                "Antena Zadar": 10,
+                "023": 10,
+                "Slobodna dalmacija": 15,
+                "Zadarski list": 10
+            },
+            "already_seen": 9,
+            "rejected_by_keywords": 4,
+            "duplicates_removed_by_ai": 18
+        },
+        "backlog": {
+            "total_size": 46,
+            "sources": {
+                "Zadarski list": 14,
+                "023": 12,
+                "Slobodna dalmacija": 15,
+                "Antena Zadar": 5
+            }
+        },
+        "published": {
+            "total": 3,
+            "ukraine_priority": 0,
+            "with_images": 2,
+            "text_only": 1,
+            "sources": {
+                "Zadarski list": 1,
+                "Slobodna dalmacija": 1,
                 "023": 1
             }
         },
