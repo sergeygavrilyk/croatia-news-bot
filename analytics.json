@@ -1,42 +1,5 @@
 [
     {
-        "timestamp": "2026-09-14 14:01:09",
-        "execution_time": 195.2,
-        "funnel": {
-            "scraped_total": 45,
-            "scraped_by_source": {
-                "Antena Zadar": 10,
-                "023": 10,
-                "Slobodna dalmacija": 15,
-                "Zadarski list": 10
-            },
-            "already_seen": 30,
-            "rejected_by_keywords": 5,
-            "duplicates_removed_by_ai": 3
-        },
-        "backlog": {
-            "total_size": 66,
-            "sources": {
-                "Zadarski list": 23,
-                "Slobodna dalmacija": 24,
-                "Antena Zadar": 11,
-                "023": 8
-            }
-        },
-        "published": {
-            "total": 3,
-            "ukraine_priority": 1,
-            "with_images": 3,
-            "text_only": 0,
-            "sources": {
-                "Zadarski list": 1,
-                "Slobodna dalmacija": 2
-            }
-        },
-        "errors_count": 0,
-        "gemini_retries": 0
-    },
-    {
         "timestamp": "2026-09-14 15:01:20",
         "execution_time": 153.4,
         "funnel": {
@@ -3636,6 +3599,42 @@
             "text_only": 0,
             "sources": {
                 "Zadarski list": 3
+            }
+        },
+        "errors_count": 0,
+        "gemini_retries": 0
+    },
+    {
+        "timestamp": "2026-09-23 13:01:14",
+        "execution_time": 415.1,
+        "funnel": {
+            "scraped_total": 45,
+            "scraped_by_source": {
+                "Antena Zadar": 10,
+                "023": 10,
+                "Slobodna dalmacija": 15,
+                "Zadarski list": 10
+            },
+            "already_seen": 10,
+            "rejected_by_keywords": 5,
+            "duplicates_removed_by_ai": 23
+        },
+        "backlog": {
+            "total_size": 60,
+            "sources": {
+                "Zadarski list": 13,
+                "Slobodna dalmacija": 27,
+                "023": 15,
+                "Antena Zadar": 5
+            }
+        },
+        "published": {
+            "total": 2,
+            "ukraine_priority": 0,
+            "with_images": 2,
+            "text_only": 0,
+            "sources": {
+                "Zadarski list": 2
             }
         },
         "errors_count": 0,
