@@ -1,43 +1,5 @@
 [
     {
-        "timestamp": "2026-09-14 16:01:11",
-        "execution_time": 161.8,
-        "funnel": {
-            "scraped_total": 45,
-            "scraped_by_source": {
-                "Antena Zadar": 10,
-                "023": 10,
-                "Slobodna dalmacija": 15,
-                "Zadarski list": 10
-            },
-            "already_seen": 26,
-            "rejected_by_keywords": 3,
-            "duplicates_removed_by_ai": 8
-        },
-        "backlog": {
-            "total_size": 46,
-            "sources": {
-                "Slobodna dalmacija": 12,
-                "Antena Zadar": 10,
-                "Zadarski list": 17,
-                "023": 7
-            }
-        },
-        "published": {
-            "total": 3,
-            "ukraine_priority": 2,
-            "with_images": 2,
-            "text_only": 1,
-            "sources": {
-                "Zadarski list": 1,
-                "Slobodna dalmacija": 1,
-                "023": 1
-            }
-        },
-        "errors_count": 0,
-        "gemini_retries": 0
-    },
-    {
         "timestamp": "2026-09-14 19:01:21",
         "execution_time": 160.9,
         "funnel": {
@@ -3637,5 +3599,39 @@
         },
         "errors_count": 0,
         "gemini_retries": 0
+    },
+    {
+        "timestamp": "2026-09-23 15:01:12",
+        "execution_time": 507.9,
+        "funnel": {
+            "scraped_total": 45,
+            "scraped_by_source": {
+                "Antena Zadar": 10,
+                "023": 10,
+                "Slobodna dalmacija": 15,
+                "Zadarski list": 10
+            },
+            "already_seen": 31,
+            "rejected_by_keywords": 7,
+            "duplicates_removed_by_ai": 0
+        },
+        "backlog": {
+            "total_size": 64,
+            "sources": {
+                "Zadarski list": 14,
+                "Slobodna dalmacija": 30,
+                "023": 13,
+                "Antena Zadar": 7
+            }
+        },
+        "published": {
+            "total": 0,
+            "ukraine_priority": 0,
+            "with_images": 0,
+            "text_only": 0,
+            "sources": {}
+        },
+        "errors_count": 1,
+        "gemini_retries": 3
     }
 ]
