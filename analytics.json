@@ -1,42 +1,5 @@
 [
     {
-        "timestamp": "2026-09-15 08:01:08",
-        "execution_time": 160.3,
-        "funnel": {
-            "scraped_total": 45,
-            "scraped_by_source": {
-                "Antena Zadar": 10,
-                "023": 10,
-                "Slobodna dalmacija": 15,
-                "Zadarski list": 10
-            },
-            "already_seen": 2,
-            "rejected_by_keywords": 1,
-            "duplicates_removed_by_ai": 21
-        },
-        "backlog": {
-            "total_size": 33,
-            "sources": {
-                "Antena Zadar": 7,
-                "023": 7,
-                "Slobodna dalmacija": 10,
-                "Zadarski list": 9
-            }
-        },
-        "published": {
-            "total": 3,
-            "ukraine_priority": 1,
-            "with_images": 2,
-            "text_only": 1,
-            "sources": {
-                "Slobodna dalmacija": 2,
-                "023": 1
-            }
-        },
-        "errors_count": 0,
-        "gemini_retries": 0
-    },
-    {
         "timestamp": "2026-09-15 09:01:08",
         "execution_time": 42.2,
         "funnel": {
@@ -3630,6 +3593,44 @@
             "sources": {
                 "Zadarski list": 1,
                 "Slobodna dalmacija": 1,
+                "Antena Zadar": 1
+            }
+        },
+        "errors_count": 0,
+        "gemini_retries": 0
+    },
+    {
+        "timestamp": "2026-09-24 07:01:08",
+        "execution_time": 204.0,
+        "funnel": {
+            "scraped_total": 45,
+            "scraped_by_source": {
+                "Antena Zadar": 10,
+                "023": 10,
+                "Slobodna dalmacija": 15,
+                "Zadarski list": 10
+            },
+            "already_seen": 4,
+            "rejected_by_keywords": 4,
+            "duplicates_removed_by_ai": 22
+        },
+        "backlog": {
+            "total_size": 29,
+            "sources": {
+                "Antena Zadar": 4,
+                "023": 8,
+                "Slobodna dalmacija": 10,
+                "Zadarski list": 7
+            }
+        },
+        "published": {
+            "total": 3,
+            "ukraine_priority": 0,
+            "with_images": 1,
+            "text_only": 2,
+            "sources": {
+                "Zadarski list": 1,
+                "023": 1,
                 "Antena Zadar": 1
             }
         },
