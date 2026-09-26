@@ -1,42 +1,5 @@
 [
     {
-        "timestamp": "2026-09-17 11:01:04",
-        "execution_time": 160.2,
-        "funnel": {
-            "scraped_total": 45,
-            "scraped_by_source": {
-                "Antena Zadar": 10,
-                "023": 10,
-                "Slobodna dalmacija": 15,
-                "Zadarski list": 10
-            },
-            "already_seen": 12,
-            "rejected_by_keywords": 1,
-            "duplicates_removed_by_ai": 20
-        },
-        "backlog": {
-            "total_size": 62,
-            "sources": {
-                "Zadarski list": 22,
-                "023": 15,
-                "Slobodna dalmacija": 15,
-                "Antena Zadar": 10
-            }
-        },
-        "published": {
-            "total": 3,
-            "ukraine_priority": 0,
-            "with_images": 2,
-            "text_only": 1,
-            "sources": {
-                "Zadarski list": 2,
-                "023": 1
-            }
-        },
-        "errors_count": 0,
-        "gemini_retries": 0
-    },
-    {
         "timestamp": "2026-09-17 12:01:10",
         "execution_time": 69.2,
         "funnel": {
@@ -3624,6 +3587,42 @@
             "with_images": 0,
             "text_only": 0,
             "sources": {}
+        },
+        "errors_count": 0,
+        "gemini_retries": 0
+    },
+    {
+        "timestamp": "2026-09-26 10:01:03",
+        "execution_time": 164.2,
+        "funnel": {
+            "scraped_total": 45,
+            "scraped_by_source": {
+                "Antena Zadar": 10,
+                "023": 10,
+                "Slobodna dalmacija": 15,
+                "Zadarski list": 10
+            },
+            "already_seen": 26,
+            "rejected_by_keywords": 6,
+            "duplicates_removed_by_ai": 20
+        },
+        "backlog": {
+            "total_size": 33,
+            "sources": {
+                "Antena Zadar": 8,
+                "023": 5,
+                "Slobodna dalmacija": 15,
+                "Zadarski list": 5
+            }
+        },
+        "published": {
+            "total": 3,
+            "ukraine_priority": 0,
+            "with_images": 3,
+            "text_only": 0,
+            "sources": {
+                "Zadarski list": 3
+            }
         },
         "errors_count": 0,
         "gemini_retries": 0
