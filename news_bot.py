@@ -57,11 +57,16 @@ def trim_history(filename, max_lines=1000):
         logging.error(f"Помилка обрізки файлу {filename}: {e}")
 
 def send_alert_to_admin(message):
-    if not ADMIN_CHAT_ID: return
+    if not ADMIN_CHAT_ID: 
+        return
+        
     api_url = f"https://api.telegram.org/bot{TELEGRAM_BOT_TOKEN}/sendMessage"
     try:
-        requests.post(api_url, data={'chat_id': ADMIN_CHAT_ID, 'text': f"⚠️ ALARM: {message}"})
-    except: pass
+        response = requests.post(api_url, data={'chat_id': ADMIN_CHAT_ID, 'text': f"⚠️ ALARM: {message}"})
+        if response.status_code != 200:
+            logging.error(f"Помилка відправки алерта в Telegram: {response.text}")
+    except Exception as e:
+        logging.error(f"Збій з'єднання при відправці алерта в Telegram: {e}")
 
 def load_history(filename):
     if not os.path.exists(filename): return []
@@ -78,7 +83,9 @@ def load_backlog():
     if not os.path.exists(BACKLOG_FILE): return []
     try:
         with open(BACKLOG_FILE, 'r', encoding='utf-8') as f: return json.load(f)
-    except: return []
+    except Exception as e:
+    logging.warning(f"⚠️ Не вдалося завантажити {BACKLOG_FILE} (можливо, файл пошкоджений): {e}. Починаємо з пустого списку.")
+    return []
 
 def save_backlog(backlog):
     with open(BACKLOG_FILE, 'w', encoding='utf-8') as f:
