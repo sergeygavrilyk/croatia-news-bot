@@ -84,8 +84,8 @@ def load_backlog():
     try:
         with open(BACKLOG_FILE, 'r', encoding='utf-8') as f: return json.load(f)
     except Exception as e:
-    logging.warning(f"⚠️ Не вдалося завантажити {BACKLOG_FILE} (можливо, файл пошкоджений): {e}. Починаємо з пустого списку.")
-    return []
+        logging.warning(f"⚠️ Не вдалося завантажити {BACKLOG_FILE} (можливо, файл пошкоджений): {e}. Починаємо з пустого списку.")
+        return []
 
 def save_backlog(backlog):
     with open(BACKLOG_FILE, 'w', encoding='utf-8') as f:
