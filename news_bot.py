@@ -105,6 +105,12 @@ def send_analytics_to_admin(stats):
     backlog_src_str = ", ".join([f"{k}: {v}" for k, v in stats['backlog']['sources'].items()]) if stats['backlog']['sources'] else "Порожньо"
     pub_src_str = ", ".join([f"{k}: {v}" for k, v in stats['published']['sources'].items()]) if stats['published']['sources'] else "Немає"
 
+    # Формуємо блок із деталями відхилень Gemini, якщо вони є
+    reasons_list = stats['funnel'].get('rejection_reasons_list', [])
+    reasons_str = "\n".join(reasons_list[:10]) if reasons_list else "Нічого не відсіяно або немає деталей"
+    if len(reasons_list) > 10:
+        reasons_str += f"\n...і ще відхилених: {len(reasons_list) - 10}"
+
     message = (
         f"📊 <b>Розширений звіт бота (Хорватія)</b>\n\n"
         f"⏱ Час виконання: {stats['execution_time']} сек\n"
@@ -115,6 +121,8 @@ def send_analytics_to_admin(stats):
         f"▪️ Пропущено (старі/вже в історії): {stats['funnel']['already_seen']}\n"
         f"▪️ Відсіяно фільтрами (код): {stats['funnel']['rejected_by_keywords']}\n"
         f"▪️ Відсіяно Gemini (дублі/історія): {stats['funnel']['duplicates_removed_by_ai']}\n\n"
+        f"❌ <b>Чому ШІ відхилив новини цього разу:</b>\n"
+        f"{reasons_str}\n\n"
         f"📥 <b>Беклог (очікують ШІ-валідації: {stats['backlog']['total_size']}):</b>\n"
         f"▪️ {backlog_src_str}\n\n"
         f"✅ <b>Опубліковано: {stats['published']['total']}</b>\n"
@@ -122,6 +130,7 @@ def send_analytics_to_admin(stats):
         f"▪️ Пріоритет 🇺🇦: {stats['published']['ukraine_priority']}\n"
         f"▪️ Джерела: {pub_src_str}"
     )
+    
     api_url = f"https://api.telegram.org/bot{TELEGRAM_BOT_TOKEN}/sendMessage"
     try:
         response = requests.post(api_url, data={'chat_id': ADMIN_CHAT_ID, 'text': message, 'parse_mode': 'HTML'})
@@ -229,8 +238,13 @@ def deduplicate_news(client, articles, history_titles=None):
     {json.dumps(recent_history, ensure_ascii=False, indent=2)}
     </HISTORY>
     
-    Поверни результат СУВОРО як масив JSON з ID новин, які треба ЗАЛИШИТИ. Більше ніякого тексту.
+    Поверни результат СУВОРО у форматі валідного JSON-об'єкта з двома ключами:
+    1. "keep": масив ID новин, які треба ЗАЛИШИТИ (наприклад, [0, 2]).
+    2. "rejected": масив об'єктів для відхилених новин, де кожен містить "id" та коротку українську "reason" (наприклад: "Спорт", "Дублікат", "Побут Спліта", "Вже є в історії", "Світовий шум").
+    
+    Більше ніякого тексту, тільки чистий JSON.
     """
+
     
     max_retries = 3
     for attempt in range(max_retries):
@@ -256,30 +270,52 @@ def deduplicate_news(client, articles, history_titles=None):
                 raise ValueError("Gemini повернув порожню відповідь (None) під час дедуплікації.")
 
             logging.info(f"Промпт до Gemini містив {len(articles)} новин.")
-            logging.info(f"Відповідь Gemini: {response.text}")
+            text_response = response.text.strip()
+            logging.info(f"Відповідь Gemini: {text_response}")
             
-            raw_ids = json.loads(response.text)
-            keep_ids = []
+            # Очистка від Markdown-блоків, якщо вони є
+            if "```json" in text_response:
+                text_response = text_response.split("```json")[1].split("```")[0].strip()
+            elif "```" in text_response:
+                text_response = text_response.split("```")[1].split("```")[0].strip()
+
+            data = json.loads(text_response)  
             
-            for item in raw_ids:
-                if isinstance(item, dict) and 'id' in item: keep_ids.append(int(item['id']))
-                elif isinstance(item, (int, str)) and str(item).isdigit(): keep_ids.append(int(item))
-                    
-            keep_ids = list(set(keep_ids))
-            filtered_articles = [articles[i] for i in keep_ids if i < len(articles)]
+            keep_ids = [int(item) for item in data.get("keep", []) if str(item).isdigit()]
+            rejected_items = data.get("rejected", [])
             
+            filtered_articles = [articles[i] for i in keep_ids if i < len(articles)]  
+            
+            # Збираємо причини відхилень для аналітики без БД
+            rejection_log = []
+            for item in rejected_items:
+                if isinstance(item, dict) and 'id' in item:
+                    idx = int(item['id'])
+                    reason = item.get('reason', 'Не вказано')
+                    if idx < len(articles):
+                        title = articles[idx]['title']
+                        rejection_log.append(f"• {title[:40]}... ➡️ <b>{reason}</b>")
+            
+            # Зберігаємо у словник статистики
+            if stats is not None:
+                stats["funnel"]["rejection_reasons_list"] = rejection_log
+
             removed_count = len(articles) - len(filtered_articles)
-            if removed_count > 0:
-                logging.info(f"🗑️ [Gemini] Відсіяно як дублікати/спам (або вже було): {removed_count}")
+            if removed_count > 0: 
+                logging.info(f"🗑️ Відсіяно ШІ (дублі/спам/історія): {removed_count}")
+                for log_entry in rejection_log:
+                    logging.info(f"   {log_entry.replace('<b>', '').replace('</b>', '')}")
+                    
             return filtered_articles
             
         except Exception as e:
             logging.error(f"Помилка дедуплікації (спроба {attempt+1}/{max_retries}): {e}")
             if attempt < max_retries - 1:
-                time.sleep(10)
+                sleep_time = 10 * (2 ** attempt)  # експоненційний ретрай
+                time.sleep(min(sleep_time, 60))
             else:
-                send_alert_to_admin(f"Gemini API недоступний після {max_retries} спроб. Помилка: {e}")
-                return articles # Пропускаємо без фільтрації, щоб не втратити новини
+                logging.error(f"❌ Gemini API дедуплікації недоступний після {max_retries} спроб. Пропускаємо фільтрацію без втрати новин.")
+                return articles
 
 def prioritize_ukraine_news(backlog_items):
     # Очищений і значно точніший Regex-список
