@@ -1,39 +1,5 @@
 [
     {
-        "timestamp": "2026-09-18 16:01:15",
-        "execution_time": 6.9,
-        "funnel": {
-            "scraped_total": 45,
-            "scraped_by_source": {
-                "Antena Zadar": 10,
-                "023": 10,
-                "Slobodna dalmacija": 15,
-                "Zadarski list": 10
-            },
-            "already_seen": 14,
-            "rejected_by_keywords": 2,
-            "duplicates_removed_by_ai": 25
-        },
-        "backlog": {
-            "total_size": 59,
-            "sources": {
-                "Zadarski list": 26,
-                "Slobodna dalmacija": 16,
-                "Antena Zadar": 13,
-                "023": 4
-            }
-        },
-        "published": {
-            "total": 0,
-            "ukraine_priority": 0,
-            "with_images": 0,
-            "text_only": 0,
-            "sources": {}
-        },
-        "errors_count": 0,
-        "gemini_retries": 0
-    },
-    {
         "timestamp": "2026-09-18 19:01:10",
         "execution_time": 161.0,
         "funnel": {
@@ -3618,6 +3584,65 @@
             "with_images": 0,
             "text_only": 0,
             "sources": {}
+        },
+        "errors_count": 0,
+        "gemini_retries": 0
+    },
+    {
+        "timestamp": "2026-09-27 19:01:00",
+        "execution_time": 168.7,
+        "funnel": {
+            "scraped_total": 35,
+            "scraped_by_source": {
+                "023": 10,
+                "Slobodna dalmacija": 15,
+                "Zadarski list": 10
+            },
+            "already_seen": 16,
+            "rejected_by_keywords": 3,
+            "duplicates_removed_by_ai": 22,
+            "rejection_reasons_list": [
+                "• ‘Prave se kao da su pravi Hrvati, a zapr... ➡️ <b>Шоу-бізнес та лайфстайл</b>",
+                "• Međunarodni stručnjaci u Stinjakima upoz... ➡️ <b>Світовий шум та лайфстайл</b>",
+                "• Katarina Gugić nova predsjednica dubrova... ➡️ <b>Побут інших міст</b>",
+                "• U novoj rundi “panda diplomacije”, Kina ... ➡️ <b>Світовий шум та лайфстайл</b>",
+                "• Na zadarski pogon: Šare povezao redove, ... ➡️ <b>Спорт</b>",
+                "• Ovih sedam simptoma raka ljudi najčešće ... ➡️ <b>Світовий шум та лайфстайл</b>",
+                "• Annapurna iz Otočca imala aktivan vikend... ➡️ <b>Побут інших міст</b>",
+                "• Abeceda sporta i Škabrnja na vrhu, uvjer... ➡️ <b>Спорт</b>",
+                "• Kako norveške drvene kuće ostaju tople i... ➡️ <b>Світовий шум та лайфстайл</b>",
+                "• Boban navijačima o stadionu: Nemam pravo... ➡️ <b>Спорт</b>",
+                "• Bivši muž Tereze Kesovije ženio se četir... ➡️ <b>Шоу-бізнес та лайфстайл</b>",
+                "• Liječnica otkriva što bi svaka kućna kut... ➡️ <b>Світовий шум та лайфстайл</b>",
+                "• Masakri u dvije pucnjave u Južnoj Africi... ➡️ <b>Світовий шум та лайфстайл</b>",
+                "• Zašto kuhari u vodu za pire krumpir doda... ➡️ <b>Світовий шум та лайфстайл</b>",
+                "• Sindikati sad tvrde da ipak ne žele štra... ➡️ <b>Вже є в історії</b>",
+                "• Pet stvari koje ne biste trebali držati ... ➡️ <b>Світовий шум та лайфстайл</b>",
+                "• Socijalna skrb: Nacionalni sustav kvalit... ➡️ <b>Реклама / Абстрактна тема</b>",
+                "• \"Kada stan prestane biti dom i postane s... ➡️ <b>Побут інших міст</b>",
+                "• Ovi brojevi kao PIN su najveći sigurnosn... ➡️ <b>Світовий шум та лайфстайл</b>",
+                "• Novinarke na Weekendu o clickbaitu, “dno... ➡️ <b>Світовий шум та лайфстайл</b>",
+                "• Temperatura idealna za đir najljepšom ul... ➡️ <b>Побут інших міст</b>",
+                "• Nacionalni probir raka debelog crijeva v... ➡️ <b>Світовий шум та лайфстайл</b>"
+            ]
+        },
+        "backlog": {
+            "total_size": 69,
+            "sources": {
+                "Zadarski list": 42,
+                "Slobodna dalmacija": 20,
+                "023": 7
+            }
+        },
+        "published": {
+            "total": 3,
+            "ukraine_priority": 0,
+            "with_images": 2,
+            "text_only": 1,
+            "sources": {
+                "023": 1,
+                "Slobodna dalmacija": 2
+            }
         },
         "errors_count": 0,
         "gemini_retries": 0
