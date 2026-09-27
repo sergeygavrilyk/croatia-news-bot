@@ -1,42 +1,5 @@
 [
     {
-        "timestamp": "2026-09-18 15:01:09",
-        "execution_time": 190.9,
-        "funnel": {
-            "scraped_total": 45,
-            "scraped_by_source": {
-                "Antena Zadar": 10,
-                "023": 10,
-                "Slobodna dalmacija": 15,
-                "Zadarski list": 10
-            },
-            "already_seen": 14,
-            "rejected_by_keywords": 3,
-            "duplicates_removed_by_ai": 10
-        },
-        "backlog": {
-            "total_size": 58,
-            "sources": {
-                "Zadarski list": 26,
-                "Slobodna dalmacija": 16,
-                "Antena Zadar": 12,
-                "023": 4
-            }
-        },
-        "published": {
-            "total": 3,
-            "ukraine_priority": 0,
-            "with_images": 2,
-            "text_only": 1,
-            "sources": {
-                "Zadarski list": 2,
-                "Antena Zadar": 1
-            }
-        },
-        "errors_count": 0,
-        "gemini_retries": 0
-    },
-    {
         "timestamp": "2026-09-18 16:01:15",
         "execution_time": 6.9,
         "funnel": {
@@ -3588,6 +3551,65 @@
                 "Zadarski list": 30,
                 "Slobodna dalmacija": 15,
                 "023": 5
+            }
+        },
+        "published": {
+            "total": 0,
+            "ukraine_priority": 0,
+            "with_images": 0,
+            "text_only": 0,
+            "sources": {}
+        },
+        "errors_count": 0,
+        "gemini_retries": 0
+    },
+    {
+        "timestamp": "2026-09-27 16:08:49",
+        "execution_time": 40.1,
+        "funnel": {
+            "scraped_total": 35,
+            "scraped_by_source": {
+                "023": 10,
+                "Slobodna dalmacija": 15,
+                "Zadarski list": 10
+            },
+            "already_seen": 20,
+            "rejected_by_keywords": 2,
+            "duplicates_removed_by_ai": 25,
+            "rejection_reasons_list": [
+                "• ‘Prave se kao da su pravi Hrvati, a zapr... ➡️ <b>Шоу-бізнес та лайфстайл</b>",
+                "• Oko 600 triatlonaca iz Hrvatske i inozem... ➡️ <b>Спорт</b>",
+                "• Kako norveške drvene kuće ostaju tople i... ➡️ <b>Світовий шум та лайфстайл</b>",
+                "• Malik Fest na Trsat još jednom vratio vi... ➡️ <b>Побут чужих міст</b>",
+                "• Ako vozite niz Viktorju, čeka vas ova op... ➡️ <b>Побут чужих міст</b>",
+                "• Liječnica otkriva što bi svaka kućna kut... ➡️ <b>Світовий шум та лайфстайл</b>",
+                "• The Romans i prijatelji u Pogonu proslav... ➡️ <b>Шоу-бізнес та лайфстайл</b>",
+                "• \"Kada stan prestane biti dom i postane s... ➡️ <b>Вже є в історії</b>",
+                "• Zašto kuhari u vodu za pire krumpir doda... ➡️ <b>Світовий шум та лайфстайл</b>",
+                "• Osoba poginula u sudaru osobnog vozila i... ➡️ <b>Побут чужих міст</b>",
+                "• Tučnjave, lomovi, krađe i prijetnje smrć... ➡️ <b>Світовий шум та лайфстайл</b>",
+                "• Pet stvari koje ne biste trebali držati ... ➡️ <b>Світовий шум та лайфстайл</b>",
+                "• Noć u kojoj je Opatija zablistala u ritm... ➡️ <b>Побут чужих міст</b>",
+                "• Sjećanje na velikog šibenskog umjetnika:... ➡️ <b>Побут чужих міст</b>",
+                "• Ovi brojevi kao PIN su najveći sigurnosn... ➡️ <b>Світовий шум та лайфстайл</b>",
+                "• Uzinić: Siromaštvo nije samo nedostatak ... ➡️ <b>Побут чужих міст</b>",
+                "• Šibenski biskup upozorio na opasnosti mo... ➡️ <b>Побут чужих міст</b>",
+                "• Što meso u svakodnevnoj prehrani radi va... ➡️ <b>Світовий шум та лайфстайл</b>",
+                "• DP traži izjašnjavanje građana o idejnom... ➡️ <b>Побут чужих міст</b>",
+                "• Mladi Šibenčanin osvojio broncu na Svjet... ➡️ <b>Спорт</b>",
+                "• Dan branitelja crikveničko-vinodolskog k... ➡️ <b>Побут чужих міст</b>",
+                "• Osim jedne sidrene cijene, čovjek stavio... ➡️ <b>Світовий шум та лайфстайл</b>",
+                "• Britanski ministar obrane: Rusija i Puti... ➡️ <b>Світовий шум та лайфстайл</b>",
+                "• Neobičan istup bivše gradonačelnice Vodi... ➡️ <b>Побут чужих міст</b>",
+                "• Hodačka tura otkrila sve tajne Veprinca... ➡️ <b>Побут чужих міст</b>"
+            ]
+        },
+        "backlog": {
+            "total_size": 63,
+            "sources": {
+                "Zadarski list": 39,
+                "Slobodna dalmacija": 18,
+                "023": 6
             }
         },
         "published": {
