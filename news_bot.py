@@ -191,9 +191,8 @@ def is_quality_article(title, description, url):
     
     return True
 
-def deduplicate_news(client, articles, history_titles=None):
-    if not articles: 
-        return articles
+def deduplicate_news(client, articles, history_titles=None, stats=None):
+    if not articles: return articles
         
     logging.info("Аналіз на дублікати (включно з історією) через Gemini...")
     
@@ -473,7 +472,7 @@ def process_backlog(stats=None):
 
     history_titles = load_history(TITLES_FILE)
     len_before = len(candidate_batch)
-    candidate_batch = deduplicate_news(client, candidate_batch, history_titles)
+    candidate_batch = deduplicate_news(client, candidate_batch, history_titles, stats=stats)
     
     if stats is not None:
         stats["funnel"]["duplicates_removed_by_ai"] += (len_before - len(candidate_batch))
@@ -598,7 +597,19 @@ def process_backlog(stats=None):
         else:
             if stats is not None: stats["errors_count"] += 1
 
-    remaining_backlog = [item for item in backlog if item['url'] not in evaluated_urls]
+    # Зберігаємо список URL новин, які пройшли ШІ-фільтр (і залишаються в роботі або були відправлені)
+    # Усі новини, які були в candidate_batch, але відсіяні Gemini або відправлені, 
+    # вилучаємо з беклогу, щоб вони не крутилися там повторно.
+    approved_urls = {item['url'] for item in candidate_batch}
+    sent_urls = set(successful_urls)
+    
+    # Залишаємо в беклозі лише ті новини з candidate_batch, які ШІ залишив (keep), але які ще не пішли в батч на відправку,
+    # А ТАКОЖ ті новини з загального беклогу, які взагалі не брали участь у цьому батчі (не увійшли в candidate_batch).
+    candidate_urls = {item['url'] for item in candidate_batch}
+    rejected_urls = candidate_urls - approved_urls
+    
+    remaining_backlog = [item for item in backlog if item['url'] not in evaluated_urls or (item['url'] in approved_urls and item['url'] not in sent_urls)]
+    
     remaining_backlog.sort(key=lambda x: x.get('timestamp', 0), reverse=True)
     save_backlog(remaining_backlog[:30])
 
@@ -670,7 +681,8 @@ def main():
             "scraped_by_source": {},  # ВИПРАВЛЕНО: Додано відсутній лічильник
             "already_seen": 0,        # ВИПРАВЛЕНО: Додано відсутній лічильник
             "rejected_by_keywords": 0,
-            "duplicates_removed_by_ai": 0
+            "duplicates_removed_by_ai": 0,
+            "rejection_reasons_list": []  # <--- Додано для консистентності
         },
         "backlog": {
             "total_size": 0,
