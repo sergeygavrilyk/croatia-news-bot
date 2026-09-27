@@ -510,7 +510,7 @@ def process_backlog(stats=None):
             logging.info(f"Текст від Gemini:\n{response.text}") 
             
             # --- ЖОРСТКЕ ВИДАЛЕННЯ ГАЛЮЦИНАЦІЙ ---
-            clean_text = response.text.replace('ב', 'б').replace('є́', 'є').replace('і́', 'і')
+            clean_text = response.text.replace('ב', 'б').replace('ب', 'б').replace('є́', 'є').replace('і́', 'і')
             generated_texts = [t.strip() for t in clean_text.strip().split('|||') if t.strip()]
             
             if len(generated_texts) == len(batch):
@@ -566,7 +566,7 @@ def process_backlog(stats=None):
 
 def send_to_telegram(text, url, source_name, image_url=None, tags=""):
     # Фінальний рубіж очищення від галюцинацій ШІ
-    text = text.replace('ב', 'б').replace('є́', 'є').replace('і́', 'і')
+    text = text.replace('ב', 'б').replace('ب', 'б').replace('є́', 'є').replace('і́', 'і')
     
     crop_msg = "...\n\n👉 <i>Повні деталі читайте за посиланням нижче</i> 👇"
     
