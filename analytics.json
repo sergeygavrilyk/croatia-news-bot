@@ -1,42 +1,5 @@
 [
     {
-        "timestamp": "2026-09-18 14:01:08",
-        "execution_time": 164.9,
-        "funnel": {
-            "scraped_total": 45,
-            "scraped_by_source": {
-                "Antena Zadar": 10,
-                "023": 10,
-                "Slobodna dalmacija": 15,
-                "Zadarski list": 10
-            },
-            "already_seen": 14,
-            "rejected_by_keywords": 6,
-            "duplicates_removed_by_ai": 17
-        },
-        "backlog": {
-            "total_size": 55,
-            "sources": {
-                "Slobodna dalmacija": 17,
-                "Zadarski list": 22,
-                "Antena Zadar": 11,
-                "023": 5
-            }
-        },
-        "published": {
-            "total": 3,
-            "ukraine_priority": 0,
-            "with_images": 2,
-            "text_only": 1,
-            "sources": {
-                "Slobodna dalmacija": 2,
-                "023": 1
-            }
-        },
-        "errors_count": 0,
-        "gemini_retries": 0
-    },
-    {
         "timestamp": "2026-09-18 15:01:09",
         "execution_time": 190.9,
         "funnel": {
@@ -3591,6 +3554,38 @@
             "total_size": 43,
             "sources": {
                 "Zadarski list": 23,
+                "Slobodna dalmacija": 15,
+                "023": 5
+            }
+        },
+        "published": {
+            "total": 0,
+            "ukraine_priority": 0,
+            "with_images": 0,
+            "text_only": 0,
+            "sources": {}
+        },
+        "errors_count": 0,
+        "gemini_retries": 0
+    },
+    {
+        "timestamp": "2026-09-27 15:01:03",
+        "execution_time": 16.4,
+        "funnel": {
+            "scraped_total": 35,
+            "scraped_by_source": {
+                "023": 10,
+                "Slobodna dalmacija": 15,
+                "Zadarski list": 10
+            },
+            "already_seen": 25,
+            "rejected_by_keywords": 3,
+            "duplicates_removed_by_ai": 25
+        },
+        "backlog": {
+            "total_size": 50,
+            "sources": {
+                "Zadarski list": 30,
                 "Slobodna dalmacija": 15,
                 "023": 5
             }
