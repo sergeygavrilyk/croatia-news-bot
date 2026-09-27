@@ -1,39 +1,5 @@
 [
     {
-        "timestamp": "2026-09-18 08:19:30",
-        "execution_time": 5.9,
-        "funnel": {
-            "scraped_total": 45,
-            "scraped_by_source": {
-                "Antena Zadar": 10,
-                "023": 10,
-                "Slobodna dalmacija": 15,
-                "Zadarski list": 10
-            },
-            "already_seen": 35,
-            "rejected_by_keywords": 7,
-            "duplicates_removed_by_ai": 25
-        },
-        "backlog": {
-            "total_size": 47,
-            "sources": {
-                "Antena Zadar": 6,
-                "023": 11,
-                "Slobodna dalmacija": 15,
-                "Zadarski list": 15
-            }
-        },
-        "published": {
-            "total": 0,
-            "ukraine_priority": 0,
-            "with_images": 0,
-            "text_only": 0,
-            "sources": {}
-        },
-        "errors_count": 0,
-        "gemini_retries": 0
-    },
-    {
         "timestamp": "2026-09-18 08:34:50",
         "execution_time": 161.6,
         "funnel": {
@@ -3618,6 +3584,43 @@
             "with_images": 0,
             "text_only": 0,
             "sources": {}
+        },
+        "errors_count": 0,
+        "gemini_retries": 0
+    },
+    {
+        "timestamp": "2026-09-27 08:01:03",
+        "execution_time": 166.9,
+        "funnel": {
+            "scraped_total": 45,
+            "scraped_by_source": {
+                "Antena Zadar": 10,
+                "023": 10,
+                "Slobodna dalmacija": 15,
+                "Zadarski list": 10
+            },
+            "already_seen": 15,
+            "rejected_by_keywords": 1,
+            "duplicates_removed_by_ai": 18
+        },
+        "backlog": {
+            "total_size": 32,
+            "sources": {
+                "Antena Zadar": 2,
+                "023": 9,
+                "Slobodna dalmacija": 6,
+                "Zadarski list": 15
+            }
+        },
+        "published": {
+            "total": 3,
+            "ukraine_priority": 0,
+            "with_images": 1,
+            "text_only": 2,
+            "sources": {
+                "023": 2,
+                "Slobodna dalmacija": 1
+            }
         },
         "errors_count": 0,
         "gemini_retries": 0
