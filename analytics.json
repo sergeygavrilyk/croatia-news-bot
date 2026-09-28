@@ -1,42 +1,5 @@
 [
     {
-        "timestamp": "2026-09-18 19:01:10",
-        "execution_time": 161.0,
-        "funnel": {
-            "scraped_total": 45,
-            "scraped_by_source": {
-                "Antena Zadar": 10,
-                "023": 10,
-                "Slobodna dalmacija": 15,
-                "Zadarski list": 10
-            },
-            "already_seen": 27,
-            "rejected_by_keywords": 6,
-            "duplicates_removed_by_ai": 21
-        },
-        "backlog": {
-            "total_size": 68,
-            "sources": {
-                "Zadarski list": 30,
-                "Slobodna dalmacija": 18,
-                "Antena Zadar": 14,
-                "023": 6
-            }
-        },
-        "published": {
-            "total": 3,
-            "ukraine_priority": 1,
-            "with_images": 2,
-            "text_only": 1,
-            "sources": {
-                "Antena Zadar": 1,
-                "Zadarski list": 2
-            }
-        },
-        "errors_count": 0,
-        "gemini_retries": 0
-    },
-    {
         "timestamp": "2026-09-19 07:01:03",
         "execution_time": 4.5,
         "funnel": {
@@ -3642,6 +3605,64 @@
             "sources": {
                 "023": 1,
                 "Slobodna dalmacija": 2
+            }
+        },
+        "errors_count": 0,
+        "gemini_retries": 0
+    },
+    {
+        "timestamp": "2026-09-28 07:01:02",
+        "execution_time": 198.1,
+        "funnel": {
+            "scraped_total": 35,
+            "scraped_by_source": {
+                "023": 10,
+                "Slobodna dalmacija": 15,
+                "Zadarski list": 10
+            },
+            "already_seen": 2,
+            "rejected_by_keywords": 1,
+            "duplicates_removed_by_ai": 21,
+            "rejection_reasons_list": [
+                "• U Zajc stiže predstava “Kolumne zaboravl... ➡️ <b>Побут чужих міст</b>",
+                "• Nenadmašna Lena Crnojević; Vratarka Dona... ➡️ <b>Спорт</b>",
+                "• Kako preživjeti svakodnevicu malog bizni... ➡️ <b>Світовий шум та лайфстайл</b>",
+                "• Mikeu Leighu pripala Zlatna školjka na f... ➡️ <b>Світовий шум та лайфстайл</b>",
+                "• Rasprodano za sat vremena, štrudla iz Pl... ➡️ <b>Побут чужих міст</b>",
+                "• U srijedu, 30. rujna, u Slobodnoj Dalmac... ➡️ <b>Світовий шум та лайфстайл</b>",
+                "• Grlić i Marković u Art-kinu predstavili ... ➡️ <b>Побут чужих міст</b>",
+                "• Veliko srebro za Zadar; Maks Baraba vice... ➡️ <b>Спорт</b>",
+                "• Ana Juračić: ‘Premalo cijenimo rad žene ... ➡️ <b>Побут чужих міст</b>",
+                "• Klasična hrvatska četvorka u Splitu obil... ➡️ <b>Побут чужих міст</b>",
+                "• Sutra prikazivanje dokumentarnog filma ‘... ➡️ <b>Побут чужих міст</b>",
+                "• “Idiot” u Zajcu: Uprizorenje Dostojevsko... ➡️ <b>Побут чужих міст</b>",
+                "• Izbori na Fakultetu zdravstvenih studija... ➡️ <b>Побут чужих міст</b>",
+                "• U virskom naselju Kozjak podiže se javna... ➡️ <b>Вже є в історії</b>",
+                "• Teška prometna nesreća na Jadranskoj mag... ➡️ <b>Дублікат</b>",
+                "• Turisti više ne dolaze samo zbog mora, T... ➡️ <b>Світовий шум та лайфстайл</b>",
+                "• Pokrenuta web platforma za upoznavanje k... ➡️ <b>Світовий шум та лайфстайл</b>",
+                "• Javili se i iz HDZ-a, tvrde kako nije is... ➡️ <b>Побут чужих міст</b>",
+                "• Vrijeme je za reorganizaciju zamrzivača:... ➡️ <b>Світовий шум та лайфстайл</b>",
+                "• Zadar slomio Samobor u trećoj četvrtini ... ➡️ <b>Спорт</b>",
+                "• Nastavak miholjskog ljeta: Zadar i okoli... ➡️ <b>Побут чужих міст</b>"
+            ]
+        },
+        "backlog": {
+            "total_size": 25,
+            "sources": {
+                "023": 10,
+                "Slobodna dalmacija": 6,
+                "Zadarski list": 9
+            }
+        },
+        "published": {
+            "total": 3,
+            "ukraine_priority": 0,
+            "with_images": 1,
+            "text_only": 2,
+            "sources": {
+                "023": 2,
+                "Slobodna dalmacija": 1
             }
         },
         "errors_count": 0,
