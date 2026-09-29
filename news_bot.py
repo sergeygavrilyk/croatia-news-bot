@@ -553,8 +553,13 @@ def process_backlog(stats=None):
             # 2. ЯКЩО ВСЕ ОК - ТОДІ ЛОГУЄМО І ПРАЦЮЄМО З ТЕКСТОМ
             logging.info(f"Текст від Gemini:\n{response.text}") 
             
-            # --- ЖОРСТКЕ ВИДАЛЕННЯ ГАЛЮЦИНАЦІЙ ---
-            clean_text = response.text.replace('ב', 'б').replace('ب', 'б').replace('є́', 'є').replace('і́', 'і')
+            # --- ЖОРСТКЕ ВИДАЛЕННЯ ГАЛЮЦИНАЦІЙ ШІ ---
+# Іврит, арабська та зайві наголоси
+clean_text = clean_text.replace('ב', 'б').replace('ب', 'б').replace('є́', 'є').replace('і́', 'і')
+# Грецькі літери-двійники
+clean_text = clean_text.replace('ά', 'а').replace('α', 'а').replace('ό', 'о').replace('ο', 'о')
+clean_text = clean_text.replace('έ', 'е').replace('ε', 'е').replace('ί', 'і').replace('ι', 'і')
+clean_text = clean_text.replace('ή', 'и').replace('η', 'и').replace('ν', 'н').replace('Ν', 'Н')
             generated_texts = [t.strip() for t in clean_text.strip().split('|||') if t.strip()]
             
             if len(generated_texts) == len(batch):
@@ -622,7 +627,12 @@ def process_backlog(stats=None):
 
 def send_to_telegram(text, url, source_name, image_url=None, tags=""):
     # Фінальний рубіж очищення від галюцинацій ШІ
+    # 1. ФІКС ГАЛЮЦИНАЦІЙ ШІ
     text = text.replace('ב', 'б').replace('ب', 'б').replace('є́', 'є').replace('і́', 'і')
+# Видаляємо грецькі літери-двійники (з наголосами та без)
+text = text.replace('ά', 'а').replace('α', 'а').replace('ό', 'о').replace('ο', 'о')
+text = text.replace('έ', 'е').replace('ε', 'е').replace('ί', 'і').replace('ι', 'і')
+text = text.replace('ή', 'и').replace('η', 'и').replace('ν', 'н').replace('Ν', 'Н')
     
     # Розумне витягування хештегів, згенерованих Gemini в кінці тексту
     extracted_tags = ""
