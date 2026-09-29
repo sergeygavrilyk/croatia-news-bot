@@ -7,10 +7,12 @@ import logging
 import json
 import re
 import random
+import shutil
 from urllib.parse import urlparse
 from dotenv import load_dotenv
 from google import genai
 from google.genai import types  # ДОДАЄМО ЦЕ
+from pydantic import BaseModel, Field
 import cloudscraper  
 
 # Додаємо маскування під звичайний браузер
@@ -87,7 +89,12 @@ def load_backlog():
         logging.warning(f"⚠️ Не вдалося завантажити {BACKLOG_FILE} (можливо, файл пошкоджений): {e}. Починаємо з пустого списку.")
         return []
 
+
 def save_backlog(backlog):
+    # Робимо бекап старого файлу перед перезаписом
+    if os.path.exists(BACKLOG_FILE):
+        shutil.copy2(BACKLOG_FILE, BACKLOG_FILE + '.bak')
+        
     with open(BACKLOG_FILE, 'w', encoding='utf-8') as f:
         json.dump(backlog, f, ensure_ascii=False, indent=4)
 
@@ -197,6 +204,13 @@ def is_quality_article(title, description, url):
     if letters and (sum(1 for c in letters if c.isupper()) / len(letters)) > 0.4: return False
     
     return True
+class RejectedItem(BaseModel):
+    id: int
+    reason: str
+
+class NewsFilterResponse(BaseModel):
+    keep: list[int]
+    rejected: list[RejectedItem]
 
 def deduplicate_news(client, articles, history_titles=None, stats=None):
     if not articles: return articles
@@ -261,6 +275,7 @@ def deduplicate_news(client, articles, history_titles=None, stats=None):
                 # 2. ДОДАЄМО ТЕМПЕРАТУРУ 0.0 ДЛЯ СТАБІЛЬНОСТІ
                 config=types.GenerateContentConfig(
                     response_mime_type="application/json",
+                    response_schema=NewsFilterResponse,
                     temperature=0.0, 
                     safety_settings=[
                         types.SafetySetting(category="HARM_CATEGORY_HARASSMENT", threshold="BLOCK_NONE"),
@@ -554,12 +569,21 @@ def process_backlog(stats=None):
             logging.info(f"Текст від Gemini:\n{response.text}") 
             
             # --- ЖОРСТКЕ ВИДАЛЕННЯ ГАЛЮЦИНАЦІЙ ШІ ---
-# Іврит, арабська та зайві наголоси
-clean_text = clean_text.replace('ב', 'б').replace('ب', 'б').replace('є́', 'є').replace('і́', 'і')
-# Грецькі літери-двійники
-clean_text = clean_text.replace('ά', 'а').replace('α', 'а').replace('ό', 'о').replace('ο', 'о')
-clean_text = clean_text.replace('έ', 'е').replace('ε', 'е').replace('ί', 'і').replace('ι', 'і')
-clean_text = clean_text.replace('ή', 'и').replace('η', 'и').replace('ν', 'н').replace('Ν', 'Н')
+            HOMOGLYPHS = {
+                # Грецькі
+                'ά': 'а', 'α': 'а', 'ό': 'о', 'ο': 'о', 
+                'έ': 'е', 'ε': 'е', 'ί': 'і', 'ι': 'і', 
+                'ή': 'и', 'η': 'и', 'ν': 'н', 'Ν': 'Н',
+                # Іврит та арабська
+                'ב': 'б', 'ب': 'б',
+                # Зайві наголоси (комбіновані символи)
+                'є́': 'є', 'і́': 'і'
+            }
+            
+            clean_text = response.text
+            for bad_char, good_char in HOMOGLYPHS.items():
+                clean_text = clean_text.replace(bad_char, good_char)
+                
             generated_texts = [t.strip() for t in clean_text.strip().split('|||') if t.strip()]
             
             if len(generated_texts) == len(batch):
@@ -626,13 +650,17 @@ clean_text = clean_text.replace('ή', 'и').replace('η', 'и').replace('ν', '�
     save_backlog(remaining_backlog[:30])
 
 def send_to_telegram(text, url, source_name, image_url=None, tags=""):
-    # Фінальний рубіж очищення від галюцинацій ШІ
-    # 1. ФІКС ГАЛЮЦИНАЦІЙ ШІ
-    text = text.replace('ב', 'б').replace('ب', 'б').replace('є́', 'є').replace('і́', 'і')
-# Видаляємо грецькі літери-двійники (з наголосами та без)
-text = text.replace('ά', 'а').replace('α', 'а').replace('ό', 'о').replace('ο', 'о')
-text = text.replace('έ', 'е').replace('ε', 'е').replace('ί', 'і').replace('ι', 'і')
-text = text.replace('ή', 'и').replace('η', 'и').replace('ν', 'н').replace('Ν', 'Н')
+    # --- Фінальний рубіж очищення від галюцинацій ШІ ---
+    HOMOGLYPHS = {
+        'ά': 'а', 'α': 'а', 'ό': 'о', 'ο': 'о', 
+        'έ': 'е', 'ε': 'е', 'ί': 'і', 'ι': 'і', 
+        'ή': 'и', 'η': 'и', 'ν': 'н', 'Ν': 'Н',
+        'ב': 'б', 'ب': 'б',
+        'є́': 'є', 'і́': 'і'
+    }
+    
+    for bad_char, good_char in HOMOGLYPHS.items():
+        text = text.replace(bad_char, good_char)
     
     # Розумне витягування хештегів, згенерованих Gemini в кінці тексту
     extracted_tags = ""
