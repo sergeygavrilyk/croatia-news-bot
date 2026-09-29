@@ -1,39 +1,5 @@
 [
     {
-        "timestamp": "2026-09-20 07:01:07",
-        "execution_time": 5.4,
-        "funnel": {
-            "scraped_total": 45,
-            "scraped_by_source": {
-                "Antena Zadar": 10,
-                "023": 10,
-                "Slobodna dalmacija": 15,
-                "Zadarski list": 10
-            },
-            "already_seen": 7,
-            "rejected_by_keywords": 3,
-            "duplicates_removed_by_ai": 16
-        },
-        "backlog": {
-            "total_size": 16,
-            "sources": {
-                "Antena Zadar": 1,
-                "023": 4,
-                "Slobodna dalmacija": 2,
-                "Zadarski list": 9
-            }
-        },
-        "published": {
-            "total": 0,
-            "ukraine_priority": 0,
-            "with_images": 0,
-            "text_only": 0,
-            "sources": {}
-        },
-        "errors_count": 0,
-        "gemini_retries": 0
-    },
-    {
         "timestamp": "2026-09-20 08:01:06",
         "execution_time": 6.7,
         "funnel": {
@@ -3764,6 +3730,62 @@
                 "023": 9,
                 "Slobodna dalmacija": 7,
                 "Zadarski list": 8
+            }
+        },
+        "published": {
+            "total": 3,
+            "ukraine_priority": 0,
+            "with_images": 1,
+            "text_only": 2,
+            "sources": {
+                "023": 2,
+                "Slobodna dalmacija": 1
+            }
+        },
+        "errors_count": 0,
+        "gemini_retries": 0
+    },
+    {
+        "timestamp": "2026-09-29 08:01:05",
+        "execution_time": 168.2,
+        "funnel": {
+            "scraped_total": 35,
+            "scraped_by_source": {
+                "023": 10,
+                "Slobodna dalmacija": 15,
+                "Zadarski list": 10
+            },
+            "already_seen": 2,
+            "rejected_by_keywords": 1,
+            "duplicates_removed_by_ai": 19,
+            "rejection_reasons_list": [
+                "• Izložba Tatjane Masterl »Obzori i dimenz... ➡️ <b>Побут іншого міста (Рієка)</b>",
+                "• Jazine slažu ozbiljnu momčad: stigla su ... ➡️ <b>Спорт</b>",
+                "• Audicija u Zadru: Gesta prima prijave za... ➡️ <b>Світовий шум та лайфстайл (культурна подія/гуртка)</b>",
+                "• Sistem koji nikada ne iznevjeri – Noćna ... ➡️ <b>Світовий шум та лайфстайл (хобі, риболовля)</b>",
+                "• Na Zapadnoj obali otvoren CROYA Yacht Ch... ➡️ <b>Побут іншого міста (Спліт)</b>",
+                "• Uz predstavu »Mami« redatelja Marija Ban... ➡️ <b>Побут іншого міста (Загреб)</b>",
+                "• Misterij iznad Jadrana; Nestao helikopte... ➡️ <b>Світовий шум (крадіжка у Австрії)</b>",
+                "• Kako EFRi razvija poslijediplomsko obraz... ➡️ <b>Побут іншого міста (Рієка)</b>",
+                "• Stigli su nam sjajni dječji radovi: evo ... ➡️ <b>Побут іншого міста (Шибеник)</b>",
+                "• Ova mjesta u kuhinji gotovo nitko ne čis... ➡️ <b>Світовий шум та лайфстайл (поради для дому)</b>",
+                "• Školske torbe teže od olova, roditelji l... ➡️ <b>Побут іншого міста (Дубровник)</b>",
+                "• Bijele tenisice dobivaju konkurenciju: o... ➡️ <b>Світовий шум та лайфстайл (мода)</b>",
+                "• Gradska glazba Dubrovnik gostovala u Šib... ➡️ <b>Побут іншого міста (Шибеник/Дубровник)</b>",
+                "• Pita od jabuka s prženim maslacem bit će... ➡️ <b>Світовий шум та лайфстайл (рецепт)</b>",
+                "• Vodite li računa o svom srcu? Svjetski d... ➡️ <b>Світовий шум та лайфстайл (поради про здоров'я)</b>",
+                "• Zašto upalni procesi na koži izbijaju ba... ➡️ <b>Світовий шум та лайфстайл (абстрактна наука/здоров'я)</b>",
+                "• Zlato i srebro za KBK Velebit; Lucija To... ➡️ <b>Спорт</b>",
+                "• Koliko porcija cjelovitih žitarica treba... ➡️ <b>Світовий шум та лайфстайл (дієтологія)</b>",
+                "• Pet trajnica koje će vaš vrt pretvoriti ... ➡️ <b>Світовий шум та лайфстайл (поради для садівництва)</b>"
+            ]
+        },
+        "backlog": {
+            "total_size": 27,
+            "sources": {
+                "023": 11,
+                "Slobodna dalmacija": 6,
+                "Zadarski list": 10
             }
         },
         "published": {
