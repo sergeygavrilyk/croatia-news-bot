@@ -1,43 +1,5 @@
 [
     {
-        "timestamp": "2026-09-20 16:01:07",
-        "execution_time": 164.3,
-        "funnel": {
-            "scraped_total": 45,
-            "scraped_by_source": {
-                "Antena Zadar": 10,
-                "023": 10,
-                "Slobodna dalmacija": 15,
-                "Zadarski list": 10
-            },
-            "already_seen": 28,
-            "rejected_by_keywords": 11,
-            "duplicates_removed_by_ai": 14
-        },
-        "backlog": {
-            "total_size": 28,
-            "sources": {
-                "Slobodna dalmacija": 15,
-                "Antena Zadar": 4,
-                "023": 3,
-                "Zadarski list": 6
-            }
-        },
-        "published": {
-            "total": 3,
-            "ukraine_priority": 0,
-            "with_images": 1,
-            "text_only": 2,
-            "sources": {
-                "023": 1,
-                "Slobodna dalmacija": 1,
-                "Antena Zadar": 1
-            }
-        },
-        "errors_count": 0,
-        "gemini_retries": 0
-    },
-    {
         "timestamp": "2026-09-20 19:01:06",
         "execution_time": 161.2,
         "funnel": {
@@ -3958,6 +3920,65 @@
             "sources": {
                 "Slobodna dalmacija": 1,
                 "Zadarski list": 2
+            }
+        },
+        "errors_count": 0,
+        "gemini_retries": 0
+    },
+    {
+        "timestamp": "2026-09-29 19:01:09",
+        "execution_time": 166.1,
+        "funnel": {
+            "scraped_total": 35,
+            "scraped_by_source": {
+                "023": 10,
+                "Slobodna dalmacija": 15,
+                "Zadarski list": 10
+            },
+            "already_seen": 5,
+            "rejected_by_keywords": 3,
+            "duplicates_removed_by_ai": 22,
+            "rejection_reasons_list": [
+                "• Puca li suradnja PGS-a i HDZ-a u Klani n... ➡️ <b>Побут чужого міста</b>",
+                "• Ivan Pavličević povodom Dana policije: B... ➡️ <b>Вже є в історії</b>",
+                "• Čaj od kratoma izazvao dva srčana zastoj... ➡️ <b>Світовий шум</b>",
+                "• Služena misa za Mariju Krucifiksu Kozuli... ➡️ <b>Побут чужого міста</b>",
+                "• Ravnateljica Ljekarne Dubrovnik upozorav... ➡️ <b>Хорватія загалом - дрібні деталі</b>",
+                "• Studenac nastavlja s radom unatoč predst... ➡️ <b>Дублікат</b>",
+                "• Japanski startup započinje testiranje sv... ➡️ <b>Світовий шум</b>",
+                "• Kremasti jesenski rižoto od bundeve s pa... ➡️ <b>Лајфстайл та рецепти</b>",
+                "• Barbat bio središte sportskog ribolova, ... ➡️ <b>Спорт</b>",
+                "• Sobne biljke traže drugačiju njegu u jes... ➡️ <b>Лајфстайл та поради</b>",
+                "• Općinsko vijeće odbilo plan restrukturir... ➡️ <b>Побут чужого міста</b>",
+                "• Carinski službenici izvukli trideset nez... ➡️ <b>Дрібний кримінал у регіоні</b>",
+                "• Kanadski kuhar pretvorio kroasan sa šunk... ➡️ <b>Лајфстайл та рецепти</b>",
+                "• Burnham želi ukinuti većinski izborni su... ➡️ <b>Світовий шум</b>",
+                "• Polaganjem vijenaca i svečanom svetom mi... ➡️ <b>Вже є в історії</b>",
+                "• Talijanska studija pokazala kako svakodn... ➡️ <b>Світовий шум та здоров'я</b>",
+                "• Skandal u BiH; traju pretresi, pod istra... ➡️ <b>Дублікат</b>",
+                "• Zastrašujuća brojka; Hrvati svake godine... ➡️ <b>Вже є в історії</b>",
+                "• Hrvatska traži modernizaciju ribarske fl... ➡️ <b>Вже є в історії</b>",
+                "• Skandal u BiH; traju pretresi, pod istra... ➡️ <b>Вже є в історії</b>",
+                "• Uspjeh BK Sv. Krševan u 1. Hrvatskoj bok... ➡️ <b>Спорт</b>",
+                "• Vlada usvojila odluke: uklanjanje otpada... ➡️ <b>Вже є в історії</b>"
+            ]
+        },
+        "backlog": {
+            "total_size": 49,
+            "sources": {
+                "Zadarski list": 15,
+                "Slobodna dalmacija": 25,
+                "023": 9
+            }
+        },
+        "published": {
+            "total": 3,
+            "ukraine_priority": 0,
+            "with_images": 3,
+            "text_only": 0,
+            "sources": {
+                "Slobodna dalmacija": 2,
+                "Zadarski list": 1
             }
         },
         "errors_count": 0,
