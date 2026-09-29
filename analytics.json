@@ -1,42 +1,5 @@
 [
     {
-        "timestamp": "2026-09-20 13:01:07",
-        "execution_time": 162.3,
-        "funnel": {
-            "scraped_total": 45,
-            "scraped_by_source": {
-                "Antena Zadar": 10,
-                "023": 10,
-                "Slobodna dalmacija": 15,
-                "Zadarski list": 10
-            },
-            "already_seen": 12,
-            "rejected_by_keywords": 8,
-            "duplicates_removed_by_ai": 19
-        },
-        "backlog": {
-            "total_size": 32,
-            "sources": {
-                "Slobodna dalmacija": 12,
-                "Zadarski list": 12,
-                "Antena Zadar": 4,
-                "023": 4
-            }
-        },
-        "published": {
-            "total": 3,
-            "ukraine_priority": 0,
-            "with_images": 0,
-            "text_only": 3,
-            "sources": {
-                "Antena Zadar": 2,
-                "023": 1
-            }
-        },
-        "errors_count": 0,
-        "gemini_retries": 0
-    },
-    {
         "timestamp": "2026-09-20 14:01:05",
         "execution_time": 197.6,
         "funnel": {
@@ -3909,6 +3872,62 @@
                 "Slobodna dalmacija": 1,
                 "Zadarski list": 1,
                 "023": 1
+            }
+        },
+        "errors_count": 0,
+        "gemini_retries": 0
+    },
+    {
+        "timestamp": "2026-09-29 14:01:06",
+        "execution_time": 173.0,
+        "funnel": {
+            "scraped_total": 35,
+            "scraped_by_source": {
+                "023": 10,
+                "Slobodna dalmacija": 15,
+                "Zadarski list": 10
+            },
+            "already_seen": 6,
+            "rejected_by_keywords": 2,
+            "duplicates_removed_by_ai": 19,
+            "rejection_reasons_list": [
+                "• ‘Šušnjarova cijena na 28.09.2026‘: Možem... ➡️ <b>Світовий шум та лайфстайл</b>",
+                "• Kanadski kuhar pretvorio kroasan sa šunk... ➡️ <b>Світовий шум та лайфстайл</b>",
+                "• Teška prometna nesreća u Hreljinu, dvije... ➡️ <b>Побут чужих міст</b>",
+                "• Od prvog ukrcaja do dolaska u splitsku l... ➡️ <b>Побут чужих міст</b>",
+                "• Talijanska studija pokazala kako svakodn... ➡️ <b>Світовий шум та лайфстайл</b>",
+                "• Hrvatski animirani hit puni kina u Tursk... ➡️ <b>Світовий шум та лайфстайл</b>",
+                "• Zastrašujuća brojka; Hrvati svake godine... ➡️ <b>Світовий шум та лайфстайл</b>",
+                "• Bangkok pod vodom, zračni promet u kaosu... ➡️ <b>Світовий шум та лайфстайл</b>",
+                "• Grad Ploče proglasio srijedu, 30. rujna ... ➡️ <b>Дублікат</b>",
+                "• Uspjeh BK Sv. Krševan u 1. Hrvatskoj bok... ➡️ <b>Спорт</b>",
+                "• Izrael ubio Hamasova zapovjednika koji j... ➡️ <b>Світовий шум та лайфстайл</b>",
+                "• Iz Grada Dubrovnika o školskim ormarićim... ➡️ <b>Побут чужих міст</b>",
+                "• Priča o fra Ediju Ricovu; Blagi franjeva... ➡️ <b>Вже є в історії</b>",
+                "• Nekoliko dana nakon supruga preminula i ... ➡️ <b>Вже є в історії</b>",
+                "• Država rasprodaje vozila; Pogledajte cij... ➡️ <b>Світовий шум та лайфстайл</b>",
+                "• Franković odgovorio Bonačić Obradović: \"... ➡️ <b>Побут чужих міст</b>",
+                "• Miletić pitao Turudića o Kostabeli. Šef ... ➡️ <b>Побут чужих міст</b>",
+                "• “Viktor Lenac” pred ključnom odlukom: Kr... ➡️ <b>Побут чужих міст</b>",
+                "• \"Crveni križ u Gradu\" - 12 godina pomaga... ➡️ <b>Побут чужих міст</b>"
+            ]
+        },
+        "backlog": {
+            "total_size": 42,
+            "sources": {
+                "Zadarski list": 11,
+                "Slobodna dalmacija": 23,
+                "023": 8
+            }
+        },
+        "published": {
+            "total": 3,
+            "ukraine_priority": 0,
+            "with_images": 3,
+            "text_only": 0,
+            "sources": {
+                "Slobodna dalmacija": 1,
+                "Zadarski list": 2
             }
         },
         "errors_count": 0,
