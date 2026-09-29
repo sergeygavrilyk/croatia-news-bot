@@ -1,39 +1,5 @@
 [
     {
-        "timestamp": "2026-09-20 11:01:05",
-        "execution_time": 5.9,
-        "funnel": {
-            "scraped_total": 45,
-            "scraped_by_source": {
-                "Antena Zadar": 10,
-                "023": 10,
-                "Slobodna dalmacija": 15,
-                "Zadarski list": 10
-            },
-            "already_seen": 7,
-            "rejected_by_keywords": 9,
-            "duplicates_removed_by_ai": 25
-        },
-        "backlog": {
-            "total_size": 29,
-            "sources": {
-                "Zadarski list": 13,
-                "Antena Zadar": 2,
-                "023": 4,
-                "Slobodna dalmacija": 10
-            }
-        },
-        "published": {
-            "total": 0,
-            "ukraine_priority": 0,
-            "with_images": 0,
-            "text_only": 0,
-            "sources": {}
-        },
-        "errors_count": 0,
-        "gemini_retries": 0
-    },
-    {
         "timestamp": "2026-09-20 12:01:07",
         "execution_time": 162.5,
         "funnel": {
@@ -3862,6 +3828,65 @@
             "text_only": 2,
             "sources": {
                 "023": 2
+            }
+        },
+        "errors_count": 0,
+        "gemini_retries": 0
+    },
+    {
+        "timestamp": "2026-09-29 12:01:08",
+        "execution_time": 205.3,
+        "funnel": {
+            "scraped_total": 35,
+            "scraped_by_source": {
+                "023": 10,
+                "Slobodna dalmacija": 15,
+                "Zadarski list": 10
+            },
+            "already_seen": 2,
+            "rejected_by_keywords": 3,
+            "duplicates_removed_by_ai": 21,
+            "rejection_reasons_list": [
+                "• ‘Šušnjarova cijena na 28.09.2026‘: Možem... ➡️ <b>Світовий шум</b>",
+                "• Zlajin D8 Rock cafe živi dalje – prijate... ➡️ <b>Побут чужих міст</b>",
+                "• Uspjeh BK Sv. Krševan u 1. Hrvatskoj bok... ➡️ <b>Спорт</b>",
+                "• Velik odaziv na Dan otvorenih vrata u po... ➡️ <b>Вже є в історії</b>",
+                "• Art & paw radionica, sportske igre, buvl... ➡️ <b>Побут чужих міст</b>",
+                "• \"Crveni križ u Gradu\" - 12 godina pomaga... ➡️ <b>Побут чужих міст</b>",
+                "• Priča o fra Ediju Ricovu; Blagi franjeva... ➡️ <b>Лайфстайл</b>",
+                "• Božinović poslao snažnu poruku policajci... ➡️ <b>Вже є в історії</b>",
+                "• Franković zgrožen objavom člana SJG: ‘Št... ➡️ <b>Побут чужих міст</b>",
+                "• Država rasprodaje vozila; Pogledajte cij... ➡️ <b>Реклама</b>",
+                "• Kupujete kavu, čokoladu ili proizvode od... ➡️ <b>Світовий шум</b>",
+                "• Dokumentarac Jakova Sedlara stiže u Zada... ➡️ <b>Лайфстайл</b>",
+                "• U Županiji priređen prijem za predstavni... ➡️ <b>Побут чужих міст</b>",
+                "• Agronom Strikić otkriva zašto gori Dalma... ➡️ <b>Лайфстайл</b>",
+                "• Čuti proživljena iskustva; U Zadru se ot... ➡️ <b>Лайфстайл</b>",
+                "• Penavin propali projekt Ekonomske škole ... ➡️ <b>Побут чужих міст</b>",
+                "• Ovo je ‘Domald‘: nastao je na Dan svetog... ➡️ <b>Лайфстайл</b>",
+                "• Rigorozne kontrole oko škola; Pogledajte... ➡️ <b>Лайфстайл</b>",
+                "• Federalna policija upala u prostore javn... ➡️ <b>Побут чужих міст</b>",
+                "• Vikend zajedništva i duhovnosti; Camino ... ➡️ <b>Лайфстайл</b>",
+                "• Turudić potvrdio: Od HNS-a smo tražili z... ➡️ <b>Спорт</b>"
+            ]
+        },
+        "backlog": {
+            "total_size": 40,
+            "sources": {
+                "Slobodna dalmacija": 19,
+                "023": 12,
+                "Zadarski list": 9
+            }
+        },
+        "published": {
+            "total": 3,
+            "ukraine_priority": 0,
+            "with_images": 2,
+            "text_only": 1,
+            "sources": {
+                "Zadarski list": 1,
+                "023": 1,
+                "Slobodna dalmacija": 1
             }
         },
         "errors_count": 0,
