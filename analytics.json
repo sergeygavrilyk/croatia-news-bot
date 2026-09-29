@@ -1,39 +1,5 @@
 [
     {
-        "timestamp": "2026-09-20 15:01:06",
-        "execution_time": 81.1,
-        "funnel": {
-            "scraped_total": 45,
-            "scraped_by_source": {
-                "Antena Zadar": 10,
-                "023": 10,
-                "Slobodna dalmacija": 15,
-                "Zadarski list": 10
-            },
-            "already_seen": 12,
-            "rejected_by_keywords": 10,
-            "duplicates_removed_by_ai": 24
-        },
-        "backlog": {
-            "total_size": 24,
-            "sources": {
-                "Slobodna dalmacija": 14,
-                "Antena Zadar": 2,
-                "023": 3,
-                "Zadarski list": 5
-            }
-        },
-        "published": {
-            "total": 0,
-            "ukraine_priority": 0,
-            "with_images": 0,
-            "text_only": 0,
-            "sources": {}
-        },
-        "errors_count": 0,
-        "gemini_retries": 0
-    },
-    {
         "timestamp": "2026-09-20 16:01:07",
         "execution_time": 164.3,
         "funnel": {
@@ -3938,6 +3904,60 @@
             "sources": {
                 "Zadarski list": 2,
                 "Slobodna dalmacija": 1
+            }
+        },
+        "errors_count": 0,
+        "gemini_retries": 0
+    },
+    {
+        "timestamp": "2026-09-29 16:01:12",
+        "execution_time": 191.2,
+        "funnel": {
+            "scraped_total": 35,
+            "scraped_by_source": {
+                "023": 10,
+                "Slobodna dalmacija": 15,
+                "Zadarski list": 10
+            },
+            "already_seen": 17,
+            "rejected_by_keywords": 2,
+            "duplicates_removed_by_ai": 17,
+            "rejection_reasons_list": [
+                "• ‘Šušnjarova cijena na 28.09.2026‘: Možem... ➡️ <b>Світовий шум</b>",
+                "• Zbog radova večeras zatvoren podvožnjak ... ➡️ <b>Побут іншого міста</b>",
+                "• Sobne biljke traže drugačiju njegu u jes... ➡️ <b>Лайфстайл та поради</b>",
+                "• Kraljevica prelazi na prirodni plin, obj... ➡️ <b>Побут іншого міста</b>",
+                "• Kanadski kuhar pretvorio kroasan sa šunk... ➡️ <b>Лайфстайл та поради</b>",
+                "• ‘Sidrene‘ cijene: ‘Tko će nadoknaditi št... ➡️ <b>Вже є в історії</b>",
+                "• Talijanska studija pokazala kako svakodn... ➡️ <b>Світовий шум</b>",
+                "• Od prvog ukrcaja do dolaska u splitsku l... ➡️ <b>Побут іншого міста</b>",
+                "• Iz Grada Dubrovnika o školskim ormarićim... ➡️ <b>Побут іншого міста</b>",
+                "• Simfonija okusa, ljudi i prostora: Preds... ➡️ <b>Лайфстайл та поради</b>",
+                "• Uspjeh BK Sv. Krševan u 1. Hrvatskoj bok... ➡️ <b>Спорт</b>",
+                "• Priča o fra Ediju Ricovu; Blagi franjeva... ➡️ <b>Вже є в історії</b>",
+                "• Franković odgovorio Bonačić Obradović: \"... ➡️ <b>Побут іншого міста</b>",
+                "• Skladatelju i pijanistu Nevenu Frangešu ... ➡️ <b>Шоу-бізнес</b>",
+                "• Velik odaziv na Dan otvorenih vrata u po... ➡️ <b>Вже є в історії</b>",
+                "• Teška prometna nesreća u Hreljinu; dvije... ➡️ <b>Побут іншого міста</b>",
+                "• \"Crveni križ u Gradu\" - 12 godina pomaga... ➡️ <b>Побут іншого міста</b>"
+            ]
+        },
+        "backlog": {
+            "total_size": 45,
+            "sources": {
+                "Zadarski list": 13,
+                "Slobodna dalmacija": 23,
+                "023": 9
+            }
+        },
+        "published": {
+            "total": 3,
+            "ukraine_priority": 0,
+            "with_images": 3,
+            "text_only": 0,
+            "sources": {
+                "Slobodna dalmacija": 1,
+                "Zadarski list": 2
             }
         },
         "errors_count": 0,
