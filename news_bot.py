@@ -547,56 +547,73 @@ def process_backlog(stats=None):
     time.sleep(15)
 
     for attempt in range(3):
-        try:
-            response = client.models.generate_content(
-                model='gemini-3.5-flash-lite', 
-                contents=prompt,
-                config=types.GenerateContentConfig(
-                    safety_settings=[
-                        types.SafetySetting(category="HARM_CATEGORY_HARASSMENT", threshold="BLOCK_NONE"),
-                        types.SafetySetting(category="HARM_CATEGORY_HATE_SPEECH", threshold="BLOCK_NONE"),
-                        types.SafetySetting(category="HARM_CATEGORY_SEXUALLY_EXPLICIT", threshold="BLOCK_NONE"),
-                        types.SafetySetting(category="HARM_CATEGORY_DANGEROUS_CONTENT", threshold="BLOCK_NONE"),
-                    ]
+        success = False
+        clean_text = ""
+        
+        # Масив моделей для спроб: спочатку швидка, потім надійна
+        models_to_try = ['gemini-3.5-flash-lite', 'gemini-3.5-flash']
+        
+        for current_model in models_to_try:
+            try:
+                response = client.models.generate_content(
+                    model=current_model, 
+                    contents=prompt,
+                    config=types.GenerateContentConfig(
+                        safety_settings=[
+                            types.SafetySetting(category="HARM_CATEGORY_HARASSMENT", threshold="BLOCK_NONE"),
+                            types.SafetySetting(category="HARM_CATEGORY_HATE_SPEECH", threshold="BLOCK_NONE"),
+                            types.SafetySetting(category="HARM_CATEGORY_SEXUALLY_EXPLICIT", threshold="BLOCK_NONE"),
+                            types.SafetySetting(category="HARM_CATEGORY_DANGEROUS_CONTENT", threshold="BLOCK_NONE"),
+                        ]
+                    )
                 )
-            )
-            
-            # 1. СПОЧАТКУ ЗАХИСТ ВІД ПОРОЖНЬОЇ ВІДПОВІДІ (Safety Filters)
-            if not response or not getattr(response, 'text', None):
-                raise ValueError("Gemini повернув порожню відповідь (None). Ймовірно, спрацювали фільтри безпеки на вміст новин.")
-            
-            # 2. ЯКЩО ВСЕ ОК - ТОДІ ЛОГУЄМО І ПРАЦЮЄМО З ТЕКСТОМ
-            logging.info(f"Текст від Gemini:\n{response.text}") 
-            
-            # --- ЖОРСТКЕ ВИДАЛЕННЯ ГАЛЮЦИНАЦІЙ ШІ ---
-            HOMOGLYPHS = {
-                # Грецькі
-                'ά': 'а', 'α': 'а', 'ό': 'о', 'ο': 'о', 
-                'έ': 'е', 'ε': 'е', 'ί': 'і', 'ι': 'і', 
-                'ή': 'и', 'η': 'и', 'ν': 'н', 'Ν': 'Н',
-                # Іврит та арабська
-                'ב': 'б', 'ب': 'б',
-                # Зайві наголоси (комбіновані символи)
-                'є́': 'є', 'і́': 'і'
-            }
-            
-            clean_text = response.text
-            for bad_char, good_char in HOMOGLYPHS.items():
-                clean_text = clean_text.replace(bad_char, good_char)
                 
-            generated_texts = [t.strip() for t in clean_text.strip().split('|||') if t.strip()]
-            
-            if len(generated_texts) == len(batch):
-                break
-            else:
-                logging.warning(f"Gemini повернув {len(generated_texts)} текстів, а треба {len(batch)}. Повторна спроба...")
-                if stats is not None: stats["gemini_retries"] += 1
-                time.sleep(15)
+                # 1. СПОЧАТКУ ЗАХИСТ ВІД ПОРОЖНЬОЇ ВІДПОВІДІ (Safety Filters)
+                if not response or not getattr(response, 'text', None):
+                    raise ValueError(f"Порожня відповідь від {current_model}")
                 
-        except Exception as e:
-            logging.warning(f"Помилка Gemini API: {e}. Очікування 60с (Спроба {attempt+1}/3)")
+                # Якщо успіх - зберігаємо текст і виходимо з внутрішнього циклу
+                clean_text = response.text
+                success = True
+                break 
+                
+            except Exception as e:
+                logging.warning(f"Модель {current_model} недоступна або видала помилку: {e}. Пробуємо іншу...")
+                time.sleep(15) # Пауза перед наступною моделлю
+
+        # Якщо жодна з моделей не спрацювала в цій спробі
+        if not success:
+            logging.warning(f"Всі моделі недоступні. Очікування 60с (Спроба {attempt+1}/3)")
             if stats is not None: stats["gemini_retries"] += 1
             time.sleep(60)
+            continue # Переходимо до наступної спроби (attempt)
+
+        # 2. ЯКЩО ВСЕ ОК - ТОДІ ЛОГУЄМО І ПРАЦЮЄМО З ТЕКСТОМ
+        logging.info(f"Текст від Gemini:\n{clean_text}") 
+        
+        # --- ЖОРСТКЕ ВИДАЛЕННЯ ГАЛЮЦИНАЦІЙ ШІ ---
+        HOMOGLYPHS = {
+            # Грецькі
+            'ά': 'а', 'α': 'а', 'ό': 'о', 'ο': 'о', 
+            'έ': 'е', 'ε': 'е', 'ί': 'і', 'ι': 'і', 
+            'ή': 'и', 'η': 'и', 'ν': 'н', 'Ν': 'Н',
+            # Іврит та арабська
+            'ב': 'б', 'ب': 'б',
+            # Зайві наголоси (комбіновані символи)
+            'є́': 'є', 'і́': 'і'
+        }
+        
+        for bad_char, good_char in HOMOGLYPHS.items():
+            clean_text = clean_text.replace(bad_char, good_char)
+            
+        generated_texts = [t.strip() for t in clean_text.strip().split('|||') if t.strip()]
+        
+        if len(generated_texts) == len(batch):
+            break # Успішно згенерували потрібну кількість текстів, виходимо з головного циклу
+        else:
+            logging.warning(f"Gemini повернув {len(generated_texts)} текстів, а треба {len(batch)}. Повторна спроба...")
+            if stats is not None: stats["gemini_retries"] += 1
+            time.sleep(15)
             
     if not generated_texts: 
         logging.error("❌ Не вдалося згенерувати тексти після 3 спроб. Скасування публікації.")
@@ -610,7 +627,6 @@ def process_backlog(stats=None):
     for idx, item in enumerate(batch):
         if idx >= len(generated_texts): break 
         
-        # Передаємо порожні tags, оскільки Gemini тепер генерує їх прямо в тексті
         if send_to_telegram(generated_texts[idx], item['url'], item.get('source', 'Джерело'), item['image_url'], tags=""):
             history_urls = save_to_history(history_urls, item['url'], HISTORY_FILE)
             history_titles = save_to_history(history_titles, item['title'], TITLES_FILE)
