@@ -121,9 +121,7 @@ def send_analytics_to_admin(stats):
 
     # Формуємо блок із деталями відхилень Gemini, якщо вони є
     reasons_list = stats['funnel'].get('rejection_reasons_list', [])
-    reasons_str = "\n".join(reasons_list[:10]) if reasons_list else "Нічого не відсіяно або немає деталей"
-    if len(reasons_list) > 10:
-        reasons_str += f"\n...і ще відхилених: {len(reasons_list) - 10}"
+    reasons_str = "\n".join(reasons_list) if reasons_list else "Нічого не відсіяно або немає деталей"
 
     message = (
         f"📊 <b>Розширений звіт бота (Хорватія)</b>\n\n"
@@ -143,6 +141,7 @@ def send_analytics_to_admin(stats):
         f"▪️ Формат: З фото ({stats['published']['with_images']}) | Текст ({stats['published']['text_only']})\n"
         f"▪️ Пріоритет 🇺🇦: {stats['published']['ukraine_priority']}\n"
         f"▪️ Джерела: {pub_src_str}"
+        f"🤖 <b>ШІ моделі:</b> Lite: {stats['models_used'].get('gemini-3.5-flash-lite', 0)} | Pro: {stats['models_used'].get('gemini-3.5-flash', 0)}\n\n"
     )
     
     api_url = f"https://api.telegram.org/bot{TELEGRAM_BOT_TOKEN}/sendMessage"
@@ -575,6 +574,8 @@ def process_backlog(stats=None):
                 # Якщо успіх - зберігаємо текст і виходимо з внутрішнього циклу
                 clean_text = response.text
                 success = True
+                if stats is not None: 
+                    stats["models_used"][current_model] += 1
                 break 
                 
             except Exception as e:
@@ -756,6 +757,7 @@ def main():
             "text_only": 0,
             "sources": {}
         },
+        "models_used": {"gemini-3.5-flash-lite": 0, "gemini-3.5-flash": 0},
         "errors_count": 0,
         "gemini_retries": 0
     }
