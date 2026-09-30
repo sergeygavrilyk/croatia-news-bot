@@ -1,39 +1,5 @@
 [
     {
-        "timestamp": "2026-09-21 10:01:08",
-        "execution_time": 4.9,
-        "funnel": {
-            "scraped_total": 45,
-            "scraped_by_source": {
-                "Antena Zadar": 10,
-                "023": 10,
-                "Slobodna dalmacija": 15,
-                "Zadarski list": 10
-            },
-            "already_seen": 6,
-            "rejected_by_keywords": 5,
-            "duplicates_removed_by_ai": 25
-        },
-        "backlog": {
-            "total_size": 43,
-            "sources": {
-                "Slobodna dalmacija": 13,
-                "023": 13,
-                "Antena Zadar": 9,
-                "Zadarski list": 8
-            }
-        },
-        "published": {
-            "total": 0,
-            "ukraine_priority": 0,
-            "with_images": 0,
-            "text_only": 0,
-            "sources": {}
-        },
-        "errors_count": 0,
-        "gemini_retries": 0
-    },
-    {
         "timestamp": "2026-09-21 11:01:09",
         "execution_time": 5.8,
         "funnel": {
@@ -4051,6 +4017,66 @@
             "text_only": 3,
             "sources": {
                 "023": 3
+            }
+        },
+        "models_used": {
+            "gemini-3.5-flash-lite": 1,
+            "gemini-3.5-flash": 0
+        },
+        "errors_count": 0,
+        "gemini_retries": 0
+    },
+    {
+        "timestamp": "2026-09-30 10:01:03",
+        "execution_time": 183.5,
+        "funnel": {
+            "scraped_total": 35,
+            "scraped_by_source": {
+                "023": 10,
+                "Slobodna dalmacija": 15,
+                "Zadarski list": 10
+            },
+            "already_seen": 6,
+            "rejected_by_keywords": 2,
+            "duplicates_removed_by_ai": 19,
+            "rejection_reasons_list": [
+                "• Stigle dvije žalbe na natječaj za novi s... ➡️ <b>Побут Загреба</b>",
+                "• Pijane naočale i simulator prometne nesr... ➡️ <b>Побут Дубровника</b>",
+                "• Akademski sindikat traži ocjenu ustavnos... ➡️ <b>Національний рівень (освіта)</b>",
+                "• Zašto lice pocrveni baš u trenutku kad n... ➡️ <b>Світовий шум та лайфстайл</b>",
+                "• Sinatrovo by Marko Tolja stiže u Kraljev... ➡️ <b>Шоу-бізнес</b>",
+                "• Što se to skrivalo u Neretvi? Carinici i... ➡️ <b>Світовий шум та лайфстайл</b>",
+                "• Nastup Kuzme & Shaka Zulu u Pogonu odgođ... ➡️ <b>Шоу-бізнес</b>",
+                "• Gotovo 300 plesača stiže u Bibinje: Adri... ➡️ <b>Спорт</b>",
+                "• Sitno brojimo do feste od delicija! Fest... ➡️ <b>Побут Дубровника</b>",
+                "• of Montreal novi album “aethermead” uživ... ➡️ <b>Шоу-бізнес</b>",
+                "• Direktor KK Zadra Roko Jurlina više od s... ➡️ <b>Спорт</b>",
+                "• Preminuo je ugledni šibenski fizičar, zn... ➡️ <b>Світовий шум та лайфстайл</b>",
+                "• Biciklistički klub Posedarje otvara upis... ➡️ <b>Спорт</b>",
+                "• Dubrovačka mag. farmacije o cijepljenju ... ➡️ <b>Національний рівень (охорона здоров'я)</b>",
+                "• Legendarna zadarska skakaonica kao utoči... ➡️ <b>Спорт</b>",
+                "• Kod Drniša teško ozlijeđen 51-godišnji m... ➡️ <b>Побут Шибеника</b>",
+                "• Zaustavili ga zbog prolaska kroz crveno,... ➡️ <b>Побут Загреба</b>",
+                "• Donacijskim koncertom za Antuna Zaninija... ➡️ <b>Побут Дубровника</b>",
+                "• Mostovka najavila podršku Rinčić, Grad R... ➡️ <b>Побут Рієки</b>"
+            ]
+        },
+        "backlog": {
+            "total_size": 34,
+            "sources": {
+                "Zadarski list": 12,
+                "023": 11,
+                "Slobodna dalmacija": 11
+            }
+        },
+        "published": {
+            "total": 3,
+            "ukraine_priority": 0,
+            "with_images": 1,
+            "text_only": 2,
+            "sources": {
+                "023": 2,
+                "Slobodna dalmacija": 1
             }
         },
         "models_used": {
