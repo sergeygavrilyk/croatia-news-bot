@@ -1,42 +1,5 @@
 [
     {
-        "timestamp": "2026-09-21 09:01:14",
-        "execution_time": 161.3,
-        "funnel": {
-            "scraped_total": 45,
-            "scraped_by_source": {
-                "Antena Zadar": 10,
-                "023": 10,
-                "Slobodna dalmacija": 15,
-                "Zadarski list": 10
-            },
-            "already_seen": 6,
-            "rejected_by_keywords": 5,
-            "duplicates_removed_by_ai": 19
-        },
-        "backlog": {
-            "total_size": 34,
-            "sources": {
-                "Slobodna dalmacija": 10,
-                "023": 12,
-                "Antena Zadar": 7,
-                "Zadarski list": 5
-            }
-        },
-        "published": {
-            "total": 3,
-            "ukraine_priority": 0,
-            "with_images": 2,
-            "text_only": 1,
-            "sources": {
-                "Slobodna dalmacija": 2,
-                "023": 1
-            }
-        },
-        "errors_count": 0,
-        "gemini_retries": 0
-    },
-    {
         "timestamp": "2026-09-21 10:01:08",
         "execution_time": 4.9,
         "funnel": {
@@ -4033,6 +3996,66 @@
                 "Slobodna dalmacija": 1,
                 "Zadarski list": 1
             }
+        },
+        "errors_count": 0,
+        "gemini_retries": 0
+    },
+    {
+        "timestamp": "2026-09-30 09:01:03",
+        "execution_time": 165.4,
+        "funnel": {
+            "scraped_total": 35,
+            "scraped_by_source": {
+                "023": 10,
+                "Slobodna dalmacija": 15,
+                "Zadarski list": 10
+            },
+            "already_seen": 10,
+            "rejected_by_keywords": 1,
+            "duplicates_removed_by_ai": 20,
+            "rejection_reasons_list": [
+                "• Gotovo 300 plesača stiže u Bibinje: Adri... ➡️ <b>Спорт</b>",
+                "• Dubrovačka mag. farmacije o cijepljenju ... ➡️ <b>Світовий шум та лайфстайл</b>",
+                "• Sud objavio presudu po tužbi Holdinga. Š... ➡️ <b>Побут чужих міст</b>",
+                "• Direktor KK Zadra Roko Jurlina više od s... ➡️ <b>Спорт</b>",
+                "• Kod Drniša teško ozlijeđen 51-godišnji m... ➡️ <b>Побут чужих міст</b>",
+                "• Zaustavili ga zbog prolaska kroz crveno,... ➡️ <b>Побут чужих міст</b>",
+                "• Biciklistički klub Posedarje otvara upis... ➡️ <b>Спорт</b>",
+                "• Donacijskim koncertom za Antuna Zaninija... ➡️ <b>Побут чужих міст</b>",
+                "• Riječka Brajdica probila novu granicu. U... ➡️ <b>Побут чужих міст</b>",
+                "• Legendarna zadarska skakaonica kao utoči... ➡️ <b>Спорт</b>",
+                "• Čvor je konačno raspetljan, ABA liga i d... ➡️ <b>Спорт</b>",
+                "• Riječanin (72) priveden zbog prijetnje b... ➡️ <b>Побут чужих міст</b>",
+                "• Ronioci očekivali puno gore, a zatekli n... ➡️ <b>Спорт</b>",
+                "• Vješti rally vozač ušao s Audijem A6 e-t... ➡️ <b>Світовий шум та лайфстайл</b>",
+                "• Cijena kvadrata stana u ovom dijelu Dubr... ➡️ <b>Побут чужих міст</b>",
+                "• Udruga Srce za nju i Poliklinika Primari... ➡️ <b>Побут чужих міст</b>",
+                "• Besplatan prijevoz učenika na izvanučion... ➡️ <b>Побут чужих міст</b>",
+                "• Slijedite ovo jednostavno pravilo i srež... ➡️ <b>Світовий шум та лайфстайл</b>",
+                "• Otvoren natječaj za nagrade „Volonteri g... ➡️ <b>Побут чужих міст</b>",
+                "• Otvorene prijave za 18. generaciju Start... ➡️ <b>Побут чужих міст</b>"
+            ]
+        },
+        "backlog": {
+            "total_size": 31,
+            "sources": {
+                "023": 12,
+                "Zadarski list": 13,
+                "Slobodna dalmacija": 6
+            }
+        },
+        "published": {
+            "total": 3,
+            "ukraine_priority": 0,
+            "with_images": 0,
+            "text_only": 3,
+            "sources": {
+                "023": 3
+            }
+        },
+        "models_used": {
+            "gemini-3.5-flash-lite": 1,
+            "gemini-3.5-flash": 0
         },
         "errors_count": 0,
         "gemini_retries": 0
