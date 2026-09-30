@@ -1,42 +1,5 @@
 [
     {
-        "timestamp": "2026-09-21 15:01:14",
-        "execution_time": 482.3,
-        "funnel": {
-            "scraped_total": 45,
-            "scraped_by_source": {
-                "Antena Zadar": 10,
-                "023": 10,
-                "Slobodna dalmacija": 15,
-                "Zadarski list": 10
-            },
-            "already_seen": 15,
-            "rejected_by_keywords": 4,
-            "duplicates_removed_by_ai": 20
-        },
-        "backlog": {
-            "total_size": 56,
-            "sources": {
-                "Zadarski list": 23,
-                "Slobodna dalmacija": 21,
-                "023": 6,
-                "Antena Zadar": 6
-            }
-        },
-        "published": {
-            "total": 3,
-            "ukraine_priority": 0,
-            "with_images": 2,
-            "text_only": 1,
-            "sources": {
-                "Antena Zadar": 1,
-                "Zadarski list": 2
-            }
-        },
-        "errors_count": 0,
-        "gemini_retries": 0
-    },
-    {
         "timestamp": "2026-09-21 16:01:16",
         "execution_time": 196.5,
         "funnel": {
@@ -4171,6 +4134,69 @@
             "sources": {
                 "Slobodna dalmacija": 2,
                 "Zadarski list": 1
+            }
+        },
+        "models_used": {
+            "gemini-3.5-flash-lite": 1,
+            "gemini-3.5-flash": 0
+        },
+        "errors_count": 0,
+        "gemini_retries": 0
+    },
+    {
+        "timestamp": "2026-09-30 15:01:12",
+        "execution_time": 201.7,
+        "funnel": {
+            "scraped_total": 35,
+            "scraped_by_source": {
+                "023": 10,
+                "Slobodna dalmacija": 15,
+                "Zadarski list": 10
+            },
+            "already_seen": 11,
+            "rejected_by_keywords": 2,
+            "duplicates_removed_by_ai": 22,
+            "rejection_reasons_list": [
+                "• Otkriven planet koji je istodobno prekri... ➡️ <b>Світовий шум</b>",
+                "• Nastavlja se RInkluzija. Rijeci treba 16... ➡️ <b>Побут чужих міст</b>",
+                "• Tko je to stigao u Dubrovnik? ‘Stella Ma... ➡️ <b>Побут чужих міст</b>",
+                "• Jedan jeftin sastojak čini kajganu krema... ➡️ <b>Світовий шум</b>",
+                "• Kolektivno pregovaranje – od nerealnih z... ➡️ <b>Побут чужих міст</b>",
+                "• Čudan slučaj; poznatom sportašu ukraden ... ➡️ <b>Спорт</b>",
+                "• Zašto lice pocrveni baš u trenutku kad n... ➡️ <b>Світовий шум</b>",
+                "• Srdočki osnovci s gostima posjetili Ured... ➡️ <b>Побут чужих міст</b>",
+                "• Kraljevi najma: gradonačelnik Vodica ima... ➡️ <b>Реклама</b>",
+                "• Riječkim policajcima nagrade za hrabrost... ➡️ <b>Побут чужих міст</b>",
+                "• Donose nam 6,3 milijuna noćenja, a žele ... ➡️ <b>Вже є в історії</b>",
+                "• Predsjednik Republike Hrvatske Zoran Mil... ➡️ <b>Дублікат</b>",
+                "• Zagrebački HDZ: Tomašević proziva Vladu,... ➡️ <b>Дублікат</b>",
+                "• Povratak u Hrvatsku iz prve ruke: u Trok... ➡️ <b>Вже є в історії</b>",
+                "• Tepaju im da su elitni dio Dubrovnika, a... ➡️ <b>Побут чужих міст</b>",
+                "• Književni festival Lit Link u listopadu ... ➡️ <b>Побут чужих міст</b>",
+                "• Uz dubrovačke Banje pune kupača usidrena... ➡️ <b>Дублікат</b>",
+                "• Presuda suda u Zagrebu jasna: Radnici se... ➡️ <b>Дублікат</b>",
+                "• Milanović odlikovao policijske postaje u... ➡️ <b>Дублікат</b>",
+                "• Grad Senj daje potpore poljoprivrednicim... ➡️ <b>Побут чужих міст</b>",
+                "• Prijavi se na novi EDIT Digitalne Dalmac... ➡️ <b>Побут чужих міст</b>",
+                "• Počinje FOODravanje: Bit će svega i za n... ➡️ <b>Побут чужих міст</b>"
+            ]
+        },
+        "backlog": {
+            "total_size": 31,
+            "sources": {
+                "Zadarski list": 10,
+                "Slobodna dalmacija": 18,
+                "023": 3
+            }
+        },
+        "published": {
+            "total": 3,
+            "ukraine_priority": 0,
+            "with_images": 3,
+            "text_only": 0,
+            "sources": {
+                "Zadarski list": 2,
+                "Slobodna dalmacija": 1
             }
         },
         "models_used": {
