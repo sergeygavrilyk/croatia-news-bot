@@ -1,42 +1,5 @@
 [
     {
-        "timestamp": "2026-09-21 08:01:09",
-        "execution_time": 160.6,
-        "funnel": {
-            "scraped_total": 45,
-            "scraped_by_source": {
-                "Antena Zadar": 10,
-                "023": 10,
-                "Slobodna dalmacija": 15,
-                "Zadarski list": 10
-            },
-            "already_seen": 5,
-            "rejected_by_keywords": 5,
-            "duplicates_removed_by_ai": 19
-        },
-        "backlog": {
-            "total_size": 28,
-            "sources": {
-                "Antena Zadar": 5,
-                "023": 9,
-                "Slobodna dalmacija": 7,
-                "Zadarski list": 7
-            }
-        },
-        "published": {
-            "total": 3,
-            "ukraine_priority": 0,
-            "with_images": 3,
-            "text_only": 0,
-            "sources": {
-                "Zadarski list": 2,
-                "Slobodna dalmacija": 1
-            }
-        },
-        "errors_count": 0,
-        "gemini_retries": 0
-    },
-    {
         "timestamp": "2026-09-21 09:01:14",
         "execution_time": 161.3,
         "funnel": {
@@ -4017,5 +3980,61 @@
         },
         "errors_count": 1,
         "gemini_retries": 3
+    },
+    {
+        "timestamp": "2026-09-30 08:39:08",
+        "execution_time": 165.5,
+        "funnel": {
+            "scraped_total": 35,
+            "scraped_by_source": {
+                "023": 10,
+                "Slobodna dalmacija": 15,
+                "Zadarski list": 10
+            },
+            "already_seen": 16,
+            "rejected_by_keywords": 0,
+            "duplicates_removed_by_ai": 18,
+            "rejection_reasons_list": [
+                "• Zaustavili ga zbog prolaska kroz crveno,... ➡️ <b>Побут Загреба</b>",
+                "• Kod Drniša teško ozlijeđen 51-godišnji m... ➡️ <b>Побут Шібеника</b>",
+                "• Riječka Brajdica probila novu granicu. U... ➡️ <b>Побут Рієки</b>",
+                "• Gotovo 300 plesača stiže u Bibinje: Adri... ➡️ <b>Спорт</b>",
+                "• Donacijskim koncertom za Antuna Zaninija... ➡️ <b>Побут Дубровника</b>",
+                "• Riječanin (72) priveden zbog prijetnje b... ➡️ <b>Побут Рієки</b>",
+                "• Direktor KK Zadra Roko Jurlina više od s... ➡️ <b>Спорт</b>",
+                "• Biciklistički klub Posedarje otvara upis... ➡️ <b>Спорт</b>",
+                "• Čvor je konačno raspetljan, ABA liga i d... ➡️ <b>Спорт</b>",
+                "• Vješti rally vozač ušao s Audijem A6 e-t... ➡️ <b>Світовий шум та лайфстайл</b>",
+                "• Ronioci očekivali puno gore, a zatekli n... ➡️ <b>Побут Ражанаца</b>",
+                "• Udruga Srce za nju i Poliklinika Primari... ➡️ <b>Дублікат</b>",
+                "• Cijena kvadrata stana u ovom dijelu Dubr... ➡️ <b>Побут Дубровника</b>",
+                "• Udruga Srce za nju i Poliklinika Primari... ➡️ <b>Побут Рієки</b>",
+                "• Besplatan prijevoz učenika na izvanučion... ➡️ <b>Побут Рієки</b>",
+                "• Otvoren natječaj za nagrade „Volonteri g... ➡️ <b>Побут Рієки</b>",
+                "• Slijedite ovo jednostavno pravilo i srež... ➡️ <b>Світовий шум та лайфстайл</b>",
+                "• Rijeka uvodi nagradu „AmbasadoRi mira“ z... ➡️ <b>Побут Рієки</b>"
+            ]
+        },
+        "backlog": {
+            "total_size": 34,
+            "sources": {
+                "023": 13,
+                "Slobodna dalmacija": 6,
+                "Zadarski list": 15
+            }
+        },
+        "published": {
+            "total": 3,
+            "ukraine_priority": 0,
+            "with_images": 2,
+            "text_only": 1,
+            "sources": {
+                "023": 1,
+                "Slobodna dalmacija": 1,
+                "Zadarski list": 1
+            }
+        },
+        "errors_count": 0,
+        "gemini_retries": 0
     }
 ]
