@@ -1,42 +1,5 @@
 [
     {
-        "timestamp": "2026-09-20 19:01:06",
-        "execution_time": 161.2,
-        "funnel": {
-            "scraped_total": 45,
-            "scraped_by_source": {
-                "Antena Zadar": 10,
-                "023": 10,
-                "Slobodna dalmacija": 15,
-                "Zadarski list": 10
-            },
-            "already_seen": 11,
-            "rejected_by_keywords": 11,
-            "duplicates_removed_by_ai": 10
-        },
-        "backlog": {
-            "total_size": 20,
-            "sources": {
-                "Slobodna dalmacija": 10,
-                "Antena Zadar": 4,
-                "Zadarski list": 6
-            }
-        },
-        "published": {
-            "total": 3,
-            "ukraine_priority": 0,
-            "with_images": 2,
-            "text_only": 1,
-            "sources": {
-                "Slobodna dalmacija": 1,
-                "Zadarski list": 1,
-                "Antena Zadar": 1
-            }
-        },
-        "errors_count": 0,
-        "gemini_retries": 0
-    },
-    {
         "timestamp": "2026-09-21 07:01:16",
         "execution_time": 161.6,
         "funnel": {
@@ -3979,6 +3942,61 @@
             "sources": {
                 "Slobodna dalmacija": 2,
                 "Zadarski list": 1
+            }
+        },
+        "errors_count": 0,
+        "gemini_retries": 0
+    },
+    {
+        "timestamp": "2026-09-30 07:01:07",
+        "execution_time": 166.0,
+        "funnel": {
+            "scraped_total": 35,
+            "scraped_by_source": {
+                "023": 10,
+                "Slobodna dalmacija": 15,
+                "Zadarski list": 10
+            },
+            "already_seen": 3,
+            "rejected_by_keywords": 2,
+            "duplicates_removed_by_ai": 18,
+            "rejection_reasons_list": [
+                "• Čuvar Gacke upozorava: ‘Novo uzimanje vo... ➡️ <b>Побут чужих міст</b>",
+                "• 30 godina glazbe, poezije i politike: Ri... ➡️ <b>Світовий шум та лайфстайл</b>",
+                "• Ronioci očekivali puno gore, a zatekli n... ➡️ <b>Спорт</b>",
+                "• Slijedite ovo jednostavno pravilo i srež... ➡️ <b>Світовий шум та лайфстайл</b>",
+                "• “Sram koji nosim nije uvijek moj”: Preds... ➡️ <b>Побут чужих міст</b>",
+                "• Cijena kvadrata stana u ovom dijelu Dubr... ➡️ <b>Побут чужих міст</b>",
+                "• Vlada u zadnji čas odgodila sidrene cije... ➡️ <b>Вже є в історії</b>",
+                "• Roman o smrti koji je istodobno i roman ... ➡️ <b>Світовий шум та лайфстайл</b>",
+                "• Bračni par iz Amerike prehodao pola tisu... ➡️ <b>Вже є в історії</b>",
+                "• Zašto sve više beauty brendova govori o ... ➡️ <b>Світовий шум та лайфстайл</b>",
+                "• Zoran Milanović Redom Bana Jelačića odli... ➡️ <b>Побут чужих міст</b>",
+                "• Prvenstvo Hrvatske u RC automobilizmu od... ➡️ <b>Спорт</b>",
+                "• Pečeni patlidžan s tahinijem i jogurtom:... ➡️ <b>Світовий шум та лайфстайл</b>",
+                "• Zabrana parkiranja na dijelu Ulice M. Ma... ➡️ <b>Побут чужих міст</b>",
+                "• Tepih kao najbrži način za promjenu dnev... ➡️ <b>Світовий шум та лайфстайл</b>",
+                "• Krenuli su iz Međugorja, 26 dana hodali ... ➡️ <b>Дублікат</b>",
+                "• Evo zašto bi med trebao postati nezaobil... ➡️ <b>Світовий шум та лайфстайл</b>",
+                "• Šef Ubera osobno testirao Verneov robota... ➡️ <b>Побут чужих міст</b>"
+            ]
+        },
+        "backlog": {
+            "total_size": 22,
+            "sources": {
+                "023": 8,
+                "Slobodna dalmacija": 6,
+                "Zadarski list": 8
+            }
+        },
+        "published": {
+            "total": 3,
+            "ukraine_priority": 0,
+            "with_images": 1,
+            "text_only": 2,
+            "sources": {
+                "Slobodna dalmacija": 1,
+                "023": 2
             }
         },
         "errors_count": 0,
