@@ -1,43 +1,5 @@
 [
     {
-        "timestamp": "2026-09-21 14:01:15",
-        "execution_time": 474.8,
-        "funnel": {
-            "scraped_total": 45,
-            "scraped_by_source": {
-                "Antena Zadar": 10,
-                "023": 10,
-                "Slobodna dalmacija": 15,
-                "Zadarski list": 10
-            },
-            "already_seen": 11,
-            "rejected_by_keywords": 5,
-            "duplicates_removed_by_ai": 17
-        },
-        "backlog": {
-            "total_size": 59,
-            "sources": {
-                "Zadarski list": 23,
-                "Slobodna dalmacija": 22,
-                "023": 7,
-                "Antena Zadar": 7
-            }
-        },
-        "published": {
-            "total": 3,
-            "ukraine_priority": 0,
-            "with_images": 1,
-            "text_only": 2,
-            "sources": {
-                "Slobodna dalmacija": 1,
-                "023": 1,
-                "Antena Zadar": 1
-            }
-        },
-        "errors_count": 0,
-        "gemini_retries": 0
-    },
-    {
         "timestamp": "2026-09-21 15:01:14",
         "execution_time": 482.3,
         "funnel": {
@@ -4149,6 +4111,66 @@
             "text_only": 3,
             "sources": {
                 "023": 3
+            }
+        },
+        "models_used": {
+            "gemini-3.5-flash-lite": 1,
+            "gemini-3.5-flash": 0
+        },
+        "errors_count": 0,
+        "gemini_retries": 0
+    },
+    {
+        "timestamp": "2026-09-30 14:01:10",
+        "execution_time": 166.8,
+        "funnel": {
+            "scraped_total": 35,
+            "scraped_by_source": {
+                "023": 10,
+                "Slobodna dalmacija": 15,
+                "Zadarski list": 10
+            },
+            "already_seen": 10,
+            "rejected_by_keywords": 2,
+            "duplicates_removed_by_ai": 19,
+            "rejection_reasons_list": [
+                "• Rekordni prihodi od stranih turista u pr... ➡️ <b>Економічна статистика загальнонаціонального рівня</b>",
+                "• Jedan jeftin sastojak čini kajganu krema... ➡️ <b>Поради дієтологів та лайфстайл</b>",
+                "• Pokrenuta europska alternativa američkim... ➡️ <b>Світовий шум / фінансові новини ЄС</b>",
+                "• Čudan slučaj; poznatom sportašu ukraden ... ➡️ <b>Спортсмени та загальнонаціональний кримінал</b>",
+                "• Zašto lice pocrveni baš u trenutku kad n... ➡️ <b>Абстрактна наука та лайфстайл</b>",
+                "• Kraljevi najma: gradonačelnik Vodica ima... ➡️ <b>Побут інших міст (Водиці, Дрніш)</b>",
+                "• Počinju radovi u Ulici Široli u Viškovu:... ➡️ <b>Побут іншого міста (Вишково, Рієка)</b>",
+                "• Donose nam 6,3 milijuna noćenja, a žele ... ➡️ <b>Туристична статистика загальнонаціонального рівня</b>",
+                "• HDZ: SDP ponovno potvrđuje da ne želi iz... ➡️ <b>Політичні суперечки в Sabor</b>",
+                "• Predsjednik Republike Hrvatske Zoran Mil... ➡️ <b>Дублікат новини про нагородження поліції</b>",
+                "• Može li smeće postati umjetnost? Doria V... ➡️ <b>Культура та мистецтво в Рієці</b>",
+                "• Povratak u Hrvatsku iz prve ruke: u Trok... ➡️ <b>Подія у Шибенику про мігрантів</b>",
+                "• Tepaju im da su elitni dio Dubrovnika, a... ➡️ <b>Побут іншого міста (Дубровник)</b>",
+                "• Koje će radnike trebati poslodavci u Lic... ➡️ <b>Побут іншого міста (Госпіч, Лика)</b>",
+                "• Uz dubrovačke Banje pune kupača usidrena... ➡️ <b>Лайфстайл та туризм в Дубровнику</b>",
+                "• Milanović odlikovao policijske postaje u... ➡️ <b>Дублікат новини про нагородження поліції</b>",
+                "• Prijavi se na novi EDIT Digitalne Dalmac... ➡️ <b>Побут іншого міста (Спліт/Далмація)</b>",
+                "• Počinje FOODravanje: Bit će svega i za n... ➡️ <b>Побут іншого міста (Дубровник)</b>",
+                "• Sitno brojimo do feste od delicija! Fest... ➡️ <b>Побут іншого міста (Дубровник)</b>"
+            ]
+        },
+        "backlog": {
+            "total_size": 31,
+            "sources": {
+                "Slobodna dalmacija": 20,
+                "023": 2,
+                "Zadarski list": 9
+            }
+        },
+        "published": {
+            "total": 3,
+            "ukraine_priority": 0,
+            "with_images": 3,
+            "text_only": 0,
+            "sources": {
+                "Slobodna dalmacija": 2,
+                "Zadarski list": 1
             }
         },
         "models_used": {
