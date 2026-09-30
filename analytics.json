@@ -1,39 +1,5 @@
 [
     {
-        "timestamp": "2026-09-21 11:01:09",
-        "execution_time": 5.8,
-        "funnel": {
-            "scraped_total": 45,
-            "scraped_by_source": {
-                "Antena Zadar": 10,
-                "023": 10,
-                "Slobodna dalmacija": 15,
-                "Zadarski list": 10
-            },
-            "already_seen": 21,
-            "rejected_by_keywords": 4,
-            "duplicates_removed_by_ai": 25
-        },
-        "backlog": {
-            "total_size": 63,
-            "sources": {
-                "Slobodna dalmacija": 20,
-                "023": 16,
-                "Antena Zadar": 10,
-                "Zadarski list": 17
-            }
-        },
-        "published": {
-            "total": 0,
-            "ukraine_priority": 0,
-            "with_images": 0,
-            "text_only": 0,
-            "sources": {}
-        },
-        "errors_count": 0,
-        "gemini_retries": 0
-    },
-    {
         "timestamp": "2026-09-21 12:01:08",
         "execution_time": 236.8,
         "funnel": {
@@ -4077,6 +4043,65 @@
             "sources": {
                 "023": 2,
                 "Slobodna dalmacija": 1
+            }
+        },
+        "models_used": {
+            "gemini-3.5-flash-lite": 1,
+            "gemini-3.5-flash": 0
+        },
+        "errors_count": 0,
+        "gemini_retries": 0
+    },
+    {
+        "timestamp": "2026-09-30 11:01:06",
+        "execution_time": 179.9,
+        "funnel": {
+            "scraped_total": 35,
+            "scraped_by_source": {
+                "023": 10,
+                "Slobodna dalmacija": 15,
+                "Zadarski list": 10
+            },
+            "already_seen": 8,
+            "rejected_by_keywords": 5,
+            "duplicates_removed_by_ai": 18,
+            "rejection_reasons_list": [
+                "• Mara i Kata s Igara preselile u HTV-ovu ... ➡️ <b>Шоу-бізнес та лайфстайл</b>",
+                "• Milanović na sastanku s načelnikom Glavn... ➡️ <b>Несуттєва політична зустріч без важливих рішень</b>",
+                "• Zašto lice pocrveni baš u trenutku kad n... ➡️ <b>Світовий шум та лайфстайл</b>",
+                "• Posađene palme uz Posat, pogledajte kako... ➡️ <b>Побут чужих міст (Дубровник)</b>",
+                "• Turudić se boji za budućnost DORH-a. Pit... ➡️ <b>Вже є в історії</b>",
+                "• Gotovo 300 plesača stiže u Bibinje: Adri... ➡️ <b>Спорт</b>",
+                "• Baglivi o Getaldiću: nova stranica u eur... ➡️ <b>Світовий шум та лайфстайл</b>",
+                "• JeboTon slavi 15 godina: IDEM, Ki Klop i... ➡️ <b>Шоу-бізнес та лайфстайл</b>",
+                "• „Zvijezde“ ovogodišnjeg CROYA sajma... ➡️ <b>Побут чужих міст (Спліт)</b>",
+                "• Biciklistički klub Posedarje otvara upis... ➡️ <b>Спорт</b>",
+                "• Pijane naočale i simulator prometne nesr... ➡️ <b>Побут чужих міст (Дубровник)</b>",
+                "• Legendarna zadarska skakaonica kao utoči... ➡️ <b>Спорт</b>",
+                "• Što se to skrivalo u Neretvi? Carinici i... ➡️ <b>Світовий шум та лайфстайл</b>",
+                "• Sud objavio presude: Nezakonita oba štra... ➡️ <b>Дублікат</b>",
+                "• Sitno brojimo do feste od delicija! Fest... ➡️ <b>Побут чужих міст (Дубровник)</b>",
+                "• Bračni par iz Amerike prehodao pola tisu... ➡️ <b>Світовий шум та лайфстайл</b>",
+                "• Preminuo je ugledni šibenski fizičar, zn... ➡️ <b>Некролог з іншого міста</b>",
+                "• Prvenstvo Hrvatske u RC automobilizmu od... ➡️ <b>Спорт</b>"
+            ]
+        },
+        "backlog": {
+            "total_size": 34,
+            "sources": {
+                "Zadarski list": 11,
+                "Slobodna dalmacija": 14,
+                "023": 9
+            }
+        },
+        "published": {
+            "total": 3,
+            "ukraine_priority": 0,
+            "with_images": 2,
+            "text_only": 1,
+            "sources": {
+                "023": 1,
+                "Zadarski list": 2
             }
         },
         "models_used": {
