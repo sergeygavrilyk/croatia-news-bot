@@ -1,43 +1,5 @@
 [
     {
-        "timestamp": "2026-09-21 13:01:14",
-        "execution_time": 235.7,
-        "funnel": {
-            "scraped_total": 45,
-            "scraped_by_source": {
-                "Antena Zadar": 10,
-                "023": 10,
-                "Slobodna dalmacija": 15,
-                "Zadarski list": 10
-            },
-            "already_seen": 10,
-            "rejected_by_keywords": 3,
-            "duplicates_removed_by_ai": 7
-        },
-        "backlog": {
-            "total_size": 62,
-            "sources": {
-                "Zadarski list": 24,
-                "Slobodna dalmacija": 21,
-                "023": 9,
-                "Antena Zadar": 8
-            }
-        },
-        "published": {
-            "total": 3,
-            "ukraine_priority": 1,
-            "with_images": 1,
-            "text_only": 2,
-            "sources": {
-                "023": 1,
-                "Zadarski list": 1,
-                "Antena Zadar": 1
-            }
-        },
-        "errors_count": 0,
-        "gemini_retries": 0
-    },
-    {
         "timestamp": "2026-09-21 14:01:15",
         "execution_time": 474.8,
         "funnel": {
@@ -4127,6 +4089,66 @@
             "sources": {
                 "Slobodna dalmacija": 2,
                 "Zadarski list": 1
+            }
+        },
+        "models_used": {
+            "gemini-3.5-flash-lite": 1,
+            "gemini-3.5-flash": 0
+        },
+        "errors_count": 0,
+        "gemini_retries": 0
+    },
+    {
+        "timestamp": "2026-09-30 13:01:12",
+        "execution_time": 175.5,
+        "funnel": {
+            "scraped_total": 25,
+            "scraped_by_source": {
+                "023": 10,
+                "Slobodna dalmacija": 15
+            },
+            "already_seen": 7,
+            "rejected_by_keywords": 1,
+            "duplicates_removed_by_ai": 21,
+            "rejection_reasons_list": [
+                "• Donose nam 6,3 milijuna noćenja, a žele ... ➡️ <b>Світовий шум</b>",
+                "• Policija razbila blokadu u Koromačnu, pr... ➡️ <b>Побут інших міст</b>",
+                "• Jedan jeftin sastojak čini kajganu krema... ➡️ <b>Світовий шум</b>",
+                "• Predsjednik Republike Hrvatske Zoran Mil... ➡️ <b>Дублікат</b>",
+                "• Sud objavio presudu po tužbi Holdinga. Š... ➡️ <b>Побут інших міст</b>",
+                "• Zašto lice pocrveni baš u trenutku kad n... ➡️ <b>Світовий шум</b>",
+                "• Povratak u Hrvatsku iz prve ruke: u Trok... ➡️ <b>Вже є в історії</b>",
+                "• Nakon četiri kvara riječkih autobusa pro... ➡️ <b>Побут інших міст</b>",
+                "• Tepaju im da su elitni dio Dubrovnika, a... ➡️ <b>Побут інших міст</b>",
+                "• Umjesto da već voze, Rimac mora vratiti ... ➡️ <b>Світовий шум</b>",
+                "• Uz dubrovačke Banje pune kupača usidrena... ➡️ <b>Побут інших міст</b>",
+                "• 30 godina glazbe, poezije i politike: Ri... ➡️ <b>Побут інших міст</b>",
+                "• Milanović odlikovao policijske postaje u... ➡️ <b>Вже є в історії</b>",
+                "• Prijavi se na novi EDIT Digitalne Dalmac... ➡️ <b>Побут інших міст</b>",
+                "• Počinje FOODravanje: Bit će svega i za n... ➡️ <b>Побут інших міст</b>",
+                "• ‘Stani, razmisli, sigurno nastavi‘: u Me... ➡️ <b>Побут інших міст</b>",
+                "• Obilježava se 35. godina Otočkog batalju... ➡️ <b>Вже є в історії</b>",
+                "• Dubrovački iznajmljivači imaju zanimljiv... ➡️ <b>Побут інших міст</b>",
+                "• „Zvijezde“ ovogodišnjeg CROYA sajma... ➡️ <b>Побут інших міст</b>",
+                "• Pijane naočale i simulator prometne nesr... ➡️ <b>Побут інших міст</b>",
+                "• Što se to skrivalo u Neretvi? Carinici i... ➡️ <b>Світовий шум</b>"
+            ]
+        },
+        "backlog": {
+            "total_size": 32,
+            "sources": {
+                "Slobodna dalmacija": 22,
+                "Zadarski list": 5,
+                "023": 5
+            }
+        },
+        "published": {
+            "total": 3,
+            "ukraine_priority": 0,
+            "with_images": 0,
+            "text_only": 3,
+            "sources": {
+                "023": 3
             }
         },
         "models_used": {
