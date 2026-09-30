@@ -1,42 +1,5 @@
 [
     {
-        "timestamp": "2026-09-21 16:01:16",
-        "execution_time": 196.5,
-        "funnel": {
-            "scraped_total": 45,
-            "scraped_by_source": {
-                "Antena Zadar": 10,
-                "023": 10,
-                "Slobodna dalmacija": 15,
-                "Zadarski list": 10
-            },
-            "already_seen": 14,
-            "rejected_by_keywords": 5,
-            "duplicates_removed_by_ai": 19
-        },
-        "backlog": {
-            "total_size": 56,
-            "sources": {
-                "Zadarski list": 21,
-                "Slobodna dalmacija": 24,
-                "Antena Zadar": 5,
-                "023": 6
-            }
-        },
-        "published": {
-            "total": 3,
-            "ukraine_priority": 0,
-            "with_images": 1,
-            "text_only": 2,
-            "sources": {
-                "Zadarski list": 1,
-                "023": 2
-            }
-        },
-        "errors_count": 0,
-        "gemini_retries": 0
-    },
-    {
         "timestamp": "2026-09-21 19:01:07",
         "execution_time": 5.2,
         "funnel": {
@@ -4201,6 +4164,69 @@
         },
         "models_used": {
             "gemini-3.5-flash-lite": 1,
+            "gemini-3.5-flash": 0
+        },
+        "errors_count": 0,
+        "gemini_retries": 0
+    },
+    {
+        "timestamp": "2026-09-30 16:01:10",
+        "execution_time": 15.2,
+        "funnel": {
+            "scraped_total": 35,
+            "scraped_by_source": {
+                "023": 10,
+                "Slobodna dalmacija": 15,
+                "Zadarski list": 10
+            },
+            "already_seen": 9,
+            "rejected_by_keywords": 0,
+            "duplicates_removed_by_ai": 25,
+            "rejection_reasons_list": [
+                "• Franković predstavio rezultate programa ... ➡️ <b>Побут чужих міст</b>",
+                "• Mlada riječka pjevačica Nina AD donosi n... ➡️ <b>Світовий шум та лайфстайл</b>",
+                "• Recept za mekane njoke od bundeve koje u... ➡️ <b>Світовий шум та лайфстайл</b>",
+                "• Da nije dobrih ljudi, Petra bi bila u ko... ➡️ <b>Побут чужих міст</b>",
+                "• U prometnoj nesreći na Hreljinu teško oz... ➡️ <b>Побут чужих міст</b>",
+                "• Otkriven planet koji je istodobno prekri... ➡️ <b>Світовий шум та лайфстайл</b>",
+                "• Veći vodostaj Neretve u idućim tjednima ... ➡️ <b>Побут чужих міст</b>",
+                "• Milanović: Provedbeni dokument dugoročno... ➡️ <b>Вже є в історії</b>",
+                "• Jedan jeftin sastojak čini kajganu krema... ➡️ <b>Світовий шум та лайфстайл</b>",
+                "• Tko je to stigao u Dubrovnik? ‘Stella Ma... ➡️ <b>Побут чужих міст</b>",
+                "• Pomorska škola Bakar ugostila učenike iz... ➡️ <b>Побут чужих міст</b>",
+                "• Zašto lice pocrveni baš u trenutku kad n... ➡️ <b>Світовий шум та лайфстайл</b>",
+                "• Čudan slučaj; poznatom sportašu ukraden ... ➡️ <b>Спорт</b>",
+                "• Zlatni val u listopadu: nutricionistička... ➡️ <b>Побут чужих міст</b>",
+                "• Kraljevi najma: gradonačelnik Vodica ima... ➡️ <b>Побут чужих міст</b>",
+                "• Ministarstvo razvija SOP za brzu podršku... ➡️ <b>Вже є в історії</b>",
+                "• Donose nam 6,3 milijuna noćenja, a žele ... ➡️ <b>Світовий шум та лайфстайл</b>",
+                "• Učenici OŠ Belvedere i Sušačke gimnazije... ➡️ <b>Побут чужих міст</b>",
+                "• Predsjednik Republike Hrvatske Zoran Mil... ➡️ <b>Вже є в історії</b>",
+                "• Uklonjen i drugi reklamni pano s Robne k... ➡️ <b>Побут чужих міст</b>",
+                "• Povratak u Hrvatsku iz prve ruke: u Trok... ➡️ <b>Побут чужих міст</b>",
+                "• Počinje Mentalfest, riječki Festival men... ➡️ <b>Побут чужих міст</b>",
+                "• Tepaju im da su elitni dio Dubrovnika, a... ➡️ <b>Побут чужих міст</b>",
+                "• Rimac Grupa imenovala Matthiasa Wicha no... ➡️ <b>Економіка без загальнонаціональної чи регіональної ваги</b>",
+                "• Uz dubrovačke Banje pune kupača usidrena... ➡️ <b>Дублікат</b>"
+            ]
+        },
+        "backlog": {
+            "total_size": 32,
+            "sources": {
+                "Slobodna dalmacija": 18,
+                "023": 4,
+                "Zadarski list": 10
+            }
+        },
+        "published": {
+            "total": 0,
+            "ukraine_priority": 0,
+            "with_images": 0,
+            "text_only": 0,
+            "sources": {}
+        },
+        "models_used": {
+            "gemini-3.5-flash-lite": 0,
             "gemini-3.5-flash": 0
         },
         "errors_count": 0,
