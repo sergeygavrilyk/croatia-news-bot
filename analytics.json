@@ -1,43 +1,5 @@
 [
     {
-        "timestamp": "2026-09-22 11:01:10",
-        "execution_time": 192.3,
-        "funnel": {
-            "scraped_total": 45,
-            "scraped_by_source": {
-                "Antena Zadar": 10,
-                "023": 10,
-                "Slobodna dalmacija": 15,
-                "Zadarski list": 10
-            },
-            "already_seen": 9,
-            "rejected_by_keywords": 4,
-            "duplicates_removed_by_ai": 18
-        },
-        "backlog": {
-            "total_size": 46,
-            "sources": {
-                "Zadarski list": 14,
-                "023": 12,
-                "Slobodna dalmacija": 15,
-                "Antena Zadar": 5
-            }
-        },
-        "published": {
-            "total": 3,
-            "ukraine_priority": 0,
-            "with_images": 2,
-            "text_only": 1,
-            "sources": {
-                "Zadarski list": 1,
-                "Slobodna dalmacija": 1,
-                "023": 1
-            }
-        },
-        "errors_count": 0,
-        "gemini_retries": 0
-    },
-    {
         "timestamp": "2026-09-22 12:01:18",
         "execution_time": 247.3,
         "funnel": {
@@ -4338,6 +4300,67 @@
             "sources": {
                 "023": 2,
                 "Slobodna dalmacija": 1
+            }
+        },
+        "models_used": {
+            "gemini-3.5-flash-lite": 1,
+            "gemini-3.5-flash": 0
+        },
+        "errors_count": 0,
+        "gemini_retries": 0
+    },
+    {
+        "timestamp": "2026-10-01 11:01:13",
+        "execution_time": 166.2,
+        "funnel": {
+            "scraped_total": 35,
+            "scraped_by_source": {
+                "023": 10,
+                "Slobodna dalmacija": 15,
+                "Zadarski list": 10
+            },
+            "already_seen": 6,
+            "rejected_by_keywords": 3,
+            "duplicates_removed_by_ai": 19,
+            "rejection_reasons_list": [
+                "• Umrla je ratna zločinka Biljana Plavšić,... ➡️ <b>Світовий шум та лайфстайл</b>",
+                "• Studenti će uz vijećnike-mentore pratiti... ➡️ <b>Побут чужих міст</b>",
+                "• Spektakl na moru ne može proći bez volon... ➡️ <b>Спорт</b>",
+                "• Izvjesna je propast drugog i trećeg javn... ➡️ <b>Вже є в історії</b>",
+                "• Legendarni brod baš prati loša sreća, no... ➡️ <b>Побут чужих міст</b>",
+                "• Jedini festival koji slavi kantautorsko ... ➡️ <b>Світовий шум та лайфстайл</b>",
+                "• Saznaj IQ na testiranju Hrvatske Mense u... ➡️ <b>Побут чужих міст</b>",
+                "• Neviđeno herojstvo putnika koji je uleti... ➡️ <b>Світовий шум та лайфстайл</b>",
+                "• Suradnja ŠPUD-a, Sveučilišta i Lige prot... ➡️ <b>Дублікат</b>",
+                "• Kuća dobrih osjećaja na Kozali od 1. lis... ➡️ <b>Побут чужих міст</b>",
+                "• 29. Latinsko idro ponovno okupilo veliku... ➡️ <b>Дублікат</b>",
+                "• Podignuta optužnica protiv Darija Šimića... ➡️ <b>Дублікат</b>",
+                "• Vodovod i kanalizacija Sarajevo ušli u p... ➡️ <b>Побут чужих міст</b>",
+                "• Vatrogasni zapovjednik o nikad težoj sez... ➡️ <b>Побут чужих міст</b>",
+                "• Umrla Biljana Plavšić, jedina žena osuđe... ➡️ <b>Дублікат</b>",
+                "• Nove snage na terenu: mladi policajci za... ➡️ <b>Побут чужих міст</b>",
+                "• Kod 97 vozača motocikala i mopeda na pod... ➡️ <b>Побут чужих міст</b>",
+                "• Zatečen u Krku: ​Motociklistu s drogom o... ➡️ <b>Побут чужих міст</b>",
+                "• Šut s deponija u Knežici završio na sudu... ➡️ <b>Побут чужих міст</b>"
+            ]
+        },
+        "backlog": {
+            "total_size": 28,
+            "sources": {
+                "Zadarski list": 11,
+                "Slobodna dalmacija": 13,
+                "023": 4
+            }
+        },
+        "published": {
+            "total": 3,
+            "ukraine_priority": 0,
+            "with_images": 2,
+            "text_only": 1,
+            "sources": {
+                "023": 1,
+                "Slobodna dalmacija": 1,
+                "Zadarski list": 1
             }
         },
         "models_used": {
