@@ -1,39 +1,5 @@
 [
     {
-        "timestamp": "2026-09-22 15:01:27",
-        "execution_time": 224.4,
-        "funnel": {
-            "scraped_total": 45,
-            "scraped_by_source": {
-                "Antena Zadar": 10,
-                "023": 10,
-                "Slobodna dalmacija": 15,
-                "Zadarski list": 10
-            },
-            "already_seen": 16,
-            "rejected_by_keywords": 3,
-            "duplicates_removed_by_ai": 0
-        },
-        "backlog": {
-            "total_size": 56,
-            "sources": {
-                "Zadarski list": 17,
-                "Slobodna dalmacija": 23,
-                "023": 10,
-                "Antena Zadar": 6
-            }
-        },
-        "published": {
-            "total": 0,
-            "ukraine_priority": 0,
-            "with_images": 0,
-            "text_only": 0,
-            "sources": {}
-        },
-        "errors_count": 1,
-        "gemini_retries": 3
-    },
-    {
         "timestamp": "2026-09-22 16:01:17",
         "execution_time": 225.2,
         "funnel": {
@@ -4440,6 +4406,69 @@
             "text_only": 0,
             "sources": {
                 "Zadarski list": 1
+            }
+        },
+        "models_used": {
+            "gemini-3.5-flash-lite": 1,
+            "gemini-3.5-flash": 0
+        },
+        "errors_count": 0,
+        "gemini_retries": 0
+    },
+    {
+        "timestamp": "2026-10-01 15:01:14",
+        "execution_time": 234.6,
+        "funnel": {
+            "scraped_total": 35,
+            "scraped_by_source": {
+                "023": 10,
+                "Slobodna dalmacija": 15,
+                "Zadarski list": 10
+            },
+            "already_seen": 6,
+            "rejected_by_keywords": 6,
+            "duplicates_removed_by_ai": 22,
+            "rejection_reasons_list": [
+                "• Zadimilo u ugostiteljskom objektu na Bab... ➡️ <b>Побут Дубровника</b>",
+                "• Osumnjičeni 16-godišnjak vodio kiberneti... ➡️ <b>Світовий шум</b>",
+                "• Umjetna inteligencija procjenjuje vrijem... ➡️ <b>Світовий шум</b>",
+                "• Do jučer nam se ovo činilo kao SF, a sad... ➡️ <b>Вже є в історії</b>",
+                "• Maksimirski igrokaz, riječka “opuštenost... ➡️ <b>Побут інших міст</b>",
+                "• Simptomi raka debelog crijeva kod žena č... ➡️ <b>Світовий шум</b>",
+                "• Ratni reporter ITN-a prisjetio se pakla ... ➡️ <b>Вже є в історії</b>",
+                "• Bojan Korsika oplivao Goli otok: Prešao ... ➡️ <b>Спорт</b>",
+                "• Koje dokumente smijete baciti, a koje mo... ➡️ <b>Світовий шум</b>",
+                "• U ONK Metković bijesni i ogorčeni: ‘Ovo ... ➡️ <b>Побут інших міст</b>",
+                "• Nova suradnja Like i Kraja Vysočina... ➡️ <b>Побут інших міст</b>",
+                "• Nevidljivi kolač od jabuka osvaja izgled... ➡️ <b>Світовий шум</b>",
+                "• U ONK Metković bijesni i ogorčeni: ‘Ovo ... ➡️ <b>Дублікат</b>",
+                "• U Gospiću u redove policije primljeno 20... ➡️ <b>Побут інших міст</b>",
+                "• Dubrovnik se sprema za sedam dana čistog... ➡️ <b>Побут Дубровника</b>",
+                "• Pojačanje na jugu: u Policijsku upravu d... ➡️ <b>Побут інших міст</b>",
+                "• Ova šibenska ljepotica konačno ide u obn... ➡️ <b>Побут інших міст</b>",
+                "• Stiglo u Neum i odmah privuklo pozornost... ➡️ <b>Світовий шум</b>",
+                "• Počinje Neretva sand art festival: umjet... ➡️ <b>Побут інших міст</b>",
+                "• Potpisani ugovori za rekonstrukciju Kule... ➡️ <b>Побут інших міст</b>",
+                "• Tko je dvojac optužen s Dariom Šimićem? ... ➡️ <b>Вже є в історії</b>",
+                "• Legendarni brod baš prati loša sreća, no... ➡️ <b>Побут інших міст</b>"
+            ]
+        },
+        "backlog": {
+            "total_size": 30,
+            "sources": {
+                "Slobodna dalmacija": 20,
+                "023": 4,
+                "Zadarski list": 6
+            }
+        },
+        "published": {
+            "total": 3,
+            "ukraine_priority": 0,
+            "with_images": 3,
+            "text_only": 0,
+            "sources": {
+                "Zadarski list": 1,
+                "Slobodna dalmacija": 2
             }
         },
         "models_used": {
