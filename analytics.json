@@ -1,43 +1,5 @@
 [
     {
-        "timestamp": "2026-09-22 07:01:06",
-        "execution_time": 162.4,
-        "funnel": {
-            "scraped_total": 45,
-            "scraped_by_source": {
-                "Antena Zadar": 10,
-                "023": 10,
-                "Slobodna dalmacija": 15,
-                "Zadarski list": 10
-            },
-            "already_seen": 4,
-            "rejected_by_keywords": 1,
-            "duplicates_removed_by_ai": 17
-        },
-        "backlog": {
-            "total_size": 27,
-            "sources": {
-                "Antena Zadar": 3,
-                "023": 6,
-                "Slobodna dalmacija": 9,
-                "Zadarski list": 9
-            }
-        },
-        "published": {
-            "total": 3,
-            "ukraine_priority": 0,
-            "with_images": 1,
-            "text_only": 2,
-            "sources": {
-                "Antena Zadar": 1,
-                "Slobodna dalmacija": 1,
-                "023": 1
-            }
-        },
-        "errors_count": 0,
-        "gemini_retries": 0
-    },
-    {
         "timestamp": "2026-09-22 08:01:05",
         "execution_time": 160.2,
         "funnel": {
@@ -4252,6 +4214,63 @@
             "sources": {
                 "023": 2,
                 "Slobodna dalmacija": 1
+            }
+        },
+        "models_used": {
+            "gemini-3.5-flash-lite": 1,
+            "gemini-3.5-flash": 0
+        },
+        "errors_count": 0,
+        "gemini_retries": 0
+    },
+    {
+        "timestamp": "2026-10-01 07:01:06",
+        "execution_time": 171.9,
+        "funnel": {
+            "scraped_total": 35,
+            "scraped_by_source": {
+                "023": 10,
+                "Slobodna dalmacija": 15,
+                "Zadarski list": 10
+            },
+            "already_seen": 3,
+            "rejected_by_keywords": 2,
+            "duplicates_removed_by_ai": 16,
+            "rejection_reasons_list": [
+                "• Italija uvodi zabranu nošenja burke u šk... ➡️ <b>Світовий шум</b>",
+                "• Što se događalo u banci na jugu Dalmacij... ➡️ <b>Побут чужих міст</b>",
+                "• Otvoren sedmi europski festival suvremen... ➡️ <b>Побут чужих міст</b>",
+                "• Šut s deponija u Knežici završio na sudu... ➡️ <b>Побут чужих міст</b>",
+                "• Vlaga može uništiti više nego što mislit... ➡️ <b>Світовий шум та лайфстайл</b>",
+                "• Na današnji dan prije 35 godina počeo je... ➡️ <b>Вже є в історії</b>",
+                "• “Foundation” nokti predstavljaju elegant... ➡️ <b>Світовий шум та лайфстайл</b>",
+                "• Solar već radi na krovovima škola i domo... ➡️ <b>Побут чужих міст</b>",
+                "• Jesenski favorit u ormaru? Besprijekorno... ➡️ <b>Світовий шум та лайфстайл</b>",
+                "• Liječnik s milijunima pratitelja pravi t... ➡️ <b>Світовий шум та лайфстайл</b>",
+                "• Potres jačine 2,7 stupnja probudio Dubro... ➡️ <b>Дублікат</b>",
+                "• Rano buđenje u jesen znatno je teže. Ima... ➡️ <b>Світовий шум та лайфстайл</b>",
+                "• Potres jačine 2,7 stupnja probudio Dubro... ➡️ <b>Побут чужих міст</b>",
+                "• Šljive iz pećnice s cimetom i medom: des... ➡️ <b>Світовий шум та лайфстайл</b>",
+                "• Bibliobusi stižu u Šibenik i Drniš: evo ... ➡️ <b>Побут чужих міст</b>",
+                "• Pet jednogodišnjih cvjetnica koje možete... ➡️ <b>Світовий шум та лайфстайл</b>"
+            ]
+        },
+        "backlog": {
+            "total_size": 21,
+            "sources": {
+                "023": 5,
+                "Slobodna dalmacija": 8,
+                "Zadarski list": 8
+            }
+        },
+        "published": {
+            "total": 3,
+            "ukraine_priority": 0,
+            "with_images": 1,
+            "text_only": 2,
+            "sources": {
+                "Slobodna dalmacija": 1,
+                "023": 2
             }
         },
         "models_used": {
