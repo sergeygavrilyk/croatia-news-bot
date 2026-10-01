@@ -1,42 +1,5 @@
 [
     {
-        "timestamp": "2026-09-22 10:01:12",
-        "execution_time": 179.1,
-        "funnel": {
-            "scraped_total": 45,
-            "scraped_by_source": {
-                "Antena Zadar": 10,
-                "023": 10,
-                "Slobodna dalmacija": 15,
-                "Zadarski list": 10
-            },
-            "already_seen": 14,
-            "rejected_by_keywords": 3,
-            "duplicates_removed_by_ai": 19
-        },
-        "backlog": {
-            "total_size": 39,
-            "sources": {
-                "Zadarski list": 13,
-                "Slobodna dalmacija": 12,
-                "023": 10,
-                "Antena Zadar": 4
-            }
-        },
-        "published": {
-            "total": 3,
-            "ukraine_priority": 0,
-            "with_images": 2,
-            "text_only": 1,
-            "sources": {
-                "Slobodna dalmacija": 2,
-                "023": 1
-            }
-        },
-        "errors_count": 0,
-        "gemini_retries": 0
-    },
-    {
         "timestamp": "2026-09-22 11:01:10",
         "execution_time": 192.3,
         "funnel": {
@@ -4315,6 +4278,66 @@
             "sources": {
                 "023": 1,
                 "Slobodna dalmacija": 2
+            }
+        },
+        "models_used": {
+            "gemini-3.5-flash-lite": 1,
+            "gemini-3.5-flash": 0
+        },
+        "errors_count": 0,
+        "gemini_retries": 0
+    },
+    {
+        "timestamp": "2026-10-01 10:01:04",
+        "execution_time": 166.5,
+        "funnel": {
+            "scraped_total": 35,
+            "scraped_by_source": {
+                "023": 10,
+                "Slobodna dalmacija": 15,
+                "Zadarski list": 10
+            },
+            "already_seen": 9,
+            "rejected_by_keywords": 1,
+            "duplicates_removed_by_ai": 19,
+            "rejection_reasons_list": [
+                "• U krvi hrvatskih ispitanika potvrđeni PF... ➡️ <b>Світовий шум</b>",
+                "• Jedini festival koji slavi kantautorsko ... ➡️ <b>Реклама</b>",
+                "• Nove snage na terenu: mladi policajci za... ➡️ <b>Побут чужих міст</b>",
+                "• Umrla Biljana Plavšić, jedina žena osuđe... ➡️ <b>Світовий шум</b>",
+                "• Suradnja ŠPUD-a, Sveučilišta i Lige prot... ➡️ <b>Вже є в історії</b>",
+                "• Cemex dodatno podiže sigurnost u prometu... ➡️ <b>Реклама</b>",
+                "• Kod 97 vozača motocikala i mopeda na pod... ➡️ <b>Побут чужих міст</b>",
+                "• City Galleria ove subote slavi rođendan,... ➡️ <b>Реклама</b>",
+                "• Šut s deponija u Knežici završio na sudu... ➡️ <b>Побут чужих міст</b>",
+                "• Zatečen u Krku: ​Motociklistu s drogom o... ➡️ <b>Побут чужих міст</b>",
+                "• Na današnji dan prije 35 godina počeo je... ➡️ <b>Вже є в історії</b>",
+                "• Raspudić uputio pritužbu EK zbog otpada ... ➡️ <b>Дублікат</b>",
+                "• Članovi najmoćnije ličke romske obitelji... ➡️ <b>Побут чужих міст</b>",
+                "• Jedan račun može promijeniti vaš dom: Br... ➡️ <b>Реклама</b>",
+                "• Šut s deponija u Knežici završio na sudu... ➡️ <b>Дублікат</b>",
+                "• Ugledni arhitekti upozoravaju: Poništava... ➡️ <b>Побут чужих міст</b>",
+                "• Na današnji dan prije 35 godina počeo je... ➡️ <b>Дублікат</b>",
+                "• Poklon za 20 godina vjernosti: Niko Čutu... ➡️ <b>Реклама</b>",
+                "• Solar već radi na krovovima škola i domo... ➡️ <b>Побут чужих міст</b>"
+            ]
+        },
+        "backlog": {
+            "total_size": 24,
+            "sources": {
+                "023": 5,
+                "Slobodna dalmacija": 10,
+                "Zadarski list": 9
+            }
+        },
+        "published": {
+            "total": 3,
+            "ukraine_priority": 0,
+            "with_images": 1,
+            "text_only": 2,
+            "sources": {
+                "023": 2,
+                "Slobodna dalmacija": 1
             }
         },
         "models_used": {
