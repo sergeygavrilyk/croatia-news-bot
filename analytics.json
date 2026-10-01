@@ -1,42 +1,5 @@
 [
     {
-        "timestamp": "2026-09-22 09:01:16",
-        "execution_time": 162.0,
-        "funnel": {
-            "scraped_total": 45,
-            "scraped_by_source": {
-                "Antena Zadar": 10,
-                "023": 10,
-                "Slobodna dalmacija": 15,
-                "Zadarski list": 10
-            },
-            "already_seen": 5,
-            "rejected_by_keywords": 2,
-            "duplicates_removed_by_ai": 22
-        },
-        "backlog": {
-            "total_size": 38,
-            "sources": {
-                "Zadarski list": 12,
-                "023": 9,
-                "Antena Zadar": 5,
-                "Slobodna dalmacija": 12
-            }
-        },
-        "published": {
-            "total": 3,
-            "ukraine_priority": 0,
-            "with_images": 1,
-            "text_only": 2,
-            "sources": {
-                "Antena Zadar": 2,
-                "Slobodna dalmacija": 1
-            }
-        },
-        "errors_count": 0,
-        "gemini_retries": 0
-    },
-    {
         "timestamp": "2026-09-22 10:01:12",
         "execution_time": 179.1,
         "funnel": {
@@ -4291,6 +4254,67 @@
                 "Zadarski list": 1,
                 "023": 1,
                 "Slobodna dalmacija": 1
+            }
+        },
+        "models_used": {
+            "gemini-3.5-flash-lite": 1,
+            "gemini-3.5-flash": 0
+        },
+        "errors_count": 0,
+        "gemini_retries": 0
+    },
+    {
+        "timestamp": "2026-10-01 09:01:06",
+        "execution_time": 191.0,
+        "funnel": {
+            "scraped_total": 35,
+            "scraped_by_source": {
+                "023": 10,
+                "Slobodna dalmacija": 15,
+                "Zadarski list": 10
+            },
+            "already_seen": 14,
+            "rejected_by_keywords": 2,
+            "duplicates_removed_by_ai": 20,
+            "rejection_reasons_list": [
+                "• Ugledni arhitekti upozoravaju: Poništava... ➡️ <b>Побут Загреба</b>",
+                "• Šut s deponija u Knežici završio na sudu... ➡️ <b>Побут Дубровника</b>",
+                "• Jedini festival koji slavi kantautorsko ... ➡️ <b>Культурна подія/фестиваль</b>",
+                "• Poklon za 20 godina vjernosti: Niko Čutu... ➡️ <b>Реклама</b>",
+                "• Suradnja ŠPUD-a, Sveučilišta i Lige prot... ➡️ <b>Локальна подія/виставка</b>",
+                "• Kava vrijedna putovanja – i krađe: kako ... ➡️ <b>Світовий шум</b>",
+                "• Na današnji dan prije 35 godina počeo je... ➡️ <b>Вже є в історії</b>",
+                "• City Galleria ove subote slavi rođendan,... ➡️ <b>Реклама або комерційна подія</b>",
+                "• Na Maloj ljetnoj pozornici u Opatiji svi... ➡️ <b>Побут Опатії</b>",
+                "• Mlađi muškarac uznemiravao 74-godišnjaki... ➡️ <b>Дублікат</b>",
+                "• Pred Zadrom je stabilan i ugodan tjedan,... ➡️ <b>Прогноз погоди без критичних оновлень</b>",
+                "• Otkazana predstava „Miševi i mačke nagla... ➡️ <b>Побут Рієки</b>",
+                "• Jedan račun može promijeniti vaš dom: Br... ➡️ <b>Реклама</b>",
+                "• Održana komemoracija za Nevena Frangeša:... ➡️ <b>Культурна подія</b>",
+                "• Šut s deponija u Knežici završio na sudu... ➡️ <b>Дублікат</b>",
+                "• Christa Pike preživjela smrtnu kaznu: ču... ➡️ <b>Світовий шум</b>",
+                "• Na današnji dan prije 35 godina počeo je... ➡️ <b>Дублікат</b>",
+                "• Solar već radi na krovovima škola i domo... ➡️ <b>Побут Спліта</b>",
+                "• Potres jačine 2,7 stupnja probudio Dubro... ➡️ <b>Дублікат</b>",
+                "• Bibliobusi stižu u Šibenik i Drniš: evo ... ➡️ <b>Побут Шибеника</b>"
+            ]
+        },
+        "backlog": {
+            "total_size": 23,
+            "sources": {
+                "023": 5,
+                "Slobodna dalmacija": 11,
+                "Zadarski list": 7
+            }
+        },
+        "published": {
+            "total": 3,
+            "ukraine_priority": 0,
+            "with_images": 2,
+            "text_only": 1,
+            "sources": {
+                "023": 1,
+                "Slobodna dalmacija": 2
             }
         },
         "models_used": {
