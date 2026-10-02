@@ -1,41 +1,5 @@
 [
     {
-        "timestamp": "2026-09-23 12:01:10",
-        "execution_time": 247.6,
-        "funnel": {
-            "scraped_total": 45,
-            "scraped_by_source": {
-                "Antena Zadar": 10,
-                "023": 10,
-                "Slobodna dalmacija": 15,
-                "Zadarski list": 10
-            },
-            "already_seen": 28,
-            "rejected_by_keywords": 6,
-            "duplicates_removed_by_ai": 19
-        },
-        "backlog": {
-            "total_size": 60,
-            "sources": {
-                "Slobodna dalmacija": 26,
-                "023": 17,
-                "Zadarski list": 11,
-                "Antena Zadar": 6
-            }
-        },
-        "published": {
-            "total": 3,
-            "ukraine_priority": 0,
-            "with_images": 3,
-            "text_only": 0,
-            "sources": {
-                "Zadarski list": 3
-            }
-        },
-        "errors_count": 0,
-        "gemini_retries": 0
-    },
-    {
         "timestamp": "2026-09-23 13:01:14",
         "execution_time": 415.1,
         "funnel": {
@@ -4628,6 +4592,66 @@
             "sources": {
                 "Slobodna dalmacija": 1,
                 "023": 1,
+                "Zadarski list": 1
+            }
+        },
+        "models_used": {
+            "gemini-3.5-flash-lite": 1,
+            "gemini-3.5-flash": 0
+        },
+        "errors_count": 0,
+        "gemini_retries": 0
+    },
+    {
+        "timestamp": "2026-10-02 12:01:03",
+        "execution_time": 165.3,
+        "funnel": {
+            "scraped_total": 35,
+            "scraped_by_source": {
+                "023": 10,
+                "Slobodna dalmacija": 15,
+                "Zadarski list": 10
+            },
+            "already_seen": 6,
+            "rejected_by_keywords": 1,
+            "duplicates_removed_by_ai": 18,
+            "rejection_reasons_list": [
+                "• Šibensko-kninska županija dodjeljuje 154... ➡️ <b>Побут Шибеника</b>",
+                "• Grmoja o otpadu u Gospiću: “Sada je jasn... ➡️ <b>Вже є в історії</b>",
+                "• Znanstvenici testirali podvodne suncobra... ➡️ <b>Світовий шум</b>",
+                "• Drniš ostaje bez zadnje poslovnice, zatv... ➡️ <b>Побут Дрніша</b>",
+                "• Plenković o Srbiji: Ovo izgleda kao “šop... ➡️ <b>Світовий шум</b>",
+                "• Reakcija s Pantovčaka; Ured predsjednika... ➡️ <b>Вже є в історії</b>",
+                "• Što je plokanje? Baćinci i dalje čuvaju ... ➡️ <b>Світовий шум</b>",
+                "• Romana Jerković Kraljić: “Trošak je manj... ➡️ <b>Світовий шум</b>",
+                "• Dron ga je snimao, Fiesta nanjušila: pog... ➡️ <b>Побут Спліта</b>",
+                "• Božinović najavio stroža pravila za romo... ➡️ <b>Побут Дугого Села</b>",
+                "• Rijetka genska mutacija povezana s do 60... ➡️ <b>Світовий шум</b>",
+                "• Gastronomske večeri i gostovanja poznati... ➡️ <b>Побут Дубровника</b>",
+                "• Veliko priznanje! Niko Šare primio nagra... ➡️ <b>Спорт</b>",
+                "• Pripadnici ratne policije 1991. iz Ploča... ➡️ <b>Побут Плоче</b>",
+                "• Milanović: “SOA me nije obavijestila o n... ➡️ <b>Дублікат</b>",
+                "• Država prodaje 4900 litara zaplijenjene ... ➡️ <b>Побут Славонії</b>",
+                "• Direktor Turističke zajednice Zadarske ž... ➡️ <b>Дублікат</b>",
+                "• Tomašević radnicima ZET-a nudi oko 9 pos... ➡️ <b>Побут Загреба</b>"
+            ]
+        },
+        "backlog": {
+            "total_size": 48,
+            "sources": {
+                "Zadarski list": 12,
+                "Slobodna dalmacija": 24,
+                "023": 12
+            }
+        },
+        "published": {
+            "total": 3,
+            "ukraine_priority": 0,
+            "with_images": 2,
+            "text_only": 1,
+            "sources": {
+                "023": 1,
+                "Slobodna dalmacija": 1,
                 "Zadarski list": 1
             }
         },
