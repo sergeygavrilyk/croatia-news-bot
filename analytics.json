@@ -1,43 +1,5 @@
 [
     {
-        "timestamp": "2026-09-23 19:01:10",
-        "execution_time": 162.6,
-        "funnel": {
-            "scraped_total": 45,
-            "scraped_by_source": {
-                "Antena Zadar": 10,
-                "023": 10,
-                "Slobodna dalmacija": 15,
-                "Zadarski list": 10
-            },
-            "already_seen": 7,
-            "rejected_by_keywords": 3,
-            "duplicates_removed_by_ai": 19
-        },
-        "backlog": {
-            "total_size": 65,
-            "sources": {
-                "Zadarski list": 19,
-                "Slobodna dalmacija": 28,
-                "Antena Zadar": 10,
-                "023": 8
-            }
-        },
-        "published": {
-            "total": 3,
-            "ukraine_priority": 0,
-            "with_images": 2,
-            "text_only": 1,
-            "sources": {
-                "Zadarski list": 1,
-                "Slobodna dalmacija": 1,
-                "Antena Zadar": 1
-            }
-        },
-        "errors_count": 0,
-        "gemini_retries": 0
-    },
-    {
         "timestamp": "2026-09-24 07:01:08",
         "execution_time": 204.0,
         "funnel": {
@@ -4758,6 +4720,68 @@
             "text_only": 2,
             "sources": {
                 "023": 2
+            }
+        },
+        "models_used": {
+            "gemini-3.5-flash-lite": 1,
+            "gemini-3.5-flash": 0
+        },
+        "errors_count": 0,
+        "gemini_retries": 0
+    },
+    {
+        "timestamp": "2026-10-02 19:01:04",
+        "execution_time": 174.9,
+        "funnel": {
+            "scraped_total": 35,
+            "scraped_by_source": {
+                "023": 10,
+                "Slobodna dalmacija": 15,
+                "Zadarski list": 10
+            },
+            "already_seen": 4,
+            "rejected_by_keywords": 7,
+            "duplicates_removed_by_ai": 21,
+            "rejection_reasons_list": [
+                "• Hoće li zaživjeti Lapad express ili Lapa... ➡️ <b>Побут Дубровника</b>",
+                "• Legendarni Slash vraća se u Zagreb sa sv... ➡️ <b>Спорт та шоу-бізнес</b>",
+                "• Znanstvenici otkrili zašto se Apenini i ... ➡️ <b>Світовий шум</b>",
+                "• Bivši dubrovački gradonačelnik, suvlasni... ➡️ <b>Побут Дубровника</b>",
+                "• Maketarska izložba o Hrvatskoj vojsci i ... ➡️ <b>Побут Рієки</b>",
+                "• Kardiolozi upozoravaju na naviku koja ub... ➡️ <b>Світовий шум</b>",
+                "• Izložba \"Istočna Slavonija u Domovinskom... ➡️ <b>Побут Дубровника</b>",
+                "• Uprava ZET-a pozvala sindikate na žurno ... ➡️ <b>Побут Загреба</b>",
+                "• Budite se svake noći u isto doba? Krivac... ➡️ <b>Світовий шум</b>",
+                "• Članovi udruge Prvi ročnik Hrvatske vojs... ➡️ <b>Побут Плоче</b>",
+                "• Hvar u listopadu ugostit će više od 3.50... ➡️ <b>Спорт</b>",
+                "• U Zavičajnoj kući u Slanom obilježena ob... ➡️ <b>Побут Дубровника</b>",
+                "• Moćna poruka; Više od 600 učenika s ruži... ➡️ <b>Побут Загреба</b>",
+                "• Na prostranim pješčanim plažama ušća Ner... ➡️ <b>Побут Неретви</b>",
+                "• Skrivene mane novogradnje; Građevinski s... ➡️ <b>Світовий шум</b>",
+                "• Zadarski plesni ansambl u Dubrovniku; Na... ➡️ <b>Побут Дубровника</b>",
+                "• Dugogodišnji mljetski matičar Ivan Čumbe... ➡️ <b>Побут Мльета</b>",
+                "• Učenje ne prestaje s godinama; Od srednj... ➡️ <b>Вже є в історії</b>",
+                "• Preminuo Marko Šupe, posljednji šibenski... ➡️ <b>Побут Шибеника</b>",
+                "• Misteriozna primopredaja u dalmatinskom ... ➡️ <b>Побут Метковіча</b>",
+                "• E ovako se kolegicu ispraća u penziju! C... ➡️ <b>Побут Шибеника</b>"
+            ]
+        },
+        "backlog": {
+            "total_size": 43,
+            "sources": {
+                "Slobodna dalmacija": 30,
+                "023": 8,
+                "Zadarski list": 5
+            }
+        },
+        "published": {
+            "total": 3,
+            "ukraine_priority": 0,
+            "with_images": 3,
+            "text_only": 0,
+            "sources": {
+                "Zadarski list": 2,
+                "Slobodna dalmacija": 1
             }
         },
         "models_used": {
