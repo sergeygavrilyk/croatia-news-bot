@@ -1,39 +1,5 @@
 [
     {
-        "timestamp": "2026-09-23 07:01:09",
-        "execution_time": 44.3,
-        "funnel": {
-            "scraped_total": 45,
-            "scraped_by_source": {
-                "Antena Zadar": 10,
-                "023": 10,
-                "Slobodna dalmacija": 15,
-                "Zadarski list": 10
-            },
-            "already_seen": 1,
-            "rejected_by_keywords": 2,
-            "duplicates_removed_by_ai": 25
-        },
-        "backlog": {
-            "total_size": 28,
-            "sources": {
-                "Antena Zadar": 3,
-                "023": 10,
-                "Slobodna dalmacija": 6,
-                "Zadarski list": 9
-            }
-        },
-        "published": {
-            "total": 0,
-            "ukraine_priority": 0,
-            "with_images": 0,
-            "text_only": 0,
-            "sources": {}
-        },
-        "errors_count": 0,
-        "gemini_retries": 0
-    },
-    {
         "timestamp": "2026-09-23 08:01:09",
         "execution_time": 201.3,
         "funnel": {
@@ -4522,6 +4488,64 @@
             "text_only": 0,
             "sources": {
                 "Slobodna dalmacija": 2,
+                "Zadarski list": 1
+            }
+        },
+        "models_used": {
+            "gemini-3.5-flash-lite": 1,
+            "gemini-3.5-flash": 0
+        },
+        "errors_count": 0,
+        "gemini_retries": 0
+    },
+    {
+        "timestamp": "2026-10-02 07:01:05",
+        "execution_time": 173.1,
+        "funnel": {
+            "scraped_total": 35,
+            "scraped_by_source": {
+                "023": 10,
+                "Slobodna dalmacija": 15,
+                "Zadarski list": 10
+            },
+            "already_seen": 1,
+            "rejected_by_keywords": 1,
+            "duplicates_removed_by_ai": 17,
+            "rejection_reasons_list": [
+                "• Vatrogasci noćas intervenirali u Lapadu,... ➡️ <b>Побут чужих міст</b>",
+                "• Lukanović nastavlja kastavizaciju župani... ➡️ <b>Побут чужих міст</b>",
+                "• Pogledajte što sve možete pročitati u no... ➡️ <b>Побут чужих міст</b>",
+                "• Zašto ugostitelji u Selcu istu terasu pl... ➡️ <b>Побут чужих міст</b>",
+                "• Hrvatsko smeće u Neumu? Evo što kažu u S... ➡️ <b>Вже є в історії</b>",
+                "• Sedlarov film vodi kroz 1100 godina hrva... ➡️ <b>Світовий шум та лайфстайл</b>",
+                "• Zadar gostuje u Kostreni; Momčad Stipe M... ➡️ <b>Спорт</b>",
+                "• Milanović povodom objave monografije pri... ➡️ <b>Світовий шум та лайфстайл</b>",
+                "• Izložba „Tragovima arheološke baštine Ba... ➡️ <b>Побут чужих міст</b>",
+                "• Marijana Mikulić sa Zadranima će slaviti... ➡️ <b>Світовий шум та лайфстайл</b>",
+                "• Potres magnitude 3.2 jutros uznemirio gr... ➡️ <b>Світовий шум та лайфстайл</b>",
+                "• Tragedija na brzoj cesti D-424: u nesreć... ➡️ <b>Дублікат</b>",
+                "• Odveo je 200 ljudi u ratnu zonu da snimi... ➡️ <b>Світовий шум та лайфстайл</b>",
+                "• Nakon Oluje vratili se na paljevinu, poč... ➡️ <b>Світовий шум та лайфстайл</b>",
+                "• Lisne uši više ne moraju uništavati bilj... ➡️ <b>Світовий шум та лайфстайл</b>",
+                "• Ratko Mladić nije problem, Von der Leyen... ➡️ <b>Світовий шум та лайфстайл</b>",
+                "• Japanski start-up 2027. kreće s testovim... ➡️ <b>Світовий шум та лайфстайл</b>"
+            ]
+        },
+        "backlog": {
+            "total_size": 28,
+            "sources": {
+                "023": 9,
+                "Slobodna dalmacija": 9,
+                "Zadarski list": 10
+            }
+        },
+        "published": {
+            "total": 3,
+            "ukraine_priority": 0,
+            "with_images": 1,
+            "text_only": 2,
+            "sources": {
+                "023": 2,
                 "Zadarski list": 1
             }
         },
