@@ -1,39 +1,5 @@
 [
     {
-        "timestamp": "2026-09-23 11:01:12",
-        "execution_time": 4.9,
-        "funnel": {
-            "scraped_total": 45,
-            "scraped_by_source": {
-                "Antena Zadar": 10,
-                "023": 10,
-                "Slobodna dalmacija": 15,
-                "Zadarski list": 10
-            },
-            "already_seen": 9,
-            "rejected_by_keywords": 8,
-            "duplicates_removed_by_ai": 25
-        },
-        "backlog": {
-            "total_size": 49,
-            "sources": {
-                "Slobodna dalmacija": 21,
-                "023": 17,
-                "Zadarski list": 6,
-                "Antena Zadar": 5
-            }
-        },
-        "published": {
-            "total": 0,
-            "ukraine_priority": 0,
-            "with_images": 0,
-            "text_only": 0,
-            "sources": {}
-        },
-        "errors_count": 0,
-        "gemini_retries": 0
-    },
-    {
         "timestamp": "2026-09-23 12:01:10",
         "execution_time": 247.6,
         "funnel": {
@@ -4605,6 +4571,64 @@
             "text_only": 3,
             "sources": {
                 "023": 3
+            }
+        },
+        "models_used": {
+            "gemini-3.5-flash-lite": 1,
+            "gemini-3.5-flash": 0
+        },
+        "errors_count": 0,
+        "gemini_retries": 0
+    },
+    {
+        "timestamp": "2026-10-02 11:01:04",
+        "execution_time": 168.9,
+        "funnel": {
+            "scraped_total": 35,
+            "scraped_by_source": {
+                "023": 10,
+                "Slobodna dalmacija": 15,
+                "Zadarski list": 10
+            },
+            "already_seen": 10,
+            "rejected_by_keywords": 3,
+            "duplicates_removed_by_ai": 16,
+            "rejection_reasons_list": [
+                "• Novi obrat u slučaju sumporovodika na Ku... ➡️ <b>Побут Рієки</b>",
+                "• Rijetka genska mutacija povezana s do 60... ➡️ <b>Світовий шум та лайфстайл</b>",
+                "• Dron ga je snimao, Fiesta nanjušila: pog... ➡️ <b>Побут Спліта</b>",
+                "• Uhićen diler (50), policija mu u kući na... ➡️ <b>Побут Опатії</b>",
+                "• Veliko priznanje! Niko Šare primio nagra... ➡️ <b>Спорт</b>",
+                "• Tragičan epilog tučnjave u Medulinu: 32-... ➡️ <b>Побут Медуліна</b>",
+                "• Gastronomske večeri i gostovanja poznati... ➡️ <b>Побут Дубровника</b>",
+                "• Pripadnici ratne policije 1991. iz Ploča... ➡️ <b>Побут Плоча</b>",
+                "• U nedjelju upoznajte Krnjevo i Skate par... ➡️ <b>Побут Рієки</b>",
+                "• Klub iz Posedarja preokretom na završnom... ➡️ <b>Спорт</b>",
+                "• Direktor Turističke zajednice Zadarske ž... ➡️ <b>Вже є в історії</b>",
+                "• Ispaljena signalna raketa izazvala požar... ➡️ <b>Побут Дубровника</b>",
+                "• Austrijanac motociklom na Krku pretjecao... ➡️ <b>Побут Крка</b>",
+                "• U Šibenik će cijela Dalmacija slati gori... ➡️ <b>Побут Шибеника</b>",
+                "• Predsjednik riječkog SDP-a o slučaju Jer... ➡️ <b>Побут Рієки</b>",
+                "• ‘Ne otvarajte sumnjive linkove i ne unos... ➡️ <b>Побут Шибеника</b>"
+            ]
+        },
+        "backlog": {
+            "total_size": 39,
+            "sources": {
+                "Zadarski list": 9,
+                "Slobodna dalmacija": 21,
+                "023": 9
+            }
+        },
+        "published": {
+            "total": 3,
+            "ukraine_priority": 0,
+            "with_images": 2,
+            "text_only": 1,
+            "sources": {
+                "Slobodna dalmacija": 1,
+                "023": 1,
+                "Zadarski list": 1
             }
         },
         "models_used": {
