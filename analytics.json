@@ -1,43 +1,5 @@
 [
     {
-        "timestamp": "2026-09-23 08:01:09",
-        "execution_time": 201.3,
-        "funnel": {
-            "scraped_total": 45,
-            "scraped_by_source": {
-                "Antena Zadar": 10,
-                "023": 10,
-                "Slobodna dalmacija": 15,
-                "Zadarski list": 10
-            },
-            "already_seen": 21,
-            "rejected_by_keywords": 5,
-            "duplicates_removed_by_ai": 15
-        },
-        "backlog": {
-            "total_size": 40,
-            "sources": {
-                "Antena Zadar": 5,
-                "023": 15,
-                "Slobodna dalmacija": 10,
-                "Zadarski list": 10
-            }
-        },
-        "published": {
-            "total": 3,
-            "ukraine_priority": 0,
-            "with_images": 2,
-            "text_only": 1,
-            "sources": {
-                "Antena Zadar": 1,
-                "Zadarski list": 1,
-                "Slobodna dalmacija": 1
-            }
-        },
-        "errors_count": 0,
-        "gemini_retries": 0
-    },
-    {
         "timestamp": "2026-09-23 09:01:18",
         "execution_time": 161.1,
         "funnel": {
@@ -4542,6 +4504,62 @@
         "published": {
             "total": 3,
             "ukraine_priority": 0,
+            "with_images": 1,
+            "text_only": 2,
+            "sources": {
+                "023": 2,
+                "Zadarski list": 1
+            }
+        },
+        "models_used": {
+            "gemini-3.5-flash-lite": 1,
+            "gemini-3.5-flash": 0
+        },
+        "errors_count": 0,
+        "gemini_retries": 0
+    },
+    {
+        "timestamp": "2026-10-02 08:01:37",
+        "execution_time": 164.1,
+        "funnel": {
+            "scraped_total": 35,
+            "scraped_by_source": {
+                "023": 10,
+                "Slobodna dalmacija": 15,
+                "Zadarski list": 10
+            },
+            "already_seen": 7,
+            "rejected_by_keywords": 1,
+            "duplicates_removed_by_ai": 15,
+            "rejection_reasons_list": [
+                "• Pažnja vozačima. Kotorska ulica u Crikve... ➡️ <b>Побут чужого міста</b>",
+                "• Država prodaje 4900 litara zaplijenjene ... ➡️ <b>Світовий шум та лайфстайл</b>",
+                "• Što je Gružanima najpotrebnije: novi pje... ➡️ <b>Побут чужого міста</b>",
+                "• Smeće iz Dalmacije završilo u Neumu? ‘Ot... ➡️ <b>Вже є в історії</b>",
+                "• Lukanović nastavlja kastavizaciju župani... ➡️ <b>Побут чужого міста</b>",
+                "• Vatrogasci noćas intervenirali u Lapadu,... ➡️ <b>Побут чужого міста</b>",
+                "• Zašto ugostitelji u Selcu istu terasu pl... ➡️ <b>Побут чужого міста</b>",
+                "• Pogledajte što sve možete pročitati u no... ➡️ <b>Побут чужого міста</b>",
+                "• Sedlarov film vodi kroz 1100 godina hrva... ➡️ <b>Світовий шум та лайфстайл</b>",
+                "• Hrvatsko smeće u Neumu? Evo što kažu u S... ➡️ <b>Дублікат</b>",
+                "• Milanović povodom objave monografije pri... ➡️ <b>Світовий шум та лайфстайл</b>",
+                "• Potres magnitude 3.2 jutros uznemirio gr... ➡️ <b>Побут чужого міста</b>",
+                "• Izložba „Tragovima arheološke baštine Ba... ➡️ <b>Побут чужого міста</b>",
+                "• Odveo je 200 ljudi u ratnu zonu da snimi... ➡️ <b>Світовий шум та лайфстайл</b>",
+                "• Tragedija na brzoj cesti D-424: u nesreć... ➡️ <b>Дублікат</b>"
+            ]
+        },
+        "backlog": {
+            "total_size": 29,
+            "sources": {
+                "023": 10,
+                "Zadarski list": 11,
+                "Slobodna dalmacija": 8
+            }
+        },
+        "published": {
+            "total": 3,
+            "ukraine_priority": 1,
             "with_images": 1,
             "text_only": 2,
             "sources": {
