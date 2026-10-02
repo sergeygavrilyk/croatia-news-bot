@@ -1,42 +1,5 @@
 [
     {
-        "timestamp": "2026-09-23 10:01:10",
-        "execution_time": 159.3,
-        "funnel": {
-            "scraped_total": 45,
-            "scraped_by_source": {
-                "Antena Zadar": 10,
-                "023": 10,
-                "Slobodna dalmacija": 15,
-                "Zadarski list": 10
-            },
-            "already_seen": 9,
-            "rejected_by_keywords": 8,
-            "duplicates_removed_by_ai": 17
-        },
-        "backlog": {
-            "total_size": 46,
-            "sources": {
-                "023": 16,
-                "Slobodna dalmacija": 16,
-                "Zadarski list": 8,
-                "Antena Zadar": 6
-            }
-        },
-        "published": {
-            "total": 3,
-            "ukraine_priority": 0,
-            "with_images": 2,
-            "text_only": 1,
-            "sources": {
-                "Antena Zadar": 1,
-                "Zadarski list": 2
-            }
-        },
-        "errors_count": 0,
-        "gemini_retries": 0
-    },
-    {
         "timestamp": "2026-09-23 11:01:12",
         "execution_time": 4.9,
         "funnel": {
@@ -4589,6 +4552,59 @@
             "sources": {
                 "Zadarski list": 1,
                 "023": 2
+            }
+        },
+        "models_used": {
+            "gemini-3.5-flash-lite": 1,
+            "gemini-3.5-flash": 0
+        },
+        "errors_count": 0,
+        "gemini_retries": 0
+    },
+    {
+        "timestamp": "2026-10-02 10:01:36",
+        "execution_time": 163.9,
+        "funnel": {
+            "scraped_total": 35,
+            "scraped_by_source": {
+                "023": 10,
+                "Slobodna dalmacija": 15,
+                "Zadarski list": 10
+            },
+            "already_seen": 5,
+            "rejected_by_keywords": 6,
+            "duplicates_removed_by_ai": 13,
+            "rejection_reasons_list": [
+                "• Zabrana burki i nikaba samo je početak? ... ➡️ <b>Світовий шум</b>",
+                "• U Šibenik će cijela Dalmacija slati gori... ➡️ <b>Побут чужих міст</b>",
+                "• Milanović uoči izbora u BiH pozvao Hrvat... ➡️ <b>Події в третіх країнах</b>",
+                "• ‘Ne otvarajte sumnjive linkove i ne unos... ➡️ <b>Побут чужих міст</b>",
+                "• Niko Šare preuzeo nagradu za najboljeg m... ➡️ <b>Спорт</b>",
+                "• Veliko priznanje! Niko Šare primio nagra... ➡️ <b>Дублікат</b>",
+                "• Mladi „Vukovi“ prošli kroz Gospić... ➡️ <b>Побут чужих міст</b>",
+                "• Zadarski lutkari u Čakovcu; Nagrađivana ... ➡️ <b>Вже є в історії</b>",
+                "• Nije prvi put. Jerković se još prije 20 ... ➡️ <b>Світовий шум та лайфстайл</b>",
+                "• Jeste li „kronični prigovarač“? Evo kada... ➡️ <b>Світовий шум та лайфстайл</b>",
+                "• ‘Dvi legende, trećega nema‘; pogledajte ... ➡️ <b>Шоу-бізнес</b>",
+                "• Dubrovačka udruga Et Ješua predstavila s... ➡️ <b>Побут чужих міст</b>",
+                "• Dubrovnik Pass ostvario rekordan prihod ... ➡️ <b>Побут чужих міст</b>"
+            ]
+        },
+        "backlog": {
+            "total_size": 33,
+            "sources": {
+                "023": 11,
+                "Slobodna dalmacija": 16,
+                "Zadarski list": 6
+            }
+        },
+        "published": {
+            "total": 3,
+            "ukraine_priority": 0,
+            "with_images": 0,
+            "text_only": 3,
+            "sources": {
+                "023": 3
             }
         },
         "models_used": {
