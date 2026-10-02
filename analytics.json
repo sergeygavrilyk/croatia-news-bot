@@ -1,39 +1,5 @@
 [
     {
-        "timestamp": "2026-09-23 14:01:08",
-        "execution_time": 59.1,
-        "funnel": {
-            "scraped_total": 45,
-            "scraped_by_source": {
-                "Antena Zadar": 10,
-                "023": 10,
-                "Slobodna dalmacija": 15,
-                "Zadarski list": 10
-            },
-            "already_seen": 11,
-            "rejected_by_keywords": 7,
-            "duplicates_removed_by_ai": 25
-        },
-        "backlog": {
-            "total_size": 57,
-            "sources": {
-                "Zadarski list": 10,
-                "Slobodna dalmacija": 29,
-                "023": 13,
-                "Antena Zadar": 5
-            }
-        },
-        "published": {
-            "total": 0,
-            "ukraine_priority": 0,
-            "with_images": 0,
-            "text_only": 0,
-            "sources": {}
-        },
-        "errors_count": 0,
-        "gemini_retries": 0
-    },
-    {
         "timestamp": "2026-09-23 15:01:12",
         "execution_time": 507.9,
         "funnel": {
@@ -4678,6 +4644,68 @@
             "sources": {
                 "Slobodna dalmacija": 2,
                 "Zadarski list": 1
+            }
+        },
+        "models_used": {
+            "gemini-3.5-flash-lite": 1,
+            "gemini-3.5-flash": 0
+        },
+        "errors_count": 0,
+        "gemini_retries": 0
+    },
+    {
+        "timestamp": "2026-10-02 14:01:05",
+        "execution_time": 165.5,
+        "funnel": {
+            "scraped_total": 35,
+            "scraped_by_source": {
+                "023": 10,
+                "Slobodna dalmacija": 15,
+                "Zadarski list": 10
+            },
+            "already_seen": 5,
+            "rejected_by_keywords": 6,
+            "duplicates_removed_by_ai": 21,
+            "rejection_reasons_list": [
+                "• Odabrano deset finalista za Nagradu Daph... ➡️ <b>Світовий шум</b>",
+                "• Dugogodišnji mljetski matičar Ivan Čumbe... ➡️ <b>Побут чужих місць</b>",
+                "• Velika akcija na Kvarneru! Uhićeno više ... ➡️ <b>Побут чужих місць</b>",
+                "• Moćna poruka; Više od 600 učenika s ruži... ➡️ <b>Побут чужих місць</b>",
+                "• Privremena regulacija prometa na Batali ... ➡️ <b>Побут чужих місць</b>",
+                "• Članice Udruge Bakarska žena tradicional... ➡️ <b>Побут чужих місць</b>",
+                "• Skrivene mane novogradnje; Građevinski s... ➡️ <b>Світовий шум та лайфстайл</b>",
+                "• Ibrahimović: Nikada nisam dobio zahtjev ... ➡️ <b>Вже є в історії</b>",
+                "• Preminuo Marko Šupe, posljednji šibenski... ➡️ <b>Побут чужих місць</b>",
+                "• Dom za starije osobe Kantrida organizira... ➡️ <b>Побут чужих місць</b>",
+                "• Zadarski plesni ansambl u Dubrovniku; Na... ➡️ <b>Побут чужих місць</b>",
+                "• Misteriozna primopredaja u dalmatinskom ... ➡️ <b>Побут чужих місць</b>",
+                "• Sindikati ZET-a odgovorili Tomaševiću: P... ➡️ <b>Побут чужих місць</b>",
+                "• Učenje ne prestaje s godinama; Od srednj... ➡️ <b>Вже є в історії</b>",
+                "• E ovako se kolegicu ispraća u penziju! C... ➡️ <b>Побут чужих місць</b>",
+                "• Grmoja o otpadu u Gospiću: “Sada je jasn... ➡️ <b>Вже є в історії</b>",
+                "• Gordon Ramsay otkriva kuhinjski trik za ... ➡️ <b>Світовий шум та лайфстайл</b>",
+                "• Jesu li upalile mjere ministra Šipića? D... ➡️ <b>Побут чужих місць</b>",
+                "• AZOP kaznio priređivača igara na sreću s... ➡️ <b>Вже є в історії</b>",
+                "• ‘Milijunska brodica ne može prići hridim... ➡️ <b>Побут чужих місць</b>",
+                "• Iduće godine natječaj za projekt pruge Š... ➡️ <b>Вже є в історії</b>"
+            ]
+        },
+        "backlog": {
+            "total_size": 54,
+            "sources": {
+                "Zadarski list": 12,
+                "023": 13,
+                "Slobodna dalmacija": 29
+            }
+        },
+        "published": {
+            "total": 3,
+            "ukraine_priority": 0,
+            "with_images": 1,
+            "text_only": 2,
+            "sources": {
+                "Slobodna dalmacija": 1,
+                "023": 2
             }
         },
         "models_used": {
