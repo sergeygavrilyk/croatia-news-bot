@@ -1,43 +1,5 @@
 [
     {
-        "timestamp": "2026-09-24 08:01:14",
-        "execution_time": 161.6,
-        "funnel": {
-            "scraped_total": 45,
-            "scraped_by_source": {
-                "Antena Zadar": 10,
-                "023": 10,
-                "Slobodna dalmacija": 15,
-                "Zadarski list": 10
-            },
-            "already_seen": 6,
-            "rejected_by_keywords": 5,
-            "duplicates_removed_by_ai": 13
-        },
-        "backlog": {
-            "total_size": 34,
-            "sources": {
-                "Slobodna dalmacija": 13,
-                "023": 11,
-                "Antena Zadar": 4,
-                "Zadarski list": 6
-            }
-        },
-        "published": {
-            "total": 3,
-            "ukraine_priority": 0,
-            "with_images": 2,
-            "text_only": 1,
-            "sources": {
-                "023": 1,
-                "Zadarski list": 1,
-                "Slobodna dalmacija": 1
-            }
-        },
-        "errors_count": 0,
-        "gemini_retries": 0
-    },
-    {
         "timestamp": "2026-09-24 09:01:04",
         "execution_time": 165.6,
         "funnel": {
@@ -4798,6 +4760,59 @@
             "sources": {
                 "Slobodna dalmacija": 1,
                 "023": 2
+            }
+        },
+        "models_used": {
+            "gemini-3.5-flash-lite": 1,
+            "gemini-3.5-flash": 0
+        },
+        "errors_count": 0,
+        "gemini_retries": 0
+    },
+    {
+        "timestamp": "2026-10-03 08:01:05",
+        "execution_time": 165.2,
+        "funnel": {
+            "scraped_total": 35,
+            "scraped_by_source": {
+                "023": 10,
+                "Slobodna dalmacija": 15,
+                "Zadarski list": 10
+            },
+            "already_seen": 6,
+            "rejected_by_keywords": 10,
+            "duplicates_removed_by_ai": 12,
+            "rejection_reasons_list": [
+                "• U Šibeniku postoje samo dva godišnja dob... ➡️ <b>Побут Шибеника</b>",
+                "• Šokantan podatak o smrtnosti u Hrvatskoj... ➡️ <b>Світовий шум та лайфстайл</b>",
+                "• Zatvara se poslovnica OTP-a krajem stude... ➡️ <b>Побут чужих міст</b>",
+                "• Evo tko je dobio 2000 eura od Ministarst... ➡️ <b>Світовий шум та лайфстайл</b>",
+                "• Zašto je odlazak na spavanje nakon ponoć... ➡️ <b>Світовий шум та лайфстайл</b>",
+                "• Župan Paško Rakić potpisao inicijativu z... ➡️ <b>Вже є в історії</b>",
+                "• Blagdan Gospe od Ružarija; Preko slavi s... ➡️ <b>Світовий шум та лайфстайл</b>",
+                "• Objavljen Javni poziv za financiranje pr... ➡️ <b>Побут чужих міст</b>",
+                "• Policija pojačano kontrolira ceste ovog ... ➡️ <b>Світовий шум та лайфстайл</b>",
+                "• Novi sadržaji za Dubrovnik: knjižnica u ... ➡️ <b>Побут чужих міст</b>",
+                "• Životna priča Katarine Ničetić, odgajate... ➡️ <b>Світовий шум та лайфстайл</b>",
+                "• Dvije žene u borbi za vlast: U Kazalištu... ➡️ <b>Побут чужих міст</b>"
+            ]
+        },
+        "backlog": {
+            "total_size": 20,
+            "sources": {
+                "023": 7,
+                "Slobodna dalmacija": 11,
+                "Zadarski list": 2
+            }
+        },
+        "published": {
+            "total": 3,
+            "ukraine_priority": 0,
+            "with_images": 1,
+            "text_only": 2,
+            "sources": {
+                "023": 2,
+                "Slobodna dalmacija": 1
             }
         },
         "models_used": {
