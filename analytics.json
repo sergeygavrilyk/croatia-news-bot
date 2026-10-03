@@ -1,39 +1,5 @@
 [
     {
-        "timestamp": "2026-09-24 15:01:10",
-        "execution_time": 266.4,
-        "funnel": {
-            "scraped_total": 45,
-            "scraped_by_source": {
-                "Antena Zadar": 10,
-                "023": 10,
-                "Slobodna dalmacija": 15,
-                "Zadarski list": 10
-            },
-            "already_seen": 26,
-            "rejected_by_keywords": 11,
-            "duplicates_removed_by_ai": 0
-        },
-        "backlog": {
-            "total_size": 71,
-            "sources": {
-                "Zadarski list": 26,
-                "Slobodna dalmacija": 19,
-                "023": 19,
-                "Antena Zadar": 7
-            }
-        },
-        "published": {
-            "total": 0,
-            "ukraine_priority": 0,
-            "with_images": 0,
-            "text_only": 0,
-            "sources": {}
-        },
-        "errors_count": 1,
-        "gemini_retries": 3
-    },
-    {
         "timestamp": "2026-09-24 16:01:12",
         "execution_time": 245.0,
         "funnel": {
@@ -4963,6 +4929,70 @@
         },
         "models_used": {
             "gemini-3.5-flash-lite": 0,
+            "gemini-3.5-flash": 0
+        },
+        "errors_count": 0,
+        "gemini_retries": 0
+    },
+    {
+        "timestamp": "2026-10-03 15:01:04",
+        "execution_time": 121.0,
+        "funnel": {
+            "scraped_total": 35,
+            "scraped_by_source": {
+                "023": 10,
+                "Slobodna dalmacija": 15,
+                "Zadarski list": 10
+            },
+            "already_seen": 23,
+            "rejected_by_keywords": 6,
+            "duplicates_removed_by_ai": 23,
+            "rejection_reasons_list": [
+                "• Rusija najavila nastavak napada na Kijev... ➡️ <b>Вже є в історії</b>",
+                "• Podmornica zaronila kilometar ispod leda... ➡️ <b>Світовий шум</b>",
+                "• Obilježena 35 obljetnica početka služenj... ➡️ <b>Побут чужих міст</b>",
+                "• Anušić: “Mi protuodgovor na rakete Srbij... ➡️ <b>Вже є в історії</b>",
+                "• Irska, ne Italija: evo koja zemlja predn... ➡️ <b>Світовий шум</b>",
+                "• Uz aktualnu izložbu Matka Vekića u Umjet... ➡️ <b>Побут чужих міст</b>",
+                "• Zadranka Petra Demo glavna zvijezda u Za... ➡️ <b>Побут чужих міст</b>",
+                "• Među 4444 stabla primijetili su nešto ne... ➡️ <b>Світовий шум</b>",
+                "• Požar u pogonu za pelete u Hercegovcu pr... ➡️ <b>Побут чужих міст</b>",
+                "• Rijeke na Aljasci mijenjaju boju u naran... ➡️ <b>Світовий шум</b>",
+                "• ‘Bojni brodovi: uspon i nestanak‘: pregl... ➡️ <b>Побут чужих міст</b>",
+                "• Od raka dojke u Hrvatskoj umrlo 697 žena... ➡️ <b>Вже є в історії</b>",
+                "• Šetači subotnjim đirom ušetali u listopa... ➡️ <b>Побут чужих міст</b>",
+                "• Šef HOO-a otišao u Japan, a po povratku ... ➡️ <b>Спорт</b>",
+                "• Dario Šarić kupio vilu za vrtoglavi izno... ➡️ <b>Побут чужих міст</b>",
+                "• Od izložbe pasa do izbora za Miss: I dru... ➡️ <b>Побут чужих міст</b>",
+                "• Bablje ljeto ne prestaje, Poljana suboto... ➡️ <b>Побут чужих міст</b>",
+                "• Višeminutne ovacije u HNK Zagreb: Bigonz... ➡️ <b>Побут чужих міст</b>",
+                "• Branio svoje polje od divljih svinja, a ... ➡️ <b>Побут чужих міст</b>",
+                "• Predsjednik Gradskog vijeća preuzeo dužn... ➡️ <b>Побут чужих міст</b>",
+                "• Jeste li čuli za loppis? Pločani su dana... ➡️ <b>Побут чужих міст</b>",
+                "• Sudar na Mostu dr. Franja Tuđmana: hitne... ➡️ <b>Побут чужих міст</b>",
+                "• Sudar na Mostu dr. Franja Tuđmana, prome... ➡️ <b>Дублікат</b>"
+            ]
+        },
+        "backlog": {
+            "total_size": 27,
+            "sources": {
+                "023": 5,
+                "Slobodna dalmacija": 14,
+                "Zadarski list": 8
+            }
+        },
+        "published": {
+            "total": 2,
+            "ukraine_priority": 0,
+            "with_images": 1,
+            "text_only": 1,
+            "sources": {
+                "Zadarski list": 1,
+                "023": 1
+            }
+        },
+        "models_used": {
+            "gemini-3.5-flash-lite": 1,
             "gemini-3.5-flash": 0
         },
         "errors_count": 0,
