@@ -1,43 +1,5 @@
 [
     {
-        "timestamp": "2026-09-24 07:01:08",
-        "execution_time": 204.0,
-        "funnel": {
-            "scraped_total": 45,
-            "scraped_by_source": {
-                "Antena Zadar": 10,
-                "023": 10,
-                "Slobodna dalmacija": 15,
-                "Zadarski list": 10
-            },
-            "already_seen": 4,
-            "rejected_by_keywords": 4,
-            "duplicates_removed_by_ai": 22
-        },
-        "backlog": {
-            "total_size": 29,
-            "sources": {
-                "Antena Zadar": 4,
-                "023": 8,
-                "Slobodna dalmacija": 10,
-                "Zadarski list": 7
-            }
-        },
-        "published": {
-            "total": 3,
-            "ukraine_priority": 0,
-            "with_images": 1,
-            "text_only": 2,
-            "sources": {
-                "Zadarski list": 1,
-                "023": 1,
-                "Antena Zadar": 1
-            }
-        },
-        "errors_count": 0,
-        "gemini_retries": 0
-    },
-    {
         "timestamp": "2026-09-24 08:01:14",
         "execution_time": 161.6,
         "funnel": {
@@ -4782,6 +4744,60 @@
             "sources": {
                 "Zadarski list": 2,
                 "Slobodna dalmacija": 1
+            }
+        },
+        "models_used": {
+            "gemini-3.5-flash-lite": 1,
+            "gemini-3.5-flash": 0
+        },
+        "errors_count": 0,
+        "gemini_retries": 0
+    },
+    {
+        "timestamp": "2026-10-03 07:01:01",
+        "execution_time": 166.3,
+        "funnel": {
+            "scraped_total": 35,
+            "scraped_by_source": {
+                "023": 10,
+                "Slobodna dalmacija": 15,
+                "Zadarski list": 10
+            },
+            "already_seen": 0,
+            "rejected_by_keywords": 8,
+            "duplicates_removed_by_ai": 13,
+            "rejection_reasons_list": [
+                "• Šokantan podatak o smrtnosti u Hrvatskoj... ➡️ <b>Хорватія загальна медична статистика</b>",
+                "• Novi sadržaji za Dubrovnik: knjižnica u ... ➡️ <b>Побут Дубровика</b>",
+                "• Zašto je odlazak na spavanje nakon ponoć... ➡️ <b>Світовий шум та лайфстайл</b>",
+                "• Evo tko je dobio 2000 eura od Ministarst... ➡️ <b>Хорватія культура</b>",
+                "• Životna priča Katarine Ničetić, odgajate... ➡️ <b>Побут інших міст</b>",
+                "• Blagdan Gospe od Ružarija; Preko slavi s... ➡️ <b>Локальна подія на острові без значного впливу</b>",
+                "• Lula izgubio veliku prednost, sin Bolson... ➡️ <b>Світовий шум</b>",
+                "• Osmorica optužena zbog napada na Dane sr... ➡️ <b>Дублікат є в історії</b>",
+                "• Milijunaš iz Austrije moli za pomoć u po... ➡️ <b>Кримінал загальнонаціональний не стосується Задара напряму</b>",
+                "• Dvije žene u borbi za vlast: U Kazalištu... ➡️ <b>Культура Дубровика</b>",
+                "• Policija pojačano kontrolira ceste ovog ... ➡️ <b>Загальна поліцейська акція</b>",
+                "• ‘Najveći klub iz najmanjeg mista‘ izbaci... ➡️ <b>Побут інших міст</b>",
+                "• Zadar predvođen raspucanim Klaricom i pr... ➡️ <b>Спорт</b>"
+            ]
+        },
+        "backlog": {
+            "total_size": 19,
+            "sources": {
+                "023": 7,
+                "Slobodna dalmacija": 8,
+                "Zadarski list": 4
+            }
+        },
+        "published": {
+            "total": 3,
+            "ukraine_priority": 0,
+            "with_images": 1,
+            "text_only": 2,
+            "sources": {
+                "Slobodna dalmacija": 1,
+                "023": 2
             }
         },
         "models_used": {
