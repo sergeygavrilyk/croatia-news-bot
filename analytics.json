@@ -1,39 +1,5 @@
 [
     {
-        "timestamp": "2026-09-24 13:01:17",
-        "execution_time": 234.1,
-        "funnel": {
-            "scraped_total": 45,
-            "scraped_by_source": {
-                "Antena Zadar": 10,
-                "023": 10,
-                "Slobodna dalmacija": 15,
-                "Zadarski list": 10
-            },
-            "already_seen": 10,
-            "rejected_by_keywords": 7,
-            "duplicates_removed_by_ai": 0
-        },
-        "backlog": {
-            "total_size": 58,
-            "sources": {
-                "Zadarski list": 18,
-                "Slobodna dalmacija": 18,
-                "023": 17,
-                "Antena Zadar": 5
-            }
-        },
-        "published": {
-            "total": 0,
-            "ukraine_priority": 0,
-            "with_images": 0,
-            "text_only": 0,
-            "sources": {}
-        },
-        "errors_count": 1,
-        "gemini_retries": 3
-    },
-    {
         "timestamp": "2026-09-24 14:01:12",
         "execution_time": 239.4,
         "funnel": {
@@ -4907,6 +4873,67 @@
             "sources": {
                 "Zadarski list": 2,
                 "Slobodna dalmacija": 1
+            }
+        },
+        "models_used": {
+            "gemini-3.5-flash-lite": 1,
+            "gemini-3.5-flash": 0
+        },
+        "errors_count": 0,
+        "gemini_retries": 0
+    },
+    {
+        "timestamp": "2026-10-03 13:01:00",
+        "execution_time": 166.9,
+        "funnel": {
+            "scraped_total": 35,
+            "scraped_by_source": {
+                "023": 10,
+                "Slobodna dalmacija": 15,
+                "Zadarski list": 10
+            },
+            "already_seen": 8,
+            "rejected_by_keywords": 4,
+            "duplicates_removed_by_ai": 20,
+            "rejection_reasons_list": [
+                "• Trump i Putin pregovaraju o Ukrajini. Na... ➡️ <b>Світовий шум</b>",
+                "• Irska, ne Italija: evo koja zemlja predn... ➡️ <b>Світовий шум</b>",
+                "• Šef HOO-a otišao u Japan, a po povratku ... ➡️ <b>Спорт</b>",
+                "• ‘Bojni brodovi: uspon i nestanak‘: pregl... ➡️ <b>Побут чужих міст</b>",
+                "• Zadranka Petra Demo glavna zvijezda u Za... ➡️ <b>Побут чужих міст</b>",
+                "• Od izložbe pasa do izbora za Miss: I dru... ➡️ <b>Побут чужих міст</b>",
+                "• Šetači subotnjim đirom ušetali u listopa... ➡️ <b>Побут чужих міст</b>",
+                "• Višeminutne ovacije u HNK Zagreb: Bigonz... ➡️ <b>Побут чужих міст</b>",
+                "• Dario Šarić kupio vilu za vrtoglavi izno... ➡️ <b>Побут чужих міст</b>",
+                "• Bablje ljeto ne prestaje, Poljana suboto... ➡️ <b>Побут чужих міст</b>",
+                "• Rijeke na Aljasci mijenjaju boju u naran... ➡️ <b>Світовий шум</b>",
+                "• Zara povukla dječji kostim koji je izazv... ➡️ <b>Світовий шум</b>",
+                "• Branio svoje polje od divljih svinja, a ... ➡️ <b>Побут чужих міст</b>",
+                "• Predsjednik Gradskog vijeća preuzeo dužn... ➡️ <b>Побут чужих міст</b>",
+                "• Jeste li čuli za loppis? Pločani su dana... ➡️ <b>Побут чужих міст</b>",
+                "• Sudar na Mostu dr. Franja Tuđmana: hitne... ➡️ <b>Побут чужих міст</b>",
+                "• Sudar na Mostu dr. Franja Tuđmana, prome... ➡️ <b>Дублікат</b>",
+                "• Tereza Kesovija rođendan dočekala u boln... ➡️ <b>Побут чужих міст</b>",
+                "• Objavljeni detalji tragične pogibije mot... ➡️ <b>Побут чужих міст</b>",
+                "• Vido Boganović o gradnji cavtatskog reso... ➡️ <b>Побут чужих міст</b>"
+            ]
+        },
+        "backlog": {
+            "total_size": 24,
+            "sources": {
+                "Slobodna dalmacija": 12,
+                "023": 6,
+                "Zadarski list": 6
+            }
+        },
+        "published": {
+            "total": 3,
+            "ukraine_priority": 0,
+            "with_images": 1,
+            "text_only": 2,
+            "sources": {
+                "023": 2,
+                "Zadarski list": 1
             }
         },
         "models_used": {
