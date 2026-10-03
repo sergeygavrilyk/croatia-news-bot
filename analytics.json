@@ -1,43 +1,5 @@
 [
     {
-        "timestamp": "2026-09-24 09:01:04",
-        "execution_time": 165.6,
-        "funnel": {
-            "scraped_total": 45,
-            "scraped_by_source": {
-                "Antena Zadar": 10,
-                "023": 10,
-                "Slobodna dalmacija": 15,
-                "Zadarski list": 10
-            },
-            "already_seen": 8,
-            "rejected_by_keywords": 3,
-            "duplicates_removed_by_ai": 17
-        },
-        "backlog": {
-            "total_size": 40,
-            "sources": {
-                "023": 13,
-                "Slobodna dalmacija": 13,
-                "Antena Zadar": 6,
-                "Zadarski list": 8
-            }
-        },
-        "published": {
-            "total": 3,
-            "ukraine_priority": 1,
-            "with_images": 2,
-            "text_only": 1,
-            "sources": {
-                "Slobodna dalmacija": 1,
-                "Zadarski list": 1,
-                "Antena Zadar": 1
-            }
-        },
-        "errors_count": 0,
-        "gemini_retries": 0
-    },
-    {
         "timestamp": "2026-09-24 10:01:05",
         "execution_time": 164.1,
         "funnel": {
@@ -4803,6 +4765,69 @@
                 "023": 7,
                 "Slobodna dalmacija": 11,
                 "Zadarski list": 2
+            }
+        },
+        "published": {
+            "total": 3,
+            "ukraine_priority": 0,
+            "with_images": 1,
+            "text_only": 2,
+            "sources": {
+                "023": 2,
+                "Slobodna dalmacija": 1
+            }
+        },
+        "models_used": {
+            "gemini-3.5-flash-lite": 1,
+            "gemini-3.5-flash": 0
+        },
+        "errors_count": 0,
+        "gemini_retries": 0
+    },
+    {
+        "timestamp": "2026-10-03 09:01:02",
+        "execution_time": 163.8,
+        "funnel": {
+            "scraped_total": 35,
+            "scraped_by_source": {
+                "023": 10,
+                "Slobodna dalmacija": 15,
+                "Zadarski list": 10
+            },
+            "already_seen": 9,
+            "rejected_by_keywords": 3,
+            "duplicates_removed_by_ai": 22,
+            "rejection_reasons_list": [
+                "• Vido Boganović o gradnji cavtatskog reso... ➡️ <b>Побут інших міст</b>",
+                "• Obrat oko Vile Svežanj. Dražba završila,... ➡️ <b>Побут інших міст</b>",
+                "• Hrvatska među deset najboljih zemalja sv... ➡️ <b>Світовий шум та лайфстайл</b>",
+                "• Iskra brodogradilište i HD Hyundai Heavy... ➡️ <b>Побут інших міст</b>",
+                "• Policija kod Splićanina pronašla pravu m... ➡️ <b>Побут інших міст</b>",
+                "• Zašto je odlazak na spavanje nakon ponoć... ➡️ <b>Світовий шум та лайфстайл</b>",
+                "• Početak u znaku opere: tratamenat u KMD-... ➡️ <b>Побут інших міст</b>",
+                "• Velebit je još jednom opjevan i – pobije... ➡️ <b>Побут інших міст</b>",
+                "• Blagdan Gospe od Ružarija; Preko slavi s... ➡️ <b>Побут інших міст</b>",
+                "• U Šibeniku postoje samo dva godišnja dob... ➡️ <b>Побут інших міст</b>",
+                "• Novi udar na standard građana. Cijena en... ➡️ <b>Вже є в історії</b>",
+                "• Zatvara se poslovnica OTP-a krajem stude... ➡️ <b>Побут інших міст</b>",
+                "• Što su zapravo dogovorili Penava i Frka-... ➡️ <b>Світовий шум та лайфстайл</b>",
+                "• Policija pojačano kontrolira ceste ovog ... ➡️ <b>Побут інших міст</b>",
+                "• Župan Paško Rakić potpisao inicijativu z... ➡️ <b>Вже є в історії</b>",
+                "• Slučaj Gospić. Ako SOA nije obavijestila... ➡️ <b>Вже є в історії</b>",
+                "• Objavljen Javni poziv za financiranje pr... ➡️ <b>Побут інших міст</b>",
+                "• “Europe: The Reflection” Ivane Dragičevi... ➡️ <b>Світовий шум та лайфстайл</b>",
+                "• “Oče naš” Gorana Stankovića premijerno s... ➡️ <b>Побут інших міст</b>",
+                "• Novi sadržaji za Dubrovnik: knjižnica u ... ➡️ <b>Побут інших міст</b>",
+                "• Vrhunac Dana turske kulture. Rijeka ugos... ➡️ <b>Побут інших міст</b>",
+                "• Životna priča Katarine Ničetić, odgajate... ➡️ <b>Побут інших міст</b>"
+            ]
+        },
+        "backlog": {
+            "total_size": 26,
+            "sources": {
+                "Slobodna dalmacija": 10,
+                "023": 6,
+                "Zadarski list": 10
             }
         },
         "published": {
