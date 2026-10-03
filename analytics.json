@@ -1,42 +1,5 @@
 [
     {
-        "timestamp": "2026-09-24 10:01:05",
-        "execution_time": 164.1,
-        "funnel": {
-            "scraped_total": 45,
-            "scraped_by_source": {
-                "Antena Zadar": 10,
-                "023": 10,
-                "Slobodna dalmacija": 15,
-                "Zadarski list": 10
-            },
-            "already_seen": 6,
-            "rejected_by_keywords": 4,
-            "duplicates_removed_by_ai": 21
-        },
-        "backlog": {
-            "total_size": 48,
-            "sources": {
-                "Zadarski list": 11,
-                "023": 15,
-                "Slobodna dalmacija": 16,
-                "Antena Zadar": 6
-            }
-        },
-        "published": {
-            "total": 3,
-            "ukraine_priority": 0,
-            "with_images": 1,
-            "text_only": 2,
-            "sources": {
-                "023": 2,
-                "Slobodna dalmacija": 1
-            }
-        },
-        "errors_count": 0,
-        "gemini_retries": 0
-    },
-    {
         "timestamp": "2026-09-24 11:01:06",
         "execution_time": 213.0,
         "funnel": {
@@ -4838,6 +4801,64 @@
             "sources": {
                 "023": 2,
                 "Slobodna dalmacija": 1
+            }
+        },
+        "models_used": {
+            "gemini-3.5-flash-lite": 1,
+            "gemini-3.5-flash": 0
+        },
+        "errors_count": 0,
+        "gemini_retries": 0
+    },
+    {
+        "timestamp": "2026-10-03 10:01:01",
+        "execution_time": 165.3,
+        "funnel": {
+            "scraped_total": 35,
+            "scraped_by_source": {
+                "023": 10,
+                "Slobodna dalmacija": 15,
+                "Zadarski list": 10
+            },
+            "already_seen": 9,
+            "rejected_by_keywords": 6,
+            "duplicates_removed_by_ai": 17,
+            "rejection_reasons_list": [
+                "• Tereza Kesovija rođendan dočekala u boln... ➡️ <b>Шоу-бізнес</b>",
+                "• Iz Pule direktno u Edinburgh. Uvodi se n... ➡️ <b>Побут інших міст</b>",
+                "• Objavljeni detalji tragične pogibije mot... ➡️ <b>Кримінал інших регіонів</b>",
+                "• Zašto je odlazak na spavanje nakon ponoć... ➡️ <b>Світовий шум та лайфстайл</b>",
+                "• Najveća investicijska groznica u povijes... ➡️ <b>Світовий шум</b>",
+                "• Vido Boganović o gradnji cavtatskog reso... ➡️ <b>Кримінал інших регіонів</b>",
+                "• Ukrali kamion i kablove, pa zapalili aut... ➡️ <b>Кримінал інших регіонів</b>",
+                "• Početak u znaku opere: tratamenat u KMD-... ➡️ <b>Культура інших міст</b>",
+                "• Policija pojačano kontrolira ceste ovog ... ➡️ <b>Вже є в історії</b>",
+                "• Obrat oko Vile Svežanj. Dražba završila,... ➡️ <b>Побут інших міст</b>",
+                "• U Šibeniku postoje samo dva godišnja dob... ➡️ <b>Світовий шум та лайфстайл</b>",
+                "• Velebit je još jednom opjevan i – pobije... ➡️ <b>Світовий шум та лайфстайл</b>",
+                "• Zatvara se poslovnica OTP-a krajem stude... ➡️ <b>Побут інших міст</b>",
+                "• Što su zapravo dogovorili Penava i Frka-... ➡️ <b>Вже є в історії</b>",
+                "• Novi sadržaji za Dubrovnik: knjižnica u ... ➡️ <b>Побут інших міст</b>",
+                "• Elvia Nacinovich vraća se na daske Hrvat... ➡️ <b>Культура інших міст</b>",
+                "• Životna priča Katarine Ničetić, odgajate... ➡️ <b>Кримінал інших регіонів</b>"
+            ]
+        },
+        "backlog": {
+            "total_size": 21,
+            "sources": {
+                "Zadarski list": 8,
+                "023": 4,
+                "Slobodna dalmacija": 9
+            }
+        },
+        "published": {
+            "total": 3,
+            "ukraine_priority": 0,
+            "with_images": 1,
+            "text_only": 2,
+            "sources": {
+                "023": 2,
+                "Zadarski list": 1
             }
         },
         "models_used": {
