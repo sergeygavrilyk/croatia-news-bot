@@ -1,42 +1,5 @@
 [
     {
-        "timestamp": "2026-09-24 11:01:06",
-        "execution_time": 213.0,
-        "funnel": {
-            "scraped_total": 45,
-            "scraped_by_source": {
-                "Antena Zadar": 10,
-                "023": 10,
-                "Slobodna dalmacija": 15,
-                "Zadarski list": 10
-            },
-            "already_seen": 11,
-            "rejected_by_keywords": 6,
-            "duplicates_removed_by_ai": 20
-        },
-        "backlog": {
-            "total_size": 51,
-            "sources": {
-                "Zadarski list": 13,
-                "Slobodna dalmacija": 18,
-                "023": 14,
-                "Antena Zadar": 6
-            }
-        },
-        "published": {
-            "total": 3,
-            "ukraine_priority": 0,
-            "with_images": 2,
-            "text_only": 1,
-            "sources": {
-                "Slobodna dalmacija": 2,
-                "023": 1
-            }
-        },
-        "errors_count": 0,
-        "gemini_retries": 0
-    },
-    {
         "timestamp": "2026-09-24 12:01:12",
         "execution_time": 195.8,
         "funnel": {
@@ -4859,6 +4822,66 @@
             "sources": {
                 "023": 2,
                 "Zadarski list": 1
+            }
+        },
+        "models_used": {
+            "gemini-3.5-flash-lite": 1,
+            "gemini-3.5-flash": 0
+        },
+        "errors_count": 0,
+        "gemini_retries": 0
+    },
+    {
+        "timestamp": "2026-10-03 11:01:00",
+        "execution_time": 164.2,
+        "funnel": {
+            "scraped_total": 35,
+            "scraped_by_source": {
+                "023": 10,
+                "Slobodna dalmacija": 15,
+                "Zadarski list": 10
+            },
+            "already_seen": 10,
+            "rejected_by_keywords": 4,
+            "duplicates_removed_by_ai": 19,
+            "rejection_reasons_list": [
+                "• Kino Zona Zadar večeras prikazuje Peckov... ➡️ <b>Світовий шум та лайфстайл</b>",
+                "• Zara povukla dječji kostim koji je izazv... ➡️ <b>Світовий шум та лайфстайл</b>",
+                "• Predsjednik Gradskog vijeća preuzeo dužn... ➡️ <b>Побут чужих міст</b>",
+                "• AI dešifrirao Napoleonovu šifru staru vi... ➡️ <b>Світовий шум та лайфстайл</b>",
+                "• Zašto je odlazak na spavanje nakon ponoć... ➡️ <b>Світовий шум та лайфстайл</b>",
+                "• Jeste li čuli za loppis? Pločani su dana... ➡️ <b>Побут чужих міст</b>",
+                "• Iz jurećeg auta pucali na kuću u Dubravi... ➡️ <b>Побут чужих міст</b>",
+                "• Sudar na Mostu dr. Franja Tuđmana: hitne... ➡️ <b>Побут чужих міст</b>",
+                "• Iz Pule direktno u Edinburgh. Uvodi se n... ➡️ <b>Побут чужих міст</b>",
+                "• Sudar na Mostu dr. Franja Tuđmana, prome... ➡️ <b>Дублікат</b>",
+                "• Najveća investicijska groznica u povijes... ➡️ <b>Світовий шум та лайфстайл</b>",
+                "• Tereza Kesovija rođendan dočekala u boln... ➡️ <b>Побут чужих міст</b>",
+                "• Ukrali kamion i kablove, pa zapalili aut... ➡️ <b>Побут чужих міст</b>",
+                "• Objavljeni detalji tragične pogibije mot... ➡️ <b>Побут чужих міст</b>",
+                "• Obrat oko Vile Svežanj. Dražba završila,... ➡️ <b>Побут чужих міст</b>",
+                "• Vido Boganović o gradnji cavtatskog reso... ➡️ <b>Побут чужих міст</b>",
+                "• Početak u znaku opere: tratamenat u KMD-... ➡️ <b>Побут чужих міст</b>",
+                "• U Šibeniku postoje samo dva godišnja dob... ➡️ <b>Побут чужих міст</b>",
+                "• Zatvara se poslovnica OTP-a krajem stude... ➡️ <b>Побут чужих міст</b>"
+            ]
+        },
+        "backlog": {
+            "total_size": 22,
+            "sources": {
+                "Slobodna dalmacija": 12,
+                "023": 3,
+                "Zadarski list": 7
+            }
+        },
+        "published": {
+            "total": 3,
+            "ukraine_priority": 0,
+            "with_images": 2,
+            "text_only": 1,
+            "sources": {
+                "Slobodna dalmacija": 2,
+                "023": 1
             }
         },
         "models_used": {
