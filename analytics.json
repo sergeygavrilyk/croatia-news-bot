@@ -1,39 +1,5 @@
 [
     {
-        "timestamp": "2026-09-24 16:01:12",
-        "execution_time": 245.0,
-        "funnel": {
-            "scraped_total": 45,
-            "scraped_by_source": {
-                "Antena Zadar": 10,
-                "023": 10,
-                "Slobodna dalmacija": 15,
-                "Zadarski list": 10
-            },
-            "already_seen": 28,
-            "rejected_by_keywords": 9,
-            "duplicates_removed_by_ai": 0
-        },
-        "backlog": {
-            "total_size": 79,
-            "sources": {
-                "Zadarski list": 32,
-                "Slobodna dalmacija": 21,
-                "023": 19,
-                "Antena Zadar": 7
-            }
-        },
-        "published": {
-            "total": 0,
-            "ukraine_priority": 0,
-            "with_images": 0,
-            "text_only": 0,
-            "sources": {}
-        },
-        "errors_count": 1,
-        "gemini_retries": 3
-    },
-    {
         "timestamp": "2026-09-24 19:01:09",
         "execution_time": 179.4,
         "funnel": {
@@ -4989,6 +4955,69 @@
             "sources": {
                 "Zadarski list": 1,
                 "023": 1
+            }
+        },
+        "models_used": {
+            "gemini-3.5-flash-lite": 1,
+            "gemini-3.5-flash": 0
+        },
+        "errors_count": 0,
+        "gemini_retries": 0
+    },
+    {
+        "timestamp": "2026-10-03 16:01:00",
+        "execution_time": 74.4,
+        "funnel": {
+            "scraped_total": 35,
+            "scraped_by_source": {
+                "023": 10,
+                "Slobodna dalmacija": 15,
+                "Zadarski list": 10
+            },
+            "already_seen": 8,
+            "rejected_by_keywords": 5,
+            "duplicates_removed_by_ai": 23,
+            "rejection_reasons_list": [
+                "• Kod Gline otkriveno spomen-obilježje “Go... ➡️ <b>Побут інших міст</b>",
+                "• Programom ‘Magnetična baština‘ najmlađi ... ➡️ <b>Побут інших міст</b>",
+                "• Sol, ocat i šećer: tajne konzerviranja k... ➡️ <b>Світовий шум та лайфстайл</b>",
+                "• Medved: “SOA jako dobro radi svoj posao,... ➡️ <b>Вже є в історії</b>",
+                "• Obilježena 35 obljetnica početka služenj... ➡️ <b>Побут інших міст</b>",
+                "• Podmornica zaronila kilometar ispod leda... ➡️ <b>Світовий шум та лайфстайл</b>",
+                "• Konferencija »Žene od A do Z«: Ne moramo... ➡️ <b>Побут інших міст</b>",
+                "• Uz aktualnu izložbu Matka Vekića u Umjet... ➡️ <b>Побут інших міст</b>",
+                "• Irska, ne Italija: evo koja zemlja predn... ➡️ <b>Світовий шум та лайфстайл</b>",
+                "• Među 4444 stabla primijetili su nešto ne... ➡️ <b>Побут інших міст</b>",
+                "• Zadranka Petra Demo glavna zvijezda u Za... ➡️ <b>Не суттєва новина лайфстайлу</b>",
+                "• Požar u pogonu za pelete u Hercegovcu pr... ➡️ <b>Побут інших міст</b>",
+                "• ‘Bojni brodovi: uspon i nestanak‘: pregl... ➡️ <b>Побут інших міст</b>",
+                "• Rijeke na Aljasci mijenjaju boju u naran... ➡️ <b>Світовий шум та лайфстайл</b>",
+                "• Šetači subotnjim đirom ušetali u listopa... ➡️ <b>Побут інших міст</b>",
+                "• Poznati košarkaš kupio luksuznu vilu u Š... ➡️ <b>Побут інших міст</b>",
+                "• Bablje ljeto ne prestaje, Poljana suboto... ➡️ <b>Побут інших міст</b>",
+                "• Branio svoje polje od divljih svinja, a ... ➡️ <b>Вже є в історії</b>",
+                "• Predsjednik Gradskog vijeća preuzeo dužn... ➡️ <b>Побут інших міст</b>",
+                "• Jeste li čuli za loppis? Pločani su dana... ➡️ <b>Побут інших міст</b>",
+                "• Sudar na Mostu dr. Franja Tuđmana: hitne... ➡️ <b>Побут інших міст</b>",
+                "• Tereza Kesovija rođendan dočekala u boln... ➡️ <b>Лайфстайл шоу-бізнес</b>",
+                "• Objavljeni detalji tragične pogibije mot... ➡️ <b>Побут інших міст</b>"
+            ]
+        },
+        "backlog": {
+            "total_size": 24,
+            "sources": {
+                "Slobodna dalmacija": 14,
+                "023": 5,
+                "Zadarski list": 5
+            }
+        },
+        "published": {
+            "total": 1,
+            "ukraine_priority": 0,
+            "with_images": 1,
+            "text_only": 0,
+            "sources": {
+                "Zadarski list": 1
             }
         },
         "models_used": {
