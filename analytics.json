@@ -1,42 +1,5 @@
 [
     {
-        "timestamp": "2026-09-25 14:01:11",
-        "execution_time": 166.9,
-        "funnel": {
-            "scraped_total": 45,
-            "scraped_by_source": {
-                "Antena Zadar": 10,
-                "023": 10,
-                "Slobodna dalmacija": 15,
-                "Zadarski list": 10
-            },
-            "already_seen": 12,
-            "rejected_by_keywords": 5,
-            "duplicates_removed_by_ai": 14
-        },
-        "backlog": {
-            "total_size": 58,
-            "sources": {
-                "Zadarski list": 13,
-                "Slobodna dalmacija": 30,
-                "023": 8,
-                "Antena Zadar": 7
-            }
-        },
-        "published": {
-            "total": 3,
-            "ukraine_priority": 0,
-            "with_images": 1,
-            "text_only": 2,
-            "sources": {
-                "Antena Zadar": 2,
-                "Zadarski list": 1
-            }
-        },
-        "errors_count": 0,
-        "gemini_retries": 0
-    },
-    {
         "timestamp": "2026-09-25 15:01:08",
         "execution_time": 267.1,
         "funnel": {
@@ -5198,6 +5161,69 @@
             "sources": {
                 "Slobodna dalmacija": 2,
                 "Zadarski list": 1
+            }
+        },
+        "models_used": {
+            "gemini-3.5-flash-lite": 1,
+            "gemini-3.5-flash": 0
+        },
+        "errors_count": 0,
+        "gemini_retries": 0
+    },
+    {
+        "timestamp": "2026-10-04 14:01:03",
+        "execution_time": 126.8,
+        "funnel": {
+            "scraped_total": 35,
+            "scraped_by_source": {
+                "023": 10,
+                "Slobodna dalmacija": 15,
+                "Zadarski list": 10
+            },
+            "already_seen": 10,
+            "rejected_by_keywords": 5,
+            "duplicates_removed_by_ai": 22,
+            "rejection_reasons_list": [
+                "• Korčulani u ružičastom trčali za potporu... ➡️ <b>Спорт</b>",
+                "• Starija žena prevarena za više desetaka ... ➡️ <b>Побут чужих міст</b>",
+                "• Gotove kore za pitu izgledat će kao doma... ➡️ <b>Світовий шум та лайфстайл</b>",
+                "• Šetači ne brinu za tmurnu vremensku prog... ➡️ <b>Побут чужих міст</b>",
+                "• Čak 22.000 munja pogodilo Kretu tijekom ... ➡️ <b>Світовий шум та лайфстайл</b>",
+                "• Zašto kuhanje smrznutog povrća u vodi kv... ➡️ <b>Світовий шум та лайфстайл</b>",
+                "• Plemenita gesta u srcu Cavtata usrećila ... ➡️ <b>Побут чужих міст</b>",
+                "• Motociklist poginuo u prometnoj nesreći ... ➡️ <b>Побут чужих міст</b>",
+                "• Pohani kruh bez jaja: mlijeko u tavi daj... ➡️ <b>Світовий шум та лайфстайл</b>",
+                "• Ugodna toplina neće trajati vječno, slje... ➡️ <b>Побут чужих міст</b>",
+                "• Crne rupe lutalice možda čuvaju povijest... ➡️ <b>Світовий шум та лайфстайл</b>",
+                "• Svečanost u Pridvorju: Dodijeljena prizn... ➡️ <b>Побут чужих міст</b>",
+                "• Riječanka Diana Kuiš završila utrku od 1... ➡️ <b>Спорт</b>",
+                "• Zašto je listopad pravo vrijeme za sadnj... ➡️ <b>Світовий шум та лайфстайл</b>",
+                "• Šibenčanin (49) uhvaćen prilično pijan n... ➡️ <b>Побут чужих міст</b>",
+                "• Jedna osoba poginula u slijetanju vozila... ➡️ <b>Побут чужих міст</b>",
+                "• Bilice pokreću ‘Bilicious!‘: čeka vas pl... ➡️ <b>Побут чужих міст</b>",
+                "• Nestao zrakoplov sa šest osoba za medici... ➡️ <b>Світовий шум та лайфстайл</b>",
+                "• Velika radost u Vodicama: poznata obitel... ➡️ <b>Побут чужих міст</b>",
+                "• Hrvatska među zemljama s najvećom bioraz... ➡️ <b>Світовий шум та лайфстайл</b>",
+                "• Od sutra privremena regulacija prometa n... ➡️ <b>Побут чужих міст</b>",
+                "• Investitori žele graditi, građani se bun... ➡️ <b>Світовий шум та лайфстайл</b>"
+            ]
+        },
+        "backlog": {
+            "total_size": 24,
+            "sources": {
+                "Zadarski list": 9,
+                "Slobodna dalmacija": 10,
+                "023": 5
+            }
+        },
+        "published": {
+            "total": 2,
+            "ukraine_priority": 0,
+            "with_images": 2,
+            "text_only": 0,
+            "sources": {
+                "Zadarski list": 1,
+                "Slobodna dalmacija": 1
             }
         },
         "models_used": {
