@@ -1,39 +1,5 @@
 [
     {
-        "timestamp": "2026-09-25 16:01:44",
-        "execution_time": 10.3,
-        "funnel": {
-            "scraped_total": 45,
-            "scraped_by_source": {
-                "Antena Zadar": 10,
-                "023": 10,
-                "Slobodna dalmacija": 15,
-                "Zadarski list": 10
-            },
-            "already_seen": 18,
-            "rejected_by_keywords": 5,
-            "duplicates_removed_by_ai": 25
-        },
-        "backlog": {
-            "total_size": 51,
-            "sources": {
-                "Slobodna dalmacija": 29,
-                "Zadarski list": 12,
-                "Antena Zadar": 4,
-                "023": 6
-            }
-        },
-        "published": {
-            "total": 0,
-            "ukraine_priority": 0,
-            "with_images": 0,
-            "text_only": 0,
-            "sources": {}
-        },
-        "errors_count": 0,
-        "gemini_retries": 0
-    },
-    {
         "timestamp": "2026-09-25 19:01:08",
         "execution_time": 16.5,
         "funnel": {
@@ -5242,6 +5208,66 @@
         },
         "models_used": {
             "gemini-3.5-flash-lite": 1,
+            "gemini-3.5-flash": 0
+        },
+        "errors_count": 0,
+        "gemini_retries": 0
+    },
+    {
+        "timestamp": "2026-10-04 16:00:59",
+        "execution_time": 13.8,
+        "funnel": {
+            "scraped_total": 35,
+            "scraped_by_source": {
+                "023": 10,
+                "Slobodna dalmacija": 15,
+                "Zadarski list": 10
+            },
+            "already_seen": 8,
+            "rejected_by_keywords": 5,
+            "duplicates_removed_by_ai": 22,
+            "rejection_reasons_list": [
+                "• Merz u Kijevu poručio Rusiji: ‘Nećemo se... ➡️ <b>Світовий шум</b>",
+                "• Korčulani u ružičastom trčali za potporu... ➡️ <b>Побут чужих міст</b>",
+                "• Vlakno iz luka i češnjaka moglo bi sprij... ➡️ <b>Світовий шум</b>",
+                "• Trump izabrao dužnosnike za pitanja zato... ➡️ <b>Світовий шум</b>",
+                "• Novi požar u dolini Neretve, vatrogascim... ➡️ <b>Вже є в історії</b>",
+                "• Gotove kore za pitu izgledat će kao doma... ➡️ <b>Світовий шум</b>",
+                "• Baška potiče iznajmljivače i priprema po... ➡️ <b>Побут чужих міст</b>",
+                "• Novi požar u dolini Neretve: plamen se p... ➡️ <b>Дублікат</b>",
+                "• Zašto kuhanje smrznutog povrća u vodi kv... ➡️ <b>Світовий шум</b>",
+                "• Tanker pogođen projektilom u Hormuškom t... ➡️ <b>Світовий шум</b>",
+                "• Anabel Zanze predstavila umjetničku knji... ➡️ <b>Побут чужих міст</b>",
+                "• Pohani kruh bez jaja: mlijeko u tavi daj... ➡️ <b>Світовий шум</b>",
+                "• Iran: Hormuški tjesnac neće biti otvoren... ➡️ <b>Світовий шум</b>",
+                "• Vozač u Vodicama odbio alkotestiranje pa... ➡️ <b>Побут чужих міст</b>",
+                "• Crne rupe lutalice možda čuvaju povijest... ➡️ <b>Світовий шум</b>",
+                "• Druženje uz zabavni program u azilu na V... ➡️ <b>Побут чужих міст</b>",
+                "• Šetači ne brinu za tmurnu vremensku prog... ➡️ <b>Побут чужих міст</b>",
+                "• Izbori u Brazilu: Lula i Flávio Bolsonar... ➡️ <b>Світовий шум</b>",
+                "• Plemenita gesta u srcu Cavtata usrećila ... ➡️ <b>Побут чужих міст</b>",
+                "• Rijeke ljudi stigle na Belu nedeju; Mila... ➡️ <b>Побут чужих міст</b>",
+                "• Ugodna toplina neće trajati vječno, slje... ➡️ <b>Побут чужих міст</b>",
+                "• Svečanost u Pridvorju: Dodijeljena prizn... ➡️ <b>Побут чужих міст</b>"
+            ]
+        },
+        "backlog": {
+            "total_size": 22,
+            "sources": {
+                "023": 5,
+                "Slobodna dalmacija": 9,
+                "Zadarski list": 8
+            }
+        },
+        "published": {
+            "total": 0,
+            "ukraine_priority": 0,
+            "with_images": 0,
+            "text_only": 0,
+            "sources": {}
+        },
+        "models_used": {
+            "gemini-3.5-flash-lite": 0,
             "gemini-3.5-flash": 0
         },
         "errors_count": 0,
