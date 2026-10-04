@@ -1,41 +1,5 @@
 [
     {
-        "timestamp": "2026-09-25 08:01:09",
-        "execution_time": 174.5,
-        "funnel": {
-            "scraped_total": 35,
-            "scraped_by_source": {
-                "Antena Zadar": 10,
-                "023": 10,
-                "Slobodna dalmacija": 15
-            },
-            "already_seen": 4,
-            "rejected_by_keywords": 3,
-            "duplicates_removed_by_ai": 14
-        },
-        "backlog": {
-            "total_size": 19,
-            "sources": {
-                "Antena Zadar": 5,
-                "023": 8,
-                "Slobodna dalmacija": 6
-            }
-        },
-        "published": {
-            "total": 3,
-            "ukraine_priority": 0,
-            "with_images": 1,
-            "text_only": 2,
-            "sources": {
-                "Antena Zadar": 1,
-                "023": 1,
-                "Slobodna dalmacija": 1
-            }
-        },
-        "errors_count": 0,
-        "gemini_retries": 0
-    },
-    {
         "timestamp": "2026-09-25 09:01:07",
         "execution_time": 166.9,
         "funnel": {
@@ -5066,6 +5030,65 @@
             "gemini-3.5-flash": 0
         },
         "errors_count": 1,
+        "gemini_retries": 0
+    },
+    {
+        "timestamp": "2026-10-04 08:01:00",
+        "execution_time": 165.9,
+        "funnel": {
+            "scraped_total": 35,
+            "scraped_by_source": {
+                "023": 10,
+                "Slobodna dalmacija": 15,
+                "Zadarski list": 10
+            },
+            "already_seen": 5,
+            "rejected_by_keywords": 4,
+            "duplicates_removed_by_ai": 18,
+            "rejection_reasons_list": [
+                "• Merz u Kijevu finalizira suradnju u proi... ➡️ <b>Світовий шум</b>",
+                "• Crne rupe lutalice možda čuvaju povijest... ➡️ <b>Світовий шум</b>",
+                "• Bilicious: prvi gastro duel ribara i lov... ➡️ <b>Побут чужих міст</b>",
+                "• Kreću filmske šetnje Rijekom posvećene f... ➡️ <b>Побут чужих міст</b>",
+                "• Biskup u miru Ante Ivas krstio šesto dij... ➡️ <b>Побут чужих міст</b>",
+                "• Od sutra privremena regulacija prometa n... ➡️ <b>Побут чужих міст</b>",
+                "• Umjesto školovanih teta u vrtićima rade ... ➡️ <b>Світовий шум</b>",
+                "• Zašto je listopad pravo vrijeme za sadnj... ➡️ <b>Світовий шум</b>",
+                "• Englez u Dubrovniku o debaklu Vatrenih: ... ➡️ <b>Спорт</b>",
+                "• Dolar prema košarici valuta ojačao treći... ➡️ <b>Світовий шум</b>",
+                "• Ličanka iz Zadra osvojila krunu: Zara St... ➡️ <b>Дублікат</b>",
+                "• Bellingham je uništio hrvatsku reprezent... ➡️ <b>Спорт</b>",
+                "• Trik s brašnom sprječava da voće u kolač... ➡️ <b>Світовий шум</b>",
+                "• Drama u dolini Neretve! Vatrogasci obran... ➡️ <b>Дублікат</b>",
+                "• Svjetske burze pale, u fokusu cijene naf... ➡️ <b>Світовий шум</b>",
+                "• Vitezovi i Dubrovčani podijelili bodove,... ➡️ <b>Спорт</b>",
+                "• Crobexi prošloga tjedna snažno porasli... ➡️ <b>Світовий шум</b>",
+                "• Nakon dugog, vrućeg dubrovačkog ljeta, v... ➡️ <b>Світовий шум</b>"
+            ]
+        },
+        "backlog": {
+            "total_size": 25,
+            "sources": {
+                "Slobodna dalmacija": 10,
+                "023": 7,
+                "Zadarski list": 8
+            }
+        },
+        "published": {
+            "total": 3,
+            "ukraine_priority": 0,
+            "with_images": 1,
+            "text_only": 2,
+            "sources": {
+                "023": 2,
+                "Zadarski list": 1
+            }
+        },
+        "models_used": {
+            "gemini-3.5-flash-lite": 1,
+            "gemini-3.5-flash": 0
+        },
+        "errors_count": 0,
         "gemini_retries": 0
     }
 ]
