@@ -1,42 +1,5 @@
 [
     {
-        "timestamp": "2026-09-25 13:01:08",
-        "execution_time": 234.1,
-        "funnel": {
-            "scraped_total": 45,
-            "scraped_by_source": {
-                "Antena Zadar": 10,
-                "023": 10,
-                "Slobodna dalmacija": 15,
-                "Zadarski list": 10
-            },
-            "already_seen": 5,
-            "rejected_by_keywords": 3,
-            "duplicates_removed_by_ai": 21
-        },
-        "backlog": {
-            "total_size": 65,
-            "sources": {
-                "Zadarski list": 13,
-                "Slobodna dalmacija": 32,
-                "023": 13,
-                "Antena Zadar": 7
-            }
-        },
-        "published": {
-            "total": 3,
-            "ukraine_priority": 0,
-            "with_images": 1,
-            "text_only": 2,
-            "sources": {
-                "Zadarski list": 1,
-                "023": 2
-            }
-        },
-        "errors_count": 0,
-        "gemini_retries": 0
-    },
-    {
         "timestamp": "2026-09-25 14:01:11",
         "execution_time": 166.9,
         "funnel": {
@@ -5176,6 +5139,65 @@
             "text_only": 0,
             "sources": {
                 "Zadarski list": 3
+            }
+        },
+        "models_used": {
+            "gemini-3.5-flash-lite": 1,
+            "gemini-3.5-flash": 0
+        },
+        "errors_count": 0,
+        "gemini_retries": 0
+    },
+    {
+        "timestamp": "2026-10-04 13:01:00",
+        "execution_time": 165.5,
+        "funnel": {
+            "scraped_total": 35,
+            "scraped_by_source": {
+                "023": 10,
+                "Slobodna dalmacija": 15,
+                "Zadarski list": 10
+            },
+            "already_seen": 9,
+            "rejected_by_keywords": 2,
+            "duplicates_removed_by_ai": 18,
+            "rejection_reasons_list": [
+                "• Korčulani u ružičastom trčali za potporu... ➡️ <b>Спорт</b>",
+                "• Zašto kuhanje smrznutog povrća u vodi kv... ➡️ <b>Світовий шум та лайфстайл</b>",
+                "• Riječanka Diana Kuiš završila utrku od 1... ➡️ <b>Спорт</b>",
+                "• Pohani kruh bez jaja: mlijeko u tavi daj... ➡️ <b>Світовий шум та лайфстайл</b>",
+                "• Jedna osoba poginula u slijetanju vozila... ➡️ <b>Побут чужих міст</b>",
+                "• Šetači ne brinu za tmurnu vremensku prog... ➡️ <b>Побут чужих міст</b>",
+                "• Crne rupe lutalice možda čuvaju povijest... ➡️ <b>Світовий шум та лайфстайл</b>",
+                "• Plemenita gesta u srcu Cavtata usrećila ... ➡️ <b>Побут чужих міст</b>",
+                "• Zašto je listopad pravo vrijeme za sadnj... ➡️ <b>Світовий шум та лайфстайл</b>",
+                "• Nestao zrakoplov sa šest osoba za medici... ➡️ <b>Світовий шум та лайфстайл</b>",
+                "• Više ozlijeđenih u požaru u kampu na jez... ➡️ <b>Світовий шум та лайфстайл</b>",
+                "• Ugodna toplina neće trajati vječno, slje... ➡️ <b>Побут чужих міст</b>",
+                "• Svečanost u Pridvorju: Dodijeljena prizn... ➡️ <b>Побут чужих міст</b>",
+                "• Šibenčanin (49) uhvaćen prilično pijan n... ➡️ <b>Побут чужих міст</b>",
+                "• “Znanost u prolazu” Korzo pretvorila u u... ➡️ <b>Побут чужих міст</b>",
+                "• Bilice pokreću ‘Bilicious!‘: čeka vas pl... ➡️ <b>Побут чужих міст</b>",
+                "• Velika radost u Vodicama: poznata obitel... ➡️ <b>Побут чужих міст</b>",
+                "• Englez u Dubrovniku o debaklu Vatrenih: ... ➡️ <b>Спорт</b>"
+            ]
+        },
+        "backlog": {
+            "total_size": 25,
+            "sources": {
+                "Slobodna dalmacija": 13,
+                "023": 4,
+                "Zadarski list": 8
+            }
+        },
+        "published": {
+            "total": 3,
+            "ukraine_priority": 0,
+            "with_images": 3,
+            "text_only": 0,
+            "sources": {
+                "Slobodna dalmacija": 2,
+                "Zadarski list": 1
             }
         },
         "models_used": {
