@@ -1,41 +1,5 @@
 [
     {
-        "timestamp": "2026-09-25 11:01:05",
-        "execution_time": 163.9,
-        "funnel": {
-            "scraped_total": 45,
-            "scraped_by_source": {
-                "Antena Zadar": 10,
-                "023": 10,
-                "Slobodna dalmacija": 15,
-                "Zadarski list": 10
-            },
-            "already_seen": 11,
-            "rejected_by_keywords": 5,
-            "duplicates_removed_by_ai": 20
-        },
-        "backlog": {
-            "total_size": 41,
-            "sources": {
-                "Slobodna dalmacija": 16,
-                "023": 11,
-                "Zadarski list": 8,
-                "Antena Zadar": 6
-            }
-        },
-        "published": {
-            "total": 3,
-            "ukraine_priority": 0,
-            "with_images": 3,
-            "text_only": 0,
-            "sources": {
-                "Zadarski list": 3
-            }
-        },
-        "errors_count": 0,
-        "gemini_retries": 0
-    },
-    {
         "timestamp": "2026-09-25 12:01:10",
         "execution_time": 169.0,
         "funnel": {
@@ -5136,6 +5100,65 @@
             "gemini-3.5-flash": 0
         },
         "errors_count": 1,
+        "gemini_retries": 0
+    },
+    {
+        "timestamp": "2026-10-04 11:00:57",
+        "execution_time": 164.9,
+        "funnel": {
+            "scraped_total": 35,
+            "scraped_by_source": {
+                "023": 10,
+                "Slobodna dalmacija": 15,
+                "Zadarski list": 10
+            },
+            "already_seen": 7,
+            "rejected_by_keywords": 3,
+            "duplicates_removed_by_ai": 18,
+            "rejection_reasons_list": [
+                "• Krčki branitelji okupili u Puntu preko 1... ➡️ <b>Спорт</b>",
+                "• Velikim mimohodom i vježbom DVD Fužine p... ➡️ <b>Побут чужих міст</b>",
+                "• Ugodna toplina neće trajati vječno, slje... ➡️ <b>Побут чужих міст</b>",
+                "• Dvije ženke ugrožene vrste nosoroga sa S... ➡️ <b>Світовий шум</b>",
+                "• Pohani kruh bez jaja: mlijeko u tavi daj... ➡️ <b>Світовий шум та лайфстайл</b>",
+                "• Svečanost u Pridvorju: Dodijeljena prizn... ➡️ <b>Побут чужих міст</b>",
+                "• U Dječjem vrtiću Viškovo ostalo šest slo... ➡️ <b>Побут чужих міст</b>",
+                "• Crne rupe lutalice možda čuvaju povijest... ➡️ <b>Світовий шум та лайфстайл</b>",
+                "• Šibenčanin (49) uhvaćen prilično pijan n... ➡️ <b>Побут чужих міст</b>",
+                "• Donesi dvije igračke, odaberi jednu u Ri... ➡️ <b>Побут чужих міст</b>",
+                "• Zašto je listopad pravo vrijeme za sadnj... ➡️ <b>Світовий шум та лайфстайл</b>",
+                "• Bilice pokreću ‘Bilicious!‘: čeka vas pl... ➡️ <b>Побут чужих міст</b>",
+                "• Velika radost u Vodicama: poznata obitel... ➡️ <b>Побут чужих міст</b>",
+                "• Steve Swallow, virtuoz bas gitare koja u... ➡️ <b>Світовий шум та лайфстайл</b>",
+                "• Uspjeh u zadnji tren. Tako to obično biv... ➡️ <b>Спорт</b>",
+                "• Englez u Dubrovniku o debaklu Vatrenih: ... ➡️ <b>Спорт</b>",
+                "• Rumenka se može se jesti pripravljena na... ➡️ <b>Світовий шум та лайфстайл</b>",
+                "• Zlatko Lukić došao na ideju kako oživjet... ➡️ <b>Світовий шум та лайфстайл</b>"
+            ]
+        },
+        "backlog": {
+            "total_size": 26,
+            "sources": {
+                "Slobodna dalmacija": 11,
+                "023": 5,
+                "Zadarski list": 10
+            }
+        },
+        "published": {
+            "total": 3,
+            "ukraine_priority": 0,
+            "with_images": 1,
+            "text_only": 2,
+            "sources": {
+                "023": 2,
+                "Slobodna dalmacija": 1
+            }
+        },
+        "models_used": {
+            "gemini-3.5-flash-lite": 1,
+            "gemini-3.5-flash": 0
+        },
+        "errors_count": 0,
         "gemini_retries": 0
     }
 ]
