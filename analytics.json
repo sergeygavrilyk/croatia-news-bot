@@ -1,43 +1,5 @@
 [
     {
-        "timestamp": "2026-09-25 10:01:09",
-        "execution_time": 167.7,
-        "funnel": {
-            "scraped_total": 45,
-            "scraped_by_source": {
-                "Antena Zadar": 10,
-                "023": 10,
-                "Slobodna dalmacija": 15,
-                "Zadarski list": 10
-            },
-            "already_seen": 9,
-            "rejected_by_keywords": 6,
-            "duplicates_removed_by_ai": 6
-        },
-        "backlog": {
-            "total_size": 37,
-            "sources": {
-                "023": 10,
-                "Zadarski list": 7,
-                "Slobodna dalmacija": 13,
-                "Antena Zadar": 7
-            }
-        },
-        "published": {
-            "total": 3,
-            "ukraine_priority": 0,
-            "with_images": 1,
-            "text_only": 2,
-            "sources": {
-                "023": 1,
-                "Antena Zadar": 1,
-                "Zadarski list": 1
-            }
-        },
-        "errors_count": 0,
-        "gemini_retries": 0
-    },
-    {
         "timestamp": "2026-09-25 11:01:05",
         "execution_time": 163.9,
         "funnel": {
@@ -5105,6 +5067,67 @@
             "text_only": 1,
             "sources": {
                 "023": 1,
+                "Slobodna dalmacija": 1
+            }
+        },
+        "models_used": {
+            "gemini-3.5-flash-lite": 1,
+            "gemini-3.5-flash": 0
+        },
+        "errors_count": 1,
+        "gemini_retries": 0
+    },
+    {
+        "timestamp": "2026-10-04 10:01:04",
+        "execution_time": 74.5,
+        "funnel": {
+            "scraped_total": 35,
+            "scraped_by_source": {
+                "023": 10,
+                "Slobodna dalmacija": 15,
+                "Zadarski list": 10
+            },
+            "already_seen": 7,
+            "rejected_by_keywords": 6,
+            "duplicates_removed_by_ai": 21,
+            "rejection_reasons_list": [
+                "• U Hrvatskoj lani umrlo 50.007 ljudi, des... ➡️ <b>Медична статистика загальнонаціонального рівня без прямого зв'язку з Задаром</b>",
+                "• Ugodna toplina neće trajati vječno, slje... ➡️ <b>Погода у Дубровнику</b>",
+                "• Osorski most ponovo zapeo, ljudi ga gura... ➡️ <b>Побут іншого міста (Осор/Рієка)</b>",
+                "• Pohani kruh bez jaja: mlijeko u tavi daj... ➡️ <b>Рецепт</b>",
+                "• Svečanost u Pridvorju: Dodijeljena prizn... ➡️ <b>Подія у Придворжі</b>",
+                "• Groblje Sveti Duh u Omišlju dobilo digit... ➡️ <b>Побут іншого міста (Омішель)</b>",
+                "• Crne rupe lutalice možda čuvaju povijest... ➡️ <b>Світовий шум і наука</b>",
+                "• Šibenčanin (49) uhvaćen prilično pijan n... ➡️ <b>Кримінал у Шибенику</b>",
+                "• Aleksandra Wojtaszek objavila knjigu o H... ➡️ <b>Кіно та культура (інтерв'ю)</b>",
+                "• Zašto je listopad pravo vrijeme za sadnj... ➡️ <b>Поради з садівництва</b>",
+                "• Bilicious: prvi gastro duel ribara i lov... ➡️ <b>Гастро-подія у Білицях</b>",
+                "• Bogoslov Riječke nadbiskupije Damir Pali... ➡️ <b>Релігійна подія у Римі/Рієці</b>",
+                "• Trik s brašnom sprječava da voće u kolač... ➡️ <b>Кулінарна порада</b>",
+                "• Biskup u miru Ante Ivas krstio šesto dij... ➡️ <b>Подія у Водицях</b>",
+                "• U Hrvatskoj 1,1 milijun pasa i mačaka. S... ➡️ <b>Статистика тварин на рівні країни</b>",
+                "• Od sutra privremena regulacija prometa n... ➡️ <b>Побут іншого міста (Дубровник)</b>",
+                "• U Krku besplatna likovna radionica za dj... ➡️ <b>Побут іншого міста (Крк)</b>",
+                "• Englez u Dubrovniku o debaklu Vatrenih: ... ➡️ <b>Спорт (наслідки футбольного матчу)</b>",
+                "• Inicijativa: U Kaštijunu odloženo 30.000... ➡️ <b>Проблема з відходами в Пулі (Каштіюн)</b>",
+                "• Vitezovi i Dubrovčani podijelili bodove,... ➡️ <b>Спорт (футбольний матч)</b>",
+                "• Pod nadzorom veliki požar na Rujnici, iz... ➡️ <b>Дублікат події про пожежу на Rujnici (вже є повніша новина ID 20)</b>"
+            ]
+        },
+        "backlog": {
+            "total_size": 23,
+            "sources": {
+                "Slobodna dalmacija": 11,
+                "023": 5,
+                "Zadarski list": 7
+            }
+        },
+        "published": {
+            "total": 1,
+            "ukraine_priority": 0,
+            "with_images": 1,
+            "text_only": 0,
+            "sources": {
                 "Slobodna dalmacija": 1
             }
         },
