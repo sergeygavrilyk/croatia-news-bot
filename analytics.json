@@ -1,39 +1,5 @@
 [
     {
-        "timestamp": "2026-09-25 19:01:08",
-        "execution_time": 16.5,
-        "funnel": {
-            "scraped_total": 45,
-            "scraped_by_source": {
-                "Antena Zadar": 10,
-                "023": 10,
-                "Slobodna dalmacija": 15,
-                "Zadarski list": 10
-            },
-            "already_seen": 27,
-            "rejected_by_keywords": 5,
-            "duplicates_removed_by_ai": 25
-        },
-        "backlog": {
-            "total_size": 64,
-            "sources": {
-                "Slobodna dalmacija": 30,
-                "Zadarski list": 20,
-                "Antena Zadar": 5,
-                "023": 9
-            }
-        },
-        "published": {
-            "total": 0,
-            "ukraine_priority": 0,
-            "with_images": 0,
-            "text_only": 0,
-            "sources": {}
-        },
-        "errors_count": 0,
-        "gemini_retries": 0
-    },
-    {
         "timestamp": "2026-09-26 07:01:02",
         "execution_time": 9.8,
         "funnel": {
@@ -5268,6 +5234,70 @@
         },
         "models_used": {
             "gemini-3.5-flash-lite": 0,
+            "gemini-3.5-flash": 0
+        },
+        "errors_count": 0,
+        "gemini_retries": 0
+    },
+    {
+        "timestamp": "2026-10-04 19:00:59",
+        "execution_time": 71.5,
+        "funnel": {
+            "scraped_total": 35,
+            "scraped_by_source": {
+                "023": 10,
+                "Slobodna dalmacija": 15,
+                "Zadarski list": 10
+            },
+            "already_seen": 13,
+            "rejected_by_keywords": 4,
+            "duplicates_removed_by_ai": 24,
+            "rejection_reasons_list": [
+                "• Merz u Kijevu poručio Rusiji: ‘Nećemo se... ➡️ <b>Світовий шум</b>",
+                "• Korčulani u ružičastom trčali za potporu... ➡️ <b>Побут чужих міст</b>",
+                "• Znanstvenici utvrdili koliko je koraka d... ➡️ <b>Світовий шум та лайфстайл</b>",
+                "• Izbori u BiH: Darijana Filipović uvjerlj... ➡️ <b>Світовий шум</b>",
+                "• Konavljani na susretu umirovljenika Dalm... ➡️ <b>Побут чужих міст</b>",
+                "• Zašto stručnjaci savjetuju da omiljenu o... ➡️ <b>Світовий шум та лайфстайл</b>",
+                "• Isti Trump, isti osmijeh, isti palac: Je... ➡️ <b>Світовий шум</b>",
+                "• U kompleksu TUP-a otvorena gostujuća izl... ➡️ <b>Побут чужих міст</b>",
+                "• Plivači zadarske Jadere iz Sarajeva doni... ➡️ <b>Спорт</b>",
+                "• Nekad političke zvijezde, danas na margi... ➡️ <b>Світовий шум</b>",
+                "• Prijepodne Stradun, popodne Uvala, zvuči... ➡️ <b>Побут чужих міст</b>",
+                "• Umjetna inteligencija za šest sati razbi... ➡️ <b>Світовий шум та лайфстайл</b>",
+                "• Izbori u BiH: U 19 sati zatvorena većina... ➡️ <b>Дублікат</b>",
+                "• Simović: ‘Kod Vida su vatrogasci uspješn... ➡️ <b>Дублікат</b>",
+                "• Vlakno iz luka i češnjaka moglo bi sprij... ➡️ <b>Світовий шум та лайфстайл</b>",
+                "• Bablje ljeto u Rijeci: Brojni građani už... ➡️ <b>Побут чужих міст</b>",
+                "• U Narodnoj knjižnici Grad otvorena dvoje... ➡️ <b>Побут чужих міст</b>",
+                "• Gotove kore za pitu izgledat će kao doma... ➡️ <b>Світовий шум та лайфстайл</b>",
+                "• Više ozlijeđenih u požaru u kampu na jez... ➡️ <b>Світовий шум</b>",
+                "• Iz njega progovara stari Mljet: Ivan Čum... ➡️ <b>Побут чужих міст</b>",
+                "• Zašto kuhanje smrznutog povrća u vodi kv... ➡️ <b>Світовий шум та лайфстайл</b>",
+                "• Novi požar u dolini Neretve, vatrogascim... ➡️ <b>Дублікат</b>",
+                "• Pohani kruh bez jaja: mlijeko u tavi daj... ➡️ <b>Світовий шум та лайфстайл</b>",
+                "• Komisija objavljuje dugoočekivani prijed... ➡️ <b>Вже є в історії</b>"
+            ]
+        },
+        "backlog": {
+            "total_size": 40,
+            "sources": {
+                "023": 9,
+                "Slobodna dalmacija": 15,
+                "Zadarski list": 16
+            }
+        },
+        "published": {
+            "total": 1,
+            "ukraine_priority": 0,
+            "with_images": 1,
+            "text_only": 0,
+            "sources": {
+                "Zadarski list": 1
+            }
+        },
+        "models_used": {
+            "gemini-3.5-flash-lite": 1,
             "gemini-3.5-flash": 0
         },
         "errors_count": 0,
