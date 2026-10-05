@@ -1,42 +1,5 @@
 [
     {
-        "timestamp": "2026-09-26 08:01:02",
-        "execution_time": 172.0,
-        "funnel": {
-            "scraped_total": 45,
-            "scraped_by_source": {
-                "Antena Zadar": 10,
-                "023": 10,
-                "Slobodna dalmacija": 15,
-                "Zadarski list": 10
-            },
-            "already_seen": 11,
-            "rejected_by_keywords": 7,
-            "duplicates_removed_by_ai": 12
-        },
-        "backlog": {
-            "total_size": 20,
-            "sources": {
-                "Antena Zadar": 3,
-                "023": 5,
-                "Slobodna dalmacija": 4,
-                "Zadarski list": 8
-            }
-        },
-        "published": {
-            "total": 3,
-            "ukraine_priority": 0,
-            "with_images": 2,
-            "text_only": 1,
-            "sources": {
-                "Zadarski list": 2,
-                "023": 1
-            }
-        },
-        "errors_count": 0,
-        "gemini_retries": 0
-    },
-    {
         "timestamp": "2026-09-26 09:01:02",
         "execution_time": 10.1,
         "funnel": {
@@ -5321,6 +5284,68 @@
             "text_only": 3,
             "sources": {
                 "023": 3
+            }
+        },
+        "models_used": {
+            "gemini-3.5-flash-lite": 1,
+            "gemini-3.5-flash": 0
+        },
+        "errors_count": 0,
+        "gemini_retries": 0
+    },
+    {
+        "timestamp": "2026-10-05 08:01:03",
+        "execution_time": 165.6,
+        "funnel": {
+            "scraped_total": 35,
+            "scraped_by_source": {
+                "023": 10,
+                "Slobodna dalmacija": 15,
+                "Zadarski list": 10
+            },
+            "already_seen": 2,
+            "rejected_by_keywords": 3,
+            "duplicates_removed_by_ai": 21,
+            "rejection_reasons_list": [
+                "• Svitlani je rat iz temelja promijenio ži... ➡️ <b>Спорт</b>",
+                "• Slavlje na virskoj rivi; Sedmogodišnji R... ➡️ <b>Побут чужого міста</b>",
+                "• Eskalirao problem: Škola za primijenjenu... ➡️ <b>Побут чужого міста</b>",
+                "• U Kneževu dvoru nastupa duo Dora & Pero,... ➡️ <b>Світський шум та лайфстайл</b>",
+                "• S vidikovca “Straža” u Tkonu ukradene so... ➡️ <b>Дрібний кримінал у непріоритетному регіоні</b>",
+                "• Ugledni njemački progresivni metalci The... ➡️ <b>Світський шум та лайфстайл</b>",
+                "• Makedonski reprezentativac i prošlosezon... ➡️ <b>Спорт</b>",
+                "• Nova Liscina kolekcija donosi odjeću u k... ➡️ <b>Світський шум та лайфстайл</b>",
+                "• Crni tjedan na cestama Šibensko-kninske ... ➡️ <b>Побут чужого міста</b>",
+                "• TRIJUMF IVE JURIĆA U ZADRU Pogledajte tk... ➡️ <b>Світський шум та лайфстайл</b>",
+                "• Prije 35 godina poginuo je pjesnik Milan... ➡️ <b>Вже є в історії</b>",
+                "• Ravnateljica Haller: Radimo u glazbenoj ... ➡️ <b>Побут чужого міста</b>",
+                "• Napustio nas je omiljeni dubrovački lije... ➡️ <b>Світський шум та лайфстайл</b>",
+                "• Mladoženja ju čekao na obali, a onda se ... ➡️ <b>Світський шум та лайфстайл</b>",
+                "• Mavra blista na startu sezone, a njegov ... ➡️ <b>Спорт</b>",
+                "• Održana 8. utrka Linijom obrane grada Za... ➡️ <b>Спорт</b>",
+                "• Američka vojska usmrtila četiri osobe u ... ➡️ <b>Світовий шум</b>",
+                "• Prije 35 godina poginuo je pjesnik Milan... ➡️ <b>Дублікат</b>",
+                "• Zadar protiv Derbyja traži prve bodove u... ➡️ <b>Спорт</b>",
+                "• Utrli su put Ozempicu, sad su među favor... ➡️ <b>Світський шум та лайфстайл</b>",
+                "• Napustio nas je liječnik obiteljske medi... ➡️ <b>Дублікат</b>"
+            ]
+        },
+        "backlog": {
+            "total_size": 33,
+            "sources": {
+                "Zadarski list": 9,
+                "023": 10,
+                "Slobodna dalmacija": 14
+            }
+        },
+        "published": {
+            "total": 3,
+            "ukraine_priority": 0,
+            "with_images": 1,
+            "text_only": 2,
+            "sources": {
+                "023": 2,
+                "Zadarski list": 1
             }
         },
         "models_used": {
