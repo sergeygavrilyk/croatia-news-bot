@@ -1,42 +1,5 @@
 [
     {
-        "timestamp": "2026-09-26 12:01:03",
-        "execution_time": 165.2,
-        "funnel": {
-            "scraped_total": 45,
-            "scraped_by_source": {
-                "Antena Zadar": 10,
-                "023": 10,
-                "Slobodna dalmacija": 15,
-                "Zadarski list": 10
-            },
-            "already_seen": 10,
-            "rejected_by_keywords": 7,
-            "duplicates_removed_by_ai": 17
-        },
-        "backlog": {
-            "total_size": 39,
-            "sources": {
-                "Slobodna dalmacija": 20,
-                "Antena Zadar": 11,
-                "023": 6,
-                "Zadarski list": 2
-            }
-        },
-        "published": {
-            "total": 3,
-            "ukraine_priority": 0,
-            "with_images": 1,
-            "text_only": 2,
-            "sources": {
-                "Antena Zadar": 2,
-                "Zadarski list": 1
-            }
-        },
-        "errors_count": 0,
-        "gemini_retries": 0
-    },
-    {
         "timestamp": "2026-09-26 13:00:59",
         "execution_time": 191.8,
         "funnel": {
@@ -5412,6 +5375,67 @@
             "text_only": 0,
             "sources": {
                 "Slobodna dalmacija": 3
+            }
+        },
+        "models_used": {
+            "gemini-3.5-flash-lite": 1,
+            "gemini-3.5-flash": 0
+        },
+        "errors_count": 0,
+        "gemini_retries": 0
+    },
+    {
+        "timestamp": "2026-10-05 12:01:06",
+        "execution_time": 373.8,
+        "funnel": {
+            "scraped_total": 35,
+            "scraped_by_source": {
+                "023": 10,
+                "Slobodna dalmacija": 15,
+                "Zadarski list": 10
+            },
+            "already_seen": 5,
+            "rejected_by_keywords": 3,
+            "duplicates_removed_by_ai": 20,
+            "rejection_reasons_list": [
+                "• U Viškovu tečaj pripreme trudnica za por... ➡️ <b>Побут чужого міста</b>",
+                "• Vlasnica (40) dubrovačkog trgovačkog dru... ➡️ <b>Побут чужого міста</b>",
+                "• Dom zdravlja Delnice dobiva milijun eura... ➡️ <b>Побут чужого міста</b>",
+                "• Mlade nade TKD Plovanija nižu uspjehe; S... ➡️ <b>Спорт</b>",
+                "• Udruga Rina Mašera uspješna na 4. Međuna... ➡️ <b>Спорт</b>",
+                "• Živo Blato slavi 30 godina postojanja u ... ➡️ <b>Шоу-бізнес</b>",
+                "• Stručnjak otkriva koji znak na mobitelu ... ➡️ <b>Світовий шум</b>",
+                "• Obilježena 23. obljetnica otkrivanja spo... ➡️ <b>Історія</b>",
+                "• Zadarski plivači briljirali u Sarajevu; ... ➡️ <b>Спорт</b>",
+                "• Prvi korak prema novom Šubićevcu: Šibeni... ➡️ <b>Побут чужого міста</b>",
+                "• Započeo je Dječji tjedan u Gospiću... ➡️ <b>Побут чужого міста</b>",
+                "• Dolazi li kraj besplatne vožnje romobili... ➡️ <b>Світовий шум</b>",
+                "• LP Rock sprema glazbeno druženje na Teni... ➡️ <b>Побут чужого міста</b>",
+                "• U ovom hrvatskom gradu otkazan koncert B... ➡️ <b>Шоу-бізнес</b>",
+                "• Franković o situaciji u Zagrebu: Sve što... ➡️ <b>Побут чужого міста</b>",
+                "• Fužine, Lič i Vrata top destinacije ovog... ➡️ <b>Побут чужого міста</b>",
+                "• Sedam grešaka s bojlerom koje vam diže r... ➡️ <b>Світовий шум</b>",
+                "• Započeo Dječji tjedan u Gospiću... ➡️ <b>Дублікат</b>",
+                "• U Dubrovniku počeo međunarodni seminar z... ➡️ <b>Побут чужого міста</b>",
+                "• Još jače povezivanje regija iz Češke i H... ➡️ <b>Побут чужого міста</b>"
+            ]
+        },
+        "backlog": {
+            "total_size": 57,
+            "sources": {
+                "023": 15,
+                "Slobodna dalmacija": 33,
+                "Zadarski list": 9
+            }
+        },
+        "published": {
+            "total": 3,
+            "ukraine_priority": 0,
+            "with_images": 1,
+            "text_only": 2,
+            "sources": {
+                "023": 2,
+                "Zadarski list": 1
             }
         },
         "models_used": {
