@@ -1,39 +1,5 @@
 [
     {
-        "timestamp": "2026-09-26 14:01:02",
-        "execution_time": 9.7,
-        "funnel": {
-            "scraped_total": 45,
-            "scraped_by_source": {
-                "Antena Zadar": 10,
-                "023": 10,
-                "Slobodna dalmacija": 15,
-                "Zadarski list": 10
-            },
-            "already_seen": 14,
-            "rejected_by_keywords": 6,
-            "duplicates_removed_by_ai": 25
-        },
-        "backlog": {
-            "total_size": 44,
-            "sources": {
-                "Zadarski list": 7,
-                "Slobodna dalmacija": 22,
-                "Antena Zadar": 8,
-                "023": 7
-            }
-        },
-        "published": {
-            "total": 0,
-            "ukraine_priority": 0,
-            "with_images": 0,
-            "text_only": 0,
-            "sources": {}
-        },
-        "errors_count": 0,
-        "gemini_retries": 0
-    },
-    {
         "timestamp": "2026-09-26 15:01:06",
         "execution_time": 10.5,
         "funnel": {
@@ -5455,6 +5421,66 @@
             "sources": {
                 "Slobodna dalmacija": 2,
                 "023": 1
+            }
+        },
+        "models_used": {
+            "gemini-3.5-flash-lite": 1,
+            "gemini-3.5-flash": 0
+        },
+        "errors_count": 0,
+        "gemini_retries": 0
+    },
+    {
+        "timestamp": "2026-10-05 14:01:06",
+        "execution_time": 172.7,
+        "funnel": {
+            "scraped_total": 35,
+            "scraped_by_source": {
+                "023": 10,
+                "Slobodna dalmacija": 15,
+                "Zadarski list": 10
+            },
+            "already_seen": 13,
+            "rejected_by_keywords": 3,
+            "duplicates_removed_by_ai": 20,
+            "rejection_reasons_list": [
+                "• Nina Badrić nastupa u Zajcu za pomoć žen... ➡️ <b>Побут Рієки</b>",
+                "• Turnić dva dana bez tople vode... ➡️ <b>Побут Рієки</b>",
+                "• Dubrovačka Hitna dobila osam novih vozil... ➡️ <b>Побут Дубровника</b>",
+                "• Počeo Mentalfest: Predstavljen pilot-pro... ➡️ <b>Побут Рієки</b>",
+                "• Stravičan zločin u Zadru: 24-godišnjak o... ➡️ <b>Дублікат</b>",
+                "• Prvi delnički gimnazijski maturanti pros... ➡️ <b>Світовий шум та лайфстайл</b>",
+                "• Laborantica preminula od sumnje na plućn... ➡️ <b>Світовий шум</b>",
+                "• Asfaltira se 1.700 metara prometnice na ... ➡️ <b>Дублікат</b>",
+                "• Evo što sve donosi Dječji tjedan u Crikv... ➡️ <b>Побут іншого міста</b>",
+                "• Mlade nade TKD Plovanija nižu uspjehe; S... ➡️ <b>Спорт</b>",
+                "• Dubrovačka glumica zajedno sa kćeri Lolo... ➡️ <b>Світовий шум та лайфстайл</b>",
+                "• Mladić nožem ubio baku u Zadru... ➡️ <b>Дублікат</b>",
+                "• Stručnjak otkriva koji znak na mobitelu ... ➡️ <b>Світовий шум</b>",
+                "• Toni, Stijepo, Danijel, Nikola, Ivan i D... ➡️ <b>Світовий шум та лайфстайл</b>",
+                "• Vinodolska općina dodjeljuje stipendije ... ➡️ <b>Побут іншого міста</b>",
+                "• Zadarski plivači briljirali u Sarajevu; ... ➡️ <b>Спорт</b>",
+                "• U Dubrovniku se održavaju Dani mađarske ... ➡️ <b>Побут Дубровника</b>",
+                "• Otkazan koncert grupe Kojoti u Pogonu Ku... ➡️ <b>Світовий шум та лайфстайл</b>",
+                "• Vlasnica (40) ugostiteljskog objekta u D... ➡️ <b>Побут Дубровника</b>",
+                "• Izlaganje Ede Popovića “Planina i čovjek... ➡️ <b>Побут іншого міста</b>"
+            ]
+        },
+        "backlog": {
+            "total_size": 49,
+            "sources": {
+                "Zadarski list": 11,
+                "Slobodna dalmacija": 28,
+                "023": 10
+            }
+        },
+        "published": {
+            "total": 3,
+            "ukraine_priority": 0,
+            "with_images": 0,
+            "text_only": 3,
+            "sources": {
+                "023": 3
             }
         },
         "models_used": {
