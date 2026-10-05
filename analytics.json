@@ -1,41 +1,5 @@
 [
     {
-        "timestamp": "2026-09-26 10:01:03",
-        "execution_time": 164.2,
-        "funnel": {
-            "scraped_total": 45,
-            "scraped_by_source": {
-                "Antena Zadar": 10,
-                "023": 10,
-                "Slobodna dalmacija": 15,
-                "Zadarski list": 10
-            },
-            "already_seen": 26,
-            "rejected_by_keywords": 6,
-            "duplicates_removed_by_ai": 20
-        },
-        "backlog": {
-            "total_size": 33,
-            "sources": {
-                "Antena Zadar": 8,
-                "023": 5,
-                "Slobodna dalmacija": 15,
-                "Zadarski list": 5
-            }
-        },
-        "published": {
-            "total": 3,
-            "ukraine_priority": 0,
-            "with_images": 3,
-            "text_only": 0,
-            "sources": {
-                "Zadarski list": 3
-            }
-        },
-        "errors_count": 0,
-        "gemini_retries": 0
-    },
-    {
         "timestamp": "2026-09-26 11:01:05",
         "execution_time": 205.9,
         "funnel": {
@@ -5371,6 +5335,65 @@
             "sources": {
                 "Slobodna dalmacija": 1,
                 "023": 2
+            }
+        },
+        "models_used": {
+            "gemini-3.5-flash-lite": 1,
+            "gemini-3.5-flash": 0
+        },
+        "errors_count": 0,
+        "gemini_retries": 0
+    },
+    {
+        "timestamp": "2026-10-05 10:01:06",
+        "execution_time": 165.4,
+        "funnel": {
+            "scraped_total": 35,
+            "scraped_by_source": {
+                "023": 10,
+                "Slobodna dalmacija": 15,
+                "Zadarski list": 10
+            },
+            "already_seen": 4,
+            "rejected_by_keywords": 5,
+            "duplicates_removed_by_ai": 18,
+            "rejection_reasons_list": [
+                "• U Gospiću pijani recidivist završio u za... ➡️ <b>Побут іншого міста</b>",
+                "• Sigurnost na prvom mjestu; Skakaonica na... ➡️ <b>Спорт</b>",
+                "• Epicentar kod Metkovića: 3,2 prema Richt... ➡️ <b>Побут іншого міста</b>",
+                "• U Kostreni se susreli izviđački i skauts... ➡️ <b>Побут іншого міста</b>",
+                "• Započeo je 13. Good Food Festival: Dva t... ➡️ <b>Побут іншого міста</b>",
+                "• Otrov u našim tijelima; Kemikalija povez... ➡️ <b>Світовий шум та лайфстайл</b>",
+                "• Online sastanak: skupina vodećih proizvo... ➡️ <b>Світовий шум</b>",
+                "• U Kašteliru se tražila stolica više: “St... ➡️ <b>Побут іншого міста</b>",
+                "• Nemojte se prepasti: HRZ najavio probija... ➡️ <b>Дублікат</b>",
+                "• Kako će projekt proširenja luke Senj utj... ➡️ <b>Побут іншого міста</b>",
+                "• Novi filmski spektakl u Zadru; Večeras u... ➡️ <b>Світовий шум та лайфстайл</b>",
+                "• Nakon skoro pola stoljeća rada u Državno... ➡️ <b>Побут іншого міста</b>",
+                "• “Olimpijada demokracije” u Salezijanskoj... ➡️ <b>Побут іншого міста</b>",
+                "• Predivna gesta iz Cavtata: izgubio kuver... ➡️ <b>Побут іншого міста</b>",
+                "• Turistička pristojba u Munama veća nego ... ➡️ <b>Побут іншого міста</b>",
+                "• Prvi korak od 3.800.000 eura prema prese... ➡️ <b>Побут іншого міста</b>",
+                "• Plava obitelj na djelu! Spašena strogo z... ➡️ <b>Світовий шум та лайфстайл</b>",
+                "• Donosimo točnu temperaturu na kojoj bilj... ➡️ <b>Світовий шум та лайфстайл</b>"
+            ]
+        },
+        "backlog": {
+            "total_size": 42,
+            "sources": {
+                "023": 10,
+                "Slobodna dalmacija": 23,
+                "Zadarski list": 9
+            }
+        },
+        "published": {
+            "total": 3,
+            "ukraine_priority": 0,
+            "with_images": 1,
+            "text_only": 2,
+            "sources": {
+                "023": 2,
+                "Zadarski list": 1
             }
         },
         "models_used": {
