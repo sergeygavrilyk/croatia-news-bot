@@ -1,39 +1,5 @@
 [
     {
-        "timestamp": "2026-09-26 16:01:09",
-        "execution_time": 8.9,
-        "funnel": {
-            "scraped_total": 45,
-            "scraped_by_source": {
-                "Antena Zadar": 10,
-                "023": 10,
-                "Slobodna dalmacija": 15,
-                "Zadarski list": 10
-            },
-            "already_seen": 35,
-            "rejected_by_keywords": 8,
-            "duplicates_removed_by_ai": 25
-        },
-        "backlog": {
-            "total_size": 53,
-            "sources": {
-                "Zadarski list": 11,
-                "Slobodna dalmacija": 25,
-                "Antena Zadar": 9,
-                "023": 8
-            }
-        },
-        "published": {
-            "total": 0,
-            "ukraine_priority": 0,
-            "with_images": 0,
-            "text_only": 0,
-            "sources": {}
-        },
-        "errors_count": 0,
-        "gemini_retries": 0
-    },
-    {
         "timestamp": "2026-09-26 19:01:05",
         "execution_time": 9.9,
         "funnel": {
@@ -5515,6 +5481,70 @@
             "gemini-3.5-flash": 0
         },
         "errors_count": 1,
+        "gemini_retries": 0
+    },
+    {
+        "timestamp": "2026-10-05 16:01:04",
+        "execution_time": 168.5,
+        "funnel": {
+            "scraped_total": 35,
+            "scraped_by_source": {
+                "023": 10,
+                "Slobodna dalmacija": 15,
+                "Zadarski list": 10
+            },
+            "already_seen": 11,
+            "rejected_by_keywords": 5,
+            "duplicates_removed_by_ai": 22,
+            "rejection_reasons_list": [
+                "• Branitelji iz Sisačko-moslavače županije... ➡️ <b>Побут інших міст</b>",
+                "• Gastroenterolog s Harvarda otkrio sedam ... ➡️ <b>Світовий шум та лайфстайл</b>",
+                "• Što ste po nacionalnosti? Evo što su nov... ➡️ <b>Світовий шум та лайфстайл</b>",
+                "• Francuska: Tinejdžeru eksplodirala šok-g... ➡️ <b>Світовий шум та лайфстайл</b>",
+                "• Danska studija: premala tjelesna težina ... ➡️ <b>Світовий шум та лайфстайл</b>",
+                "• Plaža u Orebiću podbacila u najnovijem i... ➡️ <b>Побут інших міст</b>",
+                "• Panika u Splitu: Uhićen putnik koji je r... ➡️ <b>Побут інших міст</b>",
+                "• Laborantica preminula od sumnje na plućn... ➡️ <b>Світовий шум та лайфстайл</b>",
+                "• Drama u splitskoj zračnoj luci; zrakoplo... ➡️ <b>Дублікат</b>",
+                "• Arbunada u Malom Lošinju: Cvitković i Kr... ➡️ <b>Спорт</b>",
+                "• Mlade nade TKD Plovanija nižu uspjehe; S... ➡️ <b>Спорт</b>",
+                "• ‘Ja gradonačelnik?! Ma nema šanse!‘: šib... ➡️ <b>Побут інших міст</b>",
+                "• TZ Kvarnera pokreće Kvarner Honors. Otvo... ➡️ <b>Побут інших міст</b>",
+                "• Stručnjak otkriva koji znak na mobitelu ... ➡️ <b>Світовий шум та лайфстайл</b>",
+                "• Dubrovačka Hitna dobila osam novih vozil... ➡️ <b>Побут інших міст</b>",
+                "• Energija potaknula proizvođačke cijene u... ➡️ <b>Вже є в історії</b>",
+                "• Dubrovačka glumica zajedno sa kćeri Lolo... ➡️ <b>Світовий шум та лайфстайл</b>",
+                "• Evo što sve donosi Dječji tjedan u Crikv... ➡️ <b>Побут інших міст</b>",
+                "• Toni, Stijepo, Danijel, Nikola, Ivan i D... ➡️ <b>Побут інших міст</b>",
+                "• Strava u Zadru: Mladić nožem ubio 73-god... ➡️ <b>Дублікат</b>",
+                "• U Dubrovniku se održavaju Dani mađarske ... ➡️ <b>Побут інших міст</b>",
+                "• Izbori u BiH pokazali jasnu podjelu na d... ➡️ <b>Світовий шум та лайфстайл</b>"
+            ]
+        },
+        "backlog": {
+            "total_size": 48,
+            "sources": {
+                "Slobodna dalmacija": 31,
+                "Zadarski list": 11,
+                "023": 6
+            }
+        },
+        "published": {
+            "total": 3,
+            "ukraine_priority": 0,
+            "with_images": 2,
+            "text_only": 1,
+            "sources": {
+                "Zadarski list": 1,
+                "023": 1,
+                "Slobodna dalmacija": 1
+            }
+        },
+        "models_used": {
+            "gemini-3.5-flash-lite": 1,
+            "gemini-3.5-flash": 0
+        },
+        "errors_count": 0,
         "gemini_retries": 0
     }
 ]
