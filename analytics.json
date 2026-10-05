@@ -1,39 +1,5 @@
 [
     {
-        "timestamp": "2026-09-26 07:01:02",
-        "execution_time": 9.8,
-        "funnel": {
-            "scraped_total": 45,
-            "scraped_by_source": {
-                "Antena Zadar": 10,
-                "023": 10,
-                "Slobodna dalmacija": 15,
-                "Zadarski list": 10
-            },
-            "already_seen": 4,
-            "rejected_by_keywords": 9,
-            "duplicates_removed_by_ai": 12
-        },
-        "backlog": {
-            "total_size": 12,
-            "sources": {
-                "Antena Zadar": 2,
-                "023": 5,
-                "Slobodna dalmacija": 2,
-                "Zadarski list": 3
-            }
-        },
-        "published": {
-            "total": 0,
-            "ukraine_priority": 0,
-            "with_images": 0,
-            "text_only": 0,
-            "sources": {}
-        },
-        "errors_count": 0,
-        "gemini_retries": 0
-    },
-    {
         "timestamp": "2026-09-26 08:01:02",
         "execution_time": 172.0,
         "funnel": {
@@ -5294,6 +5260,67 @@
             "text_only": 0,
             "sources": {
                 "Zadarski list": 1
+            }
+        },
+        "models_used": {
+            "gemini-3.5-flash-lite": 1,
+            "gemini-3.5-flash": 0
+        },
+        "errors_count": 0,
+        "gemini_retries": 0
+    },
+    {
+        "timestamp": "2026-10-05 07:01:06",
+        "execution_time": 256.9,
+        "funnel": {
+            "scraped_total": 35,
+            "scraped_by_source": {
+                "023": 10,
+                "Slobodna dalmacija": 15,
+                "Zadarski list": 10
+            },
+            "already_seen": 0,
+            "rejected_by_keywords": 2,
+            "duplicates_removed_by_ai": 21,
+            "rejection_reasons_list": [
+                "• Svitlani je rat iz temelja promijenio ži... ➡️ <b>Світовий шум та лайфстайл</b>",
+                "• Mnoštvo Zadrana i njihovih ljubimaca na ... ➡️ <b>Реклама або розважальний захід</b>",
+                "• Županijski ‘klasiko‘ prekinut u 80. minu... ➡️ <b>Спорт</b>",
+                "• ŽNK Donat na domaćem terenu otkinuo bod ... ➡️ <b>Спорт</b>",
+                "• Utrli su put Ozempicu, sad su među favor... ➡️ <b>Світовий шум та лайфстайл</b>",
+                "• Prije četiri godine sjajna priča započel... ➡️ <b>Спорт</b>",
+                "• Mladoženja ju čekao na obali, a onda se ... ➡️ <b>Лайфстайл</b>",
+                "• Brza cesta do Kloštra do kraja godine, p... ➡️ <b>Побут інших міст</b>",
+                "• Santini zabio, Sikira presjekao: Zadar s... ➡️ <b>Спорт</b>",
+                "• Održana 8. utrka Linijom obrane grada Za... ➡️ <b>Спорт</b>",
+                "• Netko je u Rijeci na Lotu osvojio više o... ➡️ <b>Побут інших міст</b>",
+                "• Godinama je spremamo pogrešno: Turčin ot... ➡️ <b>Світовий шум та лайфстайл</b>",
+                "• Analizirate li vlastite osjećaje umjesto... ➡️ <b>Світовий шум та лайфстайл</b>",
+                "• Zašto ti uvijek glumiš Don Quijotea, pit... ➡️ <b>Світовий шум та лайфстайл</b>",
+                "• Domaći sok od krušaka ukusno je bezalkoh... ➡️ <b>Світовий шум та лайфстайл</b>",
+                "• Obrađeno više od 90 posto glasova, objav... ➡️ <b>Події в третіх країнах</b>",
+                "• Zadar protiv Derbyja traži prve bodove u... ➡️ <b>Спорт</b>",
+                "• Zašto su srdele novi hit u svijetu ljepo... ➡️ <b>Світовий шум та лайфстайл</b>",
+                "• Zapletu li vam se ove niti u kosu, čeka ... ➡️ <b>Світовий шум та лайфстайл</b>",
+                "• Kako pospremiti kupaonske proizvode i ko... ➡️ <b>Світовий шум та лайфстайл</b>",
+                "• Magla smanjuje vidljivost na cestama u u... ➡️ <b>Побут інших міст</b>"
+            ]
+        },
+        "backlog": {
+            "total_size": 27,
+            "sources": {
+                "023": 10,
+                "Slobodna dalmacija": 8,
+                "Zadarski list": 9
+            }
+        },
+        "published": {
+            "total": 3,
+            "ukraine_priority": 0,
+            "with_images": 0,
+            "text_only": 3,
+            "sources": {
+                "023": 3
             }
         },
         "models_used": {
