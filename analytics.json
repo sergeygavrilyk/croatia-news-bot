@@ -1,39 +1,5 @@
 [
     {
-        "timestamp": "2026-09-26 15:01:06",
-        "execution_time": 10.5,
-        "funnel": {
-            "scraped_total": 45,
-            "scraped_by_source": {
-                "Antena Zadar": 10,
-                "023": 10,
-                "Slobodna dalmacija": 15,
-                "Zadarski list": 10
-            },
-            "already_seen": 29,
-            "rejected_by_keywords": 8,
-            "duplicates_removed_by_ai": 25
-        },
-        "backlog": {
-            "total_size": 52,
-            "sources": {
-                "Zadarski list": 11,
-                "Slobodna dalmacija": 24,
-                "Antena Zadar": 8,
-                "023": 9
-            }
-        },
-        "published": {
-            "total": 0,
-            "ukraine_priority": 0,
-            "with_images": 0,
-            "text_only": 0,
-            "sources": {}
-        },
-        "errors_count": 0,
-        "gemini_retries": 0
-    },
-    {
         "timestamp": "2026-09-26 16:01:09",
         "execution_time": 8.9,
         "funnel": {
@@ -5488,6 +5454,67 @@
             "gemini-3.5-flash": 0
         },
         "errors_count": 0,
+        "gemini_retries": 0
+    },
+    {
+        "timestamp": "2026-10-05 15:01:12",
+        "execution_time": 214.7,
+        "funnel": {
+            "scraped_total": 35,
+            "scraped_by_source": {
+                "023": 10,
+                "Slobodna dalmacija": 15,
+                "Zadarski list": 10
+            },
+            "already_seen": 8,
+            "rejected_by_keywords": 2,
+            "duplicates_removed_by_ai": 20,
+            "rejection_reasons_list": [
+                "• Plaža u Orebiću podbacila u najnovijem i... ➡️ <b>Побут Дубровы</b>",
+                "• Danska studija: premala tjelesna težina ... ➡️ <b>Світовий шум</b>",
+                "• Obrtnicima dodijeljeni ugovori za naukov... ➡️ <b>Національна економіка без прямого фокусу</b>",
+                "• Laborantica preminula od sumnje na plućn... ➡️ <b>Світовий шум</b>",
+                "• ‘Ja gradonačelnik?! Ma nema šanse!‘: šib... ➡️ <b>Побут Шибеника</b>",
+                "• Počeo odvoz otpada iz Gospića u istarska... ➡️ <b>Побут Госпича</b>",
+                "• Mlade nade TKD Plovanija nižu uspjehe; S... ➡️ <b>Спорт</b>",
+                "• Dubrovačka Hitna dobila osam novih vozil... ➡️ <b>Побут Дубровы</b>",
+                "• Autotrolej uveo dodatne polaske za učeni... ➡️ <b>Побут Рієки</b>",
+                "• Stručnjak otkriva koji znak na mobitelu ... ➡️ <b>Світовий шум</b>",
+                "• Kakvoća mora na plažama PGŽ i dalje na v... ➡️ <b>Побут Рієки</b>",
+                "• Zadarski plivači briljirali u Sarajevu; ... ➡️ <b>Спорт</b>",
+                "• Turnić dva dana bez tople vode... ➡️ <b>Побут Рієки</b>",
+                "• Dubrovačka glumica zajedno sa kćeri Lolo... ➡️ <b>Світ шоу-бізнесу</b>",
+                "• Počeo Mentalfest: Predstavljen pilot-pro... ➡️ <b>Побут Рієки</b>",
+                "• Sigurnost na prvom mjestu; Skakaonica na... ➡️ <b>Спорт</b>",
+                "• Toni, Stijepo, Danijel, Nikola, Ivan i D... ➡️ <b>Побут Дубровы</b>",
+                "• Prvi delnički gimnazijski maturanti pros... ➡️ <b>Побут Делнице</b>",
+                "• Novi filmski spektakl u Zadru; Večeras u... ➡️ <b>Анонс фільму</b>",
+                "• U Dubrovniku se održavaju Dani mađarske ... ➡️ <b>Побут Дубровы</b>"
+            ]
+        },
+        "backlog": {
+            "total_size": 51,
+            "sources": {
+                "Zadarski list": 12,
+                "Slobodna dalmacija": 31,
+                "023": 8
+            }
+        },
+        "published": {
+            "total": 2,
+            "ukraine_priority": 0,
+            "with_images": 2,
+            "text_only": 0,
+            "sources": {
+                "Zadarski list": 1,
+                "Slobodna dalmacija": 1
+            }
+        },
+        "models_used": {
+            "gemini-3.5-flash-lite": 1,
+            "gemini-3.5-flash": 0
+        },
+        "errors_count": 1,
         "gemini_retries": 0
     }
 ]
