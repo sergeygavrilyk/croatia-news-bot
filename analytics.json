@@ -1,37 +1,5 @@
 [
     {
-        "timestamp": "2026-09-27 14:01:05",
-        "execution_time": 11.5,
-        "funnel": {
-            "scraped_total": 35,
-            "scraped_by_source": {
-                "023": 10,
-                "Slobodna dalmacija": 15,
-                "Zadarski list": 10
-            },
-            "already_seen": 25,
-            "rejected_by_keywords": 4,
-            "duplicates_removed_by_ai": 25
-        },
-        "backlog": {
-            "total_size": 43,
-            "sources": {
-                "Zadarski list": 23,
-                "Slobodna dalmacija": 15,
-                "023": 5
-            }
-        },
-        "published": {
-            "total": 0,
-            "ukraine_priority": 0,
-            "with_images": 0,
-            "text_only": 0,
-            "sources": {}
-        },
-        "errors_count": 0,
-        "gemini_retries": 0
-    },
-    {
         "timestamp": "2026-09-27 15:01:03",
         "execution_time": 16.4,
         "funnel": {
@@ -5716,6 +5684,64 @@
                 "023": 1,
                 "Slobodna dalmacija": 1,
                 "Zadarski list": 1
+            }
+        },
+        "models_used": {
+            "gemini-3.5-flash-lite": 1,
+            "gemini-3.5-flash": 0
+        },
+        "errors_count": 0,
+        "gemini_retries": 0
+    },
+    {
+        "timestamp": "2026-10-06 14:01:08",
+        "execution_time": 255.1,
+        "funnel": {
+            "scraped_total": 35,
+            "scraped_by_source": {
+                "023": 10,
+                "Slobodna dalmacija": 15,
+                "Zadarski list": 10
+            },
+            "already_seen": 15,
+            "rejected_by_keywords": 4,
+            "duplicates_removed_by_ai": 17,
+            "rejection_reasons_list": [
+                "• Domino predstavio novo izdanje Queer New... ➡️ <b>Світовий шум</b>",
+                "• Šefovi lokalnog SDP-a o Romani Jerković ... ➡️ <b>Побут чужих міст</b>",
+                "• Sve više mladih oboljelih od raka: znans... ➡️ <b>Світовий шум</b>",
+                "• Dubrovnik ponovno u svjetskoj eliti, sad... ➡️ <b>Побут чужих міст</b>",
+                "• Kina iz dubina pustinje izvukla više od ... ➡️ <b>Світовий шум</b>",
+                "• Zeleni sjaj podrške diljem zemlje; Pogle... ➡️ <b>Світовий шум</b>",
+                "• Sofija Rozić nakon 25 godina rada u Dubr... ➡️ <b>Побут чужих міст</b>",
+                "• Bivši šef njemačke obavještajne agencije... ➡️ <b>Світовий шум</b>",
+                "• Potražnja za njemačkim industrijskim dob... ➡️ <b>Світовий шум</b>",
+                "• U Zadru obilježena 35. obljetnica Dana o... ➡️ <b>Дублікат</b>",
+                "• “Srce riječke povijesti”: Izložba o Guve... ➡️ <b>Побут чужих міст</b>",
+                "• Križan Dinko Vučak krv je dao 100 puta: ... ➡️ <b>Побут чужих міст</b>",
+                "• Krenuo preko granice s 20.700 eura, a on... ➡️ <b>Вже є в історії</b>",
+                "• Vanđelić okuplja novi Treći put, Rinčić ... ➡️ <b>Світовий шум</b>",
+                "• Sindikat medicinskih sestara: Državni ta... ➡️ <b>Вже є в історії</b>",
+                "• Kod ‘Verity‘ su i fatalna privlačnost i ... ➡️ <b>Світовий шум</b>",
+                "• AfD prvi put ima predsjednika nekog pokr... ➡️ <b>Світовий шум</b>"
+            ]
+        },
+        "backlog": {
+            "total_size": 46,
+            "sources": {
+                "Zadarski list": 15,
+                "Slobodna dalmacija": 28,
+                "023": 3
+            }
+        },
+        "published": {
+            "total": 3,
+            "ukraine_priority": 0,
+            "with_images": 2,
+            "text_only": 1,
+            "sources": {
+                "023": 1,
+                "Slobodna dalmacija": 2
             }
         },
         "models_used": {
