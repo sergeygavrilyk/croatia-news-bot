@@ -1,40 +1,5 @@
 [
     {
-        "timestamp": "2026-09-27 09:01:02",
-        "execution_time": 166.4,
-        "funnel": {
-            "scraped_total": 35,
-            "scraped_by_source": {
-                "023": 10,
-                "Slobodna dalmacija": 15,
-                "Zadarski list": 10
-            },
-            "already_seen": 3,
-            "rejected_by_keywords": 0,
-            "duplicates_removed_by_ai": 19
-        },
-        "backlog": {
-            "total_size": 34,
-            "sources": {
-                "Zadarski list": 16,
-                "023": 8,
-                "Slobodna dalmacija": 10
-            }
-        },
-        "published": {
-            "total": 3,
-            "ukraine_priority": 0,
-            "with_images": 1,
-            "text_only": 2,
-            "sources": {
-                "023": 2,
-                "Zadarski list": 1
-            }
-        },
-        "errors_count": 0,
-        "gemini_retries": 0
-    },
-    {
         "timestamp": "2026-09-27 10:00:58",
         "execution_time": 8.4,
         "funnel": {
@@ -5605,6 +5570,63 @@
             "sources": {
                 "023": 2,
                 "Slobodna dalmacija": 1
+            }
+        },
+        "models_used": {
+            "gemini-3.5-flash-lite": 1,
+            "gemini-3.5-flash": 0
+        },
+        "errors_count": 0,
+        "gemini_retries": 0
+    },
+    {
+        "timestamp": "2026-10-06 09:01:05",
+        "execution_time": 161.3,
+        "funnel": {
+            "scraped_total": 35,
+            "scraped_by_source": {
+                "023": 10,
+                "Slobodna dalmacija": 15,
+                "Zadarski list": 10
+            },
+            "already_seen": 6,
+            "rejected_by_keywords": 3,
+            "duplicates_removed_by_ai": 17,
+            "rejection_reasons_list": [
+                "• Uspješno završena akcija dubrovačkih Lio... ➡️ <b>Побут Дубровника</b>",
+                "• Saša Ceci otvara jesenske Opatija Coffee... ➡️ <b>Світовий шум та лайфстайл</b>",
+                "• Vikend na Krki u znaku kućnih ljubimaca:... ➡️ <b>Побут Шибеника</b>",
+                "• Mlađan stigao na sud pod jakim osiguranj... ➡️ <b>Кримінал іншого міста</b>",
+                "• U zagrljaju Svete Obitelji: Ovako će izg... ➡️ <b>Побут Дубровника</b>",
+                "• Renault nakon redefiniranja modela 5, 4 ... ➡️ <b>Світовий шум та авто</b>",
+                "• Projekt vrijedan 1,6 milijuna eura: djec... ➡️ <b>Побут Пелешца</b>",
+                "• Predstavnica Grada Opatija sudjelovala u... ➡️ <b>Побут Опатії</b>",
+                "• ‘Matrimonijo‘ Kazališne družine Kolarin ... ➡️ <b>Побут Дубровника</b>",
+                "• Muškarac (66) poginuo pri rušenju starog... ➡️ <b>Кримінал іншого міста</b>",
+                "• Autor knjige ‘Vikend snajperisti‘ u Zadr... ➡️ <b>Дублікат</b>",
+                "• Napad dronovima na dva broda u Crnom mor... ➡️ <b>Світовий шум</b>",
+                "• Najbolji rezultat od 2018. godine: Dubro... ➡️ <b>Побут Дубровника</b>",
+                "• Enigma SOA-e oko gospićkog otpada: Tko j... ➡️ <b>Побут Госпича</b>",
+                "• Marihuana u tri vrećice: 30-godišnjak u ... ➡️ <b>Дублікат</b>",
+                "• Novi Zagreb do poslijepodne bez tramvajs... ➡️ <b>Побут Загреба</b>",
+                "• Ako će AI regulirati tvrtke koje je same... ➡️ <b>Світовий шум та лайфстайл</b>"
+            ]
+        },
+        "backlog": {
+            "total_size": 40,
+            "sources": {
+                "Slobodna dalmacija": 20,
+                "023": 8,
+                "Zadarski list": 12
+            }
+        },
+        "published": {
+            "total": 3,
+            "ukraine_priority": 0,
+            "with_images": 0,
+            "text_only": 3,
+            "sources": {
+                "023": 3
             }
         },
         "models_used": {
