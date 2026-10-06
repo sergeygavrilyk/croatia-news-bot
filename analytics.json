@@ -1,41 +1,5 @@
 [
     {
-        "timestamp": "2026-09-27 12:01:00",
-        "execution_time": 177.7,
-        "funnel": {
-            "scraped_total": 35,
-            "scraped_by_source": {
-                "023": 10,
-                "Slobodna dalmacija": 15,
-                "Zadarski list": 10
-            },
-            "already_seen": 12,
-            "rejected_by_keywords": 1,
-            "duplicates_removed_by_ai": 7
-        },
-        "backlog": {
-            "total_size": 42,
-            "sources": {
-                "Zadarski list": 22,
-                "Slobodna dalmacija": 15,
-                "023": 5
-            }
-        },
-        "published": {
-            "total": 3,
-            "ukraine_priority": 0,
-            "with_images": 2,
-            "text_only": 1,
-            "sources": {
-                "023": 1,
-                "Slobodna dalmacija": 1,
-                "Zadarski list": 1
-            }
-        },
-        "errors_count": 0,
-        "gemini_retries": 0
-    },
-    {
         "timestamp": "2026-09-27 13:01:00",
         "execution_time": 10.0,
         "funnel": {
@@ -5672,6 +5636,66 @@
             "sources": {
                 "Slobodna dalmacija": 1,
                 "023": 2
+            }
+        },
+        "models_used": {
+            "gemini-3.5-flash-lite": 1,
+            "gemini-3.5-flash": 0
+        },
+        "errors_count": 0,
+        "gemini_retries": 0
+    },
+    {
+        "timestamp": "2026-10-06 12:01:02",
+        "execution_time": 161.8,
+        "funnel": {
+            "scraped_total": 35,
+            "scraped_by_source": {
+                "023": 10,
+                "Slobodna dalmacija": 15,
+                "Zadarski list": 10
+            },
+            "already_seen": 9,
+            "rejected_by_keywords": 1,
+            "duplicates_removed_by_ai": 18,
+            "rejection_reasons_list": [
+                "• Hrvatska među deset najtraženijih luksuz... ➡️ <b>Світовий шум</b>",
+                "• Župa dubrovačka osigurala 150 eura po uč... ➡️ <b>Побут чужого міста (Дубровник)</b>",
+                "• Zeleni sjaj podrške diljem zemlje; Pogle... ➡️ <b>Світовий шум</b>",
+                "• Šef riječkog SDP-a o Romani Jerković Kra... ➡️ <b>Побут чужого міста (Рієка)</b>",
+                "• Koncertna poslastica u Providurovoj pala... ➡️ <b>Афіша подій</b>",
+                "• HDLU Rijeka obilježava 80. godišnjicu dj... ➡️ <b>Побут чужого міста (Рієка)</b>",
+                "• Kod ‘Verity‘ su i fatalna privlačnost i ... ➡️ <b>Світовий шум</b>",
+                "• U Senju predstavljanje knjige o Stepincu... ➡️ <b>Побут чужого міста (Сень)</b>",
+                "• Pezo potpisao ugovor o financijskoj potp... ➡️ <b>Побут чужого міста (Дубровник)</b>",
+                "• Počeo projekt riječkoga HNK-a “Zajc u va... ➡️ <b>Побут чужого міста (Рієка)</b>",
+                "• Izglasalo Općinsko vijeće: 150 eura potp... ➡️ <b>Дублікат</b>",
+                "• Akcija dobrovoljnog davanja krvi još jed... ➡️ <b>Побут чужого міста (Сень)</b>",
+                "• Što to pliva u moru kod Dubrovnika? Znan... ➡️ <b>Побут чужого міста (Дубровник)</b>",
+                "• Francis Halzen dobitnik Nobela za fiziku... ➡️ <b>Світовий шум</b>",
+                "• Apsurd kod Šibenika: helidrom na Zlarinu... ➡️ <b>Побут чужого міста (Шибеник)</b>",
+                "• Od podzemnih spremnika do igrališta: zaš... ➡️ <b>Побут чужого міста (Дубровник)</b>",
+                "• Na Jeseni u Lici dodijeljena zlatna odli... ➡️ <b>Побут чужого міста (Лика)</b>",
+                "• Kažu, ne smije biti stranačke naravi: pr... ➡️ <b>Дублікат</b>"
+            ]
+        },
+        "backlog": {
+            "total_size": 54,
+            "sources": {
+                "Zadarski list": 16,
+                "Slobodna dalmacija": 32,
+                "023": 6
+            }
+        },
+        "published": {
+            "total": 3,
+            "ukraine_priority": 0,
+            "with_images": 2,
+            "text_only": 1,
+            "sources": {
+                "Zadarski list": 1,
+                "Slobodna dalmacija": 1,
+                "023": 1
             }
         },
         "models_used": {
