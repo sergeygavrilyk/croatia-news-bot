@@ -1,64 +1,5 @@
 [
     {
-        "timestamp": "2026-09-27 16:08:49",
-        "execution_time": 40.1,
-        "funnel": {
-            "scraped_total": 35,
-            "scraped_by_source": {
-                "023": 10,
-                "Slobodna dalmacija": 15,
-                "Zadarski list": 10
-            },
-            "already_seen": 20,
-            "rejected_by_keywords": 2,
-            "duplicates_removed_by_ai": 25,
-            "rejection_reasons_list": [
-                "• ‘Prave se kao da su pravi Hrvati, a zapr... ➡️ <b>Шоу-бізнес та лайфстайл</b>",
-                "• Oko 600 triatlonaca iz Hrvatske i inozem... ➡️ <b>Спорт</b>",
-                "• Kako norveške drvene kuće ostaju tople i... ➡️ <b>Світовий шум та лайфстайл</b>",
-                "• Malik Fest na Trsat još jednom vratio vi... ➡️ <b>Побут чужих міст</b>",
-                "• Ako vozite niz Viktorju, čeka vas ova op... ➡️ <b>Побут чужих міст</b>",
-                "• Liječnica otkriva što bi svaka kućna kut... ➡️ <b>Світовий шум та лайфстайл</b>",
-                "• The Romans i prijatelji u Pogonu proslav... ➡️ <b>Шоу-бізнес та лайфстайл</b>",
-                "• \"Kada stan prestane biti dom i postane s... ➡️ <b>Вже є в історії</b>",
-                "• Zašto kuhari u vodu za pire krumpir doda... ➡️ <b>Світовий шум та лайфстайл</b>",
-                "• Osoba poginula u sudaru osobnog vozila i... ➡️ <b>Побут чужих міст</b>",
-                "• Tučnjave, lomovi, krađe i prijetnje smrć... ➡️ <b>Світовий шум та лайфстайл</b>",
-                "• Pet stvari koje ne biste trebali držati ... ➡️ <b>Світовий шум та лайфстайл</b>",
-                "• Noć u kojoj je Opatija zablistala u ritm... ➡️ <b>Побут чужих міст</b>",
-                "• Sjećanje na velikog šibenskog umjetnika:... ➡️ <b>Побут чужих міст</b>",
-                "• Ovi brojevi kao PIN su najveći sigurnosn... ➡️ <b>Світовий шум та лайфстайл</b>",
-                "• Uzinić: Siromaštvo nije samo nedostatak ... ➡️ <b>Побут чужих міст</b>",
-                "• Šibenski biskup upozorio na opasnosti mo... ➡️ <b>Побут чужих міст</b>",
-                "• Što meso u svakodnevnoj prehrani radi va... ➡️ <b>Світовий шум та лайфстайл</b>",
-                "• DP traži izjašnjavanje građana o idejnom... ➡️ <b>Побут чужих міст</b>",
-                "• Mladi Šibenčanin osvojio broncu na Svjet... ➡️ <b>Спорт</b>",
-                "• Dan branitelja crikveničko-vinodolskog k... ➡️ <b>Побут чужих міст</b>",
-                "• Osim jedne sidrene cijene, čovjek stavio... ➡️ <b>Світовий шум та лайфстайл</b>",
-                "• Britanski ministar obrane: Rusija i Puti... ➡️ <b>Світовий шум та лайфстайл</b>",
-                "• Neobičan istup bivše gradonačelnice Vodi... ➡️ <b>Побут чужих міст</b>",
-                "• Hodačka tura otkrila sve tajne Veprinca... ➡️ <b>Побут чужих міст</b>"
-            ]
-        },
-        "backlog": {
-            "total_size": 63,
-            "sources": {
-                "Zadarski list": 39,
-                "Slobodna dalmacija": 18,
-                "023": 6
-            }
-        },
-        "published": {
-            "total": 0,
-            "ukraine_priority": 0,
-            "with_images": 0,
-            "text_only": 0,
-            "sources": {}
-        },
-        "errors_count": 0,
-        "gemini_retries": 0
-    },
-    {
         "timestamp": "2026-09-27 19:01:00",
         "execution_time": 168.7,
         "funnel": {
@@ -5772,6 +5713,65 @@
             "sources": {
                 "023": 1,
                 "Slobodna dalmacija": 1
+            }
+        },
+        "models_used": {
+            "gemini-3.5-flash-lite": 1,
+            "gemini-3.5-flash": 0
+        },
+        "errors_count": 1,
+        "gemini_retries": 0
+    },
+    {
+        "timestamp": "2026-10-06 16:01:06",
+        "execution_time": 205.3,
+        "funnel": {
+            "scraped_total": 35,
+            "scraped_by_source": {
+                "023": 10,
+                "Slobodna dalmacija": 15,
+                "Zadarski list": 10
+            },
+            "already_seen": 13,
+            "rejected_by_keywords": 2,
+            "duplicates_removed_by_ai": 19,
+            "rejection_reasons_list": [
+                "• Bounty torta: recept za slasticu s četir... ➡️ <b>Світовий шум та лайфстайл</b>",
+                "• Dalmatinci stalno kukaju, neki postaju n... ➡️ <b>Світовий шум та лайфстайл</b>",
+                "• Sve više mladih oboljelih od raka: znans... ➡️ <b>Світовий шум та лайфстайл</b>",
+                "• Nije apsurdno nego skroz logično što je ... ➡️ <b>Побут чужих міст</b>",
+                "• Zeleni sjaj podrške diljem zemlje; Pogle... ➡️ <b>Світовий шум та лайфстайл</b>",
+                "• Policija završila istragu u slučaju uboj... ➡️ <b>Дублікат</b>",
+                "• Dubrovnik ponovno u svjetskoj eliti, sad... ➡️ <b>Побут чужих міст</b>",
+                "• Grlić Radman: Zabrinuti smo zbog ugrožav... ➡️ <b>Світовий шум та лайфстайл</b>",
+                "• Sofija Rozić nakon 25 godina rada u Dubr... ➡️ <b>Побут чужих міст</b>",
+                "• Slavni “Cristo Ressussitato”: Štorija o ... ➡️ <b>Побут чужих міст</b>",
+                "• Križan Dinko Vučak krv je dao 100 puta: ... ➡️ <b>Побут чужих міст</b>",
+                "• Krenuo preko granice s 20.700 eura, a on... ➡️ <b>Світовий шум та лайфстайл</b>",
+                "• Župa dubrovačka osigurala 150 eura po uč... ➡️ <b>Побут чужих міст</b>",
+                "• U Lokvama predstavljena knjiga “Sjećanje... ➡️ <b>Побут чужих міст</b>",
+                "• Kod ‘Verity‘ su i fatalna privlačnost i ... ➡️ <b>Світовий шум та лайфстайл</b>",
+                "• Pred nama je Marunada – fešta koja namam... ➡️ <b>Побут чужих міст</b>",
+                "• Što to pliva u moru kod Dubrovnika? Znan... ➡️ <b>Побут чужих міст</b>",
+                "• Apsurd kod Šibenika: helidrom na Zlarinu... ➡️ <b>Побут чужих міст</b>",
+                "• Na natječaj za stadion Maksimir žalili s... ➡️ <b>Побут чужих міст</b>"
+            ]
+        },
+        "backlog": {
+            "total_size": 44,
+            "sources": {
+                "Slobodna dalmacija": 26,
+                "Zadarski list": 15,
+                "023": 3
+            }
+        },
+        "published": {
+            "total": 2,
+            "ukraine_priority": 0,
+            "with_images": 2,
+            "text_only": 0,
+            "sources": {
+                "Zadarski list": 2
             }
         },
         "models_used": {
