@@ -1,37 +1,5 @@
 [
     {
-        "timestamp": "2026-09-27 15:01:03",
-        "execution_time": 16.4,
-        "funnel": {
-            "scraped_total": 35,
-            "scraped_by_source": {
-                "023": 10,
-                "Slobodna dalmacija": 15,
-                "Zadarski list": 10
-            },
-            "already_seen": 25,
-            "rejected_by_keywords": 3,
-            "duplicates_removed_by_ai": 25
-        },
-        "backlog": {
-            "total_size": 50,
-            "sources": {
-                "Zadarski list": 30,
-                "Slobodna dalmacija": 15,
-                "023": 5
-            }
-        },
-        "published": {
-            "total": 0,
-            "ukraine_priority": 0,
-            "with_images": 0,
-            "text_only": 0,
-            "sources": {}
-        },
-        "errors_count": 0,
-        "gemini_retries": 0
-    },
-    {
         "timestamp": "2026-09-27 16:08:49",
         "execution_time": 40.1,
         "funnel": {
@@ -5749,6 +5717,68 @@
             "gemini-3.5-flash": 0
         },
         "errors_count": 0,
+        "gemini_retries": 0
+    },
+    {
+        "timestamp": "2026-10-06 15:01:04",
+        "execution_time": 261.0,
+        "funnel": {
+            "scraped_total": 35,
+            "scraped_by_source": {
+                "023": 10,
+                "Slobodna dalmacija": 15,
+                "Zadarski list": 10
+            },
+            "already_seen": 13,
+            "rejected_by_keywords": 1,
+            "duplicates_removed_by_ai": 21,
+            "rejection_reasons_list": [
+                "• Nije apsurdno nego skroz logično što je ... ➡️ <b>Побут чужого міста</b>",
+                "• HEP ODS-a planira uložiti 3,32 milijarde... ➡️ <b>Економіка національного рівня без критичного значення</b>",
+                "• Zagreb Film Festival objavio dio program... ➡️ <b>Побут чужого міста</b>",
+                "• Sve više mladih oboljelih od raka: znans... ➡️ <b>Світовий шум та лайфстайл</b>",
+                "• Dubrovnik ponovno u svjetskoj eliti, sad... ➡️ <b>Побут чужого міста</b>",
+                "• Plaće u PGŽ-u izgledaju puno bolje nego ... ➡️ <b>Побут чужого міста</b>",
+                "• Zeleni sjaj podrške diljem zemlje; Pogle... ➡️ <b>Світовий шум</b>",
+                "• Sofija Rozić nakon 25 godina rada u Dubr... ➡️ <b>Побут чужого міста</b>",
+                "• Masovni prosvjedi u Francuskoj. Škole bl... ➡️ <b>Світовий шум</b>",
+                "• Erste banka uspješno izdala obveznicu vr... ➡️ <b>Економіка національного рівня</b>",
+                "• Križan Dinko Vučak krv je dao 100 puta: ... ➡️ <b>Побут чужого міста</b>",
+                "• Ide li novi film Toma Cruisea prema jedn... ➡️ <b>Світовий шум та лайфстайл</b>",
+                "• Krenuo preko granice s 20.700 eura, a on... ➡️ <b>Загальна кримінальна замітка без регіонального пріоритету</b>",
+                "• Na suđenju Mlađanu čitane bilješke iz nj... ➡️ <b>Вже є в історії або несуттєве оновлення</b>",
+                "• Župa dubrovačka osigurala 150 eura po uč... ➡️ <b>Побут чужого міста</b>",
+                "• Stabilizacija prometa u europskoj malopr... ➡️ <b>Світовий шум</b>",
+                "• Kod ‘Verity‘ su i fatalna privlačnost i ... ➡️ <b>Світовий шум та лайфстайл</b>",
+                "• HZJZ: Voda u Ličko-senjskoj županiji te ... ➡️ <b>Побут чужого міста</b>",
+                "• Pezo potpisao ugovor o financijskoj potp... ➡️ <b>Побут чужого міста</b>",
+                "• Izglasalo Općinsko vijeće: 150 eura potp... ➡️ <b>Дублікат</b>",
+                "• Horvatinčiću odbijen kućni pritvor, osta... ➡️ <b>Побут чужого міста</b>"
+            ]
+        },
+        "backlog": {
+            "total_size": 47,
+            "sources": {
+                "Zadarski list": 16,
+                "Slobodna dalmacija": 28,
+                "023": 3
+            }
+        },
+        "published": {
+            "total": 2,
+            "ukraine_priority": 0,
+            "with_images": 1,
+            "text_only": 1,
+            "sources": {
+                "023": 1,
+                "Slobodna dalmacija": 1
+            }
+        },
+        "models_used": {
+            "gemini-3.5-flash-lite": 1,
+            "gemini-3.5-flash": 0
+        },
+        "errors_count": 1,
         "gemini_retries": 0
     }
 ]
