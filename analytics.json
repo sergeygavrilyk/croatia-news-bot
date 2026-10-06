@@ -1,37 +1,5 @@
 [
     {
-        "timestamp": "2026-09-27 10:00:58",
-        "execution_time": 8.4,
-        "funnel": {
-            "scraped_total": 35,
-            "scraped_by_source": {
-                "023": 10,
-                "Slobodna dalmacija": 15,
-                "Zadarski list": 10
-            },
-            "already_seen": 7,
-            "rejected_by_keywords": 0,
-            "duplicates_removed_by_ai": 25
-        },
-        "backlog": {
-            "total_size": 36,
-            "sources": {
-                "Zadarski list": 17,
-                "Slobodna dalmacija": 13,
-                "023": 6
-            }
-        },
-        "published": {
-            "total": 0,
-            "ukraine_priority": 0,
-            "with_images": 0,
-            "text_only": 0,
-            "sources": {}
-        },
-        "errors_count": 0,
-        "gemini_retries": 0
-    },
-    {
         "timestamp": "2026-09-27 11:01:03",
         "execution_time": 165.6,
         "funnel": {
@@ -5627,6 +5595,61 @@
             "text_only": 3,
             "sources": {
                 "023": 3
+            }
+        },
+        "models_used": {
+            "gemini-3.5-flash-lite": 1,
+            "gemini-3.5-flash": 0
+        },
+        "errors_count": 0,
+        "gemini_retries": 0
+    },
+    {
+        "timestamp": "2026-10-06 10:01:07",
+        "execution_time": 161.7,
+        "funnel": {
+            "scraped_total": 35,
+            "scraped_by_source": {
+                "023": 10,
+                "Slobodna dalmacija": 15,
+                "Zadarski list": 10
+            },
+            "already_seen": 6,
+            "rejected_by_keywords": 2,
+            "duplicates_removed_by_ai": 14,
+            "rejection_reasons_list": [
+                "• Turisti objavili novi singl “Svaka ljuba... ➡️ <b>Світовий шум та лайфстайл</b>",
+                "• Gradi se mreža za tisuće kućanstava: Vod... ➡️ <b>Побут чужих міст</b>",
+                "• Ove subote se družimo na 13. Kont-a-Port... ➡️ <b>Світовий шум та лайфстайл</b>",
+                "• Skrivena poruka dubrovačkog gradonačelni... ➡️ <b>Світовий шум та лайфстайл</b>",
+                "• Pogledajte zašto su Max Hozić i Martina ... ➡️ <b>Спорт</b>",
+                "• Zeleni sjaj podrške diljem zemlje; Pogle... ➡️ <b>Світовий шум та лайфстайл</b>",
+                "• Dubrovački gradonačelnik Franković poruč... ➡️ <b>Дублікат</b>",
+                "• Opatija ovog vikenda ponovo postaje veli... ➡️ <b>Побут чужих міст</b>",
+                "• Libertasovi eko-autobusi u pogonu: pogle... ➡️ <b>Побут чужих міст</b>",
+                "• SDP izbacuje Romanu Jerković Kraljić... ➡️ <b>Хорватіja - дрібна внутрішньопартійна новина</b>",
+                "• Promjena termina zbog najavljene kiše: K... ➡️ <b>Побут чужих міст</b>",
+                "• NBA objavila da u predsezoni testiraju “... ➡️ <b>Спорт</b>",
+                "• Električni Libertasovi autobusi počeli v... ➡️ <b>Дублікат</b>",
+                "• Saša Ceci otvara jesenske Opatija Coffee... ➡️ <b>Світовий шум та лайфстайл</b>"
+            ]
+        },
+        "backlog": {
+            "total_size": 46,
+            "sources": {
+                "023": 9,
+                "Slobodna dalmacija": 24,
+                "Zadarski list": 13
+            }
+        },
+        "published": {
+            "total": 3,
+            "ukraine_priority": 0,
+            "with_images": 1,
+            "text_only": 2,
+            "sources": {
+                "023": 2,
+                "Zadarski list": 1
             }
         },
         "models_used": {
