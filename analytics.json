@@ -1,37 +1,5 @@
 [
     {
-        "timestamp": "2026-09-27 13:01:00",
-        "execution_time": 10.0,
-        "funnel": {
-            "scraped_total": 35,
-            "scraped_by_source": {
-                "023": 10,
-                "Slobodna dalmacija": 15,
-                "Zadarski list": 10
-            },
-            "already_seen": 13,
-            "rejected_by_keywords": 2,
-            "duplicates_removed_by_ai": 25
-        },
-        "backlog": {
-            "total_size": 37,
-            "sources": {
-                "Zadarski list": 19,
-                "Slobodna dalmacija": 14,
-                "023": 4
-            }
-        },
-        "published": {
-            "total": 0,
-            "ukraine_priority": 0,
-            "with_images": 0,
-            "text_only": 0,
-            "sources": {}
-        },
-        "errors_count": 0,
-        "gemini_retries": 0
-    },
-    {
         "timestamp": "2026-09-27 14:01:05",
         "execution_time": 11.5,
         "funnel": {
@@ -5696,6 +5664,58 @@
                 "Zadarski list": 1,
                 "Slobodna dalmacija": 1,
                 "023": 1
+            }
+        },
+        "models_used": {
+            "gemini-3.5-flash-lite": 1,
+            "gemini-3.5-flash": 0
+        },
+        "errors_count": 0,
+        "gemini_retries": 0
+    },
+    {
+        "timestamp": "2026-10-06 13:01:06",
+        "execution_time": 160.8,
+        "funnel": {
+            "scraped_total": 35,
+            "scraped_by_source": {
+                "023": 10,
+                "Slobodna dalmacija": 15,
+                "Zadarski list": 10
+            },
+            "already_seen": 10,
+            "rejected_by_keywords": 1,
+            "duplicates_removed_by_ai": 10,
+            "rejection_reasons_list": [
+                "• Eurozastupnici podržali novi EU-ov progr... ➡️ <b>Світовий шум</b>",
+                "• Sofija Rozić nakon 25 godina rada u Dubr... ➡️ <b>Побут чужих міст</b>",
+                "• “Srce riječke povijesti”: Izložba o Guve... ➡️ <b>Побут чужих міст</b>",
+                "• Zeleni sjaj podrške diljem zemlje; Pogle... ➡️ <b>Світовий шум та лайфстайл</b>",
+                "• Investicija od 650 tisuća eura: Narodna ... ➡️ <b>Побут чужих міст</b>",
+                "• Križan Dinko Vučak krv je dao 100 puta: ... ➡️ <b>Побут чужих міст</b>",
+                "• Kod ‘Verity‘ su i fatalna privlačnost i ... ➡️ <b>Світовий шум та лайфстайл</b>",
+                "• Hutisti tvrde da i dalje drže sva nedavn... ➡️ <b>Світовий шум</b>",
+                "• Pezo potpisao ugovor o financijskoj potp... ➡️ <b>Побут чужих міст</b>",
+                "• Psihodelični kvintet Altin Gün održat će... ➡️ <b>Світовий шум та лайфстайл</b>"
+            ]
+        },
+        "backlog": {
+            "total_size": 54,
+            "sources": {
+                "Zadarski list": 17,
+                "Slobodna dalmacija": 34,
+                "023": 3
+            }
+        },
+        "published": {
+            "total": 3,
+            "ukraine_priority": 0,
+            "with_images": 2,
+            "text_only": 1,
+            "sources": {
+                "023": 1,
+                "Slobodna dalmacija": 1,
+                "Zadarski list": 1
             }
         },
         "models_used": {
