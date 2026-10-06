@@ -1,41 +1,5 @@
 [
     {
-        "timestamp": "2026-09-27 11:01:03",
-        "execution_time": 165.6,
-        "funnel": {
-            "scraped_total": 35,
-            "scraped_by_source": {
-                "023": 10,
-                "Slobodna dalmacija": 15,
-                "Zadarski list": 10
-            },
-            "already_seen": 26,
-            "rejected_by_keywords": 0,
-            "duplicates_removed_by_ai": 6
-        },
-        "backlog": {
-            "total_size": 45,
-            "sources": {
-                "Zadarski list": 22,
-                "Slobodna dalmacija": 16,
-                "023": 7
-            }
-        },
-        "published": {
-            "total": 3,
-            "ukraine_priority": 0,
-            "with_images": 2,
-            "text_only": 1,
-            "sources": {
-                "Slobodna dalmacija": 1,
-                "023": 1,
-                "Zadarski list": 1
-            }
-        },
-        "errors_count": 0,
-        "gemini_retries": 0
-    },
-    {
         "timestamp": "2026-09-27 12:01:00",
         "execution_time": 177.7,
         "funnel": {
@@ -5650,6 +5614,64 @@
             "sources": {
                 "023": 2,
                 "Zadarski list": 1
+            }
+        },
+        "models_used": {
+            "gemini-3.5-flash-lite": 1,
+            "gemini-3.5-flash": 0
+        },
+        "errors_count": 0,
+        "gemini_retries": 0
+    },
+    {
+        "timestamp": "2026-10-06 11:01:05",
+        "execution_time": 162.0,
+        "funnel": {
+            "scraped_total": 35,
+            "scraped_by_source": {
+                "023": 10,
+                "Slobodna dalmacija": 15,
+                "Zadarski list": 10
+            },
+            "already_seen": 11,
+            "rejected_by_keywords": 3,
+            "duplicates_removed_by_ai": 17,
+            "rejection_reasons_list": [
+                "• Što to pliva u moru kod Dubrovnika? Znan... ➡️ <b>Світовий шум</b>",
+                "• Četiri morske kornjače u Puli vraćene u ... ➡️ <b>Побут Пули</b>",
+                "• Hrvatska među deset najtraženijih luksuz... ➡️ <b>Світовий шум</b>",
+                "• Dragovoljno predano oružje i eksplozivna... ➡️ <b>Побут Рієки</b>",
+                "• Apsurd kod Šibenika: helidrom na Zlarinu... ➡️ <b>Побут Шибеника</b>",
+                "• Spriječeno krijumčarenje stranih državlj... ➡️ <b>Побут Врбовського</b>",
+                "• Zeleni sjaj podrške diljem zemlje; Pogle... ➡️ <b>Світовий шум</b>",
+                "• Od podzemnih spremnika do igrališta: zaš... ➡️ <b>Побут ДуброВника</b>",
+                "• Zaključci sastanka gradonačelnika Darka ... ➡️ <b>Побут Госпича</b>",
+                "• Kažu, ne smije biti stranačke naravi: pr... ➡️ <b>Дублікат</b>",
+                "• Glavina o žalbi za stadion Maksimir: Vla... ➡️ <b>Спорт</b>",
+                "• Gradi se mreža za tisuće kućanstava: Vod... ➡️ <b>Побут Водиць</b>",
+                "• Jurnjava u Dragi: Nedozvoljenom brzinom ... ➡️ <b>Побут Рієки</b>",
+                "• Skrivena poruka dubrovačkog gradonačelni... ➡️ <b>Світовий шум</b>",
+                "• Dronovima napadnuti brodovi kod Bugarske... ➡️ <b>Світовий шум</b>",
+                "• “Pisci za stolom”: Bogato ilustrirana ku... ➡️ <b>Світовий шум</b>",
+                "• Dubrovački gradonačelnik Franković poruč... ➡️ <b>Дублікат</b>"
+            ]
+        },
+        "backlog": {
+            "total_size": 49,
+            "sources": {
+                "Slobodna dalmacija": 28,
+                "023": 8,
+                "Zadarski list": 13
+            }
+        },
+        "published": {
+            "total": 3,
+            "ukraine_priority": 0,
+            "with_images": 1,
+            "text_only": 2,
+            "sources": {
+                "Slobodna dalmacija": 1,
+                "023": 2
             }
         },
         "models_used": {
