@@ -1,62 +1,5 @@
 [
     {
-        "timestamp": "2026-09-28 10:01:08",
-        "execution_time": 166.6,
-        "funnel": {
-            "scraped_total": 35,
-            "scraped_by_source": {
-                "023": 10,
-                "Slobodna dalmacija": 15,
-                "Zadarski list": 10
-            },
-            "already_seen": 8,
-            "rejected_by_keywords": 3,
-            "duplicates_removed_by_ai": 21,
-            "rejection_reasons_list": [
-                "• Mladi Šibenčanin je globalna senzacija! ... ➡️ <b>Світовий шум та лайфстайл</b>",
-                "• Boris Štok predstavlja novi singl “Ne za... ➡️ <b>Світовий шум та лайфстайл</b>",
-                "• SpaceX danas pokušava poslati Starship u... ➡️ <b>Світовий шум та лайфстайл</b>",
-                "• Zapadna obala spremna za CROYA Yacht Cha... ➡️ <b>Побут чужих міст</b>",
-                "• ĐIR po Starom gradu slavi 12. rođendan i... ➡️ <b>Побут чужих міст</b>",
-                "• Sportske udruge imaju do 28. listopada z... ➡️ <b>Спорт</b>",
-                "• Ma kakve boće, u dolini Neretve i staro ... ➡️ <b>Світовий шум та лайфстайл</b>",
-                "• Bijelo dugme stiže u Rijeku u sklopu vel... ➡️ <b>Світовий шум та лайфстайл</b>",
-                "• Ma koje balote, u dolini Neretve i staro... ➡️ <b>Дублікат</b>",
-                "• Kristina je vozačica “sedamnaestice” koj... ➡️ <b>Побут чужих міст</b>",
-                "• ‘Prva ovakva presuda!‘; Sutkinja šibensk... ➡️ <b>Світовий шум та лайфстайл</b>",
-                "• Žestok napad riječkog HDZ-a na Rinčić i ... ➡️ <b>Побут чужих міст</b>",
-                "• Sjajan rezultat u Berlinu: Natalija Guli... ➡️ <b>Спорт</b>",
-                "• U prometnoj nesreći kod Šibenika teško o... ➡️ <b>Побут чужих міст</b>",
-                "• Šef ZET-a: ‘Nisam dobro. Nadam se da će ... ➡️ <b>Побут чужих міст</b>",
-                "• Knežević: \"Kad vlast nema odgovor, baci ... ➡️ <b>Побут чужих міст</b>",
-                "• U Zajc stiže predstava “Kolumne zaboravl... ➡️ <b>Побут чужих міст</b>",
-                "• Vlahušić: \"Priuštivo stanovanje rješava ... ➡️ <b>Побут чужих міст</b>",
-                "• Idućih dana dijelovi Grada i Pelješca bi... ➡️ <b>Побут чужих міст</b>",
-                "• Sretnik iz Dubrovnika dobio 8 tisuća eur... ➡️ <b>Реклама</b>",
-                "• Kako preživjeti svakodnevicu malog bizni... ➡️ <b>Світовий шум та лайфстайл</b>"
-            ]
-        },
-        "backlog": {
-            "total_size": 27,
-            "sources": {
-                "Slobodna dalmacija": 13,
-                "023": 7,
-                "Zadarski list": 7
-            }
-        },
-        "published": {
-            "total": 3,
-            "ukraine_priority": 0,
-            "with_images": 0,
-            "text_only": 3,
-            "sources": {
-                "023": 3
-            }
-        },
-        "errors_count": 0,
-        "gemini_retries": 0
-    },
-    {
         "timestamp": "2026-09-28 11:01:07",
         "execution_time": 167.1,
         "funnel": {
@@ -5764,6 +5707,70 @@
             "text_only": 2,
             "sources": {
                 "023": 2,
+                "Slobodna dalmacija": 1
+            }
+        },
+        "models_used": {
+            "gemini-3.5-flash-lite": 1,
+            "gemini-3.5-flash": 0
+        },
+        "errors_count": 0,
+        "gemini_retries": 0
+    },
+    {
+        "timestamp": "2026-10-07 10:01:05",
+        "execution_time": 68.7,
+        "funnel": {
+            "scraped_total": 35,
+            "scraped_by_source": {
+                "023": 10,
+                "Slobodna dalmacija": 15,
+                "Zadarski list": 10
+            },
+            "already_seen": 12,
+            "rejected_by_keywords": 3,
+            "duplicates_removed_by_ai": 24,
+            "rejection_reasons_list": [
+                "• Prijem za svjetske i europske prvake: Za... ➡️ <b>Спорт</b>",
+                "• I Šibenik hoće novi stadion! ‘Ma, možemo... ➡️ <b>Побут інших міст</b>",
+                "• Mladim riječkim inovatorima 26 medalja n... ➡️ <b>Побут інших міст</b>",
+                "• Velika akcija u PEVEX-u: Ostvarite 20% p... ➡️ <b>Реклама</b>",
+                "• Dalmatinski grad objavio rat pirotehnici... ➡️ <b>Побут інших міст</b>",
+                "• Na Učki postoji “crna točka” na kojoj st... ➡️ <b>Побут інших міст</b>",
+                "• Kako doživljavaš Zadar kroz zvuk, pokret... ➡️ <b>Вже є в історії</b>",
+                "• Dubrovački duo Dora Kamber i Pero Škobel... ➡️ <b>Побут інших міст</b>",
+                "• Novi list u Parizu: “Samo smo hodali, a ... ➡️ <b>Світовий шум</b>",
+                "• Svjetski dan cerebralne paralize u Medic... ➡️ <b>Вже є в історії</b>",
+                "• Prošlo je 35 godina od tragedije koja je... ➡️ <b>Побут інших міст</b>",
+                "• Zašto je otpad Izgradnje još na Trsatu? ... ➡️ <b>Побут інших міст</b>",
+                "• Srce zadarskih zbivanja na vašem ekranu:... ➡️ <b>Вже є в історії</b>",
+                "• Prošlo je 35 godina od tragedije koja je... ➡️ <b>Дублікат</b>",
+                "• Dragovoljci Grobnišćine u Cerniku Slavon... ➡️ <b>Побут інших міст</b>",
+                "• Nova pravila za zaštitu djece na interne... ➡️ <b>Світовий шум</b>",
+                "• U Čajkovićima teško ozlijeđen vozač (47)... ➡️ <b>Побут інших міст</b>",
+                "• Plenković na otvorenju skupa MED9 u Spli... ➡️ <b>Побут інших міст</b>",
+                "• Muškarac (47) teško ozlijeđen u padu s r... ➡️ <b>Дублікат</b>",
+                "• Pijani Indijac vozio kamion po A7 pa uda... ➡️ <b>Побут інших міст</b>",
+                "• 20 % popusta u PEVEX-u do nedjelje na sv... ➡️ <b>Дублікат</b>",
+                "• Dionice na europskim burzama opet pale, ... ➡️ <b>Світовий шум</b>",
+                "• Vlasnica kuće u Prvić Luci optužena za i... ➡️ <b>Побут інших міст</b>",
+                "• Sad je jasno zašto se Dodik onako zahval... ➡️ <b>Світовий шум</b>"
+            ]
+        },
+        "backlog": {
+            "total_size": 36,
+            "sources": {
+                "Zadarski list": 13,
+                "Slobodna dalmacija": 17,
+                "023": 6
+            }
+        },
+        "published": {
+            "total": 1,
+            "ukraine_priority": 0,
+            "with_images": 1,
+            "text_only": 0,
+            "sources": {
                 "Slobodna dalmacija": 1
             }
         },
