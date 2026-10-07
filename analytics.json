@@ -1,62 +1,5 @@
 [
     {
-        "timestamp": "2026-09-28 08:01:07",
-        "execution_time": 165.4,
-        "funnel": {
-            "scraped_total": 35,
-            "scraped_by_source": {
-                "023": 10,
-                "Slobodna dalmacija": 15,
-                "Zadarski list": 10
-            },
-            "already_seen": 3,
-            "rejected_by_keywords": 1,
-            "duplicates_removed_by_ai": 20,
-            "rejection_reasons_list": [
-                "• Knežević: \"Kad vlast nema odgovor, baci ... ➡️ <b>Побут Дубровника</b>",
-                "• Sjajan rezultat u Berlinu: Natalija Guli... ➡️ <b>Спорт</b>",
-                "• Vlahušić: \"Priuštivo stanovanje rješava ... ➡️ <b>Побут Дубровника</b>",
-                "• Žestok napad riječkog HDZ-a na Rinčić i ... ➡️ <b>Побут Рієки</b>",
-                "• Nakon rasprodanih izvedbi, zadarska publ... ➡️ <b>Дрібна культурна подія</b>",
-                "• Idućih dana dijelovi Grada i Pelješca bi... ➡️ <b>Побут Дубровника</b>",
-                "• Šef ZET-a: ‘Nisam dobro. Nadam se da će ... ➡️ <b>Дублікат теми страйку</b>",
-                "• Sretnik iz Dubrovnika dobio 8 tisuća eur... ➡️ <b>Світський шум / Роізграші</b>",
-                "• U Zajc stiže predstava “Kolumne zaboravl... ➡️ <b>Дрібна культурна подія</b>",
-                "• Obilježena 35. obljetnica progonstva žit... ➡️ <b>Історія / Переказ минулих подій</b>",
-                "• Kako preživjeti svakodnevicu malog bizni... ➡️ <b>Поради малому бізнесу / Лайфстайл</b>",
-                "• Mikeu Leighu pripala Zlatna školjka na f... ➡️ <b>Світовий шум / Кінофестиваль</b>",
-                "• Nenadmašna Lena Crnojević; Vratarka Dona... ➡️ <b>Спорт</b>",
-                "• U srijedu, 30. rujna, u Slobodnoj Dalmac... ➡️ <b>Реклама / Анонс газети</b>",
-                "• Grlić i Marković u Art-kinu predstavili ... ➡️ <b>Культура в іншому місті</b>",
-                "• Rasprodano za sat vremena, štrudla iz Pl... ➡️ <b>Побут іншого міста</b>",
-                "• Ana Juračić: ‘Premalo cijenimo rad žene ... ➡️ <b>Конкурс / Лайфстайл</b>",
-                "• Klasična hrvatska četvorka u Splitu obil... ➡️ <b>Культура / Музика</b>",
-                "• “Idiot” u Zajcu: Uprizorenje Dostojevsko... ➡️ <b>Культура в іншому місті</b>",
-                "• Izbori na Fakultetu zdravstvenih studija... ➡️ <b>Побут Рієки</b>"
-            ]
-        },
-        "backlog": {
-            "total_size": 25,
-            "sources": {
-                "023": 9,
-                "Slobodna dalmacija": 7,
-                "Zadarski list": 9
-            }
-        },
-        "published": {
-            "total": 3,
-            "ukraine_priority": 0,
-            "with_images": 1,
-            "text_only": 2,
-            "sources": {
-                "023": 2,
-                "Zadarski list": 1
-            }
-        },
-        "errors_count": 0,
-        "gemini_retries": 0
-    },
-    {
         "timestamp": "2026-09-28 09:01:05",
         "execution_time": 119.5,
         "funnel": {
@@ -5772,6 +5715,62 @@
             "sources": {
                 "Zadarski list": 2,
                 "023": 1
+            }
+        },
+        "models_used": {
+            "gemini-3.5-flash-lite": 1,
+            "gemini-3.5-flash": 0
+        },
+        "errors_count": 0,
+        "gemini_retries": 0
+    },
+    {
+        "timestamp": "2026-10-07 08:01:11",
+        "execution_time": 161.4,
+        "funnel": {
+            "scraped_total": 35,
+            "scraped_by_source": {
+                "023": 10,
+                "Slobodna dalmacija": 15,
+                "Zadarski list": 10
+            },
+            "already_seen": 2,
+            "rejected_by_keywords": 1,
+            "duplicates_removed_by_ai": 15,
+            "rejection_reasons_list": [
+                "• Otok Vir ruši rekorde! Rujan donio peti ... ➡️ <b>Туризм на острові Вір, не пріоритетно для Задара</b>",
+                "• Samo jedna mala promjena u rutini osigur... ➡️ <b>Світовий шум та лайфстайл</b>",
+                "• Plesni voditelj Folklornog ansambla Linđ... ➡️ <b>Побут інших міст (Дубровник)</b>",
+                "• Usklađeni modni kompleti najjednostavnij... ➡️ <b>Світовий шум та лайфстайл</b>",
+                "• Investitori golemog resorta u Cavtatu pr... ➡️ <b>Побут інших міст (Цавтат)</b>",
+                "• Jesenje večeri na balkonu mogu biti još ... ➡️ <b>Світовий шум та лайфстайл</b>",
+                "• Ovaj začin za jačanje imuniteta možete d... ➡️ <b>Світовий шум та лайфстайл</b>",
+                "• Prijem za svjetske i europske prvake: Za... ➡️ <b>Спорт</b>",
+                "• Mokošica pred kolapsom: zatvara se čak 1... ➡️ <b>Побут інших міст (Дубровник)</b>",
+                "• Zlatni i hrskavi popečci od bundeve i sl... ➡️ <b>Світовий шум та лайфстайл</b>",
+                "• Velika akcija u PEVEX-u: Ostvarite 20% p... ➡️ <b>Реклама</b>",
+                "• Poluprazne police Studenca izgledaju kao... ➡️ <b>Дублікат</b>",
+                "• Znamo kako uzgojiti zvjezdane za raskošn... ➡️ <b>Світовий шум та лайфстайл</b>",
+                "• Gledali su u nebo i zbrajali štetu. A sa... ➡️ <b>Вже є в історії</b>",
+                "• Rinčić je kritizirala Filipovića zbog pr... ➡️ <b>Побут інших міст (Рієка)</b>"
+            ]
+        },
+        "backlog": {
+            "total_size": 25,
+            "sources": {
+                "023": 10,
+                "Slobodna dalmacija": 7,
+                "Zadarski list": 8
+            }
+        },
+        "published": {
+            "total": 3,
+            "ukraine_priority": 0,
+            "with_images": 1,
+            "text_only": 2,
+            "sources": {
+                "Slobodna dalmacija": 1,
+                "023": 2
             }
         },
         "models_used": {
