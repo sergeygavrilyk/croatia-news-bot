@@ -1,42 +1,5 @@
 [
     {
-        "timestamp": "2026-09-28 12:01:06",
-        "execution_time": 451.2,
-        "funnel": {
-            "scraped_total": 35,
-            "scraped_by_source": {
-                "023": 10,
-                "Slobodna dalmacija": 15,
-                "Zadarski list": 10
-            },
-            "already_seen": 3,
-            "rejected_by_keywords": 3,
-            "duplicates_removed_by_ai": 0,
-            "rejection_reasons_list": []
-        },
-        "backlog": {
-            "total_size": 36,
-            "sources": {
-                "Zadarski list": 10,
-                "Slobodna dalmacija": 19,
-                "023": 7
-            }
-        },
-        "published": {
-            "total": 3,
-            "ukraine_priority": 1,
-            "with_images": 2,
-            "text_only": 1,
-            "sources": {
-                "023": 1,
-                "Slobodna dalmacija": 1,
-                "Zadarski list": 1
-            }
-        },
-        "errors_count": 0,
-        "gemini_retries": 1
-    },
-    {
         "timestamp": "2026-09-28 13:01:10",
         "execution_time": 239.5,
         "funnel": {
@@ -5782,6 +5745,67 @@
             "gemini-3.5-flash": 0
         },
         "errors_count": 0,
+        "gemini_retries": 0
+    },
+    {
+        "timestamp": "2026-10-07 12:01:03",
+        "execution_time": 158.6,
+        "funnel": {
+            "scraped_total": 35,
+            "scraped_by_source": {
+                "023": 10,
+                "Slobodna dalmacija": 15,
+                "Zadarski list": 10
+            },
+            "already_seen": 8,
+            "rejected_by_keywords": 1,
+            "duplicates_removed_by_ai": 21,
+            "rejection_reasons_list": [
+                "• Trojica maloljetnika ukrala 11 električn... ➡️ <b>Побут чужих міст</b>",
+                "• Inspektori Komisije za poštenu trgovinu ... ➡️ <b>Світовий шум</b>",
+                "• Presađeno srce mijenja biološku dob prem... ➡️ <b>Світовий шум</b>",
+                "• S 18 godina vozio bez položenog ispita, ... ➡️ <b>Побут чужих міст</b>",
+                "• Bugarska obustavila potragu. Nema tragov... ➡️ <b>Світовий шум</b>",
+                "• Njihovu ljubav razotkrile su ove fotogra... ➡️ <b>Шоу-бізнес та лайфстайл</b>",
+                "• Van Goghova multisenzorna izložba koju j... ➡️ <b>Побут чужих міст</b>",
+                "• Mate Uzinić započeo vizitaciju Župe sv. ... ➡️ <b>Побут чужих міст</b>",
+                "• Dubrovnik u plusu: rujan potvrdio odličn... ➡️ <b>Дублікат</b>",
+                "• Kradljivci novčanika haraju Rijekom i Ka... ➡️ <b>Побут чужих міст</b>",
+                "• Pezo: Gušimo se u prometu! Do kraja list... ➡️ <b>Дублікат</b>",
+                "• Bježao policiji u Opatiji pa se motocikl... ➡️ <b>Побут чужих міст</b>",
+                "• Sutra se privremeno za sav promet zatvar... ➡️ <b>Побут чужих міст</b>",
+                "• Predavanje Maje Polić o Anti Mandiću 12.... ➡️ <b>Побут чужих міст</b>",
+                "• Dubrovnik u rujnu ostvario rast dolazaka... ➡️ <b>Побут чужих міст</b>",
+                "• Eksplodirala baterija tresača maslina, č... ➡️ <b>Побут чужих міст</b>",
+                "• SDP: Pod hakerskim smo napadom, znamo i ... ➡️ <b>Несуттєва подія національного рівня</b>",
+                "• Župan Pezo najavio novu trasu brze ceste... ➡️ <b>Дублікат</b>",
+                "• Čović najavio veliku promjenu Izbornog z... ➡️ <b>Події в третіх країнах</b>",
+                "• Predivno, ovo je nešto što se rijetko mo... ➡️ <b>Шоу-бізнес та лайфстайл</b>",
+                "• ZET počeo vraćati novac građanima zbog š... ➡️ <b>Побут чужих міст</b>"
+            ]
+        },
+        "backlog": {
+            "total_size": 41,
+            "sources": {
+                "Slobodna dalmacija": 24,
+                "Zadarski list": 13,
+                "023": 4
+            }
+        },
+        "published": {
+            "total": 2,
+            "ukraine_priority": 0,
+            "with_images": 0,
+            "text_only": 2,
+            "sources": {
+                "023": 2
+            }
+        },
+        "models_used": {
+            "gemini-3.5-flash-lite": 1,
+            "gemini-3.5-flash": 0
+        },
+        "errors_count": 1,
         "gemini_retries": 0
     }
 ]
