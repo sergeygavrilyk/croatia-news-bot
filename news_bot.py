@@ -11,9 +11,10 @@ import shutil
 from urllib.parse import urlparse
 from dotenv import load_dotenv
 from google import genai
-from google.genai import types  # ДОДАЄМО ЦЕ
+from google.genai import types  
 from pydantic import BaseModel, Field
 import cloudscraper  
+from tenacity import retry, stop_after_attempt, wait_exponential
 
 # Додаємо маскування під звичайний браузер
 feedparser.USER_AGENT = 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36'
@@ -32,7 +33,6 @@ TELEGRAM_CHANNEL_ID = os.getenv('TELEGRAM_CHANNEL_ID')
 GEMINI_API_KEY = os.getenv('GEMINI_API_KEY')
 ADMIN_CHAT_ID = os.getenv('ADMIN_CHAT_ID') 
 
-
 HISTORY_FILE = 'posted_news.txt'
 TITLES_FILE = 'posted_titles.txt'
 BACKLOG_FILE = 'news_backlog.json'
@@ -42,11 +42,21 @@ ANALYTICS_FILE = 'analytics.json'
 MAX_HISTORY_SIZE = 1000 
 MAX_AGE_SECONDS = 43200 # 12 годин
 BATCH_SIZE = 3 # 3 новини за один запуск
-# ===================================================
 
 client = genai.Client(api_key=GEMINI_API_KEY)
+# ===================================================
 
+# --- PYDANTIC СХЕМИ ---
+class RejectedItem(BaseModel):
+    id: int
+    entities_found: list[str] = Field(description="3-5 ключових фігурантів, компаній, цифр або локацій")
+    reason: str
 
+class NewsFilterResponse(BaseModel):
+    keep: list[int]
+    rejected: list[RejectedItem]
+
+# --- ДОПОМІЖНІ ФУНКЦІЇ ---
 def trim_history(filename, max_lines=1000):
     try:
         if os.path.exists(filename):
@@ -61,7 +71,6 @@ def trim_history(filename, max_lines=1000):
 def send_alert_to_admin(message):
     if not ADMIN_CHAT_ID: 
         return
-        
     api_url = f"https://api.telegram.org/bot{TELEGRAM_BOT_TOKEN}/sendMessage"
     try:
         response = requests.post(api_url, data={'chat_id': ADMIN_CHAT_ID, 'text': f"⚠️ ALARM: {message}"})
@@ -89,12 +98,9 @@ def load_backlog():
         logging.warning(f"⚠️ Не вдалося завантажити {BACKLOG_FILE} (можливо, файл пошкоджений): {e}. Починаємо з пустого списку.")
         return []
 
-
 def save_backlog(backlog):
-    # Робимо бекап старого файлу перед перезаписом
     if os.path.exists(BACKLOG_FILE):
         shutil.copy2(BACKLOG_FILE, BACKLOG_FILE + '.bak')
-        
     with open(BACKLOG_FILE, 'w', encoding='utf-8') as f:
         json.dump(backlog, f, ensure_ascii=False, indent=4)
 
@@ -119,7 +125,6 @@ def send_analytics_to_admin(stats):
     backlog_src_str = ", ".join([f"{k}: {v}" for k, v in stats['backlog']['sources'].items()]) if stats['backlog']['sources'] else "Порожньо"
     pub_src_str = ", ".join([f"{k}: {v}" for k, v in stats['published']['sources'].items()]) if stats['published']['sources'] else "Немає"
 
-    # Формуємо блок із деталями відхилень Gemini, якщо вони є
     reasons_list = stats['funnel'].get('rejection_reasons_list', [])
     reasons_str = "\n".join(reasons_list) if reasons_list else "Нічого не відсіяно або немає деталей"
 
@@ -133,22 +138,20 @@ def send_analytics_to_admin(stats):
         f"▪️ Пропущено (старі/вже в історії): {stats['funnel']['already_seen']}\n"
         f"▪️ Відсіяно фільтрами (код): {stats['funnel']['rejected_by_keywords']}\n"
         f"▪️ Відсіяно Gemini (дублі/історія): {stats['funnel']['duplicates_removed_by_ai']}\n\n"
-        f"❌ <b>Чому ШІ відхилив новини цього разу:</b>\n"
+        f"❌ <b>Чому ШІ відхилив новини:</b>\n"
         f"{reasons_str}\n\n"
         f"📥 <b>Беклог (очікують ШІ-валідації: {stats['backlog']['total_size']}):</b>\n"
         f"▪️ {backlog_src_str}\n\n"
         f"✅ <b>Опубліковано: {stats['published']['total']}</b>\n"
         f"▪️ Формат: З фото ({stats['published']['with_images']}) | Текст ({stats['published']['text_only']})\n"
         f"▪️ Пріоритет 🇺🇦: {stats['published']['ukraine_priority']}\n"
-        f"▪️ Джерела: {pub_src_str}"
+        f"▪️ Джерела: {pub_src_str}\n\n"
         f"🤖 <b>ШІ моделі:</b> Lite: {stats['models_used'].get('gemini-3.5-flash-lite', 0)} | Pro: {stats['models_used'].get('gemini-3.5-flash', 0)}\n\n"
     )
     
     api_url = f"https://api.telegram.org/bot{TELEGRAM_BOT_TOKEN}/sendMessage"
     try:
-        response = requests.post(api_url, data={'chat_id': ADMIN_CHAT_ID, 'text': message, 'parse_mode': 'HTML'})
-        if response.status_code != 200:
-            logging.error(f"Помилка відправки в Telegram: {response.text}")
+        requests.post(api_url, data={'chat_id': ADMIN_CHAT_ID, 'text': message, 'parse_mode': 'HTML'})
     except Exception as e: 
         logging.error(f"Збій з'єднання з Telegram API: {e}")
 
@@ -177,9 +180,7 @@ def get_source_name(url):
     except: return "Джерело"
 
 def is_quality_article(title, description, url):
-    unwanted_url_categories = [
-        '/sport/', '/scena/', '/lifestyle/', '/magazin/'
-    ]
+    unwanted_url_categories = ['/sport/', '/scena/', '/lifestyle/', '/magazin/']
     url_lower = url.lower()
     if any(category in url_lower for category in unwanted_url_categories):
         return False
@@ -191,7 +192,6 @@ def is_quality_article(title, description, url):
     ]
     
     text_to_check = f"{title} {description} {url}".lower()
-    
     for word in unwanted_keywords:
         if re.search(rf'\b{word}\b', text_to_check):
             return False
@@ -203,22 +203,125 @@ def is_quality_article(title, description, url):
     if letters and (sum(1 for c in letters if c.isupper()) / len(letters)) > 0.4: return False
     
     return True
-class RejectedItem(BaseModel):
-    id: int
-    reason: str
 
-class NewsFilterResponse(BaseModel):
-    keep: list[int]
-    rejected: list[RejectedItem]
+# --- ІНТЕГРАЦІЯ TENACITY ТА GEMINI ---
+
+@retry(stop=stop_after_attempt(4), wait=wait_exponential(multiplier=2, min=5, max=60))
+def call_gemini_json(client, prompt, stats=None):
+    models_to_try = ['gemini-3.5-flash', 'gemini-3.5-flash-lite']
+    last_error = None
+    
+    for current_model in models_to_try:
+        try:
+            response = client.models.generate_content(
+                model=current_model, 
+                contents=prompt, 
+                config=types.GenerateContentConfig(
+                    response_mime_type="application/json",
+                    response_schema=NewsFilterResponse,
+                    temperature=0.0,
+                    safety_settings=[
+                        types.SafetySetting(category="HARM_CATEGORY_HARASSMENT", threshold="BLOCK_NONE"),
+                        types.SafetySetting(category="HARM_CATEGORY_HATE_SPEECH", threshold="BLOCK_NONE"),
+                        types.SafetySetting(category="HARM_CATEGORY_SEXUALLY_EXPLICIT", threshold="BLOCK_NONE"),
+                        types.SafetySetting(category="HARM_CATEGORY_DANGEROUS_CONTENT", threshold="BLOCK_NONE"),
+                    ]
+                )
+            )
+            
+            if not response or not getattr(response, 'text', None):
+                raise ValueError(f"Порожня відповідь (None) з моделі {current_model}")
+            
+            if stats is not None:
+                stats["models_used"][current_model] = stats["models_used"].get(current_model, 0) + 1
+                
+            return response
+            
+        except Exception as e:
+            logging.warning(f"⚠️ Дедуплікація: Модель {current_model} недоступна ({e}). Перемикаємось...")
+            last_error = e
+            time.sleep(5) 
+            
+    if stats is not None: stats["gemini_retries"] += 1
+    raise last_error
+
+@retry(stop=stop_after_attempt(4), wait=wait_exponential(multiplier=2, min=15, max=60))
+def generate_news_texts(client, prompt, expected_count, stats=None):
+    models_to_try = ['gemini-3.5-flash-lite', 'gemini-3.5-flash']
+    last_error = None
+    
+    for current_model in models_to_try:
+        try:
+            response = client.models.generate_content(
+                model=current_model, 
+                contents=prompt,
+                config=types.GenerateContentConfig(
+                    temperature=0.1,
+                    safety_settings=[
+                        types.SafetySetting(category="HARM_CATEGORY_HARASSMENT", threshold="BLOCK_NONE"),
+                        types.SafetySetting(category="HARM_CATEGORY_HATE_SPEECH", threshold="BLOCK_NONE"),
+                        types.SafetySetting(category="HARM_CATEGORY_SEXUALLY_EXPLICIT", threshold="BLOCK_NONE"),
+                        types.SafetySetting(category="HARM_CATEGORY_DANGEROUS_CONTENT", threshold="BLOCK_NONE"),
+                    ]
+                )
+            )
+            
+            if not response or not getattr(response, 'text', None):
+                raise ValueError(f"Порожня відповідь від {current_model}")
+                
+            logging.info(f"Текст від Gemini ({current_model}):\n{response.text}")
+                
+            # Жорстке видалення галюцинацій (Грецькі та Іврит)
+            HOMOGLYPHS = {
+                'ά': 'а', 'α': 'а', 'ό': 'о', 'ο': 'о', 
+                'έ': 'е', 'ε': 'е', 'ί': 'і', 'ι': 'і', 
+                'ή': 'и', 'η': 'и', 'ν': 'н', 'Ν': 'Н',
+                'ב': 'б', 'ب': 'б',
+                'є́': 'є', 'і́': 'і'
+            }
+            clean_text = response.text
+            for bad_char, good_char in HOMOGLYPHS.items():
+                clean_text = clean_text.replace(bad_char, good_char)
+                
+            texts = [t.strip() for t in clean_text.strip().split('|||') if t.strip()]
+            
+            if len(texts) != expected_count: 
+                raise ValueError(f"Невірна кількість текстів від {current_model}: очікували {expected_count}, отримали {len(texts)}")
+                
+            if stats is not None:
+                stats["models_used"][current_model] = stats["models_used"].get(current_model, 0) + 1
+                
+            return response, texts
+            
+        except Exception as e:
+            logging.warning(f"⚠️ Переклад: Модель {current_model} недоступна ({e}). Перемикаємось...")
+            last_error = e
+            time.sleep(5)
+            
+    if stats is not None: stats["gemini_retries"] += 1
+    raise last_error
+
+@retry(stop=stop_after_attempt(4), wait=wait_exponential(multiplier=2, min=3, max=30))
+def execute_telegram_request(api_url, payload):
+    resp = requests.post(api_url, data=payload)
+    if resp.status_code == 400 and "parse entities" in resp.text.lower():
+        logging.warning("⚠️ Помилка HTML-розмітки. Відправляємо без HTML...")
+        if 'parse_mode' in payload: del payload['parse_mode']
+        resp = requests.post(api_url, data=payload)
+    
+    if resp.status_code != 200: 
+        raise Exception(f"Telegram Error: {resp.text}")
+    return True
+
+# --- ОСНОВНА ЛОГІКА ---
 
 def deduplicate_news(client, articles, history_titles=None, stats=None):
     if not articles: return articles
         
     logging.info("Аналіз на дублікати (включно з історією) через Gemini...")
-    
     recent_history = history_titles[-75:] if history_titles else []
     prompt_data = [{"id": i, "title": a["title"], "description": a.get("description", "")} for i, a in enumerate(articles)]
-    # 1. ДОДАЄМО ЛОГУВАННЯ ЗАГОЛОВКІВ (Щоб ви бачили, що саме він відхиляє)
+    
     titles_log = "\n".join([f"[{i}] {a['title']}" for i, a in enumerate(articles)])
     logging.info(f"📋 Кандидати на фільтрацію:\n{titles_log}")
 
@@ -241,13 +344,12 @@ def deduplicate_news(client, articles, history_titles=None, stats=None):
     1. СПОРТ: Будь-які матчі, турніри, результати, трансфери, спортсмени.
     2. РЕКЛАМА: Спонсорські матеріали, промо-акції, розіграші.
     3. ПОБУТ ЧУЖИХ МІСТ: Ремонти доріг, відключення води, локальні затори, страйки комунальників, дрібні ДТП у Загребі, Спліті, Рієці чи БУДЬ-ЯКОМУ іншому місті, ОКРІМ Задара.
-    4. СВІТОВИЙ ШУМ ТА ЛАЙФСТАЙЛ: Абстрактна наука (як-от дослідження Гарварда), поради дієтологів, рецепти, психологія, шоу-бізнес та події в третіх країнах, ЯКЩО вони не стосуються безпосередньо Хорватії чи України.
+    4. СВІТОВИЙ ШУМ ТА ЛАЙФСТАЙЛ: Абстрактна наука, поради дієтологів, рецепти, шоу-бізнес та події в третіх країнах, ЯКЩО вони не стосуються безпосередньо Хорватії чи України.
 
     КРОК 5. ТЕМАТИКА (ЩО ОБОВ'ЯЗКОВО ЗАЛИШИТИ): 
-    Залишай ТІЛЬКИ ті новини, які пройшли Кроки 1-4 і належать до однієї з трьох категорій:
-    1. ЗАДАР (Пріоритет №1): Побут, перекриття вулиць, тарифи, ремонти, відключення світла/води, погода, місцевий кримінал та події в місті Задар і Задарській жупанії. 
-    2. ХОРВАТІЯ (Національний рівень): Важливі події всієї країни — великий кримінал, політика, економіка (ціни, податки, будівництво), надзвичайні ситуації.
-    3. УКРАЇНА ТА БІЖЕНЦІ: Головні події в Україні (війна, енергетика), рішення ЄС (Директива 2001/55), виплати та правила перетину кордону.
+    1. ЗАДАР (Пріоритет №1): Побут, перекриття вулиць, тарифи, ремонти, відключення світла/води, погода, місцевий кримінал. 
+    2. ХОРВАТІЯ (Національний рівень): Важливі події всієї країни — великий кримінал, політика, економіка.
+    3. УКРАЇНА ТА БІЖЕНЦІ: Головні події в Україні (війна, енергетика), рішення ЄС (Директива 2001/55), виплати.
 
     <CANDIDATES>
     {json.dumps(prompt_data, ensure_ascii=False, indent=2)}
@@ -259,92 +361,57 @@ def deduplicate_news(client, articles, history_titles=None, stats=None):
     
     Поверни результат СУВОРО у форматі валідного JSON-об'єкта з двома ключами:
     1. "keep": масив ID новин, які треба ЗАЛИШИТИ (наприклад, [0, 2]).
-    2. "rejected": масив об'єктів для відхилених новин, де кожен містить "id" та коротку українську "reason" (наприклад: "Спорт", "Дублікат", "Побут Спліта", "Вже є в історії", "Світовий шум").
-    
-    Більше ніякого тексту, тільки чистий JSON.
+    2. "rejected": масив об'єктів для відхилених новин, де кожен містить:
+       - "id": номер новини,
+       - "entities_found": масив з 3-5 ключових сутностей (фігуранти, компанії, локації),
+       - "reason": коротка причина відхилення (наприклад: "Спорт", "Побут Спліта").
     """
 
-    
-    max_retries = 3
-    for attempt in range(max_retries):
-        try:
-            response = client.models.generate_content(
-                model='gemini-3.5-flash-lite', 
-                contents=prompt,
-                # 2. ДОДАЄМО ТЕМПЕРАТУРУ 0.0 ДЛЯ СТАБІЛЬНОСТІ
-                config=types.GenerateContentConfig(
-                    response_mime_type="application/json",
-                    response_schema=NewsFilterResponse,
-                    temperature=0.0, 
-                    safety_settings=[
-                        types.SafetySetting(category="HARM_CATEGORY_HARASSMENT", threshold="BLOCK_NONE"),
-                        types.SafetySetting(category="HARM_CATEGORY_HATE_SPEECH", threshold="BLOCK_NONE"),
-                        types.SafetySetting(category="HARM_CATEGORY_SEXUALLY_EXPLICIT", threshold="BLOCK_NONE"),
-                        types.SafetySetting(category="HARM_CATEGORY_DANGEROUS_CONTENT", threshold="BLOCK_NONE"),
-                    ]
-                )
-            )
-            
-            # ДОДАЄМО ЗАХИСТ ТУТ
-            if not response or not getattr(response, 'text', None):
-                raise ValueError("Gemini повернув порожню відповідь (None) під час дедуплікації.")
+    try:  
+        response = call_gemini_json(client, prompt, stats)
+        text_response = response.text.strip()
+        
+        if "```json" in text_response:
+            text_response = text_response.split("```json")[1].split("```")[0].strip()
+        elif "```" in text_response:
+            text_response = text_response.split("```")[1].split("```")[0].strip()
 
-            logging.info(f"Промпт до Gemini містив {len(articles)} новин.")
-            text_response = response.text.strip()
-            logging.info(f"Відповідь Gemini: {text_response}")
-            
-            # Очистка від Markdown-блоків, якщо вони є
-            if "```json" in text_response:
-                text_response = text_response.split("```json")[1].split("```")[0].strip()
-            elif "```" in text_response:
-                text_response = text_response.split("```")[1].split("```")[0].strip()
+        data = json.loads(text_response)  
+        
+        keep_ids = [int(item) for item in data.get("keep", []) if str(item).isdigit()]
+        rejected_items = data.get("rejected", [])
+        
+        filtered_articles = [articles[i] for i in keep_ids if i < len(articles)]  
+        
+        rejection_log = []
+        for item in rejected_items:
+            if isinstance(item, dict) and 'id' in item:
+                idx = int(item['id'])
+                reason = item.get('reason', 'Не вказано')
+                if idx < len(articles):
+                    title = articles[idx]['title']
+                    rejection_log.append(f"• {title[:40]}... ➡️ <b>{reason}</b>")
+        
+        if stats is not None:
+            stats["funnel"]["rejection_reasons_list"] = rejection_log
 
-            data = json.loads(text_response)  
-            
-            keep_ids = [int(item) for item in data.get("keep", []) if str(item).isdigit()]
-            rejected_items = data.get("rejected", [])
-            
-            filtered_articles = [articles[i] for i in keep_ids if i < len(articles)]  
-            
-            # Збираємо причини відхилень для аналітики без БД
-            rejection_log = []
-            for item in rejected_items:
-                if isinstance(item, dict) and 'id' in item:
-                    idx = int(item['id'])
-                    reason = item.get('reason', 'Не вказано')
-                    if idx < len(articles):
-                        title = articles[idx]['title']
-                        rejection_log.append(f"• {title[:40]}... ➡️ <b>{reason}</b>")
-            
-            # Зберігаємо у словник статистики
-            if stats is not None:
-                stats["funnel"]["rejection_reasons_list"] = rejection_log
-
-            removed_count = len(articles) - len(filtered_articles)
-            if removed_count > 0: 
-                logging.info(f"🗑️ Відсіяно ШІ (дублі/спам/історія): {removed_count}")
-                for log_entry in rejection_log:
-                    logging.info(f"   {log_entry.replace('<b>', '').replace('</b>', '')}")
-                    
-            return filtered_articles
-            
-        except Exception as e:
-            logging.error(f"Помилка дедуплікації (спроба {attempt+1}/{max_retries}): {e}")
-            if attempt < max_retries - 1:
-                sleep_time = 10 * (2 ** attempt)  # експоненційний ретрай
-                time.sleep(min(sleep_time, 60))
-            else:
-                logging.error(f"❌ Gemini API дедуплікації недоступний після {max_retries} спроб. Пропускаємо фільтрацію без втрати новин.")
-                return articles
+        removed_count = len(articles) - len(filtered_articles)
+        if removed_count > 0: 
+            logging.info(f"🗑️ Відсіяно ШІ (дублі/спам/історія): {removed_count}")
+            for log_entry in rejection_log:
+                logging.info(f"   {log_entry.replace('<b>', '').replace('</b>', '')}")
+                
+        return filtered_articles
+        
+    except Exception as e:
+        logging.error(f"❌ Gemini API дедуплікації недоступний: {e}. Пропускаємо фільтрацію.")
+        return articles
 
 def prioritize_ukraine_news(backlog_items):
-    # Очищений і значно точніший Regex-список
     ukraine_keywords = [
         r'\bukrajin', r'\bdijaspor', r'\bzelensk', r'\bzelenšk', r'\bkijev', 
         r'\bodesa', r'\bizbjeglic', r'\bhumanitar', r'\bmigrant',
-        # Шукаємо комбінації слів (наприклад, privremena zaštita, privremenu zaštitu)
         r'\bprivremen\w*\s+zaštit', 
-        # Директива 2001/55
         r'\bdirektiv\w*\s*2001'
     ]
     
@@ -378,12 +445,10 @@ def scrape_feeds(stats=None):
         if stats is not None and "scraped_by_source" not in stats["funnel"]:
             stats["funnel"]["scraped_by_source"] = {}
             
-        source_count = 0  # ВИПРАВЛЕНО: Ініціалізуємо змінну перед циклом
+        source_count = 0 
         
         try: 
-            headers = {
-                'Accept': 'application/rss+xml, application/xml, text/xml, */*'
-            }
+            headers = {'Accept': 'application/rss+xml, application/xml, text/xml, */*'}
             response = scraper.get(feed_url, headers=headers, timeout=15)
             
             if response.status_code not in [200, 301, 302]:
@@ -450,10 +515,8 @@ def process_backlog(stats=None):
     all_sources.sort()
     if not all_sources: return
     
-    import random
-    
     ordered_sources = all_sources.copy()
-    random.shuffle(ordered_sources) # Випадково перемішуємо джерела при кожному запуску
+    random.shuffle(ordered_sources)
     target_source = ordered_sources[0]
     
     logging.info(f"🎲 Рандомний порядок джерел на цей запуск: {ordered_sources}")
@@ -470,10 +533,8 @@ def process_backlog(stats=None):
                 candidate_batch.append(item)
                 used_urls.add(item['url'])
         else:
-            # Зустріли першу не-українську новину — далі йдуть звичайні, виходимо з циклу
             break
                 
-    # --- ВИПРАВЛЕНИЙ АЛГОРИТМ ЧЕРГИ (Рівномірний розподіл по 1 новині) ---
     while len(candidate_batch) < 25:
         added_this_round = False
         for src in ordered_sources:
@@ -482,15 +543,14 @@ def process_backlog(stats=None):
                     candidate_batch.append(item)
                     used_urls.add(item['url'])
                     added_this_round = True
-                    break  # Взяли 1 новину з джерела — йдемо до наступного джерела
+                    break 
             if len(candidate_batch) >= 25: break
-        if not added_this_round: break # Якщо всі джерела порожні — виходимо
+        if not added_this_round: break 
             
     candidate_batch = candidate_batch[:25]
     if not candidate_batch: return
 
     evaluated_urls = {item['url'] for item in candidate_batch}
-
     history_titles = load_history(TITLES_FILE)
     len_before = len(candidate_batch)
     candidate_batch = deduplicate_news(client, candidate_batch, history_titles, stats=stats)
@@ -509,9 +569,9 @@ def process_backlog(stats=None):
     1. ГЕОГРАФІЯ: Зберігай оригінальну країну події. Якщо подія сталася в Хорватії — пиши про Хорватію, якщо в іншій країні (світові новини) — так і залишай. "Хорвати" — це місцеві жителі. НІКОЛИ не міняй місцями слова "хорвати"/"Хорватія" та "українці"/"Україна", якщо цього немає в оригінальному тексті.
     2. ДЕТАЛІЗАЦІЯ ДОКУМЕНТІВ (ДИРЕКТИВА 2001/55/ЄС): Якщо новина стосується тимчасового захисту, прав біженців, виплат чи документів, ПЕРЕКЛАДАЙ ЇЇ МАКСИМАЛЬНО ДЕТАЛЬНО. Не скорочуй жодної цифри, дати чи юридичної назви. Додай на початок заголовка емодзі 📄 або 🇪🇺.
     3. ПРІОРИТЕТ "УКРАЇНА": Якщо в оригінальній новині згадується Україна, українці, війна або біженці — обов'язково постав емодзі 🇺🇦 на самий початок заголовка та винеси цю інформацію у перший абзац, щоб привернути увагу.
-    4. ПРИРОДНІСТЬ МОВИ ТА СЛОВНИК: Перекладай живою та природною українською мовою. КАТЕГОРИЧНО ЗАБОРОНЕНО вигадувати неіснуючі слова (наприклад, замість кальки "бізшрний" чи "бізарний" використовуй існуючі аналоги: "дивний", "курйозний", "химерний"). Усі слова у твоєму тексті мають існувати в словнику української мови.
+    4. ПРИРОДНІСТЬ МОВИ ТА СЛОВНИК: Перекладай живою та природною українською мовою. УНИКАЙ ДОСЛІВНОГО ПЕРЕКЛАДУ (кальок) — передавай суть фрази, а не перекладай слово за словом. КАТЕГОРИЧНО ЗАБОРОНЕНО вигадувати неіснуючі слова (наприклад, замість кальки "бізшрний" чи "бізарний" використовуй існуючі аналоги: "дивний", "курйозний", "химерний"). Усі слова у твоєму тексті мають існувати в словнику української мови.
     5. ТОПОНІМИ ТА ІМЕНА: Усі хорватські імена, прізвища, назви вулиць та міст (наприклад, Задар, Спліт, Загреб) обов'язково транслітеруй українською мовою. Жодних латинських літер у тексті (крім хештегів у кінці).
-    6. ЖУРНАЛІСТСЬКИЙ СТИЛЬ (АНТИ-БЮРОКРАТІЯ): Пиши у стилі сучасного Telegram-каналу. Уникай сухого поліцейського сленгу та дослівного перекладу юридичних термінів. Наприклад, "prekršajni odjel" адаптуй як "відділ з адміністративних правопорушень" (а не "проміжний відділ"). Роби текст легким для читання. Абзаци мають бути короткими (не більше 3-4 речень).
+    6. ЖУРНАЛІСТСЬКИЙ СТИЛЬ (АНТИ-КЛІКБЕЙТ): Пиши у стриманому стилі якісних медіа (як BBC). КАТЕГОРИЧНО ЗАБОРОНЕНО використовувати жовтий клікбейт та штучні епітети (наприклад, "зіркова", "шокуюча", "скандальна", "кривава"). Роби текст легким для читання. Абзаци мають бути короткими (не більше 3-4 речень). Уникай сухого поліцейського сленгу та дослівного перекладу юридичних термінів. Наприклад, "prekršajni odjel" адаптуй як "відділ з адміністративних правопорушень" (а не "проміжний відділ"). 
     7. НІЯКОГО ШІ-КОНТЕКСТУ: Видавай СУВОРО лише готовий текст новини. Жодних вступних фраз, привітань, коментарів чи висновків від себе. Зберігай абсолютну журналістську об'єктивність.
     8. АКЦЕНТИ: Виділяй жирним шрифтом (в тегах <b>) ключові суми штрафів, дати, імена посадовців або назви законів, щоб текст було зручно читати.
     9. ХЕШТЕГИ: В самому кінці тексту обов'язково додай 2-3 хештеги з нового рядка. 
@@ -541,83 +601,11 @@ def process_backlog(stats=None):
     5. ФОРМАТ ВИВОДУ: Розділяй готові тексти новин СУВОРО рядком `|||`. Не додавай жодних своїх коментарів на початку чи в кінці всієї відповіді.
     """
 
-    generated_texts = []
-    logging.info("Очікування перед викликом Gemini API...")
     time.sleep(15)
-
-    for attempt in range(3):
-        success = False
-        clean_text = ""
-        
-        # Масив моделей для спроб: спочатку швидка, потім надійна
-        models_to_try = ['gemini-3.5-flash-lite', 'gemini-3.5-flash']
-        
-        for current_model in models_to_try:
-            try:
-                response = client.models.generate_content(
-                    model=current_model, 
-                    contents=prompt,
-                    config=types.GenerateContentConfig(
-                        safety_settings=[
-                            types.SafetySetting(category="HARM_CATEGORY_HARASSMENT", threshold="BLOCK_NONE"),
-                            types.SafetySetting(category="HARM_CATEGORY_HATE_SPEECH", threshold="BLOCK_NONE"),
-                            types.SafetySetting(category="HARM_CATEGORY_SEXUALLY_EXPLICIT", threshold="BLOCK_NONE"),
-                            types.SafetySetting(category="HARM_CATEGORY_DANGEROUS_CONTENT", threshold="BLOCK_NONE"),
-                        ]
-                    )
-                )
-                
-                # 1. СПОЧАТКУ ЗАХИСТ ВІД ПОРОЖНЬОЇ ВІДПОВІДІ (Safety Filters)
-                if not response or not getattr(response, 'text', None):
-                    raise ValueError(f"Порожня відповідь від {current_model}")
-                
-                # Якщо успіх - зберігаємо текст і виходимо з внутрішнього циклу
-                clean_text = response.text
-                success = True
-                if stats is not None: 
-                    stats["models_used"][current_model] += 1
-                break 
-                
-            except Exception as e:
-                logging.warning(f"Модель {current_model} недоступна або видала помилку: {e}. Пробуємо іншу...")
-                time.sleep(15) # Пауза перед наступною моделлю
-
-        # Якщо жодна з моделей не спрацювала в цій спробі
-        if not success:
-            logging.warning(f"Всі моделі недоступні. Очікування 60с (Спроба {attempt+1}/3)")
-            if stats is not None: stats["gemini_retries"] += 1
-            time.sleep(60)
-            continue # Переходимо до наступної спроби (attempt)
-
-        # 2. ЯКЩО ВСЕ ОК - ТОДІ ЛОГУЄМО І ПРАЦЮЄМО З ТЕКСТОМ
-        logging.info(f"Текст від Gemini:\n{clean_text}") 
-        
-        # --- ЖОРСТКЕ ВИДАЛЕННЯ ГАЛЮЦИНАЦІЙ ШІ ---
-        HOMOGLYPHS = {
-            # Грецькі
-            'ά': 'а', 'α': 'а', 'ό': 'о', 'ο': 'о', 
-            'έ': 'е', 'ε': 'е', 'ί': 'і', 'ι': 'і', 
-            'ή': 'и', 'η': 'и', 'ν': 'н', 'Ν': 'Н',
-            # Іврит та арабська
-            'ב': 'б', 'ب': 'б',
-            # Зайві наголоси (комбіновані символи)
-            'є́': 'є', 'і́': 'і'
-        }
-        
-        for bad_char, good_char in HOMOGLYPHS.items():
-            clean_text = clean_text.replace(bad_char, good_char)
-            
-        generated_texts = [t.strip() for t in clean_text.strip().split('|||') if t.strip()]
-        
-        if len(generated_texts) == len(batch):
-            break # Успішно згенерували потрібну кількість текстів, виходимо з головного циклу
-        else:
-            logging.warning(f"Gemini повернув {len(generated_texts)} текстів, а треба {len(batch)}. Повторна спроба...")
-            if stats is not None: stats["gemini_retries"] += 1
-            time.sleep(15)
-            
-    if not generated_texts: 
-        logging.error("❌ Не вдалося згенерувати тексти після 3 спроб. Скасування публікації.")
+    try:
+        response, generated_texts = generate_news_texts(client, prompt, len(batch), stats)
+    except Exception as e:
+        logging.error(f"❌ Не вдалося згенерувати тексти після 3 спроб: {e}. Скасування публікації.")
         if stats is not None: stats["errors_count"] += 1  
         return
 
@@ -650,55 +638,32 @@ def process_backlog(stats=None):
         else:
             if stats is not None: stats["errors_count"] += 1
 
-    # Зберігаємо список URL новин, які пройшли ШІ-фільтр (і залишаються в роботі або були відправлені)
-    # Усі новини, які були в candidate_batch, але відсіяні Gemini або відправлені, 
-    # вилучаємо з беклогу, щоб вони не крутилися там повторно.
     approved_urls = {item['url'] for item in candidate_batch}
     sent_urls = set(successful_urls)
     
-    # Залишаємо в беклозі лише ті новини з candidate_batch, які ШІ залишив (keep), але які ще не пішли в батч на відправку,
-    # А ТАКОЖ ті новини з загального беклогу, які взагалі не брали участь у цьому батчі (не увійшли в candidate_batch).
     candidate_urls = {item['url'] for item in candidate_batch}
     rejected_urls = candidate_urls - approved_urls
     
     remaining_backlog = [item for item in backlog if item['url'] not in evaluated_urls or (item['url'] in approved_urls and item['url'] not in sent_urls)]
-    
     remaining_backlog.sort(key=lambda x: x.get('timestamp', 0), reverse=True)
     save_backlog(remaining_backlog[:30])
 
 def send_to_telegram(text, url, source_name, image_url=None, tags=""):
-    # --- Фінальний рубіж очищення від галюцинацій ШІ ---
-    HOMOGLYPHS = {
-        'ά': 'а', 'α': 'а', 'ό': 'о', 'ο': 'о', 
-        'έ': 'е', 'ε': 'е', 'ί': 'і', 'ι': 'і', 
-        'ή': 'и', 'η': 'и', 'ν': 'н', 'Ν': 'Н',
-        'ב': 'б', 'ب': 'б',
-        'є́': 'є', 'і́': 'і'
-    }
-    
-    for bad_char, good_char in HOMOGLYPHS.items():
-        text = text.replace(bad_char, good_char)
-    
-    # Розумне витягування хештегів, згенерованих Gemini в кінці тексту
     extracted_tags = ""
     parts = text.split('\n\n')
-    # Перевіряємо, чи останній абзац містить хештеги
     if parts and '#' in parts[-1]:
         extracted_tags = "\n\n" + parts[-1].strip()
-        text = '\n\n'.join(parts[:-1]) # Залишаємо основний текст без хештегів
+        text = '\n\n'.join(parts[:-1]) 
     
     crop_msg = "...\n\n👉 <i>Повні деталі читайте за посиланням нижче</i> 👇"
     
-    # Динамічний ліміт: враховуємо довжину хештегів, щоб вони помістилися
     safe_caption_limit = 920 - len(extracted_tags) - len(tags)
     
-    # Обрізка тексту
     if image_url and len(text) > safe_caption_limit: 
         text = text[:safe_caption_limit] + crop_msg
     elif not image_url and len(text) > 3900: 
         text = text[:3900] + crop_msg
     
-    # Збираємо пазл назад: Обрізаний текст + Хештеги + Джерело
     full_message = f"{text}{extracted_tags}{tags}\n\n🔗 Джерело: <a href='{url}'>{source_name}</a>"
     
     payload = {'chat_id': TELEGRAM_CHANNEL_ID, 'parse_mode': 'HTML'}
@@ -712,24 +677,12 @@ def send_to_telegram(text, url, source_name, image_url=None, tags=""):
         api_url = f"https://api.telegram.org/bot{TELEGRAM_BOT_TOKEN}/sendMessage"
     
     try:
-        resp = requests.post(api_url, data=payload)
-        
-        # ЗАХИСТ ВІД ЗЛАМАНИХ ТЕГІВ: Якщо Telegram лається на розмітку
-        if resp.status_code == 400 and "parse entities" in resp.text.lower():
-            logging.warning("⚠️ Помилка HTML-розмітки (ймовірно через обрізку тексту). Відправляємо без HTML...")
-            del payload['parse_mode'] # Видаляємо вимогу HTML
-            resp = requests.post(api_url, data=payload) # Пробуємо ще раз
-            
-        if resp.status_code != 200:
-            logging.error(f"❌ Telegram відхилив повідомлення: {resp.text}")
-            
-        return resp.status_code == 200
+        return execute_telegram_request(api_url, payload)
     except Exception as e: 
         logging.error(f"❌ Критична помилка відправки в Telegram: {e}")
         return False
 
 def main():
-    # Перевіряємо токени тут, коли скрипт безпосередньо запускається
     if not all([TELEGRAM_BOT_TOKEN, TELEGRAM_CHANNEL_ID, GEMINI_API_KEY]):
         logging.error("Критична помилка: не знайдено базові токени у файлі .env!")
         exit(1)
@@ -740,11 +693,11 @@ def main():
         "execution_time": 0,
         "funnel": {
             "scraped_total": 0,
-            "scraped_by_source": {},  # ВИПРАВЛЕНО: Додано відсутній лічильник
-            "already_seen": 0,        # ВИПРАВЛЕНО: Додано відсутній лічильник
+            "scraped_by_source": {},  
+            "already_seen": 0,        
             "rejected_by_keywords": 0,
             "duplicates_removed_by_ai": 0,
-            "rejection_reasons_list": []  # <--- Додано для консистентності
+            "rejection_reasons_list": []  
         },
         "backlog": {
             "total_size": 0,
