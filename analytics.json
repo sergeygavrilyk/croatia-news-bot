@@ -1,38 +1,5 @@
 [
     {
-        "timestamp": "2026-09-28 15:01:27",
-        "execution_time": 237.5,
-        "funnel": {
-            "scraped_total": 35,
-            "scraped_by_source": {
-                "023": 10,
-                "Slobodna dalmacija": 15,
-                "Zadarski list": 10
-            },
-            "already_seen": 21,
-            "rejected_by_keywords": 1,
-            "duplicates_removed_by_ai": 0,
-            "rejection_reasons_list": []
-        },
-        "backlog": {
-            "total_size": 71,
-            "sources": {
-                "Slobodna dalmacija": 26,
-                "023": 10,
-                "Zadarski list": 35
-            }
-        },
-        "published": {
-            "total": 0,
-            "ukraine_priority": 0,
-            "with_images": 0,
-            "text_only": 0,
-            "sources": {}
-        },
-        "errors_count": 1,
-        "gemini_retries": 3
-    },
-    {
         "timestamp": "2026-09-28 16:01:12",
         "execution_time": 236.7,
         "funnel": {
@@ -5862,6 +5829,69 @@
             "gemini-3.5-flash": 0
         },
         "errors_count": 0,
+        "gemini_retries": 0
+    },
+    {
+        "timestamp": "2026-10-07 15:01:06",
+        "execution_time": 293.8,
+        "funnel": {
+            "scraped_total": 35,
+            "scraped_by_source": {
+                "023": 10,
+                "Slobodna dalmacija": 15,
+                "Zadarski list": 10
+            },
+            "already_seen": 13,
+            "rejected_by_keywords": 1,
+            "duplicates_removed_by_ai": 23,
+            "rejection_reasons_list": [
+                "• Kanata – manifestacija koja povezuje Rab... ➡️ <b>Побут інших міст</b>",
+                "• Zajedničko uzimanje cinka i vitamina C: ... ➡️ <b>Світовий шум та лайфстайл</b>",
+                "• Rastopit će vas ove snimke iz Telašćice.... ➡️ <b>Не є критично важливою новиною</b>",
+                "• PGŽ osigurala novi kombi za OŠ Ivana Gor... ➡️ <b>Побут інших міст</b>",
+                "• Presađeno srce mijenja biološku dob prem... ➡️ <b>Світовий шум та лайфстайл</b>",
+                "• Šibenska osnovna škola traži čak 12 novi... ➡️ <b>Побут інших міст</b>",
+                "• Stefan Engler s Goranima: Švicarska daro... ➡️ <b>Побут інших міст</b>",
+                "• Van Goghova multisenzorna izložba koju j... ➡️ <b>Побут інших міст</b>",
+                "• Šibenik je u elitnom društvu! Evo zašto ... ➡️ <b>Побут інших міст</b>",
+                "• Europol upozorava: Kvantna računala prij... ➡️ <b>Світовий шум та лайфстайл</b>",
+                "• I dalje se ne preporučuje kupanje na pla... ➡️ <b>Побут інших міст</b>",
+                "• Međuljudski odnosi i prevencija nasilnič... ➡️ <b>Побут інших міст</b>",
+                "• U Gradskoj upravi zadovoljni obnovom igr... ➡️ <b>Побут інших міст</b>",
+                "• Trail u Pločama spaja prirodu, povijest ... ➡️ <b>Спорт</b>",
+                "• Dječji vrtić Viškovo proslavio 30 godina... ➡️ <b>Побут інших міст</b>",
+                "• Okusi Masne ulice: tripice, buncek, fave... ➡️ <b>Побут інших міст</b>",
+                "• Grad otvara vrata mladima: Kreće pilot-p... ➡️ <b>Побут інших міст</b>",
+                "• Dubrovnik bilježi skoro 200 tisuća manje... ➡️ <b>Дублікат</b>",
+                "• Grad Rijeka ima velika očekivanja od NPO... ➡️ <b>Побут інших міст</b>",
+                "• Zona posebnog prometnog režima nastavlja... ➡️ <b>Побут інших міст</b>",
+                "• Opasni otpad na gradilištu Termi Jodno: ... ➡️ <b>Побут інших міст</b>",
+                "• Inspektori Komisije za poštenu trgovinu ... ➡️ <b>Світовий шум</b>",
+                "• Predstečajni postupak Studenca: vjerovni... ➡️ <b>Економіка без прямого впливу</b>"
+            ]
+        },
+        "backlog": {
+            "total_size": 40,
+            "sources": {
+                "Zadarski list": 11,
+                "Slobodna dalmacija": 26,
+                "023": 3
+            }
+        },
+        "published": {
+            "total": 1,
+            "ukraine_priority": 0,
+            "with_images": 1,
+            "text_only": 0,
+            "sources": {
+                "Slobodna dalmacija": 1
+            }
+        },
+        "models_used": {
+            "gemini-3.5-flash-lite": 1,
+            "gemini-3.5-flash": 0
+        },
+        "errors_count": 1,
         "gemini_retries": 0
     }
 ]
