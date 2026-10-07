@@ -1,63 +1,5 @@
 [
     {
-        "timestamp": "2026-09-28 07:01:02",
-        "execution_time": 198.1,
-        "funnel": {
-            "scraped_total": 35,
-            "scraped_by_source": {
-                "023": 10,
-                "Slobodna dalmacija": 15,
-                "Zadarski list": 10
-            },
-            "already_seen": 2,
-            "rejected_by_keywords": 1,
-            "duplicates_removed_by_ai": 21,
-            "rejection_reasons_list": [
-                "• U Zajc stiže predstava “Kolumne zaboravl... ➡️ <b>Побут чужих міст</b>",
-                "• Nenadmašna Lena Crnojević; Vratarka Dona... ➡️ <b>Спорт</b>",
-                "• Kako preživjeti svakodnevicu malog bizni... ➡️ <b>Світовий шум та лайфстайл</b>",
-                "• Mikeu Leighu pripala Zlatna školjka na f... ➡️ <b>Світовий шум та лайфстайл</b>",
-                "• Rasprodano za sat vremena, štrudla iz Pl... ➡️ <b>Побут чужих міст</b>",
-                "• U srijedu, 30. rujna, u Slobodnoj Dalmac... ➡️ <b>Світовий шум та лайфстайл</b>",
-                "• Grlić i Marković u Art-kinu predstavili ... ➡️ <b>Побут чужих міст</b>",
-                "• Veliko srebro za Zadar; Maks Baraba vice... ➡️ <b>Спорт</b>",
-                "• Ana Juračić: ‘Premalo cijenimo rad žene ... ➡️ <b>Побут чужих міст</b>",
-                "• Klasična hrvatska četvorka u Splitu obil... ➡️ <b>Побут чужих міст</b>",
-                "• Sutra prikazivanje dokumentarnog filma ‘... ➡️ <b>Побут чужих міст</b>",
-                "• “Idiot” u Zajcu: Uprizorenje Dostojevsko... ➡️ <b>Побут чужих міст</b>",
-                "• Izbori na Fakultetu zdravstvenih studija... ➡️ <b>Побут чужих міст</b>",
-                "• U virskom naselju Kozjak podiže se javna... ➡️ <b>Вже є в історії</b>",
-                "• Teška prometna nesreća na Jadranskoj mag... ➡️ <b>Дублікат</b>",
-                "• Turisti više ne dolaze samo zbog mora, T... ➡️ <b>Світовий шум та лайфстайл</b>",
-                "• Pokrenuta web platforma za upoznavanje k... ➡️ <b>Світовий шум та лайфстайл</b>",
-                "• Javili se i iz HDZ-a, tvrde kako nije is... ➡️ <b>Побут чужих міст</b>",
-                "• Vrijeme je za reorganizaciju zamrzivača:... ➡️ <b>Світовий шум та лайфстайл</b>",
-                "• Zadar slomio Samobor u trećoj četvrtini ... ➡️ <b>Спорт</b>",
-                "• Nastavak miholjskog ljeta: Zadar i okoli... ➡️ <b>Побут чужих міст</b>"
-            ]
-        },
-        "backlog": {
-            "total_size": 25,
-            "sources": {
-                "023": 10,
-                "Slobodna dalmacija": 6,
-                "Zadarski list": 9
-            }
-        },
-        "published": {
-            "total": 3,
-            "ukraine_priority": 0,
-            "with_images": 1,
-            "text_only": 2,
-            "sources": {
-                "023": 2,
-                "Slobodna dalmacija": 1
-            }
-        },
-        "errors_count": 0,
-        "gemini_retries": 0
-    },
-    {
         "timestamp": "2026-09-28 08:01:07",
         "execution_time": 165.4,
         "funnel": {
@@ -5780,6 +5722,60 @@
         },
         "models_used": {
             "gemini-3.5-flash-lite": 0,
+            "gemini-3.5-flash": 0
+        },
+        "errors_count": 0,
+        "gemini_retries": 0
+    },
+    {
+        "timestamp": "2026-10-07 07:01:02",
+        "execution_time": 214.0,
+        "funnel": {
+            "scraped_total": 35,
+            "scraped_by_source": {
+                "023": 10,
+                "Slobodna dalmacija": 15,
+                "Zadarski list": 10
+            },
+            "already_seen": 3,
+            "rejected_by_keywords": 4,
+            "duplicates_removed_by_ai": 13,
+            "rejection_reasons_list": [
+                "• Svjetski dan cerebralne paralize u Medic... ➡️ <b>Локальна подія шкільного рівня в Задарі</b>",
+                "• Poluprazne police Studenca izgledaju kao... ➡️ <b>Побут і проблеми міста Дубровник</b>",
+                "• Rinčić je kritizirala Filipovića zbog pr... ➡️ <b>Побут і внутрішня політика міста Рієка</b>",
+                "• Srce zadarskih zbivanja na vašem ekranu:... ➡️ <b>Анонс локального сервісу і календаря подій</b>",
+                "• Gledali su u nebo i zbrajali štetu. A sa... ➡️ <b>Вже є схожа інформація в історії / загальний сільськогосподарський грант</b>",
+                "• Nova pravila za zaštitu djece na interne... ➡️ <b>Загальноєвропейські новини цифрової політики без прямого зв'язку з Хорватією чи українцями</b>",
+                "• “More nije samo turizam”: Bruxelles vidi... ➡️ <b>Загальна стратегічна розмова про економіку ЄС</b>",
+                "• Astronomi prvi put uhvatili radio signal... ➡️ <b>Світовий шум та астрономія</b>",
+                "• Ministarstvo se oglasilo o slučaju Jergo... ➡️ <b>Культурні суперечки національного рівня, не пріоритетно для діаспори</b>",
+                "• Izložba Milice Živković u Kortilu: Refle... ➡️ <b>Культурна подія в Рієці</b>",
+                "• 130 godina Guvernerove palače: Od simbol... ➡️ <b>Культурна подія в Рієці</b>",
+                "• Format koji koristi operu kao temelj, a ... ➡️ <b>Культурна подія в іншій жупанії</b>",
+                "• Zašto je najzrelija žena u predstavi upr... ➡️ <b>Театральна прем'єра, лайфстайл</b>"
+            ]
+        },
+        "backlog": {
+            "total_size": 16,
+            "sources": {
+                "023": 5,
+                "Slobodna dalmacija": 2,
+                "Zadarski list": 9
+            }
+        },
+        "published": {
+            "total": 3,
+            "ukraine_priority": 0,
+            "with_images": 2,
+            "text_only": 1,
+            "sources": {
+                "Zadarski list": 2,
+                "023": 1
+            }
+        },
+        "models_used": {
+            "gemini-3.5-flash-lite": 1,
             "gemini-3.5-flash": 0
         },
         "errors_count": 0,
