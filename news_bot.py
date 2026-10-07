@@ -301,7 +301,8 @@ def generate_news_texts(client, prompt, expected_count, stats=None):
     if stats is not None: stats["gemini_retries"] += 1
     raise last_error
 
-@retry(stop=stop_after_attempt(4), wait=wait_exponential(multiplier=2, min=3, max=30))
+# Додано reraise=True, щоб бачити справжню помилку Telegram в логах
+@retry(stop=stop_after_attempt(4), wait=wait_exponential(multiplier=2, min=3, max=30), reraise=True)
 def execute_telegram_request(api_url, payload):
     resp = requests.post(api_url, data=payload)
     if resp.status_code == 400 and "parse entities" in resp.text.lower():
@@ -310,7 +311,7 @@ def execute_telegram_request(api_url, payload):
         resp = requests.post(api_url, data=payload)
     
     if resp.status_code != 200: 
-        raise Exception(f"Telegram Error: {resp.text}")
+        raise Exception(f"Telegram Error {resp.status_code}: {resp.text}")
     return True
 
 # --- ОСНОВНА ЛОГІКА ---
@@ -679,8 +680,19 @@ def send_to_telegram(text, url, source_name, image_url=None, tags=""):
     try:
         return execute_telegram_request(api_url, payload)
     except Exception as e: 
-        logging.error(f"❌ Критична помилка відправки в Telegram: {e}")
-        return False
+        # --- ФОЛБЕК: Якщо Telegram відхилив картинку, відправляємо як текст ---
+        if image_url:
+            logging.warning(f"⚠️ Telegram відхилив картинку ({e}). Пробуємо відправити просто як текст...")
+            payload_text = {'chat_id': TELEGRAM_CHANNEL_ID, 'text': full_message, 'parse_mode': 'HTML'}
+            api_url_text = f"https://api.telegram.org/bot{TELEGRAM_BOT_TOKEN}/sendMessage"
+            try:
+                return execute_telegram_request(api_url_text, payload_text)
+            except Exception as text_e:
+                logging.error(f"❌ Критична помилка відправки тексту в Telegram: {text_e}")
+                return False
+        else:
+            logging.error(f"❌ Критична помилка відправки в Telegram: {e}")
+            return False
 
 def main():
     if not all([TELEGRAM_BOT_TOKEN, TELEGRAM_CHANNEL_ID, GEMINI_API_KEY]):
