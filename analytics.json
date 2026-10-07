@@ -1,38 +1,5 @@
 [
     {
-        "timestamp": "2026-09-28 16:01:12",
-        "execution_time": 236.7,
-        "funnel": {
-            "scraped_total": 35,
-            "scraped_by_source": {
-                "023": 10,
-                "Slobodna dalmacija": 15,
-                "Zadarski list": 10
-            },
-            "already_seen": 23,
-            "rejected_by_keywords": 4,
-            "duplicates_removed_by_ai": 0,
-            "rejection_reasons_list": []
-        },
-        "backlog": {
-            "total_size": 79,
-            "sources": {
-                "Slobodna dalmacija": 29,
-                "023": 10,
-                "Zadarski list": 40
-            }
-        },
-        "published": {
-            "total": 0,
-            "ukraine_priority": 0,
-            "with_images": 0,
-            "text_only": 0,
-            "sources": {}
-        },
-        "errors_count": 1,
-        "gemini_retries": 3
-    },
-    {
         "timestamp": "2026-09-28 19:01:12",
         "execution_time": 324.6,
         "funnel": {
@@ -5889,6 +5856,69 @@
         },
         "models_used": {
             "gemini-3.5-flash-lite": 1,
+            "gemini-3.5-flash": 0
+        },
+        "errors_count": 1,
+        "gemini_retries": 0
+    },
+    {
+        "timestamp": "2026-10-07 16:01:06",
+        "execution_time": 134.4,
+        "funnel": {
+            "scraped_total": 35,
+            "scraped_by_source": {
+                "023": 10,
+                "Slobodna dalmacija": 15,
+                "Zadarski list": 10
+            },
+            "already_seen": 12,
+            "rejected_by_keywords": 0,
+            "duplicates_removed_by_ai": 23,
+            "rejection_reasons_list": [
+                "• Glavak: Krizu troškova života ne možemo ... ➡️ <b>Загальнополітичний шум без прямого відношення до Задара чи українців</b>",
+                "• Endokrinologinja otkriva koja pitanja po... ➡️ <b>Поради дієтологів та лайфстайл</b>",
+                "• Rastopit će vas ove snimke iz Telašćice.... ➡️ <b>Світловий лайфстайл, порятунок тварини у парку</b>",
+                "• Troskot i Miletić traže “izvanredno kriz... ➡️ <b>Побут та проблеми іншого міста (Карловац)</b>",
+                "• Zajedničko uzimanje cinka i vitamina C: ... ➡️ <b>Абстрактні поради про здоров'я</b>",
+                "• Šibenska osnovna škola traži čak 12 novi... ➡️ <b>Побут чужого міста (Шибеник)</b>",
+                "• Na listi čekanja bez mjesta u vrtiću u R... ➡️ <b>Побут чужого міста (Рієка)</b>",
+                "• Presađeno srce mijenja biološku dob prem... ➡️ <b>Світовий науковий шум</b>",
+                "• Šibenik je u elitnom društvu! Evo zašto ... ➡️ <b>Туристичний матеріал про Шибеник</b>",
+                "• Za riječki Zdravstveni odgoj – 115 tisuć... ➡️ <b>Побут та бюджети чужого міста (Рієка)</b>",
+                "• Van Goghova multisenzorna izložba koju j... ➡️ <b>Події у Загребі, що не стосуються напряму Задара</b>",
+                "• Međuljudski odnosi i prevencija nasilnič... ➡️ <b>Події у чужому місті (Дубровник)</b>",
+                "• Milanović odlikovao Filipa Hrgovića Redo... ➡️ <b>Спорт (бокс)</b>",
+                "• Trail u Pločama spaja prirodu, povijest ... ➡️ <b>Спорт та активний відпочинок</b>",
+                "• “Dankobosanac”: Asteroid u Sunčevom sust... ➡️ <b>Світова наука</b>",
+                "• Okusi Masne ulice: tripice, buncek, fave... ➡️ <b>Гастрономія та побут чужого міста (Шибеник)</b>",
+                "• Budiša: Sanacija bivšeg PPK-a u Gospiću ... ➡️ <b>Побут та екологія іншого міста (Госпіч)</b>",
+                "• Dubrovnik bilježi skoro 200 tisuća manje... ➡️ <b>Дубль новини про трафік у Дубровнику (ідентична до id 19)</b>",
+                "• Bugari se oglasili o povučenom cjepivu z... ➡️ <b>Дубль або несуттєве оновлення теми скасованого бцж-щеплення</b>",
+                "• Zona posebnog prometnog režima nastavlja... ➡️ <b>Побут чужого міста (Дубровник)</b>",
+                "• Završio MED9 u Splitu. Plenković: U kont... ➡️ <b>Дубль або несуттєве оновлення саміту MED9 у Спліті</b>",
+                "• Inspektori Komisije za poštenu trgovinu ... ➡️ <b>Світовий шум (Японія)</b>",
+                "• Rimac Technology i ECOBLOX udružuju snag... ➡️ <b>Загальнонаціональна бізнес-новина високого рівня технологій</b>"
+            ]
+        },
+        "backlog": {
+            "total_size": 39,
+            "sources": {
+                "Slobodna dalmacija": 25,
+                "023": 4,
+                "Zadarski list": 10
+            }
+        },
+        "published": {
+            "total": 1,
+            "ukraine_priority": 0,
+            "with_images": 1,
+            "text_only": 0,
+            "sources": {
+                "Slobodna dalmacija": 1
+            }
+        },
+        "models_used": {
+            "gemini-3.5-flash-lite": 2,
             "gemini-3.5-flash": 0
         },
         "errors_count": 1,
