@@ -1,38 +1,5 @@
 [
     {
-        "timestamp": "2026-09-28 14:01:47",
-        "execution_time": 262.6,
-        "funnel": {
-            "scraped_total": 35,
-            "scraped_by_source": {
-                "023": 10,
-                "Slobodna dalmacija": 15,
-                "Zadarski list": 10
-            },
-            "already_seen": 18,
-            "rejected_by_keywords": 6,
-            "duplicates_removed_by_ai": 0,
-            "rejection_reasons_list": []
-        },
-        "backlog": {
-            "total_size": 58,
-            "sources": {
-                "Slobodna dalmacija": 24,
-                "023": 9,
-                "Zadarski list": 25
-            }
-        },
-        "published": {
-            "total": 0,
-            "ukraine_priority": 0,
-            "with_images": 0,
-            "text_only": 0,
-            "sources": {}
-        },
-        "errors_count": 1,
-        "gemini_retries": 3
-    },
-    {
         "timestamp": "2026-09-28 15:01:27",
         "execution_time": 237.5,
         "funnel": {
@@ -5836,6 +5803,65 @@
             "gemini-3.5-flash": 0
         },
         "errors_count": 1,
+        "gemini_retries": 0
+    },
+    {
+        "timestamp": "2026-10-07 14:01:06",
+        "execution_time": 257.6,
+        "funnel": {
+            "scraped_total": 35,
+            "scraped_by_source": {
+                "023": 10,
+                "Slobodna dalmacija": 15,
+                "Zadarski list": 10
+            },
+            "already_seen": 9,
+            "rejected_by_keywords": 3,
+            "duplicates_removed_by_ai": 18,
+            "rejection_reasons_list": [
+                "• Zajedničko uzimanje cinka i vitamina C: ... ➡️ <b>Світовий шум та лайфстайл</b>",
+                "• Presscut, FER i FIDIT razvijaju AI susta... ➡️ <b>Світовий шум</b>",
+                "• Presađeno srce mijenja biološku dob prem... ➡️ <b>Світовий шум та лайфстайл</b>",
+                "• Šibenska osnovna škola traži čak 12 novi... ➡️ <b>Побут чужих міст</b>",
+                "• Irsko predsjedništvo: Novim prijedlogom ... ➡️ <b>Світовий шум</b>",
+                "• Van Goghova multisenzorna izložba koju j... ➡️ <b>Побут чужих міст</b>",
+                "• Šibenik je u elitnom društvu! Evo zašto ... ➡️ <b>Побут чужих міст</b>",
+                "• Kada je najbolje kupiti rabljeni automob... ➡️ <b>Світовий шум</b>",
+                "• Medved: JNA 7. listopada 1991. nije uspj... ➡️ <b>Вже є в історії</b>",
+                "• Međuljudski odnosi i prevencija nasilnič... ➡️ <b>Побут чужих міст</b>",
+                "• Trail u Pločama spaja prirodu, povijest ... ➡️ <b>Спорт</b>",
+                "• Okusi Masne ulice: tripice, buncek, fave... ➡️ <b>Побут чужих міст</b>",
+                "• Dubrovnik bilježi skoro 200 tisuća manje... ➡️ <b>Дублікат</b>",
+                "• Zona posebnog prometnog režima nastavlja... ➡️ <b>Побут чужих міст</b>",
+                "• Inspektori Komisije za poštenu trgovinu ... ➡️ <b>Світовий шум</b>",
+                "• Njihovu ljubav razotkrile su ove fotogra... ➡️ <b>Світовий шум та лайфстайл</b>",
+                "• Dubrovnik u plusu: rujan potvrdio odličn... ➡️ <b>Дублікат</b>",
+                "• Dubrovnik u rujnu ostvario rast dolazaka... ➡️ <b>Побут чужих міст</b>"
+            ]
+        },
+        "backlog": {
+            "total_size": 40,
+            "sources": {
+                "Slobodna dalmacija": 30,
+                "023": 3,
+                "Zadarski list": 7
+            }
+        },
+        "published": {
+            "total": 3,
+            "ukraine_priority": 1,
+            "with_images": 3,
+            "text_only": 0,
+            "sources": {
+                "Zadarski list": 1,
+                "Slobodna dalmacija": 2
+            }
+        },
+        "models_used": {
+            "gemini-3.5-flash-lite": 1,
+            "gemini-3.5-flash": 0
+        },
+        "errors_count": 0,
         "gemini_retries": 0
     }
 ]
