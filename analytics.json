@@ -1,61 +1,5 @@
 [
     {
-        "timestamp": "2026-09-29 07:01:05",
-        "execution_time": 174.6,
-        "funnel": {
-            "scraped_total": 35,
-            "scraped_by_source": {
-                "023": 10,
-                "Slobodna dalmacija": 15,
-                "Zadarski list": 10
-            },
-            "already_seen": 1,
-            "rejected_by_keywords": 2,
-            "duplicates_removed_by_ai": 19,
-            "rejection_reasons_list": [
-                "• Vikend zajedništva i duhovnosti; Camino ... ➡️ <b>Світовий шум та лайфстайл</b>",
-                "• Ova mjesta u kuhinji gotovo nitko ne čis... ➡️ <b>Світовий шум та лайфстайл</b>",
-                "• Na Zapadnoj obali otvoren CROYA Yacht Ch... ➡️ <b>Побут чужих міст</b>",
-                "• Vodite li računa o svom srcu? Svjetski d... ➡️ <b>Світовий шум та лайфстайл</b>",
-                "• Bijele tenisice dobivaju konkurenciju: o... ➡️ <b>Світовий шум та лайфстайл</b>",
-                "• Šibenik slavi 960 godina uz velike razvo... ➡️ <b>Побут чужих міст</b>",
-                "• Zlato i srebro za KBK Velebit; Lucija To... ➡️ <b>Спорт</b>",
-                "• Pita od jabuka s prženim maslacem bit će... ➡️ <b>Світовий шум та лайфстайл</b>",
-                "• Stigli su nam sjajni dječji radovi: evo ... ➡️ <b>Побут чужих міст</b>",
-                "• Direktori i načelnici, upozorenje: vaš s... ➡️ <b>Світовий шум та лайфстайл</b>",
-                "• Zašto upalni procesi na koži izbijaju ba... ➡️ <b>Світовий шум та лайфстайл</b>",
-                "• Školske torbe teže od olova, roditelji l... ➡️ <b>Побут чужих міст</b>",
-                "• Koliko porcija cjelovitih žitarica treba... ➡️ <b>Світовий шум та лайфстайл</b>",
-                "• Gradska glazba Dubrovnik gostovala u Šib... ➡️ <b>Побут чужих міст</b>",
-                "• Pet trajnica koje će vaš vrt pretvoriti ... ➡️ <b>Світовий шум та лайфстайл</b>",
-                "• Danas sunčano i ugodno toplo, stabilno o... ➡️ <b>Вже є в історії</b>",
-                "• ‘Igor Zidić: Jesmo li živi?‘ Dubrovačka ... ➡️ <b>Побут чужих міст</b>",
-                "• U jeku štrajka opet kruži stara priča o ... ➡️ <b>Побут чужих міст</b>",
-                "• Kraće i blaže vježbanje može ublažiti bo... ➡️ <b>Світовий шум та лайфстайл</b>"
-            ]
-        },
-        "backlog": {
-            "total_size": 24,
-            "sources": {
-                "023": 9,
-                "Slobodna dalmacija": 7,
-                "Zadarski list": 8
-            }
-        },
-        "published": {
-            "total": 3,
-            "ukraine_priority": 0,
-            "with_images": 1,
-            "text_only": 2,
-            "sources": {
-                "023": 2,
-                "Slobodna dalmacija": 1
-            }
-        },
-        "errors_count": 0,
-        "gemini_retries": 0
-    },
-    {
         "timestamp": "2026-09-29 08:01:05",
         "execution_time": 168.2,
         "funnel": {
@@ -5927,6 +5871,60 @@
             "gemini-3.5-flash": 0
         },
         "errors_count": 2,
+        "gemini_retries": 0
+    },
+    {
+        "timestamp": "2026-10-08 07:01:03",
+        "execution_time": 182.4,
+        "funnel": {
+            "scraped_total": 35,
+            "scraped_by_source": {
+                "023": 10,
+                "Slobodna dalmacija": 15,
+                "Zadarski list": 10
+            },
+            "already_seen": 0,
+            "rejected_by_keywords": 1,
+            "duplicates_removed_by_ai": 14,
+            "rejection_reasons_list": [
+                "• Veliki uspjeh dalmatinskih cubera; Toni ... ➡️ <b>Спорт (змагання зі спідкубингу)</b>",
+                "• Modrić je finom premijerom u ABA ligi ku... ➡️ <b>Спорт (баскетбол)</b>",
+                "• Pitamo ih za posao, novac, a sada i za z... ➡️ <b>Світовий шум та лайфстайл (абстрактні роздуми про інтернет)</b>",
+                "• Hrvat očajan, ne zna što napraviti: ‘Dao... ➡️ <b>Світовий шум та лайфстайл (побутова історія про ремонт)</b>",
+                "• Predsjednik Milanović odlikovao Filipa H... ➡️ <b>Спорт (нагородження боксера)</b>",
+                "• Predstavljen zbornik radova ‘Tamo gdje p... ➡️ <b>Побут інших міст (презентація книги в Дубровнику)</b>",
+                "• Poziv svim ljubiteljima pedaliranja; Tra... ➡️ <b>Спорт та лайфстайл (анонс велопробігу)</b>",
+                "• U prekidu brodska linija za Elafite... ➡️ <b>Побут інших міст (скасування рейсів у Дубровнику)</b>",
+                "• Stiže nevrijeme, ne zaboravite ombrelu! ... ➡️ <b>Побут інших міст (негода в іншому регіоні)</b>",
+                "• Kuga u Rusiji? Infektologinja dr. Betica... ➡️ <b>Світовий шум (новини про чуму в Росії)</b>",
+                "• Jak vjetar prekinuo trajektnu liniju Lop... ➡️ <b>Побут інших міст (скасування поромів у Кварнері)</b>",
+                "• Što se to događa na jugu Dalmacije? Dim ... ➡️ <b>Побут інших міст (дим від пожежі в долині Неретви)</b>",
+                "• Genovska ciklona udara na Dalmaciju! ‘Gr... ➡️ <b>Дублікат (загальний прогноз погоди, є детальніший для Задара ID 24)</b>",
+                "• Danas Županijska skupština: Županija spa... ➡️ <b>Побут інших міст (фінансування телеканалу в Рієці)</b>"
+            ]
+        },
+        "backlog": {
+            "total_size": 29,
+            "sources": {
+                "023": 10,
+                "Slobodna dalmacija": 10,
+                "Zadarski list": 9
+            }
+        },
+        "published": {
+            "total": 3,
+            "ukraine_priority": 0,
+            "with_images": 3,
+            "text_only": 0,
+            "sources": {
+                "Zadarski list": 3
+            }
+        },
+        "models_used": {
+            "gemini-3.5-flash-lite": 1,
+            "gemini-3.5-flash": 1
+        },
+        "errors_count": 0,
         "gemini_retries": 0
     }
 ]
