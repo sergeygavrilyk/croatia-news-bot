@@ -1,61 +1,5 @@
 [
     {
-        "timestamp": "2026-09-29 09:01:03",
-        "execution_time": 166.1,
-        "funnel": {
-            "scraped_total": 35,
-            "scraped_by_source": {
-                "023": 10,
-                "Slobodna dalmacija": 15,
-                "Zadarski list": 10
-            },
-            "already_seen": 6,
-            "rejected_by_keywords": 1,
-            "duplicates_removed_by_ai": 19,
-            "rejection_reasons_list": [
-                "• Požar na Braču od 10. rujna proglašen ug... ➡️ <b>Побут інших міст</b>",
-                "• Zdrav početak listopada uz besplatne kon... ➡️ <b>Побут інших міст</b>",
-                "• Metkovski bend objavio snimku s vjenčanj... ➡️ <b>Світовий шум та лайфстайл</b>",
-                "• Nevjerojatna vozačica: Oko 9 ujutro u Ra... ➡️ <b>Побут інших міст</b>",
-                "• Autorski rukopis i međunarodna razmjena:... ➡️ <b>Побут інших міст</b>",
-                "• Nevjerojatno što ljudi sve bacaju u smeć... ➡️ <b>Вже є в історії</b>",
-                "• Niste zakasnili, ali budite jako spremni... ➡️ <b>Спорт</b>",
-                "• Jazine slažu ozbiljnu momčad: stigla su ... ➡️ <b>Спорт</b>",
-                "• Gotovo 52 posto hrvatskih građana namjer... ➡️ <b>Світовий шум та лайфстайл</b>",
-                "• Hrvatska industrija šećera proživljava n... ➡️ <b>Економіка без деталей</b>",
-                "• Prijeti li poništenje natječaja za autoc... ➡️ <b>Дублікат</b>",
-                "• Izložba Tatjane Masterl »Obzori i dimenz... ➡️ <b>Побут інших міст</b>",
-                "• Na Zapadnoj obali otvoren CROYA Yacht Ch... ➡️ <b>Побут інших міст</b>",
-                "• Sistem koji nikada ne iznevjeri – Noćna ... ➡️ <b>Спорт</b>",
-                "• Vodite li računa o svom srcu? Svjetski d... ➡️ <b>Світовий шум та лайфстайл</b>",
-                "• Stigli su nam sjajni dječji radovi: evo ... ➡️ <b>Побут інших міст</b>",
-                "• Uz predstavu »Mami« redatelja Marija Ban... ➡️ <b>Побут інших міст</b>",
-                "• Školske torbe teže od olova, roditelji l... ➡️ <b>Побут інших міст</b>",
-                "• Kako EFRi razvija poslijediplomsko obraz... ➡️ <b>Побут інших міст</b>"
-            ]
-        },
-        "backlog": {
-            "total_size": 30,
-            "sources": {
-                "023": 11,
-                "Slobodna dalmacija": 9,
-                "Zadarski list": 10
-            }
-        },
-        "published": {
-            "total": 3,
-            "ukraine_priority": 0,
-            "with_images": 1,
-            "text_only": 2,
-            "sources": {
-                "023": 2,
-                "Slobodna dalmacija": 1
-            }
-        },
-        "errors_count": 0,
-        "gemini_retries": 0
-    },
-    {
         "timestamp": "2026-09-29 10:01:08",
         "execution_time": 272.3,
         "funnel": {
@@ -5924,6 +5868,66 @@
                 "Slobodna dalmacija": 1,
                 "023": 1,
                 "Zadarski list": 1
+            }
+        },
+        "models_used": {
+            "gemini-3.5-flash-lite": 1,
+            "gemini-3.5-flash": 1
+        },
+        "errors_count": 0,
+        "gemini_retries": 0
+    },
+    {
+        "timestamp": "2026-10-08 09:01:07",
+        "execution_time": 191.8,
+        "funnel": {
+            "scraped_total": 35,
+            "scraped_by_source": {
+                "023": 10,
+                "Slobodna dalmacija": 15,
+                "Zadarski list": 10
+            },
+            "already_seen": 7,
+            "rejected_by_keywords": 0,
+            "duplicates_removed_by_ai": 19,
+            "rejection_reasons_list": [
+                "• Obećala mu nasljedstvo i zlato pokojnog ... ➡️ <b>Побут чужих міст (Книн) та дублікат новини про шахрайство.</b>",
+                "• Stižete na koncert Jakova Jozinovića? Po... ➡️ <b>Шоу-бізнес та лайфстайл.</b>",
+                "• Spomendan Hrvatskog sabora: prije 35 god... ➡️ <b>Історична подія, відсутність новинної цінності для щоденного інформування.</b>",
+                "• AI megaprojekt kod Topuskog. Županija mi... ➡️ <b>Побут чужих міст (Топуско) та регіональний проект поза межами Задара.</b>",
+                "• Mještanin bagerom razbio 20 metara novog... ➡️ <b>Побут чужих міст (локальний конфлікт на Пелешаці).</b>",
+                "• Žena (26) krala odjeću u trgovini u Istr... ➡️ <b>Побут чужих міст (Умаг) та дрібний кримінальний інцидент.</b>",
+                "• Veliki uspjeh dalmatinskih cubera; Toni ... ➡️ <b>Спорт (турнір зі спідкубінгу).</b>",
+                "• Starija Zadranka primila jeziv poziv, na... ➡️ <b>Дублікат новини ID 5 (вже є в історії та детальніше описано в іншому релізі).</b>",
+                "• Jutarnja pljačka banke u Višnjanu: razbo... ➡️ <b>Побут чужих міст (Вішнян) та локальний кримінал в Істрії.</b>",
+                "• Pitamo ih za posao, novac, a sada i za z... ➡️ <b>Світовий шум та лайфстайл (абстрактні роздуми про інтернет-інформацію).</b>",
+                "• ‘Pali‘ dileri u Šibeniku: policija im up... ➡️ <b>Побут чужих міст (Шибеник) та локальний кримінал.</b>",
+                "• Trojica vozača kažnjena na Krku i u Crik... ➡️ <b>Побут чужих міст (Крк, Цриквениця) та дрібні дорожні порушення.</b>",
+                "• Predsjednik Milanović odlikovao Filipa H... ➡️ <b>Спорт (нагородження боксера).</b>",
+                "• Hoće li Francuska ‘povući‘ cijelu EU u n... ➡️ <b>Світовий шум (глобальні фінансові новини та курс валют).</b>",
+                "• Srđan Mlađan danas opet pred sudom, čita... ➡️ <b>Кримінал поза Задаром (судовий процес у Вараждині).</b>",
+                "• Ostavka zbog Holcima: “Radna skupina saz... ➡️ <b>Побут чужих міст (екологічні суперечки навколо заводу в Істрії).</b>",
+                "• Policija istražuje prijevaru u Kninu: mi... ➡️ <b>Побут чужих міст (Книн) та дублікат новини ID 1.</b>",
+                "• Tradicionalna lička delicija: U Otočcu o... ➡️ <b>Лайфстайл та події поза Задаром (кулінарний майстер-клас у Ліці).</b>",
+                "• U Dubrovnik mjesečno stiže 100.000 pošil... ➡️ <b>Побут чужих міст (проблеми з доставкою пошти в Дубровнику).</b>"
+            ]
+        },
+        "backlog": {
+            "total_size": 45,
+            "sources": {
+                "Slobodna dalmacija": 20,
+                "023": 11,
+                "Zadarski list": 14
+            }
+        },
+        "published": {
+            "total": 3,
+            "ukraine_priority": 1,
+            "with_images": 1,
+            "text_only": 2,
+            "sources": {
+                "Zadarski list": 1,
+                "023": 2
             }
         },
         "models_used": {
