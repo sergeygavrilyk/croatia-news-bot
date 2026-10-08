@@ -1,61 +1,5 @@
 [
     {
-        "timestamp": "2026-09-29 10:01:08",
-        "execution_time": 272.3,
-        "funnel": {
-            "scraped_total": 35,
-            "scraped_by_source": {
-                "023": 10,
-                "Slobodna dalmacija": 15,
-                "Zadarski list": 10
-            },
-            "already_seen": 6,
-            "rejected_by_keywords": 2,
-            "duplicates_removed_by_ai": 18,
-            "rejection_reasons_list": [
-                "• Šibenčanke nanijele prvi domaći poraz Cr... ➡️ <b>Спорт</b>",
-                "• Aminess širi poslovanje u Istri: novi ho... ➡️ <b>Побут чужих міст</b>",
-                "• Velika vijest za vlasnike Tesle u Hrvats... ➡️ <b>Світовий шум та лайфстайл</b>",
-                "• Dokumentarac Jakova Sedlara stiže u Zada... ➡️ <b>Світовий шум та лайфстайл</b>",
-                "• Metkovski bend objavio snimku s vjenčanj... ➡️ <b>Світовий шум та лайфстайл</b>",
-                "• Metkovski bend objavio snimku s vjenčanj... ➡️ <b>Дублікат</b>",
-                "• Dani europske baštine u obnovljenom Dvor... ➡️ <b>Побут чужих міст</b>",
-                "• Nevjerojatno što ljudi sve bacaju u smeć... ➡️ <b>Вже є в історії</b>",
-                "• Songs of Hope and Despair: Umjetnički ko... ➡️ <b>Побут чужих міст</b>",
-                "• Jazine slažu ozbiljnu momčad: stigla su ... ➡️ <b>Спорт</b>",
-                "• Roditeljima prijeti i do 76 eura mjesečn... ➡️ <b>Світовий шум та лайфстайл</b>",
-                "• Prijeti li poništenje natječaja za autoc... ➡️ <b>Вже є в історії</b>",
-                "• Sindikalac Hodžić o optužbama da je pove... ➡️ <b>Побут чужих міст</b>",
-                "• Zdrav početak listopada uz besplatne kon... ➡️ <b>Побут чужих міст</b>",
-                "• Na Zapadnoj obali otvoren CROYA Yacht Ch... ➡️ <b>Побут чужих міст</b>",
-                "• Požar na Braču od 10. rujna proglašen ug... ➡️ <b>Побут чужих міст</b>",
-                "• Misterij iznad Jadrana; Nestao helikopte... ➡️ <b>Світовий шум та лайфстайл</b>",
-                "• Stigli su nam sjajni dječji radovi: evo ... ➡️ <b>Світовий шум та лайфстайл</b>"
-            ]
-        },
-        "backlog": {
-            "total_size": 33,
-            "sources": {
-                "023": 13,
-                "Zadarski list": 10,
-                "Slobodna dalmacija": 10
-            }
-        },
-        "published": {
-            "total": 3,
-            "ukraine_priority": 0,
-            "with_images": 2,
-            "text_only": 1,
-            "sources": {
-                "023": 1,
-                "Slobodna dalmacija": 1,
-                "Zadarski list": 1
-            }
-        },
-        "errors_count": 0,
-        "gemini_retries": 1
-    },
-    {
         "timestamp": "2026-09-29 11:01:09",
         "execution_time": 120.1,
         "funnel": {
@@ -5928,6 +5872,63 @@
             "sources": {
                 "Zadarski list": 1,
                 "023": 2
+            }
+        },
+        "models_used": {
+            "gemini-3.5-flash-lite": 1,
+            "gemini-3.5-flash": 1
+        },
+        "errors_count": 0,
+        "gemini_retries": 0
+    },
+    {
+        "timestamp": "2026-10-08 10:01:05",
+        "execution_time": 180.7,
+        "funnel": {
+            "scraped_total": 35,
+            "scraped_by_source": {
+                "023": 10,
+                "Slobodna dalmacija": 15,
+                "Zadarski list": 10
+            },
+            "already_seen": 7,
+            "rejected_by_keywords": 0,
+            "duplicates_removed_by_ai": 16,
+            "rejection_reasons_list": [
+                "• Tomašević o smradu u Zagrebu: “Istražuje... ➡️ <b>Побут інших міст (проблема із запахом у Загребі).</b>",
+                "• Uspješan model upravljanja tvrđavama pre... ➡️ <b>Побут інших міст та культурні заходи поза Задаром.</b>",
+                "• Dubrovnik ponovno pod opsadom filmaša: s... ➡️ <b>Лайфстайл та новини культури інших міст (зйомки серіалу в Дубровнику).</b>",
+                "• Teško ozlijeđen vozač romobila na Lošinj... ➡️ <b>Побут інших міст (дрібна ДТП на Лошині).</b>",
+                "• Panika zbog kuge u Rusiji, stari Dubrovč... ➡️ <b>Світовий шум (новини про чуму в Росії).</b>",
+                "• Objavljen popis 20 najsigurnijih europsk... ➡️ <b>Світовий шум та лайфстайл (загальноєвропейський рейтинг авіакомпаній).</b>",
+                "• Veliki uspjeh dalmatinskih cubera; Toni ... ➡️ <b>Спорт (змагання зі швидкісного збирання кубика Рубіка).</b>",
+                "• Ukrao odjeću vrijednu manje od 50 eura, ... ➡️ <b>Побут інших міст (дрібна крадіжка в Чаковці).</b>",
+                "• Dubrovački biskup Roko Glasnović podijel... ➡️ <b>Побут інших міст (релігійний захід у Цавтаті).</b>",
+                "• Pitamo ih za posao, novac, a sada i za z... ➡️ <b>Світовий шум та лайфстайл (абстрактні роздуми про довіру до інформації в інтернеті).</b>",
+                "• Obećala mu nasljedstvo i zlato pokojnog ... ➡️ <b>Побут інших міст (дрібне інтернет-шахрайство без прив'язки до Задара).</b>",
+                "• Predsjednik Milanović odlikovao Filipa H... ➡️ <b>Спорт (нагородження боксера президентом).</b>",
+                "• AI megaprojekt kod Topuskog. Županija mi... ➡️ <b>Побут інших міст (локальний інвестиційний проект у Топуско).</b>",
+                "• Žena (26) krala odjeću u trgovini u Istr... ➡️ <b>Побут інших міст (дрібна крадіжка в Істрії).</b>",
+                "• Mještanin bagerom razbio 20 metara novog... ➡️ <b>Побут інших міст (локальний конфлікт через дорогу на Пелєшаці).</b>",
+                "• Jutarnja pljačka banke u Višnjanu: razbo... ➡️ <b>Побут інших міст (пограбування банку у Вишняні).</b>"
+            ]
+        },
+        "backlog": {
+            "total_size": 51,
+            "sources": {
+                "Slobodna dalmacija": 26,
+                "Zadarski list": 14,
+                "023": 11
+            }
+        },
+        "published": {
+            "total": 3,
+            "ukraine_priority": 0,
+            "with_images": 1,
+            "text_only": 2,
+            "sources": {
+                "023": 2,
+                "Zadarski list": 1
             }
         },
         "models_used": {
