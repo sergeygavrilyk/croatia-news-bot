@@ -1,52 +1,5 @@
 [
     {
-        "timestamp": "2026-09-29 15:01:10",
-        "execution_time": 167.0,
-        "funnel": {
-            "scraped_total": 35,
-            "scraped_by_source": {
-                "023": 10,
-                "Slobodna dalmacija": 15,
-                "Zadarski list": 10
-            },
-            "already_seen": 11,
-            "rejected_by_keywords": 2,
-            "duplicates_removed_by_ai": 10,
-            "rejection_reasons_list": [
-                "• ‘Šušnjarova cijena na 28.09.2026‘: Možem... ➡️ <b>Світовий шум</b>",
-                "• Sobne biljke traže drugačiju njegu u jes... ➡️ <b>Світовий шум та лайфстайл</b>",
-                "• Od prvog ukrcaja do dolaska u splitsku l... ➡️ <b>Побут чужих міст</b>",
-                "• Kanadski kuhar pretvorio kroasan sa šunk... ➡️ <b>Світовий шум та лайфстайл</b>",
-                "• Talijanska studija pokazala kako svakodn... ➡️ <b>Світовий шум та лайфстайл</b>",
-                "• Iz Grada Dubrovnika o školskim ormarićim... ➡️ <b>Побут чужих міст</b>",
-                "• Skladatelju i pijanistu Nevenu Frangešu ... ➡️ <b>Світовий шум та лайфстайл</b>",
-                "• Franković odgovorio Bonačić Obradović: \"... ➡️ <b>Побут чужих міст</b>",
-                "• Bangkok pod vodom, zračni promet u kaosu... ➡️ <b>Світовий шум</b>",
-                "• \"Crveni križ u Gradu\" - 12 godina pomaga... ➡️ <b>Побут чужих міст</b>"
-            ]
-        },
-        "backlog": {
-            "total_size": 42,
-            "sources": {
-                "Zadarski list": 11,
-                "Slobodna dalmacija": 22,
-                "023": 9
-            }
-        },
-        "published": {
-            "total": 3,
-            "ukraine_priority": 0,
-            "with_images": 3,
-            "text_only": 0,
-            "sources": {
-                "Zadarski list": 2,
-                "Slobodna dalmacija": 1
-            }
-        },
-        "errors_count": 0,
-        "gemini_retries": 0
-    },
-    {
         "timestamp": "2026-09-29 16:01:12",
         "execution_time": 191.2,
         "funnel": {
@@ -5912,6 +5865,63 @@
                 "Zadarski list": 12,
                 "Slobodna dalmacija": 34,
                 "023": 2
+            }
+        },
+        "published": {
+            "total": 3,
+            "ukraine_priority": 0,
+            "with_images": 3,
+            "text_only": 0,
+            "sources": {
+                "Zadarski list": 3
+            }
+        },
+        "models_used": {
+            "gemini-3.5-flash-lite": 1,
+            "gemini-3.5-flash": 1
+        },
+        "errors_count": 0,
+        "gemini_retries": 0
+    },
+    {
+        "timestamp": "2026-10-08 15:01:06",
+        "execution_time": 270.4,
+        "funnel": {
+            "scraped_total": 35,
+            "scraped_by_source": {
+                "023": 10,
+                "Slobodna dalmacija": 15,
+                "Zadarski list": 10
+            },
+            "already_seen": 14,
+            "rejected_by_keywords": 5,
+            "duplicates_removed_by_ai": 17,
+            "rejection_reasons_list": [
+                "• Kad je klasični plank pretežak: lakša in... ➡️ <b>Світовий шум та лайфстайл (поради для здоров'я)</b>",
+                "• Napadi na tankere na Bliskom istoku podi... ➡️ <b>Світовий шум та лайфстайл (глобальні економічні новини)</b>",
+                "• Zadranin Jure Brkljača objavio pjesmu ‘M... ➡️ <b>Світовий шум та лайфстайл (шоу-бізнес та музичні релізи)</b>",
+                "• Počinje 20. Festival tolerancije: cannes... ➡️ <b>Дублікат / Історія (подія вже є в історії каналу)</b>",
+                "• Veća dostupnost pedijatara u Rijeci i Za... ➡️ <b>Побут чужих міст (медичні новини Рієки та Загреба)</b>",
+                "• Zbog puknuća cijevi u Brsečinama došlo d... ➡️ <b>Побут чужих міст (комунальні проблеми поблизу Дубровника)</b>",
+                "• Mistral predstavio Large 4, model kojim ... ➡️ <b>Світовий шум та лайфстайл (технологічні новини штучного інтелекту)</b>",
+                "• U Zadru predstavljena monografija 5. gar... ➡️ <b>Дублікат / Історія (презентація монографії вже висвітлювалася)</b>",
+                "• Ovako izgleda početak električne budućno... ➡️ <b>Світовий шум та лайфстайл (автомобільні новини)</b>",
+                "• Još šest mladih dubrovačkih obitelji dob... ➡️ <b>Побут чужих міст (соціальна програма Дубровника)</b>",
+                "• Na Stradunu se itekako vidi da je završi... ➡️ <b>Побут чужих міст (погода та побут у Дубровнику)</b>",
+                "• Šibenska policija upozorava: ‘Iskazat će... ➡️ <b>Побут чужих міст (локальне шахрайство в Кніні/Шибенику)</b>",
+                "• Franković primio sudionike 28. Dubrovačk... ➡️ <b>Побут чужих міст (офіційні прийоми в Дубровнику)</b>",
+                "• Imaju 18 i 17 godina, a napravili su ovo... ➡️ <b>Побут чужих міст (дрібний вандалізм у Метковичі)</b>",
+                "• Gordan Tudor nastupio s DSO-om u svom AR... ➡️ <b>Побут чужих міст (культурний захід у Дубровнику)</b>",
+                "• Franković potpisao šest novih ugovora za... ➡️ <b>Побут чужих міст (дублікат новини про житло в Дубровнику)</b>",
+                "• Vandalizam u Metkoviću: dvojica mladića ... ➡️ <b>Побут чужих міст (дублікат новини про вандалізм у Метковичі)</b>"
+            ]
+        },
+        "backlog": {
+            "total_size": 46,
+            "sources": {
+                "Zadarski list": 10,
+                "Slobodna dalmacija": 33,
+                "023": 3
             }
         },
         "published": {
