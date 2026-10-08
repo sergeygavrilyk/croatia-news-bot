@@ -1,61 +1,5 @@
 [
     {
-        "timestamp": "2026-09-29 14:01:06",
-        "execution_time": 173.0,
-        "funnel": {
-            "scraped_total": 35,
-            "scraped_by_source": {
-                "023": 10,
-                "Slobodna dalmacija": 15,
-                "Zadarski list": 10
-            },
-            "already_seen": 6,
-            "rejected_by_keywords": 2,
-            "duplicates_removed_by_ai": 19,
-            "rejection_reasons_list": [
-                "• ‘Šušnjarova cijena na 28.09.2026‘: Možem... ➡️ <b>Світовий шум та лайфстайл</b>",
-                "• Kanadski kuhar pretvorio kroasan sa šunk... ➡️ <b>Світовий шум та лайфстайл</b>",
-                "• Teška prometna nesreća u Hreljinu, dvije... ➡️ <b>Побут чужих міст</b>",
-                "• Od prvog ukrcaja do dolaska u splitsku l... ➡️ <b>Побут чужих міст</b>",
-                "• Talijanska studija pokazala kako svakodn... ➡️ <b>Світовий шум та лайфстайл</b>",
-                "• Hrvatski animirani hit puni kina u Tursk... ➡️ <b>Світовий шум та лайфстайл</b>",
-                "• Zastrašujuća brojka; Hrvati svake godine... ➡️ <b>Світовий шум та лайфстайл</b>",
-                "• Bangkok pod vodom, zračni promet u kaosu... ➡️ <b>Світовий шум та лайфстайл</b>",
-                "• Grad Ploče proglasio srijedu, 30. rujna ... ➡️ <b>Дублікат</b>",
-                "• Uspjeh BK Sv. Krševan u 1. Hrvatskoj bok... ➡️ <b>Спорт</b>",
-                "• Izrael ubio Hamasova zapovjednika koji j... ➡️ <b>Світовий шум та лайфстайл</b>",
-                "• Iz Grada Dubrovnika o školskim ormarićim... ➡️ <b>Побут чужих міст</b>",
-                "• Priča o fra Ediju Ricovu; Blagi franjeva... ➡️ <b>Вже є в історії</b>",
-                "• Nekoliko dana nakon supruga preminula i ... ➡️ <b>Вже є в історії</b>",
-                "• Država rasprodaje vozila; Pogledajte cij... ➡️ <b>Світовий шум та лайфстайл</b>",
-                "• Franković odgovorio Bonačić Obradović: \"... ➡️ <b>Побут чужих міст</b>",
-                "• Miletić pitao Turudića o Kostabeli. Šef ... ➡️ <b>Побут чужих міст</b>",
-                "• “Viktor Lenac” pred ključnom odlukom: Kr... ➡️ <b>Побут чужих міст</b>",
-                "• \"Crveni križ u Gradu\" - 12 godina pomaga... ➡️ <b>Побут чужих міст</b>"
-            ]
-        },
-        "backlog": {
-            "total_size": 42,
-            "sources": {
-                "Zadarski list": 11,
-                "Slobodna dalmacija": 23,
-                "023": 8
-            }
-        },
-        "published": {
-            "total": 3,
-            "ukraine_priority": 0,
-            "with_images": 3,
-            "text_only": 0,
-            "sources": {
-                "Slobodna dalmacija": 1,
-                "Zadarski list": 2
-            }
-        },
-        "errors_count": 0,
-        "gemini_retries": 0
-    },
-    {
         "timestamp": "2026-09-29 15:01:10",
         "execution_time": 167.0,
         "funnel": {
@@ -5930,5 +5874,60 @@
         },
         "errors_count": 0,
         "gemini_retries": 1
+    },
+    {
+        "timestamp": "2026-10-08 14:01:10",
+        "execution_time": 191.6,
+        "funnel": {
+            "scraped_total": 35,
+            "scraped_by_source": {
+                "023": 10,
+                "Slobodna dalmacija": 15,
+                "Zadarski list": 10
+            },
+            "already_seen": 12,
+            "rejected_by_keywords": 4,
+            "duplicates_removed_by_ai": 15,
+            "rejection_reasons_list": [
+                "• Počinje 20. Festival tolerancije: cannes... ➡️ <b>Подія вже є в історії (анонс фестивалю у Задарі)</b>",
+                "• Zadranin Jure Brkljača objavio pjesmu ‘M... ➡️ <b>Шоу-бізнес та лайфстайл</b>",
+                "• Ovako izgleda početak električne budućno... ➡️ <b>Світовий шум та автоновини</b>",
+                "• Mistral predstavio Large 4, model kojim ... ➡️ <b>Світовий шум та технології</b>",
+                "• Zbog puknuća cijevi u Brsečinama došlo d... ➡️ <b>Побут інших міст (Брсечіне)</b>",
+                "• U Zadru predstavljena monografija 5. gar... ➡️ <b>Подія вже є в історії (презентація монографії у Задарі)</b>",
+                "• Još šest mladih dubrovačkih obitelji dob... ➡️ <b>Побут інших міст (Дубровник)</b>",
+                "• Moonspell dolaze u sklopu “God is a Vamp... ➡️ <b>Шоу-бізнес та концерт у Загребі</b>",
+                "• Na Stradunu se itekako vidi da je završi... ➡️ <b>Побут інших міст (Дубровник)</b>",
+                "• Otvorena izložba “Guvernerova palača – s... ➡️ <b>Побут інших міст (Рієка)</b>",
+                "• Franković primio sudionike 28. Dubrovačk... ➡️ <b>Побут інших міст (Дубровник)</b>",
+                "• Imaju 18 i 17 godina, a napravili su ovo... ➡️ <b>Побут інших міст (Меткович)</b>",
+                "• Gordan Tudor nastupio s DSO-om u svom AR... ➡️ <b>Побут інших міст (Дубровник)</b>",
+                "• Franković potpisao šest novih ugovora za... ➡️ <b>Дублікат новини 8 та побут інших міст (Дубровник)</b>",
+                "• Nezaboravan jesenski shopping još je bol... ➡️ <b>Реклама та промо-акції</b>"
+            ]
+        },
+        "backlog": {
+            "total_size": 48,
+            "sources": {
+                "Zadarski list": 12,
+                "Slobodna dalmacija": 34,
+                "023": 2
+            }
+        },
+        "published": {
+            "total": 3,
+            "ukraine_priority": 0,
+            "with_images": 3,
+            "text_only": 0,
+            "sources": {
+                "Zadarski list": 3
+            }
+        },
+        "models_used": {
+            "gemini-3.5-flash-lite": 1,
+            "gemini-3.5-flash": 1
+        },
+        "errors_count": 0,
+        "gemini_retries": 0
     }
 ]
