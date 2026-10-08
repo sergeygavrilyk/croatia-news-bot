@@ -1,61 +1,5 @@
 [
     {
-        "timestamp": "2026-09-29 08:01:05",
-        "execution_time": 168.2,
-        "funnel": {
-            "scraped_total": 35,
-            "scraped_by_source": {
-                "023": 10,
-                "Slobodna dalmacija": 15,
-                "Zadarski list": 10
-            },
-            "already_seen": 2,
-            "rejected_by_keywords": 1,
-            "duplicates_removed_by_ai": 19,
-            "rejection_reasons_list": [
-                "• Izložba Tatjane Masterl »Obzori i dimenz... ➡️ <b>Побут іншого міста (Рієка)</b>",
-                "• Jazine slažu ozbiljnu momčad: stigla su ... ➡️ <b>Спорт</b>",
-                "• Audicija u Zadru: Gesta prima prijave za... ➡️ <b>Світовий шум та лайфстайл (культурна подія/гуртка)</b>",
-                "• Sistem koji nikada ne iznevjeri – Noćna ... ➡️ <b>Світовий шум та лайфстайл (хобі, риболовля)</b>",
-                "• Na Zapadnoj obali otvoren CROYA Yacht Ch... ➡️ <b>Побут іншого міста (Спліт)</b>",
-                "• Uz predstavu »Mami« redatelja Marija Ban... ➡️ <b>Побут іншого міста (Загреб)</b>",
-                "• Misterij iznad Jadrana; Nestao helikopte... ➡️ <b>Світовий шум (крадіжка у Австрії)</b>",
-                "• Kako EFRi razvija poslijediplomsko obraz... ➡️ <b>Побут іншого міста (Рієка)</b>",
-                "• Stigli su nam sjajni dječji radovi: evo ... ➡️ <b>Побут іншого міста (Шибеник)</b>",
-                "• Ova mjesta u kuhinji gotovo nitko ne čis... ➡️ <b>Світовий шум та лайфстайл (поради для дому)</b>",
-                "• Školske torbe teže od olova, roditelji l... ➡️ <b>Побут іншого міста (Дубровник)</b>",
-                "• Bijele tenisice dobivaju konkurenciju: o... ➡️ <b>Світовий шум та лайфстайл (мода)</b>",
-                "• Gradska glazba Dubrovnik gostovala u Šib... ➡️ <b>Побут іншого міста (Шибеник/Дубровник)</b>",
-                "• Pita od jabuka s prženim maslacem bit će... ➡️ <b>Світовий шум та лайфстайл (рецепт)</b>",
-                "• Vodite li računa o svom srcu? Svjetski d... ➡️ <b>Світовий шум та лайфстайл (поради про здоров'я)</b>",
-                "• Zašto upalni procesi na koži izbijaju ba... ➡️ <b>Світовий шум та лайфстайл (абстрактна наука/здоров'я)</b>",
-                "• Zlato i srebro za KBK Velebit; Lucija To... ➡️ <b>Спорт</b>",
-                "• Koliko porcija cjelovitih žitarica treba... ➡️ <b>Світовий шум та лайфстайл (дієтологія)</b>",
-                "• Pet trajnica koje će vaš vrt pretvoriti ... ➡️ <b>Світовий шум та лайфстайл (поради для садівництва)</b>"
-            ]
-        },
-        "backlog": {
-            "total_size": 27,
-            "sources": {
-                "023": 11,
-                "Slobodna dalmacija": 6,
-                "Zadarski list": 10
-            }
-        },
-        "published": {
-            "total": 3,
-            "ukraine_priority": 0,
-            "with_images": 1,
-            "text_only": 2,
-            "sources": {
-                "023": 2,
-                "Slobodna dalmacija": 1
-            }
-        },
-        "errors_count": 0,
-        "gemini_retries": 0
-    },
-    {
         "timestamp": "2026-09-29 09:01:03",
         "execution_time": 166.1,
         "funnel": {
@@ -5918,6 +5862,68 @@
             "text_only": 0,
             "sources": {
                 "Zadarski list": 3
+            }
+        },
+        "models_used": {
+            "gemini-3.5-flash-lite": 1,
+            "gemini-3.5-flash": 1
+        },
+        "errors_count": 0,
+        "gemini_retries": 0
+    },
+    {
+        "timestamp": "2026-10-08 08:01:02",
+        "execution_time": 182.5,
+        "funnel": {
+            "scraped_total": 35,
+            "scraped_by_source": {
+                "023": 10,
+                "Slobodna dalmacija": 15,
+                "Zadarski list": 10
+            },
+            "already_seen": 3,
+            "rejected_by_keywords": 1,
+            "duplicates_removed_by_ai": 20,
+            "rejection_reasons_list": [
+                "• Što su dogovorili u Splitu? Devet medite... ➡️ <b>Повторення раніше висвітленої теми (саміт MED9 у Спліті), аналітичний коментар без нових критичних фактів</b>",
+                "• Stižete na koncert Jakova Jozinovića? Po... ➡️ <b>Логістика культурного заходу, що не має суспільної значущості для діаспори</b>",
+                "• Još se ne zna što je pronađeno na gradil... ➡️ <b>Побут та екологічні проблеми іншого міста (Сісак)</b>",
+                "• Policija istražuje prijevaru u Kninu: mi... ➡️ <b>Локальний кримінал в іншому місті (Книн)</b>",
+                "• Veliki špijunski skandal u Njemačkoj. Bi... ➡️ <b>Світові новини, що не стосуються безпосередньо України чи Хорватії</b>",
+                "• U Dubrovnik mjesečno stiže 100.000 pošil... ➡️ <b>Побут та комунальні проблеми іншого міста (Дубровник)</b>",
+                "• Policija izdala hitno upozorenje građani... ➡️ <b>Дублікат новини, яка вже є в історії (шахрайство з лікарем та 83-річною жінкою)</b>",
+                "• Veliki uspjeh dalmatinskih cubera; Toni ... ➡️ <b>Спорт (змагання зі спідкубингу)</b>",
+                "• “Oče naš” Gorana Stankovića: Film koji o... ➡️ <b>Культура та кіно, лайфстайл</b>",
+                "• Županijska uprava za ceste o radovima iz... ➡️ <b>Ремонт доріг в іншому регіоні (Пелешаць)</b>",
+                "• Pitamo ih za posao, novac, a sada i za z... ➡️ <b>Лайфстайл та загальні роздуми про цифрову гігієну</b>",
+                "• Rijeka želi graditi energanu na gorivo i... ➡️ <b>Побут та екологічні плани іншого міста (Рієка)</b>",
+                "• Jazine preokretom do pobjede u zadarskom... ➡️ <b>Спорт (баскетбольний матч)</b>",
+                "• Predsjednik Milanović odlikovao Filipa H... ➡️ <b>Спорт (нагородження боксера)</b>",
+                "• KD Čistoća anketira Riječane: gdje je na... ➡️ <b>Побут та опитування в іншому місті (Рієка)</b>",
+                "• Djeca na Korčuli opet uče online, rodite... ➡️ <b>Побут та освіта в іншому регіоні (Корчула)</b>",
+                "• Poziv svim ljubiteljima pedaliranja; Tra... ➡️ <b>Спорт та активний відпочинок (велопробіг)</b>",
+                "• Od »zidine nježnosti« do nasilnog oca: R... ➡️ <b>Культура та література, огляд книги</b>",
+                "• Modrić je finom premijerom u ABA ligi ku... ➡️ <b>Спорт (баскетбол, аналітика ліги)</b>",
+                "• Miro Gavran u Hamburgu: Održane predstav... ➡️ <b>Культура та заходи за кордоном (Гамбург)</b>"
+            ]
+        },
+        "backlog": {
+            "total_size": 41,
+            "sources": {
+                "023": 12,
+                "Zadarski list": 13,
+                "Slobodna dalmacija": 16
+            }
+        },
+        "published": {
+            "total": 3,
+            "ukraine_priority": 0,
+            "with_images": 2,
+            "text_only": 1,
+            "sources": {
+                "Slobodna dalmacija": 1,
+                "023": 1,
+                "Zadarski list": 1
             }
         },
         "models_used": {
