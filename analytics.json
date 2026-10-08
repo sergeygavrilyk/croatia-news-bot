@@ -1,64 +1,5 @@
 [
     {
-        "timestamp": "2026-09-29 11:01:09",
-        "execution_time": 120.1,
-        "funnel": {
-            "scraped_total": 35,
-            "scraped_by_source": {
-                "023": 10,
-                "Slobodna dalmacija": 15,
-                "Zadarski list": 10
-            },
-            "already_seen": 7,
-            "rejected_by_keywords": 5,
-            "duplicates_removed_by_ai": 23,
-            "rejection_reasons_list": [
-                "• Zlajin D8 Rock cafe živi dalje – prijate... ➡️ <b>Світський шум / Лайфстайл</b>",
-                "• Kupovali “nove” mobitele, a dobili uređa... ➡️ <b>Світовий шум</b>",
-                "• Agronom Strikić otkriva zašto gori Dalma... ➡️ <b>Світовий шум / Лайфстайл</b>",
-                "• Država rasprodaje vozila; Pogledajte cij... ➡️ <b>Побут чужих міст</b>",
-                "• Povjerovao da će mu pomoći liječiti član... ➡️ <b>Побут чужих міст</b>",
-                "• Ovo je ‘Domald‘: nastao je na Dan svetog... ➡️ <b>Світовий шум / Лайфстайл</b>",
-                "• Kuzminja obilježena brojnim događanjima ... ➡️ <b>Побут чужих міст</b>",
-                "• Federalna policija upala u prostore javn... ➡️ <b>Побут чужих міст</b>",
-                "• Dokumentarac Jakova Sedlara stiže u Zada... ➡️ <b>Світський шум / Лайфстайл</b>",
-                "• Zbog štrajka ZET-a i Holdinga HDZ u Sabo... ➡️ <b>Побут чужих міст</b>",
-                "• Žuljanska Lignjada raste iz godine u god... ➡️ <b>Побут чужих міст</b>",
-                "• Čuti proživljena iskustva; U Zadru se ot... ➡️ <b>Світський шум / Лайфстайл</b>",
-                "• Natjecanje u kuhanju gulaša i radionica ... ➡️ <b>Побут чужих міст</b>",
-                "• Kako su baba Nidićka, hrabre mještanke i... ➡️ <b>Світовий шум / Лайфстайл</b>",
-                "• Rigorozne kontrole oko škola; Pogledajte... ➡️ <b>Світовий шум</b>",
-                "• ”Ja sam Edi… i to je dovoljno”: Predstav... ➡️ <b>Світський шум / Лайфстайл</b>",
-                "• Franković zgrožen objavom Srđevca Miošić... ➡️ <b>Побут чужих міст</b>",
-                "• Nije prošlo neopaženo; Policija u Biogra... ➡️ <b>Побут чужих міст</b>",
-                "• Nevjerojatna vozačica: Oko 9 ujutro u Ra... ➡️ <b>Побут чужих міст</b>",
-                "• PRAVO NA DOM, A GDJE STE BILI DEVET GODI... ➡️ <b>Побут чужих міст</b>",
-                "• Ova mjesta u kuhinji gotovo nitko ne čis... ➡️ <b>Світовий шум / Лайфстайл</b>",
-                "• Dvije Zadranke ostale bez tisuća eura na... ➡️ <b>Вже є в історії</b>",
-                "• Zdrav početak listopada uz besplatne kon... ➡️ <b>Побут чужих міст</b>"
-            ]
-        },
-        "backlog": {
-            "total_size": 35,
-            "sources": {
-                "023": 13,
-                "Zadarski list": 8,
-                "Slobodna dalmacija": 14
-            }
-        },
-        "published": {
-            "total": 2,
-            "ukraine_priority": 0,
-            "with_images": 0,
-            "text_only": 2,
-            "sources": {
-                "023": 2
-            }
-        },
-        "errors_count": 0,
-        "gemini_retries": 0
-    },
-    {
         "timestamp": "2026-09-29 12:01:08",
         "execution_time": 205.3,
         "funnel": {
@@ -5929,6 +5870,62 @@
             "sources": {
                 "023": 2,
                 "Zadarski list": 1
+            }
+        },
+        "models_used": {
+            "gemini-3.5-flash-lite": 1,
+            "gemini-3.5-flash": 1
+        },
+        "errors_count": 0,
+        "gemini_retries": 0
+    },
+    {
+        "timestamp": "2026-10-08 11:01:03",
+        "execution_time": 180.3,
+        "funnel": {
+            "scraped_total": 35,
+            "scraped_by_source": {
+                "023": 10,
+                "Slobodna dalmacija": 15,
+                "Zadarski list": 10
+            },
+            "already_seen": 7,
+            "rejected_by_keywords": 3,
+            "duplicates_removed_by_ai": 14,
+            "rejection_reasons_list": [
+                "• Požar u zgradi Theatra Fenice vatrogasci... ➡️ <b>Локальна подія за межами Задара (Рієка)</b>",
+                "• Kraj prometnog kaosa? Potpisan ugovor za... ➡️ <b>Локальна подія за межами Задара (Шибеник)</b>",
+                "• Počinje 20. Festival tolerancije: cannes... ➡️ <b>Дублікат новини, яка вже є в історії</b>",
+                "• Za metkovskim vatrogascima je paklena no... ➡️ <b>Локальна подія за межами Задара (Меткович)</b>",
+                "• Mistral predstavio Large 4, model kojim ... ➡️ <b>Світові новини та технології, що не стосуються Хорватії чи України</b>",
+                "• Troskot i Miletić: U Lici treba proglasi... ➡️ <b>Дублікат/політична реакція на подію з радіоактивним надзором у Госпичі (ID 7)</b>",
+                "• Od Zadružnog doma do modernog muzeja: is... ➡️ <b>Локальна подія за межами Задара (Вела Лука)</b>",
+                "• Tomašević o smradu u Zagrebu: “Istražuje... ➡️ <b>Локальна подія за межами Задара (Загреб)</b>",
+                "• Zavod za javno zdravstvo poziva: Sudjelu... ➡️ <b>Реклама/розіграш та локальна подія за межами Задара</b>",
+                "• Veliki uspjeh dalmatinskih cubera; Toni ... ➡️ <b>Спорт</b>",
+                "• Teško ozlijeđen vozač romobila na Lošinj... ➡️ <b>Локальна подія за межами Задара (Лошинь)</b>",
+                "• Nezaboravan jesenski shopping još je bol... ➡️ <b>Реклама та промо-акції</b>",
+                "• Vandalizam u Metkoviću: dvojica mladića ... ➡️ <b>Локальна подія за межами Задара (Меткович)</b>",
+                "• Višak slobodnog vremena? Dvojac uništio ... ➡️ <b>Дублікат новини ID 20 та подія за межами Задара</b>"
+            ]
+        },
+        "backlog": {
+            "total_size": 55,
+            "sources": {
+                "Zadarski list": 11,
+                "Slobodna dalmacija": 34,
+                "023": 10
+            }
+        },
+        "published": {
+            "total": 3,
+            "ukraine_priority": 0,
+            "with_images": 2,
+            "text_only": 1,
+            "sources": {
+                "023": 1,
+                "Zadarski list": 1,
+                "Slobodna dalmacija": 1
             }
         },
         "models_used": {
