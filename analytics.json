@@ -1,64 +1,5 @@
 [
     {
-        "timestamp": "2026-09-29 12:01:08",
-        "execution_time": 205.3,
-        "funnel": {
-            "scraped_total": 35,
-            "scraped_by_source": {
-                "023": 10,
-                "Slobodna dalmacija": 15,
-                "Zadarski list": 10
-            },
-            "already_seen": 2,
-            "rejected_by_keywords": 3,
-            "duplicates_removed_by_ai": 21,
-            "rejection_reasons_list": [
-                "• ‘Šušnjarova cijena na 28.09.2026‘: Možem... ➡️ <b>Світовий шум</b>",
-                "• Zlajin D8 Rock cafe živi dalje – prijate... ➡️ <b>Побут чужих міст</b>",
-                "• Uspjeh BK Sv. Krševan u 1. Hrvatskoj bok... ➡️ <b>Спорт</b>",
-                "• Velik odaziv na Dan otvorenih vrata u po... ➡️ <b>Вже є в історії</b>",
-                "• Art & paw radionica, sportske igre, buvl... ➡️ <b>Побут чужих міст</b>",
-                "• \"Crveni križ u Gradu\" - 12 godina pomaga... ➡️ <b>Побут чужих міст</b>",
-                "• Priča o fra Ediju Ricovu; Blagi franjeva... ➡️ <b>Лайфстайл</b>",
-                "• Božinović poslao snažnu poruku policajci... ➡️ <b>Вже є в історії</b>",
-                "• Franković zgrožen objavom člana SJG: ‘Št... ➡️ <b>Побут чужих міст</b>",
-                "• Država rasprodaje vozila; Pogledajte cij... ➡️ <b>Реклама</b>",
-                "• Kupujete kavu, čokoladu ili proizvode od... ➡️ <b>Світовий шум</b>",
-                "• Dokumentarac Jakova Sedlara stiže u Zada... ➡️ <b>Лайфстайл</b>",
-                "• U Županiji priređen prijem za predstavni... ➡️ <b>Побут чужих міст</b>",
-                "• Agronom Strikić otkriva zašto gori Dalma... ➡️ <b>Лайфстайл</b>",
-                "• Čuti proživljena iskustva; U Zadru se ot... ➡️ <b>Лайфстайл</b>",
-                "• Penavin propali projekt Ekonomske škole ... ➡️ <b>Побут чужих міст</b>",
-                "• Ovo je ‘Domald‘: nastao je na Dan svetog... ➡️ <b>Лайфстайл</b>",
-                "• Rigorozne kontrole oko škola; Pogledajte... ➡️ <b>Лайфстайл</b>",
-                "• Federalna policija upala u prostore javn... ➡️ <b>Побут чужих міст</b>",
-                "• Vikend zajedništva i duhovnosti; Camino ... ➡️ <b>Лайфстайл</b>",
-                "• Turudić potvrdio: Od HNS-a smo tražili z... ➡️ <b>Спорт</b>"
-            ]
-        },
-        "backlog": {
-            "total_size": 40,
-            "sources": {
-                "Slobodna dalmacija": 19,
-                "023": 12,
-                "Zadarski list": 9
-            }
-        },
-        "published": {
-            "total": 3,
-            "ukraine_priority": 0,
-            "with_images": 2,
-            "text_only": 1,
-            "sources": {
-                "Zadarski list": 1,
-                "023": 1,
-                "Slobodna dalmacija": 1
-            }
-        },
-        "errors_count": 0,
-        "gemini_retries": 0
-    },
-    {
         "timestamp": "2026-09-29 13:01:09",
         "execution_time": 176.3,
         "funnel": {
@@ -5926,6 +5867,62 @@
                 "023": 1,
                 "Zadarski list": 1,
                 "Slobodna dalmacija": 1
+            }
+        },
+        "models_used": {
+            "gemini-3.5-flash-lite": 1,
+            "gemini-3.5-flash": 1
+        },
+        "errors_count": 0,
+        "gemini_retries": 0
+    },
+    {
+        "timestamp": "2026-10-08 12:01:04",
+        "execution_time": 212.7,
+        "funnel": {
+            "scraped_total": 35,
+            "scraped_by_source": {
+                "023": 10,
+                "Slobodna dalmacija": 15,
+                "Zadarski list": 10
+            },
+            "already_seen": 11,
+            "rejected_by_keywords": 1,
+            "duplicates_removed_by_ai": 15,
+            "rejection_reasons_list": [
+                "• Užasan ruski napad u Ukrajini: najmanje ... ➡️ <b>Дублікат новини ID 0 (обстріл Краматорська)</b>",
+                "• Što napraviti kada posao počne rasti brž... ➡️ <b>Реклама та загальні поради для бізнесу</b>",
+                "• Gordan Tudor nastupio s DSO-om u svom AR... ➡️ <b>Культурне життя іншого міста (Дубровник)</b>",
+                "• Izvršenje proračuna PGŽ-a nije prošlo na... ➡️ <b>Політичне життя іншого регіону (Приморсько-Горанська жупанія)</b>",
+                "• Gripa je već stigla u Hrvatsku, a najviš... ➡️ <b>Новина фокусується на іншому регіоні (Дубровницько-Неретванська жупанія)</b>",
+                "• Počinje 20. Festival tolerancije: cannes... ➡️ <b>Повтор новини, яка вже є в історії каналу</b>",
+                "• Kanadska književnica Anne Carson dobitni... ➡️ <b>Світові новини культури, що не стосуються безпосередньо України чи Хорватії</b>",
+                "• Franković potpisao šest novih ugovora za... ➡️ <b>Побут та соціальні програми іншого міста (Dubrovnik)</b>",
+                "• Mistral predstavio Large 4, model kojim ... ➡️ <b>Світові технологічні новини</b>",
+                "• Bušio podvozje auta, iskra zapalila benz... ➡️ <b>Дрібні події та нещасні випадки в інших регіонах</b>",
+                "• Kraj prometnog kaosa? Potpisan ugovor za... ➡️ <b>Побут та інфраструктура іншого міста (Шибеник)</b>",
+                "• Za metkovskim vatrogascima je paklena no... ➡️ <b>Подія в іншому регіоні (пожежа біля Метковича), не є суттєвим оновленням для нашої аудиторії</b>",
+                "• Od Zadružnog doma do modernog muzeja: is... ➡️ <b>Побут та інфраструктура іншого регіону</b>",
+                "• Požar u zgradi Theatra Fenice vatrogasci... ➡️ <b>Подія в іншому місті (пожежа в Рієці)</b>",
+                "• Zavod za javno zdravstvo poziva: Sudjelu... ➡️ <b>Рекламна акція / подія іншого регіону</b>"
+            ]
+        },
+        "backlog": {
+            "total_size": 53,
+            "sources": {
+                "023": 8,
+                "Zadarski list": 11,
+                "Slobodna dalmacija": 34
+            }
+        },
+        "published": {
+            "total": 3,
+            "ukraine_priority": 1,
+            "with_images": 2,
+            "text_only": 1,
+            "sources": {
+                "Slobodna dalmacija": 2,
+                "023": 1
             }
         },
         "models_used": {
