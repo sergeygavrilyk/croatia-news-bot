@@ -1,65 +1,5 @@
 [
     {
-        "timestamp": "2026-09-30 14:01:10",
-        "execution_time": 166.8,
-        "funnel": {
-            "scraped_total": 35,
-            "scraped_by_source": {
-                "023": 10,
-                "Slobodna dalmacija": 15,
-                "Zadarski list": 10
-            },
-            "already_seen": 10,
-            "rejected_by_keywords": 2,
-            "duplicates_removed_by_ai": 19,
-            "rejection_reasons_list": [
-                "• Rekordni prihodi od stranih turista u pr... ➡️ <b>Економічна статистика загальнонаціонального рівня</b>",
-                "• Jedan jeftin sastojak čini kajganu krema... ➡️ <b>Поради дієтологів та лайфстайл</b>",
-                "• Pokrenuta europska alternativa američkim... ➡️ <b>Світовий шум / фінансові новини ЄС</b>",
-                "• Čudan slučaj; poznatom sportašu ukraden ... ➡️ <b>Спортсмени та загальнонаціональний кримінал</b>",
-                "• Zašto lice pocrveni baš u trenutku kad n... ➡️ <b>Абстрактна наука та лайфстайл</b>",
-                "• Kraljevi najma: gradonačelnik Vodica ima... ➡️ <b>Побут інших міст (Водиці, Дрніш)</b>",
-                "• Počinju radovi u Ulici Široli u Viškovu:... ➡️ <b>Побут іншого міста (Вишково, Рієка)</b>",
-                "• Donose nam 6,3 milijuna noćenja, a žele ... ➡️ <b>Туристична статистика загальнонаціонального рівня</b>",
-                "• HDZ: SDP ponovno potvrđuje da ne želi iz... ➡️ <b>Політичні суперечки в Sabor</b>",
-                "• Predsjednik Republike Hrvatske Zoran Mil... ➡️ <b>Дублікат новини про нагородження поліції</b>",
-                "• Može li smeće postati umjetnost? Doria V... ➡️ <b>Культура та мистецтво в Рієці</b>",
-                "• Povratak u Hrvatsku iz prve ruke: u Trok... ➡️ <b>Подія у Шибенику про мігрантів</b>",
-                "• Tepaju im da su elitni dio Dubrovnika, a... ➡️ <b>Побут іншого міста (Дубровник)</b>",
-                "• Koje će radnike trebati poslodavci u Lic... ➡️ <b>Побут іншого міста (Госпіч, Лика)</b>",
-                "• Uz dubrovačke Banje pune kupača usidrena... ➡️ <b>Лайфстайл та туризм в Дубровнику</b>",
-                "• Milanović odlikovao policijske postaje u... ➡️ <b>Дублікат новини про нагородження поліції</b>",
-                "• Prijavi se na novi EDIT Digitalne Dalmac... ➡️ <b>Побут іншого міста (Спліт/Далмація)</b>",
-                "• Počinje FOODravanje: Bit će svega i za n... ➡️ <b>Побут іншого міста (Дубровник)</b>",
-                "• Sitno brojimo do feste od delicija! Fest... ➡️ <b>Побут іншого міста (Дубровник)</b>"
-            ]
-        },
-        "backlog": {
-            "total_size": 31,
-            "sources": {
-                "Slobodna dalmacija": 20,
-                "023": 2,
-                "Zadarski list": 9
-            }
-        },
-        "published": {
-            "total": 3,
-            "ukraine_priority": 0,
-            "with_images": 3,
-            "text_only": 0,
-            "sources": {
-                "Slobodna dalmacija": 2,
-                "Zadarski list": 1
-            }
-        },
-        "models_used": {
-            "gemini-3.5-flash-lite": 1,
-            "gemini-3.5-flash": 0
-        },
-        "errors_count": 0,
-        "gemini_retries": 0
-    },
-    {
         "timestamp": "2026-09-30 15:01:12",
         "execution_time": 201.7,
         "funnel": {
@@ -5918,6 +5858,64 @@
                 "Zadarski list": 12,
                 "Slobodna dalmacija": 29,
                 "023": 8
+            }
+        },
+        "published": {
+            "total": 3,
+            "ukraine_priority": 0,
+            "with_images": 1,
+            "text_only": 2,
+            "sources": {
+                "023": 2,
+                "Zadarski list": 1
+            }
+        },
+        "models_used": {
+            "gemini-3.5-flash-lite": 1,
+            "gemini-3.5-flash": 1
+        },
+        "errors_count": 0,
+        "gemini_retries": 0
+    },
+    {
+        "timestamp": "2026-10-09 15:01:03",
+        "execution_time": 179.7,
+        "funnel": {
+            "scraped_total": 35,
+            "scraped_by_source": {
+                "023": 10,
+                "Slobodna dalmacija": 15,
+                "Zadarski list": 10
+            },
+            "already_seen": 12,
+            "rejected_by_keywords": 4,
+            "duplicates_removed_by_ai": 17,
+            "rejection_reasons_list": [
+                "• Kuhinjska spužva može skrivati mnoštvo b... ➡️ <b>Світовий шум та лайфстайл</b>",
+                "• Žene čine većinu zdravstvenog sustava, a... ➡️ <b>Світовий шум та лайфстайл (загальна статистика ВООЗ)</b>",
+                "• Ovo je hrvatska reprezentacija frizera k... ➡️ <b>Світовий шум та лайфстайл (змагання перукарів)</b>",
+                "• NASA će radarom i seizmičkim senzorima t... ➡️ <b>Світовий шум та лайфстайл (абстрактна наука)</b>",
+                "• Pri kraju radovi na uređenju Spomen-park... ➡️ <b>Побут чужих міст (Сень)</b>",
+                "• Evo što donosi drugi tjedan Good Food Fe... ➡️ <b>Побут чужих міст (Дубровник) та лайфстайл</b>",
+                "• Preminuo je Goran Bare... ➡️ <b>Дублікат новини з історії (вже опубліковано)</b>",
+                "• Kava u Zadru: kako je omiljeni napitak p... ➡️ <b>Світовий шум та лайфстайл (есе про каву)</b>",
+                "• Ravnateljica riječke škole u kojoj je da... ➡️ <b>Побут чужих міст (Рієка)</b>",
+                "• U Lozici od ponedjeljka privremena prome... ➡️ <b>Побут чужих міст (Лозиця)</b>",
+                "• Pečene kestene lakše ćete oguliti ako ih... ➡️ <b>Світовий шум та лайфстайл (поради з кулінарії)</b>",
+                "• Najmlađi u Dražicama kroz igru i zabavu ... ➡️ <b>Побут чужих міст (Дражице)</b>",
+                "• Zadarska stomatologinja kaže da neki lju... ➡️ <b>Світовий шум та лайфстайл (поради щодо гігієни)</b>",
+                "• Skupo plaćeni bukovi metri: Ukrali drva ... ➡️ <b>Побут чужих міст (Бриньє, Госпич)</b>",
+                "• Policija intervenirala zbog prijetnje na... ➡️ <b>Побут чужих міст (Рієка)</b>",
+                "• Zbog bolesti na FOODravanju ‘otpao‘ je T... ➡️ <b>Побут чужих міст (Дубровник) та шоу-бізнес</b>",
+                "• Na Sveučilištu u Dubrovniku otvoren Cent... ➡️ <b>Побут чужих міст (Дубровник)</b>"
+            ]
+        },
+        "backlog": {
+            "total_size": 49,
+            "sources": {
+                "Zadarski list": 13,
+                "023": 8,
+                "Slobodna dalmacija": 28
             }
         },
         "published": {
