@@ -1,65 +1,5 @@
 [
     {
-        "timestamp": "2026-09-30 13:01:12",
-        "execution_time": 175.5,
-        "funnel": {
-            "scraped_total": 25,
-            "scraped_by_source": {
-                "023": 10,
-                "Slobodna dalmacija": 15
-            },
-            "already_seen": 7,
-            "rejected_by_keywords": 1,
-            "duplicates_removed_by_ai": 21,
-            "rejection_reasons_list": [
-                "• Donose nam 6,3 milijuna noćenja, a žele ... ➡️ <b>Світовий шум</b>",
-                "• Policija razbila blokadu u Koromačnu, pr... ➡️ <b>Побут інших міст</b>",
-                "• Jedan jeftin sastojak čini kajganu krema... ➡️ <b>Світовий шум</b>",
-                "• Predsjednik Republike Hrvatske Zoran Mil... ➡️ <b>Дублікат</b>",
-                "• Sud objavio presudu po tužbi Holdinga. Š... ➡️ <b>Побут інших міст</b>",
-                "• Zašto lice pocrveni baš u trenutku kad n... ➡️ <b>Світовий шум</b>",
-                "• Povratak u Hrvatsku iz prve ruke: u Trok... ➡️ <b>Вже є в історії</b>",
-                "• Nakon četiri kvara riječkih autobusa pro... ➡️ <b>Побут інших міст</b>",
-                "• Tepaju im da su elitni dio Dubrovnika, a... ➡️ <b>Побут інших міст</b>",
-                "• Umjesto da već voze, Rimac mora vratiti ... ➡️ <b>Світовий шум</b>",
-                "• Uz dubrovačke Banje pune kupača usidrena... ➡️ <b>Побут інших міст</b>",
-                "• 30 godina glazbe, poezije i politike: Ri... ➡️ <b>Побут інших міст</b>",
-                "• Milanović odlikovao policijske postaje u... ➡️ <b>Вже є в історії</b>",
-                "• Prijavi se na novi EDIT Digitalne Dalmac... ➡️ <b>Побут інших міст</b>",
-                "• Počinje FOODravanje: Bit će svega i za n... ➡️ <b>Побут інших міст</b>",
-                "• ‘Stani, razmisli, sigurno nastavi‘: u Me... ➡️ <b>Побут інших міст</b>",
-                "• Obilježava se 35. godina Otočkog batalju... ➡️ <b>Вже є в історії</b>",
-                "• Dubrovački iznajmljivači imaju zanimljiv... ➡️ <b>Побут інших міст</b>",
-                "• „Zvijezde“ ovogodišnjeg CROYA sajma... ➡️ <b>Побут інших міст</b>",
-                "• Pijane naočale i simulator prometne nesr... ➡️ <b>Побут інших міст</b>",
-                "• Što se to skrivalo u Neretvi? Carinici i... ➡️ <b>Світовий шум</b>"
-            ]
-        },
-        "backlog": {
-            "total_size": 32,
-            "sources": {
-                "Slobodna dalmacija": 22,
-                "Zadarski list": 5,
-                "023": 5
-            }
-        },
-        "published": {
-            "total": 3,
-            "ukraine_priority": 0,
-            "with_images": 0,
-            "text_only": 3,
-            "sources": {
-                "023": 3
-            }
-        },
-        "models_used": {
-            "gemini-3.5-flash-lite": 1,
-            "gemini-3.5-flash": 0
-        },
-        "errors_count": 0,
-        "gemini_retries": 0
-    },
-    {
         "timestamp": "2026-09-30 14:01:10",
         "execution_time": 166.8,
         "funnel": {
@@ -5933,6 +5873,61 @@
             "sources": {
                 "023": 2,
                 "Slobodna dalmacija": 1
+            }
+        },
+        "models_used": {
+            "gemini-3.5-flash-lite": 1,
+            "gemini-3.5-flash": 1
+        },
+        "errors_count": 0,
+        "gemini_retries": 0
+    },
+    {
+        "timestamp": "2026-10-09 14:01:04",
+        "execution_time": 196.4,
+        "funnel": {
+            "scraped_total": 35,
+            "scraped_by_source": {
+                "023": 10,
+                "Slobodna dalmacija": 15,
+                "Zadarski list": 10
+            },
+            "already_seen": 10,
+            "rejected_by_keywords": 4,
+            "duplicates_removed_by_ai": 14,
+            "rejection_reasons_list": [
+                "• Evo što donosi drugi tjedan Good Food Fe... ➡️ <b>Локальний захід у Дубровнику (не Задар)</b>",
+                "• Najmlađi u Dražicama kroz igru i zabavu ... ➡️ <b>Локальна подія в регіоні Рієки (не Задар)</b>",
+                "• Preminuo je Goran Bare... ➡️ <b>Дублікат новини про смерть Горана Баре (залишено ID 5)</b>",
+                "• U Lozici od ponedjeljka privremena prome... ➡️ <b>Локальне перекриття доріг у Лозиці (не Задар)</b>",
+                "• Zadarska stomatologinja kaže da neki lju... ➡️ <b>Лайфстайл-матеріал та поради щодо гігієни зубів</b>",
+                "• KONČAR i učenici zaprešićke Eko škole u ... ➡️ <b>Локальна екологічна акція в Запрешичі (не Задар)</b>",
+                "• Kava u Zadru: kako je omiljeni napitak p... ➡️ <b>Лайфстайл-матеріал про кавову культуру без новинної цінності</b>",
+                "• Skupo plaćeni bukovi metri: Ukrali drva ... ➡️ <b>Дрібний кримінал та судове рішення в Госпичі/Бринє (не Задар)</b>",
+                "• Pečene kestene lakše ćete oguliti ako ih... ➡️ <b>Поради з кулінарії та лайфстайл</b>",
+                "• Zbog bolesti na FOODravanju ‘otpao‘ je T... ➡️ <b>Локальна культурна подія та зміни в програмі у Дубровнику (не Задар)</b>",
+                "• Preminuo Goran Bare!... ➡️ <b>Дублікат новини про смерть Горана Баре (залишено ID 5)</b>",
+                "• Na Sveučilištu u Dubrovniku otvoren Cent... ➡️ <b>Локальна подія в Дубровнику (не Задар)</b>",
+                "• Na mjestu nekadašnjeg Napoleonovog zatvo... ➡️ <b>Лайфстайл-матеріал про елітну нерухомість без прив'язки до конкретної важливої події в Задарі</b>",
+                "• U Crnoj Gori uhićen zloglasni Ribar, otk... ➡️ <b>Подія у третій країні (Чорногорія), яка безпосередньо не стосується Хорватії чи України</b>"
+            ]
+        },
+        "backlog": {
+            "total_size": 49,
+            "sources": {
+                "Zadarski list": 12,
+                "Slobodna dalmacija": 29,
+                "023": 8
+            }
+        },
+        "published": {
+            "total": 3,
+            "ukraine_priority": 0,
+            "with_images": 1,
+            "text_only": 2,
+            "sources": {
+                "023": 2,
+                "Zadarski list": 1
             }
         },
         "models_used": {
