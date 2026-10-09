@@ -1,65 +1,5 @@
 [
     {
-        "timestamp": "2026-09-30 09:01:03",
-        "execution_time": 165.4,
-        "funnel": {
-            "scraped_total": 35,
-            "scraped_by_source": {
-                "023": 10,
-                "Slobodna dalmacija": 15,
-                "Zadarski list": 10
-            },
-            "already_seen": 10,
-            "rejected_by_keywords": 1,
-            "duplicates_removed_by_ai": 20,
-            "rejection_reasons_list": [
-                "• Gotovo 300 plesača stiže u Bibinje: Adri... ➡️ <b>Спорт</b>",
-                "• Dubrovačka mag. farmacije o cijepljenju ... ➡️ <b>Світовий шум та лайфстайл</b>",
-                "• Sud objavio presudu po tužbi Holdinga. Š... ➡️ <b>Побут чужих міст</b>",
-                "• Direktor KK Zadra Roko Jurlina više od s... ➡️ <b>Спорт</b>",
-                "• Kod Drniša teško ozlijeđen 51-godišnji m... ➡️ <b>Побут чужих міст</b>",
-                "• Zaustavili ga zbog prolaska kroz crveno,... ➡️ <b>Побут чужих міст</b>",
-                "• Biciklistički klub Posedarje otvara upis... ➡️ <b>Спорт</b>",
-                "• Donacijskim koncertom za Antuna Zaninija... ➡️ <b>Побут чужих міст</b>",
-                "• Riječka Brajdica probila novu granicu. U... ➡️ <b>Побут чужих міст</b>",
-                "• Legendarna zadarska skakaonica kao utoči... ➡️ <b>Спорт</b>",
-                "• Čvor je konačno raspetljan, ABA liga i d... ➡️ <b>Спорт</b>",
-                "• Riječanin (72) priveden zbog prijetnje b... ➡️ <b>Побут чужих міст</b>",
-                "• Ronioci očekivali puno gore, a zatekli n... ➡️ <b>Спорт</b>",
-                "• Vješti rally vozač ušao s Audijem A6 e-t... ➡️ <b>Світовий шум та лайфстайл</b>",
-                "• Cijena kvadrata stana u ovom dijelu Dubr... ➡️ <b>Побут чужих міст</b>",
-                "• Udruga Srce za nju i Poliklinika Primari... ➡️ <b>Побут чужих міст</b>",
-                "• Besplatan prijevoz učenika na izvanučion... ➡️ <b>Побут чужих міст</b>",
-                "• Slijedite ovo jednostavno pravilo i srež... ➡️ <b>Світовий шум та лайфстайл</b>",
-                "• Otvoren natječaj za nagrade „Volonteri g... ➡️ <b>Побут чужих міст</b>",
-                "• Otvorene prijave za 18. generaciju Start... ➡️ <b>Побут чужих міст</b>"
-            ]
-        },
-        "backlog": {
-            "total_size": 31,
-            "sources": {
-                "023": 12,
-                "Zadarski list": 13,
-                "Slobodna dalmacija": 6
-            }
-        },
-        "published": {
-            "total": 3,
-            "ukraine_priority": 0,
-            "with_images": 0,
-            "text_only": 3,
-            "sources": {
-                "023": 3
-            }
-        },
-        "models_used": {
-            "gemini-3.5-flash-lite": 1,
-            "gemini-3.5-flash": 0
-        },
-        "errors_count": 0,
-        "gemini_retries": 0
-    },
-    {
         "timestamp": "2026-09-30 10:01:03",
         "execution_time": 183.5,
         "funnel": {
@@ -5942,6 +5882,64 @@
                 "Zadarski list": 1,
                 "023": 1,
                 "Slobodna dalmacija": 1
+            }
+        },
+        "models_used": {
+            "gemini-3.5-flash-lite": 1,
+            "gemini-3.5-flash": 1
+        },
+        "errors_count": 0,
+        "gemini_retries": 0
+    },
+    {
+        "timestamp": "2026-10-09 10:01:05",
+        "execution_time": 185.7,
+        "funnel": {
+            "scraped_total": 35,
+            "scraped_by_source": {
+                "023": 10,
+                "Slobodna dalmacija": 15,
+                "Zadarski list": 10
+            },
+            "already_seen": 11,
+            "rejected_by_keywords": 2,
+            "duplicates_removed_by_ai": 17,
+            "rejection_reasons_list": [
+                "• Piše Kim Cuculić: Mjesec hrvatske knjige... ➡️ <b>Світовий шум та лайфстайл (культурний захід)</b>",
+                "• Natalija Gulin spremna za povijesni mara... ➡️ <b>Спорт</b>",
+                "• Zbog neslane šale završio iza rešetaka: ... ➡️ <b>Побут чужих міст (дрібне правопорушення в Дубровнику)</b>",
+                "• Zadar slavi toleranciju uz filmove iz Ca... ➡️ <b>Повторення вже опублікованої новини про відкриття фестивалю</b>",
+                "• Opasni osuđenici bi mogli ostati iza reš... ➡️ <b>Дублікат новини ID 0</b>",
+                "• Novim zakonom ukida se razlika između re... ➡️ <b>Дублікат новини ID 4</b>",
+                "• Nobelovu nagradu za mir dobila je Navy P... ➡️ <b>Світовий шум та лайфстайл (міжнародні новини)</b>",
+                "• Iz Nina za Đurđevac; Film o Grguru Ninsk... ➡️ <b>Світовий шум та лайфстайл (дитячий кінофестиваль)</b>",
+                "• Dodik u centru velikog skandala u Bijelo... ➡️ <b>Світовий шум та лайфстайл (іноземна політика)</b>",
+                "• Pod utjecajem alkohola i droge zaustavlj... ➡️ <b>Побут чужих міст (ДТП у Крку)</b>",
+                "• Muškarac (40) osumnjičen za tešku krađu ... ➡️ <b>Побут чужих міст (крадіжка в Шибенику)</b>",
+                "• Provale u kuće i stanove u Čavlima i Srd... ➡️ <b>Побут чужих міст (крадіжки в Рієці та околицях)</b>",
+                "• Samo da vas podsjetimo, danas od podne n... ➡️ <b>Побут чужих міст (перекриття доріг у Дубровнику)</b>",
+                "• Marković povukao prijedlog nagodbe s vje... ➡️ <b>Побут чужих міст (банкрутство підприємства в Рієці)</b>",
+                "• Obrat pod morem. Čekao zubaca pa dočekao... ➡️ <b>Світовий шум та лайфстайл (історія про риболовлю)</b>",
+                "• Nema vatre, ima dima! Zrak na jugu Dalma... ➡️ <b>Побут чужих міст (екологічна ситуація в Метковичі)</b>",
+                "• Gripa ove godine stigla ranije, u PGŽ-u ... ➡️ <b>Побут чужих міст (захворюваність на грип у Рієці)</b>"
+            ]
+        },
+        "backlog": {
+            "total_size": 31,
+            "sources": {
+                "Slobodna dalmacija": 15,
+                "023": 6,
+                "Zadarski list": 10
+            }
+        },
+        "published": {
+            "total": 3,
+            "ukraine_priority": 0,
+            "with_images": 3,
+            "text_only": 0,
+            "sources": {
+                "Slobodna dalmacija": 2,
+                "Zadarski list": 1
             }
         },
         "models_used": {
