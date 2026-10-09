@@ -1,68 +1,5 @@
 [
     {
-        "timestamp": "2026-09-30 12:01:06",
-        "execution_time": 187.0,
-        "funnel": {
-            "scraped_total": 35,
-            "scraped_by_source": {
-                "023": 10,
-                "Slobodna dalmacija": 15,
-                "Zadarski list": 10
-            },
-            "already_seen": 6,
-            "rejected_by_keywords": 2,
-            "duplicates_removed_by_ai": 22,
-            "rejection_reasons_list": [
-                "• Pentagon potvrdio potpuno američko povla... ➡️ <b>Світовий шум</b>",
-                "• Jedan jeftin sastojak čini kajganu krema... ➡️ <b>Лайфстайл</b>",
-                "• Najiznajmljivači 2026.: Dokaz da Hrvatsk... ➡️ <b>Реклама</b>",
-                "• Obilježava se 35. godina Otočkog batalju... ➡️ <b>Вже є в історії</b>",
-                "• Zašto lice pocrveni baš u trenutku kad n... ➡️ <b>Світовий шум</b>",
-                "• Holding i ZET pozvali na obustavu nezako... ➡️ <b>Дублікат</b>",
-                "• Dubrovački iznajmljivači imaju zanimljiv... ➡️ <b>Побут чужих міст</b>",
-                "• Gotovo 300 plesača stiže u Bibinje: Adri... ➡️ <b>Спорт</b>",
-                "• Na A1 prevozili više od 8,5 kilograma ma... ➡️ <b>Побут чужих міст</b>",
-                "• Biciklistički klub Posedarje otvara upis... ➡️ <b>Спорт</b>",
-                "• Velika pobjeda otočana: isplovio ‘Mali P... ➡️ <b>Побут чужих міст</b>",
-                "• Legendarna zadarska skakaonica kao utoči... ➡️ <b>Лайфстайл</b>",
-                "• Možete li vjerovati? S 4,58 promila sjeo... ➡️ <b>Побут чужих міст</b>",
-                "• Dubrovački iznajmljivači imaju zanimljiv... ➡️ <b>Дублікат</b>",
-                "• Vlada u zadnji čas odgodila sidrene cije... ➡️ <b>Вже є в історії</b>",
-                "• Završeni radovi na Kaštijunu, trebali bi... ➡️ <b>Побут чужих міст</b>",
-                "• Mara i Kata s Igara preselile u HTV-ovu ... ➡️ <b>Лайфстайл</b>",
-                "• Bablje ljeto na vrhuncu: Zadar i okolicu... ➡️ <b>Вже є в історії</b>",
-                "• Uprava ZET-a pozvala radnike da se odmah... ➡️ <b>Дублікат</b>",
-                "• Posađene palme uz Posat, pogledajte kako... ➡️ <b>Побут чужих міст</b>",
-                "• Inicijativa hrvatskih znanstvenika traži... ➡️ <b>Світовий шум</b>",
-                "• Baglivi o Getaldiću: nova stranica u eur... ➡️ <b>Вже є в історії</b>"
-            ]
-        },
-        "backlog": {
-            "total_size": 40,
-            "sources": {
-                "Zadarski list": 14,
-                "Slobodna dalmacija": 19,
-                "023": 7
-            }
-        },
-        "published": {
-            "total": 3,
-            "ukraine_priority": 0,
-            "with_images": 3,
-            "text_only": 0,
-            "sources": {
-                "Slobodna dalmacija": 2,
-                "Zadarski list": 1
-            }
-        },
-        "models_used": {
-            "gemini-3.5-flash-lite": 1,
-            "gemini-3.5-flash": 0
-        },
-        "errors_count": 0,
-        "gemini_retries": 0
-    },
-    {
         "timestamp": "2026-09-30 13:01:12",
         "execution_time": 175.5,
         "funnel": {
@@ -5939,6 +5876,63 @@
             "sources": {
                 "Slobodna dalmacija": 1,
                 "023": 2
+            }
+        },
+        "models_used": {
+            "gemini-3.5-flash-lite": 1,
+            "gemini-3.5-flash": 1
+        },
+        "errors_count": 0,
+        "gemini_retries": 0
+    },
+    {
+        "timestamp": "2026-10-09 13:01:06",
+        "execution_time": 178.1,
+        "funnel": {
+            "scraped_total": 35,
+            "scraped_by_source": {
+                "023": 10,
+                "Slobodna dalmacija": 15,
+                "Zadarski list": 10
+            },
+            "already_seen": 6,
+            "rejected_by_keywords": 2,
+            "duplicates_removed_by_ai": 16,
+            "rejection_reasons_list": [
+                "• HGSS spasio izgubljenog gljivara u Gosko... ➡️ <b>Побут інших регіонів (рятувальна операція в Горському Котарі)</b>",
+                "• Kava u Zadru: kako je omiljeni napitak p... ➡️ <b>Лайфстайл та розважальний контент без новинної цінності</b>",
+                "• Kćer Trumpove šefice kabineta slikala se... ➡️ <b>Світовий шум, подія в третій країні (Боснія і Герцеговина), що не стосується Хорватії чи України</b>",
+                "• Ratni zapovjednik HVO osuđen za šverc 50... ➡️ <b>Дублікат новини ID 2 (судовий вирок за контрабанду кокаїну)</b>",
+                "• Izložba o Bijenalu mladih u MMSU Rijeka ... ➡️ <b>Побут та культурні події інших міст (Рієка)</b>",
+                "• Zadarska stomatologinja kaže da neki lju... ➡️ <b>Лайфстайл, поради стоматолога, відсутність суспільно важливої події</b>",
+                "• Pečene kestene lakše ćete oguliti ako ih... ➡️ <b>Лайфстайл, кулінарні поради</b>",
+                "• Skupo plaćeni bukovi metri: Ukrali drva ... ➡️ <b>Побут та дрібний кримінал інших міст (Госпич/Бриньє)</b>",
+                "• Prometni recidivist bježao policiji u Za... ➡️ <b>Подія вже є в історії (затримання п'яного водія-втікача в Задарі)</b>",
+                "• Zbog bolesti na FOODravanju ‘otpao‘ je T... ➡️ <b>Побут та події інших міст (скасування концерту в Дубровнику)</b>",
+                "• Natalija Gulin spremna za povijesni mara... ➡️ <b>Спорт (марафон у Загребі)</b>",
+                "• Na Sveučilištu u Dubrovniku otvoren Cent... ➡️ <b>Побут та події інших міст (відкриття центру в Дубровнику)</b>",
+                "• Na mjestu nekadašnjeg Napoleonovog zatvo... ➡️ <b>Лайфстайл та загальні новини ринку нерухомості без прив'язки до Задара</b>",
+                "• Mali vijećnici, dječji gradonačelnik i p... ➡️ <b>Побут інших міст (дитячий тиждень у Цриквениці)</b>",
+                "• U Crnoj Gori uhićen zloglasni Ribar, otk... ➡️ <b>Світові новини, подія в Чорногорії без прямого зв'язку з Хорватією</b>",
+                "• Stiže nam kišovit i vjetrovit vikend, a ... ➡️ <b>Подія вже є в історії (прогноз погоди та штормове попередження на вихідні для Задара)</b>"
+            ]
+        },
+        "backlog": {
+            "total_size": 47,
+            "sources": {
+                "Zadarski list": 10,
+                "Slobodna dalmacija": 28,
+                "023": 9
+            }
+        },
+        "published": {
+            "total": 3,
+            "ukraine_priority": 0,
+            "with_images": 1,
+            "text_only": 2,
+            "sources": {
+                "023": 2,
+                "Slobodna dalmacija": 1
             }
         },
         "models_used": {
