@@ -1,58 +1,5 @@
 [
     {
-        "timestamp": "2026-09-30 08:01:05",
-        "execution_time": 205.6,
-        "funnel": {
-            "scraped_total": 35,
-            "scraped_by_source": {
-                "023": 10,
-                "Slobodna dalmacija": 15,
-                "Zadarski list": 10
-            },
-            "already_seen": 6,
-            "rejected_by_keywords": 1,
-            "duplicates_removed_by_ai": 19,
-            "rejection_reasons_list": [
-                "• Udruga Srce za nju i Poliklinika Primari... ➡️ <b>Побут чужих міст</b>",
-                "• Legendarna zadarska skakaonica kao utoči... ➡️ <b>Спорт</b>",
-                "• Čvor je konačno raspetljan, ABA liga i d... ➡️ <b>Спорт</b>",
-                "• Besplatan prijevoz učenika na izvanučion... ➡️ <b>Побут чужих міст</b>",
-                "• Ronioci očekivali puno gore, a zatekli n... ➡️ <b>Спорт</b>",
-                "• Otvoren natječaj za nagrade „Volonteri g... ➡️ <b>Побут чужих міст</b>",
-                "• Iza značke kuca veliko srce: Zadrani Tam... ➡️ <b>Дублікат</b>",
-                "• Cijena kvadrata stana u ovom dijelu Dubr... ➡️ <b>Побут чужих міст</b>",
-                "• Rijeka uvodi nagradu „AmbasadoRi mira“ z... ➡️ <b>Побут чужих міст</b>",
-                "• Zoran Milanović Redom Bana Jelačića odli... ➡️ <b>Вже є в історії</b>",
-                "• Otvorene prijave za 18. generaciju Start... ➡️ <b>Побут чужих міст</b>",
-                "• Slijedite ovo jednostavno pravilo i srež... ➡️ <b>Світовий шум</b>",
-                "• Zabrana parkiranja na dijelu Ulice M. Ma... ➡️ <b>Побут чужих міст</b>",
-                "• Mostovka najavila podršku Rinčić, Grad R... ➡️ <b>Побут чужих міст</b>",
-                "• Nakon četiri kvara riječkih autobusa pro... ➡️ <b>Побут чужих міст</b>",
-                "• Bračni par iz Amerike prehodao pola tisu... ➡️ <b>Вже є в історії</b>",
-                "• Umjesto da već voze, Rimac mora vratiti ... ➡️ <b>Світовий шум</b>",
-                "• Prvenstvo Hrvatske u RC automobilizmu od... ➡️ <b>Спорт</b>",
-                "• 30 godina glazbe, poezije i politike: Ri... ➡️ <b>Побут чужих міст</b>"
-            ]
-        },
-        "backlog": {
-            "total_size": 24,
-            "sources": {
-                "023": 9,
-                "Slobodna dalmacija": 6,
-                "Zadarski list": 9
-            }
-        },
-        "published": {
-            "total": 0,
-            "ukraine_priority": 0,
-            "with_images": 0,
-            "text_only": 0,
-            "sources": {}
-        },
-        "errors_count": 1,
-        "gemini_retries": 3
-    },
-    {
         "timestamp": "2026-09-30 08:39:08",
         "execution_time": 165.5,
         "funnel": {
@@ -5942,6 +5889,61 @@
         "models_used": {
             "gemini-3.5-flash-lite": 1,
             "gemini-3.5-flash": 1
+        },
+        "errors_count": 0,
+        "gemini_retries": 0
+    },
+    {
+        "timestamp": "2026-10-09 08:01:03",
+        "execution_time": 167.7,
+        "funnel": {
+            "scraped_total": 35,
+            "scraped_by_source": {
+                "023": 10,
+                "Slobodna dalmacija": 15,
+                "Zadarski list": 10
+            },
+            "already_seen": 7,
+            "rejected_by_keywords": 1,
+            "duplicates_removed_by_ai": 14,
+            "rejection_reasons_list": [
+                "• Iz Otočca dolazi još jedan izvrsni „fajt... ➡️ <b>Спорт</b>",
+                "• Ured šibensko-kninskog župana Paška Raki... ➡️ <b>Побут чужих міст та регіонів</b>",
+                "• Ekološki sajam Opatija ove subote ispred... ➡️ <b>Побут чужих міст та регіонів</b>",
+                "• Festivala svjetlosti Lumiart Dubrovnik: ... ➡️ <b>Побут чужих міст та регіонів</b>",
+                "• Iz Nina za Đurđevac; Film o Grguru Ninsk... ➡️ <b>Дублікат або несуттєва культурна подія</b>",
+                "• Boris Orešić, dubrovački prometni stručn... ➡️ <b>Побут чужих міст та регіонів</b>",
+                "• Općina Punat priprema projekt šest stano... ➡️ <b>Побут чужих міст та регіонів</b>",
+                "• Pogledajte što sve možete pročitati u no... ➡️ <b>Побут чужих міст та регіонів</b>",
+                "• Borba protiv nametnika na Liburniji: Spa... ➡️ <b>Побут чужих міст та регіонів</b>",
+                "• S polica Lidla hitno se povlači omiljeni... ➡️ <b>Дублікат новини про заражену панчету</b>",
+                "• Ivica Lukanović: “Kvarner može biti među... ➡️ <b>Побут чужих міст та регіонів</b>",
+                "• Proslava srebrnog jubileja DND-a 23. stu... ➡️ <b>Побут чужих міст та регіонів</b>",
+                "• Agenti ICE-a u New Yorku pucali u čovjek... ➡️ <b>Світовий шум та лайфстайл</b>",
+                "• Pošalji nekome njegovu zvijezdu iznad Ga... ➡️ <b>Побут чужих міст та регіонів</b>"
+            ]
+        },
+        "backlog": {
+            "total_size": 21,
+            "sources": {
+                "023": 6,
+                "Slobodna dalmacija": 5,
+                "Zadarski list": 10
+            }
+        },
+        "published": {
+            "total": 3,
+            "ukraine_priority": 1,
+            "with_images": 1,
+            "text_only": 2,
+            "sources": {
+                "Zadarski list": 1,
+                "023": 2
+            }
+        },
+        "models_used": {
+            "gemini-3.5-flash-lite": 2,
+            "gemini-3.5-flash": 0
         },
         "errors_count": 0,
         "gemini_retries": 0
