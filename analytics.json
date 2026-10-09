@@ -1,68 +1,5 @@
 [
     {
-        "timestamp": "2026-09-30 15:01:12",
-        "execution_time": 201.7,
-        "funnel": {
-            "scraped_total": 35,
-            "scraped_by_source": {
-                "023": 10,
-                "Slobodna dalmacija": 15,
-                "Zadarski list": 10
-            },
-            "already_seen": 11,
-            "rejected_by_keywords": 2,
-            "duplicates_removed_by_ai": 22,
-            "rejection_reasons_list": [
-                "• Otkriven planet koji je istodobno prekri... ➡️ <b>Світовий шум</b>",
-                "• Nastavlja se RInkluzija. Rijeci treba 16... ➡️ <b>Побут чужих міст</b>",
-                "• Tko je to stigao u Dubrovnik? ‘Stella Ma... ➡️ <b>Побут чужих міст</b>",
-                "• Jedan jeftin sastojak čini kajganu krema... ➡️ <b>Світовий шум</b>",
-                "• Kolektivno pregovaranje – od nerealnih z... ➡️ <b>Побут чужих міст</b>",
-                "• Čudan slučaj; poznatom sportašu ukraden ... ➡️ <b>Спорт</b>",
-                "• Zašto lice pocrveni baš u trenutku kad n... ➡️ <b>Світовий шум</b>",
-                "• Srdočki osnovci s gostima posjetili Ured... ➡️ <b>Побут чужих міст</b>",
-                "• Kraljevi najma: gradonačelnik Vodica ima... ➡️ <b>Реклама</b>",
-                "• Riječkim policajcima nagrade za hrabrost... ➡️ <b>Побут чужих міст</b>",
-                "• Donose nam 6,3 milijuna noćenja, a žele ... ➡️ <b>Вже є в історії</b>",
-                "• Predsjednik Republike Hrvatske Zoran Mil... ➡️ <b>Дублікат</b>",
-                "• Zagrebački HDZ: Tomašević proziva Vladu,... ➡️ <b>Дублікат</b>",
-                "• Povratak u Hrvatsku iz prve ruke: u Trok... ➡️ <b>Вже є в історії</b>",
-                "• Tepaju im da su elitni dio Dubrovnika, a... ➡️ <b>Побут чужих міст</b>",
-                "• Književni festival Lit Link u listopadu ... ➡️ <b>Побут чужих міст</b>",
-                "• Uz dubrovačke Banje pune kupača usidrena... ➡️ <b>Дублікат</b>",
-                "• Presuda suda u Zagrebu jasna: Radnici se... ➡️ <b>Дублікат</b>",
-                "• Milanović odlikovao policijske postaje u... ➡️ <b>Дублікат</b>",
-                "• Grad Senj daje potpore poljoprivrednicim... ➡️ <b>Побут чужих міст</b>",
-                "• Prijavi se na novi EDIT Digitalne Dalmac... ➡️ <b>Побут чужих міст</b>",
-                "• Počinje FOODravanje: Bit će svega i za n... ➡️ <b>Побут чужих міст</b>"
-            ]
-        },
-        "backlog": {
-            "total_size": 31,
-            "sources": {
-                "Zadarski list": 10,
-                "Slobodna dalmacija": 18,
-                "023": 3
-            }
-        },
-        "published": {
-            "total": 3,
-            "ukraine_priority": 0,
-            "with_images": 3,
-            "text_only": 0,
-            "sources": {
-                "Zadarski list": 2,
-                "Slobodna dalmacija": 1
-            }
-        },
-        "models_used": {
-            "gemini-3.5-flash-lite": 1,
-            "gemini-3.5-flash": 0
-        },
-        "errors_count": 0,
-        "gemini_retries": 0
-    },
-    {
         "timestamp": "2026-09-30 16:01:10",
         "execution_time": 15.2,
         "funnel": {
@@ -5931,6 +5868,70 @@
         "models_used": {
             "gemini-3.5-flash-lite": 1,
             "gemini-3.5-flash": 1
+        },
+        "errors_count": 0,
+        "gemini_retries": 0
+    },
+    {
+        "timestamp": "2026-10-09 16:01:00",
+        "execution_time": 173.7,
+        "funnel": {
+            "scraped_total": 35,
+            "scraped_by_source": {
+                "023": 10,
+                "Slobodna dalmacija": 15,
+                "Zadarski list": 10
+            },
+            "already_seen": 10,
+            "rejected_by_keywords": 3,
+            "duplicates_removed_by_ai": 24,
+            "rejection_reasons_list": [
+                "• Skupna izložba autora pobjednika slikars... ➡️ <b>Побут чужих міст</b>",
+                "• Kuhinjska spužva može skrivati mnoštvo b... ➡️ <b>Світовий шум та лайфстайл</b>",
+                "• Je li ikoga sram? Bitno da nogometaši im... ➡️ <b>Спорт</b>",
+                "• Rinčić pita Riječane žele li spalionicu ... ➡️ <b>Побут чужих міст</b>",
+                "• NASA će radarom i seizmičkim senzorima t... ➡️ <b>Світовий шум та лайфстайл</b>",
+                "• Ovo je hrvatska reprezentacija frizera k... ➡️ <b>Спорт</b>",
+                "• Sonas u Pogonu slavi velikih 10 godina: ... ➡️ <b>Побут чужих міст</b>",
+                "• Kava u Zadru: kako je omiljeni napitak p... ➡️ <b>Дубль існуючої історії / Світовий шум та лайфстайл</b>",
+                "• Evo što donosi drugi tjedan Good Food Fe... ➡️ <b>Побут чужих міст</b>",
+                "• Zbog radova od ponedjeljka Ulica Drenovs... ➡️ <b>Побут чужих міст</b>",
+                "• Pečene kestene lakše ćete oguliti ako ih... ➡️ <b>Світовий шум та лайфстайл</b>",
+                "• Preminuo je Goran Bare... ➡️ <b>Дубль історії</b>",
+                "• Vlada: Stjepana Adanića za predsjednika ... ➡️ <b>Дубль історії / Несуттєве оновлення</b>",
+                "• U Lozici od ponedjeljka privremena prome... ➡️ <b>Побут чужих міст</b>",
+                "• Hrvatski „Majstori ljepote“: 11 najbolji... ➡️ <b>Дубль новини</b>",
+                "• Vatrogasne sirene probudile građane, doj... ➡️ <b>Дубль існуючої історії</b>",
+                "• Ratni zapovjednik HVO-a osuđen za šverc ... ➡️ <b>Дубль історії</b>",
+                "• Žene čine većinu zdravstvenog sustava, a... ➡️ <b>Світовий шум та лайфстайл</b>",
+                "• Zadarska stomatologinja kaže da neki lju... ➡️ <b>Світовий шум та лайфстайл</b>",
+                "• Pri kraju radovi na uređenju Spomen-park... ➡️ <b>Побут чужих міст</b>",
+                "• Skupo plaćeni bukovi metri: Ukrali drva ... ➡️ <b>Побут чужих міст</b>",
+                "• Plenković: Donijet ćemo zakon o zaštiti ... ➡️ <b>Дубль історії</b>",
+                "• Zbog bolesti na FOODravanju ‘otpao‘ je T... ➡️ <b>Побут чужих міст</b>",
+                "• Vižintin pušten iz istražnog zatvora nak... ➡️ <b>Дубль історії</b>"
+            ]
+        },
+        "backlog": {
+            "total_size": 51,
+            "sources": {
+                "Zadarski list": 15,
+                "Slobodna dalmacija": 30,
+                "023": 6
+            }
+        },
+        "published": {
+            "total": 1,
+            "ukraine_priority": 0,
+            "with_images": 0,
+            "text_only": 1,
+            "sources": {
+                "023": 1
+            }
+        },
+        "models_used": {
+            "gemini-3.5-flash-lite": 2,
+            "gemini-3.5-flash": 0
         },
         "errors_count": 0,
         "gemini_retries": 0
