@@ -1,67 +1,5 @@
 [
     {
-        "timestamp": "2026-10-01 12:01:12",
-        "execution_time": 188.4,
-        "funnel": {
-            "scraped_total": 35,
-            "scraped_by_source": {
-                "023": 10,
-                "Slobodna dalmacija": 15,
-                "Zadarski list": 10
-            },
-            "already_seen": 6,
-            "rejected_by_keywords": 3,
-            "duplicates_removed_by_ai": 21,
-            "rejection_reasons_list": [
-                "• Nevidljivi kolač od jabuka osvaja izgled... ➡️ <b>Світовий шум та лайфстайл</b>",
-                "• ACI dobio koncesije za 21 marinu do 2058... ➡️ <b>Економіка та інфраструктура загальнонаціонального рівня</b>",
-                "• Miroslavu Kutli nastupila zastara za pos... ➡️ <b>Події в Загребі</b>",
-                "• Vozači, naoružajte se strpljenjem: privr... ➡️ <b>Побут Шибеника</b>",
-                "• Spektakl na moru ne može proći bez volon... ➡️ <b>Спорт</b>",
-                "• Razgovorom s Oliverom Frljićem i Anom Mi... ➡️ <b>Події в Рієці</b>",
-                "• Potpisani ugovori za rekonstrukciju Kule... ➡️ <b>Події в Дубровнику</b>",
-                "• Jedini festival koji slavi kantautorsko ... ➡️ <b>Дублікат</b>",
-                "• Uhićeni Amerikanac i Izraelka: U Munama ... ➡️ <b>Події в Опатії</b>",
-                "• Počelo je... Zbog dugova Studenca nastao... ➡️ <b>Вже є в історії</b>",
-                "• Cvitu iz “Kumova” zna cijela Hrvatska, a... ➡️ <b>Шоу-бізнес</b>",
-                "• Dom za osobe s demencijom koji je osnova... ➡️ <b>Події в Рієці</b>",
-                "• Ovo je posebno važno za dubrovačke poslo... ➡️ <b>Вже є в історії</b>",
-                "• Studenti će uz vijećnike-mentore pratiti... ➡️ <b>Події в Рієці</b>",
-                "• Izvjesna je propast drugog i trećeg javn... ➡️ <b>Вже є в історії</b>",
-                "• Čarolija na ušću Neretve: monumentalni c... ➡️ <b>Туризм у Неретві</b>",
-                "• Saznaj IQ na testiranju Hrvatske Mense u... ➡️ <b>Події в Рієці</b>",
-                "• U Kninu četvorica privedena zbog ilegaln... ➡️ <b>Події в Книні</b>",
-                "• U krvi hrvatskih ispitanika potvrđeni PF... ➡️ <b>Загальнонаціональне дослідження здоров'я</b>",
-                "• Sarajevski Vodovod ušao u posjed vrijedn... ➡️ <b>Події в Дубровнику</b>",
-                "• Četvero uhićenih zbog sumnje na prijevar... ➡️ <b>Загальнонаціональна подія</b>"
-            ]
-        },
-        "backlog": {
-            "total_size": 32,
-            "sources": {
-                "Slobodna dalmacija": 17,
-                "Zadarski list": 11,
-                "023": 4
-            }
-        },
-        "published": {
-            "total": 3,
-            "ukraine_priority": 0,
-            "with_images": 2,
-            "text_only": 1,
-            "sources": {
-                "Slobodna dalmacija": 2,
-                "023": 1
-            }
-        },
-        "models_used": {
-            "gemini-3.5-flash-lite": 1,
-            "gemini-3.5-flash": 0
-        },
-        "errors_count": 0,
-        "gemini_retries": 0
-    },
-    {
         "timestamp": "2026-10-01 13:01:14",
         "execution_time": 147.7,
         "funnel": {
@@ -5918,6 +5856,69 @@
                 "Slobodna dalmacija": 14,
                 "023": 2,
                 "Zadarski list": 7
+            }
+        },
+        "published": {
+            "total": 0,
+            "ukraine_priority": 0,
+            "with_images": 0,
+            "text_only": 0,
+            "sources": {}
+        },
+        "models_used": {
+            "gemini-3.5-flash-lite": 1,
+            "gemini-3.5-flash": 0
+        },
+        "errors_count": 0,
+        "gemini_retries": 0
+    },
+    {
+        "timestamp": "2026-10-10 13:01:05",
+        "execution_time": 16.6,
+        "funnel": {
+            "scraped_total": 35,
+            "scraped_by_source": {
+                "023": 10,
+                "Slobodna dalmacija": 15,
+                "Zadarski list": 10
+            },
+            "already_seen": 22,
+            "rejected_by_keywords": 5,
+            "duplicates_removed_by_ai": 25,
+            "rejection_reasons_list": [
+                "• Glad ubrzo nakon jela? Ove namirnice pom... ➡️ <b>Світовий шум та лайфстайл, поради щодо харчування</b>",
+                "• “Pljačka vam materina, sjašite više”: Po... ➡️ <b>Дубль новини ID 8</b>",
+                "• Bablje ljeto se ne da! Drugi je vikend l... ➡️ <b>Побут чужих міст (Шибеник)</b>",
+                "• Drvena ili plastična daska za rezanje: i... ➡️ <b>Світовий шум та лайфстайл, побутові поради</b>",
+                "• I premijer Plenković izrazio sućut zbog ... ➡️ <b>Переказ новини з історії про смерть Горана Баре без суттєвих нових оновлень</b>",
+                "• Preminuo je gospar Stjepan Masle, dugogo... ➡️ <b>Локальна новина іншого міста (Дубровник), не стосується Задара</b>",
+                "• Pet pasmina pasa koje važe za najotporni... ➡️ <b>Світовий шум та лайфстайл</b>",
+                "• Nexe potvrdio da je dosad zaprimio četir... ➡️ <b>Дубль новини ID 11</b>",
+                "• ‘Za svaki hotelski apartman koji se otvo... ➡️ <b>Переказ вчорашньої події про просуди у Загребі без кардинальних нових оновлень</b>",
+                "• Veza više nije tajna, Maja Šuput potvrdi... ➡️ <b>Дубль новини ID 14 (шоу-бізнес)</b>",
+                "• Nova pravila! Evo tko će morati platiti ... ➡️ <b>Переказ загальної інформації про системи подорожей без нагального зв'язку з Хорватією та Задаром на сьогодні</b>",
+                "• Građani Našica danas opet prosvjedovali ... ➡️ <b>Повторна новина про протести в Нашицах щодо відходів, тема вже була висвітлена в історії</b>",
+                "• Zima nam ipak uskoro stiže: provjerili s... ➡️ <b>Побут чужих міст (Дубровник)</b>",
+                "• Treba li svijet strahovati od navodne po... ➡️ <b>Світовий шум (події в третіх країнах, РФ)</b>",
+                "• Prva ‘službena pusa‘ pjevačice i poduzet... ➡️ <b>Шоу-бізнес (світські плітки)</b>",
+                "• Kupci skupog iPhonea 18 Pro prijavljuju ... ➡️ <b>Світовий шум / технологічні новини гаджетів без прямого стосунку до України чи Хорватії</b>",
+                "• U Otavicama je 75 godišnjak letvom izmla... ➡️ <b>Дубль новини ID 20</b>",
+                "• ASOS potvrdio hakerski upad. Do podataka... ➡️ <b>Світовий шум / кібербезпека комерційного бренду</b>",
+                "• U Močićima nema vode, evo do kada... ➡️ <b>Побут чужого міста (Конавле/Мочичі)</b>",
+                "• Mostovu peticiju za raskidanje koncesija... ➡️ <b>Локальна політика регіону ПГЖ, не стосується Задара</b>",
+                "• U Otavicama se žestoko obračunali 75-god... ➡️ <b>Дрібний кримінал у чужому місті (Дрніш)</b>",
+                "• Epidemiologe brine opasna crijevna infek... ➡️ <b>Світовий шум / медичні дослідження в США</b>",
+                "• Počeli radovi na nadvožnjaku kod Dalmare... ➡️ <b>Побут чужого міста (Шибеник)</b>",
+                "• U selu na Sardiniji žene imaju veliku ša... ➡️ <b>Світовий шум / наукове дослідження в Італії</b>",
+                "• Najviše je sporova u građevinskom sektor... ➡️ <b>Абстрактна економічна аналітика світового рівня без прив'язки до актуального контексту</b>"
+            ]
+        },
+        "backlog": {
+            "total_size": 30,
+            "sources": {
+                "Slobodna dalmacija": 16,
+                "023": 3,
+                "Zadarski list": 11
             }
         },
         "published": {
