@@ -1,69 +1,5 @@
 [
     {
-        "timestamp": "2026-10-01 14:01:11",
-        "execution_time": 110.7,
-        "funnel": {
-            "scraped_total": 35,
-            "scraped_by_source": {
-                "023": 10,
-                "Slobodna dalmacija": 15,
-                "Zadarski list": 10
-            },
-            "already_seen": 6,
-            "rejected_by_keywords": 6,
-            "duplicates_removed_by_ai": 24,
-            "rejection_reasons_list": [
-                "• U ONK Metković bijesni i ogorčeni: ‘Ovo ... ➡️ <b>Побут Метковіча</b>",
-                "• Bojan Korsika oplivao Goli otok: Prešao ... ➡️ <b>Спорт</b>",
-                "• Koje dokumente smijete baciti, a koje mo... ➡️ <b>Світовий шум та лайфстайл</b>",
-                "• Dubrovnik se sprema za sedam dana čistog... ➡️ <b>Побут Дубровника</b>",
-                "• Nova suradnja Like i Kraja Vysočina... ➡️ <b>Побут Лики</b>",
-                "• Nevidljivi kolač od jabuka osvaja izgled... ➡️ <b>Рецепти</b>",
-                "• Pojačanje na jugu: u Policijsku upravu d... ➡️ <b>Побут Дубровника</b>",
-                "• U Gospiću u redove policije primljeno 20... ➡️ <b>Побут Госпича</b>",
-                "• Spektakl na moru ne može proći bez volon... ➡️ <b>Спорт</b>",
-                "• Ova šibenska ljepotica konačno ide u obn... ➡️ <b>Побут Шибеника</b>",
-                "• SOA je za otpad u Gospiću znala još 2022... ➡️ <b>Вже є в історії</b>",
-                "• Vir dobiva više od 213 milijuna eura za ... ➡️ <b>Вже є в історії</b>",
-                "• Stiglo u Neum i odmah privuklo pozornost... ➡️ <b>Події в Боснії і Герцеговині</b>",
-                "• Periskop se vraća u Rijeku: pet dana cir... ➡️ <b>Культурний шум у Рієці</b>",
-                "• Počinje Neretva sand art festival: umjet... ➡️ <b>Культурний шум</b>",
-                "• Forum seniora SDP-a Rijeka: Status hrvat... ➡️ <b>Побут Рієки</b>",
-                "• Potpisani ugovori za rekonstrukciju Kule... ➡️ <b>Дублікат</b>",
-                "• Tko je dvojac optužen s Dariom Šimićem? ... ➡️ <b>Вже є в історії</b>",
-                "• Vozači, naoružajte se strpljenjem: privr... ➡️ <b>Побут Шибеника</b>",
-                "• Potpisani ugovori za rekonstrukciju Kule... ➡️ <b>Дублікат</b>",
-                "• Počelo je... Zbog dugova Studenca nastao... ➡️ <b>Вже є в історії</b>",
-                "• Počelo je... Zbog dugova Studenca nastao... ➡️ <b>Дублікат</b>",
-                "• Čarolija na ušću Neretve: monumentalni c... ➡️ <b>Дублікат</b>",
-                "• U Kninu četvorica privedena zbog ilegaln... ➡️ <b>Побут Кніна</b>"
-            ]
-        },
-        "backlog": {
-            "total_size": 32,
-            "sources": {
-                "Slobodna dalmacija": 22,
-                "023": 3,
-                "Zadarski list": 7
-            }
-        },
-        "published": {
-            "total": 1,
-            "ukraine_priority": 0,
-            "with_images": 1,
-            "text_only": 0,
-            "sources": {
-                "Zadarski list": 1
-            }
-        },
-        "models_used": {
-            "gemini-3.5-flash-lite": 1,
-            "gemini-3.5-flash": 0
-        },
-        "errors_count": 0,
-        "gemini_retries": 0
-    },
-    {
         "timestamp": "2026-10-01 15:01:14",
         "execution_time": 234.6,
         "funnel": {
@@ -5929,6 +5865,68 @@
         },
         "models_used": {
             "gemini-3.5-flash-lite": 1,
+            "gemini-3.5-flash": 0
+        },
+        "errors_count": 0,
+        "gemini_retries": 0
+    },
+    {
+        "timestamp": "2026-10-10 15:01:02",
+        "execution_time": 186.2,
+        "funnel": {
+            "scraped_total": 35,
+            "scraped_by_source": {
+                "023": 10,
+                "Slobodna dalmacija": 15,
+                "Zadarski list": 10
+            },
+            "already_seen": 26,
+            "rejected_by_keywords": 4,
+            "duplicates_removed_by_ai": 21,
+            "rejection_reasons_list": [
+                "• “Život uz prugu postao je noćna mora”. O... ➡️ <b>Дубль існуючої новини про залізничну аварію</b>",
+                "• Hladan zrak u kući možete zaustaviti s n... ➡️ <b>Побут та лайфстайл поради</b>",
+                "• Kvaliteta zraka u Vidu značajno bolja, g... ➡️ <b>Побут іншого міста (Меткович)</b>",
+                "• Po Novom Vinodolskom vozio auto s međuna... ➡️ <b>Кримінал іншого регіону поза фокусом Задара</b>",
+                "• Glad ubrzo nakon jela? Ove namirnice pom... ➡️ <b>Поради дієтологів та лайфстайл</b>",
+                "• Unatoč kiši turisti i domaći ne odsutaju... ➡️ <b>Лайфстайл та туризм у Дубровнику</b>",
+                "• Val napada nožem u poljskim školama. Tri... ➡️ <b>Світовий шум / події в третіх країнах</b>",
+                "• Drvena ili plastična daska za rezanje: i... ➡️ <b>Побут та лайфстайл поради</b>",
+                "• Bablje ljeto se ne da! Drugi je vikend l... ➡️ <b>Лайфстайл іншого міста (Шибеник)</b>",
+                "• Lovran i talijanski Codroipo postali pob... ➡️ <b>Локальна подія Ловрана без загальнонаціонального значення</b>",
+                "• Pet pasmina pasa koje važe za najotporni... ➡️ <b>Лайфстайл та поради про тварин</b>",
+                "• Preminuo je gospar Stjepan Masle, dugogo... ➡️ <b>Локальний некролог іншого міста</b>",
+                "• Školi Lopar darovane dvije pametne ploče... ➡️ <b>Локальна шкільна новина іншого острова</b>",
+                "• U Puntu se nakon sezone razgovaralo o kv... ➡️ <b>Туристичні підсумки локального значення на Крку</b>",
+                "• Nova pravila! Evo tko će morati platiti ... ➡️ <b>Повторення теми європейських правил для третіх країн</b>",
+                "• Lokve dobivaju treće jezero, a načelnik ... ➡️ <b>Побут та водні ресурси іншого регіону</b>",
+                "• Zima nam ipak uskoro stiže: provjerili s... ➡️ <b>Ціни на дрова та побут іншого міста</b>",
+                "• Policija nakon lažne dojave o prijetnji ... ➡️ <b>Дрібний локальний інцидент та уточнення поліції в Рієці</b>",
+                "• Prva ‘službena pusa‘ pjevačice i poduzet... ➡️ <b>Шоу-бізнес та світські плітки</b>",
+                "• U Otavicama je 75 godišnjak letvom izmla... ➡️ <b>Локальний побутовий конфлікт у Східній Далмації</b>",
+                "• U Močićima nema vode, evo do kada... ➡️ <b>Відключення води в іншому місті (Конавле)</b>"
+            ]
+        },
+        "backlog": {
+            "total_size": 41,
+            "sources": {
+                "Slobodna dalmacija": 18,
+                "023": 4,
+                "Zadarski list": 19
+            }
+        },
+        "published": {
+            "total": 3,
+            "ukraine_priority": 0,
+            "with_images": 3,
+            "text_only": 0,
+            "sources": {
+                "Slobodna dalmacija": 1,
+                "Zadarski list": 2
+            }
+        },
+        "models_used": {
+            "gemini-3.5-flash-lite": 2,
             "gemini-3.5-flash": 0
         },
         "errors_count": 0,
