@@ -1,69 +1,5 @@
 [
     {
-        "timestamp": "2026-10-01 16:01:12",
-        "execution_time": 103.6,
-        "funnel": {
-            "scraped_total": 35,
-            "scraped_by_source": {
-                "023": 10,
-                "Slobodna dalmacija": 15,
-                "Zadarski list": 10
-            },
-            "already_seen": 5,
-            "rejected_by_keywords": 5,
-            "duplicates_removed_by_ai": 24,
-            "rejection_reasons_list": [
-                "• Stambeni krediti od danas skuplji, bit ć... ➡️ <b>Національна економіка</b>",
-                "• Kanta za smeće i dalje smrdi nakon pražn... ➡️ <b>Побут</b>",
-                "• ’Kad me zovu u pomoć, adrenalin odradi s... ➡️ <b>Лайфстайл</b>",
-                "• Riječki učenici plesom poslali poruku mi... ➡️ <b>Побут чужих міст</b>",
-                "• Umjetna inteligencija procjenjuje vrijem... ➡️ <b>Світовий шум</b>",
-                "• Oporba: Ništa se ne zna oko otpada iz NE... ➡️ <b>Національна політика</b>",
-                "• Simptomi raka debelog crijeva kod žena č... ➡️ <b>Світовий шум</b>",
-                "• Zadimilo u ugostiteljskom objektu na Bab... ➡️ <b>Побут чужих міст</b>",
-                "• Sve je spremno za sutrašnje službeno otv... ➡️ <b>Спорт</b>",
-                "• Koje dokumente smijete baciti, a koje mo... ➡️ <b>Лайфстайл</b>",
-                "• Do jučer nam se ovo činilo kao SF, a sad... ➡️ <b>Вже є в історії</b>",
-                "• Potvrđena optužnica za likvidaciju para ... ➡️ <b>Національний кримінал</b>",
-                "• Nevidljivi kolač od jabuka osvaja izgled... ➡️ <b>Лайфстайл</b>",
-                "• Ratni reporter ITN-a prisjetio se pakla ... ➡️ <b>Історія</b>",
-                "• Osumnjičeni 16-godišnjak vodio kiberneti... ➡️ <b>Світовий шум</b>",
-                "• U ONK Metković bijesni i ogorčeni: ‘Ovo ... ➡️ <b>Побут чужих міст</b>",
-                "• Maksimirski igrokaz, riječka “opuštenost... ➡️ <b>Спорт</b>",
-                "• U ONK Metković bijesni i ogorčeni: ‘Ovo ... ➡️ <b>Дублікат</b>",
-                "• Dubrovnik se sprema za sedam dana čistog... ➡️ <b>Побут чужих міст</b>",
-                "• Pojačanje na jugu: u Policijsku upravu d... ➡️ <b>Побут чужих міст</b>",
-                "• Ova šibenska ljepotica konačno ide u obn... ➡️ <b>Побут чужих міст</b>",
-                "• Stiglo u Neum i odmah privuklo pozornost... ➡️ <b>Події в третіх країнах</b>",
-                "• Počinje Neretva sand art festival: umjet... ➡️ <b>Побут чужих міст</b>",
-                "• Potpisani ugovori za rekonstrukciju Kule... ➡️ <b>Побут чужих міст</b>"
-            ]
-        },
-        "backlog": {
-            "total_size": 30,
-            "sources": {
-                "Slobodna dalmacija": 18,
-                "023": 5,
-                "Zadarski list": 7
-            }
-        },
-        "published": {
-            "total": 1,
-            "ukraine_priority": 0,
-            "with_images": 1,
-            "text_only": 0,
-            "sources": {
-                "Slobodna dalmacija": 1
-            }
-        },
-        "models_used": {
-            "gemini-3.5-flash-lite": 1,
-            "gemini-3.5-flash": 0
-        },
-        "errors_count": 0,
-        "gemini_retries": 0
-    },
-    {
         "timestamp": "2026-10-01 19:01:05",
         "execution_time": 167.0,
         "funnel": {
@@ -5921,6 +5857,70 @@
             "text_only": 0,
             "sources": {
                 "Zadarski list": 2,
+                "Slobodna dalmacija": 1
+            }
+        },
+        "models_used": {
+            "gemini-3.5-flash-lite": 2,
+            "gemini-3.5-flash": 0
+        },
+        "errors_count": 0,
+        "gemini_retries": 0
+    },
+    {
+        "timestamp": "2026-10-10 19:01:05",
+        "execution_time": 77.3,
+        "funnel": {
+            "scraped_total": 35,
+            "scraped_by_source": {
+                "023": 10,
+                "Slobodna dalmacija": 15,
+                "Zadarski list": 10
+            },
+            "already_seen": 4,
+            "rejected_by_keywords": 9,
+            "duplicates_removed_by_ai": 24,
+            "rejection_reasons_list": [
+                "• Njemačka će zadržati sankcije Rusiji i n... ➡️ <b>Світовий шум та лайфстайл</b>",
+                "• Crveni križ Dubrovnik i ove godine u akc... ➡️ <b>Побут чужих міст</b>",
+                "• Od fotografije preko baleta do vaterpola... ➡️ <b>Побут чужих міст</b>",
+                "• Novi poginuli Palestinci u izraelskim na... ➡️ <b>Світовий шум та лайфстайл</b>",
+                "• Žene iz malog sardinijskog mjesta imaju ... ➡️ <b>Світовий шум та лайфстайл</b>",
+                "• ‘Nepozvani gosti‘ u Sućurju! Probijaju o... ➡️ <b>Побут чужих міст</b>",
+                "• U vodi s izvora iznad Zagreba pronađene ... ➡️ <b>Побут чужих міст</b>",
+                "• Teleskop James Webb proučio prašinu nast... ➡️ <b>Світовий шум та лайфстайл</b>",
+                "• Pruga za Rijeku bit će zatvorena danima.... ➡️ <b>Історія вже присутня в опитуванні та застаріла</b>",
+                "• Hladan zrak u kući možete zaustaviti s n... ➡️ <b>Світовий шум та лайфстайл</b>",
+                "• Uspješno održan 3. Susret brijača – Barb... ➡️ <b>Дубль або несуттєва подія</b>",
+                "• Sanchez krenuo u izbornu kampanju obećan... ➡️ <b>Світовий шум та лайфстайл</b>",
+                "• Glad ubrzo nakon jela? Ove namirnice pom... ➡️ <b>Світовий шум та лайфстайл</b>",
+                "• Zahladilo je i pojeli biste neki kolač? ... ➡️ <b>Світовий шум та лайфстайл</b>",
+                "• Više od 70 uhićenja nakon napada nožem u... ➡️ <b>Світовий шум та лайфстайл</b>",
+                "• Drvena ili plastična daska za rezanje: i... ➡️ <b>Світовий шум та лайфстайл</b>",
+                "• Kvaliteta zraka u Vidu značajno bolja, g... ➡️ <b>Побут чужих міст</b>",
+                "• Tko određuje što je normalno? Michel Fou... ➡️ <b>Світовий шум та лайфстайл</b>",
+                "• Pet pasmina pasa koje važe za najotporni... ➡️ <b>Світовий шум та лайфстайл</b>",
+                "• Unatoč kiši turisti i domaći ne odsutaju... ➡️ <b>Побут чужих міст</b>",
+                "• Nexe potvrdio da je dosad zaprimio četir... ➡️ <b>Історія вже присутня в історії</b>",
+                "• Bablje ljeto se ne da! Drugi je vikend l... ➡️ <b>Побут чужих міст</b>",
+                "• Građani Našica danas opet prosvjedovali ... ➡️ <b>Історія вже присутня в історії</b>",
+                "• Počeli radovi na nadvožnjaku kod Dalmare... ➡️ <b>Побут чужих міст</b>"
+            ]
+        },
+        "backlog": {
+            "total_size": 36,
+            "sources": {
+                "Zadarski list": 15,
+                "Slobodna dalmacija": 15,
+                "023": 6
+            }
+        },
+        "published": {
+            "total": 1,
+            "ukraine_priority": 0,
+            "with_images": 1,
+            "text_only": 0,
+            "sources": {
                 "Slobodna dalmacija": 1
             }
         },
