@@ -1,66 +1,5 @@
 [
     {
-        "timestamp": "2026-10-01 09:01:06",
-        "execution_time": 191.0,
-        "funnel": {
-            "scraped_total": 35,
-            "scraped_by_source": {
-                "023": 10,
-                "Slobodna dalmacija": 15,
-                "Zadarski list": 10
-            },
-            "already_seen": 14,
-            "rejected_by_keywords": 2,
-            "duplicates_removed_by_ai": 20,
-            "rejection_reasons_list": [
-                "• Ugledni arhitekti upozoravaju: Poništava... ➡️ <b>Побут Загреба</b>",
-                "• Šut s deponija u Knežici završio na sudu... ➡️ <b>Побут Дубровника</b>",
-                "• Jedini festival koji slavi kantautorsko ... ➡️ <b>Культурна подія/фестиваль</b>",
-                "• Poklon za 20 godina vjernosti: Niko Čutu... ➡️ <b>Реклама</b>",
-                "• Suradnja ŠPUD-a, Sveučilišta i Lige prot... ➡️ <b>Локальна подія/виставка</b>",
-                "• Kava vrijedna putovanja – i krađe: kako ... ➡️ <b>Світовий шум</b>",
-                "• Na današnji dan prije 35 godina počeo je... ➡️ <b>Вже є в історії</b>",
-                "• City Galleria ove subote slavi rođendan,... ➡️ <b>Реклама або комерційна подія</b>",
-                "• Na Maloj ljetnoj pozornici u Opatiji svi... ➡️ <b>Побут Опатії</b>",
-                "• Mlađi muškarac uznemiravao 74-godišnjaki... ➡️ <b>Дублікат</b>",
-                "• Pred Zadrom je stabilan i ugodan tjedan,... ➡️ <b>Прогноз погоди без критичних оновлень</b>",
-                "• Otkazana predstava „Miševi i mačke nagla... ➡️ <b>Побут Рієки</b>",
-                "• Jedan račun može promijeniti vaš dom: Br... ➡️ <b>Реклама</b>",
-                "• Održana komemoracija za Nevena Frangeša:... ➡️ <b>Культурна подія</b>",
-                "• Šut s deponija u Knežici završio na sudu... ➡️ <b>Дублікат</b>",
-                "• Christa Pike preživjela smrtnu kaznu: ču... ➡️ <b>Світовий шум</b>",
-                "• Na današnji dan prije 35 godina počeo je... ➡️ <b>Дублікат</b>",
-                "• Solar već radi na krovovima škola i domo... ➡️ <b>Побут Спліта</b>",
-                "• Potres jačine 2,7 stupnja probudio Dubro... ➡️ <b>Дублікат</b>",
-                "• Bibliobusi stižu u Šibenik i Drniš: evo ... ➡️ <b>Побут Шибеника</b>"
-            ]
-        },
-        "backlog": {
-            "total_size": 23,
-            "sources": {
-                "023": 5,
-                "Slobodna dalmacija": 11,
-                "Zadarski list": 7
-            }
-        },
-        "published": {
-            "total": 3,
-            "ukraine_priority": 0,
-            "with_images": 2,
-            "text_only": 1,
-            "sources": {
-                "023": 1,
-                "Slobodna dalmacija": 2
-            }
-        },
-        "models_used": {
-            "gemini-3.5-flash-lite": 1,
-            "gemini-3.5-flash": 0
-        },
-        "errors_count": 0,
-        "gemini_retries": 0
-    },
-    {
         "timestamp": "2026-10-01 10:01:04",
         "execution_time": 166.5,
         "funnel": {
@@ -5927,6 +5866,66 @@
                 "Slobodna dalmacija": 1,
                 "023": 1,
                 "Zadarski list": 1
+            }
+        },
+        "models_used": {
+            "gemini-3.5-flash-lite": 2,
+            "gemini-3.5-flash": 0
+        },
+        "errors_count": 0,
+        "gemini_retries": 0
+    },
+    {
+        "timestamp": "2026-10-10 10:01:05",
+        "execution_time": 178.5,
+        "funnel": {
+            "scraped_total": 35,
+            "scraped_by_source": {
+                "023": 10,
+                "Slobodna dalmacija": 15,
+                "Zadarski list": 10
+            },
+            "already_seen": 8,
+            "rejected_by_keywords": 2,
+            "duplicates_removed_by_ai": 19,
+            "rejection_reasons_list": [
+                "• Treba li svijet strahovati od navodne po... ➡️ <b>Світовий шум та лайфстайл</b>",
+                "• Drvena ili plastična daska za rezanje: i... ➡️ <b>Світовий шум та лайфстайл</b>",
+                "• KUD Stjepan Radić iz Pridvorja proslavlj... ➡️ <b>Побут чужих міст</b>",
+                "• Kupci skupog iPhonea 18 Pro prijavljuju ... ➡️ <b>Світовий шум та лайфстайл</b>",
+                "• Jakov Jozinović sa Zadranima odao počast... ➡️ <b>Дубль події з іншої статті</b>",
+                "• ASOS potvrdio hakerski upad. Do podataka... ➡️ <b>Світовий шум та лайфстайл</b>",
+                "• Pet pasmina pasa koje važe za najotporni... ➡️ <b>Світовий шум та лайфстайл</b>",
+                "• Mostovu peticiju za raskidanje koncesija... ➡️ <b>Побут чужих міст</b>",
+                "• Jakov Jozinović spektaklom oduševio prep... ➡️ <b>Дубль події з іншої статті</b>",
+                "• Epidemiologe brine opasna crijevna infek... ➡️ <b>Світовий шум та лайфстайл</b>",
+                "• Bare je rođen u Vinkovcima, no jeste li ... ➡️ <b>Дубль події з історії</b>",
+                "• U selu na Sardiniji žene imaju veliku ša... ➡️ <b>Світовий шум та лайфстайл</b>",
+                "• Iako smo još u ljetnom ‘modu‘, zima nam ... ➡️ <b>Побут чужих міст</b>",
+                "• Načelnik Konavala predsjedniku Uprave St... ➡️ <b>Дубль події з іншої статті</b>",
+                "• Načelnik Lasić predsjedniku Uprave Stude... ➡️ <b>Дубль події з іншої статті</b>",
+                "• Dr. Kruško pokriva tri otoka zadarskog a... ➡️ <b>Переказ вчорашньої події</b>",
+                "• Preko 7 tisuća korisnika ostat će bez po... ➡️ <b>Побут чужих міст</b>",
+                "• Poznati šibenski župnik oprostio se od B... ➡️ <b>Дубль події з історії</b>",
+                "• Vojko V raspjevao i rasplesao publiku u ... ➡️ <b>Побут чужих міст</b>"
+            ]
+        },
+        "backlog": {
+            "total_size": 24,
+            "sources": {
+                "Slobodna dalmacija": 12,
+                "023": 4,
+                "Zadarski list": 8
+            }
+        },
+        "published": {
+            "total": 3,
+            "ukraine_priority": 0,
+            "with_images": 1,
+            "text_only": 2,
+            "sources": {
+                "023": 2,
+                "Slobodna dalmacija": 1
             }
         },
         "models_used": {
