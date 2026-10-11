@@ -1,66 +1,5 @@
 [
     {
-        "timestamp": "2026-10-02 15:01:08",
-        "execution_time": 183.6,
-        "funnel": {
-            "scraped_total": 35,
-            "scraped_by_source": {
-                "023": 10,
-                "Slobodna dalmacija": 15,
-                "Zadarski list": 10
-            },
-            "already_seen": 9,
-            "rejected_by_keywords": 7,
-            "duplicates_removed_by_ai": 20,
-            "rejection_reasons_list": [
-                "• Odabrano deset finalista za Nagradu Daph... ➡️ <b>Світовий шум</b>",
-                "• Moćna poruka; Više od 600 učenika s ruži... ➡️ <b>Побут Загреба</b>",
-                "• Na prostranim pješčanim plažama ušća Ner... ➡️ <b>Світовий шум та лайфстайл</b>",
-                "• Skrivene mane novogradnje; Građevinski s... ➡️ <b>Світовий шум</b>",
-                "• Počeli radovi na uređenju bašćanske rive... ➡️ <b>Побут чужих міст</b>",
-                "• Tragedija u Jezerima: muškarac smrtno st... ➡️ <b>Побут чужих міст</b>",
-                "• Zadarski plesni ansambl u Dubrovniku; Na... ➡️ <b>Побут чужих міст</b>",
-                "• U Gospiću otvorena 28. „Jesen u Lici“: „... ➡️ <b>Побут чужих міст</b>",
-                "• Dugogodišnji mljetski matičar Ivan Čumbe... ➡️ <b>Побут чужих міст</b>",
-                "• Učenje ne prestaje s godinama; Od srednj... ➡️ <b>Вже є в історії</b>",
-                "• Velika akcija na Kvarneru! Uhićeno više ... ➡️ <b>Побут чужих міст</b>",
-                "• Privremena regulacija prometa na Batali ... ➡️ <b>Побут чужих міст</b>",
-                "• Gordon Ramsay otkriva kuhinjski trik za ... ➡️ <b>Світовий шум та лайфстайл</b>",
-                "• Plaće medicinskih sestara u 10 godina po... ➡️ <b>Суттєве оновлення відсутнє</b>",
-                "• Preminuo Marko Šupe, posljednji šibenski... ➡️ <b>Спорт</b>",
-                "• Misteriozna primopredaja u dalmatinskom ... ➡️ <b>Побут чужих міст</b>",
-                "• Znanstvenici testirali podvodne suncobra... ➡️ <b>Світовий шум</b>",
-                "• E ovako se kolegicu ispraća u penziju! C... ➡️ <b>Побут чужих міст</b>",
-                "• Jesu li upalile mjere ministra Šipića? D... ➡️ <b>Побут чужих міст</b>",
-                "• Rijetka genska mutacija povezana s do 60... ➡️ <b>Світовий шум</b>"
-            ]
-        },
-        "backlog": {
-            "total_size": 49,
-            "sources": {
-                "Slobodna dalmacija": 30,
-                "023": 11,
-                "Zadarski list": 8
-            }
-        },
-        "published": {
-            "total": 3,
-            "ukraine_priority": 0,
-            "with_images": 2,
-            "text_only": 1,
-            "sources": {
-                "Zadarski list": 2,
-                "023": 1
-            }
-        },
-        "models_used": {
-            "gemini-3.5-flash-lite": 1,
-            "gemini-3.5-flash": 0
-        },
-        "errors_count": 0,
-        "gemini_retries": 0
-    },
-    {
         "timestamp": "2026-10-02 16:01:10",
         "execution_time": 120.7,
         "funnel": {
@@ -5928,6 +5867,69 @@
         },
         "models_used": {
             "gemini-3.5-flash-lite": 2,
+            "gemini-3.5-flash": 0
+        },
+        "errors_count": 0,
+        "gemini_retries": 0
+    },
+    {
+        "timestamp": "2026-10-11 16:01:00",
+        "execution_time": 20.2,
+        "funnel": {
+            "scraped_total": 35,
+            "scraped_by_source": {
+                "023": 10,
+                "Slobodna dalmacija": 15,
+                "Zadarski list": 10
+            },
+            "already_seen": 6,
+            "rejected_by_keywords": 6,
+            "duplicates_removed_by_ai": 25,
+            "rejection_reasons_list": [
+                "• Zelenskij: Organizirat ću izbore pristan... ➡️ <b>Світовий шум та ланцюжок повторюваних заяв щодо перемир'я</b>",
+                "• Mladić (23) iz Ploča nestao u Zagrebu, p... ➡️ <b>Побут та розшук зниклих у чужому місті (Загреб)</b>",
+                "• Holding utvrdio minimum rada tijekom štr... ➡️ <b>Побут чужого міста (Загреб)</b>",
+                "• Senf i ocat daju slatkom kupusu bolji ok... ➡️ <b>Поради, лайфстайл та рецепти</b>",
+                "• Marko Potrebica: ‘Šteta da se tim poslom... ➡️ <b>Побут чужого міста (Дубровник)</b>",
+                "• Umjetna inteligencija crpi informacije o... ➡️ <b>Абстрактна технологічна тема без прямого зв'язку з Хорватією чи Задаром</b>",
+                "• Šest otpornih grmova koje se isplati sad... ➡️ <b>Поради щодо садівництва та лайфстайл</b>",
+                "• Načelnika Konavala napali zbog Studenca:... ➡️ <b>Побут чужого міста (Конавле)</b>",
+                "• Senjane očekuje susret s Nenadom Stipani... ➡️ <b>Побут чужого міста (Сень)</b>",
+                "• Japanska metoda duge ubrzava sušenje rub... ➡️ <b>Побут та побутові поради</b>",
+                "• Nije građevinsko, a košta kao zlato! Pog... ➡️ <b>Загальна тема ринку нерухомості без прив'язки до Задара чи національного рівня</b>",
+                "• Najmanje 109 migranata poginulo, još 116... ➡️ <b>Світові новини поза контекстом Хорватії та України</b>",
+                "• Sedam natjecatelja Plovanije vratilo se ... ➡️ <b>Спорт</b>",
+                "• Miošića su svi šutnuli! Iako su me izvel... ➡️ <b>Побут та локальна політика чужого міста</b>",
+                "• Stakla u automobilu brže se odmagle uz o... ➡️ <b>Поради та лайфстайл</b>",
+                "• Kiša? Pa što? Na Stradun se mora... ➡️ <b>Побут та замітки з чужого міста (Дубровник)</b>",
+                "• Mjesec dana bez alkohola može poboljšati... ➡️ <b>Поради про здоров'я та лайфстайл</b>",
+                "• Zadarskim navijačima prisjeo nedjeljni r... ➡️ <b>Спорт</b>",
+                "• Lažne poruke više ne odaju pravopisne po... ➡️ <b>Загальні поради з кібербезпеки</b>",
+                "• Nakon kiše, prva jesenska bura donijela ... ➡️ <b>Побут чужого міста (Шибеник)</b>",
+                "• Rođendan KUD Stjepan Radić: u Prodvorju ... ➡️ <b>Побут та культурні події чужого міста</b>",
+                "• Papa Lav XIV vjernicima otkrio da u nare... ➡️ <b>Світовий шум та лайфстайл</b>",
+                "• Trebinjci grade moderni kongresni centar... ➡️ <b>Події в третіх країнах (Боснія і Герцеговина)</b>",
+                "• Tigar Altai ubio posjetitelja koji mu se... ➡️ <b>Світовий шум та події в третіх країнах</b>",
+                "• Dalmacija je sve toplija, a vode je sve ... ➡️ <b>Загальна агро-стаття без актуальної кореневої події</b>"
+            ]
+        },
+        "backlog": {
+            "total_size": 26,
+            "sources": {
+                "Slobodna dalmacija": 14,
+                "023": 7,
+                "Zadarski list": 5
+            }
+        },
+        "published": {
+            "total": 0,
+            "ukraine_priority": 0,
+            "with_images": 0,
+            "text_only": 0,
+            "sources": {}
+        },
+        "models_used": {
+            "gemini-3.5-flash-lite": 1,
             "gemini-3.5-flash": 0
         },
         "errors_count": 0,
