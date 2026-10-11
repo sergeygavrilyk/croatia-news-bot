@@ -1,66 +1,5 @@
 [
     {
-        "timestamp": "2026-10-02 13:01:05",
-        "execution_time": 178.7,
-        "funnel": {
-            "scraped_total": 35,
-            "scraped_by_source": {
-                "023": 10,
-                "Slobodna dalmacija": 15,
-                "Zadarski list": 10
-            },
-            "already_seen": 6,
-            "rejected_by_keywords": 1,
-            "duplicates_removed_by_ai": 20,
-            "rejection_reasons_list": [
-                "• Dan ružičaste vrpce na riječkom Korzu: “... ➡️ <b>Побут Рієки</b>",
-                "• Zadarski plesni ansambl u Dubrovniku; Na... ➡️ <b>Культурна подія поза фокусом Задара</b>",
-                "• Misteriozna primopredaja u dalmatinskom ... ➡️ <b>Кримінал у Метковичі</b>",
-                "• Jandroković odgovorio Grmoji: SOA me nij... ➡️ <b>Політичний шум національного рівня</b>",
-                "• Učenje ne prestaje s godinama; Od srednj... ➡️ <b>Вже є в історії</b>",
-                "• Besplatna likovna radionica za djecu i m... ➡️ <b>Побут Крка</b>",
-                "• Gordon Ramsay otkriva kuhinjski trik za ... ➡️ <b>Світовий шум та лайфстайл</b>",
-                "• E ovako se kolegicu ispraća u penziju! C... ➡️ <b>Побут Шибеника</b>",
-                "• Turistička zajednica Zadarske županije; ... ➡️ <b>Вже є в історії</b>",
-                "• Jesu li upalile mjere ministra Šipića? D... ➡️ <b>Побут Шибеника</b>",
-                "• Riječka udruga Srce za nju pet godina po... ➡️ <b>Побут Рієки</b>",
-                "• ‘Milijunska brodica ne može prići hridim... ➡️ <b>Побут Дубровника</b>",
-                "• Plin iz Omišlja mogao bi za dvije godine... ➡️ <b>Вже є в історії</b>",
-                "• Znanstvenici testirali podvodne suncobra... ➡️ <b>Світовий шум</b>",
-                "• Dobavljača uhitili, za kupcem raspisana ... ➡️ <b>Дублікат</b>",
-                "• Riječki HNK i predstava „Tri sestre, ja“... ➡️ <b>Культура поза Задаром</b>",
-                "• Reakcija s Pantovčaka; Ured predsjednika... ➡️ <b>Дублікат</b>",
-                "• Šibensko-kninska županija dodjeljuje 154... ➡️ <b>Побут Шибеника</b>",
-                "• Helikopter nestao iznad Hrvatske, vlasni... ➡️ <b>Вже є в історії</b>",
-                "• Drniš ostaje bez zadnje poslovnice, zatv... ➡️ <b>Побут Дрніша</b>"
-            ]
-        },
-        "backlog": {
-            "total_size": 55,
-            "sources": {
-                "023": 13,
-                "Zadarski list": 14,
-                "Slobodna dalmacija": 28
-            }
-        },
-        "published": {
-            "total": 3,
-            "ukraine_priority": 0,
-            "with_images": 3,
-            "text_only": 0,
-            "sources": {
-                "Slobodna dalmacija": 2,
-                "Zadarski list": 1
-            }
-        },
-        "models_used": {
-            "gemini-3.5-flash-lite": 1,
-            "gemini-3.5-flash": 0
-        },
-        "errors_count": 0,
-        "gemini_retries": 0
-    },
-    {
         "timestamp": "2026-10-02 14:01:05",
         "execution_time": 165.5,
         "funnel": {
@@ -5913,6 +5852,69 @@
                 "Slobodna dalmacija": 11,
                 "023": 5,
                 "Zadarski list": 7
+            }
+        },
+        "published": {
+            "total": 0,
+            "ukraine_priority": 0,
+            "with_images": 0,
+            "text_only": 0,
+            "sources": {}
+        },
+        "models_used": {
+            "gemini-3.5-flash-lite": 1,
+            "gemini-3.5-flash": 0
+        },
+        "errors_count": 0,
+        "gemini_retries": 0
+    },
+    {
+        "timestamp": "2026-10-11 14:01:13",
+        "execution_time": 32.1,
+        "funnel": {
+            "scraped_total": 35,
+            "scraped_by_source": {
+                "023": 10,
+                "Slobodna dalmacija": 15,
+                "Zadarski list": 10
+            },
+            "already_seen": 27,
+            "rejected_by_keywords": 6,
+            "duplicates_removed_by_ai": 25,
+            "rejection_reasons_list": [
+                "• Načelnika Konavala napali zbog Studenca:... ➡️ <b>Побут чужих міст та регіонів</b>",
+                "• Senjane očekuje susret s Nenadom Stipani... ➡️ <b>Побут чужих міст та регіонів</b>",
+                "• Japanska metoda duge ubrzava sušenje rub... ➡️ <b>Світовий шум та лайфстайл</b>",
+                "• Nije građevinsko, a košta kao zlato! Pog... ➡️ <b>Не відповідає пріоритетним критеріям відбору</b>",
+                "• Najmanje 109 migranata poginulo, još 116... ➡️ <b>Світовий шум та лайфстайл</b>",
+                "• Sedam natjecatelja Plovanije vratilo se ... ➡️ <b>Спорт</b>",
+                "• Miošića su svi šutnuli! Iako su me izvel... ➡️ <b>Побут чужих міст та регіонів</b>",
+                "• Armada noćas presrela autobus s Demonima... ➡️ <b>Спорт</b>",
+                "• Stakla u automobilu brže se odmagle uz o... ➡️ <b>Світовий шум та лайфстайл</b>",
+                "• Kiša? Pa što? Na Stradun se mora... ➡️ <b>Побут чужих міст та регіонів</b>",
+                "• Automobilom nasrnuo na policajca, pa pob... ➡️ <b>Побут чужих міст та регіонів</b>",
+                "• Mjesec dana bez alkohola može poboljšati... ➡️ <b>Світовий шум та лайфстайл</b>",
+                "• Zadarskim navijačima prisjeo nedjeljni r... ➡️ <b>Спорт</b>",
+                "• Deset godina karlovačke Aquatike: od skr... ➡️ <b>Побут чужих міст та регіонів</b>",
+                "• Lažne poruke više ne odaju pravopisne po... ➡️ <b>Світовий шум та лайфстайл</b>",
+                "• Nakon kiše prva je esenska bura donijela... ➡️ <b>Побут чужих міст та регіонів</b>",
+                "• Možemo! kritizira Grbina, ali ne želi nj... ➡️ <b>Побут чужих міст та регіонів</b>",
+                "• Rođendan KUD Stjepan Radić: u Prodvorju ... ➡️ <b>Побут чужих міст та регіонів</b>",
+                "• Papa Leo ima manju izraslinu na plućnom ... ➡️ <b>Дублікат новини 19</b>",
+                "• Papa Lav XIV vjernicima otkrio da u nare... ➡️ <b>Світовий шум та лайфстайл</b>",
+                "• Coldplay i Imagine Dragons u čaroliji sv... ➡️ <b>Світовий шум та лайфстайл</b>",
+                "• Trebinjci grade moderni kongresni centar... ➡️ <b>Світовий шум та лайфстайл</b>",
+                "• Tigar Altai ubio posjetitelja koji mu se... ➡️ <b>Світовий шум та лайфстайл</b>",
+                "• Dalmacija je sve toplija, a vode je sve ... ➡️ <b>Світовий шум та лайфстайл</b>",
+                "• Župan Blaž Pezo: ‘Radovi stoje godinu da... ➡️ <b>Побут чужих міст та регіонів</b>"
+            ]
+        },
+        "backlog": {
+            "total_size": 25,
+            "sources": {
+                "Slobodna dalmacija": 12,
+                "023": 5,
+                "Zadarski list": 8
             }
         },
         "published": {
