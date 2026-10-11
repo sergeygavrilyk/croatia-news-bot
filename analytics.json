@@ -1,61 +1,5 @@
 [
     {
-        "timestamp": "2026-10-02 08:01:37",
-        "execution_time": 164.1,
-        "funnel": {
-            "scraped_total": 35,
-            "scraped_by_source": {
-                "023": 10,
-                "Slobodna dalmacija": 15,
-                "Zadarski list": 10
-            },
-            "already_seen": 7,
-            "rejected_by_keywords": 1,
-            "duplicates_removed_by_ai": 15,
-            "rejection_reasons_list": [
-                "• Pažnja vozačima. Kotorska ulica u Crikve... ➡️ <b>Побут чужого міста</b>",
-                "• Država prodaje 4900 litara zaplijenjene ... ➡️ <b>Світовий шум та лайфстайл</b>",
-                "• Što je Gružanima najpotrebnije: novi pje... ➡️ <b>Побут чужого міста</b>",
-                "• Smeće iz Dalmacije završilo u Neumu? ‘Ot... ➡️ <b>Вже є в історії</b>",
-                "• Lukanović nastavlja kastavizaciju župani... ➡️ <b>Побут чужого міста</b>",
-                "• Vatrogasci noćas intervenirali u Lapadu,... ➡️ <b>Побут чужого міста</b>",
-                "• Zašto ugostitelji u Selcu istu terasu pl... ➡️ <b>Побут чужого міста</b>",
-                "• Pogledajte što sve možete pročitati u no... ➡️ <b>Побут чужого міста</b>",
-                "• Sedlarov film vodi kroz 1100 godina hrva... ➡️ <b>Світовий шум та лайфстайл</b>",
-                "• Hrvatsko smeće u Neumu? Evo što kažu u S... ➡️ <b>Дублікат</b>",
-                "• Milanović povodom objave monografije pri... ➡️ <b>Світовий шум та лайфстайл</b>",
-                "• Potres magnitude 3.2 jutros uznemirio gr... ➡️ <b>Побут чужого міста</b>",
-                "• Izložba „Tragovima arheološke baštine Ba... ➡️ <b>Побут чужого міста</b>",
-                "• Odveo je 200 ljudi u ratnu zonu da snimi... ➡️ <b>Світовий шум та лайфстайл</b>",
-                "• Tragedija na brzoj cesti D-424: u nesreć... ➡️ <b>Дублікат</b>"
-            ]
-        },
-        "backlog": {
-            "total_size": 29,
-            "sources": {
-                "023": 10,
-                "Zadarski list": 11,
-                "Slobodna dalmacija": 8
-            }
-        },
-        "published": {
-            "total": 3,
-            "ukraine_priority": 1,
-            "with_images": 1,
-            "text_only": 2,
-            "sources": {
-                "023": 2,
-                "Zadarski list": 1
-            }
-        },
-        "models_used": {
-            "gemini-3.5-flash-lite": 1,
-            "gemini-3.5-flash": 0
-        },
-        "errors_count": 0,
-        "gemini_retries": 0
-    },
-    {
         "timestamp": "2026-10-02 09:01:06",
         "execution_time": 166.5,
         "funnel": {
@@ -5906,6 +5850,67 @@
             "text_only": 0,
             "sources": {
                 "Slobodna dalmacija": 3
+            }
+        },
+        "models_used": {
+            "gemini-3.5-flash-lite": 2,
+            "gemini-3.5-flash": 0
+        },
+        "errors_count": 0,
+        "gemini_retries": 0
+    },
+    {
+        "timestamp": "2026-10-11 09:01:05",
+        "execution_time": 171.4,
+        "funnel": {
+            "scraped_total": 35,
+            "scraped_by_source": {
+                "023": 10,
+                "Slobodna dalmacija": 15,
+                "Zadarski list": 10
+            },
+            "already_seen": 7,
+            "rejected_by_keywords": 3,
+            "duplicates_removed_by_ai": 20,
+            "rejection_reasons_list": [
+                "• Na Zagreb Prideu od 2021. dokumentirano ... ➡️ <b>Побут чужих міст та події не належать до Задара чи національного рівня</b>",
+                "• Sedam natjecatelja Plovanije vratilo se ... ➡️ <b>Спорт</b>",
+                "• Stakla u automobilu brže se odmagle uz o... ➡️ <b>Світловий шум та лайфстайл, порада</b>",
+                "• Ako ste ovu pancetu kupili u Studenca, n... ➡️ <b>Дубль новини ID 3</b>",
+                "• Privatni logopedi pred zatvaranjem praks... ➡️ <b>Побут чужих міст (Рієка)</b>",
+                "• Mjesec dana bez alkohola može poboljšati... ➡️ <b>Світловий шум та лайфстайл</b>",
+                "• TKD Plovanija briljirala na 12. Čigra Op... ➡️ <b>Спорт</b>",
+                "• Zbog olujnog vjetra između Senja i Svete... ➡️ <b>Побут чужих міст, віддалена локація</b>",
+                "• Lažne poruke više ne odaju pravopisne po... ➡️ <b>Світловий шум та загальні поради</b>",
+                "• Žene donose veliku većinu odluka u kućan... ➡️ <b>Світловий шум та соціологія</b>",
+                "• Stotinu brijača iz cijele zemlje okupilo... ➡️ <b>Дубль або локальний лайфстайл без важливої новини</b>",
+                "• Pljušte komentari, načelnik Lasić odgova... ➡️ <b>Побут чужих міст (Конавле/Дубровник)</b>",
+                "• Radovi na Centru za gospodarenje otpadom... ➡️ <b>Побут чужих міст (Дубровник)</b>",
+                "• Teška prometna nesreća na A1 kod Nadina ... ➡️ <b>Дубль новини ID 11</b>",
+                "• Luka trpi štetu zbog zatvaranja pruge: a... ➡️ <b>Побут чужих міст та інфраструктура Рієки</b>",
+                "• Ausgust Lambaša osvojio prsten za najbol... ➡️ <b>Спорт</b>",
+                "• U crkvi na Žabici služena misa na tagalo... ➡️ <b>Побут чужих міст (Рієка)</b>",
+                "• Rekordni prihodi i europska nagrada za D... ➡️ <b>Побут чужих міст (Дубровник)</b>",
+                "• Izdržite do popodne: evo kakvo nas vrije... ➡️ <b>Побут чужих міст (Дубровник)</b>",
+                "• Po kome je Cele dobila ime, gdje je bio ... ➡️ <b>Світловий шум та історія іншого міста</b>"
+            ]
+        },
+        "backlog": {
+            "total_size": 24,
+            "sources": {
+                "023": 5,
+                "Slobodna dalmacija": 11,
+                "Zadarski list": 8
+            }
+        },
+        "published": {
+            "total": 3,
+            "ukraine_priority": 0,
+            "with_images": 3,
+            "text_only": 0,
+            "sources": {
+                "Slobodna dalmacija": 2,
+                "Zadarski list": 1
             }
         },
         "models_used": {
