@@ -1,68 +1,5 @@
 [
     {
-        "timestamp": "2026-10-02 16:01:10",
-        "execution_time": 120.7,
-        "funnel": {
-            "scraped_total": 35,
-            "scraped_by_source": {
-                "023": 10,
-                "Slobodna dalmacija": 15,
-                "Zadarski list": 10
-            },
-            "already_seen": 7,
-            "rejected_by_keywords": 5,
-            "duplicates_removed_by_ai": 23,
-            "rejection_reasons_list": [
-                "• Izložba \"Istočna Slavonija u Domovinskom... ➡️ <b>Подія в Дубровнику, не стосується Задара чи національного рівня</b>",
-                "• Otkriven spomenik: Sjećanje na trojicu p... ➡️ <b>Історична пам'ять у Врбовському, не стосується Задара</b>",
-                "• Hvar u listopadu ugostit će više od 3.50... ➡️ <b>Спорт, стоп-тема</b>",
-                "• Članovi udruge Prvi ročnik Hrvatske vojs... ➡️ <b>Подія в Плочах</b>",
-                "• Dodijeljena priznanja Turističke zajedni... ➡️ <b>Побут Малі Лошиня</b>",
-                "• U Zavičajnoj kući u Slanom obilježena ob... ➡️ <b>Подія в Сланому</b>",
-                "• Rijeka i Švedska žele snažnije povezivan... ➡️ <b>Подія в Рієці</b>",
-                "• Moćna poruka; Više od 600 učenika s ruži... ➡️ <b>Подія в Загребі, дрібний захід</b>",
-                "• Na prostranim pješčanim plažama ušća Ner... ➡️ <b>Лайфстайл / устиє Неретви</b>",
-                "• Velika akcija Uskoka i PUPG odvija se zb... ➡️ <b>Дубль або регіональний кримінал в іншій жупанії</b>",
-                "• Skrivene mane novogradnje; Građevinski s... ➡️ <b>Поради та лайфстайл, стоп-тема</b>",
-                "• Tragedija u Jezerima: muškarac smrtno st... ➡️ <b>ДТП у Єзерах (Шибеницько-Книнська жупанія), не Задар</b>",
-                "• Festival Tobogan dobitnik nagrade Kreati... ➡️ <b>Культурна подія в Рієці</b>",
-                "• Zadarski plesni ansambl u Dubrovniku; Na... ➡️ <b>Гастролі zadarskog ansambla u Dubrovniku - фокус на Дубровник</b>",
-                "• Dugogodišnji mljetski matičar Ivan Čumbe... ➡️ <b>Подія на Мльєті</b>",
-                "• Počeli radovi na uređenju bašćanske rive... ➡️ <b>Побут у Башці</b>",
-                "• Učenje ne prestaje s godinama; Od srednj... ➡️ <b>Подія вже була в історії або несуттєве оновлення</b>",
-                "• Privremena regulacija prometa na Batali ... ➡️ <b>Побут у Дубровнику (Лапад)</b>",
-                "• Vlada odbacila zahtjev oporbe za opoziv ... ➡️ <b>Вже є в історії (опозиція та вотум недовіри прем'єру)</b>",
-                "• Gordon Ramsay otkriva kuhinjski trik za ... ➡️ <b>Рецепти та поради, стоп-тема</b>",
-                "• Preminuo Marko Šupe, posljednji šibenski... ➡️ <b>Некролог у Шибенику</b>",
-                "• Borba protiv zaslanjenja; Pogledajte kak... ➡️ <b>Вже є в історії (роботи на Вранському језері)</b>",
-                "• Misteriozna primopredaja u dalmatinskom ... ➡️ <b>Кримінал у Метковичі, не Задар і не національний рівень</b>"
-            ]
-        },
-        "backlog": {
-            "total_size": 49,
-            "sources": {
-                "Slobodna dalmacija": 32,
-                "023": 10,
-                "Zadarski list": 7
-            }
-        },
-        "published": {
-            "total": 2,
-            "ukraine_priority": 0,
-            "with_images": 0,
-            "text_only": 2,
-            "sources": {
-                "023": 2
-            }
-        },
-        "models_used": {
-            "gemini-3.5-flash-lite": 1,
-            "gemini-3.5-flash": 0
-        },
-        "errors_count": 0,
-        "gemini_retries": 0
-    },
-    {
         "timestamp": "2026-10-02 19:01:04",
         "execution_time": 174.9,
         "funnel": {
@@ -5930,6 +5867,68 @@
         },
         "models_used": {
             "gemini-3.5-flash-lite": 1,
+            "gemini-3.5-flash": 0
+        },
+        "errors_count": 0,
+        "gemini_retries": 0
+    },
+    {
+        "timestamp": "2026-10-11 19:01:02",
+        "execution_time": 171.6,
+        "funnel": {
+            "scraped_total": 35,
+            "scraped_by_source": {
+                "023": 10,
+                "Slobodna dalmacija": 15,
+                "Zadarski list": 10
+            },
+            "already_seen": 15,
+            "rejected_by_keywords": 6,
+            "duplicates_removed_by_ai": 21,
+            "rejection_reasons_list": [
+                "• U Pittsburghu i Zagrebu održana utrka za... ➡️ <b>Спорт та благодійність поза фокусом Задара</b>",
+                "• Dva jogurta, dvostruko različita cijena:... ➡️ <b>Споживчий лайфстайл та абстрактні поради</b>",
+                "• Ciklona ‘Bamba‘ napušta Dalmaciju! Šolić... ➡️ <b>Побут та погода не в Задарі</b>",
+                "• Na riječko sveučilište stiglo 215 strani... ➡️ <b>Побут інших міст (Рієка)</b>",
+                "• Grašak gust i kremast bez zaprške: dovol... ➡️ <b>Кулінарні поради та лайфстайл</b>",
+                "• Mijenjaju koncept školovanja, života i z... ➡️ <b>Побут інших міст (Дубровник)</b>",
+                "• Bakarski osnovci učili o sportu i zdravl... ➡️ <b>Спорт та події у Бакарі</b>",
+                "• Senf i ocat daju slatkom kupusu bolji ok... ➡️ <b>Кулінарні поради</b>",
+                "• Svi ih znate, ali malo tko zna da su rod... ➡️ <b>Шибеник та Лошинь, не стосується Задара</b>",
+                "• Hutisti po drugi put u dva dana napali z... ➡️ <b>Світовий шум, що не стосується Хорватії чи України</b>",
+                "• Šest otpornih grmova koje se isplati sad... ➡️ <b>Поради з садівництва та лайфстайл</b>",
+                "• Holding utvrdio minimum rada tijekom štr... ➡️ <b>Побут та комунальники Загреба</b>",
+                "• Japanska metoda duge ubrzava sušenje rub... ➡️ <b>Побутові поради</b>",
+                "• Zadrani dominirali u najjačoj klasi: zla... ➡️ <b>Спорт (турнір)</b>",
+                "• Umjetna inteligencija crpi informacije o... ➡️ <b>Абстрактна технологічна тема</b>",
+                "• Sedam natjecatelja Plovanije vratilo se ... ➡️ <b>Спорт (таэквондо турнір)</b>",
+                "• Senjane očekuje susret s Nenadom Stipani... ➡️ <b>Події в Сені</b>",
+                "• Stakla u automobilu brže se odmagle uz o... ➡️ <b>Автомобільні поради</b>",
+                "• S prvom obilnijom kišom u Dubrovniku poč... ➡️ <b>Дубль новини ID 24</b>",
+                "• Najmanje 109 migranata poginulo, još 116... ➡️ <b>Світовий шум поза Хорватією та Україною</b>",
+                "• Mjesec dana bez alkohola može poboljšati... ➡️ <b>Поради про здоров'я та лайфстайл</b>"
+            ]
+        },
+        "backlog": {
+            "total_size": 40,
+            "sources": {
+                "Slobodna dalmacija": 22,
+                "023": 9,
+                "Zadarski list": 9
+            }
+        },
+        "published": {
+            "total": 3,
+            "ukraine_priority": 1,
+            "with_images": 3,
+            "text_only": 0,
+            "sources": {
+                "Zadarski list": 1,
+                "Slobodna dalmacija": 2
+            }
+        },
+        "models_used": {
+            "gemini-3.5-flash-lite": 2,
             "gemini-3.5-flash": 0
         },
         "errors_count": 0,
