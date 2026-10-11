@@ -1,67 +1,5 @@
 [
     {
-        "timestamp": "2026-10-01 19:01:05",
-        "execution_time": 167.0,
-        "funnel": {
-            "scraped_total": 35,
-            "scraped_by_source": {
-                "023": 10,
-                "Slobodna dalmacija": 15,
-                "Zadarski list": 10
-            },
-            "already_seen": 3,
-            "rejected_by_keywords": 1,
-            "duplicates_removed_by_ai": 21,
-            "rejection_reasons_list": [
-                "• Baška Outdoor Festival donosi rekreaciju... ➡️ <b>Спорт</b>",
-                "• Komemorativnim programom „Da se ne zabor... ➡️ <b>Побут чужих міст</b>",
-                "• Tri detalja na pakiranju tjestenine koja... ➡️ <b>Світовий шум та лайфстайл</b>",
-                "• “Ako ne ti, tko?” – Mladi volonteri pono... ➡️ <b>Побут чужих міст</b>",
-                "• Ameba otkrivena u vrelim izvorima Lassen... ➡️ <b>Світовий шум та лайфстайл</b>",
-                "• “Tajna jesenskog kovčega” u Matuljima – ... ➡️ <b>Побут чужих міст</b>",
-                "• Pripadnici ratne policije 1991. iz Ploča... ➡️ <b>Побут чужих міст</b>",
-                "• Kanta za smeće i dalje smrdi nakon pražn... ➡️ <b>Світовий шум та лайфстайл</b>",
-                "• Vatrogasci iznenadili djecu na “Novljans... ➡️ <b>Побут чужих міст</b>",
-                "• ’Kad me zovu u pomoć, adrenalin odradi s... ➡️ <b>Побут чужих міст</b>",
-                "• Umjetna inteligencija procjenjuje vrijem... ➡️ <b>Світовий шум та лайфстайл</b>",
-                "• Matica umirovljenika grada Rijeke obilje... ➡️ <b>Побут чужих міст</b>",
-                "• Što je Gružanima najpotrebnije: novi pje... ➡️ <b>Побут чужих міст</b>",
-                "• Simptomi raka debelog crijeva kod žena č... ➡️ <b>Світовий шум та лайфстайл</b>",
-                "• Koje dokumente smijete baciti, a koje mo... ➡️ <b>Світовий шум та лайфстайл</b>",
-                "• U Crikvenici počinje ciklus edukacije i ... ➡️ <b>Побут чужих міст</b>",
-                "• ’Kad me zovu u pomoć, adrenalin odradi s... ➡️ <b>Дублікат</b>",
-                "• Nevidljivi kolač od jabuka osvaja izgled... ➡️ <b>Світовий шум та лайфстайл</b>",
-                "• U Rabu otvorena izložba o velikanima hrv... ➡️ <b>Побут чужих міст</b>",
-                "• Trk i koncert za Portićevih 20 godina. K... ➡️ <b>Побут чужих міст</b>",
-                "• Zadimilo u ugostiteljskom objektu na Bab... ➡️ <b>Побут чужих міст</b>"
-            ]
-        },
-        "backlog": {
-            "total_size": 36,
-            "sources": {
-                "Slobodna dalmacija": 19,
-                "023": 7,
-                "Zadarski list": 10
-            }
-        },
-        "published": {
-            "total": 3,
-            "ukraine_priority": 0,
-            "with_images": 3,
-            "text_only": 0,
-            "sources": {
-                "Slobodna dalmacija": 2,
-                "Zadarski list": 1
-            }
-        },
-        "models_used": {
-            "gemini-3.5-flash-lite": 1,
-            "gemini-3.5-flash": 0
-        },
-        "errors_count": 0,
-        "gemini_retries": 0
-    },
-    {
         "timestamp": "2026-10-02 07:01:05",
         "execution_time": 173.1,
         "funnel": {
@@ -5922,6 +5860,56 @@
             "text_only": 0,
             "sources": {
                 "Slobodna dalmacija": 1
+            }
+        },
+        "models_used": {
+            "gemini-3.5-flash-lite": 2,
+            "gemini-3.5-flash": 0
+        },
+        "errors_count": 0,
+        "gemini_retries": 0
+    },
+    {
+        "timestamp": "2026-10-11 07:01:08",
+        "execution_time": 168.4,
+        "funnel": {
+            "scraped_total": 35,
+            "scraped_by_source": {
+                "023": 10,
+                "Slobodna dalmacija": 15,
+                "Zadarski list": 10
+            },
+            "already_seen": 2,
+            "rejected_by_keywords": 6,
+            "duplicates_removed_by_ai": 10,
+            "rejection_reasons_list": [
+                "• Nakon dogovora s Putinom oko dizela Trum... ➡️ <b>Світовий шум та зовнішня політика США щодо України, що не стосується безпосередньо Хорватії чи Задара.</b>",
+                "• U crkvi na Žabici služena misa na tagalo... ➡️ <b>Побут чужих міст (Рієка), що не стосується Задара.</b>",
+                "• Izdržite do popodne: evo kakvo nas vrije... ➡️ <b>Погода та новини іншого регіону (Дубровник), не стосується Задара.</b>",
+                "• U Sloveniji otvorena birališta, ljudi iz... ➡️ <b>Події в третіх країнах (Словенія), не стосуються Хорватії чи України.</b>",
+                "• Po kome je Cele dobila ime, gdje je bio ... ➡️ <b>Лайфстайл та історія іншого міста (Дубровник).</b>",
+                "• Uskokova optužnica protiv Roberta DiCapr... ➡️ <b>Кримінал у іншому місті (Рієка), не стосується Задара.</b>",
+                "• U velikom napadu hutista na zračnu luku ... ➡️ <b>Світовий шум та конфлікти у третіх країнах.</b>",
+                "• Zašto ne dolaze u Bijelu kuću? Trump nar... ➡️ <b>Світовий шум та події в США.</b>",
+                "• Ulica u Dubrovniku mjesecima raskopana, ... ➡️ <b>Побут чужих міст (Дубровник - ремонт вулиці).</b>",
+                "• Stotinu brijača iz cijele zemlje okupilo... ➡️ <b>Дубль існуючої події або дрібний локальний захід без істотного суспільного значення порівняно з іншими новинами Задара.</b>"
+            ]
+        },
+        "backlog": {
+            "total_size": 13,
+            "sources": {
+                "023": 4,
+                "Slobodna dalmacija": 5,
+                "Zadarski list": 4
+            }
+        },
+        "published": {
+            "total": 3,
+            "ukraine_priority": 0,
+            "with_images": 0,
+            "text_only": 3,
+            "sources": {
+                "023": 3
             }
         },
         "models_used": {
