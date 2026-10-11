@@ -1,67 +1,5 @@
 [
     {
-        "timestamp": "2026-10-02 14:01:05",
-        "execution_time": 165.5,
-        "funnel": {
-            "scraped_total": 35,
-            "scraped_by_source": {
-                "023": 10,
-                "Slobodna dalmacija": 15,
-                "Zadarski list": 10
-            },
-            "already_seen": 5,
-            "rejected_by_keywords": 6,
-            "duplicates_removed_by_ai": 21,
-            "rejection_reasons_list": [
-                "• Odabrano deset finalista za Nagradu Daph... ➡️ <b>Світовий шум</b>",
-                "• Dugogodišnji mljetski matičar Ivan Čumbe... ➡️ <b>Побут чужих місць</b>",
-                "• Velika akcija na Kvarneru! Uhićeno više ... ➡️ <b>Побут чужих місць</b>",
-                "• Moćna poruka; Više od 600 učenika s ruži... ➡️ <b>Побут чужих місць</b>",
-                "• Privremena regulacija prometa na Batali ... ➡️ <b>Побут чужих місць</b>",
-                "• Članice Udruge Bakarska žena tradicional... ➡️ <b>Побут чужих місць</b>",
-                "• Skrivene mane novogradnje; Građevinski s... ➡️ <b>Світовий шум та лайфстайл</b>",
-                "• Ibrahimović: Nikada nisam dobio zahtjev ... ➡️ <b>Вже є в історії</b>",
-                "• Preminuo Marko Šupe, posljednji šibenski... ➡️ <b>Побут чужих місць</b>",
-                "• Dom za starije osobe Kantrida organizira... ➡️ <b>Побут чужих місць</b>",
-                "• Zadarski plesni ansambl u Dubrovniku; Na... ➡️ <b>Побут чужих місць</b>",
-                "• Misteriozna primopredaja u dalmatinskom ... ➡️ <b>Побут чужих місць</b>",
-                "• Sindikati ZET-a odgovorili Tomaševiću: P... ➡️ <b>Побут чужих місць</b>",
-                "• Učenje ne prestaje s godinama; Od srednj... ➡️ <b>Вже є в історії</b>",
-                "• E ovako se kolegicu ispraća u penziju! C... ➡️ <b>Побут чужих місць</b>",
-                "• Grmoja o otpadu u Gospiću: “Sada je jasn... ➡️ <b>Вже є в історії</b>",
-                "• Gordon Ramsay otkriva kuhinjski trik za ... ➡️ <b>Світовий шум та лайфстайл</b>",
-                "• Jesu li upalile mjere ministra Šipića? D... ➡️ <b>Побут чужих місць</b>",
-                "• AZOP kaznio priređivača igara na sreću s... ➡️ <b>Вже є в історії</b>",
-                "• ‘Milijunska brodica ne može prići hridim... ➡️ <b>Побут чужих місць</b>",
-                "• Iduće godine natječaj za projekt pruge Š... ➡️ <b>Вже є в історії</b>"
-            ]
-        },
-        "backlog": {
-            "total_size": 54,
-            "sources": {
-                "Zadarski list": 12,
-                "023": 13,
-                "Slobodna dalmacija": 29
-            }
-        },
-        "published": {
-            "total": 3,
-            "ukraine_priority": 0,
-            "with_images": 1,
-            "text_only": 2,
-            "sources": {
-                "Slobodna dalmacija": 1,
-                "023": 2
-            }
-        },
-        "models_used": {
-            "gemini-3.5-flash-lite": 1,
-            "gemini-3.5-flash": 0
-        },
-        "errors_count": 0,
-        "gemini_retries": 0
-    },
-    {
         "timestamp": "2026-10-02 15:01:08",
         "execution_time": 183.6,
         "funnel": {
@@ -5926,6 +5864,70 @@
         },
         "models_used": {
             "gemini-3.5-flash-lite": 1,
+            "gemini-3.5-flash": 0
+        },
+        "errors_count": 0,
+        "gemini_retries": 0
+    },
+    {
+        "timestamp": "2026-10-11 15:01:04",
+        "execution_time": 89.3,
+        "funnel": {
+            "scraped_total": 35,
+            "scraped_by_source": {
+                "023": 10,
+                "Slobodna dalmacija": 15,
+                "Zadarski list": 10
+            },
+            "already_seen": 25,
+            "rejected_by_keywords": 7,
+            "duplicates_removed_by_ai": 24,
+            "rejection_reasons_list": [
+                "• Senjane očekuje susret s Nenadom Stipani... ➡️ <b>Побут чужого міста</b>",
+                "• Šest otpornih grmova koje se isplati sad... ➡️ <b>Світовий шум та лайфстайл</b>",
+                "• Najmanje 109 migranata poginulo, još 116... ➡️ <b>Світовий шум та лайфстайл</b>",
+                "• Japanska metoda duge ubrzava sušenje rub... ➡️ <b>Світовий шум та лайфстайл</b>",
+                "• Marko Potrebica: ‘Šteta da se tim poslom... ➡️ <b>Побут чужого міста</b>",
+                "• Armada noćas presrela autobus s Demonima... ➡️ <b>Побут чужого міста</b>",
+                "• Sedam natjecatelja Plovanije vratilo se ... ➡️ <b>Спорт</b>",
+                "• Načelnika Konavala napali zbog Studenca:... ➡️ <b>Побут чужого міста</b>",
+                "• Automobilom nasrnuo na policajca, pa pob... ➡️ <b>Побут чужого міста</b>",
+                "• Stakla u automobilu brže se odmagle uz o... ➡️ <b>Світовий шум та лайфстайл</b>",
+                "• Nije građevinsko, a košta kao zlato! Pog... ➡️ <b>Світовий шум та лайфстайл</b>",
+                "• Deset godina karlovačke Aquatike: od skr... ➡️ <b>Побут чужого міста</b>",
+                "• Mjesec dana bez alkohola može poboljšati... ➡️ <b>Світовий шум та лайфстайл</b>",
+                "• Miošića su svi šutnuli! Iako su me izvel... ➡️ <b>Побут чужого міста</b>",
+                "• Možemo! kritizira Grbina, ali ne želi nj... ➡️ <b>Побут чужого міста</b>",
+                "• Lažne poruke više ne odaju pravopisne po... ➡️ <b>Світовий шум та лайфстайл</b>",
+                "• Kiša? Pa što? Na Stradun se mora... ➡️ <b>Побут чужого міста</b>",
+                "• Papa Leo ima manju izraslinu na plućnom ... ➡️ <b>Дубль новини 23</b>",
+                "• Zadarskim navijačima prisjeo nedjeljni r... ➡️ <b>Спорт</b>",
+                "• Coldplay i Imagine Dragons u čaroliji sv... ➡️ <b>Світовий шум та лайфстайл</b>",
+                "• Nakon kiše prva je esenska bura donijela... ➡️ <b>Побут чужого міста</b>",
+                "• Rođendan KUD Stjepan Radić: u Prodvorju ... ➡️ <b>Побут чужого міста</b>",
+                "• Papa Lav XIV vjernicima otkrio da u nare... ➡️ <b>Світовий шум та лайфстайл</b>",
+                "• Trebinjci grade moderni kongresni centar... ➡️ <b>Світовий шум та лайфстайл</b>"
+            ]
+        },
+        "backlog": {
+            "total_size": 28,
+            "sources": {
+                "Slobodna dalmacija": 14,
+                "023": 6,
+                "Zadarski list": 8
+            }
+        },
+        "published": {
+            "total": 1,
+            "ukraine_priority": 0,
+            "with_images": 1,
+            "text_only": 0,
+            "sources": {
+                "Slobodna dalmacija": 1
+            }
+        },
+        "models_used": {
+            "gemini-3.5-flash-lite": 2,
             "gemini-3.5-flash": 0
         },
         "errors_count": 0,
