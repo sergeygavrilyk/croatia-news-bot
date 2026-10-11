@@ -1,67 +1,5 @@
 [
     {
-        "timestamp": "2026-10-02 09:01:06",
-        "execution_time": 166.5,
-        "funnel": {
-            "scraped_total": 35,
-            "scraped_by_source": {
-                "023": 10,
-                "Slobodna dalmacija": 15,
-                "Zadarski list": 10
-            },
-            "already_seen": 9,
-            "rejected_by_keywords": 2,
-            "duplicates_removed_by_ai": 21,
-            "rejection_reasons_list": [
-                "• Nije prvi put. Jerković se još prije 20 ... ➡️ <b>Вже є в історії</b>",
-                "• Kninsi Atlagića most ide u hitnu sanacij... ➡️ <b>Побут чужих міст</b>",
-                "• Veliko priznanje! Niko Šare primio nagra... ➡️ <b>Спорт</b>",
-                "• ‘Dvi legende, trećega nema‘; pogledajte ... ➡️ <b>Світовий шум та лайфстайл</b>",
-                "• Zadarski lutkari u Čakovcu; Nagrađivana ... ➡️ <b>Побут чужих міст</b>",
-                "• SDP-ovka koja se našla u središtu skanda... ➡️ <b>Вже є в історії</b>",
-                "• Dubrovačka udruga Et Ješua predstavila s... ➡️ <b>Побут чужих міст</b>",
-                "• Pažnja vozačima. Kotorska ulica u Crikve... ➡️ <b>Побут чужих міст</b>",
-                "• Veliki posao u Šibeniku: južnokorejski g... ➡️ <b>Дублікат</b>",
-                "• Država prodaje 4900 litara zaplijenjene ... ➡️ <b>Світовий шум та лайфстайл</b>",
-                "• Lukanović nastavlja kastavizaciju župani... ➡️ <b>Побут чужих міст</b>",
-                "• Dubrovnik Pass ostvario rekordan prihod ... ➡️ <b>Побут чужих міст</b>",
-                "• Klub iz Posedarja preokretom na završnom... ➡️ <b>Спорт</b>",
-                "• Zašto ugostitelji u Selcu istu terasu pl... ➡️ <b>Побут чужих міст</b>",
-                "• Što je Gružanima najpotrebnije: novi pje... ➡️ <b>Побут чужих міст</b>",
-                "• Dan obrane grada Zadra; Tradicionalna ut... ➡️ <b>Спорт</b>",
-                "• Sedlarov film vodi kroz 1100 godina hrva... ➡️ <b>Світовий шум та лайфстайл</b>",
-                "• Uhićena Šibenka (42); skrivila je nesreć... ➡️ <b>Побут чужих міст</b>",
-                "• Lisne uši više ne moraju uništavati bilj... ➡️ <b>Світовий шум та лайфстайл</b>",
-                "• Smeće iz Dalmacije završilo u Neumu? ‘Ot... ➡️ <b>Світовий шум та лайфстайл</b>",
-                "• Mali kutak, velika razlika: kako urediti... ➡️ <b>Світовий шум та лайфстайл</b>"
-            ]
-        },
-        "backlog": {
-            "total_size": 33,
-            "sources": {
-                "023": 11,
-                "Zadarski list": 10,
-                "Slobodna dalmacija": 12
-            }
-        },
-        "published": {
-            "total": 3,
-            "ukraine_priority": 0,
-            "with_images": 1,
-            "text_only": 2,
-            "sources": {
-                "Zadarski list": 1,
-                "023": 2
-            }
-        },
-        "models_used": {
-            "gemini-3.5-flash-lite": 1,
-            "gemini-3.5-flash": 0
-        },
-        "errors_count": 0,
-        "gemini_retries": 0
-    },
-    {
         "timestamp": "2026-10-02 10:01:36",
         "execution_time": 163.9,
         "funnel": {
@@ -5911,6 +5849,67 @@
             "sources": {
                 "Slobodna dalmacija": 2,
                 "Zadarski list": 1
+            }
+        },
+        "models_used": {
+            "gemini-3.5-flash-lite": 2,
+            "gemini-3.5-flash": 0
+        },
+        "errors_count": 0,
+        "gemini_retries": 0
+    },
+    {
+        "timestamp": "2026-10-11 10:01:01",
+        "execution_time": 119.6,
+        "funnel": {
+            "scraped_total": 35,
+            "scraped_by_source": {
+                "023": 10,
+                "Slobodna dalmacija": 15,
+                "Zadarski list": 10
+            },
+            "already_seen": 9,
+            "rejected_by_keywords": 2,
+            "duplicates_removed_by_ai": 21,
+            "rejection_reasons_list": [
+                "• Priznat peti tip dijabetesa koji pogađa ... ➡️ <b>Світовий шум та лайфстайл</b>",
+                "• Dalmacija je sve toplija, a vode je sve ... ➡️ <b>Побут чужих міст / загальні поради</b>",
+                "• Sedam natjecatelja Plovanije vratilo se ... ➡️ <b>Спорт</b>",
+                "• Hrebak otvoreno o Plenkoviću, DP-u i idu... ➡️ <b>Політика національного рівня без прямого впливу на Задар чи діаспору</b>",
+                "• U Europi više od 500 energana na otpad, ... ➡️ <b>Екологічна загальна новина без прив'язки до Задара</b>",
+                "• Stakla u automobilu brže se odmagle uz o... ➡️ <b>Побут і лайфстайл</b>",
+                "• Kako čuti vrijeme: bili smo na berlinsko... ➡️ <b>Світовий шум та лайфстайл</b>",
+                "• Župan Blaž Pezo: ‘Radovi stoje godinu da... ➡️ <b>Побут чужих міст</b>",
+                "• Mjesec dana bez alkohola može poboljšati... ➡️ <b>Світовий шум та лайфстайл</b>",
+                "• Otkriven uzrok požara u reciklažnom cent... ➡️ <b>Побут чужих міст (Пула)</b>",
+                "• Lažne poruke više ne odaju pravopisne po... ➡️ <b>Абстрактні поради з кібербезпеки</b>",
+                "• Na Zagreb Prideu od 2021. dokumentirano ... ➡️ <b>Події в інших містах (Загреб)</b>",
+                "• TKD Plovanija briljirala na 12. Čigra Op... ➡️ <b>Спорт (дубль новини №3)</b>",
+                "• Stotinu brijača iz cijele zemlje okupilo... ➡️ <b>Дубль існуючої історії / дрібна подія</b>",
+                "• Privatni logopedi pred zatvaranjem praks... ➡️ <b>Побут чужих міст (Рієка)</b>",
+                "• Pljušte komentari, načelnik Lasić odgova... ➡️ <b>Побут чужих міст (Конавле)</b>",
+                "• Zbog olujnog vjetra između Senja i Svete... ➡️ <b>Побут іншого регіону (траса між Сењем і Магдаленою)</b>",
+                "• Ausgust Lambaša osvojio prsten za najbol... ➡️ <b>Спорт</b>",
+                "• Žene donose veliku većinu odluka u kućan... ➡️ <b>Абстрактне соціологічне дослідження</b>",
+                "• Zadar i Primorac ulovili ‘pun‘ plijen! I... ➡️ <b>Спорт (футбольний матч)</b>",
+                "• Rekordni prihodi i europska nagrada za D... ➡️ <b>Побут чужих міст (Дубровник)</b>"
+            ]
+        },
+        "backlog": {
+            "total_size": 23,
+            "sources": {
+                "Slobodna dalmacija": 10,
+                "023": 5,
+                "Zadarski list": 8
+            }
+        },
+        "published": {
+            "total": 2,
+            "ukraine_priority": 1,
+            "with_images": 2,
+            "text_only": 0,
+            "sources": {
+                "Slobodna dalmacija": 2
             }
         },
         "models_used": {
