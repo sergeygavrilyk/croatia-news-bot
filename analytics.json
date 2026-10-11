@@ -1,63 +1,5 @@
 [
     {
-        "timestamp": "2026-10-02 07:01:05",
-        "execution_time": 173.1,
-        "funnel": {
-            "scraped_total": 35,
-            "scraped_by_source": {
-                "023": 10,
-                "Slobodna dalmacija": 15,
-                "Zadarski list": 10
-            },
-            "already_seen": 1,
-            "rejected_by_keywords": 1,
-            "duplicates_removed_by_ai": 17,
-            "rejection_reasons_list": [
-                "• Vatrogasci noćas intervenirali u Lapadu,... ➡️ <b>Побут чужих міст</b>",
-                "• Lukanović nastavlja kastavizaciju župani... ➡️ <b>Побут чужих міст</b>",
-                "• Pogledajte što sve možete pročitati u no... ➡️ <b>Побут чужих міст</b>",
-                "• Zašto ugostitelji u Selcu istu terasu pl... ➡️ <b>Побут чужих міст</b>",
-                "• Hrvatsko smeće u Neumu? Evo što kažu u S... ➡️ <b>Вже є в історії</b>",
-                "• Sedlarov film vodi kroz 1100 godina hrva... ➡️ <b>Світовий шум та лайфстайл</b>",
-                "• Zadar gostuje u Kostreni; Momčad Stipe M... ➡️ <b>Спорт</b>",
-                "• Milanović povodom objave monografije pri... ➡️ <b>Світовий шум та лайфстайл</b>",
-                "• Izložba „Tragovima arheološke baštine Ba... ➡️ <b>Побут чужих міст</b>",
-                "• Marijana Mikulić sa Zadranima će slaviti... ➡️ <b>Світовий шум та лайфстайл</b>",
-                "• Potres magnitude 3.2 jutros uznemirio gr... ➡️ <b>Світовий шум та лайфстайл</b>",
-                "• Tragedija na brzoj cesti D-424: u nesreć... ➡️ <b>Дублікат</b>",
-                "• Odveo je 200 ljudi u ratnu zonu da snimi... ➡️ <b>Світовий шум та лайфстайл</b>",
-                "• Nakon Oluje vratili se na paljevinu, poč... ➡️ <b>Світовий шум та лайфстайл</b>",
-                "• Lisne uši više ne moraju uništavati bilj... ➡️ <b>Світовий шум та лайфстайл</b>",
-                "• Ratko Mladić nije problem, Von der Leyen... ➡️ <b>Світовий шум та лайфстайл</b>",
-                "• Japanski start-up 2027. kreće s testovim... ➡️ <b>Світовий шум та лайфстайл</b>"
-            ]
-        },
-        "backlog": {
-            "total_size": 28,
-            "sources": {
-                "023": 9,
-                "Slobodna dalmacija": 9,
-                "Zadarski list": 10
-            }
-        },
-        "published": {
-            "total": 3,
-            "ukraine_priority": 0,
-            "with_images": 1,
-            "text_only": 2,
-            "sources": {
-                "023": 2,
-                "Zadarski list": 1
-            }
-        },
-        "models_used": {
-            "gemini-3.5-flash-lite": 1,
-            "gemini-3.5-flash": 0
-        },
-        "errors_count": 0,
-        "gemini_retries": 0
-    },
-    {
         "timestamp": "2026-10-02 08:01:37",
         "execution_time": 164.1,
         "funnel": {
@@ -5910,6 +5852,60 @@
             "text_only": 3,
             "sources": {
                 "023": 3
+            }
+        },
+        "models_used": {
+            "gemini-3.5-flash-lite": 2,
+            "gemini-3.5-flash": 0
+        },
+        "errors_count": 0,
+        "gemini_retries": 0
+    },
+    {
+        "timestamp": "2026-10-11 08:01:03",
+        "execution_time": 173.8,
+        "funnel": {
+            "scraped_total": 35,
+            "scraped_by_source": {
+                "023": 10,
+                "Slobodna dalmacija": 15,
+                "Zadarski list": 10
+            },
+            "already_seen": 4,
+            "rejected_by_keywords": 4,
+            "duplicates_removed_by_ai": 14,
+            "rejection_reasons_list": [
+                "• Žene donose veliku većinu odluka u kućan... ➡️ <b>Побут чужих міст</b>",
+                "• Stakla u automobilu brže se odmagle uz o... ➡️ <b>Світовий шум та лайфстайл</b>",
+                "• Radovi na Centru za gospodarenje otpadom... ➡️ <b>Побут чужих міст</b>",
+                "• Zadar i Primorac ulovili ‘pun‘ plijen! I... ➡️ <b>Спорт</b>",
+                "• Mjesec dana bez alkohola može poboljšati... ➡️ <b>Світовий шум та лайфстайл</b>",
+                "• Luka trpi štetu zbog zatvaranja pruge: a... ➡️ <b>Побут чужих міст</b>",
+                "• Rekordni prihodi i europska nagrada za D... ➡️ <b>Побут чужих міст</b>",
+                "• Lažne poruke više ne odaju pravopisne po... ➡️ <b>Світовий шум та лайфстайл</b>",
+                "• U crkvi na Žabici služena misa na tagalo... ➡️ <b>Побут чужих міст</b>",
+                "• U Sloveniji otvorena birališta, ljudi iz... ➡️ <b>Світовий шум та лайфстайл</b>",
+                "• Izdržite do popodne: evo kakvo nas vrije... ➡️ <b>Побут чужих міст</b>",
+                "• Uskokova optužnica protiv Roberta DiCapr... ➡️ <b>Побут чужих міст</b>",
+                "• Po kome je Cele dobila ime, gdje je bio ... ➡️ <b>Побут чужих міст</b>",
+                "• U velikom napadu hutista na zračnu luku ... ➡️ <b>Світовий шум та лайфстайл</b>"
+            ]
+        },
+        "backlog": {
+            "total_size": 18,
+            "sources": {
+                "023": 4,
+                "Slobodna dalmacija": 8,
+                "Zadarski list": 6
+            }
+        },
+        "published": {
+            "total": 3,
+            "ukraine_priority": 1,
+            "with_images": 3,
+            "text_only": 0,
+            "sources": {
+                "Slobodna dalmacija": 3
             }
         },
         "models_used": {
