@@ -1,63 +1,5 @@
 [
     {
-        "timestamp": "2026-10-03 10:01:01",
-        "execution_time": 165.3,
-        "funnel": {
-            "scraped_total": 35,
-            "scraped_by_source": {
-                "023": 10,
-                "Slobodna dalmacija": 15,
-                "Zadarski list": 10
-            },
-            "already_seen": 9,
-            "rejected_by_keywords": 6,
-            "duplicates_removed_by_ai": 17,
-            "rejection_reasons_list": [
-                "• Tereza Kesovija rođendan dočekala u boln... ➡️ <b>Шоу-бізнес</b>",
-                "• Iz Pule direktno u Edinburgh. Uvodi se n... ➡️ <b>Побут інших міст</b>",
-                "• Objavljeni detalji tragične pogibije mot... ➡️ <b>Кримінал інших регіонів</b>",
-                "• Zašto je odlazak na spavanje nakon ponoć... ➡️ <b>Світовий шум та лайфстайл</b>",
-                "• Najveća investicijska groznica u povijes... ➡️ <b>Світовий шум</b>",
-                "• Vido Boganović o gradnji cavtatskog reso... ➡️ <b>Кримінал інших регіонів</b>",
-                "• Ukrali kamion i kablove, pa zapalili aut... ➡️ <b>Кримінал інших регіонів</b>",
-                "• Početak u znaku opere: tratamenat u KMD-... ➡️ <b>Культура інших міст</b>",
-                "• Policija pojačano kontrolira ceste ovog ... ➡️ <b>Вже є в історії</b>",
-                "• Obrat oko Vile Svežanj. Dražba završila,... ➡️ <b>Побут інших міст</b>",
-                "• U Šibeniku postoje samo dva godišnja dob... ➡️ <b>Світовий шум та лайфстайл</b>",
-                "• Velebit je još jednom opjevan i – pobije... ➡️ <b>Світовий шум та лайфстайл</b>",
-                "• Zatvara se poslovnica OTP-a krajem stude... ➡️ <b>Побут інших міст</b>",
-                "• Što su zapravo dogovorili Penava i Frka-... ➡️ <b>Вже є в історії</b>",
-                "• Novi sadržaji za Dubrovnik: knjižnica u ... ➡️ <b>Побут інших міст</b>",
-                "• Elvia Nacinovich vraća se na daske Hrvat... ➡️ <b>Культура інших міст</b>",
-                "• Životna priča Katarine Ničetić, odgajate... ➡️ <b>Кримінал інших регіонів</b>"
-            ]
-        },
-        "backlog": {
-            "total_size": 21,
-            "sources": {
-                "Zadarski list": 8,
-                "023": 4,
-                "Slobodna dalmacija": 9
-            }
-        },
-        "published": {
-            "total": 3,
-            "ukraine_priority": 0,
-            "with_images": 1,
-            "text_only": 2,
-            "sources": {
-                "023": 2,
-                "Zadarski list": 1
-            }
-        },
-        "models_used": {
-            "gemini-3.5-flash-lite": 1,
-            "gemini-3.5-flash": 0
-        },
-        "errors_count": 0,
-        "gemini_retries": 0
-    },
-    {
         "timestamp": "2026-10-03 11:01:00",
         "execution_time": 164.2,
         "funnel": {
@@ -5940,6 +5882,69 @@
         "models_used": {
             "gemini-3.5-flash-lite": 2,
             "gemini-3.6-flash": 0
+        },
+        "errors_count": 0,
+        "gemini_retries": 0
+    },
+    {
+        "timestamp": "2026-10-12 11:01:10",
+        "execution_time": 180.7,
+        "funnel": {
+            "scraped_total": 35,
+            "scraped_by_source": {
+                "023": 10,
+                "Slobodna dalmacija": 15,
+                "Zadarski list": 10
+            },
+            "already_seen": 3,
+            "rejected_by_keywords": 2,
+            "duplicates_removed_by_ai": 22,
+            "rejection_reasons_list": [
+                "• Smrt srednjoškolske učenice iz Dalmacije... ➡️ <b>Медичні поради та загальна інформація про здоров'я (побутовий шум), відсутність прив'язки до Задара.</b>",
+                "• Četiri površine u kući koje ne biste tre... ➡️ <b>Світовий шум: побутові поради щодо прибирання.</b>",
+                "• Talijanske rajčice sa salmonelom završil... ➡️ <b>Дублікат події з історії (заражені томати) та побутові проблеми інших регіонів (Кварнер, Істрія).</b>",
+                "• Veliki uspjeh mladih Šibenčana: Film ‘Sh... ➡️ <b>Локальна новина міста Шибеник та Джурджевац.</b>",
+                "• U Nadinu otkriven središnji križ za sve ... ➡️ <b>Локальна подія містечка Надин, що не має загальнонаціонального значення або прямого відношення до Задара.</b>",
+                "• Denis Španjol osvojio naslov državnog pr... ➡️ <b>Спорт та професійні змагання (турнір барменів).</b>",
+                "• Ulica u Dubrovniku mjesecima raskopana, ... ➡️ <b>Побут чужих міст: ремонт доріг та комунальні проблеми в Дубровнику.</b>",
+                "• Bundevijada u Vrbovskom: Više od 100 izl... ➡️ <b>Побут чужих міст: ярмарок у Врбовсько.</b>",
+                "• Policija pronašla napadača na državljane... ➡️ <b>Побут чужих міст: дрібний кримінал у Дубровнику, а також дублікат ID 19.</b>",
+                "• PRILIKA KOJA SE NE PROPUŠTA Cijeli asort... ➡️ <b>Реклама та промо-матеріали магазинного знижки.</b>",
+                "• Održana 30. sportska natjecanja ratnih i... ➡️ <b>Спорт: спортивні змагання в Малі-Лошині.</b>",
+                "• S 3,57 promila izletio s ceste, prevrnuo... ➡️ <b>Побут чужих міст: ДТП та алкогольне сп'яніння в Метковичі.</b>",
+                "• Riječanka osmislila aplikaciju za tražen... ➡️ <b>Побут чужих міст: локальний стартап з Рієки.</b>",
+                "• Filmska potjera u Čajkovićima: 23-godišn... ➡️ <b>Побут чужих міст: дорожнє порушення біля Дубровника.</b>",
+                "• Prvi Zadranin preplivao La Manche, a pli... ➡️ <b>Спорт: спортивні досягнення та результати плавального клубу.</b>",
+                "• Športsko ribolovno društvo Parangal obil... ➡️ <b>Спорт та побут чужих міст: ювілей рибальського клубу на Цресі.</b>",
+                "• Uhićen 23-godišnjak koji je u Dubrovniku... ➡️ <b>Побут чужих міст (кримінал у Дубровнику) та кластерний дублікат ID 10.</b>",
+                "• KUD sv. Ante Nadin i KUD Branimir iz Ben... ➡️ <b>Дрібна культурна подія регіонального ансамблю за межами Задара.</b>",
+                "• Vozio Krasicom s 2,73 promila alkohola u... ➡️ <b>Побут чужих міст: водіння напідпитку в Красиці.</b>",
+                "• Tragedija na Korčuli: u teškoj prometnoj... ➡️ <b>Побут чужих міст: ДТП на Корчулі.</b>",
+                "• Čarolija jeseni podno Velebita: Više od ... ➡️ <b>Локальний туризм та ярмарок у Грачаці (поза межами міста Задар).</b>",
+                "• Otkriven uzrok požara u sortirnici otpad... ➡️ <b>Побут чужих міст: пожежа на звалищі на острові Раб.</b>"
+            ]
+        },
+        "backlog": {
+            "total_size": 36,
+            "sources": {
+                "Slobodna dalmacija": 19,
+                "023": 8,
+                "Zadarski list": 9
+            }
+        },
+        "published": {
+            "total": 3,
+            "ukraine_priority": 1,
+            "with_images": 1,
+            "text_only": 2,
+            "sources": {
+                "Zadarski list": 1,
+                "023": 2
+            }
+        },
+        "models_used": {
+            "gemini-3.5-flash-lite": 1,
+            "gemini-3.6-flash": 1
         },
         "errors_count": 0,
         "gemini_retries": 0
