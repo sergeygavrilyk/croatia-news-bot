@@ -1,67 +1,5 @@
 [
     {
-        "timestamp": "2026-10-02 19:01:04",
-        "execution_time": 174.9,
-        "funnel": {
-            "scraped_total": 35,
-            "scraped_by_source": {
-                "023": 10,
-                "Slobodna dalmacija": 15,
-                "Zadarski list": 10
-            },
-            "already_seen": 4,
-            "rejected_by_keywords": 7,
-            "duplicates_removed_by_ai": 21,
-            "rejection_reasons_list": [
-                "• Hoće li zaživjeti Lapad express ili Lapa... ➡️ <b>Побут Дубровника</b>",
-                "• Legendarni Slash vraća se u Zagreb sa sv... ➡️ <b>Спорт та шоу-бізнес</b>",
-                "• Znanstvenici otkrili zašto se Apenini i ... ➡️ <b>Світовий шум</b>",
-                "• Bivši dubrovački gradonačelnik, suvlasni... ➡️ <b>Побут Дубровника</b>",
-                "• Maketarska izložba o Hrvatskoj vojsci i ... ➡️ <b>Побут Рієки</b>",
-                "• Kardiolozi upozoravaju na naviku koja ub... ➡️ <b>Світовий шум</b>",
-                "• Izložba \"Istočna Slavonija u Domovinskom... ➡️ <b>Побут Дубровника</b>",
-                "• Uprava ZET-a pozvala sindikate na žurno ... ➡️ <b>Побут Загреба</b>",
-                "• Budite se svake noći u isto doba? Krivac... ➡️ <b>Світовий шум</b>",
-                "• Članovi udruge Prvi ročnik Hrvatske vojs... ➡️ <b>Побут Плоче</b>",
-                "• Hvar u listopadu ugostit će više od 3.50... ➡️ <b>Спорт</b>",
-                "• U Zavičajnoj kući u Slanom obilježena ob... ➡️ <b>Побут Дубровника</b>",
-                "• Moćna poruka; Više od 600 učenika s ruži... ➡️ <b>Побут Загреба</b>",
-                "• Na prostranim pješčanim plažama ušća Ner... ➡️ <b>Побут Неретви</b>",
-                "• Skrivene mane novogradnje; Građevinski s... ➡️ <b>Світовий шум</b>",
-                "• Zadarski plesni ansambl u Dubrovniku; Na... ➡️ <b>Побут Дубровника</b>",
-                "• Dugogodišnji mljetski matičar Ivan Čumbe... ➡️ <b>Побут Мльета</b>",
-                "• Učenje ne prestaje s godinama; Od srednj... ➡️ <b>Вже є в історії</b>",
-                "• Preminuo Marko Šupe, posljednji šibenski... ➡️ <b>Побут Шибеника</b>",
-                "• Misteriozna primopredaja u dalmatinskom ... ➡️ <b>Побут Метковіча</b>",
-                "• E ovako se kolegicu ispraća u penziju! C... ➡️ <b>Побут Шибеника</b>"
-            ]
-        },
-        "backlog": {
-            "total_size": 43,
-            "sources": {
-                "Slobodna dalmacija": 30,
-                "023": 8,
-                "Zadarski list": 5
-            }
-        },
-        "published": {
-            "total": 3,
-            "ukraine_priority": 0,
-            "with_images": 3,
-            "text_only": 0,
-            "sources": {
-                "Zadarski list": 2,
-                "Slobodna dalmacija": 1
-            }
-        },
-        "models_used": {
-            "gemini-3.5-flash-lite": 1,
-            "gemini-3.5-flash": 0
-        },
-        "errors_count": 0,
-        "gemini_retries": 0
-    },
-    {
         "timestamp": "2026-10-03 07:01:01",
         "execution_time": 166.3,
         "funnel": {
@@ -5930,6 +5868,64 @@
         "models_used": {
             "gemini-3.5-flash-lite": 2,
             "gemini-3.5-flash": 0
+        },
+        "errors_count": 0,
+        "gemini_retries": 0
+    },
+    {
+        "timestamp": "2026-10-12 07:01:07",
+        "execution_time": 185.7,
+        "funnel": {
+            "scraped_total": 35,
+            "scraped_by_source": {
+                "023": 10,
+                "Slobodna dalmacija": 15,
+                "Zadarski list": 10
+            },
+            "already_seen": 2,
+            "rejected_by_keywords": 2,
+            "duplicates_removed_by_ai": 18,
+            "rejection_reasons_list": [
+                "• Mirjana Hrga o životu na otoku: ‘U Osoru... ➡️ <b>Побут інших міст</b>",
+                "• Poznati riječki bariton Robert Kolar nas... ➡️ <b>Культура іншого регіону</b>",
+                "• 400 godina jedne obitelji i priča koja t... ➡️ <b>Локальна подія іншого регіону</b>",
+                "• U kulturnom centru Picirk predstavljena ... ➡️ <b>Побут інших міст</b>",
+                "• Evgenija Matović, jedina odgojiteljica o... ➡️ <b>Побут інших міст</b>",
+                "• Umjesto jednog velikog projekta, lošinjs... ➡️ <b>Побут інших міст</b>",
+                "• Ma pogledajte što mlada radi na prvom pl... ➡️ <b>Дубль або несуттєва світська новина</b>",
+                "• Zadarska Ultima do dvanaest odličja u na... ➡️ <b>Спорт</b>",
+                "• Od četiri razreda u starim kućama, do mo... ➡️ <b>Побут інших міст</b>",
+                "• Država za sitniš prodaje zemljište u Dal... ➡️ <b>Загальна реклама нерухомості без прив'язки до Задара</b>",
+                "• Veliki projekti na području grada Krka u... ➡️ <b>Побут інших міст</b>",
+                "• Kod Ane Handabake u Mlinima ljetuje se k... ➡️ <b>Побут інших міст</b>",
+                "• Sedam kremastih juha za svaki dan u tjed... ➡️ <b>Світовий шум: поради та рецепти</b>",
+                "• Općina Baška nastavlja podržavati iznajm... ➡️ <b>Побут інших міст</b>",
+                "• Odigrana samo četiri susreta, ostali nis... ➡️ <b>Спорт</b>",
+                "• Priznanje za Novalju dokaz je da Life on... ➡️ <b>Побут інших міст</b>",
+                "• Klaudio Martinolić istražio je život nad... ➡️ <b>Побут інших міст</b>",
+                "• Koje varalice koristite u panuli? Donosi... ➡️ <b>Світовий шум / поради для рибалок</b>"
+            ]
+        },
+        "backlog": {
+            "total_size": 21,
+            "sources": {
+                "023": 5,
+                "Slobodna dalmacija": 6,
+                "Zadarski list": 10
+            }
+        },
+        "published": {
+            "total": 3,
+            "ukraine_priority": 0,
+            "with_images": 0,
+            "text_only": 3,
+            "sources": {
+                "023": 3
+            }
+        },
+        "models_used": {
+            "gemini-3.5-flash-lite": 2,
+            "gemini-3.6-flash": 0
         },
         "errors_count": 0,
         "gemini_retries": 0
