@@ -146,7 +146,7 @@ def send_analytics_to_admin(stats):
         f"▪️ Формат: З фото ({stats['published']['with_images']}) | Текст ({stats['published']['text_only']})\n"
         f"▪️ Пріоритет 🇺🇦: {stats['published']['ukraine_priority']}\n"
         f"▪️ Джерела: {pub_src_str}\n\n"
-        f"🤖 <b>ШІ моделі:</b> Lite: {stats['models_used'].get('gemini-3.5-flash-lite', 0)} | Pro: {stats['models_used'].get('gemini-3.5-flash', 0)}\n\n"
+        f"🤖 <b>ШІ моделі:</b> Lite: {stats['models_used'].get('gemini-3.5-flash-lite', 0)} | Pro: {stats['models_used'].get('gemini-3.6-flash', 0)}\n\n"
     )
     
     api_url = f"https://api.telegram.org/bot{TELEGRAM_BOT_TOKEN}/sendMessage"
@@ -208,7 +208,7 @@ def is_quality_article(title, description, url):
 
 @retry(stop=stop_after_attempt(4), wait=wait_exponential(multiplier=2, min=5, max=60))
 def call_gemini_json(client, prompt, stats=None):
-    models_to_try = ['gemini-3.5-flash', 'gemini-3.5-flash-lite']
+    models_to_try = ['gemini-3.6-flash', 'gemini-3.5-flash-lite']
     last_error = None
     
     for current_model in models_to_try:
@@ -247,7 +247,7 @@ def call_gemini_json(client, prompt, stats=None):
 
 @retry(stop=stop_after_attempt(4), wait=wait_exponential(multiplier=2, min=15, max=60))
 def generate_news_texts(client, prompt, expected_count, stats=None):
-    models_to_try = ['gemini-3.5-flash-lite', 'gemini-3.5-flash']
+    models_to_try = ['gemini-3.5-flash-lite', 'gemini-3.6-flash']
     last_error = None
     
     for current_model in models_to_try:
@@ -345,12 +345,17 @@ def deduplicate_news(client, articles, history_titles=None, stats=None):
     1. СПОРТ: Будь-які матчі, турніри, результати, трансфери, спортсмени.
     2. РЕКЛАМА: Спонсорські матеріали, промо-акції, розіграші.
     3. ПОБУТ ЧУЖИХ МІСТ: Ремонти доріг, відключення води, локальні затори, страйки комунальників, дрібні ДТП у Загребі, Спліті, Рієці чи БУДЬ-ЯКОМУ іншому місті, ОКРІМ Задара.
-    4. СВІТОВИЙ ШУМ ТА ЛАЙФСТАЙЛ: Абстрактна наука, поради дієтологів, рецепти, шоу-бізнес та події в третіх країнах, ЯКЩО вони не стосуються безпосередньо Хорватії чи України.
+    4. ІНШІ КРАЇНИ (ГЕОБЛОК): БУДЬ-ЯКІ події за межами Хорватії та України (навіть масові вбивства, теракти, вибори, катастрофи чи великий кримінал у Польщі, США, Франції тощо), ЯКЩО вони прямо не стосуються українських біженців.
+    5. СВІТОВИЙ ШУМ: Абстрактна наука, поради дієтологів, рецепти, шоу-бізнес, технології.
+
 
     КРОК 5. ТЕМАТИКА (ЩО ОБОВ'ЯЗКОВО ЗАЛИШИТИ): 
     1. ЗАДАР (Пріоритет №1): Побут, перекриття вулиць, тарифи, ремонти, відключення світла/води, погода, місцевий кримінал. 
     2. ХОРВАТІЯ (Національний рівень): Важливі події всієї країни — великий кримінал, політика, економіка.
     3. УКРАЇНА ТА БІЖЕНЦІ: Головні події в Україні (війна, енергетика), рішення ЄС (Директива 2001/55), виплати.
+
+    КРОК 6. ФІНАЛЬНИЙ ФІЛЬТР:
+    Якщо новина не підпадає під ЖОДНУ з категорій КРОКУ 5 — ти ЗОБОВ'ЯЗАНИЙ її відхилити. Ніяких винятків для "цікавих світових новин".
 
     <CANDIDATES>
     {json.dumps(prompt_data, ensure_ascii=False, indent=2)}
@@ -725,7 +730,7 @@ def main():
             "text_only": 0,
             "sources": {}
         },
-        "models_used": {"gemini-3.5-flash-lite": 0, "gemini-3.5-flash": 0},
+        "models_used": {"gemini-3.5-flash-lite": 0, "gemini-3.6-flash": 0},
         "errors_count": 0,
         "gemini_retries": 0
     }
