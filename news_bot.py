@@ -163,13 +163,21 @@ def get_rss_feeds():
         logging.error(f"Помилка читання feeds.json: {e}")
         return []
 
-def extract_image_url(entry):
-    if 'media_content' in entry and len(entry.media_content) > 0:
-        return entry.media_content[0].get('url')
-    if 'enclosures' in entry and len(entry.enclosures) > 0:
+def extract_image_urls(entry):
+    unsupported_formats = ('.webp', '.avif', '.svg')
+    urls = []
+    if 'media_content' in entry:
+        for media in entry.media_content:
+            url = media.get('url')
+            if url and not url.lower().endswith(unsupported_formats) and url not in urls: 
+                urls.append(url)
+    if 'enclosures' in entry:
         for enc in entry.enclosures:
-            if enc.get('type', '').startswith('image/'): return enc.get('href')
-    return None
+            if enc.get('type', '').startswith('image/'):
+                url = enc.get('href')
+                if url and not url.lower().endswith(unsupported_formats) and url not in urls: 
+                    urls.append(url)
+    return urls[:10]
 
 def get_source_name(url):
     try:
@@ -307,8 +315,13 @@ def execute_telegram_request(api_url, payload):
     resp = requests.post(api_url, data=payload)
     if resp.status_code == 400 and "parse entities" in resp.text.lower():
         logging.warning("⚠️ Помилка HTML-розмітки. Відправляємо без HTML...")
-        if 'parse_mode' in payload: del payload['parse_mode']
-        resp = requests.post(api_url, data=payload)
+        if 'media' in payload:
+            media_objs = json.loads(payload['media'])
+            if 'parse_mode' in media_objs[0]: del media_objs[0]['parse_mode']
+            payload['media'] = json.dumps(media_objs)
+        elif 'parse_mode' in payload: 
+            del payload['parse_mode']
+        resp = requests.post(api_url, data=payload) 
     
     if resp.status_code != 200: 
         raise Exception(f"Telegram Error {resp.status_code}: {resp.text}")
@@ -495,7 +508,7 @@ def scrape_feeds(stats=None):
 
             backlog.append({
                 'title': title, 'description': description, 'url': url,
-                'image_url': extract_image_url(entry), 'source': source_name, 'timestamp': article_time
+                'image_urls': extract_image_urls(entry), 'source': source_name, 'timestamp': article_time
             })
             backlog_urls.append(url)
             
@@ -587,7 +600,12 @@ def process_backlog(stats=None):
     """
     
     for idx, item in enumerate(batch):
-        has_image = "Так" if item.get('image_url') else "Ні"
+        # Зворотна сумісність зі старим JSON беклогом
+        images = item.get('image_urls', [])
+        if not images and item.get('image_url'):
+            images = [item.get('image_url')]
+            
+        has_image = "Так" if images else "Ні"
         prompt += f"=== НОВИНА {idx+1} ===\nМає картинку: {has_image}\nЗаголовок: {item['title']}\nОпис: {item['description']}\n\n"
     
     prompt += f"""
@@ -625,7 +643,12 @@ def process_backlog(stats=None):
     for idx, item in enumerate(batch):
         if idx >= len(generated_texts): break 
         
-        if send_to_telegram(generated_texts[idx], item['url'], item.get('source', 'Джерело'), item['image_url'], tags=""):
+        # Зворотна сумісність
+        images = item.get('image_urls', [])
+        if not images and item.get('image_url'):
+            images = [item.get('image_url')]
+        
+        if send_to_telegram(generated_texts[idx], item['url'], item.get('source', 'Джерело'), images, tags=""):
             history_urls = save_to_history(history_urls, item['url'], HISTORY_FILE)
             history_titles = save_to_history(history_titles, item['title'], TITLES_FILE)
             successful_urls.append(item['url'])
@@ -637,7 +660,7 @@ def process_backlog(stats=None):
                 if any(re.search(kw, text_context) for kw in ukraine_keywords):
                     stats["published"]["ukraine_priority"] += 1
                 
-                if item.get('image_url'): stats["published"]["with_images"] += 1
+                if images: stats["published"]["with_images"] += 1
                 else: stats["published"]["text_only"] += 1
                 
                 src = item.get('source', 'Джерело')
@@ -657,49 +680,61 @@ def process_backlog(stats=None):
     remaining_backlog.sort(key=lambda x: x.get('timestamp', 0), reverse=True)
     save_backlog(remaining_backlog[:30])
 
-def send_to_telegram(text, url, source_name, image_url=None, tags=""):
+def send_to_telegram(text, url, source_name, image_urls=None, tags=""):
     extracted_tags = ""
     parts = text.split('\n\n')
     if parts and '#' in parts[-1]:
         extracted_tags = "\n\n" + parts[-1].strip()
         text = '\n\n'.join(parts[:-1]) 
     
+    if not image_urls: image_urls = []
+    elif isinstance(image_urls, str): image_urls = [image_urls]
+
     crop_msg = "...\n\n👉 <i>Повні деталі читайте за посиланням нижче</i> 👇"
-    
     safe_caption_limit = 920 - len(extracted_tags) - len(tags)
     
-    if image_url and len(text) > safe_caption_limit: 
+    if image_urls and len(text) > safe_caption_limit: 
         text = text[:safe_caption_limit] + crop_msg
-    elif not image_url and len(text) > 3900: 
+    elif not image_urls and len(text) > 3900: 
         text = text[:3900] + crop_msg
     
     full_message = f"{text}{extracted_tags}{tags}\n\n🔗 Джерело: <a href='{url}'>{source_name}</a>"
+    payload = {'chat_id': TELEGRAM_CHANNEL_ID}
     
-    payload = {'chat_id': TELEGRAM_CHANNEL_ID, 'parse_mode': 'HTML'}
-    
-    if image_url:
-        payload['photo'] = image_url
-        payload['caption'] = full_message
-        api_url = f"https://api.telegram.org/bot{TELEGRAM_BOT_TOKEN}/sendPhoto"
-    else:
+    if len(image_urls) == 0:
+        payload['parse_mode'] = 'HTML'
         payload['text'] = full_message
         api_url = f"https://api.telegram.org/bot{TELEGRAM_BOT_TOKEN}/sendMessage"
+    elif len(image_urls) == 1:
+        payload['parse_mode'] = 'HTML'
+        payload['caption'] = full_message
+        payload['photo'] = image_urls[0]
+        api_url = f"https://api.telegram.org/bot{TELEGRAM_BOT_TOKEN}/sendPhoto"
+    else:
+        media = []
+        for idx, img_url in enumerate(image_urls):
+            media_item = {'type': 'photo', 'media': img_url}
+            if idx == 0: 
+                media_item['caption'] = full_message
+                media_item['parse_mode'] = 'HTML'
+            media.append(media_item)
+        payload['media'] = json.dumps(media)
+        api_url = f"https://api.telegram.org/bot{TELEGRAM_BOT_TOKEN}/sendMediaGroup"
     
     try:
         return execute_telegram_request(api_url, payload)
     except Exception as e: 
-        # --- ФОЛБЕК: Якщо Telegram відхилив картинку, відправляємо як текст ---
-        if image_url:
-            logging.warning(f"⚠️ Telegram відхилив картинку ({e}). Пробуємо відправити просто як текст...")
+        if len(image_urls) > 0:
+            logging.warning(f"⚠️ Telegram відхилив медіа ({e}). Пробуємо відправити просто як текст...")
             payload_text = {'chat_id': TELEGRAM_CHANNEL_ID, 'text': full_message, 'parse_mode': 'HTML'}
             api_url_text = f"https://api.telegram.org/bot{TELEGRAM_BOT_TOKEN}/sendMessage"
             try:
                 return execute_telegram_request(api_url_text, payload_text)
             except Exception as text_e:
-                logging.error(f"❌ Критична помилка відправки тексту в Telegram: {text_e}")
+                logging.error(f"❌ Критична помилка відправки тексту: {text_e}")
                 return False
         else:
-            logging.error(f"❌ Критична помилка відправки в Telegram: {e}")
+            logging.error(f"❌ Критична помилка Telegram API: {e}")
             return False
 
 def main():
