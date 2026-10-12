@@ -1,69 +1,5 @@
 [
     {
-        "timestamp": "2026-10-03 15:01:04",
-        "execution_time": 121.0,
-        "funnel": {
-            "scraped_total": 35,
-            "scraped_by_source": {
-                "023": 10,
-                "Slobodna dalmacija": 15,
-                "Zadarski list": 10
-            },
-            "already_seen": 23,
-            "rejected_by_keywords": 6,
-            "duplicates_removed_by_ai": 23,
-            "rejection_reasons_list": [
-                "• Rusija najavila nastavak napada na Kijev... ➡️ <b>Вже є в історії</b>",
-                "• Podmornica zaronila kilometar ispod leda... ➡️ <b>Світовий шум</b>",
-                "• Obilježena 35 obljetnica početka služenj... ➡️ <b>Побут чужих міст</b>",
-                "• Anušić: “Mi protuodgovor na rakete Srbij... ➡️ <b>Вже є в історії</b>",
-                "• Irska, ne Italija: evo koja zemlja predn... ➡️ <b>Світовий шум</b>",
-                "• Uz aktualnu izložbu Matka Vekića u Umjet... ➡️ <b>Побут чужих міст</b>",
-                "• Zadranka Petra Demo glavna zvijezda u Za... ➡️ <b>Побут чужих міст</b>",
-                "• Među 4444 stabla primijetili su nešto ne... ➡️ <b>Світовий шум</b>",
-                "• Požar u pogonu za pelete u Hercegovcu pr... ➡️ <b>Побут чужих міст</b>",
-                "• Rijeke na Aljasci mijenjaju boju u naran... ➡️ <b>Світовий шум</b>",
-                "• ‘Bojni brodovi: uspon i nestanak‘: pregl... ➡️ <b>Побут чужих міст</b>",
-                "• Od raka dojke u Hrvatskoj umrlo 697 žena... ➡️ <b>Вже є в історії</b>",
-                "• Šetači subotnjim đirom ušetali u listopa... ➡️ <b>Побут чужих міст</b>",
-                "• Šef HOO-a otišao u Japan, a po povratku ... ➡️ <b>Спорт</b>",
-                "• Dario Šarić kupio vilu za vrtoglavi izno... ➡️ <b>Побут чужих міст</b>",
-                "• Od izložbe pasa do izbora za Miss: I dru... ➡️ <b>Побут чужих міст</b>",
-                "• Bablje ljeto ne prestaje, Poljana suboto... ➡️ <b>Побут чужих міст</b>",
-                "• Višeminutne ovacije u HNK Zagreb: Bigonz... ➡️ <b>Побут чужих міст</b>",
-                "• Branio svoje polje od divljih svinja, a ... ➡️ <b>Побут чужих міст</b>",
-                "• Predsjednik Gradskog vijeća preuzeo dužn... ➡️ <b>Побут чужих міст</b>",
-                "• Jeste li čuli za loppis? Pločani su dana... ➡️ <b>Побут чужих міст</b>",
-                "• Sudar na Mostu dr. Franja Tuđmana: hitne... ➡️ <b>Побут чужих міст</b>",
-                "• Sudar na Mostu dr. Franja Tuđmana, prome... ➡️ <b>Дублікат</b>"
-            ]
-        },
-        "backlog": {
-            "total_size": 27,
-            "sources": {
-                "023": 5,
-                "Slobodna dalmacija": 14,
-                "Zadarski list": 8
-            }
-        },
-        "published": {
-            "total": 2,
-            "ukraine_priority": 0,
-            "with_images": 1,
-            "text_only": 1,
-            "sources": {
-                "Zadarski list": 1,
-                "023": 1
-            }
-        },
-        "models_used": {
-            "gemini-3.5-flash-lite": 1,
-            "gemini-3.5-flash": 0
-        },
-        "errors_count": 0,
-        "gemini_retries": 0
-    },
-    {
         "timestamp": "2026-10-03 16:01:00",
         "execution_time": 74.4,
         "funnel": {
@@ -5950,6 +5886,69 @@
         },
         "models_used": {
             "gemini-3.5-flash-lite": 2,
+            "gemini-3.6-flash": 0
+        },
+        "errors_count": 0,
+        "gemini_retries": 0
+    },
+    {
+        "timestamp": "2026-10-12 16:01:11",
+        "execution_time": 14.5,
+        "funnel": {
+            "scraped_total": 35,
+            "scraped_by_source": {
+                "023": 10,
+                "Slobodna dalmacija": 15,
+                "Zadarski list": 10
+            },
+            "already_seen": 8,
+            "rejected_by_keywords": 0,
+            "duplicates_removed_by_ai": 25,
+            "rejection_reasons_list": [
+                "• Tri vrste raka godinama rastu neprimjetn... ➡️ <b>Світовий шум</b>",
+                "• Iz Zadra si ako znaš tko je - Toto! Prič... ➡️ <b>Переказ історії/несуттєві деталі</b>",
+                "• Mastercard od 2027. uvodi nova pravila z... ➡️ <b>Стосується загальних правил на 2027 рік без термінової актуальності</b>",
+                "• Kamo nestaje masnoća kad smršavimo: najv... ➡️ <b>Світовий шум</b>",
+                "• Što kad vam na auto padne grana ili stab... ➡️ <b>Побут чужих міст</b>",
+                "• Jandroković: Vlada je odbila opoziv prem... ➡️ <b>Переказ вчорашньої події про опозицію та скасування вотуму довіри</b>",
+                "• Pomicanje sata može poremetiti san, a st... ➡️ <b>Світовий шум</b>",
+                "• Šibenik Meteo donosi tjednu prognozu: Bu... ➡️ <b>Побут чужих міст</b>",
+                "• Burnham: Jasno je da je Rusija utjecala ... ➡️ <b>Інші країни (геоблок)</b>",
+                "• Četiri površine u kući koje ne biste tre... ➡️ <b>Світовий шум</b>",
+                "• U ovoj općini oglasili su natječaj za st... ➡️ <b>Несуттєва локальна подія іншого муніципалітету</b>",
+                "• Počelo suđenje braći Vinković za brutaln... ➡️ <b>Побут чужих міст</b>",
+                "• PRILIKA KOJA SE NE PROPUŠTA Cijeli asort... ➡️ <b>Реклама</b>",
+                "• Unatoč opasnosti od četničkih brodova, s... ➡️ <b>Побут чужих міст</b>",
+                "• U rujnu 16 posto manje nezaposlenih nego... ➡️ <b>Дублює загальну економічну статистику</b>",
+                "• Ovaj dio parkinga na Lapadskoj obali zat... ➡️ <b>Побут чужих міст</b>",
+                "• Potražni psi oduševili učenike OŠ Ivana ... ➡️ <b>Побут чужих міст</b>",
+                "• U subotu na Stradunu 17. Dubrovačka trpe... ➡️ <b>Побут чужих міст</b>",
+                "• Oproštaj od Roberta Pilepića: Kad glazbe... ➡️ <b>Побут чужих міст</b>",
+                "• Rambo Amadeus pred rasprodanim HNK Zadar... ➡️ <b>Несуттєве оновлення майбутнього концерту</b>",
+                "• DOZNAJEMO! Lürssen na izlaznim vratima i... ➡️ <b>Побут чужих міст</b>",
+                "• Memorijalni turnir ‘Lovca‘ u čast velika... ➡️ <b>Спорт</b>",
+                "• Most: Poljoprivredna politika ne smije b... ➡️ <b>Політична заява партії без конкретних рішень</b>",
+                "• Odlazak legende Šubićevca: preminuo Rade... ➡️ <b>Спорт</b>",
+                "• Počinju javne tribine upoznavanja projek... ➡️ <b>Побут чужих міст</b>"
+            ]
+        },
+        "backlog": {
+            "total_size": 54,
+            "sources": {
+                "Zadarski list": 17,
+                "Slobodna dalmacija": 32,
+                "023": 5
+            }
+        },
+        "published": {
+            "total": 0,
+            "ukraine_priority": 0,
+            "with_images": 0,
+            "text_only": 0,
+            "sources": {}
+        },
+        "models_used": {
+            "gemini-3.5-flash-lite": 1,
             "gemini-3.6-flash": 0
         },
         "errors_count": 0,
