@@ -1,59 +1,5 @@
 [
     {
-        "timestamp": "2026-10-03 07:01:01",
-        "execution_time": 166.3,
-        "funnel": {
-            "scraped_total": 35,
-            "scraped_by_source": {
-                "023": 10,
-                "Slobodna dalmacija": 15,
-                "Zadarski list": 10
-            },
-            "already_seen": 0,
-            "rejected_by_keywords": 8,
-            "duplicates_removed_by_ai": 13,
-            "rejection_reasons_list": [
-                "• Šokantan podatak o smrtnosti u Hrvatskoj... ➡️ <b>Хорватія загальна медична статистика</b>",
-                "• Novi sadržaji za Dubrovnik: knjižnica u ... ➡️ <b>Побут Дубровика</b>",
-                "• Zašto je odlazak na spavanje nakon ponoć... ➡️ <b>Світовий шум та лайфстайл</b>",
-                "• Evo tko je dobio 2000 eura od Ministarst... ➡️ <b>Хорватія культура</b>",
-                "• Životna priča Katarine Ničetić, odgajate... ➡️ <b>Побут інших міст</b>",
-                "• Blagdan Gospe od Ružarija; Preko slavi s... ➡️ <b>Локальна подія на острові без значного впливу</b>",
-                "• Lula izgubio veliku prednost, sin Bolson... ➡️ <b>Світовий шум</b>",
-                "• Osmorica optužena zbog napada na Dane sr... ➡️ <b>Дублікат є в історії</b>",
-                "• Milijunaš iz Austrije moli za pomoć u po... ➡️ <b>Кримінал загальнонаціональний не стосується Задара напряму</b>",
-                "• Dvije žene u borbi za vlast: U Kazalištu... ➡️ <b>Культура Дубровика</b>",
-                "• Policija pojačano kontrolira ceste ovog ... ➡️ <b>Загальна поліцейська акція</b>",
-                "• ‘Najveći klub iz najmanjeg mista‘ izbaci... ➡️ <b>Побут інших міст</b>",
-                "• Zadar predvođen raspucanim Klaricom i pr... ➡️ <b>Спорт</b>"
-            ]
-        },
-        "backlog": {
-            "total_size": 19,
-            "sources": {
-                "023": 7,
-                "Slobodna dalmacija": 8,
-                "Zadarski list": 4
-            }
-        },
-        "published": {
-            "total": 3,
-            "ukraine_priority": 0,
-            "with_images": 1,
-            "text_only": 2,
-            "sources": {
-                "Slobodna dalmacija": 1,
-                "023": 2
-            }
-        },
-        "models_used": {
-            "gemini-3.5-flash-lite": 1,
-            "gemini-3.5-flash": 0
-        },
-        "errors_count": 0,
-        "gemini_retries": 0
-    },
-    {
         "timestamp": "2026-10-03 08:01:05",
         "execution_time": 165.2,
         "funnel": {
@@ -5921,6 +5867,67 @@
             "text_only": 3,
             "sources": {
                 "023": 3
+            }
+        },
+        "models_used": {
+            "gemini-3.5-flash-lite": 2,
+            "gemini-3.6-flash": 0
+        },
+        "errors_count": 0,
+        "gemini_retries": 0
+    },
+    {
+        "timestamp": "2026-10-12 08:01:04",
+        "execution_time": 177.7,
+        "funnel": {
+            "scraped_total": 35,
+            "scraped_by_source": {
+                "023": 10,
+                "Slobodna dalmacija": 15,
+                "Zadarski list": 10
+            },
+            "already_seen": 3,
+            "rejected_by_keywords": 5,
+            "duplicates_removed_by_ai": 21,
+            "rejection_reasons_list": [
+                "• Zaigrajte zvučni pikado i donirajte za U... ➡️ <b>Побут чужих міст</b>",
+                "• “Veseli” vozač u Senju napuhao čak 2,42 ... ➡️ <b>Побут чужих міст</b>",
+                "• Mlada Srpkinja krala šminku i parfeme u ... ➡️ <b>Побут чужих міст</b>",
+                "• Čarolija jeseni podno Velebita: Više od ... ➡️ <b>Стоп-тема: локальні події та розваги поза Задаром</b>",
+                "• U Danskoj napravili energanu na kojoj se... ➡️ <b>Інші країни / Світовий шум</b>",
+                "• Korčulanski ‘vitezovi‘ stižu u Zagreb: p... ➡️ <b>Побут чужих міст</b>",
+                "• Zadarska Ultima do dvanaest odličja u na... ➡️ <b>Спорт</b>",
+                "• Ovogodišnji rujan bio je na globalnoj ra... ➡️ <b>Світовий шум</b>",
+                "• Roboti za brodove i softver za europske ... ➡️ <b>Побут чужих міст</b>",
+                "• Šibenčanin Josip oduševio u Supertalentu... ➡️ <b>Світовий шум / Шоу-бізнес</b>",
+                "• AI više nije samo prednost, nego poslovn... ➡️ <b>Побут чужих міст</b>",
+                "• Rally Primorje: Cestama ponad Vinodola i... ➡️ <b>Спорт</b>",
+                "• Bundevijada u Vrbovskom: Od zimnice do č... ➡️ <b>Побут чужих міст</b>",
+                "• Dubrovnik ovisi o jednom jedinom dimnjač... ➡️ <b>Побут чужих міст</b>",
+                "• Kronotopija (naših) negativnosti: Franjo... ➡️ <b>Світовий шум / Культура</b>",
+                "• 400 godina jedne obitelji i priča koja t... ➡️ <b>Побут чужих міст</b>",
+                "• “Mahler i Bruckner”: Riječki simfonijski... ➡️ <b>Побут чужих міст</b>",
+                "• Evgenija Matović, jedina odgojiteljica o... ➡️ <b>Побут чужих міст</b>",
+                "• Poznati riječki bariton Robert Kolar nas... ➡️ <b>Інші країни / Побут чужих міст</b>",
+                "• Ma pogledajte što mlada radi na prvom pl... ➡️ <b>Дубль або світський шум</b>",
+                "• Kod Ane Handabake u Mlinima ljetuje se k... ➡️ <b>Побут чужих міст</b>"
+            ]
+        },
+        "backlog": {
+            "total_size": 26,
+            "sources": {
+                "023": 2,
+                "Slobodna dalmacija": 14,
+                "Zadarski list": 10
+            }
+        },
+        "published": {
+            "total": 3,
+            "ukraine_priority": 0,
+            "with_images": 3,
+            "text_only": 0,
+            "sources": {
+                "Slobodna dalmacija": 3
             }
         },
         "models_used": {
