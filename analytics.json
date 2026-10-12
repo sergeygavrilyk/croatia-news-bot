@@ -1,58 +1,5 @@
 [
     {
-        "timestamp": "2026-10-03 08:01:05",
-        "execution_time": 165.2,
-        "funnel": {
-            "scraped_total": 35,
-            "scraped_by_source": {
-                "023": 10,
-                "Slobodna dalmacija": 15,
-                "Zadarski list": 10
-            },
-            "already_seen": 6,
-            "rejected_by_keywords": 10,
-            "duplicates_removed_by_ai": 12,
-            "rejection_reasons_list": [
-                "• U Šibeniku postoje samo dva godišnja dob... ➡️ <b>Побут Шибеника</b>",
-                "• Šokantan podatak o smrtnosti u Hrvatskoj... ➡️ <b>Світовий шум та лайфстайл</b>",
-                "• Zatvara se poslovnica OTP-a krajem stude... ➡️ <b>Побут чужих міст</b>",
-                "• Evo tko je dobio 2000 eura od Ministarst... ➡️ <b>Світовий шум та лайфстайл</b>",
-                "• Zašto je odlazak na spavanje nakon ponoć... ➡️ <b>Світовий шум та лайфстайл</b>",
-                "• Župan Paško Rakić potpisao inicijativu z... ➡️ <b>Вже є в історії</b>",
-                "• Blagdan Gospe od Ružarija; Preko slavi s... ➡️ <b>Світовий шум та лайфстайл</b>",
-                "• Objavljen Javni poziv za financiranje pr... ➡️ <b>Побут чужих міст</b>",
-                "• Policija pojačano kontrolira ceste ovog ... ➡️ <b>Світовий шум та лайфстайл</b>",
-                "• Novi sadržaji za Dubrovnik: knjižnica u ... ➡️ <b>Побут чужих міст</b>",
-                "• Životna priča Katarine Ničetić, odgajate... ➡️ <b>Світовий шум та лайфстайл</b>",
-                "• Dvije žene u borbi za vlast: U Kazalištu... ➡️ <b>Побут чужих міст</b>"
-            ]
-        },
-        "backlog": {
-            "total_size": 20,
-            "sources": {
-                "023": 7,
-                "Slobodna dalmacija": 11,
-                "Zadarski list": 2
-            }
-        },
-        "published": {
-            "total": 3,
-            "ukraine_priority": 0,
-            "with_images": 1,
-            "text_only": 2,
-            "sources": {
-                "023": 2,
-                "Slobodna dalmacija": 1
-            }
-        },
-        "models_used": {
-            "gemini-3.5-flash-lite": 1,
-            "gemini-3.5-flash": 0
-        },
-        "errors_count": 0,
-        "gemini_retries": 0
-    },
-    {
         "timestamp": "2026-10-03 09:01:02",
         "execution_time": 163.8,
         "funnel": {
@@ -5928,6 +5875,65 @@
             "text_only": 0,
             "sources": {
                 "Slobodna dalmacija": 3
+            }
+        },
+        "models_used": {
+            "gemini-3.5-flash-lite": 2,
+            "gemini-3.6-flash": 0
+        },
+        "errors_count": 0,
+        "gemini_retries": 0
+    },
+    {
+        "timestamp": "2026-10-12 09:01:11",
+        "execution_time": 169.8,
+        "funnel": {
+            "scraped_total": 35,
+            "scraped_by_source": {
+                "023": 10,
+                "Slobodna dalmacija": 15,
+                "Zadarski list": 10
+            },
+            "already_seen": 3,
+            "rejected_by_keywords": 6,
+            "duplicates_removed_by_ai": 18,
+            "rejection_reasons_list": [
+                "• Zaigrajte zvučni pikado i donirajte za U... ➡️ <b>Інші міста - Дубровинсько-неретванська жупанія, благодійність поза Задаром</b>",
+                "• Prvi Zadranin preplivao La Manche, a pli... ➡️ <b>Спорт</b>",
+                "• U emisiji Poriluk Hrvoje Prpić o poticaj... ➡️ <b>Побут інших міст - Рієка</b>",
+                "• KUD sv. Ante Nadin i KUD Branimir iz Ben... ➡️ <b>Культурна подія місцевого значення поза Задаром</b>",
+                "• Tko mladima određuje što mogu? Filmska p... ➡️ <b>Побут інших міст - Рієка</b>",
+                "• Provalili u vrtić u Vodicama, opljačkali... ➡️ <b>Кримінал та події в Шибенику та Водицях (не Задар)</b>",
+                "• Opatijski dječji vikend s nikad bogatiji... ➡️ <b>Побут інших міст - Опатія</b>",
+                "• “Veseli” vozač u Senju napuhao čak 2,42 ... ➡️ <b>Побут та кримінал інших міст - Лічко-сенська жупанія</b>",
+                "• U Danskoj napravili energanu na kojoj se... ➡️ <b>Світовий шум / абстрактна екологія та архітектура</b>",
+                "• Nakon Mege nema predaha: Zadar protiv Vi... ➡️ <b>Спорт</b>",
+                "• Ovogodišnji rujan bio je na globalnoj ra... ➡️ <b>Світовий шум - глобальні кліматичні дані</b>",
+                "• Roboti za brodove i softver za europske ... ➡️ <b>Побут та бізнес інших міст - Рієка</b>",
+                "• Od omiljenih krafni u ‘Nade‘ do ‘fava ti... ➡️ <b>Побут та історія інших міст - Дубровник</b>",
+                "• AI više nije samo prednost, nego poslovn... ➡️ <b>Побут та освіта інших міст - Рієка</b>",
+                "• Sjajan start zadarskih klubova: Puntamik... ➡️ <b>Спорт</b>",
+                "• Rally Primorje: Cestama ponad Vinodola i... ➡️ <b>Спорт / автогонки</b>",
+                "• Mlada Srpkinja krala šminku i parfeme u ... ➡️ <b>Кримінал в іншому місті - Кнін</b>",
+                "• Korčulanski ‘vitezovi‘ stižu u Zagreb: p... ➡️ <b>Культурна подія в Загребі та Корчулі</b>"
+            ]
+        },
+        "backlog": {
+            "total_size": 27,
+            "sources": {
+                "Slobodna dalmacija": 14,
+                "023": 4,
+                "Zadarski list": 9
+            }
+        },
+        "published": {
+            "total": 3,
+            "ukraine_priority": 0,
+            "with_images": 2,
+            "text_only": 1,
+            "sources": {
+                "Slobodna dalmacija": 2,
+                "023": 1
             }
         },
         "models_used": {
