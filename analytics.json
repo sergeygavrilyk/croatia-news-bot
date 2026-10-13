@@ -1,64 +1,5 @@
 [
     {
-        "timestamp": "2026-10-04 08:01:00",
-        "execution_time": 165.9,
-        "funnel": {
-            "scraped_total": 35,
-            "scraped_by_source": {
-                "023": 10,
-                "Slobodna dalmacija": 15,
-                "Zadarski list": 10
-            },
-            "already_seen": 5,
-            "rejected_by_keywords": 4,
-            "duplicates_removed_by_ai": 18,
-            "rejection_reasons_list": [
-                "• Merz u Kijevu finalizira suradnju u proi... ➡️ <b>Світовий шум</b>",
-                "• Crne rupe lutalice možda čuvaju povijest... ➡️ <b>Світовий шум</b>",
-                "• Bilicious: prvi gastro duel ribara i lov... ➡️ <b>Побут чужих міст</b>",
-                "• Kreću filmske šetnje Rijekom posvećene f... ➡️ <b>Побут чужих міст</b>",
-                "• Biskup u miru Ante Ivas krstio šesto dij... ➡️ <b>Побут чужих міст</b>",
-                "• Od sutra privremena regulacija prometa n... ➡️ <b>Побут чужих міст</b>",
-                "• Umjesto školovanih teta u vrtićima rade ... ➡️ <b>Світовий шум</b>",
-                "• Zašto je listopad pravo vrijeme za sadnj... ➡️ <b>Світовий шум</b>",
-                "• Englez u Dubrovniku o debaklu Vatrenih: ... ➡️ <b>Спорт</b>",
-                "• Dolar prema košarici valuta ojačao treći... ➡️ <b>Світовий шум</b>",
-                "• Ličanka iz Zadra osvojila krunu: Zara St... ➡️ <b>Дублікат</b>",
-                "• Bellingham je uništio hrvatsku reprezent... ➡️ <b>Спорт</b>",
-                "• Trik s brašnom sprječava da voće u kolač... ➡️ <b>Світовий шум</b>",
-                "• Drama u dolini Neretve! Vatrogasci obran... ➡️ <b>Дублікат</b>",
-                "• Svjetske burze pale, u fokusu cijene naf... ➡️ <b>Світовий шум</b>",
-                "• Vitezovi i Dubrovčani podijelili bodove,... ➡️ <b>Спорт</b>",
-                "• Crobexi prošloga tjedna snažno porasli... ➡️ <b>Світовий шум</b>",
-                "• Nakon dugog, vrućeg dubrovačkog ljeta, v... ➡️ <b>Світовий шум</b>"
-            ]
-        },
-        "backlog": {
-            "total_size": 25,
-            "sources": {
-                "Slobodna dalmacija": 10,
-                "023": 7,
-                "Zadarski list": 8
-            }
-        },
-        "published": {
-            "total": 3,
-            "ukraine_priority": 0,
-            "with_images": 1,
-            "text_only": 2,
-            "sources": {
-                "023": 2,
-                "Zadarski list": 1
-            }
-        },
-        "models_used": {
-            "gemini-3.5-flash-lite": 1,
-            "gemini-3.5-flash": 0
-        },
-        "errors_count": 0,
-        "gemini_retries": 0
-    },
-    {
         "timestamp": "2026-10-04 09:01:01",
         "execution_time": 121.0,
         "funnel": {
@@ -5946,6 +5887,66 @@
             "sources": {
                 "023": 2,
                 "Slobodna dalmacija": 1
+            }
+        },
+        "models_used": {
+            "gemini-3.5-flash-lite": 2,
+            "gemini-3.6-flash": 0
+        },
+        "errors_count": 0,
+        "gemini_retries": 0
+    },
+    {
+        "timestamp": "2026-10-13 09:01:08",
+        "execution_time": 173.1,
+        "funnel": {
+            "scraped_total": 35,
+            "scraped_by_source": {
+                "023": 10,
+                "Slobodna dalmacija": 15,
+                "Zadarski list": 10
+            },
+            "already_seen": 7,
+            "rejected_by_keywords": 0,
+            "duplicates_removed_by_ai": 18,
+            "rejection_reasons_list": [
+                "• Noćni sudar u Poličniku; Skrivio nesreću... ➡️ <b>Дрібна локальна аварія за межами Задара, не підпадає під пріоритет</b>",
+                "• Nakon rasprodanih izvedbi u Zajcu, čarol... ➡️ <b>Культурна подія в іншому місті (Рієка)</b>",
+                "• Vozač (84) poginuo u sudaru automobila i... ➡️ <b>ДТП у Славонії, не стосується Задара чи загальнонаціонального рівня</b>",
+                "• Filmska priča s Pelješca: Lucija je pobj... ➡️ <b>Історична таблоїдна розповідь з Пелєшаця, що не є важливою новиною</b>",
+                "• Jedriličarski spektakl u Zadru; JK Uskok... ➡️ <b>Спорт: парусна регата та чемпіонат</b>",
+                "• Dvojica mladića i jedna djevojka poginul... ➡️ <b>Кримінал та ДТП в іншій країні (БІН)</b>",
+                "• Odgovor na divljanje cijena nekretnina: ... ➡️ <b>Побут і ціни на житло в Дубрознику та Спліті</b>",
+                "• Tjedan školskog doručka u Zadru; Kako kr... ➡️ <b>Локальна шкільна подія у Задарі без широкого суспільного значення</b>",
+                "• Večeras izložba Dubrovačke udruge likovn... ➡️ <b>Культурна подія в Дубрознику</b>",
+                "• Zadarskim lutkarima dvije nagrade na 29.... ➡️ <b>Дубль або переказ раніше згаданої чи менш важливої культурної події</b>",
+                "• Još dva broda pogođena dronovima kod Bug... ➡️ <b>Події поза Хорватією та Україною (інцидент у Болгарії)</b>",
+                "• Noćna drama sa sretnim završetkom: na Br... ➡️ <b>Локальна новина про порятунок тварини на Брачі</b>",
+                "• Revija lutkarskih kazališta. Tradicional... ➡️ <b>Культурна подія у Рієці</b>",
+                "• Dubrovačka podružnica Hrvatske matice is... ➡️ <b>Локальна культурна акція Матиці іселеніка в Дуброзниku</b>",
+                "• Od žongliranja na Korzu do neobičnih pre... ➡️ <b>Фестиваль цирку у Рієці</b>",
+                "• Tri vina, više kratkih razgovora i profi... ➡️ <b>Розважальний захід для одиноких у Пакоштанах (несуттєво для загальної картини дня)</b>",
+                "• Objavljena je nova Stanfordova lista naj... ➡️ <b>Абстрактна світово-наукова новина з локальним прив'язками</b>",
+                "• Župski HDZ upozorava na nezakonitosti u ... ➡️ <b>Локальні політичні розбірки в іншій жупанії</b>"
+            ]
+        },
+        "backlog": {
+            "total_size": 30,
+            "sources": {
+                "Zadarski list": 11,
+                "023": 8,
+                "Slobodna dalmacija": 11
+            }
+        },
+        "published": {
+            "total": 3,
+            "ukraine_priority": 0,
+            "with_images": 2,
+            "text_only": 1,
+            "sources": {
+                "Slobodna dalmacija": 1,
+                "023": 1,
+                "Zadarski list": 1
             }
         },
         "models_used": {
