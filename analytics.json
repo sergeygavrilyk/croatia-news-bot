@@ -1,68 +1,5 @@
 [
     {
-        "timestamp": "2026-10-04 14:01:03",
-        "execution_time": 126.8,
-        "funnel": {
-            "scraped_total": 35,
-            "scraped_by_source": {
-                "023": 10,
-                "Slobodna dalmacija": 15,
-                "Zadarski list": 10
-            },
-            "already_seen": 10,
-            "rejected_by_keywords": 5,
-            "duplicates_removed_by_ai": 22,
-            "rejection_reasons_list": [
-                "• Korčulani u ružičastom trčali za potporu... ➡️ <b>Спорт</b>",
-                "• Starija žena prevarena za više desetaka ... ➡️ <b>Побут чужих міст</b>",
-                "• Gotove kore za pitu izgledat će kao doma... ➡️ <b>Світовий шум та лайфстайл</b>",
-                "• Šetači ne brinu za tmurnu vremensku prog... ➡️ <b>Побут чужих міст</b>",
-                "• Čak 22.000 munja pogodilo Kretu tijekom ... ➡️ <b>Світовий шум та лайфстайл</b>",
-                "• Zašto kuhanje smrznutog povrća u vodi kv... ➡️ <b>Світовий шум та лайфстайл</b>",
-                "• Plemenita gesta u srcu Cavtata usrećila ... ➡️ <b>Побут чужих міст</b>",
-                "• Motociklist poginuo u prometnoj nesreći ... ➡️ <b>Побут чужих міст</b>",
-                "• Pohani kruh bez jaja: mlijeko u tavi daj... ➡️ <b>Світовий шум та лайфстайл</b>",
-                "• Ugodna toplina neće trajati vječno, slje... ➡️ <b>Побут чужих міст</b>",
-                "• Crne rupe lutalice možda čuvaju povijest... ➡️ <b>Світовий шум та лайфстайл</b>",
-                "• Svečanost u Pridvorju: Dodijeljena prizn... ➡️ <b>Побут чужих міст</b>",
-                "• Riječanka Diana Kuiš završila utrku od 1... ➡️ <b>Спорт</b>",
-                "• Zašto je listopad pravo vrijeme za sadnj... ➡️ <b>Світовий шум та лайфстайл</b>",
-                "• Šibenčanin (49) uhvaćen prilično pijan n... ➡️ <b>Побут чужих міст</b>",
-                "• Jedna osoba poginula u slijetanju vozila... ➡️ <b>Побут чужих міст</b>",
-                "• Bilice pokreću ‘Bilicious!‘: čeka vas pl... ➡️ <b>Побут чужих міст</b>",
-                "• Nestao zrakoplov sa šest osoba za medici... ➡️ <b>Світовий шум та лайфстайл</b>",
-                "• Velika radost u Vodicama: poznata obitel... ➡️ <b>Побут чужих міст</b>",
-                "• Hrvatska među zemljama s najvećom bioraz... ➡️ <b>Світовий шум та лайфстайл</b>",
-                "• Od sutra privremena regulacija prometa n... ➡️ <b>Побут чужих міст</b>",
-                "• Investitori žele graditi, građani se bun... ➡️ <b>Світовий шум та лайфстайл</b>"
-            ]
-        },
-        "backlog": {
-            "total_size": 24,
-            "sources": {
-                "Zadarski list": 9,
-                "Slobodna dalmacija": 10,
-                "023": 5
-            }
-        },
-        "published": {
-            "total": 2,
-            "ukraine_priority": 0,
-            "with_images": 2,
-            "text_only": 0,
-            "sources": {
-                "Zadarski list": 1,
-                "Slobodna dalmacija": 1
-            }
-        },
-        "models_used": {
-            "gemini-3.5-flash-lite": 1,
-            "gemini-3.5-flash": 0
-        },
-        "errors_count": 0,
-        "gemini_retries": 0
-    },
-    {
         "timestamp": "2026-10-04 15:01:02",
         "execution_time": 81.3,
         "funnel": {
@@ -5953,5 +5890,67 @@
         },
         "errors_count": 1,
         "gemini_retries": 5
+    },
+    {
+        "timestamp": "2026-10-13 15:01:12",
+        "execution_time": 474.9,
+        "funnel": {
+            "scraped_total": 35,
+            "scraped_by_source": {
+                "023": 10,
+                "Slobodna dalmacija": 15,
+                "Zadarski list": 10
+            },
+            "already_seen": 23,
+            "rejected_by_keywords": 1,
+            "duplicates_removed_by_ai": 22,
+            "rejection_reasons_list": [
+                "• Plavci velikog srca: šibenski policajci ... ➡️ <b>Побут інших міст</b>",
+                "• Zbog radova gužve i kolone prema Vežici... ➡️ <b>Побут інших міст</b>",
+                "• Očitovanje Općine Župa dubrovačka na pri... ➡️ <b>Побут інших міст</b>",
+                "• Zašto pire krumpir ispadne vodenast i št... ➡️ <b>Світовий шум</b>",
+                "• Crikvenica predstavila ulaganja u djecu ... ➡️ <b>Побут інших міст</b>",
+                "• Provjerite koje su ulice u gradu u srije... ➡️ <b>Побут інших міст</b>",
+                "• U Rijeci otvorena izložba o obnovi monum... ➡️ <b>Побут інших міст</b>",
+                "• Gastro spektakl u Dubrovniku: od španjol... ➡️ <b>Побут інших міст</b>",
+                "• Flying Tiger Copenhagen širi se na tri n... ➡️ <b>Реклама</b>",
+                "• NASA-in rover Perseverance oborio rekord... ➡️ <b>Інші країни / Світовий шум</b>",
+                "• Hit terapija na otvorenome: do 200 pacij... ➡️ <b>Дубль попередньої історії</b>",
+                "• Projektom “FAST Heroes” osnovci uče o mo... ➡️ <b>Побут інших міст</b>",
+                "• Donirajte dokumente i zapise iz Domovins... ➡️ <b>Побут інших міст</b>",
+                "• Novi sjaj za igrališta i dvorane; Župani... ➡️ <b>Спорт</b>",
+                "• Riječka konferencija o mentalnom zdravlj... ➡️ <b>Побут інших міст</b>",
+                "• Prikuplja se građa o 163. brigadi za izr... ➡️ <b>Дубль новини 14</b>",
+                "• Punjač koji danima stoji u utičnici troš... ➡️ <b>Світовий шум</b>",
+                "• Udruga Uzor širi socijalne usluge: Podrš... ➡️ <b>Побут інших міст</b>",
+                "• Hrvatski Rafale presreo malteški putničk... ➡️ <b>Дубль новини 12</b>",
+                "• Verne u Zagrebu testira robotaksi bez ik... ➡️ <b>Побут інших міст</b>",
+                "• Uspjeh članova KPA Kostrena: Palinić naj... ➡️ <b>Спорт</b>",
+                "• Nevjerojatna priča iz Mlina: pronašao ih... ➡️ <b>Побут інших міст</b>"
+            ]
+        },
+        "backlog": {
+            "total_size": 70,
+            "sources": {
+                "Zadarski list": 24,
+                "Slobodna dalmacija": 32,
+                "023": 14
+            }
+        },
+        "published": {
+            "total": 3,
+            "ukraine_priority": 0,
+            "with_images": 0,
+            "text_only": 3,
+            "sources": {
+                "023": 3
+            }
+        },
+        "models_used": {
+            "gemini-3.5-flash-lite": 2,
+            "gemini-3.6-flash": 0
+        },
+        "errors_count": 0,
+        "gemini_retries": 2
     }
 ]
