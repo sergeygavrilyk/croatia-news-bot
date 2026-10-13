@@ -1,61 +1,5 @@
 [
     {
-        "timestamp": "2026-10-04 07:00:57",
-        "execution_time": 119.3,
-        "funnel": {
-            "scraped_total": 35,
-            "scraped_by_source": {
-                "023": 10,
-                "Slobodna dalmacija": 15,
-                "Zadarski list": 10
-            },
-            "already_seen": 1,
-            "rejected_by_keywords": 6,
-            "duplicates_removed_by_ai": 16,
-            "rejection_reasons_list": [
-                "• Dvadesetogodišnja Zadranka osvojila titu... ➡️ <b>Дублікат</b>",
-                "• Crobexi prošloga tjedna snažno porasli... ➡️ <b>Економіка без прямого фокусу на Задар чи рівень життя біженців</b>",
-                "• Ličanka iz Zadra osvojila krunu: Zara St... ➡️ <b>Світський лайфстайл</b>",
-                "• Sjevernokorejski čelnik nadgledao lansir... ➡️ <b>Світовий шум</b>",
-                "• Zašto je listopad pravo vrijeme za sadnj... ➡️ <b>Побут і лайфстайл</b>",
-                "• Posjetili smo berlinski Futurium: Kuća m... ➡️ <b>Світовий шум та лайфстайл</b>",
-                "• Vitezovi i Dubrovčani podijelili bodove,... ➡️ <b>Спорт</b>",
-                "• Potres magnitude 5,9 pogodio Indoneziju... ➡️ <b>Світовий шум</b>",
-                "• Pod nadzorom veliki požar na Rujnici, ku... ➡️ <b>Дублікат</b>",
-                "• Erlić obišao Silbu, Olib, Premudu i Ist:... ➡️ <b>Вже є в історії</b>",
-                "• Crnogorski analitičar: Podcjenjujemo hrv... ➡️ <b>Політика третіх країн</b>",
-                "• Trik s brašnom sprječava da voće u kolač... ➡️ <b>Побут і лайфстайл</b>",
-                "• Kreću Nobelove nagrade, Trump sigurno os... ➡️ <b>Світовий шум</b>",
-                "• Nakon dugog, vrućeg dubrovačkog ljeta, v... ➡️ <b>Побут чужого міста</b>",
-                "• Mjesec borbe protiv raka dojke: Pločansk... ➡️ <b>Побут чужого міста</b>",
-                "• Istraživanje povezalo crijevne bakterije... ➡️ <b>Світовий шум та наука</b>"
-            ]
-        },
-        "backlog": {
-            "total_size": 21,
-            "sources": {
-                "023": 8,
-                "Slobodna dalmacija": 7,
-                "Zadarski list": 6
-            }
-        },
-        "published": {
-            "total": 2,
-            "ukraine_priority": 0,
-            "with_images": 0,
-            "text_only": 2,
-            "sources": {
-                "023": 2
-            }
-        },
-        "models_used": {
-            "gemini-3.5-flash-lite": 1,
-            "gemini-3.5-flash": 0
-        },
-        "errors_count": 1,
-        "gemini_retries": 0
-    },
-    {
         "timestamp": "2026-10-04 08:01:00",
         "execution_time": 165.9,
         "funnel": {
@@ -5950,5 +5894,65 @@
         },
         "errors_count": 0,
         "gemini_retries": 2
+    },
+    {
+        "timestamp": "2026-10-13 08:01:06",
+        "execution_time": 169.6,
+        "funnel": {
+            "scraped_total": 35,
+            "scraped_by_source": {
+                "023": 10,
+                "Slobodna dalmacija": 15,
+                "Zadarski list": 10
+            },
+            "already_seen": 11,
+            "rejected_by_keywords": 1,
+            "duplicates_removed_by_ai": 19,
+            "rejection_reasons_list": [
+                "• Još dva broda pogođena dronovima kod Bug... ➡️ <b>Інші країни (геоблок): подія не стосується безпосередньо Хорватії чи українських біженців</b>",
+                "• Dubrovačka podružnica Hrvatske matice is... ➡️ <b>Побут інших міст або незначна культурна подія поза фокусом Задара</b>",
+                "• Revija lutkarskih kazališta. Tradicional... ➡️ <b>Побут і культура інших міст (Рієка), що не стосується Задара</b>",
+                "• Jedriličarski spektakl u Zadru; JK Uskok... ➡️ <b>Спорт: змагання з вітрильного спорту</b>",
+                "• Počela izgradnja novog nogometnog igrali... ➡️ <b>Дубль новини з ID 1</b>",
+                "• Od žongliranja na Korzu do neobičnih pre... ➡️ <b>Побут та культура інших міст (Рієка)</b>",
+                "• Župski HDZ upozorava na nezakonitosti u ... ➡️ <b>Побут інших міст (Жупа дубровачка)</b>",
+                "• Objavljena je nova Stanfordova lista naj... ➡️ <b>Світовий шум / Побут інших міст</b>",
+                "• Tjedan školskog doručka u Zadru; Kako kr... ➡️ <b>Локальна рутинна шкільна подія у Задарі (несуттєвий побут)</b>",
+                "• Zadarskim lutkarima dvije nagrade na 29.... ➡️ <b>Культурні нагороди, що не є критично важливою новиною для загальної картини дня</b>",
+                "• Podstanarstvo poskupilo, Grad će mladima... ➡️ <b>Побут інших міст (Спліт та Дубровник)</b>",
+                "• Znate li da je knez biološki indikator č... ➡️ <b>Світовий шум / пізнавальна стаття про рибу</b>",
+                "• Kultna Grupa TNT stiže u Zadar; Rasproda... ➡️ <b>Локальна культурна афіша театру</b>",
+                "• Dubrovačka biskupija i ove godine sudjel... ➡️ <b>Побут інших міст (Дубровник)</b>",
+                "• Tri hica za tri ribe. Ulov dostatan za p... ➡️ <b>Спорт / аматорський риболовний улов</b>",
+                "• Franković primio izaslanstvo poljskog ok... ➡️ <b>Побут інших міст (Дубровник)</b>",
+                "• Kamene babe do kraja godine u Zadru dono... ➡️ <b>Локальні культурні майстер-класи</b>",
+                "• Nevjerojatan život ‘neretvanskog Turgenj... ➡️ <b>Історичний нарис / світовий шум</b>",
+                "• Spor oko otpada u Istri se zaoštrava, a ... ➡️ <b>Побут інших міст (Істра, Пула, Пазін)</b>"
+            ]
+        },
+        "backlog": {
+            "total_size": 29,
+            "sources": {
+                "Slobodna dalmacija": 11,
+                "Zadarski list": 9,
+                "023": 9
+            }
+        },
+        "published": {
+            "total": 3,
+            "ukraine_priority": 0,
+            "with_images": 1,
+            "text_only": 2,
+            "sources": {
+                "023": 2,
+                "Slobodna dalmacija": 1
+            }
+        },
+        "models_used": {
+            "gemini-3.5-flash-lite": 2,
+            "gemini-3.6-flash": 0
+        },
+        "errors_count": 0,
+        "gemini_retries": 0
     }
 ]
