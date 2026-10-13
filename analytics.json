@@ -1,56 +1,5 @@
 [
     {
-        "timestamp": "2026-10-04 15:01:02",
-        "execution_time": 81.3,
-        "funnel": {
-            "scraped_total": 25,
-            "scraped_by_source": {
-                "023": 10,
-                "Slobodna dalmacija": 15
-            },
-            "already_seen": 8,
-            "rejected_by_keywords": 3,
-            "duplicates_removed_by_ai": 13,
-            "rejection_reasons_list": [
-                "• Korčulani u ružičastom trčali za potporu... ➡️ <b>Спорт та благодійність у Корчулі</b>",
-                "• Šetači ne brinu za tmurnu vremensku prog... ➡️ <b>Погода у Дубровнику</b>",
-                "• Vlakno iz luka i češnjaka moglo bi sprij... ➡️ <b>Світовий шум та наука</b>",
-                "• Plemenita gesta u srcu Cavtata usrećila ... ➡️ <b>Кримінал і побут в інших містах</b>",
-                "• Gotove kore za pitu izgledat će kao doma... ➡️ <b>Поради та рецепти</b>",
-                "• Ugodna toplina neće trajati vječno, slje... ➡️ <b>Погода у Дубровнику</b>",
-                "• Zašto kuhanje smrznutog povrća u vodi kv... ➡️ <b>Поради та рецепти</b>",
-                "• Svečanost u Pridvorju: Dodijeljena prizn... ➡️ <b>Події в інших містах</b>",
-                "• Pohani kruh bez jaja: mlijeko u tavi daj... ➡️ <b>Поради та рецепти</b>",
-                "• Šibenčanin (49) uhvaćen prilično pijan n... ➡️ <b>Кримінал у Шибенику</b>",
-                "• Crne rupe lutalice možda čuvaju povijest... ➡️ <b>Світовий шум та наука</b>",
-                "• Bilice pokreću ‘Bilicious!‘: čeka vas pl... ➡️ <b>Події в інших містах</b>",
-                "• Velika radost u Vodicama: poznata obitel... ➡️ <b>Події в інших містах</b>"
-            ]
-        },
-        "backlog": {
-            "total_size": 14,
-            "sources": {
-                "023": 5,
-                "Slobodna dalmacija": 9
-            }
-        },
-        "published": {
-            "total": 1,
-            "ukraine_priority": 0,
-            "with_images": 1,
-            "text_only": 0,
-            "sources": {
-                "Slobodna dalmacija": 1
-            }
-        },
-        "models_used": {
-            "gemini-3.5-flash-lite": 1,
-            "gemini-3.5-flash": 0
-        },
-        "errors_count": 0,
-        "gemini_retries": 0
-    },
-    {
         "timestamp": "2026-10-04 16:00:59",
         "execution_time": 13.8,
         "funnel": {
@@ -5952,5 +5901,46 @@
         },
         "errors_count": 0,
         "gemini_retries": 2
+    },
+    {
+        "timestamp": "2026-10-13 16:01:16",
+        "execution_time": 319.4,
+        "funnel": {
+            "scraped_total": 35,
+            "scraped_by_source": {
+                "023": 10,
+                "Slobodna dalmacija": 15,
+                "Zadarski list": 10
+            },
+            "already_seen": 9,
+            "rejected_by_keywords": 2,
+            "duplicates_removed_by_ai": 0,
+            "rejection_reasons_list": []
+        },
+        "backlog": {
+            "total_size": 54,
+            "sources": {
+                "Zadarski list": 21,
+                "Slobodna dalmacija": 26,
+                "023": 7
+            }
+        },
+        "published": {
+            "total": 3,
+            "ukraine_priority": 1,
+            "with_images": 2,
+            "text_only": 1,
+            "sources": {
+                "Slobodna dalmacija": 1,
+                "Zadarski list": 1,
+                "023": 1
+            }
+        },
+        "models_used": {
+            "gemini-3.5-flash-lite": 1,
+            "gemini-3.6-flash": 0
+        },
+        "errors_count": 0,
+        "gemini_retries": 4
     }
 ]
