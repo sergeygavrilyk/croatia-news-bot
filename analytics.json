@@ -1,66 +1,5 @@
 [
     {
-        "timestamp": "2026-10-04 10:01:04",
-        "execution_time": 74.5,
-        "funnel": {
-            "scraped_total": 35,
-            "scraped_by_source": {
-                "023": 10,
-                "Slobodna dalmacija": 15,
-                "Zadarski list": 10
-            },
-            "already_seen": 7,
-            "rejected_by_keywords": 6,
-            "duplicates_removed_by_ai": 21,
-            "rejection_reasons_list": [
-                "• U Hrvatskoj lani umrlo 50.007 ljudi, des... ➡️ <b>Медична статистика загальнонаціонального рівня без прямого зв'язку з Задаром</b>",
-                "• Ugodna toplina neće trajati vječno, slje... ➡️ <b>Погода у Дубровнику</b>",
-                "• Osorski most ponovo zapeo, ljudi ga gura... ➡️ <b>Побут іншого міста (Осор/Рієка)</b>",
-                "• Pohani kruh bez jaja: mlijeko u tavi daj... ➡️ <b>Рецепт</b>",
-                "• Svečanost u Pridvorju: Dodijeljena prizn... ➡️ <b>Подія у Придворжі</b>",
-                "• Groblje Sveti Duh u Omišlju dobilo digit... ➡️ <b>Побут іншого міста (Омішель)</b>",
-                "• Crne rupe lutalice možda čuvaju povijest... ➡️ <b>Світовий шум і наука</b>",
-                "• Šibenčanin (49) uhvaćen prilično pijan n... ➡️ <b>Кримінал у Шибенику</b>",
-                "• Aleksandra Wojtaszek objavila knjigu o H... ➡️ <b>Кіно та культура (інтерв'ю)</b>",
-                "• Zašto je listopad pravo vrijeme za sadnj... ➡️ <b>Поради з садівництва</b>",
-                "• Bilicious: prvi gastro duel ribara i lov... ➡️ <b>Гастро-подія у Білицях</b>",
-                "• Bogoslov Riječke nadbiskupije Damir Pali... ➡️ <b>Релігійна подія у Римі/Рієці</b>",
-                "• Trik s brašnom sprječava da voće u kolač... ➡️ <b>Кулінарна порада</b>",
-                "• Biskup u miru Ante Ivas krstio šesto dij... ➡️ <b>Подія у Водицях</b>",
-                "• U Hrvatskoj 1,1 milijun pasa i mačaka. S... ➡️ <b>Статистика тварин на рівні країни</b>",
-                "• Od sutra privremena regulacija prometa n... ➡️ <b>Побут іншого міста (Дубровник)</b>",
-                "• U Krku besplatna likovna radionica za dj... ➡️ <b>Побут іншого міста (Крк)</b>",
-                "• Englez u Dubrovniku o debaklu Vatrenih: ... ➡️ <b>Спорт (наслідки футбольного матчу)</b>",
-                "• Inicijativa: U Kaštijunu odloženo 30.000... ➡️ <b>Проблема з відходами в Пулі (Каштіюн)</b>",
-                "• Vitezovi i Dubrovčani podijelili bodove,... ➡️ <b>Спорт (футбольний матч)</b>",
-                "• Pod nadzorom veliki požar na Rujnici, iz... ➡️ <b>Дублікат події про пожежу на Rujnici (вже є повніша новина ID 20)</b>"
-            ]
-        },
-        "backlog": {
-            "total_size": 23,
-            "sources": {
-                "Slobodna dalmacija": 11,
-                "023": 5,
-                "Zadarski list": 7
-            }
-        },
-        "published": {
-            "total": 1,
-            "ukraine_priority": 0,
-            "with_images": 1,
-            "text_only": 0,
-            "sources": {
-                "Slobodna dalmacija": 1
-            }
-        },
-        "models_used": {
-            "gemini-3.5-flash-lite": 1,
-            "gemini-3.5-flash": 0
-        },
-        "errors_count": 1,
-        "gemini_retries": 0
-    },
-    {
         "timestamp": "2026-10-04 11:00:57",
         "execution_time": 164.9,
         "funnel": {
@@ -5953,5 +5892,64 @@
         },
         "errors_count": 0,
         "gemini_retries": 2
+    },
+    {
+        "timestamp": "2026-10-13 11:01:09",
+        "execution_time": 166.5,
+        "funnel": {
+            "scraped_total": 35,
+            "scraped_by_source": {
+                "023": 10,
+                "Slobodna dalmacija": 15,
+                "Zadarski list": 10
+            },
+            "already_seen": 4,
+            "rejected_by_keywords": 3,
+            "duplicates_removed_by_ai": 17,
+            "rejection_reasons_list": [
+                "• Veliki povratak Formule 1 u Afriku! Ruan... ➡️ <b>Спорт</b>",
+                "• Stigla im je jedna poruka, a onda šok! E... ➡️ <b>Побут чужих міст</b>",
+                "• Inspiracija za hladne dane; Stigao je no... ➡️ <b>Реклама</b>",
+                "• Šibenik Meteo ima novu, jedinstvenu uslu... ➡️ <b>Побут чужих міст</b>",
+                "• DP-ovac Kukavica preduhitrio Plenkovića:... ➡️ <b>Дубль або несуттєве оновлення</b>",
+                "• Hrvoje Prpić gostovao u Poriluku: Može l... ➡️ <b>Побут чужих міст</b>",
+                "• Drugi tjedan Good Food festivala: medite... ➡️ <b>Побут чужих міст</b>",
+                "• Slovenija raste gotovo 13%, Hrvatska sam... ➡️ <b>Інші країни або загальний ринок</b>",
+                "• Tužna vijest pronijela se Gradom: u 42. ... ➡️ <b>Побут чужих міст</b>",
+                "• Zašto tamne točkice na nosu ne treba ist... ➡️ <b>Світовий шум</b>",
+                "• Ove nedjelje dvije radionice na Kreativn... ➡️ <b>Побут чужих міст</b>",
+                "• Tužna vijest pronijela se Gradom: u 42. ... ➡️ <b>Дубль новини 13</b>",
+                "• Nakon rasprodanih izvedbi u Zajcu, čarol... ➡️ <b>Побут чужих міст</b>",
+                "• Budućnost na poljima: poljoprivrednici u... ➡️ <b>Побут чужих міст</b>",
+                "• ChatGPT umjesto liječnika? Nova analiza ... ➡️ <b>Світовий шум</b>",
+                "• Vozač (84) poginuo u sudaru automobila i... ➡️ <b>Побут чужих міст</b>",
+                "• Projekt od 357 tisuća eura: Tribunj grad... ➡️ <b>Побут чужих міст</b>"
+            ]
+        },
+        "backlog": {
+            "total_size": 40,
+            "sources": {
+                "Slobodna dalmacija": 18,
+                "023": 11,
+                "Zadarski list": 11
+            }
+        },
+        "published": {
+            "total": 3,
+            "ukraine_priority": 0,
+            "with_images": 2,
+            "text_only": 1,
+            "sources": {
+                "Zadarski list": 1,
+                "023": 1,
+                "Slobodna dalmacija": 1
+            }
+        },
+        "models_used": {
+            "gemini-3.5-flash-lite": 2,
+            "gemini-3.6-flash": 0
+        },
+        "errors_count": 0,
+        "gemini_retries": 0
     }
 ]
