@@ -1,67 +1,5 @@
 [
     {
-        "timestamp": "2026-10-04 12:01:01",
-        "execution_time": 165.1,
-        "funnel": {
-            "scraped_total": 35,
-            "scraped_by_source": {
-                "023": 10,
-                "Slobodna dalmacija": 15,
-                "Zadarski list": 10
-            },
-            "already_seen": 12,
-            "rejected_by_keywords": 2,
-            "duplicates_removed_by_ai": 22,
-            "rejection_reasons_list": [
-                "• Korčulani u ružičastom trčali za potporu... ➡️ <b>Побут чужих міст</b>",
-                "• Dok je njemački kancelar u posjetu Kijev... ➡️ <b>Світовий шум та лайфстайл</b>",
-                "• Investitori žele graditi, građani se bun... ➡️ <b>Вже є в історії</b>",
-                "• Pohani kruh bez jaja: mlijeko u tavi daj... ➡️ <b>Світовий шум та лайфстайл</b>",
-                "• Stručnjak upozorava na kaos na moru: ‘Ja... ➡️ <b>Світовий шум та лайфстайл</b>",
-                "• “Znanost u prolazu” Korzo pretvorila u u... ➡️ <b>Побут чужих міст</b>",
-                "• Crne rupe lutalice možda čuvaju povijest... ➡️ <b>Світовий шум та лайфстайл</b>",
-                "• Ugodna toplina neće trajati vječno, slje... ➡️ <b>Побут чужих міст</b>",
-                "• Zašto je listopad pravo vrijeme za sadnj... ➡️ <b>Світовий шум та лайфстайл</b>",
-                "• Svečanost u Pridvorju: Dodijeljena prizn... ➡️ <b>Побут чужих міст</b>",
-                "• Šibenčanin (49) uhvaćen prilično pijan n... ➡️ <b>Побут чужих міст</b>",
-                "• Tucaković: Požari kod Trogira i Metković... ➡️ <b>Дублікат</b>",
-                "• Bilice pokreću ‘Bilicious!‘: čeka vas pl... ➡️ <b>Побут чужих міст</b>",
-                "• Evo što posljednjeg dana očekuje posjeti... ➡️ <b>Побут чужих міст</b>",
-                "• Velika radost u Vodicama: poznata obitel... ➡️ <b>Побут чужих міст</b>",
-                "• Broj Slovenaca u Hrvatskoj se smanjio, r... ➡️ <b>Світовий шум та лайфстайл</b>",
-                "• Od sutra privremena regulacija prometa n... ➡️ <b>Побут чужих міст</b>",
-                "• Požari u Dalmaciji lokalizirani ili ugaš... ➡️ <b>Дублікат</b>",
-                "• Englez u Dubrovniku o debaklu Vatrenih: ... ➡️ <b>Спорт</b>",
-                "• Božinovića pitali zašto informacije SOA-... ➡️ <b>Вже є в історії</b>",
-                "• Drama u dolini Neretve! Vatrogasci obran... ➡️ <b>Дублікат</b>",
-                "• Vitezovi i Dubrovčani podijelili bodove,... ➡️ <b>Спорт</b>"
-            ]
-        },
-        "backlog": {
-            "total_size": 26,
-            "sources": {
-                "Zadarski list": 11,
-                "Slobodna dalmacija": 12,
-                "023": 3
-            }
-        },
-        "published": {
-            "total": 3,
-            "ukraine_priority": 0,
-            "with_images": 3,
-            "text_only": 0,
-            "sources": {
-                "Zadarski list": 3
-            }
-        },
-        "models_used": {
-            "gemini-3.5-flash-lite": 1,
-            "gemini-3.5-flash": 0
-        },
-        "errors_count": 0,
-        "gemini_retries": 0
-    },
-    {
         "timestamp": "2026-10-04 13:01:00",
         "execution_time": 165.5,
         "funnel": {
@@ -5952,5 +5890,66 @@
         },
         "errors_count": 0,
         "gemini_retries": 6
+    },
+    {
+        "timestamp": "2026-10-13 13:01:16",
+        "execution_time": 219.4,
+        "funnel": {
+            "scraped_total": 35,
+            "scraped_by_source": {
+                "023": 10,
+                "Slobodna dalmacija": 15,
+                "Zadarski list": 10
+            },
+            "already_seen": 5,
+            "rejected_by_keywords": 0,
+            "duplicates_removed_by_ai": 20,
+            "rejection_reasons_list": [
+                "• Plavci velikog srca: šibenski policajci ... ➡️ <b>Побут чужих міст</b>",
+                "• Nevjerojatna priča iz Mlina: pronašao ih... ➡️ <b>Побут чужих міст</b>",
+                "• Novi sjaj za igrališta i dvorane; Župani... ➡️ <b>Дубль або несуттєве оновлення спортивної тематики</b>",
+                "• Rafele iznad Rijeke i Delnica presreo ma... ➡️ <b>Побут чужих міст та регіональний геоблок</b>",
+                "• Sada je jasno i službeno da se Zadrani ž... ➡️ <b>Історія без суттєвих нових оновлень</b>",
+                "• Punjač koji danima stoji u utičnici troš... ➡️ <b>Світовий шум / поради побуту</b>",
+                "• Otvorene prijave za Ri Rock Festival. Ri... ➡️ <b>Побут чужих міст</b>",
+                "• Velika investicija na Korčuli: splitska ... ➡️ <b>Побут чужих міст</b>",
+                "• Verne u Zagrebu testira robotaksi bez ik... ➡️ <b>Побут чужих міст</b>",
+                "• Poznat i prvi plesni par najrasplesanije... ➡️ <b>Світ шоу-бізнесу / розваги</b>",
+                "• Gradonačelnik Erlić prelomio – od 1. stu... ➡️ <b>Дубль новини ID 10</b>",
+                "• Simptome srčanog i moždanog udara kod že... ➡️ <b>Побут чужих міст / загальна медицина</b>",
+                "• Inspiracija za hladne dane; Stigao je no... ➡️ <b>Реклама</b>",
+                "• Plenković oporbi: Odlaskom ste pokazali ... ➡️ <b>Загальнонаціональна політика без прямого впливу на Задар</b>",
+                "• Pod pritiskom:Dan D/Ciklone i morske str... ➡️ <b>Історична довідка / світовий шум</b>",
+                "• Hrvatska i Europa jačaju pripravnost za ... ➡️ <b>Загальна європейська кампанія</b>",
+                "• Vandalizam i krađe na šibenskom području... ➡️ <b>Побут чужих міст</b>",
+                "• Propali Uljanik prodaje se renomiranom t... ➡️ <b>Побут чужих міст</b>",
+                "• \"Beč: ispred gradske vijećnice ovih dana... ➡️ <b>Побут чужих міст</b>",
+                "• Rim traži dozvolu EU-a za korištenje fis... ➡️ <b>Інші країни (геоблок)</b>"
+            ]
+        },
+        "backlog": {
+            "total_size": 51,
+            "sources": {
+                "Slobodna dalmacija": 27,
+                "023": 11,
+                "Zadarski list": 13
+            }
+        },
+        "published": {
+            "total": 3,
+            "ukraine_priority": 0,
+            "with_images": 2,
+            "text_only": 1,
+            "sources": {
+                "Slobodna dalmacija": 2,
+                "023": 1
+            }
+        },
+        "models_used": {
+            "gemini-3.5-flash-lite": 2,
+            "gemini-3.6-flash": 0
+        },
+        "errors_count": 0,
+        "gemini_retries": 1
     }
 ]
