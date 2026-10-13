@@ -1,64 +1,5 @@
 [
     {
-        "timestamp": "2026-10-04 11:00:57",
-        "execution_time": 164.9,
-        "funnel": {
-            "scraped_total": 35,
-            "scraped_by_source": {
-                "023": 10,
-                "Slobodna dalmacija": 15,
-                "Zadarski list": 10
-            },
-            "already_seen": 7,
-            "rejected_by_keywords": 3,
-            "duplicates_removed_by_ai": 18,
-            "rejection_reasons_list": [
-                "• Krčki branitelji okupili u Puntu preko 1... ➡️ <b>Спорт</b>",
-                "• Velikim mimohodom i vježbom DVD Fužine p... ➡️ <b>Побут чужих міст</b>",
-                "• Ugodna toplina neće trajati vječno, slje... ➡️ <b>Побут чужих міст</b>",
-                "• Dvije ženke ugrožene vrste nosoroga sa S... ➡️ <b>Світовий шум</b>",
-                "• Pohani kruh bez jaja: mlijeko u tavi daj... ➡️ <b>Світовий шум та лайфстайл</b>",
-                "• Svečanost u Pridvorju: Dodijeljena prizn... ➡️ <b>Побут чужих міст</b>",
-                "• U Dječjem vrtiću Viškovo ostalo šest slo... ➡️ <b>Побут чужих міст</b>",
-                "• Crne rupe lutalice možda čuvaju povijest... ➡️ <b>Світовий шум та лайфстайл</b>",
-                "• Šibenčanin (49) uhvaćen prilično pijan n... ➡️ <b>Побут чужих міст</b>",
-                "• Donesi dvije igračke, odaberi jednu u Ri... ➡️ <b>Побут чужих міст</b>",
-                "• Zašto je listopad pravo vrijeme za sadnj... ➡️ <b>Світовий шум та лайфстайл</b>",
-                "• Bilice pokreću ‘Bilicious!‘: čeka vas pl... ➡️ <b>Побут чужих міст</b>",
-                "• Velika radost u Vodicama: poznata obitel... ➡️ <b>Побут чужих міст</b>",
-                "• Steve Swallow, virtuoz bas gitare koja u... ➡️ <b>Світовий шум та лайфстайл</b>",
-                "• Uspjeh u zadnji tren. Tako to obično biv... ➡️ <b>Спорт</b>",
-                "• Englez u Dubrovniku o debaklu Vatrenih: ... ➡️ <b>Спорт</b>",
-                "• Rumenka se može se jesti pripravljena na... ➡️ <b>Світовий шум та лайфстайл</b>",
-                "• Zlatko Lukić došao na ideju kako oživjet... ➡️ <b>Світовий шум та лайфстайл</b>"
-            ]
-        },
-        "backlog": {
-            "total_size": 26,
-            "sources": {
-                "Slobodna dalmacija": 11,
-                "023": 5,
-                "Zadarski list": 10
-            }
-        },
-        "published": {
-            "total": 3,
-            "ukraine_priority": 0,
-            "with_images": 1,
-            "text_only": 2,
-            "sources": {
-                "023": 2,
-                "Slobodna dalmacija": 1
-            }
-        },
-        "models_used": {
-            "gemini-3.5-flash-lite": 1,
-            "gemini-3.5-flash": 0
-        },
-        "errors_count": 0,
-        "gemini_retries": 0
-    },
-    {
         "timestamp": "2026-10-04 12:01:01",
         "execution_time": 165.1,
         "funnel": {
@@ -5951,5 +5892,65 @@
         },
         "errors_count": 0,
         "gemini_retries": 0
+    },
+    {
+        "timestamp": "2026-10-13 12:01:09",
+        "execution_time": 823.1,
+        "funnel": {
+            "scraped_total": 35,
+            "scraped_by_source": {
+                "023": 10,
+                "Slobodna dalmacija": 15,
+                "Zadarski list": 10
+            },
+            "already_seen": 8,
+            "rejected_by_keywords": 3,
+            "duplicates_removed_by_ai": 20,
+            "rejection_reasons_list": [
+                "• Plavci velikog srca: šibenski policajci ... ➡️ <b>Побут іншого міста (Шибеник)</b>",
+                "• Pod pritiskom:Dan D/Ciklone i morske str... ➡️ <b>Світовий шум та історія поза Хорватією</b>",
+                "• Timski troboj u MasterChefu. Tjestenina ... ➡️ <b>Шоу та розваги, світовий шум</b>",
+                "• Vandalizam i krađe na šibenskom području... ➡️ <b>Побут іншого міста (Шибеник)</b>",
+                "• Rale iz Podcast Inkubatora postao otac. ... ➡️ <b>Шоубізнес та плітки</b>",
+                "• Inspiracija za hladne dane; Stigao je no... ➡️ <b>Реклама та комерційні акції</b>",
+                "• \"Beč: ispred gradske vijećnice ovih dana... ➡️ <b>Інші країни (Австрія)</b>",
+                "• Dodikov glavni policajac u BiH izbjegao ... ➡️ <b>Інші країни (Боснія і Герцеговина)</b>",
+                "• Stigla im je jedna poruka, a onda šok! E... ➡️ <b>Кримінал іншого регіону (Дубровник)</b>",
+                "• Dalekovodu posao u Albaniji vrijedan got... ➡️ <b>Економіка поза фокусом Задара та загальнохорватського рівня</b>",
+                "• Stigla im je jedna poruka, a onda šok! E... ➡️ <b>Дубль новини 10</b>",
+                "• Ekološke udruge traže obustavu rada mega... ➡️ <b>Побут іншого регіону (Меджимур'є)</b>",
+                "• Zadranke blistaju na Cipru; Zadar Dragon... ➡️ <b>Спорт та спортивні досягнення</b>",
+                "• Šibenik Meteo ima novu, jedinstvenu uslu... ➡️ <b>Побут іншого міста (Шибеник)</b>",
+                "• Zagrebačka nadbiskupija prijavila svećen... ➡️ <b>Побут іншого міста (Загреб)</b>",
+                "• Zašto tamne točkice na nosu ne treba ist... ➡️ <b>Поради дієтологів / світовий шум</b>",
+                "• Drugi tjedan Good Food festivala: medite... ➡️ <b>Побут іншого міста (Дубровник)</b>",
+                "• Veliki povratak Formule 1 u Afriku! Ruan... ➡️ <b>Спорт</b>",
+                "• Tužna vijest pronijela se Gradom: u 42. ... ➡️ <b>Побут іншого міста (Дубровник)</b>",
+                "• ChatGPT umjesto liječnika? Nova analiza ... ➡️ <b>Світовий шум та абстрактні технології</b>"
+            ]
+        },
+        "backlog": {
+            "total_size": 44,
+            "sources": {
+                "023": 12,
+                "Slobodna dalmacija": 22,
+                "Zadarski list": 10
+            }
+        },
+        "published": {
+            "total": 3,
+            "ukraine_priority": 0,
+            "with_images": 0,
+            "text_only": 3,
+            "sources": {
+                "023": 3
+            }
+        },
+        "models_used": {
+            "gemini-3.5-flash-lite": 2,
+            "gemini-3.6-flash": 0
+        },
+        "errors_count": 0,
+        "gemini_retries": 6
     }
 ]
