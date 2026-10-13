@@ -1,64 +1,5 @@
 [
     {
-        "timestamp": "2026-10-03 19:01:00",
-        "execution_time": 123.1,
-        "funnel": {
-            "scraped_total": 35,
-            "scraped_by_source": {
-                "023": 10,
-                "Slobodna dalmacija": 15,
-                "Zadarski list": 10
-            },
-            "already_seen": 4,
-            "rejected_by_keywords": 11,
-            "duplicates_removed_by_ai": 18,
-            "rejection_reasons_list": [
-                "• Damir Habijan: “Grmojine umotvorine nema... ➡️ <b>Політика національного рівня без суттєвого оновлення для діаспори</b>",
-                "• Tamnija kosa čini lice privlačnijim i zd... ➡️ <b>Світовий шум та лайфстайл</b>",
-                "• Drama u dolini Neretve! Vatrogasci brane... ➡️ <b>Дублікат</b>",
-                "• Druga strana uhićenja zbog protuzakonito... ➡️ <b>Політика та кримінал загальнонаціонального рівня без прямого стосунку до Задара чи України</b>",
-                "• Sol, ocat i šećer: tajne konzerviranja k... ➡️ <b>Світовий шум та лайфстайл</b>",
-                "• Programom ‘Magnetična baština‘ najmlađi ... ➡️ <b>Побут інших міст (Дубровник)</b>",
-                "• Podmornica zaronila kilometar ispod leda... ➡️ <b>Світовий шум та лайфстайл</b>",
-                "• Svećenik tijekom propovijedi: ‘Žena se n... ➡️ <b>Лайфстайл та соцмережі</b>",
-                "• Irska, ne Italija: evo koja zemlja predn... ➡️ <b>Світовий шум та лайфстайл</b>",
-                "• Obilježena 35 obljetnica početka služenj... ➡️ <b>Події в інших містах (Плоче)</b>",
-                "• Uz aktualnu izložbu Matka Vekića u Umjet... ➡️ <b>Побут інших міст (Дубровник)</b>",
-                "• Rijeke na Aljasci mijenjaju boju u naran... ➡️ <b>Світовий шум та абстрактна наука</b>",
-                "• Među 4444 stabla primijetili su nešto ne... ➡️ <b>Історія/архівний матеріал</b>",
-                "• Među 4444 stabla primijetili su nešto ne... ➡️ <b>Дублікат</b>",
-                "• ‘Bojni brodovi: uspon i nestanak‘: pregl... ➡️ <b>Побут інших міст (Шибеник)</b>",
-                "• Šetači subotnjim đirom ušetali u listopa... ➡️ <b>Побут інших міст (Дубровник)</b>",
-                "• Poznati košarkaš kupio luksuznu vilu u Š... ➡️ <b>Побут інших міст (Шибеник)</b>",
-                "• Bablje ljeto ne prestaje, Poljana suboto... ➡️ <b>Побут інших міст / локальний фоторепортаж</b>"
-            ]
-        },
-        "backlog": {
-            "total_size": 20,
-            "sources": {
-                "023": 6,
-                "Slobodna dalmacija": 12,
-                "Zadarski list": 2
-            }
-        },
-        "published": {
-            "total": 2,
-            "ukraine_priority": 0,
-            "with_images": 1,
-            "text_only": 1,
-            "sources": {
-                "Slobodna dalmacija": 1,
-                "023": 1
-            }
-        },
-        "models_used": {
-            "gemini-3.5-flash-lite": 1,
-            "gemini-3.5-flash": 0
-        },
-        "errors_count": 0,
-        "gemini_retries": 0
-    },
-    {
         "timestamp": "2026-10-04 07:00:57",
         "execution_time": 119.3,
         "funnel": {
@@ -5953,5 +5894,61 @@
         },
         "errors_count": 0,
         "gemini_retries": 0
+    },
+    {
+        "timestamp": "2026-10-13 07:01:09",
+        "execution_time": 220.7,
+        "funnel": {
+            "scraped_total": 35,
+            "scraped_by_source": {
+                "023": 10,
+                "Slobodna dalmacija": 15,
+                "Zadarski list": 10
+            },
+            "already_seen": 0,
+            "rejected_by_keywords": 2,
+            "duplicates_removed_by_ai": 15,
+            "rejection_reasons_list": [
+                "• Trump o primirju koje je proglasio: ‘Zap... ➡️ <b>Інші країни (геоблок) - події за межами Хорватії та України без прямого зв'язку з біженцями</b>",
+                "• Revija lutkarskih kazališta. Tradicional... ➡️ <b>Побут чужих міст - події в Рієці, не стосуються Задара чи національного рівня</b>",
+                "• Od žongliranja na Korzu do neobičnih pre... ➡️ <b>Побут чужих міст - культурна подія в Рієці</b>",
+                "• Objavljena je nova Stanfordova lista naj... ➡️ <b>Світовий шум / Побут чужих міст - список науковців, не стосується Задара</b>",
+                "• Zadarskim lutkarima dvije nagrade na 29.... ➡️ <b>Дубль/Історія - подія вже висвітлена раніше або стосується виїзду за межі міста без критичного оновлення</b>",
+                "• Podstanarstvo poskupilo, Grad će mladima... ➡️ <b>Побут чужих міст - проблеми оренди у Спліті та Дубровонику</b>",
+                "• Dubrovačka biskupija i ove godine sudjel... ➡️ <b>Побут чужих міст - події в Дубровнику</b>",
+                "• Znate li da je knez biološki indikator č... ➡️ <b>Світовий шум - пізнавальна стаття про рибу</b>",
+                "• Franković primio izaslanstvo poljskog ok... ➡️ <b>Побут чужих міст - візити делегацій у Дубровнику</b>",
+                "• Tri hica za tri ribe. Ulov dostatan za p... ➡️ <b>Спорт / Побут чужих міст - аматорська риболовля на Хварі</b>",
+                "• Nevjerojatan život ‘neretvanskog Turgenj... ➡️ <b>Світовий шум - історичний нарис про особу</b>",
+                "• Plesačice zadarske Geste s karlovačkog n... ➡️ <b>Спорт / Побут чужих міст - танцювальний конкурс за межами Задара</b>",
+                "• Nevjerojatan život ‘neretvanskog Turgenj... ➡️ <b>Дубль - точна копія статті 18</b>",
+                "• Mladi borci zadarskog Titana odradili tr... ➡️ <b>Спорт - спортивні тренування та підготовка до турнірів</b>",
+                "• ‘Ko nije operira kolina ili kuk, ne trib... ➡️ <b>Спорт - аматорський футбол та ветерани спорту</b>"
+            ]
+        },
+        "backlog": {
+            "total_size": 31,
+            "sources": {
+                "023": 9,
+                "Slobodna dalmacija": 13,
+                "Zadarski list": 9
+            }
+        },
+        "published": {
+            "total": 3,
+            "ukraine_priority": 0,
+            "with_images": 1,
+            "text_only": 2,
+            "sources": {
+                "023": 2,
+                "Slobodna dalmacija": 1
+            }
+        },
+        "models_used": {
+            "gemini-3.5-flash-lite": 2,
+            "gemini-3.6-flash": 0
+        },
+        "errors_count": 0,
+        "gemini_retries": 2
     }
 ]
