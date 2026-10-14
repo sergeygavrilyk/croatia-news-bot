@@ -1,61 +1,5 @@
 [
     {
-        "timestamp": "2026-10-05 13:01:08",
-        "execution_time": 278.9,
-        "funnel": {
-            "scraped_total": 35,
-            "scraped_by_source": {
-                "023": 10,
-                "Slobodna dalmacija": 15,
-                "Zadarski list": 10
-            },
-            "already_seen": 2,
-            "rejected_by_keywords": 3,
-            "duplicates_removed_by_ai": 15,
-            "rejection_reasons_list": [
-                "• Asfaltira se 1.700 metara prometnice na ... ➡️ <b>Побут інших міст</b>",
-                "• Asfaltira se cesta Brgulje – Zapuntel; R... ➡️ <b>Дублікат</b>",
-                "• Delnice dobile 760.000 eura za novi Trg ... ➡️ <b>Побут інших міст</b>",
-                "• Laborantica preminula od sumnje na plućn... ➡️ <b>Світовий шум</b>",
-                "• Petnaestak projekata u Vrbovskom kasni, ... ➡️ <b>Побут інших міст</b>",
-                "• Riccardo Staraj proslavio 30 godina umje... ➡️ <b>Світовий шум та лайфстайл</b>",
-                "• Dubrovačka glumica zajedno s kćerkom Lol... ➡️ <b>Світовий шум та лайфстайл</b>",
-                "• U Crikvenicu stiže hit predstava Kerekes... ➡️ <b>Світовий шум та лайфстайл</b>",
-                "• Toni, Stijepo, Danijel, Nikola, Ivan i D... ➡️ <b>Світовий шум та лайфстайл</b>",
-                "• Stručnjak otkriva koji znak na mobitelu ... ➡️ <b>Світовий шум та лайфстайл</b>",
-                "• Stiže 22. Bundevijada: dani u kojima je ... ➡️ <b>Побут інших міст</b>",
-                "• U Dubrovniku se održavaju Dani mađarske ... ➡️ <b>Світовий шум та лайфстайл</b>",
-                "• Vještacima prekipjelo, za e-romobile tra... ➡️ <b>Вже є в історії</b>",
-                "• Smotra folklora i sevdaha u HKD-u poveza... ➡️ <b>Побут інших міст</b>",
-                "• Dobili Nobela za medicinu za rad na opto... ➡️ <b>Світовий шум та лайфстайл</b>"
-            ]
-        },
-        "backlog": {
-            "total_size": 60,
-            "sources": {
-                "Slobodna dalmacija": 37,
-                "023": 13,
-                "Zadarski list": 10
-            }
-        },
-        "published": {
-            "total": 3,
-            "ukraine_priority": 0,
-            "with_images": 2,
-            "text_only": 1,
-            "sources": {
-                "Slobodna dalmacija": 2,
-                "023": 1
-            }
-        },
-        "models_used": {
-            "gemini-3.5-flash-lite": 1,
-            "gemini-3.5-flash": 0
-        },
-        "errors_count": 0,
-        "gemini_retries": 0
-    },
-    {
         "timestamp": "2026-10-05 14:01:06",
         "execution_time": 172.7,
         "funnel": {
@@ -5916,6 +5860,65 @@
                 "Zadarski list": 11,
                 "023": 10,
                 "Slobodna dalmacija": 30
+            }
+        },
+        "published": {
+            "total": 3,
+            "ukraine_priority": 0,
+            "with_images": 2,
+            "text_only": 1,
+            "sources": {
+                "Slobodna dalmacija": 2,
+                "023": 1
+            }
+        },
+        "models_used": {
+            "gemini-3.5-flash-lite": 2,
+            "gemini-3.6-flash": 0
+        },
+        "errors_count": 0,
+        "gemini_retries": 0
+    },
+    {
+        "timestamp": "2026-10-14 14:01:14",
+        "execution_time": 183.3,
+        "funnel": {
+            "scraped_total": 35,
+            "scraped_by_source": {
+                "023": 10,
+                "Slobodna dalmacija": 15,
+                "Zadarski list": 10
+            },
+            "already_seen": 7,
+            "rejected_by_keywords": 5,
+            "duplicates_removed_by_ai": 18,
+            "rejection_reasons_list": [
+                "• Koliko doista trebamo spavati? Spavanje ... ➡️ <b>Світовий шум</b>",
+                "• Kod Pomene se nasukala jedrilica, jaki u... ➡️ <b>Побут чужих міст</b>",
+                "• Grad Rijeka povećava sufinanciranje dadi... ➡️ <b>Побут чужих міст</b>",
+                "• Hakeri napali hladnjake u francuskim trg... ➡️ <b>Інші країни</b>",
+                "• Preminula poznata dubrovačka glazbenica ... ➡️ <b>Побут чужих міст</b>",
+                "• Udruga Žmergo poziva sve mlade u Opatiji... ➡️ <b>Побут чужих міст</b>",
+                "• Idete automobilom izvan Hrvatske? Evo u ... ➡️ <b>Історія (вже відома інформація)</b>",
+                "• Šimunić o istrazi Uskoka: “Nikad od niko... ➡️ <b>Побут чужих міст</b>",
+                "• ALARM ZA VODU U LICI Opasnih kemikalija ... ➡️ <b>Побут чужих міст</b>",
+                "• Alfa Romeo u Parizu predstavio koncept k... ➡️ <b>Інші країни</b>",
+                "• Gusti dim od požara na Jakljanu vidi se ... ➡️ <b>Побут чужих міст</b>",
+                "• Gradsko groblje sv. Vida u Senju proglaš... ➡️ <b>Побут чужих міст</b>",
+                "• Ako vam se soba sporo zagrijava, problem... ➡️ <b>Світовий шум</b>",
+                "• Očekuju se ogromne gužve: u Dubrovnik u ... ➡️ <b>Побут чужих міст</b>",
+                "• Tko prijavi njemu pola kazne: Rijeka uvo... ➡️ <b>Побут чужих міст</b>",
+                "• Mladen Ančić preispituje dolazak Hrvata ... ➡️ <b>Історія (вже відома інформація)</b>",
+                "• Hotel Jadran ponovno otvoren, to je prvi... ➡️ <b>Побут чужих міст</b>",
+                "• Dominik Valić uoči plesnog spektakla u P... ➡️ <b>Побут чужих міст</b>"
+            ]
+        },
+        "backlog": {
+            "total_size": 53,
+            "sources": {
+                "Slobodna dalmacija": 34,
+                "Zadarski list": 10,
+                "023": 9
             }
         },
         "published": {
