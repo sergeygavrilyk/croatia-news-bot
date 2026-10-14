@@ -1,67 +1,5 @@
 [
     {
-        "timestamp": "2026-10-05 08:01:03",
-        "execution_time": 165.6,
-        "funnel": {
-            "scraped_total": 35,
-            "scraped_by_source": {
-                "023": 10,
-                "Slobodna dalmacija": 15,
-                "Zadarski list": 10
-            },
-            "already_seen": 2,
-            "rejected_by_keywords": 3,
-            "duplicates_removed_by_ai": 21,
-            "rejection_reasons_list": [
-                "• Svitlani je rat iz temelja promijenio ži... ➡️ <b>Спорт</b>",
-                "• Slavlje na virskoj rivi; Sedmogodišnji R... ➡️ <b>Побут чужого міста</b>",
-                "• Eskalirao problem: Škola za primijenjenu... ➡️ <b>Побут чужого міста</b>",
-                "• U Kneževu dvoru nastupa duo Dora & Pero,... ➡️ <b>Світський шум та лайфстайл</b>",
-                "• S vidikovca “Straža” u Tkonu ukradene so... ➡️ <b>Дрібний кримінал у непріоритетному регіоні</b>",
-                "• Ugledni njemački progresivni metalci The... ➡️ <b>Світський шум та лайфстайл</b>",
-                "• Makedonski reprezentativac i prošlosezon... ➡️ <b>Спорт</b>",
-                "• Nova Liscina kolekcija donosi odjeću u k... ➡️ <b>Світський шум та лайфстайл</b>",
-                "• Crni tjedan na cestama Šibensko-kninske ... ➡️ <b>Побут чужого міста</b>",
-                "• TRIJUMF IVE JURIĆA U ZADRU Pogledajte tk... ➡️ <b>Світський шум та лайфстайл</b>",
-                "• Prije 35 godina poginuo je pjesnik Milan... ➡️ <b>Вже є в історії</b>",
-                "• Ravnateljica Haller: Radimo u glazbenoj ... ➡️ <b>Побут чужого міста</b>",
-                "• Napustio nas je omiljeni dubrovački lije... ➡️ <b>Світський шум та лайфстайл</b>",
-                "• Mladoženja ju čekao na obali, a onda se ... ➡️ <b>Світський шум та лайфстайл</b>",
-                "• Mavra blista na startu sezone, a njegov ... ➡️ <b>Спорт</b>",
-                "• Održana 8. utrka Linijom obrane grada Za... ➡️ <b>Спорт</b>",
-                "• Američka vojska usmrtila četiri osobe u ... ➡️ <b>Світовий шум</b>",
-                "• Prije 35 godina poginuo je pjesnik Milan... ➡️ <b>Дублікат</b>",
-                "• Zadar protiv Derbyja traži prve bodove u... ➡️ <b>Спорт</b>",
-                "• Utrli su put Ozempicu, sad su među favor... ➡️ <b>Світський шум та лайфстайл</b>",
-                "• Napustio nas je liječnik obiteljske medi... ➡️ <b>Дублікат</b>"
-            ]
-        },
-        "backlog": {
-            "total_size": 33,
-            "sources": {
-                "Zadarski list": 9,
-                "023": 10,
-                "Slobodna dalmacija": 14
-            }
-        },
-        "published": {
-            "total": 3,
-            "ukraine_priority": 0,
-            "with_images": 1,
-            "text_only": 2,
-            "sources": {
-                "023": 2,
-                "Zadarski list": 1
-            }
-        },
-        "models_used": {
-            "gemini-3.5-flash-lite": 1,
-            "gemini-3.5-flash": 0
-        },
-        "errors_count": 0,
-        "gemini_retries": 0
-    },
-    {
         "timestamp": "2026-10-05 09:01:10",
         "execution_time": 165.5,
         "funnel": {
@@ -5930,6 +5868,64 @@
             "sources": {
                 "Slobodna dalmacija": 2,
                 "023": 1
+            }
+        },
+        "models_used": {
+            "gemini-3.5-flash-lite": 2,
+            "gemini-3.6-flash": 0
+        },
+        "errors_count": 0,
+        "gemini_retries": 0
+    },
+    {
+        "timestamp": "2026-10-14 09:01:15",
+        "execution_time": 166.5,
+        "funnel": {
+            "scraped_total": 35,
+            "scraped_by_source": {
+                "023": 10,
+                "Slobodna dalmacija": 15,
+                "Zadarski list": 10
+            },
+            "already_seen": 6,
+            "rejected_by_keywords": 2,
+            "duplicates_removed_by_ai": 18,
+            "rejection_reasons_list": [
+                "• Ante je otac petero djece, nakon nesreće... ➡️ <b>Побут інших міст</b>",
+                "• Kijev tvrdi da je Starlink poremetio bor... ➡️ <b>Інші країни / геоблок</b>",
+                "• Od požara i potresa do svijeta poznatih:... ➡️ <b>Шоу-бізнес / реклама</b>",
+                "• Nakon Splita, BAUHAUS Women‘s Night stiž... ➡️ <b>Реклама / промо-акція</b>",
+                "• Vlada u saborsku proceduru uputila novi ... ➡️ <b>Не суттєве оновлення національного рівня</b>",
+                "• Raspisan natječaj za projektnu dokumenta... ➡️ <b>Побут інших міст</b>",
+                "• Habijan: ‘Treba utvrditi tko je od nadle... ➡️ <b>Побут інших міст</b>",
+                "• Mlada djevojka (23) upadala u kuće stari... ➡️ <b>Дубль новини №3</b>",
+                "• Noževi, kamenje, boksačke rukavice i pir... ➡️ <b>Спорт</b>",
+                "• Svjetski popularna kazališna predstava „... ➡️ <b>Культурна подія без прямого впливу на інфраструктуру/життя діаспори</b>",
+                "• Sve je više oboljelih od salmonele u Rij... ➡️ <b>Побут інших міст</b>",
+                "• Divljač harači! Nova odluka iz Zagreba p... ➡️ <b>Побут інших міст</b>",
+                "• Komunikacijske stručnjakinje o burnoj sa... ➡️ <b>Коментарі та політичний шум</b>",
+                "• ‘Do sada su jedva pokrivale trećinu pele... ➡️ <b>Побут інших міст</b>",
+                "• Prijeti kraj europske regionalne politik... ➡️ <b>Світовий шум / абстрактна політика</b>",
+                "• Marijo je zatvorio uspješan restoran i s... ➡️ <b>Побут інших міст</b>",
+                "• Netočno je da je Grad Rijeka isplatio 24... ➡️ <b>Побут інших міст</b>",
+                "• Košarkoplovci s Puntamike digli sidro; K... ➡️ <b>Спорт</b>"
+            ]
+        },
+        "backlog": {
+            "total_size": 37,
+            "sources": {
+                "023": 10,
+                "Slobodna dalmacija": 18,
+                "Zadarski list": 9
+            }
+        },
+        "published": {
+            "total": 3,
+            "ukraine_priority": 0,
+            "with_images": 0,
+            "text_only": 3,
+            "sources": {
+                "023": 3
             }
         },
         "models_used": {
