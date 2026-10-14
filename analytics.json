@@ -1,69 +1,5 @@
 [
     {
-        "timestamp": "2026-10-04 19:00:59",
-        "execution_time": 71.5,
-        "funnel": {
-            "scraped_total": 35,
-            "scraped_by_source": {
-                "023": 10,
-                "Slobodna dalmacija": 15,
-                "Zadarski list": 10
-            },
-            "already_seen": 13,
-            "rejected_by_keywords": 4,
-            "duplicates_removed_by_ai": 24,
-            "rejection_reasons_list": [
-                "• Merz u Kijevu poručio Rusiji: ‘Nećemo se... ➡️ <b>Світовий шум</b>",
-                "• Korčulani u ružičastom trčali za potporu... ➡️ <b>Побут чужих міст</b>",
-                "• Znanstvenici utvrdili koliko je koraka d... ➡️ <b>Світовий шум та лайфстайл</b>",
-                "• Izbori u BiH: Darijana Filipović uvjerlj... ➡️ <b>Світовий шум</b>",
-                "• Konavljani na susretu umirovljenika Dalm... ➡️ <b>Побут чужих міст</b>",
-                "• Zašto stručnjaci savjetuju da omiljenu o... ➡️ <b>Світовий шум та лайфстайл</b>",
-                "• Isti Trump, isti osmijeh, isti palac: Je... ➡️ <b>Світовий шум</b>",
-                "• U kompleksu TUP-a otvorena gostujuća izl... ➡️ <b>Побут чужих міст</b>",
-                "• Plivači zadarske Jadere iz Sarajeva doni... ➡️ <b>Спорт</b>",
-                "• Nekad političke zvijezde, danas na margi... ➡️ <b>Світовий шум</b>",
-                "• Prijepodne Stradun, popodne Uvala, zvuči... ➡️ <b>Побут чужих міст</b>",
-                "• Umjetna inteligencija za šest sati razbi... ➡️ <b>Світовий шум та лайфстайл</b>",
-                "• Izbori u BiH: U 19 sati zatvorena većina... ➡️ <b>Дублікат</b>",
-                "• Simović: ‘Kod Vida su vatrogasci uspješn... ➡️ <b>Дублікат</b>",
-                "• Vlakno iz luka i češnjaka moglo bi sprij... ➡️ <b>Світовий шум та лайфстайл</b>",
-                "• Bablje ljeto u Rijeci: Brojni građani už... ➡️ <b>Побут чужих міст</b>",
-                "• U Narodnoj knjižnici Grad otvorena dvoje... ➡️ <b>Побут чужих міст</b>",
-                "• Gotove kore za pitu izgledat će kao doma... ➡️ <b>Світовий шум та лайфстайл</b>",
-                "• Više ozlijeđenih u požaru u kampu na jez... ➡️ <b>Світовий шум</b>",
-                "• Iz njega progovara stari Mljet: Ivan Čum... ➡️ <b>Побут чужих міст</b>",
-                "• Zašto kuhanje smrznutog povrća u vodi kv... ➡️ <b>Світовий шум та лайфстайл</b>",
-                "• Novi požar u dolini Neretve, vatrogascim... ➡️ <b>Дублікат</b>",
-                "• Pohani kruh bez jaja: mlijeko u tavi daj... ➡️ <b>Світовий шум та лайфстайл</b>",
-                "• Komisija objavljuje dugoočekivani prijed... ➡️ <b>Вже є в історії</b>"
-            ]
-        },
-        "backlog": {
-            "total_size": 40,
-            "sources": {
-                "023": 9,
-                "Slobodna dalmacija": 15,
-                "Zadarski list": 16
-            }
-        },
-        "published": {
-            "total": 1,
-            "ukraine_priority": 0,
-            "with_images": 1,
-            "text_only": 0,
-            "sources": {
-                "Zadarski list": 1
-            }
-        },
-        "models_used": {
-            "gemini-3.5-flash-lite": 1,
-            "gemini-3.5-flash": 0
-        },
-        "errors_count": 0,
-        "gemini_retries": 0
-    },
-    {
         "timestamp": "2026-10-05 07:01:06",
         "execution_time": 256.9,
         "funnel": {
@@ -5938,6 +5874,65 @@
             "sources": {
                 "023": 1,
                 "Slobodna dalmacija": 1
+            }
+        },
+        "models_used": {
+            "gemini-3.5-flash-lite": 2,
+            "gemini-3.6-flash": 0
+        },
+        "errors_count": 0,
+        "gemini_retries": 0
+    },
+    {
+        "timestamp": "2026-10-14 07:01:12",
+        "execution_time": 166.8,
+        "funnel": {
+            "scraped_total": 35,
+            "scraped_by_source": {
+                "023": 10,
+                "Slobodna dalmacija": 15,
+                "Zadarski list": 10
+            },
+            "already_seen": 2,
+            "rejected_by_keywords": 1,
+            "duplicates_removed_by_ai": 19,
+            "rejection_reasons_list": [
+                "• Gospić jutros najhladniji u Hrvatskoj. T... ➡️ <b>Побут іншого міста, не стосується Задара</b>",
+                "• Poklon koji ispunjava sve želje, darujte... ➡️ <b>Реклама</b>",
+                "• Trump najavio opsežna istraživanja na Gr... ➡️ <b>Інші країни, геоблок</b>",
+                "• Dubrovnik povećava naknade za novorođenč... ➡️ <b>Побут іншого міста, не стосується Задара</b>",
+                "• Scenarist filma o šefu OpenAI-ja upozora... ➡️ <b>Світовий шум, технології</b>",
+                "• Frizerka s juga Dalmacije među najboljim... ➡️ <b>Інші країни / Світовий шум</b>",
+                "• Zašto kanabis kod nekih izaziva tjeskobu... ➡️ <b>Світовий шум, абстрактна наука</b>",
+                "• Znanstvenici izdvojili dvije glavne prij... ➡️ <b>Світовий шум, абстрактна наука</b>",
+                "• Dubrovački slikari Josip Škerlj, Mišo Ba... ➡️ <b>Побут іншого міста</b>",
+                "• Županija se oglasila o zapošljavanju biv... ➡️ <b>Побут іншого міста, не стосується Задара</b>",
+                "• Podignuta optužnica protiv 46-godišnjaka... ➡️ <b>Побут іншого міста, не стосується Задара</b>",
+                "• U Srbiji više od pola milijuna birača ne... ➡️ <b>Інші країни, геоблок</b>",
+                "• Apsurd sa slučajem jezivog ubojstva na o... ➡️ <b>Дубль існуючої історії / дрібні деталі</b>",
+                "• Promjena posla ili povišica? Ovi horosko... ➡️ <b>Світовий шум</b>",
+                "• Dio Župe u srijedu bez voda... ➡️ <b>Побут іншого міста, не стосується Задара</b>",
+                "• Jutra jedva iznad nule, preko dana do ug... ➡️ <b>Дубль події про погоду</b>",
+                "• Umjetnička galerija Dubrovnik poziva str... ➡️ <b>Побут іншого міста, не стосується Задара</b>",
+                "• Pitanje se svodi na “da Bibi” ili “ne Bi... ➡️ <b>Інші країни, геоблок</b>",
+                "• Zajedno su ručavali, zvao ju je drugom m... ➡️ <b>Дубль новини ID 16 про криминал у Дубровнику</b>"
+            ]
+        },
+        "backlog": {
+            "total_size": 25,
+            "sources": {
+                "023": 5,
+                "Slobodna dalmacija": 10,
+                "Zadarski list": 10
+            }
+        },
+        "published": {
+            "total": 3,
+            "ukraine_priority": 0,
+            "with_images": 0,
+            "text_only": 3,
+            "sources": {
+                "023": 3
             }
         },
         "models_used": {
