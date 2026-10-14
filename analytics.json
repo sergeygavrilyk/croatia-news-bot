@@ -1,65 +1,5 @@
 [
     {
-        "timestamp": "2026-10-05 14:01:06",
-        "execution_time": 172.7,
-        "funnel": {
-            "scraped_total": 35,
-            "scraped_by_source": {
-                "023": 10,
-                "Slobodna dalmacija": 15,
-                "Zadarski list": 10
-            },
-            "already_seen": 13,
-            "rejected_by_keywords": 3,
-            "duplicates_removed_by_ai": 20,
-            "rejection_reasons_list": [
-                "• Nina Badrić nastupa u Zajcu za pomoć žen... ➡️ <b>Побут Рієки</b>",
-                "• Turnić dva dana bez tople vode... ➡️ <b>Побут Рієки</b>",
-                "• Dubrovačka Hitna dobila osam novih vozil... ➡️ <b>Побут Дубровника</b>",
-                "• Počeo Mentalfest: Predstavljen pilot-pro... ➡️ <b>Побут Рієки</b>",
-                "• Stravičan zločin u Zadru: 24-godišnjak o... ➡️ <b>Дублікат</b>",
-                "• Prvi delnički gimnazijski maturanti pros... ➡️ <b>Світовий шум та лайфстайл</b>",
-                "• Laborantica preminula od sumnje na plućn... ➡️ <b>Світовий шум</b>",
-                "• Asfaltira se 1.700 metara prometnice na ... ➡️ <b>Дублікат</b>",
-                "• Evo što sve donosi Dječji tjedan u Crikv... ➡️ <b>Побут іншого міста</b>",
-                "• Mlade nade TKD Plovanija nižu uspjehe; S... ➡️ <b>Спорт</b>",
-                "• Dubrovačka glumica zajedno sa kćeri Lolo... ➡️ <b>Світовий шум та лайфстайл</b>",
-                "• Mladić nožem ubio baku u Zadru... ➡️ <b>Дублікат</b>",
-                "• Stručnjak otkriva koji znak na mobitelu ... ➡️ <b>Світовий шум</b>",
-                "• Toni, Stijepo, Danijel, Nikola, Ivan i D... ➡️ <b>Світовий шум та лайфстайл</b>",
-                "• Vinodolska općina dodjeljuje stipendije ... ➡️ <b>Побут іншого міста</b>",
-                "• Zadarski plivači briljirali u Sarajevu; ... ➡️ <b>Спорт</b>",
-                "• U Dubrovniku se održavaju Dani mađarske ... ➡️ <b>Побут Дубровника</b>",
-                "• Otkazan koncert grupe Kojoti u Pogonu Ku... ➡️ <b>Світовий шум та лайфстайл</b>",
-                "• Vlasnica (40) ugostiteljskog objekta u D... ➡️ <b>Побут Дубровника</b>",
-                "• Izlaganje Ede Popovića “Planina i čovjek... ➡️ <b>Побут іншого міста</b>"
-            ]
-        },
-        "backlog": {
-            "total_size": 49,
-            "sources": {
-                "Zadarski list": 11,
-                "Slobodna dalmacija": 28,
-                "023": 10
-            }
-        },
-        "published": {
-            "total": 3,
-            "ukraine_priority": 0,
-            "with_images": 0,
-            "text_only": 3,
-            "sources": {
-                "023": 3
-            }
-        },
-        "models_used": {
-            "gemini-3.5-flash-lite": 1,
-            "gemini-3.5-flash": 0
-        },
-        "errors_count": 0,
-        "gemini_retries": 0
-    },
-    {
         "timestamp": "2026-10-05 15:01:12",
         "execution_time": 214.7,
         "funnel": {
@@ -5919,6 +5859,68 @@
                 "Slobodna dalmacija": 34,
                 "Zadarski list": 10,
                 "023": 9
+            }
+        },
+        "published": {
+            "total": 3,
+            "ukraine_priority": 0,
+            "with_images": 2,
+            "text_only": 1,
+            "sources": {
+                "Slobodna dalmacija": 2,
+                "023": 1
+            }
+        },
+        "models_used": {
+            "gemini-3.5-flash-lite": 2,
+            "gemini-3.6-flash": 0
+        },
+        "errors_count": 0,
+        "gemini_retries": 0
+    },
+    {
+        "timestamp": "2026-10-14 15:01:12",
+        "execution_time": 169.3,
+        "funnel": {
+            "scraped_total": 35,
+            "scraped_by_source": {
+                "023": 10,
+                "Slobodna dalmacija": 15,
+                "Zadarski list": 10
+            },
+            "already_seen": 11,
+            "rejected_by_keywords": 3,
+            "duplicates_removed_by_ai": 21,
+            "rejection_reasons_list": [
+                "• Drama na Mljetu, jedrilica se nasukala t... ➡️ <b>Побут чужих міст / локацій поза Задаром</b>",
+                "• Moneymaxxing osvaja mlade: više zaraditi... ➡️ <b>Світовий шум / поради</b>",
+                "• Župan i gradonačelnica ovaj su put potpu... ➡️ <b>Побут чужих міст (Рієка)</b>",
+                "• Kod Pomene se nasukala jedrilica, jaki u... ➡️ <b>Дубль новини №0</b>",
+                "• Koliko doista trebamo spavati? Spavanje ... ➡️ <b>Світовий шум / абстрактна наука</b>",
+                "• Obilježava se 50 godina Araličine donaci... ➡️ <b>Побут чужих міст (Оточац)</b>",
+                "• Preminula poznata dubrovačka glazbenica ... ➡️ <b>Побут чужих міст (Дубровник)</b>",
+                "• Hakeri napali hladnjake u francuskim trg... ➡️ <b>Світовий шум / кібербезпека</b>",
+                "• Kontejnerski brod potonuo blizu Hormuško... ➡️ <b>Інші країни / геоблок</b>",
+                "• Preminula dubrovačka glazbenica Loris Gr... ➡️ <b>Дубль новини №6</b>",
+                "• Idete automobilom izvan Hrvatske? Evo u ... ➡️ <b>Загальні поради для водіїв поза Задаром</b>",
+                "• Dražen Miočić izbor je vladajućih za čel... ➡️ <b>Національна політика (не стосується Задара напряму)</b>",
+                "• Gusti dim od požara na Jakljanu vidi se ... ➡️ <b>Побут чужих міст (Яклян/Дубровник)</b>",
+                "• ALARM ZA VODU U LICI Opasnih kemikalija ... ➡️ <b>Побут чужих міст (Лика)</b>",
+                "• Grad Rijeka povećava sufinanciranje dadi... ➡️ <b>Побут чужих міст (Рієка)</b>",
+                "• Očekuju se ogromne gužve: u Dubrovnik u ... ➡️ <b>Побут чужих міст (Дубровник)</b>",
+                "• Ako vam se soba sporo zagrijava, problem... ➡️ <b>Світовий шум / побутові поради</b>",
+                "• Udruga Žmergo poziva sve mlade u Opatiji... ➡️ <b>Побут чужих міст (Опатія)</b>",
+                "• Šimunić o istrazi Uskoka: “Nikad od niko... ➡️ <b>Побут чужих міст (Орослав'є)</b>",
+                "• Alfa Romeo u Parizu predstavio koncept k... ➡️ <b>Світовий шум / автоновини</b>",
+                "• U četvrtak tri kruzera u Gružu i jedan i... ➡️ <b>Дубль новини №15</b>"
+            ]
+        },
+        "backlog": {
+            "total_size": 51,
+            "sources": {
+                "Slobodna dalmacija": 33,
+                "Zadarski list": 10,
+                "023": 8
             }
         },
         "published": {
