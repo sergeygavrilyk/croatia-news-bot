@@ -1,66 +1,5 @@
 [
     {
-        "timestamp": "2026-10-05 12:01:06",
-        "execution_time": 373.8,
-        "funnel": {
-            "scraped_total": 35,
-            "scraped_by_source": {
-                "023": 10,
-                "Slobodna dalmacija": 15,
-                "Zadarski list": 10
-            },
-            "already_seen": 5,
-            "rejected_by_keywords": 3,
-            "duplicates_removed_by_ai": 20,
-            "rejection_reasons_list": [
-                "• U Viškovu tečaj pripreme trudnica za por... ➡️ <b>Побут чужого міста</b>",
-                "• Vlasnica (40) dubrovačkog trgovačkog dru... ➡️ <b>Побут чужого міста</b>",
-                "• Dom zdravlja Delnice dobiva milijun eura... ➡️ <b>Побут чужого міста</b>",
-                "• Mlade nade TKD Plovanija nižu uspjehe; S... ➡️ <b>Спорт</b>",
-                "• Udruga Rina Mašera uspješna na 4. Međuna... ➡️ <b>Спорт</b>",
-                "• Živo Blato slavi 30 godina postojanja u ... ➡️ <b>Шоу-бізнес</b>",
-                "• Stručnjak otkriva koji znak na mobitelu ... ➡️ <b>Світовий шум</b>",
-                "• Obilježena 23. obljetnica otkrivanja spo... ➡️ <b>Історія</b>",
-                "• Zadarski plivači briljirali u Sarajevu; ... ➡️ <b>Спорт</b>",
-                "• Prvi korak prema novom Šubićevcu: Šibeni... ➡️ <b>Побут чужого міста</b>",
-                "• Započeo je Dječji tjedan u Gospiću... ➡️ <b>Побут чужого міста</b>",
-                "• Dolazi li kraj besplatne vožnje romobili... ➡️ <b>Світовий шум</b>",
-                "• LP Rock sprema glazbeno druženje na Teni... ➡️ <b>Побут чужого міста</b>",
-                "• U ovom hrvatskom gradu otkazan koncert B... ➡️ <b>Шоу-бізнес</b>",
-                "• Franković o situaciji u Zagrebu: Sve što... ➡️ <b>Побут чужого міста</b>",
-                "• Fužine, Lič i Vrata top destinacije ovog... ➡️ <b>Побут чужого міста</b>",
-                "• Sedam grešaka s bojlerom koje vam diže r... ➡️ <b>Світовий шум</b>",
-                "• Započeo Dječji tjedan u Gospiću... ➡️ <b>Дублікат</b>",
-                "• U Dubrovniku počeo međunarodni seminar z... ➡️ <b>Побут чужого міста</b>",
-                "• Još jače povezivanje regija iz Češke i H... ➡️ <b>Побут чужого міста</b>"
-            ]
-        },
-        "backlog": {
-            "total_size": 57,
-            "sources": {
-                "023": 15,
-                "Slobodna dalmacija": 33,
-                "Zadarski list": 9
-            }
-        },
-        "published": {
-            "total": 3,
-            "ukraine_priority": 0,
-            "with_images": 1,
-            "text_only": 2,
-            "sources": {
-                "023": 2,
-                "Zadarski list": 1
-            }
-        },
-        "models_used": {
-            "gemini-3.5-flash-lite": 1,
-            "gemini-3.5-flash": 0
-        },
-        "errors_count": 0,
-        "gemini_retries": 0
-    },
-    {
         "timestamp": "2026-10-05 13:01:08",
         "execution_time": 278.9,
         "funnel": {
@@ -5928,6 +5867,65 @@
             "sources": {
                 "023": 1,
                 "Slobodna dalmacija": 2
+            }
+        },
+        "models_used": {
+            "gemini-3.5-flash-lite": 2,
+            "gemini-3.6-flash": 0
+        },
+        "errors_count": 0,
+        "gemini_retries": 0
+    },
+    {
+        "timestamp": "2026-10-14 13:01:07",
+        "execution_time": 172.5,
+        "funnel": {
+            "scraped_total": 35,
+            "scraped_by_source": {
+                "023": 10,
+                "Slobodna dalmacija": 15,
+                "Zadarski list": 10
+            },
+            "already_seen": 5,
+            "rejected_by_keywords": 9,
+            "duplicates_removed_by_ai": 18,
+            "rejection_reasons_list": [
+                "• Nautički spektakl u Biogradu: na sajam s... ➡️ <b>Локальна туристична подія в іншому місті</b>",
+                "• Koliko doista trebamo spavati? Spavanje ... ➡️ <b>Світовий шум: поради щодо здоров'я та сну</b>",
+                "• Tko prijavi njemu pola kazne: Rijeka uvo... ➡️ <b>Побут чужого міста (Рієка)</b>",
+                "• U četvrtak tri kruzera u Gružu i jedan i... ➡️ <b>Побут чужого міста (Дубровник)</b>",
+                "• Hakeri napali hladnjake u francuskim trg... ➡️ <b>Геоблок: події у Франції, що не стосуються українців</b>",
+                "• Hotel Jadran ponovno otvoren, to je prvi... ➡️ <b>Побут чужого міста (Рієка)</b>",
+                "• Idete automobilom izvan Hrvatske? Evo u ... ➡️ <b>Загальна юридична порада без прив'язки до Задара чи українців</b>",
+                "• Umrla i peta žrtva omiškog požara, od lj... ➡️ <b>Побут та кримінал іншого міста (Спліт/Оміш)</b>",
+                "• Kod srbijanskog kamiondžije otkriveno vi... ➡️ <b>Зовнішній кримінал, не пов'язаний із Задаром чи біженцями</b>",
+                "• ALARM ZA VODU U LICI Opasnih kemikalija ... ➡️ <b>Побут іншого регіону (Лика)</b>",
+                "• Uskok pokrenuo istragu protiv Šimunića z... ➡️ <b>Політичний скандал в іншому місті (Орославлє)</b>",
+                "• Policija objavila rat električnim romobi... ➡️ <b>Загальнонаціональна новина без пріоритету для Задара</b>",
+                "• Potpora za svako novorođeno dijete u Hrv... ➡️ <b>Загальнонаціональна економічна новина без специфіки Задара</b>",
+                "• Knin oborio rekord: policija ispisala 15... ➡️ <b>Побут іншого міста (Книн)</b>",
+                "• Ako vam se soba sporo zagrijava, problem... ➡️ <b>Світовий шум: побутові поради</b>",
+                "• Ružić: Pregovori sa sindikatima javnih i... ➡️ <b>Загальнонаціональні переговори в Загребі</b>",
+                "• Bivši šef Hrvatskih cesta Josip Škorić ć... ➡️ <b>Загальнонаціональна корупційна справа</b>",
+                "• Gradonačelnik o situaciji na Pilama: Ube... ➡️ <b>Побут чужого міста (Дубровник)</b>"
+            ]
+        },
+        "backlog": {
+            "total_size": 51,
+            "sources": {
+                "Zadarski list": 11,
+                "023": 10,
+                "Slobodna dalmacija": 30
+            }
+        },
+        "published": {
+            "total": 3,
+            "ukraine_priority": 0,
+            "with_images": 2,
+            "text_only": 1,
+            "sources": {
+                "Slobodna dalmacija": 2,
+                "023": 1
             }
         },
         "models_used": {
