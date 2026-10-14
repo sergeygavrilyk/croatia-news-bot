@@ -1,69 +1,5 @@
 [
     {
-        "timestamp": "2026-10-05 16:01:04",
-        "execution_time": 168.5,
-        "funnel": {
-            "scraped_total": 35,
-            "scraped_by_source": {
-                "023": 10,
-                "Slobodna dalmacija": 15,
-                "Zadarski list": 10
-            },
-            "already_seen": 11,
-            "rejected_by_keywords": 5,
-            "duplicates_removed_by_ai": 22,
-            "rejection_reasons_list": [
-                "• Branitelji iz Sisačko-moslavače županije... ➡️ <b>Побут інших міст</b>",
-                "• Gastroenterolog s Harvarda otkrio sedam ... ➡️ <b>Світовий шум та лайфстайл</b>",
-                "• Što ste po nacionalnosti? Evo što su nov... ➡️ <b>Світовий шум та лайфстайл</b>",
-                "• Francuska: Tinejdžeru eksplodirala šok-g... ➡️ <b>Світовий шум та лайфстайл</b>",
-                "• Danska studija: premala tjelesna težina ... ➡️ <b>Світовий шум та лайфстайл</b>",
-                "• Plaža u Orebiću podbacila u najnovijem i... ➡️ <b>Побут інших міст</b>",
-                "• Panika u Splitu: Uhićen putnik koji je r... ➡️ <b>Побут інших міст</b>",
-                "• Laborantica preminula od sumnje na plućn... ➡️ <b>Світовий шум та лайфстайл</b>",
-                "• Drama u splitskoj zračnoj luci; zrakoplo... ➡️ <b>Дублікат</b>",
-                "• Arbunada u Malom Lošinju: Cvitković i Kr... ➡️ <b>Спорт</b>",
-                "• Mlade nade TKD Plovanija nižu uspjehe; S... ➡️ <b>Спорт</b>",
-                "• ‘Ja gradonačelnik?! Ma nema šanse!‘: šib... ➡️ <b>Побут інших міст</b>",
-                "• TZ Kvarnera pokreće Kvarner Honors. Otvo... ➡️ <b>Побут інших міст</b>",
-                "• Stručnjak otkriva koji znak na mobitelu ... ➡️ <b>Світовий шум та лайфстайл</b>",
-                "• Dubrovačka Hitna dobila osam novih vozil... ➡️ <b>Побут інших міст</b>",
-                "• Energija potaknula proizvođačke cijene u... ➡️ <b>Вже є в історії</b>",
-                "• Dubrovačka glumica zajedno sa kćeri Lolo... ➡️ <b>Світовий шум та лайфстайл</b>",
-                "• Evo što sve donosi Dječji tjedan u Crikv... ➡️ <b>Побут інших міст</b>",
-                "• Toni, Stijepo, Danijel, Nikola, Ivan i D... ➡️ <b>Побут інших міст</b>",
-                "• Strava u Zadru: Mladić nožem ubio 73-god... ➡️ <b>Дублікат</b>",
-                "• U Dubrovniku se održavaju Dani mađarske ... ➡️ <b>Побут інших міст</b>",
-                "• Izbori u BiH pokazali jasnu podjelu na d... ➡️ <b>Світовий шум та лайфстайл</b>"
-            ]
-        },
-        "backlog": {
-            "total_size": 48,
-            "sources": {
-                "Slobodna dalmacija": 31,
-                "Zadarski list": 11,
-                "023": 6
-            }
-        },
-        "published": {
-            "total": 3,
-            "ukraine_priority": 0,
-            "with_images": 2,
-            "text_only": 1,
-            "sources": {
-                "Zadarski list": 1,
-                "023": 1,
-                "Slobodna dalmacija": 1
-            }
-        },
-        "models_used": {
-            "gemini-3.5-flash-lite": 1,
-            "gemini-3.5-flash": 0
-        },
-        "errors_count": 0,
-        "gemini_retries": 0
-    },
-    {
         "timestamp": "2026-10-05 19:06:06",
         "execution_time": 160.6,
         "funnel": {
@@ -5937,6 +5873,69 @@
         },
         "models_used": {
             "gemini-3.5-flash-lite": 2,
+            "gemini-3.6-flash": 0
+        },
+        "errors_count": 0,
+        "gemini_retries": 0
+    },
+    {
+        "timestamp": "2026-10-14 19:01:07",
+        "execution_time": 14.9,
+        "funnel": {
+            "scraped_total": 35,
+            "scraped_by_source": {
+                "023": 10,
+                "Slobodna dalmacija": 15,
+                "Zadarski list": 10
+            },
+            "already_seen": 5,
+            "rejected_by_keywords": 2,
+            "duplicates_removed_by_ai": 25,
+            "rejection_reasons_list": [
+                "• Zelenskij: Bilo je ‘bolno’ kada je Trump... ➡️ <b>Геоблок: міжнародні політичні заяви, які безпосередньо не стосуються українських біженців у Хорватії.</b>",
+                "• Prvi mrazevi prijete sadnicama i biljkam... ➡️ <b>Світовий шум: поради з догляду за рослинами, відсутність прив'язки до важливих новин регіону.</b>",
+                "• Ovo baš nitko nije očekivao, ‘Englezi‘ i... ➡️ <b>Світовий шум: загальний огляд довгострокового прогнозу погоди в регіоні без екстрених попереджень.</b>",
+                "• Odbor za poljoprivredu: Hrana u Gospiću ... ➡️ <b>Побут чужих міст: події в місті Госпич, які не стосуються Задара чи національного рівня.</b>",
+                "• “Stop This Shit”: Aktivisti na krovovima... ➡️ <b>Побут чужих міст: екологічний протест на фермі за межами Задара.</b>",
+                "• Antonio Plazibat i Martina Dulčić vjenča... ➡️ <b>Спорт: новина про хорватського спортсмена та його приватне життя.</b>",
+                "• Petry: Troškovi sanacije nezakonito odlo... ➡️ <b>Побут чужих міст: проблеми з відходами та заяви посадовців у Госпичі.</b>",
+                "• Apple predstavio HomeView, kućno središt... ➡️ <b>Світовий шум: презентація нових технологічних гаджетів.</b>",
+                "• Požar na Jakljanu proširio se zbog jake ... ➡️ <b>Побут чужих міст: пожежа на острові Яклян у Дубровницько-Неретванській жупанії.</b>",
+                "• Nova radionica u Razvojnom centru Ličko-... ➡️ <b>Побут чужих міст: локальна бізнес-воркшоп у Лицько-Сенській жупанії.</b>",
+                "• Moneymaxxing osvaja mlade: više zaraditi... ➡️ <b>Світовий шум: фінансові поради та тренди для молоді.</b>",
+                "• Hrvatsko planinarsko društvo Sniježnica ... ➡️ <b>Побут чужих міст: локальний дитячий похід у Дубровницькому регіоні.</b>",
+                "• Mića Marunada Dječjeg vrtića Lovran: Pri... ➡️ <b>Побут чужих міст: дитячий захід у місті Ловран.</b>",
+                "• Koliko doista trebamo spavati? Spavanje ... ➡️ <b>Світовий шум: медичне дослідження про сон із наукового журналу.</b>",
+                "• Gordana Buljan Flander u Ogranku Lapad o... ➡️ <b>Побут чужих міст: лекція про виховання в місті Дубровник.</b>",
+                "• Za potpredsjednika Sabora predložen Armi... ➡️ <b>Побут чужих міст: призначення у Парламенті та згадка про страйк у Загребі.</b>",
+                "• Hakeri napali hladnjake u francuskim trg... ➡️ <b>Світовий шум: кібератака на холодильники у Франції та коментар експерта.</b>",
+                "• Radi se u Župi, gradu i u Dubrovačkom pr... ➡️ <b>Побут чужих міст: планове відключення води у місті Дубровник та околицях.</b>",
+                "• Dvadesetpet vatrogasaca ostaje na otoku ... ➡️ <b>Дубль: повторення новини про пожежу на острові Яклян (ідентична до ID 8).</b>",
+                "• Idete automobilom izvan Hrvatske? Evo u ... ➡️ <b>Світовий шум: загальні правила дорожнього руху за кордоном для автовласників.</b>",
+                "• Netko je profesoricama TUŠ-a ključem izg... ➡️ <b>Побут чужих міст: дрібний кримінал і пошкодження авто в Дубровнику.</b>",
+                "• U Ministarstvu kulture i medija imenovan... ➡️ <b>Геоблок: внутрішні кадрові призначення в міністерстві на національному рівні без прямого впливу на життя діаспори чи біженців.</b>",
+                "• Drama na Mljetu, jedrilica se nasukala t... ➡️ <b>Побут чужих міст: інцидент на воді біля острова Млет.</b>",
+                "• Hrvatska pod svaku cijenu brani kohezijs... ➡️ <b>Геоблок: європейська політика та бюджети регіонів на рівні ЄС.</b>",
+                "• Kod Pomene se nasukala jedrilica, jaki u... ➡️ <b>Дубль: повторення новини про наскуванні єдериці на Млеті (ідентична до ID 22).</b>"
+            ]
+        },
+        "backlog": {
+            "total_size": 46,
+            "sources": {
+                "Slobodna dalmacija": 29,
+                "023": 7,
+                "Zadarski list": 10
+            }
+        },
+        "published": {
+            "total": 0,
+            "ukraine_priority": 0,
+            "with_images": 0,
+            "text_only": 0,
+            "sources": {}
+        },
+        "models_used": {
+            "gemini-3.5-flash-lite": 1,
             "gemini-3.6-flash": 0
         },
         "errors_count": 0,
