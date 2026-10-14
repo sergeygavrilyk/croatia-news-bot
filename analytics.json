@@ -1,66 +1,5 @@
 [
     {
-        "timestamp": "2026-10-05 15:01:12",
-        "execution_time": 214.7,
-        "funnel": {
-            "scraped_total": 35,
-            "scraped_by_source": {
-                "023": 10,
-                "Slobodna dalmacija": 15,
-                "Zadarski list": 10
-            },
-            "already_seen": 8,
-            "rejected_by_keywords": 2,
-            "duplicates_removed_by_ai": 20,
-            "rejection_reasons_list": [
-                "• Plaža u Orebiću podbacila u najnovijem i... ➡️ <b>Побут Дубровы</b>",
-                "• Danska studija: premala tjelesna težina ... ➡️ <b>Світовий шум</b>",
-                "• Obrtnicima dodijeljeni ugovori za naukov... ➡️ <b>Національна економіка без прямого фокусу</b>",
-                "• Laborantica preminula od sumnje na plućn... ➡️ <b>Світовий шум</b>",
-                "• ‘Ja gradonačelnik?! Ma nema šanse!‘: šib... ➡️ <b>Побут Шибеника</b>",
-                "• Počeo odvoz otpada iz Gospića u istarska... ➡️ <b>Побут Госпича</b>",
-                "• Mlade nade TKD Plovanija nižu uspjehe; S... ➡️ <b>Спорт</b>",
-                "• Dubrovačka Hitna dobila osam novih vozil... ➡️ <b>Побут Дубровы</b>",
-                "• Autotrolej uveo dodatne polaske za učeni... ➡️ <b>Побут Рієки</b>",
-                "• Stručnjak otkriva koji znak na mobitelu ... ➡️ <b>Світовий шум</b>",
-                "• Kakvoća mora na plažama PGŽ i dalje na v... ➡️ <b>Побут Рієки</b>",
-                "• Zadarski plivači briljirali u Sarajevu; ... ➡️ <b>Спорт</b>",
-                "• Turnić dva dana bez tople vode... ➡️ <b>Побут Рієки</b>",
-                "• Dubrovačka glumica zajedno sa kćeri Lolo... ➡️ <b>Світ шоу-бізнесу</b>",
-                "• Počeo Mentalfest: Predstavljen pilot-pro... ➡️ <b>Побут Рієки</b>",
-                "• Sigurnost na prvom mjestu; Skakaonica na... ➡️ <b>Спорт</b>",
-                "• Toni, Stijepo, Danijel, Nikola, Ivan i D... ➡️ <b>Побут Дубровы</b>",
-                "• Prvi delnički gimnazijski maturanti pros... ➡️ <b>Побут Делнице</b>",
-                "• Novi filmski spektakl u Zadru; Večeras u... ➡️ <b>Анонс фільму</b>",
-                "• U Dubrovniku se održavaju Dani mađarske ... ➡️ <b>Побут Дубровы</b>"
-            ]
-        },
-        "backlog": {
-            "total_size": 51,
-            "sources": {
-                "Zadarski list": 12,
-                "Slobodna dalmacija": 31,
-                "023": 8
-            }
-        },
-        "published": {
-            "total": 2,
-            "ukraine_priority": 0,
-            "with_images": 2,
-            "text_only": 0,
-            "sources": {
-                "Zadarski list": 1,
-                "Slobodna dalmacija": 1
-            }
-        },
-        "models_used": {
-            "gemini-3.5-flash-lite": 1,
-            "gemini-3.5-flash": 0
-        },
-        "errors_count": 1,
-        "gemini_retries": 0
-    },
-    {
         "timestamp": "2026-10-05 16:01:04",
         "execution_time": 168.5,
         "funnel": {
@@ -5931,6 +5870,69 @@
             "sources": {
                 "Slobodna dalmacija": 2,
                 "023": 1
+            }
+        },
+        "models_used": {
+            "gemini-3.5-flash-lite": 2,
+            "gemini-3.6-flash": 0
+        },
+        "errors_count": 0,
+        "gemini_retries": 0
+    },
+    {
+        "timestamp": "2026-10-14 16:01:16",
+        "execution_time": 167.7,
+        "funnel": {
+            "scraped_total": 35,
+            "scraped_by_source": {
+                "023": 10,
+                "Slobodna dalmacija": 15,
+                "Zadarski list": 10
+            },
+            "already_seen": 11,
+            "rejected_by_keywords": 5,
+            "duplicates_removed_by_ai": 22,
+            "rejection_reasons_list": [
+                "• Drama na Mljetu, jedrilica se nasukala t... ➡️ <b>Морська пригода на Мльєті не стосується Задара чи загальнонаціонального рівня</b>",
+                "• Moneymaxxing osvaja mlade: više zaraditi... ➡️ <b>Порада для молоді та загальний світовий/інформаційний шум</b>",
+                "• Uručene pohvalnice, zahvalnice i darovi ... ➡️ <b>Побут чужого міста (Чабар)</b>",
+                "• Kod Pomene se nasukala jedrilica, jaki u... ➡️ <b>Дубль новини ID 0 про інцидент з човном на Мльєті</b>",
+                "• Koliko doista trebamo spavati? Spavanje ... ➡️ <b>Світовий шум та порада щодо здоров'я та сну</b>",
+                "• Program RInovatoRI ove školske godine u ... ➡️ <b>Побут іншого міста (Рієка)</b>",
+                "• Preminula poznata dubrovačka glazbenica ... ➡️ <b>Регіональна новина іншого міста (Дубровник)</b>",
+                "• Hakeri napali hladnjake u francuskim trg... ➡️ <b>Загальна кібербезпека та міжнародні події, що не стосуються українців чи Задара</b>",
+                "• U Plemenitašu obilježena trideset i peta... ➡️ <b>Побут іншого населеного пункту</b>",
+                "• Preminula dubrovačka glazbenica Loris Gr... ➡️ <b>Дубль новини ID 6 про смерть музикантки в Дубровнику</b>",
+                "• Idete automobilom izvan Hrvatske? Evo u ... ➡️ <b>Загальна автомобільна порада, що не є ексклюзивним пріоритетом Задара чи загальнонаціональною кризою</b>",
+                "• U petak u Senju otvara se izložba starih... ➡️ <b>Побут іншого міста (Сень)</b>",
+                "• Gusti dim od požara na Jakljanu vidi se ... ➡️ <b>Пожежа на Яклжані (Дубровник), не стосується Задара</b>",
+                "• ALARM ZA VODU U LICI Opasnih kemikalija ... ➡️ <b>Якість води в Ліці, не стосується Задара чи національного рівня</b>",
+                "• Župan i gradonačelnica ovaj su put potpu... ➡️ <b>Побут та інфраструктура Рієки</b>",
+                "• Očekuju se ogromne gužve: u Dubrovnik u ... ➡️ <b>Локальний туризм та рух круїзів у Дубровнику</b>",
+                "• Ako vam se soba sporo zagrijava, problem... ➡️ <b>Побут та поради про опалення будинку</b>",
+                "• Obilježava se 50 godina Araličine donaci... ➡️ <b>Культурна подія в іншому місті (Оточац)</b>",
+                "• U četvrtak tri kruzera u Gružu i jedan i... ➡️ <b>Дубль новини ID 15 про круїзи в Дубровнику</b>",
+                "• U Istri pronađene kosti dinosaura ispod ... ➡️ <b>Археологічна знахідка в Істрії, не стосується Задара чи національної політики/економіки</b>",
+                "• Habijan: ‘Treba utvrditi tko je od nadle... ➡️ <b>Справа з відходами в Госпичі, не стосується Задара чи національної кризи</b>",
+                "• Knin oborio rekord: policija ispisala 15... ➡️ <b>Локальна статистика штрафів у Кніні</b>"
+            ]
+        },
+        "backlog": {
+            "total_size": 46,
+            "sources": {
+                "Slobodna dalmacija": 31,
+                "Zadarski list": 8,
+                "023": 7
+            }
+        },
+        "published": {
+            "total": 3,
+            "ukraine_priority": 0,
+            "with_images": 2,
+            "text_only": 1,
+            "sources": {
+                "023": 1,
+                "Slobodna dalmacija": 2
             }
         },
         "models_used": {
