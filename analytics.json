@@ -1,57 +1,5 @@
 [
     {
-        "timestamp": "2026-10-06 13:01:06",
-        "execution_time": 160.8,
-        "funnel": {
-            "scraped_total": 35,
-            "scraped_by_source": {
-                "023": 10,
-                "Slobodna dalmacija": 15,
-                "Zadarski list": 10
-            },
-            "already_seen": 10,
-            "rejected_by_keywords": 1,
-            "duplicates_removed_by_ai": 10,
-            "rejection_reasons_list": [
-                "• Eurozastupnici podržali novi EU-ov progr... ➡️ <b>Світовий шум</b>",
-                "• Sofija Rozić nakon 25 godina rada u Dubr... ➡️ <b>Побут чужих міст</b>",
-                "• “Srce riječke povijesti”: Izložba o Guve... ➡️ <b>Побут чужих міст</b>",
-                "• Zeleni sjaj podrške diljem zemlje; Pogle... ➡️ <b>Світовий шум та лайфстайл</b>",
-                "• Investicija od 650 tisuća eura: Narodna ... ➡️ <b>Побут чужих міст</b>",
-                "• Križan Dinko Vučak krv je dao 100 puta: ... ➡️ <b>Побут чужих міст</b>",
-                "• Kod ‘Verity‘ su i fatalna privlačnost i ... ➡️ <b>Світовий шум та лайфстайл</b>",
-                "• Hutisti tvrde da i dalje drže sva nedavn... ➡️ <b>Світовий шум</b>",
-                "• Pezo potpisao ugovor o financijskoj potp... ➡️ <b>Побут чужих міст</b>",
-                "• Psihodelični kvintet Altin Gün održat će... ➡️ <b>Світовий шум та лайфстайл</b>"
-            ]
-        },
-        "backlog": {
-            "total_size": 54,
-            "sources": {
-                "Zadarski list": 17,
-                "Slobodna dalmacija": 34,
-                "023": 3
-            }
-        },
-        "published": {
-            "total": 3,
-            "ukraine_priority": 0,
-            "with_images": 2,
-            "text_only": 1,
-            "sources": {
-                "023": 1,
-                "Slobodna dalmacija": 1,
-                "Zadarski list": 1
-            }
-        },
-        "models_used": {
-            "gemini-3.5-flash-lite": 1,
-            "gemini-3.5-flash": 0
-        },
-        "errors_count": 0,
-        "gemini_retries": 0
-    },
-    {
         "timestamp": "2026-10-06 14:01:08",
         "execution_time": 255.1,
         "funnel": {
@@ -5942,6 +5890,67 @@
             "text_only": 0,
             "sources": {
                 "Zadarski list": 1
+            }
+        },
+        "models_used": {
+            "gemini-3.5-flash-lite": 2,
+            "gemini-3.6-flash": 0
+        },
+        "errors_count": 0,
+        "gemini_retries": 0
+    },
+    {
+        "timestamp": "2026-10-15 14:01:13",
+        "execution_time": 197.3,
+        "funnel": {
+            "scraped_total": 35,
+            "scraped_by_source": {
+                "023": 10,
+                "Slobodna dalmacija": 15,
+                "Zadarski list": 10
+            },
+            "already_seen": 8,
+            "rejected_by_keywords": 2,
+            "duplicates_removed_by_ai": 20,
+            "rejection_reasons_list": [
+                "• ‘Pogodi da zazvoni!‘: Sugrađani zaigrali... ➡️ <b>Стоп-тема: подія не в Задарі, а в іншій частині Хорватії (Дубровник), не стосується України.</b>",
+                "• Ove subote u Rabu Memorijalni kup u podv... ➡️ <b>Стоп-тема: спорт та події за межами Задара.</b>",
+                "• Njemački list o Dalmaciji: ‘Sve je bilo ... ➡️ <b>Стоп-тема: суб'єктивні враження іноземних ЗМІ про туристичний сезон, дубль загального характеру.</b>",
+                "• Krankšvester ovu subotu premijerno nastu... ➡️ <b>Стоп-тема: розважальний концерт за межами Задара.</b>",
+                "• Najudaljeniji poznati brzi radijski blje... ➡️ <b>Стоп-тема: світовий шум, абстрактна наука.</b>",
+                "• Tražite posao? I Šibensko-kninska župani... ➡️ <b>Стоп-тема: побут та вакансії чужих міст (Шибеник).</b>",
+                "• Britanski liječnik predlaže test za kod ... ➡️ <b>Стоп-тема: світовий шум, поради та тести.</b>",
+                "• Dubrovnik kao svjetlosna pozornica: sutr... ➡️ <b>Стоп-тема: культурна подія та побут іншого міста (Дубровник).</b>",
+                "• Škola za sve – ali jesu li i mogućnosti ... ➡️ <b>Стоп-тема: подія в іншому місті (Рієка).</b>",
+                "• Drama u Zagrebu; Župnik se povlači iz sl... ➡️ <b>Стоп-тема: кримінал та події в Загребі, які не стосуються Задара чи національного рівня загальної ваги.</b>",
+                "• Grad mora donijeti novu odluku o zabrani... ➡️ <b>Стоп-тема: локальні будівельні правила іншого міста (Дубровник).</b>",
+                "• Đakovčanin ostao bez 31.500 eura; prevar... ➡️ <b>Стоп-тема: кримінал та шахрайство в іншій жупанії.</b>",
+                "• Od Pila do Peskarije povremeno bez javne... ➡️ <b>Стоп-тема: дубль новини про фестиваль у Дубровнику (ідентично новині №9).</b>",
+                "• Promjena u sastavu Gradskog vijeća Grada... ➡️ <b>Стоп-тема: локальна політика іншого міста (Раб).</b>",
+                "• S bakrenom kacigom na dno mora: Kristija... ➡️ <b>Стоп-тема: спортивно-екологічний рекорд в іншій жупанії.</b>",
+                "• Bivša direktorica Lenca pod istragom DOR... ➡️ <b>Стоп-тема: локальна кадрова подія в Рієці.</b>",
+                "• Bježao bez vozačke, pa uhvaćen s drogom:... ➡️ <b>Стоп-тема: локальний дорожній кримінал у Лиці, не стосується Задара.</b>",
+                "• Novi nakladnik N1 dobio dopuštenje za te... ➡️ <b>Подія загальнонаціонального рівня в медіа, але поступається пріоритетним темам; дублює загальний медіапростір, проте не є критичною кризою чи законом.</b>",
+                "• Stanovnici Školjića najavili prosvjed zb... ➡️ <b>Стоп-тема: протести та комунальні проблеми в Рієці.</b>",
+                "• Zavirili smo u cjenike dalmatinskih mešt... ➡️ <b>Стоп-тема: роздуми про зарплати та старий страйк у Загребі.</b>"
+            ]
+        },
+        "backlog": {
+            "total_size": 54,
+            "sources": {
+                "Slobodna dalmacija": 29,
+                "Zadarski list": 21,
+                "023": 4
+            }
+        },
+        "published": {
+            "total": 3,
+            "ukraine_priority": 0,
+            "with_images": 2,
+            "text_only": 1,
+            "sources": {
+                "023": 1,
+                "Zadarski list": 2
             }
         },
         "models_used": {
