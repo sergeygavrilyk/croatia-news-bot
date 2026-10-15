@@ -1,64 +1,5 @@
 [
     {
-        "timestamp": "2026-10-05 19:06:06",
-        "execution_time": 160.6,
-        "funnel": {
-            "scraped_total": 35,
-            "scraped_by_source": {
-                "023": 10,
-                "Slobodna dalmacija": 15,
-                "Zadarski list": 10
-            },
-            "already_seen": 7,
-            "rejected_by_keywords": 2,
-            "duplicates_removed_by_ai": 18,
-            "rejection_reasons_list": [
-                "• Gastroenterolog s Harvarda otkrio sedam ... ➡️ <b>Світовий шум</b>",
-                "• Pezo uručio ključeve za osam novih vozil... ➡️ <b>Побут чужого міста</b>",
-                "• Zrakoplov Air Srbije konačno poletio iz ... ➡️ <b>Дублікат</b>",
-                "• Danska studija: premala tjelesna težina ... ➡️ <b>Світовий шум</b>",
-                "• Manje stresa, vedrija atmosfera: U TUŠ-u... ➡️ <b>Побут чужого міста</b>",
-                "• Četvrti Playbox Shorts donosi 21 hrvatsk... ➡️ <b>Світовий шум</b>",
-                "• Laborantica preminula od sumnje na plućn... ➡️ <b>Світовий шум</b>",
-                "• Predavanje Gordane Buljan Flander o izaz... ➡️ <b>Побут чужого міста</b>",
-                "• Ministarstvo znanosti, obrazovanja i mla... ➡️ <b>Побут чужого міста</b>",
-                "• Grada Rijeke ispratio 35 prosvjetnih dje... ➡️ <b>Побут чужого міста</b>",
-                "• Stručnjak otkriva koji znak na mobitelu ... ➡️ <b>Світовий шум</b>",
-                "• Što ste po nacionalnosti? Evo što su nov... ➡️ <b>Світовий шум</b>",
-                "• Na Platku guštalo 80 njuškica i njihovih... ➡️ <b>Побут чужого міста</b>",
-                "• Plaža u Orebiću podbacila u najnovijem i... ➡️ <b>Побут чужого міста</b>",
-                "• Beli pundejak se ne propušta; prijemom g... ➡️ <b>Побут чужого міста</b>",
-                "• Nije odnijela titulu, ali drniški kraj s... ➡️ <b>Побут чужого міста</b>",
-                "• ‘Ja gradonačelnik?! Ma nema šanse!‘: šib... ➡️ <b>Побут чужого міста</b>",
-                "• Od učitelja se očekuje sve više, a društ... ➡️ <b>Світовий шум</b>"
-            ]
-        },
-        "backlog": {
-            "total_size": 49,
-            "sources": {
-                "Slobodna dalmacija": 33,
-                "Zadarski list": 11,
-                "023": 5
-            }
-        },
-        "published": {
-            "total": 3,
-            "ukraine_priority": 0,
-            "with_images": 2,
-            "text_only": 1,
-            "sources": {
-                "Zadarski list": 2,
-                "023": 1
-            }
-        },
-        "models_used": {
-            "gemini-3.5-flash-lite": 1,
-            "gemini-3.5-flash": 0
-        },
-        "errors_count": 0,
-        "gemini_retries": 0
-    },
-    {
         "timestamp": "2026-10-06 07:01:04",
         "execution_time": 183.7,
         "funnel": {
@@ -5925,6 +5866,62 @@
                 "Slobodna dalmacija": 29,
                 "023": 7,
                 "Zadarski list": 10
+            }
+        },
+        "published": {
+            "total": 0,
+            "ukraine_priority": 0,
+            "with_images": 0,
+            "text_only": 0,
+            "sources": {}
+        },
+        "models_used": {
+            "gemini-3.5-flash-lite": 1,
+            "gemini-3.6-flash": 0
+        },
+        "errors_count": 0,
+        "gemini_retries": 0
+    },
+    {
+        "timestamp": "2026-10-15 07:01:07",
+        "execution_time": 14.5,
+        "funnel": {
+            "scraped_total": 35,
+            "scraped_by_source": {
+                "023": 10,
+                "Slobodna dalmacija": 15,
+                "Zadarski list": 10
+            },
+            "already_seen": 0,
+            "rejected_by_keywords": 1,
+            "duplicates_removed_by_ai": 18,
+            "rejection_reasons_list": [
+                "• Novi detalji s gradilišta na Višnjiku; O... ➡️ <b>Дубль існуючої історії у history (Novi olimpijski bazen poprima obrise...)</b>",
+                "• Vučić se opet žali: ‘Nijedna se država n... ➡️ <b>Політичний конфлікт між Сербією та Хорватією не стосується безпосередньо українських біженців чи Задара</b>",
+                "• Grad po mjeri čovjeka, ne i novčanika. K... ➡️ <b>Загальна оглядова стаття про ринок нерухомості без нагальної новини</b>",
+                "• Zvonko Kucelin, Željko Karavida i Petar ... ➡️ <b>Історична подія / меморіальний захід, що не є нагальною життєвою новиною для щоденного дайджесту</b>",
+                "• Plenković se prisjetio što je DP govorio... ➡️ <b>Загальнонаціональна внутрішньополітична дискусія</b>",
+                "• Cijene kvadrata u Dubrovniku rasle, ali ... ➡️ <b>Побут і нерухомість інших міст (Дубровник)</b>",
+                "• Privremena regulacija prometa; Pogledajt... ➡️ <b>Спортивна подія / велогонка</b>",
+                "• Studenac zatvara 79 trgovina, poznate su... ➡️ <b>Мережа супермаркетів та загальнонаціональна бізнес-тема без акценту на Задар</b>",
+                "• Neno Belan zasvirao u Roxyju za 40 godin... ➡️ <b>Культурна подія / концерти в Дубровнику</b>",
+                "• Proslavite 77. rođendan NP Paklenica; Be... ➡️ <b>Локальна святкова подія національного парку, не критична для повсякденного життя діаспори</b>",
+                "• Hrvatski znanstvenici otkrili mehanizam ... ➡️ <b>Світовий шум / абстрактна наука</b>",
+                "• Zadar i okolica u sunčanom nizu i do 22 ... ➡️ <b>Дубль або занадто загальний прогноз погоди порівняно з поточними даними</b>",
+                "• U nedjelju akcija izgona divljači i skup... ➡️ <b>Побут інших міст (ззалеждя Кралєвіци)</b>",
+                "• Rublje na radijatoru i prozor na kipu: p... ➡️ <b>Поради з побуту та догляду за житлом (світовий шум)</b>",
+                "• Rijekom se širi priča kako IKEA otvara r... ➡️ <b>Побут та чутки інших міст (Рієка)</b>",
+                "• Počinje uređenje sportsko-rekreacijske z... ➡️ <b>Ремонти та інфраструктура інших міст (Рієка)</b>",
+                "• Vatrogasni dom Mune poprima novi izgled,... ➡️ <b>Побут інших громад та міст (Матулі)</b>",
+                "• Slatka priča iz Opatije: Milenij Choco S... ➡️ <b>Реклама / промо-акція комерційного закладу в Опатії</b>"
+            ]
+        },
+        "backlog": {
+            "total_size": 18,
+            "sources": {
+                "023": 6,
+                "Slobodna dalmacija": 3,
+                "Zadarski list": 9
             }
         },
         "published": {
