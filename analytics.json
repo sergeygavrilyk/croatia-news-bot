@@ -1,67 +1,5 @@
 [
     {
-        "timestamp": "2026-10-06 15:01:04",
-        "execution_time": 261.0,
-        "funnel": {
-            "scraped_total": 35,
-            "scraped_by_source": {
-                "023": 10,
-                "Slobodna dalmacija": 15,
-                "Zadarski list": 10
-            },
-            "already_seen": 13,
-            "rejected_by_keywords": 1,
-            "duplicates_removed_by_ai": 21,
-            "rejection_reasons_list": [
-                "• Nije apsurdno nego skroz logično što je ... ➡️ <b>Побут чужого міста</b>",
-                "• HEP ODS-a planira uložiti 3,32 milijarde... ➡️ <b>Економіка національного рівня без критичного значення</b>",
-                "• Zagreb Film Festival objavio dio program... ➡️ <b>Побут чужого міста</b>",
-                "• Sve više mladih oboljelih od raka: znans... ➡️ <b>Світовий шум та лайфстайл</b>",
-                "• Dubrovnik ponovno u svjetskoj eliti, sad... ➡️ <b>Побут чужого міста</b>",
-                "• Plaće u PGŽ-u izgledaju puno bolje nego ... ➡️ <b>Побут чужого міста</b>",
-                "• Zeleni sjaj podrške diljem zemlje; Pogle... ➡️ <b>Світовий шум</b>",
-                "• Sofija Rozić nakon 25 godina rada u Dubr... ➡️ <b>Побут чужого міста</b>",
-                "• Masovni prosvjedi u Francuskoj. Škole bl... ➡️ <b>Світовий шум</b>",
-                "• Erste banka uspješno izdala obveznicu vr... ➡️ <b>Економіка національного рівня</b>",
-                "• Križan Dinko Vučak krv je dao 100 puta: ... ➡️ <b>Побут чужого міста</b>",
-                "• Ide li novi film Toma Cruisea prema jedn... ➡️ <b>Світовий шум та лайфстайл</b>",
-                "• Krenuo preko granice s 20.700 eura, a on... ➡️ <b>Загальна кримінальна замітка без регіонального пріоритету</b>",
-                "• Na suđenju Mlađanu čitane bilješke iz nj... ➡️ <b>Вже є в історії або несуттєве оновлення</b>",
-                "• Župa dubrovačka osigurala 150 eura po uč... ➡️ <b>Побут чужого міста</b>",
-                "• Stabilizacija prometa u europskoj malopr... ➡️ <b>Світовий шум</b>",
-                "• Kod ‘Verity‘ su i fatalna privlačnost i ... ➡️ <b>Світовий шум та лайфстайл</b>",
-                "• HZJZ: Voda u Ličko-senjskoj županiji te ... ➡️ <b>Побут чужого міста</b>",
-                "• Pezo potpisao ugovor o financijskoj potp... ➡️ <b>Побут чужого міста</b>",
-                "• Izglasalo Općinsko vijeće: 150 eura potp... ➡️ <b>Дублікат</b>",
-                "• Horvatinčiću odbijen kućni pritvor, osta... ➡️ <b>Побут чужого міста</b>"
-            ]
-        },
-        "backlog": {
-            "total_size": 47,
-            "sources": {
-                "Zadarski list": 16,
-                "Slobodna dalmacija": 28,
-                "023": 3
-            }
-        },
-        "published": {
-            "total": 2,
-            "ukraine_priority": 0,
-            "with_images": 1,
-            "text_only": 1,
-            "sources": {
-                "023": 1,
-                "Slobodna dalmacija": 1
-            }
-        },
-        "models_used": {
-            "gemini-3.5-flash-lite": 1,
-            "gemini-3.5-flash": 0
-        },
-        "errors_count": 1,
-        "gemini_retries": 0
-    },
-    {
         "timestamp": "2026-10-06 16:01:06",
         "execution_time": 205.3,
         "funnel": {
@@ -5949,6 +5887,69 @@
                 "Slobodna dalmacija": 30,
                 "Zadarski list": 18,
                 "023": 5
+            }
+        },
+        "published": {
+            "total": 0,
+            "ukraine_priority": 0,
+            "with_images": 0,
+            "text_only": 0,
+            "sources": {}
+        },
+        "models_used": {
+            "gemini-3.5-flash-lite": 1,
+            "gemini-3.6-flash": 0
+        },
+        "errors_count": 0,
+        "gemini_retries": 0
+    },
+    {
+        "timestamp": "2026-10-15 16:01:17",
+        "execution_time": 16.5,
+        "funnel": {
+            "scraped_total": 35,
+            "scraped_by_source": {
+                "023": 10,
+                "Slobodna dalmacija": 15,
+                "Zadarski list": 10
+            },
+            "already_seen": 24,
+            "rejected_by_keywords": 3,
+            "duplicates_removed_by_ai": 25,
+            "rejection_reasons_list": [
+                "• Caritas Biskupije Krk pokrenuo akciju “P... ➡️ <b>Інша локація (Крк), не стосується Задара чи українців</b>",
+                "• ‘Pogodi da zazvoni!‘: Sugrađani zaigrali... ➡️ <b>Побут іншого міста (Дубровник)</b>",
+                "• Dio prijedloga HOK-a uvažen u nacrtima p... ➡️ <b>Загальнонаціональна економічна новина без прямого впливу на діаспору</b>",
+                "• Zračna luka Ruđer Bošković premašila tri... ➡️ <b>Побут іншого міста (Дубровник)</b>",
+                "• Gripa se ove godine javila neuobičajeno ... ➡️ <b>Світовий шум та поради дієтологів</b>",
+                "• CE-ZA-R se povukao iz posla za 11 miliju... ➡️ <b>Кримінал та події в іншому місті (Госпич)</b>",
+                "• Zatvara se dio parkinga u Ulici Ivana Za... ➡️ <b>Побут іншого міста (Дубровник)</b>",
+                "• Pivac premium mesnica u Benkovcu zasjala... ➡️ <b>Переказ комерційної новини / дрібний побут</b>",
+                "• HND: Mlaka Plenkovićeva reakcija na srbi... ➡️ <b>Повторення та роздутий медійний шум навколо нотації із Сербією</b>",
+                "• Domaći bend C-strana ima novi singl. Pos... ➡️ <b>Світовий шум / реліз музичного гурту</b>",
+                "• Salata od crnog graha i kukuruza iz plav... ➡️ <b>Світовий шум / рецепти та поради</b>",
+                "• Domovinski pokret prijavio dvojicu Srba ... ➡️ <b>Дубль або несуттєве оновлення теми конфлікту на Пагу</b>",
+                "• Njemački list o Dalmaciji: ‘Sve je bilo ... ➡️ <b>Світовий шум / огляд німецького ЗМІ про туризм</b>",
+                "• Najudaljeniji poznati brzi radijski blje... ➡️ <b>Абстрактна наука (світовий шум)</b>",
+                "• Otvorena pruga kroz kolodvor Meja nakon ... ➡️ <b>Побут іншого міста (Рієка)</b>",
+                "• Tražite posao? I Šibensko-kninska župani... ➡️ <b>Побут іншого міста (Шибеник)</b>",
+                "• Britanski liječnik predlaže test za kod ... ➡️ <b>Світовий шум / медичні поради</b>",
+                "• Jadranka Hofmann ostaje predsjednica Dru... ➡️ <b>Побут іншого міста (Малі Лошинь)</b>",
+                "• Dubrovnik kao svjetlosna pozornica: sutr... ➡️ <b>Побут іншого міста (Дубровник)</b>",
+                "• Drama u Zagrebu; Župnik se povlači iz sl... ➡️ <b>Кримінал та побут іншого міста (Загреб)</b>",
+                "• Grlić Radman: Prosvjedna nota Srbije ‘bi... ➡️ <b>Дубль реакції МЗС на ноту</b>",
+                "• Grad mora donijeti novu odluku o zabrani... ➡️ <b>Побут іншого міста (Дубровник)</b>",
+                "• Opozivaju se Cokoc gumeni bomboni u obli... ➡️ <b>Загальнонаціональне дрібне відкликання товару без зв'язку із Задаром</b>",
+                "• Od Pila do Peskarije povremeno bez javne... ➡️ <b>Дубль новини про фестиваль у Дубровнику</b>",
+                "• Nenad Stazić o optužnici zbog “Pljuske”:... ➡️ <b>Загальнонаціональний незначний кримінал/політика</b>"
+            ]
+        },
+        "backlog": {
+            "total_size": 61,
+            "sources": {
+                "Slobodna dalmacija": 32,
+                "Zadarski list": 23,
+                "023": 6
             }
         },
         "published": {
