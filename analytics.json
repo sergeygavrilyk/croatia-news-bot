@@ -1,64 +1,5 @@
 [
     {
-        "timestamp": "2026-10-06 16:01:06",
-        "execution_time": 205.3,
-        "funnel": {
-            "scraped_total": 35,
-            "scraped_by_source": {
-                "023": 10,
-                "Slobodna dalmacija": 15,
-                "Zadarski list": 10
-            },
-            "already_seen": 13,
-            "rejected_by_keywords": 2,
-            "duplicates_removed_by_ai": 19,
-            "rejection_reasons_list": [
-                "• Bounty torta: recept za slasticu s četir... ➡️ <b>Світовий шум та лайфстайл</b>",
-                "• Dalmatinci stalno kukaju, neki postaju n... ➡️ <b>Світовий шум та лайфстайл</b>",
-                "• Sve više mladih oboljelih od raka: znans... ➡️ <b>Світовий шум та лайфстайл</b>",
-                "• Nije apsurdno nego skroz logično što je ... ➡️ <b>Побут чужих міст</b>",
-                "• Zeleni sjaj podrške diljem zemlje; Pogle... ➡️ <b>Світовий шум та лайфстайл</b>",
-                "• Policija završila istragu u slučaju uboj... ➡️ <b>Дублікат</b>",
-                "• Dubrovnik ponovno u svjetskoj eliti, sad... ➡️ <b>Побут чужих міст</b>",
-                "• Grlić Radman: Zabrinuti smo zbog ugrožav... ➡️ <b>Світовий шум та лайфстайл</b>",
-                "• Sofija Rozić nakon 25 godina rada u Dubr... ➡️ <b>Побут чужих міст</b>",
-                "• Slavni “Cristo Ressussitato”: Štorija o ... ➡️ <b>Побут чужих міст</b>",
-                "• Križan Dinko Vučak krv je dao 100 puta: ... ➡️ <b>Побут чужих міст</b>",
-                "• Krenuo preko granice s 20.700 eura, a on... ➡️ <b>Світовий шум та лайфстайл</b>",
-                "• Župa dubrovačka osigurala 150 eura po uč... ➡️ <b>Побут чужих міст</b>",
-                "• U Lokvama predstavljena knjiga “Sjećanje... ➡️ <b>Побут чужих міст</b>",
-                "• Kod ‘Verity‘ su i fatalna privlačnost i ... ➡️ <b>Світовий шум та лайфстайл</b>",
-                "• Pred nama je Marunada – fešta koja namam... ➡️ <b>Побут чужих міст</b>",
-                "• Što to pliva u moru kod Dubrovnika? Znan... ➡️ <b>Побут чужих міст</b>",
-                "• Apsurd kod Šibenika: helidrom na Zlarinu... ➡️ <b>Побут чужих міст</b>",
-                "• Na natječaj za stadion Maksimir žalili s... ➡️ <b>Побут чужих міст</b>"
-            ]
-        },
-        "backlog": {
-            "total_size": 44,
-            "sources": {
-                "Slobodna dalmacija": 26,
-                "Zadarski list": 15,
-                "023": 3
-            }
-        },
-        "published": {
-            "total": 2,
-            "ukraine_priority": 0,
-            "with_images": 2,
-            "text_only": 0,
-            "sources": {
-                "Zadarski list": 2
-            }
-        },
-        "models_used": {
-            "gemini-3.5-flash-lite": 1,
-            "gemini-3.5-flash": 0
-        },
-        "errors_count": 1,
-        "gemini_retries": 0
-    },
-    {
         "timestamp": "2026-10-06 19:01:05",
         "execution_time": 7.9,
         "funnel": {
@@ -5961,6 +5902,70 @@
         },
         "models_used": {
             "gemini-3.5-flash-lite": 1,
+            "gemini-3.6-flash": 0
+        },
+        "errors_count": 0,
+        "gemini_retries": 0
+    },
+    {
+        "timestamp": "2026-10-15 19:01:09",
+        "execution_time": 131.5,
+        "funnel": {
+            "scraped_total": 35,
+            "scraped_by_source": {
+                "023": 10,
+                "Slobodna dalmacija": 15,
+                "Zadarski list": 10
+            },
+            "already_seen": 16,
+            "rejected_by_keywords": 4,
+            "duplicates_removed_by_ai": 23,
+            "rejection_reasons_list": [
+                "• Caritas Biskupije Krk pokrenuo akciju “P... ➡️ <b>Побут чужого міста за межами Задара</b>",
+                "• ‘Pogodi da zazvoni!‘: Sugrađani zaigrali... ➡️ <b>Побут чужого міста за межами Задара</b>",
+                "• U ispostavi Gospić ponovno pao broj neza... ➡️ <b>Побут чужого міста за межами Задара</b>",
+                "• WhatsApp testira zakazivanje poruka, a i... ➡️ <b>Світовий шум та технології</b>",
+                "• Fran Poštenjak, magistar urbanog šumarst... ➡️ <b>Побут чужого міста за межами Задара</b>",
+                "• Projekt od 700 milijuna eura ulazi u nov... ➡️ <b>Побут чужого міста за межами Задара</b>",
+                "• Što europski Akt o kibernetičkoj otporno... ➡️ <b>Світовий шум та абстрактні норми</b>",
+                "• Zlatna koka dubrovačkog turizma: samo ov... ➡️ <b>Побут чужого міста за межами Задара</b>",
+                "• Tomašević o smradu u Zagrebu: “Nije to z... ➡️ <b>Побут чужого міста за межами Задара</b>",
+                "• Gripa se ove godine javila neuobičajeno ... ➡️ <b>Світовий шум / поради дієтологів</b>",
+                "• Ravna Gora slavi svoj dan: mjesto u koje... ➡️ <b>Побут чужого міста за межами Задара</b>",
+                "• I dalje gori na Jakljanu. Vatrogasci pok... ➡️ <b>Побут чужого міста за межами Задара</b>",
+                "• Maduro i njegova supruga izjasnili se da... ➡️ <b>Інші країни / геоблок</b>",
+                "• Salata od crnog graha i kukuruza iz plav... ➡️ <b>Світовий шум / рецепти</b>",
+                "• Pastičerija Živka Šikića na Korčuli prij... ➡️ <b>Побут чужого міста за межами Задара</b>",
+                "• SDP o ispadu Torcide: “Fašizam, antisemi... ➡️ <b>Не суттєве оновлення / загальний політичний шум</b>",
+                "• Najudaljeniji poznati brzi radijski blje... ➡️ <b>Світовий шум / абстрактна наука</b>",
+                "• Zračna luka Ruđer Bošković premašila tri... ➡️ <b>Побут чужого міста за межами Задара</b>",
+                "• U Crikvenici ove subote internacionalna ... ➡️ <b>Побут чужого міста за межами Задара</b>",
+                "• Britanski liječnik predlaže test za kod ... ➡️ <b>Світовий шум / поради</b>",
+                "• Zatvara se dio parkinga u Ulici Ivana Za... ➡️ <b>Побут чужого міста за межами Задара</b>",
+                "• Dio prijedloga HOK-a uvažen u nacrtima p... ➡️ <b>Загальнонаціональний економічний шум</b>",
+                "• Drama u Zagrebu; Župnik se povlači iz sl... ➡️ <b>Побут чужого міста за межами Задара</b>"
+            ]
+        },
+        "backlog": {
+            "total_size": 68,
+            "sources": {
+                "Slobodna dalmacija": 37,
+                "Zadarski list": 23,
+                "023": 8
+            }
+        },
+        "published": {
+            "total": 2,
+            "ukraine_priority": 0,
+            "with_images": 1,
+            "text_only": 1,
+            "sources": {
+                "Slobodna dalmacija": 1,
+                "023": 1
+            }
+        },
+        "models_used": {
+            "gemini-3.5-flash-lite": 2,
             "gemini-3.6-flash": 0
         },
         "errors_count": 0,
