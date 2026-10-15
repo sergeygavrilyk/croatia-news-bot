@@ -1,63 +1,5 @@
 [
     {
-        "timestamp": "2026-10-06 11:01:05",
-        "execution_time": 162.0,
-        "funnel": {
-            "scraped_total": 35,
-            "scraped_by_source": {
-                "023": 10,
-                "Slobodna dalmacija": 15,
-                "Zadarski list": 10
-            },
-            "already_seen": 11,
-            "rejected_by_keywords": 3,
-            "duplicates_removed_by_ai": 17,
-            "rejection_reasons_list": [
-                "• Što to pliva u moru kod Dubrovnika? Znan... ➡️ <b>Світовий шум</b>",
-                "• Četiri morske kornjače u Puli vraćene u ... ➡️ <b>Побут Пули</b>",
-                "• Hrvatska među deset najtraženijih luksuz... ➡️ <b>Світовий шум</b>",
-                "• Dragovoljno predano oružje i eksplozivna... ➡️ <b>Побут Рієки</b>",
-                "• Apsurd kod Šibenika: helidrom na Zlarinu... ➡️ <b>Побут Шибеника</b>",
-                "• Spriječeno krijumčarenje stranih državlj... ➡️ <b>Побут Врбовського</b>",
-                "• Zeleni sjaj podrške diljem zemlje; Pogle... ➡️ <b>Світовий шум</b>",
-                "• Od podzemnih spremnika do igrališta: zaš... ➡️ <b>Побут ДуброВника</b>",
-                "• Zaključci sastanka gradonačelnika Darka ... ➡️ <b>Побут Госпича</b>",
-                "• Kažu, ne smije biti stranačke naravi: pr... ➡️ <b>Дублікат</b>",
-                "• Glavina o žalbi za stadion Maksimir: Vla... ➡️ <b>Спорт</b>",
-                "• Gradi se mreža za tisuće kućanstava: Vod... ➡️ <b>Побут Водиць</b>",
-                "• Jurnjava u Dragi: Nedozvoljenom brzinom ... ➡️ <b>Побут Рієки</b>",
-                "• Skrivena poruka dubrovačkog gradonačelni... ➡️ <b>Світовий шум</b>",
-                "• Dronovima napadnuti brodovi kod Bugarske... ➡️ <b>Світовий шум</b>",
-                "• “Pisci za stolom”: Bogato ilustrirana ku... ➡️ <b>Світовий шум</b>",
-                "• Dubrovački gradonačelnik Franković poruč... ➡️ <b>Дублікат</b>"
-            ]
-        },
-        "backlog": {
-            "total_size": 49,
-            "sources": {
-                "Slobodna dalmacija": 28,
-                "023": 8,
-                "Zadarski list": 13
-            }
-        },
-        "published": {
-            "total": 3,
-            "ukraine_priority": 0,
-            "with_images": 1,
-            "text_only": 2,
-            "sources": {
-                "Slobodna dalmacija": 1,
-                "023": 2
-            }
-        },
-        "models_used": {
-            "gemini-3.5-flash-lite": 1,
-            "gemini-3.5-flash": 0
-        },
-        "errors_count": 0,
-        "gemini_retries": 0
-    },
-    {
         "timestamp": "2026-10-06 12:01:02",
         "execution_time": 161.8,
         "funnel": {
@@ -5933,6 +5875,69 @@
             "text_only": 3,
             "sources": {
                 "023": 3
+            }
+        },
+        "models_used": {
+            "gemini-3.5-flash-lite": 2,
+            "gemini-3.6-flash": 0
+        },
+        "errors_count": 0,
+        "gemini_retries": 0
+    },
+    {
+        "timestamp": "2026-10-15 12:01:16",
+        "execution_time": 203.4,
+        "funnel": {
+            "scraped_total": 35,
+            "scraped_by_source": {
+                "023": 10,
+                "Slobodna dalmacija": 15,
+                "Zadarski list": 10
+            },
+            "already_seen": 9,
+            "rejected_by_keywords": 2,
+            "duplicates_removed_by_ai": 22,
+            "rejection_reasons_list": [
+                "• ‘Pogodi da zazvoni!‘: Sugrađani zaigrali... ➡️ <b>Подія за межами Задара та Хорватії (регіональний захід у Дубровнику)</b>",
+                "• Najudaljeniji poznati brzi radijski blje... ➡️ <b>Світовий шум (абстрактна наука)</b>",
+                "• Jesenski val okusa od 15. listopada do 1... ➡️ <b>Побут чужих міст (Рієка)</b>",
+                "• S bakrenom kacigom na dno mora: Kristija... ➡️ <b>Спорт та подія за межами Задара</b>",
+                "• Britanski liječnik predlaže test za kod ... ➡️ <b>Світовий шум / поради дієтологів чи лікарів</b>",
+                "• Na prosvjedu protiv Kaštijuna građanske ... ➡️ <b>Побут чужих міст (Пула та Істрія)</b>",
+                "• Drama u Zagrebu; Župnik se povlači iz sl... ➡️ <b>Побут чужих міст (Загреб)</b>",
+                "• Na Gradskom vijeću Raba prijedlog raspis... ➡️ <b>Побут чужих міст (Раб)</b>",
+                "• Bježao bez vozačke, pa uhvaćen s drogom:... ➡️ <b>Побут чужих міст (Перушич / Ліка)</b>",
+                "• Pulski liječnici uspješno proveli dva za... ➡️ <b>Побут чужих міст (Пула)</b>",
+                "• Studenac trajno zatvara tri trgovine u D... ➡️ <b>Побут чужих міст (Дубровницько-неретванська жупанія)</b>",
+                "• Šest desetljeća joga u Milohnićima obilj... ➡️ <b>Побут чужих міст (Крк)</b>",
+                "• Nadolazeći vikend u Opatiji u znaku rekr... ➡️ <b>Побут чужих міст (Опатія)</b>",
+                "• Zavirili smo u cjenike dalmatinskih mešt... ➡️ <b>Побут чужих міст (Загреб)</b>",
+                "• Uhvati film u četvrtak u Circolu: Kreati... ➡️ <b>Побут чужих міст (Рієка)</b>",
+                "• Lažna panika u Šibeniku, proširila se pr... ➡️ <b>Побут чужих міст (Шибеник)</b>",
+                "• Policajcu Marku Smažilu 15 godina zatvor... ➡️ <b>Побут чужих міст (Осієк)</b>",
+                "• Dalmatinci, ovo bi vas moglo zanimati! T... ➡️ <b>Загальнонаціональна новина без прямого стосунку до Задара чи українців</b>",
+                "• Stotinjak učenika iz Buzeta posjetilo an... ➡️ <b>Побут чужих міст (Бузет / Лібурнія)</b>",
+                "• Metkovski vatrogasci darovali legendarno... ➡️ <b>Побут чужих міст (Меткович)</b>",
+                "• Ministar Ružić posjetio Centar „Vinko Be... ➡️ <b>Побут чужих міст (Загреб)</b>",
+                "• Preko aplikacije za upoznavanje od muška... ➡️ <b>Побут чужих міст (Дубровник / Загреб)</b>"
+            ]
+        },
+        "backlog": {
+            "total_size": 54,
+            "sources": {
+                "Zadarski list": 22,
+                "Slobodna dalmacija": 28,
+                "023": 4
+            }
+        },
+        "published": {
+            "total": 3,
+            "ukraine_priority": 0,
+            "with_images": 2,
+            "text_only": 1,
+            "sources": {
+                "Slobodna dalmacija": 2,
+                "023": 1
             }
         },
         "models_used": {

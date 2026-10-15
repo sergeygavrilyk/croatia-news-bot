@@ -1,15 +1,5 @@
 [
     {
-        "title": "Ministar Ružić posjetio Centar „Vinko Bek” povodom Međunarodnog dana bijelog štapa",
-        "description": "<p>Povodom Međunarodnog dana bijelog štapa, koji se obilježava 15. listopada s ciljem podizanja svijesti o pravima, potrebama i izazovima slijepih i slabovidnih osoba, ministar rada, mirovinskoga sustava, obitelji i socijalne politike Alen Ružić posjetio je Centar za odgoj [&#8230;]</p>\n<p>Objava <a href=\"https://www.novilist.hr/novosti/hrvatska/ministar-ruzic-posjetio-centar-vinko-bek-povodom-medunarodnog-dana-bijelog-stapa/\">Ministar Ružić posjetio Centar „Vinko Bek” povodom Međunarodnog dana bijelog štapa</a> pojavila se prvi puta na <a href=\"https://www.novilist.hr\">Novi list</a>.</p>",
-        "url": "https://www.novilist.hr/novosti/hrvatska/ministar-ruzic-posjetio-centar-vinko-bek-povodom-medunarodnog-dana-bijelog-stapa/",
-        "image_urls": [
-            "https://www.novilist.hr/wp-content/uploads/2026/10/IMG-20261015-WA0010-717x478.jpg"
-        ],
-        "source": "Zadarski list",
-        "timestamp": 1792060391
-    },
-    {
         "title": "Policija očekuje oko 1900 navijača Ajaxa: “Bit ćemo prisutni na svim javnim površinama”",
         "description": "<p>Splitska policija pojačano osigurava javne površine uoči večerašnje utakmice Hajduka i Ajaxa, na kojoj se očekuje oko 1900 gostujućih navijača, a načelnik Policijske uprave splitsko-dalmatinske Marko Srdarević najavio je preventivna privođenja radi sprječavanja sukoba. Srdarević je na izvanrednoj [&#8230;]</p>\n<p>Objava <a href=\"https://www.novilist.hr/novosti/crna-kronika/policija-ocekuje-oko-1900-navijaca-ajaxa-bit-cemo-prisutni-na-svim-javnim-povrsinama/\">Policija očekuje oko 1900 navijača Ajaxa: &#8220;Bit ćemo prisutni na svim javnim površinama&#8221;</a> pojavila se prvi puta na <a href=\"https://www.novilist.hr\">Novi list</a>.</p>",
         "url": "https://www.novilist.hr/novosti/crna-kronika/policija-ocekuje-oko-1900-navijaca-ajaxa-bit-cemo-prisutni-na-svim-javnim-povrsinama/",
@@ -18,6 +8,16 @@
         ],
         "source": "Zadarski list",
         "timestamp": 1792060080
+    },
+    {
+        "title": "Muzej crvene povijesti donosi 12 europskih ideja za održivost, tu su i tri priče iz Dubrovnika",
+        "description": "Muzej crvene povijesti predstavio je besplatan priručnik koji kroz 12 europskih primjera donosi konkretne ideje za očuvanje baštine, smanjenje plastičnog otpada i povezivanje lokalnih zajednica. Može li obična javna fontana postati pokretač promjena u gradu? Osim što osigurava pitku vodu, može prido...",
+        "url": "https://slobodnadalmacija.hr/dalmacija/dubrovnik/muzej-crvene-povijesti-donosi-12-europskih-ideja-za-odrzivost-tu-su-i-tri-price-iz-dubrovnika-1584714",
+        "image_urls": [
+            "https://static.slobodnadalmacija.hr/images/slike/2026/10/15/32671745.jpg"
+        ],
+        "source": "Slobodna dalmacija",
+        "timestamp": 1792057500
     },
     {
         "title": "Djevojka (21) od Dubrovčanina (64) iskamčila eksplicitnu fotografiju pa ga ucjenjivala. Uhićena je, još dvojica s njom",
@@ -288,13 +288,5 @@
         ],
         "source": "Zadarski list",
         "timestamp": 1792046039
-    },
-    {
-        "title": "Privremena regulacija prometa; Pogledajte koje će prometnice u Zadru i županiji u nedjelju biti zatvorene zbog biciklističke utrke",
-        "description": "<p>U nedjelju, 18. listopada 2026., u Zadru i Zadarskoj županiji održava se sedmo izdanje međunarodne biciklističke utrke Zadar Granfondo Croatia – Falkensteiner Borik. Na startu se očekuje do 450 natjecatelja, a zbog sigurnosti svih sudionika u prometu prometnice na trasi utrke bit će privremeno zatvorene. Start je u 10 sati ispred hotela Falkensteiner Club Funimation [&#8230;]</p>\n<p>Objava <a href=\"https://023.hr/2026/10/privremena-regulacija-prometa-pogledajte-koje-ce-prometnice-u-zadru-i-zupaniji-u-nedjelju-biti-zatvorene-zbog-biciklisticke-utrke/\">Privremena regulacija prometa; Pogledajte koje će prometnice u Zadru i županiji u nedjelju biti zatvorene zbog biciklističke utrke</a> pojavila se prvi puta na <a href=\"https://023.hr\">023.hr</a>.</p>",
-        "url": "https://023.hr/2026/10/privremena-regulacija-prometa-pogledajte-koje-ce-prometnice-u-zadru-i-zupaniji-u-nedjelju-biti-zatvorene-zbog-biciklisticke-utrke/",
-        "image_urls": [],
-        "source": "023",
-        "timestamp": 1792046004
     }
 ]
