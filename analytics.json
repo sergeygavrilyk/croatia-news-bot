@@ -1,65 +1,5 @@
 [
     {
-        "timestamp": "2026-10-06 12:01:02",
-        "execution_time": 161.8,
-        "funnel": {
-            "scraped_total": 35,
-            "scraped_by_source": {
-                "023": 10,
-                "Slobodna dalmacija": 15,
-                "Zadarski list": 10
-            },
-            "already_seen": 9,
-            "rejected_by_keywords": 1,
-            "duplicates_removed_by_ai": 18,
-            "rejection_reasons_list": [
-                "• Hrvatska među deset najtraženijih luksuz... ➡️ <b>Світовий шум</b>",
-                "• Župa dubrovačka osigurala 150 eura po uč... ➡️ <b>Побут чужого міста (Дубровник)</b>",
-                "• Zeleni sjaj podrške diljem zemlje; Pogle... ➡️ <b>Світовий шум</b>",
-                "• Šef riječkog SDP-a o Romani Jerković Kra... ➡️ <b>Побут чужого міста (Рієка)</b>",
-                "• Koncertna poslastica u Providurovoj pala... ➡️ <b>Афіша подій</b>",
-                "• HDLU Rijeka obilježava 80. godišnjicu dj... ➡️ <b>Побут чужого міста (Рієка)</b>",
-                "• Kod ‘Verity‘ su i fatalna privlačnost i ... ➡️ <b>Світовий шум</b>",
-                "• U Senju predstavljanje knjige o Stepincu... ➡️ <b>Побут чужого міста (Сень)</b>",
-                "• Pezo potpisao ugovor o financijskoj potp... ➡️ <b>Побут чужого міста (Дубровник)</b>",
-                "• Počeo projekt riječkoga HNK-a “Zajc u va... ➡️ <b>Побут чужого міста (Рієка)</b>",
-                "• Izglasalo Općinsko vijeće: 150 eura potp... ➡️ <b>Дублікат</b>",
-                "• Akcija dobrovoljnog davanja krvi još jed... ➡️ <b>Побут чужого міста (Сень)</b>",
-                "• Što to pliva u moru kod Dubrovnika? Znan... ➡️ <b>Побут чужого міста (Дубровник)</b>",
-                "• Francis Halzen dobitnik Nobela za fiziku... ➡️ <b>Світовий шум</b>",
-                "• Apsurd kod Šibenika: helidrom na Zlarinu... ➡️ <b>Побут чужого міста (Шибеник)</b>",
-                "• Od podzemnih spremnika do igrališta: zaš... ➡️ <b>Побут чужого міста (Дубровник)</b>",
-                "• Na Jeseni u Lici dodijeljena zlatna odli... ➡️ <b>Побут чужого міста (Лика)</b>",
-                "• Kažu, ne smije biti stranačke naravi: pr... ➡️ <b>Дублікат</b>"
-            ]
-        },
-        "backlog": {
-            "total_size": 54,
-            "sources": {
-                "Zadarski list": 16,
-                "Slobodna dalmacija": 32,
-                "023": 6
-            }
-        },
-        "published": {
-            "total": 3,
-            "ukraine_priority": 0,
-            "with_images": 2,
-            "text_only": 1,
-            "sources": {
-                "Zadarski list": 1,
-                "Slobodna dalmacija": 1,
-                "023": 1
-            }
-        },
-        "models_used": {
-            "gemini-3.5-flash-lite": 1,
-            "gemini-3.5-flash": 0
-        },
-        "errors_count": 0,
-        "gemini_retries": 0
-    },
-    {
         "timestamp": "2026-10-06 13:01:06",
         "execution_time": 160.8,
         "funnel": {
@@ -5938,6 +5878,70 @@
             "sources": {
                 "Slobodna dalmacija": 2,
                 "023": 1
+            }
+        },
+        "models_used": {
+            "gemini-3.5-flash-lite": 2,
+            "gemini-3.6-flash": 0
+        },
+        "errors_count": 0,
+        "gemini_retries": 0
+    },
+    {
+        "timestamp": "2026-10-15 13:01:15",
+        "execution_time": 84.5,
+        "funnel": {
+            "scraped_total": 35,
+            "scraped_by_source": {
+                "023": 10,
+                "Slobodna dalmacija": 15,
+                "Zadarski list": 10
+            },
+            "already_seen": 8,
+            "rejected_by_keywords": 2,
+            "duplicates_removed_by_ai": 24,
+            "rejection_reasons_list": [
+                "• Ukrajina bombardirala rusku zračnu bazu,... ➡️ <b>Геоблок: подія за межами Хорватії та України</b>",
+                "• ‘Pogodi da zazvoni!‘: Sugrađani zaigrali... ➡️ <b>Побут чужих міст (Дубровник) та локальна акція</b>",
+                "• Poljoprivrednici ogorčeni novim zakonom;... ➡️ <b>Загальнонаціональна тема без прямого зв'язку з Задаром чи біженцями</b>",
+                "• Senjski školarci s volonterima Crvenog k... ➡️ <b>Побут чужого міста (Сень)</b>",
+                "• Tražite posao? I Šibensko-kninska župani... ➡️ <b>Побут чужого міста (Шибеник)</b>",
+                "• Najudaljeniji poznati brzi radijski blje... ➡️ <b>Світовий шум (абстрактна наука)</b>",
+                "• Rapski petaši na putovanju kroz pomorsku... ➡️ <b>Побут чужого міста (Раб)</b>",
+                "• Dubrovnik kao svjetlosna pozornica: sutr... ➡️ <b>Побут чужого міста (Дубровник)</b>",
+                "• Britanski liječnik predlaže test za kod ... ➡️ <b>Світовий шум (поради, тести)</b>",
+                "• Preminuo Mirko Cetinski... ➡️ <b>Не підпадає під пріоритетні категорії для діаспори в Задарі</b>",
+                "• Grad mora donijeti novu odluku o zabrani... ➡️ <b>Побут чужого міста (Дубровник)</b>",
+                "• Drama u Zagrebu; Župnik se povlači iz sl... ➡️ <b>Побут чужого міста (Загреб)</b>",
+                "• Od Pila do Peskarije povremeno bez javne... ➡️ <b>Дубль новини ID 7</b>",
+                "• Grbin se ispričao što je uvjeravao građa... ➡️ <b>Побут чужого міста (Пула)</b>",
+                "• Hospicij na Babindubu otvara se u studen... ➡️ <b>Вже є у схожій формі в історії (або дубль наявних подій)</b>",
+                "• Policajcu Smažilu 15 godina zatvora za u... ➡️ <b>Суттєвий кримінал іншого регіону (Осієк)</b>",
+                "• S bakrenom kacigom na dno mora: Kristija... ➡️ <b>Побут чужого міста/острова (Крапань)</b>",
+                "• Mala čitaonica u glazbenom ruhu – mališa... ➡️ <b>Побут чужого міста (Лопар)</b>",
+                "• Bježao bez vozačke, pa uhvaćen s drogom:... ➡️ <b>Побут чужого міста (Перушич)</b>",
+                "• Smažilova obrana najavila žalbu na presu... ➡️ <b>Дубль новини ID 16</b>",
+                "• Studenac trajno zatvara tri trgovine u D... ➡️ <b>Побут іншого регіону (Дубровник)</b>",
+                "• Blondie najavili novi album, poslušajte ... ➡️ <b>Світовий шум (музика)</b>",
+                "• Zavirili smo u cjenike dalmatinskih mešt... ➡️ <b>Побут чужого міста та аналітика цін</b>",
+                "• Policija očekuje oko 1900 navijača Ajaxa... ➡️ <b>Спорт та супутні події у Спліті</b>"
+            ]
+        },
+        "backlog": {
+            "total_size": 54,
+            "sources": {
+                "Zadarski list": 22,
+                "Slobodna dalmacija": 28,
+                "023": 4
+            }
+        },
+        "published": {
+            "total": 1,
+            "ukraine_priority": 0,
+            "with_images": 1,
+            "text_only": 0,
+            "sources": {
+                "Zadarski list": 1
             }
         },
         "models_used": {
