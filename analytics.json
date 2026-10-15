@@ -1,63 +1,5 @@
 [
     {
-        "timestamp": "2026-10-06 08:01:02",
-        "execution_time": 161.7,
-        "funnel": {
-            "scraped_total": 35,
-            "scraped_by_source": {
-                "023": 10,
-                "Slobodna dalmacija": 15,
-                "Zadarski list": 10
-            },
-            "already_seen": 6,
-            "rejected_by_keywords": 2,
-            "duplicates_removed_by_ai": 17,
-            "rejection_reasons_list": [
-                "• Enigma SOA-e oko gospićkog otpada: Tko j... ➡️ <b>Вже є в історії</b>",
-                "• Koncertna poslastica u Providurovoj pala... ➡️ <b>Подія не першої важливості / локальна афіша</b>",
-                "• O taksi stajalištima i parkingu u Zoni: ... ➡️ <b>Побут іншого міста (Дубровник)</b>",
-                "• Novi Zagreb do poslijepodne bez tramvajs... ➡️ <b>Побут іншого міста (Загреб)</b>",
-                "• Zbog puknuća vodovodne cijevi do 14 sati... ➡️ <b>Побут іншого міста (Рієка)</b>",
-                "• Kako spasiti domaća obiteljska gospodars... ➡️ <b>Загальна сільськогосподарська тема без прив'язки до Задара</b>",
-                "• Tri godine od 7. listopada Guterres posl... ➡️ <b>Світовий шум</b>",
-                "• Turci i Rusi bježe iz Crne Gore i masovn... ➡️ <b>Події в третій країні (Чорногорія)</b>",
-                "• Osjećate se kao da vam je um raspršen? E... ➡️ <b>Лайфстайл, поради психологів</b>",
-                "• Zadar se prisjeća dana kad je obranio gr... ➡️ <b>Переказ історичної дати / вже є в історії</b>",
-                "• Kako pripremiti začinsko bilje u teglica... ➡️ <b>Лайфстайл, поради з рослинництва</b>",
-                "• Zadar u prvom kolu ABA lige nadoknadio d... ➡️ <b>Спорт</b>",
-                "• Otpad nije kraj priče: kako iz onoga što... ➡️ <b>Побут іншого міста (Спліт)</b>",
-                "• Brownies s ciklom i lješnjacima spaja nu... ➡️ <b>Рецепти, лайфстайл</b>",
-                "• Sniježničarke i Sniježničari se za kraj ... ➡️ <b>Спорт / туризм поза регіоном</b>",
-                "• Delnice i Vrbovsko već sedam godina zaje... ➡️ <b>Побут іншого міста (Делніце та Врбовсько)</b>",
-                "• Ivana Lovrić Jović izlagala o Rječniku d... ➡️ <b>Культурна подія іншого міста (Дубровник / Беч)</b>"
-            ]
-        },
-        "backlog": {
-            "total_size": 35,
-            "sources": {
-                "023": 8,
-                "Zadarski list": 12,
-                "Slobodna dalmacija": 15
-            }
-        },
-        "published": {
-            "total": 3,
-            "ukraine_priority": 0,
-            "with_images": 1,
-            "text_only": 2,
-            "sources": {
-                "023": 2,
-                "Slobodna dalmacija": 1
-            }
-        },
-        "models_used": {
-            "gemini-3.5-flash-lite": 1,
-            "gemini-3.5-flash": 0
-        },
-        "errors_count": 0,
-        "gemini_retries": 0
-    },
-    {
         "timestamp": "2026-10-06 09:01:05",
         "execution_time": 161.3,
         "funnel": {
@@ -5927,6 +5869,63 @@
             "sources": {
                 "023": 2,
                 "Slobodna dalmacija": 1
+            }
+        },
+        "models_used": {
+            "gemini-3.5-flash-lite": 2,
+            "gemini-3.6-flash": 0
+        },
+        "errors_count": 0,
+        "gemini_retries": 0
+    },
+    {
+        "timestamp": "2026-10-15 09:01:15",
+        "execution_time": 172.4,
+        "funnel": {
+            "scraped_total": 35,
+            "scraped_by_source": {
+                "023": 10,
+                "Slobodna dalmacija": 15,
+                "Zadarski list": 10
+            },
+            "already_seen": 9,
+            "rejected_by_keywords": 0,
+            "duplicates_removed_by_ai": 17,
+            "rejection_reasons_list": [
+                "• Prazne predavaonice humanistike u Zadru;... ➡️ <b>Побут чужих міст / абстрактна тема</b>",
+                "• Mia Negovetić obradom synth-pop evergree... ➡️ <b>Інша географія (Рієка, культура)</b>",
+                "• Emotivna proslava u Arheološkom muzeju; ... ➡️ <b>Дубль історії про день народження Радоміра Юріча</b>",
+                "• Kvadrat u povijesnoj jezgri Dubrovnika d... ➡️ <b>Інша географія (Дубровник)</b>",
+                "• Karlovac domaćin filmske scene: počinju ... ➡️ <b>Інша географія (Карловац)</b>",
+                "• Sačekuša kod Zadra: huligani presreli Ni... ➡️ <b>Дубль новини ID 6 про напад на нідерландця</b>",
+                "• U Parizu službeno predstavljen Smart #2,... ➡️ <b>Геоблок (подія за межами Хорватії)</b>",
+                "• Nastavlja se borba s vatrenom stihijom: ... ➡️ <b>Інша географія (Дубровник, пожежа)</b>",
+                "• S.A.R.S. se vraća u Lisinski s elektroak... ➡️ <b>Інша географія (Загреб, концерт)</b>",
+                "• Prometna nesreća na Murteru: vozač motor... ➡️ <b>Побут чужих міст (Муртер/Шибеник)</b>",
+                "• Rijeka bi mogla ostati bez predstava, ki... ➡️ <b>Побут чужих міст (Рієка)</b>",
+                "• Zvonko Kucelin, Željko Karavida i Petar ... ➡️ <b>Історія (повтор теми ветеранів та військових фотографів)</b>",
+                "• Ignorirao stop, pa ‘pomeo‘ auto: U sudar... ➡️ <b>Дубль новини з історії про ДТП біля Оброваца</b>",
+                "• Vidanje Lipe: Sedam umjetničkih interven... ➡️ <b>Інша географія (Рієка/Липа)</b>",
+                "• Zašto se kaže ‘čuvaj se šibenske cure!‘?... ➡️ <b>Інша географія (Шибеник, історія)</b>",
+                "• HDZ proziva Tomaševića i Benčić zbog smr... ➡️ <b>Побут чужих міст (Загреб)</b>",
+                "• IDEM kreće na europsku turneju, nastupa ... ➡️ <b>Спорт / Культурна подія поза Задаром</b>"
+            ]
+        },
+        "backlog": {
+            "total_size": 39,
+            "sources": {
+                "023": 9,
+                "Slobodna dalmacija": 12,
+                "Zadarski list": 18
+            }
+        },
+        "published": {
+            "total": 3,
+            "ukraine_priority": 0,
+            "with_images": 0,
+            "text_only": 3,
+            "sources": {
+                "023": 3
             }
         },
         "models_used": {
