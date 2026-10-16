@@ -1,59 +1,5 @@
 [
     {
-        "timestamp": "2026-10-07 07:01:02",
-        "execution_time": 214.0,
-        "funnel": {
-            "scraped_total": 35,
-            "scraped_by_source": {
-                "023": 10,
-                "Slobodna dalmacija": 15,
-                "Zadarski list": 10
-            },
-            "already_seen": 3,
-            "rejected_by_keywords": 4,
-            "duplicates_removed_by_ai": 13,
-            "rejection_reasons_list": [
-                "• Svjetski dan cerebralne paralize u Medic... ➡️ <b>Локальна подія шкільного рівня в Задарі</b>",
-                "• Poluprazne police Studenca izgledaju kao... ➡️ <b>Побут і проблеми міста Дубровник</b>",
-                "• Rinčić je kritizirala Filipovića zbog pr... ➡️ <b>Побут і внутрішня політика міста Рієка</b>",
-                "• Srce zadarskih zbivanja na vašem ekranu:... ➡️ <b>Анонс локального сервісу і календаря подій</b>",
-                "• Gledali su u nebo i zbrajali štetu. A sa... ➡️ <b>Вже є схожа інформація в історії / загальний сільськогосподарський грант</b>",
-                "• Nova pravila za zaštitu djece na interne... ➡️ <b>Загальноєвропейські новини цифрової політики без прямого зв'язку з Хорватією чи українцями</b>",
-                "• “More nije samo turizam”: Bruxelles vidi... ➡️ <b>Загальна стратегічна розмова про економіку ЄС</b>",
-                "• Astronomi prvi put uhvatili radio signal... ➡️ <b>Світовий шум та астрономія</b>",
-                "• Ministarstvo se oglasilo o slučaju Jergo... ➡️ <b>Культурні суперечки національного рівня, не пріоритетно для діаспори</b>",
-                "• Izložba Milice Živković u Kortilu: Refle... ➡️ <b>Культурна подія в Рієці</b>",
-                "• 130 godina Guvernerove palače: Od simbol... ➡️ <b>Культурна подія в Рієці</b>",
-                "• Format koji koristi operu kao temelj, a ... ➡️ <b>Культурна подія в іншій жупанії</b>",
-                "• Zašto je najzrelija žena u predstavi upr... ➡️ <b>Театральна прем'єра, лайфстайл</b>"
-            ]
-        },
-        "backlog": {
-            "total_size": 16,
-            "sources": {
-                "023": 5,
-                "Slobodna dalmacija": 2,
-                "Zadarski list": 9
-            }
-        },
-        "published": {
-            "total": 3,
-            "ukraine_priority": 0,
-            "with_images": 2,
-            "text_only": 1,
-            "sources": {
-                "Zadarski list": 2,
-                "023": 1
-            }
-        },
-        "models_used": {
-            "gemini-3.5-flash-lite": 1,
-            "gemini-3.5-flash": 0
-        },
-        "errors_count": 0,
-        "gemini_retries": 0
-    },
-    {
         "timestamp": "2026-10-07 08:01:11",
         "execution_time": 161.4,
         "funnel": {
@@ -5957,6 +5903,66 @@
         "models_used": {
             "gemini-3.5-flash-lite": 2,
             "gemini-3.6-flash": 0
+        },
+        "errors_count": 0,
+        "gemini_retries": 0
+    },
+    {
+        "timestamp": "2026-10-16 08:01:08",
+        "execution_time": 144.7,
+        "funnel": {
+            "scraped_total": 35,
+            "scraped_by_source": {
+                "023": 10,
+                "Slobodna dalmacija": 15,
+                "Zadarski list": 10
+            },
+            "already_seen": 4,
+            "rejected_by_keywords": 2,
+            "duplicates_removed_by_ai": 20,
+            "rejection_reasons_list": [
+                "• Trump: “Nastavak ukrajinskih napada na r... ➡️ <b>Геоблок: події за межами Хорватії та України, не стосуються напряму українських біженців</b>",
+                "• U galeriji »Fritzi« otvorena izložba »Od... ➡️ <b>Побут чужих міст/регіонів (Лошинь замість Задара)</b>",
+                "• Zašto je navlaka čuvenog jugoslavenskog ... ➡️ <b>Світовий шум / розважальний контент без прив'язки до локальної актуальності</b>",
+                "• U Koprivnici u subotu prosvjed protiv me... ➡️ <b>Побут чужих міст (Копривниця)</b>",
+                "• I jutros su vatrogasci Dubrovnika, Primo... ➡️ <b>Побут чужих міст (Дубровник та сусідні острови)</b>",
+                "• Znate li kod liganja razliku između mužj... ➡️ <b>Світовий шум / пізнавальна стаття про біологію</b>",
+                "• Dubrovčani plaćaju najskuplje voće i pov... ➡️ <b>Побут чужих міст (Дубровник)</b>",
+                "• Kros spektakl u općini Ražanac; Više od ... ➡️ <b>Спорт: аматорські та бігові змагання/крос</b>",
+                "• Piše Kim Cuculić: Apel za knjigu... ➡️ <b>Світовий шум / освіта на загальнонаціональному рівні без критичного значення для діаспори</b>",
+                "• Mokošica – Gruž: Kamenac, rodeo i cesta ... ➡️ <b>Побут чужих міст (Дубровник)</b>",
+                "• Zadar ove subote u znaku patuljastih šna... ➡️ <b>Стоп-тема: розважальний захід / клуб любителів тварин</b>",
+                "• Djelo Gioachina Rossinija prvi put u Rij... ➡️ <b>Побут чужих міст (Рієка)</b>",
+                "• Zadar ima nekoliko „dužnika”, ali ako on... ➡️ <b>Спорт: баскетбольний матч та турнірна таблиця</b>",
+                "• Francuska i Njemačka postigle dogovor o ... ➡️ <b>Геоблок: події політики ЄС без прямого зв'язку з місцевим життям українців</b>",
+                "• Tražite stan u Šibeniku? Pogledajte cije... ➡️ <b>Побут чужих міст (Шибеник)</b>",
+                "• Lürssen sve bliži odlasku iz dva ogromna... ➡️ <b>Побут чужих міст (Рієка та Кварнер)</b>",
+                "• Pogledajte što sve možete pročitati u no... ➡️ <b>Побут чужих міст (Дубровник)</b>",
+                "• Presudni detalji – Za uspješan lov treba... ➡️ <b>Світовий шум / порада щодо аматорського рибальства</b>",
+                "• Ovo je najskuplje povrće u Hrvatskoj, u ... ➡️ <b>Дубль новини ID 8</b>",
+                "• Odjel za djecu i mlade Narodne knjižnice... ➡️ <b>Побут чужих міст (Дубровник)</b>"
+            ]
+        },
+        "backlog": {
+            "total_size": 22,
+            "sources": {
+                "023": 4,
+                "Slobodna dalmacija": 9,
+                "Zadarski list": 9
+            }
+        },
+        "published": {
+            "total": 2,
+            "ukraine_priority": 0,
+            "with_images": 0,
+            "text_only": 2,
+            "sources": {
+                "023": 2
+            }
+        },
+        "models_used": {
+            "gemini-3.5-flash-lite": 1,
+            "gemini-3.6-flash": 1
         },
         "errors_count": 0,
         "gemini_retries": 0
