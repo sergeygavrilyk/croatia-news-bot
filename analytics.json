@@ -1,58 +1,5 @@
 [
     {
-        "timestamp": "2026-10-07 09:01:03",
-        "execution_time": 161.0,
-        "funnel": {
-            "scraped_total": 35,
-            "scraped_by_source": {
-                "023": 10,
-                "Slobodna dalmacija": 15,
-                "Zadarski list": 10
-            },
-            "already_seen": 9,
-            "rejected_by_keywords": 2,
-            "duplicates_removed_by_ai": 12,
-            "rejection_reasons_list": [
-                "• Novi list u Parizu: “Samo smo hodali, a ... ➡️ <b>Світовий шум</b>",
-                "• Vlasnica kuće u Prvić Luci optužena za i... ➡️ <b>Побут чужих міст</b>",
-                "• Prijem za svjetske i europske prvake: Za... ➡️ <b>Спорт</b>",
-                "• Zašto je otpad Izgradnje još na Trsatu? ... ➡️ <b>Побут чужих міст</b>",
-                "• Velika akcija u PEVEX-u: Ostvarite 20% p... ➡️ <b>Реклама</b>",
-                "• Dragovoljci Grobnišćine u Cerniku Slavon... ➡️ <b>Побут чужих міст</b>",
-                "• Promjena termina sakupljanja otpada u Gr... ➡️ <b>Побут чужих міст</b>",
-                "• Što kad vas zaboli zub u nedjelju? Dubro... ➡️ <b>Побут чужих міст</b>",
-                "• Srce zadarskih zbivanja na vašem ekranu:... ➡️ <b>Реклама</b>",
-                "• Dionice na europskim burzama opet pale, ... ➡️ <b>Світовий шум</b>",
-                "• Plesni voditelj Folklornog ansambla Linđ... ➡️ <b>Побут чужих міст</b>",
-                "• Investitori golemog resorta u Cavtatu pr... ➡️ <b>Побут чужих міст</b>"
-            ]
-        },
-        "backlog": {
-            "total_size": 31,
-            "sources": {
-                "023": 8,
-                "Slobodna dalmacija": 12,
-                "Zadarski list": 11
-            }
-        },
-        "published": {
-            "total": 3,
-            "ukraine_priority": 1,
-            "with_images": 1,
-            "text_only": 2,
-            "sources": {
-                "023": 2,
-                "Slobodna dalmacija": 1
-            }
-        },
-        "models_used": {
-            "gemini-3.5-flash-lite": 1,
-            "gemini-3.5-flash": 0
-        },
-        "errors_count": 0,
-        "gemini_retries": 0
-    },
-    {
         "timestamp": "2026-10-07 10:01:05",
         "execution_time": 68.7,
         "funnel": {
@@ -5973,5 +5920,68 @@
         },
         "errors_count": 0,
         "gemini_retries": 3
+    },
+    {
+        "timestamp": "2026-10-16 10:01:10",
+        "execution_time": 13.9,
+        "funnel": {
+            "scraped_total": 35,
+            "scraped_by_source": {
+                "023": 10,
+                "Slobodna dalmacija": 15,
+                "Zadarski list": 10
+            },
+            "already_seen": 4,
+            "rejected_by_keywords": 3,
+            "duplicates_removed_by_ai": 25,
+            "rejection_reasons_list": [
+                "• ‘U ratom zahvaćenom Dubrovniku i opkolje... ➡️ <b>Інші країни / світовий шум, не стосується Задара чи Хорватії напряму</b>",
+                "• Upozorenje vijećnice Vištica: Zadarsko r... ➡️ <b>Дубль або несуттєве оновлення історичної події</b>",
+                "• Odlazak kultnog mjesta: ruši se staro Ki... ➡️ <b>Побут чужих міст (не Задар)</b>",
+                "• Spomenik bez papira izazvao spor na Pagu... ➡️ <b>Дубль події з історії</b>",
+                "• Nakon stravičnih scena u Splitu, policij... ➡️ <b>Побут чужих міст (Спліт)</b>",
+                "• Novi slučaj prijevare u Šibeniku: obećao... ➡️ <b>Побут чужих міст (Шибеник)</b>",
+                "• Milanović osudio sramotno ponašanje dije... ➡️ <b>Спорт та хуліганство в іншому місті</b>",
+                "• Nevjerojatna sreća u Jastrebarskom; Nije... ➡️ <b>Світський шум / нерелевантно</b>",
+                "• Dubrovkinja ogorčena stanjem na cestama,... ➡️ <b>Побут чужих міст (Дубровник)</b>",
+                "• Nađa Berbić odgovorila Marinu Miletiću: ... ➡️ <b>Побут чужих міст / політика інших регіонів</b>",
+                "• Pao jedan od napadača s Babinduba; Polic... ➡️ <b>Дубль події з історії</b>",
+                "• Ovo je odličan razlog da se zaputite na ... ➡️ <b>Несуттєва культурна подія / анонс</b>",
+                "• Policija na Drenovi zaustavila auto, pro... ➡️ <b>Побут чужих міст (Рієка)</b>",
+                "• Svjetski dan hrane; Hrvatska povećala do... ➡️ <b>Світовий шум / загальна статистика</b>",
+                "• Dragocjena građevina u srcu Knina i dalj... ➡️ <b>Побут чужих міст (Книн)</b>",
+                "• Most nezadovoljan Vladom: Stavljaju sve ... ➡️ <b>Побут чужих міст (Рієка)</b>",
+                "• Nove cijene goriva; Pogledajte koliko bi... ➡️ <b>Світовий шум / загальні ціни на паливо без конкретики по Задару</b>",
+                "• Prilika za zaposlenje: velika tvrtka nud... ➡️ <b>Побут чужих міст (Шибеник)</b>",
+                "• Strani mediji brutalno osudili nacifašiz... ➡️ <b>Спорт</b>",
+                "• Nastavak potrage za nestalima; Kod Komar... ➡️ <b>Події національного рівня за межами Задара</b>",
+                "• Zašto je navlaka čuvenog jugoslavenskog ... ➡️ <b>Світський шум / розважальна стаття</b>",
+                "• Splitska policija krenula u uhićenja pri... ➡️ <b>Дубль спортивно-кримінальної події зі Спліта</b>",
+                "• Policijska pretraga u Pakoštanima; Kod 2... ➡️ <b>Дубль події з історії</b>",
+                "• I jutros su vatrogasci Dubrovnika, Primo... ➡️ <b>Побут чужих міст (Дубровницький регіон)</b>",
+                "• Milanovićev glavni analitičar oštriji ne... ➡️ <b>Національна політика без прив'язки до Задара чи біженців</b>"
+            ]
+        },
+        "backlog": {
+            "total_size": 33,
+            "sources": {
+                "Slobodna dalmacija": 16,
+                "Zadarski list": 9,
+                "023": 8
+            }
+        },
+        "published": {
+            "total": 0,
+            "ukraine_priority": 0,
+            "with_images": 0,
+            "text_only": 0,
+            "sources": {}
+        },
+        "models_used": {
+            "gemini-3.5-flash-lite": 1,
+            "gemini-3.6-flash": 0
+        },
+        "errors_count": 0,
+        "gemini_retries": 0
     }
 ]
