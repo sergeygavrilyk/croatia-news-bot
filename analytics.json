@@ -1,66 +1,5 @@
 [
     {
-        "timestamp": "2026-10-07 11:01:04",
-        "execution_time": 191.1,
-        "funnel": {
-            "scraped_total": 35,
-            "scraped_by_source": {
-                "023": 10,
-                "Slobodna dalmacija": 15,
-                "Zadarski list": 10
-            },
-            "already_seen": 5,
-            "rejected_by_keywords": 3,
-            "duplicates_removed_by_ai": 20,
-            "rejection_reasons_list": [
-                "• Provedite savršenu nedjelju u Gračacu; O... ➡️ <b>Подія у Грачацу не є пріоритетною для Задара</b>",
-                "• Izvrsne brojke s Vira: bablje ljeto napu... ➡️ <b>Вже є в історії</b>",
-                "• Etno Udruga Turanj bilježi velik interes... ➡️ <b>Побут інших міст</b>",
-                "• Van Goghova multisenzorna izložba koju j... ➡️ <b>Світовий шум та лайфстайл</b>",
-                "• Župan Pezo najavio novu trasu brze ceste... ➡️ <b>Побут інших міст</b>",
-                "• Općina Viškovo daruje djecu povodom boži... ➡️ <b>Побут інших міст</b>",
-                "• Predivno, ovo je nešto što se rijetko mo... ➡️ <b>Світ тварин і лайфстайл</b>",
-                "• Za Festival čokolade u Opatiji priprema ... ➡️ <b>Побут інших міст</b>",
-                "• Mladim riječkim inovatorima 26 medalja n... ➡️ <b>Побут інших міст</b>",
-                "• Prijem za svjetske i europske prvake: Za... ➡️ <b>Спорт</b>",
-                "• Policija privela dvojicu Šibenčana, besr... ➡️ <b>Кримінал іншого регіону</b>",
-                "• Na Učki postoji “crna točka” na kojoj st... ➡️ <b>Побут інших міст</b>",
-                "• Velika akcija u PEVEX-u: Ostvarite 20% p... ➡️ <b>Реклама</b>",
-                "• I Šibenik hoće novi stadion! ‘Ma, možemo... ➡️ <b>Спорт</b>",
-                "• Novi list u Parizu: “Samo smo hodali, a ... ➡️ <b>Світовий шум та лайфстайл</b>",
-                "• Zašto je otpad Izgradnje još na Trsatu? ... ➡️ <b>Побут інших міст</b>",
-                "• Dubrovački duo Dora Kamber i Pero Škobel... ➡️ <b>Побут інших міст</b>",
-                "• Dragovoljci Grobnišćine u Cerniku Slavon... ➡️ <b>Побут інших міст</b>",
-                "• Prošlo je 35 godina od tragedije koja je... ➡️ <b>Дублікат</b>",
-                "• Prošlo je 35 godina od tragedije koja je... ➡️ <b>Дублікат</b>"
-            ]
-        },
-        "backlog": {
-            "total_size": 38,
-            "sources": {
-                "Zadarski list": 12,
-                "Slobodna dalmacija": 20,
-                "023": 6
-            }
-        },
-        "published": {
-            "total": 3,
-            "ukraine_priority": 0,
-            "with_images": 1,
-            "text_only": 2,
-            "sources": {
-                "023": 2,
-                "Slobodna dalmacija": 1
-            }
-        },
-        "models_used": {
-            "gemini-3.5-flash-lite": 1,
-            "gemini-3.5-flash": 0
-        },
-        "errors_count": 0,
-        "gemini_retries": 0
-    },
-    {
         "timestamp": "2026-10-07 12:01:03",
         "execution_time": 158.6,
         "funnel": {
@@ -5979,5 +5918,68 @@
         },
         "errors_count": 0,
         "gemini_retries": 1
+    },
+    {
+        "timestamp": "2026-10-16 12:01:08",
+        "execution_time": 246.8,
+        "funnel": {
+            "scraped_total": 35,
+            "scraped_by_source": {
+                "023": 10,
+                "Slobodna dalmacija": 15,
+                "Zadarski list": 10
+            },
+            "already_seen": 5,
+            "rejected_by_keywords": 3,
+            "duplicates_removed_by_ai": 22,
+            "rejection_reasons_list": [
+                "• Jandroković: Dio navijača osramotio je H... ➡️ <b>Спорт</b>",
+                "• Brucoši i strani studenti zaplovili u no... ➡️ <b>Дубль або несуттєва студентська подія</b>",
+                "• Jedemo li pogrešno? Svjetski dan hrane u... ➡️ <b>Світовий шум</b>",
+                "• Ništa od štrajka u riječkim kulturnim us... ➡️ <b>Побут чужих міст</b>",
+                "• Obilježena 35. godišnjica pogibije Josip... ➡️ <b>Історія за межами Задара та загальнонаціонального рівня</b>",
+                "• Pas laje sve glasnije dok ga pokušavate ... ➡️ <b>Поради з догляду за тваринами</b>",
+                "• Počeli radovi na izgradnji autoceste od ... ➡️ <b>Побут чужих міст</b>",
+                "• Proslavljena sportašica otvorila dušu: ‘... ➡️ <b>Побут чужих міст</b>",
+                "• Projekt “Hrvatska pliva 2026”; Prva ovos... ➡️ <b>Спорт</b>",
+                "• Nakon popravka brod Galeb sutra se vraća... ➡️ <b>Побут чужих міст</b>",
+                "• Šibenski SDP-ovac nakon ispada Torcide: ... ➡️ <b>Спорт</b>",
+                "• Oštra reakcija s Pantovčaka na skandaloz... ➡️ <b>Спорт</b>",
+                "• VW priprema opoziv nekoliko tisuća elekt... ➡️ <b>Інші країни / геоблок</b>",
+                "• Predstavljen prvi sveobuhvatni katalog M... ➡️ <b>Побут чужих міст</b>",
+                "• Recital gitarista Srđana Bulata u Knežev... ➡️ <b>Побут чужих міст</b>",
+                "• Nakon stravičnih scena u Splitu, policij... ➡️ <b>Спорт</b>",
+                "• Sada je i službeno. Miočić ide za šefa H... ➡️ <b>Національний рівень, але дубль або не є головним пріоритетом для Задара порівняно з іншими</b>",
+                "• Dobroslavić o ispadima dijela Torcide: N... ➡️ <b>Спорт</b>",
+                "• Nevjerojatna sreća u Jastrebarskom; Nije... ➡️ <b>Побут чужих міст</b>",
+                "• Spomenik bez papira izazvao spor na Pagu... ➡️ <b>Дубль конфлікту на Пазі</b>",
+                "• Dobroslavić o ispadima dijela Torcide: N... ➡️ <b>Спорт</b>",
+                "• Policija na Drenovi zaustavila auto, pro... ➡️ <b>Побут чужих міст</b>"
+            ]
+        },
+        "backlog": {
+            "total_size": 52,
+            "sources": {
+                "Slobodna dalmacija": 28,
+                "Zadarski list": 14,
+                "023": 10
+            }
+        },
+        "published": {
+            "total": 3,
+            "ukraine_priority": 0,
+            "with_images": 1,
+            "text_only": 2,
+            "sources": {
+                "Slobodna dalmacija": 1,
+                "023": 2
+            }
+        },
+        "models_used": {
+            "gemini-3.5-flash-lite": 2,
+            "gemini-3.6-flash": 0
+        },
+        "errors_count": 0,
+        "gemini_retries": 3
     }
 ]
