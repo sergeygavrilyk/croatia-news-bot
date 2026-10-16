@@ -8,6 +8,7 @@ import json
 import re
 import random
 import shutil
+from bs4 import BeautifulSoup
 from urllib.parse import urlparse
 from dotenv import load_dotenv
 from google import genai
@@ -67,6 +68,23 @@ def trim_history(filename, max_lines=1000):
                     f.writelines(lines[-max_lines:])
     except Exception as e:
         logging.error(f"Помилка обрізки файлу {filename}: {e}")
+
+def fetch_full_article_text(url, scraper):
+    """Переходить на сайт і витягує повний текст статті, якщо RSS обрізаний"""
+    try:
+        resp = scraper.get(url, timeout=10)
+        if resp.status_code == 200:
+            soup = BeautifulSoup(resp.text, 'html.parser')
+            # Збираємо всі абзаци тексту
+            paragraphs = soup.find_all('p')
+            # Відкидаємо короткі системні написи (менше 30 символів) і склеюємо текст
+            full_text = ' '.join([p.get_text(strip=True) for p in paragraphs if len(p.get_text(strip=True)) > 30])
+            if full_text:
+                # Обрізаємо до 3500 символів, щоб не перевантажити контекстне вікно Gemini
+                return full_text[:3500] 
+    except Exception as e:
+        logging.error(f"⚠️ Не вдалося завантажити повний текст {url}: {e}")
+    return None
 
 def send_alert_to_admin(message):
     if not ADMIN_CHAT_ID: 
@@ -255,7 +273,7 @@ def call_gemini_json(client, prompt, stats=None):
 
 @retry(stop=stop_after_attempt(4), wait=wait_exponential(multiplier=2, min=15, max=60))
 def generate_news_texts(client, prompt, expected_count, stats=None):
-    models_to_try = ['gemini-3.5-flash-lite', 'gemini-3.6-flash']
+    models_to_try = ['gemini-3.6-flash', 'gemini-3.5-flash-lite']
     last_error = None
     
     for current_model in models_to_try:
@@ -288,6 +306,13 @@ def generate_news_texts(client, prompt, expected_count, stats=None):
                 'є́': 'є', 'і́': 'і'
             }
             clean_text = response.text
+            
+            # Видаляємо невидимий наголос (Combining Acute Accent), щоб не губити літери
+            clean_text = clean_text.replace('\u0301', '')
+            
+            # Жорстке видалення обірваних хвостів з RSS (якщо ШІ все ж пропустив)
+            clean_text = clean_text.replace('...', '.').replace('[...]', '.')
+            
             for bad_char, good_char in HOMOGLYPHS.items():
                 clean_text = clean_text.replace(bad_char, good_char)
                 
@@ -352,6 +377,7 @@ def deduplicate_news(client, articles, history_titles=None, stats=None):
     КРОК 3. ФІЛЬТР ІСТОРІЇ ТА ВАЖЛИВІ ОНОВЛЕННЯ: 
     Порівняй кандидатів зі списком <HISTORY>. 
     - Якщо новина є просто переказом вчорашньої події або містить дрібні, несуттєві коментарі — ВІДХИЛЯЙ.
+    - РЕАКЦІЇ ТА КОМЕНТАРІ (АНТИ-ДУБЛЬ): Якщо в історії вже є базова новина (наприклад, інцидент чи ДТП), а новий кандидат — це просто коментар політика, реакція партії, дискусія на сесії чи думка експерта щодо цього інциденту — БЕЗЖАЛЬНО ВІДХИЛЯЙ. Це інформаційний шум.
     - АЛЕ якщо це СУТТЄВЕ ОНОВЛЕННЯ вже знайомої події (наприклад: кардинально зросла кількість жертв, знайдено злочинця, ухвалено закон, який вчора лише обговорювався, або є офіційна реакція влади на кризу) — ОБОВ'ЯЗКОВО ЗАЛИШАЙ.
 
     КРОК 4. СТОП-ТЕМИ (ЩО БЕЗЖАЛЬНО ВІДХИЛЯТИ): 
@@ -502,6 +528,20 @@ def scrape_feeds(stats=None):
                 if current_time - article_time > MAX_AGE_SECONDS: continue
             
             description = entry.get('summary', title)
+            if 'content' in entry and len(entry.content) > 0:
+                description = entry.content[0].get('value', description)
+
+            # РОЗУМНЕ ЗАВАНТАЖЕННЯ: Якщо текст обрізано (є ... в кінці), йдемо на сайт за повним текстом
+            if '...' in description[-15:] or '[...]' in description[-15:] or len(description) < 200:
+                fetched_text = fetch_full_article_text(url, scraper)
+                if fetched_text:
+                    description = fetched_text
+            
+            # Якщо навіть після парсингу залишились крапки в кінці (дуже рідко), відрізаємо хвіст
+            if '...' in description[-10:] or '[...]' in description[-10:]:
+                match = re.search(r'(.*[.!?])', description)
+                if match: description = match.group(1)
+
             if not is_quality_article(title, description, url): 
                 if stats is not None: stats["funnel"]["rejected_by_keywords"] += 1
                 continue
