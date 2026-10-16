@@ -1,68 +1,5 @@
 [
     {
-        "timestamp": "2026-10-07 16:01:06",
-        "execution_time": 134.4,
-        "funnel": {
-            "scraped_total": 35,
-            "scraped_by_source": {
-                "023": 10,
-                "Slobodna dalmacija": 15,
-                "Zadarski list": 10
-            },
-            "already_seen": 12,
-            "rejected_by_keywords": 0,
-            "duplicates_removed_by_ai": 23,
-            "rejection_reasons_list": [
-                "• Glavak: Krizu troškova života ne možemo ... ➡️ <b>Загальнополітичний шум без прямого відношення до Задара чи українців</b>",
-                "• Endokrinologinja otkriva koja pitanja po... ➡️ <b>Поради дієтологів та лайфстайл</b>",
-                "• Rastopit će vas ove snimke iz Telašćice.... ➡️ <b>Світловий лайфстайл, порятунок тварини у парку</b>",
-                "• Troskot i Miletić traže “izvanredno kriz... ➡️ <b>Побут та проблеми іншого міста (Карловац)</b>",
-                "• Zajedničko uzimanje cinka i vitamina C: ... ➡️ <b>Абстрактні поради про здоров'я</b>",
-                "• Šibenska osnovna škola traži čak 12 novi... ➡️ <b>Побут чужого міста (Шибеник)</b>",
-                "• Na listi čekanja bez mjesta u vrtiću u R... ➡️ <b>Побут чужого міста (Рієка)</b>",
-                "• Presađeno srce mijenja biološku dob prem... ➡️ <b>Світовий науковий шум</b>",
-                "• Šibenik je u elitnom društvu! Evo zašto ... ➡️ <b>Туристичний матеріал про Шибеник</b>",
-                "• Za riječki Zdravstveni odgoj – 115 tisuć... ➡️ <b>Побут та бюджети чужого міста (Рієка)</b>",
-                "• Van Goghova multisenzorna izložba koju j... ➡️ <b>Події у Загребі, що не стосуються напряму Задара</b>",
-                "• Međuljudski odnosi i prevencija nasilnič... ➡️ <b>Події у чужому місті (Дубровник)</b>",
-                "• Milanović odlikovao Filipa Hrgovića Redo... ➡️ <b>Спорт (бокс)</b>",
-                "• Trail u Pločama spaja prirodu, povijest ... ➡️ <b>Спорт та активний відпочинок</b>",
-                "• “Dankobosanac”: Asteroid u Sunčevom sust... ➡️ <b>Світова наука</b>",
-                "• Okusi Masne ulice: tripice, buncek, fave... ➡️ <b>Гастрономія та побут чужого міста (Шибеник)</b>",
-                "• Budiša: Sanacija bivšeg PPK-a u Gospiću ... ➡️ <b>Побут та екологія іншого міста (Госпіч)</b>",
-                "• Dubrovnik bilježi skoro 200 tisuća manje... ➡️ <b>Дубль новини про трафік у Дубровнику (ідентична до id 19)</b>",
-                "• Bugari se oglasili o povučenom cjepivu z... ➡️ <b>Дубль або несуттєве оновлення теми скасованого бцж-щеплення</b>",
-                "• Zona posebnog prometnog režima nastavlja... ➡️ <b>Побут чужого міста (Дубровник)</b>",
-                "• Završio MED9 u Splitu. Plenković: U kont... ➡️ <b>Дубль або несуттєве оновлення саміту MED9 у Спліті</b>",
-                "• Inspektori Komisije za poštenu trgovinu ... ➡️ <b>Світовий шум (Японія)</b>",
-                "• Rimac Technology i ECOBLOX udružuju snag... ➡️ <b>Загальнонаціональна бізнес-новина високого рівня технологій</b>"
-            ]
-        },
-        "backlog": {
-            "total_size": 39,
-            "sources": {
-                "Slobodna dalmacija": 25,
-                "023": 4,
-                "Zadarski list": 10
-            }
-        },
-        "published": {
-            "total": 1,
-            "ukraine_priority": 0,
-            "with_images": 1,
-            "text_only": 0,
-            "sources": {
-                "Slobodna dalmacija": 1
-            }
-        },
-        "models_used": {
-            "gemini-3.5-flash-lite": 2,
-            "gemini-3.5-flash": 0
-        },
-        "errors_count": 1,
-        "gemini_retries": 0
-    },
-    {
         "timestamp": "2026-10-07 19:01:00",
         "execution_time": 65.3,
         "funnel": {
@@ -5958,5 +5895,67 @@
         },
         "errors_count": 0,
         "gemini_retries": 1
+    },
+    {
+        "timestamp": "2026-10-16 19:01:07",
+        "execution_time": 330.6,
+        "funnel": {
+            "scraped_total": 35,
+            "scraped_by_source": {
+                "023": 10,
+                "Slobodna dalmacija": 15,
+                "Zadarski list": 10
+            },
+            "already_seen": 9,
+            "rejected_by_keywords": 5,
+            "duplicates_removed_by_ai": 22,
+            "rejection_reasons_list": [
+                "• Tito & Tarantula u Boogaloou rekreiraju ... ➡️ <b>Побут чужих міст</b>",
+                "• Dom za starije u Dubrovačkom primorju bi... ➡️ <b>Побут чужих міст</b>",
+                "• Sloj bez kisika u Zmajevu oku kod Rogozn... ➡️ <b>Світовий шум</b>",
+                "• Radovi na dalekovodu na Gornjoj Orehovic... ➡️ <b>Побут чужих міст</b>",
+                "• Vatrogasci lokalizirali požar na Jakljan... ➡️ <b>Побут чужих міст</b>",
+                "• Zašto neki nakon cijepljenja dobiju vruć... ➡️ <b>Світовий шум</b>",
+                "• Obilježena 35. godišnjica pogibije Josip... ➡️ <b>Побут чужих міст</b>",
+                "• Znanstvenici su 1947. bacili suhi led u ... ➡️ <b>Геоблок</b>",
+                "• Rossinijeva Pepeljuga prvi put u Rijeci ... ➡️ <b>Побут чужих міст</b>",
+                "• Dobre vijesti iz Skradina: ronioci i vat... ➡️ <b>Побут чужих міст</b>",
+                "• Edamame, humus i pečeni slanutak: sedam ... ➡️ <b>Світовий шум</b>",
+                "• Predstavljena “Diplomacija iza kulisa” D... ➡️ <b>Побут чужих міст</b>",
+                "• Tražite parking u Mokošici? Grad Dubrovn... ➡️ <b>Побут чужих міст</b>",
+                "• Jedemo li pogrešno? Svjetski dan hrane u... ➡️ <b>Світовий шум</b>",
+                "• Objavljen javni natječaj za zakup osam g... ➡️ <b>Дублікат новини 14</b>",
+                "• Pas laje sve glasnije dok ga pokušavate ... ➡️ <b>Світовий шум</b>",
+                "• Lucija Žeželj predsjednica riječkog Stud... ➡️ <b>Побут чужих міст</b>",
+                "• Dobar rad u malim sredinama: Ponos Škole... ➡️ <b>Спорт</b>",
+                "• Oštra reakcija s Pantovčaka na skandaloz... ➡️ <b>Анти-дубль та спорт</b>",
+                "• Prijevara na Krku: Oštećen za oko 30.000... ➡️ <b>Побут чужих міст</b>",
+                "• Brucoši i strani studenti zaplovili u no... ➡️ <b>Дубль історії</b>",
+                "• Obilježen Svjetski dan kravate: Simbol k... ➡️ <b>Побут чужих міст</b>"
+            ]
+        },
+        "backlog": {
+            "total_size": 43,
+            "sources": {
+                "Zadarski list": 23,
+                "Slobodna dalmacija": 13,
+                "023": 7
+            }
+        },
+        "published": {
+            "total": 3,
+            "ukraine_priority": 1,
+            "with_images": 3,
+            "text_only": 0,
+            "sources": {
+                "Zadarski list": 3
+            }
+        },
+        "models_used": {
+            "gemini-3.5-flash-lite": 2,
+            "gemini-3.6-flash": 0
+        },
+        "errors_count": 0,
+        "gemini_retries": 3
     }
 ]
