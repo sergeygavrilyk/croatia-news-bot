@@ -1,68 +1,5 @@
 [
     {
-        "timestamp": "2026-10-06 19:01:05",
-        "execution_time": 7.9,
-        "funnel": {
-            "scraped_total": 35,
-            "scraped_by_source": {
-                "023": 10,
-                "Slobodna dalmacija": 15,
-                "Zadarski list": 10
-            },
-            "already_seen": 11,
-            "rejected_by_keywords": 1,
-            "duplicates_removed_by_ai": 25,
-            "rejection_reasons_list": [
-                "• Subota je popodne i zabolio vas je zub? ... ➡️ <b>Побут Дубровика</b>",
-                "• Britanski novinar oduševljen Pulom: rims... ➡️ <b>Побут Пули</b>",
-                "• Milan Pavelić umjesto Trkulje novi v.d. ... ➡️ <b>Спорт</b>",
-                "• Ovo je gorivo budućnosti! Štiže nešto št... ➡️ <b>Світовий шум та енергетика</b>",
-                "• Gastro blogerica otkrila tajni sastojak ... ➡️ <b>Рецепти та лайфстайл</b>",
-                "• Plenković u Splitu Von der Leyen naglasi... ➡️ <b>Політика загальнонаціонального рівня без прямого зв'язку з Задаром</b>",
-                "• ‘Marina Resort Cavtat je legalan i trans... ➡️ <b>Побут Дубровика</b>",
-                "• Bounty torta: recept za slasticu s četir... ➡️ <b>Рецепти та лайфстайл</b>",
-                "• Jerković Kraljić: Stranci sam uputila oč... ➡️ <b>Політика</b>",
-                "• Dalmatinci stalno kukaju, neki postaju n... ➡️ <b>Лайфстайл та роздуми</b>",
-                "• Sve više mladih oboljelih od raka: znans... ➡️ <b>Абстрактна наука та світовий шум</b>",
-                "• Delegacija Crvenog križa iz mađarske žup... ➡️ <b>Побут Дебниць та Горського Котару</b>",
-                "• Nije apsurdno nego skroz logično što je ... ➡️ <b>Побут Шибеника</b>",
-                "• Nova svjetska vinska karta otkriva: ista... ➡️ <b>Побут Істрії та Кварнеру</b>",
-                "• Policija dovršila kriminalističku istrag... ➡️ <b>Вже є в історії (вбивство на Становах у Задарі вже детально висвітлено раніше)</b>",
-                "• Ministarstvo zaštite okoliša: U javnosti... ➡️ <b>Побут Госпича</b>",
-                "• Dubrovnik ponovno u svjetskoj eliti, sad... ➡️ <b>Побут Дубровика</b>",
-                "• Na stočnom sajmištu u sklopu Jeseni u Li... ➡️ <b>Побут Ліки</b>",
-                "• Sofija Rozić nakon 25 godina rada u Dubr... ➡️ <b>Побут Дубровика</b>",
-                "• Plenković: Bilo mi je drago sastati se s... ➡️ <b>Дублікат або незначне оновлення події в Спліті</b>",
-                "• Križan Dinko Vučak krv je dao 100 puta: ... ➡️ <b>Побут Водиць</b>",
-                "• Međunarodni dan georaznolikosti u Grabov... ➡️ <b>Побут Ліки</b>",
-                "• Krenuo preko granice s 20.700 eura, a on... ➡️ <b>Загальні правила перетину кордону без конкретної прив'язки</b>",
-                "• Najmanja lička osnovna škola u najvećoj ... ➡️ <b>Побут Ліки</b>",
-                "• Gradi se mreža za tisuće kućanstava: Vod... ➡️ <b>Побут Водиць</b>"
-            ]
-        },
-        "backlog": {
-            "total_size": 46,
-            "sources": {
-                "Zadarski list": 17,
-                "Slobodna dalmacija": 25,
-                "023": 4
-            }
-        },
-        "published": {
-            "total": 0,
-            "ukraine_priority": 0,
-            "with_images": 0,
-            "text_only": 0,
-            "sources": {}
-        },
-        "models_used": {
-            "gemini-3.5-flash-lite": 0,
-            "gemini-3.5-flash": 0
-        },
-        "errors_count": 0,
-        "gemini_retries": 0
-    },
-    {
         "timestamp": "2026-10-07 07:01:02",
         "execution_time": 214.0,
         "funnel": {
@@ -5962,6 +5899,59 @@
             "sources": {
                 "Slobodna dalmacija": 1,
                 "023": 1
+            }
+        },
+        "models_used": {
+            "gemini-3.5-flash-lite": 2,
+            "gemini-3.6-flash": 0
+        },
+        "errors_count": 0,
+        "gemini_retries": 0
+    },
+    {
+        "timestamp": "2026-10-16 07:01:13",
+        "execution_time": 174.0,
+        "funnel": {
+            "scraped_total": 35,
+            "scraped_by_source": {
+                "023": 10,
+                "Slobodna dalmacija": 15,
+                "Zadarski list": 10
+            },
+            "already_seen": 3,
+            "rejected_by_keywords": 4,
+            "duplicates_removed_by_ai": 12,
+            "rejection_reasons_list": [
+                "• Trump: “Nastavak ukrajinskih napada na r... ➡️ <b>Геоблок: події за межами Хорватії та України без прямих наслідків для українських біженців</b>",
+                "• Zadar ove subote u znaku patuljastih šna... ➡️ <b>Стоп-тема: розважальний захід та дозвіги, не належить до критичної інфраструктури чи важливих новин</b>",
+                "• Djelo Gioachina Rossinija prvi put u Rij... ➡️ <b>Побут чужих міст: культурна подія у Рієці</b>",
+                "• Tražite stan u Šibeniku? Pogledajte cije... ➡️ <b>Побут чужих міст: оренда житла у Шибенику</b>",
+                "• Francuska i Njemačka postigle dogovor o ... ➡️ <b>Геоблок: новина стосується Франції та Німеччини, а не Хорватії чи України</b>",
+                "• Pogledajte što sve možete pročitati u no... ➡️ <b>Побут чужих міст: місцеві події у Дубровнику</b>",
+                "• Lürssen sve bliži odlasku iz dva ogromna... ➡️ <b>Побут чужих міст: економічні новини Кварнера та Рієки</b>",
+                "• Ovo je najskuplje povrće u Hrvatskoj, u ... ➡️ <b>Побут чужих міст: ринок овочів у Дубровнику</b>",
+                "• Ostatak pire krumpira od ručka postaje m... ➡️ <b>Світовий шум: кулінарний рецепт</b>",
+                "• Presudni detalji – Za uspješan lov treba... ➡️ <b>Стоп-тема: спорт та хобі (риболовля)</b>",
+                "• Upornost je ključ uspjeha. Nakon nebroje... ➡️ <b>Стоп-тема: спорт та хобі (риболовля)</b>",
+                "• Odjel za djecu i mlade Narodne knjižnice... ➡️ <b>Побут чужих міст: ювілей бібліотеки у Дубровнику</b>"
+            ]
+        },
+        "backlog": {
+            "total_size": 15,
+            "sources": {
+                "023": 4,
+                "Slobodna dalmacija": 5,
+                "Zadarski list": 6
+            }
+        },
+        "published": {
+            "total": 3,
+            "ukraine_priority": 0,
+            "with_images": 1,
+            "text_only": 2,
+            "sources": {
+                "023": 2,
+                "Slobodna dalmacija": 1
             }
         },
         "models_used": {
