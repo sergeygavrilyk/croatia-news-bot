@@ -1,61 +1,5 @@
 [
     {
-        "timestamp": "2026-10-07 08:01:11",
-        "execution_time": 161.4,
-        "funnel": {
-            "scraped_total": 35,
-            "scraped_by_source": {
-                "023": 10,
-                "Slobodna dalmacija": 15,
-                "Zadarski list": 10
-            },
-            "already_seen": 2,
-            "rejected_by_keywords": 1,
-            "duplicates_removed_by_ai": 15,
-            "rejection_reasons_list": [
-                "• Otok Vir ruši rekorde! Rujan donio peti ... ➡️ <b>Туризм на острові Вір, не пріоритетно для Задара</b>",
-                "• Samo jedna mala promjena u rutini osigur... ➡️ <b>Світовий шум та лайфстайл</b>",
-                "• Plesni voditelj Folklornog ansambla Linđ... ➡️ <b>Побут інших міст (Дубровник)</b>",
-                "• Usklađeni modni kompleti najjednostavnij... ➡️ <b>Світовий шум та лайфстайл</b>",
-                "• Investitori golemog resorta u Cavtatu pr... ➡️ <b>Побут інших міст (Цавтат)</b>",
-                "• Jesenje večeri na balkonu mogu biti još ... ➡️ <b>Світовий шум та лайфстайл</b>",
-                "• Ovaj začin za jačanje imuniteta možete d... ➡️ <b>Світовий шум та лайфстайл</b>",
-                "• Prijem za svjetske i europske prvake: Za... ➡️ <b>Спорт</b>",
-                "• Mokošica pred kolapsom: zatvara se čak 1... ➡️ <b>Побут інших міст (Дубровник)</b>",
-                "• Zlatni i hrskavi popečci od bundeve i sl... ➡️ <b>Світовий шум та лайфстайл</b>",
-                "• Velika akcija u PEVEX-u: Ostvarite 20% p... ➡️ <b>Реклама</b>",
-                "• Poluprazne police Studenca izgledaju kao... ➡️ <b>Дублікат</b>",
-                "• Znamo kako uzgojiti zvjezdane za raskošn... ➡️ <b>Світовий шум та лайфстайл</b>",
-                "• Gledali su u nebo i zbrajali štetu. A sa... ➡️ <b>Вже є в історії</b>",
-                "• Rinčić je kritizirala Filipovića zbog pr... ➡️ <b>Побут інших міст (Рієка)</b>"
-            ]
-        },
-        "backlog": {
-            "total_size": 25,
-            "sources": {
-                "023": 10,
-                "Slobodna dalmacija": 7,
-                "Zadarski list": 8
-            }
-        },
-        "published": {
-            "total": 3,
-            "ukraine_priority": 0,
-            "with_images": 1,
-            "text_only": 2,
-            "sources": {
-                "Slobodna dalmacija": 1,
-                "023": 2
-            }
-        },
-        "models_used": {
-            "gemini-3.5-flash-lite": 1,
-            "gemini-3.5-flash": 0
-        },
-        "errors_count": 0,
-        "gemini_retries": 0
-    },
-    {
         "timestamp": "2026-10-07 09:01:03",
         "execution_time": 161.0,
         "funnel": {
@@ -5966,5 +5910,68 @@
         },
         "errors_count": 0,
         "gemini_retries": 0
+    },
+    {
+        "timestamp": "2026-10-16 09:01:16",
+        "execution_time": 242.3,
+        "funnel": {
+            "scraped_total": 35,
+            "scraped_by_source": {
+                "023": 10,
+                "Slobodna dalmacija": 15,
+                "Zadarski list": 10
+            },
+            "already_seen": 3,
+            "rejected_by_keywords": 2,
+            "duplicates_removed_by_ai": 22,
+            "rejection_reasons_list": [
+                "• ‘U ratom zahvaćenom Dubrovniku i opkolje... ➡️ <b>Стоп-тема: культурний та історичний контент поза фокусом.</b>",
+                "• Trump: “Nastavak ukrajinskih napada na r... ➡️ <b>Стоп-тема: світовий шум та закордонна політика без прямого впливу на Хорватію.</b>",
+                "• Nakon stravičnih scena u Splitu, policij... ➡️ <b>Стоп-тема: побут та кримінал інших міст (Спліт), спорт.</b>",
+                "• Strani mediji brutalno osudili nacifašiz... ➡️ <b>Стоп-тема: спорт.</b>",
+                "• Prilika za zaposlenje: velika tvrtka nud... ➡️ <b>Стоп-тема: побут та працевлаштування в іншому місті (Шибеник).</b>",
+                "• Nevjerojatna sreća u Jastrebarskom; Nije... ➡️ <b>Стоп-тема: побут інших міст (Jastrebarsko).</b>",
+                "• Splitska policija krenula u uhićenja pri... ➡️ <b>Дубль новини ID 2 (Спліт, фанати).</b>",
+                "• Pao jedan od napadača s Babinduba; Polic... ➡️ <b>Дубль новини про інцидент на Babindub (вже є в історії).</b>",
+                "• Milanovićev glavni analitičar oštriji ne... ➡️ <b>Стоп-тема: загальнополітичні розборки на національному рівні без прямого зв'язку із Задаром чи діаспорою.</b>",
+                "• Svjetski dan hrane; Hrvatska povećala do... ➡️ <b>Стоп-тема: загальна статистика та світловий шум.</b>",
+                "• Zašto je navlaka čuvenog jugoslavenskog ... ➡️ <b>Стоп-тема: ностальгічний лайфстайл.</b>",
+                "• Nove cijene goriva; Pogledajte koliko bi... ➡️ <b>Стоп-тема: попередні неофіційні чутки про ціни на пальне.</b>",
+                "• U galeriji »Fritzi« otvorena izložba »Od... ➡️ <b>Стоп-тема: культура іншого міста (Малі Лошинь).</b>",
+                "• I jutros su vatrogasci Dubrovnika, Primo... ➡️ <b>Стоп-тема: пожежі та комунальні проблеми інших регіонів (Дубровник).</b>",
+                "• Nastavak potrage za nestalima; Kod Komar... ➡️ <b>Стоп-тема: події в інших жупаніях (Сисацько-Мославинська).</b>",
+                "• U Koprivnici u subotu prosvjed protiv me... ➡️ <b>Стоп-тема: протести в іншому місті (Копривниця).</b>",
+                "• Dubrovčani plaćaju najskuplje voće i pov... ➡️ <b>Стоп-тема: побут та ринки іншого міста (Дубровник).</b>",
+                "• Kros spektakl u općini Ražanac; Više od ... ➡️ <b>Стоп-тема: спортивний крос-забіг.</b>",
+                "• Znate li kod liganja razliku između mužj... ➡️ <b>Стоп-тема: абстрактна наука та пізнавальні статті.</b>",
+                "• Mokošica – Gruž: Kamenac, rodeo i cesta ... ➡️ <b>Стоп-тема: побут інших міст (Груж-Мокошиця).</b>",
+                "• Piše Kim Cuculić: Apel za knjigu... ➡️ <b>Стоп-тема: освітня колонка без прямого відношення до Задара.</b>",
+                "• Zadar ima nekoliko „dužnika”, ali ako on... ➡️ <b>Стоп-тема: спорт (баскетбольний матч команди Задар).</b>"
+            ]
+        },
+        "backlog": {
+            "total_size": 30,
+            "sources": {
+                "023": 7,
+                "Slobodna dalmacija": 13,
+                "Zadarski list": 10
+            }
+        },
+        "published": {
+            "total": 3,
+            "ukraine_priority": 0,
+            "with_images": 3,
+            "text_only": 0,
+            "sources": {
+                "Slobodna dalmacija": 2,
+                "Zadarski list": 1
+            }
+        },
+        "models_used": {
+            "gemini-3.5-flash-lite": 1,
+            "gemini-3.6-flash": 1
+        },
+        "errors_count": 0,
+        "gemini_retries": 3
     }
 ]
