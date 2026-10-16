@@ -1,69 +1,5 @@
 [
     {
-        "timestamp": "2026-10-07 10:01:05",
-        "execution_time": 68.7,
-        "funnel": {
-            "scraped_total": 35,
-            "scraped_by_source": {
-                "023": 10,
-                "Slobodna dalmacija": 15,
-                "Zadarski list": 10
-            },
-            "already_seen": 12,
-            "rejected_by_keywords": 3,
-            "duplicates_removed_by_ai": 24,
-            "rejection_reasons_list": [
-                "• Prijem za svjetske i europske prvake: Za... ➡️ <b>Спорт</b>",
-                "• I Šibenik hoće novi stadion! ‘Ma, možemo... ➡️ <b>Побут інших міст</b>",
-                "• Mladim riječkim inovatorima 26 medalja n... ➡️ <b>Побут інших міст</b>",
-                "• Velika akcija u PEVEX-u: Ostvarite 20% p... ➡️ <b>Реклама</b>",
-                "• Dalmatinski grad objavio rat pirotehnici... ➡️ <b>Побут інших міст</b>",
-                "• Na Učki postoji “crna točka” na kojoj st... ➡️ <b>Побут інших міст</b>",
-                "• Kako doživljavaš Zadar kroz zvuk, pokret... ➡️ <b>Вже є в історії</b>",
-                "• Dubrovački duo Dora Kamber i Pero Škobel... ➡️ <b>Побут інших міст</b>",
-                "• Novi list u Parizu: “Samo smo hodali, a ... ➡️ <b>Світовий шум</b>",
-                "• Svjetski dan cerebralne paralize u Medic... ➡️ <b>Вже є в історії</b>",
-                "• Prošlo je 35 godina od tragedije koja je... ➡️ <b>Побут інших міст</b>",
-                "• Zašto je otpad Izgradnje još na Trsatu? ... ➡️ <b>Побут інших міст</b>",
-                "• Srce zadarskih zbivanja na vašem ekranu:... ➡️ <b>Вже є в історії</b>",
-                "• Prošlo je 35 godina od tragedije koja je... ➡️ <b>Дублікат</b>",
-                "• Dragovoljci Grobnišćine u Cerniku Slavon... ➡️ <b>Побут інших міст</b>",
-                "• Nova pravila za zaštitu djece na interne... ➡️ <b>Світовий шум</b>",
-                "• U Čajkovićima teško ozlijeđen vozač (47)... ➡️ <b>Побут інших міст</b>",
-                "• Plenković na otvorenju skupa MED9 u Spli... ➡️ <b>Побут інших міст</b>",
-                "• Muškarac (47) teško ozlijeđen u padu s r... ➡️ <b>Дублікат</b>",
-                "• Pijani Indijac vozio kamion po A7 pa uda... ➡️ <b>Побут інших міст</b>",
-                "• 20 % popusta u PEVEX-u do nedjelje na sv... ➡️ <b>Дублікат</b>",
-                "• Dionice na europskim burzama opet pale, ... ➡️ <b>Світовий шум</b>",
-                "• Vlasnica kuće u Prvić Luci optužena za i... ➡️ <b>Побут інших міст</b>",
-                "• Sad je jasno zašto se Dodik onako zahval... ➡️ <b>Світовий шум</b>"
-            ]
-        },
-        "backlog": {
-            "total_size": 36,
-            "sources": {
-                "Zadarski list": 13,
-                "Slobodna dalmacija": 17,
-                "023": 6
-            }
-        },
-        "published": {
-            "total": 1,
-            "ukraine_priority": 0,
-            "with_images": 1,
-            "text_only": 0,
-            "sources": {
-                "Slobodna dalmacija": 1
-            }
-        },
-        "models_used": {
-            "gemini-3.5-flash-lite": 1,
-            "gemini-3.5-flash": 0
-        },
-        "errors_count": 0,
-        "gemini_retries": 0
-    },
-    {
         "timestamp": "2026-10-07 11:01:04",
         "execution_time": 191.1,
         "funnel": {
@@ -5983,5 +5919,65 @@
         },
         "errors_count": 0,
         "gemini_retries": 0
+    },
+    {
+        "timestamp": "2026-10-16 11:01:07",
+        "execution_time": 188.9,
+        "funnel": {
+            "scraped_total": 35,
+            "scraped_by_source": {
+                "023": 10,
+                "Slobodna dalmacija": 15,
+                "Zadarski list": 10
+            },
+            "already_seen": 16,
+            "rejected_by_keywords": 4,
+            "duplicates_removed_by_ai": 19,
+            "rejection_reasons_list": [
+                "• ‘U ratom zahvaćenom Dubrovniku i opkolje... ➡️ <b>Подія не стосується Задара чи Хорватії напряму, історичний нарис</b>",
+                "• VW priprema opoziv nekoliko tisuća elekt... ➡️ <b>Інші країни / геоблок</b>",
+                "• Odabran izvođač za izgradnju modernog dj... ➡️ <b>Побут чужого міста (Шибеник)</b>",
+                "• Predstavljen prvi sveobuhvatni katalog M... ➡️ <b>Побут іншого міста (Оточац)</b>",
+                "• Sada je i službeno. Miočić ide za šefa H... ➡️ <b>Не відповідає пріоритетним темам Задара чи національної важливості для діаспори</b>",
+                "• Dubrovačko-neretvanska policija: Za vike... ➡️ <b>Побут іншого регіону (Дубровник)</b>",
+                "• Nakon stravičnih scena u Splitu, policij... ➡️ <b>Дубль новини про події в Спліті (є інші пов'язані новини про реакції)</b>",
+                "• Do ponedjeljka prijave za obiteljsku ško... ➡️ <b>Побут іншого міста (Ловран/Рієка)</b>",
+                "• ‘Kriv za glupost‘: muškarac prerezao gla... ➡️ <b>Побут іншого міста (Оребіч)</b>",
+                "• Nevjerojatna sreća u Jastrebarskom; Nije... ➡️ <b>Світловий шум / курйоз</b>",
+                "• Božinović o Torcidi: Prekršajne prijave ... ➡️ <b>Дубль або вторинний коментар щодо подій у Спліті</b>",
+                "• Dvojica u Dubrovniku istukla 19-godišnja... ➡️ <b>Дубль новини про інцидент у Дубровнику</b>",
+                "• Ručnom pilom prerezao glavnu kanalizacij... ➡️ <b>Дубль новини про пошкодження каналізації в Оребічі</b>",
+                "• Svjetski dan hrane; Hrvatska povećala do... ➡️ <b>Абстрактна статистика / світовий день</b>",
+                "• Milanović osudio sramotno ponašanje dije... ➡️ <b>Реакція на події в Спліті (дубль кластера)</b>",
+                "• Pronađeni napadači na 19-godišnjeg Dubro... ➡️ <b>Дубль новини з Дубровника</b>",
+                "• Nove cijene goriva; Pogledajte koliko bi... ➡️ <b>Попередні непідтверджені дані/чутки про ціни</b>",
+                "• Nađa Berbić odgovorila Marinu Miletiću: ... ➡️ <b>Полеміка місцевих політиків іншого регіону</b>",
+                "• Dobitnica BBC-jeve nagrade za folk pjeva... ➡️ <b>Культурна подія іншого міста (Дубровник)</b>"
+            ]
+        },
+        "backlog": {
+            "total_size": 47,
+            "sources": {
+                "Slobodna dalmacija": 23,
+                "Zadarski list": 14,
+                "023": 10
+            }
+        },
+        "published": {
+            "total": 3,
+            "ukraine_priority": 0,
+            "with_images": 1,
+            "text_only": 2,
+            "sources": {
+                "023": 2,
+                "Slobodna dalmacija": 1
+            }
+        },
+        "models_used": {
+            "gemini-3.5-flash-lite": 2,
+            "gemini-3.6-flash": 0
+        },
+        "errors_count": 0,
+        "gemini_retries": 1
     }
 ]
