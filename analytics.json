@@ -1,62 +1,5 @@
 [
     {
-        "timestamp": "2026-10-08 10:01:05",
-        "execution_time": 180.7,
-        "funnel": {
-            "scraped_total": 35,
-            "scraped_by_source": {
-                "023": 10,
-                "Slobodna dalmacija": 15,
-                "Zadarski list": 10
-            },
-            "already_seen": 7,
-            "rejected_by_keywords": 0,
-            "duplicates_removed_by_ai": 16,
-            "rejection_reasons_list": [
-                "• Tomašević o smradu u Zagrebu: “Istražuje... ➡️ <b>Побут інших міст (проблема із запахом у Загребі).</b>",
-                "• Uspješan model upravljanja tvrđavama pre... ➡️ <b>Побут інших міст та культурні заходи поза Задаром.</b>",
-                "• Dubrovnik ponovno pod opsadom filmaša: s... ➡️ <b>Лайфстайл та новини культури інших міст (зйомки серіалу в Дубровнику).</b>",
-                "• Teško ozlijeđen vozač romobila na Lošinj... ➡️ <b>Побут інших міст (дрібна ДТП на Лошині).</b>",
-                "• Panika zbog kuge u Rusiji, stari Dubrovč... ➡️ <b>Світовий шум (новини про чуму в Росії).</b>",
-                "• Objavljen popis 20 najsigurnijih europsk... ➡️ <b>Світовий шум та лайфстайл (загальноєвропейський рейтинг авіакомпаній).</b>",
-                "• Veliki uspjeh dalmatinskih cubera; Toni ... ➡️ <b>Спорт (змагання зі швидкісного збирання кубика Рубіка).</b>",
-                "• Ukrao odjeću vrijednu manje od 50 eura, ... ➡️ <b>Побут інших міст (дрібна крадіжка в Чаковці).</b>",
-                "• Dubrovački biskup Roko Glasnović podijel... ➡️ <b>Побут інших міст (релігійний захід у Цавтаті).</b>",
-                "• Pitamo ih za posao, novac, a sada i za z... ➡️ <b>Світовий шум та лайфстайл (абстрактні роздуми про довіру до інформації в інтернеті).</b>",
-                "• Obećala mu nasljedstvo i zlato pokojnog ... ➡️ <b>Побут інших міст (дрібне інтернет-шахрайство без прив'язки до Задара).</b>",
-                "• Predsjednik Milanović odlikovao Filipa H... ➡️ <b>Спорт (нагородження боксера президентом).</b>",
-                "• AI megaprojekt kod Topuskog. Županija mi... ➡️ <b>Побут інших міст (локальний інвестиційний проект у Топуско).</b>",
-                "• Žena (26) krala odjeću u trgovini u Istr... ➡️ <b>Побут інших міст (дрібна крадіжка в Істрії).</b>",
-                "• Mještanin bagerom razbio 20 metara novog... ➡️ <b>Побут інших міст (локальний конфлікт через дорогу на Пелєшаці).</b>",
-                "• Jutarnja pljačka banke u Višnjanu: razbo... ➡️ <b>Побут інших міст (пограбування банку у Вишняні).</b>"
-            ]
-        },
-        "backlog": {
-            "total_size": 51,
-            "sources": {
-                "Slobodna dalmacija": 26,
-                "Zadarski list": 14,
-                "023": 11
-            }
-        },
-        "published": {
-            "total": 3,
-            "ukraine_priority": 0,
-            "with_images": 1,
-            "text_only": 2,
-            "sources": {
-                "023": 2,
-                "Zadarski list": 1
-            }
-        },
-        "models_used": {
-            "gemini-3.5-flash-lite": 1,
-            "gemini-3.5-flash": 1
-        },
-        "errors_count": 0,
-        "gemini_retries": 0
-    },
-    {
         "timestamp": "2026-10-08 11:01:03",
         "execution_time": 180.3,
         "funnel": {
@@ -5932,6 +5875,70 @@
             "with_images": 1,
             "text_only": 0,
             "sources": {
+                "Zadarski list": 1
+            }
+        },
+        "models_used": {
+            "gemini-3.5-flash-lite": 0,
+            "gemini-3.6-flash": 2
+        },
+        "errors_count": 0,
+        "gemini_retries": 0
+    },
+    {
+        "timestamp": "2026-10-17 11:01:03",
+        "execution_time": 200.8,
+        "funnel": {
+            "scraped_total": 35,
+            "scraped_by_source": {
+                "023": 10,
+                "Slobodna dalmacija": 15,
+                "Zadarski list": 10
+            },
+            "already_seen": 8,
+            "rejected_by_keywords": 2,
+            "duplicates_removed_by_ai": 22,
+            "rejection_reasons_list": [
+                "• Divan jesenski dan i fenonenalna marenda... ➡️ <b>Побут та захід міста Дубровник, не стосується Задара</b>",
+                "• Brod “Galeb” kasni pri dolasku u riječku... ➡️ <b>Побут та події міста Рієка</b>",
+                "• Vozač prešao u suprotni trak na državnoj... ➡️ <b>Дублікат ДТП, яка вже присутня в історії</b>",
+                "• Kuma sam u Dalmaciji, koliko da mladoj d... ➡️ <b>Побутове обговорення із соцмереж, інформаційний шум</b>",
+                "• Papa Lav danas izlazi iz bolnice nakon o... ➡️ <b>Геоблок: міжнародні події, що не стосуються України чи біженців</b>",
+                "• Balzam za ispucale usne napravite sami o... ➡️ <b>Світовий шум: побутові поради та рецепти</b>",
+                "• Policija izvela veliku akciju kontrole t... ➡️ <b>Дрібні локальні події та перевірки в місті Кнін</b>",
+                "• Zadar bez Mihailovića i Vraneša pao u Be... ➡️ <b>Спорт: результати баскетбольного матчу</b>",
+                "• Boćari Debeljaka ove će sezone nastupiti... ➡️ <b>Спорт: бочарський клуб та турніри</b>",
+                "• Policija i dalje traga za osobom koja je... ➡️ <b>Локальний кримінал та пошуки у Бродсько-Посавській жупанії</b>",
+                "• U Ćosićevu dvoranu stiže šest klubova za... ➡️ <b>Спорт: турнір з баскетболу на візках</b>",
+                "• Druga šansa za posrnule poduzetnike: pog... ➡️ <b>Економіка та статистика іншої жупанії (Шибеник)</b>",
+                "• Most protiv spalionice u Rijeci: “Tražim... ➡️ <b>Локальна політика та побут міста Рієка</b>",
+                "• Marin Delač i Lucija Boras najbolji ročn... ➡️ <b>Внутрішнє змагання військовослужбовців, не належить до головних тем</b>",
+                "• Film Ive Kraljević »Ovu sobu ostavite za... ➡️ <b>Культура та кінофестивалі, не відповідає Кроку 5</b>",
+                "• Ovih liječnika kronično nedostaje u Šibe... ➡️ <b>Медичні вакансії та проблеми Шибеницько-Кнінської жупанії</b>",
+                "• Hrvatski filmovi u natjecateljskim progr... ➡️ <b>Культура та кінофестивалі</b>",
+                "• Zona posebnog prometnog režima nastavlja... ➡️ <b>Побут та транспортний режим міста Дубровник</b>",
+                "• Delegacija sa stonskog područja u posjet... ➡️ <b>Локальний візит делегації громади Стон до Ірландії</b>",
+                "• Ribaru je barku obilazila njemu nepoznat... ➡️ <b>Світовий шум: цікавинки про фауну Адріатичного моря</b>",
+                "• Rat zbog šteta od divljači eskalira! Lov... ➡️ <b>Реакції та суперечка щодо закону про дичину, який вже є в історії</b>",
+                "• Objavljen popis 100 najboljih serija, im... ➡️ <b>Світовий шум: розважальний рейтинг серіалів</b>"
+            ]
+        },
+        "backlog": {
+            "total_size": 25,
+            "sources": {
+                "023": 5,
+                "Slobodna dalmacija": 13,
+                "Zadarski list": 7
+            }
+        },
+        "published": {
+            "total": 3,
+            "ukraine_priority": 0,
+            "with_images": 2,
+            "text_only": 1,
+            "sources": {
+                "023": 1,
+                "Slobodna dalmacija": 1,
                 "Zadarski list": 1
             }
         },
