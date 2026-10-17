@@ -1,61 +1,5 @@
 [
     {
-        "timestamp": "2026-10-08 11:01:03",
-        "execution_time": 180.3,
-        "funnel": {
-            "scraped_total": 35,
-            "scraped_by_source": {
-                "023": 10,
-                "Slobodna dalmacija": 15,
-                "Zadarski list": 10
-            },
-            "already_seen": 7,
-            "rejected_by_keywords": 3,
-            "duplicates_removed_by_ai": 14,
-            "rejection_reasons_list": [
-                "• Požar u zgradi Theatra Fenice vatrogasci... ➡️ <b>Локальна подія за межами Задара (Рієка)</b>",
-                "• Kraj prometnog kaosa? Potpisan ugovor za... ➡️ <b>Локальна подія за межами Задара (Шибеник)</b>",
-                "• Počinje 20. Festival tolerancije: cannes... ➡️ <b>Дублікат новини, яка вже є в історії</b>",
-                "• Za metkovskim vatrogascima je paklena no... ➡️ <b>Локальна подія за межами Задара (Меткович)</b>",
-                "• Mistral predstavio Large 4, model kojim ... ➡️ <b>Світові новини та технології, що не стосуються Хорватії чи України</b>",
-                "• Troskot i Miletić: U Lici treba proglasi... ➡️ <b>Дублікат/політична реакція на подію з радіоактивним надзором у Госпичі (ID 7)</b>",
-                "• Od Zadružnog doma do modernog muzeja: is... ➡️ <b>Локальна подія за межами Задара (Вела Лука)</b>",
-                "• Tomašević o smradu u Zagrebu: “Istražuje... ➡️ <b>Локальна подія за межами Задара (Загреб)</b>",
-                "• Zavod za javno zdravstvo poziva: Sudjelu... ➡️ <b>Реклама/розіграш та локальна подія за межами Задара</b>",
-                "• Veliki uspjeh dalmatinskih cubera; Toni ... ➡️ <b>Спорт</b>",
-                "• Teško ozlijeđen vozač romobila na Lošinj... ➡️ <b>Локальна подія за межами Задара (Лошинь)</b>",
-                "• Nezaboravan jesenski shopping još je bol... ➡️ <b>Реклама та промо-акції</b>",
-                "• Vandalizam u Metkoviću: dvojica mladića ... ➡️ <b>Локальна подія за межами Задара (Меткович)</b>",
-                "• Višak slobodnog vremena? Dvojac uništio ... ➡️ <b>Дублікат новини ID 20 та подія за межами Задара</b>"
-            ]
-        },
-        "backlog": {
-            "total_size": 55,
-            "sources": {
-                "Zadarski list": 11,
-                "Slobodna dalmacija": 34,
-                "023": 10
-            }
-        },
-        "published": {
-            "total": 3,
-            "ukraine_priority": 0,
-            "with_images": 2,
-            "text_only": 1,
-            "sources": {
-                "023": 1,
-                "Zadarski list": 1,
-                "Slobodna dalmacija": 1
-            }
-        },
-        "models_used": {
-            "gemini-3.5-flash-lite": 1,
-            "gemini-3.5-flash": 1
-        },
-        "errors_count": 0,
-        "gemini_retries": 0
-    },
-    {
         "timestamp": "2026-10-08 12:01:04",
         "execution_time": 212.7,
         "funnel": {
@@ -5945,6 +5889,67 @@
         "models_used": {
             "gemini-3.5-flash-lite": 0,
             "gemini-3.6-flash": 2
+        },
+        "errors_count": 0,
+        "gemini_retries": 0
+    },
+    {
+        "timestamp": "2026-10-17 12:01:07",
+        "execution_time": 183.6,
+        "funnel": {
+            "scraped_total": 35,
+            "scraped_by_source": {
+                "023": 10,
+                "Slobodna dalmacija": 15,
+                "Zadarski list": 10
+            },
+            "already_seen": 10,
+            "rejected_by_keywords": 1,
+            "duplicates_removed_by_ai": 21,
+            "rejection_reasons_list": [
+                "• Divan jesenski dan i fenonenalna marenda... ➡️ <b>Побут чужого міста (Дубровник)</b>",
+                "• Kuma sam u Dalmaciji, koliko da mladoj d... ➡️ <b>Світовий шум / побутові поради з соцмереж</b>",
+                "• HDZ o izjavama Marina Miletića: “Totalit... ➡️ <b>Політичний шум та реакції</b>",
+                "• Balzam za ispucale usne napravite sami o... ➡️ <b>Світовий шум (рецепти та поради)</b>",
+                "• Policija izvela veliku akciju kontrole t... ➡️ <b>Побут іншого міста (Книн)</b>",
+                "• Hajdaš Dončić: “Navijački neredi odraz s... ➡️ <b>Політичні дискусії та реакції</b>",
+                "• Boćari Debeljaka ove će sezone nastupiti... ➡️ <b>Спорт</b>",
+                "• Udruga hrvatskih sudaca prozvale Božinov... ➡️ <b>Дискусія та реакції суддів на заяву міністра</b>",
+                "• Druga šansa za posrnule poduzetnike: pog... ➡️ <b>Побут іншого міста (Шибеник)</b>",
+                "• Zvonimir Savić, posebni savjetnik premij... ➡️ <b>Повторення та інтерв'ю національного рівня без прив'язки до Задара</b>",
+                "• Marin Delač i Lucija Boras najbolji ročn... ➡️ <b>Армійське оновлення загального характеру поза Задаром</b>",
+                "• Brod “Galeb” kasni pri dolasku u riječku... ➡️ <b>Побут іншого міста (Рієка)</b>",
+                "• Ovih liječnika kronično nedostaje u Šibe... ➡️ <b>Побут іншого міста (Шибеник)</b>",
+                "• Papa Lav danas izlazi iz bolnice nakon o... ➡️ <b>Інші країни / світові події (Ватикан)</b>",
+                "• Zona posebnog prometnog režima nastavlja... ➡️ <b>Побут чужого міста (Дубrovnik)</b>",
+                "• Policija i dalje traga za osobom koja je... ➡️ <b>Кримінал іншого регіону (Славонський Брод)</b>",
+                "• Delegacija sa stonskog područja u posjet... ➡️ <b>Побут іншого міста (Стон)</b>",
+                "• Most protiv spalionice u Rijeci: “Tražim... ➡️ <b>Побут іншого міста (Рієка)</b>",
+                "• Ribaru je barku obilazila njemu nepoznat... ➡️ <b>Загальні цікавинки про рибу без термінової новини</b>",
+                "• Rat zbog šteta od divljači eskalira! Lov... ➡️ <b>Загальнонаціональні суперечки аграріїв і мисливців</b>",
+                "• Objavljen popis 100 najboljih serija, im... ➡️ <b>Світовий шум (рейтинг серіалів)</b>"
+            ]
+        },
+        "backlog": {
+            "total_size": 24,
+            "sources": {
+                "023": 4,
+                "Slobodna dalmacija": 12,
+                "Zadarski list": 8
+            }
+        },
+        "published": {
+            "total": 3,
+            "ukraine_priority": 0,
+            "with_images": 0,
+            "text_only": 3,
+            "sources": {
+                "023": 3
+            }
+        },
+        "models_used": {
+            "gemini-3.5-flash-lite": 2,
+            "gemini-3.6-flash": 0
         },
         "errors_count": 0,
         "gemini_retries": 0
