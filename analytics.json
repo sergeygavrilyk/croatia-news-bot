@@ -1,67 +1,5 @@
 [
     {
-        "timestamp": "2026-10-08 08:01:02",
-        "execution_time": 182.5,
-        "funnel": {
-            "scraped_total": 35,
-            "scraped_by_source": {
-                "023": 10,
-                "Slobodna dalmacija": 15,
-                "Zadarski list": 10
-            },
-            "already_seen": 3,
-            "rejected_by_keywords": 1,
-            "duplicates_removed_by_ai": 20,
-            "rejection_reasons_list": [
-                "• Što su dogovorili u Splitu? Devet medite... ➡️ <b>Повторення раніше висвітленої теми (саміт MED9 у Спліті), аналітичний коментар без нових критичних фактів</b>",
-                "• Stižete na koncert Jakova Jozinovića? Po... ➡️ <b>Логістика культурного заходу, що не має суспільної значущості для діаспори</b>",
-                "• Još se ne zna što je pronađeno na gradil... ➡️ <b>Побут та екологічні проблеми іншого міста (Сісак)</b>",
-                "• Policija istražuje prijevaru u Kninu: mi... ➡️ <b>Локальний кримінал в іншому місті (Книн)</b>",
-                "• Veliki špijunski skandal u Njemačkoj. Bi... ➡️ <b>Світові новини, що не стосуються безпосередньо України чи Хорватії</b>",
-                "• U Dubrovnik mjesečno stiže 100.000 pošil... ➡️ <b>Побут та комунальні проблеми іншого міста (Дубровник)</b>",
-                "• Policija izdala hitno upozorenje građani... ➡️ <b>Дублікат новини, яка вже є в історії (шахрайство з лікарем та 83-річною жінкою)</b>",
-                "• Veliki uspjeh dalmatinskih cubera; Toni ... ➡️ <b>Спорт (змагання зі спідкубингу)</b>",
-                "• “Oče naš” Gorana Stankovića: Film koji o... ➡️ <b>Культура та кіно, лайфстайл</b>",
-                "• Županijska uprava za ceste o radovima iz... ➡️ <b>Ремонт доріг в іншому регіоні (Пелешаць)</b>",
-                "• Pitamo ih za posao, novac, a sada i za z... ➡️ <b>Лайфстайл та загальні роздуми про цифрову гігієну</b>",
-                "• Rijeka želi graditi energanu na gorivo i... ➡️ <b>Побут та екологічні плани іншого міста (Рієка)</b>",
-                "• Jazine preokretom do pobjede u zadarskom... ➡️ <b>Спорт (баскетбольний матч)</b>",
-                "• Predsjednik Milanović odlikovao Filipa H... ➡️ <b>Спорт (нагородження боксера)</b>",
-                "• KD Čistoća anketira Riječane: gdje je na... ➡️ <b>Побут та опитування в іншому місті (Рієка)</b>",
-                "• Djeca na Korčuli opet uče online, rodite... ➡️ <b>Побут та освіта в іншому регіоні (Корчула)</b>",
-                "• Poziv svim ljubiteljima pedaliranja; Tra... ➡️ <b>Спорт та активний відпочинок (велопробіг)</b>",
-                "• Od »zidine nježnosti« do nasilnog oca: R... ➡️ <b>Культура та література, огляд книги</b>",
-                "• Modrić je finom premijerom u ABA ligi ku... ➡️ <b>Спорт (баскетбол, аналітика ліги)</b>",
-                "• Miro Gavran u Hamburgu: Održane predstav... ➡️ <b>Культура та заходи за кордоном (Гамбург)</b>"
-            ]
-        },
-        "backlog": {
-            "total_size": 41,
-            "sources": {
-                "023": 12,
-                "Zadarski list": 13,
-                "Slobodna dalmacija": 16
-            }
-        },
-        "published": {
-            "total": 3,
-            "ukraine_priority": 0,
-            "with_images": 2,
-            "text_only": 1,
-            "sources": {
-                "Slobodna dalmacija": 1,
-                "023": 1,
-                "Zadarski list": 1
-            }
-        },
-        "models_used": {
-            "gemini-3.5-flash-lite": 1,
-            "gemini-3.5-flash": 1
-        },
-        "errors_count": 0,
-        "gemini_retries": 0
-    },
-    {
         "timestamp": "2026-10-08 09:01:07",
         "execution_time": 191.8,
         "funnel": {
@@ -5944,6 +5882,59 @@
         "models_used": {
             "gemini-3.5-flash-lite": 0,
             "gemini-3.6-flash": 2
+        },
+        "errors_count": 0,
+        "gemini_retries": 0
+    },
+    {
+        "timestamp": "2026-10-17 09:01:04",
+        "execution_time": 149.3,
+        "funnel": {
+            "scraped_total": 35,
+            "scraped_by_source": {
+                "023": 10,
+                "Slobodna dalmacija": 15,
+                "Zadarski list": 10
+            },
+            "already_seen": 7,
+            "rejected_by_keywords": 4,
+            "duplicates_removed_by_ai": 18,
+            "rejection_reasons_list": [
+                "• Hrvatski filmovi u natjecateljskim progr... ➡️ <b>Культурні новини кінофестивалю в Естонії, не стосується Задара чи України.</b>",
+                "• Marin Delač i Lucija Boras najbolji ročn... ➡️ <b>Новини військових навчань у Пожежі (побут інших регіонів).</b>",
+                "• Burno prije izbora u Srbiji: studenti pj... ➡️ <b>Політична ситуація в Сербії (геоблок).</b>",
+                "• Balzam za ispucale usne napravite sami o... ➡️ <b>Світовий шум (побутові поради та рецепти).</b>",
+                "• Ovih liječnika kronično nedostaje u Šibe... ➡️ <b>Локальні проблеми медицини та вакансії в Шибенику.</b>",
+                "• Pomorski kapetan Nedjeljko Kuzma nije kr... ➡️ <b>Локальний судовий процес у Рієці.</b>",
+                "• Zadar bez Mihailovića i Vraneša pao u Be... ➡️ <b>Спорт (результати баскетбольного матчу).</b>",
+                "• Zona posebnog prometnog režima nastavlja... ➡️ <b>Побут та туризм у Дубровнику.</b>",
+                "• Deseci tisuća ljudi danas na prosvjedima... ➡️ <b>Протести у Франції (геоблок).</b>",
+                "• U Ćosićevu dvoranu stiže šest klubova za... ➡️ <b>Спорт (турнір з баскетболу на візках).</b>",
+                "• Delegacija sa stonskog područja u posjet... ➡️ <b>Локальна поїздка делегації зі Стона до Ірландії.</b>",
+                "• Zbog govora mržnje u Splitu uhićene četi... ➡️ <b>Локальні правопорушення та затримання у Спліті.</b>",
+                "• Ribaru je barku obilazila njemu nepoznat... ➡️ <b>Світовий шум (цікавинки про риболовлю).</b>"
+            ]
+        },
+        "backlog": {
+            "total_size": 20,
+            "sources": {
+                "023": 5,
+                "Slobodna dalmacija": 9,
+                "Zadarski list": 6
+            }
+        },
+        "published": {
+            "total": 2,
+            "ukraine_priority": 0,
+            "with_images": 0,
+            "text_only": 2,
+            "sources": {
+                "023": 2
+            }
+        },
+        "models_used": {
+            "gemini-3.5-flash-lite": 1,
+            "gemini-3.6-flash": 1
         },
         "errors_count": 0,
         "gemini_retries": 0
