@@ -1,65 +1,5 @@
 [
     {
-        "timestamp": "2026-10-08 16:01:05",
-        "execution_time": 185.2,
-        "funnel": {
-            "scraped_total": 35,
-            "scraped_by_source": {
-                "023": 10,
-                "Slobodna dalmacija": 15,
-                "Zadarski list": 10
-            },
-            "already_seen": 11,
-            "rejected_by_keywords": 2,
-            "duplicates_removed_by_ai": 20,
-            "rejection_reasons_list": [
-                "• Grijanje klima-uređajem zimi: zašto podi... ➡️ <b>Лайфстайл та поради щодо опалення</b>",
-                "• U sudaru s kamionom u Istri poginuo voza... ➡️ <b>Дублікат новини з історії (ДТП біля Лимського каналу)</b>",
-                "• Tihomir Matijević: ‘Cestu na Pelješcu pl... ➡️ <b>Побут та інфраструктурні суперечки інших регіонів (Пелєшаць)</b>",
-                "• Kad je klasični plank pretežak: lakša in... ➡️ <b>Лайфстайл та поради з фітнесу</b>",
-                "• Starta projekt MEDIANA: Analiza medijski... ➡️ <b>Локальний науково-технічний проект у Рієці та Загребі</b>",
-                "• Zadranin Jure Brkljača objavio pjesmu ‘M... ➡️ <b>Шоу-бізнес та релізи пісень</b>",
-                "• Počinje 20. Festival tolerancije: cannes... ➡️ <b>Дублікат новини з історії (анонс Фестивалю толерантності)</b>",
-                "• Zbog puknuća cijevi u Brsečinama došlo d... ➡️ <b>Побут інших міст (проблеми з водою у Брсечіне)</b>",
-                "• Mistral predstavio Large 4, model kojim ... ➡️ <b>Світові технологічні новини, що не стосуються Хорватії чи України безпосередньо</b>",
-                "• Festival šljiva slavi skromnu i čudesnu ... ➡️ <b>Лайфстайл та регіональні гастрономічні заходи</b>",
-                "• U Zadru predstavljena monografija 5. gar... ➡️ <b>Дублікат новини з історії (презентація монографії у Задарі)</b>",
-                "• Još šest mladih dubrovačkih obitelji dob... ➡️ <b>Побут інших міст (житлові субсидії в Дубровнику)</b>",
-                "• Na informativni dan Sveučilišta u Rijeci... ➡️ <b>Побут інших міст (заходи для студентів у Рієці)</b>",
-                "• Na Stradunu se itekako vidi da je završi... ➡️ <b>Побут та погода інших міст (Дубровник)</b>",
-                "• Napadi na tankere na Bliskom istoku podi... ➡️ <b>Світові економічні новини без прямого зв'язку з Хорватією</b>",
-                "• Šibenska policija upozorava: ‘Iskazat će... ➡️ <b>Локальний кримінал інших регіонів (Книн)</b>",
-                "• Veća dostupnost pedijatara u Rijeci i Za... ➡️ <b>Побут інших міст (розширення клініки в Рієці та Загребі)</b>",
-                "• Franković primio sudionike 28. Dubrovačk... ➡️ <b>Побут та офіційні зустрічі в інших містах (Дубровник)</b>",
-                "• Imaju 18 i 17 godina, a napravili su ovo... ➡️ <b>Дрібний кримінал та вандалізм в інших містах (Меткович)</b>",
-                "• Gordan Tudor nastupio s DSO-om u svom AR... ➡️ <b>Культурні заходи інших міст (концерт у Дубровнику)</b>"
-            ]
-        },
-        "backlog": {
-            "total_size": 48,
-            "sources": {
-                "Slobodna dalmacija": 32,
-                "Zadarski list": 12,
-                "023": 4
-            }
-        },
-        "published": {
-            "total": 3,
-            "ukraine_priority": 0,
-            "with_images": 3,
-            "text_only": 0,
-            "sources": {
-                "Zadarski list": 3
-            }
-        },
-        "models_used": {
-            "gemini-3.5-flash-lite": 1,
-            "gemini-3.5-flash": 1
-        },
-        "errors_count": 0,
-        "gemini_retries": 0
-    },
-    {
         "timestamp": "2026-10-08 19:01:05",
         "execution_time": 221.4,
         "funnel": {
@@ -5964,6 +5904,70 @@
         },
         "models_used": {
             "gemini-3.5-flash-lite": 1,
+            "gemini-3.6-flash": 0
+        },
+        "errors_count": 0,
+        "gemini_retries": 0
+    },
+    {
+        "timestamp": "2026-10-17 19:01:08",
+        "execution_time": 87.1,
+        "funnel": {
+            "scraped_total": 35,
+            "scraped_by_source": {
+                "023": 10,
+                "Slobodna dalmacija": 15,
+                "Zadarski list": 10
+            },
+            "already_seen": 17,
+            "rejected_by_keywords": 10,
+            "duplicates_removed_by_ai": 24,
+            "rejection_reasons_list": [
+                "• Na rekordnih 170 metara 17. Dubrovačke t... ➡️ <b>Побут чужого міста (Дубровник)</b>",
+                "• Divan jesenski dan i fenonenalna marenda... ➡️ <b>Дубль новини 0</b>",
+                "• Nataša Govedić dobitnica književne nagra... ➡️ <b>Культурна подія поза Задаром та національним контекстом</b>",
+                "• Blagoslovljena novoizgrađena kapelica po... ➡️ <b>Побут чужого населеного пункту</b>",
+                "• Sedam jesenskih tjestenina za sedam dana... ➡️ <b>Світовий шум / рецепти</b>",
+                "• Mirela Katalenac na čelu Foruma žena SDP... ➡️ <b>Політичний дубль / внутрішньопартійна подія в Загребі</b>",
+                "• Lignjolov za pamćenje: Više od četrdeset... ➡️ <b>Локальна подія іншого міста/села (острів Паг, не Задар)</b>",
+                "• Starinska rolada s pekmezom u kojoj se s... ➡️ <b>Світовий шум / рецепти</b>",
+                "• Jandroković: Neprihvatljivo je skandirat... ➡️ <b>Спорт / реакція на спортивний інцидент</b>",
+                "• Poznati ronilac pokušao oboriti Guinness... ➡️ <b>Позафокусна подія / екологічна акція</b>",
+                "• Četiri dana nakon operacije raka pluća p... ➡️ <b>Геоблок / подія за межами Хорватії (Італія/Ватикан)</b>",
+                "• Groblje u Dalmaciji donijelo pravilnik o... ➡️ <b>Побут іншого міста (Водіце)</b>",
+                "• Spolni odnosi barem jednom tjedno poveza... ➡️ <b>Світовий шум / псевдонаукове дослідження</b>",
+                "• Grad Rijeka dodjeljuje blagdansku potpor... ➡️ <b>Побут чужого міста (Рієка)</b>",
+                "• Na otočić pokraj Korčule došao važan bis... ➡️ <b>Подія в іншому місті (Корчула)</b>",
+                "• Zašto se mandarine prodaju u crvenim mre... ➡️ <b>Світовий шум / пізнавальна стаття</b>",
+                "• Policija se sukobila s prosvjednicima u ... ➡️ <b>Геоблок / події у Франції</b>",
+                "• Tegljač koji je vukao golemi stroj je la... ➡️ <b>Побут іншого міста (Спліт)</b>",
+                "• Egipćanin kazneno prijavljen za krijumča... ➡️ <b>Кримінал в іншій жупанії (Горський котар)</b>",
+                "• Kuma sam u Dalmaciji, koliko da mladoj d... ➡️ <b>Інформаційний шум / соцмережі</b>",
+                "• Policija izvela veliku akciju kontrole t... ➡️ <b>Побут іншого міста (Кнін)</b>",
+                "• Boćari Debeljaka ove će sezone nastupiti... ➡️ <b>Спорт / бочча</b>",
+                "• Druga šansa za posrnule poduzetnike: pog... ➡️ <b>Економіка та події іншої жупанії</b>",
+                "• Ovih liječnika kronično nedostaje u Šibe... ➡️ <b>Побут іншої жупанії (Шибеник)</b>"
+            ]
+        },
+        "backlog": {
+            "total_size": 25,
+            "sources": {
+                "023": 5,
+                "Slobodna dalmacija": 13,
+                "Zadarski list": 7
+            }
+        },
+        "published": {
+            "total": 1,
+            "ukraine_priority": 0,
+            "with_images": 0,
+            "text_only": 1,
+            "sources": {
+                "023": 1
+            }
+        },
+        "models_used": {
+            "gemini-3.5-flash-lite": 2,
             "gemini-3.6-flash": 0
         },
         "errors_count": 0,
