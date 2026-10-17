@@ -1,60 +1,5 @@
 [
     {
-        "timestamp": "2026-10-08 14:01:10",
-        "execution_time": 191.6,
-        "funnel": {
-            "scraped_total": 35,
-            "scraped_by_source": {
-                "023": 10,
-                "Slobodna dalmacija": 15,
-                "Zadarski list": 10
-            },
-            "already_seen": 12,
-            "rejected_by_keywords": 4,
-            "duplicates_removed_by_ai": 15,
-            "rejection_reasons_list": [
-                "• Počinje 20. Festival tolerancije: cannes... ➡️ <b>Подія вже є в історії (анонс фестивалю у Задарі)</b>",
-                "• Zadranin Jure Brkljača objavio pjesmu ‘M... ➡️ <b>Шоу-бізнес та лайфстайл</b>",
-                "• Ovako izgleda početak električne budućno... ➡️ <b>Світовий шум та автоновини</b>",
-                "• Mistral predstavio Large 4, model kojim ... ➡️ <b>Світовий шум та технології</b>",
-                "• Zbog puknuća cijevi u Brsečinama došlo d... ➡️ <b>Побут інших міст (Брсечіне)</b>",
-                "• U Zadru predstavljena monografija 5. gar... ➡️ <b>Подія вже є в історії (презентація монографії у Задарі)</b>",
-                "• Još šest mladih dubrovačkih obitelji dob... ➡️ <b>Побут інших міст (Дубровник)</b>",
-                "• Moonspell dolaze u sklopu “God is a Vamp... ➡️ <b>Шоу-бізнес та концерт у Загребі</b>",
-                "• Na Stradunu se itekako vidi da je završi... ➡️ <b>Побут інших міст (Дубровник)</b>",
-                "• Otvorena izložba “Guvernerova palača – s... ➡️ <b>Побут інших міст (Рієка)</b>",
-                "• Franković primio sudionike 28. Dubrovačk... ➡️ <b>Побут інших міст (Дубровник)</b>",
-                "• Imaju 18 i 17 godina, a napravili su ovo... ➡️ <b>Побут інших міст (Меткович)</b>",
-                "• Gordan Tudor nastupio s DSO-om u svom AR... ➡️ <b>Побут інших міст (Дубровник)</b>",
-                "• Franković potpisao šest novih ugovora za... ➡️ <b>Дублікат новини 8 та побут інших міст (Дубровник)</b>",
-                "• Nezaboravan jesenski shopping još je bol... ➡️ <b>Реклама та промо-акції</b>"
-            ]
-        },
-        "backlog": {
-            "total_size": 48,
-            "sources": {
-                "Zadarski list": 12,
-                "Slobodna dalmacija": 34,
-                "023": 2
-            }
-        },
-        "published": {
-            "total": 3,
-            "ukraine_priority": 0,
-            "with_images": 3,
-            "text_only": 0,
-            "sources": {
-                "Zadarski list": 3
-            }
-        },
-        "models_used": {
-            "gemini-3.5-flash-lite": 1,
-            "gemini-3.5-flash": 1
-        },
-        "errors_count": 0,
-        "gemini_retries": 0
-    },
-    {
         "timestamp": "2026-10-08 15:01:06",
         "execution_time": 270.4,
         "funnel": {
@@ -5957,6 +5902,69 @@
         "models_used": {
             "gemini-3.5-flash-lite": 0,
             "gemini-3.6-flash": 2
+        },
+        "errors_count": 0,
+        "gemini_retries": 0
+    },
+    {
+        "timestamp": "2026-10-17 15:01:10",
+        "execution_time": 131.8,
+        "funnel": {
+            "scraped_total": 35,
+            "scraped_by_source": {
+                "023": 10,
+                "Slobodna dalmacija": 15,
+                "Zadarski list": 10
+            },
+            "already_seen": 9,
+            "rejected_by_keywords": 2,
+            "duplicates_removed_by_ai": 22,
+            "rejection_reasons_list": [
+                "• Divan jesenski dan i fenonenalna marenda... ➡️ <b>Побут і події інших міст за межами Задара</b>",
+                "• Spolni odnosi barem jednom tjedno poveza... ➡️ <b>Світовий шум: поради, здоров'я та психологія</b>",
+                "• Četiri dana nakon operacije raka pluća p... ➡️ <b>Геоблок: події за межами Хорватії та України</b>",
+                "• Poznati ronilac pokušao oboriti Guinness... ➡️ <b>Стоп-тема: світовий шум та екологічні акції без прямого зв'язку з місцевими інтересами</b>",
+                "• Zašto se mandarine prodaju u crvenim mre... ➡️ <b>Світовий шум: побутові поради та оптичні ілюзії</b>",
+                "• Balzam za ispucale usne napravite sami o... ➡️ <b>Світовий шум: поради щодо догляду та рецепти</b>",
+                "• Grad Rijeka dodjeljuje blagdansku potpor... ➡️ <b>Побут інших міст: Rijeka</b>",
+                "• Groblje u Dalmaciji donijelo pravilnik o... ➡️ <b>Побут інших міст: Vodice</b>",
+                "• Policija se sukobila s prosvjednicima u ... ➡️ <b>Геоблок: масові протести у Франції</b>",
+                "• Na otočić pokraj Korčule došao važan bis... ➡️ <b>Побут інших міст: Korčula</b>",
+                "• Egipćanin kazneno prijavljen za krijumča... ➡️ <b>Побут інших міст: Gorski kotar</b>",
+                "• Tegljač koji je vukao golemi stroj je la... ➡️ <b>Побут інших міст: Split та Pelješac</b>",
+                "• Prosvjed protiv megafarmi u Koprivnici: ... ➡️ <b>Побут інших міст: Koprivnica</b>",
+                "• Kuma sam u Dalmaciji, koliko da mladoj d... ➡️ <b>Світовий шум: обговорення в соціальних мережах та побутові поради</b>",
+                "• Marijana Biondić odlazi s mjesta direkto... ➡️ <b>Побут інших міст: Crikvenica</b>",
+                "• Policija izvela veliku akciju kontrole t... ➡️ <b>Побут інших міст: Knin</b>",
+                "• Tisuće mladih Albanaca i dalje prosvjedu... ➡️ <b>Геоблок: події за межами Хорватії та України</b>",
+                "• Boćari Debeljaka ove će sezone nastupiti... ➡️ <b>Стоп-тема: спорт і спортивні ліги</b>",
+                "• Druga šansa za posrnule poduzetnike: pog... ➡️ <b>Побут інших міст: Šibensko-kninska županija</b>",
+                "• Ovih liječnika kronično nedostaje u Šibe... ➡️ <b>Побут інших міст: Šibensko-kninska županija</b>",
+                "• Zona posebnog prometnog režima nastavlja... ➡️ <b>Побут інших міст: Dubrovnik</b>",
+                "• Delegacija sa stonskog područja u posjet... ➡️ <b>Побут інших міст: Ston</b>"
+            ]
+        },
+        "backlog": {
+            "total_size": 24,
+            "sources": {
+                "023": 3,
+                "Slobodna dalmacija": 13,
+                "Zadarski list": 8
+            }
+        },
+        "published": {
+            "total": 2,
+            "ukraine_priority": 0,
+            "with_images": 2,
+            "text_only": 0,
+            "sources": {
+                "Zadarski list": 1,
+                "Slobodna dalmacija": 1
+            }
+        },
+        "models_used": {
+            "gemini-3.5-flash-lite": 2,
+            "gemini-3.6-flash": 0
         },
         "errors_count": 0,
         "gemini_retries": 0
