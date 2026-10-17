@@ -1,66 +1,5 @@
 [
     {
-        "timestamp": "2026-10-07 19:01:00",
-        "execution_time": 65.3,
-        "funnel": {
-            "scraped_total": 35,
-            "scraped_by_source": {
-                "023": 10,
-                "Slobodna dalmacija": 15,
-                "Zadarski list": 10
-            },
-            "already_seen": 9,
-            "rejected_by_keywords": 3,
-            "duplicates_removed_by_ai": 23,
-            "rejection_reasons_list": [
-                "• U Mokošici položeni vijenci i zapaljene ... ➡️ <b>Переказ історичної події без суттєвих нових оновлень</b>",
-                "• Devetnaestogodišnjak u Berlinu izliječen... ➡️ <b>Світовий шум та лайфстайл, не стосується Хорватії чи України</b>",
-                "• Kineski Geely Starray preuzeo titulu naj... ➡️ <b>Автомобільна статистика загальнонаціонального рівня без прямого фокусу на Задар</b>",
-                "• Zadranka zagrintala zbog detalja na šibe... ➡️ <b>Побут іншого міста (Шибеник)</b>",
-                "• Liječnici upozoravaju: promjene na penis... ➡️ <b>Світовий шум та лайфстайл, медичні поради</b>",
-                "• Najveća kolonija ogrličastih pingvina u ... ➡️ <b>Світовий шум та лайфстайл, наукова новина про пінгвінів</b>",
-                "• Endokrinologinja otkriva koja pitanja po... ➡️ <b>Світовий шум та лайфстайл, медичні поради</b>",
-                "• Hrstić: ‘Tvrdnje iz Bugarske treba uzeti... ➡️ <b>Дубль теми зупиненого BCG cijepljenja iz historije</b>",
-                "• Stjepan Simović komentirao stanje na pož... ➡️ <b>Дубль події з пожежею у Метковічі, яка вже є в історії</b>",
-                "• Zajedničko uzimanje cinka i vitamina C: ... ➡️ <b>Світовий шум та лайфстайл, поради нутриціологів</b>",
-                "• Stereo MC’s se nakon 16 godina vraćaju u... ➡️ <b>Концерт та лайфстайл новина в Загребі</b>",
-                "• Više od 5000 Zadrana ustalo protiv uređe... ➡️ <b>Дубль петиції жителів Задара, яка вже є в історії</b>",
-                "• Presađeno srce mijenja biološku dob prem... ➡️ <b>Світовий шум та лайфстайл, наукове дослідження</b>",
-                "• Novi požar na području Prološca, na tere... ➡️ <b>Пожежа в іншому регіоні (поблизу Імотського), не стосується Задара</b>",
-                "• Pelješčani tvrde: ‘Uzurpiraju nam zemlji... ➡️ <b>Побут іншого регіону (Пелєшац)</b>",
-                "• Van Goghova multisenzorna izložba koju j... ➡️ <b>Лайфстайл та культурна подія в Загребі</b>",
-                "• Francuska u 2026. očekuje najmanje vina ... ➡️ <b>Світовий шум (сільське господарство у Франції)</b>",
-                "• Rastopit će vas ove snimke iz Telašćice.... ➡️ <b>Дубль або занадто дрібна локальна лайфстайл новина про порятунок тварини</b>",
-                "• Preminuo riječki glazbenik Robert Pilepi... ➡️ <b>Некролог та новина іншого міста (Рієка)</b>",
-                "• Šibenska osnovna škola traži čak 12 novi... ➡️ <b>Побут іншого міста (Шибеник)</b>",
-                "• Šibenik je u elitnom društvu! Evo zašto ... ➡️ <b>Туристичний рейтинг Шибеника</b>",
-                "• Međuljudski odnosi i prevencija nasilnič... ➡️ <b>Побут іншого міста (Дубровник)</b>",
-                "• Policija privela dvojicu Šibenčana, besr... ➡️ <b>Кримінал в іншому місті (Водіце/Шибеник)</b>"
-            ]
-        },
-        "backlog": {
-            "total_size": 36,
-            "sources": {
-                "Slobodna dalmacija": 23,
-                "023": 6,
-                "Zadarski list": 7
-            }
-        },
-        "published": {
-            "total": 0,
-            "ukraine_priority": 0,
-            "with_images": 0,
-            "text_only": 0,
-            "sources": {}
-        },
-        "models_used": {
-            "gemini-3.5-flash-lite": 2,
-            "gemini-3.5-flash": 0
-        },
-        "errors_count": 2,
-        "gemini_retries": 0
-    },
-    {
         "timestamp": "2026-10-08 07:01:03",
         "execution_time": 182.4,
         "funnel": {
@@ -5957,5 +5896,56 @@
         },
         "errors_count": 0,
         "gemini_retries": 3
+    },
+    {
+        "timestamp": "2026-10-17 07:01:05",
+        "execution_time": 187.7,
+        "funnel": {
+            "scraped_total": 35,
+            "scraped_by_source": {
+                "023": 10,
+                "Slobodna dalmacija": 15,
+                "Zadarski list": 10
+            },
+            "already_seen": 3,
+            "rejected_by_keywords": 7,
+            "duplicates_removed_by_ai": 10,
+            "rejection_reasons_list": [
+                "• Posao vrijedan skoro tri milijuna eura: ... ➡️ <b>Новина стосується Шибеника та державного рівня, не належить до Задара чи української діаспори</b>",
+                "• Balzam za ispucale usne napravite sami o... ➡️ <b>Світовий шум / поради та рецепти</b>",
+                "• Musk predstavio automobil koji leti, u t... ➡️ <b>Інші країни / світовий шум, що не стосується Хорватії чи українців</b>",
+                "• Izvedbom predstave „Spavaj, dijete moje ... ➡️ <b>Культурна подія іншого міста (Рієка/Загреб)</b>",
+                "• Lapadski ogranak Dubrovačkih knjižnica s... ➡️ <b>Побут чужого міста (Дубровник)</b>",
+                "• Trump se pohvalio ingenioznom idejom: “P... ➡️ <b>Інші країни / геоблок</b>",
+                "• Zadar bez Mihailovića i Vraneša pao u Be... ➡️ <b>Дубль новини ID 9 (програш баскетболістів Задара у Відні)</b>",
+                "• Dugogodišnji plesni voditelj Linđa, Mari... ➡️ <b>Побут та культура іншого міста (Дубровник)</b>",
+                "• U Ćosićevu dvoranu stiže šest klubova za... ➡️ <b>Спорт (турнір з баскетболу на візках)</b>",
+                "• Mrvičasti kolač sa šljivama i zobenim pa... ➡️ <b>Світовий шум / рецепти</b>"
+            ]
+        },
+        "backlog": {
+            "total_size": 18,
+            "sources": {
+                "023": 8,
+                "Slobodna dalmacija": 6,
+                "Zadarski list": 4
+            }
+        },
+        "published": {
+            "total": 3,
+            "ukraine_priority": 0,
+            "with_images": 1,
+            "text_only": 2,
+            "sources": {
+                "Slobodna dalmacija": 1,
+                "023": 2
+            }
+        },
+        "models_used": {
+            "gemini-3.5-flash-lite": 2,
+            "gemini-3.6-flash": 0
+        },
+        "errors_count": 0,
+        "gemini_retries": 0
     }
 ]
