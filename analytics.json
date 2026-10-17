@@ -1,61 +1,5 @@
 [
     {
-        "timestamp": "2026-10-08 12:01:04",
-        "execution_time": 212.7,
-        "funnel": {
-            "scraped_total": 35,
-            "scraped_by_source": {
-                "023": 10,
-                "Slobodna dalmacija": 15,
-                "Zadarski list": 10
-            },
-            "already_seen": 11,
-            "rejected_by_keywords": 1,
-            "duplicates_removed_by_ai": 15,
-            "rejection_reasons_list": [
-                "• Užasan ruski napad u Ukrajini: najmanje ... ➡️ <b>Дублікат новини ID 0 (обстріл Краматорська)</b>",
-                "• Što napraviti kada posao počne rasti brž... ➡️ <b>Реклама та загальні поради для бізнесу</b>",
-                "• Gordan Tudor nastupio s DSO-om u svom AR... ➡️ <b>Культурне життя іншого міста (Дубровник)</b>",
-                "• Izvršenje proračuna PGŽ-a nije prošlo na... ➡️ <b>Політичне життя іншого регіону (Приморсько-Горанська жупанія)</b>",
-                "• Gripa je već stigla u Hrvatsku, a najviš... ➡️ <b>Новина фокусується на іншому регіоні (Дубровницько-Неретванська жупанія)</b>",
-                "• Počinje 20. Festival tolerancije: cannes... ➡️ <b>Повтор новини, яка вже є в історії каналу</b>",
-                "• Kanadska književnica Anne Carson dobitni... ➡️ <b>Світові новини культури, що не стосуються безпосередньо України чи Хорватії</b>",
-                "• Franković potpisao šest novih ugovora za... ➡️ <b>Побут та соціальні програми іншого міста (Dubrovnik)</b>",
-                "• Mistral predstavio Large 4, model kojim ... ➡️ <b>Світові технологічні новини</b>",
-                "• Bušio podvozje auta, iskra zapalila benz... ➡️ <b>Дрібні події та нещасні випадки в інших регіонах</b>",
-                "• Kraj prometnog kaosa? Potpisan ugovor za... ➡️ <b>Побут та інфраструктура іншого міста (Шибеник)</b>",
-                "• Za metkovskim vatrogascima je paklena no... ➡️ <b>Подія в іншому регіоні (пожежа біля Метковича), не є суттєвим оновленням для нашої аудиторії</b>",
-                "• Od Zadružnog doma do modernog muzeja: is... ➡️ <b>Побут та інфраструктура іншого регіону</b>",
-                "• Požar u zgradi Theatra Fenice vatrogasci... ➡️ <b>Подія в іншому місті (пожежа в Рієці)</b>",
-                "• Zavod za javno zdravstvo poziva: Sudjelu... ➡️ <b>Рекламна акція / подія іншого регіону</b>"
-            ]
-        },
-        "backlog": {
-            "total_size": 53,
-            "sources": {
-                "023": 8,
-                "Zadarski list": 11,
-                "Slobodna dalmacija": 34
-            }
-        },
-        "published": {
-            "total": 3,
-            "ukraine_priority": 1,
-            "with_images": 2,
-            "text_only": 1,
-            "sources": {
-                "Slobodna dalmacija": 2,
-                "023": 1
-            }
-        },
-        "models_used": {
-            "gemini-3.5-flash-lite": 1,
-            "gemini-3.5-flash": 1
-        },
-        "errors_count": 0,
-        "gemini_retries": 0
-    },
-    {
         "timestamp": "2026-10-08 13:01:06",
         "execution_time": 299.8,
         "funnel": {
@@ -5950,6 +5894,67 @@
         "models_used": {
             "gemini-3.5-flash-lite": 2,
             "gemini-3.6-flash": 0
+        },
+        "errors_count": 0,
+        "gemini_retries": 0
+    },
+    {
+        "timestamp": "2026-10-17 13:01:05",
+        "execution_time": 158.5,
+        "funnel": {
+            "scraped_total": 35,
+            "scraped_by_source": {
+                "023": 10,
+                "Slobodna dalmacija": 15,
+                "Zadarski list": 10
+            },
+            "already_seen": 11,
+            "rejected_by_keywords": 2,
+            "duplicates_removed_by_ai": 20,
+            "rejection_reasons_list": [
+                "• Divan jesenski dan i fenonenalna marenda... ➡️ <b>Побут та заходи у Дубровнику (поза Задаром)</b>",
+                "• Zašto se mandarine prodaju u crvenim mre... ➡️ <b>Популярна наука та порада для покупців (інформаційний шум)</b>",
+                "• Tisuće mladih Albanaca i dalje prosvjedu... ➡️ <b>Протести в Албанії, геоблок (події за межами Хорватії та України)</b>",
+                "• Na otočić pokraj Korčule došao važan bis... ➡️ <b>Візит єпископа на острів Бадія (поза Задаром)</b>",
+                "• Balzam za ispucale usne napravite sami o... ➡️ <b>Побутові рецепти та поради (світовий шум)</b>",
+                "• Ivana Kekin: “Dvostruke konotacije pretv... ➡️ <b>Політичні заяви та пресконференція щодо мови ненависті (політичний шум)</b>",
+                "• Tegljač koji je vukao golemi stroj je la... ➡️ <b>Транспортування техніки між Сплітом і Корчулою (поза Задаром)</b>",
+                "• HDZ o izjavama Marina Miletića: “Totalit... ➡️ <b>Міжпартійні суперечки в соцмережах (інформаційний шум)</b>",
+                "• Kuma sam u Dalmaciji, koliko da mladoj d... ➡️ <b>Обговорення з соцмереж щодо весільних подарунків (побутовий шум)</b>",
+                "• Hajdaš Dončić: “Navijački neredi odraz s... ➡️ <b>Реакція політиків на футбольні безлади (спорт/коментарі)</b>",
+                "• Policija izvela veliku akciju kontrole t... ➡️ <b>Локальний поліцейський рейд у Кніні (поза Задаром)</b>",
+                "• Udruga hrvatskih sudaca prozvale Božinov... ➡️ <b>Публічна суперечка між суддями та МВС (інформаційний шум)</b>",
+                "• Boćari Debeljaka ove će sezone nastupiti... ➡️ <b>Спорт (анонс виступу бочерського клубу в Суперлізі)</b>",
+                "• Druga šansa za posrnule poduzetnike: pog... ➡️ <b>Програма підтримки бізнесу з фокусом на Шибеницько-Кнінську жупанію (поза Задаром)</b>",
+                "• Brod “Galeb” kasni pri dolasku u riječku... ➡️ <b>Затримка прибуття судна у порту Рієки (поза Задаром)</b>",
+                "• Papa Lav danas izlazi iz bolnice nakon o... ➡️ <b>Виписка Папи Римського з лікарні у Римі, геоблок</b>",
+                "• Ovih liječnika kronično nedostaje u Šibe... ➡️ <b>Дефіцит педіатрів та вакансії у Шибеницько-Кнінській жупанії (поза Задаром)</b>",
+                "• Zona posebnog prometnog režima nastavlja... ➡️ <b>Статистика нової транспортної зони в Дубровнику (поза Задаром)</b>",
+                "• Delegacija sa stonskog područja u posjet... ➡️ <b>Візит місцевої делегації зі Стона до Ірландії (поза Задаром)</b>",
+                "• Čudna riba u Dalmaciji: ribaru je barku ... ➡️ <b>Курйозна публікація з соцмереж про рибу лампаду (побутовий шум)</b>"
+            ]
+        },
+        "backlog": {
+            "total_size": 22,
+            "sources": {
+                "023": 2,
+                "Slobodna dalmacija": 12,
+                "Zadarski list": 8
+            }
+        },
+        "published": {
+            "total": 2,
+            "ukraine_priority": 0,
+            "with_images": 2,
+            "text_only": 0,
+            "sources": {
+                "Zadarski list": 1,
+                "Slobodna dalmacija": 1
+            }
+        },
+        "models_used": {
+            "gemini-3.5-flash-lite": 0,
+            "gemini-3.6-flash": 2
         },
         "errors_count": 0,
         "gemini_retries": 0
