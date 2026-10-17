@@ -1,64 +1,5 @@
 [
     {
-        "timestamp": "2026-10-08 13:01:06",
-        "execution_time": 299.8,
-        "funnel": {
-            "scraped_total": 35,
-            "scraped_by_source": {
-                "023": 10,
-                "Slobodna dalmacija": 15,
-                "Zadarski list": 10
-            },
-            "already_seen": 11,
-            "rejected_by_keywords": 4,
-            "duplicates_removed_by_ai": 18,
-            "rejection_reasons_list": [
-                "• Šibenska policija upozorava: Takvi će va... ➡️ <b>Побут та кримінал інших міст (Книн)</b>",
-                "• U samo godinu dana glečeri Švicarskih Al... ➡️ <b>Світовий шум та екологія третіх країн</b>",
-                "• Počinje 20. Festival tolerancije: cannes... ➡️ <b>Повтор вже опублікованої новини (історія)</b>",
-                "• Zrinka K. Fidermuc Maler ruši stereotipe... ➡️ <b>Лайфстајл та просування книг</b>",
-                "• Mistral predstavio Large 4, model kojim ... ➡️ <b>Світовий шум та технології</b>",
-                "• Franković primio sudionike 28. Dubrovačk... ➡️ <b>Побут та офіційні заходи інших міст (Дубровник)</b>",
-                "• Na snazi narančasti meteoalarm za riječk... ➡️ <b>Побут та погода інших міст (Рієка)</b>",
-                "• Imaju 18 i 17 godina, a napravili su ovo... ➡️ <b>Побут та дрібний кримінал інших міст (Меткович)</b>",
-                "• Zadarski nadbiskup žestoko o zlostavljan... ➡️ <b>Повтор вже опублікованої новини (історія)</b>",
-                "• Gordan Tudor nastupio s DSO-om u svom AR... ➡️ <b>Побут та культура інших міст (Дубровник)</b>",
-                "• Što napraviti kada posao počne rasti brž... ➡️ <b>Лайфстајл та бізнес-поради</b>",
-                "• Franković potpisao šest novih ugovora za... ➡️ <b>Побут та житлові програми інших міст (Дубровник)</b>",
-                "• Izvršenje proračuna PGŽ-a nije prošlo na... ➡️ <b>Побут та політика інших міст (Рієка)</b>",
-                "• Kraj prometnog kaosa? Potpisan ugovor za... ➡️ <b>Побут та ремонт доріг інших міст (Шибеник)</b>",
-                "• Za metkovskim vatrogascima je paklena no... ➡️ <b>Побут та надзвичайні події інших міст (Меткович)</b>",
-                "• Za metkovskim vatrogascima je paklena no... ➡️ <b>Дублікат новини про пожежу в Метковичі</b>",
-                "• Jesu li povećane razine radioaktivnog st... ➡️ <b>Побут та екологічні проблеми інших міст (Госпич)</b>",
-                "• Od Zadružnog doma do modernog muzeja: is... ➡️ <b>Побут та будівництво в інших містах (Вела Лука)</b>"
-            ]
-        },
-        "backlog": {
-            "total_size": 50,
-            "sources": {
-                "Zadarski list": 12,
-                "Slobodna dalmacija": 34,
-                "023": 4
-            }
-        },
-        "published": {
-            "total": 3,
-            "ukraine_priority": 0,
-            "with_images": 1,
-            "text_only": 2,
-            "sources": {
-                "023": 2,
-                "Slobodna dalmacija": 1
-            }
-        },
-        "models_used": {
-            "gemini-3.5-flash-lite": 0,
-            "gemini-3.5-flash": 2
-        },
-        "errors_count": 0,
-        "gemini_retries": 1
-    },
-    {
         "timestamp": "2026-10-08 14:01:10",
         "execution_time": 191.6,
         "funnel": {
@@ -5950,6 +5891,67 @@
             "sources": {
                 "Zadarski list": 1,
                 "Slobodna dalmacija": 1
+            }
+        },
+        "models_used": {
+            "gemini-3.5-flash-lite": 0,
+            "gemini-3.6-flash": 2
+        },
+        "errors_count": 0,
+        "gemini_retries": 0
+    },
+    {
+        "timestamp": "2026-10-17 14:01:04",
+        "execution_time": 106.6,
+        "funnel": {
+            "scraped_total": 35,
+            "scraped_by_source": {
+                "023": 10,
+                "Slobodna dalmacija": 15,
+                "Zadarski list": 10
+            },
+            "already_seen": 9,
+            "rejected_by_keywords": 4,
+            "duplicates_removed_by_ai": 21,
+            "rejection_reasons_list": [
+                "• Divan jesenski dan i fenonenalna marenda... ➡️ <b>Побут Дубровника (не Задар)</b>",
+                "• Egipćanin kazneno prijavljen za krijumča... ➡️ <b>Дрібний кримінал / побут інших регіонів (не Задар)</b>",
+                "• Spolni odnosi barem jednom tjedno poveza... ➡️ <b>Світовий шум (наукові дослідження, лайфстайл)</b>",
+                "• Groblje u Dalmaciji donijelo pravilnik o... ➡️ <b>Локальний побут Водице (не Задар)</b>",
+                "• Prosvjed protiv megafarmi u Koprivnici: ... ➡️ <b>Локальний протест у Копривниці (не Задар)</b>",
+                "• Zašto se mandarine prodaju u crvenim mre... ➡️ <b>Світовий шум (лайфстайл та побутові поради)</b>",
+                "• Na otočić pokraj Korčule došao važan bis... ➡️ <b>Локальна подія на Корчулі (не Задар)</b>",
+                "• Balzam za ispucale usne napravite sami o... ➡️ <b>Світовий шум (рецепти та догляд за собою)</b>",
+                "• Tegljač koji je vukao golemi stroj je la... ➡️ <b>Побут Спліта та Пелєшаца (не Задар)</b>",
+                "• Marijana Biondić odlazi s mjesta direkto... ➡️ <b>Локальна новина Кріквениці (не Задар)</b>",
+                "• Kuma sam u Dalmaciji, koliko da mladoj d... ➡️ <b>Інформаційний шум (обговорення з соцмереж)</b>",
+                "• Tisuće mladih Albanaca i dalje prosvjedu... ➡️ <b>Геоблок (події в Албанії)</b>",
+                "• Policija izvela veliku akciju kontrole t... ➡️ <b>Дрібні події / побут Кніна (не Задар)</b>",
+                "• Ivana Kekin: “Dvostruke konotacije pretv... ➡️ <b>Другорядний політичний коментар / реакція</b>",
+                "• Boćari Debeljaka ove će sezone nastupiti... ➡️ <b>Спорт</b>",
+                "• HDZ o izjavama Marina Miletića: “Totalit... ➡️ <b>Політична суперечка / інформаційний шум</b>",
+                "• Druga šansa za posrnule poduzetnike: pog... ➡️ <b>Регіональні новини Шибеника (не Задар)</b>",
+                "• Ovih liječnika kronično nedostaje u Šibe... ➡️ <b>Регіональна медицина Шибеника (не Задар)</b>",
+                "• Zona posebnog prometnog režima nastavlja... ➡️ <b>Побут Дубровника (не Задар)</b>",
+                "• Delegacija sa stonskog područja u posjet... ➡️ <b>Локальна новина Стона (не Задар)</b>",
+                "• Čudna riba u Dalmaciji: ribaru je barku ... ➡️ <b>Інформаційний шум (цікавинки про природу)</b>"
+            ]
+        },
+        "backlog": {
+            "total_size": 22,
+            "sources": {
+                "023": 3,
+                "Slobodna dalmacija": 12,
+                "Zadarski list": 7
+            }
+        },
+        "published": {
+            "total": 1,
+            "ukraine_priority": 0,
+            "with_images": 1,
+            "text_only": 0,
+            "sources": {
+                "Zadarski list": 1
             }
         },
         "models_used": {
