@@ -1,59 +1,5 @@
 [
     {
-        "timestamp": "2026-10-08 07:01:03",
-        "execution_time": 182.4,
-        "funnel": {
-            "scraped_total": 35,
-            "scraped_by_source": {
-                "023": 10,
-                "Slobodna dalmacija": 15,
-                "Zadarski list": 10
-            },
-            "already_seen": 0,
-            "rejected_by_keywords": 1,
-            "duplicates_removed_by_ai": 14,
-            "rejection_reasons_list": [
-                "• Veliki uspjeh dalmatinskih cubera; Toni ... ➡️ <b>Спорт (змагання зі спідкубингу)</b>",
-                "• Modrić je finom premijerom u ABA ligi ku... ➡️ <b>Спорт (баскетбол)</b>",
-                "• Pitamo ih za posao, novac, a sada i za z... ➡️ <b>Світовий шум та лайфстайл (абстрактні роздуми про інтернет)</b>",
-                "• Hrvat očajan, ne zna što napraviti: ‘Dao... ➡️ <b>Світовий шум та лайфстайл (побутова історія про ремонт)</b>",
-                "• Predsjednik Milanović odlikovao Filipa H... ➡️ <b>Спорт (нагородження боксера)</b>",
-                "• Predstavljen zbornik radova ‘Tamo gdje p... ➡️ <b>Побут інших міст (презентація книги в Дубровнику)</b>",
-                "• Poziv svim ljubiteljima pedaliranja; Tra... ➡️ <b>Спорт та лайфстайл (анонс велопробігу)</b>",
-                "• U prekidu brodska linija za Elafite... ➡️ <b>Побут інших міст (скасування рейсів у Дубровнику)</b>",
-                "• Stiže nevrijeme, ne zaboravite ombrelu! ... ➡️ <b>Побут інших міст (негода в іншому регіоні)</b>",
-                "• Kuga u Rusiji? Infektologinja dr. Betica... ➡️ <b>Світовий шум (новини про чуму в Росії)</b>",
-                "• Jak vjetar prekinuo trajektnu liniju Lop... ➡️ <b>Побут інших міст (скасування поромів у Кварнері)</b>",
-                "• Što se to događa na jugu Dalmacije? Dim ... ➡️ <b>Побут інших міст (дим від пожежі в долині Неретви)</b>",
-                "• Genovska ciklona udara na Dalmaciju! ‘Gr... ➡️ <b>Дублікат (загальний прогноз погоди, є детальніший для Задара ID 24)</b>",
-                "• Danas Županijska skupština: Županija spa... ➡️ <b>Побут інших міст (фінансування телеканалу в Рієці)</b>"
-            ]
-        },
-        "backlog": {
-            "total_size": 29,
-            "sources": {
-                "023": 10,
-                "Slobodna dalmacija": 10,
-                "Zadarski list": 9
-            }
-        },
-        "published": {
-            "total": 3,
-            "ukraine_priority": 0,
-            "with_images": 3,
-            "text_only": 0,
-            "sources": {
-                "Zadarski list": 3
-            }
-        },
-        "models_used": {
-            "gemini-3.5-flash-lite": 1,
-            "gemini-3.5-flash": 1
-        },
-        "errors_count": 0,
-        "gemini_retries": 0
-    },
-    {
         "timestamp": "2026-10-08 08:01:02",
         "execution_time": 182.5,
         "funnel": {
@@ -5944,6 +5890,60 @@
         "models_used": {
             "gemini-3.5-flash-lite": 2,
             "gemini-3.6-flash": 0
+        },
+        "errors_count": 0,
+        "gemini_retries": 0
+    },
+    {
+        "timestamp": "2026-10-17 08:01:08",
+        "execution_time": 199.6,
+        "funnel": {
+            "scraped_total": 35,
+            "scraped_by_source": {
+                "023": 10,
+                "Slobodna dalmacija": 15,
+                "Zadarski list": 10
+            },
+            "already_seen": 8,
+            "rejected_by_keywords": 7,
+            "duplicates_removed_by_ai": 13,
+            "rejection_reasons_list": [
+                "• Balzam za ispucale usne napravite sami o... ➡️ <b>Стоп-тема: побутові поради та рецепти (світовий шум).</b>",
+                "• Deseci tisuća ljudi danas na prosvjedima... ➡️ <b>Геоблок: масові протести у Франції, що не стосуються українців чи Хорватії.</b>",
+                "• Zadar bez Mihailovića i Vraneša pao u Be... ➡️ <b>Стоп-тема: спорт (результат баскетбольного матчу).</b>",
+                "• Zbog govora mržnje u Splitu uhićene četi... ➡️ <b>Побут чужих міст та спорт: затримання уболівальників у Спліті.</b>",
+                "• Ribaru je barku obilazila njemu nepoznat... ➡️ <b>Світовий шум: розважальний матеріал про екзотичну рибу.</b>",
+                "• U Ćosićevu dvoranu stiže šest klubova za... ➡️ <b>Стоп-тема: спорт (турнір з баскетболу на візках).</b>",
+                "• Musk predstavio automobil koji leti, u t... ➡️ <b>Геоблок та світовий шум: презентація автомобіля Елона Маска в США.</b>",
+                "• Izvedbom predstave „Spavaj, dijete moje ... ➡️ <b>Локальні культурні заходи інших міст, не стосується пріоритетів Задара чи Хорватії.</b>",
+                "• Rat zbog šteta od divljači eskalira! Lov... ➡️ <b>Фільтр історії: коментарі та суперечки щодо закону про мисливство, який вже є у списку HISTORY.</b>",
+                "• Danas pretežno sunčano, nova velika prom... ➡️ <b>Кластеризація дублів: загальний прогноз погоди по Хорватії (залишено детальний прогноз для Задара №9).</b>",
+                "• Posao vrijedan skoro tri milijuna eura: ... ➡️ <b>Побут чужих міст: замовлення на верфі в Шибенику.</b>",
+                "• Lapadski ogranak Dubrovačkih knjižnica s... ➡️ <b>Побут чужих міст: переїзд філіалу бібліотеки в Дубровнику.</b>",
+                "• Tromi Zadar bez dvojice važnih igrača, a... ➡️ <b>Стоп-тема: спорт та дублікат новини №3 про матч KK Zadar.</b>"
+            ]
+        },
+        "backlog": {
+            "total_size": 17,
+            "sources": {
+                "Zadarski list": 5,
+                "023": 5,
+                "Slobodna dalmacija": 7
+            }
+        },
+        "published": {
+            "total": 3,
+            "ukraine_priority": 0,
+            "with_images": 2,
+            "text_only": 1,
+            "sources": {
+                "Slobodna dalmacija": 2,
+                "023": 1
+            }
+        },
+        "models_used": {
+            "gemini-3.5-flash-lite": 0,
+            "gemini-3.6-flash": 2
         },
         "errors_count": 0,
         "gemini_retries": 0
