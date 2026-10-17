@@ -1,62 +1,5 @@
 [
     {
-        "timestamp": "2026-10-08 15:01:06",
-        "execution_time": 270.4,
-        "funnel": {
-            "scraped_total": 35,
-            "scraped_by_source": {
-                "023": 10,
-                "Slobodna dalmacija": 15,
-                "Zadarski list": 10
-            },
-            "already_seen": 14,
-            "rejected_by_keywords": 5,
-            "duplicates_removed_by_ai": 17,
-            "rejection_reasons_list": [
-                "• Kad je klasični plank pretežak: lakša in... ➡️ <b>Світовий шум та лайфстайл (поради для здоров'я)</b>",
-                "• Napadi na tankere na Bliskom istoku podi... ➡️ <b>Світовий шум та лайфстайл (глобальні економічні новини)</b>",
-                "• Zadranin Jure Brkljača objavio pjesmu ‘M... ➡️ <b>Світовий шум та лайфстайл (шоу-бізнес та музичні релізи)</b>",
-                "• Počinje 20. Festival tolerancije: cannes... ➡️ <b>Дублікат / Історія (подія вже є в історії каналу)</b>",
-                "• Veća dostupnost pedijatara u Rijeci i Za... ➡️ <b>Побут чужих міст (медичні новини Рієки та Загреба)</b>",
-                "• Zbog puknuća cijevi u Brsečinama došlo d... ➡️ <b>Побут чужих міст (комунальні проблеми поблизу Дубровника)</b>",
-                "• Mistral predstavio Large 4, model kojim ... ➡️ <b>Світовий шум та лайфстайл (технологічні новини штучного інтелекту)</b>",
-                "• U Zadru predstavljena monografija 5. gar... ➡️ <b>Дублікат / Історія (презентація монографії вже висвітлювалася)</b>",
-                "• Ovako izgleda početak električne budućno... ➡️ <b>Світовий шум та лайфстайл (автомобільні новини)</b>",
-                "• Još šest mladih dubrovačkih obitelji dob... ➡️ <b>Побут чужих міст (соціальна програма Дубровника)</b>",
-                "• Na Stradunu se itekako vidi da je završi... ➡️ <b>Побут чужих міст (погода та побут у Дубровнику)</b>",
-                "• Šibenska policija upozorava: ‘Iskazat će... ➡️ <b>Побут чужих міст (локальне шахрайство в Кніні/Шибенику)</b>",
-                "• Franković primio sudionike 28. Dubrovačk... ➡️ <b>Побут чужих міст (офіційні прийоми в Дубровнику)</b>",
-                "• Imaju 18 i 17 godina, a napravili su ovo... ➡️ <b>Побут чужих міст (дрібний вандалізм у Метковичі)</b>",
-                "• Gordan Tudor nastupio s DSO-om u svom AR... ➡️ <b>Побут чужих міст (культурний захід у Дубровнику)</b>",
-                "• Franković potpisao šest novih ugovora za... ➡️ <b>Побут чужих міст (дублікат новини про житло в Дубровнику)</b>",
-                "• Vandalizam u Metkoviću: dvojica mladića ... ➡️ <b>Побут чужих міст (дублікат новини про вандалізм у Метковичі)</b>"
-            ]
-        },
-        "backlog": {
-            "total_size": 46,
-            "sources": {
-                "Zadarski list": 10,
-                "Slobodna dalmacija": 33,
-                "023": 3
-            }
-        },
-        "published": {
-            "total": 3,
-            "ukraine_priority": 0,
-            "with_images": 3,
-            "text_only": 0,
-            "sources": {
-                "Zadarski list": 3
-            }
-        },
-        "models_used": {
-            "gemini-3.5-flash-lite": 1,
-            "gemini-3.5-flash": 1
-        },
-        "errors_count": 0,
-        "gemini_retries": 0
-    },
-    {
         "timestamp": "2026-10-08 16:01:05",
         "execution_time": 185.2,
         "funnel": {
@@ -5964,6 +5907,63 @@
         },
         "models_used": {
             "gemini-3.5-flash-lite": 2,
+            "gemini-3.6-flash": 0
+        },
+        "errors_count": 0,
+        "gemini_retries": 0
+    },
+    {
+        "timestamp": "2026-10-17 16:01:08",
+        "execution_time": 21.1,
+        "funnel": {
+            "scraped_total": 35,
+            "scraped_by_source": {
+                "023": 10,
+                "Slobodna dalmacija": 15,
+                "Zadarski list": 10
+            },
+            "already_seen": 9,
+            "rejected_by_keywords": 7,
+            "duplicates_removed_by_ai": 19,
+            "rejection_reasons_list": [
+                "• Na rekordnih 170 metara 17. Dubrovačke t... ➡️ <b>Побут чужого міста (Дубровник)</b>",
+                "• Divan jesenski dan i fenonenalna marenda... ➡️ <b>Дубль новини 0</b>",
+                "• Wolt ukida potvrdu kvačicom: alkohol, en... ➡️ <b>Не стосується Задара, загальнонаціональна комерційна зміна</b>",
+                "• Poznati ronilac pokušao oboriti Guinness... ➡️ <b>Не відповідає пріоритетним темам для Задара чи України</b>",
+                "• Četiri dana nakon operacije raka pluća p... ➡️ <b>Геоблок (події за межами Хорватії/України)</b>",
+                "• Spolni odnosi barem jednom tjedno poveza... ➡️ <b>Світовий шум (абстрактна наука, поради)</b>",
+                "• Groblje u Dalmaciji donijelo pravilnik o... ➡️ <b>Побут чужого міста (Водіці)</b>",
+                "• Grad Rijeka dodjeljuje blagdansku potpor... ➡️ <b>Побут чужого міста (Рієка)</b>",
+                "• Zašto se mandarine prodaju u crvenim mre... ➡️ <b>Світовий шум / поради та лайфхаки</b>",
+                "• Na otočić pokraj Korčule došao važan bis... ➡️ <b>Побут іншого міста (Корчула)</b>",
+                "• Policija se sukobila s prosvjednicima u ... ➡️ <b>Геоблок (події у Франції)</b>",
+                "• Balzam za ispucale usne napravite sami o... ➡️ <b>Світовий шум (рецепти та поради)</b>",
+                "• Tegljač koji je vukao golemi stroj je la... ➡️ <b>Побут чужого міста (Спліт, Пельєшац)</b>",
+                "• Egipćanin kazneno prijavljen za krijumča... ➡️ <b>Побут іншого регіону (Горський котар)</b>",
+                "• Kuma sam u Dalmaciji, koliko da mladoj d... ➡️ <b>Інформаційний шум (обговорення в соцмережах про весільні подарунки)</b>",
+                "• Policija izvela veliku akciju kontrole t... ➡️ <b>Побут іншого міста (Кнін)</b>",
+                "• Boćari Debeljaka ove će sezone nastupiti... ➡️ <b>Спорт (бочарська ліга)</b>",
+                "• Druga šansa za posrnule poduzetnike: pog... ➡️ <b>Побут іншого регіону (Шибеник)</b>",
+                "• Ovih liječnika kronično nedostaje u Šibe... ➡️ <b>Побут іншого регіону (Шибеник)</b>"
+            ]
+        },
+        "backlog": {
+            "total_size": 19,
+            "sources": {
+                "023": 4,
+                "Slobodna dalmacija": 11,
+                "Zadarski list": 4
+            }
+        },
+        "published": {
+            "total": 0,
+            "ukraine_priority": 0,
+            "with_images": 0,
+            "text_only": 0,
+            "sources": {}
+        },
+        "models_used": {
+            "gemini-3.5-flash-lite": 1,
             "gemini-3.6-flash": 0
         },
         "errors_count": 0,
