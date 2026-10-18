@@ -1,65 +1,5 @@
 [
     {
-        "timestamp": "2026-10-09 12:01:02",
-        "execution_time": 185.6,
-        "funnel": {
-            "scraped_total": 35,
-            "scraped_by_source": {
-                "023": 10,
-                "Slobodna dalmacija": 15,
-                "Zadarski list": 10
-            },
-            "already_seen": 6,
-            "rejected_by_keywords": 3,
-            "duplicates_removed_by_ai": 19,
-            "rejection_reasons_list": [
-                "• Odlična vijest za mlade obitelji iz šibe... ➡️ <b>Побут інших міст (Шибеник, Пироваць, Києво)</b>",
-                "• Na mjestu nekadašnjeg Napoleonovog zatvo... ➡️ <b>Побут інших міст (Шибеник) та лайфстайл</b>",
-                "• Otpad u Gospiću trebala bi sanirati tvrt... ➡️ <b>Дублікат та менш інформативне оновлення порівняно з ID 23</b>",
-                "• Kava u Zadru: kako je omiljeni napitak p... ➡️ <b>Лайфстайл та загальні роздуми про каву</b>",
-                "• U Crnoj Gori uhićen zloglasni Ribar, otk... ➡️ <b>Події в третіх країнах (Чорногорія), що не стосуються безпосередньо України чи Хорватії</b>",
-                "• Objava presude u ponovljenom suđenju Mar... ➡️ <b>Побут та кримінал інших міст (Осієк)</b>",
-                "• Liječnik stiže brodom; Zadar osigurava s... ➡️ <b>Дублікат (більш повна інформація про фінансування медицини на островах представлена в ID 7)</b>",
-                "• Mali vijećnici, dječji gradonačelnik i p... ➡️ <b>Побут інших міст (Цриквениця)</b>",
-                "• Pečene kestene lakše ćete oguliti ako ih... ➡️ <b>Лайфстайл та кулінарні поради</b>",
-                "• Predložene cijene grobnica u Crnom do 10... ➡️ <b>Повтор новини, яка вже є в історії каналу</b>",
-                "• Troskot pozdravio proširenje optužnice z... ➡️ <b>Дублікат та політичні коментарі (пріоритет віддано інформаційному оновленню в ID 23)</b>",
-                "• Predsjednik dubrovačkog Gradskog vijeća ... ➡️ <b>Побут інших міст (Дубровник)</b>",
-                "• Riječka pomorska policija: Zbog nedopušt... ➡️ <b>Побут інших міст (Рієка)</b>",
-                "• Zbog glupe ‘šale‘ uhićen je kao zadnji k... ➡️ <b>Побут та локальний кримінал інших міст (Дубровник)</b>",
-                "• Udruga Vali slavi 20 godina rada – izlož... ➡️ <b>Побут інших міст (Кострена)</b>",
-                "• Prometni recidivist bježao policiji u Za... ➡️ <b>Повтор новини, яка вже є в історії каналу</b>",
-                "• ‘Baje‘ parkirale usred novouređenog park... ➡️ <b>Побут інших міст (Дубровник)</b>",
-                "• Natalija Gulin spremna za povijesni mara... ➡️ <b>Спорт (марафон)</b>",
-                "• Cannes, Berlinale i Sundance u Zadru: Ot... ➡️ <b>Повтор новини, яка вже є в історії каналу (про відкриття фестивалю)</b>"
-            ]
-        },
-        "backlog": {
-            "total_size": 42,
-            "sources": {
-                "Slobodna dalmacija": 24,
-                "023": 10,
-                "Zadarski list": 8
-            }
-        },
-        "published": {
-            "total": 3,
-            "ukraine_priority": 0,
-            "with_images": 1,
-            "text_only": 2,
-            "sources": {
-                "Slobodna dalmacija": 1,
-                "023": 2
-            }
-        },
-        "models_used": {
-            "gemini-3.5-flash-lite": 1,
-            "gemini-3.5-flash": 1
-        },
-        "errors_count": 0,
-        "gemini_retries": 0
-    },
-    {
         "timestamp": "2026-10-09 13:01:06",
         "execution_time": 178.1,
         "funnel": {
@@ -5981,6 +5921,68 @@
         "models_used": {
             "gemini-3.5-flash-lite": 2,
             "gemini-3.6-flash": 0
+        },
+        "errors_count": 0,
+        "gemini_retries": 0
+    },
+    {
+        "timestamp": "2026-10-18 13:01:04",
+        "execution_time": 93.5,
+        "funnel": {
+            "scraped_total": 35,
+            "scraped_by_source": {
+                "023": 10,
+                "Slobodna dalmacija": 15,
+                "Zadarski list": 10
+            },
+            "already_seen": 9,
+            "rejected_by_keywords": 7,
+            "duplicates_removed_by_ai": 22,
+            "rejection_reasons_list": [
+                "• Zalutali dron se srušio na sjeveru Litve... ➡️ <b>Геоблок: подія за межами Хорватії та України</b>",
+                "• Limač Dorian Pribilović srebrni u župani... ➡️ <b>Спорт</b>",
+                "• Papa se prvi put nakon operacije raka pl... ➡️ <b>Геоблок: світова новина без прямого стосунку до Хорватії чи українців</b>",
+                "• Grah, sardine i povrće iz konzerve: nutr... ➡️ <b>Світовий шум: поради дієтолога</b>",
+                "• Primorac i Vitez do vrijednih bodova: Fi... ➡️ <b>Спорт</b>",
+                "• Rijeci kronično nedostaje mjesta za bark... ➡️ <b>Побут іншого міста (Рієка)</b>",
+                "• Zemunička taekwondoašica Luana Lleshi os... ➡️ <b>Спорт</b>",
+                "• Tri zlata, srebro i bronca! Zadarski par... ➡️ <b>Спорт</b>",
+                "• U Senju predstavljena knjiga o bl. Alojz... ➡️ <b>Тематика не належить до пріоритетних (Задар, національна політика чи Україна)</b>",
+                "• Do navodnog susreta s izvanzemaljcima os... ➡️ <b>Світовий шум / псевдонаука</b>",
+                "• Tijekom rutinske kontrole prometa ‘pao‘ ... ➡️ <b>Побут та кримінал іншого міста (Шибеник)</b>",
+                "• Zemlja se počela brže okretati i promije... ➡️ <b>Світовий шум: абстрактна наука</b>",
+                "• Stalan osjećaj da morate na zahod i nako... ➡️ <b>Світовий шум: медичні поради</b>",
+                "• Teška prometna nesreća na Jadranskoj mag... ➡️ <b>Побут та кримінал іншого міста (Шибеник)</b>",
+                "• Policija našla ženu koja je na A6 vozila... ➡️ <b>Побут іншого міста (Рієка)</b>",
+                "• Katarina Vučičić iz zadarske Ultime osvo... ➡️ <b>Спорт</b>",
+                "• Žena na Tehnološkoj cesti u Šibeniku pre... ➡️ <b>Побут та кримінал іншого міста (Шибеник)</b>",
+                "• Koliko često prati podove: tjedno pranje... ➡️ <b>Світовий шум: побутові поради</b>",
+                "• Vozio unatoč poništenoj dozvoli, pa se p... ➡️ <b>Побут та кримінал іншого міста (Шибеник)</b>",
+                "• Kulturna i obiteljska baština: na jednom... ➡️ <b>Побут іншого міста (Шибеник)</b>",
+                "• Na današnji dan u Pločama osnivan prvi o... ➡️ <b>Історія / дубль або несуттєва історична згадка</b>",
+                "• Dubrovački vodič otkriva tajne posla, al... ➡️ <b>Побут іншого міста (Дубровник)</b>"
+            ]
+        },
+        "backlog": {
+            "total_size": 23,
+            "sources": {
+                "Zadarski list": 7,
+                "Slobodna dalmacija": 10,
+                "023": 6
+            }
+        },
+        "published": {
+            "total": 1,
+            "ukraine_priority": 0,
+            "with_images": 1,
+            "text_only": 0,
+            "sources": {
+                "Zadarski list": 1
+            }
+        },
+        "models_used": {
+            "gemini-3.5-flash-lite": 1,
+            "gemini-3.6-flash": 1
         },
         "errors_count": 0,
         "gemini_retries": 0
