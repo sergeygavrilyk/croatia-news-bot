@@ -1,64 +1,5 @@
 [
     {
-        "timestamp": "2026-10-09 09:01:05",
-        "execution_time": 182.8,
-        "funnel": {
-            "scraped_total": 35,
-            "scraped_by_source": {
-                "023": 10,
-                "Slobodna dalmacija": 15,
-                "Zadarski list": 10
-            },
-            "already_seen": 5,
-            "rejected_by_keywords": 2,
-            "duplicates_removed_by_ai": 17,
-            "rejection_reasons_list": [
-                "• Muškarac (40) osumnjičen za tešku krađu ... ➡️ <b>Побут інших міст (локальна крадіжка в Шибенику).</b>",
-                "• Blue Economy Kvarner okuplja ključne lju... ➡️ <b>Побут інших міст (конференція та транспортний розвиток Рієки та Кварнера).</b>",
-                "• Natalija Gulin spremna za povijesni mara... ➡️ <b>Спорт (марафон у Загребі).</b>",
-                "• Uhićena direktorica senjskog Komunalca r... ➡️ <b>Побут інших міст та дублювання теми сміттєвого скандалу, що вже є в історії.</b>",
-                "• Zadar slavi toleranciju uz filmove iz Ca... ➡️ <b>Дублікат та повторення новини з історії про відкриття Фестивалю толерантності.</b>",
-                "• Samo da vas podsjetimo, danas od podne n... ➡️ <b>Побут інших міст (перекриття мосту та автоперегони в Дубровнику).</b>",
-                "• Otkriven uzrok požara u podrumu zgrade T... ➡️ <b>Побут інших міст (розслідування причин пожежі в Рієці).</b>",
-                "• Dvije senjske nastavnice Andreja Kartelo... ➡️ <b>Побут інших міст (нагородження вчителів у Сені).</b>",
-                "• Iz Nina za Đurđevac; Film o Grguru Ninsk... ➡️ <b>Світовий шум та лайфстайл (дитячий кінофестиваль у Джурджевці).</b>",
-                "• Nema vatre, ima dima! Zrak na jugu Dalma... ➡️ <b>Побут інших міст (наслідки пожежі та якість повітря в Метковичі).</b>",
-                "• Poznati zlatar, Mamićev kum i osumnjičen... ➡️ <b>Дублікат новини з історії про затримання у справі нелегального сміття.</b>",
-                "• Utrka s vremenom za dva života; Piloti H... ➡️ <b>Побут інших міст (транспортування пацієнтки гелікоптером зі Спліта до Загреба).</b>",
-                "• Dvanaesti Kup Poljuda je nešto što se ne... ➡️ <b>Спорт (змагання з риболовлі у Спліті).</b>",
-                "• Ured šibensko-kninskog župana Paška Raki... ➡️ <b>Побут інших міст (кадрові призначення в Шибенику).</b>",
-                "• Iz Otočca dolazi još jedan izvrsni „fajt... ➡️ <b>Спорт (змагання з таеквондо в Оточаці).</b>",
-                "• Festivala svjetlosti Lumiart Dubrovnik: ... ➡️ <b>Побут інших міст (фестиваль світла в Дубровнику).</b>",
-                "• Ekološki sajam Opatija ove subote ispred... ➡️ <b>Побут інших міст (екологічний ярмарок в Опатії).</b>"
-            ]
-        },
-        "backlog": {
-            "total_size": 29,
-            "sources": {
-                "Zadarski list": 10,
-                "023": 8,
-                "Slobodna dalmacija": 11
-            }
-        },
-        "published": {
-            "total": 3,
-            "ukraine_priority": 0,
-            "with_images": 2,
-            "text_only": 1,
-            "sources": {
-                "Zadarski list": 1,
-                "023": 1,
-                "Slobodna dalmacija": 1
-            }
-        },
-        "models_used": {
-            "gemini-3.5-flash-lite": 1,
-            "gemini-3.5-flash": 1
-        },
-        "errors_count": 0,
-        "gemini_retries": 0
-    },
-    {
         "timestamp": "2026-10-09 10:01:05",
         "execution_time": 185.7,
         "funnel": {
@@ -5973,6 +5914,68 @@
         "models_used": {
             "gemini-3.5-flash-lite": 0,
             "gemini-3.6-flash": 2
+        },
+        "errors_count": 0,
+        "gemini_retries": 0
+    },
+    {
+        "timestamp": "2026-10-18 10:01:02",
+        "execution_time": 92.1,
+        "funnel": {
+            "scraped_total": 35,
+            "scraped_by_source": {
+                "023": 10,
+                "Slobodna dalmacija": 15,
+                "Zadarski list": 10
+            },
+            "already_seen": 6,
+            "rejected_by_keywords": 6,
+            "duplicates_removed_by_ai": 22,
+            "rejection_reasons_list": [
+                "• Tommy izlazi na burzu i želi prikupiti 2... ➡️ <b>Економіка національного рівня без прямого зв'язку із Задаром чи біженцями</b>",
+                "• Teška prometna nesreća na Jadranskoj mag... ➡️ <b>Побут і події іншого міста (Шибеник)</b>",
+                "• Zemunička taekwondoašica Luana Lleshi os... ➡️ <b>Спорт</b>",
+                "• Neke ambulante udaljene i 100 kilometara... ➡️ <b>Побут і медицина іншого регіону (Новаля/Лика)</b>",
+                "• Žena na Tehnološkoj cesti u Šibeniku pre... ➡️ <b>Побут і події іншого міста (Шибеник)</b>",
+                "• Do navodnog susreta s izvanzemaljcima os... ➡️ <b>Світовий шум та псевдонаука</b>",
+                "• “Ja ne živim svoj život: ja ga pišem”: P... ➡️ <b>Культурні події іншого міста (Рієка)</b>",
+                "• Vozio unatoč poništenoj dozvoli, pa se p... ➡️ <b>Кримінал і події іншого міста (Шибеник)</b>",
+                "• Stalan osjećaj da morate na zahod i nako... ➡️ <b>Поради дієтологів / абстрактне здоров'я</b>",
+                "• Kad Gemäldegalerie postane dom. U sklopu... ➡️ <b>Події за межами Хорватії та України (Геоблок)</b>",
+                "• Kulturna i obiteljska baština: na jednom... ➡️ <b>Побут і події іншого міста (Шибеник)</b>",
+                "• Katarina Vučičić iz zadarske Ultime osvo... ➡️ <b>Спорт</b>",
+                "• “Sav taj veličanstveni život” Iide Turpe... ➡️ <b>Світовий шум / літературна рецензія</b>",
+                "• Na današnji dan u Pločama osnivan prvi o... ➡️ <b>Історичні події іншого міста (Плоче)</b>",
+                "• Koliko često prati podove: tjedno pranje... ➡️ <b>Поради по дому / світовий шум</b>",
+                "• Dubrovački vodič otkriva tajne posla, al... ➡️ <b>Побут і туризм іншого міста (Дубровник)</b>",
+                "• Josip Gregov u Rijeci pobijedio u sve tr... ➡️ <b>Спорт</b>",
+                "• Dubrovački vodič otkriva tajne posla, al... ➡️ <b>Дубль новини ID 15</b>",
+                "• Nagrada za životno djelo: vrijedno prizn... ➡️ <b>Події іншого міста (Шибеник)</b>",
+                "• Dubrovnik ponovno vodeća europska obalna... ➡️ <b>Події іншого міста (Дубровник)</b>",
+                "• Program Mjeseca hrvatske knjige u listop... ➡️ <b>Культурні події іншого міста (Дубровник)</b>",
+                "• U strogoj tajnosti: prije 36 godina odra... ➡️ <b>Історичні події іншого регіону (Шибеник)</b>"
+            ]
+        },
+        "backlog": {
+            "total_size": 23,
+            "sources": {
+                "023": 6,
+                "Slobodna dalmacija": 12,
+                "Zadarski list": 5
+            }
+        },
+        "published": {
+            "total": 1,
+            "ukraine_priority": 0,
+            "with_images": 1,
+            "text_only": 0,
+            "sources": {
+                "Slobodna dalmacija": 1
+            }
+        },
+        "models_used": {
+            "gemini-3.5-flash-lite": 2,
+            "gemini-3.6-flash": 0
         },
         "errors_count": 0,
         "gemini_retries": 0
