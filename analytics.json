@@ -1,64 +1,5 @@
 [
     {
-        "timestamp": "2026-10-08 19:01:05",
-        "execution_time": 221.4,
-        "funnel": {
-            "scraped_total": 35,
-            "scraped_by_source": {
-                "023": 10,
-                "Slobodna dalmacija": 15,
-                "Zadarski list": 10
-            },
-            "already_seen": 5,
-            "rejected_by_keywords": 3,
-            "duplicates_removed_by_ai": 18,
-            "rejection_reasons_list": [
-                "• Direktor Luke Dubrovnik, Željko Raguž, o... ➡️ <b>Побут інших міст (Дубровник)</b>",
-                "• Friteza na vrući zrak troši manje ulja, ... ➡️ <b>Світовий шум та лайфстайл (поради дієтологів)</b>",
-                "• Uređuje se Memorijalna soba u Župi. Opći... ➡️ <b>Побут інших міст (Жупа Дубровачка)</b>",
-                "• Goth metalci Moonspell se vraćaju u Zagr... ➡️ <b>Світовий шум та лайфстайл (концерти в інших містах)</b>",
-                "• Kardiolog Craig Basman otkrio kako pripr... ➡️ <b>Світовий шум та лайфстайл (поради лікарів)</b>",
-                "• Pelješke uspomene koje imaju boju mora! ... ➡️ <b>Світовий шум та лайфстайл (виставки в інших містах)</b>",
-                "• Deset odgojiteljica odlučilo se za dodat... ➡️ <b>Побут інших міст (Госпич)</b>",
-                "• Grijanje klima-uređajem zimi: zašto podi... ➡️ <b>Світовий шум та лайфстайл (побутові поради)</b>",
-                "• Za vikend u povijesnoj jezgri mijenja se... ➡️ <b>Побут інших міст (Дубровник)</b>",
-                "• Zubčić: Jerković Kraljić napustila SDP k... ➡️ <b>Повтор / дрібне оновлення вже відомої новини (вихід Романи Єркович Кралич з SDP)</b>",
-                "• Kad je klasični plank pretežak: lakša in... ➡️ <b>Світовий шум та лайфстайл (фітнес-поради)</b>",
-                "• Počinje 20. Festival tolerancije: cannes... ➡️ <b>Повтор новини з історії (Фестиваль толерантності в Задарі)</b>",
-                "• Tihomir Matijević: ‘Cestu na Pelješcu pl... ➡️ <b>Побут інших міст (Пелєшаць)</b>",
-                "• Kostrena okupila međunarodne kolekcionar... ➡️ <b>Побут інших міст (Кострена)</b>",
-                "• Mistral predstavio Large 4, model kojim ... ➡️ <b>Світовий шум та лайфстайл (технології, штучний інтелект)</b>",
-                "• Kad je pošta prava sve je lako. Nastrije... ➡️ <b>Світовий шум та лайфстайл (історії про риболовлю)</b>",
-                "• Zbog puknuća cijevi u Brsečinama došlo d... ➡️ <b>Побут інших міст (Брсечіне)</b>",
-                "• U Zadru predstavljena monografija 5. gar... ➡️ <b>Повтор новини з історії (презентація монографії 'Соколови' у Задарі)</b>"
-            ]
-        },
-        "backlog": {
-            "total_size": 49,
-            "sources": {
-                "Slobodna dalmacija": 33,
-                "Zadarski list": 10,
-                "023": 6
-            }
-        },
-        "published": {
-            "total": 3,
-            "ukraine_priority": 0,
-            "with_images": 3,
-            "text_only": 0,
-            "sources": {
-                "Zadarski list": 2,
-                "Slobodna dalmacija": 1
-            }
-        },
-        "models_used": {
-            "gemini-3.5-flash-lite": 1,
-            "gemini-3.5-flash": 1
-        },
-        "errors_count": 0,
-        "gemini_retries": 1
-    },
-    {
         "timestamp": "2026-10-09 07:01:10",
         "execution_time": 192.0,
         "funnel": {
@@ -5969,6 +5910,58 @@
         "models_used": {
             "gemini-3.5-flash-lite": 2,
             "gemini-3.6-flash": 0
+        },
+        "errors_count": 0,
+        "gemini_retries": 0
+    },
+    {
+        "timestamp": "2026-10-18 07:01:07",
+        "execution_time": 197.2,
+        "funnel": {
+            "scraped_total": 35,
+            "scraped_by_source": {
+                "023": 10,
+                "Slobodna dalmacija": 15,
+                "Zadarski list": 10
+            },
+            "already_seen": 2,
+            "rejected_by_keywords": 7,
+            "duplicates_removed_by_ai": 12,
+            "rejection_reasons_list": [
+                "• Litva zbog neidentificiranog letećeg obj... ➡️ <b>Геоблок: події за межами Хорватії та України</b>",
+                "• Jedna poruka mogla bi promijeniti raspol... ➡️ <b>Світовий шум: абстрактна астрологія та поради</b>",
+                "• U strogoj tajnosti: prije 36 godina odra... ➡️ <b>Історія: застаріла подія про створення оборони Шибеника</b>",
+                "• Trump u žestokoj predizbornoj ofenzivi: ... ➡️ <b>Геоблок: події у США, що не стосуються напряму українських біженців</b>",
+                "• Drnišani svojom čuvenom delicijom pokori... ➡️ <b>Побут інших міст: фестиваль та рекорд у Тіняні/Істрії</b>",
+                "• Josip Gregov u Rijeci pobijedio u sve tr... ➡️ <b>Спорт: параплавання та спортивні змагання</b>",
+                "• Opatija se zadužuje za pet milijuna eura... ➡️ <b>Побут інших міст: кредити та ремонти у Вуковарі, Опатії та Барбані</b>",
+                "• Danas slavimo Gospu od Danača, čuvaricu ... ➡️ <b>Побут інших міст: релігійне свято в Дубровнику</b>",
+                "• U automobilima se više od 80 posto ljudi... ➡️ <b>Побут чужих міст: транспортні проблеми та карпулінг у Загребі</b>",
+                "• Uručio mu bijeli dres potpisan od Marka ... ➡️ <b>Спорт: футбол і події навколо клубу Хайдук</b>",
+                "• Genetski testovi ćevapa i kebaba: samo 2... ➡️ <b>Світовий шум: дослідження складу м'яса в Польщі</b>",
+                "• Nazire se kraj sunčanim i suhim danima. ... ➡️ <b>Дубль/Історія: загальний прогноз погоди для Хорватії, дублює детальну інформацію про погоду в Задарі</b>"
+            ]
+        },
+        "backlog": {
+            "total_size": 15,
+            "sources": {
+                "023": 5,
+                "Slobodna dalmacija": 4,
+                "Zadarski list": 6
+            }
+        },
+        "published": {
+            "total": 3,
+            "ukraine_priority": 0,
+            "with_images": 0,
+            "text_only": 3,
+            "sources": {
+                "023": 3
+            }
+        },
+        "models_used": {
+            "gemini-3.5-flash-lite": 1,
+            "gemini-3.6-flash": 1
         },
         "errors_count": 0,
         "gemini_retries": 0
