@@ -1,63 +1,5 @@
 [
     {
-        "timestamp": "2026-10-09 10:01:05",
-        "execution_time": 185.7,
-        "funnel": {
-            "scraped_total": 35,
-            "scraped_by_source": {
-                "023": 10,
-                "Slobodna dalmacija": 15,
-                "Zadarski list": 10
-            },
-            "already_seen": 11,
-            "rejected_by_keywords": 2,
-            "duplicates_removed_by_ai": 17,
-            "rejection_reasons_list": [
-                "• Piše Kim Cuculić: Mjesec hrvatske knjige... ➡️ <b>Світовий шум та лайфстайл (культурний захід)</b>",
-                "• Natalija Gulin spremna za povijesni mara... ➡️ <b>Спорт</b>",
-                "• Zbog neslane šale završio iza rešetaka: ... ➡️ <b>Побут чужих міст (дрібне правопорушення в Дубровнику)</b>",
-                "• Zadar slavi toleranciju uz filmove iz Ca... ➡️ <b>Повторення вже опублікованої новини про відкриття фестивалю</b>",
-                "• Opasni osuđenici bi mogli ostati iza reš... ➡️ <b>Дублікат новини ID 0</b>",
-                "• Novim zakonom ukida se razlika između re... ➡️ <b>Дублікат новини ID 4</b>",
-                "• Nobelovu nagradu za mir dobila je Navy P... ➡️ <b>Світовий шум та лайфстайл (міжнародні новини)</b>",
-                "• Iz Nina za Đurđevac; Film o Grguru Ninsk... ➡️ <b>Світовий шум та лайфстайл (дитячий кінофестиваль)</b>",
-                "• Dodik u centru velikog skandala u Bijelo... ➡️ <b>Світовий шум та лайфстайл (іноземна політика)</b>",
-                "• Pod utjecajem alkohola i droge zaustavlj... ➡️ <b>Побут чужих міст (ДТП у Крку)</b>",
-                "• Muškarac (40) osumnjičen za tešku krađu ... ➡️ <b>Побут чужих міст (крадіжка в Шибенику)</b>",
-                "• Provale u kuće i stanove u Čavlima i Srd... ➡️ <b>Побут чужих міст (крадіжки в Рієці та околицях)</b>",
-                "• Samo da vas podsjetimo, danas od podne n... ➡️ <b>Побут чужих міст (перекриття доріг у Дубровнику)</b>",
-                "• Marković povukao prijedlog nagodbe s vje... ➡️ <b>Побут чужих міст (банкрутство підприємства в Рієці)</b>",
-                "• Obrat pod morem. Čekao zubaca pa dočekao... ➡️ <b>Світовий шум та лайфстайл (історія про риболовлю)</b>",
-                "• Nema vatre, ima dima! Zrak na jugu Dalma... ➡️ <b>Побут чужих міст (екологічна ситуація в Метковичі)</b>",
-                "• Gripa ove godine stigla ranije, u PGŽ-u ... ➡️ <b>Побут чужих міст (захворюваність на грип у Рієці)</b>"
-            ]
-        },
-        "backlog": {
-            "total_size": 31,
-            "sources": {
-                "Slobodna dalmacija": 15,
-                "023": 6,
-                "Zadarski list": 10
-            }
-        },
-        "published": {
-            "total": 3,
-            "ukraine_priority": 0,
-            "with_images": 3,
-            "text_only": 0,
-            "sources": {
-                "Slobodna dalmacija": 2,
-                "Zadarski list": 1
-            }
-        },
-        "models_used": {
-            "gemini-3.5-flash-lite": 1,
-            "gemini-3.5-flash": 1
-        },
-        "errors_count": 0,
-        "gemini_retries": 0
-    },
-    {
         "timestamp": "2026-10-09 11:01:02",
         "execution_time": 189.9,
         "funnel": {
@@ -5970,6 +5912,68 @@
             "with_images": 1,
             "text_only": 0,
             "sources": {
+                "Slobodna dalmacija": 1
+            }
+        },
+        "models_used": {
+            "gemini-3.5-flash-lite": 2,
+            "gemini-3.6-flash": 0
+        },
+        "errors_count": 0,
+        "gemini_retries": 0
+    },
+    {
+        "timestamp": "2026-10-18 11:01:09",
+        "execution_time": 169.0,
+        "funnel": {
+            "scraped_total": 35,
+            "scraped_by_source": {
+                "023": 10,
+                "Slobodna dalmacija": 15,
+                "Zadarski list": 10
+            },
+            "already_seen": 5,
+            "rejected_by_keywords": 7,
+            "duplicates_removed_by_ai": 21,
+            "rejection_reasons_list": [
+                "• Tommy izlazi na burzu i želi prikupiti 2... ➡️ <b>Економіка національного рівня без прямого зв'язку з Задаром чи біженцями</b>",
+                "• Policija objavila fotografije torcidaša ... ➡️ <b>Кримінал та події в іншому місті (Спліт), не стосується Задара</b>",
+                "• Grah, sardine i povrće iz konzerve: nutr... ➡️ <b>Світовий шум: поради дієтологів та рецепти</b>",
+                "• Ekocid na području Prosike! Iz cisterne ... ➡️ <b>Побут та кримінал у Шибенику, не стосується Задара</b>",
+                "• Neke ambulante udaljene i 100 kilometara... ➡️ <b>Медицина та організація в іншій жупанії (Лічко-Сенській)</b>",
+                "• Zemunička taekwondoašica Luana Lleshi os... ➡️ <b>Спорт: турніри та змагання</b>",
+                "• Tri zlata, srebro i bronca! Zadarski par... ➡️ <b>Спорт: результати плавання</b>",
+                "• “Ja ne živim svoj život: ja ga pišem”: P... ➡️ <b>Культура та театр у Рієці</b>",
+                "• Do navodnog susreta s izvanzemaljcima os... ➡️ <b>Світовий шум: псевдонаукові прогнози</b>",
+                "• Tijekom rutinske kontrole prometa ‘pao‘ ... ➡️ <b>Кримінал у Шибенику</b>",
+                "• Stalan osjećaj da morate na zahod i nako... ➡️ <b>Світовий шум: медичні поради</b>",
+                "• Katarina Vučičić iz zadarske Ultime osvo... ➡️ <b>Спорт: таеквондо та турнір</b>",
+                "• Teška prometna nesreća na Jadranskoj mag... ➡️ <b>ДТП у Шибенику</b>",
+                "• Koliko često prati podove: tjedno pranje... ➡️ <b>Світовий шум: побутові поради</b>",
+                "• Žena na Tehnološkoj cesti u Šibeniku pre... ➡️ <b>ДТП у Шибенику</b>",
+                "• Vozio unatoč poništenoj dozvoli, pa se p... ➡️ <b>Кримінал та ДТП у Шибенику</b>",
+                "• Kulturna i obiteljska baština: na jednom... ➡️ <b>Культурна подія у Шибенику</b>",
+                "• Na današnji dan u Pločama osnivan prvi o... ➡️ <b>Історія та політика в Плочах</b>",
+                "• Dubrovački vodič otkriva tajne posla, al... ➡️ <b>Туризм у Дубровнику</b>",
+                "• Dubrovački vodič otkriva tajne posla, al... ➡️ <b>Дубль новини ID 20</b>",
+                "• Nagrada za životno djelo: vrijedno prizn... ➡️ <b>Нагорода та подія у Шибенику</b>"
+            ]
+        },
+        "backlog": {
+            "total_size": 23,
+            "sources": {
+                "023": 6,
+                "Slobodna dalmacija": 12,
+                "Zadarski list": 5
+            }
+        },
+        "published": {
+            "total": 2,
+            "ukraine_priority": 1,
+            "with_images": 2,
+            "text_only": 0,
+            "sources": {
+                "Zadarski list": 1,
                 "Slobodna dalmacija": 1
             }
         },
