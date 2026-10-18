@@ -1,62 +1,5 @@
 [
     {
-        "timestamp": "2026-10-09 13:01:06",
-        "execution_time": 178.1,
-        "funnel": {
-            "scraped_total": 35,
-            "scraped_by_source": {
-                "023": 10,
-                "Slobodna dalmacija": 15,
-                "Zadarski list": 10
-            },
-            "already_seen": 6,
-            "rejected_by_keywords": 2,
-            "duplicates_removed_by_ai": 16,
-            "rejection_reasons_list": [
-                "• HGSS spasio izgubljenog gljivara u Gosko... ➡️ <b>Побут інших регіонів (рятувальна операція в Горському Котарі)</b>",
-                "• Kava u Zadru: kako je omiljeni napitak p... ➡️ <b>Лайфстайл та розважальний контент без новинної цінності</b>",
-                "• Kćer Trumpove šefice kabineta slikala se... ➡️ <b>Світовий шум, подія в третій країні (Боснія і Герцеговина), що не стосується Хорватії чи України</b>",
-                "• Ratni zapovjednik HVO osuđen za šverc 50... ➡️ <b>Дублікат новини ID 2 (судовий вирок за контрабанду кокаїну)</b>",
-                "• Izložba o Bijenalu mladih u MMSU Rijeka ... ➡️ <b>Побут та культурні події інших міст (Рієка)</b>",
-                "• Zadarska stomatologinja kaže da neki lju... ➡️ <b>Лайфстайл, поради стоматолога, відсутність суспільно важливої події</b>",
-                "• Pečene kestene lakše ćete oguliti ako ih... ➡️ <b>Лайфстайл, кулінарні поради</b>",
-                "• Skupo plaćeni bukovi metri: Ukrali drva ... ➡️ <b>Побут та дрібний кримінал інших міст (Госпич/Бриньє)</b>",
-                "• Prometni recidivist bježao policiji u Za... ➡️ <b>Подія вже є в історії (затримання п'яного водія-втікача в Задарі)</b>",
-                "• Zbog bolesti na FOODravanju ‘otpao‘ je T... ➡️ <b>Побут та події інших міст (скасування концерту в Дубровнику)</b>",
-                "• Natalija Gulin spremna za povijesni mara... ➡️ <b>Спорт (марафон у Загребі)</b>",
-                "• Na Sveučilištu u Dubrovniku otvoren Cent... ➡️ <b>Побут та події інших міст (відкриття центру в Дубровнику)</b>",
-                "• Na mjestu nekadašnjeg Napoleonovog zatvo... ➡️ <b>Лайфстайл та загальні новини ринку нерухомості без прив'язки до Задара</b>",
-                "• Mali vijećnici, dječji gradonačelnik i p... ➡️ <b>Побут інших міст (дитячий тиждень у Цриквениці)</b>",
-                "• U Crnoj Gori uhićen zloglasni Ribar, otk... ➡️ <b>Світові новини, подія в Чорногорії без прямого зв'язку з Хорватією</b>",
-                "• Stiže nam kišovit i vjetrovit vikend, a ... ➡️ <b>Подія вже є в історії (прогноз погоди та штормове попередження на вихідні для Задара)</b>"
-            ]
-        },
-        "backlog": {
-            "total_size": 47,
-            "sources": {
-                "Zadarski list": 10,
-                "Slobodna dalmacija": 28,
-                "023": 9
-            }
-        },
-        "published": {
-            "total": 3,
-            "ukraine_priority": 0,
-            "with_images": 1,
-            "text_only": 2,
-            "sources": {
-                "023": 2,
-                "Slobodna dalmacija": 1
-            }
-        },
-        "models_used": {
-            "gemini-3.5-flash-lite": 1,
-            "gemini-3.5-flash": 1
-        },
-        "errors_count": 0,
-        "gemini_retries": 0
-    },
-    {
         "timestamp": "2026-10-09 14:01:04",
         "execution_time": 196.4,
         "funnel": {
@@ -5983,6 +5926,60 @@
         "models_used": {
             "gemini-3.5-flash-lite": 1,
             "gemini-3.6-flash": 1
+        },
+        "errors_count": 0,
+        "gemini_retries": 0
+    },
+    {
+        "timestamp": "2026-10-18 14:01:06",
+        "execution_time": 180.2,
+        "funnel": {
+            "scraped_total": 35,
+            "scraped_by_source": {
+                "023": 10,
+                "Slobodna dalmacija": 15,
+                "Zadarski list": 10
+            },
+            "already_seen": 6,
+            "rejected_by_keywords": 4,
+            "duplicates_removed_by_ai": 14,
+            "rejection_reasons_list": [
+                "• Astronomi pronašli prvu zelenu zvijezdu,... ➡️ <b>Світовий шум</b>",
+                "• Limač Dorian Pribilović srebrni u župani... ➡️ <b>Спорт</b>",
+                "• Evo što nam donosi završnica Dana hrvats... ➡️ <b>Не відповідає пріоритетам регіону</b>",
+                "• Grah, sardine i povrće iz konzerve: nutr... ➡️ <b>Світовий шум</b>",
+                "• Primorac i Vitez do vrijednih bodova: Fi... ➡️ <b>Спорт</b>",
+                "• Uhvati film u Rijeci: kratke priče koje ... ➡️ <b>Побут чужих міст</b>",
+                "• Zemunička taekwondoašica Luana Lleshi os... ➡️ <b>Спорт</b>",
+                "• Tri zlata, srebro i bronca! Zadarski par... ➡️ <b>Спорт</b>",
+                "• Do navodnog susreta s izvanzemaljcima os... ➡️ <b>Світовий шум</b>",
+                "• Stalan osjećaj da morate na zahod i nako... ➡️ <b>Світовий шум</b>",
+                "• Katarina Vučičić iz zadarske Ultime osvo... ➡️ <b>Спорт</b>",
+                "• Koliko često prati podove: tjedno pranje... ➡️ <b>Світовий шум</b>",
+                "• Kulturna i obiteljska baština: na jednom... ➡️ <b>Побут чужих міст</b>",
+                "• Dubrovački vodič otkriva tajne posla, al... ➡️ <b>Побут чужих міст</b>"
+            ]
+        },
+        "backlog": {
+            "total_size": 25,
+            "sources": {
+                "023": 7,
+                "Slobodna dalmacija": 10,
+                "Zadarski list": 8
+            }
+        },
+        "published": {
+            "total": 3,
+            "ukraine_priority": 1,
+            "with_images": 3,
+            "text_only": 0,
+            "sources": {
+                "Zadarski list": 3
+            }
+        },
+        "models_used": {
+            "gemini-3.5-flash-lite": 2,
+            "gemini-3.6-flash": 0
         },
         "errors_count": 0,
         "gemini_retries": 0
