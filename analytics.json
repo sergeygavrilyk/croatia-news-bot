@@ -1,60 +1,5 @@
 [
     {
-        "timestamp": "2026-10-09 07:01:10",
-        "execution_time": 192.0,
-        "funnel": {
-            "scraped_total": 35,
-            "scraped_by_source": {
-                "023": 10,
-                "Slobodna dalmacija": 15,
-                "Zadarski list": 10
-            },
-            "already_seen": 1,
-            "rejected_by_keywords": 1,
-            "duplicates_removed_by_ai": 15,
-            "rejection_reasons_list": [
-                "• Festivala svjetlosti Lumiart Dubrovnik: ... ➡️ <b>Побут та події інших міст (Дубровник)</b>",
-                "• Ivica Lukanović: “Kvarner može biti među... ➡️ <b>Побут та події інших міст (Кварнер)</b>",
-                "• Boris Orešić, dubrovački prometni stručn... ➡️ <b>Побут та події інших міст (Дубровник)</b>",
-                "• Proslava srebrnog jubileja DND-a 23. stu... ➡️ <b>Побут та події інших міст (Опатія)</b>",
-                "• Utrka s vremenom za dva života; Piloti H... ➡️ <b>Побут та події інших міст (Спліт, Загреб)</b>",
-                "• Pogledajte što sve možete pročitati u no... ➡️ <b>Реклама та події іншого міста (Дубровник)</b>",
-                "• Agenti ICE-a u New Yorku pucali u čovjek... ➡️ <b>Світові новини (США)</b>",
-                "• Pošalji nekome njegovu zvijezdu iznad Ga... ➡️ <b>Лайфстайл та події іншого міста (Рієка)</b>",
-                "• Izbodeni muškarac pronađen kod starog či... ➡️ <b>Побут та кримінал інших міст (Трогір)</b>",
-                "• Nova akcija USKOK-a zbog opasnog otpada.... ➡️ <b>Дублікат новини ID 0</b>",
-                "• Evo kako je Nizozemska rekla povijesno “... ➡️ <b>Світовий шум та обговорення</b>",
-                "• Košarkaši Crikvenice sutra otvaraju novu... ➡️ <b>Спорт</b>",
-                "• Pitali smo što je s novčanim nagradama u... ➡️ <b>Побут та події інших міст (Чабар)</b>",
-                "• Nastavlja se snažan rast domaćih gostiju... ➡️ <b>Побут та події інших міст (Рієка)</b>",
-                "• Sportska zona Orehovica ulazi u proračun... ➡️ <b>Спорт та побут інших міст (Рієка)</b>"
-            ]
-        },
-        "backlog": {
-            "total_size": 21,
-            "sources": {
-                "023": 7,
-                "Slobodna dalmacija": 4,
-                "Zadarski list": 10
-            }
-        },
-        "published": {
-            "total": 3,
-            "ukraine_priority": 0,
-            "with_images": 0,
-            "text_only": 3,
-            "sources": {
-                "023": 3
-            }
-        },
-        "models_used": {
-            "gemini-3.5-flash-lite": 1,
-            "gemini-3.5-flash": 1
-        },
-        "errors_count": 0,
-        "gemini_retries": 0
-    },
-    {
         "timestamp": "2026-10-09 08:01:03",
         "execution_time": 167.7,
         "funnel": {
@@ -5957,6 +5902,65 @@
             "text_only": 3,
             "sources": {
                 "023": 3
+            }
+        },
+        "models_used": {
+            "gemini-3.5-flash-lite": 1,
+            "gemini-3.6-flash": 1
+        },
+        "errors_count": 0,
+        "gemini_retries": 0
+    },
+    {
+        "timestamp": "2026-10-18 08:01:02",
+        "execution_time": 160.0,
+        "funnel": {
+            "scraped_total": 35,
+            "scraped_by_source": {
+                "023": 10,
+                "Slobodna dalmacija": 15,
+                "Zadarski list": 10
+            },
+            "already_seen": 3,
+            "rejected_by_keywords": 6,
+            "duplicates_removed_by_ai": 18,
+            "rejection_reasons_list": [
+                "• Do navodnog susreta s izvanzemaljcima os... ➡️ <b>Світовий шум</b>",
+                "• Kad Gemäldegalerie postane dom. U sklopu... ➡️ <b>Інші країни (Геоблок)</b>",
+                "• Brkato društvo ponovno u Zadru: Patuljas... ➡️ <b>Дубль або несуттєва подія</b>",
+                "• Stalan osjećaj da morate na zahod i nako... ➡️ <b>Світовий шум</b>",
+                "• “Sav taj veličanstveni život” Iide Turpe... ➡️ <b>Світовий шум</b>",
+                "• Dubrovnik ponovno vodeća europska obalna... ➡️ <b>Побут інших міст</b>",
+                "• Ispovijest čovjeka koji je bio jedan od ... ➡️ <b>Інші країни (Геоблок)</b>",
+                "• Katarina Vučičić iz zadarske Ultime osvo... ➡️ <b>Спорт</b>",
+                "• Pariz kao bojno polje autoindustrije: Ki... ➡️ <b>Інші країни (Геоблок)</b>",
+                "• Program Mjeseca hrvatske knjige u listop... ➡️ <b>Побут інших міст</b>",
+                "• Koliko često prati podove: tjedno pranje... ➡️ <b>Світовий шум</b>",
+                "• Volkswagen otkrio novi ID. Tiguan: Vraća... ➡️ <b>Дубль існуючої новини</b>",
+                "• Sezona jest mlada, ali prvi dalmatinski ... ➡️ <b>Спорт</b>",
+                "• Josip Gregov u Rijeci pobijedio u sve tr... ➡️ <b>Спорт</b>",
+                "• Jedna poruka mogla bi promijeniti raspol... ➡️ <b>Світовий шум</b>",
+                "• U strogoj tajnosti: prije 36 godina odra... ➡️ <b>Побут інших міст</b>",
+                "• Drnišani svojom čuvenom delicijom pokori... ➡️ <b>Побут інших міст</b>",
+                "• Danas slavimo Gospu od Danača, čuvaricu ... ➡️ <b>Побут інших міст</b>"
+            ]
+        },
+        "backlog": {
+            "total_size": 20,
+            "sources": {
+                "023": 6,
+                "Slobodna dalmacija": 8,
+                "Zadarski list": 6
+            }
+        },
+        "published": {
+            "total": 2,
+            "ukraine_priority": 0,
+            "with_images": 0,
+            "text_only": 2,
+            "sources": {
+                "023": 1,
+                "Slobodna dalmacija": 1
             }
         },
         "models_used": {
