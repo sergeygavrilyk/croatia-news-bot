@@ -61,6 +61,8 @@ ANALYTICS_FILE = "analytics.json"
 MAX_HISTORY_SIZE = 1000
 MAX_AGE_SECONDS = 12 * 60 * 60
 BATCH_SIZE = 3
+PRE_TRANSLATION_DELAY_SECONDS = 15
+POST_PUBLICATION_DELAY_SECONDS = 45
 MAX_CANDIDATES_PER_FILTER = 25
 MAX_TRANSLATION_FAILURES = 5
 RETRY_COOLDOWN_SECONDS = 60 * 60
@@ -452,6 +454,14 @@ AD_PATTERN = re.compile(
     re.IGNORECASE | re.UNICODE,
 )
 
+# Keep every explicit exclusion from the original bot. These complement, rather than
+# replace, the more general sport/ad patterns above.
+LEGACY_UNWANTED_KEYWORDS = [
+    "oglasi", "sponzorirani", "promo", "redikul", "horoskop", "plaćeni oglas",
+    "nagradna igra", "native", "pr vijesti", "foto", "video", "sport", "nogomet",
+    "košarka", "tenis", "utakmica", "hnl", "liga prvaka", "derbi", "trener",
+    "igrači", "kk zadar", "nk zadar", "prvenstvo", "turnir", "bodovi", "polufinale",
+]
 
 def plain_text(value: str) -> str:
     return BeautifulSoup(value or "", "html.parser").get_text(" ", strip=True)
@@ -466,6 +476,10 @@ def is_quality_article(title: str, description: str, url: str) -> bool:
     text_to_check = f"{title} {plain_text(description)} {url}"
     if SPORTS_PATTERN.search(text_to_check) or AD_PATTERN.search(text_to_check):
         return False
+    normalized_text = text_to_check.casefold()
+    for keyword in LEGACY_UNWANTED_KEYWORDS:
+        if re.search(rf"\b{re.escape(keyword.casefold())}\b", normalized_text, re.IGNORECASE | re.UNICODE):
+            return False
     if len(title.strip()) < 15 or len(text_to_check.strip()) < 20:
         return False
     if "!!!" in title or "???" in title:
@@ -504,7 +518,8 @@ def is_transient_gemini_error(exc: Exception) -> bool:
 
 
 def _generate_structured_response(prompt: str, schema, stats: dict | None, operation: str,
-                                  expected_ids: set[int] | None = None):
+                                  expected_ids: set[int] | None = None, 
+                                  temperature: float = 0.0):
     if client is None:
         raise RuntimeError("Gemini-клієнт не ініціалізований")
 
@@ -517,6 +532,7 @@ def _generate_structured_response(prompt: str, schema, stats: dict | None, opera
                     model=model_name,
                     contents=prompt,
                     config=types.GenerateContentConfig(
+                        temperature=temperature,  # Повернено жорстку температуру для зменшення галюцинацій
                         response_mime_type="application/json",
                         response_schema=schema,
                         safety_settings=[
@@ -565,14 +581,34 @@ def _generate_structured_response(prompt: str, schema, stats: dict | None, opera
 
 
 def call_gemini_json(prompt: str, stats: dict | None = None) -> NewsFilterResponse:
-    return _generate_structured_response(prompt, NewsFilterResponse, stats, "фільтрація новин")
+    return _generate_structured_response(prompt, NewsFilterResponse, stats, "фільтрація новин", temperature=0.0)
 
+HOMOGLYPHS = {
+    "ά": "а", "α": "а", "ό": "о", "ο": "о",
+    "έ": "е", "ε": "е", "ί": "і", "ι": "і",
+    "ή": "и", "η": "и", "ν": "н", "Ν": "Н",
+    "ב": "б", "ب": "б", "є́": "є", "і́": "і",
+}
+
+def clean_generated_field(value: str) -> str:
+    """Restore the original Unicode/ellipsis cleanup, applied to fields, not raw JSON."""
+    cleaned = str(value or "").replace("\u0301", "")
+    cleaned = cleaned.replace("[...]", ".").replace("...", ".")
+    for bad_char, good_char in HOMOGLYPHS.items():
+        cleaned = cleaned.replace(bad_char, good_char)
+    return cleaned
 
 def generate_news_texts_json(prompt: str, expected_ids: set[int], stats: dict | None = None) -> list[dict]:
+    # The original translation operation used temperature=0.1 and Pro-first model fallback.
     result = _generate_structured_response(
-        prompt, TranslationResponse, stats, "переклад новин", expected_ids=expected_ids
+        prompt, TranslationResponse, stats, "переклад новин",
+        expected_ids=expected_ids, temperature=0.1,
     )
-    return [item.model_dump() for item in result.translations]
+    translations = [item.model_dump() for item in result.translations]
+    for item in translations:
+        for key in ("title", "content", "hashtags"):
+            item[key] = clean_generated_field(item.get(key, ""))
+    return translations
 
 
 # ---------------------------------------------------------------------------
@@ -588,22 +624,40 @@ def deduplicate_news(articles: list[dict], history_titles: list[str] | None = No
         {"id": idx, "title": article["title"], "description": plain_text(article.get("description", ""))}
         for idx, article in enumerate(articles)
     ]
+    candidates_log = "\n".join(f"[{item['id']}] {item['title']}" for item in prompt_data)
+    logging.info("Кандидати на редакційну фільтрацію (%s):\n%s", len(prompt_data), candidates_log)
 
-    prompt = f"""Ти — головний редактор Telegram-каналу для української діаспори в Хорватії, з фокусом на Задар.
+    prompt = f"""Ти — професійний та прагматичний головний редактор Telegram-каналу для української діаспори, яка проживає в Хорватії (з особливим фокусом на місто Задар). Твоя мета — дати читачам максимально повну та корисну картину дня, відсікаючи інформаційне сміття.
 
-Оціни всі кандидати за правилами в наведеному порядку.
+    АЛГОРИТМ ВІДБОРУ (Оцінюй кожну новину суворо за цими кроками у заданому порядку):
 
-1. Визнач кореневу подію: хто, що, де.
-2. Якщо кілька статей описують ту саму подію, залиш одну — найбільш повну й загальну.
-3. Порівняй зі списком HISTORY. Відхиляй повторні перекази й несуттєві коментарі. Залишай важливі оновлення: нові підтверджені цифри, затримання підозрюваного, ухвалене рішення тощо.
-4. Абсолютні стоп-теми:
-   - будь-який спорт, матчі, турніри, результати, команди та спортсмени;
-   - реклама, спонсорські матеріали, промо й розіграші;
-   - побутові новини(окрім концертів, культурних події, фестівалі) інших хорватських міст, крім Задара;
-   - події за межами Хорватії та України, якщо вони прямо не стосуються українців або українських біженців;
-   - абстрактна наука, рецепти й загальні поради.
-5. Залишай лише: локальні новини Задара; важливі національні новини Хорватії; значущі новини України та українців/біженців, включно з тимчасовим захистом та виплатами.
-6. Не роби винятків для «цікавих світових новин». Краще відхилити сумнівний матеріал, ніж порушити стоп-теми.
+    КРОК 1. ІДЕНТИФІКАЦІЯ "КОРЕНЕВОЇ ПОДІЇ":
+    Визначай "корінь" кожної новини (головну фізичну подію: ХТО, ЩО і ДЕ). 
+
+    КРОК 2. КЛАСТЕРИЗАЦІЯ ДУБЛІВ: 
+    Якщо кілька новин стосуються ОДНІЄЇ кореневої події (навіть якщо це нові деталі чи реакції), збери їх у кластер. ЗАЛИШ ТІЛЬКИ ОДИН ID (найбільш загальну і повну статтю). Інші дублікати — відхиляй.
+
+    КРОК 3. ФІЛЬТР ІСТОРІЇ ТА ВАЖЛИВІ ОНОВЛЕННЯ: 
+    Порівняй кандидатів зі списком <HISTORY>. 
+- Якщо новина є просто переказом вчорашньої події або містить дрібні, несуттєві коментарі — ВІДХИЛЯЙ.
+- РЕАКЦІЇ ТА КОМЕНТАРІ (АНТИ-ДУБЛЬ): Якщо в історії вже є базова новина (наприклад, інцидент чи ДТП), а новий кандидат — це просто коментар політика, реакція партії, дискусія на сесії чи думка експерта щодо цього інциденту — БЕЗЖАЛЬНО ВІДХИЛЯЙ. Це інформаційний шум.
+- АЛЕ якщо це СУТТЄВЕ ОНОВЛЕННЯ вже знайомої події (наприклад: кардинально зросла кількість жертв, знайдено злочинця, ухвалено закон, який вчора лише обговорювався, або є офіційна реакція влади на кризу) — ОБОВ'ЯЗКОВО ЗАЛИШАЙ.
+
+    КРОК 4. СТОП-ТЕМИ (АБСОЛЮТНА ЗАБОРОНА): 
+    УВАГА: Цей крок перекриває всі інші! Навіть якщо в новині є слово "Задар" або "Україна", але новина стосується наступних тем — ВІДХИЛЯЙ ЇЇ.
+1. СПОРТ: Будь-які матчі (зокрема баскетбольний клуб Задар), турніри, результати, дербі, спортсмени, тайми.
+2. РЕКЛАМА: Спонсорські матеріали, промо-акції, розіграші.
+3. ПОБУТ ЧУЖИХ МІСТ: Ремонти доріг, відключення води, локальні затори, страйки комунальників, дрібні ДТП у Загребі, Спліті, Рієці чи БУДЬ-ЯКОМУ іншому місті, ОКРІМ Задара, виняток — концерти, культурні події та фестивалі;
+4. ІНШІ КРАЇНИ (ГЕОБЛОК): БУДЬ-ЯКІ події за межами Хорватії та України (навіть масові вбивства, теракти, вибори, катастрофи чи великий кримінал у Польщі, США, Франції тощо), ЯКЩО вони прямо не стосуються українських біженців або українців.
+5. СВІТОВИЙ ШУМ: Абстрактна наука, поради дієтологів, рецепти.
+
+    КРОК 5. ТЕМАТИКА (ЩО ОБОВ'ЯЗКОВО ЗАЛИШИТИ): 
+1. ЗАДАР (Пріоритет №1): Побут, перекриття вулиць, тарифи, ремонти, відключення світла/води, погода, місцевий кримінал. 
+2. ХОРВАТІЯ (Національний рівень): Важливі події всієї країни — великий кримінал, політика, економіка.
+3. УКРАЇНА ТА  УКРАЇНСЬКІ БІЖЕНЦІ: Головні події в Україні (війна, енергетика, економіка, життя, політика, технології, оборона), рішення ЄС (Директива 2001/55), виплати українським біженцям.
+
+    КРОК 6. ФІНАЛЬНИЙ ФІЛЬТР:
+    Якщо новина не підпадає під ЖОДНУ з категорій КРОКУ 5 — ти ЗОБОВ'ЯЗАНИЙ її відхилити. Ніяких винятків для "цікавих світових новин".
 
 CANDIDATES:
 {json.dumps(prompt_data, ensure_ascii=False, indent=2)}
@@ -611,7 +665,12 @@ CANDIDATES:
 HISTORY:
 {json.dumps(recent_history, ensure_ascii=False, indent=2)}
 
-Поверни JSON за схемою. Поле keep — ID усіх статей, які треба залишити. Поле rejected має містити всі інші ID, кожен рівно один раз, із короткою причиною відхилення й сутностями.
+Поверни результат СУВОРО у форматі валідного JSON-об'єкта з двома ключами:
+    1. "keep": масив ID новин, які треба ЗАЛИШИТИ (наприклад, [0, 2]).
+    2. "rejected": масив об'єктів для відхилених новин, де кожен містить:
+       - "id": номер новини,
+       - "entities_found": масив з 3-5 ключових сутностей (фігуранти, компанії, локації),
+       - "reason": коротка причина відхилення (наприклад: "Спорт", "Побут Спліта").
 """
 
     try:
@@ -636,12 +695,21 @@ HISTORY:
         rejection_log = []
         for rejected_item in result.rejected:
             title = articles[rejected_item.id]["title"]
+            entities = ", ".join(rejected_item.entities_found)
             rejection_log.append(
-                f"• {html.escape(title[:70])} ➡️ <b>{html.escape(rejected_item.reason[:100])}</b>"
+                f"• {title[:70]} → {rejected_item.reason[:100]} | Сутності: {entities[:160]}"
             )
         if stats is not None:
             stats["funnel"]["rejection_reasons_list"] = rejection_log
         logging.info("Gemini залишив %s з %s кандидатів", len(filtered), len(articles))
+        for rejected_item in result.rejected:
+            title = articles[rejected_item.id]["title"]
+            entities = ", ".join(rejected_item.entities_found)
+            reason = rejected_item.reason
+            logging.info(
+                "Відхилено Gemini | ID=%s | причина=%s | сутності=%s | заголовок=%s",
+                rejected_item.id, reason, entities, title,
+            )
         return filtered, rejected
 
     except Exception as exc:
@@ -685,62 +753,40 @@ class AllowedHTMLValidator(HTMLParser):
         self.errors.append(message)
 
 
-def normalize_translation_html(content):
-    """Нормалізує поширене HTML-форматування Gemini до Telegram-сумісного вигляду."""
+def normalize_translation_html(content: str) -> str:
+    """Normalize common Gemini HTML variants while preserving the allow-list."""
     content = str(content or "")
-
-    # Переноси рядків замість HTML-тегів.
     content = re.sub(r"(?i)<\s*br\s*/?\s*>", "\n", content)
     content = re.sub(r"(?i)<\s*/?\s*(?:p|div)\b[^>]*>", "\n\n", content)
-
-    # Поширені синоніми дозволеного форматування.
     content = re.sub(r"(?i)<\s*strong\b[^>]*>", "<b>", content)
     content = re.sub(r"(?i)</\s*strong\s*>", "</b>", content)
     content = re.sub(r"(?i)<\s*em\b[^>]*>", "<i>", content)
     content = re.sub(r"(?i)</\s*em\s*>", "</i>", content)
-
-    # Списки перетворюємо на звичайний текст із маркерами.
     content = re.sub(r"(?i)<\s*/?\s*(?:ul|ol)\b[^>]*>", "\n", content)
     content = re.sub(r"(?i)<\s*li\b[^>]*>", "• ", content)
     content = re.sub(r"(?i)</\s*li\s*>", "\n", content)
-
-    # Прибираємо нейтральні inline-обгортки.
     content = re.sub(r"(?i)</?\s*span\b[^>]*>", "", content)
-
-    # Прибираємо атрибути дозволених тегів, зберігаючи самі теги.
     content = re.sub(
         r"(?i)<\s*(b|i|u|s)\b[^>]*>",
-        lambda match: f"<{match.group(1).lower()}>",
-        content,
+        lambda m: f"<{m.group(1).lower()}>", content,
     )
     content = re.sub(
         r"(?i)</\s*(b|i|u|s)\s*>",
-        lambda match: f"</{match.group(1).lower()}>",
-        content,
+        lambda m: f"</{m.group(1).lower()}>", content,
     )
-
-    content = re.sub(r"\n{3,}", "\n\n", content)
-    return content.strip()
+    return re.sub(r"\n{3,}", "\n\n", content).strip()
 
 
-def html_fragment_is_valid(fragment):
+def html_fragment_is_valid(fragment: str) -> bool:
     parser = AllowedHTMLValidator()
     try:
         parser.feed(fragment or "")
         parser.close()
-
         if parser.stack:
-            parser.errors.append(
-                f"Незакриті теги: {', '.join(parser.stack)}"
-            )
-
+            parser.errors.append(f"Незакриті теги: {', '.join(parser.stack)}")
         if parser.errors:
-            logging.warning(
-                "Деталі помилки HTML: %s",
-                "; ".join(parser.errors[:10]),
-            )
+            logging.warning("Деталі помилки HTML: %s", "; ".join(parser.errors[:10]))
             return False
-
         return True
     except Exception as exc:
         logging.warning("HTML-парсер завершився помилкою: %s", exc)
@@ -803,19 +849,19 @@ def validate_translation_strict(translation: dict, original_article: dict) -> bo
 
     # Enforce editorial limits on the visible translation, before adding source attribution.
     image_urls = original_article.get("image_urls") or original_article.get("image_url")
+    max_visible_chars = 900 if image_urls else 2500
     visible_length = len(title) + 2 + len(content_plain) + 2 + len(hashtags)
-    # Знімаємо жорсткий ліміт для фото (900), бо send_to_telegram сам його обріже за потреби.
-    # Залишаємо лише загальний ліміт Telegram (4000) для звичайних текстових повідомлень.
-    if visible_length > 4000:
+    if visible_length > max_visible_chars:
         logging.warning(
-            "Переклад %s задовгий: %s символів, абсолютний ліміт 4000",
-            translation.get("id"), visible_length,
+            "Переклад %s задовгий: %s символів, ліміт %s",
+            translation.get("id"), visible_length, max_visible_chars,
         )
         return False
     if "..." in title or "..." in content:
         logging.warning("Переклад %s містить заборонені трикрапки", translation.get("id"))
         return False
     return True
+
 
 
 def _telegram_retry_predicate(exc: Exception) -> bool:
@@ -888,32 +934,120 @@ def execute_telegram_request(api_url: str, payload: dict):
             return handle_telegram_html_error(api_url, payload)
         raise
 
+def _extract_hashtag_suffix(text: str) -> tuple[str, str]:
+    """Keep a final hashtag block separate so truncation never removes it."""
+    parts = (text or "").strip().split("\n\n")
+    if parts:
+        last = parts[-1].strip()
+        hashtags = re.findall(r"(?<!\w)#[\w]+", last, flags=re.UNICODE)
+        if 2 <= len(hashtags) <= 3 and re.fullmatch(r"\s*(?:#[\w]+)(?:\s+#[\w]+){1,2}\s*", last, re.UNICODE):
+            return "\n\n".join(parts[:-1]).strip(), last
+    return (text or "").strip(), ""
 
-def send_to_telegram(text: str, url: str, source_name: str, image_urls=None) -> tuple[bool, str]:
-    image_urls = [] if not image_urls else ([image_urls] if isinstance(image_urls, str) else image_urls)
+
+def _truncate_html_visible(fragment: str, max_visible_chars: int) -> str:
+    """Truncate a validated small HTML fragment without splitting tags/entities."""
+    if max_visible_chars <= 0:
+        return ""
+    token_pattern = re.compile(r"</?(?:b|i|u|s)\s*>|&(?:#[0-9]+|#x[0-9a-fA-F]+|[A-Za-z][A-Za-z0-9]+);|[^<]+|<[^>]*>", re.I)
+    output = []
+    stack = []
+    visible = 0
+    truncated = False
+
+    for match in token_pattern.finditer(fragment or ""):
+        token = match.group(0)
+        tag_match = re.fullmatch(r"<(/?)(b|i|u|s)\s*>", token, re.I)
+        if tag_match:
+            closing, tag = tag_match.group(1), tag_match.group(2).lower()
+            if closing:
+                output.append(f"</{tag}>")
+                if stack and stack[-1] == tag:
+                    stack.pop()
+            else:
+                output.append(f"<{tag}>")
+                stack.append(tag)
+            continue
+
+        if token.startswith("<") and token.endswith(">"):
+            # Caller validates HTML first; do not copy an unknown tag on truncation.
+            continue
+
+        decoded = html.unescape(token)
+        remaining = max_visible_chars - visible
+        if len(decoded) <= remaining:
+            output.append(html.escape(decoded, quote=False))
+            visible += len(decoded)
+        else:
+            clipped = decoded[:remaining]
+            # Prefer a word boundary to splitting a word.
+            last_space = max(clipped.rfind(" "), clipped.rfind("\n"), clipped.rfind("\t"))
+            if last_space > max(0, int(len(clipped) * 0.6)):
+                clipped = clipped[:last_space]
+            output.append(html.escape(clipped, quote=False))
+            visible += len(clipped)
+            truncated = True
+            break
+
+    if truncated:
+        while stack:
+            output.append(f"</{stack.pop()}>")
+    return "".join(output).rstrip()
+
+def send_to_telegram(text: str, url: str, source_name: str, image_urls=None, tags: str = "") -> tuple[bool, str]:
+    image_urls = [] if not image_urls else ([image_urls] if isinstance(image_urls, str) else list(image_urls))
     image_urls = image_urls[:10]
 
     parsed_url = urlparse(url)
     if parsed_url.scheme not in {"http", "https"} or not parsed_url.netloc:
         raise ValueError(f"Небезпечне або некоректне посилання на джерело: {url!r}")
 
+    body, hashtag_suffix = _extract_hashtag_suffix(text)
+    extra_tags = str(tags or "").strip()
+    suffix_parts = [part for part in (hashtag_suffix, extra_tags) if part]
+    suffix = "\n\n".join(suffix_parts)
     safe_url = html.escape(url, quote=True)
     safe_source = html.escape(source_name or "Джерело", quote=True)
-    full_message = f"{text}\n\n🔗 Джерело: <a href=\"{safe_url}\">{safe_source}</a>"
-
+    source_line = f'\n\n🔗 Джерело: <a href="{safe_url}">{safe_source}</a>'
+    crop_note = "\n\n👉 <i>Повні деталі читайте за посиланням нижче</i> 👇"
     api_url_text = f"https://api.telegram.org/bot{TELEGRAM_BOT_TOKEN}/sendMessage"
-    # Never slice formatted HTML: a raw slice can break a tag/entity. Use text-only fallback
-    # when a caption would be too long, otherwise reject overlong messages without publishing.
-    if image_urls and len(full_message) > 1024:
-        logging.warning("Підпис завеликий для Telegram photo caption; публікуємо текстом")
-        image_urls = []
-    if not image_urls and len(full_message) > 4096:
-        raise ValueError(f"Повідомлення задовге для Telegram: {len(full_message)} символів")
+    
+    def compose(candidate_body: str) -> str:
+        pieces = [candidate_body.strip()]
+        if crop_note.strip() in candidate_body:
+            pass
+        if suffix:
+            pieces.append(suffix)
+        return "\n\n".join(p for p in pieces if p) + source_line
+
+    max_visible = 1024 if image_urls else 4096
+    full_message = compose(body)
+    if len(plain_text(full_message)) > max_visible:
+        logging.warning("Публікація завелика; безпечно скорочуємо тіло та зберігаємо хештеги")
+        tail_visible = len(plain_text((suffix + source_line).strip()))
+        crop_visible = len(plain_text(crop_note))
+        # Keep room for a divider and the original end-of-message attribution.
+        body_budget = max_visible - tail_visible - crop_visible - 4
+        if body_budget <= 0:
+            raise ValueError("Хештеги й посилання не залишають місця для тексту новини")
+        short_body = _truncate_html_visible(body, body_budget)
+        body = short_body + crop_note
+        full_message = compose(body)
+        # Account for small differences introduced by HTML decoding/entities.
+        while len(plain_text(full_message)) > max_visible and body_budget > 20:
+            body_budget -= len(plain_text(full_message)) - max_visible + 2
+            body = _truncate_html_visible(body, body_budget) + crop_note
+            full_message = compose(body)
+        if len(plain_text(full_message)) > max_visible:
+            raise ValueError("Не вдалося скоротити повідомлення до ліміту Telegram")
 
     if not image_urls:
-        payload = {"chat_id": TELEGRAM_CHANNEL_ID, "text": full_message, "parse_mode": "HTML"}
         try:
-            execute_telegram_request(api_url_text, payload)
+            execute_telegram_request(api_url_text, {
+                "chat_id": TELEGRAM_CHANNEL_ID,
+                "text": full_message,
+                "parse_mode": "HTML",
+            })
             return True, "text"
         except Exception:
             logging.exception("Не вдалося надіслати текстове повідомлення")
@@ -931,15 +1065,15 @@ def send_to_telegram(text: str, url: str, source_name: str, image_urls=None) -> 
             execute_telegram_request(api_url, payload)
             return True, "image"
         except Exception as exc:
-            # Do not fall back after a network timeout: Telegram may have accepted the post
-            # even if the response was lost, and a text fallback could duplicate it.
             if not isinstance(exc, TelegramAPIError) or exc.error_code == 429 or exc.error_code >= 500:
                 logging.exception("Невизначений результат відправки фото; не робимо текстовий fallback")
                 return False, "error"
             logging.warning("Telegram відхилив фото, пробуємо надіслати текстом: %s", exc)
             try:
                 execute_telegram_request(api_url_text, {
-                    "chat_id": TELEGRAM_CHANNEL_ID, "text": full_message, "parse_mode": "HTML"
+                    "chat_id": TELEGRAM_CHANNEL_ID,
+                    "text": full_message,
+                    "parse_mode": "HTML",
                 })
                 return True, "text"
             except Exception:
@@ -947,16 +1081,19 @@ def send_to_telegram(text: str, url: str, source_name: str, image_urls=None) -> 
                 return False, "error"
 
     media = []
-    for idx, image_url in enumerate(image_urls):
+    for index, image_url in enumerate(image_urls):
         obj = {"type": "photo", "media": image_url}
-        if idx == 0:
+        if index == 0:
             obj["caption"] = full_message
             obj["parse_mode"] = "HTML"
         media.append(obj)
 
     api_url = f"https://api.telegram.org/bot{TELEGRAM_BOT_TOKEN}/sendMediaGroup"
     try:
-        execute_telegram_request(api_url, {"chat_id": TELEGRAM_CHANNEL_ID, "media": json.dumps(media, ensure_ascii=False)})
+        execute_telegram_request(api_url, {
+            "chat_id": TELEGRAM_CHANNEL_ID,
+            "media": json.dumps(media, ensure_ascii=False),
+        })
         return True, "image"
     except Exception as exc:
         if not isinstance(exc, TelegramAPIError) or exc.error_code == 429 or exc.error_code >= 500:
@@ -965,7 +1102,9 @@ def send_to_telegram(text: str, url: str, source_name: str, image_urls=None) -> 
         logging.warning("Telegram відхилив альбом, пробуємо текстовий fallback: %s", exc)
         try:
             execute_telegram_request(api_url_text, {
-                "chat_id": TELEGRAM_CHANNEL_ID, "text": full_message, "parse_mode": "HTML"
+                "chat_id": TELEGRAM_CHANNEL_ID,
+                "text": full_message,
+                "parse_mode": "HTML",
             })
             return True, "text"
         except Exception:
@@ -1119,19 +1258,21 @@ def _build_translation_prompt(batch: list[dict]) -> str:
     rules = """Ти — досвідчений редактор українського Telegram-каналу для українців у Хорватії.
 Переклади кожну статтю українською природно, точно та без доданих фактів.
 
-ОБОВ'ЯЗКОВІ ПРАВИЛА:
-1. Зберігай реальну географію та не плутай хорватів/Хорватію з українцями/Україною.
-2. Якщо матеріал про тимчасовий захист, права біженців, виплати чи документи, переклади максимально докладно: не втрачай цифри, дати й юридичні назви. За потреби почни заголовок з 📄 або 🇪🇺.
-3. Якщо оригінал згадує Україну, українців, війну чи біженців, додай 🇺🇦 на початок заголовка й згадай це у першому абзаці лише коли це підтримується оригіналом.
-4. Пиши грамотною природною українською, без кальок, вигаданих слів, фактів, цитат, імен, цифр або дат.
-5. ТОПОНІМИ ТА ВЛАСНІ НАЗВИ: Назви міст у заголовку та тексті обов'язково транслітеруй українською (наприклад, Задар, Спліт, Загреб). Хорватські імена, прізвища, назви вулиць та власні назви компаній чи продуктів (на кшталт "Apple", "Crolibertas", "Facebook") залишай оригінальною латиницею без змін.
-6. Стиль — стриманий журналістський, без клікбейту, перебільшень, жовтих епітетів та вигаданого контексту.
-7. Заголовок — без HTML. У content дозволені тільки HTML-теги <b>, <i>, <u>, <s>; теги мають бути коректно закриті. Не використовуй Markdown.
-8. Якщо в оригіналі є важливе оновлення події, додай до початку заголовка «🔄 [ОНОВЛЕНО]».
-9. Додай 2-3 хештеги в кінці окремим рядком. Перший і лише перший — географічний: місто латиницею (#Zadar, #Split) або країна латиницею (#Hrvatska, #Ukraine). Інші — тематичні українською (#Економіка, #Суспільство, #Закон, #Політика, #Кримінал). Не додавай #Україна чи #ТимчасовийЗахист, якщо тема відсутня в тексті.
-10. Без вступних фраз, коментарів від ШІ або висновків.
-11. Якщо є фото, видимий текст перекладу (заголовок, тіло й хештеги) має бути не довшим за 900 символів. Без фото — не довшим за 2500 символів. Не обрізай речення на півслові; якщо вихідний текст обірваний, не вигадуй продовження.
-12. У полі id поверни саме ціле числове ID з блока новини. Не повертай URL як ID.
+СУВОРІ ПРАВИЛА ПЕРЕКЛАДУ ТА ФОРМАТУВАННЯ:
+1. ГЕОГРАФІЯ: Зберігай оригінальну країну події. Якщо подія сталася в Хорватії — пиши про Хорватію, якщо в іншій країні (світові новини) — так і залишай. "Хорвати" — це місцеві жителі. НІКОЛИ не міняй місцями слова "хорвати"/"Хорватія" та "українці"/"Україна", якщо цього немає в оригінальному тексті.
+2. ДЕТАЛІЗАЦІЯ ДОКУМЕНТІВ (ДИРЕКТИВА 2001/55/ЄС): Якщо новина стосується тимчасового захисту, прав біженців, виплат чи документів, ПЕРЕКЛАДАЙ ЇЇ МАКСИМАЛЬНО ДЕТАЛЬНО. Не скорочуй жодної цифри, дати чи юридичної назви. Додай на початок заголовка емодзі 📄 або 🇪🇺.
+3. ПРІОРИТЕТ "УКРАЇНА": Якщо в оригінальній новині згадується Україна, українці, війна або біженці — обов'язково постав емодзі 🇺🇦 на самий початок заголовка та винеси цю інформацію у перший абзац, щоб привернути увагу.
+4. ПРИРОДНІСТЬ МОВИ ТА СЛОВНИК: Перекладай живою та природною українською мовою. УНИКАЙ ДОСЛІВНОГО ПЕРЕКЛАДУ (кальок) — передавай суть фрази, а не перекладай слово за словом. КАТЕГОРИЧНО ЗАБОРОНЕНО вигадувати неіснуючі слова (наприклад, замість кальки "бізшрний" чи "бізарний" використовуй існуючі аналоги: "дивний", "курйозний", "химерний"). Усі слова у твоєму тексті мають існувати в словнику української мови.«УВАЖНО ПЕРЕВІРЯЙ ОРФОГРАФІЮ: Звертай особливу увагу на використання апострофа (наприклад: "м'ясо", "комп'ютер"). Ніколи не пропускай літери.»
+5. ТОПОНІМИ ТА ІМЕНА: Назви міст (наприклад, Задар, Спліт, Загреб) транслітеруй українською. Хорватські імена, прізвища, назви вулиць, компаній і продуктів (наприклад, Apple, Facebook) залишай оригінальною латиницею без змін. 
+6. ЖУРНАЛІСТСЬКИЙ СТИЛЬ (АНТИ-КЛІКБЕЙТ): Пиши у стриманому стилі якісних медіа (як BBC). КАТЕГОРИЧНО ЗАБОРОНЕНО використовувати жовтий клікбейт та штучні епітети (наприклад, "зіркова", "шокуюча", "скандальна", "кривава"). Роби текст легким для читання. Абзаци мають бути короткими (не більше 3-4 речень). Уникай сухого поліцейського сленгу та дослівного перекладу юридичних термінів. Наприклад, "prekršajni odjel" адаптуй як "відділ з адміністративних правопорушень" (а не "проміжний відділ"). 
+7. НІЯКОГО ШІ-КОНТЕКСТУ: Видавай СУВОРО лише готовий текст новини. Жодних вступних фраз, привітань, коментарів чи висновків від себе. Зберігай абсолютну журналістську об'єктивність.
+8. АКЦЕНТИ: Заголовок — без HTML. У content дозволені тільки HTML-теги <b>, <i>, <u>, <s>; теги мають бути коректно закриті. Не використовуй Markdown. Виділяй жирним ключові суми штрафів, дати, імена посадовців і назви законів.
+9. ХЕШТЕГИ: В самому кінці тексту обов'язково додай 2-3 хештеги з нового рядка. 
+    ПРАВИЛО ГЕОГРАФІЇ: Перший хештег — це ГЕОГРАФІЯ, і він має бути ТІЛЬКИ ОДИН. Якщо ти знаєш місто — пиши ТІЛЬКИ його латиницею (наприклад, #Zadar, #Split, #SeverinNaKupi). Якщо точне місто невідоме — пиши ТІЛЬКИ назву країни (наприклад, #Hrvatska або #Moldova). КАТЕГОРИЧНО ЗАБОРОНЕНО ставити хештег країни (наприклад, #Хорватія чи #Hrvatska), якщо ти вже поставив хештег конкретного міста!
+    ТЕМАТИЧНІ ХЕШТЕГИ: Другі хештеги мають СУВОРО відповідати змісту статті (наприклад, #Економіка, #Суспільство, #Закон, #Політика, #Кримінал). Категорично ЗАБОРОНЕНО ставити хештеги #ТимчасовийЗахист або #Україна, якщо в самому тексті новини про це не йдеться.
+10. ОНОВЛЕННЯ ПОДІЙ: Якщо ти бачиш, що новина є продовженням чи оновленням попередніх подій (наприклад, завершення слідства, нові деталі аварії), додай на самий початок заголовка префікс 🔄 [ОНОВЛЕНО]:
+11. ДОВЖИНА: якщо є фото, видимий текст перекладу (заголовок, тіло й хештеги) має бути не довшим за 900 символів. Без фото — не довшим за 2500 символів. Якщо текст довший, стисни головну суть без втрати важливих фактів, цифр або дат. Не обрізай речення на півслові; якщо вихідний текст обірваний або закінчується на три крапки / [...], прибери незавершене речення і не вигадуй продовження.
+12. ID: У полі id поверни саме ціле числове ID з блока новини. Не повертай URL як ID.
 
 Поверни тільки JSON, який відповідає схемі TranslationResponse.
 """
@@ -1236,7 +1377,8 @@ def process_backlog(stats: dict | None = None) -> None:
     expected_ids = set(range(len(batch)))
 
     try:
-        # Avoid fixed delays before every request; retry logic handles transient model errors.
+        # Restore the original pacing before the translation request.
+        time.sleep(PRE_TRANSLATION_DELAY_SECONDS)
         translations = generate_news_texts_json(prompt, expected_ids, stats)
     except Exception as exc:
         for item in batch:
@@ -1308,7 +1450,7 @@ def process_backlog(stats: dict | None = None) -> None:
                 stats["published"]["text_only"] += 1
             source = item.get("source", "Джерело")
             stats["published"]["sources"][source] = stats["published"]["sources"].get(source, 0) + 1
-        time.sleep(2)
+        time.sleep(POST_PUBLICATION_DELAY_SECONDS)
 
     _save_postprocessing_backlog(backlog, evaluated_urls, approved_urls, sent_urls)
 
