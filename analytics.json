@@ -1,62 +1,5 @@
 [
     {
-        "timestamp": "2026-10-10 07:01:03",
-        "execution_time": 182.5,
-        "funnel": {
-            "scraped_total": 35,
-            "scraped_by_source": {
-                "023": 10,
-                "Slobodna dalmacija": 15,
-                "Zadarski list": 10
-            },
-            "already_seen": 1,
-            "rejected_by_keywords": 2,
-            "duplicates_removed_by_ai": 15,
-            "rejection_reasons_list": [
-                "• Kreće obnova ambulante na Ižu i projekti... ➡️ <b>Повтор новини з історії про фінансування обнова амбулаторій na Ižu i Molatu</b>",
-                "• Riječki SDP-ovci bili protiv izbacivanja... ➡️ <b>Побут та локальна політика чужого міста (Рієка)</b>",
-                "• Dr. Kruško pokriva tri otoka zadarskog a... ➡️ <b>Переказ вчорашньої історії про лікаря на островах без важливих оновлень</b>",
-                "• Poklon iz Podvelebitskog kanala. S 35 me... ➡️ <b>Лайфстайл, риболовля та події чужого регіону</b>",
-                "• Preko 7 tisuća korisnika ostat će bez po... ➡️ <b>Побут та локальні проблеми чужого міста (Дубровник)</b>",
-                "• Znate li što napraviti ako se nekim sluč... ➡️ <b>Світовий шум та лайфстайл: абстрактні поради та медицина</b>",
-                "• Poznati šibenski župnik oprostio se od B... ➡️ <b>Дрібний коментар та реакція на вже відому з історії подію про смерть Горана Баре</b>",
-                "• Zadranka Nina Miletić među jedanaest hrv... ➡️ <b>Лайфстайл та непрофесійні конкурси</b>",
-                "• Pjesme je pisao u zatvoru, a objavljivao... ➡️ <b>Культурно-побутові новини чужого міста (Рієка)</b>",
-                "• Vojko V raspjevao i rasplesao publiku u ... ➡️ <b>Шоу-бізнес та світське життя чужого міста (Дубровник)</b>",
-                "• Jakov Jozinović rasplesao Zadar, a izved... ➡️ <b>Шоу-бізнес, світський звіт з концерту</b>",
-                "• Ma pogledajte gdje su parkirali ovi dubr... ➡️ <b>Дрібний побут чужого міста (Дубровник)</b>",
-                "• Kukuruzni škrob, sastojak umaka i desert... ➡️ <b>Лайфстайл та кулінарні поради</b>",
-                "• Velika objava Donalda Trumpa: ‘Razgovara... ➡️ <b>Дублікат новини ID 1 щодо угоди Трампа і Путіна про дизель</b>",
-                "• Tonči Vlašić predstavio monografiju \"100... ➡️ <b>Спорт та події чужого міста (Дубровник)</b>"
-            ]
-        },
-        "backlog": {
-            "total_size": 22,
-            "sources": {
-                "023": 6,
-                "Slobodna dalmacija": 8,
-                "Zadarski list": 8
-            }
-        },
-        "published": {
-            "total": 3,
-            "ukraine_priority": 2,
-            "with_images": 2,
-            "text_only": 1,
-            "sources": {
-                "Zadarski list": 1,
-                "Slobodna dalmacija": 1,
-                "023": 1
-            }
-        },
-        "models_used": {
-            "gemini-3.5-flash-lite": 1,
-            "gemini-3.5-flash": 1
-        },
-        "errors_count": 0,
-        "gemini_retries": 0
-    },
-    {
         "timestamp": "2026-10-10 08:01:05",
         "execution_time": 180.9,
         "funnel": {
@@ -5982,6 +5925,64 @@
         "models_used": {
             "gemini-3.5-flash-lite": 2,
             "gemini-3.6-flash": 0
+        },
+        "errors_count": 0,
+        "gemini_retries": 0
+    },
+    {
+        "timestamp": "2026-10-19 08:01:12",
+        "execution_time": 194.4,
+        "funnel": {
+            "scraped_total": 35,
+            "scraped_by_source": {
+                "023": 10,
+                "Slobodna dalmacija": 15,
+                "Zadarski list": 10
+            },
+            "already_seen": 2,
+            "rejected_by_keywords": 5,
+            "duplicates_removed_by_ai": 17,
+            "rejection_reasons_list": [
+                "• Sjajan debi na europskoj pozornici; Zadr... ➡️ <b>Спорт</b>",
+                "• Metkovka zadivila Pariz, izborila mjesto... ➡️ <b>Геоблок / Не стосується Задара чи Хорватії напряму</b>",
+                "• Synth-pop duo Pocket Palma singlom “Više... ➡️ <b>Культурний шум / Шоу-бізнес</b>",
+                "• Od nagrađenih pjesama i novih videospoto... ➡️ <b>Дубль / Локальна подія низького пріоритету</b>",
+                "• Položeni vijenci za stradale dubrovačke ... ➡️ <b>Побут інших міст</b>",
+                "• Riječki Carmoto s ponosom predstavlja Vo... ➡️ <b>Реклама</b>",
+                "• Uspješan vikend biogradskih atletičara; ... ➡️ <b>Спорт</b>",
+                "• Zadarski dvojac nastavlja nizati pobjede... ➡️ <b>Спорт</b>",
+                "• Sociolog objasnio što je natjeralo mlade... ➡️ <b>Світовий шум / Події за межами Хорватії та України</b>",
+                "• Odličan nastup u Šibeniku; Mladi plivači... ➡️ <b>Спорт</b>",
+                "• Emotivna i energična svirka Like Kolorad... ➡️ <b>Дубль в історії (подія вже відбулася)</b>",
+                "• Uspješan start sezone za PK Zadar u Rije... ➡️ <b>Спорт</b>",
+                "• Veliki brkati susret; Više od 40 patulja... ➡️ <b>Дубль в історії</b>",
+                "• Cijelo je raskrižje pokriveno semaforima... ➡️ <b>Побут чужих міст</b>",
+                "• Jugo u utorak otvara vrata kiši, srijeda... ➡️ <b>Дубль (повна схожість з прогнозами погоди в інших кандидатах)</b>",
+                "• Čeka nas totalno lud meteo-tjedan: bit ć... ➡️ <b>Дубль (повний аналог новини 19)</b>",
+                "• Čeka nas totalno lud meteo-tjedan: bit ć... ➡️ <b>Погода загальнорегіональна, дублює детальну локальну прогнозу погоди</b>"
+            ]
+        },
+        "backlog": {
+            "total_size": 20,
+            "sources": {
+                "023": 7,
+                "Slobodna dalmacija": 9,
+                "Zadarski list": 4
+            }
+        },
+        "published": {
+            "total": 3,
+            "ukraine_priority": 0,
+            "with_images": 3,
+            "text_only": 0,
+            "sources": {
+                "Zadarski list": 1,
+                "Slobodna dalmacija": 2
+            }
+        },
+        "models_used": {
+            "gemini-3.5-flash-lite": 1,
+            "gemini-3.6-flash": 1
         },
         "errors_count": 0,
         "gemini_retries": 0
