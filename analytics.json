@@ -1,64 +1,5 @@
 [
   {
-    "timestamp": "2026-10-10 11:01:03",
-    "execution_time": 166.4,
-    "funnel": {
-      "scraped_total": 35,
-      "scraped_by_source": {
-        "023": 10,
-        "Slobodna dalmacija": 15,
-        "Zadarski list": 10
-      },
-      "already_seen": 11,
-      "rejected_by_keywords": 1,
-      "duplicates_removed_by_ai": 19,
-      "rejection_reasons_list": [
-        "• Drvena ili plastična daska za rezanje: i... ➡️ <b>Світовий шум та лайфстайл</b>",
-        "• Počeli radovi na nadvožnjaku kod Dalmare... ➡️ <b>Побут чужих міст</b>",
-        "• Pet pasmina pasa koje važe za najotporni... ➡️ <b>Світовий шум та лайфстайл</b>",
-        "• Treba li svijet strahovati od navodne po... ➡️ <b>Світовий шум та лайфстайл</b>",
-        "• Najviše je sporova u građevinskom sektor... ➡️ <b>Світовий шум та лайфстайл</b>",
-        "• Kupci skupog iPhonea 18 Pro prijavljuju ... ➡️ <b>Світовий шум та лайфстайл</b>",
-        "• Gradsko izaslanstvo u Londonu: Držićevi ... ➡️ <b>Побут чужих міст</b>",
-        "• ASOS potvrdio hakerski upad. Do podataka... ➡️ <b>Світовий шум та лайфстайл</b>",
-        "• Šokantni podaci s konferencije u Šibenik... ➡️ <b>Світовий шум та лайфстайл</b>",
-        "• Mostovu peticiju za raskidanje koncesija... ➡️ <b>Побут чужих міст</b>",
-        "• KUD Stjepan Radić iz Pridvorja proslavlj... ➡️ <b>Побут чужих міст</b>",
-        "• Epidemiologe brine opasna crijevna infek... ➡️ <b>Світовий шум та лайфстайл</b>",
-        "• Jakov Jozinović sa Zadranima odao počast... ➡️ <b>Дубль існуючої події або світський шум</b>",
-        "• U selu na Sardiniji žene imaju veliku ša... ➡️ <b>Світовий шум та лайфстайл</b>",
-        "• Bare je rođen u Vinkovcima, no jeste li ... ➡️ <b>Дубль існуючої події про смерть музиканта</b>",
-        "• Iako smo još u ljetnom ‘modu‘, zima nam ... ➡️ <b>Побут чужих міст</b>",
-        "• Načelnik Konavala predsjedniku Uprave St... ➡️ <b>Дубль новини ID 20</b>",
-        "• Načelnik Lasić predsjedniku Uprave Stude... ➡️ <b>Побут чужих міст</b>",
-        "• Preko 7 tisuća korisnika ostat će bez po... ➡️ <b>Побут чужих міст</b>"
-      ]
-    },
-    "backlog": {
-      "total_size": 23,
-      "sources": {
-        "Zadarski list": 9,
-        "023": 2,
-        "Slobodna dalmacija": 12
-      }
-    },
-    "published": {
-      "total": 3,
-      "ukraine_priority": 0,
-      "with_images": 3,
-      "text_only": 0,
-      "sources": {
-        "Zadarski list": 3
-      }
-    },
-    "models_used": {
-      "gemini-3.5-flash-lite": 2,
-      "gemini-3.5-flash": 0
-    },
-    "errors_count": 0,
-    "gemini_retries": 0
-  },
-  {
     "timestamp": "2026-10-10 12:01:16",
     "execution_time": 52.5,
     "funnel": {
@@ -5964,6 +5905,64 @@
       "sources": {
         "023": 2,
         "Slobodna dalmacija": 1
+      }
+    },
+    "models_used": {
+      "gemini-3.5-flash-lite": 2,
+      "gemini-3.6-flash": 0
+    },
+    "errors_count": 0,
+    "gemini_retries": 0
+  },
+  {
+    "timestamp": "2026-10-19 16:01:08",
+    "execution_time": 21.2,
+    "funnel": {
+      "scraped_total": 35,
+      "scraped_by_source": {
+        "023": 10,
+        "Slobodna dalmacija": 15,
+        "Zadarski list": 10
+      },
+      "already_seen": 6,
+      "rejected_by_keywords": 10,
+      "duplicates_removed_by_ai": 22,
+      "rejection_reasons_list": [
+        "• Glazbena poslastica u Zadru; Gordan Tudor kao solist i autor na otvara ➡️ <b>Культурна подія в Задарі, але історія вже дублює або суперечить правилу вибору найбільш повної новин</b>",
+        "• LED svjetiljke smanjile protrošnju energije, ali se na dubrovačku javn ➡️ <b>Стосується іншого хорватського міста (Дубровник), порушує стоп-тему побутових новин інших хорватськи</b>",
+        "• Kostak: U Gospiću u tijeku postavljanje nepropusne zaštitne geomembran ➡️ <b>Стосується іншого хорватського міста (Госпіч), не належить до Задара чи важливих загальнонаціональни</b>",
+        "• Zadarska županija u rujnu s gotovo 72 tisuće zaposlenih, u deset godin ➡️ <b>Вже є схожа або детальніша інформація про економічні показники в історії, а також матеріал не містит</b>",
+        "• Zlatna jesen u Kutjevu: Obrano 7 milijuna kilograma grožđa, s potpisom ➡️ <b>Стосується іншого регіону (Кутєво), порушує стоп-тему локальних новин не з Задара.</b>",
+        "• Netko uništio novu podlogu na dječjem igralištu u Senju. Još se nije b ➡️ <b>Стосується іншого хорватського міста (Сень), локальний вандализм не стосується Задара.</b>",
+        "• Spojene srcem i tradicijom: kako su otočanke na Žirju osmislile ‘mrunc ➡️ <b>Локальна новина шибенського архіпелагу, не стосується Задара чи загальнонаціональних пріоритетів.</b>",
+        "• Vlada i sindikati državnih službi počeli pregovore: traži se rast osno ➡️ <b>Загальнонаціональні переговори профспілок, дублюють або не є пріоритетною новиною порівняно з іншими</b>",
+        "• Ovacije za mlade glumce; Udruga “Igrajmo se” ponovno oduševila Zadar i ➡️ <b>Повторення події, яка вже наявна в історії (представлення &#x27;Влака у снігу&#x27; в Задарі).</b>",
+        "• Veliki uspjeh učenice Medicinske škole iz Zadra: njen ‘Konop‘ je osvoj ➡️ <b>Локальний шкільний успіх, недостатньо значущий для загального новинного каналу діаспори.</b>",
+        "• Otvorena izložba starih senjskih razglednica “Pozdrav iz Senja – Gruss ➡️ <b>Стосується іншого міста (Сень), не належить до Задара.</b>",
+        "• Odbila se zaustaviti policiji u Zadru: Napuhala 1,26 promila, kazna 1. ➡️ <b>Місцевий кримінал/порушення ПДР у Задарі, менш значуще порівняно з іншими ключовими новинами.</b>",
+        "• Na nastavku suđenja, Obersnelu i ekipi blokirana imovina vrijedna 218. ➡️ <b>Стосується міста Рієка, порушує стоп-тему побутових/локальних новин інших хорватських міст.</b>",
+        "• Priprema se veliko uređenje uvala Dražanica i Maestral: za izradu plan ➡️ <b>Вже наявна аналогічна новина в історії щодо планування увал Дражаніца і Маестрал.</b>",
+        "• Galerija Decumanus predstavlja retrospektivu kipara i slikara Ivana Vu ➡️ <b>Стосується острова Крк, не стосується Задара чи загальнонаціонального рівня.</b>",
+        "• Preokret na granici s BiH! Devet prijelaza mijenja status, jedan nesta ➡️ <b>Дублює загальну тему зміни прикордонних правил або є менш пріоритетною порівняно зі статтею про елек</b>",
+        "• Pred opatijskim vijećnicima Plan upravljanja destinacijom ➡️ <b>Стосується міста Опатія, порушує стоп-тему локальних новин інших хорватських міст.</b>",
+        "• Nevjerojatne brojke iz Zadra: svaka sedma nova zgrada u Hrvatskoj nikn ➡️ <b>Незавершена / уривчаста стать (обірваний опис), непридатна для публікації.</b>",
+        "• Najveća izložba kravata u Hrvatskoj održana u Mrkoplju, svi mogu dopri ➡️ <b>Стосується іншого хорватського міста (Мркопаль), не пов&#x27;язано із Задаром.</b>",
+        "• Nije imao položeno, alkoholiziran i odbio test na droge: logično kako  ➡️ <b>Стосується району Стона та Дубровника, не є новиною Задара чи загальнонаціональною подією вищого рів</b>",
+        "• Na Orsuli položeni vijenci za poginule konavoske domobrane ➡️ <b>Локальна меморіальна подія в Дубровнику, не стосується Задара.</b>",
+        "• Nikad do kraja razjašnjena tragedija broda ‘Kaprije‘: Osamnaest šibens ➡️ <b>Історичний нарис про трагедію судна з Шибеника, не є актуальною чи терміновою новиною сьогодення.</b>"
+      ]
+    },
+    "backlog": {
+      "total_size": 0,
+      "sources": {}
+    },
+    "published": {
+      "total": 1,
+      "ukraine_priority": 0,
+      "with_images": 0,
+      "text_only": 1,
+      "sources": {
+        "023": 1
       }
     },
     "models_used": {
