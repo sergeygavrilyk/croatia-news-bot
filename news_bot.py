@@ -214,7 +214,8 @@ def is_quality_article(title, description, url):
     unwanted_keywords = [
         'oglasi', 'sponzorirani', 'promo', 'redikul', 'horoskop', 'plaćeni oglas', 
         'nagradna igra', 'native', 'pr vijesti', 'foto', 'video',
-        'sport', 'nogomet', 'košarka', 'tenis', 'utakmica', 'hnl', 'liga prvaka'
+        'sport', 'nogomet', 'košarka', 'tenis', 'utakmica', 'hnl', 'liga prvaka',
+        'derbi', 'trener', 'igrači', 'kk zadar', 'nk zadar', 'prvenstvo', 'turnir', 'bodovi', 'polufinale'
     ]
     
     text_to_check = f"{title} {description} {url}".lower()
@@ -380,8 +381,9 @@ def deduplicate_news(client, articles, history_titles=None, stats=None):
     - РЕАКЦІЇ ТА КОМЕНТАРІ (АНТИ-ДУБЛЬ): Якщо в історії вже є базова новина (наприклад, інцидент чи ДТП), а новий кандидат — це просто коментар політика, реакція партії, дискусія на сесії чи думка експерта щодо цього інциденту — БЕЗЖАЛЬНО ВІДХИЛЯЙ. Це інформаційний шум.
     - АЛЕ якщо це СУТТЄВЕ ОНОВЛЕННЯ вже знайомої події (наприклад: кардинально зросла кількість жертв, знайдено злочинця, ухвалено закон, який вчора лише обговорювався, або є офіційна реакція влади на кризу) — ОБОВ'ЯЗКОВО ЗАЛИШАЙ.
 
-    КРОК 4. СТОП-ТЕМИ (ЩО БЕЗЖАЛЬНО ВІДХИЛЯТИ): 
-    1. СПОРТ: Будь-які матчі, турніри, результати, трансфери, спортсмени.
+    КРОК 4. СТОП-ТЕМИ (АБСОЛЮТНА ЗАБОРОНА): 
+    УВАГА: Цей крок перекриває всі інші! Навіть якщо в новині є слово "Задар" або "Україна", але новина стосується наступних тем — ВІДХИЛЯЙ ЇЇ.
+    1. СПОРТ: Будь-які матчі (зокрема баскетбольний клуб Задар), турніри, результати, дербі, спортсмени, тайми.
     2. РЕКЛАМА: Спонсорські матеріали, промо-акції, розіграші.
     3. ПОБУТ ЧУЖИХ МІСТ: Ремонти доріг, відключення води, локальні затори, страйки комунальників, дрібні ДТП у Загребі, Спліті, Рієці чи БУДЬ-ЯКОМУ іншому місті, ОКРІМ Задара.
     4. ІНШІ КРАЇНИ (ГЕОБЛОК): БУДЬ-ЯКІ події за межами Хорватії та України (навіть масові вбивства, теракти, вибори, катастрофи чи великий кримінал у Польщі, США, Франції тощо), ЯКЩО вони прямо не стосуються українських біженців або українців.
@@ -527,11 +529,19 @@ def scrape_feeds(stats=None):
                 article_time = calendar.timegm(entry.published_parsed)
                 if current_time - article_time > MAX_AGE_SECONDS: continue
             
+            # 1. АБСОЛЮТНИЙ ФІЛЬТР ЗА RSS-КАТЕГОРІЯМИ
+            entry_tags = [tag.term.lower() for tag in getattr(entry, 'tags', []) if hasattr(tag, 'term')]
+            blacklisted_categories = ['sport', 'košarka', 'nogomet', 'šport', 'scena', 'lifestyle', 'zabava', 'magazin']
+            if any(cat in entry_tags for cat in blacklisted_categories):
+                if stats is not None: stats["funnel"]["rejected_by_keywords"] += 1
+                continue
+            
+            # 2. ФОРМУВАННЯ БАЗОВОГО ОПИСУ
             description = entry.get('summary', title)
             if 'content' in entry and len(entry.content) > 0:
                 description = entry.content[0].get('value', description)
 
-            # РОЗУМНЕ ЗАВАНТАЖЕННЯ: Якщо текст обрізано (є ... в кінці), йдемо на сайт за повним текстом
+            # 3. РОЗУМНЕ ЗАВАНТАЖЕННЯ: Якщо текст обрізано (є ... в кінці), йдемо на сайт за повним текстом
             if '...' in description[-15:] or '[...]' in description[-15:] or len(description) < 200:
                 fetched_text = fetch_full_article_text(url, scraper)
                 if fetched_text:
