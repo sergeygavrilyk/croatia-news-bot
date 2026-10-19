@@ -67,7 +67,7 @@ MAX_CANDIDATES_PER_FILTER = 25
 MAX_TRANSLATION_FAILURES = 5
 RETRY_COOLDOWN_SECONDS = 60 * 60
 
-GEMINI_MODELS = ["gemini-3.5-flash-lite", "gemini-3.6-flash"]
+GEMINI_MODELS = ["gemini-3.6-flash", "gemini-3.5-flash-lite"]
 client = None  # Created inside main(), after environment validation.
 
 
