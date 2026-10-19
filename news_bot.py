@@ -312,7 +312,7 @@ def send_analytics_to_admin(stats: dict) -> None:
     pub_src = ", ".join(f"{k}: {v}" for k, v in published["sources"].items()) or "Немає"
     reasons = "\n".join(funnel.get("rejection_reasons_list", [])) or "Немає деталей"
     # Екрануємо можливі HTML-символи з причин відхилення
-    reasons = html.escape(reasons)ҐА 
+    reasons = html.escape(reasons) 
 
     # Escape model/source-derived values before using Telegram HTML parse mode.
     message = (
