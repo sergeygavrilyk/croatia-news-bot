@@ -1,64 +1,5 @@
 [
     {
-        "timestamp": "2026-10-10 09:01:05",
-        "execution_time": 178.2,
-        "funnel": {
-            "scraped_total": 35,
-            "scraped_by_source": {
-                "023": 10,
-                "Slobodna dalmacija": 15,
-                "Zadarski list": 10
-            },
-            "already_seen": 6,
-            "rejected_by_keywords": 4,
-            "duplicates_removed_by_ai": 17,
-            "rejection_reasons_list": [
-                "• Jakov Jozinović spektaklom oduševio prep... ➡️ <b>Дубль новини 10 про концерти у Задарі</b>",
-                "• Pet pasmina pasa koje važe za najotporni... ➡️ <b>Світловий шум та лайфстайл</b>",
-                "• Trump i supruga Melania telefonom čestit... ➡️ <b>Світовий шум без прямого зв'язку з Хорватією чи Задаром</b>",
-                "• Cijeli Poluotok postaje čarobna adventsk... ➡️ <b>Анонс розважальних заходів далекого майбутнього, не є першочерговою терміновою новиною</b>",
-                "• Glavni grad Poljske ovih je dana ponovo ... ➡️ <b>Події в третіх країнах, не стосуються України чи Хорватії</b>",
-                "• Bare je rođen u Vinkovcima, no jeste li ... ➡️ <b>Дубль новини про смерть музиканта та реакції, що вже була в історії</b>",
-                "• Iako smo još u ljetnom ‘modu‘, zima nam ... ➡️ <b>Побут інших міст (Дубровник)</b>",
-                "• Balotina “Tijesna zemlja” stiže u Opatij... ➡️ <b>Культурні анонси в інших містах (Опатія, Пула)</b>",
-                "• Načelnik Konavala predsjedniku Uprave St... ➡️ <b>Дубль новини 14 про супермаркет Studenac у Конавалах</b>",
-                "• Jedan vatrogasac ozlijeđen u požaru odla... ➡️ <b>Побут інших міст (Пула)</b>",
-                "• Načelnik Lasić predsjedniku Uprave Stude... ➡️ <b>Побут інших міст, не стосується Задара</b>",
-                "• Riječki SDP-ovci bili protiv izbacivanja... ➡️ <b>Політичний побут Рієки</b>",
-                "• Podatkovni centar u Topuskom trošit će v... ➡️ <b>Економіка та інфраструктура інших міст</b>",
-                "• Preko 7 tisuća korisnika ostat će bez po... ➡️ <b>Побут інших міст (Дубровник)</b>",
-                "• Ugledni geofizičar tumači što će El Niño... ➡️ <b>Абстрактна наука та світові кліматичні прогнози</b>",
-                "• Poznati šibenski župnik oprostio se od B... ➡️ <b>Дубль інформації про смерть музиканта</b>",
-                "• Vojko V raspjevao i rasplesao publiku u ... ➡️ <b>Розважальні події в іншому місті (Дубровник)</b>"
-            ]
-        },
-        "backlog": {
-            "total_size": 22,
-            "sources": {
-                "Zadarski list": 8,
-                "023": 4,
-                "Slobodna dalmacija": 10
-            }
-        },
-        "published": {
-            "total": 3,
-            "ukraine_priority": 0,
-            "with_images": 2,
-            "text_only": 1,
-            "sources": {
-                "Slobodna dalmacija": 1,
-                "023": 1,
-                "Zadarski list": 1
-            }
-        },
-        "models_used": {
-            "gemini-3.5-flash-lite": 2,
-            "gemini-3.5-flash": 0
-        },
-        "errors_count": 0,
-        "gemini_retries": 0
-    },
-    {
         "timestamp": "2026-10-10 10:01:05",
         "execution_time": 178.5,
         "funnel": {
@@ -5977,6 +5918,61 @@
         "models_used": {
             "gemini-3.5-flash-lite": 1,
             "gemini-3.6-flash": 1
+        },
+        "errors_count": 0,
+        "gemini_retries": 0
+    },
+    {
+        "timestamp": "2026-10-19 10:01:10",
+        "execution_time": 183.5,
+        "funnel": {
+            "scraped_total": 35,
+            "scraped_by_source": {
+                "023": 10,
+                "Slobodna dalmacija": 15,
+                "Zadarski list": 10
+            },
+            "already_seen": 6,
+            "rejected_by_keywords": 12,
+            "duplicates_removed_by_ai": 14,
+            "rejection_reasons_list": [
+                "• ZA SVE VRIME! Tomislav Bralić i klapa In... ➡️ <b>Спорт, культура та розваги поза пріоритетними новинами</b>",
+                "• Riječani nakratko zatvorili ulaz u garaž... ➡️ <b>Побут чужого міста (Рієка)</b>",
+                "• Ricky Gervais najavljuje nastup u Areni ... ➡️ <b>Світовий шум / розваги поза Задаром</b>",
+                "• Krenula prodaja ulaznica za ‘Đir od kita... ➡️ <b>Побут та події чужого міста (Шибеник)</b>",
+                "• Harry Styles neobjavljenom pjesmom odao ... ➡️ <b>Інші країни / геоблок та світовий шум</b>",
+                "• Svakoga utorka i četvrtka Plodine daruju... ➡️ <b>Реклама та промо-акції</b>",
+                "• Udala se kći Josipa Radeljaka i Ene Bego... ➡️ <b>Світське життя у Загребі, не стосується Задара чи українців</b>",
+                "• Grlica je zapivala“ – prvijenac ženske k... ➡️ <b>Події в іншому регіоні (Трпань), не стосується Задара</b>",
+                "• HDZ slavi deset godina Plenkovića u Bans... ➡️ <b>Дубль/історія: загальні політичні підсумки та дані уряду</b>",
+                "• OPG Stari dvor iz Lumbarde ulaže u suvre... ➡️ <b>Побут та сільське господарство на іншому острові (Корчула)</b>",
+                "• Visoka cijena pretvorila je originalni A... ➡️ <b>Світовий шум та авто-огляди</b>",
+                "• Metkovka zadivila Pariz, izborila mjesto... ➡️ <b>Події з іншого регіону (Меткович), не стосується Задара</b>",
+                "• Položeni vijenci za stradale dubrovačke ... ➡️ <b>Події в іншому місті (Дубровник)</b>",
+                "• Cijelo je raskrižje pokriveno semaforima... ➡️ <b>Побут та дорожні зміни в іншому місті (Цавтат)</b>"
+            ]
+        },
+        "backlog": {
+            "total_size": 18,
+            "sources": {
+                "023": 4,
+                "Slobodna dalmacija": 8,
+                "Zadarski list": 6
+            }
+        },
+        "published": {
+            "total": 3,
+            "ukraine_priority": 0,
+            "with_images": 1,
+            "text_only": 2,
+            "sources": {
+                "Slobodna dalmacija": 1,
+                "023": 2
+            }
+        },
+        "models_used": {
+            "gemini-3.5-flash-lite": 2,
+            "gemini-3.6-flash": 0
         },
         "errors_count": 0,
         "gemini_retries": 0
