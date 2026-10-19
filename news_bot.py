@@ -312,7 +312,7 @@ def send_analytics_to_admin(stats: dict) -> None:
     pub_src = ", ".join(f"{k}: {v}" for k, v in published["sources"].items()) or "Немає"
     reasons = "\n".join(funnel.get("rejection_reasons_list", [])) or "Немає деталей"
     # Екрануємо можливі HTML-символи з причин відхилення
-    reasons = html.escape(reasons) 
+    reasons = html.escape(reasons)
 
     # Escape model/source-derived values before using Telegram HTML parse mode.
     message = (
@@ -659,34 +659,91 @@ class AllowedHTMLValidator(HTMLParser):
     def __init__(self):
         super().__init__(convert_charrefs=True)
         self.stack = []
-        self.valid = True
+        self.errors = []
 
     def handle_starttag(self, tag, attrs):
-        if tag not in self.ALLOWED or attrs:
-            self.valid = False
+        if tag not in self.ALLOWED:
+            self.errors.append(f"Заборонений тег <{tag}>")
             return
+
+        if attrs:
+            self.errors.append(f"Тег <{tag}> має атрибути")
         self.stack.append(tag)
 
     def handle_endtag(self, tag):
-        if tag not in self.ALLOWED or not self.stack or self.stack[-1] != tag:
-            self.valid = False
-            return
-        self.stack.pop()
+        if tag not in self.ALLOWED:
+            self.errors.append(f"Заборонений закривальний тег </{tag}>")
+        elif not self.stack or self.stack[-1] != tag:
+            self.errors.append(f"Неправильна вкладеність </{tag}>")
+        else:
+            self.stack.pop()
 
     def handle_startendtag(self, tag, attrs):
-        self.valid = False
+        self.errors.append(f"Непідтримуваний самозакривальний тег <{tag}/>")
 
-    def error(self, message):  # Compatibility with HTMLParser implementations.
-        self.valid = False
+    def error(self, message):
+        self.errors.append(message)
 
 
-def html_fragment_is_valid(fragment: str) -> bool:
+def normalize_translation_html(content):
+    """Нормалізує поширене HTML-форматування Gemini до Telegram-сумісного вигляду."""
+    content = str(content or "")
+
+    # Переноси рядків замість HTML-тегів.
+    content = re.sub(r"(?i)<\s*br\s*/?\s*>", "\n", content)
+    content = re.sub(r"(?i)<\s*/?\s*(?:p|div)\b[^>]*>", "\n\n", content)
+
+    # Поширені синоніми дозволеного форматування.
+    content = re.sub(r"(?i)<\s*strong\b[^>]*>", "<b>", content)
+    content = re.sub(r"(?i)</\s*strong\s*>", "</b>", content)
+    content = re.sub(r"(?i)<\s*em\b[^>]*>", "<i>", content)
+    content = re.sub(r"(?i)</\s*em\s*>", "</i>", content)
+
+    # Списки перетворюємо на звичайний текст із маркерами.
+    content = re.sub(r"(?i)<\s*/?\s*(?:ul|ol)\b[^>]*>", "\n", content)
+    content = re.sub(r"(?i)<\s*li\b[^>]*>", "• ", content)
+    content = re.sub(r"(?i)</\s*li\s*>", "\n", content)
+
+    # Прибираємо нейтральні inline-обгортки.
+    content = re.sub(r"(?i)</?\s*span\b[^>]*>", "", content)
+
+    # Прибираємо атрибути дозволених тегів, зберігаючи самі теги.
+    content = re.sub(
+        r"(?i)<\s*(b|i|u|s)\b[^>]*>",
+        lambda match: f"<{match.group(1).lower()}>",
+        content,
+    )
+    content = re.sub(
+        r"(?i)</\s*(b|i|u|s)\s*>",
+        lambda match: f"</{match.group(1).lower()}>",
+        content,
+    )
+
+    content = re.sub(r"\n{3,}", "\n\n", content)
+    return content.strip()
+
+
+def html_fragment_is_valid(fragment):
     parser = AllowedHTMLValidator()
     try:
         parser.feed(fragment or "")
         parser.close()
-        return parser.valid and not parser.stack
-    except Exception:
+
+        if parser.stack:
+            parser.errors.append(
+                f"Незакриті теги: {', '.join(parser.stack)}"
+            )
+
+        if parser.errors:
+            logging.warning(
+                "Деталі помилки HTML: %s",
+                "; ".join(parser.errors[:10]),
+            )
+            return False
+
+        return True
+    except Exception as exc:
+        logging.warning("HTML-парсер завершився помилкою: %s", exc)
         return False
 
 
@@ -706,7 +763,8 @@ def record_translation_failure(article: dict, reason: str) -> None:
 
 def validate_translation_strict(translation: dict, original_article: dict) -> bool:
     title = str(translation.get("title", "")).strip()
-    content = str(translation.get("content", "")).strip()
+    content = normalize_translation_html(translation.get("content", ""))
+    translation["content"] = content
     hashtags = str(translation.get("hashtags", "")).strip()
 
     if not title or not content or not hashtags:
