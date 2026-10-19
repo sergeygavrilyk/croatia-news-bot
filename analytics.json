@@ -1,66 +1,5 @@
 [
   {
-    "timestamp": "2026-10-10 12:01:16",
-    "execution_time": 52.5,
-    "funnel": {
-      "scraped_total": 35,
-      "scraped_by_source": {
-        "023": 10,
-        "Slobodna dalmacija": 15,
-        "Zadarski list": 10
-      },
-      "already_seen": 9,
-      "rejected_by_keywords": 2,
-      "duplicates_removed_by_ai": 23,
-      "rejection_reasons_list": [
-        "• ‘Za svaki hotelski apartman koji se otvo... ➡️ <b>Побут чужих міст (Загреб)</b>",
-        "• Građani Našica danas opet prosvjedovali ... ➡️ <b>Побут чужих міст (Нашіце)</b>",
-        "• Drvena ili plastična daska za rezanje: i... ➡️ <b>Світовий шум та лайфстайл</b>",
-        "• Nova pravila! Evo tko će morati platiti ... ➡️ <b>Світовий шум та лайфстайл</b>",
-        "• Treba li svijet strahovati od navodne po... ➡️ <b>Світовий шум та лайфстайл</b>",
-        "• Pet pasmina pasa koje važe za najotporni... ➡️ <b>Світовий шум та лайфстайл</b>",
-        "• Zima nam ipak uskoro stiže: provjerili s... ➡️ <b>Побут чужих міст (Дубровник)</b>",
-        "• Kupci skupog iPhonea 18 Pro prijavljuju ... ➡️ <b>Світовий шум та лайфстайл</b>",
-        "• Prva ‘službena pusa‘ pjevačice i poduzet... ➡️ <b>Світовий шум та лайфстайл</b>",
-        "• ASOS potvrdio hakerski upad. Do podataka... ➡️ <b>Світовий шум та лайфстайл</b>",
-        "• U Otavicama je 75 godišnjak letvom izmla... ➡️ <b>Побут чужих міст (Дрніш)</b>",
-        "• Mostovu peticiju za raskidanje koncesija... ➡️ <b>Побут чужих міст (Рієка)</b>",
-        "• U Močićima nema vode, evo do kada... ➡️ <b>Побут чужих міст (Мочичі)</b>",
-        "• Epidemiologe brine opasna crijevna infek... ➡️ <b>Світовий шум та лайфстайл</b>",
-        "• U Otavicama se žestoko obračunali 75-god... ➡️ <b>Дубль новини ID 10</b>",
-        "• U selu na Sardiniji žene imaju veliku ša... ➡️ <b>Світовий шум та лайфстайл</b>",
-        "• Počeli radovi na nadvožnjaku kod Dalmare... ➡️ <b>Побут чужих міст (Шибеник)</b>",
-        "• Najviše je sporova u građevinskom sektor... ➡️ <b>Світовий шум та лайфстайл</b>",
-        "• Gradsko izaslanstvo u Londonu: Držićevi ... ➡️ <b>Побут чужих міст (Дубровник)</b>",
-        "• Šokantni podaci s konferencije u Šibenik... ➡️ <b>Світовий шум та лайфстайл</b>",
-        "• KUD Stjepan Radić iz Pridvorja proslavlj... ➡️ <b>Побут чужих міст (Конавле)</b>",
-        "• Jakov Jozinović sa Zadranima odao počast... ➡️ <b>Дубль або розважальний концерт, не підпадає під важливі новини інфраструктури чи кризи</b>",
-        "• Dr. Kruško pokriva tri otoka zadarskog a... ➡️ <b>Стаття про локального лікаря без критичного оновлення, менш пріоритетна порівняно з іншими</b>"
-      ]
-    },
-    "backlog": {
-      "total_size": 23,
-      "sources": {
-        "Slobodna dalmacija": 14,
-        "023": 2,
-        "Zadarski list": 7
-      }
-    },
-    "published": {
-      "total": 0,
-      "ukraine_priority": 0,
-      "with_images": 0,
-      "text_only": 0,
-      "sources": {}
-    },
-    "models_used": {
-      "gemini-3.5-flash-lite": 1,
-      "gemini-3.5-flash": 0
-    },
-    "errors_count": 0,
-    "gemini_retries": 0
-  },
-  {
     "timestamp": "2026-10-10 13:01:05",
     "execution_time": 16.6,
     "funnel": {
@@ -5963,6 +5902,59 @@
       "text_only": 1,
       "sources": {
         "023": 1
+      }
+    },
+    "models_used": {
+      "gemini-3.5-flash-lite": 2,
+      "gemini-3.6-flash": 0
+    },
+    "errors_count": 0,
+    "gemini_retries": 0
+  },
+  {
+    "timestamp": "2026-10-19 19:01:13",
+    "execution_time": 25.5,
+    "funnel": {
+      "scraped_total": 35,
+      "scraped_by_source": {
+        "023": 10,
+        "Slobodna dalmacija": 15,
+        "Zadarski list": 10
+      },
+      "already_seen": 3,
+      "rejected_by_keywords": 13,
+      "duplicates_removed_by_ai": 16,
+      "rejection_reasons_list": [
+        "• Za postradala područja na Braču danas iz Like poslano 30 velikih rolo- ➡️ <b>Побутова новина з іншого хорватського регіону, що не стосується Задара</b>",
+        "• Uvodi se policijski sat u Parizu, Lilleu, Nici… Policija zabranjuje pr ➡️ <b>Подія за межами Хорватії та України, не пов&#x27;язана з українцями</b>",
+        "• Tri šalice čaja dnevno povezane su sa sporijim biološkim starenjem kod ➡️ <b>Абстрактна наука та поради щодо здоров&#x27;я</b>",
+        "• Ciklona juri k Dalmaciji, meteoalarm na ‘nogama‘! Grmljavinsko nevrije ➡️ <b>Дублює наявну інформацію про погодні умови в історії (циклон та дощі в середу)</b>",
+        "• Iva Rinčić o prosvjedu na Klobučarićevom trgu: “Vijećnica SDP-a vrijeđ ➡️ <b>Локальна новина іншого міста (Рієка), не стосується Задара</b>",
+        "• Ravnatelj dr. Marijo Bekić o mjesečnom limitu: ‘Sedam odjela prekorači ➡️ <b>Локальна новина іншого міста (Дубровник)</b>",
+        "• Glazbena Rijeka: Lovre Marušić u utorak nastupa u Circolu, ulaz je slo ➡️ <b>Культурна подія в іншому хорватському місті (Рієка)</b>",
+        "• Zadarska županija u rujnu s gotovo 72 tisuće zaposlenih, u deset godin ➡️ <b>Статистика зайнятості за вересень раніше вже покрита іншими матеріалами або не є актуальним термінов</b>",
+        "• LED svjetiljke smanjile protrošnju energije, ali se na dubrovačku javn ➡️ <b>Локальна новина іншого міста (Дубровник)</b>",
+        "• Prigodna prodaja cvijeća za blagdan Svih svetih ➡️ <b>Локальна новина іншого міста (Рієка)</b>",
+        "• Zlatna jesen u Kutjevu: Obrano 7 milijuna kilograma grožđa, s potpisom ➡️ <b>Локальна новина іншого регіону (Славонія)</b>",
+        "• Spojene srcem i tradicijom: kako su otočanke na Žirju osmislile ‘mrunc ➡️ <b>Локальна подія іншого хорватського регіону (Шибеник)</b>",
+        "• Priprema se veliko uređenje uvala Dražanica i Maestral: za izradu plan ➡️ <b>Повністю дублює новину з HISTORY про вибір підрядника для планів Дражаниці та Маестрала</b>",
+        "• Preokret na granici s BiH! Devet prijelaza mijenja status, jedan nesta ➡️ <b>Загальна державна новина про переходи, що дублює або не містить критичних оновлень для цільової ауди</b>",
+        "• Nevjerojatne brojke iz Zadra: svaka sedma nova zgrada u Hrvatskoj nikn ➡️ <b>Перекази загальних тенденцій ринку нерухомості без нових ухвалених рішень</b>",
+        "• Nije imao položeno, alkoholiziran i odbio test na droge: logično kako  ➡️ <b>Поліцейське зведення з іншого регіону (Стон/Дубровник)</b>"
+      ]
+    },
+    "backlog": {
+      "total_size": 0,
+      "sources": {}
+    },
+    "published": {
+      "total": 3,
+      "ukraine_priority": 0,
+      "with_images": 0,
+      "text_only": 3,
+      "sources": {
+        "023": 1,
+        "Slobodna dalmacija": 2
       }
     },
     "models_used": {
