@@ -65,7 +65,7 @@ MAX_CANDIDATES_PER_FILTER = 25
 MAX_TRANSLATION_FAILURES = 5
 RETRY_COOLDOWN_SECONDS = 60 * 60
 
-GEMINI_MODELS = ["gemini-3.6-flash", "gemini-3.5-flash-lite"]
+GEMINI_MODELS = ["gemini-3.5-flash-lite", "gemini-3.6-flash"]
 client = None  # Created inside main(), after environment validation.
 
 
@@ -311,6 +311,8 @@ def send_analytics_to_admin(stats: dict) -> None:
     backlog_src = ", ".join(f"{k}: {v}" for k, v in backlog_stats["sources"].items()) or "Порожньо"
     pub_src = ", ".join(f"{k}: {v}" for k, v in published["sources"].items()) or "Немає"
     reasons = "\n".join(funnel.get("rejection_reasons_list", [])) or "Немає деталей"
+    # Екрануємо можливі HTML-символи з причин відхилення
+    reasons = html.escape(reasons)ҐА 
 
     # Escape model/source-derived values before using Telegram HTML parse mode.
     message = (
