@@ -8,8 +8,9 @@ import json
 import re
 import random
 import shutil
+import sys
 from bs4 import BeautifulSoup
-from urllib.parse import urlparse
+from urllib.parse import urlparse, urlunparse
 from dotenv import load_dotenv
 from google import genai
 from google.genai import types  
@@ -57,7 +58,27 @@ class NewsFilterResponse(BaseModel):
     keep: list[int]
     rejected: list[RejectedItem]
 
+class TranslatedNews(BaseModel):
+    """Схема для валідації перекладеного тексту (Пункт 1)[cite: 6]"""
+    id: int = Field(description="ID статті з масиву кандидатів")
+    title: str = Field(description="Перекладений заголовок (без HTML тегів <b>)")
+    content: str = Field(description="Основний текст новини з HTML форматуванням")
+    hashtags: str = Field(description="Усі хештеги одним рядком (наприклад, #Zadar #Суспільство)")
+
+class TranslationResponse(BaseModel):
+    translations: list[TranslatedNews]
+
 # --- ДОПОМІЖНІ ФУНКЦІЇ ---
+
+def normalize_url(url):
+    """Очищає URL від рекламних UTM-міток та параметрів (Пункт 6)[cite: 6]"""
+    try:
+        parsed = urlparse(url)
+        # Залишаємо схему, домен і шлях. Відкидаємо параметри, запити та фрагменти.
+        return urlunparse((parsed.scheme, parsed.netloc, parsed.path, '', '', ''))
+    except Exception:
+        return url
+
 def trim_history(filename, max_lines=1000):
     try:
         if os.path.exists(filename):
@@ -70,9 +91,8 @@ def trim_history(filename, max_lines=1000):
         logging.error(f"Помилка обрізки файлу {filename}: {e}")
 
 def fetch_full_article_text(url, scraper):
-    """Переходить на сайт і витягує повний текст статті, якщо RSS обрізаний"""
     try:
-        resp = scraper.get(url, timeout=10) # Додано timeout[cite: 6]
+        resp = scraper.get(url, timeout=10) 
         if resp.status_code == 200:
             soup = BeautifulSoup(resp.text, 'html.parser')
             paragraphs = soup.find_all('p')
@@ -88,7 +108,7 @@ def send_alert_to_admin(message):
         return
     api_url = f"https://api.telegram.org/bot{TELEGRAM_BOT_TOKEN}/sendMessage"
     try:
-        response = requests.post(api_url, data={'chat_id': ADMIN_CHAT_ID, 'text': f"⚠️ ALARM: {message}"}, timeout=10) # Додано timeout[cite: 6]
+        response = requests.post(api_url, data={'chat_id': ADMIN_CHAT_ID, 'text': f"⚠️ ALARM: {message}"}, timeout=10) 
         if response.status_code != 200:
             logging.error(f"Помилка відправки алерта в Telegram: {response.text}")
     except Exception as e:
@@ -106,37 +126,35 @@ def save_to_history(history_list, new_item, filename):
     return history_list
 
 def load_backlog():
-    """Завантажує беклог з автоматичним відновленням при помилках[cite: 6]"""
     if not os.path.exists(BACKLOG_FILE): return []
     try:
         with open(BACKLOG_FILE, 'r', encoding='utf-8') as f: 
             return json.load(f)
     except json.JSONDecodeError as e:
-        logging.error(f"❌ Помилка читання беклогу: {e}. Спроба відновити з резервної копії[cite: 6].")
+        logging.error(f"❌ Помилка читання беклогу: {e}. Спроба відновити з резервної копії.")
         bak_file = f"{BACKLOG_FILE}.bak"
         if os.path.exists(bak_file):
             try:
                 with open(bak_file, 'r', encoding='utf-8') as f:
-                    logging.info("Беклог успішно відновлено з резервної копії[cite: 6].")
+                    logging.info("Беклог успішно відновлено з резервної копії.")
                     return json.load(f)
             except Exception as bak_e:
-                logging.error(f"❌ Резервна копія також пошкоджена: {bak_e}[cite: 6].")
+                logging.error(f"❌ Резервна копія також пошкоджена: {bak_e}.")
         return []
 
 def save_backlog(backlog):
-    """Атомарне збереження беклогу[cite: 6]"""
     temp_file = f"{BACKLOG_FILE}.tmp"
     bak_file = f"{BACKLOG_FILE}.bak"
     
     if os.path.exists(BACKLOG_FILE):
-        shutil.copy2(BACKLOG_FILE, bak_file) # Зберігаємо .bak
+        shutil.copy2(BACKLOG_FILE, bak_file) 
         
     try:
         with open(temp_file, 'w', encoding='utf-8') as f:
             json.dump(backlog, f, ensure_ascii=False, indent=4)
-        os.replace(temp_file, BACKLOG_FILE) # Атомарно замінюємо[cite: 6]
+        os.replace(temp_file, BACKLOG_FILE) 
     except Exception as e:
-        logging.error(f"Помилка при збереженні беклогу: {e}[cite: 6]")
+        logging.error(f"Помилка при збереженні беклогу: {e}")
         if os.path.exists(temp_file):
             os.remove(temp_file)
 
@@ -147,7 +165,6 @@ def load_analytics():
     except: return []
 
 def save_analytics(stats):
-    """Атомарне збереження аналітики[cite: 6]"""
     history = load_analytics()
     history.append(stats)
     temp_file = f"{ANALYTICS_FILE}.tmp"
@@ -155,9 +172,9 @@ def save_analytics(stats):
     try:
         with open(temp_file, 'w', encoding='utf-8') as f:
             json.dump(history[-100:], f, ensure_ascii=False, indent=4)
-        os.replace(temp_file, ANALYTICS_FILE) # Атомарно замінюємо[cite: 6]
+        os.replace(temp_file, ANALYTICS_FILE) 
     except Exception as e:
-        logging.error(f"Помилка при збереженні аналітики: {e}[cite: 6]")
+        logging.error(f"Помилка при збереженні аналітики: {e}")
         if os.path.exists(temp_file):
             os.remove(temp_file)
 
@@ -233,16 +250,11 @@ def get_source_name(url):
     except: return "Джерело"
 
 def is_quality_article(title, description, url):
-    """
-    Перевіряє статтю за ключовими словами.
-    ОНОВЛЕНО: Використовує часткові збіги коренів для надійності[cite: 6].
-    """
     unwanted_url_categories = ['/sport/', '/scena/', '/lifestyle/', '/magazin/']
     url_lower = url.lower()
     if any(category in url_lower for category in unwanted_url_categories):
         return False
 
-    # Шукаємо за коренями слів, щоб ігнорувати відмінювання[cite: 6]
     unwanted_roots = [
         'oglas', 'sponzor', 'promo', 'horoskop', 'native', 
         'sport', 'nogomet', 'košark', 'tenis', 'utakmic', 'turnir', 'derbi'
@@ -303,7 +315,8 @@ def call_gemini_json(client, prompt, stats=None):
     raise last_error
 
 @retry(stop=stop_after_attempt(4), wait=wait_exponential(multiplier=2, min=15, max=60))
-def generate_news_texts(client, prompt, expected_count, stats=None):
+def generate_news_texts_json(client, prompt, expected_count, stats=None):
+    """ОНОВЛЕНО: Генерація тексту у форматі JSON (Пункт 1)[cite: 6]"""
     models_to_try = ['gemini-3.6-flash', 'gemini-3.5-flash-lite']
     last_error = None
     
@@ -313,6 +326,8 @@ def generate_news_texts(client, prompt, expected_count, stats=None):
                 model=current_model, 
                 contents=prompt,
                 config=types.GenerateContentConfig(
+                    response_mime_type="application/json",
+                    response_schema=TranslationResponse,
                     temperature=0.1,
                     safety_settings=[
                         types.SafetySetting(category="HARM_CATEGORY_HARASSMENT", threshold="BLOCK_NONE"),
@@ -326,9 +341,9 @@ def generate_news_texts(client, prompt, expected_count, stats=None):
             if not response or not getattr(response, 'text', None):
                 raise ValueError(f"Порожня відповідь від {current_model}")
                 
-            logging.info(f"Текст від Gemini ({current_model}):\n{response.text}")
+            logging.info(f"Текст від Gemini JSON ({current_model}):\n{response.text}")
                 
-            # Жорстке видалення галюцинацій (Грецькі та Іврит)
+            # Очищення галюцинацій у JSON тексті
             HOMOGLYPHS = {
                 'ά': 'а', 'α': 'а', 'ό': 'о', 'ο': 'о', 
                 'έ': 'е', 'ε': 'е', 'ί': 'і', 'ι': 'і', 
@@ -336,26 +351,22 @@ def generate_news_texts(client, prompt, expected_count, stats=None):
                 'ב': 'б', 'ب': 'б',
                 'є́': 'є', 'і́': 'і'
             }
-            clean_text = response.text
-            
-            # Видаляємо невидимий наголос (Combining Acute Accent), щоб не губити літери
-            clean_text = clean_text.replace('\u0301', '')
-            
-            # Жорстке видалення обірваних хвостів з RSS (якщо ШІ все ж пропустив)
+            clean_text = response.text.replace('\u0301', '')
             clean_text = clean_text.replace('...', '.').replace('[...]', '.')
             
             for bad_char, good_char in HOMOGLYPHS.items():
                 clean_text = clean_text.replace(bad_char, good_char)
                 
-            texts = [t.strip() for t in clean_text.strip().split('|||') if t.strip()]
+            data = json.loads(clean_text)
+            translations = data.get("translations", [])
             
-            if len(texts) != expected_count: 
-                raise ValueError(f"Невірна кількість текстів від {current_model}: очікували {expected_count}, отримали {len(texts)}")
+            if len(translations) != expected_count: 
+                raise ValueError(f"Невірна кількість текстів від {current_model}: очікували {expected_count}, отримали {len(translations)}")
                 
             if stats is not None:
                 stats["models_used"][current_model] = stats["models_used"].get(current_model, 0) + 1
                 
-            return response, texts
+            return response, translations
             
         except Exception as e:
             logging.warning(f"⚠️ Переклад: Модель {current_model} недоступна ({e}). Перемикаємось...")
@@ -366,7 +377,6 @@ def generate_news_texts(client, prompt, expected_count, stats=None):
     raise last_error
 
 def handle_telegram_html_error(api_url, payload):
-    """Очищає HTML-теги для безпечного відправлення як резервний варіант[cite: 6]."""
     logging.warning("⚠️ Помилка HTML-розмітки. Відправляємо без HTML (очищений текст)...[cite: 6]")
     
     def strip_html(text):
@@ -399,9 +409,8 @@ def handle_telegram_html_error(api_url, payload):
 
 @retry(stop=stop_after_attempt(4), wait=wait_exponential(multiplier=2, min=3, max=30), reraise=True)
 def execute_telegram_request(api_url, payload):
-    """Відправляє запит до Telegram з перевіркою поля 'ok' та таймаутом[cite: 6]."""
     try:
-        resp = requests.post(api_url, data=payload, timeout=15) # Додано timeout[cite: 6]
+        resp = requests.post(api_url, data=payload, timeout=15) 
         
         try:
             resp_json = resp.json()
@@ -409,39 +418,43 @@ def execute_telegram_request(api_url, payload):
                 error_code = resp_json.get('error_code')
                 description = resp_json.get('description', '')
                 
-                # Обробка HTML помилок[cite: 6]
                 if error_code == 400 and "parse entities" in description.lower():
                      return handle_telegram_html_error(api_url, payload)
                 
-                # Якщо інші помилки Telegram
                 raise Exception(f"Telegram API Error {error_code}: {description}[cite: 6]")
                 
         except json.JSONDecodeError:
-             # Якщо не JSON, але HTTP 200 - ймовірно все добре, але незвично
              if resp.status_code == 200: return True
              raise Exception(f"Telegram Error {resp.status_code}: {resp.text}")
              
     except requests.exceptions.RequestException as e:
         logging.error(f"Мережева помилка під час запиту до Telegram: {e}[cite: 6]")
-        raise # Дозволяємо tenacity спробувати ще раз
+        raise 
 
     return True
 
-def validate_translation_simple(text):
-    """Проста перевірка тексту перед публікацією[cite: 6]."""
-    if len(text) > 4000:
-         logging.warning("⚠️ Текст занадто довгий для публікації.[cite: 6]")
+def validate_translation_simple(translation):
+    """Програмна перевірка тексту перед публікацією (Пункт 1)[cite: 6]."""
+    content = translation.get("content", "")
+    hashtags = translation.get("hashtags", "")
+    
+    if len(content) > 4000:
+         logging.warning(f"⚠️ Текст {translation.get('id')} занадто довгий для публікації.[cite: 6]")
          return False
-    # Перевіряємо, чи немає явного спортивного хештегу, який міг вигадати ШІ[cite: 6]
-    if "#Sport" in text or "#Спорт" in text:
-         logging.warning("⚠️ Текст містить заборонений хештег #Sport.[cite: 6]")
+    
+    if "#Sport" in hashtags or "#Спорт" in hashtags:
+         logging.warning(f"⚠️ Текст {translation.get('id')} містить заборонений хештег #Sport.[cite: 6]")
          return False
+         
+    if re.search(r'[A-Za-z]', content):
+         logging.warning(f"⚠️ Текст {translation.get('id')} можливо містить латиницю. Перевірте.[cite: 6]")
+         
     return True
 
 # --- ОСНОВНА ЛОГІКА ---
 
 def deduplicate_news(client, articles, history_titles=None, stats=None):
-    if not articles: return articles, [] # ОНОВЛЕНО: Повертаємо 2 значення
+    if not articles: return articles, [] 
         
     logging.info("Аналіз на дублікати (включно з історією) через Gemini...")
     recent_history = history_titles[-75:] if history_titles else []
@@ -533,11 +546,11 @@ def deduplicate_news(client, articles, history_titles=None, stats=None):
             for log_entry in rejection_log:
                 logging.info(f"   {log_entry.replace('<b>', '').replace('</b>', '')}")
                 
-        return filtered_articles, rejected_items # ОНОВЛЕНО: Повертаємо список відхилених
+        return filtered_articles, rejected_items 
         
     except Exception as e:
-        # ЗМІНЕНО: Якщо API не працює - повертаємо порожні списки, щоб уникнути публікації спаму[cite: 6].
         logging.error(f"❌ Gemini API дедуплікації недоступний: {e}. Зупиняємо фільтрацію (Fail Closed)[cite: 6].")
+        send_alert_to_admin(f"Gemini API дедуплікації недоступний: {e}") # ОНОВЛЕНО: Сповіщення про збій (Пункт 3)[cite: 6]
         return [], []
 
 def prioritize_ukraine_news(backlog_items):
@@ -586,6 +599,7 @@ def scrape_feeds(stats=None):
             
             if response.status_code not in [200, 301, 302]:
                 logging.error(f"❌ Помилка доступу до {feed_url}: HTTP статус {response.status_code}")
+                if stats is not None: stats["errors_count"] += 1 # ОНОВЛЕНО: Облік помилок (Пункт 4)[cite: 6]
                 continue
                 
             feed = feedparser.parse(response.text)
@@ -596,13 +610,15 @@ def scrape_feeds(stats=None):
                 
         except Exception as e: 
             logging.error(f"❌ Збій парсингу {feed_url}: {e}")
+            if stats is not None: stats["errors_count"] += 1 # ОНОВЛЕНО: Облік помилок (Пункт 4)[cite: 6]
             continue
             
         for entry in feed.entries[:15]: 
             if stats is not None: stats["funnel"]["scraped_total"] += 1
             source_count += 1
             
-            url = entry.link
+            # ОНОВЛЕНО: Нормалізація URL (Пункт 6)[cite: 6]
+            url = normalize_url(entry.link)
             title = entry.title
             
             if url in history_urls or title in history_titles or url in backlog_urls: 
@@ -615,25 +631,21 @@ def scrape_feeds(stats=None):
                 article_time = calendar.timegm(entry.published_parsed)
                 if current_time - article_time > MAX_AGE_SECONDS: continue
             
-            # 1. АБСОЛЮТНИЙ ФІЛЬТР ЗА RSS-КАТЕГОРІЯМИ
             entry_tags = [tag.term.lower() for tag in getattr(entry, 'tags', []) if hasattr(tag, 'term')]
             blacklisted_categories = ['sport', 'košarka', 'nogomet', 'šport', 'scena', 'lifestyle', 'zabava', 'magazin']
             if any(cat in entry_tags for cat in blacklisted_categories):
                 if stats is not None: stats["funnel"]["rejected_by_keywords"] += 1
                 continue
             
-            # 2. ФОРМУВАННЯ БАЗОВОГО ОПИСУ
             description = entry.get('summary', title)
             if 'content' in entry and len(entry.content) > 0:
                 description = entry.content[0].get('value', description)
 
-            # 3. РОЗУМНЕ ЗАВАНТАЖЕННЯ: Якщо текст обрізано (є ... в кінці), йдемо на сайт за повним текстом
             if '...' in description[-15:] or '[...]' in description[-15:] or len(description) < 200:
                 fetched_text = fetch_full_article_text(url, scraper)
                 if fetched_text:
                     description = fetched_text
             
-            # Якщо навіть після парсингу залишились крапки в кінці (дуже рідко), відрізаємо хвіст
             if '...' in description[-10:] or '[...]' in description[-10:]:
                 match = re.search(r'(.*[.!?])', description)
                 if match: description = match.group(1)
@@ -709,7 +721,6 @@ def process_backlog(stats=None):
     history_titles = load_history(TITLES_FILE)
     len_before = len(candidate_batch)
     
-    # ОНОВЛЕНО: Отримуємо також відхилені новини[cite: 6]
     candidate_batch, rejected_items = deduplicate_news(client, candidate_batch, history_titles, stats=stats)
     
     if stats is not None:
@@ -717,13 +728,11 @@ def process_backlog(stats=None):
 
     batch = candidate_batch[:BATCH_SIZE]
     
-    # ОНОВЛЕНО: Логіка очищення беклогу[cite: 6]
     approved_urls = {item['url'] for item in candidate_batch}
-    rejected_urls = evaluated_urls - approved_urls # Відхилені = перевірені мінус схвалені[cite: 6]
+    rejected_urls = evaluated_urls - approved_urls 
     sent_urls = set()
 
     if not batch: 
-        # Якщо нічого не обрано, просто видаляємо відхилені з беклогу[cite: 6]
         remaining_backlog = [item for item in backlog if item['url'] not in rejected_urls]
         remaining_backlog.sort(key=lambda x: x.get('timestamp', 0), reverse=True)
         save_backlog(remaining_backlog[:30])
@@ -749,37 +758,32 @@ def process_backlog(stats=None):
     """
     
     for idx, item in enumerate(batch):
-        # Зворотна сумісність зі старим JSON беклогом
         images = item.get('image_urls', [])
         if not images and item.get('image_url'):
             images = [item.get('image_url')]
             
         has_image = "Так" if images else "Ні"
-        prompt += f"=== НОВИНА {idx+1} ===\nМає картинку: {has_image}\nЗаголовок: {item['title']}\nОпис: {item['description']}\n\n"
+        prompt += f"=== НОВИНА ID {idx} ===\nМає картинку: {has_image}\nЗаголовок: {item['title']}\nОпис: {item['description']}\n\n"
     
+    # ОНОВЛЕНО: Перехід на структурований JSON (Пункт 1)[cite: 6]
     prompt += f"""
     Для кожної новини виконай наступні вимоги:
     
-    1. ЗАГОЛОВОК: Переклади оригінальний заголовок максимально точно та близько до тексту. КАТЕГОРИЧНО ЗАБОРОНЕНО вигадувати від себе "креатив", метафори чи клікбейт. Заголовок має бути обов'язково виділений тегами <b>.
+    1. ЗАГОЛОВОК: Переклади оригінальний заголовок максимально точно та близько до тексту. КАТЕГОРИЧНО ЗАБОРОНЕНО вигадувати від себе "креатив", метафори чи клікбейт. Заголовок НІЯК не виділяй тегами <b>, просто напиши текст.
     
-       2. ОБ'ЄМ ТА ПРЯМИЙ ПЕРЕКЛАД (АНТИ-ВОДА):
+    2. ОБ'ЄМ ТА ПРЯМИЙ ПЕРЕКЛАД (АНТИ-ВОДА):
        - Твоє головне завдання — ПРЯМИЙ ПЕРЕКЛАД наявного тексту. Якщо в оригіналі лише 300 символів — переклади ці 300 символів і зупинись. КАТЕГОРИЧНО ЗАБОРОНЕНО штучно розтягувати текст, додавати "воду", висновки чи контекст, якого немає в оригіналі. КАТЕГОРИЧНО ЗАБОРОНЕНО вигадувати неіснуючі імена, цитати, точні цифри чи дати, яких не було в оригіналі.
        - ЛІМІТИ ТЕЛЕГРАМА: 
          Якщо "Має картинку: Так" -> суворий ліміт 900 символів. Якщо оригінал довший, стисни головну суть, щоб влізти в цей ліміт.
          Якщо "Має картинку: Ні" -> суворий ліміт 2500 символів. Якщо оригінал довший, передай головну суть до цього ліміту.
        - ОБРІЗАНИЙ ТЕКСТ В RSS: Іноді текст обривається на півслові або закінчується трьома крапками (...) через ліміти сайтів. Якщо бачиш обірване речення в кінці — просто видаліть його або заверши логічно. КАТЕГОРИЧНО ЗАБОРОНЕНО друкувати фрази з трьома крапками (наприклад, "Вулиця ...").
        
-       
-    3. СТРУКТУРА: Дроби текст на короткі абзаци (по 3-4 речення). Для розширених текстів використовуй марковані списки (з символом • або -), щоб інформацію було зручно читати.
-    
-    4. TELEGRAM HTML: Використовуй ТІЛЬКИ ці теги: <b>, <i>, <u>, <s>. Ніяких тегів <p>, <br>, <h1>, <li> і ніякої Markdown-розмітки (без зірочок ** чи решіток ##).
-    
-    5. ФОРМАТ ВИВОДУ: Розділяй готові тексти новин СУВОРО рядком `|||`. Не додавай жодних своїх коментарів на початку чи в кінці всієї відповіді.
+    3. СТРУКТУРА ТА ТЕГИ ДЛЯ ПОЛЯ 'content': Дроби текст на короткі абзаци (по 3-4 речення). Для розширених текстів використовуй марковані списки (з символом • або -). Використовуй ТІЛЬКИ ці теги: <b>, <i>, <u>, <s>. Ніяких тегів <p>, <br>, <h1>, <li> і ніякої Markdown-розмітки (без зірочок ** чи решіток ##).
     """
 
     time.sleep(15)
     try:
-        response, generated_texts = generate_news_texts(client, prompt, len(batch), stats)
+        response, generated_texts = generate_news_texts_json(client, prompt, len(batch), stats)
     except Exception as e:
         logging.error(f"❌ Не вдалося згенерувати тексти після 3 спроб: {e}. Скасування публікації.")
         if stats is not None: stats["errors_count"] += 1  
@@ -791,16 +795,22 @@ def process_backlog(stats=None):
     for idx, item in enumerate(batch):
         if idx >= len(generated_texts): break 
         
-        # Базова валідація перекладу[cite: 6]
-        if not validate_translation_simple(generated_texts[idx]):
+        translation = generated_texts[idx]
+        
+        if not validate_translation_simple(translation):
              continue
         
-        # Зворотна сумісність
+        # Формуємо фінальний текст із JSON структури
+        formatted_text = f"<b>{translation['title']}</b>\n\n{translation['content']}\n\n{translation['hashtags']}"
+        
         images = item.get('image_urls', [])
         if not images and item.get('image_url'):
             images = [item.get('image_url')]
         
-        if send_to_telegram(generated_texts[idx], item['url'], item.get('source', 'Джерело'), images, tags=""):
+        # ОНОВЛЕНО: Отримуємо тип публікації (Пункт 2)[cite: 6]
+        success, pub_type = send_to_telegram(formatted_text, item['url'], item.get('source', 'Джерело'), images)
+        
+        if success:
             history_urls = save_to_history(history_urls, item['url'], HISTORY_FILE)
             history_titles = save_to_history(history_titles, item['title'], TITLES_FILE)
             sent_urls.add(item['url'])
@@ -812,7 +822,8 @@ def process_backlog(stats=None):
                 if any(re.search(kw, text_context) for kw in ukraine_keywords):
                     stats["published"]["ukraine_priority"] += 1
                 
-                if images: stats["published"]["with_images"] += 1
+                # Зараховуємо реальний тип публікації (Пункт 2)[cite: 6]
+                if pub_type == "image": stats["published"]["with_images"] += 1
                 else: stats["published"]["text_only"] += 1
                 
                 src = item.get('source', 'Джерело')
@@ -822,7 +833,6 @@ def process_backlog(stats=None):
         else:
             if stats is not None: stats["errors_count"] += 1
 
-    # ОНОВЛЕНО: Формування нового беклогу з видаленням rejected_urls[cite: 6]
     remaining_backlog = []
     for item in backlog:
         if item['url'] not in evaluated_urls:
@@ -833,36 +843,33 @@ def process_backlog(stats=None):
     remaining_backlog.sort(key=lambda x: x.get('timestamp', 0), reverse=True)
     save_backlog(remaining_backlog[:30])
 
-def send_to_telegram(text, url, source_name, image_urls=None, tags=""):
-    extracted_tags = ""
-    parts = text.split('\n\n')
-    if parts and '#' in parts[-1]:
-        extracted_tags = "\n\n" + parts[-1].strip()
-        text = '\n\n'.join(parts[:-1]) 
-    
+def send_to_telegram(text, url, source_name, image_urls=None):
+    # Хештеги тепер частина тексту (прийшли з JSON)
     if not image_urls: image_urls = []
     elif isinstance(image_urls, str): image_urls = [image_urls]
 
     crop_msg = "...\n\n👉 <i>Повні деталі читайте за посиланням нижче</i> 👇"
-    safe_caption_limit = 920 - len(extracted_tags) - len(tags)
+    safe_caption_limit = 920 
     
     if image_urls and len(text) > safe_caption_limit: 
         text = text[:safe_caption_limit] + crop_msg
     elif not image_urls and len(text) > 3900: 
         text = text[:3900] + crop_msg
     
-    full_message = f"{text}{extracted_tags}{tags}\n\n🔗 Джерело: <a href='{url}'>{source_name}</a>"
+    full_message = f"{text}\n\n🔗 Джерело: <a href='{url}'>{source_name}</a>"
     payload = {'chat_id': TELEGRAM_CHANNEL_ID}
     
     if len(image_urls) == 0:
         payload['parse_mode'] = 'HTML'
         payload['text'] = full_message
         api_url = f"https://api.telegram.org/bot{TELEGRAM_BOT_TOKEN}/sendMessage"
+        pub_type = "text" # ОНОВЛЕНО (Пункт 2)[cite: 6]
     elif len(image_urls) == 1:
         payload['parse_mode'] = 'HTML'
         payload['caption'] = full_message
         payload['photo'] = image_urls[0]
         api_url = f"https://api.telegram.org/bot{TELEGRAM_BOT_TOKEN}/sendPhoto"
+        pub_type = "image"
     else:
         media = []
         for idx, img_url in enumerate(image_urls):
@@ -873,27 +880,31 @@ def send_to_telegram(text, url, source_name, image_urls=None, tags=""):
             media.append(media_item)
         payload['media'] = json.dumps(media)
         api_url = f"https://api.telegram.org/bot{TELEGRAM_BOT_TOKEN}/sendMediaGroup"
+        pub_type = "image"
     
     try:
-        return execute_telegram_request(api_url, payload)
+        execute_telegram_request(api_url, payload)
+        return True, pub_type # ОНОВЛЕНО (Пункт 2)[cite: 6]
     except Exception as e: 
         if len(image_urls) > 0:
             logging.warning(f"⚠️ Telegram відхилив медіа ({e}). Пробуємо відправити просто як текст...")
             payload_text = {'chat_id': TELEGRAM_CHANNEL_ID, 'text': full_message, 'parse_mode': 'HTML'}
             api_url_text = f"https://api.telegram.org/bot{TELEGRAM_BOT_TOKEN}/sendMessage"
             try:
-                return execute_telegram_request(api_url_text, payload_text)
+                execute_telegram_request(api_url_text, payload_text)
+                return True, "text" # ОНОВЛЕНО: Якщо фолбек успішний, це текстовий пост[cite: 6]
             except Exception as text_e:
                 logging.error(f"❌ Критична помилка відправки тексту: {text_e}")
-                return False
+                return False, "error"
         else:
             logging.error(f"❌ Критична помилка Telegram API: {e}")
-            return False
+            return False, "error"
 
 def main():
     if not all([TELEGRAM_BOT_TOKEN, TELEGRAM_CHANNEL_ID, GEMINI_API_KEY]):
         logging.error("Критична помилка: не знайдено базові токени у файлі .env!")
-        exit(1)
+        sys.exit(1)
+        
     start_time = time.time()
     
     stats = {
@@ -940,6 +951,7 @@ def main():
     except Exception as e:
         stats["errors_count"] += 1
         send_alert_to_admin(f"Скрипт впав з помилкою: {e}")
+        critical_error = True # ОНОВЛЕНО: Сигнал для падіння скрипта (Пункт 5)[cite: 6]
 
     finally:
         trim_history(HISTORY_FILE, MAX_HISTORY_SIZE)
@@ -950,6 +962,10 @@ def main():
         
         if stats["published"]["total"] > 0 or stats["errors_count"] > 0:
             send_analytics_to_admin(stats)
+            
+        # ОНОВЛЕНО: Примусове падіння GitHub Action, якщо була помилка (Пункт 5)[cite: 6]
+        if 'critical_error' in locals():
+            sys.exit(1)
 
 if __name__ == "__main__":
     main()
