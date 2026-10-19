@@ -745,12 +745,13 @@ def validate_translation_strict(translation: dict, original_article: dict) -> bo
 
     # Enforce editorial limits on the visible translation, before adding source attribution.
     image_urls = original_article.get("image_urls") or original_article.get("image_url")
-    max_visible_chars = 900 if image_urls else 2500
     visible_length = len(title) + 2 + len(content_plain) + 2 + len(hashtags)
-    if visible_length > max_visible_chars:
+    # Знімаємо жорсткий ліміт для фото (900), бо send_to_telegram сам його обріже за потреби.
+    # Залишаємо лише загальний ліміт Telegram (4000) для звичайних текстових повідомлень.
+    if visible_length > 4000:
         logging.warning(
-            "Переклад %s задовгий: %s символів, ліміт %s",
-            translation.get("id"), visible_length, max_visible_chars,
+            "Переклад %s задовгий: %s символів, абсолютний ліміт 4000",
+            translation.get("id"), visible_length,
         )
         return False
     if "..." in title or "..." in content:
