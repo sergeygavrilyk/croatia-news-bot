@@ -72,15 +72,12 @@ def trim_history(filename, max_lines=1000):
 def fetch_full_article_text(url, scraper):
     """Переходить на сайт і витягує повний текст статті, якщо RSS обрізаний"""
     try:
-        resp = scraper.get(url, timeout=10)
+        resp = scraper.get(url, timeout=10) # Додано timeout[cite: 6]
         if resp.status_code == 200:
             soup = BeautifulSoup(resp.text, 'html.parser')
-            # Збираємо всі абзаци тексту
             paragraphs = soup.find_all('p')
-            # Відкидаємо короткі системні написи (менше 30 символів) і склеюємо текст
             full_text = ' '.join([p.get_text(strip=True) for p in paragraphs if len(p.get_text(strip=True)) > 30])
             if full_text:
-                # Обрізаємо до 3500 символів, щоб не перевантажити контекстне вікно Gemini
                 return full_text[:3500] 
     except Exception as e:
         logging.error(f"⚠️ Не вдалося завантажити повний текст {url}: {e}")
@@ -91,7 +88,7 @@ def send_alert_to_admin(message):
         return
     api_url = f"https://api.telegram.org/bot{TELEGRAM_BOT_TOKEN}/sendMessage"
     try:
-        response = requests.post(api_url, data={'chat_id': ADMIN_CHAT_ID, 'text': f"⚠️ ALARM: {message}"})
+        response = requests.post(api_url, data={'chat_id': ADMIN_CHAT_ID, 'text': f"⚠️ ALARM: {message}"}, timeout=10) # Додано timeout[cite: 6]
         if response.status_code != 200:
             logging.error(f"Помилка відправки алерта в Telegram: {response.text}")
     except Exception as e:
@@ -109,18 +106,39 @@ def save_to_history(history_list, new_item, filename):
     return history_list
 
 def load_backlog():
+    """Завантажує беклог з автоматичним відновленням при помилках[cite: 6]"""
     if not os.path.exists(BACKLOG_FILE): return []
     try:
-        with open(BACKLOG_FILE, 'r', encoding='utf-8') as f: return json.load(f)
-    except Exception as e:
-        logging.warning(f"⚠️ Не вдалося завантажити {BACKLOG_FILE} (можливо, файл пошкоджений): {e}. Починаємо з пустого списку.")
+        with open(BACKLOG_FILE, 'r', encoding='utf-8') as f: 
+            return json.load(f)
+    except json.JSONDecodeError as e:
+        logging.error(f"❌ Помилка читання беклогу: {e}. Спроба відновити з резервної копії[cite: 6].")
+        bak_file = f"{BACKLOG_FILE}.bak"
+        if os.path.exists(bak_file):
+            try:
+                with open(bak_file, 'r', encoding='utf-8') as f:
+                    logging.info("Беклог успішно відновлено з резервної копії[cite: 6].")
+                    return json.load(f)
+            except Exception as bak_e:
+                logging.error(f"❌ Резервна копія також пошкоджена: {bak_e}[cite: 6].")
         return []
 
 def save_backlog(backlog):
+    """Атомарне збереження беклогу[cite: 6]"""
+    temp_file = f"{BACKLOG_FILE}.tmp"
+    bak_file = f"{BACKLOG_FILE}.bak"
+    
     if os.path.exists(BACKLOG_FILE):
-        shutil.copy2(BACKLOG_FILE, BACKLOG_FILE + '.bak')
-    with open(BACKLOG_FILE, 'w', encoding='utf-8') as f:
-        json.dump(backlog, f, ensure_ascii=False, indent=4)
+        shutil.copy2(BACKLOG_FILE, bak_file) # Зберігаємо .bak
+        
+    try:
+        with open(temp_file, 'w', encoding='utf-8') as f:
+            json.dump(backlog, f, ensure_ascii=False, indent=4)
+        os.replace(temp_file, BACKLOG_FILE) # Атомарно замінюємо[cite: 6]
+    except Exception as e:
+        logging.error(f"Помилка при збереженні беклогу: {e}[cite: 6]")
+        if os.path.exists(temp_file):
+            os.remove(temp_file)
 
 def load_analytics():
     if not os.path.exists(ANALYTICS_FILE): return []
@@ -129,10 +147,19 @@ def load_analytics():
     except: return []
 
 def save_analytics(stats):
+    """Атомарне збереження аналітики[cite: 6]"""
     history = load_analytics()
     history.append(stats)
-    with open(ANALYTICS_FILE, 'w', encoding='utf-8') as f:
-        json.dump(history[-100:], f, ensure_ascii=False, indent=4)
+    temp_file = f"{ANALYTICS_FILE}.tmp"
+    
+    try:
+        with open(temp_file, 'w', encoding='utf-8') as f:
+            json.dump(history[-100:], f, ensure_ascii=False, indent=4)
+        os.replace(temp_file, ANALYTICS_FILE) # Атомарно замінюємо[cite: 6]
+    except Exception as e:
+        logging.error(f"Помилка при збереженні аналітики: {e}[cite: 6]")
+        if os.path.exists(temp_file):
+            os.remove(temp_file)
 
 def send_analytics_to_admin(stats):
     if not ADMIN_CHAT_ID: 
@@ -169,7 +196,7 @@ def send_analytics_to_admin(stats):
     
     api_url = f"https://api.telegram.org/bot{TELEGRAM_BOT_TOKEN}/sendMessage"
     try:
-        requests.post(api_url, data={'chat_id': ADMIN_CHAT_ID, 'text': message, 'parse_mode': 'HTML'})
+        requests.post(api_url, data={'chat_id': ADMIN_CHAT_ID, 'text': message, 'parse_mode': 'HTML'}, timeout=10)
     except Exception as e: 
         logging.error(f"Збій з'єднання з Telegram API: {e}")
 
@@ -206,22 +233,25 @@ def get_source_name(url):
     except: return "Джерело"
 
 def is_quality_article(title, description, url):
+    """
+    Перевіряє статтю за ключовими словами.
+    ОНОВЛЕНО: Використовує часткові збіги коренів для надійності[cite: 6].
+    """
     unwanted_url_categories = ['/sport/', '/scena/', '/lifestyle/', '/magazin/']
     url_lower = url.lower()
     if any(category in url_lower for category in unwanted_url_categories):
         return False
 
-    unwanted_keywords = [
-        'oglasi', 'sponzorirani', 'promo', 'redikul', 'horoskop', 'plaćeni oglas', 
-        'nagradna igra', 'native', 'pr vijesti', 'foto', 'video',
-        'sport', 'nogomet', 'košarka', 'tenis', 'utakmica', 'hnl', 'liga prvaka',
-        'derbi', 'trener', 'igrači', 'kk zadar', 'nk zadar', 'prvenstvo', 'turnir', 'bodovi', 'polufinale'
+    # Шукаємо за коренями слів, щоб ігнорувати відмінювання[cite: 6]
+    unwanted_roots = [
+        'oglas', 'sponzor', 'promo', 'horoskop', 'native', 
+        'sport', 'nogomet', 'košark', 'tenis', 'utakmic', 'turnir', 'derbi'
     ]
     
     text_to_check = f"{title} {description} {url}".lower()
-    for word in unwanted_keywords:
-        if re.search(rf'\b{word}\b', text_to_check):
-            return False
+    
+    if any(root in text_to_check for root in unwanted_roots):
+        return False
             
     if len(title.strip()) < 15 or len(text_to_check.strip()) < 20: return False
     if "!!!" in title or "???" in title: return False
@@ -335,28 +365,83 @@ def generate_news_texts(client, prompt, expected_count, stats=None):
     if stats is not None: stats["gemini_retries"] += 1
     raise last_error
 
-# Додано reraise=True, щоб бачити справжню помилку Telegram в логах
+def handle_telegram_html_error(api_url, payload):
+    """Очищає HTML-теги для безпечного відправлення як резервний варіант[cite: 6]."""
+    logging.warning("⚠️ Помилка HTML-розмітки. Відправляємо без HTML (очищений текст)...[cite: 6]")
+    
+    def strip_html(text):
+         return re.sub('<[^<]+>', '', text)
+         
+    if 'text' in payload:
+        payload['text'] = strip_html(payload['text'])
+    elif 'caption' in payload:
+        payload['caption'] = strip_html(payload['caption'])
+
+    if 'media' in payload:
+        try:
+             media_objs = json.loads(payload['media'])
+             for obj in media_objs:
+                 if 'caption' in obj:
+                     obj['caption'] = strip_html(obj['caption'])
+                 if 'parse_mode' in obj:
+                     del obj['parse_mode']
+             payload['media'] = json.dumps(media_objs)
+        except json.JSONDecodeError:
+             pass
+
+    if 'parse_mode' in payload: 
+        del payload['parse_mode']
+        
+    resp = requests.post(api_url, data=payload, timeout=10)
+    if resp.status_code != 200:
+        raise Exception(f"Telegram Error after HTML strip {resp.status_code}: {resp.text}")
+    return True
+
 @retry(stop=stop_after_attempt(4), wait=wait_exponential(multiplier=2, min=3, max=30), reraise=True)
 def execute_telegram_request(api_url, payload):
-    resp = requests.post(api_url, data=payload)
-    if resp.status_code == 400 and "parse entities" in resp.text.lower():
-        logging.warning("⚠️ Помилка HTML-розмітки. Відправляємо без HTML...")
-        if 'media' in payload:
-            media_objs = json.loads(payload['media'])
-            if 'parse_mode' in media_objs[0]: del media_objs[0]['parse_mode']
-            payload['media'] = json.dumps(media_objs)
-        elif 'parse_mode' in payload: 
-            del payload['parse_mode']
-        resp = requests.post(api_url, data=payload) 
-    
-    if resp.status_code != 200: 
-        raise Exception(f"Telegram Error {resp.status_code}: {resp.text}")
+    """Відправляє запит до Telegram з перевіркою поля 'ok' та таймаутом[cite: 6]."""
+    try:
+        resp = requests.post(api_url, data=payload, timeout=15) # Додано timeout[cite: 6]
+        
+        try:
+            resp_json = resp.json()
+            if not resp_json.get('ok'):
+                error_code = resp_json.get('error_code')
+                description = resp_json.get('description', '')
+                
+                # Обробка HTML помилок[cite: 6]
+                if error_code == 400 and "parse entities" in description.lower():
+                     return handle_telegram_html_error(api_url, payload)
+                
+                # Якщо інші помилки Telegram
+                raise Exception(f"Telegram API Error {error_code}: {description}[cite: 6]")
+                
+        except json.JSONDecodeError:
+             # Якщо не JSON, але HTTP 200 - ймовірно все добре, але незвично
+             if resp.status_code == 200: return True
+             raise Exception(f"Telegram Error {resp.status_code}: {resp.text}")
+             
+    except requests.exceptions.RequestException as e:
+        logging.error(f"Мережева помилка під час запиту до Telegram: {e}[cite: 6]")
+        raise # Дозволяємо tenacity спробувати ще раз
+
+    return True
+
+def validate_translation_simple(text):
+    """Проста перевірка тексту перед публікацією[cite: 6]."""
+    if len(text) > 4000:
+         logging.warning("⚠️ Текст занадто довгий для публікації.[cite: 6]")
+         return False
+    # Перевіряємо, чи немає явного спортивного хештегу, який міг вигадати ШІ[cite: 6]
+    if "#Sport" in text or "#Спорт" in text:
+         logging.warning("⚠️ Текст містить заборонений хештег #Sport.[cite: 6]")
+         return False
     return True
 
 # --- ОСНОВНА ЛОГІКА ---
 
 def deduplicate_news(client, articles, history_titles=None, stats=None):
-    if not articles: return articles
+    if not articles: return articles, [] # ОНОВЛЕНО: Повертаємо 2 значення
         
     logging.info("Аналіз на дублікати (включно з історією) через Gemini...")
     recent_history = history_titles[-75:] if history_titles else []
@@ -448,11 +533,12 @@ def deduplicate_news(client, articles, history_titles=None, stats=None):
             for log_entry in rejection_log:
                 logging.info(f"   {log_entry.replace('<b>', '').replace('</b>', '')}")
                 
-        return filtered_articles
+        return filtered_articles, rejected_items # ОНОВЛЕНО: Повертаємо список відхилених
         
     except Exception as e:
-        logging.error(f"❌ Gemini API дедуплікації недоступний: {e}. Пропускаємо фільтрацію.")
-        return articles
+        # ЗМІНЕНО: Якщо API не працює - повертаємо порожні списки, щоб уникнути публікації спаму[cite: 6].
+        logging.error(f"❌ Gemini API дедуплікації недоступний: {e}. Зупиняємо фільтрацію (Fail Closed)[cite: 6].")
+        return [], []
 
 def prioritize_ukraine_news(backlog_items):
     ukraine_keywords = [
@@ -622,13 +708,26 @@ def process_backlog(stats=None):
     evaluated_urls = {item['url'] for item in candidate_batch}
     history_titles = load_history(TITLES_FILE)
     len_before = len(candidate_batch)
-    candidate_batch = deduplicate_news(client, candidate_batch, history_titles, stats=stats)
+    
+    # ОНОВЛЕНО: Отримуємо також відхилені новини[cite: 6]
+    candidate_batch, rejected_items = deduplicate_news(client, candidate_batch, history_titles, stats=stats)
     
     if stats is not None:
         stats["funnel"]["duplicates_removed_by_ai"] += (len_before - len(candidate_batch))
 
     batch = candidate_batch[:BATCH_SIZE]
-    if not batch: return
+    
+    # ОНОВЛЕНО: Логіка очищення беклогу[cite: 6]
+    approved_urls = {item['url'] for item in candidate_batch}
+    rejected_urls = evaluated_urls - approved_urls # Відхилені = перевірені мінус схвалені[cite: 6]
+    sent_urls = set()
+
+    if not batch: 
+        # Якщо нічого не обрано, просто видаляємо відхилені з беклогу[cite: 6]
+        remaining_backlog = [item for item in backlog if item['url'] not in rejected_urls]
+        remaining_backlog.sort(key=lambda x: x.get('timestamp', 0), reverse=True)
+        save_backlog(remaining_backlog[:30])
+        return
     
     used_sources_log = list(dict.fromkeys(item.get('source') for item in batch))
     logging.info(f"🔄 Обрано {len(batch)} новин. Головне джерело: {target_source}. Фактичні джерела: {', '.join(used_sources_log)}")
@@ -688,10 +787,13 @@ def process_backlog(stats=None):
 
     history_urls = load_history(HISTORY_FILE)
     history_titles = load_history(TITLES_FILE) 
-    successful_urls = []
 
     for idx, item in enumerate(batch):
         if idx >= len(generated_texts): break 
+        
+        # Базова валідація перекладу[cite: 6]
+        if not validate_translation_simple(generated_texts[idx]):
+             continue
         
         # Зворотна сумісність
         images = item.get('image_urls', [])
@@ -701,7 +803,7 @@ def process_backlog(stats=None):
         if send_to_telegram(generated_texts[idx], item['url'], item.get('source', 'Джерело'), images, tags=""):
             history_urls = save_to_history(history_urls, item['url'], HISTORY_FILE)
             history_titles = save_to_history(history_titles, item['title'], TITLES_FILE)
-            successful_urls.append(item['url'])
+            sent_urls.add(item['url'])
             
             if stats is not None:
                 stats["published"]["total"] += 1
@@ -720,13 +822,14 @@ def process_backlog(stats=None):
         else:
             if stats is not None: stats["errors_count"] += 1
 
-    approved_urls = {item['url'] for item in candidate_batch}
-    sent_urls = set(successful_urls)
-    
-    candidate_urls = {item['url'] for item in candidate_batch}
-    rejected_urls = candidate_urls - approved_urls
-    
-    remaining_backlog = [item for item in backlog if item['url'] not in evaluated_urls or (item['url'] in approved_urls and item['url'] not in sent_urls)]
+    # ОНОВЛЕНО: Формування нового беклогу з видаленням rejected_urls[cite: 6]
+    remaining_backlog = []
+    for item in backlog:
+        if item['url'] not in evaluated_urls:
+             remaining_backlog.append(item)
+        elif item['url'] in approved_urls and item['url'] not in sent_urls:
+             remaining_backlog.append(item)
+
     remaining_backlog.sort(key=lambda x: x.get('timestamp', 0), reverse=True)
     save_backlog(remaining_backlog[:30])
 
