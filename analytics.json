@@ -1,66 +1,5 @@
 [
   {
-    "timestamp": "2026-10-11 10:01:01",
-    "execution_time": 119.6,
-    "funnel": {
-      "scraped_total": 35,
-      "scraped_by_source": {
-        "023": 10,
-        "Slobodna dalmacija": 15,
-        "Zadarski list": 10
-      },
-      "already_seen": 9,
-      "rejected_by_keywords": 2,
-      "duplicates_removed_by_ai": 21,
-      "rejection_reasons_list": [
-        "• Priznat peti tip dijabetesa koji pogađa ... ➡️ <b>Світовий шум та лайфстайл</b>",
-        "• Dalmacija je sve toplija, a vode je sve ... ➡️ <b>Побут чужих міст / загальні поради</b>",
-        "• Sedam natjecatelja Plovanije vratilo se ... ➡️ <b>Спорт</b>",
-        "• Hrebak otvoreno o Plenkoviću, DP-u i idu... ➡️ <b>Політика національного рівня без прямого впливу на Задар чи діаспору</b>",
-        "• U Europi više od 500 energana na otpad, ... ➡️ <b>Екологічна загальна новина без прив'язки до Задара</b>",
-        "• Stakla u automobilu brže se odmagle uz o... ➡️ <b>Побут і лайфстайл</b>",
-        "• Kako čuti vrijeme: bili smo na berlinsko... ➡️ <b>Світовий шум та лайфстайл</b>",
-        "• Župan Blaž Pezo: ‘Radovi stoje godinu da... ➡️ <b>Побут чужих міст</b>",
-        "• Mjesec dana bez alkohola može poboljšati... ➡️ <b>Світовий шум та лайфстайл</b>",
-        "• Otkriven uzrok požara u reciklažnom cent... ➡️ <b>Побут чужих міст (Пула)</b>",
-        "• Lažne poruke više ne odaju pravopisne po... ➡️ <b>Абстрактні поради з кібербезпеки</b>",
-        "• Na Zagreb Prideu od 2021. dokumentirano ... ➡️ <b>Події в інших містах (Загреб)</b>",
-        "• TKD Plovanija briljirala na 12. Čigra Op... ➡️ <b>Спорт (дубль новини №3)</b>",
-        "• Stotinu brijača iz cijele zemlje okupilo... ➡️ <b>Дубль існуючої історії / дрібна подія</b>",
-        "• Privatni logopedi pred zatvaranjem praks... ➡️ <b>Побут чужих міст (Рієка)</b>",
-        "• Pljušte komentari, načelnik Lasić odgova... ➡️ <b>Побут чужих міст (Конавле)</b>",
-        "• Zbog olujnog vjetra između Senja i Svete... ➡️ <b>Побут іншого регіону (траса між Сењем і Магдаленою)</b>",
-        "• Ausgust Lambaša osvojio prsten za najbol... ➡️ <b>Спорт</b>",
-        "• Žene donose veliku većinu odluka u kućan... ➡️ <b>Абстрактне соціологічне дослідження</b>",
-        "• Zadar i Primorac ulovili ‘pun‘ plijen! I... ➡️ <b>Спорт (футбольний матч)</b>",
-        "• Rekordni prihodi i europska nagrada za D... ➡️ <b>Побут чужих міст (Дубровник)</b>"
-      ]
-    },
-    "backlog": {
-      "total_size": 23,
-      "sources": {
-        "Slobodna dalmacija": 10,
-        "023": 5,
-        "Zadarski list": 8
-      }
-    },
-    "published": {
-      "total": 2,
-      "ukraine_priority": 1,
-      "with_images": 2,
-      "text_only": 0,
-      "sources": {
-        "Slobodna dalmacija": 2
-      }
-    },
-    "models_used": {
-      "gemini-3.5-flash-lite": 2,
-      "gemini-3.5-flash": 0
-    },
-    "errors_count": 0,
-    "gemini_retries": 0
-  },
-  {
     "timestamp": "2026-10-11 11:01:03",
     "execution_time": 174.7,
     "funnel": {
@@ -5890,5 +5829,53 @@
     },
     "errors_count": 0,
     "gemini_retries": 5
+  },
+  {
+    "timestamp": "2026-10-20 19:01:09",
+    "execution_time": 223.9,
+    "funnel": {
+      "scraped_total": 35,
+      "scraped_by_source": {
+        "023": 10,
+        "Slobodna dalmacija": 15,
+        "Zadarski list": 10
+      },
+      "already_seen": 4,
+      "rejected_by_keywords": 19,
+      "duplicates_removed_by_ai": 11,
+      "rejection_reasons_list": [
+        "• NATO će poslati zrakoplove i dronove u Crno more nakon napada na brodo → Геоблок | Сутності: NATO, Crno more, Martin L. O’Donnell, Rusija",
+        "• Dubrovački muzeji i udruga Sve ostalo je glazba donose nastavak suradn → Побут інших міст | Сутності: Dubrovnik, Varaždin, Bunić-Kaboga",
+        "• Tko dobro razlikuje nijanse zvuka, brže svladava izgovor stranog jezik → Світовий шум | Сутності: UCL, Tohoku, Kazuya Saito",
+        "• Obilježava se Međunarodni dan kuhara → Світовий шум | Сутності: Međunarodni dan kuhara, International Chefs Day",
+        "• Državljani Srbije ipak će moći glasati u BiH → Геоблок | Сутності: Srbija, BiH, Elmedin Konaković, Staša Košarac",
+        "• Gimnazija Franje Petrića slavi veliku obljetnicu, pozvani su svi bivši → Дубль в історії | Сутності: Gimnazija Franje Petrića, MIOC, Zadar",
+        "• Franković: Ovim nisu zatvorena sva otvorena pitanja. Dobrosusjedski od → Геоблок | Сутності: Franković, Kotor, Morinj",
+        "• Documenta: Hitno saslušati dvije svjedokinje iz vojnog zatvora Lora → Побут інших міст | Сутності: Lora, Split, Documenta",
+        "• Derutni prizori u Nacionalnom parku! Ovog ljeta su ulaznice naplaćival → Побут інших міст | Сутності: Nacionalni park Krka, Skradinski buk, Franjo Josip I.",
+        "• Razum i osjećaji: Ženska snaga u lijepom krajoliku i nesklonim vremeni → Світовий шум | Сутності: Jane Austen, Daisy Edgar-Jones, Georgia Oakley",
+        "• Ministar Davor Božinović o navodima da navijače obučavaju ljudi s vojn → Геоблок | Сутності: Davor Božinović, Ivan Penava, Domovinski pokret"
+      ]
+    },
+    "backlog": {
+      "total_size": 0,
+      "sources": {}
+    },
+    "published": {
+      "total": 2,
+      "ukraine_priority": 0,
+      "with_images": 2,
+      "text_only": 0,
+      "sources": {
+        "Zadarski list": 1,
+        "Slobodna dalmacija": 1
+      }
+    },
+    "models_used": {
+      "gemini-3.6-flash": 0,
+      "gemini-3.5-flash-lite": 2
+    },
+    "errors_count": 0,
+    "gemini_retries": 6
   }
 ]
