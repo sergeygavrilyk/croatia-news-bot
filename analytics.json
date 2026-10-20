@@ -1,55 +1,5 @@
 [
   {
-    "timestamp": "2026-10-11 07:01:08",
-    "execution_time": 168.4,
-    "funnel": {
-      "scraped_total": 35,
-      "scraped_by_source": {
-        "023": 10,
-        "Slobodna dalmacija": 15,
-        "Zadarski list": 10
-      },
-      "already_seen": 2,
-      "rejected_by_keywords": 6,
-      "duplicates_removed_by_ai": 10,
-      "rejection_reasons_list": [
-        "• Nakon dogovora s Putinom oko dizela Trum... ➡️ <b>Світовий шум та зовнішня політика США щодо України, що не стосується безпосередньо Хорватії чи Задара.</b>",
-        "• U crkvi na Žabici služena misa na tagalo... ➡️ <b>Побут чужих міст (Рієка), що не стосується Задара.</b>",
-        "• Izdržite do popodne: evo kakvo nas vrije... ➡️ <b>Погода та новини іншого регіону (Дубровник), не стосується Задара.</b>",
-        "• U Sloveniji otvorena birališta, ljudi iz... ➡️ <b>Події в третіх країнах (Словенія), не стосуються Хорватії чи України.</b>",
-        "• Po kome je Cele dobila ime, gdje je bio ... ➡️ <b>Лайфстайл та історія іншого міста (Дубровник).</b>",
-        "• Uskokova optužnica protiv Roberta DiCapr... ➡️ <b>Кримінал у іншому місті (Рієка), не стосується Задара.</b>",
-        "• U velikom napadu hutista na zračnu luku ... ➡️ <b>Світовий шум та конфлікти у третіх країнах.</b>",
-        "• Zašto ne dolaze u Bijelu kuću? Trump nar... ➡️ <b>Світовий шум та події в США.</b>",
-        "• Ulica u Dubrovniku mjesecima raskopana, ... ➡️ <b>Побут чужих міст (Дубровник - ремонт вулиці).</b>",
-        "• Stotinu brijača iz cijele zemlje okupilo... ➡️ <b>Дубль існуючої події або дрібний локальний захід без істотного суспільного значення порівняно з іншими новинами Задара.</b>"
-      ]
-    },
-    "backlog": {
-      "total_size": 13,
-      "sources": {
-        "023": 4,
-        "Slobodna dalmacija": 5,
-        "Zadarski list": 4
-      }
-    },
-    "published": {
-      "total": 3,
-      "ukraine_priority": 0,
-      "with_images": 0,
-      "text_only": 3,
-      "sources": {
-        "023": 3
-      }
-    },
-    "models_used": {
-      "gemini-3.5-flash-lite": 2,
-      "gemini-3.5-flash": 0
-    },
-    "errors_count": 0,
-    "gemini_retries": 0
-  },
-  {
     "timestamp": "2026-10-11 08:01:03",
     "execution_time": 173.8,
     "funnel": {
@@ -5885,6 +5835,60 @@
       "text_only": 2,
       "sources": {
         "023": 2
+      }
+    },
+    "models_used": {
+      "gemini-3.6-flash": 0,
+      "gemini-3.5-flash-lite": 2
+    },
+    "errors_count": 0,
+    "gemini_retries": 4
+  },
+  {
+    "timestamp": "2026-10-20 12:01:09",
+    "execution_time": 179.8,
+    "funnel": {
+      "scraped_total": 35,
+      "scraped_by_source": {
+        "023": 10,
+        "Slobodna dalmacija": 15,
+        "Zadarski list": 10
+      },
+      "already_seen": 5,
+      "rejected_by_keywords": 10,
+      "duplicates_removed_by_ai": 17,
+      "rejection_reasons_list": [
+        "• Ovo mjesto u Dalmaciji je fenomen. Na pet tisuća radno sposobnih imaju → Побут інших міст | Сутності: Vodice, DDK, Sanja Radin Mačukat",
+        "• Udruga slijepih zahvalila se organizatorima, sudionicima i sugrađanima → Побут інших міст | Сутності: Dubrovnik, Udruga slijepih, Stradun",
+        "• Pogledajte kako je ovaj majstor parkirao svoj BMW: raširio se toliko d → Дубль в історії | Сутності: Prometne zgode i nezgode, BMW, Zadar",
+        "• Dovršene dvije akcije uređenja u Parku prirode Učka → Побут інших міст | Сутності: Park prirode Učka, Vela draga, Glas Istre",
+        "• Ustaše nakon rata ubili drniškog učitelja zajedno s njegovim vozačem!  → Побут інших міст | Сутності: Vjekoslav Širinić, Drniš, Josip Bitunjac",
+        "• Legendarni Macola ponovno investira u Korenici; Nakon janjetine i hote → Побут інших міст | Сутності: Macola, Korenica, Željko Orešković",
+        "• Iva Juračić Milat nova ravnateljica Dječjeg vrtića Opatija → Побут інших міст | Сутності: Opatija, Iva Juračić Milat, Dječji vrtić",
+        "• ‘Život u Šibeniku postaje luksuz!‘; Izračunali smo koliko će novi udar → Побут інших міст | Сутності: Šibenik, Željko Burić, Gradsko vijeće",
+        "• Veliki pad Revoluta: Aplikacija ne radi, kartice se odbijaju u trgovin → Світовий шум | Сутності: Revolut, Index, Google Cloud",
+        "• Velik odaziv na akciju mjerenja šećera u krvi i tlaka na Mlaki → Побут інших міст | Сутності: Rijeka, Mlaka, Mjesni odbor",
+        "• Ne možete platiti Revolutom? Riječ je o problemu o kojem se u bankarst → Дубль в історії | Сутності: Revolut, Downdetector, Nik Storonsky",
+        "• Digitalizacija, novi propisi i manjak radnika: računovođe traže konkre → Побут інших міст | Сутності: HOK, Đurđica Mostarčić, Petrčani",
+        "• Kakva nas zima čeka? DHMZ najavljuje topliji prosinac, evo što pokazuj → Світовий шум | Сутності: DHMZ, Novi list, Hrvatska",
+        "• Šeks na skupu u Pločama bez dlake na jeziku: ‘Bila su to teška vremena → Побут інших міст | Сутності: Ploče, HDZ, Josip Manolić",
+        "• Ministar financija Ćorić: ‘Zahtjevi sindikata javnih službi nisu prihv → Світовий шум | Сутності: Tomislav Ćorić, Vlada, Sindikati",
+        "• Zadar čeka 13 električnih autobusa iz Kine: na putu je velika prepreka → Дубль в історії | Сутності: Zadar, Kina, Gaženica",
+        "• Iz gradske uprave upozoravaju na nevrijeme: građanima savjetuju dodata → Побут інших міст | Сутності: Dubrovnik, DHMZ, Jugo"
+      ]
+    },
+    "backlog": {
+      "total_size": 0,
+      "sources": {}
+    },
+    "published": {
+      "total": 3,
+      "ukraine_priority": 0,
+      "with_images": 2,
+      "text_only": 1,
+      "sources": {
+        "023": 1,
+        "Slobodna dalmacija": 2
       }
     },
     "models_used": {
