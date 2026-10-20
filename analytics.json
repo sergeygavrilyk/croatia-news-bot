@@ -1,68 +1,5 @@
 [
   {
-    "timestamp": "2026-10-10 13:01:05",
-    "execution_time": 16.6,
-    "funnel": {
-      "scraped_total": 35,
-      "scraped_by_source": {
-        "023": 10,
-        "Slobodna dalmacija": 15,
-        "Zadarski list": 10
-      },
-      "already_seen": 22,
-      "rejected_by_keywords": 5,
-      "duplicates_removed_by_ai": 25,
-      "rejection_reasons_list": [
-        "• Glad ubrzo nakon jela? Ove namirnice pom... ➡️ <b>Світовий шум та лайфстайл, поради щодо харчування</b>",
-        "• “Pljačka vam materina, sjašite više”: Po... ➡️ <b>Дубль новини ID 8</b>",
-        "• Bablje ljeto se ne da! Drugi je vikend l... ➡️ <b>Побут чужих міст (Шибеник)</b>",
-        "• Drvena ili plastična daska za rezanje: i... ➡️ <b>Світовий шум та лайфстайл, побутові поради</b>",
-        "• I premijer Plenković izrazio sućut zbog ... ➡️ <b>Переказ новини з історії про смерть Горана Баре без суттєвих нових оновлень</b>",
-        "• Preminuo je gospar Stjepan Masle, dugogo... ➡️ <b>Локальна новина іншого міста (Дубровник), не стосується Задара</b>",
-        "• Pet pasmina pasa koje važe za najotporni... ➡️ <b>Світовий шум та лайфстайл</b>",
-        "• Nexe potvrdio da je dosad zaprimio četir... ➡️ <b>Дубль новини ID 11</b>",
-        "• ‘Za svaki hotelski apartman koji se otvo... ➡️ <b>Переказ вчорашньої події про просуди у Загребі без кардинальних нових оновлень</b>",
-        "• Veza više nije tajna, Maja Šuput potvrdi... ➡️ <b>Дубль новини ID 14 (шоу-бізнес)</b>",
-        "• Nova pravila! Evo tko će morati platiti ... ➡️ <b>Переказ загальної інформації про системи подорожей без нагального зв'язку з Хорватією та Задаром на сьогодні</b>",
-        "• Građani Našica danas opet prosvjedovali ... ➡️ <b>Повторна новина про протести в Нашицах щодо відходів, тема вже була висвітлена в історії</b>",
-        "• Zima nam ipak uskoro stiže: provjerili s... ➡️ <b>Побут чужих міст (Дубровник)</b>",
-        "• Treba li svijet strahovati od navodne po... ➡️ <b>Світовий шум (події в третіх країнах, РФ)</b>",
-        "• Prva ‘službena pusa‘ pjevačice i poduzet... ➡️ <b>Шоу-бізнес (світські плітки)</b>",
-        "• Kupci skupog iPhonea 18 Pro prijavljuju ... ➡️ <b>Світовий шум / технологічні новини гаджетів без прямого стосунку до України чи Хорватії</b>",
-        "• U Otavicama je 75 godišnjak letvom izmla... ➡️ <b>Дубль новини ID 20</b>",
-        "• ASOS potvrdio hakerski upad. Do podataka... ➡️ <b>Світовий шум / кібербезпека комерційного бренду</b>",
-        "• U Močićima nema vode, evo do kada... ➡️ <b>Побут чужого міста (Конавле/Мочичі)</b>",
-        "• Mostovu peticiju za raskidanje koncesija... ➡️ <b>Локальна політика регіону ПГЖ, не стосується Задара</b>",
-        "• U Otavicama se žestoko obračunali 75-god... ➡️ <b>Дрібний кримінал у чужому місті (Дрніш)</b>",
-        "• Epidemiologe brine opasna crijevna infek... ➡️ <b>Світовий шум / медичні дослідження в США</b>",
-        "• Počeli radovi na nadvožnjaku kod Dalmare... ➡️ <b>Побут чужого міста (Шибеник)</b>",
-        "• U selu na Sardiniji žene imaju veliku ša... ➡️ <b>Світовий шум / наукове дослідження в Італії</b>",
-        "• Najviše je sporova u građevinskom sektor... ➡️ <b>Абстрактна економічна аналітика світового рівня без прив'язки до актуального контексту</b>"
-      ]
-    },
-    "backlog": {
-      "total_size": 30,
-      "sources": {
-        "Slobodna dalmacija": 16,
-        "023": 3,
-        "Zadarski list": 11
-      }
-    },
-    "published": {
-      "total": 0,
-      "ukraine_priority": 0,
-      "with_images": 0,
-      "text_only": 0,
-      "sources": {}
-    },
-    "models_used": {
-      "gemini-3.5-flash-lite": 1,
-      "gemini-3.5-flash": 0
-    },
-    "errors_count": 0,
-    "gemini_retries": 0
-  },
-  {
     "timestamp": "2026-10-10 14:01:03",
     "execution_time": 17.2,
     "funnel": {
@@ -5963,5 +5900,51 @@
     },
     "errors_count": 0,
     "gemini_retries": 0
+  },
+  {
+    "timestamp": "2026-10-20 07:01:08",
+    "execution_time": 162.0,
+    "funnel": {
+      "scraped_total": 35,
+      "scraped_by_source": {
+        "023": 10,
+        "Slobodna dalmacija": 15,
+        "Zadarski list": 10
+      },
+      "already_seen": 3,
+      "rejected_by_keywords": 9,
+      "duplicates_removed_by_ai": 9,
+      "rejection_reasons_list": [
+        "• Kad će biti napravljen i gdje će stajati? Miho Bukvić: ‘Mogao ga je do → Побут чужих міст (Дубровник), не стосується Задара | Сутності: Miho Bukvić, Dubrovnik, Marko Mujan, Pilama",
+        "• EU pred savršenom političkom olujom. Pod pritiskom je sa svih strana,  → Дубль/історія (вже є детальний огляд політичної ситуації та криз в ЄС) | Сутності: Europska unija, Politico, Ukrajina, Nikos Hristodulides",
+        "• U ulozi Carmen izmjenjivat će se operne prvakinje Sofija Petrović i Em → Побут чужих міст (Загреб), культурна подія не загальнонаціонального рівня для діаспори | Сутності: HNK Zagreb, Sofija Petrović, Emilija Rukavina, Carmen",
+        "• Rabljanin u Parizu: “Grad je kao bojište, ovako nešto još nikada nisam → Інші країни (геоблок): події у Франції не стосуються напряму українців у Хорватії | Сутності: Pariz, Francuska, Emmanuel Macron, Laurent Nunez",
+        "• Plemenita gesta s Vitrenjaka; JK Uskok donirao 35 litara klupskog masl → Дубль (новина про благодійну акцію JK Uskok вже є в історії) | Сутності: JK Uskok, Vitrenjak, Zadar, Pučka kuhinja",
+        "• Može li AI pomoći u stvaranju biološkog oružja? Obavještajci upozorava → Світовий шум: абстрактна технологія та безпека за межами Хорватії та України | Сутності: Ken McCallum, MI5, Anthropic, Claude",
+        "• Ponos Medicinske škole Ante Kuzmanića; Učenica Leonarda Rukavina pobje → Дубль (успіх учениці вже є у списку історії) | Сутності: Leonarda Rukavina, Medicinska škola Ante Kuzmanića Zadar, Mali Galović",
+        "• Sunčani utorak samo je predah: jugo s olujnim udarima i pljuskovi s gr → Дубль/історія: прогноз погоди про шторм і дощі вже детально висвітлено в історії | Сутності: Zadar, Nina, Pag, Jugo",
+        "• Psovke i svađe s nevidljivim sugovornikom: što su znanstvenici čuli sn → Світовий шум: абстрактна наука та поради щодо сну | Сутності: Sleep, somnilokviju, Journal of Clinical Neuroscience, Večernji list"
+      ]
+    },
+    "backlog": {
+      "total_size": 0,
+      "sources": {}
+    },
+    "published": {
+      "total": 2,
+      "ukraine_priority": 0,
+      "with_images": 1,
+      "text_only": 1,
+      "sources": {
+        "023": 1,
+        "Slobodna dalmacija": 1
+      }
+    },
+    "models_used": {
+      "gemini-3.6-flash": 1,
+      "gemini-3.5-flash-lite": 1
+    },
+    "errors_count": 0,
+    "gemini_retries": 3
   }
 ]
