@@ -1,66 +1,5 @@
 [
   {
-    "timestamp": "2026-10-11 09:01:05",
-    "execution_time": 171.4,
-    "funnel": {
-      "scraped_total": 35,
-      "scraped_by_source": {
-        "023": 10,
-        "Slobodna dalmacija": 15,
-        "Zadarski list": 10
-      },
-      "already_seen": 7,
-      "rejected_by_keywords": 3,
-      "duplicates_removed_by_ai": 20,
-      "rejection_reasons_list": [
-        "• Na Zagreb Prideu od 2021. dokumentirano ... ➡️ <b>Побут чужих міст та події не належать до Задара чи національного рівня</b>",
-        "• Sedam natjecatelja Plovanije vratilo se ... ➡️ <b>Спорт</b>",
-        "• Stakla u automobilu brže se odmagle uz o... ➡️ <b>Світловий шум та лайфстайл, порада</b>",
-        "• Ako ste ovu pancetu kupili u Studenca, n... ➡️ <b>Дубль новини ID 3</b>",
-        "• Privatni logopedi pred zatvaranjem praks... ➡️ <b>Побут чужих міст (Рієка)</b>",
-        "• Mjesec dana bez alkohola može poboljšati... ➡️ <b>Світловий шум та лайфстайл</b>",
-        "• TKD Plovanija briljirala na 12. Čigra Op... ➡️ <b>Спорт</b>",
-        "• Zbog olujnog vjetra između Senja i Svete... ➡️ <b>Побут чужих міст, віддалена локація</b>",
-        "• Lažne poruke više ne odaju pravopisne po... ➡️ <b>Світловий шум та загальні поради</b>",
-        "• Žene donose veliku većinu odluka u kućan... ➡️ <b>Світловий шум та соціологія</b>",
-        "• Stotinu brijača iz cijele zemlje okupilo... ➡️ <b>Дубль або локальний лайфстайл без важливої новини</b>",
-        "• Pljušte komentari, načelnik Lasić odgova... ➡️ <b>Побут чужих міст (Конавле/Дубровник)</b>",
-        "• Radovi na Centru za gospodarenje otpadom... ➡️ <b>Побут чужих міст (Дубровник)</b>",
-        "• Teška prometna nesreća na A1 kod Nadina ... ➡️ <b>Дубль новини ID 11</b>",
-        "• Luka trpi štetu zbog zatvaranja pruge: a... ➡️ <b>Побут чужих міст та інфраструктура Рієки</b>",
-        "• Ausgust Lambaša osvojio prsten za najbol... ➡️ <b>Спорт</b>",
-        "• U crkvi na Žabici služena misa na tagalo... ➡️ <b>Побут чужих міст (Рієка)</b>",
-        "• Rekordni prihodi i europska nagrada za D... ➡️ <b>Побут чужих міст (Дубровник)</b>",
-        "• Izdržite do popodne: evo kakvo nas vrije... ➡️ <b>Побут чужих міст (Дубровник)</b>",
-        "• Po kome je Cele dobila ime, gdje je bio ... ➡️ <b>Світловий шум та історія іншого міста</b>"
-      ]
-    },
-    "backlog": {
-      "total_size": 24,
-      "sources": {
-        "023": 5,
-        "Slobodna dalmacija": 11,
-        "Zadarski list": 8
-      }
-    },
-    "published": {
-      "total": 3,
-      "ukraine_priority": 0,
-      "with_images": 3,
-      "text_only": 0,
-      "sources": {
-        "Slobodna dalmacija": 2,
-        "Zadarski list": 1
-      }
-    },
-    "models_used": {
-      "gemini-3.5-flash-lite": 2,
-      "gemini-3.5-flash": 0
-    },
-    "errors_count": 0,
-    "gemini_retries": 0
-  },
-  {
     "timestamp": "2026-10-11 10:01:01",
     "execution_time": 119.6,
     "funnel": {
@@ -5897,5 +5836,59 @@
     },
     "errors_count": 0,
     "gemini_retries": 4
+  },
+  {
+    "timestamp": "2026-10-20 15:01:08",
+    "execution_time": 341.4,
+    "funnel": {
+      "scraped_total": 35,
+      "scraped_by_source": {
+        "023": 10,
+        "Slobodna dalmacija": 15,
+        "Zadarski list": 10
+      },
+      "already_seen": 3,
+      "rejected_by_keywords": 15,
+      "duplicates_removed_by_ai": 14,
+      "rejection_reasons_list": [
+        "• Trump, Putin i Xi kroje novi svjetski poredak: “Ovo bi mogla biti nova → Геоблок | Сутності: Trump, Putin, Xi, Zelensky, China",
+        "• Ovo mjesto u Dalmaciji je fenomen. Na pet tisuća radno sposobnih imaju → Побут інших міст | Сутності: Vodice, Šibenik-Knin, Sanja Radin Mačukat",
+        "• Derutni prizori u Nacionalnom parku! Ovog ljeta su ulaznice naplaćival → Побут інших міст | Сутності: National Park Krka, Skradinski Buk, Šibenik",
+        "• Zeleno svjetlo prvom riječkom studiju o umjetnoj inteligenciji → Побут інших міст | Сутності: University of Rijeka, Tehnički fakultet, Željko Vrcan",
+        "• Razum i osjećaji: Ženska snaga u lijepom krajoliku i nesklonim vremeni → Світовий шум | Сутності: Jane Austen, Sense and Sensibility, Georgia Oakley",
+        "• Gimnazija Franje Petrića slavi veliku obljetnicu, pozvani su svi bivši → Дубль в історії | Сутності: Gimnazija Franje Petrića, Zadar, MIOC",
+        "• Plenković: Politika ravnomjernog regionalnog razvoja jedna od najuspje → Дубль в історії | Сутності: Andrej Plenković, Šibenik, Vlada RH",
+        "• Legendarni Macola ponovno investira u Korenici; Nakon janjetine i hote → Побут інших міст | Сутності: Macola, Korenica, Željko Orešković",
+        "• Izložba o Bijenalu mladih u MMSU Rijeka: Retrospektivan pogled na veli → Побут інших міст | Сутності: MMSU Rijeka, Branka Benčić, Bijenale mladih",
+        "• Pogledajte kako je ovaj majstor parkirao svoj BMW: raširio se toliko d → Дубль в історії | Сутності: BMW, Zadar, Prometne zgode i nezgode",
+        "• Svjedokinja na suđenju Obersnelu opisala Baraćeve probleme s plaćanjem → Побут інших міст | Сутності: Vojko Obersnel, Rijeka, Samir Barać",
+        "• Ustaše nakon rata ubili drniškog učitelja zajedno s njegovim vozačem!  → Побут інших міст | Сутності: Vjekoslav Širinić, Drniš, Josip Bitunjac",
+        "• Capak: Razmatra se prestanak rutinskog cijepljenja djece protiv tuberk → Дубль в історії | Сутності: Krunoslav Capak, HZJZ, Zagreb",
+        "• ‘Život u Šibeniku postaje luksuz!‘; Izračunali smo koliko će novi udar → Побут інших міст | Сутності: Šibenik, Željko Burić, Gradsko vijeće"
+      ]
+    },
+    "backlog": {
+      "total_size": 1,
+      "sources": {
+        "Slobodna dalmacija": 1
+      }
+    },
+    "published": {
+      "total": 3,
+      "ukraine_priority": 0,
+      "with_images": 2,
+      "text_only": 1,
+      "sources": {
+        "023": 1,
+        "Zadarski list": 1,
+        "Slobodna dalmacija": 1
+      }
+    },
+    "models_used": {
+      "gemini-3.6-flash": 0,
+      "gemini-3.5-flash-lite": 2
+    },
+    "errors_count": 0,
+    "gemini_retries": 5
   }
 ]
