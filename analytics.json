@@ -1,69 +1,5 @@
 [
   {
-    "timestamp": "2026-10-10 19:01:05",
-    "execution_time": 77.3,
-    "funnel": {
-      "scraped_total": 35,
-      "scraped_by_source": {
-        "023": 10,
-        "Slobodna dalmacija": 15,
-        "Zadarski list": 10
-      },
-      "already_seen": 4,
-      "rejected_by_keywords": 9,
-      "duplicates_removed_by_ai": 24,
-      "rejection_reasons_list": [
-        "• Njemačka će zadržati sankcije Rusiji i n... ➡️ <b>Світовий шум та лайфстайл</b>",
-        "• Crveni križ Dubrovnik i ove godine u akc... ➡️ <b>Побут чужих міст</b>",
-        "• Od fotografije preko baleta do vaterpola... ➡️ <b>Побут чужих міст</b>",
-        "• Novi poginuli Palestinci u izraelskim na... ➡️ <b>Світовий шум та лайфстайл</b>",
-        "• Žene iz malog sardinijskog mjesta imaju ... ➡️ <b>Світовий шум та лайфстайл</b>",
-        "• ‘Nepozvani gosti‘ u Sućurju! Probijaju o... ➡️ <b>Побут чужих міст</b>",
-        "• U vodi s izvora iznad Zagreba pronađene ... ➡️ <b>Побут чужих міст</b>",
-        "• Teleskop James Webb proučio prašinu nast... ➡️ <b>Світовий шум та лайфстайл</b>",
-        "• Pruga za Rijeku bit će zatvorena danima.... ➡️ <b>Історія вже присутня в опитуванні та застаріла</b>",
-        "• Hladan zrak u kući možete zaustaviti s n... ➡️ <b>Світовий шум та лайфстайл</b>",
-        "• Uspješno održan 3. Susret brijača – Barb... ➡️ <b>Дубль або несуттєва подія</b>",
-        "• Sanchez krenuo u izbornu kampanju obećan... ➡️ <b>Світовий шум та лайфстайл</b>",
-        "• Glad ubrzo nakon jela? Ove namirnice pom... ➡️ <b>Світовий шум та лайфстайл</b>",
-        "• Zahladilo je i pojeli biste neki kolač? ... ➡️ <b>Світовий шум та лайфстайл</b>",
-        "• Više od 70 uhićenja nakon napada nožem u... ➡️ <b>Світовий шум та лайфстайл</b>",
-        "• Drvena ili plastična daska za rezanje: i... ➡️ <b>Світовий шум та лайфстайл</b>",
-        "• Kvaliteta zraka u Vidu značajno bolja, g... ➡️ <b>Побут чужих міст</b>",
-        "• Tko određuje što je normalno? Michel Fou... ➡️ <b>Світовий шум та лайфстайл</b>",
-        "• Pet pasmina pasa koje važe za najotporni... ➡️ <b>Світовий шум та лайфстайл</b>",
-        "• Unatoč kiši turisti i domaći ne odsutaju... ➡️ <b>Побут чужих міст</b>",
-        "• Nexe potvrdio da je dosad zaprimio četir... ➡️ <b>Історія вже присутня в історії</b>",
-        "• Bablje ljeto se ne da! Drugi je vikend l... ➡️ <b>Побут чужих міст</b>",
-        "• Građani Našica danas opet prosvjedovali ... ➡️ <b>Історія вже присутня в історії</b>",
-        "• Počeli radovi na nadvožnjaku kod Dalmare... ➡️ <b>Побут чужих міст</b>"
-      ]
-    },
-    "backlog": {
-      "total_size": 36,
-      "sources": {
-        "Zadarski list": 15,
-        "Slobodna dalmacija": 15,
-        "023": 6
-      }
-    },
-    "published": {
-      "total": 1,
-      "ukraine_priority": 0,
-      "with_images": 1,
-      "text_only": 0,
-      "sources": {
-        "Slobodna dalmacija": 1
-      }
-    },
-    "models_used": {
-      "gemini-3.5-flash-lite": 2,
-      "gemini-3.5-flash": 0
-    },
-    "errors_count": 0,
-    "gemini_retries": 0
-  },
-  {
     "timestamp": "2026-10-11 07:01:08",
     "execution_time": 168.4,
     "funnel": {
@@ -5895,6 +5831,60 @@
       "sources": {
         "Slobodna dalmacija": 2,
         "023": 1
+      }
+    },
+    "models_used": {
+      "gemini-3.6-flash": 0,
+      "gemini-3.5-flash-lite": 2
+    },
+    "errors_count": 0,
+    "gemini_retries": 4
+  },
+  {
+    "timestamp": "2026-10-20 11:01:05",
+    "execution_time": 200.5,
+    "funnel": {
+      "scraped_total": 35,
+      "scraped_by_source": {
+        "023": 10,
+        "Slobodna dalmacija": 15,
+        "Zadarski list": 10
+      },
+      "already_seen": 7,
+      "rejected_by_keywords": 11,
+      "duplicates_removed_by_ai": 18,
+      "rejection_reasons_list": [
+        "• Udruga slijepih zahvalila se organizatorima, sudionicima i sugrađanima → Побут інших міст | Сутності: Udruga slijepih, Dubrovnik, Dubrovačka trpeza, Stradun",
+        "• Zelenski u Oslu s Witkoffom zbog pogoršanja odnosa sa SAD-om → Геоблок | Сутності: Volodimir Zelenski, Steve Witkoff, Oslo, SAD",
+        "• Velik odaziv na akciju mjerenja šećera u krvi i tlaka na Mlaki → Побут інших міст | Сутності: Rijeka, Mlaka, Mjesni odbor, šećer",
+        "• Šeks na skupu u Pločama bez dlake na jeziku: ‘Bila su to teška vremena → Побут інших міст | Сутності: Vladimir Šeks, Ploče, HDZ, Franjo Tuđman",
+        "• Legendarni Macola ponovno investira u Korenici; Nakon janjetine i hote → Побут інших міст | Сутності: Macola, Korenica, Željko Orešković, Lika",
+        "• Digitalizacija, novi propisi i manjak radnika: računovođe traže konkre → Побут інших міст | Сутності: HOK, Đurđica Mostarčić, Petrčani, Porezna uprava",
+        "• Ministar financija Ćorić: ‘Zahtjevi sindikata javnih službi nisu prihv → Геоблок | Сутності: Tomislav Ćorić, Vlada, sindikati, proračun",
+        "• Kakva nas zima čeka? DHMZ najavljuje topliji prosinac, evo što pokazuj → Геоблок | Сутності: DHMZ, Hrvatska, prosinac, zima",
+        "• Zadar čeka 13 električnih autobusa iz Kine: na putu je velika prepreka → Дубль в історії | Сутності: Zadar, električni autobusi, Kina, javni prijevoz",
+        "• Veliki pad Revoluta: Aplikacija ne radi, kartice se odbijaju u trgovin → Геоблок | Сутності: Revolut, Hrvatska, Europa, Downdetector",
+        "• Je li hrana pojeftinila i kako to građani osjećaju? SPAR se poziva na  → Геоблок | Сутності: SPAR, DZS, Hrvatska, S-BUDGET",
+        "• Iz gradske uprave upozoravaju na nevrijeme: građanima savjetuju dodata → Побут інших міст | Сутності: Dubrovnik, DHMZ, jugo, meteoaalarm",
+        "• Jadranka Kosor prva gošća podcasta HEJTi! Nove TV → Реклама | Сутності: Nova TV, Jadranka Kosor, Mia Kovačić, Gabrijela Kišiček",
+        "• Proslava u Pločama: Vladimir Šeks ‘opleo‘ po Vučiću, Grmoji, Bulju...‘ → Побут інших міст | Сутності: Vladimir Šeks, Ploče, Aleksandar Vučić, HDZ",
+        "• Tražite posao na jugu Dalmacije? Policija zapošljava, a jedan detalj n → Побут інших міст | Сутності: MUP, Dubrovnik, policija, natječaj",
+        "• Izvanredno se obratila njegova sestra Kim Yo Jong i zaprijetila Južnoj → Геоблок | Сутності: Kim Yo Jong, Kim Jong Un, Sjeverna Koreja, Južna Koreja",
+        "• Studenti najavili ‘ustanak‘ protiv ‘Studenca‘, a iz trgovačkog lanca o → Дубль в історії | Сутності: Studenac, Split, studenti, predstečaj",
+        "• Bez vode dio Riječke ulice → Побут інших міст | Сутності: Vodovod Dubrovnik, Riječka ulica, Dubrovnik, radovi"
+      ]
+    },
+    "backlog": {
+      "total_size": 0,
+      "sources": {}
+    },
+    "published": {
+      "total": 2,
+      "ukraine_priority": 0,
+      "with_images": 0,
+      "text_only": 2,
+      "sources": {
+        "023": 2
       }
     },
     "models_used": {
