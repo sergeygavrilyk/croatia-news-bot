@@ -1,67 +1,5 @@
 [
   {
-    "timestamp": "2026-10-10 16:01:03",
-    "execution_time": 172.3,
-    "funnel": {
-      "scraped_total": 35,
-      "scraped_by_source": {
-        "023": 10,
-        "Slobodna dalmacija": 15,
-        "Zadarski list": 10
-      },
-      "already_seen": 6,
-      "rejected_by_keywords": 7,
-      "duplicates_removed_by_ai": 21,
-      "rejection_reasons_list": [
-        "• Crveni križ Dubrovnik i ove godine u akc... ➡️ <b>Побут чужого міста (Дубровник)</b>",
-        "• Kvaliteta zraka u Vidu značajno bolja, g... ➡️ <b>Побут чужого міста (Меткович)</b>",
-        "• Teleskop James Webb proučio prašinu nast... ➡️ <b>Світовий шум та лайфстайл</b>",
-        "• Unatoč kiši turisti i domaći ne odsutaju... ➡️ <b>Побут чужого міста (Дубровник)</b>",
-        "• “U mreži stih”: Deset godina povezivanja... ➡️ <b>Побут чужого міста (Рієка)</b>",
-        "• Hladan zrak u kući možete zaustaviti s n... ➡️ <b>Поради та лайфстайл</b>",
-        "• Bablje ljeto se ne da! Drugi je vikend l... ➡️ <b>Побут чужого міста (Шибеник)</b>",
-        "• Ministar Vlajčić prvi put posjetio Bunde... ➡️ <b>Побут чужого міста (Врбовсько)</b>",
-        "• Glad ubrzo nakon jela? Ove namirnice pom... ➡️ <b>Поради дієтологів та лайфстайл</b>",
-        "• Preminuo je gospar Stjepan Masle, dugogo... ➡️ <b>Побут чужого міста (Дубровник)</b>",
-        "• Obožavatelji, kolege i političari oprašt... ➡️ <b>Дубль новини про смерть Горана Баре, яка вже є в історії</b>",
-        "• Drvena ili plastična daska za rezanje: i... ➡️ <b>Поради та лайфстайл</b>",
-        "• Operativne snage Civilne zaštite u Petro... ➡️ <b>Побут чужого міста (Рієка)</b>",
-        "• Pet pasmina pasa koje važe za najotporni... ➡️ <b>Світовий шум та лайфстайл</b>",
-        "• Zima nam ipak uskoro stiže: provjerili s... ➡️ <b>Побут чужого міста (Дубровник)</b>",
-        "• Po Novom Vinodolskom vozio auto s međuna... ➡️ <b>Побут чужого міста (Новий Винодолський)</b>",
-        "• Prva ‘službena pusa‘ pjevačice i poduzet... ➡️ <b>Шоу-бізнес</b>",
-        "• U Otavicama je 75 godišnjak letvom izmla... ➡️ <b>Локальний кримінал несуттєвий для національного чи задарського рівня</b>",
-        "• U Močićima nema vode, evo do kada... ➡️ <b>Побут чужого міста (Конавле)</b>",
-        "• Veza više nije tajna, Maja Šuput potvrdi... ➡️ <b>Шоу-бізнес</b>",
-        "• U Otavicama se žestoko obračunali 75-god... ➡️ <b>Дубль новини про інцидент в Отавицах</b>"
-      ]
-    },
-    "backlog": {
-      "total_size": 39,
-      "sources": {
-        "Zadarski list": 16,
-        "Slobodna dalmacija": 18,
-        "023": 5
-      }
-    },
-    "published": {
-      "total": 3,
-      "ukraine_priority": 0,
-      "with_images": 3,
-      "text_only": 0,
-      "sources": {
-        "Zadarski list": 2,
-        "Slobodna dalmacija": 1
-      }
-    },
-    "models_used": {
-      "gemini-3.5-flash-lite": 2,
-      "gemini-3.5-flash": 0
-    },
-    "errors_count": 0,
-    "gemini_retries": 0
-  },
-  {
     "timestamp": "2026-10-10 19:01:05",
     "execution_time": 77.3,
     "funnel": {
@@ -5914,5 +5852,56 @@
     },
     "errors_count": 0,
     "gemini_retries": 2
+  },
+  {
+    "timestamp": "2026-10-20 10:01:09",
+    "execution_time": 189.0,
+    "funnel": {
+      "scraped_total": 35,
+      "scraped_by_source": {
+        "023": 10,
+        "Slobodna dalmacija": 15,
+        "Zadarski list": 10
+      },
+      "already_seen": 5,
+      "rejected_by_keywords": 13,
+      "duplicates_removed_by_ai": 11,
+      "rejection_reasons_list": [
+        "• Zelenski u Oslu s Witkoffom zbog pogoršanja odnosa sa SAD-om → Геоблок | Сутності: Volodimir Zelenski, Steve Witkoff, Oslo, SAD",
+        "• Jadranka Kosor prva gošća podcasta HEJTi! Nove TV → Побут інших міст | Сутності: Jadranka Kosor, Mia Kovačić, Nova TV, Zagreb",
+        "• Jeste li ga vidjeli? Policija traži muškarca zbog kaznenog djela u zag → Побут інших міст | Сутності: Zagrebačka policija, Britanski trg, Ulica Republike Austrije",
+        "• Za 89 mačaka spašenih iz stana u Rijeci stiže više od dvije tone hrane → Побут інших міст | Сутності: Rijeka, dm, Kitten Safe House",
+        "• Novi propagandni rat u BiH: Plakati optužuju Aliju Izetbegovića za zlo → Геоблок | Сутності: Alija Izetbegović, Istočno Sarajevo, Republika Srpska",
+        "• Proslava u Pločama: Vladimir Šeks ‘opleo‘ po Vučiću, Grmoji, Bulju...‘ → Побут інших міст | Сутності: Vladimir Šeks, Ploče, HDZ",
+        "• Grad Gospić osigurao sredstva za pokrivanje troškova najma stana mladi → Побут інших міст | Сутності: Gospić, Darko Milinović",
+        "• Tražite posao na jugu Dalmacije? Policija zapošljava, a jedan detalj n → Побут інших міст | Сутності: MUP, Dubrovačko-neretvanska županija",
+        "• Izvanredno se obratila njegova sestra Kim Yo Jong i zaprijetila Južnoj → Геоблок | Сутності: Kim Yo Jong, Južna Koreja, Sjeverna Koreja",
+        "• Studenti najavili ‘ustanak‘ protiv ‘Studenca‘, a iz trgovačkog lanca o → Дубль в історії | Сутності: Studenac, Split, Trgovački sud",
+        "• Tko je u četvrtak bez struje? → Дубль в історії | Сутності: Elektrojug, Čelopeci, Kučište"
+      ]
+    },
+    "backlog": {
+      "total_size": 3,
+      "sources": {
+        "Slobodna dalmacija": 2,
+        "023": 1
+      }
+    },
+    "published": {
+      "total": 3,
+      "ukraine_priority": 0,
+      "with_images": 2,
+      "text_only": 1,
+      "sources": {
+        "Slobodna dalmacija": 2,
+        "023": 1
+      }
+    },
+    "models_used": {
+      "gemini-3.6-flash": 0,
+      "gemini-3.5-flash-lite": 2
+    },
+    "errors_count": 0,
+    "gemini_retries": 4
   }
 ]
