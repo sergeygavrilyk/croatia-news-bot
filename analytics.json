@@ -1,67 +1,5 @@
 [
   {
-    "timestamp": "2026-10-10 15:01:02",
-    "execution_time": 186.2,
-    "funnel": {
-      "scraped_total": 35,
-      "scraped_by_source": {
-        "023": 10,
-        "Slobodna dalmacija": 15,
-        "Zadarski list": 10
-      },
-      "already_seen": 26,
-      "rejected_by_keywords": 4,
-      "duplicates_removed_by_ai": 21,
-      "rejection_reasons_list": [
-        "• “Život uz prugu postao je noćna mora”. O... ➡️ <b>Дубль існуючої новини про залізничну аварію</b>",
-        "• Hladan zrak u kući možete zaustaviti s n... ➡️ <b>Побут та лайфстайл поради</b>",
-        "• Kvaliteta zraka u Vidu značajno bolja, g... ➡️ <b>Побут іншого міста (Меткович)</b>",
-        "• Po Novom Vinodolskom vozio auto s međuna... ➡️ <b>Кримінал іншого регіону поза фокусом Задара</b>",
-        "• Glad ubrzo nakon jela? Ove namirnice pom... ➡️ <b>Поради дієтологів та лайфстайл</b>",
-        "• Unatoč kiši turisti i domaći ne odsutaju... ➡️ <b>Лайфстайл та туризм у Дубровнику</b>",
-        "• Val napada nožem u poljskim školama. Tri... ➡️ <b>Світовий шум / події в третіх країнах</b>",
-        "• Drvena ili plastična daska za rezanje: i... ➡️ <b>Побут та лайфстайл поради</b>",
-        "• Bablje ljeto se ne da! Drugi je vikend l... ➡️ <b>Лайфстайл іншого міста (Шибеник)</b>",
-        "• Lovran i talijanski Codroipo postali pob... ➡️ <b>Локальна подія Ловрана без загальнонаціонального значення</b>",
-        "• Pet pasmina pasa koje važe za najotporni... ➡️ <b>Лайфстайл та поради про тварин</b>",
-        "• Preminuo je gospar Stjepan Masle, dugogo... ➡️ <b>Локальний некролог іншого міста</b>",
-        "• Školi Lopar darovane dvije pametne ploče... ➡️ <b>Локальна шкільна новина іншого острова</b>",
-        "• U Puntu se nakon sezone razgovaralo o kv... ➡️ <b>Туристичні підсумки локального значення на Крку</b>",
-        "• Nova pravila! Evo tko će morati platiti ... ➡️ <b>Повторення теми європейських правил для третіх країн</b>",
-        "• Lokve dobivaju treće jezero, a načelnik ... ➡️ <b>Побут та водні ресурси іншого регіону</b>",
-        "• Zima nam ipak uskoro stiže: provjerili s... ➡️ <b>Ціни на дрова та побут іншого міста</b>",
-        "• Policija nakon lažne dojave o prijetnji ... ➡️ <b>Дрібний локальний інцидент та уточнення поліції в Рієці</b>",
-        "• Prva ‘službena pusa‘ pjevačice i poduzet... ➡️ <b>Шоу-бізнес та світські плітки</b>",
-        "• U Otavicama je 75 godišnjak letvom izmla... ➡️ <b>Локальний побутовий конфлікт у Східній Далмації</b>",
-        "• U Močićima nema vode, evo do kada... ➡️ <b>Відключення води в іншому місті (Конавле)</b>"
-      ]
-    },
-    "backlog": {
-      "total_size": 41,
-      "sources": {
-        "Slobodna dalmacija": 18,
-        "023": 4,
-        "Zadarski list": 19
-      }
-    },
-    "published": {
-      "total": 3,
-      "ukraine_priority": 0,
-      "with_images": 3,
-      "text_only": 0,
-      "sources": {
-        "Slobodna dalmacija": 1,
-        "Zadarski list": 2
-      }
-    },
-    "models_used": {
-      "gemini-3.5-flash-lite": 2,
-      "gemini-3.5-flash": 0
-    },
-    "errors_count": 0,
-    "gemini_retries": 0
-  },
-  {
     "timestamp": "2026-10-10 16:01:03",
     "execution_time": 172.3,
     "funnel": {
@@ -5928,5 +5866,53 @@
     },
     "errors_count": 0,
     "gemini_retries": 3
+  },
+  {
+    "timestamp": "2026-10-20 09:01:10",
+    "execution_time": 108.4,
+    "funnel": {
+      "scraped_total": 35,
+      "scraped_by_source": {
+        "023": 10,
+        "Slobodna dalmacija": 15,
+        "Zadarski list": 10
+      },
+      "already_seen": 7,
+      "rejected_by_keywords": 13,
+      "duplicates_removed_by_ai": 12,
+      "rejection_reasons_list": [
+        "• Zelenski u Oslu s Witkoffom zbog pogoršanja odnosa sa SAD-om → Міжнародна політика за межами Хорватії та України | Сутності: Volodimir Zelenski, Steve Witkoff, Oslo, SAD",
+        "• Pri kraju postavljanje zaštitnog sloja nad otpadom u Gospiću: ‘To će o → Побут чужого міста (Госпич) | Сутності: Gospić, PPK Velebit, Kostak-graditeljstvo",
+        "• Kad će biti napravljen i gdje će stajati? Miho Bukvić: ‘Mogao ga je do → Побут чужого міста (Дубровник) | Сутності: Dubrovnik, Miho Bukvić, Marko Mujan, Pile",
+        "• Bez vode dio Riječke ulice → Побут чужого міста (Дубровник) | Сутності: Dubrovnik, Vodovod, Riječka ulica",
+        "• Plemenita gesta s Vitrenjaka; JK Uskok donirao 35 litara klupskog masl → Дубль або несуттєва локальна подія без пріоритету | Сутності: Zadar, JK Uskok, Pučka kuhinja, Nadin",
+        "• Za 89 mačaka spašenih iz stana u Rijeci stiže više od dvije tone hrane → Побут чужого міста (Рієка) | Сутності: Rijeka, Kitten Safe House, dm",
+        "• Tko je u četvrtak bez struje? → Побут чужого міста (Дубровник) | Сутності: Dubrovnik, Elektrojug, Čelopeci",
+        "• Novi propagandni rat u BiH: Plakati optužuju Aliju Izetbegovića za zlo → Події за межами Хорватії та України (Боснія і Герцеговина) | Сутності: BiH, Alija Izetbegović, Istočno Sarajevo",
+        "• Sunčani utorak samo je predah: jugo s olujnim udarima i pljuskovi s gr → Дубль існуючого прогнозу погоди в історії | Сутності: Zadar, Jugo, Zadarska županija",
+        "• Grad Gospić osigurao sredstva za pokrivanje troškova najma stana mladi → Побут чужого міста (Госпич) | Сутності: Gospić, Darko Milinović",
+        "• Znanstvenici razvili novi AI alat koji na temelju fotografije osobe ot → Світовий шум та абстрактна наука | Сутності: Mass General Brigham, Hugo Aerts, SAD",
+        "• Otkriven šesti par Plesa sa zvijezdama: Modni dizajner pred novim izaz → Реклама та шоу-бізнес | Сутності: Ivica Skoko, Rebecca Krajnović, HRT, Ples sa zvijezdama"
+      ]
+    },
+    "backlog": {
+      "total_size": 0,
+      "sources": {}
+    },
+    "published": {
+      "total": 1,
+      "ukraine_priority": 0,
+      "with_images": 0,
+      "text_only": 1,
+      "sources": {
+        "023": 1
+      }
+    },
+    "models_used": {
+      "gemini-3.6-flash": 1,
+      "gemini-3.5-flash-lite": 1
+    },
+    "errors_count": 0,
+    "gemini_retries": 2
   }
 ]
