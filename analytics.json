@@ -1,68 +1,5 @@
 [
   {
-    "timestamp": "2026-10-10 14:01:03",
-    "execution_time": 17.2,
-    "funnel": {
-      "scraped_total": 35,
-      "scraped_by_source": {
-        "023": 10,
-        "Slobodna dalmacija": 15,
-        "Zadarski list": 10
-      },
-      "already_seen": 25,
-      "rejected_by_keywords": 4,
-      "duplicates_removed_by_ai": 25,
-      "rejection_reasons_list": [
-        "• Kvaliteta zraka u Vidu značajno bolja, g... ➡️ <b>Побут чужого міста (Меткович)</b>",
-        "• U Puntu se nakon sezone razgovaralo o kv... ➡️ <b>Побут чужого міста (Пунат)</b>",
-        "• Hladan zrak u kući možete zaustaviti s n... ➡️ <b>Світовий шум та лайфстайл (поради для дому)</b>",
-        "• Unatoč kiši turisti i domaći ne odsutaju... ➡️ <b>Побут чужого міста (Дубровник)</b>",
-        "• Lokve dobivaju treće jezero, a načelnik ... ➡️ <b>Побут чужого міста (Локве)</b>",
-        "• Glad ubrzo nakon jela? Ove namirnice pom... ➡️ <b>Світовий шум та лайфстайл (поради дієтологів)</b>",
-        "• Bablje ljeto se ne da! Drugi je vikend l... ➡️ <b>Побут чужого міста (Шибеник)</b>",
-        "• Policija nakon lažne dojave o prijetnji ... ➡️ <b>Побут чужого міста (Рієка)</b>",
-        "• Drvena ili plastična daska za rezanje: i... ➡️ <b>Світовий шум та лайфстайл (побутові поради)</b>",
-        "• Preminuo je gospar Stjepan Masle, dugogo... ➡️ <b>Побут чужого міста / Локальна подія (Дубровник)</b>",
-        "• “Pljačka vam materina, sjašite više”: Po... ➡️ <b>Дубль новини ID 12 про протест у Загребі</b>",
-        "• Pet pasmina pasa koje važe za najotporni... ➡️ <b>Світовий шум та лайфстайл (абстрактні поради про тварин)</b>",
-        "• ‘Za svaki hotelski apartman koji se otvo... ➡️ <b>Стоп-тема: протест дрібних підприємців без прямого впливу на Задар</b>",
-        "• I premijer Plenković izrazio sućut zbog ... ➡️ <b>Дубль існуючої новини в історії про смерть Горіна Баре</b>",
-        "• Nova pravila! Evo tko će morati platiti ... ➡️ <b>Стоп-тема: загальні правила в'їзду, що не стосуються безпосередньо Хорватії чи українських біженців</b>",
-        "• Nexe potvrdio da je dosad zaprimio četir... ➡️ <b>Дубль новини про сміття в Нашичах (див. ID 19)</b>",
-        "• Zima nam ipak uskoro stiže: provjerili s... ➡️ <b>Побут чужого міста (Дубровник)</b>",
-        "• Veza više nije tajna, Maja Šuput potvrdi... ➡️ <b>Дубль новини ID 18 про шоу-бізнес</b>",
-        "• Prva ‘službena pusa‘ pjevačice i poduzet... ➡️ <b>Стоп-тема: шоу-бізнес</b>",
-        "• Građani Našica danas opet prosvjedovali ... ➡️ <b>Побут чужого міста (Нашице)</b>",
-        "• U Otavicama je 75 godišnjak letvom izmla... ➡️ <b>Дубль новини ID 24 про кримінал у Дрніші</b>",
-        "• Treba li svijet strahovati od navodne po... ➡️ <b>Світовий шум та лайфстайл (події в третіх країнах)</b>",
-        "• U Močićima nema vode, evo do kada... ➡️ <b>Побут чужого міста (Конавле / Мочічі)</b>",
-        "• Kupci skupog iPhonea 18 Pro prijavljuju ... ➡️ <b>Світовий шум та технології</b>",
-        "• U Otavicama se žestoko obračunali 75-god... ➡️ <b>Побут і кримінал чужого міста (Дрніш)</b>"
-      ]
-    },
-    "backlog": {
-      "total_size": 36,
-      "sources": {
-        "Slobodna dalmacija": 18,
-        "023": 4,
-        "Zadarski list": 14
-      }
-    },
-    "published": {
-      "total": 0,
-      "ukraine_priority": 0,
-      "with_images": 0,
-      "text_only": 0,
-      "sources": {}
-    },
-    "models_used": {
-      "gemini-3.5-flash-lite": 1,
-      "gemini-3.5-flash": 0
-    },
-    "errors_count": 0,
-    "gemini_retries": 0
-  },
-  {
     "timestamp": "2026-10-10 15:01:02",
     "execution_time": 186.2,
     "funnel": {
@@ -5938,6 +5875,51 @@
       "sources": {
         "023": 1,
         "Slobodna dalmacija": 1
+      }
+    },
+    "models_used": {
+      "gemini-3.6-flash": 1,
+      "gemini-3.5-flash-lite": 1
+    },
+    "errors_count": 0,
+    "gemini_retries": 3
+  },
+  {
+    "timestamp": "2026-10-20 08:01:10",
+    "execution_time": 211.8,
+    "funnel": {
+      "scraped_total": 35,
+      "scraped_by_source": {
+        "023": 10,
+        "Slobodna dalmacija": 15,
+        "Zadarski list": 10
+      },
+      "already_seen": 2,
+      "rejected_by_keywords": 14,
+      "duplicates_removed_by_ai": 7,
+      "rejection_reasons_list": [
+        "• Kad će biti napravljen i gdje će stajati? Miho Bukvić: ‘Mogao ga je do → Побут чужих міст (Дубровник) | Сутності: Miho Bukvić, Dubrovnik, Pilama, Marko Mujan",
+        "• EU pred savršenom političkom olujom. Pod pritiskom je sa svih strana,  → Світовий шум та загальноєвропейська політика без прямого фокусу на хорватських біженцях | Сутності: Europska unija, Politico, Nikos Hristodulides, Donald Trump",
+        "• Bez vode dio Riječke ulice → Побут чужих міст (Дубровник) | Сутності: Vodovod Dubrovnik, Riječka ulica, Dubrovnik",
+        "• Otkriven šesti par Plesa sa zvijezdama: Modni dizajner pred novim izaz → Спорт, розваги та медіа-шоу | Сутності: Ples sa zvijezdama, Ivica Skoko, Rebecca Krajnović, HRT",
+        "• Tko je u četvrtak bez struje? → Побут чужих міст (Дубровник) | Сутності: Elektrojug, Čelopeci, Kučište, Dubrovnik",
+        "• U ulozi Carmen izmjenjivat će se operne prvakinje Sofija Petrović i Em → Побут чужих міст (Загреб) | Сутності: Carmen, Sofija Petrović, Emilija Rukavina, HNK Zagreb",
+        "• Ponos Medicinske škole Ante Kuzmanića; Učenica Leonarda Rukavina pobje → Дубль існуючої новини в історії про перемогу учениці | Сутності: Leonarda Rukavina, Medicinska škola, Zadar, Mali Galović"
+      ]
+    },
+    "backlog": {
+      "total_size": 2,
+      "sources": {
+        "023": 2
+      }
+    },
+    "published": {
+      "total": 3,
+      "ukraine_priority": 1,
+      "with_images": 0,
+      "text_only": 3,
+      "sources": {
+        "023": 3
       }
     },
     "models_used": {
