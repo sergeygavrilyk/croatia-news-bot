@@ -1,63 +1,5 @@
 [
   {
-    "timestamp": "2026-10-12 07:01:07",
-    "execution_time": 185.7,
-    "funnel": {
-      "scraped_total": 35,
-      "scraped_by_source": {
-        "023": 10,
-        "Slobodna dalmacija": 15,
-        "Zadarski list": 10
-      },
-      "already_seen": 2,
-      "rejected_by_keywords": 2,
-      "duplicates_removed_by_ai": 18,
-      "rejection_reasons_list": [
-        "• Mirjana Hrga o životu na otoku: ‘U Osoru... ➡️ <b>Побут інших міст</b>",
-        "• Poznati riječki bariton Robert Kolar nas... ➡️ <b>Культура іншого регіону</b>",
-        "• 400 godina jedne obitelji i priča koja t... ➡️ <b>Локальна подія іншого регіону</b>",
-        "• U kulturnom centru Picirk predstavljena ... ➡️ <b>Побут інших міст</b>",
-        "• Evgenija Matović, jedina odgojiteljica o... ➡️ <b>Побут інших міст</b>",
-        "• Umjesto jednog velikog projekta, lošinjs... ➡️ <b>Побут інших міст</b>",
-        "• Ma pogledajte što mlada radi na prvom pl... ➡️ <b>Дубль або несуттєва світська новина</b>",
-        "• Zadarska Ultima do dvanaest odličja u na... ➡️ <b>Спорт</b>",
-        "• Od četiri razreda u starim kućama, do mo... ➡️ <b>Побут інших міст</b>",
-        "• Država za sitniš prodaje zemljište u Dal... ➡️ <b>Загальна реклама нерухомості без прив'язки до Задара</b>",
-        "• Veliki projekti na području grada Krka u... ➡️ <b>Побут інших міст</b>",
-        "• Kod Ane Handabake u Mlinima ljetuje se k... ➡️ <b>Побут інших міст</b>",
-        "• Sedam kremastih juha za svaki dan u tjed... ➡️ <b>Світовий шум: поради та рецепти</b>",
-        "• Općina Baška nastavlja podržavati iznajm... ➡️ <b>Побут інших міст</b>",
-        "• Odigrana samo četiri susreta, ostali nis... ➡️ <b>Спорт</b>",
-        "• Priznanje za Novalju dokaz je da Life on... ➡️ <b>Побут інших міст</b>",
-        "• Klaudio Martinolić istražio je život nad... ➡️ <b>Побут інших міст</b>",
-        "• Koje varalice koristite u panuli? Donosi... ➡️ <b>Світовий шум / поради для рибалок</b>"
-      ]
-    },
-    "backlog": {
-      "total_size": 21,
-      "sources": {
-        "023": 5,
-        "Slobodna dalmacija": 6,
-        "Zadarski list": 10
-      }
-    },
-    "published": {
-      "total": 3,
-      "ukraine_priority": 0,
-      "with_images": 0,
-      "text_only": 3,
-      "sources": {
-        "023": 3
-      }
-    },
-    "models_used": {
-      "gemini-3.5-flash-lite": 2,
-      "gemini-3.6-flash": 0
-    },
-    "errors_count": 0,
-    "gemini_retries": 0
-  },
-  {
     "timestamp": "2026-10-12 08:01:04",
     "execution_time": 177.7,
     "funnel": {
@@ -5828,6 +5770,60 @@
       "sources": {
         "023": 2,
         "Slobodna dalmacija": 1
+      }
+    },
+    "models_used": {
+      "gemini-3.5-flash-lite": 2,
+      "gemini-3.6-flash": 0
+    },
+    "errors_count": 0,
+    "gemini_retries": 0
+  },
+  {
+    "timestamp": "2026-10-21 19:01:09",
+    "execution_time": 170.5,
+    "funnel": {
+      "scraped_total": 35,
+      "scraped_by_source": {
+        "023": 10,
+        "Slobodna dalmacija": 15,
+        "Zadarski list": 10
+      },
+      "already_seen": 5,
+      "rejected_by_keywords": 12,
+      "duplicates_removed_by_ai": 17,
+      "rejection_reasons_list": [
+        "• Militarizacija pobunila mlade diljem Europe: “Ne žele ginuti za vojne  → Геоблок | Сутності: Марко Ковачич, Рієка, Європа, Хорватія",
+        "• Umjetna inteligencija iz obične fotografije lica procjenjuje biološku  → Світовий шум | Сутності: Mass General Brigham, Гарвард, Уго Аертс",
+        "• Zbog snimanja filma u petak se uvodi privremena regulacija motornog i  → Побут інших міст | Сутності: Дубровник, Stradun, Embassy Films",
+        "• Dogovorena izgradnja kružnog raskrižja na istočnom ulazu u Kraljevicu  → Побут інших міст | Сутності: Кралевиця, Далібор Чандрлич, Хрватські цесте",
+        "• Šokantne scene s trajekta; Ovcu svezali konopcem za drvenu paletu i pr → Дубль в історії | Сутності: Ядролінія, Приятелі живойіна, ДІРХ",
+        "• Ravnateljica Lučke uprave Dubrovnik: ‘Iako su u luci istodobno bila če → Побут інших міст | Сутності: Зринка Кулушич, Дубровник, Луцька управа",
+        "• U srednjoj talijanskoj školi otvorena izložba »Serenissima – kulturna  → Побут інших міст | Сутності: Рієка, Сереніссіма, Орєн Петковіч",
+        "• Dubrovački političar nasmijao objavom: ‘Ovo je posljednje što se sjeća → Світовий шум | Сутності: Валентин Дуймович, Дубровник, HNS",
+        "• Na području Viljeva spriječeno krijumčarenje 60 kilograma sitno rezano → Побут інших міст | Сутності: Вілєво, Осієк, Мерседес",
+        "• Dubrovački političar nasmijao objavom: ‘Ovo je posljednje što se sjeća → Дубль | Сутності: Валентин Дуймович, Дубровник, Slobodna Dalmacija",
+        "• Šezdesetak volontera u 15 akcija pomagalo diljem Krka u projektu »72 s → Побут інших міст | Сутності: Крк, Карітас, Івіца Петняк",
+        "• Šibenčanin Karlo (41) već se 16 godina bori s teškom bolešću. Sada se  → Побут інших міст | Сутності: Карло Родін, Шибеник, Москва",
+        "• Serijski kradljivac ‘operirao‘ po Dolini Neretve i Dubrovačkom primorj → Побут інших міст | Сутності: Стоун, Меткович, Долина Неретви",
+        "• Dubrovnik treći put najbolji veliki grad za život u Hrvatskoj. Frankov → Побут інших міст | Сутності: Дубровник, Мато Франкович, Велибор Пузович",
+        "• Uhićen na djelu u Topolom, a onda šok! Policija ga povezuje s još seda → Дубль | Сутності: Стоун, Меткович, Тополе",
+        "• Visoki dužnosnik Europske komisije Raffaele Fitto i ministrica MRRFEU  → Побут інших міст | Сутності: Раффаеле Фитто, Наташа Микуш Жигман, Шибеник",
+        "• Ministarstvo vanjskih i europskih poslova izdalo preporuke za odlazak  → Геоблок | Сутності: МВЄП, Белград, Сербія"
+      ]
+    },
+    "backlog": {
+      "total_size": 0,
+      "sources": {}
+    },
+    "published": {
+      "total": 3,
+      "ukraine_priority": 0,
+      "with_images": 3,
+      "text_only": 0,
+      "sources": {
+        "Zadarski list": 1,
+        "Slobodna dalmacija": 2
       }
     },
     "models_used": {
