@@ -1,69 +1,5 @@
 [
   {
-    "timestamp": "2026-10-11 15:01:04",
-    "execution_time": 89.3,
-    "funnel": {
-      "scraped_total": 35,
-      "scraped_by_source": {
-        "023": 10,
-        "Slobodna dalmacija": 15,
-        "Zadarski list": 10
-      },
-      "already_seen": 25,
-      "rejected_by_keywords": 7,
-      "duplicates_removed_by_ai": 24,
-      "rejection_reasons_list": [
-        "• Senjane očekuje susret s Nenadom Stipani... ➡️ <b>Побут чужого міста</b>",
-        "• Šest otpornih grmova koje se isplati sad... ➡️ <b>Світовий шум та лайфстайл</b>",
-        "• Najmanje 109 migranata poginulo, još 116... ➡️ <b>Світовий шум та лайфстайл</b>",
-        "• Japanska metoda duge ubrzava sušenje rub... ➡️ <b>Світовий шум та лайфстайл</b>",
-        "• Marko Potrebica: ‘Šteta da se tim poslom... ➡️ <b>Побут чужого міста</b>",
-        "• Armada noćas presrela autobus s Demonima... ➡️ <b>Побут чужого міста</b>",
-        "• Sedam natjecatelja Plovanije vratilo se ... ➡️ <b>Спорт</b>",
-        "• Načelnika Konavala napali zbog Studenca:... ➡️ <b>Побут чужого міста</b>",
-        "• Automobilom nasrnuo na policajca, pa pob... ➡️ <b>Побут чужого міста</b>",
-        "• Stakla u automobilu brže se odmagle uz o... ➡️ <b>Світовий шум та лайфстайл</b>",
-        "• Nije građevinsko, a košta kao zlato! Pog... ➡️ <b>Світовий шум та лайфстайл</b>",
-        "• Deset godina karlovačke Aquatike: od skr... ➡️ <b>Побут чужого міста</b>",
-        "• Mjesec dana bez alkohola može poboljšati... ➡️ <b>Світовий шум та лайфстайл</b>",
-        "• Miošića su svi šutnuli! Iako su me izvel... ➡️ <b>Побут чужого міста</b>",
-        "• Možemo! kritizira Grbina, ali ne želi nj... ➡️ <b>Побут чужого міста</b>",
-        "• Lažne poruke više ne odaju pravopisne po... ➡️ <b>Світовий шум та лайфстайл</b>",
-        "• Kiša? Pa što? Na Stradun se mora... ➡️ <b>Побут чужого міста</b>",
-        "• Papa Leo ima manju izraslinu na plućnom ... ➡️ <b>Дубль новини 23</b>",
-        "• Zadarskim navijačima prisjeo nedjeljni r... ➡️ <b>Спорт</b>",
-        "• Coldplay i Imagine Dragons u čaroliji sv... ➡️ <b>Світовий шум та лайфстайл</b>",
-        "• Nakon kiše prva je esenska bura donijela... ➡️ <b>Побут чужого міста</b>",
-        "• Rođendan KUD Stjepan Radić: u Prodvorju ... ➡️ <b>Побут чужого міста</b>",
-        "• Papa Lav XIV vjernicima otkrio da u nare... ➡️ <b>Світовий шум та лайфстайл</b>",
-        "• Trebinjci grade moderni kongresni centar... ➡️ <b>Світовий шум та лайфстайл</b>"
-      ]
-    },
-    "backlog": {
-      "total_size": 28,
-      "sources": {
-        "Slobodna dalmacija": 14,
-        "023": 6,
-        "Zadarski list": 8
-      }
-    },
-    "published": {
-      "total": 1,
-      "ukraine_priority": 0,
-      "with_images": 1,
-      "text_only": 0,
-      "sources": {
-        "Slobodna dalmacija": 1
-      }
-    },
-    "models_used": {
-      "gemini-3.5-flash-lite": 2,
-      "gemini-3.5-flash": 0
-    },
-    "errors_count": 0,
-    "gemini_retries": 0
-  },
-  {
     "timestamp": "2026-10-11 16:01:00",
     "execution_time": 20.2,
     "funnel": {
@@ -5847,5 +5783,64 @@
     },
     "errors_count": 0,
     "gemini_retries": 4
+  },
+  {
+    "timestamp": "2026-10-21 13:01:12",
+    "execution_time": 188.0,
+    "funnel": {
+      "scraped_total": 35,
+      "scraped_by_source": {
+        "023": 10,
+        "Slobodna dalmacija": 15,
+        "Zadarski list": 10
+      },
+      "already_seen": 3,
+      "rejected_by_keywords": 11,
+      "duplicates_removed_by_ai": 19,
+      "rejection_reasons_list": [
+        "• Umjetna inteligencija iz obične fotografije lica procjenjuje biološku  → Світовий шум | Сутності: Mass General Brigham, Hugo Aerts, The Lancet Digital Health",
+        "• ‘Puhali smo na hladno?‘ Stradun po kiš kao procvjetala proljetna livad → Побут інших міст | Сутності: Dubrovnik, Stradun, Jugo",
+        "• Otvoreno e-savjetovanje o Strategiji zelene urbane obnove Senja → Побут інших міст | Сутності: Grad Senj, Strategija zelene urbane obnove",
+        "• Dalmatinski biser najkvalitetniji je veliki grad za život u Hrvatskoj! → Побут інших міст | Сутності: Dubrovnik, Velibor Puzović, Mato Franković",
+        "• Večeras zatvaranje autoceste Rijeka – Zagreb od Oštrovice do Delnica → Побут інших міст | Сутності: Rijeka, Zagreb, Hrvatske autoceste",
+        "• Šokantne scene s trajekta; Ovcu svezali konopcem za drvenu paletu i pr → Дубль в історії | Сутності: Jadrolinija, Prijatelji životinja, Državni inspektorat",
+        "• Franković odgovara Poljacima: Gostoprimstvo podrazumijeva i poštovanje → Побут інших міст | Сутності: Dubrovnik, Mato Franković, Index.hr",
+        "• Za božićno-novogodišnje kićenje Rijeke u dvije godine 350.000 eura → Побут інших міст | Сутності: Rijeka, Iva Rinčić, Rijeka Advent",
+        "• Turistička jesen u Zadru; Rujan na razini prošle godine, ali prva polo → Дубль в історії | Сутності: Zadar, Turistička zajednica grada Zadra, eVisitor",
+        "• Nevjerojatno! U rujnu za dlaku izbjegnuta tragedija u Šibeniku, nakon  → Побут інших міст | Сутності: Šibenik, ŠibenikIN, Opća bolnica Šibenik",
+        "• Ministar turizma Glavina objavio: Novi zakon o ugostiteljskoj djelatno → Дубль в історії | Сутності: Tonči Glavina, Vlada Republike Hrvatske, Zakon o ugostiteljskoj djelatnosti",
+        "• Počelo suđenje Bojanu Ivoševiću zbog prijetnje novinarki Slobodne Dalm → Побут інших міст | Сутності: Bojan Ivošević, Nikolina Lulić, Split",
+        "• SDP i Možemo! oštro po Buriću nakon najave novog poskupljenja: ‘Ta eki → Побут інших міст | Сутності: Šibenik, Željko Burić, SDP",
+        "• Lažni liječnici pritvoreni nakon što su starijim ženama otuđili desetk → Побут інших міст | Сутності: Zagreb, Dubrava, Peščenica",
+        "• Prvičani ogorčeni: ‘Životi nam ovise o vremenskim prilikama! A rješenj → Побут інших міст | Сутності: Prvić, Vodice, Gordan Gradiška",
+        "• Povjerenica EU za proširenje, Marta Kos: Morate se dogovoriti s Hrvats → Геоблок | Сутності: Marta Kos, Crna Gora, Hrvatska, Andrija Mandić",
+        "• Izgleda potpuno bezazleno! Ova životinja mogla bi vas koštati 300 eura → Дубль в історії | Сутності: Općinski sud u Zadru, Hrvatska",
+        "• U ovom masliniku u zaleđu Pirovca događa se puno više od berbe maslina → Побут інших міст | Сутності: Pirovac, Udruga hrvatskih branitelja, Ante Jurišić",
+        "• Izbezumljena ovca vezana za paletu na Jadrolinijinu trajektu šokirala  → Дубль в історії | Сутності: Jadrolinija, Prijatelji životinja, Državni inspektorat"
+      ]
+    },
+    "backlog": {
+      "total_size": 8,
+      "sources": {
+        "Slobodna dalmacija": 5,
+        "023": 3
+      }
+    },
+    "published": {
+      "total": 3,
+      "ukraine_priority": 0,
+      "with_images": 1,
+      "text_only": 2,
+      "sources": {
+        "023": 2,
+        "Zadarski list": 1
+      }
+    },
+    "models_used": {
+      "gemini-3.5-flash-lite": 2,
+      "gemini-3.6-flash": 0
+    },
+    "errors_count": 0,
+    "gemini_retries": 0
   }
 ]
