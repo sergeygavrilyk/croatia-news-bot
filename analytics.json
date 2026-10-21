@@ -1,68 +1,5 @@
 [
   {
-    "timestamp": "2026-10-11 14:01:13",
-    "execution_time": 32.1,
-    "funnel": {
-      "scraped_total": 35,
-      "scraped_by_source": {
-        "023": 10,
-        "Slobodna dalmacija": 15,
-        "Zadarski list": 10
-      },
-      "already_seen": 27,
-      "rejected_by_keywords": 6,
-      "duplicates_removed_by_ai": 25,
-      "rejection_reasons_list": [
-        "• Načelnika Konavala napali zbog Studenca:... ➡️ <b>Побут чужих міст та регіонів</b>",
-        "• Senjane očekuje susret s Nenadom Stipani... ➡️ <b>Побут чужих міст та регіонів</b>",
-        "• Japanska metoda duge ubrzava sušenje rub... ➡️ <b>Світовий шум та лайфстайл</b>",
-        "• Nije građevinsko, a košta kao zlato! Pog... ➡️ <b>Не відповідає пріоритетним критеріям відбору</b>",
-        "• Najmanje 109 migranata poginulo, još 116... ➡️ <b>Світовий шум та лайфстайл</b>",
-        "• Sedam natjecatelja Plovanije vratilo se ... ➡️ <b>Спорт</b>",
-        "• Miošića su svi šutnuli! Iako su me izvel... ➡️ <b>Побут чужих міст та регіонів</b>",
-        "• Armada noćas presrela autobus s Demonima... ➡️ <b>Спорт</b>",
-        "• Stakla u automobilu brže se odmagle uz o... ➡️ <b>Світовий шум та лайфстайл</b>",
-        "• Kiša? Pa što? Na Stradun se mora... ➡️ <b>Побут чужих міст та регіонів</b>",
-        "• Automobilom nasrnuo na policajca, pa pob... ➡️ <b>Побут чужих міст та регіонів</b>",
-        "• Mjesec dana bez alkohola može poboljšati... ➡️ <b>Світовий шум та лайфстайл</b>",
-        "• Zadarskim navijačima prisjeo nedjeljni r... ➡️ <b>Спорт</b>",
-        "• Deset godina karlovačke Aquatike: od skr... ➡️ <b>Побут чужих міст та регіонів</b>",
-        "• Lažne poruke više ne odaju pravopisne po... ➡️ <b>Світовий шум та лайфстайл</b>",
-        "• Nakon kiše prva je esenska bura donijela... ➡️ <b>Побут чужих міст та регіонів</b>",
-        "• Možemo! kritizira Grbina, ali ne želi nj... ➡️ <b>Побут чужих міст та регіонів</b>",
-        "• Rođendan KUD Stjepan Radić: u Prodvorju ... ➡️ <b>Побут чужих міст та регіонів</b>",
-        "• Papa Leo ima manju izraslinu na plućnom ... ➡️ <b>Дублікат новини 19</b>",
-        "• Papa Lav XIV vjernicima otkrio da u nare... ➡️ <b>Світовий шум та лайфстайл</b>",
-        "• Coldplay i Imagine Dragons u čaroliji sv... ➡️ <b>Світовий шум та лайфстайл</b>",
-        "• Trebinjci grade moderni kongresni centar... ➡️ <b>Світовий шум та лайфстайл</b>",
-        "• Tigar Altai ubio posjetitelja koji mu se... ➡️ <b>Світовий шум та лайфстайл</b>",
-        "• Dalmacija je sve toplija, a vode je sve ... ➡️ <b>Світовий шум та лайфстайл</b>",
-        "• Župan Blaž Pezo: ‘Radovi stoje godinu da... ➡️ <b>Побут чужих міст та регіонів</b>"
-      ]
-    },
-    "backlog": {
-      "total_size": 25,
-      "sources": {
-        "Slobodna dalmacija": 12,
-        "023": 5,
-        "Zadarski list": 8
-      }
-    },
-    "published": {
-      "total": 0,
-      "ukraine_priority": 0,
-      "with_images": 0,
-      "text_only": 0,
-      "sources": {}
-    },
-    "models_used": {
-      "gemini-3.5-flash-lite": 1,
-      "gemini-3.5-flash": 0
-    },
-    "errors_count": 0,
-    "gemini_retries": 0
-  },
-  {
     "timestamp": "2026-10-11 15:01:04",
     "execution_time": 89.3,
     "funnel": {
@@ -5846,6 +5783,62 @@
       "sources": {
         "023": 1,
         "Slobodna dalmacija": 2
+      }
+    },
+    "models_used": {
+      "gemini-3.6-flash": 0,
+      "gemini-3.5-flash-lite": 2
+    },
+    "errors_count": 0,
+    "gemini_retries": 4
+  },
+  {
+    "timestamp": "2026-10-21 11:01:13",
+    "execution_time": 175.3,
+    "funnel": {
+      "scraped_total": 35,
+      "scraped_by_source": {
+        "023": 10,
+        "Slobodna dalmacija": 15,
+        "Zadarski list": 10
+      },
+      "already_seen": 6,
+      "rejected_by_keywords": 6,
+      "duplicates_removed_by_ai": 14,
+      "rejection_reasons_list": [
+        "• Opća panika u Trumpovom taboru uoči izbora za Kongres, ljudi masovno z → Геоблок | Сутності: Donald Trump, Kongres, Demokrati, SAD",
+        "• Jakov Jozinović dominira Cesaricom. Društvo mu prave Cvek, Grše i Prlj → Спорт | Сутності: Jakov Jozinović, Cesarica, Matija Cvek, Grše",
+        "• Izbezumljena ovca vezana za paletu na Jadrolinijinu trajektu šokirala  → Дубль в історії | Сутності: Jadrolinija, Prijatelji životinja, Lopud, ovca",
+        "• Šokantne scene s trajekta; Ovcu svezali konopcem za drvenu paletu i pr → Дубль в історії | Сутності: Jadrolinija, Prijatelji životinja, Državni inspektorat",
+        "• Turistička jesen u Zadru; Rujan na razini prošle godine, ali prva polo → Дубль в історії | Сутності: Zadar, eVisitor, Turistička zajednica, listopad",
+        "• Stariji Šibenčanin grubo nasjeo na laži prevarantice; dopisivali se, s → Побут інших міст | Сутності: Šibenik, policija, prevara",
+        "• “Gospić je naš dom”: Poznati su krivci za ishitrene odluke vezane uz t → Побут інших міст | Сутності: Gospić, Darko Milinović, LiPO, tvornica litija",
+        "• Privatni smještaj u Dubrovniku donosi 350 miljuna eura turističke potr → Побут інших міст | Сутності: Dubrovnik, Andro Vlahušić, privatni smještaj",
+        "• “Titanik Ovo Ono” – praizvedba inovativne scenske forme povodom sto go → Побут інших міст | Сутності: Hrvatski radio, Kerempuh, Zagreb, Studio Bajsić",
+        "• Božja ljubav, božja snaga – Alan Hržica idućeg petka u Rijeci → Побут інших міст | Сутності: Alan Hržica, Rijeka, HKD na Sušaku",
+        "• Humor, zajedništvo i vjera u bolje sutra; Ne propustite sjajnu kazališ → Дубль в історії | Сутності: HNK Zadar, Ante Tomić, Zorin dom",
+        "• Uzbuna u Masterchefu: “Mi smo kažnjeni jer dobro igramo” → Світовий шум | Сутності: Masterchef, Goran, Ena, Monika",
+        "• Branko Kolarić i Ivica Baksa suzdržani u vezi opoziva Vlade → Дубль в історії | Сутності: Branko Kolarić, Ivica Baksa, Hrvatski sabor, Andrej Plenković",
+        "• Koncert Dubrovačkog simfonijskog orkestra i violončelista Janka Franko → Побут інших міст | Сутності: Dubrovački simfonijski orkestar, Janko Franković, Revelin, Dubrovnik"
+      ]
+    },
+    "backlog": {
+      "total_size": 9,
+      "sources": {
+        "Zadarski list": 1,
+        "023": 4,
+        "Slobodna dalmacija": 4
+      }
+    },
+    "published": {
+      "total": 3,
+      "ukraine_priority": 0,
+      "with_images": 2,
+      "text_only": 1,
+      "sources": {
+        "023": 1,
+        "Zadarski list": 1,
+        "Slobodna dalmacija": 1
       }
     },
     "models_used": {
