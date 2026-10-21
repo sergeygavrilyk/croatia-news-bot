@@ -1,66 +1,5 @@
 [
   {
-    "timestamp": "2026-10-11 11:01:03",
-    "execution_time": 174.7,
-    "funnel": {
-      "scraped_total": 35,
-      "scraped_by_source": {
-        "023": 10,
-        "Slobodna dalmacija": 15,
-        "Zadarski list": 10
-      },
-      "already_seen": 9,
-      "rejected_by_keywords": 1,
-      "duplicates_removed_by_ai": 20,
-      "rejection_reasons_list": [
-        "• Zadranin Jure Zubčić, novi glavni tajnik... ➡️ <b>Історія без суттєвих оновлень</b>",
-        "• Južnokorejski teretni brod završio povra... ➡️ <b>Світовий шум та лайфстайл</b>",
-        "• Trebinjci grade moderni kongresni centar... ➡️ <b>Побут чужих міст</b>",
-        "• Buknuo požar na odlagalištu otpada na po... ➡️ <b>Побут чужих міст</b>",
-        "• Sedam natjecatelja Plovanije vratilo se ... ➡️ <b>Спорт</b>",
-        "• Pijan vozio u suprotnom smjeru i oglušio... ➡️ <b>Побут чужих міст</b>",
-        "• Katamarani baštine pomorsku povijest: zn... ➡️ <b>Світовий шум та лайфстайл</b>",
-        "• Stakla u automobilu brže se odmagle uz o... ➡️ <b>Світовий шум та лайфстайл</b>",
-        "• Tigar Altai ubio posjetitelja koji mu se... ➡️ <b>Світовий шум та лайфстайл</b>",
-        "• Poljska policija dobila informaciju o mo... ➡️ <b>Дубль новини ID 12</b>",
-        "• Mjesec dana bez alkohola može poboljšati... ➡️ <b>Світовий шум та лайфстайл</b>",
-        "• Poljaci: Dobili smo dojavu o napadu na n... ➡️ <b>Світовий шум та лайфстайл</b>",
-        "• Priznat peti tip dijabetesa koji pogađa ... ➡️ <b>Світовий шум та лайфстайл</b>",
-        "• Lažne poruke više ne odaju pravopisne po... ➡️ <b>Світовий шум та лайфстайл</b>",
-        "• Dalmacija je sve toplija, a vode je sve ... ➡️ <b>Світовий шум та лайфстайл</b>",
-        "• Hrebak otvoreno o Plenkoviću, DP-u i idu... ➡️ <b>Побут чужих міст</b>",
-        "• Kako čuti vrijeme: bili smo na berlinsko... ➡️ <b>Світовий шум та лайфстайл</b>",
-        "• Otkriven uzrok požara u reciklažnom cent... ➡️ <b>Побут чужих міст</b>",
-        "• TKD Plovanija briljirala na 12. Čigra Op... ➡️ <b>Спорт</b>",
-        "• Na Zagreb Prideu od 2021. dokumentirano ... ➡️ <b>Побут чужих міст</b>"
-      ]
-    },
-    "backlog": {
-      "total_size": 24,
-      "sources": {
-        "023": 6,
-        "Slobodna dalmacija": 9,
-        "Zadarski list": 9
-      }
-    },
-    "published": {
-      "total": 3,
-      "ukraine_priority": 0,
-      "with_images": 1,
-      "text_only": 2,
-      "sources": {
-        "023": 2,
-        "Slobodna dalmacija": 1
-      }
-    },
-    "models_used": {
-      "gemini-3.5-flash-lite": 2,
-      "gemini-3.5-flash": 0
-    },
-    "errors_count": 0,
-    "gemini_retries": 0
-  },
-  {
     "timestamp": "2026-10-11 12:01:05",
     "execution_time": 169.2,
     "funnel": {
@@ -5877,5 +5816,53 @@
     },
     "errors_count": 0,
     "gemini_retries": 6
+  },
+  {
+    "timestamp": "2026-10-21 07:01:06",
+    "execution_time": 192.0,
+    "funnel": {
+      "scraped_total": 35,
+      "scraped_by_source": {
+        "023": 10,
+        "Slobodna dalmacija": 15,
+        "Zadarski list": 10
+      },
+      "already_seen": 1,
+      "rejected_by_keywords": 8,
+      "duplicates_removed_by_ai": 12,
+      "rejection_reasons_list": [
+        "• Trump o početku rata u Ukrajini: ‘Jedan vrlo glupi general upropastio  → Геоблок | Сутності: Donald Trump, Kijev, Rusija, Bijela kuća",
+        "• Mlini slave nebesnog zaštitnika, svetog Ilara. Evo tko će predvoditi m → Побут інших міст | Сутності: Mlini, sveti Ilar, fra Tomislav Hrstić, Dubrovnik",
+        "• Kvantna prijetnja: Netko danas može ukrasti vaše šifrirane podatke i č → Світовий шум | Сутності: Europa, SAD, F5, Cloudflare",
+        "• Bez vode u Konavlima: evo gdje je pukla cijev i kada će je popraviti → Побут інших міст | Сутності: Konavle, Poljice, Konavosko komunalno društvo",
+        "• Nove klimatske prognoze UN-a: ‘Čak ni najoptimističniji scenarij više  → Світовий шум | Сутності: UN, António Guterres, Pariški sporazum, COP31",
+        "• Poljaci šokirani, mediji se raspisali: ‘Umjesto s lijepim uspomenama s → Побут інших міст | Сутності: Dubrovnik, Index, Poljska, Onet",
+        "• Zbog olujnog juga i prekidu više trajektnih, katamaranskih i brodskih  → Дубль в історії | Сутності: Hrvatski autoklub, Jadran, Porozina, Dubrovnik",
+        "• Zbog olujnog juga u prekidu brodski promet, a iz DHMZ-a najavljuju kiš → Дубль в історії | Сутності: DHMZ, Jadran, Hrvatski autoklub, Dubrovnik",
+        "• Što se krije u vrećama iznad Kukuljanova? Mještani zabrinuti: ‘Nije mi → Побут інших міст | Сутності: Kukuljanovo, Bakar, Tomislav Klarić, Lika",
+        "• U Beringovu moru 13,4 puta više hibridnih rakova nego inače, put im je → Світовий шум | Сутності: Beringovo more, NOAA, Aljaska, Erin Fedewa",
+        "• ‘Kad je u pitanju naoružavanje, onda sredstava u proračunu ima naprete → Побут інших міст | Сутності: Dubrovnik, Hrvatski zavod za mirovinsko osiguranje, Jure Dumančić, Sindikat umirovljenika Hrvatske",
+        "• Policijski zapovjednik službenim kombijem prevozio namještaj za vikend → Побут інших міст | Сутності: Bojan Petrović, Doljani, Metković, Orebić"
+      ]
+    },
+    "backlog": {
+      "total_size": 0,
+      "sources": {}
+    },
+    "published": {
+      "total": 3,
+      "ukraine_priority": 0,
+      "with_images": 0,
+      "text_only": 3,
+      "sources": {
+        "023": 3
+      }
+    },
+    "models_used": {
+      "gemini-3.6-flash": 0,
+      "gemini-3.5-flash-lite": 2
+    },
+    "errors_count": 0,
+    "gemini_retries": 4
   }
 ]
