@@ -1,66 +1,5 @@
 [
   {
-    "timestamp": "2026-10-11 13:01:04",
-    "execution_time": 15.9,
-    "funnel": {
-      "scraped_total": 35,
-      "scraped_by_source": {
-        "023": 10,
-        "Slobodna dalmacija": 15,
-        "Zadarski list": 10
-      },
-      "already_seen": 8,
-      "rejected_by_keywords": 5,
-      "duplicates_removed_by_ai": 23,
-      "rejection_reasons_list": [
-        "• Japanska metoda duge ubrzava sušenje rub... ➡️ <b>Світовий шум та лайфстайл</b>",
-        "• Nije građevinsko, a košta kao zlato! Pog... ➡️ <b>Світловий шум та лайфстайл</b>",
-        "• Najmanje 109 migranata poginulo, još 116... ➡️ <b>Світовий шум та лайфстайл</b>",
-        "• Sedam natjecatelja Plovanije vratilo se ... ➡️ <b>Спорт</b>",
-        "• Miošića su svi šutnuli! Iako su me izvel... ➡️ <b>Побут чужих міст</b>",
-        "• Armada noćas presrela autobus s Demonima... ➡️ <b>Побут чужих міст</b>",
-        "• Stakla u automobilu brže se odmagle uz o... ➡️ <b>Світовий шум та лайфстайл</b>",
-        "• Kiša? Pa što? Na Stradun se mora... ➡️ <b>Побут чужих міст</b>",
-        "• Automobilom nasrnuo na policajca, pa pob... ➡️ <b>Побут чужих міст</b>",
-        "• Mjesec dana bez alkohola može poboljšati... ➡️ <b>Світовий шум та лайфстайл</b>",
-        "• Zadarskim navijačima prisjeo nedjeljni r... ➡️ <b>Спорт</b>",
-        "• Deset godina karlovačke Aquatike: od skr... ➡️ <b>Побут чужих міст</b>",
-        "• Lažne poruke više ne odaju pravopisne po... ➡️ <b>Світовий шум та лайфстайл</b>",
-        "• Nakon kiše prva je esenska bura donijela... ➡️ <b>Побут чужих міст</b>",
-        "• Možemo! kritizira Grbina, ali ne želi nj... ➡️ <b>Побут чужих міст</b>",
-        "• Rođendan KUD Stjepan Radić: u Prodvorju ... ➡️ <b>Побут чужих міст</b>",
-        "• Papa Leo ima manju izraslinu na plućnom ... ➡️ <b>Дублікат події</b>",
-        "• Papa Lav XIV vjernicima otkrio da u nare... ➡️ <b>Світовий шум та лайфстайл</b>",
-        "• Coldplay i Imagine Dragons u čaroliji sv... ➡️ <b>Світовий шум та лайфстайл</b>",
-        "• Trebinjci grade moderni kongresni centar... ➡️ <b>Світовий шум та лайфстайл</b>",
-        "• Tigar Altai ubio posjetitelja koji mu se... ➡️ <b>Світовий шум та лайфстайл</b>",
-        "• Dalmacija je sve toplija, a vode je sve ... ➡️ <b>Світовий шум та лайфстайл</b>",
-        "• Župan Blaž Pezo: ‘Radovi stoje godinu da... ➡️ <b>Побут чужих міст</b>"
-      ]
-    },
-    "backlog": {
-      "total_size": 23,
-      "sources": {
-        "Slobodna dalmacija": 11,
-        "023": 5,
-        "Zadarski list": 7
-      }
-    },
-    "published": {
-      "total": 0,
-      "ukraine_priority": 0,
-      "with_images": 0,
-      "text_only": 0,
-      "sources": {}
-    },
-    "models_used": {
-      "gemini-3.5-flash-lite": 1,
-      "gemini-3.5-flash": 0
-    },
-    "errors_count": 0,
-    "gemini_retries": 0
-  },
-  {
     "timestamp": "2026-10-11 14:01:13",
     "execution_time": 32.1,
     "funnel": {
@@ -5860,5 +5799,60 @@
     },
     "errors_count": 0,
     "gemini_retries": 2
+  },
+  {
+    "timestamp": "2026-10-21 10:01:09",
+    "execution_time": 220.9,
+    "funnel": {
+      "scraped_total": 35,
+      "scraped_by_source": {
+        "023": 10,
+        "Slobodna dalmacija": 15,
+        "Zadarski list": 10
+      },
+      "already_seen": 10,
+      "rejected_by_keywords": 10,
+      "duplicates_removed_by_ai": 15,
+      "rejection_reasons_list": [
+        "• Privatni smještaj u Dubrovniku donosi 350 miljuna eura turističke potr → Побут інших міст | Сутності: Дубровник, Andro Vlahušić, приватне розміщення, 350 мільйонів євро",
+        "• Branko Kolarić i Ivica Baksa suzdržani u vezi opoziva Vlade → Дубль в історії | Сутності: Branko Kolarić, Ivica Baksa, Андрей Пленкович, Уряд Хорватії",
+        "• Gotovo 500 brodova i jahti, više od 3.000 zaposlenih: Mali brodari u 2 → Реклама | Сутності: Hrvatska udruga privatnih brodara, Ядра, 391 мільйон євро",
+        "• Humor, zajedništvo i vjera u bolje sutra; Ne propustite sjajnu kazališ → Дубль в історії | Сутності: HNK Zadar, Анте Томич, Zorin dom, Нада",
+        "• Autotrolej: Isporuka 12 novih Higer električnih autobusa odgođena za p → Дубль в історії | Сутності: Autotrolej, Higer, Рієка, Задар",
+        "• Mala udruga s velikim idejama; Virska “Škatulica” izrađuje ukrase za A → Дубль в історії | Сутності: Шкатуліца, Вір, Sanja Polak, Advent",
+        "• Djevojčici filter u bazenu povukao kosu, nije mogla izroniti. Helikopt → Побут інших міст | Сутності: Рабац, KBC Rijeka, басейн, Німеччина",
+        "• Rijeci danas i sutra prijeti obilne kiša s olujnim udarima vjetra. Int → Побут інших міст | Сутності: Рієка, DHMZ, Rijeka plus, шторм",
+        "• Plenković potvrdio rast godišnjeg dodatka za umirovljenike, evo koliko → Дубль в історії | Сутності: Андрей Пленкович, Уряд, пенсіонери, 208 євро",
+        "• Hrvatska ima više od 200 tvrtki u obrambenom ekosustavu. Sada traže pu → Дубль в історії | Сутності: HGK, MORH, оборонна промисловість, Загреб",
+        "• Požar u Pagu zahvatio dva skladišta trgovačkog društva, policija istra → Дубль в історії | Сутності: Паг, JVP Pag, пожежа, склад",
+        "• Dokapitalizacija Jadrolinije. Stižu četiri važne trajektne linije, des → Дубль в історії | Сутності: Jadrolinija, Світовий банк, Міністерство моря, траєкти",
+        "• Koncert Dubrovačkog simfonijskog orkestra i violončelista Janka Franko → Побут інших міст | Сутності: Dubrovački simfonijski orkestar, Revelin, Janko Franković, Дубровник",
+        "• Poljaci ogorčeni nakon odmora u Dubrovniku: ‘Umjesto s lijepim uspomen → Побут інших міст | Сутності: Дубровник, Польща, Index, штраф 1500 євро",
+        "• Zadar u rujnu i listopadu zabilježio pad dolazaka i noćenja, domaći go → Дубль в історії | Сутності: Задар, eVisitor, туристичні ночівлі, Німеччина"
+      ]
+    },
+    "backlog": {
+      "total_size": 3,
+      "sources": {
+        "Slobodna dalmacija": 1,
+        "023": 2
+      }
+    },
+    "published": {
+      "total": 3,
+      "ukraine_priority": 0,
+      "with_images": 2,
+      "text_only": 1,
+      "sources": {
+        "023": 1,
+        "Slobodna dalmacija": 2
+      }
+    },
+    "models_used": {
+      "gemini-3.6-flash": 0,
+      "gemini-3.5-flash-lite": 2
+    },
+    "errors_count": 0,
+    "gemini_retries": 4
   }
 ]
