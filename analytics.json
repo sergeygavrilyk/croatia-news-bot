@@ -1,68 +1,5 @@
 [
   {
-    "timestamp": "2026-10-12 12:01:04",
-    "execution_time": 17.5,
-    "funnel": {
-      "scraped_total": 35,
-      "scraped_by_source": {
-        "023": 10,
-        "Slobodna dalmacija": 15,
-        "Zadarski list": 10
-      },
-      "already_seen": 7,
-      "rejected_by_keywords": 1,
-      "duplicates_removed_by_ai": 25,
-      "rejection_reasons_list": [
-        "• Nobel za ekonomiju Hallu i Woodfordu za ... ➡️ <b>Іноземні країни (геоблок) та світовий шум</b>",
-        "• Pomicanje sata može poremetiti san, a st... ➡️ <b>Світовий шум, поради</b>",
-        "• Rekorder po kazni, a bome i po promilima... ➡️ <b>Побут чужих міст (не Задар)</b>",
-        "• Besplatne e-knjige Andrića, Koščeca, Per... ➡️ <b>Культурний шум, не стосується Задара чи України</b>",
-        "• Četiri površine u kući koje ne biste tre... ➡️ <b>Світовий шум, поради побуту</b>",
-        "• 17. Dubrovačka trpeza: tradicionalna gas... ➡️ <b>Побут чужих міст (Дубровник)</b>",
-        "• “Večera za 5” u Međimurju. Od superbake ... ➡️ <b>Побут чужих міст (Меджимур'є)</b>",
-        "• U Nadinu otkriven središnji križ za sve ... ➡️ <b>Дубль історичної події або дрібне оновлення</b>",
-        "• Nezvani gosti rade kaos na otoku, mješta... ➡️ <b>Дубль існуючої проблеми островів</b>",
-        "• Treće izdanje Živa Voda Festivala stiže ... ➡️ <b>Побут чужих міст (Загреб)</b>",
-        "• PRILIKA KOJA SE NE PROPUŠTA Cijeli asort... ➡️ <b>Реклама, комерційний матеріал</b>",
-        "• Smrt srednjoškolske učenice iz Dalmacije... ➡️ <b>Загальномедична новина без специфіки Задара</b>",
-        "• Kreće borba s vremenom u MasterChefu. Je... ➡️ <b>Розважальний контент, шоу</b>",
-        "• Prvi Zadranin preplivao La Manche, a pli... ➡️ <b>Спорт</b>",
-        "• Veliki uspjeh mladih Šibenčana: Film ‘Sh... ➡️ <b>Побут чужих міст (Шибеник)</b>",
-        "• Tiha budućnost? Bangkok raspravlja o zab... ➡️ <b>Інші країни (геоблок)</b>",
-        "• KUD sv. Ante Nadin i KUD Branimir iz Ben... ➡️ <b>Локальна культурна подія регіону</b>",
-        "• Ulica u Dubrovniku mjesecima raskopana, ... ➡️ <b>Побут чужих міст (Дубровник)</b>",
-        "• Dragan Primorac i Vilim Molnar među dva ... ➡️ <b>Дубль національної наукової новини</b>",
-        "• Policija pronašla napadača na državljane... ➡️ <b>Побут чужих міст (Дубровник)</b>",
-        "• Tri puta najbolji – Miševi i mačke nagla... ➡️ <b>Побут чужих міст (Рієка)</b>",
-        "• S 3,57 promila izletio s ceste, prevrnuo... ➡️ <b>Дубль кримінальної події в Метковічі</b>",
-        "• Povjerenje potrošača u SAD-u na najnižoj... ➡️ <b>Інші країни (геоблок)</b>",
-        "• Filmska potjera u Čajkovićima: 23-godišn... ➡️ <b>Побут чужих міст (Дубровник)</b>",
-        "• Naručio mu nadgrobnu ploču za živu punic... ➡️ <b>Побут чужих міст (Ловран)</b>"
-      ]
-    },
-    "backlog": {
-      "total_size": 38,
-      "sources": {
-        "Slobodna dalmacija": 22,
-        "023": 6,
-        "Zadarski list": 10
-      }
-    },
-    "published": {
-      "total": 0,
-      "ukraine_priority": 0,
-      "with_images": 0,
-      "text_only": 0,
-      "sources": {}
-    },
-    "models_used": {
-      "gemini-3.5-flash-lite": 1,
-      "gemini-3.6-flash": 0
-    },
-    "errors_count": 0,
-    "gemini_retries": 0
-  },
-  {
     "timestamp": "2026-10-12 13:01:07",
     "execution_time": 185.9,
     "funnel": {
@@ -5785,6 +5722,59 @@
       "sources": {
         "023": 2,
         "Slobodna dalmacija": 1
+      }
+    },
+    "models_used": {
+      "gemini-3.5-flash-lite": 2,
+      "gemini-3.6-flash": 0
+    },
+    "errors_count": 0,
+    "gemini_retries": 0
+  },
+  {
+    "timestamp": "2026-10-22 12:01:10",
+    "execution_time": 240.5,
+    "funnel": {
+      "scraped_total": 35,
+      "scraped_by_source": {
+        "023": 10,
+        "Slobodna dalmacija": 15,
+        "Zadarski list": 10
+      },
+      "already_seen": 5,
+      "rejected_by_keywords": 14,
+      "duplicates_removed_by_ai": 15,
+      "rejection_reasons_list": [
+        "• Papa Lav je dobro i neće trebati dodatno liječenje → Геоблок | Сутності: Папа Римський, Володимир Зеленський, Ватикан, Рим",
+        "• Crikvenica najbolji mali grad za obrazovanje, demografiju i mlade → Побут інших міст | Сутності: Цриквеница, Івона Матошич Гашпарович, Шибеник",
+        "• Odana počast braniteljima u parku Striježice u Župi dubrovačkoj → Побут інших міст | Сутності: Жупа дубровачка, Міро Байо, Парк Стріжеіце",
+        "• U Čavlima nezadovoljni radovima na uređenju Doma kulture: “Razloga je  → Побут інших міст | Сутності: Чавле, Івана Цвітан Поліч, Дом культури",
+        "• Slavni Poljak obožava Dalmaciju i svoju kuću na Pelješcu, a nikad neće → Світовий шум | Сутності: Роберт Маклович, Пелєшац, Польща, Краків",
+        "• Tragedija u zagrebačkom Zoo vrtu; Utopilo se mladunče vodenkonja? Prij → Побут інших міст | Сутності: Загребський зоопарк, Приятелі живойіна, Державна інспекція",
+        "• U nautici rastu prihodi i investicije, stručnjaci upozoravaju na profi → Дубль в історії | Сутності: Біоград-на-Мору, HUP, HGK, Пашко Клисович",
+        "• Nastavlja se program pomoćnika u nastavi, u Dubrovniku imaju jednu od  → Побут інших міст | Сутності: Дубровник, Мато Франкович, Європейський соціальний фонд",
+        "• Sutra u Posedarju počinje jedinstvena „Berba maslina” – okus i tradici → Дубль в історії | Сутності: Поседар'є, Новиградське море, ОПГ Новакович",
+        "• Miletić: Građani Čabra imaju pravo znati tko im zagađuje zrak, tražim  → Побут інших міст | Сутності: Марін Милетич, Чабар, Гертово, Фінвест",
+        "• Dubrovnik traži više vremena za Plan upravljanja, Krstulović poručio:  → Побут інших міст | Сутності: Дубровник, ЮНЕСКО, Марін Крстулович, Ірена Хрстич",
+        "• Zbog dogradnje čvora Matulji – Opatija sutra na snazi privremena regul → Побут інших міст | Сутності: Матульї, Опатія, Рієка, ГП Крк",
+        "• Dobre vijesti za stanovnike ove općine: povećan broj studentskih stipe → Побут інших міст | Сутності: Білиці, Іве Чалета-Кар",
+        "• Plenković u Crnoj Gori pozdravio zadnje odluke Podgorice: “To je korak → Геоблок | Сутності: Андрей Пленкович, Чорногорія, Мілойко Спаїч, Подгориця",
+        "• Osnovana Hrvatska komora logopeda, no tisuće djece i dalje strahuju da → Дубль в історії | Сутності: Хорватська палата логопедів, Ірена Хрстич, Зоран Міланович, Андрей Пленкович"
+      ]
+    },
+    "backlog": {
+      "total_size": 2,
+      "sources": {
+        "023": 2
+      }
+    },
+    "published": {
+      "total": 3,
+      "ukraine_priority": 0,
+      "with_images": 0,
+      "text_only": 3,
+      "sources": {
+        "023": 3
       }
     },
     "models_used": {
