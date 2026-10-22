@@ -1,68 +1,5 @@
 [
   {
-    "timestamp": "2026-10-12 11:01:10",
-    "execution_time": 180.7,
-    "funnel": {
-      "scraped_total": 35,
-      "scraped_by_source": {
-        "023": 10,
-        "Slobodna dalmacija": 15,
-        "Zadarski list": 10
-      },
-      "already_seen": 3,
-      "rejected_by_keywords": 2,
-      "duplicates_removed_by_ai": 22,
-      "rejection_reasons_list": [
-        "• Smrt srednjoškolske učenice iz Dalmacije... ➡️ <b>Медичні поради та загальна інформація про здоров'я (побутовий шум), відсутність прив'язки до Задара.</b>",
-        "• Četiri površine u kući koje ne biste tre... ➡️ <b>Світовий шум: побутові поради щодо прибирання.</b>",
-        "• Talijanske rajčice sa salmonelom završil... ➡️ <b>Дублікат події з історії (заражені томати) та побутові проблеми інших регіонів (Кварнер, Істрія).</b>",
-        "• Veliki uspjeh mladih Šibenčana: Film ‘Sh... ➡️ <b>Локальна новина міста Шибеник та Джурджевац.</b>",
-        "• U Nadinu otkriven središnji križ za sve ... ➡️ <b>Локальна подія містечка Надин, що не має загальнонаціонального значення або прямого відношення до Задара.</b>",
-        "• Denis Španjol osvojio naslov državnog pr... ➡️ <b>Спорт та професійні змагання (турнір барменів).</b>",
-        "• Ulica u Dubrovniku mjesecima raskopana, ... ➡️ <b>Побут чужих міст: ремонт доріг та комунальні проблеми в Дубровнику.</b>",
-        "• Bundevijada u Vrbovskom: Više od 100 izl... ➡️ <b>Побут чужих міст: ярмарок у Врбовсько.</b>",
-        "• Policija pronašla napadača na državljane... ➡️ <b>Побут чужих міст: дрібний кримінал у Дубровнику, а також дублікат ID 19.</b>",
-        "• PRILIKA KOJA SE NE PROPUŠTA Cijeli asort... ➡️ <b>Реклама та промо-матеріали магазинного знижки.</b>",
-        "• Održana 30. sportska natjecanja ratnih i... ➡️ <b>Спорт: спортивні змагання в Малі-Лошині.</b>",
-        "• S 3,57 promila izletio s ceste, prevrnuo... ➡️ <b>Побут чужих міст: ДТП та алкогольне сп'яніння в Метковичі.</b>",
-        "• Riječanka osmislila aplikaciju za tražen... ➡️ <b>Побут чужих міст: локальний стартап з Рієки.</b>",
-        "• Filmska potjera u Čajkovićima: 23-godišn... ➡️ <b>Побут чужих міст: дорожнє порушення біля Дубровника.</b>",
-        "• Prvi Zadranin preplivao La Manche, a pli... ➡️ <b>Спорт: спортивні досягнення та результати плавального клубу.</b>",
-        "• Športsko ribolovno društvo Parangal obil... ➡️ <b>Спорт та побут чужих міст: ювілей рибальського клубу на Цресі.</b>",
-        "• Uhićen 23-godišnjak koji je u Dubrovniku... ➡️ <b>Побут чужих міст (кримінал у Дубровнику) та кластерний дублікат ID 10.</b>",
-        "• KUD sv. Ante Nadin i KUD Branimir iz Ben... ➡️ <b>Дрібна культурна подія регіонального ансамблю за межами Задара.</b>",
-        "• Vozio Krasicom s 2,73 promila alkohola u... ➡️ <b>Побут чужих міст: водіння напідпитку в Красиці.</b>",
-        "• Tragedija na Korčuli: u teškoj prometnoj... ➡️ <b>Побут чужих міст: ДТП на Корчулі.</b>",
-        "• Čarolija jeseni podno Velebita: Više od ... ➡️ <b>Локальний туризм та ярмарок у Грачаці (поза межами міста Задар).</b>",
-        "• Otkriven uzrok požara u sortirnici otpad... ➡️ <b>Побут чужих міст: пожежа на звалищі на острові Раб.</b>"
-      ]
-    },
-    "backlog": {
-      "total_size": 36,
-      "sources": {
-        "Slobodna dalmacija": 19,
-        "023": 8,
-        "Zadarski list": 9
-      }
-    },
-    "published": {
-      "total": 3,
-      "ukraine_priority": 1,
-      "with_images": 1,
-      "text_only": 2,
-      "sources": {
-        "Zadarski list": 1,
-        "023": 2
-      }
-    },
-    "models_used": {
-      "gemini-3.5-flash-lite": 1,
-      "gemini-3.6-flash": 1
-    },
-    "errors_count": 0,
-    "gemini_retries": 0
-  },
-  {
     "timestamp": "2026-10-12 12:01:04",
     "execution_time": 17.5,
     "funnel": {
@@ -5779,6 +5716,58 @@
         "• Plastični otpad iz Neretve: znanstvenici pozivaju građane, volontere i → Побут інших міст | Сутності: Neretva, Metković, Tethys4adrion, Pero Tutman",
         "• Iznajmljivači, ovo su nova pravila koje uvodi AIRBNB, a stupaju na sna → Світовий шум | Сутності: Airbnb, BBC, 20. studenog",
         "• Danas toplo, i do 20 Celzijevih, a evo hoće li nam trebati kišobrani n → Дубль в історії | Сутності: DHMZ, Jadran, Hrvatska"
+      ]
+    },
+    "backlog": {
+      "total_size": 4,
+      "sources": {
+        "Zadarski list": 1,
+        "023": 3
+      }
+    },
+    "published": {
+      "total": 3,
+      "ukraine_priority": 0,
+      "with_images": 1,
+      "text_only": 2,
+      "sources": {
+        "023": 2,
+        "Slobodna dalmacija": 1
+      }
+    },
+    "models_used": {
+      "gemini-3.5-flash-lite": 2,
+      "gemini-3.6-flash": 0
+    },
+    "errors_count": 0,
+    "gemini_retries": 0
+  },
+  {
+    "timestamp": "2026-10-22 11:01:26",
+    "execution_time": 191.7,
+    "funnel": {
+      "scraped_total": 35,
+      "scraped_by_source": {
+        "023": 10,
+        "Slobodna dalmacija": 15,
+        "Zadarski list": 10
+      },
+      "already_seen": 5,
+      "rejected_by_keywords": 15,
+      "duplicates_removed_by_ai": 12,
+      "rejection_reasons_list": [
+        "• Uz predstave »Spavaj, dijete moje malo, spavaj« i »Under the Skin«: Sn → Культурний шум | Сутності: Rijeka, Eleonora-Magdalena Vrdoljak, Matija Ferlin, Jon Fosse",
+        "• Miletić: Građani Čabra imaju pravo znati tko im zagađuje zrak, tražim  → Побут інших міст | Сутності: Marin Miletić, Čabar, Finvest, Gerovo",
+        "• Odana počast braniteljima u parku Striježice u Župi dubrovačkoj → Побут інших міст | Сутності: Župa dubrovačka, Striježice, Miro Bajo, Domovinski rat",
+        "• Zbog dogradnje čvora Matulji – Opatija sutra na snazi privremena regul → Побут інших міст | Сутності: Matulji, Opatija, Rijeka, Hrvatske autoceste",
+        "• Slavni Poljak obožava Dalmaciju i svoju kuću na Pelješcu, a nikad neće → Світовий шум | Сутності: Robert Makłowicz, Pelješac, Krakov, Dalmacija",
+        "• Osnovana Hrvatska komora logopeda, no tisuće djece i dalje strahuju da → Дубль в історії | Сутності: Hrvatska komora logopeda, Ministarstvo zdravstva, Irena Hrstić, HALP",
+        "• Nastavlja se program pomoćnika u nastavi, u Dubrovniku imaju jednu od  → Побут інших міст | Сутності: Grad Dubrovnik, Mato Franković, Europski socijalni fond, Dubrovnik",
+        "• Riječka 128. brigada obilježava 35. godišnjicu osnutka → Побут інших міст | Сутності: Rijeka, 128. brigada, Sveti Vid, Drenova",
+        "• Dubrovnik traži više vremena za Plan upravljanja, Krstulović poručio:  → Побут інших міст | Сутності: Dubrovnik, UNESCO, Marin Krstulović, Stari grad",
+        "• Ovog vikenda počinje zimsko računanje vremena → Світовий шум | Сутності: Vlada RH, HAKOM, Rijeka, Zimsko računanje vremena",
+        "• Dobre vijesti za stanovnike ove općine: povećan broj studentskih stipe → Побут інших міст | Сутності: Općina Bilice, Ive Ćaleta-Car, Bilice",
+        "• Ova mjesta u Konavlima nemaju vodu, trebali bi je dobiti do 14 sati → Побут інших міст | Сутності: Konavle, Močići, Dobrota, Konavosko komunalno društvo"
       ]
     },
     "backlog": {
