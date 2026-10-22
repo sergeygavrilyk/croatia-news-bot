@@ -1,67 +1,5 @@
 [
   {
-    "timestamp": "2026-10-12 13:01:07",
-    "execution_time": 185.9,
-    "funnel": {
-      "scraped_total": 35,
-      "scraped_by_source": {
-        "023": 10,
-        "Slobodna dalmacija": 15,
-        "Zadarski list": 10
-      },
-      "already_seen": 20,
-      "rejected_by_keywords": 2,
-      "duplicates_removed_by_ai": 21,
-      "rejection_reasons_list": [
-        "• Najbolji lovački psi Hrvatske nastupili ... ➡️ <b>Побут та заходи інших регіонів (Госпич)</b>",
-        "• Pomicanje sata može poremetiti san, a st... ➡️ <b>Світовий шум (поради щодо сну)</b>",
-        "• Zabrana korištenja vode u Osoru. “Nije s... ➡️ <b>Побут інших міст (Осор, Крк)</b>",
-        "• Šibenski gimnazijalci proslavili 60 i 65... ➡️ <b>Побут інших міст (Шибеник)</b>",
-        "• Četiri površine u kući koje ne biste tre... ➡️ <b>Світовий шум (побутові поради)</b>",
-        "• Lukanović: Marišćina neće zadovoljavati ... ➡️ <b>Побут інших міст (Рієка)</b>",
-        "• Pirovački vatrogasci ovo su dugo čekali,... ➡️ <b>Побут інших міст (Пироваць)</b>",
-        "• Cijelog ljeta krao motocikle, skutere, b... ➡️ <b>Побут та кримінал інших міст (Рієка)</b>",
-        "• Rekorder po kazni, a bome i po promilima... ➡️ <b>Побут та ДТП в інших регіонах (Меткович)</b>",
-        "• PRILIKA KOJA SE NE PROPUŠTA Cijeli asort... ➡️ <b>Реклама</b>",
-        "• PGŽ obećala komunalni vez svima koji to ... ➡️ <b>Побут інших міст (Рієка)</b>",
-        "• 17. Dubrovačka trpeza: tradicionalna gas... ➡️ <b>Побут інших міст (Дубровник)</b>",
-        "• Prvi Zadranin preplivao La Manche, a pli... ➡️ <b>Спорт</b>",
-        "• Lukanovića pitali o prodaji Teatra Fenic... ➡️ <b>Побут інших міст (Рієка)</b>",
-        "• KUD sv. Ante Nadin i KUD Branimir iz Ben... ➡️ <b>Локальний фольклорний захід поза Задаром</b>",
-        "• Dva pijana vozača sudarila se u Žegotima... ➡️ <b>Побут та ДТП в інших регіонах (Рієка)</b>",
-        "• Smrt srednjoškolske učenice iz Dalmacije... ➡️ <b>Світовий шум (медичні поради та симптоми)</b>",
-        "• Udruženje novinara: Novi pokušaji uprave... ➡️ <b>Геоблок (події в Сербії)</b>",
-        "• Veliki uspjeh mladih Šibenčana: Film ‘Sh... ➡️ <b>Побут інших міст (Шибеник)</b>",
-        "• Dabar ostavio bez struje 1600 potrošača ... ➡️ <b>Геоблок (події в Боснії і Герцеговині)</b>",
-        "• Ulica u Dubrovniku mjesecima raskopana, ... ➡️ <b>Побут інших міст (Дубровник)</b>"
-      ]
-    },
-    "backlog": {
-      "total_size": 51,
-      "sources": {
-        "Slobodna dalmacija": 25,
-        "023": 7,
-        "Zadarski list": 19
-      }
-    },
-    "published": {
-      "total": 3,
-      "ukraine_priority": 0,
-      "with_images": 1,
-      "text_only": 2,
-      "sources": {
-        "023": 2,
-        "Slobodna dalmacija": 1
-      }
-    },
-    "models_used": {
-      "gemini-3.5-flash-lite": 1,
-      "gemini-3.6-flash": 1
-    },
-    "errors_count": 0,
-    "gemini_retries": 0
-  },
-  {
     "timestamp": "2026-10-12 14:01:10",
     "execution_time": 170.3,
     "funnel": {
@@ -5783,5 +5721,57 @@
     },
     "errors_count": 0,
     "gemini_retries": 0
+  },
+  {
+    "timestamp": "2026-10-22 14:01:15",
+    "execution_time": 190.3,
+    "funnel": {
+      "scraped_total": 35,
+      "scraped_by_source": {
+        "023": 10,
+        "Slobodna dalmacija": 15,
+        "Zadarski list": 10
+      },
+      "already_seen": 2,
+      "rejected_by_keywords": 15,
+      "duplicates_removed_by_ai": 11,
+      "rejection_reasons_list": [
+        "• Hrvatska nacionalna vizija Jasne Vojnić pozvala Hrvate u Srbiji da iza → Геоблок | Сутності: Jasna Vojnić, Srbija, DSHV, izbori",
+        "• Mihajlo Mihajlov – prvi disident u Zadru za vrijeme Jugoslavije: tko s → Світовий шум | Сутності: Sveučilište u Zadru, Mihajlo Mihajlov, Zadar, 1966",
+        "• Macron zabranio “nezakonite” prosvjede u Francuskoj. Za sve krivi kraj → Геоблок | Сутності: Emmanuel Macron, Francuska, Pariz, prosvjedi",
+        "• Proširenje prava na obeštećenje radnika izloženih azbestu: 220 radnika → Геоблок | Сутності: Plobest, Salonit, Marija Vučković, azbest",
+        "• Tragedija u zagrebačkom Zoo vrtu; Utopilo se mladunče vodenkonja? Prij → Побут інших міст | Сутності: Zagreb, Zoološki vrt, Prijatelji životinja, vodenkonj",
+        "• U zagrebačkom ZOO-u uginulo mladunče patuljastog vodenkonja: “Shrvani  → Дубль в історії | Сутності: Zagreb, Zoološki vrt, Ivan Cizelj, vodenkonj",
+        "• Sutra na Vojnoviću i Pilama posebna prometna regulativa. Evo što se ra → Побут інших міст | Сутності: Dubrovnik, Vojnović, Pile, promet",
+        "• Besplatna radionica Nauči spasiti život – Pokreni srce uz AVD → Побут інших міст | Сутності: Rijeka, Crveni križ, AVD, prva pomoć",
+        "• Svečana sjednica u Cavtatu, načelnik Božo Lasić poručio: ‘Konavle nisu → Побут інших міст | Сутності: Konavle, Cavtat, Božo Lasić, Branko Bačić",
+        "• Dva i pol mjeseca je od tragedije na moru u kojoj je poginuo ugledni z → Світовий шум | Сутності: Tomislav Sorić, Zadar, Mali Iž, Županijsko državno odvjetništvo",
+        "• Odana počast braniteljima u parku Striježice u Župi dubrovačkoj → Побут інших міст | Сутності: Župa dubrovačka, Striježice, branitelji, Miro Bajo"
+      ]
+    },
+    "backlog": {
+      "total_size": 6,
+      "sources": {
+        "Zadarski list": 1,
+        "Slobodna dalmacija": 1,
+        "023": 4
+      }
+    },
+    "published": {
+      "total": 3,
+      "ukraine_priority": 0,
+      "with_images": 1,
+      "text_only": 2,
+      "sources": {
+        "Slobodna dalmacija": 1,
+        "023": 2
+      }
+    },
+    "models_used": {
+      "gemini-3.5-flash-lite": 2,
+      "gemini-3.6-flash": 0
+    },
+    "errors_count": 0,
+    "gemini_retries": 1
   }
 ]
