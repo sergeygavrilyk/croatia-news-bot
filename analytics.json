@@ -1,66 +1,5 @@
 [
   {
-    "timestamp": "2026-10-12 08:01:04",
-    "execution_time": 177.7,
-    "funnel": {
-      "scraped_total": 35,
-      "scraped_by_source": {
-        "023": 10,
-        "Slobodna dalmacija": 15,
-        "Zadarski list": 10
-      },
-      "already_seen": 3,
-      "rejected_by_keywords": 5,
-      "duplicates_removed_by_ai": 21,
-      "rejection_reasons_list": [
-        "• Zaigrajte zvučni pikado i donirajte za U... ➡️ <b>Побут чужих міст</b>",
-        "• “Veseli” vozač u Senju napuhao čak 2,42 ... ➡️ <b>Побут чужих міст</b>",
-        "• Mlada Srpkinja krala šminku i parfeme u ... ➡️ <b>Побут чужих міст</b>",
-        "• Čarolija jeseni podno Velebita: Više od ... ➡️ <b>Стоп-тема: локальні події та розваги поза Задаром</b>",
-        "• U Danskoj napravili energanu na kojoj se... ➡️ <b>Інші країни / Світовий шум</b>",
-        "• Korčulanski ‘vitezovi‘ stižu u Zagreb: p... ➡️ <b>Побут чужих міст</b>",
-        "• Zadarska Ultima do dvanaest odličja u na... ➡️ <b>Спорт</b>",
-        "• Ovogodišnji rujan bio je na globalnoj ra... ➡️ <b>Світовий шум</b>",
-        "• Roboti za brodove i softver za europske ... ➡️ <b>Побут чужих міст</b>",
-        "• Šibenčanin Josip oduševio u Supertalentu... ➡️ <b>Світовий шум / Шоу-бізнес</b>",
-        "• AI više nije samo prednost, nego poslovn... ➡️ <b>Побут чужих міст</b>",
-        "• Rally Primorje: Cestama ponad Vinodola i... ➡️ <b>Спорт</b>",
-        "• Bundevijada u Vrbovskom: Od zimnice do č... ➡️ <b>Побут чужих міст</b>",
-        "• Dubrovnik ovisi o jednom jedinom dimnjač... ➡️ <b>Побут чужих міст</b>",
-        "• Kronotopija (naših) negativnosti: Franjo... ➡️ <b>Світовий шум / Культура</b>",
-        "• 400 godina jedne obitelji i priča koja t... ➡️ <b>Побут чужих міст</b>",
-        "• “Mahler i Bruckner”: Riječki simfonijski... ➡️ <b>Побут чужих міст</b>",
-        "• Evgenija Matović, jedina odgojiteljica o... ➡️ <b>Побут чужих міст</b>",
-        "• Poznati riječki bariton Robert Kolar nas... ➡️ <b>Інші країни / Побут чужих міст</b>",
-        "• Ma pogledajte što mlada radi na prvom pl... ➡️ <b>Дубль або світський шум</b>",
-        "• Kod Ane Handabake u Mlinima ljetuje se k... ➡️ <b>Побут чужих міст</b>"
-      ]
-    },
-    "backlog": {
-      "total_size": 26,
-      "sources": {
-        "023": 2,
-        "Slobodna dalmacija": 14,
-        "Zadarski list": 10
-      }
-    },
-    "published": {
-      "total": 3,
-      "ukraine_priority": 0,
-      "with_images": 3,
-      "text_only": 0,
-      "sources": {
-        "Slobodna dalmacija": 3
-      }
-    },
-    "models_used": {
-      "gemini-3.5-flash-lite": 2,
-      "gemini-3.6-flash": 0
-    },
-    "errors_count": 0,
-    "gemini_retries": 0
-  },
-  {
     "timestamp": "2026-10-12 09:01:11",
     "execution_time": 169.8,
     "funnel": {
@@ -5824,6 +5763,59 @@
       "sources": {
         "Zadarski list": 1,
         "Slobodna dalmacija": 2
+      }
+    },
+    "models_used": {
+      "gemini-3.5-flash-lite": 2,
+      "gemini-3.6-flash": 0
+    },
+    "errors_count": 0,
+    "gemini_retries": 0
+  },
+  {
+    "timestamp": "2026-10-22 08:01:08",
+    "execution_time": 165.9,
+    "funnel": {
+      "scraped_total": 35,
+      "scraped_by_source": {
+        "023": 10,
+        "Slobodna dalmacija": 15,
+        "Zadarski list": 10
+      },
+      "already_seen": 0,
+      "rejected_by_keywords": 8,
+      "duplicates_removed_by_ai": 14,
+      "rejection_reasons_list": [
+        "• Vratite se u djetinjstvo uz Ljubana, Peru i Dragu; “Vlak u snijegu” st → Культурна подія інших міст | Сутності: Providurova palača, Kino Zona, Vlak u snijegu, Zagreb",
+        "• Severina najavila novu Arenu Zagreb: Turneja “Ja samo pjevam” dobiva B → Реклама | Сутності: Severina, Arena Zagreb, Ja samo pjevam, Eventim",
+        "• Iznajmljivači, ovo su nova pravila koje uvodi AIRBNB, a stupaju na sna → Світовий шум | Сутності: Airbnb, BBC, Zakon, Iznajmljivači",
+        "• Danas toplo, i do 20 Celzijevih, a evo hoće li nam tebati kišobrani na → Дубль в історії | Сутності: DHMZ, Jadran, Dalmacija, Prognoza",
+        "• Prvi put u Hrvatskoj izvedena nova pretraga za bolesnike s bolestima j → Побут інших міст | Сутності: KBC Sestre milosrdnice, Zagreb, Sanja Stojsavljević Shapeski, EUS-PPG",
+        "• Svečana sjednica u Cavtatu, načelnik Božo Lasić poručio: Konavle nisu  → Побут інших міст | Сутності: Cavtat, Konavle, Božo Lasić, Branko Bačić",
+        "• Prava pošta na 20 milja. Od braka do braka za šampjera i dva cara → Світовий шум | Сутності: Rino Šupić, Zubatac, Haswing, Jadran",
+        "• Velika rekonstrukcija Gradske uprave! Odlazi polovica pročelnika, grad → Побут інших міст | Сутності: Šibenik, Željko Burić, Gradska uprava, Mirjana Žurić",
+        "• Odlazak žene koja je Zadru darovala srce; Sestra Melhiora Biošić nakon → Дубль в історії | Сутності: Melhiora Biošić, Zadar, Split, Zadarska nadbiskupija",
+        "• Michaela Selinger, operna prvakinja »Zajca«: Pravi je dar pjevati u Po → Побут інших міст | Сутності: HNK Zajc, Rijeka, Michaela Selinger, Pepeljuga",
+        "• Pitali smo u Sanitatu hoće li automobili sa sustavom kamera zamijenti  → Побут інших міст | Сутності: Sanitat, Dubrovnik, Scan a Car, Parking",
+        "• Darivanjem uzornih vozača PU dubrovačko-neretvanska obilježila Naciona → Побут інших міст | Сутності: PU dubrovačko-neretvanska, Nacionalni dan sigurnosti, Dubrovnik, Policija",
+        "• Damir Fabijanić otvoriti će izložbu \"Dubrovački ljetnikovac\" → Побут інших міст | Сутності: Damir Fabijanić, Dubrovački ljetnikovac, Umjetnička galerija Dubrovnik, Zagreb",
+        "• Zatvara se Prirodoslovni muzej Dubrovnik → Побут інших міст | Сутності: Prirodoslovni muzej Dubrovnik, Dubrovnik, Stolarija"
+      ]
+    },
+    "backlog": {
+      "total_size": 3,
+      "sources": {
+        "023": 3
+      }
+    },
+    "published": {
+      "total": 3,
+      "ukraine_priority": 0,
+      "with_images": 1,
+      "text_only": 2,
+      "sources": {
+        "023": 2,
+        "Zadarski list": 1
       }
     },
     "models_used": {
