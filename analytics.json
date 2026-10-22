@@ -1,68 +1,5 @@
 [
   {
-    "timestamp": "2026-10-12 15:01:13",
-    "execution_time": 185.1,
-    "funnel": {
-      "scraped_total": 35,
-      "scraped_by_source": {
-        "023": 10,
-        "Slobodna dalmacija": 15,
-        "Zadarski list": 10
-      },
-      "already_seen": 10,
-      "rejected_by_keywords": 3,
-      "duplicates_removed_by_ai": 22,
-      "rejection_reasons_list": [
-        "• DOZNAJEMO! Lürssen na izlaznim vratima i... ➡️ <b>Побут чужого міста</b>",
-        "• Kamo nestaje masnoća kad smršavimo: najv... ➡️ <b>Світовий шум</b>",
-        "• Unatoč opasnosti od četničkih brodova, s... ➡️ <b>Історія</b>",
-        "• Most: Poljoprivredna politika ne smije b... ➡️ <b>Дубль або несуттєва політична заява</b>",
-        "• Pomicanje sata može poremetiti san, a st... ➡️ <b>Світовий шум</b>",
-        "• Ovaj dio parkinga na Lapadskoj obali zat... ➡️ <b>Побут чужого міста</b>",
-        "• Počinju javne tribine upoznavanja projek... ➡️ <b>Побут чужого міста</b>",
-        "• Četiri površine u kući koje ne biste tre... ➡️ <b>Світовий шум</b>",
-        "• PRILIKA KOJA SE NE PROPUŠTA Cijeli asort... ➡️ <b>Реклама</b>",
-        "• U subotu na Stradunu 17. Dubrovačka trpe... ➡️ <b>Побут чужого міста</b>",
-        "• Isporuke Volkswagena osjetno pale u treć... ➡️ <b>Інші країни / геоблок</b>",
-        "• Prvi Zadranin preplivao La Manche, a pli... ➡️ <b>Спорт</b>",
-        "• Rambo Amadeus pred rasprodanim HNK Zadar... ➡️ <b>Культурна афіша без критичного значення</b>",
-        "• Stižu death metal legende Suffocation s ... ➡️ <b>Побут чужого міста</b>",
-        "• Memorijalni turnir ‘Lovca‘ u čast velika... ➡️ <b>Спорт</b>",
-        "• “Između nas”: Festival Cherry Pop u Zagr... ➡️ <b>Побут чужого міста</b>",
-        "• Odlazak legende Šubićevca: preminuo Rade... ➡️ <b>Спорт</b>",
-        "• Šibenski gimnazijalci proslavili 60 i 65... ➡️ <b>Побут чужого міста</b>",
-        "• Besplatne e-knjige Andrića, Koščeca, Per... ➡️ <b>Світовий шум</b>",
-        "• Pirovački vatrogasci ovo su dugo čekali,... ➡️ <b>Побут чужого міста</b>",
-        "• “Večera za 5” u Međimurju. Od superbake ... ➡️ <b>Побут чужого міста</b>",
-        "• Rekorder po kazni, a bome i po promilima... ➡️ <b>Побут чужого міста</b>"
-      ]
-    },
-    "backlog": {
-      "total_size": 52,
-      "sources": {
-        "Zadarski list": 17,
-        "Slobodna dalmacija": 30,
-        "023": 5
-      }
-    },
-    "published": {
-      "total": 3,
-      "ukraine_priority": 0,
-      "with_images": 3,
-      "text_only": 0,
-      "sources": {
-        "Slobodna dalmacija": 1,
-        "Zadarski list": 2
-      }
-    },
-    "models_used": {
-      "gemini-3.5-flash-lite": 2,
-      "gemini-3.6-flash": 0
-    },
-    "errors_count": 0,
-    "gemini_retries": 0
-  },
-  {
     "timestamp": "2026-10-12 16:01:11",
     "execution_time": 14.5,
     "funnel": {
@@ -5766,5 +5703,61 @@
     },
     "errors_count": 0,
     "gemini_retries": 2
+  },
+  {
+    "timestamp": "2026-10-22 19:01:13",
+    "execution_time": 174.9,
+    "funnel": {
+      "scraped_total": 35,
+      "scraped_by_source": {
+        "023": 10,
+        "Slobodna dalmacija": 15,
+        "Zadarski list": 10
+      },
+      "already_seen": 7,
+      "rejected_by_keywords": 10,
+      "duplicates_removed_by_ai": 17,
+      "rejection_reasons_list": [
+        "• Jedan hrvatski časnik nestao, a drugi ozlijeđen u napadu dronovima na  → Геоблок | Сутності: Wine Trader, Crno more, MVEP, Rumunjska",
+        "• Deseci tisuća ljudi na završnom skupu Studentske liste: “Srbiju od slo → Геоблок | Сутності: Studentska lista, Srbija, Aleksandar Vučić",
+        "• Crnogorac koji se borio na dubrovačkom ratištu: ‘Sramota me, bio sam a → Світовий шум | Сутності: Anđelko Jovanović, Dubrovnik, JNA, Konavle",
+        "• Tajne ličkog podzemlja: U Gliginoj pećini otkriveni ostaci ljudi stari → Побут інших міст | Сутності: Gligina pećina, Grabovača, Lika, brončano doba",
+        "• Crnogorac koji se borio na dubrovačkom ratištu: ‘Sramota me, bio sam a → Дубль | Сутності: Anđelko Jovanović, Dubrovnik, Konavle, JNA",
+        "• Šimrak: Radojčić od 2013. više nije spominjala Kaštijun, a njezinoj ud → Побут інших міст | Сутності: Maksimilijan Šimrak, Dušica Radojčić, Zelena Istra, Kaštijun",
+        "• Tisuće kamenih brazda na Malti vjerojatno su mlađe nego što su arheolo → Геоблок | Сутності: Joel Grima, Malta, Gozo, Clapham Junction",
+        "• Iznajmljivač iz Rijeke priznao koliko zaradi nakon svih troškova i pro → Побут інших міст | Сутності: Rijeka, Booking, Airbnb, Hvar",
+        "• Jadrolinijin div ‘Dalmacija‘ izvan pogona sve do siječnja: ‘Ispričavam → Дубль | Сутності: Jadrolinija, Dalmacija, Split, Ancona",
+        "• Šime, Ante, Marija i Mare; Otkriveno koja su bila najpopularnija imena → Побут інших міст | Сутності: Arbanasi, Zadar, Milan Perović, Sveučilište u Zadru",
+        "• SDP na udaru: Haker koji je slao Bernardićevu čestitku ukrao i sve oso → Побут інших міст | Сутності: SDP, Davor Bernardić, AZOP, Zagreb",
+        "• Zbog dubrovačke Zone Ispisano je 68.500 kazni, a iznos koji je naplaće → Побут інших міст | Сутності: Dubrovnik, Mato Franković, Zona posebnog prometnog režima",
+        "• Tragedija u zagrebačkom Zoo vrtu; Utopilo se mladunče vodenkonja? Prij → Побут інших міст | Сутності: Zagrebački zoološki vrt, Prijatelji životinja, Zagreb, Tayri",
+        "• Mihajlo Mihajlov – prvi disident u Zadru za vrijeme Jugoslavije: tko s → Побут інших міст | Сутності: Mihajlo Mihajlov, Sveučilište u Zadru, Slobodan glas, Dostojevski",
+        "• Proširenje prava na obeštećenje radnika izloženih azbestu: 220 radnika → Побут інших міст | Сутності: Plobest, Salonit, Marija Vučković, azbest",
+        "• Sutra na Vojnoviću i Pilama posebna prometna regulativa. Evo što se ra → Побут інших міст | Сутності: Vojnović, Pile, Dubrovnik, Lapad Graditelj",
+        "• Svečana sjednica u Cavtatu, načelnik Božo Lasić poručio: ‘Konavle nisu → Побут інших міст | Сутності: Cavtat, Konavle, Božo Lasić, Branko Bačić"
+      ]
+    },
+    "backlog": {
+      "total_size": 1,
+      "sources": {
+        "Slobodna dalmacija": 1
+      }
+    },
+    "published": {
+      "total": 3,
+      "ukraine_priority": 0,
+      "with_images": 1,
+      "text_only": 2,
+      "sources": {
+        "023": 2,
+        "Slobodna dalmacija": 1
+      }
+    },
+    "models_used": {
+      "gemini-3.5-flash-lite": 2,
+      "gemini-3.6-flash": 0
+    },
+    "errors_count": 0,
+    "gemini_retries": 0
   }
 ]
