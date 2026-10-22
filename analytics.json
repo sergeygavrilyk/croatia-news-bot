@@ -1,65 +1,5 @@
 [
   {
-    "timestamp": "2026-10-12 14:01:10",
-    "execution_time": 170.3,
-    "funnel": {
-      "scraped_total": 35,
-      "scraped_by_source": {
-        "023": 10,
-        "Slobodna dalmacija": 15,
-        "Zadarski list": 10
-      },
-      "already_seen": 8,
-      "rejected_by_keywords": 1,
-      "duplicates_removed_by_ai": 19,
-      "rejection_reasons_list": [
-        "• Pomicanje sata može poremetiti san, a st... ➡️ <b>Світловий шум: поради щодо здоров'я та сну</b>",
-        "• U subotu na Stradunu 17. Dubrovačka trpe... ➡️ <b>Побут чужих міст: Дубровник</b>",
-        "• “Između nas”: Festival Cherry Pop u Zagr... ➡️ <b>Побут чужих міст: Загреб</b>",
-        "• Četiri površine u kući koje ne biste tre... ➡️ <b>Світловий шум: побутові поради</b>",
-        "• Rambo Amadeus pred rasprodanim HNK Zadar... ➡️ <b>Культурно-розважальна подія без критичного впливу</b>",
-        "• Elis Gobo nova direktorica TZ Mošćenička... ➡️ <b>Побут чужих міст: Мошченічка Драга</b>",
-        "• PRILIKA KOJA SE NE PROPUŠTA Cijeli asort... ➡️ <b>Реклама: комерційна знижка на кераміку</b>",
-        "• Memorijalni turnir ‘Lovca‘ u čast velika... ➡️ <b>Спорт: стрілецький турнір</b>",
-        "• Multimedijalna izložba Roberta Paulette ... ➡️ <b>Побут чужих міст: Лабін</b>",
-        "• Prvi Zadranin preplivao La Manche, a pli... ➡️ <b>Спорт: досягнення плавального клубу</b>",
-        "• Odlazak legende Šubićevca: preminuo Rade... ➡️ <b>Спорт: некролог футболісту</b>",
-        "• KUD sv. Ante Nadin i KUD Branimir iz Ben... ➡️ <b>Локальна культурна самодіяльність</b>",
-        "• Šibenski gimnazijalci proslavili 60 i 65... ➡️ <b>Побут чужих міст: Шибеник</b>",
-        "• Pirovački vatrogasci ovo su dugo čekali,... ➡️ <b>Побут чужих міст: Пировац</b>",
-        "• Poljski premijer pozvao „cijeli Zapad” n... ➡️ <b>Геоблок: події за межами Хорватії без прямих наслідків для біженців</b>",
-        "• Vježba za veću sigurnost u školi... ➡️ <b>Побут чужих міст: Лички Осик</b>",
-        "• 17. Dubrovačka trpeza: tradicionalna gas... ➡️ <b>Дубль новини №1</b>",
-        "• Na Reviji lutkarskih kazališta Rijeka ča... ➡️ <b>Побут чужих міст: Рієка</b>",
-        "• Nobel za ekonomiju Hallu i Woodfordu za ... ➡️ <b>Світовий шум: Нобелівська премія з економіки</b>"
-      ]
-    },
-    "backlog": {
-      "total_size": 53,
-      "sources": {
-        "Zadarski list": 19,
-        "Slobodna dalmacija": 29,
-        "023": 5
-      }
-    },
-    "published": {
-      "total": 3,
-      "ukraine_priority": 0,
-      "with_images": 3,
-      "text_only": 0,
-      "sources": {
-        "Zadarski list": 2,
-        "Slobodna dalmacija": 1
-      }
-    },
-    "models_used": {
-      "gemini-3.5-flash-lite": 2,
-      "gemini-3.6-flash": 0
-    },
-    "errors_count": 0,
-    "gemini_retries": 0
-  },
-  {
     "timestamp": "2026-10-12 15:01:13",
     "execution_time": 185.1,
     "funnel": {
@@ -5773,5 +5713,58 @@
     },
     "errors_count": 0,
     "gemini_retries": 1
+  },
+  {
+    "timestamp": "2026-10-22 16:01:11",
+    "execution_time": 243.3,
+    "funnel": {
+      "scraped_total": 35,
+      "scraped_by_source": {
+        "023": 10,
+        "Slobodna dalmacija": 15,
+        "Zadarski list": 10
+      },
+      "already_seen": 7,
+      "rejected_by_keywords": 14,
+      "duplicates_removed_by_ai": 12,
+      "rejection_reasons_list": [
+        "• Tisuće kamenih brazda na Malti vjerojatno su mlađe nego što su arheolo → Світовий шум | Сутності: Мальта, Джоел Гріма, University of Malta, Clapham Junction",
+        "• S gradilišta na širem području Ravne Gore ukraden građevinski materija → Побут інших міст | Сутності: Равна Гора, Спліт, Крадіжка, Будматеріали",
+        "• Šime, Ante, Marija i Mare; Otkriveno koja su bila najpopularnija imena → Дубль в історії | Сутності: Задар, Арбанаси, Наукова бібліотека, Мілан Перович",
+        "• Imperial Riviera i Valamar podržali rad DVD-ova Rab i Lopar → Побут інших міст | Сутності: Раб, Лопар, Valamar, Imperial Riviera",
+        "• Mihajlo Mihajlov – prvi disident u Zadru za vrijeme Jugoslavije: tko s → Дубль в історії | Сутності: Задар, Михайло Михайлов, Спецслужба, Югославія",
+        "• Tragedija u zagrebačkom Zoo vrtu; Utopilo se mladunče vodenkonja? Prij → Побут інших міст | Сутності: Загреб, Зоопарк, Державний інспектор, Віоденіць",
+        "• Dobro raspoloženi Obersnel: O blokiranoj imovini saznao sam iz Novog l → Побут інших міст | Сутності: Рієка, Войко Оберснел, УСКОК, Земельна ділянка",
+        "• Ekipa Sretno pobjednica memorijalnog kupa “Četiri zvonika” → Спорт | Сутності: Раб, Підводний риболов, Чотири дзвіниці, Бруно Жиц",
+        "• Sutra na Vojnoviću i Pilama posebna prometna regulativa. Evo što se ra → Побут інших міст | Сутності: Дубровник, Войновіч, Піли, Транспортна регуляція",
+        "• Uzgajivači ovaca i koza okupili se na savjetovanju i izložbi u Novalji → Побут інших міст | Сутності: Новаля, Паг, Міністерство сільського господарства, Сир",
+        "• Svečana sjednica u Cavtatu, načelnik Božo Lasić poručio: ‘Konavle nisu → Побут інших міст | Сутності: Цавтат, Конавле, Божо Ласич, Бранко Бачич",
+        "• Odana počast braniteljima u parku Striježice u Župi dubrovačkoj → Побут інших міст | Сутності: Жупа дубровницька, Стрієжиці, Меморіал, Ветерани"
+      ]
+    },
+    "backlog": {
+      "total_size": 4,
+      "sources": {
+        "Zadarski list": 1,
+        "Slobodna dalmacija": 2,
+        "023": 1
+      }
+    },
+    "published": {
+      "total": 3,
+      "ukraine_priority": 0,
+      "with_images": 2,
+      "text_only": 1,
+      "sources": {
+        "Slobodna dalmacija": 2,
+        "023": 1
+      }
+    },
+    "models_used": {
+      "gemini-3.5-flash-lite": 2,
+      "gemini-3.6-flash": 0
+    },
+    "errors_count": 0,
+    "gemini_retries": 2
   }
 ]
