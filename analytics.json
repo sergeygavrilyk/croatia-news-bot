@@ -1,65 +1,5 @@
 [
   {
-    "timestamp": "2026-10-13 12:01:09",
-    "execution_time": 823.1,
-    "funnel": {
-      "scraped_total": 35,
-      "scraped_by_source": {
-        "023": 10,
-        "Slobodna dalmacija": 15,
-        "Zadarski list": 10
-      },
-      "already_seen": 8,
-      "rejected_by_keywords": 3,
-      "duplicates_removed_by_ai": 20,
-      "rejection_reasons_list": [
-        "• Plavci velikog srca: šibenski policajci ... ➡️ <b>Побут іншого міста (Шибеник)</b>",
-        "• Pod pritiskom:Dan D/Ciklone i morske str... ➡️ <b>Світовий шум та історія поза Хорватією</b>",
-        "• Timski troboj u MasterChefu. Tjestenina ... ➡️ <b>Шоу та розваги, світовий шум</b>",
-        "• Vandalizam i krađe na šibenskom području... ➡️ <b>Побут іншого міста (Шибеник)</b>",
-        "• Rale iz Podcast Inkubatora postao otac. ... ➡️ <b>Шоубізнес та плітки</b>",
-        "• Inspiracija za hladne dane; Stigao je no... ➡️ <b>Реклама та комерційні акції</b>",
-        "• \"Beč: ispred gradske vijećnice ovih dana... ➡️ <b>Інші країни (Австрія)</b>",
-        "• Dodikov glavni policajac u BiH izbjegao ... ➡️ <b>Інші країни (Боснія і Герцеговина)</b>",
-        "• Stigla im je jedna poruka, a onda šok! E... ➡️ <b>Кримінал іншого регіону (Дубровник)</b>",
-        "• Dalekovodu posao u Albaniji vrijedan got... ➡️ <b>Економіка поза фокусом Задара та загальнохорватського рівня</b>",
-        "• Stigla im je jedna poruka, a onda šok! E... ➡️ <b>Дубль новини 10</b>",
-        "• Ekološke udruge traže obustavu rada mega... ➡️ <b>Побут іншого регіону (Меджимур'є)</b>",
-        "• Zadranke blistaju na Cipru; Zadar Dragon... ➡️ <b>Спорт та спортивні досягнення</b>",
-        "• Šibenik Meteo ima novu, jedinstvenu uslu... ➡️ <b>Побут іншого міста (Шибеник)</b>",
-        "• Zagrebačka nadbiskupija prijavila svećen... ➡️ <b>Побут іншого міста (Загреб)</b>",
-        "• Zašto tamne točkice na nosu ne treba ist... ➡️ <b>Поради дієтологів / світовий шум</b>",
-        "• Drugi tjedan Good Food festivala: medite... ➡️ <b>Побут іншого міста (Дубровник)</b>",
-        "• Veliki povratak Formule 1 u Afriku! Ruan... ➡️ <b>Спорт</b>",
-        "• Tužna vijest pronijela se Gradom: u 42. ... ➡️ <b>Побут іншого міста (Дубровник)</b>",
-        "• ChatGPT umjesto liječnika? Nova analiza ... ➡️ <b>Світовий шум та абстрактні технології</b>"
-      ]
-    },
-    "backlog": {
-      "total_size": 44,
-      "sources": {
-        "023": 12,
-        "Slobodna dalmacija": 22,
-        "Zadarski list": 10
-      }
-    },
-    "published": {
-      "total": 3,
-      "ukraine_priority": 0,
-      "with_images": 0,
-      "text_only": 3,
-      "sources": {
-        "023": 3
-      }
-    },
-    "models_used": {
-      "gemini-3.5-flash-lite": 2,
-      "gemini-3.6-flash": 0
-    },
-    "errors_count": 0,
-    "gemini_retries": 6
-  },
-  {
     "timestamp": "2026-10-13 13:01:16",
     "execution_time": 219.4,
     "funnel": {
@@ -5718,6 +5658,61 @@
       "sources": {
         "023": 2,
         "Slobodna dalmacija": 1
+      }
+    },
+    "models_used": {
+      "gemini-3.5-flash-lite": 2,
+      "gemini-3.6-flash": 0
+    },
+    "errors_count": 0,
+    "gemini_retries": 0
+  },
+  {
+    "timestamp": "2026-10-30 19:43:07",
+    "execution_time": 167.8,
+    "funnel": {
+      "scraped_total": 35,
+      "scraped_by_source": {
+        "023": 10,
+        "Slobodna dalmacija": 15,
+        "Zadarski list": 10
+      },
+      "already_seen": 4,
+      "rejected_by_keywords": 11,
+      "duplicates_removed_by_ai": 17,
+      "rejection_reasons_list": [
+        "• Ako se mobitel s Androidom preko noći prazni, krivac može biti automat → Світовий шум | Сутності: Android, Google, Samsung",
+        "• Grad Imotski organizira veliki novogodišnji doček → Побут інших міст | Сутності: Imotski, Prljavo kazalište, Nova gradska tržnica",
+        "• “Oda Grobniku, čez sliku i haiku” Tonija Buterina prva haiku zbirka na → Побут інших міст | Сутності: Toni Buterin, Grobnik, Katedra Čakavskog sabora",
+        "• Zagrepčanin pred Dušni dan došao na šibensko groblje, ostao potpuno za → Побут інших міст | Сутності: Šibenik, Groblje Kvanj, Mihovil Antolić",
+        "• Predstavljena pjesnička zbirka “Rep svih stvari” Nataše Govedić: Duhov → Побут інших міст | Сутності: Nataša Govedić, Zagreb, Kyoto, Sandorf",
+        "• Pao potpis za veliki projekt, kreće gradnja Inkluzivnog centra Korčula → Побут інших міст | Сутності: Blaž Pezo, Korčula, Inkluzivni centar, Kap u moru",
+        "• Nadbiskup Uzinić na blagdan Svih svetih vodi misu i molitvu na Kozali → Побут інших міст | Сутності: Mate Uzinić, Rijeka, Kozala, Trsat",
+        "• Krsnu slavu imaju i Hrvati katolici, ne samo Srbi. Zbog krsne slave če → Світовий шум | Сутності: Hrvati katolici, Ivo Mišur, Ministarstvo kulture RH, Dolina Neretve",
+        "• Most u Delnicama osnovao podružnicu → Побут інших міст | Сутності: Delnice, Most, Davorin Klobučar, Marino Žagar",
+        "• Dubrovnik domaćin središnjeg globalnog događanja UNESCO-ove inicijativ → Побут інших міст | Сутності: Dubrovnik, UNESCO, Al Rayyan, Mato Franković",
+        "• Položeni vijenci i zapaljene svijeće u Opatiji uoči blagdana Svih svet → Побут інших міст | Сутності: Opatija, Fernando Kirigin, Volosko",
+        "• Drama na nebu, zrakoplov iz Grčke prisilno sletio u Split, u njemu 165 → Побут інших міст | Сутності: Jet2, Split, Samos, Manchester",
+        "• Deseci tisuća prosvjednika diljem Italije: Za veće plaće i bolje javne → Геоблок | Сутності: Italija, Rim, Milano, Torino",
+        "• Vijeće sigurnosti UN-a produžilo mandat EUFOR-u, većina poduprla OHR → Геоблок | Сутності: Vijeće sigurnosti UN, EUFOR, OHR, BiH",
+        "• Senna M objavljuje futuristički videospot za pjesmu “AI” u kojemu budu → Реклама | Сутності: Senna M, Zagreb, NASA, AI",
+        "• Župan Pezo potpisao ugovor, kreće gradnja Inkluzivnog centra Korčula.  → Дубль в історії | Сутності: Blaž Pezo, Korčula, Inkluzivni centar",
+        "• Šibenski Možemo! uoči radova na Šubićevcu: ‘Protivimo se uklanjanju sv → Побут інших міст | Сутності: Šibenik, Maja Šintić, Možemo!, Šubićevac"
+      ]
+    },
+    "backlog": {
+      "total_size": 1,
+      "sources": {
+        "Slobodna dalmacija": 1
+      }
+    },
+    "published": {
+      "total": 3,
+      "ukraine_priority": 0,
+      "with_images": 3,
+      "text_only": 0,
+      "sources": {
+        "Slobodna dalmacija": 3
       }
     },
     "models_used": {
