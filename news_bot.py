@@ -4,6 +4,9 @@ Required environment variables:
   TELEGRAM_BOT_TOKEN, TELEGRAM_CHANNEL_ID, GEMINI_API_KEY
 Optional:
   ADMIN_CHAT_ID
+  DRY_RUN=1 — test run: the full cycle runs (RSS, Gemini filter and translation are real),
+    but posts go to ADMIN_CHAT_ID marked "ТЕСТ" and the state files are not changed.
+    Requires ADMIN_CHAT_ID; TELEGRAM_CHANNEL_ID is not needed.
 
 Keep feeds.json and the state files in the working directory. The script intentionally
 fails closed on invalid editorial-filter responses and preserves unprocessed backlog items.
@@ -18,6 +21,7 @@ import random
 import re
 import shutil
 import sys
+import tempfile
 import time
 from html.parser import HTMLParser
 from urllib.parse import parse_qsl, urlencode, urlparse, urlunparse
@@ -51,6 +55,12 @@ TELEGRAM_BOT_TOKEN = os.getenv("TELEGRAM_BOT_TOKEN")
 TELEGRAM_CHANNEL_ID = os.getenv("TELEGRAM_CHANNEL_ID")
 GEMINI_API_KEY = os.getenv("GEMINI_API_KEY")
 ADMIN_CHAT_ID = os.getenv("ADMIN_CHAT_ID")
+
+# T-05: тестовий запуск — увесь цикл справжній (RSS, фільтр і переклад Gemini), але пости
+# йдуть в адмін-чат з позначкою «ТЕСТ», а файли стану в репозиторії не змінюються.
+DRY_RUN = os.getenv("DRY_RUN", "").strip().lower() in ("1", "true", "yes")
+DRY_RUN_HEADER = "🧪 <b>ТЕСТ — не опубліковано в каналі</b>\n\n"
+DRY_RUN_POST_DELAY_SECONDS = 10
 
 HISTORY_FILE = "posted_news.txt"
 TITLES_FILE = "posted_titles.txt"
@@ -98,6 +108,10 @@ class TranslatedNews(BaseModel):
 
 class TranslationResponse(BaseModel):
     translations: list[TranslatedNews]
+
+
+class TranslationIdMismatch(ValueError):
+    """Gemini returned translation IDs that do not match the batch and cannot be mapped back."""
 
 
 class TelegramAPIError(RuntimeError):
@@ -294,7 +308,8 @@ def send_alert_to_admin(message: str) -> None:
     try:
         resp = requests.post(
             api_url,
-            data={"chat_id": ADMIN_CHAT_ID, "text": f"⚠️ ALARM: {message}"[:4000]},
+            data={"chat_id": ADMIN_CHAT_ID,
+                  "text": f"{'🧪 DRY_RUN — ' if DRY_RUN else ''}⚠️ ALARM: {message}"[:4000]},
             timeout=10,
         )
         if resp.status_code != 200:
@@ -321,6 +336,8 @@ def send_analytics_to_admin(stats: dict) -> None:
     # Escape model/source-derived values before using Telegram HTML parse mode.
     message = (
         "📊 <b>Звіт Croatia News Bot</b>\n\n"
+        + ("🧪 <b>ТЕСТОВИЙ ЗАПУСК (DRY_RUN)</b> — у канал нічого не опубліковано, "
+           "файли стану не змінено\n\n" if DRY_RUN else "") +
         f"⏱ Час виконання: {stats['execution_time']} сек\n"
         f"⚠️ Помилок: {stats['errors_count']} | Повторних спроб Gemini: {stats['gemini_retries']}\n\n"
         "🔍 <b>Воронка:</b>\n"
@@ -333,7 +350,7 @@ def send_analytics_to_admin(stats: dict) -> None:
         f"{reasons[:2500]}\n\n"
         f"📥 <b>Беклог: {backlog_stats['total_size']}</b>\n"
         f"▪️ {html.escape(backlog_src)}\n\n"
-        f"✅ <b>Опубліковано: {published['total']}</b>\n"
+        f"✅ <b>{'Підготовлено (тест, не опубліковано)' if DRY_RUN else 'Опубліковано'}: {published['total']}</b>\n"
         f"▪️ Із фото: {published['with_images']} | Текстом: {published['text_only']}\n"
         f"▪️ Український пріоритет: {published['ukraine_priority']}\n"
         f"▪️ Джерела: {html.escape(pub_src)}\n\n"
@@ -519,9 +536,40 @@ def is_transient_gemini_error(exc: Exception) -> bool:
     ))
 
 
+def _remap_translation_ids(ids: list[int], expected_ids: set[int],
+                           id_aliases: dict[int, int] | None) -> list[int] | None:
+    """Map wrong translation IDs back to batch IDs when it is unambiguous; otherwise None.
+
+    Seen in production: the model returned the article number from the source URL
+    (e.g. 1587601) instead of the batch ID 0.
+    """
+    if len(ids) != len(expected_ids):
+        return None
+    if len(expected_ids) == 1:
+        # One article in the batch and one translation back: it can only be this article.
+        return [next(iter(expected_ids))]
+    aliases = id_aliases or {}
+    mapped = [item_id if item_id in expected_ids else aliases.get(item_id) for item_id in ids]
+    if None in mapped or len(set(mapped)) != len(mapped) or set(mapped) != expected_ids:
+        return None
+    return mapped
+
+
+def _url_number_aliases(batch: list[dict]) -> dict[int, int]:
+    """Numbers (>= 100) from article URL paths/queries that belong to exactly one batch article."""
+    owners: dict[int, set[int]] = {}
+    for idx, item in enumerate(batch):
+        parsed = urlparse(str(item.get("url", "")))
+        for number in {int(n) for n in re.findall(r"\d+", f"{parsed.path}?{parsed.query}")}:
+            if number >= 100:
+                owners.setdefault(number, set()).add(idx)
+    return {number: next(iter(idxs)) for number, idxs in owners.items() if len(idxs) == 1}
+
+
 def _generate_structured_response(prompt: str, schema, stats: dict | None, operation: str,
                                   expected_ids: set[int] | None = None, 
-                                  temperature: float = 0.0):
+                                  temperature: float = 0.0,
+                                  id_aliases: dict[int, int] | None = None):
     if client is None:
         raise RuntimeError("Gemini-клієнт не ініціалізований")
 
@@ -551,12 +599,20 @@ def _generate_structured_response(prompt: str, schema, stats: dict | None, opera
                 parsed = schema.model_validate_json(response.text)
                 if expected_ids is not None:
                     ids = [item.id for item in parsed.translations]
-                    if len(ids) != len(set(ids)):
-                        raise ValueError("Gemini повернув повторювані ID перекладів")
-                    if set(ids) != expected_ids:
-                        raise ValueError(
-                            f"Невідповідність ID перекладів: очікували {sorted(expected_ids)}, "
-                            f"отримали {sorted(ids)}"
+                    if len(ids) != len(set(ids)) or set(ids) != expected_ids:
+                        remapped = _remap_translation_ids(ids, expected_ids, id_aliases)
+                        if remapped is None:
+                            if len(ids) != len(set(ids)):
+                                raise TranslationIdMismatch("Gemini повернув повторювані ID перекладів")
+                            raise TranslationIdMismatch(
+                                f"Невідповідність ID перекладів: очікували {sorted(expected_ids)}, "
+                                f"отримали {sorted(ids)}"
+                            )
+                        for item, new_id in zip(parsed.translations, remapped):
+                            item.id = new_id
+                        logging.warning(
+                            "%s: модель %s повернула ID %s замість %s; зіставлено однозначно: %s",
+                            operation, model_name, ids, sorted(expected_ids), remapped,
                         )
 
                 if stats is not None:
@@ -566,7 +622,11 @@ def _generate_structured_response(prompt: str, schema, stats: dict | None, opera
 
             except Exception as exc:
                 last_error = exc
-                should_retry_same_model = attempt == 0 and is_transient_gemini_error(exc)
+                # A wrong-ID answer is worth one more try on the same model before the fallback
+                # (the fallback model is often overloaded or out of free-tier quota).
+                should_retry_same_model = attempt == 0 and (
+                    is_transient_gemini_error(exc) or isinstance(exc, TranslationIdMismatch)
+                )
                 if stats is not None:
                     stats["gemini_retries"] += 1
                 logging.warning(
@@ -600,11 +660,12 @@ def clean_generated_field(value: str) -> str:
         cleaned = cleaned.replace(bad_char, good_char)
     return cleaned
 
-def generate_news_texts_json(prompt: str, expected_ids: set[int], stats: dict | None = None) -> list[dict]:
+def generate_news_texts_json(prompt: str, expected_ids: set[int], stats: dict | None = None,
+                             id_aliases: dict[int, int] | None = None) -> list[dict]:
     # The original translation operation used temperature=0.1 and Pro-first model fallback.
     result = _generate_structured_response(
         prompt, TranslationResponse, stats, "переклад новин",
-        expected_ids=expected_ids, temperature=0.1,
+        expected_ids=expected_ids, temperature=0.1, id_aliases=id_aliases,
     )
     translations = [item.model_dump() for item in result.translations]
     for item in translations:
@@ -996,6 +1057,11 @@ def _truncate_html_visible(fragment: str, max_visible_chars: int) -> str:
             output.append(f"</{stack.pop()}>")
     return "".join(output).rstrip()
 
+def _target_chat_id() -> str | None:
+    """DRY_RUN: posts go to the admin chat instead of the channel."""
+    return ADMIN_CHAT_ID if DRY_RUN else TELEGRAM_CHANNEL_ID
+
+
 def send_to_telegram(text: str, url: str, source_name: str, image_urls=None, tags: str = "") -> tuple[bool, str]:
     image_urls = [] if not image_urls else ([image_urls] if isinstance(image_urls, str) else list(image_urls))
     image_urls = image_urls[:10]
@@ -1005,6 +1071,9 @@ def send_to_telegram(text: str, url: str, source_name: str, image_urls=None, tag
         raise ValueError(f"Небезпечне або некоректне посилання на джерело: {url!r}")
 
     body, hashtag_suffix = _extract_hashtag_suffix(text)
+    if DRY_RUN:
+        # The header is part of the body, so the Telegram length limits account for it.
+        body = DRY_RUN_HEADER + body
     extra_tags = str(tags or "").strip()
     suffix_parts = [part for part in (hashtag_suffix, extra_tags) if part]
     suffix = "\n\n".join(suffix_parts)
@@ -1046,7 +1115,7 @@ def send_to_telegram(text: str, url: str, source_name: str, image_urls=None, tag
     if not image_urls:
         try:
             execute_telegram_request(api_url_text, {
-                "chat_id": TELEGRAM_CHANNEL_ID,
+                "chat_id": _target_chat_id(),
                 "text": full_message,
                 "parse_mode": "HTML",
             })
@@ -1058,7 +1127,7 @@ def send_to_telegram(text: str, url: str, source_name: str, image_urls=None, tag
     if len(image_urls) == 1:
         api_url = f"https://api.telegram.org/bot{TELEGRAM_BOT_TOKEN}/sendPhoto"
         payload = {
-            "chat_id": TELEGRAM_CHANNEL_ID,
+            "chat_id": _target_chat_id(),
             "photo": image_urls[0],
             "caption": full_message,
             "parse_mode": "HTML",
@@ -1073,7 +1142,7 @@ def send_to_telegram(text: str, url: str, source_name: str, image_urls=None, tag
             logging.warning("Telegram відхилив фото, пробуємо надіслати текстом: %s", exc)
             try:
                 execute_telegram_request(api_url_text, {
-                    "chat_id": TELEGRAM_CHANNEL_ID,
+                    "chat_id": _target_chat_id(),
                     "text": full_message,
                     "parse_mode": "HTML",
                 })
@@ -1093,7 +1162,7 @@ def send_to_telegram(text: str, url: str, source_name: str, image_urls=None, tag
     api_url = f"https://api.telegram.org/bot{TELEGRAM_BOT_TOKEN}/sendMediaGroup"
     try:
         execute_telegram_request(api_url, {
-            "chat_id": TELEGRAM_CHANNEL_ID,
+            "chat_id": _target_chat_id(),
             "media": json.dumps(media, ensure_ascii=False),
         })
         return True, "image"
@@ -1104,7 +1173,7 @@ def send_to_telegram(text: str, url: str, source_name: str, image_urls=None, tag
         logging.warning("Telegram відхилив альбом, пробуємо текстовий fallback: %s", exc)
         try:
             execute_telegram_request(api_url_text, {
-                "chat_id": TELEGRAM_CHANNEL_ID,
+                "chat_id": _target_chat_id(),
                 "text": full_message,
                 "parse_mode": "HTML",
             })
@@ -1382,7 +1451,9 @@ def process_backlog(stats: dict | None = None) -> None:
     try:
         # Restore the original pacing before the translation request.
         time.sleep(PRE_TRANSLATION_DELAY_SECONDS)
-        translations = generate_news_texts_json(prompt, expected_ids, stats)
+        translations = generate_news_texts_json(
+            prompt, expected_ids, stats, id_aliases=_url_number_aliases(batch)
+        )
     except Exception as exc:
         for item in batch:
             record_translation_failure(item, str(exc))
@@ -1453,7 +1524,7 @@ def process_backlog(stats: dict | None = None) -> None:
                 stats["published"]["text_only"] += 1
             source = item.get("source", "Джерело")
             stats["published"]["sources"][source] = stats["published"]["sources"].get(source, 0) + 1
-        time.sleep(POST_PUBLICATION_DELAY_SECONDS)
+        time.sleep(DRY_RUN_POST_DELAY_SECONDS if DRY_RUN else POST_PUBLICATION_DELAY_SECONDS)
 
     _save_postprocessing_backlog(backlog, evaluated_urls, approved_urls, sent_urls)
 
@@ -1497,9 +1568,33 @@ def refresh_backlog_stats(stats: dict) -> None:
     stats["backlog"]["sources"] = source_counts
 
 
+def _enter_dry_run_sandbox() -> str:
+    """DRY_RUN: work on copies of feeds.json and the state files in a temporary folder.
+
+    All the usual code paths (backlog, history, analytics writes) stay the same, but they
+    write to the copies, so the files in the repository are never changed.
+    """
+    sandbox = tempfile.mkdtemp(prefix="croatia-news-dry-run-")
+    for name in (FEEDS_FILE, HISTORY_FILE, TITLES_FILE, BACKLOG_FILE,
+                 f"{BACKLOG_FILE}.bak", ANALYTICS_FILE):
+        if os.path.exists(name):
+            shutil.copy2(name, os.path.join(sandbox, name))
+    os.chdir(sandbox)
+    return sandbox
+
+
 def main() -> None:
     global client
-    if not all([TELEGRAM_BOT_TOKEN, TELEGRAM_CHANNEL_ID, GEMINI_API_KEY]):
+    if DRY_RUN:
+        if not all([TELEGRAM_BOT_TOKEN, GEMINI_API_KEY, ADMIN_CHAT_ID]):
+            logging.critical("DRY_RUN: потрібні TELEGRAM_BOT_TOKEN, GEMINI_API_KEY і ADMIN_CHAT_ID")
+            sys.exit(1)
+        sandbox = _enter_dry_run_sandbox()
+        logging.warning(
+            "🧪 DRY_RUN: тестовий запуск — пости йдуть в адмін-чат, а не в канал; "
+            "файли стану — копії в %s (у репозиторії не змінюються)", sandbox,
+        )
+    elif not all([TELEGRAM_BOT_TOKEN, TELEGRAM_CHANNEL_ID, GEMINI_API_KEY]):
         logging.critical("Не налаштовані TELEGRAM_BOT_TOKEN, TELEGRAM_CHANNEL_ID або GEMINI_API_KEY")
         sys.exit(1)
 
@@ -1531,11 +1626,13 @@ def main() -> None:
         except Exception:
             critical_error = True
             logging.exception("Не вдалося зберегти аналітику")
-        if stats["published"]["total"] > 0 or stats["errors_count"] > 0:
+        if DRY_RUN or stats["published"]["total"] > 0 or stats["errors_count"] > 0:
             send_analytics_to_admin(stats)
 
-    # Non-zero process status ensures the scheduled runner records partial/critical failures.
-    if critical_error or stats["errors_count"] > 0:
+    # Non-zero status only for critical failures (the main loop stopped, or state/analytics
+    # could not be saved). Partial errors (one article failed validation, one RSS feed or
+    # one Telegram post failed) are reported to the admin, but the run stays green.
+    if critical_error:
         sys.exit(1)
 
 
