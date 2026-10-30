@@ -1,64 +1,5 @@
 [
   {
-    "timestamp": "2026-10-13 11:01:09",
-    "execution_time": 166.5,
-    "funnel": {
-      "scraped_total": 35,
-      "scraped_by_source": {
-        "023": 10,
-        "Slobodna dalmacija": 15,
-        "Zadarski list": 10
-      },
-      "already_seen": 4,
-      "rejected_by_keywords": 3,
-      "duplicates_removed_by_ai": 17,
-      "rejection_reasons_list": [
-        "• Veliki povratak Formule 1 u Afriku! Ruan... ➡️ <b>Спорт</b>",
-        "• Stigla im je jedna poruka, a onda šok! E... ➡️ <b>Побут чужих міст</b>",
-        "• Inspiracija za hladne dane; Stigao je no... ➡️ <b>Реклама</b>",
-        "• Šibenik Meteo ima novu, jedinstvenu uslu... ➡️ <b>Побут чужих міст</b>",
-        "• DP-ovac Kukavica preduhitrio Plenkovića:... ➡️ <b>Дубль або несуттєве оновлення</b>",
-        "• Hrvoje Prpić gostovao u Poriluku: Može l... ➡️ <b>Побут чужих міст</b>",
-        "• Drugi tjedan Good Food festivala: medite... ➡️ <b>Побут чужих міст</b>",
-        "• Slovenija raste gotovo 13%, Hrvatska sam... ➡️ <b>Інші країни або загальний ринок</b>",
-        "• Tužna vijest pronijela se Gradom: u 42. ... ➡️ <b>Побут чужих міст</b>",
-        "• Zašto tamne točkice na nosu ne treba ist... ➡️ <b>Світовий шум</b>",
-        "• Ove nedjelje dvije radionice na Kreativn... ➡️ <b>Побут чужих міст</b>",
-        "• Tužna vijest pronijela se Gradom: u 42. ... ➡️ <b>Дубль новини 13</b>",
-        "• Nakon rasprodanih izvedbi u Zajcu, čarol... ➡️ <b>Побут чужих міст</b>",
-        "• Budućnost na poljima: poljoprivrednici u... ➡️ <b>Побут чужих міст</b>",
-        "• ChatGPT umjesto liječnika? Nova analiza ... ➡️ <b>Світовий шум</b>",
-        "• Vozač (84) poginuo u sudaru automobila i... ➡️ <b>Побут чужих міст</b>",
-        "• Projekt od 357 tisuća eura: Tribunj grad... ➡️ <b>Побут чужих міст</b>"
-      ]
-    },
-    "backlog": {
-      "total_size": 40,
-      "sources": {
-        "Slobodna dalmacija": 18,
-        "023": 11,
-        "Zadarski list": 11
-      }
-    },
-    "published": {
-      "total": 3,
-      "ukraine_priority": 0,
-      "with_images": 2,
-      "text_only": 1,
-      "sources": {
-        "Zadarski list": 1,
-        "023": 1,
-        "Slobodna dalmacija": 1
-      }
-    },
-    "models_used": {
-      "gemini-3.5-flash-lite": 2,
-      "gemini-3.6-flash": 0
-    },
-    "errors_count": 0,
-    "gemini_retries": 0
-  },
-  {
     "timestamp": "2026-10-13 12:01:09",
     "execution_time": 823.1,
     "funnel": {
@@ -5718,6 +5659,65 @@
       "text_only": 0,
       "sources": {
         "Slobodna dalmacija": 3
+      }
+    },
+    "models_used": {
+      "gemini-3.5-flash-lite": 2,
+      "gemini-3.6-flash": 0
+    },
+    "errors_count": 0,
+    "gemini_retries": 0
+  },
+  {
+    "timestamp": "2026-10-30 17:01:17",
+    "execution_time": 175.6,
+    "funnel": {
+      "scraped_total": 35,
+      "scraped_by_source": {
+        "023": 10,
+        "Slobodna dalmacija": 15,
+        "Zadarski list": 10
+      },
+      "already_seen": 0,
+      "rejected_by_keywords": 11,
+      "duplicates_removed_by_ai": 20,
+      "rejection_reasons_list": [
+        "• Predstavljen program obilježavanja Dana sjećanja na žrtvu Vukovara → Побут інших міст | Сутності: Vukovar, Marijan Pavliček, Kolona sjećanja, Domovinski rat",
+        "• Hrabrost i nasljeđe „Vukova“ ostaju na mladim generacijama → Побут інших міст | Сутності: Gospić, 9. gardijska brigada, Tomo Medved, Vukovi",
+        "• Ako se mobitel s Androidom preko noći prazni, krivac može biti automat → Світовий шум | Сутності: Android, Google, Samsung, Gmail",
+        "• Roditelje u Viškovu čeka brutalan rast cijene vrtića. Sve ostale enorm → Побут інших міст | Сутності: Viškovo, Općina Viškovo, Maja Udović, SDP",
+        "• Dobit Ine u devet mjeseci 303,6 milijuna eura. To je 115% više nego la → Хорватія | Сутності: Ina, Zsuzsanna Ortutay, Rijeka, Zagreb",
+        "• Pao potpis za veliki projekt, kreće gradnja Inkluzivnog centra Korčula → Побут інших міст | Сутності: Korčula, Blaž Pezo, Branko Bačić, Inkluzivni centar Korčula",
+        "• Fond šokirao Viškovo: Nakon velike afere, sanacija Sovjaka pomaknuta u → Побут інших міст | Сутності: Viškovo, Jama Sovjak, Mirko Budiša, Fond za zaštitu okoliša",
+        "• Krsnu slavu imaju i Hrvati katolici, ne samo Srbi. Zbog krsne slave če → Світовий шум | Сутності: Hrvati katolici, Neretva, Ivo Mišur, Ministarstvo kulture",
+        "• Uskok pokrenuo istragu protiv načelnika općine Nova Kapela → Побут інших міст | Сутності: Uskok, Nova Kapela, Ivan Šmit, Osijek",
+        "• Dubrovnik domaćin središnjeg globalnog događanja UNESCO-ove inicijativ → Побут інших міст | Сутності: Dubrovnik, Mato Franković, UNESCO, Stradun",
+        "• Gen Z širi masovne prosvjede na Njemačku, u Francuskoj će se rasplamsa → Геоблок | Сутності: Njemačka, Francuska, Gen Z, Laurent Nuñez",
+        "• Drama na nebu, zrakoplov iz Grčke prisilno sletio u Split, u njemu 165 → Дубль | Сутності: Split, Jet2, Samos, Manchester",
+        "• Janaf ostvario 35,2 milijuna eura neto dobiti → Хорватія | Сутності: Janaf, Zagreb, Hrvatska, energetika",
+        "• U Split prisilno sletio Boeing aviokompanije Jet2 → Дубль | Сутності: Split, Jet2, Boeing, Samos",
+        "• Maslinari negoduju: ‘Ne možeš virovati. Porez na meljavu veći nego na  → Побут інших міст | Сутності: Zadarska županija, Ante Vulin, Šime Marcelić, maslinovo ulje",
+        "• Župan Pezo potpisao ugovor, kreće gradnja Inkluzivnog centra Korčula.  → Дубль в історії | Сутності: Korčula, Blaž Pezo, Inkluzivni centar, Dubrovačko-neretvanska županija",
+        "• U ponedjeljak ujutro u ovom pelješkom mjestu neće biti struje → Побут інших міст | Сутності: Pelješac, Podvlaštica, Elektrojug, struja",
+        "• Motoklub Beštije obilježava 20 godina postojanja, jubilarna obljetnica → Побут інших міст | Сутності: Bibinje, Motoklub Beštije, Zmajo, Zadar",
+        "• Šibenski Možemo! uoči radova na Šubićevcu: ‘Protivimo se uklanjanju sv → Побут інших міст | Сутності: Šibenik, Šubićevac, Maja Šintić, Možemo!",
+        "• Od nedjelje slobodno prema gradu: gasi se crveno svjetlo na ulazu u du → Побут інших міст | Сутності: Dubrovnik, Stradun, Pobrežje, Park & Ride"
+      ]
+    },
+    "backlog": {
+      "total_size": 1,
+      "sources": {
+        "Slobodna dalmacija": 1
+      }
+    },
+    "published": {
+      "total": 3,
+      "ukraine_priority": 1,
+      "with_images": 1,
+      "text_only": 2,
+      "sources": {
+        "023": 2,
+        "Slobodna dalmacija": 1
       }
     },
     "models_used": {
