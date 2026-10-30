@@ -4,6 +4,9 @@ Required environment variables:
   TELEGRAM_BOT_TOKEN, TELEGRAM_CHANNEL_ID, GEMINI_API_KEY
 Optional:
   ADMIN_CHAT_ID
+  GEMINI_FILTER_MODELS, GEMINI_TRANSLATE_MODELS — model cascades, names separated by commas
+    in priority order (GitHub -> Settings -> Secrets and variables -> Actions -> Variables);
+    if not set, the defaults below are used.
   DRY_RUN=1 — test run: the full cycle runs (RSS, Gemini filter and translation are real),
     but posts go to ADMIN_CHAT_ID marked "ТЕСТ" and the state files are not changed.
     Requires ADMIN_CHAT_ID; TELEGRAM_CHANNEL_ID is not needed.
@@ -77,7 +80,32 @@ MAX_CANDIDATES_PER_FILTER = 25
 MAX_TRANSLATION_FAILURES = 5
 RETRY_COOLDOWN_SECONDS = 60 * 60
 
-GEMINI_MODELS = ["gemini-3.5-flash-lite", "gemini-3.6-flash"]
+# --- Моделі Gemini (T-04): окремий каскад для фільтра й перекладу, як у молдовському боті ---
+# На безкоштовному тарифі в кожної моделі своя денна квота (flash-моделі ~20 запитів/добу,
+# lite-моделі ~500), тому моделі використовуються по черзі: перша, що відповіла, — і далі.
+# Змінити без правки коду: GitHub -> Settings -> Secrets and variables -> Actions -> Variables
+# (GEMINI_FILTER_MODELS / GEMINI_TRANSLATE_MODELS, назви через кому в порядку пріоритету).
+# Значення за замовчуванням — як у молдовському боті (перевірено там реальними запитами 30.10.2026):
+#   фільтр — gemini-3-flash-preview (окрема flash-модель, не перетинається з моделями перекладу),
+#            lite-моделі як резерв; переклад — flash-моделі, lite лише останній резерв
+#            (lite помітно гірше перекладає).
+# НЕ використовувати gemini-3.5-flash і gemini-3.7-flash: зняті з обігу 08.10.2026 і переадресовуються
+# на 3.6-flash / 3.8-flash (фактично витрачають їхню квоту).
+DEFAULT_FILTER_MODELS = "gemini-3-flash-preview,gemini-3.5-flash-lite,gemini-3.1-flash-lite"
+DEFAULT_TRANSLATE_MODELS = "gemini-3.8-flash,gemini-3.6-flash,gemini-3.5-flash-lite"
+# Таймаут одного запиту: модель, що «зависла», не блокує запуск — каскад перейде до наступної.
+GEMINI_TIMEOUT_MS = 180_000
+
+
+def parse_models(env_name: str, default: str) -> list[str]:
+    raw = os.getenv(env_name) or default
+    return [model.strip() for model in raw.split(",") if model.strip()]
+
+
+FILTER_MODELS = parse_models("GEMINI_FILTER_MODELS", DEFAULT_FILTER_MODELS)
+TRANSLATE_MODELS = parse_models("GEMINI_TRANSLATE_MODELS", DEFAULT_TRANSLATE_MODELS)
+# Моделі, чия квота (429) вичерпана в цьому запуску, — до кінця запуску більше не викликаються.
+EXHAUSTED_MODELS: set[str] = set()
 client = None  # Created inside main(), after environment validation.
 
 
@@ -318,6 +346,31 @@ def send_alert_to_admin(message: str) -> None:
         logging.exception("Збій з'єднання під час надсилання алерта адміністратору")
 
 
+def _short_model(name: str | None) -> str:
+    return (name or "—").replace("gemini-", "")
+
+
+def _models_line(stats: dict) -> str:
+    """«фільтр — 3-flash-preview | переклад — 3.8-flash»: which model actually answered."""
+    by_task = stats.get("models_by_task") or {}
+    return (f"фільтр — {_short_model(by_task.get('filter'))} | "
+            f"переклад — {_short_model(by_task.get('translate'))}")
+
+
+def _model_attempts_summary(stats: dict) -> str:
+    """«3-flash-preview ✅ | 3.8-flash 503×2 | 3.6-flash ✅» — every model call of the run."""
+    marks = {"ok": "✅", "quota": "⛽", "unavailable": "503", "timeout": "⏱",
+             "bad_response": "⚠️", "error": "❌"}
+    counts: dict[tuple[str, str], int] = {}
+    for attempt in stats.get("model_attempts", []):
+        key = (_short_model(attempt.get("model")), attempt.get("outcome", "error"))
+        counts[key] = counts.get(key, 0) + 1
+    return " | ".join(
+        f"{model} {marks.get(outcome, outcome)}" + (f"×{n}" if n > 1 else "")
+        for (model, outcome), n in counts.items()
+    )
+
+
 def send_analytics_to_admin(stats: dict) -> None:
     if not ADMIN_CHAT_ID or not TELEGRAM_BOT_TOKEN:
         logging.warning("ADMIN_CHAT_ID або TELEGRAM_BOT_TOKEN не налаштовано")
@@ -354,9 +407,11 @@ def send_analytics_to_admin(stats: dict) -> None:
         f"▪️ Із фото: {published['with_images']} | Текстом: {published['text_only']}\n"
         f"▪️ Український пріоритет: {published['ukraine_priority']}\n"
         f"▪️ Джерела: {html.escape(pub_src)}\n\n"
-        "🤖 <b>Успішно використані моделі:</b> "
-        f"Lite: {stats['models_used'].get('gemini-3.5-flash-lite', 0)} | "
-        f"Pro: {stats['models_used'].get('gemini-3.6-flash', 0)}"
+        f"🤖 <b>Моделі:</b> {html.escape(_models_line(stats))}"
+        + (f"\n⛽ Квоту вичерпано: {html.escape(', '.join(stats['exhausted_models']))}"
+           if stats.get("exhausted_models") else "")
+        + (f"\n🧾 Спроби: {html.escape(_model_attempts_summary(stats))}"
+           if stats.get("model_attempts") else "")
     )
     api_url = f"https://api.telegram.org/bot{TELEGRAM_BOT_TOKEN}/sendMessage"
     try:
@@ -536,6 +591,31 @@ def is_transient_gemini_error(exc: Exception) -> bool:
     ))
 
 
+def is_quota_error(exc: Exception) -> bool:
+    return _exception_status_code(exc) == 429 or "RESOURCE_EXHAUSTED" in str(exc)
+
+
+def classify_model_error(exc: Exception) -> str:
+    """Type of a failed model call for the admin report: quota | unavailable | timeout | bad_response | error."""
+    code = _exception_status_code(exc)
+    text = str(exc).lower()
+    if is_quota_error(exc):
+        return "quota"
+    if (code is not None and code >= 500) or "unavailable" in text or "high demand" in text:
+        return "unavailable"
+    if "timeout" in type(exc).__name__.lower() or "timed out" in text or "timeout" in text \
+            or "deadline exceeded" in text:
+        return "timeout"
+    if isinstance(exc, ValueError):  # empty answer, invalid JSON / schema, ID mismatch
+        return "bad_response"
+    return "error"
+
+
+def _record_model_attempt(stats: dict | None, task: str, model: str, outcome: str) -> None:
+    if stats is not None:
+        stats.setdefault("model_attempts", []).append({"task": task, "model": model, "outcome": outcome})
+
+
 def _remap_translation_ids(ids: list[int], expected_ids: set[int],
                            id_aliases: dict[int, int] | None) -> list[int] | None:
     """Map wrong translation IDs back to batch IDs when it is unambiguous; otherwise None.
@@ -569,13 +649,23 @@ def _url_number_aliases(batch: list[dict]) -> dict[int, int]:
 def _generate_structured_response(prompt: str, schema, stats: dict | None, operation: str,
                                   expected_ids: set[int] | None = None, 
                                   temperature: float = 0.0,
-                                  id_aliases: dict[int, int] | None = None):
+                                  id_aliases: dict[int, int] | None = None,
+                                  models: list[str] | None = None,
+                                  task: str = "filter"):
     if client is None:
         raise RuntimeError("Gemini-клієнт не ініціалізований")
 
+    cascade = models if models is not None else FILTER_MODELS
+    available = [model for model in cascade if model not in EXHAUSTED_MODELS]
+    if not available:
+        raise RuntimeError(
+            f"{operation}: квоту вичерпано для всіх моделей каскаду ({', '.join(cascade)})"
+        )
+
     last_error = None
-    for model_name in GEMINI_MODELS:
+    for model_name in available:
         # Retry a transient failure once per model; otherwise move to fallback model.
+        # Exhausted quota (429) is not retried: the model is skipped until the end of the run.
         for attempt in range(2):
             try:
                 response = client.models.generate_content(
@@ -617,21 +707,29 @@ def _generate_structured_response(prompt: str, schema, stats: dict | None, opera
 
                 if stats is not None:
                     stats["models_used"][model_name] = stats["models_used"].get(model_name, 0) + 1
+                    stats.setdefault("models_by_task", {})[task] = model_name
+                _record_model_attempt(stats, task, model_name, "ok")
                 logging.info("Gemini %s: успішна структурована відповідь", model_name)
                 return parsed
 
             except Exception as exc:
                 last_error = exc
-                # A wrong-ID answer is worth one more try on the same model before the fallback
-                # (the fallback model is often overloaded or out of free-tier quota).
-                should_retry_same_model = attempt == 0 and (
-                    is_transient_gemini_error(exc) or isinstance(exc, TranslationIdMismatch)
-                )
+                _record_model_attempt(stats, task, model_name, classify_model_error(exc))
                 if stats is not None:
                     stats["gemini_retries"] += 1
                 logging.warning(
                     "%s: модель %s, спроба %s не вдалася: %s",
                     operation, model_name, attempt + 1, exc,
+                )
+                if is_quota_error(exc):
+                    EXHAUSTED_MODELS.add(model_name)
+                    logging.warning("%s: квоту моделі %s вичерпано — до кінця запуску не використовуємо",
+                                    operation, model_name)
+                    break
+                # A wrong-ID answer is worth one more try on the same model before the fallback
+                # (the fallback model is often overloaded or out of free-tier quota).
+                should_retry_same_model = attempt == 0 and (
+                    is_transient_gemini_error(exc) or isinstance(exc, TranslationIdMismatch)
                 )
                 if should_retry_same_model:
                     time.sleep(3)
@@ -643,7 +741,8 @@ def _generate_structured_response(prompt: str, schema, stats: dict | None, opera
 
 
 def call_gemini_json(prompt: str, stats: dict | None = None) -> NewsFilterResponse:
-    return _generate_structured_response(prompt, NewsFilterResponse, stats, "фільтрація новин", temperature=0.0)
+    return _generate_structured_response(prompt, NewsFilterResponse, stats, "фільтрація новин", temperature=0.0,
+                                         models=FILTER_MODELS, task="filter")
 
 HOMOGLYPHS = {
     "ά": "а", "α": "а", "ό": "о", "ο": "о",
@@ -662,10 +761,11 @@ def clean_generated_field(value: str) -> str:
 
 def generate_news_texts_json(prompt: str, expected_ids: set[int], stats: dict | None = None,
                              id_aliases: dict[int, int] | None = None) -> list[dict]:
-    # The original translation operation used temperature=0.1 and Pro-first model fallback.
+    # The original translation operation used temperature=0.1; models — TRANSLATE_MODELS cascade.
     result = _generate_structured_response(
         prompt, TranslationResponse, stats, "переклад новин",
         expected_ids=expected_ids, temperature=0.1, id_aliases=id_aliases,
+        models=TRANSLATE_MODELS, task="translate",
     )
     translations = [item.model_dump() for item in result.translations]
     for item in translations:
@@ -1552,7 +1652,10 @@ def _empty_stats() -> dict:
             "text_only": 0,
             "sources": {},
         },
-        "models_used": {model: 0 for model in GEMINI_MODELS},
+        "models_used": {},
+        "models_by_task": {"filter": None, "translate": None},
+        "model_attempts": [],
+        "exhausted_models": [],
         "errors_count": 0,
         "gemini_retries": 0,
     }
@@ -1598,7 +1701,10 @@ def main() -> None:
         logging.critical("Не налаштовані TELEGRAM_BOT_TOKEN, TELEGRAM_CHANNEL_ID або GEMINI_API_KEY")
         sys.exit(1)
 
-    client = genai.Client(api_key=GEMINI_API_KEY)
+    client = genai.Client(api_key=GEMINI_API_KEY,
+                          http_options=types.HttpOptions(timeout=GEMINI_TIMEOUT_MS))
+    logging.info("Моделі фільтра: %s", ", ".join(FILTER_MODELS))
+    logging.info("Моделі перекладу: %s", ", ".join(TRANSLATE_MODELS))
     start_time = time.time()
     stats = _empty_stats()
     critical_error = False
@@ -1621,6 +1727,7 @@ def main() -> None:
         except Exception:
             critical_error = True
             logging.exception("Не вдалося оновити статистику беклогу")
+        stats["exhausted_models"] = sorted(EXHAUSTED_MODELS)
         try:
             save_analytics(stats)
         except Exception:

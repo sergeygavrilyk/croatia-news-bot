@@ -49,6 +49,10 @@ jobs:
         GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
         ADMIN_CHAT_ID: ${{ secrets.ADMIN_CHAT_ID }}
         DRY_RUN: ${{ inputs.dry_run }}
+        # Каскади моделей Gemini (T-04): Settings -> Secrets and variables -> Actions -> Variables.
+        # Якщо змінну не створено — беруться значення за замовчуванням з news_bot.py.
+        GEMINI_FILTER_MODELS: ${{ vars.GEMINI_FILTER_MODELS }}
+        GEMINI_TRANSLATE_MODELS: ${{ vars.GEMINI_TRANSLATE_MODELS }}
       run: python news_bot.py
 
     - name: Commit and push history and backlog state
