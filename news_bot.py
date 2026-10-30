@@ -28,7 +28,7 @@ import tempfile
 import time
 import unicodedata
 from html.parser import HTMLParser
-from urllib.parse import parse_qsl, urlencode, urlparse, urlunparse
+from urllib.parse import parse_qsl, urlencode, urljoin, urlparse, urlunparse
 
 import cloudscraper
 import feedparser
@@ -102,6 +102,9 @@ GEMINI_TIMEOUT_MS = 90_000
 # Таймаут запитів до Telegram API: sendPhoto за URL — Telegram сам завантажує картинку з сайту,
 # це буває довше 15 с (30.10 усі запити по 10–15 с падали за таймаутом). Як у молдовському боті.
 TELEGRAM_TIMEOUT_SECONDS = 60
+# Джерело, яке не віддає записів (помилка або порожня стрічка) стільки запусків поспіль, —
+# алерт адміну; коли знову запрацює — повідомлення «знову працює» (як D-01 у молдовському боті).
+SOURCE_ALERT_AFTER_RUNS = 3
 
 
 def parse_models(env_name: str, default: str) -> list[str]:
@@ -362,6 +365,39 @@ def _rule_breakdown(funnel: dict) -> str:
     return " (" + ", ".join(f"{rule} {count}" for rule, count in parts) + ")"
 
 
+def _source_errors_line(stats: dict) -> str:
+    return "; ".join(f"{name} ({error[:80]})" for name, error in (stats.get("source_errors") or {}).items())
+
+
+def check_source_health(stats: dict, history: list[dict]) -> list[str]:
+    """Alerts for sources that have failed SOURCE_ALERT_AFTER_RUNS runs in a row (sent once, on the
+    N-th failed run) and for sources that work again after such a streak. `history` — earlier runs
+    from analytics.json (oldest first). Returns the alert texts."""
+    failed = lambda run: set((run.get("source_errors") or {}).keys())
+    failed_now = failed(stats)
+    alerts = []
+    for name in sorted(failed_now):
+        streak = 1
+        for run in reversed(history):
+            if name not in failed(run):
+                break
+            streak += 1
+        if streak == SOURCE_ALERT_AFTER_RUNS:
+            alerts.append(f"🔴 Джерело не працює {streak} запуски поспіль: {name}. "
+                          f"Остання помилка: {stats['source_errors'][name][:200]}")
+    if history:
+        working_now = set((stats.get("funnel", {}).get("scraped_by_source") or {}).keys())
+        for name in sorted(failed(history[-1]) & working_now):
+            streak = 0
+            for run in reversed(history):
+                if name not in failed(run):
+                    break
+                streak += 1
+            if streak >= SOURCE_ALERT_AFTER_RUNS:
+                alerts.append(f"✅ Джерело знову працює: {name} (після {streak} невдалих запусків)")
+    return alerts
+
+
 def _short_model(name: str | None) -> str:
     return (name or "—").replace("gemini-", "")
 
@@ -412,6 +448,8 @@ def send_analytics_to_admin(stats: dict) -> None:
         "🔍 <b>Воронка:</b>\n"
         f"▪️ Переглянуто RSS-записів: {funnel['scraped_total']}\n"
         f"▪️ За джерелами: {html.escape(scraped_src)}\n"
+        + (f"🔴 Недоступні джерела: {html.escape(_source_errors_line(stats))}\n"
+           if stats.get("source_errors") else "") +
         f"▪️ Уже відомі/застарілі: {funnel['already_seen']}\n"
         f"▪️ Відсіяно кодом: {funnel['rejected_by_keywords']}{html.escape(_rule_breakdown(funnel))}\n"
         f"▪️ Відхилено Gemini: {funnel['duplicates_removed_by_ai']}\n"
@@ -423,7 +461,7 @@ def send_analytics_to_admin(stats: dict) -> None:
         f"📥 <b>Беклог: {backlog_stats['total_size']}</b>\n"
         f"▪️ {html.escape(backlog_src)}\n\n"
         f"✅ <b>{'Підготовлено (тест, не опубліковано)' if DRY_RUN else 'Опубліковано'}: {published['total']}</b>\n"
-        f"▪️ Із фото: {published['with_images']} | Текстом: {published['text_only']}\n"
+        f"▪️ Із фото: {published['with_images']} (з них зі сторінки статті: {published.get('og_images_found', 0)}) | Текстом: {published['text_only']}\n"
         f"▪️ Український пріоритет: {published['ukraine_priority']}\n"
         f"▪️ Джерела: {html.escape(pub_src)}\n\n"
         f"🤖 <b>Моделі:</b> {html.escape(_models_line(stats))}"
@@ -463,6 +501,62 @@ def get_source_name(url: str) -> str:
         return host.capitalize() or "Джерело"
     except Exception:
         return "Джерело"
+
+
+# --- Фото зі сторінки статті (og:image), якщо в RSS картинки немає (як у молдовському боті) ---
+_OG_META_RE = re.compile(
+    r"<meta\b[^>]*?\b(?:property|name)\s*=\s*[\"'](?:og:image|og:image:url|twitter:image)[\"'][^>]*>", re.I)
+_CONTENT_RE = re.compile(r"\bcontent\s*=\s*[\"']([^\"']+)[\"']", re.I)
+UNSUPPORTED_IMAGE_FORMATS = (".webp", ".avif", ".svg")  # Telegram їх не приймає як фото
+
+
+def find_og_image(page_html: str, page_url: str) -> str | None:
+    """Main article image from meta og:image / twitter:image; skips unsupported formats and logos."""
+    for tag in _OG_META_RE.findall((page_html or "")[:300000]):
+        match = _CONTENT_RE.search(tag)
+        if not match:
+            continue
+        url = urljoin(page_url, html.unescape(match.group(1).strip()))
+        if not url.lower().startswith(("http://", "https://")):
+            continue
+        path = urlparse(url).path.lower()
+        if path.endswith(UNSUPPORTED_IMAGE_FORMATS) or "logo" in path:
+            continue
+        return url
+    return None
+
+
+def fetch_og_image(scraper, page_url: str, timeout: int = 10) -> str | None:
+    try:
+        response = scraper.get(page_url, timeout=timeout)
+        if response.status_code != 200:
+            return None
+        return find_og_image(response.text, page_url)
+    except Exception as exc:
+        logging.warning("og:image не отримано для %s: %s", page_url, exc)
+        return None
+
+
+def add_og_images(batch: list[dict], stats: dict | None) -> None:
+    """Before translation (the photo changes the length limit): a photo from the article page
+    for batch articles without a picture in RSS. Saved in the backlog item, so it is fetched once."""
+    scraper = None
+    for item in batch:
+        if item.get("image_urls"):
+            continue
+        try:
+            scraper = scraper or cloudscraper.create_scraper(
+                browser={"browser": "chrome", "platform": "windows", "mobile": False})
+        except Exception:
+            logging.exception("og:image: не вдалося створити scraper — публікуємо без фото зі сторінки")
+            return
+        og_image = fetch_og_image(scraper, item["url"])
+        if not og_image:
+            continue
+        item["image_urls"] = [og_image]
+        if stats is not None:
+            stats["published"]["og_images_found"] = stats["published"].get("og_images_found", 0) + 1
+        logging.info("Фото зі сторінки статті: %s -> %s", item["url"], og_image)
 
 
 def extract_image_urls(entry) -> list[str]:
@@ -1416,13 +1510,14 @@ def scrape_feeds(stats: dict | None = None) -> None:
             )
             response.raise_for_status()
             feed = feedparser.parse(response.text)
+            # Порожня стрічка (або HTML-сторінка замість RSS) — це збій джерела, а не «нічого нового».
             if not feed.entries:
-                logging.warning("RSS не містить записів: %s", feed_url)
-                continue
-        except Exception:
+                raise RuntimeError("порожня стрічка: 0 записів (можливо, сайт віддав сторінку замість RSS)")
+        except Exception as exc:
             logging.exception("Помилка доступу/парсингу RSS %s", feed_url)
             if stats is not None:
                 stats["errors_count"] += 1
+                stats.setdefault("source_errors", {})[source_name] = str(exc)[:200]
             continue
 
         for entry in feed.entries[:15]:
@@ -1655,6 +1750,7 @@ def process_backlog(stats: dict | None = None) -> None:
         send_dry_run_filter_report(candidate_batch, approved_articles, rejected_items, stats)
 
     batch = approved_articles[:BATCH_SIZE]
+    add_og_images(batch, stats)
     sent_urls = set()  # Must exist before any successful Telegram send.
 
     if not batch:
@@ -1774,6 +1870,7 @@ def _empty_stats() -> dict:
             "ukraine_priority": 0,
             "with_images": 0,
             "text_only": 0,
+            "og_images_found": 0,
             "sources": {},
         },
         "models_used": {},
@@ -1852,6 +1949,13 @@ def main() -> None:
             critical_error = True
             logging.exception("Не вдалося оновити статистику беклогу")
         stats["exhausted_models"] = sorted(EXHAUSTED_MODELS)
+        if not DRY_RUN:  # у тестовому запуску історія не оновлюється, тож і алертів немає
+            try:
+                for alert in check_source_health(stats, load_analytics()):
+                    logging.warning(alert)
+                    send_alert_to_admin(alert)
+            except Exception:
+                logging.exception("Не вдалося перевірити стан джерел")
         try:
             save_analytics(stats)
         except Exception:
