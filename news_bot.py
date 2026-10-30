@@ -100,6 +100,10 @@ class TranslationResponse(BaseModel):
     translations: list[TranslatedNews]
 
 
+class TranslationIdMismatch(ValueError):
+    """Gemini returned translation IDs that do not match the batch and cannot be mapped back."""
+
+
 class TelegramAPIError(RuntimeError):
     def __init__(self, error_code: int, description: str, retry_after: int | None = None):
         super().__init__(f"Telegram API Error {error_code}: {description}")
@@ -519,9 +523,40 @@ def is_transient_gemini_error(exc: Exception) -> bool:
     ))
 
 
+def _remap_translation_ids(ids: list[int], expected_ids: set[int],
+                           id_aliases: dict[int, int] | None) -> list[int] | None:
+    """Map wrong translation IDs back to batch IDs when it is unambiguous; otherwise None.
+
+    Seen in production: the model returned the article number from the source URL
+    (e.g. 1587601) instead of the batch ID 0.
+    """
+    if len(ids) != len(expected_ids):
+        return None
+    if len(expected_ids) == 1:
+        # One article in the batch and one translation back: it can only be this article.
+        return [next(iter(expected_ids))]
+    aliases = id_aliases or {}
+    mapped = [item_id if item_id in expected_ids else aliases.get(item_id) for item_id in ids]
+    if None in mapped or len(set(mapped)) != len(mapped) or set(mapped) != expected_ids:
+        return None
+    return mapped
+
+
+def _url_number_aliases(batch: list[dict]) -> dict[int, int]:
+    """Numbers (>= 100) from article URL paths/queries that belong to exactly one batch article."""
+    owners: dict[int, set[int]] = {}
+    for idx, item in enumerate(batch):
+        parsed = urlparse(str(item.get("url", "")))
+        for number in {int(n) for n in re.findall(r"\d+", f"{parsed.path}?{parsed.query}")}:
+            if number >= 100:
+                owners.setdefault(number, set()).add(idx)
+    return {number: next(iter(idxs)) for number, idxs in owners.items() if len(idxs) == 1}
+
+
 def _generate_structured_response(prompt: str, schema, stats: dict | None, operation: str,
                                   expected_ids: set[int] | None = None, 
-                                  temperature: float = 0.0):
+                                  temperature: float = 0.0,
+                                  id_aliases: dict[int, int] | None = None):
     if client is None:
         raise RuntimeError("Gemini-клієнт не ініціалізований")
 
@@ -551,12 +586,20 @@ def _generate_structured_response(prompt: str, schema, stats: dict | None, opera
                 parsed = schema.model_validate_json(response.text)
                 if expected_ids is not None:
                     ids = [item.id for item in parsed.translations]
-                    if len(ids) != len(set(ids)):
-                        raise ValueError("Gemini повернув повторювані ID перекладів")
-                    if set(ids) != expected_ids:
-                        raise ValueError(
-                            f"Невідповідність ID перекладів: очікували {sorted(expected_ids)}, "
-                            f"отримали {sorted(ids)}"
+                    if len(ids) != len(set(ids)) or set(ids) != expected_ids:
+                        remapped = _remap_translation_ids(ids, expected_ids, id_aliases)
+                        if remapped is None:
+                            if len(ids) != len(set(ids)):
+                                raise TranslationIdMismatch("Gemini повернув повторювані ID перекладів")
+                            raise TranslationIdMismatch(
+                                f"Невідповідність ID перекладів: очікували {sorted(expected_ids)}, "
+                                f"отримали {sorted(ids)}"
+                            )
+                        for item, new_id in zip(parsed.translations, remapped):
+                            item.id = new_id
+                        logging.warning(
+                            "%s: модель %s повернула ID %s замість %s; зіставлено однозначно: %s",
+                            operation, model_name, ids, sorted(expected_ids), remapped,
                         )
 
                 if stats is not None:
@@ -566,7 +609,11 @@ def _generate_structured_response(prompt: str, schema, stats: dict | None, opera
 
             except Exception as exc:
                 last_error = exc
-                should_retry_same_model = attempt == 0 and is_transient_gemini_error(exc)
+                # A wrong-ID answer is worth one more try on the same model before the fallback
+                # (the fallback model is often overloaded or out of free-tier quota).
+                should_retry_same_model = attempt == 0 and (
+                    is_transient_gemini_error(exc) or isinstance(exc, TranslationIdMismatch)
+                )
                 if stats is not None:
                     stats["gemini_retries"] += 1
                 logging.warning(
@@ -600,11 +647,12 @@ def clean_generated_field(value: str) -> str:
         cleaned = cleaned.replace(bad_char, good_char)
     return cleaned
 
-def generate_news_texts_json(prompt: str, expected_ids: set[int], stats: dict | None = None) -> list[dict]:
+def generate_news_texts_json(prompt: str, expected_ids: set[int], stats: dict | None = None,
+                             id_aliases: dict[int, int] | None = None) -> list[dict]:
     # The original translation operation used temperature=0.1 and Pro-first model fallback.
     result = _generate_structured_response(
         prompt, TranslationResponse, stats, "переклад новин",
-        expected_ids=expected_ids, temperature=0.1,
+        expected_ids=expected_ids, temperature=0.1, id_aliases=id_aliases,
     )
     translations = [item.model_dump() for item in result.translations]
     for item in translations:
@@ -1382,7 +1430,9 @@ def process_backlog(stats: dict | None = None) -> None:
     try:
         # Restore the original pacing before the translation request.
         time.sleep(PRE_TRANSLATION_DELAY_SECONDS)
-        translations = generate_news_texts_json(prompt, expected_ids, stats)
+        translations = generate_news_texts_json(
+            prompt, expected_ids, stats, id_aliases=_url_number_aliases(batch)
+        )
     except Exception as exc:
         for item in batch:
             record_translation_failure(item, str(exc))
@@ -1534,8 +1584,10 @@ def main() -> None:
         if stats["published"]["total"] > 0 or stats["errors_count"] > 0:
             send_analytics_to_admin(stats)
 
-    # Non-zero process status ensures the scheduled runner records partial/critical failures.
-    if critical_error or stats["errors_count"] > 0:
+    # Non-zero status only for critical failures (the main loop stopped, or state/analytics
+    # could not be saved). Partial errors (one article failed validation, one RSS feed or
+    # one Telegram post failed) are reported to the admin, but the run stays green.
+    if critical_error:
         sys.exit(1)
 
 
