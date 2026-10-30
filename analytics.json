@@ -1,68 +1,5 @@
 [
   {
-    "timestamp": "2026-10-12 16:01:11",
-    "execution_time": 14.5,
-    "funnel": {
-      "scraped_total": 35,
-      "scraped_by_source": {
-        "023": 10,
-        "Slobodna dalmacija": 15,
-        "Zadarski list": 10
-      },
-      "already_seen": 8,
-      "rejected_by_keywords": 0,
-      "duplicates_removed_by_ai": 25,
-      "rejection_reasons_list": [
-        "• Tri vrste raka godinama rastu neprimjetn... ➡️ <b>Світовий шум</b>",
-        "• Iz Zadra si ako znaš tko je - Toto! Prič... ➡️ <b>Переказ історії/несуттєві деталі</b>",
-        "• Mastercard od 2027. uvodi nova pravila z... ➡️ <b>Стосується загальних правил на 2027 рік без термінової актуальності</b>",
-        "• Kamo nestaje masnoća kad smršavimo: najv... ➡️ <b>Світовий шум</b>",
-        "• Što kad vam na auto padne grana ili stab... ➡️ <b>Побут чужих міст</b>",
-        "• Jandroković: Vlada je odbila opoziv prem... ➡️ <b>Переказ вчорашньої події про опозицію та скасування вотуму довіри</b>",
-        "• Pomicanje sata može poremetiti san, a st... ➡️ <b>Світовий шум</b>",
-        "• Šibenik Meteo donosi tjednu prognozu: Bu... ➡️ <b>Побут чужих міст</b>",
-        "• Burnham: Jasno je da je Rusija utjecala ... ➡️ <b>Інші країни (геоблок)</b>",
-        "• Četiri površine u kući koje ne biste tre... ➡️ <b>Світовий шум</b>",
-        "• U ovoj općini oglasili su natječaj za st... ➡️ <b>Несуттєва локальна подія іншого муніципалітету</b>",
-        "• Počelo suđenje braći Vinković za brutaln... ➡️ <b>Побут чужих міст</b>",
-        "• PRILIKA KOJA SE NE PROPUŠTA Cijeli asort... ➡️ <b>Реклама</b>",
-        "• Unatoč opasnosti od četničkih brodova, s... ➡️ <b>Побут чужих міст</b>",
-        "• U rujnu 16 posto manje nezaposlenih nego... ➡️ <b>Дублює загальну економічну статистику</b>",
-        "• Ovaj dio parkinga na Lapadskoj obali zat... ➡️ <b>Побут чужих міст</b>",
-        "• Potražni psi oduševili učenike OŠ Ivana ... ➡️ <b>Побут чужих міст</b>",
-        "• U subotu na Stradunu 17. Dubrovačka trpe... ➡️ <b>Побут чужих міст</b>",
-        "• Oproštaj od Roberta Pilepića: Kad glazbe... ➡️ <b>Побут чужих міст</b>",
-        "• Rambo Amadeus pred rasprodanim HNK Zadar... ➡️ <b>Несуттєве оновлення майбутнього концерту</b>",
-        "• DOZNAJEMO! Lürssen na izlaznim vratima i... ➡️ <b>Побут чужих міст</b>",
-        "• Memorijalni turnir ‘Lovca‘ u čast velika... ➡️ <b>Спорт</b>",
-        "• Most: Poljoprivredna politika ne smije b... ➡️ <b>Політична заява партії без конкретних рішень</b>",
-        "• Odlazak legende Šubićevca: preminuo Rade... ➡️ <b>Спорт</b>",
-        "• Počinju javne tribine upoznavanja projek... ➡️ <b>Побут чужих міст</b>"
-      ]
-    },
-    "backlog": {
-      "total_size": 54,
-      "sources": {
-        "Zadarski list": 17,
-        "Slobodna dalmacija": 32,
-        "023": 5
-      }
-    },
-    "published": {
-      "total": 0,
-      "ukraine_priority": 0,
-      "with_images": 0,
-      "text_only": 0,
-      "sources": {}
-    },
-    "models_used": {
-      "gemini-3.5-flash-lite": 1,
-      "gemini-3.6-flash": 0
-    },
-    "errors_count": 0,
-    "gemini_retries": 0
-  },
-  {
     "timestamp": "2026-10-12 19:01:06",
     "execution_time": 12.7,
     "funnel": {
@@ -5751,6 +5688,61 @@
       "sources": {
         "023": 2,
         "Slobodna dalmacija": 1
+      }
+    },
+    "models_used": {
+      "gemini-3.5-flash-lite": 2,
+      "gemini-3.6-flash": 0
+    },
+    "errors_count": 0,
+    "gemini_retries": 0
+  },
+  {
+    "timestamp": "2026-10-30 09:01:16",
+    "execution_time": 164.5,
+    "funnel": {
+      "scraped_total": 35,
+      "scraped_by_source": {
+        "023": 10,
+        "Slobodna dalmacija": 15,
+        "Zadarski list": 10
+      },
+      "already_seen": 0,
+      "rejected_by_keywords": 6,
+      "duplicates_removed_by_ai": 17,
+      "rejection_reasons_list": [
+        "• Hrvatska je u top deset tržišta za rabljena vozila. Lažni kilometri vi → Світовий шум | Сутності: carVertical, Hrvatska, rabljena vozila, Rokas Medonis",
+        "• Među poginulim pripadnicima EUFOR-a u padu helikoptera i 24-godišnja s → Геоблок | Сутності: EUFOR, Brčko, Bosna i Hercegovina, Guido Crosetto",
+        "• S polica trgovina hitno se povlači delikatesna namirnica. Provjerite h → Побут інших міст | Сутності: Državni inspektorat, K Kaufland, Naturala, klorpirifos",
+        "• Tanker u Hormuškom tjesnacu pogođen dvjema eksplozivnim napravama prič → Геоблок | Сутності: Hormuški tjesnac, UKMTO, Iran, SAD",
+        "• Radeta predao falsificiran dokument na Gradsko vijeće? Dva različita p → Дубль в історії | Сутності: Daniel Radeta, Gradsko vijeće Zadar, Ivica Žuvela, Erol Gaši",
+        "• Od zdravstva i novih luka do razvoja vinarstva: listopad u znaku ulaga → Побут інших міст | Сутності: Blaž Pezo, Pelješac, Dubrovačko-neretvanska županija, Kuna Pelješka",
+        "• U Gospiću nastavljen „rat plakatima“: “Gradonačelniče, volontirate li  → Побут інших міст | Сутності: Gospić, Darko Milinović, Gospić je naš dom, Smiljansko polje",
+        "• Bez brige, radi se o vježbi u gruškoj luci u kojoj sudjeluju i dubrova → Побут інших міст | Сутності: JVP Dubrovački vatrogasci, Luka Dubrovnik, Obala pape Ivana Pavla II",
+        "• Otvoren natječaji za studentske i učeničke stipendije Grada Rijeke → Побут інших міст | Сутності: Grad Rijeka, Iva Rinčić, stipendije",
+        "• Kakva prilika za siguran posao! Gradska ustanova raspisala natječaj za → Побут інших міст | Сутності: Šibenik, Dječji vrtić Smilje",
+        "• Riječki program lokalnog partnerstva: Sedam projekata za ljepši i ugod → Побут інших міст | Сутності: Grad Rijeka, Riječki program lokalnog partnerstva, Iva Rinčić",
+        "• Traže godišnji i bolovanje uz zamjensku skrb: ‘Kao majka djeteta s inv → Світовий шум | Сутності: Ministarstvo rada, GI PDSI, Dženita Lazarević, Dubrovnik",
+        "• Grad Rijeka povećao iznose blagdanskih potpora → Побут інших міст | Сутності: Grad Rijeka, blagdanske potpore, Titov trg",
+        "• Pogledajte što sve možete pročitati u novom broju Dubrovačkog vjesnika → Реклама | Сутності: Dubrovački vjesnik, Dubrovnik",
+        "• Lagarde odlazi, tko dolazi? Šanse Borisa Vujčića su male, favoriti su  → Геоблок | Сутності: Christine Lagarde, ECB, Boris Vujčić, António Costa",
+        "• Završena energetska obnova zgrade Policijske uprave dubrovačko-neretva → Побут інших міст | Сутності: PU dubrovačko-neretvanska, MUP, Dubrovnik",
+        "• Dubrovački muzeji prelaze na zimsko radno vrijeme → Побут інших міст | Сутності: Dubrovački muzeji, Knežev dvor, Dubrovnik"
+      ]
+    },
+    "backlog": {
+      "total_size": 6,
+      "sources": {
+        "023": 6
+      }
+    },
+    "published": {
+      "total": 3,
+      "ukraine_priority": 0,
+      "with_images": 0,
+      "text_only": 3,
+      "sources": {
+        "023": 3
       }
     },
     "models_used": {
