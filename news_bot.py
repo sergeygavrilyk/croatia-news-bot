@@ -97,7 +97,11 @@ RETRY_COOLDOWN_SECONDS = 60 * 60
 DEFAULT_FILTER_MODELS = "gemini-3-flash-preview,gemini-3.5-flash-lite,gemini-3.1-flash-lite"
 DEFAULT_TRANSLATE_MODELS = "gemini-3.8-flash,gemini-3.6-flash,gemini-3.5-flash-lite"
 # Таймаут одного запиту: модель, що «зависла», не блокує запуск — каскад перейде до наступної.
-GEMINI_TIMEOUT_MS = 180_000
+# 90 с: звичайна відповідь — 5–40 с; 30.10 увечері перевантажені моделі мовчали по 3 хв (504).
+GEMINI_TIMEOUT_MS = 90_000
+# Таймаут запитів до Telegram API: sendPhoto за URL — Telegram сам завантажує картинку з сайту,
+# це буває довше 15 с (30.10 усі запити по 10–15 с падали за таймаутом). Як у молдовському боті.
+TELEGRAM_TIMEOUT_SECONDS = 60
 
 
 def parse_models(env_name: str, default: str) -> list[str]:
@@ -341,7 +345,7 @@ def send_alert_to_admin(message: str) -> None:
             api_url,
             data={"chat_id": ADMIN_CHAT_ID,
                   "text": f"{'🧪 DRY_RUN — ' if DRY_RUN else ''}⚠️ ALARM: {message}"[:4000]},
-            timeout=10,
+            timeout=TELEGRAM_TIMEOUT_SECONDS,
         )
         if resp.status_code != 200:
             logging.error("Помилка відправки алерта в Telegram: %s", resp.text[:1000])
@@ -433,7 +437,7 @@ def send_analytics_to_admin(stats: dict) -> None:
         resp = requests.post(
             api_url,
             data={"chat_id": ADMIN_CHAT_ID, "text": message[:4000], "parse_mode": "HTML"},
-            timeout=10,
+            timeout=TELEGRAM_TIMEOUT_SECONDS,
         )
         if resp.status_code != 200:
             logging.error("Не вдалося надіслати аналітику: %s", resp.text[:1000])
@@ -610,6 +614,15 @@ def _exception_status_code(exc: Exception) -> int | None:
     return None
 
 
+def is_slow_gemini_failure(exc: Exception) -> bool:
+    """Timeout or 504 DEADLINE_EXCEEDED: the model was silent for a long time — no retry on it."""
+    if _exception_status_code(exc) == 504:
+        return True
+    text = str(exc).lower()
+    return ("deadline" in text or "timed out" in text or "timeout" in text
+            or "timeout" in type(exc).__name__.lower())
+
+
 def is_transient_gemini_error(exc: Exception) -> bool:
     code = _exception_status_code(exc)
     if code == 429 or (code is not None and code >= 500):
@@ -757,9 +770,10 @@ def _generate_structured_response(prompt: str, schema, stats: dict | None, opera
                     logging.warning("%s: квоту моделі %s вичерпано — до кінця запуску не використовуємо",
                                     operation, model_name)
                     break
-                # A wrong-ID answer is worth one more try on the same model before the fallback
-                # (the fallback model is often overloaded or out of free-tier quota).
-                should_retry_same_model = attempt == 0 and (
+                # A wrong-ID answer or a quick 5xx (e.g. 503) is worth one more try on the same model
+                # before the fallback. A timeout / 504 is not: the model already kept us waiting for
+                # up to GEMINI_TIMEOUT_MS, so we go to the next model at once.
+                should_retry_same_model = attempt == 0 and not is_slow_gemini_failure(exc) and (
                     is_transient_gemini_error(exc) or isinstance(exc, TranslationIdMismatch)
                 )
                 if should_retry_same_model:
@@ -1145,7 +1159,7 @@ def handle_telegram_html_error(api_url: str, payload: dict):
         plain_payload["media"] = json.dumps(media_objects, ensure_ascii=False)
     plain_payload.pop("parse_mode", None)
 
-    resp = requests.post(api_url, data=plain_payload, timeout=15)
+    resp = requests.post(api_url, data=plain_payload, timeout=TELEGRAM_TIMEOUT_SECONDS)
     return _response_to_telegram_result(resp)
 
 
@@ -1156,7 +1170,7 @@ def handle_telegram_html_error(api_url: str, payload: dict):
     retry=retry_if_exception(_telegram_retry_predicate),
 )
 def execute_telegram_request(api_url: str, payload: dict):
-    resp = requests.post(api_url, data=payload, timeout=15)
+    resp = requests.post(api_url, data=payload, timeout=TELEGRAM_TIMEOUT_SECONDS)
     try:
         return _response_to_telegram_result(resp)
     except TelegramAPIError as exc:
@@ -1556,7 +1570,7 @@ def send_dry_run_filter_report(candidates: list[dict], approved: list[dict],
         resp = requests.post(
             f"https://api.telegram.org/bot{TELEGRAM_BOT_TOKEN}/sendMessage",
             data={"chat_id": ADMIN_CHAT_ID, "text": "\n".join(lines)[:4000], "parse_mode": "HTML"},
-            timeout=10,
+            timeout=TELEGRAM_TIMEOUT_SECONDS,
         )
         if resp.status_code != 200:
             logging.error("Не вдалося надіслати звіт фільтра: %s", resp.text[:500])
