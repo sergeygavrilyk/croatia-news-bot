@@ -4,6 +4,9 @@ Required environment variables:
   TELEGRAM_BOT_TOKEN, TELEGRAM_CHANNEL_ID, GEMINI_API_KEY
 Optional:
   ADMIN_CHAT_ID
+  DRY_RUN=1 — test run: the full cycle runs (RSS, Gemini filter and translation are real),
+    but posts go to ADMIN_CHAT_ID marked "ТЕСТ" and the state files are not changed.
+    Requires ADMIN_CHAT_ID; TELEGRAM_CHANNEL_ID is not needed.
 
 Keep feeds.json and the state files in the working directory. The script intentionally
 fails closed on invalid editorial-filter responses and preserves unprocessed backlog items.
@@ -18,6 +21,7 @@ import random
 import re
 import shutil
 import sys
+import tempfile
 import time
 from html.parser import HTMLParser
 from urllib.parse import parse_qsl, urlencode, urlparse, urlunparse
@@ -51,6 +55,12 @@ TELEGRAM_BOT_TOKEN = os.getenv("TELEGRAM_BOT_TOKEN")
 TELEGRAM_CHANNEL_ID = os.getenv("TELEGRAM_CHANNEL_ID")
 GEMINI_API_KEY = os.getenv("GEMINI_API_KEY")
 ADMIN_CHAT_ID = os.getenv("ADMIN_CHAT_ID")
+
+# T-05: тестовий запуск — увесь цикл справжній (RSS, фільтр і переклад Gemini), але пости
+# йдуть в адмін-чат з позначкою «ТЕСТ», а файли стану в репозиторії не змінюються.
+DRY_RUN = os.getenv("DRY_RUN", "").strip().lower() in ("1", "true", "yes")
+DRY_RUN_HEADER = "🧪 <b>ТЕСТ — не опубліковано в каналі</b>\n\n"
+DRY_RUN_POST_DELAY_SECONDS = 10
 
 HISTORY_FILE = "posted_news.txt"
 TITLES_FILE = "posted_titles.txt"
@@ -298,7 +308,8 @@ def send_alert_to_admin(message: str) -> None:
     try:
         resp = requests.post(
             api_url,
-            data={"chat_id": ADMIN_CHAT_ID, "text": f"⚠️ ALARM: {message}"[:4000]},
+            data={"chat_id": ADMIN_CHAT_ID,
+                  "text": f"{'🧪 DRY_RUN — ' if DRY_RUN else ''}⚠️ ALARM: {message}"[:4000]},
             timeout=10,
         )
         if resp.status_code != 200:
@@ -325,6 +336,8 @@ def send_analytics_to_admin(stats: dict) -> None:
     # Escape model/source-derived values before using Telegram HTML parse mode.
     message = (
         "📊 <b>Звіт Croatia News Bot</b>\n\n"
+        + ("🧪 <b>ТЕСТОВИЙ ЗАПУСК (DRY_RUN)</b> — у канал нічого не опубліковано, "
+           "файли стану не змінено\n\n" if DRY_RUN else "") +
         f"⏱ Час виконання: {stats['execution_time']} сек\n"
         f"⚠️ Помилок: {stats['errors_count']} | Повторних спроб Gemini: {stats['gemini_retries']}\n\n"
         "🔍 <b>Воронка:</b>\n"
@@ -337,7 +350,7 @@ def send_analytics_to_admin(stats: dict) -> None:
         f"{reasons[:2500]}\n\n"
         f"📥 <b>Беклог: {backlog_stats['total_size']}</b>\n"
         f"▪️ {html.escape(backlog_src)}\n\n"
-        f"✅ <b>Опубліковано: {published['total']}</b>\n"
+        f"✅ <b>{'Підготовлено (тест, не опубліковано)' if DRY_RUN else 'Опубліковано'}: {published['total']}</b>\n"
         f"▪️ Із фото: {published['with_images']} | Текстом: {published['text_only']}\n"
         f"▪️ Український пріоритет: {published['ukraine_priority']}\n"
         f"▪️ Джерела: {html.escape(pub_src)}\n\n"
@@ -1044,6 +1057,11 @@ def _truncate_html_visible(fragment: str, max_visible_chars: int) -> str:
             output.append(f"</{stack.pop()}>")
     return "".join(output).rstrip()
 
+def _target_chat_id() -> str | None:
+    """DRY_RUN: posts go to the admin chat instead of the channel."""
+    return ADMIN_CHAT_ID if DRY_RUN else TELEGRAM_CHANNEL_ID
+
+
 def send_to_telegram(text: str, url: str, source_name: str, image_urls=None, tags: str = "") -> tuple[bool, str]:
     image_urls = [] if not image_urls else ([image_urls] if isinstance(image_urls, str) else list(image_urls))
     image_urls = image_urls[:10]
@@ -1053,6 +1071,9 @@ def send_to_telegram(text: str, url: str, source_name: str, image_urls=None, tag
         raise ValueError(f"Небезпечне або некоректне посилання на джерело: {url!r}")
 
     body, hashtag_suffix = _extract_hashtag_suffix(text)
+    if DRY_RUN:
+        # The header is part of the body, so the Telegram length limits account for it.
+        body = DRY_RUN_HEADER + body
     extra_tags = str(tags or "").strip()
     suffix_parts = [part for part in (hashtag_suffix, extra_tags) if part]
     suffix = "\n\n".join(suffix_parts)
@@ -1094,7 +1115,7 @@ def send_to_telegram(text: str, url: str, source_name: str, image_urls=None, tag
     if not image_urls:
         try:
             execute_telegram_request(api_url_text, {
-                "chat_id": TELEGRAM_CHANNEL_ID,
+                "chat_id": _target_chat_id(),
                 "text": full_message,
                 "parse_mode": "HTML",
             })
@@ -1106,7 +1127,7 @@ def send_to_telegram(text: str, url: str, source_name: str, image_urls=None, tag
     if len(image_urls) == 1:
         api_url = f"https://api.telegram.org/bot{TELEGRAM_BOT_TOKEN}/sendPhoto"
         payload = {
-            "chat_id": TELEGRAM_CHANNEL_ID,
+            "chat_id": _target_chat_id(),
             "photo": image_urls[0],
             "caption": full_message,
             "parse_mode": "HTML",
@@ -1121,7 +1142,7 @@ def send_to_telegram(text: str, url: str, source_name: str, image_urls=None, tag
             logging.warning("Telegram відхилив фото, пробуємо надіслати текстом: %s", exc)
             try:
                 execute_telegram_request(api_url_text, {
-                    "chat_id": TELEGRAM_CHANNEL_ID,
+                    "chat_id": _target_chat_id(),
                     "text": full_message,
                     "parse_mode": "HTML",
                 })
@@ -1141,7 +1162,7 @@ def send_to_telegram(text: str, url: str, source_name: str, image_urls=None, tag
     api_url = f"https://api.telegram.org/bot{TELEGRAM_BOT_TOKEN}/sendMediaGroup"
     try:
         execute_telegram_request(api_url, {
-            "chat_id": TELEGRAM_CHANNEL_ID,
+            "chat_id": _target_chat_id(),
             "media": json.dumps(media, ensure_ascii=False),
         })
         return True, "image"
@@ -1152,7 +1173,7 @@ def send_to_telegram(text: str, url: str, source_name: str, image_urls=None, tag
         logging.warning("Telegram відхилив альбом, пробуємо текстовий fallback: %s", exc)
         try:
             execute_telegram_request(api_url_text, {
-                "chat_id": TELEGRAM_CHANNEL_ID,
+                "chat_id": _target_chat_id(),
                 "text": full_message,
                 "parse_mode": "HTML",
             })
@@ -1503,7 +1524,7 @@ def process_backlog(stats: dict | None = None) -> None:
                 stats["published"]["text_only"] += 1
             source = item.get("source", "Джерело")
             stats["published"]["sources"][source] = stats["published"]["sources"].get(source, 0) + 1
-        time.sleep(POST_PUBLICATION_DELAY_SECONDS)
+        time.sleep(DRY_RUN_POST_DELAY_SECONDS if DRY_RUN else POST_PUBLICATION_DELAY_SECONDS)
 
     _save_postprocessing_backlog(backlog, evaluated_urls, approved_urls, sent_urls)
 
@@ -1547,9 +1568,33 @@ def refresh_backlog_stats(stats: dict) -> None:
     stats["backlog"]["sources"] = source_counts
 
 
+def _enter_dry_run_sandbox() -> str:
+    """DRY_RUN: work on copies of feeds.json and the state files in a temporary folder.
+
+    All the usual code paths (backlog, history, analytics writes) stay the same, but they
+    write to the copies, so the files in the repository are never changed.
+    """
+    sandbox = tempfile.mkdtemp(prefix="croatia-news-dry-run-")
+    for name in (FEEDS_FILE, HISTORY_FILE, TITLES_FILE, BACKLOG_FILE,
+                 f"{BACKLOG_FILE}.bak", ANALYTICS_FILE):
+        if os.path.exists(name):
+            shutil.copy2(name, os.path.join(sandbox, name))
+    os.chdir(sandbox)
+    return sandbox
+
+
 def main() -> None:
     global client
-    if not all([TELEGRAM_BOT_TOKEN, TELEGRAM_CHANNEL_ID, GEMINI_API_KEY]):
+    if DRY_RUN:
+        if not all([TELEGRAM_BOT_TOKEN, GEMINI_API_KEY, ADMIN_CHAT_ID]):
+            logging.critical("DRY_RUN: потрібні TELEGRAM_BOT_TOKEN, GEMINI_API_KEY і ADMIN_CHAT_ID")
+            sys.exit(1)
+        sandbox = _enter_dry_run_sandbox()
+        logging.warning(
+            "🧪 DRY_RUN: тестовий запуск — пости йдуть в адмін-чат, а не в канал; "
+            "файли стану — копії в %s (у репозиторії не змінюються)", sandbox,
+        )
+    elif not all([TELEGRAM_BOT_TOKEN, TELEGRAM_CHANNEL_ID, GEMINI_API_KEY]):
         logging.critical("Не налаштовані TELEGRAM_BOT_TOKEN, TELEGRAM_CHANNEL_ID або GEMINI_API_KEY")
         sys.exit(1)
 
@@ -1581,7 +1626,7 @@ def main() -> None:
         except Exception:
             critical_error = True
             logging.exception("Не вдалося зберегти аналітику")
-        if stats["published"]["total"] > 0 or stats["errors_count"] > 0:
+        if DRY_RUN or stats["published"]["total"] > 0 or stats["errors_count"] > 0:
             send_analytics_to_admin(stats)
 
     # Non-zero status only for critical failures (the main loop stopped, or state/analytics
