@@ -1,65 +1,5 @@
 [
   {
-    "timestamp": "2026-10-13 10:01:11",
-    "execution_time": 502.5,
-    "funnel": {
-      "scraped_total": 35,
-      "scraped_by_source": {
-        "023": 10,
-        "Slobodna dalmacija": 15,
-        "Zadarski list": 10
-      },
-      "already_seen": 7,
-      "rejected_by_keywords": 1,
-      "duplicates_removed_by_ai": 19,
-      "rejection_reasons_list": [
-        "• U Arheološkom muzeju u Zadru otvara se i... ➡️ <b>Культурна подія місцевого значення, яка не є критично важливою для щоденного зведення новин діаспори</b>",
-        "• Budućnost na poljima: poljoprivrednici u... ➡️ <b>Побут і події інших міст (Шибеник)</b>",
-        "• DP-ovac Kukavica preduhitrio Plenkovića:... ➡️ <b>Дубль або вторинний політичний коментар національного рівня без прямих нових рішень</b>",
-        "• ChatGPT umjesto liječnika? Nova analiza ... ➡️ <b>Світовий шум / загальна статистика інтересу до технологій</b>",
-        "• Hrvoje Prpić gostovao u Poriluku: Može l... ➡️ <b>Тематика інших міст (Рієка) та загальні поради щодо авто</b>",
-        "• Projekt od 357 tisuća eura: Tribunj grad... ➡️ <b>Побут інших міст (Трібунь)</b>",
-        "• Slovenija raste gotovo 13%, Hrvatska sam... ➡️ <b>Економічна статистика туризму без прямого впливу на життя в Задарі чи українців</b>",
-        "• Iskusni stonski maslinar o ovogodišnjoj ... ➡️ <b>Дубль матеріалу про бербу маслин (див. новину 16)</b>",
-        "• Ove nedjelje dvije radionice na Kreativn... ➡️ <b>Побут інших міст (Опатія)</b>",
-        "• Noćni sudar u Poličniku; Skrivio nesreću... ➡️ <b>Дрібна ДТП поза межами Задара (Полічник), немає тяжких наслідків</b>",
-        "• Rekordne brojke s burze rada: nezaposlen... ➡️ <b>Економіка та статистика інших жупаній (Шибеник)</b>",
-        "• Nakon rasprodanih izvedbi u Zajcu, čarol... ➡️ <b>Культурні події та побут інших міст (Рієка)</b>",
-        "• Iskusni stonski maslinar o ovogodišnjoj ... ➡️ <b>Сільськогосподарські поради, не входять до пріоритетних тем</b>",
-        "• Vozač (84) poginuo u sudaru automobila i... ➡️ <b>Кримінал і ДТП в іншій частині Хорватії (Осієк)</b>",
-        "• Tjedan školskog doručka u Zadru; Kako kr... ➡️ <b>Дубль або локальна шкільна акція без загального суспільного резонансу</b>",
-        "• Filmska priča s Pelješca: Lucija je pobj... ➡️ <b>Історична/родинна розповідь з іншого регіону (Пельєшац)</b>",
-        "• Dvojica mladića i jedna djevojka poginul... ➡️ <b>Геоблок: події за межами Хорватії та України (Боснія і Герцеговина)</b>",
-        "• Odgovor na divljanje cijena nekretnina: ... ➡️ <b>Життєві проблеми ринку нерухомості в інших містах (Дубровник, Спліт)</b>",
-        "• Još dva broda pogođena dronovima kod Bug... ➡️ <b>Геоблок: події в іншій країні (Болгарія), що не стосуються напряму українських біженців у Хорватії</b>"
-      ]
-    },
-    "backlog": {
-      "total_size": 34,
-      "sources": {
-        "Slobodna dalmacija": 14,
-        "Zadarski list": 11,
-        "023": 9
-      }
-    },
-    "published": {
-      "total": 3,
-      "ukraine_priority": 0,
-      "with_images": 1,
-      "text_only": 2,
-      "sources": {
-        "Slobodna dalmacija": 1,
-        "023": 2
-      }
-    },
-    "models_used": {
-      "gemini-3.5-flash-lite": 2,
-      "gemini-3.6-flash": 0
-    },
-    "errors_count": 0,
-    "gemini_retries": 2
-  },
-  {
     "timestamp": "2026-10-13 11:01:09",
     "execution_time": 166.5,
     "funnel": {
@@ -5720,6 +5660,64 @@
       "sources": {
         "023": 2,
         "Zadarski list": 1
+      }
+    },
+    "models_used": {
+      "gemini-3.5-flash-lite": 2,
+      "gemini-3.6-flash": 0
+    },
+    "errors_count": 0,
+    "gemini_retries": 0
+  },
+  {
+    "timestamp": "2026-10-30 14:01:14",
+    "execution_time": 175.8,
+    "funnel": {
+      "scraped_total": 35,
+      "scraped_by_source": {
+        "023": 10,
+        "Slobodna dalmacija": 15,
+        "Zadarski list": 10
+      },
+      "already_seen": 6,
+      "rejected_by_keywords": 9,
+      "duplicates_removed_by_ai": 22,
+      "rejection_reasons_list": [
+        "• Sanader: O radu SOA-e oko otpada u Gospiću možemo razgovarati kad dobi → Політика | Сутності: Ante Sanader, HDZ, DORH, Gospić, Sabor",
+        "• Župan Pezo potpisao ugovor, kreće gradnja Inkluzivnog centra Korčula.  → Побут інших міст | Сутності: Blaž Pezo, Korčula, Inkluzivni centar, Dubrovačko-neretvanska županija",
+        "• AM i KI: Sanacija Sovjaka propala, a vladajući na Viškovu izglasali 10 → Побут інших міст | Сутності: Viškovo, Bojan Kurelić, SDP, Sovjak",
+        "• U ponedjeljak ujutro u ovom pelješkom mjestu neće biti struje → Побут інших міст | Сутності: Pelješac, Elektrojug, Podvlaštica, struja",
+        "• HZJZ: Nema pokazatelja prodora onečišćenja u duboke podzemne vode u Go → Дубль в історії | Сутності: HZJZ, Gospić, PFAS, Calcit Lika",
+        "• Motoklub Beštije obilježava 20 godina postojanja, jubilarna obljetnica → Побут інших міст | Сутності: Motoklub Beštije, Bibinje, Zmajo, rođendan",
+        "• Propao prijedlog o nadzoru SOA-e zbog otpada u Gospiću: “Pokušavaju sv → Політика | Сутності: SOA, Gospić, Ranko Ostojic, Zvonimir Troskot",
+        "• Šibenski Možemo! uoči radova na Šubićevcu: ‘Protivimo se uklanjanju sv → Побут інших міст | Сутності: Šibenik, Maja Šintić, Možemo, Šubićevac",
+        "• Tajnik Torcide prijetio novinarima i analitičaru, izrečena mu mjera → Побут інших міст | Сутності: Ivan Rinčić, Torcida, Split, novinari",
+        "• Od nedjelje slobodno prema gradu: gasi se crveno svjetlo na ulazu u du → Побут інших міст | Сутності: Dubrovnik, Zona posebnog prometnog režima, Pobrežje",
+        "• Studentski studeni u Art-kinu donosi i premijeru krimi drame Soba 23 s → Побут інших міст | Сутності: Rijeka, Art-kino, Soba 23, STIFF",
+        "• Zbog visokotehnološke prevare, Lenac u prvih 9 mjeseci s gubitkom od 4 → Побут інших міст | Сутності: Viktor Lenac, Rijeka, Palumbo Grupa, Zagrebačka burza",
+        "• Roditelji uporno nisu htjeli cijepiti djecu, umrla su! Sada tuže liječ → Геоблок | Сутності: Teksas, ospice, Children's Health Defense, SAD",
+        "• Elena Tomeček Zdjelar objavila singl “Ljubomora” → Побут інших міст | Сутності: Elena Tomeček Zdjelar, Rijeka, Ljubomora, E.N.I.",
+        "• Dubrovački muzeji sudjelovali na Forumu pomorskih muzeja Mediterana i  → Побут інших міст | Сутності: Dubrovački muzeji, Ana Kaznačić Skurić, Kreta, Dubrovnik",
+        "• Izglasan rebalans državnog proračuna, evo što donosi → Економіка | Сутності: Hrvatski sabor, proračun, Andrej Plenković, Vlada",
+        "• Poznati Poljak na Pelješcu doživio gestu koja ga je oduševila: ‘Pitao  → Світовий шум | Сутності: Robert Makłowicz, Pelješac, Poljska, Krakov",
+        "• Objavljene neslužbene nove cijene goriva, evo što se očekuje od utorka → Економіка | Сутності: RTL, gorivo, dizel, Hrvatska",
+        "• Članovi Udruge dragovoljaca i veterana Domovinskog rata Dalmacijacemen → Побут інших міст | Сутності: Dalmacijacement, Cemex, Alen Voloder, Sv. Juraj",
+        "• Od ponedjeljka privremena regulacija prometa u Ulici Marka Marojice, e → Побут інших міст | Сутності: Dubrovnik, Ulica Marka Marojice, Montovjerna, Batala",
+        "• Veliko priznaje u Marakešu: Dubrovnik dobitinik nagrade Jean-Paul L’Al → Побут інших міст | Сутності: Dubrovnik, Mato Franković, Marakeš, OWHC",
+        "• Japanska zvijezda stigla u Dubrovnik, uživala je u morskoj spizi, prob → Побут інших міст | Сутності: Miona Hori, Dubrovnik, Proto, Japan"
+      ]
+    },
+    "backlog": {
+      "total_size": 0,
+      "sources": {}
+    },
+    "published": {
+      "total": 3,
+      "ukraine_priority": 0,
+      "with_images": 3,
+      "text_only": 0,
+      "sources": {
+        "Slobodna dalmacija": 3
       }
     },
     "models_used": {
