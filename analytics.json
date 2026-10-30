@@ -1,65 +1,5 @@
 [
   {
-    "timestamp": "2026-10-13 09:01:08",
-    "execution_time": 173.1,
-    "funnel": {
-      "scraped_total": 35,
-      "scraped_by_source": {
-        "023": 10,
-        "Slobodna dalmacija": 15,
-        "Zadarski list": 10
-      },
-      "already_seen": 7,
-      "rejected_by_keywords": 0,
-      "duplicates_removed_by_ai": 18,
-      "rejection_reasons_list": [
-        "• Noćni sudar u Poličniku; Skrivio nesreću... ➡️ <b>Дрібна локальна аварія за межами Задара, не підпадає під пріоритет</b>",
-        "• Nakon rasprodanih izvedbi u Zajcu, čarol... ➡️ <b>Культурна подія в іншому місті (Рієка)</b>",
-        "• Vozač (84) poginuo u sudaru automobila i... ➡️ <b>ДТП у Славонії, не стосується Задара чи загальнонаціонального рівня</b>",
-        "• Filmska priča s Pelješca: Lucija je pobj... ➡️ <b>Історична таблоїдна розповідь з Пелєшаця, що не є важливою новиною</b>",
-        "• Jedriličarski spektakl u Zadru; JK Uskok... ➡️ <b>Спорт: парусна регата та чемпіонат</b>",
-        "• Dvojica mladića i jedna djevojka poginul... ➡️ <b>Кримінал та ДТП в іншій країні (БІН)</b>",
-        "• Odgovor na divljanje cijena nekretnina: ... ➡️ <b>Побут і ціни на житло в Дубрознику та Спліті</b>",
-        "• Tjedan školskog doručka u Zadru; Kako kr... ➡️ <b>Локальна шкільна подія у Задарі без широкого суспільного значення</b>",
-        "• Večeras izložba Dubrovačke udruge likovn... ➡️ <b>Культурна подія в Дубрознику</b>",
-        "• Zadarskim lutkarima dvije nagrade na 29.... ➡️ <b>Дубль або переказ раніше згаданої чи менш важливої культурної події</b>",
-        "• Još dva broda pogođena dronovima kod Bug... ➡️ <b>Події поза Хорватією та Україною (інцидент у Болгарії)</b>",
-        "• Noćna drama sa sretnim završetkom: na Br... ➡️ <b>Локальна новина про порятунок тварини на Брачі</b>",
-        "• Revija lutkarskih kazališta. Tradicional... ➡️ <b>Культурна подія у Рієці</b>",
-        "• Dubrovačka podružnica Hrvatske matice is... ➡️ <b>Локальна культурна акція Матиці іселеніка в Дуброзниku</b>",
-        "• Od žongliranja na Korzu do neobičnih pre... ➡️ <b>Фестиваль цирку у Рієці</b>",
-        "• Tri vina, više kratkih razgovora i profi... ➡️ <b>Розважальний захід для одиноких у Пакоштанах (несуттєво для загальної картини дня)</b>",
-        "• Objavljena je nova Stanfordova lista naj... ➡️ <b>Абстрактна світово-наукова новина з локальним прив'язками</b>",
-        "• Župski HDZ upozorava na nezakonitosti u ... ➡️ <b>Локальні політичні розбірки в іншій жупанії</b>"
-      ]
-    },
-    "backlog": {
-      "total_size": 30,
-      "sources": {
-        "Zadarski list": 11,
-        "023": 8,
-        "Slobodna dalmacija": 11
-      }
-    },
-    "published": {
-      "total": 3,
-      "ukraine_priority": 0,
-      "with_images": 2,
-      "text_only": 1,
-      "sources": {
-        "Slobodna dalmacija": 1,
-        "023": 1,
-        "Zadarski list": 1
-      }
-    },
-    "models_used": {
-      "gemini-3.5-flash-lite": 2,
-      "gemini-3.6-flash": 0
-    },
-    "errors_count": 0,
-    "gemini_retries": 0
-  },
-  {
     "timestamp": "2026-10-13 10:01:11",
     "execution_time": 502.5,
     "funnel": {
@@ -5723,6 +5663,63 @@
       "text_only": 3,
       "sources": {
         "023": 3
+      }
+    },
+    "models_used": {
+      "gemini-3.5-flash-lite": 2,
+      "gemini-3.6-flash": 0
+    },
+    "errors_count": 0,
+    "gemini_retries": 0
+  },
+  {
+    "timestamp": "2026-10-30 13:01:16",
+    "execution_time": 166.5,
+    "funnel": {
+      "scraped_total": 35,
+      "scraped_by_source": {
+        "023": 10,
+        "Slobodna dalmacija": 15,
+        "Zadarski list": 10
+      },
+      "already_seen": 7,
+      "rejected_by_keywords": 8,
+      "duplicates_removed_by_ai": 17,
+      "rejection_reasons_list": [
+        "• Krenula evakuacija izgladnjelih stanovnika okupiranog Oleškog → Геоблок | Сутності: Oleško, Dmytro Lubinets, Melania Trump, Yana Lantratova",
+        "• Elena Tomeček Zdjelar objavila singl “Ljubomora” → Реклама | Сутності: Elena Tomeček Zdjelar, Ljubomora, Rijeka, E.N.I.",
+        "• Motoklub Beštije obilježava 20 godina postojanja, jubilarna obljetnica → Побут інших міст | Сутності: Motoklub Beštije, Bibinje, Zmajo, Sexymotherfuckers",
+        "• Riječki bend Ritam promjena predstavlja novi singl uoči zagrebačkog ko → Реклама | Сутності: Ritam promjena, Zajedno, Zagreb, SAX",
+        "• Šibenski Možemo uoči radova na Šubićevcu: ‘Protivimo se uklanjanju sva → Побут інших міст | Сутності: Šibenik, Možemo, Maja Šintić, Šubićevac",
+        "• U Gospiću održana komemoracija povodom dana Svih svetih i Dušnog dana → Побут інших міст | Сутності: Gospić, Ličko-senjska županija, Josip Šimatović, Ernest Petry",
+        "• Od nedjelje slobodno prema Gradu: gasi se crveno svjetlo na ulazu u du → Побут інших міст | Сутності: Dubrovnik, Zona posebnog prometnog režima, Pobrežje",
+        "• Dubrovački muzeji sudjelovali na Forumu pomorskih muzeja Mediterana i  → Побут інших міст | Сутності: Dubrovački muzeji, Ana Kaznačić Skurić, Kreta, Dubrovnik",
+        "• Halubajski zvončari uručili donaciju Dječjem vrtiću Krnjevo → Побут інших міст | Сутності: Halubajski zvončari, Viškovo, Dječji vrtić Krnjevo, Kristijan Frlan",
+        "• Poznati Poljak na Pelješcu doživio gestu koja ga je oduševila: ‘Pitao  → Світовий шум | Сутності: Robert Makłowicz, Pelješac, Krakov, Poljska",
+        "• Članovi Udruge dragovoljaca i veterana Domovinskog rata Dalmacijacemen → Побут інших міст | Сутності: Dalmacijacement, Cemex, Alen Voloder, Mate Šimunović",
+        "• Od ponedjeljka privremena regulacija prometa u Ulici Marka Marojice, e → Побут інших міст | Сутності: Ulica Marka Marojice, Montovjerna, Batala, Dubrovnik",
+        "• Veliko priznaje u Marakešu: Dubrovnik dobitinik nagrade Jean-Paul L’Al → Побут інших міст | Сутності: Dubrovnik, Marakeş, Mato Franković, Jean-Paul L’Allier",
+        "• Japanska zvijezda stigla u Dubrovnik, uživala je u morskoj spizi, prob → Світовий шум | Сутності: Miona Hori, Dubrovnik, Proto, Nogizaka46",
+        "• Najposjećeniji nacionalni park u Dalmaciji značajno spustio cijene. Do → Побут інших міст | Сутності: Nacionalni park Krka, Skradinski buk, Roški slap, Puljani",
+        "• Položeni vijenci povodom blagdana Svih Svetih i Dušnog dana → Побут інших міст | Сутності: Dubrovnik, Boninovo, Marko Potrebica, Blaž Pezo",
+        "• Veliki posao tvrtke iz poduzetničke zone u Stankovcima: šibenski ponto → Побут інших міст | Сутності: Marinetek Adriatic, Stankovci, Šibenik, Grčka"
+      ]
+    },
+    "backlog": {
+      "total_size": 5,
+      "sources": {
+        "Zadarski list": 2,
+        "Slobodna dalmacija": 3
+      }
+    },
+    "published": {
+      "total": 3,
+      "ukraine_priority": 0,
+      "with_images": 1,
+      "text_only": 2,
+      "sources": {
+        "023": 2,
+        "Zadarski list": 1
       }
     },
     "models_used": {
