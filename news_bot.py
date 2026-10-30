@@ -37,7 +37,7 @@ from bs4 import BeautifulSoup
 from dotenv import load_dotenv
 from google import genai
 from google.genai import types
-from pydantic import BaseModel, Field, ValidationError
+from pydantic import BaseModel, Field
 from tenacity import retry, retry_if_exception, stop_after_attempt, wait_exponential
 
 # ---------------------------------------------------------------------------
@@ -373,7 +373,9 @@ def check_source_health(stats: dict, history: list[dict]) -> list[str]:
     """Alerts for sources that have failed SOURCE_ALERT_AFTER_RUNS runs in a row (sent once, on the
     N-th failed run) and for sources that work again after such a streak. `history` — earlier runs
     from analytics.json (oldest first). Returns the alert texts."""
-    failed = lambda run: set((run.get("source_errors") or {}).keys())
+    def failed(run: dict) -> set[str]:
+        return set((run.get("source_errors") or {}).keys())
+
     failed_now = failed(stats)
     alerts = []
     for name in sorted(failed_now):
@@ -594,7 +596,7 @@ def fetch_full_article_text(url: str, scraper) -> str | None:
 
         if "slobodnadalmacija.hr" in host:
             article_body = soup.select_one(".itemFullText, .article-content")
-        elif "zadarskilist.hr" in host:
+        elif "zadarskilist.hr" in host or "novilist.hr" in host:  # статті Zadarski list — на novilist.hr
             article_body = soup.select_one(".article-body, article .content")
         elif "023.hr" in host:
             article_body = soup.select_one(".td-post-content")
@@ -1337,7 +1339,7 @@ def _target_chat_id() -> str | None:
     return ADMIN_CHAT_ID if DRY_RUN else TELEGRAM_CHANNEL_ID
 
 
-def send_to_telegram(text: str, url: str, source_name: str, image_urls=None, tags: str = "") -> tuple[bool, str]:
+def send_to_telegram(text: str, url: str, source_name: str, image_urls=None) -> tuple[bool, str]:
     image_urls = [] if not image_urls else ([image_urls] if isinstance(image_urls, str) else list(image_urls))
     image_urls = image_urls[:10]
 
@@ -1349,9 +1351,7 @@ def send_to_telegram(text: str, url: str, source_name: str, image_urls=None, tag
     if DRY_RUN:
         # The header is part of the body, so the Telegram length limits account for it.
         body = DRY_RUN_HEADER + body
-    extra_tags = str(tags or "").strip()
-    suffix_parts = [part for part in (hashtag_suffix, extra_tags) if part]
-    suffix = "\n\n".join(suffix_parts)
+    suffix = hashtag_suffix
     safe_url = html.escape(url, quote=True)
     safe_source = html.escape(source_name or "Джерело", quote=True)
     source_line = f'\n\n🔗 Джерело: <a href="{safe_url}">{safe_source}</a>'
@@ -1360,8 +1360,6 @@ def send_to_telegram(text: str, url: str, source_name: str, image_urls=None, tag
     
     def compose(candidate_body: str) -> str:
         pieces = [candidate_body.strip()]
-        if crop_note.strip() in candidate_body:
-            pass
         if suffix:
             pieces.append(suffix)
         return "\n\n".join(p for p in pieces if p) + source_line
@@ -1471,12 +1469,6 @@ UKRAINE_KEYWORDS = [
 def is_ukraine_priority(article: dict) -> bool:
     text = (article.get("title", "") + " " + plain_text(article.get("description", ""))).lower()
     return any(re.search(pattern, text) for pattern in UKRAINE_KEYWORDS)
-
-
-def prioritize_ukraine_news(backlog_items: list[dict]) -> list[dict]:
-    ukraine = [item for item in backlog_items if is_ukraine_priority(item)]
-    other = [item for item in backlog_items if not is_ukraine_priority(item)]
-    return ukraine + other
 
 
 def scrape_feeds(stats: dict | None = None) -> None:
@@ -1644,7 +1636,9 @@ def send_dry_run_filter_report(candidates: list[dict], approved: list[dict],
     prompt or model changes. Sent to the admin chat only in a test run."""
     if not ADMIN_CHAT_ID or not TELEGRAM_BOT_TOKEN:
         return
-    esc = lambda value: html.escape(str(value or ""), quote=False)
+    def esc(value) -> str:
+        return html.escape(str(value or ""), quote=False)
+
     model = ((stats or {}).get("models_by_task") or {}).get("filter")
     lines = [f"🧪 <b>ТЕСТ: фільтр Gemini</b> ({esc(_short_model(model))})", "",
              f"✅ <b>Залишено {len(approved)}</b> (у пости підуть перші {BATCH_SIZE}):"]
@@ -1735,7 +1729,6 @@ def process_backlog(stats: dict | None = None) -> None:
         return
 
     evaluated_urls = {item["url"] for item in candidate_batch}
-    len_before = len(candidate_batch)
     history_titles = load_history(TITLES_FILE)
 
     # If filtering fails or its output is inconsistent, this raises before the backlog is altered.
