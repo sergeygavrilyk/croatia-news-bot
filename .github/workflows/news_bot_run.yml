@@ -3,9 +3,16 @@ name: Croatia News Automator
 on:
   workflow_dispatch:
 
+# Лише один запуск бота одночасно: наступний чекає, поки завершиться попередній
+# (інакше два процеси публікують з однаковим беклогом і конфліктують при git push).
+concurrency:
+  group: croatia-news-bot-${{ github.ref }}
+  cancel-in-progress: false
+
 jobs:
   run-bot:
     runs-on: ubuntu-latest
+    timeout-minutes: 20
     
     environment: ${{ github.ref == 'refs/heads/main' && 'production' || 'staging' }}
     
@@ -29,6 +36,7 @@ jobs:
         
 
     - name: Run News Bot
+      id: bot
       env:
         TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
         TELEGRAM_CHANNEL_ID: ${{ secrets.TELEGRAM_CHANNEL_ID }}
@@ -37,6 +45,9 @@ jobs:
       run: python news_bot.py
 
     - name: Commit and push history and backlog state
+      # Зберігаємо стан навіть якщо бот завершився з помилкою: пости, які вже вийшли,
+      # мають потрапити в історію, інакше наступний запуск опублікує їх повторно.
+      if: ${{ always() && steps.bot.outcome != 'skipped' }}
       run: |
         git config --global user.name "github-actions[bot]"
         git config --global user.email "github-actions[bot]@users.noreply.github.com"
