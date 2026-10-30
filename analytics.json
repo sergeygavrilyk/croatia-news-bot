@@ -1,66 +1,5 @@
 [
   {
-    "timestamp": "2026-10-13 13:01:16",
-    "execution_time": 219.4,
-    "funnel": {
-      "scraped_total": 35,
-      "scraped_by_source": {
-        "023": 10,
-        "Slobodna dalmacija": 15,
-        "Zadarski list": 10
-      },
-      "already_seen": 5,
-      "rejected_by_keywords": 0,
-      "duplicates_removed_by_ai": 20,
-      "rejection_reasons_list": [
-        "• Plavci velikog srca: šibenski policajci ... ➡️ <b>Побут чужих міст</b>",
-        "• Nevjerojatna priča iz Mlina: pronašao ih... ➡️ <b>Побут чужих міст</b>",
-        "• Novi sjaj za igrališta i dvorane; Župani... ➡️ <b>Дубль або несуттєве оновлення спортивної тематики</b>",
-        "• Rafele iznad Rijeke i Delnica presreo ma... ➡️ <b>Побут чужих міст та регіональний геоблок</b>",
-        "• Sada je jasno i službeno da se Zadrani ž... ➡️ <b>Історія без суттєвих нових оновлень</b>",
-        "• Punjač koji danima stoji u utičnici troš... ➡️ <b>Світовий шум / поради побуту</b>",
-        "• Otvorene prijave za Ri Rock Festival. Ri... ➡️ <b>Побут чужих міст</b>",
-        "• Velika investicija na Korčuli: splitska ... ➡️ <b>Побут чужих міст</b>",
-        "• Verne u Zagrebu testira robotaksi bez ik... ➡️ <b>Побут чужих міст</b>",
-        "• Poznat i prvi plesni par najrasplesanije... ➡️ <b>Світ шоу-бізнесу / розваги</b>",
-        "• Gradonačelnik Erlić prelomio – od 1. stu... ➡️ <b>Дубль новини ID 10</b>",
-        "• Simptome srčanog i moždanog udara kod že... ➡️ <b>Побут чужих міст / загальна медицина</b>",
-        "• Inspiracija za hladne dane; Stigao je no... ➡️ <b>Реклама</b>",
-        "• Plenković oporbi: Odlaskom ste pokazali ... ➡️ <b>Загальнонаціональна політика без прямого впливу на Задар</b>",
-        "• Pod pritiskom:Dan D/Ciklone i morske str... ➡️ <b>Історична довідка / світовий шум</b>",
-        "• Hrvatska i Europa jačaju pripravnost za ... ➡️ <b>Загальна європейська кампанія</b>",
-        "• Vandalizam i krađe na šibenskom području... ➡️ <b>Побут чужих міст</b>",
-        "• Propali Uljanik prodaje se renomiranom t... ➡️ <b>Побут чужих міст</b>",
-        "• \"Beč: ispred gradske vijećnice ovih dana... ➡️ <b>Побут чужих міст</b>",
-        "• Rim traži dozvolu EU-a za korištenje fis... ➡️ <b>Інші країни (геоблок)</b>"
-      ]
-    },
-    "backlog": {
-      "total_size": 51,
-      "sources": {
-        "Slobodna dalmacija": 27,
-        "023": 11,
-        "Zadarski list": 13
-      }
-    },
-    "published": {
-      "total": 3,
-      "ukraine_priority": 0,
-      "with_images": 2,
-      "text_only": 1,
-      "sources": {
-        "Slobodna dalmacija": 2,
-        "023": 1
-      }
-    },
-    "models_used": {
-      "gemini-3.5-flash-lite": 2,
-      "gemini-3.6-flash": 0
-    },
-    "errors_count": 0,
-    "gemini_retries": 1
-  },
-  {
     "timestamp": "2026-10-13 14:01:11",
     "execution_time": 243.7,
     "funnel": {
@@ -5713,6 +5652,58 @@
       "text_only": 0,
       "sources": {
         "Slobodna dalmacija": 3
+      }
+    },
+    "models_used": {
+      "gemini-3.5-flash-lite": 2,
+      "gemini-3.6-flash": 0
+    },
+    "errors_count": 0,
+    "gemini_retries": 0
+  },
+  {
+    "timestamp": "2026-10-30 20:01:07",
+    "execution_time": 119.8,
+    "funnel": {
+      "scraped_total": 35,
+      "scraped_by_source": {
+        "023": 10,
+        "Slobodna dalmacija": 15,
+        "Zadarski list": 10
+      },
+      "already_seen": 7,
+      "rejected_by_keywords": 12,
+      "duplicates_removed_by_ai": 15,
+      "rejection_reasons_list": [
+        "• Grad Imotski organizira veliki novogodišnji doček → Побут інших міст | Сутності: Grad Imotski, Prljavo kazalište, Nova gradska tržnica",
+        "• Ako se mobitel s Androidom preko noći prazni, krivac može biti automat → Світовий шум | Сутності: Android, Google Play Services, Samsung",
+        "• Otvorene prijave za 18. susret čakavskih pjesnika „Ča vrh Arbe” → Побут інших міст | Сутності: Gradska knjižnica Rab, Ča vrh Arbe, čakavski pjesnici",
+        "• Zagrepčanin uoči Dušnog dana došao na šibensko groblje, ostao zatečen: → Побут інших міст | Сутності: Šibensko groblje Kvanj, Mihovil Antolić, Zagreb",
+        "• “Oda Grobniku, čez sliku i haiku” Tonija Buterina prva haiku zbirka na → Побут інших міст | Сутності: Toni Buterin, Kaštel Grobnik, Oda Grobniku",
+        "• Pao potpis za veliki projekt, kreće gradnja Inkluzivnog centra Korčula → Побут інших міст | Сутності: Blaž Pezo, Inkluzivni centar Korčula, Dubrovačko-neretvanska županija",
+        "• Predstavljena pjesnička zbirka “Rep svih stvari” Nataše Govedić: Duhov → Побут інших міст | Сутності: Nataša Govedić, Rep svih stvari, Knjižara Sandorf, Zagreb",
+        "• Krsnu slavu imaju i Hrvati katolici, ne samo Srbi. Zbog krsne slave če → Світовий шум | Сутності: Hrvati katolici, krsna slava, Ministarstvo kulture RH, Ivo Mišur",
+        "• Nadbiskup Uzinić na blagdan Svih svetih vodi misu i molitvu na Kozali → Побут інших міст | Сутності: Mate Uzinić, Rijeka, Kozala, Svi sveti",
+        "• Dubrovnik domaćin središnjeg globalnog događanja UNESCO-ove inicijativ → Побут інших міст | Сутності: Grad Dubrovnik, UNESCO, Mato Franković, Stradun",
+        "• Most u Delnicama osnovao podružnicu → Побут інших міст | Сутності: Most, Delnice, Davorin Klobučar, Marino Žagar",
+        "• Položeni vijenci i zapaljene svijeće u Opatiji uoči blagdana Svih svet → Побут інших міст | Сутності: Grad Opatija, Fernando Kirigin, Svi sveti",
+        "• Župan Pezo potpisao ugovor, kreće gradnja Inkluzivnog centra Korčula.  → Дубль в історії | Сутності: Blaž Pezo, Inkluzivni centar Korčula, Korčula",
+        "• Deseci tisuća prosvjednika diljem Italije: Za veće plaće i bolje javne → Геоблок | Сутності: Italija, Unione Sindacale di Base, Rim, Torino",
+        "• Motoklub Beštije obilježava 20 godina postojanja, jubilarna obljetnica → Побут інших міст | Сутності: Motoklub Beštije, Bibinje, Zmajo"
+      ]
+    },
+    "backlog": {
+      "total_size": 0,
+      "sources": {}
+    },
+    "published": {
+      "total": 2,
+      "ukraine_priority": 0,
+      "with_images": 2,
+      "text_only": 0,
+      "sources": {
+        "Slobodna dalmacija": 1,
+        "Zadarski list": 1
       }
     },
     "models_used": {
