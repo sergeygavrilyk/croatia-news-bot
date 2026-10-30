@@ -1,61 +1,5 @@
 [
   {
-    "timestamp": "2026-10-13 07:01:09",
-    "execution_time": 220.7,
-    "funnel": {
-      "scraped_total": 35,
-      "scraped_by_source": {
-        "023": 10,
-        "Slobodna dalmacija": 15,
-        "Zadarski list": 10
-      },
-      "already_seen": 0,
-      "rejected_by_keywords": 2,
-      "duplicates_removed_by_ai": 15,
-      "rejection_reasons_list": [
-        "• Trump o primirju koje je proglasio: ‘Zap... ➡️ <b>Інші країни (геоблок) - події за межами Хорватії та України без прямого зв'язку з біженцями</b>",
-        "• Revija lutkarskih kazališta. Tradicional... ➡️ <b>Побут чужих міст - події в Рієці, не стосуються Задара чи національного рівня</b>",
-        "• Od žongliranja na Korzu do neobičnih pre... ➡️ <b>Побут чужих міст - культурна подія в Рієці</b>",
-        "• Objavljena je nova Stanfordova lista naj... ➡️ <b>Світовий шум / Побут чужих міст - список науковців, не стосується Задара</b>",
-        "• Zadarskim lutkarima dvije nagrade na 29.... ➡️ <b>Дубль/Історія - подія вже висвітлена раніше або стосується виїзду за межі міста без критичного оновлення</b>",
-        "• Podstanarstvo poskupilo, Grad će mladima... ➡️ <b>Побут чужих міст - проблеми оренди у Спліті та Дубровонику</b>",
-        "• Dubrovačka biskupija i ove godine sudjel... ➡️ <b>Побут чужих міст - події в Дубровнику</b>",
-        "• Znate li da je knez biološki indikator č... ➡️ <b>Світовий шум - пізнавальна стаття про рибу</b>",
-        "• Franković primio izaslanstvo poljskog ok... ➡️ <b>Побут чужих міст - візити делегацій у Дубровнику</b>",
-        "• Tri hica za tri ribe. Ulov dostatan za p... ➡️ <b>Спорт / Побут чужих міст - аматорська риболовля на Хварі</b>",
-        "• Nevjerojatan život ‘neretvanskog Turgenj... ➡️ <b>Світовий шум - історичний нарис про особу</b>",
-        "• Plesačice zadarske Geste s karlovačkog n... ➡️ <b>Спорт / Побут чужих міст - танцювальний конкурс за межами Задара</b>",
-        "• Nevjerojatan život ‘neretvanskog Turgenj... ➡️ <b>Дубль - точна копія статті 18</b>",
-        "• Mladi borci zadarskog Titana odradili tr... ➡️ <b>Спорт - спортивні тренування та підготовка до турнірів</b>",
-        "• ‘Ko nije operira kolina ili kuk, ne trib... ➡️ <b>Спорт - аматорський футбол та ветерани спорту</b>"
-      ]
-    },
-    "backlog": {
-      "total_size": 31,
-      "sources": {
-        "023": 9,
-        "Slobodna dalmacija": 13,
-        "Zadarski list": 9
-      }
-    },
-    "published": {
-      "total": 3,
-      "ukraine_priority": 0,
-      "with_images": 1,
-      "text_only": 2,
-      "sources": {
-        "023": 2,
-        "Slobodna dalmacija": 1
-      }
-    },
-    "models_used": {
-      "gemini-3.5-flash-lite": 2,
-      "gemini-3.6-flash": 0
-    },
-    "errors_count": 0,
-    "gemini_retries": 2
-  },
-  {
     "timestamp": "2026-10-13 08:01:06",
     "execution_time": 169.6,
     "funnel": {
@@ -5734,6 +5678,59 @@
       "text_only": 3,
       "sources": {
         "023": 3
+      }
+    },
+    "models_used": {
+      "gemini-3.5-flash-lite": 2,
+      "gemini-3.6-flash": 0
+    },
+    "errors_count": 0,
+    "gemini_retries": 0
+  },
+  {
+    "timestamp": "2026-10-30 11:01:21",
+    "execution_time": 166.5,
+    "funnel": {
+      "scraped_total": 35,
+      "scraped_by_source": {
+        "023": 10,
+        "Slobodna dalmacija": 15,
+        "Zadarski list": 10
+      },
+      "already_seen": 8,
+      "rejected_by_keywords": 12,
+      "duplicates_removed_by_ai": 13,
+      "rejection_reasons_list": [
+        "• Najposjećeniji nacionalni park u Dalmaciji značajno spustio cijene. Do → Побут інших міст | Сутності: Nacionalni park Krka, Katia Župan, Skradinski buk",
+        "• Otkazana predstava „Uho“ u petak i subotu → Побут інших міст | Сутності: Novi list, Rijeka, Predstava Uho",
+        "• Radeta predao falsificiran dokument na Gradsko vijeće? Dva različita p → Дубль в історії | Сутності: Daniel Radeta, Erol Gaši, Ivica Žuvela, Diklo",
+        "• Položeni vijenci povodom blagdana Svih Svetih i Dušnog dana → Побут інших міст | Сутності: Grad Dubrovnik, Marko Potrebica, Boninovo",
+        "• U Novom Vinodolskom obilježili blagdan Svih svetih → Побут інших міст | Сутності: Novi Vinodolski, Tomislav Cvitković, Mario Frlan",
+        "• Od nedjelje slobodno prema Gradu: gasi se crveno svjetlo na ulazu u du → Побут інших міст | Сутності: Dubrovnik, Pobrežje, Zona posebnog režima",
+        "• Poznata japanska glumica, pjevačica i manekenka Miona Hori u Dubrovnik → Геоблок | Сутності: Miona Hori, Dubrovnik, Proto Fish Restaurant",
+        "• Provaljivao u protupožarne ormariće i krao vatrogasnu opremu! → Дубль в історії | Сутності: Benkovac, Zadarska policija, Općinsko državno odvjetništvo",
+        "• Oduvijek ste htjeli imati maslinu, a nemate maslinik? Evo sjajne prili → Побут інших міст | Сутності: Korčula, Sandra Komparak, OPG Komparak",
+        "• Bradata aukcija i ove godine u Šibeniku: Slaven Bilić ima važnu poruku → Дубль в історії | Сутності: Bradata aukcija, Slaven Bilić, Šibenik, Movember",
+        "• Serija neobičnih krađa u Benkovcu, dva mjeseca provaljivao i krao po g → Дубль в історії | Сутності: Benkovac, PU zadarska, Zadar",
+        "• Radetina točka o odlagalištu Diklo uvrštena na dnevni red; Gaši: ‘Moj  → Дубль в історії | Сутності: Erol Gaši, Daniel Radeta, Šime Erlić, Diklo",
+        "• Bez brige, radi se o vježbi u gruškoj luci u kojoj sudjeluju i dubrova → Побут інших міст | Сутності: JVP Dubrovački vatrogasci, Luka Dubrovnik, Obala pape Ivana Pavla II"
+      ]
+    },
+    "backlog": {
+      "total_size": 7,
+      "sources": {
+        "Slobodna dalmacija": 3,
+        "023": 4
+      }
+    },
+    "published": {
+      "total": 3,
+      "ukraine_priority": 1,
+      "with_images": 1,
+      "text_only": 2,
+      "sources": {
+        "Zadarski list": 1,
+        "023": 2
       }
     },
     "models_used": {
