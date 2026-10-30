@@ -1,65 +1,5 @@
 [
   {
-    "timestamp": "2026-10-13 08:01:06",
-    "execution_time": 169.6,
-    "funnel": {
-      "scraped_total": 35,
-      "scraped_by_source": {
-        "023": 10,
-        "Slobodna dalmacija": 15,
-        "Zadarski list": 10
-      },
-      "already_seen": 11,
-      "rejected_by_keywords": 1,
-      "duplicates_removed_by_ai": 19,
-      "rejection_reasons_list": [
-        "• Još dva broda pogođena dronovima kod Bug... ➡️ <b>Інші країни (геоблок): подія не стосується безпосередньо Хорватії чи українських біженців</b>",
-        "• Dubrovačka podružnica Hrvatske matice is... ➡️ <b>Побут інших міст або незначна культурна подія поза фокусом Задара</b>",
-        "• Revija lutkarskih kazališta. Tradicional... ➡️ <b>Побут і культура інших міст (Рієка), що не стосується Задара</b>",
-        "• Jedriličarski spektakl u Zadru; JK Uskok... ➡️ <b>Спорт: змагання з вітрильного спорту</b>",
-        "• Počela izgradnja novog nogometnog igrali... ➡️ <b>Дубль новини з ID 1</b>",
-        "• Od žongliranja na Korzu do neobičnih pre... ➡️ <b>Побут та культура інших міст (Рієка)</b>",
-        "• Župski HDZ upozorava na nezakonitosti u ... ➡️ <b>Побут інших міст (Жупа дубровачка)</b>",
-        "• Objavljena je nova Stanfordova lista naj... ➡️ <b>Світовий шум / Побут інших міст</b>",
-        "• Tjedan školskog doručka u Zadru; Kako kr... ➡️ <b>Локальна рутинна шкільна подія у Задарі (несуттєвий побут)</b>",
-        "• Zadarskim lutkarima dvije nagrade na 29.... ➡️ <b>Культурні нагороди, що не є критично важливою новиною для загальної картини дня</b>",
-        "• Podstanarstvo poskupilo, Grad će mladima... ➡️ <b>Побут інших міст (Спліт та Дубровник)</b>",
-        "• Znate li da je knez biološki indikator č... ➡️ <b>Світовий шум / пізнавальна стаття про рибу</b>",
-        "• Kultna Grupa TNT stiže u Zadar; Rasproda... ➡️ <b>Локальна культурна афіша театру</b>",
-        "• Dubrovačka biskupija i ove godine sudjel... ➡️ <b>Побут інших міст (Дубровник)</b>",
-        "• Tri hica za tri ribe. Ulov dostatan za p... ➡️ <b>Спорт / аматорський риболовний улов</b>",
-        "• Franković primio izaslanstvo poljskog ok... ➡️ <b>Побут інших міст (Дубровник)</b>",
-        "• Kamene babe do kraja godine u Zadru dono... ➡️ <b>Локальні культурні майстер-класи</b>",
-        "• Nevjerojatan život ‘neretvanskog Turgenj... ➡️ <b>Історичний нарис / світовий шум</b>",
-        "• Spor oko otpada u Istri se zaoštrava, a ... ➡️ <b>Побут інших міст (Істра, Пула, Пазін)</b>"
-      ]
-    },
-    "backlog": {
-      "total_size": 29,
-      "sources": {
-        "Slobodna dalmacija": 11,
-        "Zadarski list": 9,
-        "023": 9
-      }
-    },
-    "published": {
-      "total": 3,
-      "ukraine_priority": 0,
-      "with_images": 1,
-      "text_only": 2,
-      "sources": {
-        "023": 2,
-        "Slobodna dalmacija": 1
-      }
-    },
-    "models_used": {
-      "gemini-3.5-flash-lite": 2,
-      "gemini-3.6-flash": 0
-    },
-    "errors_count": 0,
-    "gemini_retries": 0
-  },
-  {
     "timestamp": "2026-10-13 09:01:08",
     "execution_time": 173.1,
     "funnel": {
@@ -5731,6 +5671,58 @@
       "sources": {
         "Zadarski list": 1,
         "023": 2
+      }
+    },
+    "models_used": {
+      "gemini-3.5-flash-lite": 2,
+      "gemini-3.6-flash": 0
+    },
+    "errors_count": 0,
+    "gemini_retries": 0
+  },
+  {
+    "timestamp": "2026-10-30 12:01:16",
+    "execution_time": 164.0,
+    "funnel": {
+      "scraped_total": 35,
+      "scraped_by_source": {
+        "023": 10,
+        "Slobodna dalmacija": 15,
+        "Zadarski list": 10
+      },
+      "already_seen": 9,
+      "rejected_by_keywords": 12,
+      "duplicates_removed_by_ai": 13,
+      "rejection_reasons_list": [
+        "• Mikrokozmos u Kaštelu Grobnik: Susret poezije Korine Juretić Faraguna  → Побут інших міст | Сутності: Korina Juretić Faraguna, Celestina Vičević, Kaštel Grobnik, Mikrokozmos",
+        "• Dubrovački muzeji sudjelovali na Forumu pomorskih muzeja Mediterana i  → Побут інших міст | Сутності: Dubrovački muzeji, AMMM, Kreta, Dubrovnik",
+        "• Otkazana predstava „Uho“ u petak i subotu → Побут інших міст | Сутності: Predstava Uho, Rijeka, GKLRI",
+        "• Poznati Poljak na Pelješcu doživio gestu koja ga je oduševila: ‘Pitao  → Побут інших міст | Сутності: Robert Makłowicz, Pelješac, Poljska, Nekretnine",
+        "• U Novom Vinodolskom obilježili blagdan Svih svetih → Побут інших міст | Сутності: Novi Vinodolski, Tomislav Cvitković, Svi sveti, Branitelji",
+        "• Članovi Udruge dragovoljaca i veterana Domovinskog rata Dalmacijacemen → Побут інших міст | Сутності: Dalmacijacement, Cemex, Svi sveti, Kaštela",
+        "• Od ponedjeljka privremena regulacija prometa u Ulici Marka Marojice, e → Побут інших міст | Сутності: Ulica Marka Marojice, Montovjerna, Batala, Dubrovnik",
+        "• Veliko priznaje u Marakešu: Dubrovnik dobitinik nagrade Jean-Paul L’Al → Побут інших міст | Сутності: Grad Dubrovnik, Mato Franković, Marakeš, Nagrada Jean-Paul L’Allier",
+        "• Japanska zvijezda stigla u Dubrovnik, uživala je u morskoj spizi, prob → Реклама | Сутності: Miona Hori, Dubrovnik, Riblji restoran Proto, Japan",
+        "• Najposjećeniji nacionalni park u Dalmaciji značajno spustio cijene. Do → Побут інших міст | Сутності: Nacionalni park Krka, Skradinski buk, Katia Župan, Ulaznice",
+        "• Položeni vijenci povodom blagdana Svih Svetih i Dušnog dana → Побут інших міст | Сутності: Grad Dubrovnik, Boninovo, Gospino polje, Svi sveti",
+        "• Od nedjelje slobodno prema Gradu: gasi se crveno svjetlo na ulazu u du → Побут інших міст | Сутності: Dubrovnik, Zona posebnog prometnog režima, Pobrežje, Park & Ride",
+        "• Poznata japanska glumica, pjevačica i manekenka Miona Hori u Dubrovnik → Дубль в історії | Сутності: Miona Hori, Dubrovnik, Riblji restoran Proto, Nogizaka46"
+      ]
+    },
+    "backlog": {
+      "total_size": 5,
+      "sources": {
+        "Slobodna dalmacija": 3,
+        "023": 2
+      }
+    },
+    "published": {
+      "total": 3,
+      "ukraine_priority": 0,
+      "with_images": 0,
+      "text_only": 3,
+      "sources": {
+        "023": 3
       }
     },
     "models_used": {
