@@ -6,7 +6,7 @@
 
 | Компонент | Роль |
 |---|---|
-| cron-job.org | Щогодини вдень робить HTTP POST `workflow_dispatch` у GitHub API (11 запусків/добу) |
+| cron-job.org | За розкладом `0 9-18,21 * * *` (місцевий час, 11 запусків/добу) робить HTTP POST `workflow_dispatch` у GitHub API. Обрано замість вбудованого розкладу GitHub, бо той запускав із затримками (R-02) |
 | GitHub Actions `.github/workflows/news_bot_run.yml` | Ставить Python 3.11, залежності, запускає `news_bot.py`, потім комітить файли стану в ту саму гілку |
 | `news_bot.py` (1543 рядки) | Увесь бот: збір RSS, фільтр Gemini, переклад, публікація, звіт |
 | `feeds.json` | Список RSS-джерел (`name`, `url`, `category`) |
