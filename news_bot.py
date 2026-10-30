@@ -26,6 +26,7 @@ import shutil
 import sys
 import tempfile
 import time
+import unicodedata
 from html.parser import HTMLParser
 from urllib.parse import parse_qsl, urlencode, urlparse, urlunparse
 
@@ -78,6 +79,8 @@ PRE_TRANSLATION_DELAY_SECONDS = 15
 POST_PUBLICATION_DELAY_SECONDS = 45
 MAX_CANDIDATES_PER_FILTER = 25
 MAX_TRANSLATION_FAILURES = 5
+# L5 (CODE_REVIEW): фільтру достатньо заголовка й початку опису; переклад отримує повний текст
+FILTER_DESCRIPTION_CHARS = 600
 RETRY_COOLDOWN_SECONDS = 60 * 60
 
 # --- Моделі Gemini (T-04): окремий каскад для фільтра й перекладу, як у молдовському боті ---
@@ -346,6 +349,15 @@ def send_alert_to_admin(message: str) -> None:
         logging.exception("Збій з'єднання під час надсилання алерта адміністратору")
 
 
+def _rule_breakdown(funnel: dict) -> str:
+    """« (foto 5, sport 3, КАПС у заголовку 1)» — which code rule rejected how many articles."""
+    by_rule = funnel.get("rejected_by_rule") or {}
+    if not by_rule:
+        return ""
+    parts = sorted(by_rule.items(), key=lambda kv: (-kv[1], kv[0]))
+    return " (" + ", ".join(f"{rule} {count}" for rule, count in parts) + ")"
+
+
 def _short_model(name: str | None) -> str:
     return (name or "—").replace("gemini-", "")
 
@@ -397,8 +409,11 @@ def send_analytics_to_admin(stats: dict) -> None:
         f"▪️ Переглянуто RSS-записів: {funnel['scraped_total']}\n"
         f"▪️ За джерелами: {html.escape(scraped_src)}\n"
         f"▪️ Уже відомі/застарілі: {funnel['already_seen']}\n"
-        f"▪️ Відсіяно кодом: {funnel['rejected_by_keywords']}\n"
-        f"▪️ Відхилено Gemini: {funnel['duplicates_removed_by_ai']}\n\n"
+        f"▪️ Відсіяно кодом: {funnel['rejected_by_keywords']}{html.escape(_rule_breakdown(funnel))}\n"
+        f"▪️ Відхилено Gemini: {funnel['duplicates_removed_by_ai']}\n"
+        + (f"▪️ Gemini не класифікував (лишились у черзі): {funnel['unclassified_by_ai']}\n"
+           if funnel.get("unclassified_by_ai") else "")
+        + "\n"
         "❌ <b>Причини відхилення:</b>\n"
         f"{reasons[:2500]}\n\n"
         f"📥 <b>Беклог: {backlog_stats['total_size']}</b>\n"
@@ -541,28 +556,44 @@ def plain_text(value: str) -> str:
     return BeautifulSoup(value or "", "html.parser").get_text(" ", strip=True)
 
 
-def is_quality_article(title: str, description: str, url: str) -> bool:
+def quality_rejection_reason(title: str, description: str, url: str) -> str | None:
+    """Why the code rejects an article (None = keep). Same rules and order as before;
+    the reason only feeds the admin report («Відсіяно кодом: … (foto 5, sport 3)»)."""
     lowered_url = url.lower()
     unwanted_url_categories = ("/sport/", "/lifestyle/", "/magazin/")
-    if any(category in lowered_url for category in unwanted_url_categories):
-        return False
+    for category in unwanted_url_categories:
+        if category in lowered_url:
+            return f"URL {category}"
 
     text_to_check = f"{title} {plain_text(description)} {url}"
-    if SPORTS_PATTERN.search(text_to_check) or AD_PATTERN.search(text_to_check):
-        return False
+    for pattern in (SPORTS_PATTERN, AD_PATTERN):
+        match = pattern.search(text_to_check)
+        if match:
+            return match.group(0).casefold()
     normalized_text = text_to_check.casefold()
     for keyword in LEGACY_UNWANTED_KEYWORDS:
         if re.search(rf"\b{re.escape(keyword.casefold())}\b", normalized_text, re.IGNORECASE | re.UNICODE):
-            return False
+            return keyword.casefold()
     if len(title.strip()) < 15 or len(text_to_check.strip()) < 20:
-        return False
+        return "короткий текст"
     if "!!!" in title or "???" in title:
-        return False
+        return "!!!/???"
 
     letters = [char for char in title if char.isalpha()]
     if letters and sum(char.isupper() for char in letters) / len(letters) > 0.4:
-        return False
-    return True
+        return "КАПС у заголовку"
+    return None
+
+
+def is_quality_article(title: str, description: str, url: str) -> bool:
+    return quality_rejection_reason(title, description, url) is None
+
+
+def _count_code_rejection(stats: dict | None, reason: str) -> None:
+    if stats is not None:
+        stats["funnel"]["rejected_by_keywords"] += 1
+        by_rule = stats["funnel"].setdefault("rejected_by_rule", {})
+        by_rule[reason] = by_rule.get(reason, 0) + 1
 
 
 # ---------------------------------------------------------------------------
@@ -754,7 +785,8 @@ HOMOGLYPHS = {
 def clean_generated_field(value: str) -> str:
     """Restore the original Unicode/ellipsis cleanup, applied to fields, not raw JSON."""
     cleaned = str(value or "").replace("\u0301", "")
-    cleaned = cleaned.replace("[...]", ".").replace("...", ".")
+    # L7: the single-character ellipsis «…» is cleaned the same way as «...»
+    cleaned = cleaned.replace("[...]", ".").replace("[…]", ".").replace("...", ".").replace("…", ".")
     for bad_char, good_char in HOMOGLYPHS.items():
         cleaned = cleaned.replace(bad_char, good_char)
     return cleaned
@@ -777,6 +809,16 @@ def generate_news_texts_json(prompt: str, expected_ids: set[int], stats: dict | 
 # ---------------------------------------------------------------------------
 # Editorial filter: fail closed and validate the entire response partition
 # ---------------------------------------------------------------------------
+def _shorten_for_filter(text: str, limit: int = FILTER_DESCRIPTION_CHARS) -> str:
+    """L5: only the beginning of the description goes to the filter (word boundary)."""
+    text = (text or "").strip()
+    if len(text) <= limit:
+        return text
+    cut = text[:limit]
+    space = cut.rfind(" ")
+    return (cut[:space] if space > limit * 0.6 else cut).rstrip(" ,;:") + " …"
+
+
 def deduplicate_news(articles: list[dict], history_titles: list[str] | None = None,
                      stats: dict | None = None) -> tuple[list[dict], list[dict]]:
     if not articles:
@@ -784,7 +826,8 @@ def deduplicate_news(articles: list[dict], history_titles: list[str] | None = No
 
     recent_history = history_titles[-75:] if history_titles else []
     prompt_data = [
-        {"id": idx, "title": article["title"], "description": plain_text(article.get("description", ""))}
+        {"id": idx, "title": article["title"],
+         "description": _shorten_for_filter(plain_text(article.get("description", "")))}
         for idx, article in enumerate(articles)
     ]
     candidates_log = "\n".join(f"[{item['id']}] {item['title']}" for item in prompt_data)
@@ -850,8 +893,17 @@ HISTORY:
             raise ValueError("Gemini повернув ID поза діапазоном кандидатів")
         if set(keep_ids).intersection(rejected_ids):
             raise ValueError("Один ID одночасно присутній у keep та rejected")
-        if set(keep_ids).union(rejected_ids) != candidate_ids:
-            raise ValueError("Gemini не класифікував усі кандидати; беклог не змінюємо")
+        if not keep_ids and not rejected_ids:
+            raise ValueError("Gemini не класифікував жодного кандидата; беклог не змінюємо")
+        unclassified_ids = candidate_ids - set(keep_ids) - set(rejected_ids)
+        if unclassified_ids:
+            # L4: not a reason to stop the whole run — these articles simply stay in the backlog
+            # (neither kept nor rejected) and go to the filter again next run.
+            logging.warning(
+                "Gemini не класифікував %s з %s кандидатів — вони лишаються в черзі: %s",
+                len(unclassified_ids), len(articles),
+                "; ".join(articles[idx]["title"][:70] for idx in sorted(unclassified_ids)),
+            )
 
         filtered = [articles[idx] for idx in keep_ids]
         rejected = [item.model_dump() for item in result.rejected]
@@ -864,6 +916,7 @@ HISTORY:
             )
         if stats is not None:
             stats["funnel"]["rejection_reasons_list"] = rejection_log
+            stats["funnel"]["unclassified_by_ai"] = len(unclassified_ids)
         logging.info("Gemini залишив %s з %s кандидатів", len(filtered), len(articles))
         for rejected_item in result.rejected:
             title = articles[rejected_item.id]["title"]
@@ -970,6 +1023,21 @@ def record_translation_failure(article: dict, reason: str) -> None:
         )
 
 
+def _latinize_first_hashtag(hashtags: str) -> str:
+    """L1: «#Korčula #Суспільство» -> «#Korcula #Суспільство». Only a Latin first hashtag with
+    diacritics is changed; Cyrillic or other tags are left as they are (and fail validation as before)."""
+    match = re.search(r"(?<!\w)#[\w]+", hashtags or "", flags=re.UNICODE)
+    if not match:
+        return hashtags
+    tag = match.group(0)
+    plain = unicodedata.normalize("NFKD", tag.replace("đ", "d").replace("Đ", "D"))
+    plain = "".join(char for char in plain if not unicodedata.combining(char))
+    if plain == tag or not re.fullmatch(r"#[A-Za-z][A-Za-z0-9_]*", plain):
+        return hashtags
+    logging.info("Перший хештег %s -> %s (без діакритики)", tag, plain)
+    return hashtags[:match.start()] + plain + hashtags[match.end():]
+
+
 def validate_translation_strict(translation: dict, original_article: dict) -> bool:
     title = str(translation.get("title", "")).strip()
     content = normalize_translation_html(translation.get("content", ""))
@@ -998,6 +1066,8 @@ def validate_translation_strict(translation: dict, original_article: dict) -> bo
         logging.warning("Статтю %s заблоковано як імовірну рекламу", translation.get("id"))
         return False
 
+    hashtags = _latinize_first_hashtag(hashtags)
+    translation["hashtags"] = hashtags
     hashtag_list = re.findall(r"(?<!\w)#[\w]+", hashtags, flags=re.UNICODE)
     if not 2 <= len(hashtag_list) <= 3:
         logging.warning("Переклад %s має містити 2-3 хештеги", translation.get("id"))
@@ -1010,19 +1080,16 @@ def validate_translation_strict(translation: dict, original_article: dict) -> bo
         logging.warning("Переклад %s має спортивний хештег", translation.get("id"))
         return False
 
-    # Enforce editorial limits on the visible translation, before adding source attribution.
+    # L3: a long translation is no longer rejected — send_to_telegram() trims it safely to the
+    # Telegram limit (1024 with a photo / 4096), keeps the hashtags and adds «Повні деталі… 👇».
     image_urls = original_article.get("image_urls") or original_article.get("image_url")
     max_visible_chars = 900 if image_urls else 2500
     visible_length = len(title) + 2 + len(content_plain) + 2 + len(hashtags)
     if visible_length > max_visible_chars:
-        logging.warning(
-            "Переклад %s задовгий: %s символів, ліміт %s",
+        logging.info(
+            "Переклад %s довший за рекомендований (%s символів, ліміт %s) — буде обрізано при відправці",
             translation.get("id"), visible_length, max_visible_chars,
         )
-        return False
-    if "..." in title or "..." in content:
-        logging.warning("Переклад %s містить заборонені трикрапки", translation.get("id"))
-        return False
     return True
 
 
@@ -1367,9 +1434,9 @@ def scrape_feeds(stats: dict | None = None) -> None:
 
             entry_tags = [str(tag.get("term", "")).lower() for tag in entry.get("tags", [])]
             blacklist_categories = {"sport", "košarka", "nogomet", "šport", "lifestyle", "zabava", "magazin"}
-            if any(tag in blacklist_categories for tag in entry_tags):
-                if stats is not None:
-                    stats["funnel"]["rejected_by_keywords"] += 1
+            blocked_tag = next((tag for tag in entry_tags if tag in blacklist_categories), None)
+            if blocked_tag:
+                _count_code_rejection(stats, f"тег RSS {blocked_tag}")
                 continue
 
             description = entry.get("summary", title)
@@ -1389,9 +1456,9 @@ def scrape_feeds(stats: dict | None = None) -> None:
                 if match:
                     description_plain = match.group(1).strip()
 
-            if not is_quality_article(title, description_plain, article_url):
-                if stats is not None:
-                    stats["funnel"]["rejected_by_keywords"] += 1
+            rejection_reason = quality_rejection_reason(title, description_plain, article_url)
+            if rejection_reason:
+                _count_code_rejection(stats, rejection_reason)
                 continue
 
             article = {
@@ -1462,6 +1529,41 @@ def _build_translation_prompt(batch: list[dict]) -> str:
     return "".join(chunks)
 
 
+def send_dry_run_filter_report(candidates: list[dict], approved: list[dict],
+                               rejected_items: list[dict], stats: dict | None) -> None:
+    """DRY_RUN: what the filter kept, rejected (with reasons) and did not classify — to judge
+    prompt or model changes. Sent to the admin chat only in a test run."""
+    if not ADMIN_CHAT_ID or not TELEGRAM_BOT_TOKEN:
+        return
+    esc = lambda value: html.escape(str(value or ""), quote=False)
+    model = ((stats or {}).get("models_by_task") or {}).get("filter")
+    lines = [f"🧪 <b>ТЕСТ: фільтр Gemini</b> ({esc(_short_model(model))})", "",
+             f"✅ <b>Залишено {len(approved)}</b> (у пости підуть перші {BATCH_SIZE}):"]
+    for number, item in enumerate(approved, 1):
+        lines.append(f"{number}. {esc(item['title'][:110])} <i>({esc(item.get('source'))})</i>")
+    lines += ["", "✖ <b>Відкинуто:</b>"]
+    rejected_idx = set()
+    for rejected in rejected_items:
+        rejected_idx.add(rejected["id"])
+        lines.append(f"• [{esc(rejected.get('reason'))}] {esc(candidates[rejected['id']]['title'][:100])}")
+    approved_urls = {item["url"] for item in approved}
+    unclassified = [item for idx, item in enumerate(candidates)
+                    if idx not in rejected_idx and item["url"] not in approved_urls]
+    if unclassified:
+        lines += ["", "❔ <b>Не класифіковано (лишились у черзі):</b>"]
+        lines += [f"• {esc(item['title'][:100])}" for item in unclassified]
+    try:
+        resp = requests.post(
+            f"https://api.telegram.org/bot{TELEGRAM_BOT_TOKEN}/sendMessage",
+            data={"chat_id": ADMIN_CHAT_ID, "text": "\n".join(lines)[:4000], "parse_mode": "HTML"},
+            timeout=10,
+        )
+        if resp.status_code != 200:
+            logging.error("Не вдалося надіслати звіт фільтра: %s", resp.text[:500])
+    except Exception:
+        logging.exception("Збій під час надсилання звіту фільтра")
+
+
 def process_backlog(stats: dict | None = None) -> None:
     backlog = load_backlog()
     # A successful Telegram post may already be in history even if a later state write
@@ -1530,9 +1632,13 @@ def process_backlog(stats: dict | None = None) -> None:
     # If filtering fails or its output is inconsistent, this raises before the backlog is altered.
     approved_articles, rejected_items = deduplicate_news(candidate_batch, history_titles, stats)
     approved_urls = {item["url"] for item in approved_articles}
-    rejected_urls = evaluated_urls - approved_urls
+    rejected_urls = {candidate_batch[item["id"]]["url"] for item in rejected_items}
+    # L4: articles the filter did not classify are not "evaluated" — they stay in the backlog.
+    evaluated_urls = approved_urls | rejected_urls
     if stats is not None:
         stats["funnel"]["duplicates_removed_by_ai"] += len(rejected_urls)
+    if DRY_RUN:
+        send_dry_run_filter_report(candidate_batch, approved_articles, rejected_items, stats)
 
     batch = approved_articles[:BATCH_SIZE]
     sent_urls = set()  # Must exist before any successful Telegram send.
@@ -1624,7 +1730,9 @@ def process_backlog(stats: dict | None = None) -> None:
                 stats["published"]["text_only"] += 1
             source = item.get("source", "Джерело")
             stats["published"]["sources"][source] = stats["published"]["sources"].get(source, 0) + 1
-        time.sleep(DRY_RUN_POST_DELAY_SECONDS if DRY_RUN else POST_PUBLICATION_DELAY_SECONDS)
+        # Pause between posts (Telegram limits); nothing to wait for after the last one (L8).
+        if idx < len(batch) - 1:
+            time.sleep(DRY_RUN_POST_DELAY_SECONDS if DRY_RUN else POST_PUBLICATION_DELAY_SECONDS)
 
     _save_postprocessing_backlog(backlog, evaluated_urls, approved_urls, sent_urls)
 
@@ -1641,6 +1749,8 @@ def _empty_stats() -> dict:
             "scraped_by_source": {},
             "already_seen": 0,
             "rejected_by_keywords": 0,
+            "rejected_by_rule": {},
+            "unclassified_by_ai": 0,
             "duplicates_removed_by_ai": 0,
             "rejection_reasons_list": [],
         },
