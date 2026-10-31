@@ -1,69 +1,5 @@
 [
   {
-    "timestamp": "2026-10-13 19:01:12",
-    "execution_time": 122.0,
-    "funnel": {
-      "scraped_total": 35,
-      "scraped_by_source": {
-        "023": 10,
-        "Slobodna dalmacija": 15,
-        "Zadarski list": 10
-      },
-      "already_seen": 14,
-      "rejected_by_keywords": 0,
-      "duplicates_removed_by_ai": 23,
-      "rejection_reasons_list": [
-        "• U Širokoj Kuli obilježena 35. obljetnica... ➡️ <b>Події за межами Задара та загальнонаціонального значення Хорватії</b>",
-        "• Običan list papira pokazat će zatvaraju ... ➡️ <b>Світовий шум: побутові поради</b>",
-        "• Dubrovačka udruga likovnih umjetnika otv... ➡️ <b>Побут інших міст (Дубровник)</b>",
-        "• Ugašen požar u zgradi opatijskog Hotela ... ➡️ <b>Побут інших міст (Опатія)</b>",
-        "• Koje je PIN-ove najlakše pogoditi i zašt... ➡️ <b>Світовий шум: поради з безпеки</b>",
-        "• Šibenčanin je tužan dok gleda svoj grad:... ➡️ <b>Побут інших міст (Шибеник)</b>",
-        "• Sandra Uzelac, bivša šefica “Lenca” prot... ➡️ <b>Побут інших міст (Рієка)</b>",
-        "• Flying Tiger Copenhagen širi se na tri n... ➡️ <b>Реклама / комерційне розширення мережі магазинів</b>",
-        "• Nikolina Hapan i Katarina Vrgoč, recepci... ➡️ <b>Побут інших міст (Дубровник)</b>",
-        "• Elemental objavljuje novi hit singl “Vod... ➡️ <b>Культурно-розважальні анонси інших міст (Загреб)</b>",
-        "• Adiratik građenje o priopćenju HDZ-a Žup... ➡️ <b>Побут інших міст (Жупа Дубровницька)</b>",
-        "• Plenković: “Još ćete se godinama budit f... ➡️ <b>Дубль або несуттєве політичне протистояння без прямого впливу на діаспору</b>",
-        "• Punjač koji danima stoji u utičnici troš... ➡️ <b>Світовий шум: побутові поради</b>",
-        "• Dvojica muškaraca na Pagu postavljaju pr... ➡️ <b>Локальна подія меншого пріоритету поза Задаром</b>",
-        "• Hajdaš Dončić: Gospić je samo povod za o... ➡️ <b>Дубль або політична заява загального національного рівня без критичного оновлення</b>",
-        "• Verne u Zagrebu testira robotaksi bez ik... ➡️ <b>Побут інших міст (Загреб)</b>",
-        "• Gripa uranila i pretekla dolazak cjepiva... ➡️ <b>Побут та медична статистика інших регіонів</b>",
-        "• Jadranko Miklec uoči gostovanja u Kocki:... ➡️ <b>Анонс заходів інших міст (Рієка)</b>",
-        "• Dr Stjepan Đuričić: ‘ Točno je, naša žup... ➡️ <b>Дубль новини №17 про грип на півдні Хорватії</b>",
-        "• Novi prekid magistralnog cjevovoda Medak... ➡️ <b>Побут інших міст (Госпич)</b>",
-        "• Centar za djecu, mlade i obitelj započeo... ➡️ <b>Побут інших міст (Дубровник)</b>",
-        "• Komemoracija u Gospiću: Trajna zahvala a... ➡️ <b>Побут інших міст (Госпич)</b>",
-        "• Od priča do otkrića: Besplatno istražite... ➡️ <b>Побут інших регіонів (Перушич)</b>"
-      ]
-    },
-    "backlog": {
-      "total_size": 51,
-      "sources": {
-        "Zadarski list": 28,
-        "Slobodna dalmacija": 17,
-        "023": 6
-      }
-    },
-    "published": {
-      "total": 2,
-      "ukraine_priority": 0,
-      "with_images": 1,
-      "text_only": 1,
-      "sources": {
-        "023": 1,
-        "Slobodna dalmacija": 1
-      }
-    },
-    "models_used": {
-      "gemini-3.5-flash-lite": 2,
-      "gemini-3.6-flash": 0
-    },
-    "errors_count": 0,
-    "gemini_retries": 0
-  },
-  {
     "timestamp": "2026-10-14 07:01:12",
     "execution_time": 166.8,
     "funnel": {
@@ -5856,5 +5792,108 @@
     "exhausted_models": [],
     "errors_count": 0,
     "gemini_retries": 6
+  },
+  {
+    "timestamp": "2026-10-31 11:01:11",
+    "execution_time": 330.2,
+    "funnel": {
+      "scraped_total": 35,
+      "scraped_by_source": {
+        "023": 10,
+        "Slobodna dalmacija": 15,
+        "Zadarski list": 10
+      },
+      "already_seen": 5,
+      "rejected_by_keywords": 5,
+      "rejected_by_rule": {
+        "igrač": 1,
+        "тег RSS sport": 1,
+        "sportom": 1,
+        "šport": 2
+      },
+      "unclassified_by_ai": 0,
+      "duplicates_removed_by_ai": 22,
+      "rejection_reasons_list": [
+        "• Raguž: Kakva je razlika između apartmana i javnog bilježnika? Frankovi → Побут інших міст | Сутності: Željko Raguž, Mato Franković, Dubrovnik",
+        "• Hajdaš Dončić: ‘Otpad je pitanje nacionalne sigurnosti i bit će pod dr → Політика | Сутності: Siniša Hajdaš Dončić, SDP, Hrvatska",
+        "• Franković ponovno šokira: ‘Kamioni kokaina i dalje stižu u Dubrovnik,  → Побут інших міст | Сутності: Mato Franković, Dubrovnik, DORH",
+        "• Čak četiri tisuće studenata bez mjesta u zagrebačkim studentskim domov → Побут інших міст | Сутності: Zagreb, Studentski centar, studenti",
+        "• Preokret za blagdan: Svi sveti na Jadranu uz olujnu buru, a od ponedje → Погода | Сутності: Bojan Lipovšćak, N1, Jadran",
+        "• Dvadesetero virskih umirovljenika dobilo iskaznice za besplatni javni  → Побут інших міст | Сутності: Marin Radović, Općina Vir, Vir",
+        "• Vozač (72) na A3 konstantno “blicao” drugim autima da se maknu. Kažnje → Побут інших міст | Сутності: A3, Hrvatska, Policija",
+        "• Kod 21-godišnjeg vozača iz BiH utvrđen niz prometnih prekršaja - protj → Дубль в історії | Сутності: Virski put, Zadar, Bosna i Hercegovina",
+        "• Washington mijenja pristup Bosni i Hercegovini: Nove vlasti dobile su  → Геоблок | Сутності: Washington, Bosna i Hercegovina, UN",
+        "• Franković opet o ‘kamionima kokaina‘: Sezona je bila dobra, potražnja  → Дубль в історії | Сутності: Mato Franković, Dubrovnik, DORH",
+        "• Ustavna sutkinja optužuje: ‘Svrha tonskog snimanja nije zapisnik. Ne z → Політика | Сутності: Nikola Mažar, Andrej Plenković, Sanja Bezbradica Jelavić",
+        "• Rasprava oko ljetnikovca Bonda-Majstorović završila na županu Pezu. Fr → Побут інших міст | Сутності: Dubrovnik, Blaž Pezo, Anita Bonačić Obradović",
+        "• VIDEO Što slijedi nakon promjene vlasti u Srbiji? U današnjoj “Špici s → Геоблок | Сутності: Aleksandar Vučić, Srbija, Krešimir Macan",
+        "• Na zadarskom otoku bez automobila sagradili su genijalnu kuću za dvije → Дубль в історії | Сутності: Silba, Katušić Kocbek Arhitekti, SuperProstor",
+        "• FOTO Klasika na riječkom Korzu: Riječani i ovog tjedna pokazali odličn → Побут інших міст | Сутності: Korzo, Rijeka, Nikola Blagojević",
+        "• Kako su Židovi mijenjali Zagreb: Izložba otkriva priče i tragove zajed → Побут інших міст | Сутності: Zagreb, Muzej grada Zagreba, Židovska općina Zagreb",
+        "• Mato Franković: Zbog takvih poput Udruge Spasimo male iznajmljivače ml → Побут інших міст | Сутності: Mato Franković, Dubrovnik, Napolitanka",
+        "• Kozalsko groblje čuva priče o staroj Rijeci. Nova monografija otkriva  → Побут інших міст | Сутності: Kozala, Rijeka, Rosanna Turcinovich",
+        "• Veliki korak za otok: počinje gradnja Inkluzivnog centra Korčula za dj → Побут інших міст | Сутності: Korčula, Blaž Pezo, Dubrovačko-neretvanska županija",
+        "• Svaki komadić prošao je kroz njihove ruke. Pogledajte kako se obnavlja → Побут інших міст | Сутності: Zagrebačka katedrala, Bokart Glass, Neven Kvesić",
+        "• Dnevni red bez vijećničkih pitanja, SDP -u odbijena 4 amandmana na reb → Побут інших міст | Сутності: Katarina Doršner, Marin Krstulović, Dubrovnik",
+        "• Zasjeda dubrovačko Gradsko vijeće: na dnevnom redu rebelanas ovogodišn → Побут інших міст | Сутності: Dubrovnik, Gradsko vijeće, Proračun"
+      ],
+      "rejected_by_code_examples": [
+        "[igrač] Nije pogodio nijedan broj, a osvojio je 80.000 eura: Zagrepčanin je s listićem od 7,80 eura promašio",
+        "[тег RSS sport] Zadar se u Dubrovniku zagrijao tek u drugoj četvrtini, a onda prešao granicu od sto poena",
+        "[sportom] Erlić vijećnicima podnio polugodišnje izvješće, a novi ustroj gradske uprave prošao s 13 glasova za",
+        "[šport] Evo gdje će Dubrovnik potrošiti milijune eura prema prijedlogu rebelansa ovogodišnjeg proračuna",
+        "[šport] Evo gdje će se trošiti milijuni eura prema prijedlogu rebelansa ovogodišnjeg proračuna"
+      ]
+    },
+    "backlog": {
+      "total_size": 1,
+      "sources": {
+        "Slobodna dalmacija": 1
+      }
+    },
+    "published": {
+      "total": 3,
+      "ukraine_priority": 0,
+      "with_images": 3,
+      "text_only": 0,
+      "og_images_found": 2,
+      "sources": {
+        "023": 2,
+        "Slobodna dalmacija": 1
+      }
+    },
+    "models_used": {
+      "gemini-3.5-flash-lite": 1,
+      "gemini-3.6-flash": 1
+    },
+    "models_by_task": {
+      "filter": "gemini-3.5-flash-lite",
+      "translate": "gemini-3.6-flash"
+    },
+    "model_attempts": [
+      {
+        "task": "filter",
+        "model": "gemini-3-flash-preview",
+        "outcome": "unavailable"
+      },
+      {
+        "task": "filter",
+        "model": "gemini-3.5-flash-lite",
+        "outcome": "ok"
+      },
+      {
+        "task": "translate",
+        "model": "gemini-3.8-flash",
+        "outcome": "unavailable"
+      },
+      {
+        "task": "translate",
+        "model": "gemini-3.6-flash",
+        "outcome": "ok"
+      }
+    ],
+    "exhausted_models": [],
+    "errors_count": 0,
+    "gemini_retries": 2
   }
 ]
