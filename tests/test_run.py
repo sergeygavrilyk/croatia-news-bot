@@ -109,3 +109,9 @@ def test_update_prefix_added_by_code(bot, offline_cycle, monkeypatch, tmp_path):
     bot.process_backlog(bot._empty_stats())
     assert texts[0].startswith("<b>🔄 [ОНОВЛЕНО]: Новина 0</b>")
     assert texts[1].startswith("<b>Новина 1</b>")
+
+
+def test_rejected_news_are_remembered(bot, offline_cycle, tmp_path):
+    bot.process_backlog(bot._empty_stats())
+    memory = json.load(open(tmp_path / bot.REJECTED_FILE, encoding="utf-8"))
+    assert [item["url"] for item in memory] == ["https://www.023.hr/v-2/"]  # відхилена «Спорт»

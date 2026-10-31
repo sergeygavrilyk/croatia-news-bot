@@ -64,7 +64,7 @@ def test_url_number_aliases(bot):
 
 
 def test_default_cascades(bot):
-    assert bot.FILTER_MODELS == ["gemini-3-flash-preview", "gemini-3.5-flash-lite", "gemini-3.1-flash-lite"]
+    assert bot.FILTER_MODELS == ["gemini-3-flash-preview", "gemini-3.6-flash", "gemini-3.5-flash-lite", "gemini-3.1-flash-lite"]
     assert bot.TRANSLATE_MODELS == ["gemini-3.8-flash", "gemini-3.6-flash", "gemini-3.5-flash-lite"]
     assert bot.GEMINI_TIMEOUT_MS == 90_000
 

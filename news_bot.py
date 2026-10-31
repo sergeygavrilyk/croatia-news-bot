@@ -73,6 +73,10 @@ TITLES_FILE = "posted_titles.txt"
 BACKLOG_FILE = "news_backlog.json"
 FEEDS_FILE = "feeds.json"
 ANALYTICS_FILE = "analytics.json"
+# D-25 / T-21: news the filter rejected. Without this file a rejected article came back from RSS
+# every run (up to 12 h) and was judged again — sooner or later the model let it through (duplicates).
+REJECTED_FILE = "rejected_news.json"
+REJECTED_MEMORY_SECONDS = 24 * 60 * 60
 
 MAX_HISTORY_SIZE = 1000
 MAX_AGE_SECONDS = 12 * 60 * 60
@@ -96,7 +100,10 @@ RETRY_COOLDOWN_SECONDS = 60 * 60
 #            (lite помітно гірше перекладає).
 # НЕ використовувати gemini-3.5-flash і gemini-3.7-flash: зняті з обігу 08.10.2026 і переадресовуються
 # на 3.6-flash / 3.8-flash (фактично витрачають їхню квоту).
-DEFAULT_FILTER_MODELS = "gemini-3-flash-preview,gemini-3.5-flash-lite,gemini-3.1-flash-lite"
+# 31.10.2026 (T-21, рішення власника): між preview і lite — gemini-3.6-flash. preview того дня
+# відповідала 503 у кожному запуску, і весь відбір робила lite, яка пропускала дублі. 3.6-flash
+# ділить денну квоту з перекладом — при 429 каскад перейде до lite (і «пам'ять» нижче).
+DEFAULT_FILTER_MODELS = "gemini-3-flash-preview,gemini-3.6-flash,gemini-3.5-flash-lite,gemini-3.1-flash-lite"
 DEFAULT_TRANSLATE_MODELS = "gemini-3.8-flash,gemini-3.6-flash,gemini-3.5-flash-lite"
 # Таймаут одного запиту: модель, що «зависла», не блокує запуск — каскад перейде до наступної.
 # 90 с: звичайна відповідь — 5–40 с; 30.10 увечері перевантажені моделі мовчали по 3 хв (504).
@@ -118,6 +125,12 @@ FILTER_MODELS = parse_models("GEMINI_FILTER_MODELS", DEFAULT_FILTER_MODELS)
 TRANSLATE_MODELS = parse_models("GEMINI_TRANSLATE_MODELS", DEFAULT_TRANSLATE_MODELS)
 # Моделі, чия квота (429) вичерпана в цьому запуску, — до кінця запуску більше не викликаються.
 EXHAUSTED_MODELS: set[str] = set()
+# «Пам'ять» про недоступні моделі (T-21): модель, яка в останніх MODEL_DEMOTE_AFTER_RUNS запусках
+# (за MODEL_DEMOTE_WINDOW_SECONDS) не відповіла жодного разу (503 / таймаут / квота), іде в кінець
+# каскаду. Коли вікно мине, вона знову перша. Дані — з analytics.json (model_attempts).
+MODEL_DEMOTE_WINDOW_SECONDS = 3 * 60 * 60
+MODEL_DEMOTE_AFTER_RUNS = 2
+MODEL_FAILURE_OUTCOMES = {"unavailable", "timeout", "quota"}
 client = None  # Created inside main(), after environment validation.
 
 
@@ -358,6 +371,104 @@ def save_analytics(stats: dict) -> None:
         raise
 
 
+def load_rejected(now: float | None = None) -> list[dict]:
+    """D-25: rejected news of the last REJECTED_MEMORY_SECONDS ({url, title, timestamp})."""
+    if not os.path.exists(REJECTED_FILE) or os.path.getsize(REJECTED_FILE) == 0:
+        return []  # the workflow «touch»-es the file before the first commit
+    now = time.time() if now is None else now
+    try:
+        with open(REJECTED_FILE, "r", encoding="utf-8") as f:
+            data = json.load(f)
+    except (OSError, json.JSONDecodeError):
+        logging.exception("Не вдалося прочитати %s; пам'ять відхилених починається заново", REJECTED_FILE)
+        return []
+    if not isinstance(data, list):
+        return []
+    return [item for item in data
+            if isinstance(item, dict) and item.get("url")
+            and now - float(item.get("timestamp", 0)) <= REJECTED_MEMORY_SECONDS]
+
+
+def remember_rejected(articles: list[dict], now: float | None = None) -> None:
+    """D-25: remember what the filter rejected so the scraper does not bring it back."""
+    if not articles:
+        return
+    now = time.time() if now is None else now
+    memory = load_rejected(now)
+    known = {item["url"] for item in memory}
+    for article in articles:
+        if article["url"] not in known:
+            memory.append({"url": article["url"], "title": article.get("title", ""), "timestamp": now})
+            known.add(article["url"])
+    temp_file = f"{REJECTED_FILE}.tmp"
+    try:
+        with open(temp_file, "w", encoding="utf-8") as f:
+            json.dump(memory, f, ensure_ascii=False, indent=2)
+            f.flush()
+            os.fsync(f.fileno())
+        os.replace(temp_file, REJECTED_FILE)
+    except Exception:
+        try:
+            if os.path.exists(temp_file):
+                os.remove(temp_file)
+        except OSError:
+            pass
+        logging.exception("Помилка збереження %s", REJECTED_FILE)
+        raise
+
+
+def _run_epoch(run: dict) -> float | None:
+    try:
+        return time.mktime(time.strptime(str(run.get("timestamp")), "%Y-%m-%d %H:%M:%S"))
+    except (TypeError, ValueError, OverflowError):
+        return None
+
+
+def demoted_models(runs: list[dict], task: str, now: float | None = None) -> set[str]:
+    """T-21: models that did not answer at all (503 / timeout / quota) in each of the last
+    MODEL_DEMOTE_AFTER_RUNS runs where they were tried for this task, within the window."""
+    now = time.time() if now is None else now
+    per_model: dict[str, list[bool]] = {}
+    for run in runs:
+        started = _run_epoch(run)
+        if started is None or now - started > MODEL_DEMOTE_WINDOW_SECONDS:
+            continue
+        outcomes: dict[str, set[str]] = {}
+        for attempt in run.get("model_attempts") or []:
+            if isinstance(attempt, dict) and attempt.get("task") == task and attempt.get("model"):
+                outcomes.setdefault(attempt["model"], set()).add(attempt.get("outcome"))
+        for model, seen in outcomes.items():
+            per_model.setdefault(model, []).append(
+                "ok" not in seen and bool(seen & MODEL_FAILURE_OUTCOMES)
+            )
+    return {model for model, failed in per_model.items()
+            if len(failed) >= MODEL_DEMOTE_AFTER_RUNS and all(failed[-MODEL_DEMOTE_AFTER_RUNS:])}
+
+
+def reorder_cascade(cascade: list[str], demoted: set[str]) -> list[str]:
+    """Demoted models go to the end (in their original order); the cascade never gets shorter."""
+    return [m for m in cascade if m not in demoted] + [m for m in cascade if m in demoted]
+
+
+def apply_model_memory(stats: dict | None, runs: list[dict], now: float | None = None) -> None:
+    global FILTER_MODELS, TRANSLATE_MODELS
+    demoted_all = []
+    for task, cascade in (("filter", FILTER_MODELS), ("translate", TRANSLATE_MODELS)):
+        demoted = demoted_models(runs, task, now) & set(cascade)
+        if not demoted:
+            continue
+        reordered = reorder_cascade(cascade, demoted)
+        if task == "filter":
+            FILTER_MODELS = reordered
+        else:
+            TRANSLATE_MODELS = reordered
+        demoted_all += [f"{task}: {m}" for m in cascade if m in demoted]
+        logging.warning("Моделі %s відкладено в кінець каскаду (%s): %s",
+                        ", ".join(sorted(demoted)), task, ", ".join(reordered))
+    if stats is not None:
+        stats["demoted_models"] = demoted_all
+
+
 def send_alert_to_admin(message: str) -> None:
     if not ADMIN_CHAT_ID or not TELEGRAM_BOT_TOKEN:
         return
@@ -472,7 +583,9 @@ def send_analytics_to_admin(stats: dict) -> None:
         f"▪️ За джерелами: {html.escape(scraped_src)}\n"
         + (f"🔴 Недоступні джерела: {html.escape(_source_errors_line(stats))}\n"
            if stats.get("source_errors") else "") +
-        f"▪️ Уже відомі/застарілі: {funnel['already_seen']}\n"
+        f"▪️ Уже відомі/застарілі: {funnel['already_seen']}"
+        + (f" (з них відхилені фільтром раніше: {funnel['already_rejected']})" if funnel.get("already_rejected") else "")
+        + "\n"
         f"▪️ Відсіяно кодом: {funnel['rejected_by_keywords']}{html.escape(_rule_breakdown(funnel))}\n"
         f"▪️ Відхилено Gemini: {funnel['duplicates_removed_by_ai']}{html.escape(_rule_breakdown(funnel, 'rejected_by_reason'))}\n"
         + (f"▪️ Позначено як оновлення: {funnel['updates_marked']}\n" if funnel.get("updates_marked") else "")
@@ -492,6 +605,9 @@ def send_analytics_to_admin(stats: dict) -> None:
            if stats.get("exhausted_models") else "")
         + (f"\n🧾 Спроби: {html.escape(_model_attempts_summary(stats))}"
            if stats.get("model_attempts") else "")
+        + (f"\n⏬ Відкладено в кінець каскаду (не відповідали в попередніх запусках): "
+           f"{html.escape(', '.join(stats['demoted_models']))}"
+           if stats.get("demoted_models") else "")
     )
     api_url = f"https://api.telegram.org/bot{TELEGRAM_BOT_TOKEN}/sendMessage"
     try:
@@ -989,6 +1105,7 @@ def deduplicate_news(articles: list[dict], history_titles: list[str] | None = No
     КРОК 3. ФІЛЬТР ІСТОРІЇ ТА ВАЖЛИВІ ОНОВЛЕННЯ: 
     Порівняй кандидатів зі списком <HISTORY>. 
 - Якщо новина є просто переказом вчорашньої події або містить дрібні, несуттєві коментарі — ВІДХИЛЯЙ.
+- ІНШЕ ДЖЕРЕЛО — ТА САМА ПОДІЯ: якщо в HISTORY вже є новина про ту саму кореневу подію (ті самі ХТО, ЩО і ДЕ), а кандидат — з іншого сайту й з іншим заголовком, це дубль. ВІДХИЛЯЙ як «Вже публікувалось».
 - РЕАКЦІЇ ТА КОМЕНТАРІ (АНТИ-ДУБЛЬ): Якщо в історії вже є базова новина (наприклад, інцидент чи ДТП), а новий кандидат — це просто коментар політика, реакція партії, дискусія на сесії чи думка експерта щодо цього інциденту — БЕЗЖАЛЬНО ВІДХИЛЯЙ. Це інформаційний шум.
 - АЛЕ якщо це СУТТЄВЕ ОНОВЛЕННЯ вже знайомої події (наприклад: кардинально зросла кількість жертв, знайдено злочинця, ухвалено закон, який вчора лише обговорювався, або є офіційна реакція влади на кризу) — ОБОВ'ЯЗКОВО ЗАЛИШАЙ.
 - Такі новини-оновлення, крім "keep", додавай також у масив "updates".
@@ -1540,6 +1657,9 @@ def scrape_feeds(stats: dict | None = None) -> None:
 
     backlog = [item for item in backlog if current_time - float(item.get("timestamp", current_time)) <= MAX_AGE_SECONDS]
     backlog_urls = {item["url"] for item in backlog}
+    rejected_memory = load_rejected(current_time)
+    rejected_urls = {item["url"] for item in rejected_memory}
+    rejected_titles = {item.get("title") for item in rejected_memory if item.get("title")}
     scraper = cloudscraper.create_scraper(browser={"browser": "chrome", "platform": "windows", "mobile": False})
     feeds = get_rss_feeds()
     if not feeds:
@@ -1585,6 +1705,12 @@ def scrape_feeds(stats: dict | None = None) -> None:
             if article_url in history_urls or title in history_titles or article_url in backlog_urls:
                 if stats is not None:
                     stats["funnel"]["already_seen"] += 1
+                continue
+            if article_url in rejected_urls or title in rejected_titles:
+                # D-25: already rejected by the filter in the last 24 h — do not judge it again.
+                if stats is not None:
+                    stats["funnel"]["already_seen"] += 1
+                    stats["funnel"]["already_rejected"] = stats["funnel"].get("already_rejected", 0) + 1
                 continue
 
             article_time = time.time()
@@ -1805,6 +1931,11 @@ def process_backlog(stats: dict | None = None) -> None:
     evaluated_urls = approved_urls | rejected_urls
     if stats is not None:
         stats["funnel"]["duplicates_removed_by_ai"] += len(rejected_urls)
+    try:
+        remember_rejected([candidate_batch[item["id"]] for item in rejected_items])
+    except Exception:
+        # Not critical: without the memory the article may be judged again next run.
+        logging.exception("Не вдалося запам'ятати відхилені новини")
     if DRY_RUN:
         send_dry_run_filter_report(candidate_batch, approved_articles, rejected_items, stats)
 
@@ -1925,6 +2056,7 @@ def _empty_stats() -> dict:
             "rejection_reasons_list": [],
             "rejected_by_reason": {},
             "updates_marked": 0,
+            "already_rejected": 0,
         },
         "backlog": {"total_size": 0, "sources": {}},
         "published": {
@@ -1939,6 +2071,7 @@ def _empty_stats() -> dict:
         "models_by_task": {"filter": None, "translate": None},
         "model_attempts": [],
         "exhausted_models": [],
+        "demoted_models": [],
         "errors_count": 0,
         "gemini_retries": 0,
     }
@@ -1962,7 +2095,7 @@ def _enter_dry_run_sandbox() -> str:
     """
     sandbox = tempfile.mkdtemp(prefix="croatia-news-dry-run-")
     for name in (FEEDS_FILE, HISTORY_FILE, TITLES_FILE, BACKLOG_FILE,
-                 f"{BACKLOG_FILE}.bak", ANALYTICS_FILE):
+                 f"{BACKLOG_FILE}.bak", ANALYTICS_FILE, REJECTED_FILE):
         if os.path.exists(name):
             shutil.copy2(name, os.path.join(sandbox, name))
     os.chdir(sandbox)
@@ -1991,6 +2124,13 @@ def main() -> None:
     start_time = time.time()
     stats = _empty_stats()
     critical_error = False
+    try:
+        apply_model_memory(stats, load_analytics())
+    except Exception:
+        logging.exception("Не вдалося застосувати «пам'ять» про недоступні моделі")
+    if stats.get("demoted_models"):
+        logging.info("Каскад фільтра на цей запуск: %s", ", ".join(FILTER_MODELS))
+        logging.info("Каскад перекладу на цей запуск: %s", ", ".join(TRANSLATE_MODELS))
 
     try:
         scrape_feeds(stats)

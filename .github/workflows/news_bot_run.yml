@@ -64,9 +64,9 @@ jobs:
         git config --global user.name "github-actions[bot]"
         git config --global user.email "github-actions[bot]@users.noreply.github.com"
         
-        touch posted_news.txt posted_titles.txt news_backlog.json analytics.json
+        touch posted_news.txt posted_titles.txt news_backlog.json analytics.json rejected_news.json
         
-        git add posted_news.txt posted_titles.txt news_backlog.json analytics.json
+        git add posted_news.txt posted_titles.txt news_backlog.json analytics.json rejected_news.json
         
         if ! git diff --staged --quiet; then
           git commit -m "Update news history and backlog state [skip ci]"

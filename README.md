@@ -19,7 +19,7 @@ cron-job.org ──(HTTP POST, щогодини вдень)──▶ GitHub Acti
    Google Gemini (AI Studio) ◀──────────────────│    3. finally: analytics.json, звіт адміну в Telegram
    Telegram Bot API ◀───────────────────────────│
                                                 └─ git commit + push файлів стану
-                                                   (posted_news.txt, posted_titles.txt, news_backlog.json, analytics.json)
+                                                   (posted_news.txt, posted_titles.txt, news_backlog.json, analytics.json, rejected_news.json)
 ```
 
 Детально — у [docs/ARCHITECTURE.md](docs/ARCHITECTURE.md).
