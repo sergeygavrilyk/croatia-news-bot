@@ -630,15 +630,20 @@ def fetch_full_article_text(url: str, scraper) -> str | None:
         return None
 
 
+# R-11 (власник, 31.10.2026): «sport»/«спорт» — лише іменники (sport, sporta, sportaš…); прикметники
+# sportska/sportsko («sportska dvorana», «sportsko igralište», «спортивний майданчик») більше не відсіюються
+# кодом — спортивні новини все одно відкидає фільтр Gemini (КРОК 4.1).
 SPORTS_PATTERN = re.compile(
-    r"\b(?:sport\w*|šport\w*|nogomet\w*|fudbal\w*|football\w*|"
+    r"\b(?:sport(?:a|u|om|ovi|ova|ovima|aš\w*)?|šport(?:a|u|om|aš\w*)?|nogomet\w*|fudbal\w*|football\w*|"
     r"košark\w*|tenis\w*|utakmic\w*|meč\w*|turnir\w*|derbi\w*|"
-    r"igrač\w*|igrači|футбол\w*|баскетбол\w*|спорт\w*|теніс\w*|"
+    r"igrač\w*|igrači|футбол\w*|баскетбол\w*|спорт(?:у|ом|і)?|теніс\w*|"
     r"матч\w*|турнір\w*|спортсмен\w*)\b",
     re.IGNORECASE | re.UNICODE,
 )
+# R-11: лише явні рекламні позначки. Раніше oglas\w* ловив «oglasio se» (= «висловився»),
+# promo\w* — «promocija knjige»; рекламу без позначок відкидає фільтр Gemini (КРОК 4.2).
 AD_PATTERN = re.compile(
-    r"\b(?:oglas\w*|sponzor\w*|promo\w*|horoskop\w*|native\s+oglas\w*|"
+    r"\b(?:oglas|oglasi|mali\s+oglasi|sponzor\w*|promo|pr\s+članak|horoskop\w*|native\s+oglas\w*|"
     r"plaćeni\s+oglas\w*|nagradna\s+igra)\b",
     re.IGNORECASE | re.UNICODE,
 )
@@ -647,10 +652,10 @@ AD_PATTERN = re.compile(
 # replace, the more general sport/ad patterns above.
 LEGACY_UNWANTED_KEYWORDS = [
     "oglasi", "sponzorirani", "promo", "redikul", "horoskop", "plaćeni oglas",
-    "nagradna igra", "native", "pr vijesti", "foto", "video", "sport", "nogomet",
+    "nagradna igra", "native", "pr vijesti", "sport", "nogomet",
     "košarka", "tenis", "utakmica", "hnl", "liga prvaka", "derbi", "trener",
-    "igrači", "kk zadar", "nk zadar", "prvenstvo", "turnir", "bodovi", "polufinale",
-]
+    "igrači", "kk zadar", "nk zadar", "prvenstvo", "turnir", "polufinale",
+]  # R-11: прибрано "foto", "video" (позначки медіа в заголовках) і "bodovi" (штрафні бали водіїв)
 
 def plain_text(value: str) -> str:
     return BeautifulSoup(value or "", "html.parser").get_text(" ", strip=True)
@@ -689,11 +694,18 @@ def is_quality_article(title: str, description: str, url: str) -> bool:
     return quality_rejection_reason(title, description, url) is None
 
 
-def _count_code_rejection(stats: dict | None, reason: str) -> None:
+CODE_REJECTION_EXAMPLES_LIMIT = 20  # скільки відсіяних кодом заголовків зберігати в analytics.json за запуск
+
+
+def _count_code_rejection(stats: dict | None, reason: str, title: str = "") -> None:
+    logging.info("Відсіяно кодом [%s]: %s", reason, title)
     if stats is not None:
         stats["funnel"]["rejected_by_keywords"] += 1
         by_rule = stats["funnel"].setdefault("rejected_by_rule", {})
         by_rule[reason] = by_rule.get(reason, 0) + 1
+        examples = stats["funnel"].setdefault("rejected_by_code_examples", [])
+        if len(examples) < CODE_REJECTION_EXAMPLES_LIMIT:
+            examples.append(f"[{reason}] {title[:100]}")
 
 
 # ---------------------------------------------------------------------------
@@ -1537,7 +1549,7 @@ def scrape_feeds(stats: dict | None = None) -> None:
             blacklist_categories = {"sport", "košarka", "nogomet", "šport", "lifestyle", "zabava", "magazin"}
             blocked_tag = next((tag for tag in entry_tags if tag in blacklist_categories), None)
             if blocked_tag:
-                _count_code_rejection(stats, f"тег RSS {blocked_tag}")
+                _count_code_rejection(stats, f"тег RSS {blocked_tag}", title)
                 continue
 
             description = entry.get("summary", title)
@@ -1559,7 +1571,7 @@ def scrape_feeds(stats: dict | None = None) -> None:
 
             rejection_reason = quality_rejection_reason(title, description_plain, article_url)
             if rejection_reason:
-                _count_code_rejection(stats, rejection_reason)
+                _count_code_rejection(stats, rejection_reason, title)
                 continue
 
             article = {
@@ -1652,6 +1664,10 @@ def send_dry_run_filter_report(candidates: list[dict], approved: list[dict],
     approved_urls = {item["url"] for item in approved}
     unclassified = [item for idx, item in enumerate(candidates)
                     if idx not in rejected_idx and item["url"] not in approved_urls]
+    code_rejected = ((stats or {}).get("funnel") or {}).get("rejected_by_code_examples") or []
+    if code_rejected:
+        lines += ["", "🚫 <b>Відсіяно кодом (до Gemini):</b>"]
+        lines += [f"• {esc(example)}" for example in code_rejected]
     if unclassified:
         lines += ["", "❔ <b>Не класифіковано (лишились у черзі):</b>"]
         lines += [f"• {esc(item['title'][:100])}" for item in unclassified]
