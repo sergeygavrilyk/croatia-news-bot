@@ -7,7 +7,7 @@ Telegram-бот: RSS хорватських медіа (фокус — Зада�
 
 - Код: один файл `news_bot.py`; джерела — `feeds.json`; документація — `README.md`, `docs/`.
 - Запуск: cron-job.org → GitHub Actions (`workflow_dispatch`) → `python news_bot.py` → коміт файлів стану в ту саму гілку.
-- Стан: **файли в репозиторії** — `posted_news.txt`, `posted_titles.txt`, `news_backlog.json`, `analytics.json`. Бот комітить їх у `main` щогодини → перед роботою завжди `git fetch`/`git pull`.
+- Стан: **файли в репозиторії** — `posted_news.txt`, `posted_titles.txt`, `news_backlog.json`, `analytics.json`, `rejected_news.json`. Бот комітить їх у `main` щогодини → перед роботою завжди `git fetch`/`git pull`.
 - Локальна папка власника: `C:\Users\Сергей\Desktop\PythonProjects` (клон `sergeygavrilyk/croatia-news-bot`).
 - Є «брат-близнюк» — молдовський бот (`Desktop\Moldova news bot`, репозиторій `Moldova-news-bot`): він новіший (Supabase, DRY_RUN, моделі в GitHub Variables, тижневий звіт). Зміни в промптах/захистах часто переносяться між ними — лише з погодження (PROPOSE).
 
