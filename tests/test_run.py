@@ -94,3 +94,18 @@ def test_dry_run_changes_no_state_and_posts_to_admin(load_bot, monkeypatch, tmp_
     after = {n: hashlib.sha256(open(tmp_path / n, "rb").read()).hexdigest() for n in os.listdir(tmp_path)}
     assert after == digest
     assert any("ТЕСТОВИЙ ЗАПУСК" in (s["data"] or {}).get("text", "") for s in recorder.sent)
+
+
+def test_update_prefix_added_by_code(bot, offline_cycle, monkeypatch, tmp_path):
+    texts = []
+    monkeypatch.setattr(bot, "send_to_telegram",
+                        lambda text, url, source, images=None: texts.append(text) or (True, "image"))
+
+    def fake_filter(articles, history=None, stats=None):
+        articles[0]["is_update"] = True
+        return [articles[0], articles[1]], []
+
+    monkeypatch.setattr(bot, "deduplicate_news", fake_filter)
+    bot.process_backlog(bot._empty_stats())
+    assert texts[0].startswith("<b>🔄 [ОНОВЛЕНО]: Новина 0</b>")
+    assert texts[1].startswith("<b>Новина 1</b>")
