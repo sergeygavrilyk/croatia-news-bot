@@ -1,66 +1,5 @@
 [
   {
-    "timestamp": "2026-10-13 14:01:11",
-    "execution_time": 243.7,
-    "funnel": {
-      "scraped_total": 35,
-      "scraped_by_source": {
-        "023": 10,
-        "Slobodna dalmacija": 15,
-        "Zadarski list": 10
-      },
-      "already_seen": 4,
-      "rejected_by_keywords": 0,
-      "duplicates_removed_by_ai": 23,
-      "rejection_reasons_list": [
-        "• Plavci velikog srca: šibenski policajci ... ➡️ <b>Побут чужого міста (Шібеник)</b>",
-        "• Festival suvremene književnosti od 3. do... ➡️ <b>Події у Загребі та Рієці без відношення до Задара</b>",
-        "• Provjerite koje su ulice u gradu u srije... ➡️ <b>Побут чужого міста (Дубровник)</b>",
-        "• Rafale iznad Rijeke i Delnica presreo ma... ➡️ <b>Дубль новини ID 8</b>",
-        "• Flying Tiger Copenhagen širi se na tri n... ➡️ <b>Не підпадає під пріоритетні теми дня для Задара</b>",
-        "• Gastro spektakl u Dubrovniku: od španjol... ➡️ <b>Побут чужого міста (Дубровник)</b>",
-        "• Sukob četvorice rođaka u Paragu: 28-godi... ➡️ <b>Кримінал у іншій частині Хорватії (Меджимур'є)</b>",
-        "• IZVANREDNO STANJE NA NEBU Hrvatski Rafal... ➡️ <b>Подія загальнонаціонального рівня не пов'язана з Задаром чи Україною</b>",
-        "• Hit terapija na otvorenome: do 200 pacij... ➡️ <b>Переказ або вже відома туристична/сезонна тема з минулого</b>",
-        "• Čini se da neuništivi Rolling Stonesi ra... ➡️ <b>Світовий шум (музика)</b>",
-        "• Novi sjaj za igrališta i dvorane; Župani... ➡️ <b>Дублює загальну інформацію або є дрібним адміністративним оновленням</b>",
-        "• Donirajte dokumente i zapise iz Domovins... ➡️ <b>Дубль новини ID 15</b>",
-        "• Dr. Smeđi Šećer pokrenuo izdavačku kuću,... ➡️ <b>Світовий шум / культура</b>",
-        "• Punjač koji danima stoji u utičnici troš... ➡️ <b>Поради з побуту, світовий шум</b>",
-        "• Prikuplja se građa o 163. brigadi za izr... ➡️ <b>Події у Дубровнику, не стосуються Задара</b>",
-        "• Zagrebačka gastronomska ofenziva: Predst... ➡️ <b>Побут чужого міста (Загреб)</b>",
-        "• Verne u Zagrebu testira robotaksi bez ik... ➡️ <b>Побут чужого міста (Загреб)</b>",
-        "• Hrvatski Rafale presreo malteški putničk... ➡️ <b>Дубль новини ID 8</b>",
-        "• I dalje preporuka prokuhavanja vode na p... ➡️ <b>Побут чужого міста (Осор)</b>",
-        "• Nevjerojatna priča iz Mlina: pronašao ih... ➡️ <b>Побут чужого міста (Мліні/Дубровник)</b>",
-        "• Zagrebački Zoološki vrt ostvario rekord ... ➡️ <b>Побут чужого міста (Загреб)</b>",
-        "• Inspiracija za hladne dane; Stigao je no... ➡️ <b>Реклама / спонсорський матеріал</b>",
-        "• Sada je jasno i službeno da se Zadrani ž... ➡️ <b>Історія вже обговорювалася або містить дрібні деталі минулих подій</b>"
-      ]
-    },
-    "backlog": {
-      "total_size": 59,
-      "sources": {
-        "Zadarski list": 15,
-        "Slobodna dalmacija": 31,
-        "023": 13
-      }
-    },
-    "published": {
-      "total": 0,
-      "ukraine_priority": 0,
-      "with_images": 0,
-      "text_only": 0,
-      "sources": {}
-    },
-    "models_used": {
-      "gemini-3.5-flash-lite": 1,
-      "gemini-3.6-flash": 0
-    },
-    "errors_count": 1,
-    "gemini_retries": 5
-  },
-  {
     "timestamp": "2026-10-13 15:01:12",
     "execution_time": 474.9,
     "funnel": {
@@ -5712,5 +5651,107 @@
     },
     "errors_count": 0,
     "gemini_retries": 0
+  },
+  {
+    "timestamp": "2026-10-31 08:01:30",
+    "execution_time": 334.7,
+    "funnel": {
+      "scraped_total": 35,
+      "scraped_by_source": {
+        "023": 10,
+        "Slobodna dalmacija": 15,
+        "Zadarski list": 10
+      },
+      "already_seen": 1,
+      "rejected_by_keywords": 11,
+      "rejected_by_rule": {
+        "igrač": 1,
+        "sportska": 2,
+        "тег RSS sport": 1,
+        "sportskom": 1,
+        "oglasnika": 1,
+        "sport": 1,
+        "тег RSS nogomet": 1,
+        "košarkašica": 1,
+        "horoskop": 1,
+        "тег RSS košarka": 1
+      },
+      "unclassified_by_ai": 0,
+      "duplicates_removed_by_ai": 10,
+      "rejection_reasons_list": [
+        "• Gotovo 150 tisuća mladih najavilo prosvjede u Njemačkoj: Policija stra → Геоблок | Сутності: Німеччина, Gen Z, Франкфурт, поліція",
+        "• Urod bolji nego lani, ali troškovi lete u nebo; Porez na meljavu veći  → Дубль в історії | Сутності: Анте Вулін, Пакоштане, Вранське озеро",
+        "• Šoping obavite danas. Na blagdan Svih svetih na riječkom području nema → Побут інших міст | Сутності: Рієка, Всі святих, торгові центри",
+        "• Od sutra ovo morate imati upaljeno čim sjednete za volan: policija upo → Дубль | Сутності: Хорватія, поліція, Закон про безпеку дорожнього руху",
+        "• Dvojite oko toga da li kupiti barku za ribolov ili ostati obalni ribol → Світовий шум | Сутності: риболовля, барка, адріатика",
+        "• Drama oko mega resorta u Cavtatu seli u Bruxelles: Sumnja se na nezako → Геоблок | Сутності: Кавтат, Європейський парламент, Gordan Bosanac",
+        "• Prijetnje i uvrede novinarima otvaraju pitanje sigurnosti i slobode go → Побут інших міст | Сутності: Спліт, Siniša Vuković, Муніципальний суд",
+        "• Sud naložio Trumpu da prestane prijetiti kaznenim progonom izbornih du → Геоблок | Сутності: Дональд Трамп, Міністерство юстиції США, Конгресс",
+        "• Listopad se oprašta sunčanim danom do 18 stupnjeva, idući tjedan donos → Дубль в історії | Сутності: Задар, погода, октябр",
+        "• Dobili lokacijsku dozvolu, a projekt im završio pred Europarlamentom:  → Дубль | Сутності: Кавтат, Marina Resort, Європарламент"
+      ]
+    },
+    "backlog": {
+      "total_size": 3,
+      "sources": {
+        "Slobodna dalmacija": 2,
+        "023": 1
+      }
+    },
+    "published": {
+      "total": 3,
+      "ukraine_priority": 0,
+      "with_images": 3,
+      "text_only": 0,
+      "og_images_found": 1,
+      "sources": {
+        "Slobodna dalmacija": 1,
+        "023": 1,
+        "Zadarski list": 1
+      }
+    },
+    "models_used": {
+      "gemini-3.5-flash-lite": 1,
+      "gemini-3.6-flash": 1
+    },
+    "models_by_task": {
+      "filter": "gemini-3.5-flash-lite",
+      "translate": "gemini-3.6-flash"
+    },
+    "model_attempts": [
+      {
+        "task": "filter",
+        "model": "gemini-3-flash-preview",
+        "outcome": "unavailable"
+      },
+      {
+        "task": "filter",
+        "model": "gemini-3.5-flash-lite",
+        "outcome": "ok"
+      },
+      {
+        "task": "translate",
+        "model": "gemini-3.8-flash",
+        "outcome": "unavailable"
+      },
+      {
+        "task": "translate",
+        "model": "gemini-3.8-flash",
+        "outcome": "unavailable"
+      },
+      {
+        "task": "translate",
+        "model": "gemini-3.6-flash",
+        "outcome": "unavailable"
+      },
+      {
+        "task": "translate",
+        "model": "gemini-3.6-flash",
+        "outcome": "ok"
+      }
+    ],
+    "exhausted_models": [],
+    "errors_count": 0,
+    "gemini_retries": 4
   }
 ]
