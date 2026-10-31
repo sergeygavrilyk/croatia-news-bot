@@ -123,3 +123,10 @@ def test_rejection_stats_by_category_and_detail(bot, monkeypatch):
 ])
 def test_ukraine_priority_keywords(bot, text, expected):
     assert bot.is_ukraine_priority({"title": text, "description": ""}) is expected
+
+
+def test_filter_prompt_owner_edits_31_10(bot, monkeypatch):
+    _, _, captured, _ = run_filter(bot, monkeypatch, [0], [1, 2])
+    prompt = captured["prompt"]
+    assert "Кожен ID з CANDIDATES має бути рівно в одному з масивів" in prompt
+    assert "Межа: великий кримінал, політичні рішення, ціни й закони для всієї країни" in prompt
