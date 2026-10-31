@@ -1,46 +1,5 @@
 [
   {
-    "timestamp": "2026-10-13 16:01:16",
-    "execution_time": 319.4,
-    "funnel": {
-      "scraped_total": 35,
-      "scraped_by_source": {
-        "023": 10,
-        "Slobodna dalmacija": 15,
-        "Zadarski list": 10
-      },
-      "already_seen": 9,
-      "rejected_by_keywords": 2,
-      "duplicates_removed_by_ai": 0,
-      "rejection_reasons_list": []
-    },
-    "backlog": {
-      "total_size": 54,
-      "sources": {
-        "Zadarski list": 21,
-        "Slobodna dalmacija": 26,
-        "023": 7
-      }
-    },
-    "published": {
-      "total": 3,
-      "ukraine_priority": 1,
-      "with_images": 2,
-      "text_only": 1,
-      "sources": {
-        "Slobodna dalmacija": 1,
-        "Zadarski list": 1,
-        "023": 1
-      }
-    },
-    "models_used": {
-      "gemini-3.5-flash-lite": 1,
-      "gemini-3.6-flash": 0
-    },
-    "errors_count": 0,
-    "gemini_retries": 4
-  },
-  {
     "timestamp": "2026-10-13 19:01:12",
     "execution_time": 122.0,
     "funnel": {
@@ -5784,5 +5743,118 @@
     "exhausted_models": [],
     "errors_count": 0,
     "gemini_retries": 2
+  },
+  {
+    "timestamp": "2026-10-31 10:01:14",
+    "execution_time": 178.0,
+    "funnel": {
+      "scraped_total": 35,
+      "scraped_by_source": {
+        "023": 10,
+        "Slobodna dalmacija": 15,
+        "Zadarski list": 10
+      },
+      "already_seen": 3,
+      "rejected_by_keywords": 11,
+      "rejected_by_rule": {
+        "igrač": 1,
+        "sportska": 2,
+        "тег RSS sport": 1,
+        "sportskom": 1,
+        "šport": 1,
+        "oglasnika": 2,
+        "video": 1,
+        "foto": 2
+      },
+      "unclassified_by_ai": 0,
+      "duplicates_removed_by_ai": 17,
+      "rejection_reasons_list": [
+        "• Vozač (72) na A3 konstantno “blicao” drugim autima da se maknu. Kažnje → Побут інших міст | Сутності: A3, Кран, Поліція",
+        "• Rasprava oko ljetnikovca Bonda-Majstorović završila na županu Pezu. Fr → Побут інших міст | Сутності: Дубровник, Блаж Пезо, Мато Франкович",
+        "• Washington mijenja pristup Bosni i Hercegovini: Nove vlasti dobile su  → Геоблок | Сутності: Боснія і Герцеговина, США, ООН",
+        "• Na zadarskom otoku bez automobila sagradili su genijalnu kuću za dvije → Дубль в історії | Сутності: Сілба, Задар, Katušić Kocbek",
+        "• Policija pojačano nadzire promet oko groblja i upozorava da se torbice → Дубль в історії | Сутності: Задар, Всі святі, Поліція",
+        "• Ustavna sutkinja optužuje: ‘Svrha tonskog snimanja nije zapisnik. Ne z → Геоблок | Сутності: Андрей Пленкович, Нікола Мажар, Уставний суд",
+        "• Sinoć tučnjava četvorice muškaraca na Relji, jedan uboden u nogu, dvoj → Дубль | Сутності: Задар, Зринсько-Франкопанська, Лікарня Задар",
+        "• Kozalsko groblje čuva priče o staroj Rijeci. Nova monografija otkriva  → Побут інших міст | Сутності: Рієка, Козала, Росанна Турчинович",
+        "• Mato Franković: Zbog takvih poput Udruge Spasimo male iznajmljivače ml → Побут інших міст | Сутності: Дубровник, Мато Франкович, Удра Спасимо",
+        "• Svaki komadić prošao je kroz njihove ruke. Pogledajte kako se obnavlja → Дубль в історії | Сутності: Загреб, Катедра, Bokart Glass",
+        "• Veliki korak za otok: počinje gradnja Inkluzivnog centra Korčula za dj → Побут інших міст | Сутності: Корчула, Блаж Пезо, Дубровницько-Неретванська жупанія",
+        "• Dvadesetero virskih umirovljenika dobilo iskaznice za besplatni javni  → Дубль в історії | Сутності: Вір, Марин Радович, Муніципалітет Вір",
+        "• Raspad Vučićevog medijskog sustava. Ostavke na RTS-u i RTV-u, Mitrović → Геоблок | Сутності: Сербія, Александр Вучич, РТС",
+        "• Dnevni red bez vijećničkih pitanja, SDP -u odbijena 4 amandmana na reb → Побут інших міст | Сутності: Дубровник, Катаріна Доршнер, СДП",
+        "• Zasjeda dubrovačko Gradsko vijeće: na dnevnom redu rebelanas ovogodišn → Побут інших міст | Сутності: Дубровник, Міська рада, Пюджет",
+        "• Drama oko mega resorta u Cavtatu seli u Bruxelles: Sumnja se na nezako → Побут інших міст | Сутності: Цавтат, Європарламент, Гордан Босанець",
+        "• Prijetnje i uvrede novinarima otvaraju pitanje sigurnosti i slobode go → Побут інших міст | Сутності: Спліт, Сініше Вукович, Муніципальний суд"
+      ]
+    },
+    "backlog": {
+      "total_size": 1,
+      "sources": {
+        "Slobodna dalmacija": 1
+      }
+    },
+    "published": {
+      "total": 3,
+      "ukraine_priority": 0,
+      "with_images": 3,
+      "text_only": 0,
+      "og_images_found": 3,
+      "sources": {
+        "023": 3
+      }
+    },
+    "models_used": {
+      "gemini-3.5-flash-lite": 2
+    },
+    "models_by_task": {
+      "filter": "gemini-3.5-flash-lite",
+      "translate": "gemini-3.5-flash-lite"
+    },
+    "model_attempts": [
+      {
+        "task": "filter",
+        "model": "gemini-3-flash-preview",
+        "outcome": "unavailable"
+      },
+      {
+        "task": "filter",
+        "model": "gemini-3-flash-preview",
+        "outcome": "unavailable"
+      },
+      {
+        "task": "filter",
+        "model": "gemini-3.5-flash-lite",
+        "outcome": "ok"
+      },
+      {
+        "task": "translate",
+        "model": "gemini-3.8-flash",
+        "outcome": "unavailable"
+      },
+      {
+        "task": "translate",
+        "model": "gemini-3.8-flash",
+        "outcome": "unavailable"
+      },
+      {
+        "task": "translate",
+        "model": "gemini-3.6-flash",
+        "outcome": "unavailable"
+      },
+      {
+        "task": "translate",
+        "model": "gemini-3.6-flash",
+        "outcome": "unavailable"
+      },
+      {
+        "task": "translate",
+        "model": "gemini-3.5-flash-lite",
+        "outcome": "ok"
+      }
+    ],
+    "exhausted_models": [],
+    "errors_count": 0,
+    "gemini_retries": 6
   }
 ]
