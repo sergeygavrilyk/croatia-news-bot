@@ -1,63 +1,5 @@
 [
   {
-    "timestamp": "2026-10-14 08:01:13",
-    "execution_time": 169.7,
-    "funnel": {
-      "scraped_total": 35,
-      "scraped_by_source": {
-        "023": 10,
-        "Slobodna dalmacija": 15,
-        "Zadarski list": 10
-      },
-      "already_seen": 3,
-      "rejected_by_keywords": 2,
-      "duplicates_removed_by_ai": 17,
-      "rejection_reasons_list": [
-        "• Noževi, kamenje, boksačke rukavice i pir... ➡️ <b>Спорт</b>",
-        "• Veliki korak za Biograd na Moru; Dobiva ... ➡️ <b>Побут інших міст за межами Задара</b>",
-        "• Sve je više oboljelih od salmonele u Rij... ➡️ <b>Побут інших міст (Рієка)</b>",
-        "• Svjetski popularna kazališna predstava „... ➡️ <b>Афіша подій / Культурний анонс</b>",
-        "• Komunikacijske stručnjakinje o burnoj sa... ➡️ <b>Загальнополітичний шум парламенту без прямого впливу на діаспору</b>",
-        "• Tragedija kod Dubrovnika. Automobilom sl... ➡️ <b>Кримінал/ДТП в іншій хорватській жупанії</b>",
-        "• Prijeti kraj europske regionalne politik... ➡️ <b>Аналітика європолітикі</b>",
-        "• Gori na Jakljanu, zbog nepristupačne oba... ➡️ <b>Пожежа в іншій жупанії</b>",
-        "• Netočno je da je Grad Rijeka isplatio 24... ➡️ <b>Побут інших міст (Рієка)</b>",
-        "• Udari bure noćas napravili nered, u Lapa... ➡️ <b>Побут інших міст (Дубровник)</b>",
-        "• Sutra počinje izgradnja kanalizacije u Ć... ➡️ <b>Побут інших міст (Рієка)</b>",
-        "• Denis Pavela napisao bajku ‘Crvenkapica ... ➡️ <b>Локальна новина іншого міста</b>",
-        "• Do 6. studenog zaprimaju se prijedlozi z... ➡️ <b>Побут інших міст</b>",
-        "• Košarkoplovci s Puntamike digli sidro; K... ➡️ <b>Спорт</b>",
-        "• Opomena, a nakon toga i kazna od 70 eura... ➡️ <b>Побут іншого регіону</b>",
-        "• Poklon koji ispunjava sve želje, darujte... ➡️ <b>Реклама</b>",
-        "• Novi uspjeh mladog čabarskog sportaša: G... ➡️ <b>Спорт</b>"
-      ]
-    },
-    "backlog": {
-      "total_size": 33,
-      "sources": {
-        "023": 9,
-        "Slobodna dalmacija": 15,
-        "Zadarski list": 9
-      }
-    },
-    "published": {
-      "total": 3,
-      "ukraine_priority": 0,
-      "with_images": 2,
-      "text_only": 1,
-      "sources": {
-        "Slobodna dalmacija": 2,
-        "023": 1
-      }
-    },
-    "models_used": {
-      "gemini-3.5-flash-lite": 2,
-      "gemini-3.6-flash": 0
-    },
-    "errors_count": 0,
-    "gemini_retries": 0
-  },
-  {
     "timestamp": "2026-10-14 09:01:15",
     "execution_time": 166.5,
     "funnel": {
@@ -5950,5 +5892,110 @@
     "exhausted_models": [],
     "errors_count": 0,
     "gemini_retries": 3
+  },
+  {
+    "timestamp": "2026-10-31 13:01:12",
+    "execution_time": 104.9,
+    "funnel": {
+      "scraped_total": 35,
+      "scraped_by_source": {
+        "023": 10,
+        "Slobodna dalmacija": 15,
+        "Zadarski list": 10
+      },
+      "already_seen": 10,
+      "rejected_by_keywords": 7,
+      "rejected_by_rule": {
+        "igrač": 1,
+        "тег RSS sport": 1,
+        "sportom": 2,
+        "šport": 2,
+        "nogomet": 1
+      },
+      "unclassified_by_ai": 0,
+      "duplicates_removed_by_ai": 16,
+      "rejection_reasons_list": [
+        "• Alan Hržica i bend ispunili dvoranu HKD-a u dvosatnom koncertu → Не за тематикою (Християнський концерт у Рієці) | Сутності: Alan Hržica, HKD na Sušaku, Rijeka",
+        "• Oni u Dubrovačko-neretvanskoj županiji najviše duguju poreza državi → Дубль (Дублікат списку податкових боржників) | Сутності: Porezna uprava, Dubrovačko-neretvanska županija, 1.754.744.869 eura",
+        "• Demografski potres u Dalmaciji: broj razvoda u Šibensko-kninskoj župan → Побут інших міст (Статистика розлучень у Шибеницько-Кнінській жупанії) | Сутності: Šibensko-kninska županija, Državni zavod za statistiku, 5.674 brakova",
+        "• Delegacija Grada Senja uoči blagdana Svih svetih obišla gradsko groblj → Побут інших міст (Покладання вінків у місті Сень) | Сутності: Željko Tomljanović, Grad Senj, groblje sv. Vid",
+        "• Riječanka i njena tvrtka prvi na listi najvećih poreznih dužnika u Hrv → Дубль (Дублікат списку боржників з акцентом на Рієку) | Сутності: D.M.G.S. Trade desk, Gordana Dobrijević, Rijeka, 41,3 milijuna eura",
+        "• Zadnjeg dana listopada bura je konačno modno zauzdala najprometniju ši → Побут інших міст (Погода та вуличні фото у Шибенику) | Сутності: Šibenik, Poljana, bura",
+        "• Opća opasnost objavila novi singl “Što je ljubav” → Не за тематикою (Реліз пісні музичного гурту) | Сутності: Opća opasnost, Što je ljubav, Zlatko Grgić Grga",
+        "• Raguž: Kakva je razlika između apartmana i javnog bilježnika? Frankovi → Побут інших міст (Дискусія міської ради Дубровника) | Сутності: Željko Raguž, Mato Franković, Dubrovnik",
+        "• Infinity band Croatia predstavlja “Like a prayer” uz Marcelu Oroši i P → Не за тематикою (Музичний кавер-проєкт) | Сутності: Infinity band Croatia, Marcela Oroši, Rijeka",
+        "• Franković ponovno šokira: ‘Kamioni kokaina i dalje stižu u Dubrovnik,  → Побут інших міст (Заяви мера Дубровника на сесії міськради) | Сутності: Mato Franković, Dubrovnik, DORH",
+        "• Banka tajkuna bliskog SNS-u ostala bez dozvole nakon optužbi o pokušaj → Геоблок (Відкликання ліцензії банку в Сербії) | Сутності: ALTA banka, Narodna banka Srbije, Davor Macura, Beograd",
+        "• Preokret za blagdan: Svi sveti na Jadranu uz olujnu buru, a od ponedje → Вже публікувалось (Прогноз погоди на День усіх святих) | Сутності: Bojan Lipovšćak, Jadran, bura",
+        "• Pupovca zadnjih dana baš upadljivo muči “dekoncentracija”. Opet se odb → Не за тематикою (Політичний коментар щодо голосування в Саборі) | Сутності: Milorad Pupovac, SDSS, Hrvatski sabor",
+        "• Franković opet o ‘kamionima kokaina‘: Sezona je bila dobra, potražnja  → Дубль (Повтор висловлювань мера Дубровника про наркотики) | Сутності: Mato Franković, Dubrovnik, Sabor",
+        "• Zašto se više ne znamo svađati, a da se ne zamrzimo? “Razumjeti drugog → Не за тематикою (Абстрактна культурно-психологічна подія) | Сутності: Festival empatije, Zagreb, Rijeka, Osijek",
+        "• Rasprava oko ljetnikovca Bonda-Majstorović završila na županu Pezu. Fr → Побут інших міст (Місцеві бюджетні суперечки у Дубровнику) | Сутності: Bonačić-Obradović, ljetnikovac Bonda-Majstorović, Dubrovnik"
+      ],
+      "rejected_by_reason": {
+        "Не за тематикою": 5,
+        "Дубль": 3,
+        "Побут інших міст": 6,
+        "Геоблок": 1,
+        "Вже публікувалось": 1
+      },
+      "updates_marked": 0,
+      "already_rejected": 0,
+      "rejected_by_code_examples": [
+        "[igrač] Nije pogodio nijedan broj, a osvojio je 80.000 eura: Zagrepčanin je s listićem od 7,80 eura promašio",
+        "[тег RSS sport] Zadar se u Dubrovniku zagrijao tek u drugoj četvrtini, a onda prešao granicu od sto poena",
+        "[sportom] Erlić vijećnicima podnio polugodišnje izvješće, a novi ustroj gradske uprave prošao s 13 glasova za",
+        "[sportom] Osnovan poseban Odjel za izdavanje građevinskih dozvola, istodobno ukinut dosadašnji Odjel za gospod",
+        "[šport] Evo gdje će Dubrovnik potrošiti milijune eura prema prijedlogu rebelansa ovogodišnjeg proračuna",
+        "[šport] Evo gdje će se trošiti milijuni eura prema prijedlogu rebelansa ovogodišnjeg proračuna",
+        "[nogomet] Trumpova administracija pokrenula istragu zbog neobičnog kandidata. Zove se isto kao republikanski s"
+      ]
+    },
+    "backlog": {
+      "total_size": 0,
+      "sources": {}
+    },
+    "published": {
+      "total": 2,
+      "ukraine_priority": 0,
+      "with_images": 2,
+      "text_only": 0,
+      "og_images_found": 0,
+      "sources": {
+        "Zadarski list": 1,
+        "Slobodna dalmacija": 1
+      }
+    },
+    "models_used": {
+      "gemini-3.6-flash": 1,
+      "gemini-3.5-flash-lite": 1
+    },
+    "models_by_task": {
+      "filter": "gemini-3.6-flash",
+      "translate": "gemini-3.5-flash-lite"
+    },
+    "model_attempts": [
+      {
+        "task": "filter",
+        "model": "gemini-3.6-flash",
+        "outcome": "ok"
+      },
+      {
+        "task": "translate",
+        "model": "gemini-3.5-flash-lite",
+        "outcome": "ok"
+      }
+    ],
+    "exhausted_models": [],
+    "demoted_models": [
+      "filter: gemini-3-flash-preview",
+      "translate: gemini-3.8-flash"
+    ],
+    "translate_budget_deferred": [
+      "gemini-3.6-flash"
+    ],
+    "gemini_region_blocked": false,
+    "errors_count": 0,
+    "gemini_retries": 0
   }
 ]
