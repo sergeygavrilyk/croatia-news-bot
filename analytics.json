@@ -1,67 +1,5 @@
 [
   {
-    "timestamp": "2026-10-13 15:01:12",
-    "execution_time": 474.9,
-    "funnel": {
-      "scraped_total": 35,
-      "scraped_by_source": {
-        "023": 10,
-        "Slobodna dalmacija": 15,
-        "Zadarski list": 10
-      },
-      "already_seen": 23,
-      "rejected_by_keywords": 1,
-      "duplicates_removed_by_ai": 22,
-      "rejection_reasons_list": [
-        "• Plavci velikog srca: šibenski policajci ... ➡️ <b>Побут інших міст</b>",
-        "• Zbog radova gužve i kolone prema Vežici... ➡️ <b>Побут інших міст</b>",
-        "• Očitovanje Općine Župa dubrovačka na pri... ➡️ <b>Побут інших міст</b>",
-        "• Zašto pire krumpir ispadne vodenast i št... ➡️ <b>Світовий шум</b>",
-        "• Crikvenica predstavila ulaganja u djecu ... ➡️ <b>Побут інших міст</b>",
-        "• Provjerite koje su ulice u gradu u srije... ➡️ <b>Побут інших міст</b>",
-        "• U Rijeci otvorena izložba o obnovi monum... ➡️ <b>Побут інших міст</b>",
-        "• Gastro spektakl u Dubrovniku: od španjol... ➡️ <b>Побут інших міст</b>",
-        "• Flying Tiger Copenhagen širi se na tri n... ➡️ <b>Реклама</b>",
-        "• NASA-in rover Perseverance oborio rekord... ➡️ <b>Інші країни / Світовий шум</b>",
-        "• Hit terapija na otvorenome: do 200 pacij... ➡️ <b>Дубль попередньої історії</b>",
-        "• Projektom “FAST Heroes” osnovci uče o mo... ➡️ <b>Побут інших міст</b>",
-        "• Donirajte dokumente i zapise iz Domovins... ➡️ <b>Побут інших міст</b>",
-        "• Novi sjaj za igrališta i dvorane; Župani... ➡️ <b>Спорт</b>",
-        "• Riječka konferencija o mentalnom zdravlj... ➡️ <b>Побут інших міст</b>",
-        "• Prikuplja se građa o 163. brigadi za izr... ➡️ <b>Дубль новини 14</b>",
-        "• Punjač koji danima stoji u utičnici troš... ➡️ <b>Світовий шум</b>",
-        "• Udruga Uzor širi socijalne usluge: Podrš... ➡️ <b>Побут інших міст</b>",
-        "• Hrvatski Rafale presreo malteški putničk... ➡️ <b>Дубль новини 12</b>",
-        "• Verne u Zagrebu testira robotaksi bez ik... ➡️ <b>Побут інших міст</b>",
-        "• Uspjeh članova KPA Kostrena: Palinić naj... ➡️ <b>Спорт</b>",
-        "• Nevjerojatna priča iz Mlina: pronašao ih... ➡️ <b>Побут інших міст</b>"
-      ]
-    },
-    "backlog": {
-      "total_size": 70,
-      "sources": {
-        "Zadarski list": 24,
-        "Slobodna dalmacija": 32,
-        "023": 14
-      }
-    },
-    "published": {
-      "total": 3,
-      "ukraine_priority": 0,
-      "with_images": 0,
-      "text_only": 3,
-      "sources": {
-        "023": 3
-      }
-    },
-    "models_used": {
-      "gemini-3.5-flash-lite": 2,
-      "gemini-3.6-flash": 0
-    },
-    "errors_count": 0,
-    "gemini_retries": 2
-  },
-  {
     "timestamp": "2026-10-13 16:01:16",
     "execution_time": 319.4,
     "funnel": {
@@ -5753,5 +5691,98 @@
     "exhausted_models": [],
     "errors_count": 0,
     "gemini_retries": 4
+  },
+  {
+    "timestamp": "2026-10-31 09:01:11",
+    "execution_time": 233.0,
+    "funnel": {
+      "scraped_total": 35,
+      "scraped_by_source": {
+        "023": 10,
+        "Slobodna dalmacija": 15,
+        "Zadarski list": 10
+      },
+      "already_seen": 4,
+      "rejected_by_keywords": 10,
+      "rejected_by_rule": {
+        "igrač": 1,
+        "sportska": 2,
+        "тег RSS sport": 1,
+        "sportskom": 1,
+        "oglasnika": 1,
+        "video": 1,
+        "foto": 2,
+        "sport": 1
+      },
+      "unclassified_by_ai": 0,
+      "duplicates_removed_by_ai": 18,
+      "rejection_reasons_list": [
+        "• Urod bolji nego lani, ali troškovi lete u nebo; Porez na meljavu veći  → Дубль в історії | Сутності: Ante Vulin, Pakoštane, Zadarska županija, maslinovo ulje",
+        "• Kozalsko groblje čuva priče o staroj Rijeci. Nova monografija otkriva  → Побут інших міст | Сутності: Kozalsko groblje, Rijeka, Rosanna Turcinovich, Attilio Paulovich",
+        "• Mato Franković: Zbog takvih poput Udruge Spasimo male iznajmljivače ml → Побут інших міст | Сутності: Mato Franković, Dubrovnik, Udruga Spasimo male iznajmljivače",
+        "• Od sutra ovo morate imati upaljeno čim sjednete za volan: policija upo → Дубль в історії | Сутності: Hrvatska, policija, Zakon o sigurnosti prometa na cestama",
+        "• Svaki komadić prošao je kroz njihove ruke. Pogledajte kako se obnavlja → Побут інших міст | Сутності: Zagrebačka katedrala, Bokart Glass, Neven Kvesić, Daniel Kvesić",
+        "• Veliki korak za otok: počinje gradnja Inkluzivnog centra Korčula za dj → Побут інших міст | Сутності: Korčula, Blaž Pezo, Dubrovačko-neretvanska županija",
+        "• Dvadesetero virskih umirovljenika dobilo iskaznice za besplatni javni  → Побут інших міст | Сутності: Vir, Marin Radović, općinska vijećnica",
+        "• Raspad Vučićevog medijskog sustava. Ostavke na RTS-u i RTV-u, Mitrović → Геоблок | Сутності: Srbija, Aleksandar Vučić, RTS, RTV",
+        "• Dnevni red bez vijećničkih pitanja, SDP -u odbijena 4 amandmana na reb → Побут інших міст | Сутності: Katarina Doršner, Marin Krstulović, Gradsko vijeće, SDP",
+        "• Listopad se oprašta sunčanim danom do 18 stupnjeva, idući tjedan donos → Дубль в історії | Сутності: Zadar, bura, Vremenska prognoza",
+        "• Opatijski hotelski div ostvario 58,7 milijuna eura prihoda. Dobit mu j → Побут інших міст | Сутності: Liburnia Riviera Hoteli, LRH, Zagrebačka burza, Opatija",
+        "• Zasjeda dubrovačko Gradsko vijeće: na dnevnom redu rebelanas ovogodišn → Побут інших міст | Сутності: Gradsko vijeće, Dubrovnik, Proračun",
+        "• Šoping obavite danas. Na blagdan Svih svetih na riječkom području nema → Побут інших міст | Сутності: Rijeka, Svi sveti, trgovine, blagdan",
+        "• Drama oko mega resorta u Cavtatu seli u Bruxelles: Sumnja se na nezako → Дубль в історії | Сутності: Marina Resort Cavtat, Europski parlament, Gordan Bosanac, Natura 2000",
+        "• Dvojite oko toga da li kupiti barku za ribolov ili ostati obalni ribol → Світовий шум | Сутності: ribolov, bark, obalni ribolov",
+        "• Prijetnje i uvrede novinarima otvaraju pitanje sigurnosti i slobode go → Побут інших міст | Сутності: Split, Općinski sud, Siniša Vuković",
+        "• UZNEMIRUJUĆE: ‘Slina im je išla na usta, tri psa su mi uginula u trenu → Побут інших міст | Сутності: Mokro Polje, Ervenik, Knin, Žarko Kostić",
+        "• Dobili lokacijsku dozvolu, a projekt im završio pred Europarlamentom:  → Дубль в історії | Сутності: Marina Resort Cavtat, Europski parlament, Gordan Bosanac, PETI"
+      ]
+    },
+    "backlog": {
+      "total_size": 0,
+      "sources": {}
+    },
+    "published": {
+      "total": 1,
+      "ukraine_priority": 0,
+      "with_images": 1,
+      "text_only": 0,
+      "og_images_found": 0,
+      "sources": {
+        "Slobodna dalmacija": 1
+      }
+    },
+    "models_used": {
+      "gemini-3.5-flash-lite": 1,
+      "gemini-3.6-flash": 1
+    },
+    "models_by_task": {
+      "filter": "gemini-3.5-flash-lite",
+      "translate": "gemini-3.6-flash"
+    },
+    "model_attempts": [
+      {
+        "task": "filter",
+        "model": "gemini-3-flash-preview",
+        "outcome": "unavailable"
+      },
+      {
+        "task": "filter",
+        "model": "gemini-3.5-flash-lite",
+        "outcome": "ok"
+      },
+      {
+        "task": "translate",
+        "model": "gemini-3.8-flash",
+        "outcome": "unavailable"
+      },
+      {
+        "task": "translate",
+        "model": "gemini-3.6-flash",
+        "outcome": "ok"
+      }
+    ],
+    "exhausted_models": [],
+    "errors_count": 0,
+    "gemini_retries": 2
   }
 ]
