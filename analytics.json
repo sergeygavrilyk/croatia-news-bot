@@ -1,64 +1,5 @@
 [
   {
-    "timestamp": "2026-10-14 13:01:07",
-    "execution_time": 172.5,
-    "funnel": {
-      "scraped_total": 35,
-      "scraped_by_source": {
-        "023": 10,
-        "Slobodna dalmacija": 15,
-        "Zadarski list": 10
-      },
-      "already_seen": 5,
-      "rejected_by_keywords": 9,
-      "duplicates_removed_by_ai": 18,
-      "rejection_reasons_list": [
-        "• Nautički spektakl u Biogradu: na sajam s... ➡️ <b>Локальна туристична подія в іншому місті</b>",
-        "• Koliko doista trebamo spavati? Spavanje ... ➡️ <b>Світовий шум: поради щодо здоров'я та сну</b>",
-        "• Tko prijavi njemu pola kazne: Rijeka uvo... ➡️ <b>Побут чужого міста (Рієка)</b>",
-        "• U četvrtak tri kruzera u Gružu i jedan i... ➡️ <b>Побут чужого міста (Дубровник)</b>",
-        "• Hakeri napali hladnjake u francuskim trg... ➡️ <b>Геоблок: події у Франції, що не стосуються українців</b>",
-        "• Hotel Jadran ponovno otvoren, to je prvi... ➡️ <b>Побут чужого міста (Рієка)</b>",
-        "• Idete automobilom izvan Hrvatske? Evo u ... ➡️ <b>Загальна юридична порада без прив'язки до Задара чи українців</b>",
-        "• Umrla i peta žrtva omiškog požara, od lj... ➡️ <b>Побут та кримінал іншого міста (Спліт/Оміш)</b>",
-        "• Kod srbijanskog kamiondžije otkriveno vi... ➡️ <b>Зовнішній кримінал, не пов'язаний із Задаром чи біженцями</b>",
-        "• ALARM ZA VODU U LICI Opasnih kemikalija ... ➡️ <b>Побут іншого регіону (Лика)</b>",
-        "• Uskok pokrenuo istragu protiv Šimunića z... ➡️ <b>Політичний скандал в іншому місті (Орославлє)</b>",
-        "• Policija objavila rat električnim romobi... ➡️ <b>Загальнонаціональна новина без пріоритету для Задара</b>",
-        "• Potpora za svako novorođeno dijete u Hrv... ➡️ <b>Загальнонаціональна економічна новина без специфіки Задара</b>",
-        "• Knin oborio rekord: policija ispisala 15... ➡️ <b>Побут іншого міста (Книн)</b>",
-        "• Ako vam se soba sporo zagrijava, problem... ➡️ <b>Світовий шум: побутові поради</b>",
-        "• Ružić: Pregovori sa sindikatima javnih i... ➡️ <b>Загальнонаціональні переговори в Загребі</b>",
-        "• Bivši šef Hrvatskih cesta Josip Škorić ć... ➡️ <b>Загальнонаціональна корупційна справа</b>",
-        "• Gradonačelnik o situaciji na Pilama: Ube... ➡️ <b>Побут чужого міста (Дубровник)</b>"
-      ]
-    },
-    "backlog": {
-      "total_size": 51,
-      "sources": {
-        "Zadarski list": 11,
-        "023": 10,
-        "Slobodna dalmacija": 30
-      }
-    },
-    "published": {
-      "total": 3,
-      "ukraine_priority": 0,
-      "with_images": 2,
-      "text_only": 1,
-      "sources": {
-        "Slobodna dalmacija": 2,
-        "023": 1
-      }
-    },
-    "models_used": {
-      "gemini-3.5-flash-lite": 2,
-      "gemini-3.6-flash": 0
-    },
-    "errors_count": 0,
-    "gemini_retries": 0
-  },
-  {
     "timestamp": "2026-10-14 14:01:14",
     "execution_time": 183.3,
     "funnel": {
@@ -6110,6 +6051,117 @@
     ],
     "exhausted_models": [],
     "demoted_models": [],
+    "translate_budget_deferred": [
+      "gemini-3.5-flash-lite",
+      "gemini-3.6-flash"
+    ],
+    "gemini_region_blocked": false,
+    "errors_count": 0,
+    "gemini_retries": 3
+  },
+  {
+    "timestamp": "2026-10-31 17:01:15",
+    "execution_time": 204.6,
+    "funnel": {
+      "scraped_total": 35,
+      "scraped_by_source": {
+        "023": 10,
+        "Slobodna dalmacija": 15,
+        "Zadarski list": 10
+      },
+      "already_seen": 17,
+      "rejected_by_keywords": 14,
+      "rejected_by_rule": {
+        "sportova": 2,
+        "тег RSS lifestyle": 2,
+        "igrač": 1,
+        "utakmica": 1,
+        "тег RSS nogomet": 5,
+        "тег RSS košarka": 3
+      },
+      "unclassified_by_ai": 0,
+      "duplicates_removed_by_ai": 2,
+      "rejection_reasons_list": [
+        "• Šibenski gradonačelnik o Miši - ‘Glas koji je obilježio generacije i p → Дубль (Реакція мерії Шибеника на смерть Мішо Ковача) | Сутності: Željko Burić, Mišo Kovač, Šibenik, Split",
+        "• U Mjesecu hrvatske knjige, Dubrovačke knjižnice ‘opraštaju‘ zakasninu  → Побут інших міст (Локальна програма бібліотеки у Дубровнику) | Сутності: Dubrovačke knjižnice, Dubrovnik, Mjesec hrvatske knjige"
+      ],
+      "rejected_by_reason": {
+        "Дубль": 1,
+        "Побут інших міст": 1
+      },
+      "updates_marked": 0,
+      "already_rejected": 10,
+      "rejected_by_code_examples": [
+        "[sportova] Preminuo Mišo Kovač, šibenski pjevač koji je prodao više od 20 milijuna ploča, a brkove pustio nakon",
+        "[тег RSS lifestyle] Kamenac iz kuhala skida limunska kiselina: litra vode, dvije vrećice i sat vremena",
+        "[тег RSS lifestyle] Kako jednim listom toaletnog papira provjeriti odvodi li ventilator vlagu iz kupaonice",
+        "[igrač] Nije pogodio nijedan broj, a osvojio je 80.000 eura: Zagrepčanin je s listićem od 7,80 eura promašio",
+        "[utakmica] Pogledajte kako se Poljud oprostio od voljenog Miše. Nakon tužne vijesti, svi su zapjevali njegov hi",
+        "[тег RSS nogomet] Grobničan dvaput vodio pa primio četiri pogotka i doživio poraz od Zagorca",
+        "[sportova] Preminuo Mišo Kovač",
+        "[тег RSS nogomet] Lokomotiva nije uspjela svladati Pazinku u trećeligaškom derbiju. Pomorcu samo bod u Labinu",
+        "[тег RSS košarka] Crikveničani uvjerljivo poraženi kod Novog Zagreba",
+        "[тег RSS nogomet] Hajduk zabio pet pogodaka Gorici. Sve je bilo riješeno nakon prvoga poluvremena",
+        "[тег RSS košarka] Košarkaši Kvarnera upisali četvrtu pobjedu u nizu. Na Zametu je pao i fenjeraš",
+        "[тег RSS nogomet] Novi posrtaj Manchester Uniteda.  Crveni vragovi ne znaju za pobjedu od 10. rujna",
+        "[тег RSS košarka] Papa Lav primio svoju staru fakultetsku košarkašku momčad i njihove protivnike",
+        "[тег RSS nogomet] Orijent u 18 minuta nadoknadio dva gola zaostatka i ostvario novu domaću pobjedu"
+      ]
+    },
+    "backlog": {
+      "total_size": 0,
+      "sources": {}
+    },
+    "published": {
+      "total": 2,
+      "ukraine_priority": 0,
+      "with_images": 2,
+      "text_only": 0,
+      "og_images_found": 0,
+      "sources": {
+        "Zadarski list": 1,
+        "Slobodna dalmacija": 1
+      }
+    },
+    "models_used": {
+      "gemini-3.6-flash": 1,
+      "gemini-3.5-flash-lite": 1
+    },
+    "models_by_task": {
+      "filter": "gemini-3.6-flash",
+      "translate": "gemini-3.5-flash-lite"
+    },
+    "model_attempts": [
+      {
+        "task": "filter",
+        "model": "gemini-3.6-flash",
+        "outcome": "ok"
+      },
+      {
+        "task": "translate",
+        "model": "gemini-3.8-flash",
+        "outcome": "unavailable"
+      },
+      {
+        "task": "translate",
+        "model": "gemini-3.6-flash",
+        "outcome": "unavailable"
+      },
+      {
+        "task": "translate",
+        "model": "gemini-3.6-flash",
+        "outcome": "unavailable"
+      },
+      {
+        "task": "translate",
+        "model": "gemini-3.5-flash-lite",
+        "outcome": "ok"
+      }
+    ],
+    "exhausted_models": [],
+    "demoted_models": [
+      "filter: gemini-3-flash-preview"
+    ],
     "translate_budget_deferred": [
       "gemini-3.5-flash-lite",
       "gemini-3.6-flash"
