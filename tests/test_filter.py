@@ -5,7 +5,7 @@ import pytest
 
 
 @pytest.mark.parametrize("title, url, expected", [
-    ("FOTO Veliki požar kod Zadra, vatrogasci na terenu", "https://a.hr/x", "foto"),
+    ("Košarkaši Zadra slavili u derbiju protiv Splita", "https://a.hr/x", "košarkaši"),
     ("Nogometaši Zadra slavili u derbiju protiv Splita", "https://a.hr/x", "nogometaši"),
     ("Novi most u Zadru otvoren za promet od danas", "https://a.hr/sport/x", "URL /sport/"),
     ("UŽAS U ZADRU", "https://a.hr/x", "короткий текст"),
