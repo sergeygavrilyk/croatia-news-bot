@@ -1,64 +1,5 @@
 [
   {
-    "timestamp": "2026-10-14 14:01:14",
-    "execution_time": 183.3,
-    "funnel": {
-      "scraped_total": 35,
-      "scraped_by_source": {
-        "023": 10,
-        "Slobodna dalmacija": 15,
-        "Zadarski list": 10
-      },
-      "already_seen": 7,
-      "rejected_by_keywords": 5,
-      "duplicates_removed_by_ai": 18,
-      "rejection_reasons_list": [
-        "• Koliko doista trebamo spavati? Spavanje ... ➡️ <b>Світовий шум</b>",
-        "• Kod Pomene se nasukala jedrilica, jaki u... ➡️ <b>Побут чужих міст</b>",
-        "• Grad Rijeka povećava sufinanciranje dadi... ➡️ <b>Побут чужих міст</b>",
-        "• Hakeri napali hladnjake u francuskim trg... ➡️ <b>Інші країни</b>",
-        "• Preminula poznata dubrovačka glazbenica ... ➡️ <b>Побут чужих міст</b>",
-        "• Udruga Žmergo poziva sve mlade u Opatiji... ➡️ <b>Побут чужих міст</b>",
-        "• Idete automobilom izvan Hrvatske? Evo u ... ➡️ <b>Історія (вже відома інформація)</b>",
-        "• Šimunić o istrazi Uskoka: “Nikad od niko... ➡️ <b>Побут чужих міст</b>",
-        "• ALARM ZA VODU U LICI Opasnih kemikalija ... ➡️ <b>Побут чужих міст</b>",
-        "• Alfa Romeo u Parizu predstavio koncept k... ➡️ <b>Інші країни</b>",
-        "• Gusti dim od požara na Jakljanu vidi se ... ➡️ <b>Побут чужих міст</b>",
-        "• Gradsko groblje sv. Vida u Senju proglaš... ➡️ <b>Побут чужих міст</b>",
-        "• Ako vam se soba sporo zagrijava, problem... ➡️ <b>Світовий шум</b>",
-        "• Očekuju se ogromne gužve: u Dubrovnik u ... ➡️ <b>Побут чужих міст</b>",
-        "• Tko prijavi njemu pola kazne: Rijeka uvo... ➡️ <b>Побут чужих міст</b>",
-        "• Mladen Ančić preispituje dolazak Hrvata ... ➡️ <b>Історія (вже відома інформація)</b>",
-        "• Hotel Jadran ponovno otvoren, to je prvi... ➡️ <b>Побут чужих міст</b>",
-        "• Dominik Valić uoči plesnog spektakla u P... ➡️ <b>Побут чужих міст</b>"
-      ]
-    },
-    "backlog": {
-      "total_size": 53,
-      "sources": {
-        "Slobodna dalmacija": 34,
-        "Zadarski list": 10,
-        "023": 9
-      }
-    },
-    "published": {
-      "total": 3,
-      "ukraine_priority": 0,
-      "with_images": 2,
-      "text_only": 1,
-      "sources": {
-        "Slobodna dalmacija": 2,
-        "023": 1
-      }
-    },
-    "models_used": {
-      "gemini-3.5-flash-lite": 2,
-      "gemini-3.6-flash": 0
-    },
-    "errors_count": 0,
-    "gemini_retries": 0
-  },
-  {
     "timestamp": "2026-10-14 15:01:12",
     "execution_time": 169.3,
     "funnel": {
@@ -6169,5 +6110,100 @@
     "gemini_region_blocked": false,
     "errors_count": 0,
     "gemini_retries": 3
+  },
+  {
+    "timestamp": "2026-10-31 20:01:11",
+    "execution_time": 146.6,
+    "funnel": {
+      "scraped_total": 35,
+      "scraped_by_source": {
+        "023": 10,
+        "Slobodna dalmacija": 15,
+        "Zadarski list": 10
+      },
+      "already_seen": 16,
+      "rejected_by_keywords": 9,
+      "rejected_by_rule": {
+        "тег RSS lifestyle": 3,
+        "sportova": 1,
+        "utakmica": 1,
+        "URL /sport/": 2,
+        "тег RSS nogomet": 2
+      },
+      "unclassified_by_ai": 0,
+      "duplicates_removed_by_ai": 9,
+      "rejection_reasons_list": [
+        "• SMOi od Frankovića traži dokaz ili ispriku: \"Ako se neutemeljene tvrdn → Побут інших міст (Конфлікт щодо оренди житла в Дубровнику) | Сутності: SMOi, Mato Franković, Dubrovnik, Vedran Tomić",
+        "• Oproštaj od Miše Kovača: Otišao je glas Dalmacije i simbol jednog vrem → Вже публікувалось (Співчуття щодо смерті Мішо Ковача) | Сутності: Mišo Kovač, Andrej Plenković, Željko Burić, Šibenik",
+        "• \"Bio je vjeran sebi, odan Damlaciji\", \"Nije mu trebala reklama. Digne  → Вже публікувалось (Реакції політиків на смерть Мішо Ковача) | Сутності: Mišo Kovač, Mato Franković, Branko Bačić, Božo Lasić",
+        "• Plenković: Mišo Kovač više je od pjevača, postao je simbol zavičaja i  → Вже публікувалось (Співчуття прем'єр-міністра щодо смерті Мішо Ковача) | Сутності: Andrej Plenković, Mišo Kovač, Hrvatska",
+        "• Kolege o glazbenoj legendi, Tereza: ‘On je stvarno bio veličina. Dugo  → Вже публікувалось (Спогади колег-музикантів про Мішо Ковача) | Сутності: Mišo Kovač, Tereza Kesovija, Dražen Zečić, Neno Ninčević",
+        "• Jandroković: Mišo je bio neponovljiva glazbena osobnost → Вже публікувалось (Співчуття спікера парламенту про смерть Ковача) | Сутності: Gordan Jandroković, Mišo Kovač, Hrvatski sabor",
+        "• Na Gen Zi okupljanjima u Njemačkoj znatno manje sudionika od najavljen → Геоблок (Протести молоді в Німеччині) | Сутності: Gen Z regelt, Njemačka, Berlin, Muenchen",
+        "• Nagrada Predrag Matvejević za “Taksim bop” Karla Ilića → Не за тематикою (Регіональна літературна премія) | Сутності: Karlo Ilić, Taksim bop, Predrag Matvejević, Ex libris",
+        "• Vučić nakon poraza na izborima ugostio bivšeg mađarskog premijera Orba → Геоблок (Зустріч Вучича та Орбана в Белграді) | Сутності: Aleksandar Vučić, Viktor Orban, Beograd, Srbija"
+      ],
+      "rejected_by_reason": {
+        "Побут інших міст": 1,
+        "Вже публікувалось": 5,
+        "Геоблок": 2,
+        "Не за тематикою": 1
+      },
+      "updates_marked": 0,
+      "already_rejected": 10,
+      "rejected_by_code_examples": [
+        "[тег RSS lifestyle] Koliko šetnje treba psu: veterinarka objašnjava pravu mjeru za štence, odrasle i starije pse",
+        "[sportova] Preminuo Mišo Kovač, šibenski pjevač koji je prodao više od 20 milijuna ploča, a brkove pustio nakon",
+        "[тег RSS lifestyle] Kamenac iz kuhala skida limunska kiselina: litra vode, dvije vrećice i sat vremena",
+        "[тег RSS lifestyle] Kako jednim listom toaletnog papira provjeriti odvodi li ventilator vlagu iz kupaonice",
+        "[utakmica] Pogledajte kako se Poljud oprostio od voljenog Miše. Nakon tužne vijesti, svi su zapjevali njegov hi",
+        "[URL /sport/] Vaterpolisti Primorja EB ostvarili uvjerljivu pobjedu u Splitu. Riječani stisnuli gas u posljednjoj ",
+        "[тег RSS nogomet] Senzacija kola, Rudeš srušio Dinamo! Pobjedu mu je donio bivši igrač Modrih",
+        "[URL /sport/] Futsalska momčad Rijeke s deset pogodaka u mreži Splićana krenula u obranu naslova osvajača Kupa Hrv",
+        "[тег RSS nogomet] Matanović pogotkom pokrenuo Freiburg prema pobjedi kod Augsburga"
+      ]
+    },
+    "backlog": {
+      "total_size": 0,
+      "sources": {}
+    },
+    "published": {
+      "total": 0,
+      "ukraine_priority": 0,
+      "with_images": 0,
+      "text_only": 0,
+      "og_images_found": 0,
+      "sources": {}
+    },
+    "models_used": {
+      "gemini-3.6-flash": 1
+    },
+    "models_by_task": {
+      "filter": "gemini-3.6-flash",
+      "translate": null
+    },
+    "model_attempts": [
+      {
+        "task": "filter",
+        "model": "gemini-3-flash-preview",
+        "outcome": "unavailable"
+      },
+      {
+        "task": "filter",
+        "model": "gemini-3.6-flash",
+        "outcome": "unavailable"
+      },
+      {
+        "task": "filter",
+        "model": "gemini-3.6-flash",
+        "outcome": "ok"
+      }
+    ],
+    "exhausted_models": [],
+    "demoted_models": [],
+    "translate_budget_deferred": [],
+    "gemini_region_blocked": false,
+    "errors_count": 0,
+    "gemini_retries": 2
   }
 ]
