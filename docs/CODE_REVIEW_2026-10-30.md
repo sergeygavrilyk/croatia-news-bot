@@ -36,8 +36,8 @@
 |---|---|---|---|
 | Фіксовані категорії відхилення + пояснення ✅ PR #16 | `REJECTION_CATEGORIES`, `RejectedItem.reason: Literal[…]`, `detail`, `normalize_reason` | D-08: 39 формулювань → 6–8 категорій, нормальна статистика | HUMAN (категорії — під кроки хорватського промпту: Дублікат, Вже публікувалось, Спорт, Реклама, Побут інших міст, Геоблок, Світовий шум, Не за тематикою) |
 | Позначка «оновлено» від фільтра ✅ PR #16 | `NewsFilterResponse.updates`, `apply_update_prefix` | L6 | HUMAN (промпт) |
-| Безпечний HTML замість відхилення | `sanitize_telegram_html`, `crop_html` | менше відхилених перекладів через незакритий тег | PROPOSE |
-| Тижневий звіт | `build_weekly_report` | дані є в `analytics.json` | PROPOSE (I-04) |
+| Безпечний HTML замість відхилення ⏳ PR #19 | `sanitize_telegram_html`, `crop_html` | менше відхилених перекладів через незакритий тег | PROPOSE |
+| Тижневий звіт ⏳ PR #19 | `build_weekly_report` | дані є в `analytics.json` | PROPOSE (I-04) |
 
 ### З хорватського → у молдовський
 JSON-переклад з перевіркою ID і зіставленням (`TranslationResponse`, `_remap_translation_ids`), сувора перевірка перекладу (`validate_translation_strict`), повтор моделі при «чужих» ID, код виходу лише для критичних помилок.
