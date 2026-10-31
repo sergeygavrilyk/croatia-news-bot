@@ -1,64 +1,5 @@
 [
   {
-    "timestamp": "2026-10-14 10:01:11",
-    "execution_time": 168.1,
-    "funnel": {
-      "scraped_total": 35,
-      "scraped_by_source": {
-        "023": 10,
-        "Slobodna dalmacija": 15,
-        "Zadarski list": 10
-      },
-      "already_seen": 10,
-      "rejected_by_keywords": 0,
-      "duplicates_removed_by_ai": 19,
-      "rejection_reasons_list": [
-        "• Kijev tvrdi da je Starlink poremetio bor... ➡️ <b>ГЕОБЛОК: Події в Україні не стосуються напряму Задара чи Хорватії.</b>",
-        "• Ante je otac petero djece, nakon nesreće... ➡️ <b>Побут інших міст: подія у Дрніші не належить до Задара.</b>",
-        "• Šef smjene u dubrovačkom restoranu ukrao... ➡️ <b>Побут інших міст: кримінал у Дубровнику.</b>",
-        "• Stari stanovi u deset godina poskupjeli ... ➡️ <b>Історія: повторення чи загальна тема ринку нерухомості без нових суттєвих оновлень чи зв'язку із Задаром.</b>",
-        "• Nesvakidašnji paket na Mljetu: policija ... ➡️ <b>Побут інших міст: подія на Млєті.</b>",
-        "• Žena je dvaput zvala policiju u pomoć, a... ➡️ <b>Побут інших міст: кримінал та політика у Слатині та Загребі.</b>",
-        "• Od Firefoxa do svjetske pozornice; Pozna... ➡️ <b>Історія / Дублікат або локальна подія розважального характеру поза пріоритетом.</b>",
-        "• Tragedija u Župi dubrovačkoj: u teškoj p... ➡️ <b>Побут інших міст: аварія у Жупі дубровацькій.</b>",
-        "• Dominik Valić uoči plesnog spektakla u P... ➡️ <b>Побут інших міст: культурна подія у Рієці.</b>",
-        "• Skupio sve moguće prekršaje; 38-godišnja... ➡️ <b>Історія: схожий інцидент з водієм вже висвітлювався в історії, дрібний локальний кримінал.</b>",
-        "• Evo prilike za biznis! Vlada daje konces... ➡️ <b>Дубль: повністю дублює новину під ID 4 про конcesію у Селінах.</b>",
-        "• U Istri pronađene kosti dinosaura ispod ... ➡️ <b>Побут інших міст: знахідка динозаврів в Істрії.</b>",
-        "• Maloljetni provalnici upali u školu, u Š... ➡️ <b>Побут інших міст: зведення поліції у Шибенику та Водіцах.</b>",
-        "• Plenković o oporbenom pokušaju opoziva: ... ➡️ <b>Історія: повторення теми вотуму недовіри уряду.</b>",
-        "• Raspisan natječaj za projektnu dokumenta... ➡️ <b>Побут інших міст: лікарня у Шибенику.</b>",
-        "• Prosječna plaća u trećem kvartalu osjetn... ➡️ <b>Історія: загальнонаціональна статистика зарплат.</b>",
-        "• Mlada djevojka (23) upadala u kuće stari... ➡️ <b>Історія: дублює ранішу новину з історій про затримання 23-річної крадійки в Задарі.</b>",
-        "• Od požara i potresa do svijeta poznatih:... ➡️ <b>Світовий шум / медіа: інтерв'ю з телеведучою.</b>",
-        "• Vlada u saborsku proceduru uputila novi ... ➡️ <b>Історія: загальнодержавний закон про зниклих безвісти без прямої прив'язки до Задара.</b>"
-      ]
-    },
-    "backlog": {
-      "total_size": 41,
-      "sources": {
-        "Slobodna dalmacija": 22,
-        "023": 9,
-        "Zadarski list": 10
-      }
-    },
-    "published": {
-      "total": 3,
-      "ukraine_priority": 0,
-      "with_images": 0,
-      "text_only": 3,
-      "sources": {
-        "023": 3
-      }
-    },
-    "models_used": {
-      "gemini-3.5-flash-lite": 2,
-      "gemini-3.6-flash": 0
-    },
-    "errors_count": 0,
-    "gemini_retries": 0
-  },
-  {
     "timestamp": "2026-10-14 11:01:05",
     "execution_time": 165.8,
     "funnel": {
@@ -6025,5 +5966,84 @@
     "gemini_region_blocked": false,
     "errors_count": 0,
     "gemini_retries": 2
+  },
+  {
+    "timestamp": "2026-10-31 14:01:06",
+    "execution_time": 22.4,
+    "funnel": {
+      "scraped_total": 35,
+      "scraped_by_source": {
+        "023": 10,
+        "Slobodna dalmacija": 15,
+        "Zadarski list": 10
+      },
+      "already_seen": 25,
+      "rejected_by_keywords": 5,
+      "rejected_by_rule": {
+        "igrač": 1,
+        "тег RSS sport": 1,
+        "sportom": 1,
+        "šport": 1,
+        "nogomet": 1
+      },
+      "unclassified_by_ai": 0,
+      "duplicates_removed_by_ai": 5,
+      "rejection_reasons_list": [
+        "• Na popisu poreznih dužnika iz Zadarske županije 1455 imena, najveći po → Вже публікувалось (Публікація списку боржників Податкової служби) | Сутності: Porezna uprava, Zadarska županija, 31. listopada, 1455 imena",
+        "• Što se događa na vijaduktu iznad crikveničkih škola? Hrvatske ceste ip → Побут інших міст (Цріквеніца) | Сутності: Crikvenica, vijadukt Dubračina, Hrvatske ceste, Sitolor",
+        "• Usvojene dvije ključne odluke, može se krenuti s zapošljavanjem u novo → Побут інших міст (Дубровник) | Сутності: Dubrovnik, Medarevo, Centar Ragusa, Dživo Brčić",
+        "• Iranski vrhovni vođa naredio vojsci odgovor u slučaju napada: ‘Više ne → Геоблок (Іран) | Сутності: Modžtaba Hamenei, Iran, SAD",
+        "• Nakon teškog izbornog poraza SNS se okreće – Vučiću. Jednoglasno ga pr → Геоблок (Сербія) | Сутності: SNS, Aleksandar Vučić, Srbija"
+      ],
+      "rejected_by_reason": {
+        "Вже публікувалось": 1,
+        "Побут інших міст": 2,
+        "Геоблок": 2
+      },
+      "updates_marked": 0,
+      "already_rejected": 14,
+      "rejected_by_code_examples": [
+        "[igrač] Nije pogodio nijedan broj, a osvojio je 80.000 eura: Zagrepčanin je s listićem od 7,80 eura promašio",
+        "[тег RSS sport] Zadar se u Dubrovniku zagrijao tek u drugoj četvrtini, a onda prešao granicu od sto poena",
+        "[sportom] Osnovan poseban Odjel za izdavanje građevinskih dozvola, istodobno ukinut dosadašnji Odjel za gospod",
+        "[šport] Evo gdje će Dubrovnik potrošiti milijune eura prema prijedlogu rebelansa ovogodišnjeg proračuna",
+        "[nogomet] Trumpova administracija pokrenula istragu zbog neobičnog kandidata. Zove se isto kao republikanski s"
+      ]
+    },
+    "backlog": {
+      "total_size": 0,
+      "sources": {}
+    },
+    "published": {
+      "total": 0,
+      "ukraine_priority": 0,
+      "with_images": 0,
+      "text_only": 0,
+      "og_images_found": 0,
+      "sources": {}
+    },
+    "models_used": {
+      "gemini-3.6-flash": 1
+    },
+    "models_by_task": {
+      "filter": "gemini-3.6-flash",
+      "translate": null
+    },
+    "model_attempts": [
+      {
+        "task": "filter",
+        "model": "gemini-3.6-flash",
+        "outcome": "ok"
+      }
+    ],
+    "exhausted_models": [],
+    "demoted_models": [
+      "filter: gemini-3-flash-preview",
+      "translate: gemini-3.8-flash"
+    ],
+    "translate_budget_deferred": [],
+    "gemini_region_blocked": false,
+    "errors_count": 0,
+    "gemini_retries": 0
   }
 ]
