@@ -1,63 +1,5 @@
 [
   {
-    "timestamp": "2026-10-14 12:01:23",
-    "execution_time": 172.1,
-    "funnel": {
-      "scraped_total": 35,
-      "scraped_by_source": {
-        "023": 10,
-        "Slobodna dalmacija": 15,
-        "Zadarski list": 10
-      },
-      "already_seen": 7,
-      "rejected_by_keywords": 2,
-      "duplicates_removed_by_ai": 17,
-      "rejection_reasons_list": [
-        "• Ante je otac petero djece, nakon nesreće... ➡️ <b>Побут інших міст</b>",
-        "• Kod srbijanskog kamiondžije otkriveno vi... ➡️ <b>Інші країни / Геоблок</b>",
-        "• ALARM ZA VODU U LICI Opasnih kemikalija ... ➡️ <b>Побут інших міст</b>",
-        "• Uskok pokrenuo istragu protiv Šimunića z... ➡️ <b>Побут інших міст</b>",
-        "• Gradonačelnik o situaciji na Pilama: Ube... ➡️ <b>Побут інших міст</b>",
-        "• Hrvatski znanstvenici otkrili kako se st... ➡️ <b>Світовий шум</b>",
-        "• Ako vam se soba sporo zagrijava, problem... ➡️ <b>Світовий шум</b>",
-        "• Kad će se riješiti problem parkinga po g... ➡️ <b>Побут інших міст</b>",
-        "• Gradonačelnica primila uspješne mlade ko... ➡️ <b>Спорт</b>",
-        "• Franković: Park & Ride na Pobrežju olakš... ➡️ <b>Побут інших міст</b>",
-        "• Rea se ukopala na mjestu, automehaničara... ➡️ <b>Побут інших міст</b>",
-        "• Drastično se povećavaju kazne: krivo par... ➡️ <b>Дубль новини ID 7</b>",
-        "• Droga iz Njemačke stigla na Mljet poštan... ➡️ <b>Побут інших міст</b>",
-        "• U Rijeci zaustavljen vozač zbog banalnog... ➡️ <b>Побут інших міст</b>",
-        "• Tragedija u Župi: 27-godišnjak udario u ... ➡️ <b>Побут інших міст</b>",
-        "• PFAS u Lici ispod granice u svim analizi... ➡️ <b>Дубль новини ID 4</b>",
-        "• Šef smjene u dubrovačkom restoranu ukrao... ➡️ <b>Побут інших міст</b>"
-      ]
-    },
-    "backlog": {
-      "total_size": 50,
-      "sources": {
-        "Slobodna dalmacija": 30,
-        "Zadarski list": 13,
-        "023": 7
-      }
-    },
-    "published": {
-      "total": 3,
-      "ukraine_priority": 0,
-      "with_images": 2,
-      "text_only": 1,
-      "sources": {
-        "023": 1,
-        "Slobodna dalmacija": 2
-      }
-    },
-    "models_used": {
-      "gemini-3.5-flash-lite": 2,
-      "gemini-3.6-flash": 0
-    },
-    "errors_count": 0,
-    "gemini_retries": 0
-  },
-  {
     "timestamp": "2026-10-14 13:01:07",
     "execution_time": 172.5,
     "funnel": {
@@ -6072,5 +6014,108 @@
     "gemini_region_blocked": false,
     "errors_count": 0,
     "gemini_retries": 1
+  },
+  {
+    "timestamp": "2026-10-31 16:01:08",
+    "execution_time": 167.2,
+    "funnel": {
+      "scraped_total": 35,
+      "scraped_by_source": {
+        "023": 10,
+        "Slobodna dalmacija": 15,
+        "Zadarski list": 10
+      },
+      "already_seen": 22,
+      "rejected_by_keywords": 9,
+      "rejected_by_rule": {
+        "тег RSS lifestyle": 2,
+        "igrač": 1,
+        "sportom": 1,
+        "тег RSS košarka": 2,
+        "тег RSS nogomet": 2,
+        "URL /sport/": 1
+      },
+      "unclassified_by_ai": 0,
+      "duplicates_removed_by_ai": 3,
+      "rejection_reasons_list": [
+        "• Dujmović poziva Peza, Frankovića, Miloslavića i Lasića: hitno krenimo  → Побут інших міст (Інфраструктура у Дубровнику) | Сутності: Valentin Dujmović, Mato Franković, Dubrovnik, залізниця",
+        "• Uništena klupa samo mjesec i pol nakon otvorenja obnovljenog parka → Побут інших міст (Пошкодження майна в Дубровнику) | Сутності: Park Gradac, Дубровник, знищена лавка, 4.4 млн євро",
+        "• Papa Lav XIV. donio važnu odluku za Međugorje → Геоблок (Подія у Боснії та Герцеговині) | Сутності: Папа Римський, Međugorje, Francesco Cavina, Боснія і Герцеговина"
+      ],
+      "rejected_by_reason": {
+        "Побут інших міст": 2,
+        "Геоблок": 1
+      },
+      "updates_marked": 0,
+      "already_rejected": 15,
+      "rejected_by_code_examples": [
+        "[тег RSS lifestyle] Kamenac iz kuhala skida limunska kiselina: litra vode, dvije vrećice i sat vremena",
+        "[тег RSS lifestyle] Kako jednim listom toaletnog papira provjeriti odvodi li ventilator vlagu iz kupaonice",
+        "[igrač] Nije pogodio nijedan broj, a osvojio je 80.000 eura: Zagrepčanin je s listićem od 7,80 eura promašio",
+        "[sportom] Osnovan poseban Odjel za izdavanje građevinskih dozvola, istodobno ukinut dosadašnji Odjel za gospod",
+        "[тег RSS košarka] Košarkaši Kvarnera upisali četvrtu pobjedu u nizu. Na Zametu je pao i fenjeraš",
+        "[тег RSS nogomet] Novi posrtaj Manchester Uniteda.  Crveni vragovi ne znaju za pobjedu od 10. rujna",
+        "[тег RSS košarka] Papa Lav primio svoju staru fakultetsku košarkašku momčad i njihove protivnike",
+        "[тег RSS nogomet] Orijent u 18 minuta nadoknadio dva gola zaostatka i ostvario novu domaću pobjedu",
+        "[URL /sport/] Riječki plivač Nikola Zdrilić nakon brojnih peripetija ipak osvojio zlato  posljednjeg dana EP-a"
+      ]
+    },
+    "backlog": {
+      "total_size": 0,
+      "sources": {}
+    },
+    "published": {
+      "total": 1,
+      "ukraine_priority": 0,
+      "with_images": 1,
+      "text_only": 0,
+      "og_images_found": 0,
+      "sources": {
+        "Slobodna dalmacija": 1
+      }
+    },
+    "models_used": {
+      "gemini-3.6-flash": 2
+    },
+    "models_by_task": {
+      "filter": "gemini-3.6-flash",
+      "translate": "gemini-3.6-flash"
+    },
+    "model_attempts": [
+      {
+        "task": "filter",
+        "model": "gemini-3-flash-preview",
+        "outcome": "unavailable"
+      },
+      {
+        "task": "filter",
+        "model": "gemini-3-flash-preview",
+        "outcome": "unavailable"
+      },
+      {
+        "task": "filter",
+        "model": "gemini-3.6-flash",
+        "outcome": "ok"
+      },
+      {
+        "task": "translate",
+        "model": "gemini-3.8-flash",
+        "outcome": "unavailable"
+      },
+      {
+        "task": "translate",
+        "model": "gemini-3.6-flash",
+        "outcome": "ok"
+      }
+    ],
+    "exhausted_models": [],
+    "demoted_models": [],
+    "translate_budget_deferred": [
+      "gemini-3.5-flash-lite",
+      "gemini-3.6-flash"
+    ],
+    "gemini_region_blocked": false,
+    "errors_count": 0,
+    "gemini_retries": 3
   }
 ]
