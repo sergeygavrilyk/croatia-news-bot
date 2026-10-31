@@ -1,64 +1,5 @@
 [
   {
-    "timestamp": "2026-10-14 07:01:12",
-    "execution_time": 166.8,
-    "funnel": {
-      "scraped_total": 35,
-      "scraped_by_source": {
-        "023": 10,
-        "Slobodna dalmacija": 15,
-        "Zadarski list": 10
-      },
-      "already_seen": 2,
-      "rejected_by_keywords": 1,
-      "duplicates_removed_by_ai": 19,
-      "rejection_reasons_list": [
-        "• Gospić jutros najhladniji u Hrvatskoj. T... ➡️ <b>Побут іншого міста, не стосується Задара</b>",
-        "• Poklon koji ispunjava sve želje, darujte... ➡️ <b>Реклама</b>",
-        "• Trump najavio opsežna istraživanja na Gr... ➡️ <b>Інші країни, геоблок</b>",
-        "• Dubrovnik povećava naknade za novorođenč... ➡️ <b>Побут іншого міста, не стосується Задара</b>",
-        "• Scenarist filma o šefu OpenAI-ja upozora... ➡️ <b>Світовий шум, технології</b>",
-        "• Frizerka s juga Dalmacije među najboljim... ➡️ <b>Інші країни / Світовий шум</b>",
-        "• Zašto kanabis kod nekih izaziva tjeskobu... ➡️ <b>Світовий шум, абстрактна наука</b>",
-        "• Znanstvenici izdvojili dvije glavne prij... ➡️ <b>Світовий шум, абстрактна наука</b>",
-        "• Dubrovački slikari Josip Škerlj, Mišo Ba... ➡️ <b>Побут іншого міста</b>",
-        "• Županija se oglasila o zapošljavanju biv... ➡️ <b>Побут іншого міста, не стосується Задара</b>",
-        "• Podignuta optužnica protiv 46-godišnjaka... ➡️ <b>Побут іншого міста, не стосується Задара</b>",
-        "• U Srbiji više od pola milijuna birača ne... ➡️ <b>Інші країни, геоблок</b>",
-        "• Apsurd sa slučajem jezivog ubojstva na o... ➡️ <b>Дубль існуючої історії / дрібні деталі</b>",
-        "• Promjena posla ili povišica? Ovi horosko... ➡️ <b>Світовий шум</b>",
-        "• Dio Župe u srijedu bez voda... ➡️ <b>Побут іншого міста, не стосується Задара</b>",
-        "• Jutra jedva iznad nule, preko dana do ug... ➡️ <b>Дубль події про погоду</b>",
-        "• Umjetnička galerija Dubrovnik poziva str... ➡️ <b>Побут іншого міста, не стосується Задара</b>",
-        "• Pitanje se svodi na “da Bibi” ili “ne Bi... ➡️ <b>Інші країни, геоблок</b>",
-        "• Zajedno su ručavali, zvao ju je drugom m... ➡️ <b>Дубль новини ID 16 про криминал у Дубровнику</b>"
-      ]
-    },
-    "backlog": {
-      "total_size": 25,
-      "sources": {
-        "023": 5,
-        "Slobodna dalmacija": 10,
-        "Zadarski list": 10
-      }
-    },
-    "published": {
-      "total": 3,
-      "ukraine_priority": 0,
-      "with_images": 0,
-      "text_only": 3,
-      "sources": {
-        "023": 3
-      }
-    },
-    "models_used": {
-      "gemini-3.5-flash-lite": 2,
-      "gemini-3.6-flash": 0
-    },
-    "errors_count": 0,
-    "gemini_retries": 0
-  },
-  {
     "timestamp": "2026-10-14 08:01:13",
     "execution_time": 169.7,
     "funnel": {
@@ -5895,5 +5836,119 @@
     "exhausted_models": [],
     "errors_count": 0,
     "gemini_retries": 2
+  },
+  {
+    "timestamp": "2026-10-31 12:01:11",
+    "execution_time": 236.7,
+    "funnel": {
+      "scraped_total": 35,
+      "scraped_by_source": {
+        "023": 10,
+        "Slobodna dalmacija": 15,
+        "Zadarski list": 10
+      },
+      "already_seen": 8,
+      "rejected_by_keywords": 7,
+      "rejected_by_rule": {
+        "igrač": 1,
+        "тег RSS sport": 1,
+        "sportom": 2,
+        "šport": 2,
+        "turnira": 1
+      },
+      "unclassified_by_ai": 0,
+      "duplicates_removed_by_ai": 18,
+      "rejection_reasons_list": [
+        "• Opća opasnost objavila novi singl “Što je ljubav” → Світовий шум (Музичний сингл) | Сутності: Opća opasnost, Što je ljubav, Zlatko Grgić Grga, Hrvoje Bogutovac",
+        "• Demografski potres u Dalmaciji: broj razvoda u Šibensko-kninskoj župan → Побут інших міст (Шибеник та округа) | Сутності: Šibensko-kninska županija, Državni zavod za statistiku, Hrvatska",
+        "• Infinity band Croatia predstavlja “Like a prayer” uz Marcelu Oroši i P → Світовий шум (Музична кавер-версія) | Сутності: Infinity band Croatia, Marcela Oroši, Josip Kaplan, Rijeka",
+        "• Lista srama: ovo su najveći porezni dužnici u Hrvatskoj! → Не за тематикою (Загальнонаціональні борги) | Сутності: Porezna uprava, Carinska uprava, Ministarstvo financija, Hrvatska",
+        "• Banka tajkuna bliskog SNS-u ostala bez dozvole nakon optužbi o pokušaj → Геоблок (Сербія) | Сутності: Narodna banka Srbije, ALTA banka, Davor Macura, Beograd",
+        "• Zadnjeg dana listopada bura je konačno modno zauzdala najprometniju ši → Побут інших міст (Шибеник) | Сутності: Šibenik, Poljana, Bura",
+        "• Pupovca zadnjih dana baš upadljivo muči “dekoncentracija”. Opet se odb → Вже публікувалось (Реакція депутатів у Саборі) | Сутності: Milorad Pupovac, Anja Šimpraga, Hrvatski sabor, SDSS",
+        "• Raguž: Kakva je razlika između apartmana i javnog bilježnika? Frankovi → Побут інших міст (Дубровник) | Сутності: Željko Raguž, Mato Franković, Dubrovnik",
+        "• Zašto se više ne znamo svađati, a da se ne zamrzimo? “Razumjeti drugog → Побут інших міст (Культурна подія) | Сутності: Festival empatije, Zagreb, Rijeka, Osijek",
+        "• Franković ponovno šokira: ‘Kamioni kokaina i dalje stižu u Dubrovnik,  → Побут інших міст (Дубровник) | Сутності: Mato Franković, Dubrovnik, DORH, Sabor",
+        "• HNB objavio koliko novca Hrvati drže u bankama. Sve manje oročavaju, a → Не за тематикою (Банківські депозити) | Сутності: HNB, Hrvatska, Svjetski dan štednje",
+        "• Preokret za blagdan: Svi sveti na Jadranu uz olujnu buru, a od ponedje → Вже публікувалось (Прогноз погоди на вихідні) | Сутності: Bojan Lipovšćak, N1, Jadran",
+        "• Hajdaš Dončić: ‘Rad Ustavnog suda mora biti javan. Oni nisu masoni ili → Не за тематикою (Політичні заяви) | Сутності: Siniša Hajdaš Dončić, SDP, Ustavni sud",
+        "• Čak četiri tisuće studenata bez mjesta u zagrebačkim studentskim domov → Побут інших міст (Загребські студентські будинки) | Сутності: Zagreb, Studentski centar, Hina",
+        "• Franković opet o ‘kamionima kokaina‘: Sezona je bila dobra, potražnja  → Дубль (Дубль новини №10) | Сутності: Mato Franković, Dubrovnik, DORH",
+        "• Vozač (72) na A3 konstantno “blicao” drugim autima da se maknu. Kažnje → Побут інших міст (Автомагістраль А3) | Сутності: A3, Krapina, Policija",
+        "• Rasprava oko ljetnikovca Bonda-Majstorović završila na županu Pezu. Fr → Побут інших міст (Дубровник) | Сутності: Mato Franković, Anita Bonačić Obradović, Dubrovnik",
+        "• UZNEMIRUJUĆE: ‘Slina im je išla na usta, tri su mi psa uginula u trenu → Побут інших міст (Кнін та округа) | Сутності: Knin, Ervenik, Mokro Polje, Žarko Kostić"
+      ],
+      "rejected_by_reason": {
+        "Світовий шум": 2,
+        "Побут інших міст": 9,
+        "Не за тематикою": 3,
+        "Геоблок": 1,
+        "Вже публікувалось": 2,
+        "Дубль": 1
+      },
+      "updates_marked": 0,
+      "rejected_by_code_examples": [
+        "[igrač] Nije pogodio nijedan broj, a osvojio je 80.000 eura: Zagrepčanin je s listićem od 7,80 eura promašio",
+        "[тег RSS sport] Zadar se u Dubrovniku zagrijao tek u drugoj četvrtini, a onda prešao granicu od sto poena",
+        "[sportom] Erlić vijećnicima podnio polugodišnje izvješće, a novi ustroj gradske uprave prošao s 13 glasova za",
+        "[sportom] Osnovan poseban Odjel za izdavanje građevinskih dozvola, istodobno ukinut dosadašnji Odjel za gospod",
+        "[šport] Evo gdje će Dubrovnik potrošiti milijune eura prema prijedlogu rebelansa ovogodišnjeg proračuna",
+        "[šport] Evo gdje će se trošiti milijuni eura prema prijedlogu rebelansa ovogodišnjeg proračuna",
+        "[turnira] U zabetoniranom tunelu kod Senja možda se krije kemijski otpad. Vijećnik upozorava na moguću opasnos"
+      ]
+    },
+    "backlog": {
+      "total_size": 0,
+      "sources": {}
+    },
+    "published": {
+      "total": 3,
+      "ukraine_priority": 0,
+      "with_images": 3,
+      "text_only": 0,
+      "og_images_found": 1,
+      "sources": {
+        "023": 1,
+        "Slobodna dalmacija": 2
+      }
+    },
+    "models_used": {
+      "gemini-3.5-flash-lite": 1,
+      "gemini-3.6-flash": 1
+    },
+    "models_by_task": {
+      "filter": "gemini-3.5-flash-lite",
+      "translate": "gemini-3.6-flash"
+    },
+    "model_attempts": [
+      {
+        "task": "filter",
+        "model": "gemini-3-flash-preview",
+        "outcome": "unavailable"
+      },
+      {
+        "task": "filter",
+        "model": "gemini-3.5-flash-lite",
+        "outcome": "ok"
+      },
+      {
+        "task": "translate",
+        "model": "gemini-3.8-flash",
+        "outcome": "unavailable"
+      },
+      {
+        "task": "translate",
+        "model": "gemini-3.8-flash",
+        "outcome": "unavailable"
+      },
+      {
+        "task": "translate",
+        "model": "gemini-3.6-flash",
+        "outcome": "ok"
+      }
+    ],
+    "exhausted_models": [],
+    "errors_count": 0,
+    "gemini_retries": 3
   }
 ]
