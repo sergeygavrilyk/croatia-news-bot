@@ -27,6 +27,7 @@ import sys
 import tempfile
 import time
 import unicodedata
+from datetime import datetime, timedelta, timezone
 from html.parser import HTMLParser
 from urllib.parse import parse_qsl, urlencode, urljoin, urlparse, urlunparse
 
@@ -38,6 +39,7 @@ from dotenv import load_dotenv
 from google import genai
 from google.genai import types
 from typing import Literal, get_args
+from zoneinfo import ZoneInfo
 
 from pydantic import BaseModel, Field
 from tenacity import retry, retry_if_exception, stop_after_attempt, wait_exponential
@@ -131,6 +133,15 @@ EXHAUSTED_MODELS: set[str] = set()
 MODEL_DEMOTE_WINDOW_SECONDS = 3 * 60 * 60
 MODEL_DEMOTE_AFTER_RUNS = 2
 MODEL_FAILURE_OUTCOMES = {"unavailable", "timeout", "quota"}
+# Денний бюджет моделі, що стоїть в обох каскадах (зараз gemini-3.6-flash, D-14): її free tier
+# (~20 запитів/добу) — спільний для фільтра й перекладу. Рішення власника 31.10 (R-16): квоту береже
+# фільтр — переклад відкладає таку модель у кінець свого каскаду, коли за добу вже зроблено
+# SHARED_MODEL_TRANSLATE_BUDGET її викликів (8 = ~20 − 11 запусків фільтра − 1 запас).
+# Рахуються всі виклики моделі, крім відмов «location» (D-13) — з запасом, бо невідомо,
+# чи списують квоту відповіді 503/429.
+SHARED_MODEL_TRANSLATE_BUDGET = 8
+# Денні квоти Gemini API скидаються опівночі за тихоокеанським часом.
+QUOTA_RESET_TZ = "America/Los_Angeles"
 client = None  # Created inside main(), after environment validation.
 
 
@@ -182,6 +193,12 @@ class TranslationResponse(BaseModel):
 
 class TranslationIdMismatch(ValueError):
     """Gemini returned translation IDs that do not match the batch and cannot be mapped back."""
+
+
+class GeminiRegionUnavailable(RuntimeError):
+    """D-13: 400 FAILED_PRECONDITION «User location is not supported» — Gemini API не обслуговує
+    регіон цього раннера GitHub. Усі моделі відповідають однаково, тож каскад зупиняється,
+    новини лишаються в беклозі до наступного запуску, а запуск не вважається збоєм."""
 
 
 class TelegramAPIError(RuntimeError):
@@ -469,6 +486,49 @@ def apply_model_memory(stats: dict | None, runs: list[dict], now: float | None =
         stats["demoted_models"] = demoted_all
 
 
+def quota_day_start(now: float | None = None) -> float:
+    """Epoch of the last midnight in QUOTA_RESET_TZ — when Gemini daily quotas reset."""
+    now = time.time() if now is None else now
+    try:
+        tz = ZoneInfo(QUOTA_RESET_TZ)
+    except Exception:  # no tz database on the machine — Pacific standard time is close enough
+        tz = timezone(timedelta(hours=-8))
+    local = datetime.fromtimestamp(now, tz)
+    return local.replace(hour=0, minute=0, second=0, microsecond=0).timestamp()
+
+
+def _counted_calls(attempts, model: str) -> int:
+    return sum(1 for attempt in attempts or []
+               if isinstance(attempt, dict) and attempt.get("model") == model
+               and attempt.get("outcome") != "location")
+
+
+def model_calls_today(runs: list[dict], model: str, now: float | None = None) -> int:
+    """Calls of `model` (any task) in the runs of the current quota day (D-14)."""
+    start = quota_day_start(now)
+    return sum(_counted_calls(run.get("model_attempts"), model)
+               for run in runs if (_run_epoch(run) or 0) >= start)
+
+
+def translate_cascade_with_budget(stats: dict | None, runs: list[dict],
+                                  now: float | None = None) -> list[str]:
+    """R-16: a model that is in both cascades goes to the end of the translation cascade once
+    SHARED_MODEL_TRANSLATE_BUDGET of its calls were made today (earlier runs + this run)."""
+    current = (stats or {}).get("model_attempts")
+    over = {model for model in TRANSLATE_MODELS if model in FILTER_MODELS
+            and model_calls_today(runs, model, now) + _counted_calls(current, model)
+            >= SHARED_MODEL_TRANSLATE_BUDGET}
+    if not over:
+        return list(TRANSLATE_MODELS)
+    reordered = reorder_cascade(TRANSLATE_MODELS, over)
+    if stats is not None:
+        stats["translate_budget_deferred"] = sorted(over)
+    logging.warning("Денний бюджет перекладу (%s викликів) вичерпано для %s — квоту береже фільтр; "
+                    "каскад перекладу: %s", SHARED_MODEL_TRANSLATE_BUDGET, ", ".join(sorted(over)),
+                    ", ".join(reordered))
+    return reordered
+
+
 def send_alert_to_admin(message: str) -> None:
     if not ADMIN_CHAT_ID or not TELEGRAM_BOT_TOKEN:
         return
@@ -545,7 +605,7 @@ def _models_line(stats: dict) -> str:
 def _model_attempts_summary(stats: dict) -> str:
     """«3-flash-preview ✅ | 3.8-flash 503×2 | 3.6-flash ✅» — every model call of the run."""
     marks = {"ok": "✅", "quota": "⛽", "unavailable": "503", "timeout": "⏱",
-             "bad_response": "⚠️", "error": "❌"}
+             "bad_response": "⚠️", "location": "🌍", "error": "❌"}
     counts: dict[tuple[str, str], int] = {}
     for attempt in stats.get("model_attempts", []):
         key = (_short_model(attempt.get("model")), attempt.get("outcome", "error"))
@@ -578,6 +638,8 @@ def send_analytics_to_admin(stats: dict) -> None:
            "файли стану не змінено\n\n" if DRY_RUN else "") +
         f"⏱ Час виконання: {stats['execution_time']} сек\n"
         f"⚠️ Помилок: {stats['errors_count']} | Повторних спроб Gemini: {stats['gemini_retries']}\n\n"
+        + ("🌍 <b>Gemini API недоступний з регіону раннера GitHub</b> (400 «location») — "
+           "новини лишились у беклозі до наступного запуску\n\n" if stats.get("gemini_region_blocked") else "") +
         "🔍 <b>Воронка:</b>\n"
         f"▪️ Переглянуто RSS-записів: {funnel['scraped_total']}\n"
         f"▪️ За джерелами: {html.escape(scraped_src)}\n"
@@ -608,6 +670,9 @@ def send_analytics_to_admin(stats: dict) -> None:
         + (f"\n⏬ Відкладено в кінець каскаду (не відповідали в попередніх запусках): "
            f"{html.escape(', '.join(stats['demoted_models']))}"
            if stats.get("demoted_models") else "")
+        + (f"\n💰 Переклад: {html.escape(', '.join(_short_model(m) for m in stats['translate_budget_deferred']))} "
+           f"— у кінці каскаду, денну квоту береже фільтр (бюджет перекладу {SHARED_MODEL_TRANSLATE_BUDGET} викликів)"
+           if stats.get("translate_budget_deferred") else "")
     )
     api_url = f"https://api.telegram.org/bot{TELEGRAM_BOT_TOKEN}/sendMessage"
     try:
@@ -880,14 +945,22 @@ def is_transient_gemini_error(exc: Exception) -> bool:
     ))
 
 
+def is_location_error(exc: Exception) -> bool:
+    """D-13: 400 FAILED_PRECONDITION «User location is not supported for the API use»."""
+    return "location is not supported" in str(exc).lower()
+
+
 def is_quota_error(exc: Exception) -> bool:
     return _exception_status_code(exc) == 429 or "RESOURCE_EXHAUSTED" in str(exc)
 
 
 def classify_model_error(exc: Exception) -> str:
-    """Type of a failed model call for the admin report: quota | unavailable | timeout | bad_response | error."""
+    """Type of a failed model call for the admin report:
+    location | quota | unavailable | timeout | bad_response | error."""
     code = _exception_status_code(exc)
     text = str(exc).lower()
+    if is_location_error(exc):
+        return "location"
     if is_quota_error(exc):
         return "quota"
     if (code is not None and code >= 500) or "unavailable" in text or "high demand" in text:
@@ -1010,6 +1083,12 @@ def _generate_structured_response(prompt: str, schema, stats: dict | None, opera
                     "%s: модель %s, спроба %s не вдалася: %s",
                     operation, model_name, attempt + 1, exc,
                 )
+                if is_location_error(exc):
+                    # D-13: the region of the runner, not the model — the rest of the cascade
+                    # would get the same 400, so stop here.
+                    raise GeminiRegionUnavailable(
+                        f"{operation}: Gemini API недоступний з регіону раннера GitHub ({model_name})"
+                    ) from exc
                 if is_quota_error(exc):
                     EXHAUSTED_MODELS.add(model_name)
                     logging.warning("%s: квоту моделі %s вичерпано — до кінця запуску не використовуємо",
@@ -1052,11 +1131,17 @@ def clean_generated_field(value: str) -> str:
 
 def generate_news_texts_json(prompt: str, expected_ids: set[int], stats: dict | None = None,
                              id_aliases: dict[int, int] | None = None) -> list[dict]:
-    # The original translation operation used temperature=0.1; models — TRANSLATE_MODELS cascade.
+    # The original translation operation used temperature=0.1; models — TRANSLATE_MODELS cascade,
+    # with the model shared with the filter moved to the end once its daily budget is spent (R-16).
+    try:
+        cascade = translate_cascade_with_budget(stats, load_analytics())
+    except Exception:
+        logging.exception("Не вдалося застосувати денний бюджет моделей перекладу")
+        cascade = list(TRANSLATE_MODELS)
     result = _generate_structured_response(
         prompt, TranslationResponse, stats, "переклад новин",
         expected_ids=expected_ids, temperature=0.1, id_aliases=id_aliases,
-        models=TRANSLATE_MODELS, task="translate",
+        models=cascade, task="translate",
     )
     translations = [item.model_dump() for item in result.translations]
     for item in translations:
@@ -1216,6 +1301,8 @@ HISTORY:
             logging.info("Позначено як оновлення: %s", articles[idx]["title"])
         return filtered, rejected
 
+    except GeminiRegionUnavailable:
+        raise  # D-13: not a filter failure — the backlog is unchanged, main() keeps the run green
     except Exception as exc:
         logging.exception("Критична помилка редакційної фільтрації; публікацію зупинено")
         send_alert_to_admin(f"Gemini/валідація фільтрації не спрацювала. Беклог збережено. Помилка: {exc}")
@@ -2003,6 +2090,10 @@ def process_backlog(stats: dict | None = None) -> None:
         translations = generate_news_texts_json(
             prompt, expected_ids, stats, id_aliases=_url_number_aliases(batch)
         )
+    except GeminiRegionUnavailable:
+        # D-13: the runner's region, not the articles — the translation failure counter is not raised.
+        _save_postprocessing_backlog(backlog, evaluated_urls, approved_urls, sent_urls)
+        raise
     except Exception as exc:
         for item in batch:
             record_translation_failure(item, str(exc))
@@ -2115,6 +2206,8 @@ def _empty_stats() -> dict:
         "model_attempts": [],
         "exhausted_models": [],
         "demoted_models": [],
+        "translate_budget_deferred": [],
+        "gemini_region_blocked": False,
         "errors_count": 0,
         "gemini_retries": 0,
     }
@@ -2152,7 +2245,8 @@ def _enter_dry_run_sandbox() -> str:
 # -> «Тижневий звіт» (only the report, no news), or locally: python news_bot.py --weekly-report.
 # It only reads analytics.json (the last 100 runs ≈ 9 days at 11 runs a day).
 WEEKLY_REPORT_DAYS = 7
-OUTCOME_MARKS = {"unavailable": "503", "quota": "⛽", "timeout": "⏱", "bad_response": "⚠️", "error": "❌"}
+OUTCOME_MARKS = {"unavailable": "503", "quota": "⛽", "timeout": "⏱", "bad_response": "⚠️",
+                 "location": "🌍", "error": "❌"}
 
 
 def weekly_report_due(runs: list[dict], now: float | None = None) -> bool:
@@ -2253,11 +2347,17 @@ def build_weekly_report(runs: list[dict], now: float | None = None,
     quota_days: dict[str, set[str]] = {}
     attempt_runs = 0
     demoted_runs = 0
+    budget_runs = 0
+    region_runs = 0
     for run in week:
         if run.get("model_attempts"):
             attempt_runs += 1
         if run.get("demoted_models"):
             demoted_runs += 1
+        if run.get("translate_budget_deferred"):
+            budget_runs += 1
+        if run.get("gemini_region_blocked"):
+            region_runs += 1
         for attempt in run.get("model_attempts") or []:
             if not isinstance(attempt, dict):
                 continue
@@ -2292,6 +2392,10 @@ def build_weekly_report(runs: list[dict], now: float | None = None,
         lines.append("⛽ Квоти не вичерпувались")
     if demoted_runs:
         lines.append(f"⏬ Модель відкладалась у кінець каскаду в {demoted_runs} запусках")
+    if budget_runs:
+        lines.append(f"💰 Переклад без спільної з фільтром моделі (денний бюджет): у {budget_runs} запусках")
+    if region_runs:
+        lines.append(f"🌍 Gemini недоступний з регіону раннера GitHub: {region_runs} запусків")
 
     sources: dict[str, dict[str, int]] = {}
     for run in week:
@@ -2390,6 +2494,10 @@ def main() -> None:
         scrape_feeds(stats)
         refresh_backlog_stats(stats)
         process_backlog(stats)
+    except GeminiRegionUnavailable as exc:
+        # D-13: Gemini API does not serve this GitHub runner's region — not a bot failure.
+        stats["gemini_region_blocked"] = True
+        logging.warning("%s — новини лишаються в беклозі до наступного запуску", exc)
     except Exception as exc:
         critical_error = True
         stats["errors_count"] += 1
@@ -2417,7 +2525,8 @@ def main() -> None:
         except Exception:
             critical_error = True
             logging.exception("Не вдалося зберегти аналітику")
-        if DRY_RUN or stats["published"]["total"] > 0 or stats["errors_count"] > 0:
+        if (DRY_RUN or stats["published"]["total"] > 0 or stats["errors_count"] > 0
+                or stats.get("gemini_region_blocked")):
             send_analytics_to_admin(stats)
         if weekly_due:
             send_weekly_report()  # a failure is only logged: the run itself stays green
