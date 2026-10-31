@@ -1297,6 +1297,37 @@ def html_fragment_is_valid(fragment: str) -> bool:
         return False
 
 
+_HTML_TAG_RE = re.compile(r"<\s*(/?)\s*([A-Za-z][A-Za-z0-9-]*)\b[^<>]*?/?\s*>")
+_HTML_BAD_AMP_RE = re.compile(r"&(?!(?:lt|gt|amp|quot|apos|#\d+|#x[0-9a-fA-F]+);)")
+
+
+def sanitize_translation_html(content: str) -> str:
+    """T-22 (as sanitize_telegram_html in the Moldovan bot): repair the HTML of a translation
+    instead of rejecting it. Allowed tags b, i, u, s (attributes dropped); any other tag is
+    removed but its text is kept; stray «<», «>», «&» are escaped; a closing tag without a pair
+    is dropped; unclosed tags are closed in the right order. Idempotent."""
+    text = _HTML_BAD_AMP_RE.sub("&amp;", str(content or ""))
+    out, stack, pos = [], [], 0
+    for match in _HTML_TAG_RE.finditer(text):
+        out.append(text[pos:match.start()].replace("<", "&lt;").replace(">", "&gt;"))
+        pos = match.end()
+        closing, name = match.group(1) == "/", match.group(2).lower()
+        if name not in AllowedHTMLValidator.ALLOWED:
+            continue
+        if not closing:
+            stack.append(name)
+            out.append(f"<{name}>")
+        elif name in stack:
+            while stack:  # close everything opened inside it as well (correct nesting)
+                top = stack.pop()
+                out.append(f"</{top}>")
+                if top == name:
+                    break
+    out.append(text[pos:].replace("<", "&lt;").replace(">", "&gt;"))
+    out.extend(f"</{tag}>" for tag in reversed(stack))
+    return "".join(out).strip()
+
+
 def record_translation_failure(article: dict, reason: str) -> None:
     failures = int(article.get("translation_failures", 0)) + 1
     article["translation_failures"] = failures
@@ -1336,11 +1367,23 @@ def validate_translation_strict(translation: dict, original_article: dict) -> bo
         logging.warning("Переклад %s має порожнє поле", translation.get("id"))
         return False
     if re.search(r"</?\w+[^>]*>", title):
-        logging.warning("Заголовок %s містить HTML-теги", translation.get("id"))
-        return False
+        # T-22: the title is wrapped in <b> by the code — tags from the model are removed, not rejected.
+        title = re.sub(r"<[^>]*>", "", title).strip()
+        translation["title"] = title
+        logging.warning("Заголовок %s містив HTML-теги — прибрано", translation.get("id"))
+        if not title:
+            return False
     if not html_fragment_is_valid(content):
-        logging.warning("Переклад %s містить некоректний або заборонений HTML", translation.get("id"))
-        return False
+        # T-22: repair instead of rejecting (an unclosed <b> used to cost a whole article).
+        fixed = sanitize_translation_html(content)
+        if not fixed or not html_fragment_is_valid(fixed):
+            logging.warning("Переклад %s містить некоректний HTML, який не вдалося виправити",
+                            translation.get("id"))
+            return False
+        logging.warning("HTML перекладу %s виправлено автоматично (sanitize_translation_html)",
+                        translation.get("id"))
+        content = fixed
+        translation["content"] = content
 
     content_plain = plain_text(content)
     title_and_body = f"{title}\n{content_plain}"
@@ -2102,8 +2145,214 @@ def _enter_dry_run_sandbox() -> str:
     return sandbox
 
 
+# ---------------------------------------------------------------------------
+# Weekly admin report (I-04, as in the Moldovan bot)
+# ---------------------------------------------------------------------------
+# Sent by the first run on Monday (UTC) — no separate schedule. Manually: Actions -> Run workflow
+# -> «Тижневий звіт» (only the report, no news), or locally: python news_bot.py --weekly-report.
+# It only reads analytics.json (the last 100 runs ≈ 9 days at 11 runs a day).
+WEEKLY_REPORT_DAYS = 7
+OUTCOME_MARKS = {"unavailable": "503", "quota": "⛽", "timeout": "⏱", "bad_response": "⚠️", "error": "❌"}
+
+
+def weekly_report_due(runs: list[dict], now: float | None = None) -> bool:
+    """First run on Monday (UTC): today is Monday and analytics.json has no run from today yet."""
+    if DRY_RUN:
+        return False
+    now = time.time() if now is None else now
+    today = time.gmtime(now)
+    if today.tm_wday != 0:
+        return False
+    prefix = time.strftime("%Y-%m-%d", today)
+    return not any(str(run.get("timestamp", "")).startswith(prefix) for run in runs)
+
+
+def _pct(part: float, whole: float) -> str:
+    return f"{round(100 * part / whole)}%" if whole else "—"
+
+
+def _add_counts(target: dict, source: dict | None) -> None:
+    for key, value in (source or {}).items():
+        if isinstance(value, (int, float)):
+            target[key] = target.get(key, 0) + value
+
+
+def _top(counts: dict, limit: int | None = None, total: int | None = None) -> str:
+    items = sorted(counts.items(), key=lambda kv: (-kv[1], kv[0]))[:limit]
+    return " · ".join(
+        f"{html.escape(str(k), quote=False)} {v}" + (f" ({_pct(v, total)})" if total else "")
+        for k, v in items
+    ) or "—"
+
+
+def build_weekly_report(runs: list[dict], now: float | None = None,
+                        days: int = WEEKLY_REPORT_DAYS, on_demand: bool = False) -> str:
+    """HTML report for the last `days` days from analytics.json: runs, posts by source,
+    the funnel, rejection reasons, Gemini models, quotas, sources. Reads nothing else."""
+    now = time.time() if now is None else now
+    since = now - days * 24 * 60 * 60
+    week = [run for run in runs if (_run_epoch(run) or 0) >= since]
+    esc = lambda value: html.escape(str(value), quote=False)  # noqa: E731
+
+    period = (f"{time.strftime('%d.%m', time.gmtime(since))} – "
+              f"{time.strftime('%d.%m.%Y', time.gmtime(now))}")
+    lines = [f"📅 <b>Тижневий звіт Croatia News Bot</b>{' — на вимогу' if on_demand else ''}",
+             f"<i>{period}, час UTC</i>"]
+    if not week:
+        return "\n".join(lines + ["", "За цей період в analytics.json немає запусків."])
+    first = min(_run_epoch(run) or now for run in week)
+    if first - since > 24 * 60 * 60:
+        lines.append(f"<i>Перший запуск у даних: {time.strftime('%d.%m %H:%M', time.localtime(first))} "
+                     "(простій або analytics.json — лише 100 останніх запусків)</i>")
+    lines.append("")
+
+    errors = sum(int(run.get("errors_count") or 0) for run in week)
+    with_errors = sum(1 for run in week if run.get("errors_count"))
+    avg_time = sum(float(run.get("execution_time") or 0) for run in week) / len(week)
+    lines.append(f"🚀 Запусків: {len(week)} | з помилками: {with_errors} (помилок {errors}) | "
+                 f"⏱ у сер. {round(avg_time)} с")
+
+    published, by_source, funnel = {}, {}, {}
+    by_rule, by_reason = {}, {}
+    reason_runs = 0
+    for run in week:
+        pub = run.get("published") or {}
+        _add_counts(published, {k: v for k, v in pub.items() if k != "sources"})
+        _add_counts(by_source, pub.get("sources"))
+        fun = run.get("funnel") or {}
+        _add_counts(funnel, {k: v for k, v in fun.items() if not isinstance(v, (dict, list))})
+        _add_counts(by_rule, fun.get("rejected_by_rule"))
+        if "rejected_by_reason" in fun:
+            reason_runs += 1
+            _add_counts(by_reason, fun.get("rejected_by_reason"))
+
+    total = int(published.get("total", 0))
+    lines.append("")
+    lines.append(f"✅ <b>Опубліковано: {total}</b> (з фото {_pct(published.get('with_images', 0), total)}, "
+                 f"з них зі сторінки статті {int(published.get('og_images_found', 0))})")
+    lines.append(f"▪️ Український пріоритет: {int(published.get('ukraine_priority', 0))} | "
+                 f"позначено «оновлено»: {int(funnel.get('updates_marked', 0))}")
+    for name, count in sorted(by_source.items(), key=lambda kv: (-kv[1], kv[0])):
+        lines.append(f"▪️ {esc(name)} — {count} ({_pct(count, total)})")
+
+    lines.append("")
+    lines.append("🔍 <b>Воронка:</b>")
+    lines.append(f"▪️ Переглянуто RSS-записів: {int(funnel.get('scraped_total', 0))} | уже відомі/застарілі: "
+                 f"{int(funnel.get('already_seen', 0))} (з них відхилені фільтром раніше: "
+                 f"{int(funnel.get('already_rejected', 0))})")
+    code_total = int(funnel.get("rejected_by_keywords", 0))
+    lines.append(f"▪️ Відсіяно кодом: {code_total} — {_top(by_rule, 8)}")
+    ai_total = int(funnel.get("duplicates_removed_by_ai", 0))
+    lines.append(f"▪️ Відхилено Gemini: {ai_total} | не класифіковано: {int(funnel.get('unclassified_by_ai', 0))}")
+    if by_reason:
+        note = "" if reason_runs == len(week) else f" (категорії — за {reason_runs} з {len(week)} запусків)"
+        lines.append(f"✖ <b>Причини відхилення Gemini</b>{note}:")
+        lines.append(_top(by_reason, total=sum(by_reason.values())))
+
+    stats_by: dict[str, dict[str, dict[str, int]]] = {}
+    quota_days: dict[str, set[str]] = {}
+    attempt_runs = 0
+    demoted_runs = 0
+    for run in week:
+        if run.get("model_attempts"):
+            attempt_runs += 1
+        if run.get("demoted_models"):
+            demoted_runs += 1
+        for attempt in run.get("model_attempts") or []:
+            if not isinstance(attempt, dict):
+                continue
+            model_stats = stats_by.setdefault(attempt.get("task", "?"), {}).setdefault(attempt.get("model", "?"), {})
+            outcome = attempt.get("outcome", "error")
+            model_stats[outcome] = model_stats.get(outcome, 0) + 1
+        for model in run.get("exhausted_models") or []:
+            quota_days.setdefault(model, set()).add(str(run.get("timestamp", ""))[:10])
+    lines.append("")
+    note = "" if attempt_runs == len(week) else f" (дані за {attempt_runs} з {len(week)} запусків)"
+    lines.append(f"🤖 <b>Моделі Gemini</b>{note}:")
+    if not stats_by:
+        lines.append("немає даних")
+    for task, title in (("filter", "Фільтр"), ("translate", "Переклад")):
+        models = stats_by.get(task)
+        if not models:
+            continue
+        ok_total = sum(m.get("ok", 0) for m in models.values())
+        lines.append(f"<b>{title}</b> (успішних {ok_total}):")
+        for model, st in sorted(models.items(), key=lambda kv: -sum(kv[1].values())):
+            tries = sum(st.values())
+            fails = " · ".join(f"{OUTCOME_MARKS.get(o, o)}×{n}"
+                               for o, n in sorted(st.items(), key=lambda kv: -kv[1]) if o != "ok")
+            lines.append(f"▪️ {esc(_short_model(model))} — виконала {_pct(st.get('ok', 0), ok_total)} | "
+                         f"спроб {tries}, вдалих {st.get('ok', 0)} ({_pct(st.get('ok', 0), tries)})"
+                         f"{' | ' + fails if fails else ''}")
+    if quota_days:
+        lines.append("⛽ Вичерпані квоти: " + " · ".join(
+            f"{esc(_short_model(m))} — у {len(d)} з {days} днів"
+            for m, d in sorted(quota_days.items(), key=lambda kv: -len(kv[1]))))
+    elif stats_by:
+        lines.append("⛽ Квоти не вичерпувались")
+    if demoted_runs:
+        lines.append(f"⏬ Модель відкладалась у кінець каскаду в {demoted_runs} запусках")
+
+    sources: dict[str, dict[str, int]] = {}
+    for run in week:
+        for name, count in ((run.get("funnel") or {}).get("scraped_by_source") or {}).items():
+            src = sources.setdefault(name, {"runs": 0, "items": 0, "errors": 0})
+            src["runs"] += 1
+            src["items"] += int(count or 0)
+        for name in (run.get("source_errors") or {}):
+            sources.setdefault(name, {"runs": 0, "items": 0, "errors": 0})["errors"] += 1
+    last_errors = week[-1].get("source_errors") or {}
+    lines.append("")
+    lines.append(f"📡 <b>Джерела</b> ({len(sources)}):")
+    for name, src in sorted(sources.items()):
+        mark = "🔴" if name in last_errors else ("🟡" if src["errors"] else "🟢")
+        lines.append(f"{mark} {esc(name)} — записів {src['items']}"
+                     + (f", помилок у {src['errors']} запусках" if src["errors"] else ""))
+    backlog = (week[-1].get("backlog") or {}).get("total_size")
+    if backlog is not None:
+        lines.append(f"📥 Беклог на останній запуск: {backlog}")
+    return "\n".join(lines).strip()
+
+
+def _send_admin_html(text: str) -> bool:
+    if not ADMIN_CHAT_ID or not TELEGRAM_BOT_TOKEN:
+        logging.warning("ADMIN_CHAT_ID або TELEGRAM_BOT_TOKEN не налаштовано")
+        return False
+    if len(text) > 4000:  # cut on a line boundary: lines are self-contained HTML
+        text = text[:text.rfind("\n", 0, 3990)] + "\n…"
+    try:
+        resp = requests.post(
+            f"https://api.telegram.org/bot{TELEGRAM_BOT_TOKEN}/sendMessage",
+            data={"chat_id": ADMIN_CHAT_ID, "text": text, "parse_mode": "HTML"},
+            timeout=TELEGRAM_TIMEOUT_SECONDS,
+        )
+        if resp.status_code != 200:
+            logging.error("Не вдалося надіслати тижневий звіт: %s", resp.text[:500])
+            return False
+        return True
+    except Exception:
+        logging.exception("Збій під час надсилання тижневого звіту")
+        return False
+
+
+def send_weekly_report(on_demand: bool = False) -> bool:
+    try:
+        report = build_weekly_report(load_analytics(), on_demand=on_demand)
+    except Exception:
+        logging.exception("Не вдалося сформувати тижневий звіт")
+        return False
+    logging.info("📅 Тижневий звіт:\n%s", plain_text(report))
+    return _send_admin_html(report)
+
+
 def main() -> None:
     global client
+    # Weekly report only (manual run): no news, no posts, no state writes.
+    if "--weekly-report" in sys.argv:
+        if not TELEGRAM_BOT_TOKEN or not ADMIN_CHAT_ID:
+            logging.critical("Для тижневого звіту потрібні TELEGRAM_BOT_TOKEN і ADMIN_CHAT_ID")
+            sys.exit(1)
+        sys.exit(0 if send_weekly_report(on_demand=True) else 1)
     if DRY_RUN:
         if not all([TELEGRAM_BOT_TOKEN, GEMINI_API_KEY, ADMIN_CHAT_ID]):
             logging.critical("DRY_RUN: потрібні TELEGRAM_BOT_TOKEN, GEMINI_API_KEY і ADMIN_CHAT_ID")
@@ -2124,6 +2373,11 @@ def main() -> None:
     start_time = time.time()
     stats = _empty_stats()
     critical_error = False
+    try:
+        weekly_due = weekly_report_due(load_analytics())  # before this run is written
+    except Exception:
+        logging.exception("Не вдалося перевірити, чи час тижневого звіту")
+        weekly_due = False
     try:
         apply_model_memory(stats, load_analytics())
     except Exception:
@@ -2165,6 +2419,8 @@ def main() -> None:
             logging.exception("Не вдалося зберегти аналітику")
         if DRY_RUN or stats["published"]["total"] > 0 or stats["errors_count"] > 0:
             send_analytics_to_admin(stats)
+        if weekly_due:
+            send_weekly_report()  # a failure is only logged: the run itself stays green
 
     # Non-zero status only for critical failures (the main loop stopped, or state/analytics
     # could not be saved). Partial errors (one article failed validation, one RSS feed or

@@ -1,11 +1,15 @@
 name: Croatia News Automator
-run-name: ${{ inputs.dry_run && '🧪 DRY RUN (тестовий запуск)' || 'Croatia News Automator' }}
+run-name: ${{ inputs.weekly_report && '📅 Тижневий звіт' || (inputs.dry_run && '🧪 DRY RUN (тестовий запуск)' || 'Croatia News Automator') }}
 
 on:
   workflow_dispatch:
     inputs:
       dry_run:
         description: "Тестовий запуск: пости — в адмін-чат з позначкою ТЕСТ, файли стану не змінюються"
+        type: boolean
+        default: false
+      weekly_report:
+        description: "Лише тижневий звіт адміну (без новин і публікацій, стан не змінюється)"
         type: boolean
         default: false
 
@@ -53,13 +57,13 @@ jobs:
         # Якщо змінну не створено — беруться значення за замовчуванням з news_bot.py.
         GEMINI_FILTER_MODELS: ${{ vars.GEMINI_FILTER_MODELS }}
         GEMINI_TRANSLATE_MODELS: ${{ vars.GEMINI_TRANSLATE_MODELS }}
-      run: python news_bot.py
+      run: python news_bot.py ${{ inputs.weekly_report && '--weekly-report' || '' }}
 
     - name: Commit and push history and backlog state
       # Зберігаємо стан навіть якщо бот завершився з помилкою: пости, які вже вийшли,
       # мають потрапити в історію, інакше наступний запуск опублікує їх повторно.
       # У тестовому запуску (DRY_RUN) нічого не комітимо.
-      if: ${{ always() && steps.bot.outcome != 'skipped' && !inputs.dry_run }}
+      if: ${{ always() && steps.bot.outcome != 'skipped' && !inputs.dry_run && !inputs.weekly_report }}
       run: |
         git config --global user.name "github-actions[bot]"
         git config --global user.email "github-actions[bot]@users.noreply.github.com"
