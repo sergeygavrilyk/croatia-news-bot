@@ -111,3 +111,11 @@ def test_translation_prompt_has_no_update_rule(bot):
     prompt = bot._build_translation_prompt([{"title": "T", "description": "D", "url": "https://a.hr/1"}])
     assert "ОНОВЛЕНО" not in prompt and "ОНОВЛЕННЯ ПОДІЙ" not in prompt
     assert "\n10. ДОВЖИНА:" in prompt and "\n11. ID:" in prompt and "\n12." not in prompt
+
+
+def test_translation_prompt_owner_edits_31_10(bot):
+    """Правки власника 31.10 (CODE_REVIEW §5): порядок значків, 800 символів з фото, без лапок у правилі 4."""
+    prompt = bot._build_translation_prompt([{"title": "T", "description": "D", "url": "https://a.hr/1"}])
+    assert "спершу 🇺🇦, потім 📄" in prompt
+    assert "не довшим за 800 символів" in prompt and "900" not in prompt
+    assert "мови. УВАЖНО ПЕРЕВІРЯЙ ОРФОГРАФІЮ" in prompt and "літери.»" not in prompt
