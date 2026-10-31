@@ -1,64 +1,5 @@
 [
   {
-    "timestamp": "2026-10-14 11:01:05",
-    "execution_time": 165.8,
-    "funnel": {
-      "scraped_total": 35,
-      "scraped_by_source": {
-        "023": 10,
-        "Slobodna dalmacija": 15,
-        "Zadarski list": 10
-      },
-      "already_seen": 7,
-      "rejected_by_keywords": 1,
-      "duplicates_removed_by_ai": 19,
-      "rejection_reasons_list": [
-        "• Ante je otac petero djece, nakon nesreće... ➡️ <b>Побут інших міст</b>",
-        "• Drastično se povećavaju kazne: krivo par... ➡️ <b>Дублікат новини ID 2</b>",
-        "• Policija objavila rat električnim romobi... ➡️ <b>Хорватія загальний рівень, але не стосується Задара чи українців безпосередньо у критичному форматі</b>",
-        "• Kad će se riješiti problem parkinga po g... ➡️ <b>Побут інших міст (Дубровник)</b>",
-        "• U Rijeci zaustavljen vozač zbog banalnog... ➡️ <b>Побут інших міст (Рієка)</b>",
-        "• Ako vam se soba sporo zagrijava, problem... ➡️ <b>Поради дієтологів/побутовий шум</b>",
-        "• Franković: Park & Ride na Pobrežju olakš... ➡️ <b>Побут інших міст (Дубровник)</b>",
-        "• PFAS u Lici ispod granice u svim analizi... ➡️ <b>Побут інших міст (Лика)</b>",
-        "• Rea se ukopala na mjestu, automehaničara... ➡️ <b>Побут інших міст</b>",
-        "• Ružić: Pregovori sa sindikatima javnih i... ➡️ <b>Хорватія загальний рівень, не стосується Задара</b>",
-        "• Droga iz Njemačke stigla na Mljet poštan... ➡️ <b>Побут інших міст (Млєт)</b>",
-        "• Bivši šef Hrvatskih cesta Josip Škorić ć... ➡️ <b>Хорватія загальний рівень, не стосується Задаra</b>",
-        "• Tragedija u Župi: 27-godišnjak udario u ... ➡️ <b>Побут інших міст (Дубровник)</b>",
-        "• Na Krku se u četvrtak otvara Udruga Mali... ➡️ <b>Побут інших міст (Крк)</b>",
-        "• Šef smjene u dubrovačkom restoranu ukrao... ➡️ <b>Побут інших міст (Дубровник)</b>",
-        "• Stari stanovi u deset godina poskupjeli ... ➡️ <b>Хорватія загальний рівень (нерухомість)</b>",
-        "• Nesvakidašnji paket na Mljetu: policija ... ➡️ <b>Дублікат новини ID 12</b>",
-        "• Žena je dvaput zvala policiju u pomoć, a... ➡️ <b>Хорватія загальний рівень, політичні суперечки</b>",
-        "• Tragedija u Župi dubrovačkoj: u teškoj p... ➡️ <b>Дублікат новини ID 15</b>"
-      ]
-    },
-    "backlog": {
-      "total_size": 46,
-      "sources": {
-        "Zadarski list": 11,
-        "Slobodna dalmacija": 27,
-        "023": 8
-      }
-    },
-    "published": {
-      "total": 3,
-      "ukraine_priority": 0,
-      "with_images": 0,
-      "text_only": 3,
-      "sources": {
-        "023": 3
-      }
-    },
-    "models_used": {
-      "gemini-3.5-flash-lite": 2,
-      "gemini-3.6-flash": 0
-    },
-    "errors_count": 0,
-    "gemini_retries": 0
-  },
-  {
     "timestamp": "2026-10-14 12:01:23",
     "execution_time": 172.1,
     "funnel": {
@@ -6045,5 +5986,91 @@
     "gemini_region_blocked": false,
     "errors_count": 0,
     "gemini_retries": 0
+  },
+  {
+    "timestamp": "2026-10-31 15:01:13",
+    "execution_time": 116.5,
+    "funnel": {
+      "scraped_total": 35,
+      "scraped_by_source": {
+        "023": 10,
+        "Slobodna dalmacija": 15,
+        "Zadarski list": 10
+      },
+      "already_seen": 22,
+      "rejected_by_keywords": 7,
+      "rejected_by_rule": {
+        "тег RSS lifestyle": 1,
+        "igrač": 1,
+        "тег RSS sport": 1,
+        "sportom": 1,
+        "šport": 1,
+        "тег RSS nogomet": 1,
+        "URL /sport/": 1
+      },
+      "unclassified_by_ai": 0,
+      "duplicates_removed_by_ai": 6,
+      "rejection_reasons_list": [
+        "• Ima 72 godine, a policija ga je zaustavila kod Permana: U automobilu p → Побут інших міст (Перевезення нелегалів у регіоні Опатії) | Сутності: Permani, Opatija, Crna Gora, Slovenija",
+        "• Kakav dan za uživanje, susrete i đir Stradunom! → Побут інших міст (Прогулянки та погода в Дубровнику) | Сутності: Stradun, Dubrovnik, прогулянка, погода",
+        "• Od kitova do slonova: Tuguju li i divlje životinje? → Світовий шум (Наукове дослідження про поведінку тварин) | Сутності: Olaf Meynecke, Sveučilište Griffith, Andrew Mulville, grbavi kit",
+        "• Društvo „Juraj Dalmatinac“ na donatorskoj večeri u Zagrebu prikupilo 7 → Побут інших міст (Благодійний захід у Загребі для Шибеника) | Сутності: Juraj Dalmatinac, Šibenik, Zagreb, Peti kupe",
+        "• Poljski predsjednik Nawrocki optužio premijera Tuska za nasilno preuzi → Геоблок (Політичний конфлікт у Польщі) | Сутності: Karol Nawrocki, Donald Tusk, Poljska, Anna Korwin-Piotrowska",
+        "• Franković predložio testiranje svih političara u Hrvatskoj: ‘Da vidimo → Побут інших міст (Заява мера Дубровника на міській сесії) | Сутності: Mato Franković, Dubrovnik, Gradsko vijeće, kokain"
+      ],
+      "rejected_by_reason": {
+        "Побут інших міст": 4,
+        "Світовий шум": 1,
+        "Геоблок": 1
+      },
+      "updates_marked": 0,
+      "already_rejected": 14,
+      "rejected_by_code_examples": [
+        "[тег RSS lifestyle] Kako jednim listom toaletnog papira provjeriti odvodi li ventilator vlagu iz kupaonice",
+        "[igrač] Nije pogodio nijedan broj, a osvojio je 80.000 eura: Zagrepčanin je s listićem od 7,80 eura promašio",
+        "[тег RSS sport] Zadar se u Dubrovniku zagrijao tek u drugoj četvrtini, a onda prešao granicu od sto poena",
+        "[sportom] Osnovan poseban Odjel za izdavanje građevinskih dozvola, istodobno ukinut dosadašnji Odjel za gospod",
+        "[šport] Evo gdje će Dubrovnik potrošiti milijune eura prema prijedlogu rebelansa ovogodišnjeg proračuna",
+        "[тег RSS nogomet] Orijent u 18 minuta nadoknadio dva gola zaostatka i ostvario novu domaću pobjedu",
+        "[URL /sport/] Riječki plivač Nikola Zdrilić nakon brojnih peripetija ipak osvojio zlato  posljednjeg dana EP-a"
+      ]
+    },
+    "backlog": {
+      "total_size": 0,
+      "sources": {}
+    },
+    "published": {
+      "total": 0,
+      "ukraine_priority": 0,
+      "with_images": 0,
+      "text_only": 0,
+      "og_images_found": 0,
+      "sources": {}
+    },
+    "models_used": {
+      "gemini-3.6-flash": 1
+    },
+    "models_by_task": {
+      "filter": "gemini-3.6-flash",
+      "translate": null
+    },
+    "model_attempts": [
+      {
+        "task": "filter",
+        "model": "gemini-3-flash-preview",
+        "outcome": "unavailable"
+      },
+      {
+        "task": "filter",
+        "model": "gemini-3.6-flash",
+        "outcome": "ok"
+      }
+    ],
+    "exhausted_models": [],
+    "demoted_models": [],
+    "translate_budget_deferred": [],
+    "gemini_region_blocked": false,
+    "errors_count": 0,
+    "gemini_retries": 1
   }
 ]
