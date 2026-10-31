@@ -104,3 +104,10 @@ def test_all_models_failed_raises(bot, fake_gemini):
                       "gemini-3.5-flash-lite": [quota_error()]})
     with pytest.raises(RuntimeError):
         bot.generate_news_texts_json("p", {0}, bot._empty_stats())
+
+
+def test_translation_prompt_has_no_update_rule(bot):
+    """R-12: «оновлено» визначає фільтр, правило 10 з промпту перекладу прибрано, 11–12 → 10–11."""
+    prompt = bot._build_translation_prompt([{"title": "T", "description": "D", "url": "https://a.hr/1"}])
+    assert "ОНОВЛЕНО" not in prompt and "ОНОВЛЕННЯ ПОДІЙ" not in prompt
+    assert "\n10. ДОВЖИНА:" in prompt and "\n11. ID:" in prompt and "\n12." not in prompt

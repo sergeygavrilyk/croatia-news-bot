@@ -37,6 +37,8 @@ from bs4 import BeautifulSoup
 from dotenv import load_dotenv
 from google import genai
 from google.genai import types
+from typing import Literal, get_args
+
 from pydantic import BaseModel, Field
 from tenacity import retry, retry_if_exception, stop_after_attempt, wait_exponential
 
@@ -122,19 +124,36 @@ client = None  # Created inside main(), after environment validation.
 # ---------------------------------------------------------------------------
 # Structured model responses
 # ---------------------------------------------------------------------------
+# R-12 (owner, 31.10.2026): a fixed list of rejection categories instead of free text.
+RejectionCategory = Literal[
+    "Дубль", "Вже публікувалось", "Спорт", "Реклама",
+    "Побут інших міст", "Геоблок", "Світовий шум", "Не за тематикою",
+]
+REJECTION_CATEGORIES = get_args(RejectionCategory)
+UPDATE_PREFIX = "🔄 [ОНОВЛЕНО]: "
+
+
 class RejectedItem(BaseModel):
     id: int
     entities_found: list[str] = Field(
         description="3-5 ключових фігурантів, компаній, цифр або локацій"
     )
-    reason: str = Field(
-        description="СУВОРО 1-3 слова. Лише категорія (наприклад: Спорт, Реклама, Побут інших міст, Світовий шум)"
+    reason: RejectionCategory = Field(
+        description="Рівно одна категорія з фіксованого переліку"
+    )
+    detail: str = Field(
+        default="",
+        description="Коротке пояснення до 10 слів (місто чи подія) або порожній рядок",
     )
 
 
 class NewsFilterResponse(BaseModel):
     keep: list[int]
     rejected: list[RejectedItem]
+    updates: list[int] = Field(
+        default_factory=list,
+        description="ID з keep, які є суттєвим оновленням події з HISTORY",
+    )
 
 
 class TranslatedNews(BaseModel):
@@ -356,9 +375,10 @@ def send_alert_to_admin(message: str) -> None:
         logging.exception("Збій з'єднання під час надсилання алерта адміністратору")
 
 
-def _rule_breakdown(funnel: dict) -> str:
-    """« (foto 5, sport 3, КАПС у заголовку 1)» — which code rule rejected how many articles."""
-    by_rule = funnel.get("rejected_by_rule") or {}
+def _rule_breakdown(funnel: dict, key: str = "rejected_by_rule") -> str:
+    """« (foto 5, sport 3, КАПС у заголовку 1)» — which code rule (or, with
+    key="rejected_by_reason", which filter category) rejected how many articles."""
+    by_rule = funnel.get(key) or {}
     if not by_rule:
         return ""
     parts = sorted(by_rule.items(), key=lambda kv: (-kv[1], kv[0]))
@@ -454,7 +474,8 @@ def send_analytics_to_admin(stats: dict) -> None:
            if stats.get("source_errors") else "") +
         f"▪️ Уже відомі/застарілі: {funnel['already_seen']}\n"
         f"▪️ Відсіяно кодом: {funnel['rejected_by_keywords']}{html.escape(_rule_breakdown(funnel))}\n"
-        f"▪️ Відхилено Gemini: {funnel['duplicates_removed_by_ai']}\n"
+        f"▪️ Відхилено Gemini: {funnel['duplicates_removed_by_ai']}{html.escape(_rule_breakdown(funnel, 'rejected_by_reason'))}\n"
+        + (f"▪️ Позначено як оновлення: {funnel['updates_marked']}\n" if funnel.get("updates_marked") else "")
         + (f"▪️ Gemini не класифікував (лишились у черзі): {funnel['unclassified_by_ai']}\n"
            if funnel.get("unclassified_by_ai") else "")
         + "\n"
@@ -970,6 +991,7 @@ def deduplicate_news(articles: list[dict], history_titles: list[str] | None = No
 - Якщо новина є просто переказом вчорашньої події або містить дрібні, несуттєві коментарі — ВІДХИЛЯЙ.
 - РЕАКЦІЇ ТА КОМЕНТАРІ (АНТИ-ДУБЛЬ): Якщо в історії вже є базова новина (наприклад, інцидент чи ДТП), а новий кандидат — це просто коментар політика, реакція партії, дискусія на сесії чи думка експерта щодо цього інциденту — БЕЗЖАЛЬНО ВІДХИЛЯЙ. Це інформаційний шум.
 - АЛЕ якщо це СУТТЄВЕ ОНОВЛЕННЯ вже знайомої події (наприклад: кардинально зросла кількість жертв, знайдено злочинця, ухвалено закон, який вчора лише обговорювався, або є офіційна реакція влади на кризу) — ОБОВ'ЯЗКОВО ЗАЛИШАЙ.
+- Такі новини-оновлення, крім "keep", додавай також у масив "updates".
 
     КРОК 4. СТОП-ТЕМИ (АБСОЛЮТНА ЗАБОРОНА): 
     УВАГА: Цей крок перекриває всі інші! Навіть якщо в новині є слово "Задар" або "Україна", але новина стосується наступних тем — ВІДХИЛЯЙ ЇЇ.
@@ -993,12 +1015,18 @@ CANDIDATES:
 HISTORY:
 {json.dumps(recent_history, ensure_ascii=False, indent=2)}
 
-Поверни результат СУВОРО у форматі валідного JSON-об'єкта з двома ключами:
+Поверни результат СУВОРО у форматі валідного JSON-об'єкта з трьома ключами:
     1. "keep": масив ID новин, які треба ЗАЛИШИТИ (наприклад, [0, 2]).
     2. "rejected": масив об'єктів для відхилених новин, де кожен містить:
        - "id": номер новини,
        - "entities_found": масив з 3-5 ключових сутностей (фігуранти, компанії, локації),
-       - "reason": СУВОРО 1-3 слова, лише категорія відхилення (наприклад: "Спорт", "Реклама", "Побут інших міст", "Дубль в історії", "Світовий шум", "Геоблок"). КАТЕГОРИЧНО ЗАБОРОНЕНО писати довгі речення чи пояснення!
+       - "reason": РІВНО одна категорія з переліку, інших значень не буває:
+         "Дубль" — дублікат іншого кандидата (КРОК 2);
+         "Вже публікувалось" — подія вже є в HISTORY або це реакція/коментар до неї (КРОК 3);
+         "Спорт", "Реклама", "Побут інших міст", "Геоблок", "Світовий шум" — стоп-теми (КРОК 4);
+         "Не за тематикою" — не підпадає під жодну тему КРОКУ 5 (КРОК 6),
+       - "detail": коротке пояснення до 10 слів (наприклад, місто чи подія) або порожній рядок.
+    3. "updates": масив ID з "keep", які є суттєвим оновленням події з HISTORY (КРОК 3). Якщо таких немає — [].
 """
 
     try:
@@ -1027,27 +1055,47 @@ HISTORY:
                 "; ".join(articles[idx]["title"][:70] for idx in sorted(unclassified_ids)),
             )
 
+        # L6 (R-12): the filter sees HISTORY, so it decides what is an update; code adds the prefix.
+        update_ids = set(result.updates or [])
+        ignored_updates = update_ids - set(keep_ids)
+        if ignored_updates:
+            logging.warning("Gemini позначив як оновлення ID поза keep — ігноруємо: %s",
+                            sorted(ignored_updates))
+        update_ids -= ignored_updates
+        for idx in keep_ids:
+            if idx in update_ids:
+                articles[idx]["is_update"] = True
+            else:
+                articles[idx].pop("is_update", None)
+
         filtered = [articles[idx] for idx in keep_ids]
         rejected = [item.model_dump() for item in result.rejected]
         rejection_log = []
         for rejected_item in result.rejected:
             title = articles[rejected_item.id]["title"]
             entities = ", ".join(rejected_item.entities_found)
+            detail = f" ({rejected_item.detail[:80]})" if rejected_item.detail else ""
             rejection_log.append(
-                f"• {title[:70]} → {rejected_item.reason[:100]} | Сутності: {entities[:160]}"
+                f"• {title[:70]} → {rejected_item.reason}{detail} | Сутності: {entities[:160]}"
             )
         if stats is not None:
             stats["funnel"]["rejection_reasons_list"] = rejection_log
             stats["funnel"]["unclassified_by_ai"] = len(unclassified_ids)
+            by_reason = stats["funnel"].setdefault("rejected_by_reason", {})
+            for rejected_item in result.rejected:
+                by_reason[rejected_item.reason] = by_reason.get(rejected_item.reason, 0) + 1
+            stats["funnel"]["updates_marked"] = len(update_ids)
         logging.info("Gemini залишив %s з %s кандидатів", len(filtered), len(articles))
         for rejected_item in result.rejected:
             title = articles[rejected_item.id]["title"]
             entities = ", ".join(rejected_item.entities_found)
             reason = rejected_item.reason
             logging.info(
-                "Відхилено Gemini | ID=%s | причина=%s | сутності=%s | заголовок=%s",
-                rejected_item.id, reason, entities, title,
+                "Відхилено Gemini | ID=%s | причина=%s | пояснення=%s | сутності=%s | заголовок=%s",
+                rejected_item.id, reason, rejected_item.detail, entities, title,
             )
+        for idx in sorted(update_ids):
+            logging.info("Позначено як оновлення: %s", articles[idx]["title"])
         return filtered, rejected
 
     except Exception as exc:
@@ -1473,7 +1521,7 @@ def send_to_telegram(text: str, url: str, source_name: str, image_urls=None) -> 
 # ---------------------------------------------------------------------------
 UKRAINE_KEYWORDS = [
     r"\bukrajin", r"\bdijaspor", r"\bzelensk", r"\bzelenšk", r"\bkijev",
-    r"\bodesa", r"\bizbjeglic", r"\bhumanitar", r"\bmigrant",
+    r"\bodesa", r"\bizbjeglic",
     r"\bprivremen\w*\s+zaštit", r"\bdirektiv\w*\s*2001",
 ]
 
@@ -1621,10 +1669,9 @@ def _build_translation_prompt(batch: list[dict]) -> str:
 9. ХЕШТЕГИ: Повертай їх ТІЛЬКИ в окремому полі "hashtags". КАТЕГОРИЧНО ЗАБОРОНЕНО писати хештеги всередині текстового поля "content"!
     ПРАВИЛО ГЕОГРАФІЇ: Перший хештег — це ГЕОГРАФІЯ, і він має бути ТІЛЬКИ ОДИН. Якщо ти знаєш місто — пиши ТІЛЬКИ його латиницею (наприклад, #Zadar, #Split, #SeverinNaKupi). Якщо точне місто невідоме — пиши ТІЛЬКИ назву країни (наприклад, #Hrvatska). КАТЕГОРИЧНО ЗАБОРОНЕНО ставити хештег країни (наприклад, #Хорватія чи #Hrvatska), якщо ти вже поставив хештег конкретного міста!
     ТЕМАТИЧНІ ХЕШТЕГИ: Другі хештеги мають СУВОРО відповідати змісту статті (наприклад, #Економіка, #Суспільство, #Закон, #Політика, #Кримінал). Категорично ЗАБОРОНЕНО ставити хештеги #ТимчасовийЗахист або #Україна, якщо в самому тексті новини про це не йдеться.
-10. ОНОВЛЕННЯ ПОДІЙ: Якщо ти бачиш, що новина є продовженням чи оновленням попередніх подій (наприклад, завершення слідства, нові деталі аварії), додай на самий початок заголовка префікс 🔄 [ОНОВЛЕНО]:
-11. ДОВЖИНА: якщо є фото, видимий текст перекладу (заголовок, тіло й хештеги) має бути не довшим за 900 символів. Без фото — не довшим за 2500 символів. Якщо текст довший, стисни головну суть без втрати важливих фактів, цифр або дат. Не обрізай речення на півслові; якщо вихідний текст обірваний або закінчується на три крапки / [...], прибери незавершене речення і не вигадуй продовження. Для розширених текстів використовуй марковані списки
+10. ДОВЖИНА: якщо є фото, видимий текст перекладу (заголовок, тіло й хештеги) має бути не довшим за 900 символів. Без фото — не довшим за 2500 символів. Якщо текст довший, стисни головну суть без втрати важливих фактів, цифр або дат. Не обрізай речення на півслові; якщо вихідний текст обірваний або закінчується на три крапки / [...], прибери незавершене речення і не вигадуй продовження. Для розширених текстів використовуй марковані списки
 (із символом • або -), щоб інформацію було зручно читати.
-12. ID: У полі id поверни саме ціле числове ID з блока новини. Не повертай URL як ID.
+11. ID: У полі id поверни саме ціле числове ID з блока новини. Не повертай URL як ID.
 
 Поверни тільки JSON, який відповідає схемі TranslationResponse.
 """
@@ -1655,12 +1702,14 @@ def send_dry_run_filter_report(candidates: list[dict], approved: list[dict],
     lines = [f"🧪 <b>ТЕСТ: фільтр Gemini</b> ({esc(_short_model(model))})", "",
              f"✅ <b>Залишено {len(approved)}</b> (у пости підуть перші {BATCH_SIZE}):"]
     for number, item in enumerate(approved, 1):
-        lines.append(f"{number}. {esc(item['title'][:110])} <i>({esc(item.get('source'))})</i>")
+        mark = "🔄 " if item.get("is_update") else ""
+        lines.append(f"{number}. {mark}{esc(item['title'][:110])} <i>({esc(item.get('source'))})</i>")
     lines += ["", "✖ <b>Відкинуто:</b>"]
     rejected_idx = set()
     for rejected in rejected_items:
         rejected_idx.add(rejected["id"])
-        lines.append(f"• [{esc(rejected.get('reason'))}] {esc(candidates[rejected['id']]['title'][:100])}")
+        detail = f" — {esc(rejected.get('detail'))}" if rejected.get("detail") else ""
+        lines.append(f"• [{esc(rejected.get('reason'))}] {esc(candidates[rejected['id']]['title'][:100])}{detail}")
     approved_urls = {item["url"] for item in approved}
     unclassified = [item for idx, item in enumerate(candidates)
                     if idx not in rejected_idx and item["url"] not in approved_urls]
@@ -1806,8 +1855,9 @@ def process_backlog(stats: dict | None = None) -> None:
                 stats["errors_count"] += 1
             continue
 
+        title_prefix = UPDATE_PREFIX if item.get("is_update") else ""
         formatted_text = (
-            f"<b>{translation['title']}</b>\n\n"
+            f"<b>{title_prefix}{translation['title']}</b>\n\n"
             f"{translation['content']}\n\n"
             f"{translation['hashtags']}"
         )
@@ -1872,6 +1922,8 @@ def _empty_stats() -> dict:
             "unclassified_by_ai": 0,
             "duplicates_removed_by_ai": 0,
             "rejection_reasons_list": [],
+            "rejected_by_reason": {},
+            "updates_marked": 0,
         },
         "backlog": {"total_size": 0, "sources": {}},
         "published": {
