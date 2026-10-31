@@ -1,63 +1,5 @@
 [
   {
-    "timestamp": "2026-10-14 09:01:15",
-    "execution_time": 166.5,
-    "funnel": {
-      "scraped_total": 35,
-      "scraped_by_source": {
-        "023": 10,
-        "Slobodna dalmacija": 15,
-        "Zadarski list": 10
-      },
-      "already_seen": 6,
-      "rejected_by_keywords": 2,
-      "duplicates_removed_by_ai": 18,
-      "rejection_reasons_list": [
-        "• Ante je otac petero djece, nakon nesreće... ➡️ <b>Побут інших міст</b>",
-        "• Kijev tvrdi da je Starlink poremetio bor... ➡️ <b>Інші країни / геоблок</b>",
-        "• Od požara i potresa do svijeta poznatih:... ➡️ <b>Шоу-бізнес / реклама</b>",
-        "• Nakon Splita, BAUHAUS Women‘s Night stiž... ➡️ <b>Реклама / промо-акція</b>",
-        "• Vlada u saborsku proceduru uputila novi ... ➡️ <b>Не суттєве оновлення національного рівня</b>",
-        "• Raspisan natječaj za projektnu dokumenta... ➡️ <b>Побут інших міст</b>",
-        "• Habijan: ‘Treba utvrditi tko je od nadle... ➡️ <b>Побут інших міст</b>",
-        "• Mlada djevojka (23) upadala u kuće stari... ➡️ <b>Дубль новини №3</b>",
-        "• Noževi, kamenje, boksačke rukavice i pir... ➡️ <b>Спорт</b>",
-        "• Svjetski popularna kazališna predstava „... ➡️ <b>Культурна подія без прямого впливу на інфраструктуру/життя діаспори</b>",
-        "• Sve je više oboljelih od salmonele u Rij... ➡️ <b>Побут інших міст</b>",
-        "• Divljač harači! Nova odluka iz Zagreba p... ➡️ <b>Побут інших міст</b>",
-        "• Komunikacijske stručnjakinje o burnoj sa... ➡️ <b>Коментарі та політичний шум</b>",
-        "• ‘Do sada su jedva pokrivale trećinu pele... ➡️ <b>Побут інших міст</b>",
-        "• Prijeti kraj europske regionalne politik... ➡️ <b>Світовий шум / абстрактна політика</b>",
-        "• Marijo je zatvorio uspješan restoran i s... ➡️ <b>Побут інших міст</b>",
-        "• Netočno je da je Grad Rijeka isplatio 24... ➡️ <b>Побут інших міст</b>",
-        "• Košarkoplovci s Puntamike digli sidro; K... ➡️ <b>Спорт</b>"
-      ]
-    },
-    "backlog": {
-      "total_size": 37,
-      "sources": {
-        "023": 10,
-        "Slobodna dalmacija": 18,
-        "Zadarski list": 9
-      }
-    },
-    "published": {
-      "total": 3,
-      "ukraine_priority": 0,
-      "with_images": 0,
-      "text_only": 3,
-      "sources": {
-        "023": 3
-      }
-    },
-    "models_used": {
-      "gemini-3.5-flash-lite": 2,
-      "gemini-3.6-flash": 0
-    },
-    "errors_count": 0,
-    "gemini_retries": 0
-  },
-  {
     "timestamp": "2026-10-14 10:01:11",
     "execution_time": 168.1,
     "funnel": {
@@ -5997,5 +5939,91 @@
     "gemini_region_blocked": false,
     "errors_count": 0,
     "gemini_retries": 0
+  },
+  {
+    "timestamp": "2026-10-31 13:18:47",
+    "execution_time": 16.2,
+    "funnel": {
+      "scraped_total": 35,
+      "scraped_by_source": {
+        "023": 10,
+        "Slobodna dalmacija": 15,
+        "Zadarski list": 10
+      },
+      "already_seen": 26,
+      "rejected_by_keywords": 7,
+      "rejected_by_rule": {
+        "igrač": 1,
+        "тег RSS sport": 1,
+        "sportom": 2,
+        "šport": 2,
+        "nogomet": 1
+      },
+      "unclassified_by_ai": 0,
+      "duplicates_removed_by_ai": 2,
+      "rejection_reasons_list": [
+        "• FOTO Sjajan koncert Mašinka i Piške vrište. Pogledajte kako je bilo na → Побут інших міст (Концерт у Рієці) | Сутності: Mašinko, Pičke vrište, Palach, Rijeka, punk",
+        "• Mato Franković: Cijeli svijet zbog održivog turizma hvali Dubrovnik, n → Побут інших міст (Звіт мера Дубровника) | Сутності: Mato Franković, Dubrovnik, Ragusa, Gospino polje"
+      ],
+      "rejected_by_reason": {
+        "Побут інших міст": 2
+      },
+      "updates_marked": 0,
+      "already_rejected": 15,
+      "rejected_by_code_examples": [
+        "[igrač] Nije pogodio nijedan broj, a osvojio je 80.000 eura: Zagrepčanin je s listićem od 7,80 eura promašio",
+        "[тег RSS sport] Zadar se u Dubrovniku zagrijao tek u drugoj četvrtini, a onda prešao granicu od sto poena",
+        "[sportom] Erlić vijećnicima podnio polugodišnje izvješće, a novi ustroj gradske uprave prošao s 13 glasova za",
+        "[sportom] Osnovan poseban Odjel za izdavanje građevinskih dozvola, istodobno ukinut dosadašnji Odjel za gospod",
+        "[šport] Evo gdje će Dubrovnik potrošiti milijune eura prema prijedlogu rebelansa ovogodišnjeg proračuna",
+        "[šport] Evo gdje će se trošiti milijuni eura prema prijedlogu rebelansa ovogodišnjeg proračuna",
+        "[nogomet] Trumpova administracija pokrenula istragu zbog neobičnog kandidata. Zove se isto kao republikanski s"
+      ]
+    },
+    "backlog": {
+      "total_size": 0,
+      "sources": {}
+    },
+    "published": {
+      "total": 0,
+      "ukraine_priority": 0,
+      "with_images": 0,
+      "text_only": 0,
+      "og_images_found": 0,
+      "sources": {}
+    },
+    "models_used": {
+      "gemini-3.5-flash-lite": 1
+    },
+    "models_by_task": {
+      "filter": "gemini-3.5-flash-lite",
+      "translate": null
+    },
+    "model_attempts": [
+      {
+        "task": "filter",
+        "model": "gemini-3.6-flash",
+        "outcome": "unavailable"
+      },
+      {
+        "task": "filter",
+        "model": "gemini-3.6-flash",
+        "outcome": "unavailable"
+      },
+      {
+        "task": "filter",
+        "model": "gemini-3.5-flash-lite",
+        "outcome": "ok"
+      }
+    ],
+    "exhausted_models": [],
+    "demoted_models": [
+      "filter: gemini-3-flash-preview",
+      "translate: gemini-3.8-flash"
+    ],
+    "translate_budget_deferred": [],
+    "gemini_region_blocked": false,
+    "errors_count": 0,
+    "gemini_retries": 2
   }
 ]
