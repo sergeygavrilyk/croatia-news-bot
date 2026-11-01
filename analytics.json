@@ -1,58 +1,5 @@
 [
   {
-    "timestamp": "2026-10-15 08:01:08",
-    "execution_time": 171.1,
-    "funnel": {
-      "scraped_total": 35,
-      "scraped_by_source": {
-        "023": 10,
-        "Slobodna dalmacija": 15,
-        "Zadarski list": 10
-      },
-      "already_seen": 12,
-      "rejected_by_keywords": 0,
-      "duplicates_removed_by_ai": 12,
-      "rejection_reasons_list": [
-        "• Putovima čavjanskih kalića: Jesenska pri... ➡️ <b>Побут чужих міст (Рієка)</b>",
-        "• Zašto se kaže ‘čuvaj se šibenske cure!‘?... ➡️ <b>Не відповідає критеріям регіонального відбору</b>",
-        "• Plenkovićevih 10 godina na čelu Vlade. I... ➡️ <b>Дубль або несуттєве політичне підсумкове обговорення без критичного оновлення</b>",
-        "• doca otvara vrata na riječkoj obali: nov... ➡️ <b>Побут чужих міст (Рієка)</b>",
-        "• Butković o Vučićevim tvrdnjama o hrvatsk... ➡️ <b>Дубль новини про заяви Вучича</b>",
-        "• „Žuta podmornica” potopila Šibenku i izb... ➡️ <b>Спорт</b>",
-        "• Vođa Ajaxovih navijača nakon nereda u Sp... ➡️ <b>Спорт</b>",
-        "• Grad po mjeri čovjeka, ne i novčanika. K... ➡️ <b>Дубль або стара історія про ціни на житло</b>",
-        "• Sirene na Zagrebačkoj obali. Nije riječ ... ➡️ <b>Побут чужих міст (Рієка)</b>",
-        "• Cijene kvadrata u Dubrovniku rasle, ali ... ➡️ <b>Не стосується Задара чи національного рівня Хорватії безпосередньо</b>",
-        "• Vučić se opet žali: ‘Nijedna se država n... ➡️ <b>Інші країни / політика сусідів без прямого впливу на біженців</b>",
-        "• Neno Belan zasvirao u Roxyju za 40 godin... ➡️ <b>Побут чужих міст та культура за межами Задара</b>"
-      ]
-    },
-    "backlog": {
-      "total_size": 30,
-      "sources": {
-        "023": 8,
-        "Slobodna dalmacija": 7,
-        "Zadarski list": 15
-      }
-    },
-    "published": {
-      "total": 3,
-      "ukraine_priority": 0,
-      "with_images": 1,
-      "text_only": 2,
-      "sources": {
-        "023": 2,
-        "Slobodna dalmacija": 1
-      }
-    },
-    "models_used": {
-      "gemini-3.5-flash-lite": 2,
-      "gemini-3.6-flash": 0
-    },
-    "errors_count": 0,
-    "gemini_retries": 0
-  },
-  {
     "timestamp": "2026-10-15 09:01:15",
     "execution_time": 172.4,
     "funnel": {
@@ -6338,5 +6285,102 @@
     "gemini_region_blocked": false,
     "errors_count": 0,
     "gemini_retries": 0
+  },
+  {
+    "timestamp": "2026-11-01 12:01:07",
+    "execution_time": 56.6,
+    "funnel": {
+      "scraped_total": 35,
+      "scraped_by_source": {
+        "023": 10,
+        "Slobodna dalmacija": 15,
+        "Zadarski list": 10
+      },
+      "already_seen": 17,
+      "rejected_by_keywords": 8,
+      "rejected_by_rule": {
+        "URL /sport/": 3,
+        "sportaše": 1,
+        "sport": 1,
+        "košarkaši": 1,
+        "oglas": 1,
+        "nogometni": 1
+      },
+      "unclassified_by_ai": 0,
+      "duplicates_removed_by_ai": 6,
+      "rejection_reasons_list": [
+        "• Crna Gora uvela vize za pet zemalja: idući tjedan PlenKović u Bruxelle → Геоблок (Візова політика Чорногорії) | Сутності: Crna Gora, Plenković, Bruxelles, vize",
+        "• U šetnji gradom sreli smo i bivši misicu, dok Mišine pjesme odzvanjaju → Побут інших міст (Прогулянка та вшанування у Шибенику) | Сутності: Šibenik, Mišo Kovač, Maja Cvjetković, Poljana",
+        "• Imate li i vi neke svoje trikove zbog kojih uspješnije lovite lignje?  → Світовий шум (Поради з лову кальмарів) | Сутності: lignje, skosavice, dipovi, savjeti",
+        "• U masovnoj tučnjavi Kosovar nožem ozlijedio 24-godišnjaka, zadržan je  → Вже публікувалось (Бійка в Задарі вже є в HISTORY) | Сутності: Zadar, Kosovar, Policijska postaja Zadar, Relja",
+        "• Ljeto više nije rezervirano za najbogatije: Jesen postaje nova špica s → Світовий шум (Аналітика світового ринку розкоші) | Сутності: Deloitte, Kina, Europa, Global Powers of Luxury",
+        "• Bježao od policije brzinom do 180 km/h, brzo je uhićen → Побут інших міст (Погоня за порушником у Пожезі) | Сутності: Požega, Bilice, Slavonija, Levanjska Varoš"
+      ],
+      "rejected_by_reason": {
+        "Геоблок": 1,
+        "Побут інших міст": 2,
+        "Світовий шум": 2,
+        "Вже публікувалось": 1
+      },
+      "updates_marked": 0,
+      "already_rejected": 12,
+      "rejected_by_code_examples": [
+        "[URL /sport/] Dubrovački judo klub Fortudo: Borna Butjer brončani na Europskom prvenstvu U23 u Napulju",
+        "[sportaše] Tri državne medalje za Karate klub Bibinje: Stipan Tikulin viceprvak Hrvatske",
+        "[URL /sport/] Jug nanio prvi poraz Solarisu, evo kako su završile druge utakmice 6. kola prvenstva",
+        "[sport] Dubrovnik potvrđuje kvalitetu života: ulaganja u sport i obrazovanje te bogat adventski program",
+        "[košarkaši] Ovako je govorio Mišo: ‘I telefonski imenik bih prodao u 100 tisuća primjeraka s mojom slikom, ali k",
+        "[oglas] Sindikalist Dražen Jović: U privatnom sektoru nužna kontrola isplate plaća i veća pokrivenost kolekt",
+        "[URL /sport/] RIJEKA – VARAŽDIN 15 SATI Čekamo službene sastave s Rujevice",
+        "[nogometni] Profesor iz Rijeke upozorava: Hrvatskoj ne prijete francuski neredi, nego nešto puno opasnije"
+      ]
+    },
+    "backlog": {
+      "total_size": 0,
+      "sources": {}
+    },
+    "published": {
+      "total": 0,
+      "ukraine_priority": 0,
+      "with_images": 0,
+      "text_only": 0,
+      "og_images_found": 0,
+      "sources": {}
+    },
+    "models_used": {
+      "gemini-3.6-flash": 1
+    },
+    "models_by_task": {
+      "filter": "gemini-3.6-flash",
+      "translate": null
+    },
+    "model_attempts": [
+      {
+        "task": "filter",
+        "model": "gemini-3-flash-preview",
+        "outcome": "unavailable"
+      },
+      {
+        "task": "filter",
+        "model": "gemini-3-flash-preview",
+        "outcome": "unavailable"
+      },
+      {
+        "task": "filter",
+        "model": "gemini-3.6-flash",
+        "outcome": "unavailable"
+      },
+      {
+        "task": "filter",
+        "model": "gemini-3.6-flash",
+        "outcome": "ok"
+      }
+    ],
+    "exhausted_models": [],
+    "demoted_models": [],
+    "translate_budget_deferred": [],
+    "gemini_region_blocked": false,
+    "errors_count": 0,
+    "gemini_retries": 3
   }
 ]
