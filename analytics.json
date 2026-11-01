@@ -1,64 +1,5 @@
 [
   {
-    "timestamp": "2026-10-15 11:01:05",
-    "execution_time": 165.9,
-    "funnel": {
-      "scraped_total": 35,
-      "scraped_by_source": {
-        "023": 10,
-        "Slobodna dalmacija": 15,
-        "Zadarski list": 10
-      },
-      "already_seen": 4,
-      "rejected_by_keywords": 1,
-      "duplicates_removed_by_ai": 19,
-      "rejection_reasons_list": [
-        "• Studenac trajno zatvara tri trgovine u D... ➡️ <b>Побут чужих міст</b>",
-        "• Plenković pojasnio hrvatske točke prema ... ➡️ <b>Інші країни / геоблок</b>",
-        "• Britanski liječnik predlaže test za kod ... ➡️ <b>Світовий шум</b>",
-        "• Dabo o postavljanju pravoslavnog križa n... ➡️ <b>Події поза межами Задара та загальнонаціонального рівня</b>",
-        "• Ansambl LADO predstavlja svečane godišnj... ➡️ <b>Культурна подія поза Задаром</b>",
-        "• Zavirili smo u cjenike dalmatinskih mešt... ➡️ <b>Побут інших міст / загальний розважальний матеріал</b>",
-        "• Predali se nakon neuspjelog bijega od po... ➡️ <b>Кримінал поза Задаром</b>",
-        "• Lažna panika u Šibeniku, proširila se pr... ➡️ <b>Кримінал поза Задаром</b>",
-        "• Nagrađeni umjetnici Mandraća 2026. izlaž... ➡️ <b>Побут чужих міст</b>",
-        "• Drama u Zagrebu; Župnik se povlači iz sl... ➡️ <b>Побут чужих міст (Загреб)</b>",
-        "• Dalmatinci, ovo bi vas moglo zanimati! T... ➡️ <b>Дубль або несуттєве оновлення</b>",
-        "• Kirigin primio veleposlanicu Finske... ➡️ <b>Побут чужих міст</b>",
-        "• Emotivna proslava u Arheološkom muzeju; ... ➡️ <b>Вже є в історії (дубль)</b>",
-        "• Metkovski vatrogasci darovali legendarno... ➡️ <b>Побут чужих міст</b>",
-        "• Ministarstvo odgovara logopedima: Najavl... ➡️ <b>Національна новина без прямого фокусу на біженців чи Задар</b>",
-        "• Preko aplikacije za upoznavanje od muška... ➡️ <b>Кримінал поза Задаром</b>",
-        "• HUBOL: Svaki četvrti bolnički liječnik u... ➡️ <b>Загальнонаціональна вторинна тема</b>",
-        "• Muzej crvene povijesti donosi 12 europsk... ➡️ <b>Побут чужих міст</b>",
-        "• Glavina: 3,2 milijuna eura za 363 projek... ➡️ <b>Національна економічна новина загального профілю</b>"
-      ]
-    },
-    "backlog": {
-      "total_size": 56,
-      "sources": {
-        "Slobodna dalmacija": 26,
-        "Zadarski list": 21,
-        "023": 9
-      }
-    },
-    "published": {
-      "total": 3,
-      "ukraine_priority": 0,
-      "with_images": 0,
-      "text_only": 3,
-      "sources": {
-        "023": 3
-      }
-    },
-    "models_used": {
-      "gemini-3.5-flash-lite": 2,
-      "gemini-3.6-flash": 0
-    },
-    "errors_count": 0,
-    "gemini_retries": 0
-  },
-  {
     "timestamp": "2026-10-15 12:01:16",
     "execution_time": 203.4,
     "funnel": {
@@ -6451,5 +6392,102 @@
     "gemini_region_blocked": false,
     "errors_count": 0,
     "gemini_retries": 1
+  },
+  {
+    "timestamp": "2026-11-01 15:01:11",
+    "execution_time": 128.3,
+    "funnel": {
+      "scraped_total": 35,
+      "scraped_by_source": {
+        "023": 10,
+        "Slobodna dalmacija": 15,
+        "Zadarski list": 10
+      },
+      "already_seen": 23,
+      "rejected_by_keywords": 3,
+      "rejected_by_rule": {
+        "тег RSS lifestyle": 1,
+        "URL /sport/": 1,
+        "тег RSS nogomet": 1
+      },
+      "unclassified_by_ai": 0,
+      "duplicates_removed_by_ai": 4,
+      "rejection_reasons_list": [
+        "• Brojni Puljani polažu cvijeće i pale svijeće za najmilije → Побут інших міст (Пула) | Сутності: Пула, Pulapromet, Svi sveti, groblja",
+        "• Žestok obračun usred Zadra: mladić ozlijeđen oštrim predmetom, državlj → Вже публікувалось (Бійка в Задарі) | Сутності: Zadar, Zrinsko-Frankopanska, policija",
+        "• Komemoracija poginulima u Novom Sadu – prvi put izravno prenošena na j → Геоблок (Сербія) | Сутності: Novi Sad, RTS, RTV",
+        "• Crna Gora uvela vize za pet zemalja, Rusija i Bjelorusija uzvraćaju is → Геоблок (Чорногорія) | Сутності: Crna Gora, Rusija, Bjelorusija, EU"
+      ],
+      "rejected_by_reason": {
+        "Побут інших міст": 1,
+        "Вже публікувалось": 1,
+        "Геоблок": 2
+      },
+      "updates_marked": 0,
+      "already_rejected": 16,
+      "rejected_by_code_examples": [
+        "[тег RSS lifestyle] Koliko dugo smijete čuvati sirovo, dimljeno i suho meso u hladnjaku i zamrzivaču",
+        "[URL /sport/] Dubrovački judo klub Fortudo: Borna Butjer brončani na Europskom prvenstvu U23 u Napulju",
+        "[тег RSS nogomet] Iz Dinama su i službeno potvrdili smjenu trenera. Jerko Leko će privremeno preuzeti Modre"
+      ]
+    },
+    "backlog": {
+      "total_size": 0,
+      "sources": {}
+    },
+    "published": {
+      "total": 1,
+      "ukraine_priority": 0,
+      "with_images": 1,
+      "text_only": 0,
+      "og_images_found": 0,
+      "sources": {
+        "Slobodna dalmacija": 1
+      }
+    },
+    "models_used": {
+      "gemini-3.5-flash-lite": 2
+    },
+    "models_by_task": {
+      "filter": "gemini-3.5-flash-lite",
+      "translate": "gemini-3.5-flash-lite"
+    },
+    "model_attempts": [
+      {
+        "task": "filter",
+        "model": "gemini-3-flash-preview",
+        "outcome": "unavailable"
+      },
+      {
+        "task": "filter",
+        "model": "gemini-3.6-flash",
+        "outcome": "unavailable"
+      },
+      {
+        "task": "filter",
+        "model": "gemini-3.6-flash",
+        "outcome": "unavailable"
+      },
+      {
+        "task": "filter",
+        "model": "gemini-3.5-flash-lite",
+        "outcome": "ok"
+      },
+      {
+        "task": "translate",
+        "model": "gemini-3.5-flash-lite",
+        "outcome": "ok"
+      }
+    ],
+    "exhausted_models": [],
+    "demoted_models": [
+      "translate: gemini-3.8-flash"
+    ],
+    "translate_budget_deferred": [
+      "gemini-3.6-flash"
+    ],
+    "gemini_region_blocked": false,
+    "errors_count": 0,
+    "gemini_retries": 3
   }
 ]
