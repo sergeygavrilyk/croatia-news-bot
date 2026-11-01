@@ -1,62 +1,5 @@
 [
   {
-    "timestamp": "2026-10-15 09:01:15",
-    "execution_time": 172.4,
-    "funnel": {
-      "scraped_total": 35,
-      "scraped_by_source": {
-        "023": 10,
-        "Slobodna dalmacija": 15,
-        "Zadarski list": 10
-      },
-      "already_seen": 9,
-      "rejected_by_keywords": 0,
-      "duplicates_removed_by_ai": 17,
-      "rejection_reasons_list": [
-        "• Prazne predavaonice humanistike u Zadru;... ➡️ <b>Побут чужих міст / абстрактна тема</b>",
-        "• Mia Negovetić obradom synth-pop evergree... ➡️ <b>Інша географія (Рієка, культура)</b>",
-        "• Emotivna proslava u Arheološkom muzeju; ... ➡️ <b>Дубль історії про день народження Радоміра Юріча</b>",
-        "• Kvadrat u povijesnoj jezgri Dubrovnika d... ➡️ <b>Інша географія (Дубровник)</b>",
-        "• Karlovac domaćin filmske scene: počinju ... ➡️ <b>Інша географія (Карловац)</b>",
-        "• Sačekuša kod Zadra: huligani presreli Ni... ➡️ <b>Дубль новини ID 6 про напад на нідерландця</b>",
-        "• U Parizu službeno predstavljen Smart #2,... ➡️ <b>Геоблок (подія за межами Хорватії)</b>",
-        "• Nastavlja se borba s vatrenom stihijom: ... ➡️ <b>Інша географія (Дубровник, пожежа)</b>",
-        "• S.A.R.S. se vraća u Lisinski s elektroak... ➡️ <b>Інша географія (Загреб, концерт)</b>",
-        "• Prometna nesreća na Murteru: vozač motor... ➡️ <b>Побут чужих міст (Муртер/Шибеник)</b>",
-        "• Rijeka bi mogla ostati bez predstava, ki... ➡️ <b>Побут чужих міст (Рієка)</b>",
-        "• Zvonko Kucelin, Željko Karavida i Petar ... ➡️ <b>Історія (повтор теми ветеранів та військових фотографів)</b>",
-        "• Ignorirao stop, pa ‘pomeo‘ auto: U sudar... ➡️ <b>Дубль новини з історії про ДТП біля Оброваца</b>",
-        "• Vidanje Lipe: Sedam umjetničkih interven... ➡️ <b>Інша географія (Рієка/Липа)</b>",
-        "• Zašto se kaže ‘čuvaj se šibenske cure!‘?... ➡️ <b>Інша географія (Шибеник, історія)</b>",
-        "• HDZ proziva Tomaševića i Benčić zbog smr... ➡️ <b>Побут чужих міст (Загреб)</b>",
-        "• IDEM kreće na europsku turneju, nastupa ... ➡️ <b>Спорт / Культурна подія поза Задаром</b>"
-      ]
-    },
-    "backlog": {
-      "total_size": 39,
-      "sources": {
-        "023": 9,
-        "Slobodna dalmacija": 12,
-        "Zadarski list": 18
-      }
-    },
-    "published": {
-      "total": 3,
-      "ukraine_priority": 0,
-      "with_images": 0,
-      "text_only": 3,
-      "sources": {
-        "023": 3
-      }
-    },
-    "models_used": {
-      "gemini-3.5-flash-lite": 2,
-      "gemini-3.6-flash": 0
-    },
-    "errors_count": 0,
-    "gemini_retries": 0
-  },
-  {
     "timestamp": "2026-10-15 10:01:12",
     "execution_time": 179.2,
     "funnel": {
@@ -6382,5 +6325,102 @@
     "gemini_region_blocked": false,
     "errors_count": 0,
     "gemini_retries": 3
+  },
+  {
+    "timestamp": "2026-11-01 13:01:08",
+    "execution_time": 266.4,
+    "funnel": {
+      "scraped_total": 35,
+      "scraped_by_source": {
+        "023": 10,
+        "Slobodna dalmacija": 15,
+        "Zadarski list": 10
+      },
+      "already_seen": 19,
+      "rejected_by_keywords": 5,
+      "rejected_by_rule": {
+        "URL /sport/": 2,
+        "sportaše": 1,
+        "тег RSS nogomet": 1,
+        "nogometni": 1
+      },
+      "unclassified_by_ai": 0,
+      "duplicates_removed_by_ai": 5,
+      "rejection_reasons_list": [
+        "• Rezultati izbora u Srbiji: Ponavlja se glasanje na 53 mjesta, ali bez  → Геоблок (Повторне голосування na виборах у Сербії) | Сутності: Srbija, Beograd, Aleksandar Vučić, Studentska lista",
+        "• Šibenik priprema veliki oproštaj od svog Miše: ‘Neka nas njegove pjesm → Вже публікувалось (В історії вже є новина про смерть Мішо Ковача) | Сутності: Šibenik, Mišo Kovač, Mate Bralić, sv. Mihovil",
+        "• HAC izdao upozorenje: zbog radova se zatvara dionica autoceste A1 izme → Побут інших міст (Ремонтні роботи та перекриття автотраси А1 біля Плоче) | Сутності: HAC, autocesta A1, Ploče, Karamatići",
+        "• Cavtatska mega marina i smeće iz Gospića u četvrtak su teme u Europsko → Побут інших міст (Локальні проблеми сміття в Ґоспичі та марини в Цавтаті) | Сутності: Europski parlament, Gospić, Cavtat, Bruxelles",
+        "• Neugodno iznenađenje za kupce! Ova staklenka zimnice povučena je iz tr → Не за тематикою (Загальна стаття про відкликання консервації з магазинів) | Сутності: Hrvatska, trgovine, pesticidi, sigurnost hrane"
+      ],
+      "rejected_by_reason": {
+        "Геоблок": 1,
+        "Вже публікувалось": 1,
+        "Побут інших міст": 2,
+        "Не за тематикою": 1
+      },
+      "updates_marked": 0,
+      "already_rejected": 14,
+      "rejected_by_code_examples": [
+        "[URL /sport/] Dubrovački judo klub Fortudo: Borna Butjer brončani na Europskom prvenstvu U23 u Napulju",
+        "[sportaše] Tri državne medalje za Karate klub Bibinje: Stipan Tikulin viceprvak Hrvatske",
+        "[тег RSS nogomet] Iz Dinama su i službeno potvrdili smjenu trenera. Jerko Leko će privremeno preuzeti Modre",
+        "[URL /sport/] RIJEKA – VARAŽDIN 15 SATI Stigli su sastavi. Kek je napravio jednu promjenu u odnosu na najave",
+        "[nogometni] Profesor iz Rijeke upozorava: Hrvatskoj ne prijete francuski neredi, nego nešto puno opasnije"
+      ]
+    },
+    "backlog": {
+      "total_size": 0,
+      "sources": {}
+    },
+    "published": {
+      "total": 2,
+      "ukraine_priority": 1,
+      "with_images": 2,
+      "text_only": 0,
+      "og_images_found": 0,
+      "sources": {
+        "Zadarski list": 1,
+        "Slobodna dalmacija": 1
+      }
+    },
+    "models_used": {
+      "gemini-3.6-flash": 1,
+      "gemini-3.5-flash-lite": 1
+    },
+    "models_by_task": {
+      "filter": "gemini-3.6-flash",
+      "translate": "gemini-3.5-flash-lite"
+    },
+    "model_attempts": [
+      {
+        "task": "filter",
+        "model": "gemini-3-flash-preview",
+        "outcome": "unavailable"
+      },
+      {
+        "task": "filter",
+        "model": "gemini-3.6-flash",
+        "outcome": "ok"
+      },
+      {
+        "task": "translate",
+        "model": "gemini-3.8-flash",
+        "outcome": "unavailable"
+      },
+      {
+        "task": "translate",
+        "model": "gemini-3.5-flash-lite",
+        "outcome": "ok"
+      }
+    ],
+    "exhausted_models": [],
+    "demoted_models": [],
+    "translate_budget_deferred": [
+      "gemini-3.6-flash"
+    ],
+    "gemini_region_blocked": false,
+    "errors_count": 0,
+    "gemini_retries": 2
   }
 ]
