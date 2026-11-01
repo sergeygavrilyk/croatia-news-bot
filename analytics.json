@@ -1,61 +1,5 @@
 [
   {
-    "timestamp": "2026-10-15 07:01:07",
-    "execution_time": 14.5,
-    "funnel": {
-      "scraped_total": 35,
-      "scraped_by_source": {
-        "023": 10,
-        "Slobodna dalmacija": 15,
-        "Zadarski list": 10
-      },
-      "already_seen": 0,
-      "rejected_by_keywords": 1,
-      "duplicates_removed_by_ai": 18,
-      "rejection_reasons_list": [
-        "• Novi detalji s gradilišta na Višnjiku; O... ➡️ <b>Дубль існуючої історії у history (Novi olimpijski bazen poprima obrise...)</b>",
-        "• Vučić se opet žali: ‘Nijedna se država n... ➡️ <b>Політичний конфлікт між Сербією та Хорватією не стосується безпосередньо українських біженців чи Задара</b>",
-        "• Grad po mjeri čovjeka, ne i novčanika. K... ➡️ <b>Загальна оглядова стаття про ринок нерухомості без нагальної новини</b>",
-        "• Zvonko Kucelin, Željko Karavida i Petar ... ➡️ <b>Історична подія / меморіальний захід, що не є нагальною життєвою новиною для щоденного дайджесту</b>",
-        "• Plenković se prisjetio što je DP govorio... ➡️ <b>Загальнонаціональна внутрішньополітична дискусія</b>",
-        "• Cijene kvadrata u Dubrovniku rasle, ali ... ➡️ <b>Побут і нерухомість інших міст (Дубровник)</b>",
-        "• Privremena regulacija prometa; Pogledajt... ➡️ <b>Спортивна подія / велогонка</b>",
-        "• Studenac zatvara 79 trgovina, poznate su... ➡️ <b>Мережа супермаркетів та загальнонаціональна бізнес-тема без акценту на Задар</b>",
-        "• Neno Belan zasvirao u Roxyju za 40 godin... ➡️ <b>Культурна подія / концерти в Дубровнику</b>",
-        "• Proslavite 77. rođendan NP Paklenica; Be... ➡️ <b>Локальна святкова подія національного парку, не критична для повсякденного життя діаспори</b>",
-        "• Hrvatski znanstvenici otkrili mehanizam ... ➡️ <b>Світовий шум / абстрактна наука</b>",
-        "• Zadar i okolica u sunčanom nizu i do 22 ... ➡️ <b>Дубль або занадто загальний прогноз погоди порівняно з поточними даними</b>",
-        "• U nedjelju akcija izgona divljači i skup... ➡️ <b>Побут інших міст (ззалеждя Кралєвіци)</b>",
-        "• Rublje na radijatoru i prozor na kipu: p... ➡️ <b>Поради з побуту та догляду за житлом (світовий шум)</b>",
-        "• Rijekom se širi priča kako IKEA otvara r... ➡️ <b>Побут та чутки інших міст (Рієка)</b>",
-        "• Počinje uređenje sportsko-rekreacijske z... ➡️ <b>Ремонти та інфраструктура інших міст (Рієка)</b>",
-        "• Vatrogasni dom Mune poprima novi izgled,... ➡️ <b>Побут інших громад та міст (Матулі)</b>",
-        "• Slatka priča iz Opatije: Milenij Choco S... ➡️ <b>Реклама / промо-акція комерційного закладу в Опатії</b>"
-      ]
-    },
-    "backlog": {
-      "total_size": 18,
-      "sources": {
-        "023": 6,
-        "Slobodna dalmacija": 3,
-        "Zadarski list": 9
-      }
-    },
-    "published": {
-      "total": 0,
-      "ukraine_priority": 0,
-      "with_images": 0,
-      "text_only": 0,
-      "sources": {}
-    },
-    "models_used": {
-      "gemini-3.5-flash-lite": 1,
-      "gemini-3.6-flash": 0
-    },
-    "errors_count": 0,
-    "gemini_retries": 0
-  },
-  {
     "timestamp": "2026-10-15 08:01:08",
     "execution_time": 171.1,
     "funnel": {
@@ -6315,5 +6259,84 @@
     "gemini_region_blocked": false,
     "errors_count": 0,
     "gemini_retries": 1
+  },
+  {
+    "timestamp": "2026-11-01 11:01:15",
+    "execution_time": 28.4,
+    "funnel": {
+      "scraped_total": 35,
+      "scraped_by_source": {
+        "023": 10,
+        "Slobodna dalmacija": 15,
+        "Zadarski list": 10
+      },
+      "already_seen": 18,
+      "rejected_by_keywords": 6,
+      "rejected_by_rule": {
+        "sportaše": 1,
+        "URL /sport/": 1,
+        "sport": 1,
+        "košarkaši": 1,
+        "oglas": 1,
+        "nogometni": 1
+      },
+      "unclassified_by_ai": 0,
+      "duplicates_removed_by_ai": 6,
+      "rejection_reasons_list": [
+        "• Šibenski bubnjar znao je Mišu u dušu: ‘Bio je najveći, nikome nije pod → Вже публікувалось (Спогади про Мішо Ковача, чия смерть вже була в історії) | Сутності: Vojmir Roša, Mišo Kovač, Šibenik, Zagreb",
+        "• Gospić slavi dan koji je spojio mrtve i žive → Побут інших міст (День Всіх Святих у місті Госпич) | Сутності: Gospić, Dan Svih svetih, Gradsko groblje Svete Marije Magdalene",
+        "• Opužuju nas da ‘kupujemo‘ nagrade: provjerili smo u kojim je sve organ → Побут інших міст (Дискусія про нагороди та членські внески Дубровника) | Сутності: Mato Franković, Dubrovnik, Gradsko vijeće",
+        "• Binance omogućuje isplate kriptovaluta nakon velike hakerske pljačke → Геоблок (Глобальні новини криптовалют та хакерської атаки) | Сутності: Binance, Washington, kriptovalute",
+        "• U Srbiji uhićen Marko Kričak, načelnik Uprave kriminalističke policije → Геоблок (Арешт начальника кримінальної поліції в Сербії) | Сутності: Marko Kričak, Beograd, MUP Srbije",
+        "• Igor Uremović s čela Vodovoda i odvodnje Žrnovnica Crikvenica Vinodol  → Побут інших міст (Кадрові зміни у водоканалі Цриквениці) | Сутності: Igor Uremović, Hrvatske vode, Crikvenica, Novi Vinodolski"
+      ],
+      "rejected_by_reason": {
+        "Вже публікувалось": 1,
+        "Побут інших міст": 3,
+        "Геоблок": 2
+      },
+      "updates_marked": 0,
+      "already_rejected": 12,
+      "rejected_by_code_examples": [
+        "[sportaše] Tri državne medalje za Karate klub Bibinje: Stipan Tikulin viceprvak Hrvatske",
+        "[URL /sport/] Jug nanio prvi poraz Solarisu, evo kako su završile druge utakmice 6. kola prvenstva",
+        "[sport] Dubrovnik potvrđuje kvalitetu života: ulaganja u sport i obrazovanje te bogat adventski program",
+        "[košarkaši] Ovako je govorio Mišo: ‘I telefonski imenik bih prodao u 100 tisuća primjeraka s mojom slikom, ali k",
+        "[oglas] Sindikalist Dražen Jović: U privatnom sektoru nužna kontrola isplate plaća i veća pokrivenost kolekt",
+        "[nogometni] Profesor iz Rijeke upozorava: Hrvatskoj ne prijete francuski neredi, nego nešto puno opasnije"
+      ]
+    },
+    "backlog": {
+      "total_size": 0,
+      "sources": {}
+    },
+    "published": {
+      "total": 0,
+      "ukraine_priority": 0,
+      "with_images": 0,
+      "text_only": 0,
+      "og_images_found": 0,
+      "sources": {}
+    },
+    "models_used": {
+      "gemini-3-flash-preview": 1
+    },
+    "models_by_task": {
+      "filter": "gemini-3-flash-preview",
+      "translate": null
+    },
+    "model_attempts": [
+      {
+        "task": "filter",
+        "model": "gemini-3-flash-preview",
+        "outcome": "ok"
+      }
+    ],
+    "exhausted_models": [],
+    "demoted_models": [],
+    "translate_budget_deferred": [],
+    "gemini_region_blocked": false,
+    "errors_count": 0,
+    "gemini_retries": 0
   }
 ]
