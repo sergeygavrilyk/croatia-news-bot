@@ -1,67 +1,5 @@
 [
   {
-    "timestamp": "2026-10-14 15:01:12",
-    "execution_time": 169.3,
-    "funnel": {
-      "scraped_total": 35,
-      "scraped_by_source": {
-        "023": 10,
-        "Slobodna dalmacija": 15,
-        "Zadarski list": 10
-      },
-      "already_seen": 11,
-      "rejected_by_keywords": 3,
-      "duplicates_removed_by_ai": 21,
-      "rejection_reasons_list": [
-        "• Drama na Mljetu, jedrilica se nasukala t... ➡️ <b>Побут чужих міст / локацій поза Задаром</b>",
-        "• Moneymaxxing osvaja mlade: više zaraditi... ➡️ <b>Світовий шум / поради</b>",
-        "• Župan i gradonačelnica ovaj su put potpu... ➡️ <b>Побут чужих міст (Рієка)</b>",
-        "• Kod Pomene se nasukala jedrilica, jaki u... ➡️ <b>Дубль новини №0</b>",
-        "• Koliko doista trebamo spavati? Spavanje ... ➡️ <b>Світовий шум / абстрактна наука</b>",
-        "• Obilježava se 50 godina Araličine donaci... ➡️ <b>Побут чужих міст (Оточац)</b>",
-        "• Preminula poznata dubrovačka glazbenica ... ➡️ <b>Побут чужих міст (Дубровник)</b>",
-        "• Hakeri napali hladnjake u francuskim trg... ➡️ <b>Світовий шум / кібербезпека</b>",
-        "• Kontejnerski brod potonuo blizu Hormuško... ➡️ <b>Інші країни / геоблок</b>",
-        "• Preminula dubrovačka glazbenica Loris Gr... ➡️ <b>Дубль новини №6</b>",
-        "• Idete automobilom izvan Hrvatske? Evo u ... ➡️ <b>Загальні поради для водіїв поза Задаром</b>",
-        "• Dražen Miočić izbor je vladajućih za čel... ➡️ <b>Національна політика (не стосується Задара напряму)</b>",
-        "• Gusti dim od požara na Jakljanu vidi se ... ➡️ <b>Побут чужих міст (Яклян/Дубровник)</b>",
-        "• ALARM ZA VODU U LICI Opasnih kemikalija ... ➡️ <b>Побут чужих міст (Лика)</b>",
-        "• Grad Rijeka povećava sufinanciranje dadi... ➡️ <b>Побут чужих міст (Рієка)</b>",
-        "• Očekuju se ogromne gužve: u Dubrovnik u ... ➡️ <b>Побут чужих міст (Дубровник)</b>",
-        "• Ako vam se soba sporo zagrijava, problem... ➡️ <b>Світовий шум / побутові поради</b>",
-        "• Udruga Žmergo poziva sve mlade u Opatiji... ➡️ <b>Побут чужих міст (Опатія)</b>",
-        "• Šimunić o istrazi Uskoka: “Nikad od niko... ➡️ <b>Побут чужих міст (Орослав'є)</b>",
-        "• Alfa Romeo u Parizu predstavio koncept k... ➡️ <b>Світовий шум / автоновини</b>",
-        "• U četvrtak tri kruzera u Gružu i jedan i... ➡️ <b>Дубль новини №15</b>"
-      ]
-    },
-    "backlog": {
-      "total_size": 51,
-      "sources": {
-        "Slobodna dalmacija": 33,
-        "Zadarski list": 10,
-        "023": 8
-      }
-    },
-    "published": {
-      "total": 3,
-      "ukraine_priority": 0,
-      "with_images": 2,
-      "text_only": 1,
-      "sources": {
-        "Slobodna dalmacija": 2,
-        "023": 1
-      }
-    },
-    "models_used": {
-      "gemini-3.5-flash-lite": 2,
-      "gemini-3.6-flash": 0
-    },
-    "errors_count": 0,
-    "gemini_retries": 0
-  },
-  {
     "timestamp": "2026-10-14 16:01:16",
     "execution_time": 167.7,
     "funnel": {
@@ -6195,6 +6133,110 @@
       },
       {
         "task": "filter",
+        "model": "gemini-3.6-flash",
+        "outcome": "ok"
+      }
+    ],
+    "exhausted_models": [],
+    "demoted_models": [],
+    "translate_budget_deferred": [],
+    "gemini_region_blocked": false,
+    "errors_count": 0,
+    "gemini_retries": 2
+  },
+  {
+    "timestamp": "2026-11-01 08:01:05",
+    "execution_time": 331.6,
+    "funnel": {
+      "scraped_total": 35,
+      "scraped_by_source": {
+        "023": 10,
+        "Slobodna dalmacija": 15,
+        "Zadarski list": 10
+      },
+      "already_seen": 7,
+      "rejected_by_keywords": 10,
+      "rejected_by_rule": {
+        "URL /sport/": 5,
+        "sport": 1,
+        "košarkaši": 1,
+        "oglas": 1,
+        "тег RSS košarka": 1,
+        "тег RSS nogomet": 1
+      },
+      "unclassified_by_ai": 0,
+      "duplicates_removed_by_ai": 9,
+      "rejection_reasons_list": [
+        "• Blagdan je Svih svetih, ovo su tradicionalni hrvatski običaji na taj d → Вже публікувалось (Традиції та святкування Дня всіх святих вже в історії) | Сутності: Blagdan Svih svetih, Hrvatska, Dušni dan",
+        "• Katolička Crkva slavi sve kanonizirane svece, ali i one koji to nisu.  → Побут інших міст (Традиції свята на острові Корчула) | Сутності: Korčula, Lumbija, Blagdan Svih svetih",
+        "• Neobičan susret u Lopudskim vratima. Naletio na jato fan-fanova pa ulo → Побут інших міст (Локальний вилов риби біля острова Лопуд) | Сутності: Lopudska vrata, Domagoj Kulišić, fan-fan",
+        "• Što se mijenja u Međugorju? Vatikan poslao svog čovjeka, evo kakve ovl → Геоблок (Релігійні події у Боснії та Герцеговині) | Сутності: Međugorje, Vatikan, Francesco Cavina, Papa Lav XIV",
+        "• Danas moguća slaba kiša, u najvišem gorju susnježica i snijeg → Побут інших міст (Загальний прогноз погоди з акцентом на Рієку) | Сутності: DHMZ, Hrvatska, Rijeka, Velebit",
+        "• Nakon Straduna, evo subotnje špice u Uvali Lapad → Побут інших міст (Міський побут у Дубровнику) | Сутності: Dubrovnik, Stradun, Uvala Lapad",
+        "• Razlika između tuge i tuposti: kako anhedonija utječe na raspoloženje  → Світовий шум (Поради з психології щодо ангедонії) | Сутності: anhedonija, iStock, sezonska potištenost",
+        "• Anita Baturina, Mišina supruga s kojom je dobio sina Edija i kći Ivanu → Вже публікувалось (Спогади та реакція ексдружини після смерті Мішо Ковача) | Сутності: Anita Baturina, Mišo Kovač, Edi Kovač, Ivana Kovač",
+        "• Boninovo obasjano svijećama i ispunjeno cvjetnim aranžmanima → Побут інших міст (Облаштування цвинтаря у Дубровнику) | Сутності: groblje Boninovo, Dubrovnik, Blagdan Svih svetih"
+      ],
+      "rejected_by_reason": {
+        "Вже публікувалось": 2,
+        "Побут інших міст": 5,
+        "Геоблок": 1,
+        "Світовий шум": 1
+      },
+      "updates_marked": 0,
+      "already_rejected": 4,
+      "rejected_by_code_examples": [
+        "[URL /sport/] Jug nanio prvi poraz Solarisu, evo kako su završile druge utakmice 6. kola prvenstva",
+        "[sport] Dubrovnik potvrđuje kvalitetu života: ulaganja u sport i obrazovanje te bogat adventski program",
+        "[košarkaši] Ovako je govorio Mišo: ‘I telefonski imenik bi prodao u 100 tisuća primjeraka s mojom slikom, ali ka",
+        "[oglas] Sindikalist Dražen Jović: U privatnom sektoru nužna kontrola isplate plaća i veća pokrivenost kolekt",
+        "[URL /sport/] Prije 60 godina na Kantridi je tijekom treninga prestalo kucati srce riječke nogometne legende",
+        "[тег RSS košarka] VIDEO Mario Hezonja i Karlo Matković odigrali zapažene role u pobjedama Cavaliersa i Pelicansa",
+        "[URL /sport/] Meksička boksačka ikona pobjedom nad Francuzom Mbilijom u Rijadu osvojila novi WBC naslov",
+        "[URL /sport/] Mladen Devetak uoči Varaždina: “Moramo biti pravi od početka utakmice, čvrsti i agresivni”",
+        "[URL /sport/] Rijeka na Rujevici dočekuje momčad koju je dobila samo dvaput u posljednjih deset međusobnih susreta",
+        "[тег RSS nogomet] Talijanski mediji: “Profesor Luka je u svojim rukama držao ključeve pobjede Milana nad Interom”"
+      ]
+    },
+    "backlog": {
+      "total_size": 0,
+      "sources": {}
+    },
+    "published": {
+      "total": 3,
+      "ukraine_priority": 0,
+      "with_images": 3,
+      "text_only": 0,
+      "og_images_found": 3,
+      "sources": {
+        "023": 3
+      }
+    },
+    "models_used": {
+      "gemini-3.6-flash": 2
+    },
+    "models_by_task": {
+      "filter": "gemini-3.6-flash",
+      "translate": "gemini-3.6-flash"
+    },
+    "model_attempts": [
+      {
+        "task": "filter",
+        "model": "gemini-3-flash-preview",
+        "outcome": "unavailable"
+      },
+      {
+        "task": "filter",
+        "model": "gemini-3.6-flash",
+        "outcome": "ok"
+      },
+      {
+        "task": "translate",
+        "model": "gemini-3.8-flash",
+        "outcome": "unavailable"
+      },
+      {
+        "task": "translate",
         "model": "gemini-3.6-flash",
         "outcome": "ok"
       }
