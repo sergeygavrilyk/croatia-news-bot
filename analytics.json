@@ -1,66 +1,5 @@
 [
   {
-    "timestamp": "2026-10-15 14:01:13",
-    "execution_time": 197.3,
-    "funnel": {
-      "scraped_total": 35,
-      "scraped_by_source": {
-        "023": 10,
-        "Slobodna dalmacija": 15,
-        "Zadarski list": 10
-      },
-      "already_seen": 8,
-      "rejected_by_keywords": 2,
-      "duplicates_removed_by_ai": 20,
-      "rejection_reasons_list": [
-        "• ‘Pogodi da zazvoni!‘: Sugrađani zaigrali... ➡️ <b>Стоп-тема: подія не в Задарі, а в іншій частині Хорватії (Дубровник), не стосується України.</b>",
-        "• Ove subote u Rabu Memorijalni kup u podv... ➡️ <b>Стоп-тема: спорт та події за межами Задара.</b>",
-        "• Njemački list o Dalmaciji: ‘Sve je bilo ... ➡️ <b>Стоп-тема: суб'єктивні враження іноземних ЗМІ про туристичний сезон, дубль загального характеру.</b>",
-        "• Krankšvester ovu subotu premijerno nastu... ➡️ <b>Стоп-тема: розважальний концерт за межами Задара.</b>",
-        "• Najudaljeniji poznati brzi radijski blje... ➡️ <b>Стоп-тема: світовий шум, абстрактна наука.</b>",
-        "• Tražite posao? I Šibensko-kninska župani... ➡️ <b>Стоп-тема: побут та вакансії чужих міст (Шибеник).</b>",
-        "• Britanski liječnik predlaže test za kod ... ➡️ <b>Стоп-тема: світовий шум, поради та тести.</b>",
-        "• Dubrovnik kao svjetlosna pozornica: sutr... ➡️ <b>Стоп-тема: культурна подія та побут іншого міста (Дубровник).</b>",
-        "• Škola za sve – ali jesu li i mogućnosti ... ➡️ <b>Стоп-тема: подія в іншому місті (Рієка).</b>",
-        "• Drama u Zagrebu; Župnik se povlači iz sl... ➡️ <b>Стоп-тема: кримінал та події в Загребі, які не стосуються Задара чи національного рівня загальної ваги.</b>",
-        "• Grad mora donijeti novu odluku o zabrani... ➡️ <b>Стоп-тема: локальні будівельні правила іншого міста (Дубровник).</b>",
-        "• Đakovčanin ostao bez 31.500 eura; prevar... ➡️ <b>Стоп-тема: кримінал та шахрайство в іншій жупанії.</b>",
-        "• Od Pila do Peskarije povremeno bez javne... ➡️ <b>Стоп-тема: дубль новини про фестиваль у Дубровнику (ідентично новині №9).</b>",
-        "• Promjena u sastavu Gradskog vijeća Grada... ➡️ <b>Стоп-тема: локальна політика іншого міста (Раб).</b>",
-        "• S bakrenom kacigom na dno mora: Kristija... ➡️ <b>Стоп-тема: спортивно-екологічний рекорд в іншій жупанії.</b>",
-        "• Bivša direktorica Lenca pod istragom DOR... ➡️ <b>Стоп-тема: локальна кадрова подія в Рієці.</b>",
-        "• Bježao bez vozačke, pa uhvaćen s drogom:... ➡️ <b>Стоп-тема: локальний дорожній кримінал у Лиці, не стосується Задара.</b>",
-        "• Novi nakladnik N1 dobio dopuštenje za te... ➡️ <b>Подія загальнонаціонального рівня в медіа, але поступається пріоритетним темам; дублює загальний медіапростір, проте не є критичною кризою чи законом.</b>",
-        "• Stanovnici Školjića najavili prosvjed zb... ➡️ <b>Стоп-тема: протести та комунальні проблеми в Рієці.</b>",
-        "• Zavirili smo u cjenike dalmatinskih mešt... ➡️ <b>Стоп-тема: роздуми про зарплати та старий страйк у Загребі.</b>"
-      ]
-    },
-    "backlog": {
-      "total_size": 54,
-      "sources": {
-        "Slobodna dalmacija": 29,
-        "Zadarski list": 21,
-        "023": 4
-      }
-    },
-    "published": {
-      "total": 3,
-      "ukraine_priority": 0,
-      "with_images": 2,
-      "text_only": 1,
-      "sources": {
-        "023": 1,
-        "Zadarski list": 2
-      }
-    },
-    "models_used": {
-      "gemini-3.5-flash-lite": 2,
-      "gemini-3.6-flash": 0
-    },
-    "errors_count": 0,
-    "gemini_retries": 0
-  },
-  {
     "timestamp": "2026-10-15 15:01:15",
     "execution_time": 18.9,
     "funnel": {
@@ -6563,5 +6502,104 @@
     "gemini_region_blocked": false,
     "errors_count": 0,
     "gemini_retries": 2
+  },
+  {
+    "timestamp": "2026-11-01 20:01:10",
+    "execution_time": 224.5,
+    "funnel": {
+      "scraped_total": 35,
+      "scraped_by_source": {
+        "023": 10,
+        "Slobodna dalmacija": 15,
+        "Zadarski list": 10
+      },
+      "already_seen": 15,
+      "rejected_by_keywords": 8,
+      "rejected_by_rule": {
+        "тег RSS lifestyle": 5,
+        "sporta": 1,
+        "тег RSS sport": 1,
+        "тег RSS nogomet": 1
+      },
+      "unclassified_by_ai": 0,
+      "duplicates_removed_by_ai": 9,
+      "rejection_reasons_list": [
+        "• Britanski premijer “otvoren” za službenu ispriku zbog ropstva, no iskl → Геоблок (Політика Великої Британії щодо колоніального минулого) | Сутності: Andy Burnham, Commonwealth, Velika Britanija",
+        "• Krsnu slavu imaju i Hrvati katolici, ne samo Srbi. Zbog krsne slave če → Не за тематикою (Етнографічна стаття про релігійні звичаї) | Сутності: Hrvati katolici, krsna slava, dolina Neretve",
+        "• UN traži istragu smrti svog djelatnika kojeg su zatočili hutisti → Геоблок (Смерть співробітника ООН у Ємені) | Сутності: UN, Mohamad El Šami, hutisti",
+        "• Mural “Bare Baretu”: Boris naslikao posvetu svom rođaku Goranu → Побут інших міст (Створення муралу в Загребі) | Сутності: Boris Bare, Goran Bare, Zagreb",
+        "• Nadbiskup Uzinić na misi citirao stihove Miša Kovača: ‘Ova pjesma saži → Вже публікувалось (Реакція на смерть Мішо Ковача, який є в історії) | Сутності: Mate Uzinić, Mišo Kovač, Rijeka",
+        "• Nova knjiga Franje Deranje nudi mračne zaplete, ali i razmišljanja o g → Побут інших міст (Презентація книги в Цриквениці) | Сутності: Franjo Deranja, Crikvenica, Braća po mlijeku",
+        "• Otvoren natječaj za salon crno-bijele fotografije “Fernando Soprano” → Побут інших міст (Фотоконкурс у Рієці) | Сутності: Fernando Soprano, Rijeka, Hrvatski fotosavez",
+        "• STIFF traži volontere → Побут інших міст (Пошук волонтерів для фестивалю в Рієці) | Сутності: STIFF, Rijeka, Art-kino Croatia",
+        "• Zaljubljenike u pisanu riječ okupile književne prevoditeljice Snježana → Побут інших міст (Літературний захід на Малому Лошині) | Сутності: Snježana Husić, Ana Badurina, Mali Lošinj"
+      ],
+      "rejected_by_reason": {
+        "Геоблок": 2,
+        "Не за тематикою": 1,
+        "Побут інших міст": 5,
+        "Вже публікувалось": 1
+      },
+      "updates_marked": 1,
+      "already_rejected": 9,
+      "rejected_by_code_examples": [
+        "[тег RSS lifestyle] Kroasani s makom od gotovog tijesta za pizzu: brza zamjena za makovnjaču",
+        "[тег RSS lifestyle] Na kojoj rešetki peći pizzu, kruh i lazanje da tijesto ne ostane gnjecavo",
+        "[тег RSS lifestyle] Kako pahuljicama čilija odvratiti štakore i miševe od hranilice za ptice",
+        "[тег RSS lifestyle] Kako gulilicom za povrće brzo narezati kupus za salatu i zašto mu dodati vodu",
+        "[тег RSS lifestyle] Koliko dugo smijete čuvati sirovo, dimljeno i suho meso u hladnjaku i zamrzivaču",
+        "[sporta] Tri kluba obilježila 8. kolo - uvjerljivi Velebit, Abeceda i Sabunjar!",
+        "[тег RSS sport] Odbojkaši Rijeke velikim preokretom u Rovinju upisali gostujuću pobjedu",
+        "[тег RSS nogomet] Osijek uvjerljiv protiv Lokomotive na kišnom Maksimiru"
+      ]
+    },
+    "backlog": {
+      "total_size": 0,
+      "sources": {}
+    },
+    "published": {
+      "total": 3,
+      "ukraine_priority": 0,
+      "with_images": 3,
+      "text_only": 0,
+      "og_images_found": 0,
+      "sources": {
+        "Slobodna dalmacija": 2,
+        "Zadarski list": 1
+      }
+    },
+    "models_used": {
+      "gemini-3-flash-preview": 1,
+      "gemini-3.5-flash-lite": 1
+    },
+    "models_by_task": {
+      "filter": "gemini-3-flash-preview",
+      "translate": "gemini-3.5-flash-lite"
+    },
+    "model_attempts": [
+      {
+        "task": "filter",
+        "model": "gemini-3-flash-preview",
+        "outcome": "ok"
+      },
+      {
+        "task": "translate",
+        "model": "gemini-3.8-flash",
+        "outcome": "unavailable"
+      },
+      {
+        "task": "translate",
+        "model": "gemini-3.5-flash-lite",
+        "outcome": "ok"
+      }
+    ],
+    "exhausted_models": [],
+    "demoted_models": [],
+    "translate_budget_deferred": [
+      "gemini-3.6-flash"
+    ],
+    "gemini_region_blocked": false,
+    "errors_count": 0,
+    "gemini_retries": 1
   }
 ]
