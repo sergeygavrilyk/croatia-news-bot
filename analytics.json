@@ -1,65 +1,5 @@
 [
   {
-    "timestamp": "2026-10-15 10:01:12",
-    "execution_time": 179.2,
-    "funnel": {
-      "scraped_total": 35,
-      "scraped_by_source": {
-        "023": 10,
-        "Slobodna dalmacija": 15,
-        "Zadarski list": 10
-      },
-      "already_seen": 5,
-      "rejected_by_keywords": 0,
-      "duplicates_removed_by_ai": 20,
-      "rejection_reasons_list": [
-        "• U Opatiji počela humanitarna akcija “Sol... ➡️ <b>Побут міста Опатія (поза Задарським регіоном)</b>",
-        "• Metkovski vatrogasci darovali legendarno... ➡️ <b>Побут та події міста Меткович</b>",
-        "• Finale Supertalenta i ove godine u zagre... ➡️ <b>Шоубізнес та подія в Загребі</b>",
-        "• Drama u Zagrebu; Župnik se povlači iz sl... ➡️ <b>Локальні події та кримінал Загреба</b>",
-        "• Preko aplikacije za upoznavanje od muška... ➡️ <b>Дрібний шахрайський кримінал у Дубровнику та Загребі</b>",
-        "• Horor na Pećinama: 70 mačaka u 47 kvadra... ➡️ <b>Побут та надзвичайна подія в Рієці</b>",
-        "• Muzej crvene povijesti donosi 12 europsk... ➡️ <b>Культурно-екологічний pr-захід у Дубровнику</b>",
-        "• Općina Matulji i ove godine osigurava pr... ➡️ <b>Побут та соціальні виплати громади Матулі</b>",
-        "• Djevojka (21) od Dubrovčanina (64) iskam... ➡️ <b>Дублікат новини №5, дрібний кримінал у Дубровнику</b>",
-        "• Tomislav Beronić, proučavatelj glagoljaš... ➡️ <b>Локальна культурна подія у Врбовско</b>",
-        "• Emotivna proslava u Arheološkom muzeju; ... ➡️ <b>Повтор новини з історії (ювілей Радомира Юрича)</b>",
-        "• Treća sreća za šibenski teatar? Oriana K... ➡️ <b>Локальне призначення керівника театру в Шибенику</b>",
-        "• Mia Negovetić obradom synth-pop evergree... ➡️ <b>Культурні анонси міста Рієка</b>",
-        "• Novi detalji s gradilišta na Višnjiku; O... ➡️ <b>Повтор новини з історії (будівництво басейну на Вішньїку)</b>",
-        "• Franković žestoko opleo po Uberu: ‘I dal... ➡️ <b>Транспортний побут та конфлікти у Дубровнику</b>",
-        "• Karlovac domaćin filmske scene: počinju ... ➡️ <b>Культурна подія у Карловаці</b>",
-        "• Poskoci se prisjećaju: ‘Tko to nije proš... ➡️ <b>Повтор новини з історії (річниця спецпідрозділу Poskoci)</b>",
-        "• U Parizu službeno predstavljen Smart #2,... ➡️ <b>Геоблок: автоновини з Парижа</b>",
-        "• Muzej crvene povijesti predstavio priruč... ➡️ <b>Дублікат новини №8 (локальний захід у Дубровнику)</b>",
-        "• S.A.R.S. se vraća u Lisinski s elektroak... ➡️ <b>Концертна афіша у Загребі</b>"
-      ]
-    },
-    "backlog": {
-      "total_size": 49,
-      "sources": {
-        "Zadarski list": 20,
-        "Slobodna dalmacija": 20,
-        "023": 9
-      }
-    },
-    "published": {
-      "total": 3,
-      "ukraine_priority": 0,
-      "with_images": 0,
-      "text_only": 3,
-      "sources": {
-        "023": 3
-      }
-    },
-    "models_used": {
-      "gemini-3.5-flash-lite": 1,
-      "gemini-3.6-flash": 1
-    },
-    "errors_count": 0,
-    "gemini_retries": 0
-  },
-  {
     "timestamp": "2026-10-15 11:01:05",
     "execution_time": 165.9,
     "funnel": {
@@ -6422,5 +6362,94 @@
     "gemini_region_blocked": false,
     "errors_count": 0,
     "gemini_retries": 2
+  },
+  {
+    "timestamp": "2026-11-01 14:01:09",
+    "execution_time": 180.0,
+    "funnel": {
+      "scraped_total": 35,
+      "scraped_by_source": {
+        "023": 10,
+        "Slobodna dalmacija": 15,
+        "Zadarski list": 10
+      },
+      "already_seen": 21,
+      "rejected_by_keywords": 4,
+      "rejected_by_rule": {
+        "тег RSS lifestyle": 1,
+        "URL /sport/": 2,
+        "тег RSS nogomet": 1
+      },
+      "unclassified_by_ai": 0,
+      "duplicates_removed_by_ai": 4,
+      "rejection_reasons_list": [
+        "• FOTO Dom Hahlić obilježio stoti rođendan: nezaobilazno utočište genera → Побут інших міст (Ювілей альпіністського притулку у Єленьє) | Сутності: Dom Hahlić, Grobničke Alpe, Jelenje, 100 godina",
+        "• FOTO Riječki Halloween donio mnoštvo čudovišta i natprirodnih bića, ob → Побут інших міст (Святкування Гелловіну у клубах Рієки) | Сутності: Rijeka, Halloween, Exportdrva, нічні клуби",
+        "• Iz ormara se počela vaditi zimska roba: Stradun danas zakoračio u zims → Побут інших міст (Зміна погоди та зимовий одяг у Дубровнику) | Сутності: Dubrovnik, Stradun, зимовий сезон, погода",
+        "• Dobre vijesti za dubrovačke skijaše: skije na krov, ‘zabijelillio‘ se  → Геоблок (Снігопад на гірськолижних курортах Боснії) | Сутності: Blidinje, BiH, Dubrovnik, Čemerno"
+      ],
+      "rejected_by_reason": {
+        "Побут інших міст": 3,
+        "Геоблок": 1
+      },
+      "updates_marked": 0,
+      "already_rejected": 16,
+      "rejected_by_code_examples": [
+        "[тег RSS lifestyle] Koliko dugo smijete čuvati sirovo, dimljeno i suho meso u hladnjaku i zamrzivaču",
+        "[URL /sport/] Dubrovački judo klub Fortudo: Borna Butjer brončani na Europskom prvenstvu U23 u Napulju",
+        "[тег RSS nogomet] Iz Dinama su i službeno potvrdili smjenu trenera. Jerko Leko će privremeno preuzeti Modre",
+        "[URL /sport/] RIJEKA – VARAŽDIN 15 SATI Stigli su sastavi. Kek je napravio jednu promjenu u odnosu na najave"
+      ]
+    },
+    "backlog": {
+      "total_size": 0,
+      "sources": {}
+    },
+    "published": {
+      "total": 2,
+      "ukraine_priority": 1,
+      "with_images": 2,
+      "text_only": 0,
+      "og_images_found": 0,
+      "sources": {
+        "Zadarski list": 1,
+        "Slobodna dalmacija": 1
+      }
+    },
+    "models_used": {
+      "gemini-3.6-flash": 1,
+      "gemini-3.5-flash-lite": 1
+    },
+    "models_by_task": {
+      "filter": "gemini-3.6-flash",
+      "translate": "gemini-3.5-flash-lite"
+    },
+    "model_attempts": [
+      {
+        "task": "filter",
+        "model": "gemini-3.6-flash",
+        "outcome": "ok"
+      },
+      {
+        "task": "translate",
+        "model": "gemini-3.8-flash",
+        "outcome": "unavailable"
+      },
+      {
+        "task": "translate",
+        "model": "gemini-3.5-flash-lite",
+        "outcome": "ok"
+      }
+    ],
+    "exhausted_models": [],
+    "demoted_models": [
+      "filter: gemini-3-flash-preview"
+    ],
+    "translate_budget_deferred": [
+      "gemini-3.6-flash"
+    ],
+    "gemini_region_blocked": false,
+    "errors_count": 0,
+    "gemini_retries": 1
   }
 ]
