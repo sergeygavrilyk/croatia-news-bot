@@ -1,68 +1,5 @@
 [
   {
-    "timestamp": "2026-10-15 12:01:16",
-    "execution_time": 203.4,
-    "funnel": {
-      "scraped_total": 35,
-      "scraped_by_source": {
-        "023": 10,
-        "Slobodna dalmacija": 15,
-        "Zadarski list": 10
-      },
-      "already_seen": 9,
-      "rejected_by_keywords": 2,
-      "duplicates_removed_by_ai": 22,
-      "rejection_reasons_list": [
-        "• ‘Pogodi da zazvoni!‘: Sugrađani zaigrali... ➡️ <b>Подія за межами Задара та Хорватії (регіональний захід у Дубровнику)</b>",
-        "• Najudaljeniji poznati brzi radijski blje... ➡️ <b>Світовий шум (абстрактна наука)</b>",
-        "• Jesenski val okusa od 15. listopada do 1... ➡️ <b>Побут чужих міст (Рієка)</b>",
-        "• S bakrenom kacigom na dno mora: Kristija... ➡️ <b>Спорт та подія за межами Задара</b>",
-        "• Britanski liječnik predlaže test za kod ... ➡️ <b>Світовий шум / поради дієтологів чи лікарів</b>",
-        "• Na prosvjedu protiv Kaštijuna građanske ... ➡️ <b>Побут чужих міст (Пула та Істрія)</b>",
-        "• Drama u Zagrebu; Župnik se povlači iz sl... ➡️ <b>Побут чужих міст (Загреб)</b>",
-        "• Na Gradskom vijeću Raba prijedlog raspis... ➡️ <b>Побут чужих міст (Раб)</b>",
-        "• Bježao bez vozačke, pa uhvaćen s drogom:... ➡️ <b>Побут чужих міст (Перушич / Ліка)</b>",
-        "• Pulski liječnici uspješno proveli dva za... ➡️ <b>Побут чужих міст (Пула)</b>",
-        "• Studenac trajno zatvara tri trgovine u D... ➡️ <b>Побут чужих міст (Дубровницько-неретванська жупанія)</b>",
-        "• Šest desetljeća joga u Milohnićima obilj... ➡️ <b>Побут чужих міст (Крк)</b>",
-        "• Nadolazeći vikend u Opatiji u znaku rekr... ➡️ <b>Побут чужих міст (Опатія)</b>",
-        "• Zavirili smo u cjenike dalmatinskih mešt... ➡️ <b>Побут чужих міст (Загреб)</b>",
-        "• Uhvati film u četvrtak u Circolu: Kreati... ➡️ <b>Побут чужих міст (Рієка)</b>",
-        "• Lažna panika u Šibeniku, proširila se pr... ➡️ <b>Побут чужих міст (Шибеник)</b>",
-        "• Policajcu Marku Smažilu 15 godina zatvor... ➡️ <b>Побут чужих міст (Осієк)</b>",
-        "• Dalmatinci, ovo bi vas moglo zanimati! T... ➡️ <b>Загальнонаціональна новина без прямого стосунку до Задара чи українців</b>",
-        "• Stotinjak učenika iz Buzeta posjetilo an... ➡️ <b>Побут чужих міст (Бузет / Лібурнія)</b>",
-        "• Metkovski vatrogasci darovali legendarno... ➡️ <b>Побут чужих міст (Меткович)</b>",
-        "• Ministar Ružić posjetio Centar „Vinko Be... ➡️ <b>Побут чужих міст (Загреб)</b>",
-        "• Preko aplikacije za upoznavanje od muška... ➡️ <b>Побут чужих міст (Дубровник / Загреб)</b>"
-      ]
-    },
-    "backlog": {
-      "total_size": 54,
-      "sources": {
-        "Zadarski list": 22,
-        "Slobodna dalmacija": 28,
-        "023": 4
-      }
-    },
-    "published": {
-      "total": 3,
-      "ukraine_priority": 0,
-      "with_images": 2,
-      "text_only": 1,
-      "sources": {
-        "Slobodna dalmacija": 2,
-        "023": 1
-      }
-    },
-    "models_used": {
-      "gemini-3.5-flash-lite": 2,
-      "gemini-3.6-flash": 0
-    },
-    "errors_count": 0,
-    "gemini_retries": 0
-  },
-  {
     "timestamp": "2026-10-15 13:01:15",
     "execution_time": 84.5,
     "funnel": {
@@ -6489,5 +6426,112 @@
     "gemini_region_blocked": false,
     "errors_count": 0,
     "gemini_retries": 3
+  },
+  {
+    "timestamp": "2026-11-01 16:01:08",
+    "execution_time": 293.1,
+    "funnel": {
+      "scraped_total": 35,
+      "scraped_by_source": {
+        "023": 10,
+        "Slobodna dalmacija": 15,
+        "Zadarski list": 10
+      },
+      "already_seen": 18,
+      "rejected_by_keywords": 6,
+      "rejected_by_rule": {
+        "тег RSS lifestyle": 3,
+        "URL /sport/": 1,
+        "тег RSS nogomet": 1,
+        "тег RSS sport": 1
+      },
+      "unclassified_by_ai": 0,
+      "duplicates_removed_by_ai": 7,
+      "rejection_reasons_list": [
+        "• Udruga umirovljenika Crikvenice i Vinodolske općine proslavila okrugli → Побут інших міст (Ювілей товариства пенсіонерів у Цриквениці) | Сутності: Udruga umirovljenika, Crikvenica, Vinodolska općina, hotel Katarina",
+        "• Ogorčeni građani ostavili poruke pored porušenih stabala na Šubićevcu: → Побут інших міст (Протест проти вирубки дерев у Шибенику) | Сутності: Šibenik, Šubićevac, Hrvatska Dendrofobna Zajednica",
+        "• Jezivi produžetak sezone: Vještice, pauci i obitelj Addams zavladali O → Побут інших міст (Хелловінська вечірка в Омішалі) | Сутності: Kamp Omišalj, Omišalj, obitelj Opić",
+        "• U eksploziji vatrometne rakete teško ozlijeđen 23-godišnjak → Побут інших міст (Інцидент з піротехнікою в Кістанє) | Сутності: Kistanje, Split, Knin",
+        "• Peticija o prostornom planu podijelila loparske vijećnike → Побут інших міст (Місцева сесія міськради в Лопарі) | Сутності: Lopar, Općinsko vijeće, Damir Paparić",
+        "• Zagrepčani na blagdan Svih svetih obilaze groblja → Побут інших міст (Локальний транспортний режим у Загребі) | Сутності: Zagreb, Mirogoj, ZET",
+        "• Crna Gora pred ulaskom u EU, ali duhovi prošlosti još je vuku na drugu → Геоблок (Політична ситуація в Чорногорії) | Сутності: Aleksandar Musić, Crna Gora, Hrvatska"
+      ],
+      "rejected_by_reason": {
+        "Побут інших міст": 6,
+        "Геоблок": 1
+      },
+      "updates_marked": 0,
+      "already_rejected": 12,
+      "rejected_by_code_examples": [
+        "[тег RSS lifestyle] Kako pahuljicama čilija odvratiti štakore i miševe od hranilice za ptice",
+        "[тег RSS lifestyle] Kako gulilicom za povrće brzo narezati kupus za salatu i zašto mu dodati vodu",
+        "[тег RSS lifestyle] Koliko dugo smijete čuvati sirovo, dimljeno i suho meso u hladnjaku i zamrzivaču",
+        "[URL /sport/] Dubrovački judo klub Fortudo: Borna Butjer brončani na Europskom prvenstvu U23 u Napulju",
+        "[тег RSS nogomet] Nova pobjeda Coma. Momčad Smolčića i Baturine bolja od Bašićeve Venezije",
+        "[тег RSS sport] Carlosu Alcarazu pobjednički trofej u Beču nakon lagane pobjede nad Australcem"
+      ]
+    },
+    "backlog": {
+      "total_size": 0,
+      "sources": {}
+    },
+    "published": {
+      "total": 2,
+      "ukraine_priority": 1,
+      "with_images": 1,
+      "text_only": 1,
+      "og_images_found": 0,
+      "sources": {
+        "Zadarski list": 2
+      }
+    },
+    "models_used": {
+      "gemini-3.6-flash": 1,
+      "gemini-3.5-flash-lite": 1
+    },
+    "models_by_task": {
+      "filter": "gemini-3.6-flash",
+      "translate": "gemini-3.5-flash-lite"
+    },
+    "model_attempts": [
+      {
+        "task": "filter",
+        "model": "gemini-3-flash-preview",
+        "outcome": "unavailable"
+      },
+      {
+        "task": "filter",
+        "model": "gemini-3.6-flash",
+        "outcome": "unavailable"
+      },
+      {
+        "task": "filter",
+        "model": "gemini-3.6-flash",
+        "outcome": "ok"
+      },
+      {
+        "task": "translate",
+        "model": "gemini-3.8-flash",
+        "outcome": "unavailable"
+      },
+      {
+        "task": "translate",
+        "model": "gemini-3.8-flash",
+        "outcome": "unavailable"
+      },
+      {
+        "task": "translate",
+        "model": "gemini-3.5-flash-lite",
+        "outcome": "ok"
+      }
+    ],
+    "exhausted_models": [],
+    "demoted_models": [],
+    "translate_budget_deferred": [
+      "gemini-3.6-flash"
+    ],
+    "gemini_region_blocked": false,
+    "errors_count": 0,
+    "gemini_retries": 4
   }
 ]
