@@ -1,68 +1,5 @@
 [
   {
-    "timestamp": "2026-10-16 13:01:14",
-    "execution_time": 19.3,
-    "funnel": {
-      "scraped_total": 35,
-      "scraped_by_source": {
-        "023": 10,
-        "Slobodna dalmacija": 15,
-        "Zadarski list": 10
-      },
-      "already_seen": 6,
-      "rejected_by_keywords": 4,
-      "duplicates_removed_by_ai": 25,
-      "rejection_reasons_list": [
-        "• Obilježena 35. godišnjica pogibije Josip... ➡️ <b>Побут чужих міст / історична річниця</b>",
-        "• “Mama, oni me ne razumiju.”; Ovo su svje... ➡️ <b>Побут інших міст</b>",
-        "• Grad Opatija: Podmirenje nastalih troško... ➡️ <b>Побут чужих міст</b>",
-        "• Dobre vijesti iz Skradina: ronioci i vat... ➡️ <b>Побут чужих міст</b>",
-        "• Tesla pokazala novi Roadster koji uz pom... ➡️ <b>Світовий шум / не стосується Хорватії та України</b>",
-        "• Oporba složna oko osude povika Torcide, ... ➡️ <b>Дубль події про фасадні скандали в Спліті</b>",
-        "• Tražite parking u Mokošici? Grad Dubrovn... ➡️ <b>Побут чужих міст</b>",
-        "• Jedemo li pogrešno? Svjetski dan hrane u... ➡️ <b>Світовий шум</b>",
-        "• Jandroković: Dio navijača osramotio je H... ➡️ <b>Дубль події про інцидент у Спліті</b>",
-        "• Objavljen javni natječaj za zakup osam g... ➡️ <b>Дубль новини №6</b>",
-        "• Pas laje sve glasnije dok ga pokušavate ... ➡️ <b>Світовий шум / поради</b>",
-        "• Ništa od štrajka u riječkim kulturnim us... ➡️ <b>Побут чужих міст</b>",
-        "• Dobar rad u malim sredinama: Ponos Škole... ➡️ <b>Спорт</b>",
-        "• Projekt “Hrvatska pliva 2026”; Prva ovos... ➡️ <b>Спорт / дитяча секція</b>",
-        "• Počeli radovi na izgradnji autoceste od ... ➡️ <b>Побут чужих міст</b>",
-        "• Brucoši i strani studenti zaplovili u no... ➡️ <b>Студентське дозвілля локального значення, недостатньо критична новина</b>",
-        "• Oštra reakcija s Pantovčaka na skandaloz... ➡️ <b>Дубль події про інцидент у Спліті</b>",
-        "• Nakon popravka brod Galeb sutra se vraća... ➡️ <b>Побут чужих міст</b>",
-        "• Obilježena 35. godišnjica pogibije Josip... ➡️ <b>Дубль новини №0</b>",
-        "• Nakon stravičnih scena u Splitu, policij... ➡️ <b>Дубль події про скандал з фанатами в Спліті</b>",
-        "• Most nezadovoljan Vladom: Stavljaju sve ... ➡️ <b>Побут чужих міст / політика інших міст</b>",
-        "• Proslavljena sportašica otvorila dušu: ‘... ➡️ <b>Дубль новини №3</b>",
-        "• Nastavak potrage za nestalima; Kod Komar... ➡️ <b>Події національного рівня (археологія війни), не стосується Задара чи біженців напряму</b>",
-        "• Strani mediji brutalno osudili nacifašiz... ➡️ <b>Спорт</b>",
-        "• Šibenski SDP-ovac nakon ispada Torcide: ... ➡️ <b>Спорт / коментарі щодо фанатів</b>"
-      ]
-    },
-    "backlog": {
-      "total_size": 52,
-      "sources": {
-        "Slobodna dalmacija": 32,
-        "Zadarski list": 11,
-        "023": 9
-      }
-    },
-    "published": {
-      "total": 0,
-      "ukraine_priority": 0,
-      "with_images": 0,
-      "text_only": 0,
-      "sources": {}
-    },
-    "models_used": {
-      "gemini-3.5-flash-lite": 1,
-      "gemini-3.6-flash": 0
-    },
-    "errors_count": 0,
-    "gemini_retries": 0
-  },
-  {
     "timestamp": "2026-10-16 14:01:12",
     "execution_time": 16.3,
     "funnel": {
@@ -7096,5 +7033,121 @@
     "gemini_region_blocked": false,
     "errors_count": 0,
     "gemini_retries": 5
+  },
+  {
+    "timestamp": "2026-11-02 17:01:16",
+    "execution_time": 216.2,
+    "funnel": {
+      "scraped_total": 35,
+      "scraped_by_source": {
+        "023": 10,
+        "Slobodna dalmacija": 15,
+        "Zadarski list": 10
+      },
+      "already_seen": 19,
+      "rejected_by_keywords": 8,
+      "rejected_by_rule": {
+        "тег RSS lifestyle": 2,
+        "sponzori": 1,
+        "sporta": 1,
+        "sportu": 1,
+        "тег RSS sport": 2,
+        "igrača": 1
+      },
+      "unclassified_by_ai": 0,
+      "duplicates_removed_by_ai": 6,
+      "rejection_reasons_list": [
+        "• Maro Kapović: U DPDS-u smo ponosni što prvi nakon 450 godina obnavljam → Побут інших міст (Дубровник) | Сутності: Maro Kapović, DPDS, Drezvenik, Dubrovnik",
+        "• Sindikat zagrebačke Čistoće: Odluka Vrhovnog suda ne mijenja naše prio → Побут інших міст (Загреб) | Сутності: Čistoća, Vrhovni sud, Zagreb, Sindikat",
+        "• Britanski melankolični indie velikani Tindersticks najavili novi album → Побут інших міст (Загреб) | Сутності: Tindersticks, Lisinski, Zagreb, Dog Roses",
+        "• Ružić: Problem oko logopeda sigurno će se riješi → Вже публікувалось (коментар політика) | Сутності: Alen Ružić, SDP, Anita Curiš Krok, logopedi",
+        "• Male sredine u Hrvatskoj mogle bi ostati bez ljekarni, brojke otkrivaj → Світовий шум | Сутності: Hrvatska, ljekarne, EU, starije stanovništvo",
+        "• Milanović uručio odličja veteranima, pripadnicima “Tigrova”: Davno su  → Вже публікувалось (вручення відзнак) | Сутності: Zoran Milanović, Tigrovi, Domovinski rat, Hrvatska"
+      ],
+      "rejected_by_reason": {
+        "Побут інших міст": 3,
+        "Вже публікувалось": 2,
+        "Світовий шум": 1
+      },
+      "updates_marked": 0,
+      "already_rejected": 14,
+      "rejected_by_code_examples": [
+        "[тег RSS lifestyle] Deset tisuća koraka dnevno nije znanstvena granica: najviše dobivaju oni koji se najmanje kreću",
+        "[sponzori] Inovacije za plavu budućnost; Regionalni timovi u Zadru traže rješenja za pametniji nadzor vodovoda ",
+        "[тег RSS lifestyle] Kapljice na prozorima zimi ne znače uvijek previše vlage u stanu, važna je i vrsta stakla",
+        "[sporta] Održana edukacija „Školovanje vina i vinara“ – 36 uzoraka vina i vrijedna razmjena znanja i iskustav",
+        "[sportu] Šibenčani se okupili na ‘groblju stabala‘, javio se aktivist Šimić: Nisan zva nikoga ni huška. A mal",
+        "[тег RSS sport] Riječanka Ana Bobanović osvojila zlato na Olimpijskim igrama mladih!",
+        "[igrača] Mario Mamić: Odluke o kupnji i prodaji igrača donosio je moj otac Zdravko Mamić",
+        "[тег RSS sport] Franka Golemac je imala zapaženu ulogu u pobjedi Rijeke nad Nebom: “Rad nam se vratio”"
+      ]
+    },
+    "backlog": {
+      "total_size": 0,
+      "sources": {}
+    },
+    "published": {
+      "total": 3,
+      "ukraine_priority": 0,
+      "with_images": 3,
+      "text_only": 0,
+      "og_images_found": 0,
+      "sources": {
+        "Zadarski list": 3
+      }
+    },
+    "models_used": {
+      "gemini-3.5-flash-lite": 2
+    },
+    "models_by_task": {
+      "filter": "gemini-3.5-flash-lite",
+      "translate": "gemini-3.5-flash-lite"
+    },
+    "model_attempts": [
+      {
+        "task": "filter",
+        "model": "gemini-3.6-flash",
+        "outcome": "unavailable"
+      },
+      {
+        "task": "filter",
+        "model": "gemini-3.6-flash",
+        "outcome": "quota"
+      },
+      {
+        "task": "filter",
+        "model": "gemini-3.5-flash-lite",
+        "outcome": "ok"
+      },
+      {
+        "task": "translate",
+        "model": "gemini-3.8-flash",
+        "outcome": "unavailable"
+      },
+      {
+        "task": "translate",
+        "model": "gemini-3.8-flash",
+        "outcome": "unavailable"
+      },
+      {
+        "task": "translate",
+        "model": "gemini-3.5-flash-lite",
+        "outcome": "ok"
+      }
+    ],
+    "exhausted_models": [
+      "gemini-3.6-flash"
+    ],
+    "demoted_models": [
+      "filter: gemini-3-flash-preview",
+      "translate: gemini-3.8-flash"
+    ],
+    "translate_budget_deferred": [
+      "gemini-3.5-flash-lite",
+      "gemini-3.6-flash"
+    ],
+    "gemini_region_blocked": false,
+    "errors_count": 0,
+    "gemini_retries": 4
   }
 ]
