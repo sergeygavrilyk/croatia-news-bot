@@ -1,68 +1,5 @@
 [
   {
-    "timestamp": "2026-10-16 12:01:08",
-    "execution_time": 246.8,
-    "funnel": {
-      "scraped_total": 35,
-      "scraped_by_source": {
-        "023": 10,
-        "Slobodna dalmacija": 15,
-        "Zadarski list": 10
-      },
-      "already_seen": 5,
-      "rejected_by_keywords": 3,
-      "duplicates_removed_by_ai": 22,
-      "rejection_reasons_list": [
-        "• Jandroković: Dio navijača osramotio je H... ➡️ <b>Спорт</b>",
-        "• Brucoši i strani studenti zaplovili u no... ➡️ <b>Дубль або несуттєва студентська подія</b>",
-        "• Jedemo li pogrešno? Svjetski dan hrane u... ➡️ <b>Світовий шум</b>",
-        "• Ništa od štrajka u riječkim kulturnim us... ➡️ <b>Побут чужих міст</b>",
-        "• Obilježena 35. godišnjica pogibije Josip... ➡️ <b>Історія за межами Задара та загальнонаціонального рівня</b>",
-        "• Pas laje sve glasnije dok ga pokušavate ... ➡️ <b>Поради з догляду за тваринами</b>",
-        "• Počeli radovi na izgradnji autoceste od ... ➡️ <b>Побут чужих міст</b>",
-        "• Proslavljena sportašica otvorila dušu: ‘... ➡️ <b>Побут чужих міст</b>",
-        "• Projekt “Hrvatska pliva 2026”; Prva ovos... ➡️ <b>Спорт</b>",
-        "• Nakon popravka brod Galeb sutra se vraća... ➡️ <b>Побут чужих міст</b>",
-        "• Šibenski SDP-ovac nakon ispada Torcide: ... ➡️ <b>Спорт</b>",
-        "• Oštra reakcija s Pantovčaka na skandaloz... ➡️ <b>Спорт</b>",
-        "• VW priprema opoziv nekoliko tisuća elekt... ➡️ <b>Інші країни / геоблок</b>",
-        "• Predstavljen prvi sveobuhvatni katalog M... ➡️ <b>Побут чужих міст</b>",
-        "• Recital gitarista Srđana Bulata u Knežev... ➡️ <b>Побут чужих міст</b>",
-        "• Nakon stravičnih scena u Splitu, policij... ➡️ <b>Спорт</b>",
-        "• Sada je i službeno. Miočić ide za šefa H... ➡️ <b>Національний рівень, але дубль або не є головним пріоритетом для Задара порівняно з іншими</b>",
-        "• Dobroslavić o ispadima dijela Torcide: N... ➡️ <b>Спорт</b>",
-        "• Nevjerojatna sreća u Jastrebarskom; Nije... ➡️ <b>Побут чужих міст</b>",
-        "• Spomenik bez papira izazvao spor na Pagu... ➡️ <b>Дубль конфлікту на Пазі</b>",
-        "• Dobroslavić o ispadima dijela Torcide: N... ➡️ <b>Спорт</b>",
-        "• Policija na Drenovi zaustavila auto, pro... ➡️ <b>Побут чужих міст</b>"
-      ]
-    },
-    "backlog": {
-      "total_size": 52,
-      "sources": {
-        "Slobodna dalmacija": 28,
-        "Zadarski list": 14,
-        "023": 10
-      }
-    },
-    "published": {
-      "total": 3,
-      "ukraine_priority": 0,
-      "with_images": 1,
-      "text_only": 2,
-      "sources": {
-        "Slobodna dalmacija": 1,
-        "023": 2
-      }
-    },
-    "models_used": {
-      "gemini-3.5-flash-lite": 2,
-      "gemini-3.6-flash": 0
-    },
-    "errors_count": 0,
-    "gemini_retries": 3
-  },
-  {
     "timestamp": "2026-10-16 13:01:14",
     "execution_time": 19.3,
     "funnel": {
@@ -7036,5 +6973,128 @@
     "gemini_region_blocked": false,
     "errors_count": 0,
     "gemini_retries": 7
+  },
+  {
+    "timestamp": "2026-11-02 16:01:19",
+    "execution_time": 335.9,
+    "funnel": {
+      "scraped_total": 35,
+      "scraped_by_source": {
+        "023": 10,
+        "Slobodna dalmacija": 15,
+        "Zadarski list": 10
+      },
+      "already_seen": 16,
+      "rejected_by_keywords": 7,
+      "rejected_by_rule": {
+        "тег RSS lifestyle": 2,
+        "sponzori": 1,
+        "sporta": 1,
+        "sportu": 1,
+        "тег RSS sport": 1,
+        "тег RSS nogomet": 1
+      },
+      "unclassified_by_ai": 0,
+      "duplicates_removed_by_ai": 8,
+      "rejection_reasons_list": [
+        "• Andro Vlahušić: Naša djeca trebaju ključ od svojega stana, a ne ugovor → Побут інших міст (Дубровник) | Сутності: Andro Vlahušić, Franković, Dubrovnik, podstanarstvo",
+        "• Usporedba cijena u Hrvatskoj i zapadnoj Europi; Možemo li si još uvije → Не за тематикою (аналіз ринку нерухомості) | Сутності: Hrvatska, DOMinvest, Saša Perko, nekretnine",
+        "• U Pakoštanima su se na poseban način oprostili od Miše, pogledajte: ‘S → Вже публікувалось (прощання з Mišo Kovač) | Сутності: Pakoštane, Mišo Kovač, krmine",
+        "• Baština na Brajdi uskoro u novom ruhu, u tijeku obnova gradskog perila → Побут інших міст (Рієка) | Сутності: Rijeka, Art-kvart, Brajda, perilo",
+        "• Na Pećinama crnom bojom prekrivena spomen-ploča Titu, traže hitnu sana → Побут інших міст (Рієка) | Сутності: Rijeka, Pećine, Josip Broz Tito, spomen-ploča",
+        "• U Zajcu svečana koncertna izvedba opere “Nikola Šubić Zrinjski” uz dvi → Побут інших міст (Рієка) | Сутності: Rijeka, HNK Zajc, Nikola Šubić Zrinjski, Kristina Kolar",
+        "• Riječka tvrtka predstavila inovaciju: Drvene kućice montiraju se za sa → Побут інших міст (Рієка) | Сутності: Rijeka, Arctic, HoReCa Adria, drvene kućice",
+        "• Grad Rijeka daje 68 novih stipendija, natječaj je otvoren do 10. stude → Побут інших міст (Рієка) | Сутності: Rijeka, Marija Japundža Broznić, stipendije"
+      ],
+      "rejected_by_reason": {
+        "Побут інших міст": 6,
+        "Не за тематикою": 1,
+        "Вже публікувалось": 1
+      },
+      "updates_marked": 0,
+      "already_rejected": 12,
+      "rejected_by_code_examples": [
+        "[тег RSS lifestyle] Deset tisuća koraka dnevno nije znanstvena granica: najviše dobivaju oni koji se najmanje kreću",
+        "[sponzori] Inovacije za plavu budućnost; Regionalni timovi u Zadru traže rješenja za pametniji nadzor vodovoda ",
+        "[тег RSS lifestyle] Kapljice na prozorima zimi ne znače uvijek previše vlage u stanu, važna je i vrsta stakla",
+        "[sporta] Održana edukacija „Školovanje vina i vinara“ – 36 uzoraka vina i vrijedna razmjena znanja i iskustav",
+        "[sportu] Šibenčani se okupili na ‘groblju stabala‘, javio se aktivist Šimić: Nisan zva nikoga ni huška. A mal",
+        "[тег RSS sport] Franka Golemac je imala zapaženu ulogu u pobjedi Rijeke nad Nebom: “Rad nam se vratio”",
+        "[тег RSS nogomet] Skandal trese Zlatnu loptu: Netko je pogodio prvih pet igrača i zaradio bogatstvo, organizatori naja"
+      ]
+    },
+    "backlog": {
+      "total_size": 1,
+      "sources": {
+        "Zadarski list": 1
+      }
+    },
+    "published": {
+      "total": 3,
+      "ukraine_priority": 0,
+      "with_images": 3,
+      "text_only": 0,
+      "og_images_found": 1,
+      "sources": {
+        "Zadarski list": 2,
+        "023": 1
+      }
+    },
+    "models_used": {
+      "gemini-3.5-flash-lite": 2
+    },
+    "models_by_task": {
+      "filter": "gemini-3.5-flash-lite",
+      "translate": "gemini-3.5-flash-lite"
+    },
+    "model_attempts": [
+      {
+        "task": "filter",
+        "model": "gemini-3-flash-preview",
+        "outcome": "unavailable"
+      },
+      {
+        "task": "filter",
+        "model": "gemini-3.5-flash-lite",
+        "outcome": "ok"
+      },
+      {
+        "task": "translate",
+        "model": "gemini-3.8-flash",
+        "outcome": "unavailable"
+      },
+      {
+        "task": "translate",
+        "model": "gemini-3.8-flash",
+        "outcome": "unavailable"
+      },
+      {
+        "task": "translate",
+        "model": "gemini-3.6-flash",
+        "outcome": "unavailable"
+      },
+      {
+        "task": "translate",
+        "model": "gemini-3.6-flash",
+        "outcome": "unavailable"
+      },
+      {
+        "task": "translate",
+        "model": "gemini-3.5-flash-lite",
+        "outcome": "ok"
+      }
+    ],
+    "exhausted_models": [],
+    "demoted_models": [
+      "filter: gemini-3.6-flash",
+      "translate: gemini-3.8-flash"
+    ],
+    "translate_budget_deferred": [
+      "gemini-3.5-flash-lite",
+      "gemini-3.6-flash"
+    ],
+    "gemini_region_blocked": false,
+    "errors_count": 0,
+    "gemini_retries": 5
   }
 ]
