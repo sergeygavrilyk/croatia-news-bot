@@ -1,68 +1,5 @@
 [
   {
-    "timestamp": "2026-10-15 16:01:17",
-    "execution_time": 16.5,
-    "funnel": {
-      "scraped_total": 35,
-      "scraped_by_source": {
-        "023": 10,
-        "Slobodna dalmacija": 15,
-        "Zadarski list": 10
-      },
-      "already_seen": 24,
-      "rejected_by_keywords": 3,
-      "duplicates_removed_by_ai": 25,
-      "rejection_reasons_list": [
-        "• Caritas Biskupije Krk pokrenuo akciju “P... ➡️ <b>Інша локація (Крк), не стосується Задара чи українців</b>",
-        "• ‘Pogodi da zazvoni!‘: Sugrađani zaigrali... ➡️ <b>Побут іншого міста (Дубровник)</b>",
-        "• Dio prijedloga HOK-a uvažen u nacrtima p... ➡️ <b>Загальнонаціональна економічна новина без прямого впливу на діаспору</b>",
-        "• Zračna luka Ruđer Bošković premašila tri... ➡️ <b>Побут іншого міста (Дубровник)</b>",
-        "• Gripa se ove godine javila neuobičajeno ... ➡️ <b>Світовий шум та поради дієтологів</b>",
-        "• CE-ZA-R se povukao iz posla za 11 miliju... ➡️ <b>Кримінал та події в іншому місті (Госпич)</b>",
-        "• Zatvara se dio parkinga u Ulici Ivana Za... ➡️ <b>Побут іншого міста (Дубровник)</b>",
-        "• Pivac premium mesnica u Benkovcu zasjala... ➡️ <b>Переказ комерційної новини / дрібний побут</b>",
-        "• HND: Mlaka Plenkovićeva reakcija na srbi... ➡️ <b>Повторення та роздутий медійний шум навколо нотації із Сербією</b>",
-        "• Domaći bend C-strana ima novi singl. Pos... ➡️ <b>Світовий шум / реліз музичного гурту</b>",
-        "• Salata od crnog graha i kukuruza iz plav... ➡️ <b>Світовий шум / рецепти та поради</b>",
-        "• Domovinski pokret prijavio dvojicu Srba ... ➡️ <b>Дубль або несуттєве оновлення теми конфлікту на Пагу</b>",
-        "• Njemački list o Dalmaciji: ‘Sve je bilo ... ➡️ <b>Світовий шум / огляд німецького ЗМІ про туризм</b>",
-        "• Najudaljeniji poznati brzi radijski blje... ➡️ <b>Абстрактна наука (світовий шум)</b>",
-        "• Otvorena pruga kroz kolodvor Meja nakon ... ➡️ <b>Побут іншого міста (Рієка)</b>",
-        "• Tražite posao? I Šibensko-kninska župani... ➡️ <b>Побут іншого міста (Шибеник)</b>",
-        "• Britanski liječnik predlaže test za kod ... ➡️ <b>Світовий шум / медичні поради</b>",
-        "• Jadranka Hofmann ostaje predsjednica Dru... ➡️ <b>Побут іншого міста (Малі Лошинь)</b>",
-        "• Dubrovnik kao svjetlosna pozornica: sutr... ➡️ <b>Побут іншого міста (Дубровник)</b>",
-        "• Drama u Zagrebu; Župnik se povlači iz sl... ➡️ <b>Кримінал та побут іншого міста (Загреб)</b>",
-        "• Grlić Radman: Prosvjedna nota Srbije ‘bi... ➡️ <b>Дубль реакції МЗС на ноту</b>",
-        "• Grad mora donijeti novu odluku o zabrani... ➡️ <b>Побут іншого міста (Дубровник)</b>",
-        "• Opozivaju se Cokoc gumeni bomboni u obli... ➡️ <b>Загальнонаціональне дрібне відкликання товару без зв'язку із Задаром</b>",
-        "• Od Pila do Peskarije povremeno bez javne... ➡️ <b>Дубль новини про фестиваль у Дубровнику</b>",
-        "• Nenad Stazić o optužnici zbog “Pljuske”:... ➡️ <b>Загальнонаціональний незначний кримінал/політика</b>"
-      ]
-    },
-    "backlog": {
-      "total_size": 61,
-      "sources": {
-        "Slobodna dalmacija": 32,
-        "Zadarski list": 23,
-        "023": 6
-      }
-    },
-    "published": {
-      "total": 0,
-      "ukraine_priority": 0,
-      "with_images": 0,
-      "text_only": 0,
-      "sources": {}
-    },
-    "models_used": {
-      "gemini-3.5-flash-lite": 1,
-      "gemini-3.6-flash": 0
-    },
-    "errors_count": 0,
-    "gemini_retries": 0
-  },
-  {
     "timestamp": "2026-10-15 19:01:09",
     "execution_time": 131.5,
     "funnel": {
@@ -6641,5 +6578,121 @@
     "gemini_region_blocked": false,
     "errors_count": 0,
     "gemini_retries": 2
+  },
+  {
+    "timestamp": "2026-11-02 09:01:15",
+    "execution_time": 338.2,
+    "funnel": {
+      "scraped_total": 35,
+      "scraped_by_source": {
+        "023": 10,
+        "Slobodna dalmacija": 15,
+        "Zadarski list": 10
+      },
+      "already_seen": 16,
+      "rejected_by_keywords": 4,
+      "rejected_by_rule": {
+        "sportaše": 1,
+        "тег RSS sport": 1,
+        "košarkaši": 1,
+        "košarkaše": 1
+      },
+      "unclassified_by_ai": 0,
+      "duplicates_removed_by_ai": 9,
+      "rejection_reasons_list": [
+        "• Bugarska izabrala prvu predsjednicu Ilijanu Jotovu → Геоблок (Вибори у Болгарії) | Сутності: Ilijana Jotova, Bugarska, Andrej Gjurov",
+        "• U Perzijskom zaljevu projektilom pogođen LNG tanker. Na njemu su i tro → Геоблок (Обстріл танкера в Перській затоці) | Сутності: Perzijski zaljev, Nakilat, Siniša Orlić",
+        "• Usred noći planula kuća na Mljetu, u njoj se nalazila žena. Vatrogasci → Побут інших міст (Пожежа в будинку на Млєті) | Сутності: Mljet, Prožurska Luka, JVP Mljet",
+        "• Objavljeni detalji oproštaja od Miše Kovača; Ulaz na Poljud besplatan  → Вже публікувалось (Подробиці похорону Мішо Ковача) | Сутності: Mišo Kovač, Poljud, Mirogoj, Split",
+        "• Predstavljena knjiga ‘Ponos i prkos‘ Mata Miša Morettija posvećena civ → Побут інших міст (Презентація книги в Цавтаті) | Сутності: Mato Mišo Moretti, Cavtat, Konavle",
+        "• USKOK opet na terenu; Uhićenja i pretresi u Zagrebu, Osijeku i Krapins → Дубль (Дубль новини про затримання USKOK) | Сутності: USKOK, Zagreb, Osijek",
+        "• Nakon 35 godina završava mirovna misija UN-a u Zapadnoj Sahari. Nije u → Геоблок (Завершення місії ООН у Західній Сахарі) | Сутності: UN, Zapadna Sahara, MINURSO, Maroko",
+        "• Kako neki duguju milijune, a mali poduzetnici zbog nekoliko stotina eu → Вже публікувалось (Коментар щодо списку податкових боржників) | Сутності: Udruga Glas poduzetnika, Porezna uprava, Ministarstvo financija",
+        "• Sinoć je na Gradskom groblju u Gospiću služena sveta misa povodom blad → Побут інших міст (Меса на цвинтарі в Ґоспичі) | Сутності: Gospić, Marko Maglić, Gradsko groblje"
+      ],
+      "rejected_by_reason": {
+        "Геоблок": 3,
+        "Побут інших міст": 3,
+        "Вже публікувалось": 2,
+        "Дубль": 1
+      },
+      "updates_marked": 0,
+      "already_rejected": 9,
+      "rejected_by_code_examples": [
+        "[sportaše] Ekonomsko-birotehnička i trgovačka škola Zadar dobila novi sjaj; Uređene učionice i sportska dvorana",
+        "[тег RSS sport] Ivan Nekić i Vice Radonić iz Beča donijeli dva zlata za zadarski Ares – Diabolik i hrvatsku policiju",
+        "[košarkaši] Marsonia prekinula pobjednički niz Jazina, Puntamika poražena na domaćem parketu",
+        "[košarkaše] Euroligaški div čeka Zadrane: Modrićeva momčad nema što izgubiti, a može dobiti jako puno"
+      ]
+    },
+    "backlog": {
+      "total_size": 2,
+      "sources": {
+        "Zadarski list": 1,
+        "023": 1
+      }
+    },
+    "published": {
+      "total": 3,
+      "ukraine_priority": 0,
+      "with_images": 3,
+      "text_only": 0,
+      "og_images_found": 1,
+      "sources": {
+        "Zadarski list": 2,
+        "023": 1
+      }
+    },
+    "models_used": {
+      "gemini-3.6-flash": 1,
+      "gemini-3.5-flash-lite": 1
+    },
+    "models_by_task": {
+      "filter": "gemini-3.6-flash",
+      "translate": "gemini-3.5-flash-lite"
+    },
+    "model_attempts": [
+      {
+        "task": "filter",
+        "model": "gemini-3-flash-preview",
+        "outcome": "unavailable"
+      },
+      {
+        "task": "filter",
+        "model": "gemini-3.6-flash",
+        "outcome": "ok"
+      },
+      {
+        "task": "translate",
+        "model": "gemini-3.8-flash",
+        "outcome": "unavailable"
+      },
+      {
+        "task": "translate",
+        "model": "gemini-3.8-flash",
+        "outcome": "unavailable"
+      },
+      {
+        "task": "translate",
+        "model": "gemini-3.6-flash",
+        "outcome": "unavailable"
+      },
+      {
+        "task": "translate",
+        "model": "gemini-3.6-flash",
+        "outcome": "unavailable"
+      },
+      {
+        "task": "translate",
+        "model": "gemini-3.5-flash-lite",
+        "outcome": "ok"
+      }
+    ],
+    "exhausted_models": [],
+    "demoted_models": [],
+    "translate_budget_deferred": [],
+    "gemini_region_blocked": false,
+    "errors_count": 0,
+    "gemini_retries": 5
   }
 ]
