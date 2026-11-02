@@ -1,69 +1,5 @@
 [
   {
-    "timestamp": "2026-10-15 19:01:09",
-    "execution_time": 131.5,
-    "funnel": {
-      "scraped_total": 35,
-      "scraped_by_source": {
-        "023": 10,
-        "Slobodna dalmacija": 15,
-        "Zadarski list": 10
-      },
-      "already_seen": 16,
-      "rejected_by_keywords": 4,
-      "duplicates_removed_by_ai": 23,
-      "rejection_reasons_list": [
-        "• Caritas Biskupije Krk pokrenuo akciju “P... ➡️ <b>Побут чужого міста за межами Задара</b>",
-        "• ‘Pogodi da zazvoni!‘: Sugrađani zaigrali... ➡️ <b>Побут чужого міста за межами Задара</b>",
-        "• U ispostavi Gospić ponovno pao broj neza... ➡️ <b>Побут чужого міста за межами Задара</b>",
-        "• WhatsApp testira zakazivanje poruka, a i... ➡️ <b>Світовий шум та технології</b>",
-        "• Fran Poštenjak, magistar urbanog šumarst... ➡️ <b>Побут чужого міста за межами Задара</b>",
-        "• Projekt od 700 milijuna eura ulazi u nov... ➡️ <b>Побут чужого міста за межами Задара</b>",
-        "• Što europski Akt o kibernetičkoj otporno... ➡️ <b>Світовий шум та абстрактні норми</b>",
-        "• Zlatna koka dubrovačkog turizma: samo ov... ➡️ <b>Побут чужого міста за межами Задара</b>",
-        "• Tomašević o smradu u Zagrebu: “Nije to z... ➡️ <b>Побут чужого міста за межами Задара</b>",
-        "• Gripa se ove godine javila neuobičajeno ... ➡️ <b>Світовий шум / поради дієтологів</b>",
-        "• Ravna Gora slavi svoj dan: mjesto u koje... ➡️ <b>Побут чужого міста за межами Задара</b>",
-        "• I dalje gori na Jakljanu. Vatrogasci pok... ➡️ <b>Побут чужого міста за межами Задара</b>",
-        "• Maduro i njegova supruga izjasnili se da... ➡️ <b>Інші країни / геоблок</b>",
-        "• Salata od crnog graha i kukuruza iz plav... ➡️ <b>Світовий шум / рецепти</b>",
-        "• Pastičerija Živka Šikića na Korčuli prij... ➡️ <b>Побут чужого міста за межами Задара</b>",
-        "• SDP o ispadu Torcide: “Fašizam, antisemi... ➡️ <b>Не суттєве оновлення / загальний політичний шум</b>",
-        "• Najudaljeniji poznati brzi radijski blje... ➡️ <b>Світовий шум / абстрактна наука</b>",
-        "• Zračna luka Ruđer Bošković premašila tri... ➡️ <b>Побут чужого міста за межами Задара</b>",
-        "• U Crikvenici ove subote internacionalna ... ➡️ <b>Побут чужого міста за межами Задара</b>",
-        "• Britanski liječnik predlaže test za kod ... ➡️ <b>Світовий шум / поради</b>",
-        "• Zatvara se dio parkinga u Ulici Ivana Za... ➡️ <b>Побут чужого міста за межами Задара</b>",
-        "• Dio prijedloga HOK-a uvažen u nacrtima p... ➡️ <b>Загальнонаціональний економічний шум</b>",
-        "• Drama u Zagrebu; Župnik se povlači iz sl... ➡️ <b>Побут чужого міста за межами Задара</b>"
-      ]
-    },
-    "backlog": {
-      "total_size": 68,
-      "sources": {
-        "Slobodna dalmacija": 37,
-        "Zadarski list": 23,
-        "023": 8
-      }
-    },
-    "published": {
-      "total": 2,
-      "ukraine_priority": 0,
-      "with_images": 1,
-      "text_only": 1,
-      "sources": {
-        "Slobodna dalmacija": 1,
-        "023": 1
-      }
-    },
-    "models_used": {
-      "gemini-3.5-flash-lite": 2,
-      "gemini-3.6-flash": 0
-    },
-    "errors_count": 0,
-    "gemini_retries": 0
-  },
-  {
     "timestamp": "2026-10-16 07:01:13",
     "execution_time": 174.0,
     "funnel": {
@@ -6694,5 +6630,115 @@
     "gemini_region_blocked": false,
     "errors_count": 0,
     "gemini_retries": 5
+  },
+  {
+    "timestamp": "2026-11-02 10:01:20",
+    "execution_time": 150.1,
+    "funnel": {
+      "scraped_total": 35,
+      "scraped_by_source": {
+        "023": 10,
+        "Slobodna dalmacija": 15,
+        "Zadarski list": 10
+      },
+      "already_seen": 15,
+      "rejected_by_keywords": 5,
+      "rejected_by_rule": {
+        "sportaše": 1,
+        "тег RSS sport": 1,
+        "košarkaši": 1,
+        "košarkaše": 1,
+        "igraču": 1
+      },
+      "unclassified_by_ai": 0,
+      "duplicates_removed_by_ai": 11,
+      "rejection_reasons_list": [
+        "• Izbio požar u garaži u Gružu, vatrogasci na terenu → Побут інших міст (Пожежа в Дубровнику) | Сутності: Gruž, Dubrovački vatrogasci, Ulica Andrije Hebranga",
+        "• Porastao broj pobačaja u Hrvatskoj; Poznati najnoviji podaci, a još je → Вже публікувалось (Статистика або дубль національної теми) | Сутності: Hrvatska, HZJZ, pobačaji",
+        "• Pume, Kiowe i dronovi raspalili po slunjskom vojnom poligonu → Побут інших міст (Військова вжитка на полігоні біля Слуня) | Сутності: Pume, Slunj, Eugen Kvaternik",
+        "• STIŽE POTPUNI PREOKRET NA INTERNETU Ministarstvo uvodi drastična pravi → Не за тематикою (Законопроєкт про захист дітей в інтернеті) | Сутності: Ministarstvo pravosuđa, Zagreb, zakon",
+        "• Vozač u Ravnoj Gori zaustavljen s 2,75 promila u krvi, drugi vozio po  → Побут інших міст (Порушення ПДР у Горському котарі) | Сутності: Ravna Gora, A6, policija",
+        "• Na Jadriji održana tradicionalna regata jedrenja na dasci, donosimo sv → Спорт (Віндсерфінг на Ядрії) | Сутності: Jadrija, Hell of Wind, Šibenik",
+        "• AfD mijenja strategiju. Umjesto izlaska iz Europske unije, sada želi m → Геоблок (Політична ситуація в Німеччині) | Сутності: AfD, Njemačka, Europska unija",
+        "• Na blagdan Svih Svetih šibenskim grobljem harao lopov, iz ‘Čempresa‘ o → Побут інших міст (Крадіжка на кладовищі в Шибенику) | Сутності: Šibenik, Čempresi, Kvanj",
+        "• Osvojeno 8.000 eura u Moravicama → Реклама (Виграш у лотерею) | Сутності: Moravice, Hrvatska pošta, Joker",
+        "• Plinovod koji bi BiH odvojio od ruskog plina ponovno je zapeo. U posao → Геоблок (Проєкт газопроводу в БіГ) | Сутності: Južna interkonekcija, Bosna i Hercegovina, Hrvatska, Trump",
+        "• U Hrvatskoj lani više rođene djece, a evo gdje je po broju namjernih p → Вже публікувалось (Статистика пологів у Хорватії) | Сутності: Hrvatska, HZJZ, porodi"
+      ],
+      "rejected_by_reason": {
+        "Побут інших міст": 4,
+        "Вже публікувалось": 2,
+        "Не за тематикою": 1,
+        "Спорт": 1,
+        "Геоблок": 2,
+        "Реклама": 1
+      },
+      "updates_marked": 0,
+      "already_rejected": 9,
+      "rejected_by_code_examples": [
+        "[sportaše] Ekonomsko-birotehnička i trgovačka škola Zadar dobila novi sjaj; Uređene učionice i sportska dvorana",
+        "[тег RSS sport] Ivan Nekić i Vice Radonić iz Beča donijeli dva zlata za zadarski Ares – Diabolik i hrvatsku policiju",
+        "[košarkaši] Marsonia prekinula pobjednički niz Jazina, Puntamika poražena na domaćem parketu",
+        "[košarkaše] Euroligaški div čeka Zadrane: Modrićeva momčad nema što izgubiti, a može dobiti jako puno",
+        "[igraču] Sreća se osmjehnula igraču u Moravicama. Osvojio je Joker 5 u iznosu od 8.000 eura"
+      ]
+    },
+    "backlog": {
+      "total_size": 3,
+      "sources": {
+        "Slobodna dalmacija": 2,
+        "Zadarski list": 1
+      }
+    },
+    "published": {
+      "total": 3,
+      "ukraine_priority": 0,
+      "with_images": 3,
+      "text_only": 0,
+      "og_images_found": 2,
+      "sources": {
+        "Slobodna dalmacija": 1,
+        "023": 2
+      }
+    },
+    "models_used": {
+      "gemini-3.5-flash-lite": 1,
+      "gemini-3.6-flash": 1
+    },
+    "models_by_task": {
+      "filter": "gemini-3.5-flash-lite",
+      "translate": "gemini-3.6-flash"
+    },
+    "model_attempts": [
+      {
+        "task": "filter",
+        "model": "gemini-3.6-flash",
+        "outcome": "unavailable"
+      },
+      {
+        "task": "filter",
+        "model": "gemini-3.6-flash",
+        "outcome": "unavailable"
+      },
+      {
+        "task": "filter",
+        "model": "gemini-3.5-flash-lite",
+        "outcome": "ok"
+      },
+      {
+        "task": "translate",
+        "model": "gemini-3.6-flash",
+        "outcome": "ok"
+      }
+    ],
+    "exhausted_models": [],
+    "demoted_models": [
+      "filter: gemini-3-flash-preview",
+      "translate: gemini-3.8-flash"
+    ],
+    "translate_budget_deferred": [],
+    "gemini_region_blocked": false,
+    "errors_count": 0,
+    "gemini_retries": 2
   }
 ]
