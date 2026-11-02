@@ -1,68 +1,5 @@
 [
   {
-    "timestamp": "2026-10-15 15:01:15",
-    "execution_time": 18.9,
-    "funnel": {
-      "scraped_total": 35,
-      "scraped_by_source": {
-        "023": 10,
-        "Slobodna dalmacija": 15,
-        "Zadarski list": 10
-      },
-      "already_seen": 10,
-      "rejected_by_keywords": 2,
-      "duplicates_removed_by_ai": 25,
-      "rejection_reasons_list": [
-        "• Caritas Biskupije Krk pokrenuo akciju “P... ➡️ <b>Побут інших міст</b>",
-        "• ‘Pogodi da zazvoni!‘: Sugrađani zaigrali... ➡️ <b>Побут інших міст</b>",
-        "• Domaći bend C-strana ima novi singl. Pos... ➡️ <b>Світовий шум</b>",
-        "• Pivac premium mesnica u Benkovcu zasjala... ➡️ <b>Побут інших міст</b>",
-        "• Jadranka Hofmann ostaje predsjednica Dru... ➡️ <b>Побут інших міст</b>",
-        "• Njemački list o Dalmaciji: ‘Sve je bilo ... ➡️ <b>Сторонні спостереження та світовий шум</b>",
-        "• Salata od crnog graha i kukuruza iz plav... ➡️ <b>Світовий шум</b>",
-        "• Grlić Radman: Prosvjedna nota Srbije ‘bi... ➡️ <b>Не стосується прямо українців у Хорватії чи Задара</b>",
-        "• Tražite posao? I Šibensko-kninska župani... ➡️ <b>Побут інших міст</b>",
-        "• Najudaljeniji poznati brzi radijski blje... ➡️ <b>Світовий шум</b>",
-        "• Opozivaju se Cokoc gumeni bomboni u obli... ➡️ <b>Дрібний побутовий інцидент національного рівня</b>",
-        "• Dubrovnik kao svjetlosna pozornica: sutr... ➡️ <b>Побут інших міст</b>",
-        "• Britanski liječnik predlaže test za kod ... ➡️ <b>Світовий шум</b>",
-        "• Nenad Stazić o optužnici zbog “Pljuske”:... ➡️ <b>Культурні та політичні плітки, що не стосуються Задара</b>",
-        "• Grad mora donijeti novu odluku o zabrani... ➡️ <b>Побут інших міст</b>",
-        "• Drama u Zagrebu; Župnik se povlači iz sl... ➡️ <b>Побут інших міст</b>",
-        "• Besplatni probni sat afričkog plesa u Kr... ➡️ <b>Побут інших міст</b>",
-        "• Od Pila do Peskarije povremeno bez javne... ➡️ <b>Побут інших міст</b>",
-        "• Ove subote u Rabu Memorijalni kup u podv... ➡️ <b>Спорт</b>",
-        "• Hospicij na Babindubu otvara se u studen... ➡️ <b>Дубль існуючої новини в історії</b>",
-        "• Krankšvester ovu subotu premijerno nastu... ➡️ <b>Побут інших міст</b>",
-        "• S bakrenom kacigom na dno mora: Kristija... ➡️ <b>Спорт та події в іншій жупанії</b>",
-        "• Rijeka bi mogla ostati bez predstava, ki... ➡️ <b>Побут інших міст</b>",
-        "• Bježao bez vozačke, pa uhvaćen s drogom:... ➡️ <b>Побут інших міст</b>",
-        "• Putovima čavjanskih kalića: Jesenska pri... ➡️ <b>Побут інших міст</b>"
-      ]
-    },
-    "backlog": {
-      "total_size": 53,
-      "sources": {
-        "Slobodna dalmacija": 30,
-        "Zadarski list": 18,
-        "023": 5
-      }
-    },
-    "published": {
-      "total": 0,
-      "ukraine_priority": 0,
-      "with_images": 0,
-      "text_only": 0,
-      "sources": {}
-    },
-    "models_used": {
-      "gemini-3.5-flash-lite": 1,
-      "gemini-3.6-flash": 0
-    },
-    "errors_count": 0,
-    "gemini_retries": 0
-  },
-  {
     "timestamp": "2026-10-15 16:01:17",
     "execution_time": 16.5,
     "funnel": {
@@ -6601,5 +6538,108 @@
     "gemini_region_blocked": false,
     "errors_count": 0,
     "gemini_retries": 1
+  },
+  {
+    "timestamp": "2026-11-02 08:01:12",
+    "execution_time": 331.4,
+    "funnel": {
+      "scraped_total": 35,
+      "scraped_by_source": {
+        "023": 10,
+        "Slobodna dalmacija": 15,
+        "Zadarski list": 10
+      },
+      "already_seen": 10,
+      "rejected_by_keywords": 6,
+      "rejected_by_rule": {
+        "тег RSS sport": 1,
+        "košarkaše": 1,
+        "тег RSS košarka": 1,
+        "тег RSS nogomet": 1,
+        "URL /sport/": 2
+      },
+      "unclassified_by_ai": 0,
+      "duplicates_removed_by_ai": 9,
+      "rejection_reasons_list": [
+        "• Planula kuća na Mljetu, brzom intervencijom vatrogasaca zaustavljeno š → Побут інших міст (Пожежа в будинку на острові Млєт) | Сутності: Mljet, Prožurska Luka, JVP Mljet, požar",
+        "• Provjerili smo što se događa s predstečajnom nagodbom DI Klana. Direkt → Побут інших міст (Банкрутство підприємства в Рієці) | Сутності: DI Klana, Miladin Marković, Rijeka, Trgovački sud u Rijeci",
+        "• ‘Važno je o bolesti govoriti otvoreno i poticati muškarce da pravodobn → Не за тематикою (Загальна статистика захворюваності чоловіків) | Сутності: rak prostate, HZJZ, Dubrovačko-neretvanska županija, Hrvatska",
+        "• U matuljskim vrtićima djecu uče kako se svađati manje, a razumjeti viš → Побут інших міст (Освітня програма у дитсадку Матулі) | Сутності: Dječji vrtić Matulji, Općina Matulji, Dubravka Uroda, Mladi kompetentni lideri",
+        "• Vrijeme ove nedjelje nije bilo idealno, u Uvali se prkosilo hladnoći i → Побут інших міст (Прогулянки під дощем у Дубровнику) | Сутності: Uvala Lapad, Dubrovnik, kiša, šetnja",
+        "• Bura s olujnim udarima ne popušta do utorka u podne, a nedjelja i pone → Вже публікувалось (Попередження про штормову буру вже є в історії) | Сутності: Zadar, Zadarska županija, bura, Velebit",
+        "• Rođena je u Istri, a postala svjetska baletna zvijezda. Priča o umjetn → Побут інших міст (Вистава про балерину в Рієці) | Сутності: Carlotta Grisi, Vižinada, Rijeka, Zajednica Talijana Rijeka",
+        "• Amerikanci odlučuju hoće li Trumpu vezati ruke → Геоблок (Вибори в США) | Сутності: SAD, Donald Trump, Kongres, Senat",
+        "• Film koji je osvojio Cannes stigao je u hrvatska kina: Inspiriran je n → Не за тематикою (Прем'єра іспанського фільму в кінотеатрах) | Сутності: Crna kugla, Federico García Lorca, Javier Calvo, Cannes"
+      ],
+      "rejected_by_reason": {
+        "Побут інших міст": 5,
+        "Не за тематикою": 2,
+        "Вже публікувалось": 1,
+        "Геоблок": 1
+      },
+      "updates_marked": 0,
+      "already_rejected": 6,
+      "rejected_by_code_examples": [
+        "[тег RSS sport] Ivan Nekić i Vice Radonić iz Beča donijeli dva zlata za zadarski Ares – Diabolik i hrvatsku policiju",
+        "[košarkaše] Euroligaški div čeka Zadrane: Modrićeva momčad nema što izgubiti, a može dobiti jako puno",
+        "[тег RSS košarka] VIDEO Luka Dončić  ubacio je 45 poena uz rekordnih 14 skokova u pobjedi protiv Raptorsa",
+        "[тег RSS nogomet] Orijent je nadoknadio dva gola zaostatka protiv Vukovara: “Pokazali smo karakter!”",
+        "[URL /sport/] Kuglačice Mlake svladale posljednji sastav lige, Rijeci malo nedostajalo protiv Kustošije",
+        "[URL /sport/] Riječki boćari ispustili bodove kod Zrinjevca, novi poraz Svetog Jakova"
+      ]
+    },
+    "backlog": {
+      "total_size": 2,
+      "sources": {
+        "023": 2
+      }
+    },
+    "published": {
+      "total": 3,
+      "ukraine_priority": 0,
+      "with_images": 3,
+      "text_only": 0,
+      "og_images_found": 1,
+      "sources": {
+        "023": 1,
+        "Zadarski list": 1,
+        "Slobodna dalmacija": 1
+      }
+    },
+    "models_used": {
+      "gemini-3.6-flash": 2
+    },
+    "models_by_task": {
+      "filter": "gemini-3.6-flash",
+      "translate": "gemini-3.6-flash"
+    },
+    "model_attempts": [
+      {
+        "task": "filter",
+        "model": "gemini-3-flash-preview",
+        "outcome": "unavailable"
+      },
+      {
+        "task": "filter",
+        "model": "gemini-3.6-flash",
+        "outcome": "ok"
+      },
+      {
+        "task": "translate",
+        "model": "gemini-3.8-flash",
+        "outcome": "unavailable"
+      },
+      {
+        "task": "translate",
+        "model": "gemini-3.6-flash",
+        "outcome": "ok"
+      }
+    ],
+    "exhausted_models": [],
+    "demoted_models": [],
+    "translate_budget_deferred": [],
+    "gemini_region_blocked": false,
+    "errors_count": 0,
+    "gemini_retries": 2
   }
 ]
