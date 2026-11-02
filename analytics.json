@@ -1,68 +1,5 @@
 [
   {
-    "timestamp": "2026-10-16 09:01:16",
-    "execution_time": 242.3,
-    "funnel": {
-      "scraped_total": 35,
-      "scraped_by_source": {
-        "023": 10,
-        "Slobodna dalmacija": 15,
-        "Zadarski list": 10
-      },
-      "already_seen": 3,
-      "rejected_by_keywords": 2,
-      "duplicates_removed_by_ai": 22,
-      "rejection_reasons_list": [
-        "• ‘U ratom zahvaćenom Dubrovniku i opkolje... ➡️ <b>Стоп-тема: культурний та історичний контент поза фокусом.</b>",
-        "• Trump: “Nastavak ukrajinskih napada na r... ➡️ <b>Стоп-тема: світовий шум та закордонна політика без прямого впливу на Хорватію.</b>",
-        "• Nakon stravičnih scena u Splitu, policij... ➡️ <b>Стоп-тема: побут та кримінал інших міст (Спліт), спорт.</b>",
-        "• Strani mediji brutalno osudili nacifašiz... ➡️ <b>Стоп-тема: спорт.</b>",
-        "• Prilika za zaposlenje: velika tvrtka nud... ➡️ <b>Стоп-тема: побут та працевлаштування в іншому місті (Шибеник).</b>",
-        "• Nevjerojatna sreća u Jastrebarskom; Nije... ➡️ <b>Стоп-тема: побут інших міст (Jastrebarsko).</b>",
-        "• Splitska policija krenula u uhićenja pri... ➡️ <b>Дубль новини ID 2 (Спліт, фанати).</b>",
-        "• Pao jedan od napadača s Babinduba; Polic... ➡️ <b>Дубль новини про інцидент на Babindub (вже є в історії).</b>",
-        "• Milanovićev glavni analitičar oštriji ne... ➡️ <b>Стоп-тема: загальнополітичні розборки на національному рівні без прямого зв'язку із Задаром чи діаспорою.</b>",
-        "• Svjetski dan hrane; Hrvatska povećala do... ➡️ <b>Стоп-тема: загальна статистика та світловий шум.</b>",
-        "• Zašto je navlaka čuvenog jugoslavenskog ... ➡️ <b>Стоп-тема: ностальгічний лайфстайл.</b>",
-        "• Nove cijene goriva; Pogledajte koliko bi... ➡️ <b>Стоп-тема: попередні неофіційні чутки про ціни на пальне.</b>",
-        "• U galeriji »Fritzi« otvorena izložba »Od... ➡️ <b>Стоп-тема: культура іншого міста (Малі Лошинь).</b>",
-        "• I jutros su vatrogasci Dubrovnika, Primo... ➡️ <b>Стоп-тема: пожежі та комунальні проблеми інших регіонів (Дубровник).</b>",
-        "• Nastavak potrage za nestalima; Kod Komar... ➡️ <b>Стоп-тема: події в інших жупаніях (Сисацько-Мославинська).</b>",
-        "• U Koprivnici u subotu prosvjed protiv me... ➡️ <b>Стоп-тема: протести в іншому місті (Копривниця).</b>",
-        "• Dubrovčani plaćaju najskuplje voće i pov... ➡️ <b>Стоп-тема: побут та ринки іншого міста (Дубровник).</b>",
-        "• Kros spektakl u općini Ražanac; Više od ... ➡️ <b>Стоп-тема: спортивний крос-забіг.</b>",
-        "• Znate li kod liganja razliku između mužj... ➡️ <b>Стоп-тема: абстрактна наука та пізнавальні статті.</b>",
-        "• Mokošica – Gruž: Kamenac, rodeo i cesta ... ➡️ <b>Стоп-тема: побут інших міст (Груж-Мокошиця).</b>",
-        "• Piše Kim Cuculić: Apel za knjigu... ➡️ <b>Стоп-тема: освітня колонка без прямого відношення до Задара.</b>",
-        "• Zadar ima nekoliko „dužnika”, ali ako on... ➡️ <b>Стоп-тема: спорт (баскетбольний матч команди Задар).</b>"
-      ]
-    },
-    "backlog": {
-      "total_size": 30,
-      "sources": {
-        "023": 7,
-        "Slobodna dalmacija": 13,
-        "Zadarski list": 10
-      }
-    },
-    "published": {
-      "total": 3,
-      "ukraine_priority": 0,
-      "with_images": 3,
-      "text_only": 0,
-      "sources": {
-        "Slobodna dalmacija": 2,
-        "Zadarski list": 1
-      }
-    },
-    "models_used": {
-      "gemini-3.5-flash-lite": 1,
-      "gemini-3.6-flash": 1
-    },
-    "errors_count": 0,
-    "gemini_retries": 3
-  },
-  {
     "timestamp": "2026-10-16 10:01:10",
     "execution_time": 13.9,
     "funnel": {
@@ -6851,5 +6788,118 @@
     "gemini_region_blocked": false,
     "errors_count": 0,
     "gemini_retries": 3
+  },
+  {
+    "timestamp": "2026-11-02 13:01:20",
+    "execution_time": 193.3,
+    "funnel": {
+      "scraped_total": 35,
+      "scraped_by_source": {
+        "023": 10,
+        "Slobodna dalmacija": 15,
+        "Zadarski list": 10
+      },
+      "already_seen": 17,
+      "rejected_by_keywords": 6,
+      "rejected_by_rule": {
+        "тег RSS lifestyle": 1,
+        "sportu": 1,
+        "sport": 1,
+        "oglasi": 1,
+        "тег RSS košarka": 1,
+        "tenisom": 1
+      },
+      "unclassified_by_ai": 0,
+      "duplicates_removed_by_ai": 11,
+      "rejection_reasons_list": [
+        "• Plenković u Strasbourgu: Perspektiva mladih i energetska sigurnost klj → Геоблок (Подія у Франції) | Сутності: Andrej Plenković, Strasbourg, Vijeće Europe, demokracija",
+        "• Vrludao vozilom s 2.88 promila alkohola u krvi → Побут інших міст (Кримінал у Корениці) | Сутності: Korenica, Ličko-senjska, Bosna i Hercegovina, alkohol",
+        "• U utorak izložba fotografija Stipe Suraća \"Let There Be… Bass\" i promo → Не за тематикою (Культурна подія у Задарі) | Сутності: Stipe Surać, Rich Men, Zadar, Kneževa palača",
+        "• Fanovi u Pakoštanama za oproštaj od Miše skuhali 5 janjećih glava: Uvi → Вже публікувалось (Смерть Мішо Ковача) | Сутності: Pakoštane, Mate Mišo Kovač, janjetina",
+        "• Nova škola u Mokošici prve učenike primit će već u drugom polugodištu, → Побут інших міст (Школа в Дубровнику) | Сутності: Mokošica, Dubrovnik, Mato Franković, škola",
+        "• Burne nominacije u MasterChefu: Koga će spasiti? → Світовий шум (Телешоу) | Сутності: MasterChef, Mario, Liberije, Monika",
+        "• ‘Nazivaju me ljubomornim, protivnikom privatnog vlasništva i zagovorni → Побут інших міст (Ситуація з житлом у Дубровнику) | Сутності: Mato Franković, Dubrovnik, stanovi, apartmani",
+        "• VIDEO Kći Miše Kovača prvi put se javila nakon njegove smrti: evo što  → Вже публікувалось (Реакція доньки на смерть Мішо Ковача) | Сутності: Ivana Kovač, Mišo Kovač, Instagram",
+        "• Na društvenim mrežama isticao fotografije osoba osuđenih za ratni zloč → Побут інших міст (Інцидент в Оточаці) | Сутності: Otočac, Lika, policija, Domovinski rat",
+        "• Hrvati nisu svjesni što sve mogu dobiti kada im se rodi dijete! U pita → Світовий шум (Обговорення в соцмережах) | Сутності: Hrvatska, Reddit, dijete, plaćanja",
+        "• 20 sekundi od katastrofe: Prijavljen strojovođa vlaka koji je umalo iz → Побут інших міст (Інцидент на залізниці біля Рієки) | Сутності: Rijeka, Škrljevo, strojovođa, željeznica"
+      ],
+      "rejected_by_reason": {
+        "Геоблок": 1,
+        "Побут інших міст": 5,
+        "Не за тематикою": 1,
+        "Вже публікувалось": 2,
+        "Світовий шум": 2
+      },
+      "updates_marked": 0,
+      "already_rejected": 9,
+      "rejected_by_code_examples": [
+        "[тег RSS lifestyle] Kapljice na prozorima zimi ne znače uvijek previše vlage u stanu, važna je i vrsta stakla",
+        "[sportu] Šibenčani se okupili na ‘groblju stabala‘, javio se aktivist Šimić: Nisan zva nikoga ni huška. A mal",
+        "[sport] Croatia Yachting predstavio novo poglavlje svoje priče",
+        "[oglasi] Online prijevare sve su uvjerljivije, a građani često ne znaju kome se obratiti: ‘Da se sami ne pobr",
+        "[тег RSS košarka] Košarkaši Kvarnera nižu pobjede: “Na zadnje dvije utakmice to nije bila najljepša košarka, možemo bo",
+        "[tenisom] Ovaj tjedan kuha se u Rijeci i okolici: Evo tko su novi kandidati “Večere za 5”"
+      ]
+    },
+    "backlog": {
+      "total_size": 5,
+      "sources": {
+        "Zadarski list": 1,
+        "023": 1,
+        "Slobodna dalmacija": 3
+      }
+    },
+    "published": {
+      "total": 3,
+      "ukraine_priority": 1,
+      "with_images": 3,
+      "text_only": 0,
+      "og_images_found": 2,
+      "sources": {
+        "Zadarski list": 1,
+        "023": 2
+      }
+    },
+    "models_used": {
+      "gemini-3.5-flash-lite": 2
+    },
+    "models_by_task": {
+      "filter": "gemini-3.5-flash-lite",
+      "translate": "gemini-3.5-flash-lite"
+    },
+    "model_attempts": [
+      {
+        "task": "filter",
+        "model": "gemini-3.6-flash",
+        "outcome": "unavailable"
+      },
+      {
+        "task": "filter",
+        "model": "gemini-3.6-flash",
+        "outcome": "unavailable"
+      },
+      {
+        "task": "filter",
+        "model": "gemini-3.5-flash-lite",
+        "outcome": "ok"
+      },
+      {
+        "task": "translate",
+        "model": "gemini-3.5-flash-lite",
+        "outcome": "ok"
+      }
+    ],
+    "exhausted_models": [],
+    "demoted_models": [
+      "filter: gemini-3-flash-preview",
+      "translate: gemini-3.8-flash"
+    ],
+    "translate_budget_deferred": [
+      "gemini-3.6-flash"
+    ],
+    "gemini_region_blocked": false,
+    "errors_count": 0,
+    "gemini_retries": 2
   }
 ]
