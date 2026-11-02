@@ -1,65 +1,5 @@
 [
   {
-    "timestamp": "2026-10-16 11:01:07",
-    "execution_time": 188.9,
-    "funnel": {
-      "scraped_total": 35,
-      "scraped_by_source": {
-        "023": 10,
-        "Slobodna dalmacija": 15,
-        "Zadarski list": 10
-      },
-      "already_seen": 16,
-      "rejected_by_keywords": 4,
-      "duplicates_removed_by_ai": 19,
-      "rejection_reasons_list": [
-        "• ‘U ratom zahvaćenom Dubrovniku i opkolje... ➡️ <b>Подія не стосується Задара чи Хорватії напряму, історичний нарис</b>",
-        "• VW priprema opoziv nekoliko tisuća elekt... ➡️ <b>Інші країни / геоблок</b>",
-        "• Odabran izvođač za izgradnju modernog dj... ➡️ <b>Побут чужого міста (Шибеник)</b>",
-        "• Predstavljen prvi sveobuhvatni katalog M... ➡️ <b>Побут іншого міста (Оточац)</b>",
-        "• Sada je i službeno. Miočić ide za šefa H... ➡️ <b>Не відповідає пріоритетним темам Задара чи національної важливості для діаспори</b>",
-        "• Dubrovačko-neretvanska policija: Za vike... ➡️ <b>Побут іншого регіону (Дубровник)</b>",
-        "• Nakon stravičnih scena u Splitu, policij... ➡️ <b>Дубль новини про події в Спліті (є інші пов'язані новини про реакції)</b>",
-        "• Do ponedjeljka prijave za obiteljsku ško... ➡️ <b>Побут іншого міста (Ловран/Рієка)</b>",
-        "• ‘Kriv za glupost‘: muškarac prerezao gla... ➡️ <b>Побут іншого міста (Оребіч)</b>",
-        "• Nevjerojatna sreća u Jastrebarskom; Nije... ➡️ <b>Світловий шум / курйоз</b>",
-        "• Božinović o Torcidi: Prekršajne prijave ... ➡️ <b>Дубль або вторинний коментар щодо подій у Спліті</b>",
-        "• Dvojica u Dubrovniku istukla 19-godišnja... ➡️ <b>Дубль новини про інцидент у Дубровнику</b>",
-        "• Ručnom pilom prerezao glavnu kanalizacij... ➡️ <b>Дубль новини про пошкодження каналізації в Оребічі</b>",
-        "• Svjetski dan hrane; Hrvatska povećala do... ➡️ <b>Абстрактна статистика / світовий день</b>",
-        "• Milanović osudio sramotno ponašanje dije... ➡️ <b>Реакція на події в Спліті (дубль кластера)</b>",
-        "• Pronađeni napadači na 19-godišnjeg Dubro... ➡️ <b>Дубль новини з Дубровника</b>",
-        "• Nove cijene goriva; Pogledajte koliko bi... ➡️ <b>Попередні непідтверджені дані/чутки про ціни</b>",
-        "• Nađa Berbić odgovorila Marinu Miletiću: ... ➡️ <b>Полеміка місцевих політиків іншого регіону</b>",
-        "• Dobitnica BBC-jeve nagrade za folk pjeva... ➡️ <b>Культурна подія іншого міста (Дубровник)</b>"
-      ]
-    },
-    "backlog": {
-      "total_size": 47,
-      "sources": {
-        "Slobodna dalmacija": 23,
-        "Zadarski list": 14,
-        "023": 10
-      }
-    },
-    "published": {
-      "total": 3,
-      "ukraine_priority": 0,
-      "with_images": 1,
-      "text_only": 2,
-      "sources": {
-        "023": 2,
-        "Slobodna dalmacija": 1
-      }
-    },
-    "models_used": {
-      "gemini-3.5-flash-lite": 2,
-      "gemini-3.6-flash": 0
-    },
-    "errors_count": 0,
-    "gemini_retries": 1
-  },
-  {
     "timestamp": "2026-10-16 12:01:08",
     "execution_time": 246.8,
     "funnel": {
@@ -6960,5 +6900,141 @@
     "gemini_region_blocked": false,
     "errors_count": 0,
     "gemini_retries": 4
+  },
+  {
+    "timestamp": "2026-11-02 15:01:19",
+    "execution_time": 220.5,
+    "funnel": {
+      "scraped_total": 35,
+      "scraped_by_source": {
+        "023": 10,
+        "Slobodna dalmacija": 15,
+        "Zadarski list": 10
+      },
+      "already_seen": 21,
+      "rejected_by_keywords": 6,
+      "rejected_by_rule": {
+        "sponzori": 1,
+        "тег RSS lifestyle": 1,
+        "sportu": 1,
+        "sport": 1,
+        "тег RSS nogomet": 1,
+        "oglasi": 1
+      },
+      "unclassified_by_ai": 0,
+      "duplicates_removed_by_ai": 12,
+      "rejection_reasons_list": [
+        "• U Srbiji uhićen vlasnik ALTA banke, sumnja se da je iz trezora iznio 3 → Геоблок (Події в Сербії) | Сутності: Damir Macura, ALTA banka, Srbija, Narodna banka Srbije",
+        "• Kreativna radionica u Privlaci; Udruga ANA kroz priču o čarobnom svjet → Побут інших міст (Дитяча майстерня в Привлаці) | Сутності: Privlaka, Udruga ANA, Karla Pap",
+        "• Počinje program Subotnja zimska jutra u Dubrovniku: Upoznajte Grad kro → Побут інших міст (Туристична програма в Дубровнику) | Сутності: Dubrovnik, Turistička zajednica, Subotnja zimska jutra",
+        "• Dubrovačko-neretvanskoj županiji 785.000 eura za nabavu zdravstvene op → Побут інших міст (Медичне обладнання в Дубровнику) | Сутності: Dubrovačko-neretvanska županija, Dom zdravlja, Europski fond",
+        "• Od srijede radovi u Ulici Dinka Šimunovića, uvodi se regulacija promet → Побут інших міст (Ремонт доріг у Рієці) | Сутності: Rijeka, Ulica Dinka Šimunovića, KD Vodovod i kanalizacija",
+        "• Zbog napada na navijače Ajaxa Zadrani završili ‘iza rešetaka‘, otkrive → Вже публікувалось (Атака на вболівальників у Задарі) | Сутності: Zadar, Općinsko državno odvjetništvo, Nizozemci",
+        "• Hrvatske šume povisile cijene drvnih sortimenata za približno deset po → Не за тематикою (Підвищення цін на деревину) | Сутності: Hrvatske šume, drvni sortimenti, Hrvatska",
+        "• Dronom pogođen LNG tanker na kojem su trojica hrvatskih pomoraca → Дубль (Дублює новину про хорватських моряків) | Сутності: Perzijski zaljev, Al Mayeda, Siniša Orlić",
+        "• Kolege i prijatelji oprostili se od Gorana Bare: “Uvrstite ga u lektir → Світовий шум (Прощання з музикантом) | Сутності: Goran Bare, Aleksandar Dragaš, KD Lisinski",
+        "• Oko Velebita danima bruje avioni i helikopteri, specijalci izvode akci → Побут інших міст (Військові навчання на Велебіті) | Сутності: Velebit, Zemunik, Dragan Andrijević",
+        "• Potresni dokumentarac o sustavima iza masovnog uništavanja civila u Ga → Геоблок (Показ документального фільму в Рієці) | Сутності: Art-kino, Yuval Abraham, Gaza",
+        "• Gabon: Pronađeno tijelo riječkog pomorca nestalog nakon potonuća platf → Вже публікувалось (Загибель моряка в Габоні) | Сутності: Damir Parać, Gabon, Rijeka"
+      ],
+      "rejected_by_reason": {
+        "Геоблок": 2,
+        "Побут інших міст": 5,
+        "Вже публікувалось": 2,
+        "Не за тематикою": 1,
+        "Дубль": 1,
+        "Світовий шум": 1
+      },
+      "updates_marked": 0,
+      "already_rejected": 13,
+      "rejected_by_code_examples": [
+        "[sponzori] Inovacije za plavu budućnost; Regionalni timovi u Zadru traže rješenja za pametniji nadzor vodovoda ",
+        "[тег RSS lifestyle] Kapljice na prozorima zimi ne znače uvijek previše vlage u stanu, važna je i vrsta stakla",
+        "[sportu] Šibenčani se okupili na ‘groblju stabala‘, javio se aktivist Šimić: Nisan zva nikoga ni huška. A mal",
+        "[sport] Croatia Yachting predstavio novo poglavlje svoje priče",
+        "[тег RSS nogomet] NY Times objavio interne dokumente FIFA-e. Savez će Infantinu platiti četiri milijuna dolara poreza ",
+        "[oglasi] Velike promjene: Radnici će moći usporediti plaću s kolegama i zatražiti objašnjenje od poslodavca"
+      ]
+    },
+    "backlog": {
+      "total_size": 0,
+      "sources": {}
+    },
+    "published": {
+      "total": 2,
+      "ukraine_priority": 0,
+      "with_images": 2,
+      "text_only": 0,
+      "og_images_found": 0,
+      "sources": {
+        "Zadarski list": 2
+      }
+    },
+    "models_used": {
+      "gemini-3.5-flash-lite": 1,
+      "gemini-3.6-flash": 1
+    },
+    "models_by_task": {
+      "filter": "gemini-3.5-flash-lite",
+      "translate": "gemini-3.6-flash"
+    },
+    "model_attempts": [
+      {
+        "task": "filter",
+        "model": "gemini-3-flash-preview",
+        "outcome": "unavailable"
+      },
+      {
+        "task": "filter",
+        "model": "gemini-3-flash-preview",
+        "outcome": "unavailable"
+      },
+      {
+        "task": "filter",
+        "model": "gemini-3.6-flash",
+        "outcome": "unavailable"
+      },
+      {
+        "task": "filter",
+        "model": "gemini-3.6-flash",
+        "outcome": "unavailable"
+      },
+      {
+        "task": "filter",
+        "model": "gemini-3.5-flash-lite",
+        "outcome": "ok"
+      },
+      {
+        "task": "translate",
+        "model": "gemini-3.8-flash",
+        "outcome": "unavailable"
+      },
+      {
+        "task": "translate",
+        "model": "gemini-3.8-flash",
+        "outcome": "unavailable"
+      },
+      {
+        "task": "translate",
+        "model": "gemini-3.6-flash",
+        "outcome": "unavailable"
+      },
+      {
+        "task": "translate",
+        "model": "gemini-3.6-flash",
+        "outcome": "ok"
+      }
+    ],
+    "exhausted_models": [],
+    "demoted_models": [
+      "translate: gemini-3.8-flash"
+    ],
+    "translate_budget_deferred": [
+      "gemini-3.5-flash-lite",
+      "gemini-3.6-flash"
+    ],
+    "gemini_region_blocked": false,
+    "errors_count": 0,
+    "gemini_retries": 7
   }
 ]
