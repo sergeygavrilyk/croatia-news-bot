@@ -1,68 +1,5 @@
 [
   {
-    "timestamp": "2026-10-16 14:01:12",
-    "execution_time": 16.3,
-    "funnel": {
-      "scraped_total": 35,
-      "scraped_by_source": {
-        "023": 10,
-        "Slobodna dalmacija": 15,
-        "Zadarski list": 10
-      },
-      "already_seen": 23,
-      "rejected_by_keywords": 4,
-      "duplicates_removed_by_ai": 25,
-      "rejection_reasons_list": [
-        "• Edamame, humus i pečeni slanutak: sedam ... ➡️ <b>Світовий шум: поради дієтологів та рецепти</b>",
-        "• Nevjerojatno što se događa na Zlarinu! Z... ➡️ <b>Побут чужих міст та островів (не Задар)</b>",
-        "• Zajednica utemeljitelja HDZ-a: Tražimo i... ➡️ <b>Побут і події чужого міста (Спліт)</b>",
-        "• “Mama, oni me ne razumiju.”; Ovo su svje... ➡️ <b>Соціальна тематика без прямого стосунку до Задара чи національного рівня</b>",
-        "• Potpisan 2,8 milijuna eura vrijedan ugov... ➡️ <b>Побут чужих міст (Конавле, Цавтат)</b>",
-        "• Pucnjava u SAD-u: Maloljetnik pobio troj... ➡️ <b>Геоблок: події за межами Хорватії та України</b>",
-        "• Tesla pokazala novi Roadster koji uz pom... ➡️ <b>Світовий шум та технології</b>",
-        "• Obilježena 35. godišnjica pogibije Josip... ➡️ <b>Побут та історія чужого міста (Дубровник)</b>",
-        "• U Omišlju otvorena udruga za djecu s teš... ➡️ <b>Побут чужих міст (Крк, Омішаль)</b>",
-        "• Jedemo li pogrešno? Svjetski dan hrane u... ➡️ <b>Світовий шум та загальні міжнародні дні</b>",
-        "• Dobre vijesti iz Skradina: ronioci i vat... ➡️ <b>Побут чужих міст (Скрадин)</b>",
-        "• Elizabeth Zacero iz Kastva vraća se u “S... ➡️ <b>Шоу-бізнес та розваги поза Задаром</b>",
-        "• Pas laje sve glasnije dok ga pokušavate ... ➡️ <b>Світовий шум: поради щодо дресирування тварин</b>",
-        "• Tražite parking u Mokošici? Grad Dubrovn... ➡️ <b>Побут чужого міста (Дубровник)</b>",
-        "• SDP Rijeka: Pred mržnjom nema neutralnos... ➡️ <b>Побут і політика чужого міста (Рієка)</b>",
-        "• Projekt “Hrvatska pliva 2026”; Prva ovos... ➡️ <b>Спорт: дитяча спортивна секція та навчання плаванню</b>",
-        "• Objavljen javni natječaj za zakup osam g... ➡️ <b>Дубль новини ID 13</b>",
-        "• Grad Opatija: Podmirenje nastalih troško... ➡️ <b>Побут чужого міста (Опатія)</b>",
-        "• Oštra reakcija s Pantovčaka na skandaloz... ➡️ <b>Дубль новини про інцидент у Спліті (див. ID 21)</b>",
-        "• Dobar rad u malim sredinama: Ponos Škole... ➡️ <b>Спорт: дитячий футбольний турнір</b>",
-        "• Oporba složna oko osude povika Torcide, ... ➡️ <b>Реакції політиків на спортивно-фанатський інцидент у Спліті</b>",
-        "• Nakon stravičnih scena u Splitu, policij... ➡️ <b>Побут та кримінал чужого міста (Спліт)</b>",
-        "• Brucoši i strani studenti zaplovili u no... ➡️ <b>Повтор студентського життя або незначна подія університету</b>",
-        "• Jandroković: Dio navijača osramotio je H... ➡️ <b>Реакція посадовця на інцидент у Спліті</b>",
-        "• Nastavak potrage za nestalima; Kod Komar... ➡️ <b>Події національного рівня за межами Задара (Сисацько-Мославинська жупанія)</b>"
-      ]
-    },
-    "backlog": {
-      "total_size": 60,
-      "sources": {
-        "Slobodna dalmacija": 34,
-        "Zadarski list": 16,
-        "023": 10
-      }
-    },
-    "published": {
-      "total": 0,
-      "ukraine_priority": 0,
-      "with_images": 0,
-      "text_only": 0,
-      "sources": {}
-    },
-    "models_used": {
-      "gemini-3.5-flash-lite": 1,
-      "gemini-3.6-flash": 0
-    },
-    "errors_count": 0,
-    "gemini_retries": 0
-  },
-  {
     "timestamp": "2026-10-16 15:01:13",
     "execution_time": 256.3,
     "funnel": {
@@ -7142,6 +7079,130 @@
       "filter: gemini-3-flash-preview",
       "translate: gemini-3.8-flash"
     ],
+    "translate_budget_deferred": [
+      "gemini-3.5-flash-lite",
+      "gemini-3.6-flash"
+    ],
+    "gemini_region_blocked": false,
+    "errors_count": 0,
+    "gemini_retries": 4
+  },
+  {
+    "timestamp": "2026-11-02 20:01:20",
+    "execution_time": 284.8,
+    "funnel": {
+      "scraped_total": 35,
+      "scraped_by_source": {
+        "023": 10,
+        "Slobodna dalmacija": 15,
+        "Zadarski list": 10
+      },
+      "already_seen": 13,
+      "rejected_by_keywords": 11,
+      "rejected_by_rule": {
+        "тег RSS lifestyle": 4,
+        "sponzori": 1,
+        "utakmicu": 1,
+        "sport": 1,
+        "sporta": 1,
+        "тег RSS nogomet": 2,
+        "тег RSS košarka": 1
+      },
+      "unclassified_by_ai": 0,
+      "duplicates_removed_by_ai": 9,
+      "rejection_reasons_list": [
+        "• Pitali smo Penavu zašto pljuje po SDSS-u i Možemo, ali ne i po SDP-u?  → Не за тематикою (Політичні коментарі у Загребі) | Сутності: Ivan Penava, Domovinski pokret, Andrej Plenković, Macelj",
+        "• Prekršaj ispod peke: Dušan mi je u Trebinju očitao lekciju iz balkansk → Геоблок (Поїздка до Требіня) | Сутності: Trebinje, Dubrovnik, Bosna i Hercegovina",
+        "• Bijele plombe jesu formalno besplatne, ali ne one kakve pacijenti žele → Побут інших міст (Зубні пломби у Загребі) | Сутності: Zagreb, HZZO, EU",
+        "• Studija na starijim osobama: 60 grama kikirikija dnevno poboljšalo odg → Світовий шум (Дослідження про кенгуру та мозок) | Сутності: Maastricht University, Kikiriki, Mozak",
+        "• Priče o uraganima i promocija »S bijelim štapom put planina« → Побут інших міст (Подія в бібліотеці в Опатії) | Сутності: Opatija, Ana Juračić, NASA",
+        "• Šibenik se pjesmom oprostio od Miše: ‘Je l‘ čuješ ti ovo, to ti je sve → Дубль (Дублює новину про прощання з Мішо Ковачем) | Сутності: Šibenik, Mišo Kovač, Marko Škugor",
+        "• Šibenčani se oprostili od Miše Kovača pjevajući njegove hitove → Вже публікувалось (Вже є новини про смерть і прощання з Мішо Ковачем) | Сутності: Šibenik, Mišo Kovač, Karlo Orbanić",
+        "• U Brod Moravicama predstavljena knjiga »Dr Ivo Mance: život i djelo« → Побут інших міст (Презентация книги у Брод Моравицах) | Сутності: Brod Moravice, Ivo Mance, Adolf Polegubić",
+        "• Dva inspirativna i motivirajuća susreta u Gradskoj knjižnici Opatija → Дубль (Дублює новину 5) | Сутності: Opatija, Ana Juračić, NASA"
+      ],
+      "rejected_by_reason": {
+        "Не за тематикою": 1,
+        "Геоблок": 1,
+        "Побут інших міст": 3,
+        "Світовий шум": 1,
+        "Дубль": 2,
+        "Вже публікувалось": 1
+      },
+      "updates_marked": 0,
+      "already_rejected": 11,
+      "rejected_by_code_examples": [
+        "[тег RSS lifestyle] Krumpir se ravnomjernije skuha ako ga stavite u hladnu vodu, objašnjavaju četiri kuhara",
+        "[тег RSS lifestyle] Test s vodom pokazuje koliko je jaje staro, ali ne i je li sigurno za jelo",
+        "[тег RSS lifestyle] Deset tisuća koraka dnevno nije znanstvena granica: najviše dobivaju oni koji se najmanje kreću",
+        "[sponzori] Inovacije za plavu budućnost; Regionalni timovi u Zadru traže rješenja za pametniji nadzor vodovoda ",
+        "[тег RSS lifestyle] Kapljice na prozorima zimi ne znače uvijek previše vlage u stanu, važna je i vrsta stakla",
+        "[utakmicu] Zadrani su odigrali najboljih 30 minuta sezone, no onda se probudio moćni euroligaški div",
+        "[sport] Hrvatska atletičarka i ultramaratonka Jelena Barčot dočekana u Pločama. Nastavlja 850 kilometara dug",
+        "[sporta] Održana edukacija „Školovanje vina i vinara“ – 36 uzoraka vina i vrijedna razmjena znanja i iskustav",
+        "[тег RSS nogomet] Ovo je 26 nogometaša koji konkuriraju za idealnu momčad 2026. godine. Nema Hrvata",
+        "[тег RSS košarka] Zadrani izgubili kod Dubaija, Niko Šare najefikasniji sa 16 poena",
+        "[тег RSS nogomet] Udinese otpustio Kostu Runjaića. Vodstvo kluba je odlučila kako je vrijeme za promjenu"
+      ]
+    },
+    "backlog": {
+      "total_size": 0,
+      "sources": {}
+    },
+    "published": {
+      "total": 2,
+      "ukraine_priority": 0,
+      "with_images": 2,
+      "text_only": 0,
+      "og_images_found": 0,
+      "sources": {
+        "Slobodna dalmacija": 1,
+        "Zadarski list": 1
+      }
+    },
+    "models_used": {
+      "gemini-3.5-flash-lite": 2
+    },
+    "models_by_task": {
+      "filter": "gemini-3.5-flash-lite",
+      "translate": "gemini-3.5-flash-lite"
+    },
+    "model_attempts": [
+      {
+        "task": "filter",
+        "model": "gemini-3-flash-preview",
+        "outcome": "unavailable"
+      },
+      {
+        "task": "filter",
+        "model": "gemini-3.6-flash",
+        "outcome": "unavailable"
+      },
+      {
+        "task": "filter",
+        "model": "gemini-3.6-flash",
+        "outcome": "quota"
+      },
+      {
+        "task": "filter",
+        "model": "gemini-3.5-flash-lite",
+        "outcome": "ok"
+      },
+      {
+        "task": "translate",
+        "model": "gemini-3.8-flash",
+        "outcome": "unavailable"
+      },
+      {
+        "task": "translate",
+        "model": "gemini-3.5-flash-lite",
+        "outcome": "ok"
+      }
+    ],
+    "exhausted_models": [
+      "gemini-3.6-flash"
+    ],
+    "demoted_models": [],
     "translate_budget_deferred": [
       "gemini-3.5-flash-lite",
       "gemini-3.6-flash"
