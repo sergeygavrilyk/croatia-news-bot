@@ -1,68 +1,5 @@
 [
   {
-    "timestamp": "2026-10-16 10:01:10",
-    "execution_time": 13.9,
-    "funnel": {
-      "scraped_total": 35,
-      "scraped_by_source": {
-        "023": 10,
-        "Slobodna dalmacija": 15,
-        "Zadarski list": 10
-      },
-      "already_seen": 4,
-      "rejected_by_keywords": 3,
-      "duplicates_removed_by_ai": 25,
-      "rejection_reasons_list": [
-        "• ‘U ratom zahvaćenom Dubrovniku i opkolje... ➡️ <b>Інші країни / світовий шум, не стосується Задара чи Хорватії напряму</b>",
-        "• Upozorenje vijećnice Vištica: Zadarsko r... ➡️ <b>Дубль або несуттєве оновлення історичної події</b>",
-        "• Odlazak kultnog mjesta: ruši se staro Ki... ➡️ <b>Побут чужих міст (не Задар)</b>",
-        "• Spomenik bez papira izazvao spor na Pagu... ➡️ <b>Дубль події з історії</b>",
-        "• Nakon stravičnih scena u Splitu, policij... ➡️ <b>Побут чужих міст (Спліт)</b>",
-        "• Novi slučaj prijevare u Šibeniku: obećao... ➡️ <b>Побут чужих міст (Шибеник)</b>",
-        "• Milanović osudio sramotno ponašanje dije... ➡️ <b>Спорт та хуліганство в іншому місті</b>",
-        "• Nevjerojatna sreća u Jastrebarskom; Nije... ➡️ <b>Світський шум / нерелевантно</b>",
-        "• Dubrovkinja ogorčena stanjem na cestama,... ➡️ <b>Побут чужих міст (Дубровник)</b>",
-        "• Nađa Berbić odgovorila Marinu Miletiću: ... ➡️ <b>Побут чужих міст / політика інших регіонів</b>",
-        "• Pao jedan od napadača s Babinduba; Polic... ➡️ <b>Дубль події з історії</b>",
-        "• Ovo je odličan razlog da se zaputite na ... ➡️ <b>Несуттєва культурна подія / анонс</b>",
-        "• Policija na Drenovi zaustavila auto, pro... ➡️ <b>Побут чужих міст (Рієка)</b>",
-        "• Svjetski dan hrane; Hrvatska povećala do... ➡️ <b>Світовий шум / загальна статистика</b>",
-        "• Dragocjena građevina u srcu Knina i dalj... ➡️ <b>Побут чужих міст (Книн)</b>",
-        "• Most nezadovoljan Vladom: Stavljaju sve ... ➡️ <b>Побут чужих міст (Рієка)</b>",
-        "• Nove cijene goriva; Pogledajte koliko bi... ➡️ <b>Світовий шум / загальні ціни на паливо без конкретики по Задару</b>",
-        "• Prilika za zaposlenje: velika tvrtka nud... ➡️ <b>Побут чужих міст (Шибеник)</b>",
-        "• Strani mediji brutalno osudili nacifašiz... ➡️ <b>Спорт</b>",
-        "• Nastavak potrage za nestalima; Kod Komar... ➡️ <b>Події національного рівня за межами Задара</b>",
-        "• Zašto je navlaka čuvenog jugoslavenskog ... ➡️ <b>Світський шум / розважальна стаття</b>",
-        "• Splitska policija krenula u uhićenja pri... ➡️ <b>Дубль спортивно-кримінальної події зі Спліта</b>",
-        "• Policijska pretraga u Pakoštanima; Kod 2... ➡️ <b>Дубль події з історії</b>",
-        "• I jutros su vatrogasci Dubrovnika, Primo... ➡️ <b>Побут чужих міст (Дубровницький регіон)</b>",
-        "• Milanovićev glavni analitičar oštriji ne... ➡️ <b>Національна політика без прив'язки до Задара чи біженців</b>"
-      ]
-    },
-    "backlog": {
-      "total_size": 33,
-      "sources": {
-        "Slobodna dalmacija": 16,
-        "Zadarski list": 9,
-        "023": 8
-      }
-    },
-    "published": {
-      "total": 0,
-      "ukraine_priority": 0,
-      "with_images": 0,
-      "text_only": 0,
-      "sources": {}
-    },
-    "models_used": {
-      "gemini-3.5-flash-lite": 1,
-      "gemini-3.6-flash": 0
-    },
-    "errors_count": 0,
-    "gemini_retries": 0
-  },
-  {
     "timestamp": "2026-10-16 11:01:07",
     "execution_time": 188.9,
     "funnel": {
@@ -6901,5 +6838,127 @@
     "gemini_region_blocked": false,
     "errors_count": 0,
     "gemini_retries": 2
+  },
+  {
+    "timestamp": "2026-11-02 14:01:13",
+    "execution_time": 220.7,
+    "funnel": {
+      "scraped_total": 35,
+      "scraped_by_source": {
+        "023": 10,
+        "Slobodna dalmacija": 15,
+        "Zadarski list": 10
+      },
+      "already_seen": 15,
+      "rejected_by_keywords": 6,
+      "rejected_by_rule": {
+        "тег RSS lifestyle": 1,
+        "sportu": 1,
+        "sport": 1,
+        "тег RSS nogomet": 1,
+        "oglasi": 1,
+        "sportova": 1
+      },
+      "unclassified_by_ai": 0,
+      "duplicates_removed_by_ai": 10,
+      "rejection_reasons_list": [
+        "• Otkriveni svi detalji oko ispraćaja Miše Kovača na Poljudu → Вже публікувалось (Похорон Mišo Kovača у Спліті) | Сутності: Mišo Kovač, Poljud, Hajduk, Marinka Akrap",
+        "• Poznate turističke brojke za listopad, evo kolika je razlika u odnosu  → Не за тематикою (Туристична статистика Дубровника) | Сутності: Dubrovnik, eVisitor, listopad, turizam",
+        "• Belfast Food novim singlom “Pa da” slavi 30 godina karijere. Najavljuj → Побут інших міст (Концерт гурту у Загребі) | Сутності: Belfast Food, Rijeka, Zagreb, Pa da",
+        "• Burićeva priča o caru Dioklecijanu ambiciozan je projekt, ali ne doska → Світовий шум (Рецензія на історичний серіал) | Сутності: Domagoj Božidar Burić, Dioklecijan, Dubrovnik, HRT",
+        "• Ovaj mali otok imao je posebno mjesto u Mišinom životu. S njega je nje → Вже публікувалось (Дитинство Mišo Kovača на Вргаді) | Сутності: Mišo Kovač, Vrgada, Zadarska županija, Zrinka Kovač",
+        "• Energija koja se prilagođava poslovanju → Світовий шум (Поради про енергоефективність) | Сутності: solarni paneli, baterijski sustavi, energetika",
+        "• ‘Pošteno‘ popio pa ‘poštenu‘ kaznu ‘zaradio‘: Vozač (48) će dugo pamti → Побут інших міст (П'яний водій у Дубровнику) | Сутності: Dubrovnik, policija, alkohol, sud",
+        "• Ogrjevno drvo poskupljuje za 10%. Neugodna najava Hrvatskih šuma u sez → Побут інших міст (Ціни на дрова в Ліці) | Сутності: Hrvatske šume, Lika, ogrijevno drvo, poskupljenje",
+        "• ‘Frajer‘ po Pelješcu vozio auto bez registracija, ali nije to bio jedi → Побут інших міст (Порушник ПДР на Пельєшаці) | Сутності: Pelješac, Ston, Janjina, policija",
+        "• Franković: ‘Nazivaju me ljubomornim i zagovornikom komunističkih metod → Вже публікувалось (Коментар мера Дубровника про туризм) | Сутності: Mato Franković, Dubrovnik, apartmani, stanovanje"
+      ],
+      "rejected_by_reason": {
+        "Вже публікувалось": 3,
+        "Не за тематикою": 1,
+        "Побут інших міст": 4,
+        "Світовий шум": 2
+      },
+      "updates_marked": 0,
+      "already_rejected": 6,
+      "rejected_by_code_examples": [
+        "[тег RSS lifestyle] Kapljice na prozorima zimi ne znače uvijek previše vlage u stanu, važna je i vrsta stakla",
+        "[sportu] Šibenčani se okupili na ‘groblju stabala‘, javio se aktivist Šimić: Nisan zva nikoga ni huška. A mal",
+        "[sport] Croatia Yachting predstavio novo poglavlje svoje priče",
+        "[тег RSS nogomet] NY Times objavio interne dokumente FIFA-e. Savez će Infantinu platiti četiri milijuna dolara poreza ",
+        "[oglasi] Velike promjene: Radnici će moći usporediti plaću s kolegama i zatražiti objašnjenje od poslodavca",
+        "[sportova] Legendarni rock bend Scorpions dolazi u Arenu Zagreb! Posebni gosti – grupa Europe"
+      ]
+    },
+    "backlog": {
+      "total_size": 6,
+      "sources": {
+        "Slobodna dalmacija": 4,
+        "Zadarski list": 2
+      }
+    },
+    "published": {
+      "total": 3,
+      "ukraine_priority": 0,
+      "with_images": 3,
+      "text_only": 0,
+      "og_images_found": 2,
+      "sources": {
+        "023": 2,
+        "Zadarski list": 1
+      }
+    },
+    "models_used": {
+      "gemini-3.5-flash-lite": 2
+    },
+    "models_by_task": {
+      "filter": "gemini-3.5-flash-lite",
+      "translate": "gemini-3.5-flash-lite"
+    },
+    "model_attempts": [
+      {
+        "task": "filter",
+        "model": "gemini-3.5-flash-lite",
+        "outcome": "ok"
+      },
+      {
+        "task": "translate",
+        "model": "gemini-3.8-flash",
+        "outcome": "unavailable"
+      },
+      {
+        "task": "translate",
+        "model": "gemini-3.8-flash",
+        "outcome": "unavailable"
+      },
+      {
+        "task": "translate",
+        "model": "gemini-3.6-flash",
+        "outcome": "unavailable"
+      },
+      {
+        "task": "translate",
+        "model": "gemini-3.6-flash",
+        "outcome": "unavailable"
+      },
+      {
+        "task": "translate",
+        "model": "gemini-3.5-flash-lite",
+        "outcome": "ok"
+      }
+    ],
+    "exhausted_models": [],
+    "demoted_models": [
+      "filter: gemini-3-flash-preview",
+      "filter: gemini-3.6-flash",
+      "translate: gemini-3.8-flash"
+    ],
+    "translate_budget_deferred": [
+      "gemini-3.5-flash-lite",
+      "gemini-3.6-flash"
+    ],
+    "gemini_region_blocked": false,
+    "errors_count": 0,
+    "gemini_retries": 4
   }
 ]
