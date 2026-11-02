@@ -1,65 +1,5 @@
 [
   {
-    "timestamp": "2026-10-16 08:01:08",
-    "execution_time": 144.7,
-    "funnel": {
-      "scraped_total": 35,
-      "scraped_by_source": {
-        "023": 10,
-        "Slobodna dalmacija": 15,
-        "Zadarski list": 10
-      },
-      "already_seen": 4,
-      "rejected_by_keywords": 2,
-      "duplicates_removed_by_ai": 20,
-      "rejection_reasons_list": [
-        "• Trump: “Nastavak ukrajinskih napada na r... ➡️ <b>Геоблок: події за межами Хорватії та України, не стосуються напряму українських біженців</b>",
-        "• U galeriji »Fritzi« otvorena izložba »Od... ➡️ <b>Побут чужих міст/регіонів (Лошинь замість Задара)</b>",
-        "• Zašto je navlaka čuvenog jugoslavenskog ... ➡️ <b>Світовий шум / розважальний контент без прив'язки до локальної актуальності</b>",
-        "• U Koprivnici u subotu prosvjed protiv me... ➡️ <b>Побут чужих міст (Копривниця)</b>",
-        "• I jutros su vatrogasci Dubrovnika, Primo... ➡️ <b>Побут чужих міст (Дубровник та сусідні острови)</b>",
-        "• Znate li kod liganja razliku između mužj... ➡️ <b>Світовий шум / пізнавальна стаття про біологію</b>",
-        "• Dubrovčani plaćaju najskuplje voće i pov... ➡️ <b>Побут чужих міст (Дубровник)</b>",
-        "• Kros spektakl u općini Ražanac; Više od ... ➡️ <b>Спорт: аматорські та бігові змагання/крос</b>",
-        "• Piše Kim Cuculić: Apel za knjigu... ➡️ <b>Світовий шум / освіта на загальнонаціональному рівні без критичного значення для діаспори</b>",
-        "• Mokošica – Gruž: Kamenac, rodeo i cesta ... ➡️ <b>Побут чужих міст (Дубровник)</b>",
-        "• Zadar ove subote u znaku patuljastih šna... ➡️ <b>Стоп-тема: розважальний захід / клуб любителів тварин</b>",
-        "• Djelo Gioachina Rossinija prvi put u Rij... ➡️ <b>Побут чужих міст (Рієка)</b>",
-        "• Zadar ima nekoliko „dužnika”, ali ako on... ➡️ <b>Спорт: баскетбольний матч та турнірна таблиця</b>",
-        "• Francuska i Njemačka postigle dogovor o ... ➡️ <b>Геоблок: події політики ЄС без прямого зв'язку з місцевим життям українців</b>",
-        "• Tražite stan u Šibeniku? Pogledajte cije... ➡️ <b>Побут чужих міст (Шибеник)</b>",
-        "• Lürssen sve bliži odlasku iz dva ogromna... ➡️ <b>Побут чужих міст (Рієка та Кварнер)</b>",
-        "• Pogledajte što sve možete pročitati u no... ➡️ <b>Побут чужих міст (Дубровник)</b>",
-        "• Presudni detalji – Za uspješan lov treba... ➡️ <b>Світовий шум / порада щодо аматорського рибальства</b>",
-        "• Ovo je najskuplje povrće u Hrvatskoj, u ... ➡️ <b>Дубль новини ID 8</b>",
-        "• Odjel za djecu i mlade Narodne knjižnice... ➡️ <b>Побут чужих міст (Дубровник)</b>"
-      ]
-    },
-    "backlog": {
-      "total_size": 22,
-      "sources": {
-        "023": 4,
-        "Slobodna dalmacija": 9,
-        "Zadarski list": 9
-      }
-    },
-    "published": {
-      "total": 2,
-      "ukraine_priority": 0,
-      "with_images": 0,
-      "text_only": 2,
-      "sources": {
-        "023": 2
-      }
-    },
-    "models_used": {
-      "gemini-3.5-flash-lite": 1,
-      "gemini-3.6-flash": 1
-    },
-    "errors_count": 0,
-    "gemini_retries": 0
-  },
-  {
     "timestamp": "2026-10-16 09:01:16",
     "execution_time": 242.3,
     "funnel": {
@@ -6793,5 +6733,123 @@
     "gemini_region_blocked": false,
     "errors_count": 1,
     "gemini_retries": 4
+  },
+  {
+    "timestamp": "2026-11-02 12:01:25",
+    "execution_time": 403.3,
+    "funnel": {
+      "scraped_total": 35,
+      "scraped_by_source": {
+        "023": 10,
+        "Slobodna dalmacija": 15,
+        "Zadarski list": 10
+      },
+      "already_seen": 7,
+      "rejected_by_keywords": 5,
+      "rejected_by_rule": {
+        "utakmicu": 1,
+        "URL /sport/": 2,
+        "tenisom": 1,
+        "тег RSS nogomet": 1
+      },
+      "unclassified_by_ai": 0,
+      "duplicates_removed_by_ai": 17,
+      "rejection_reasons_list": [
+        "• Forum mladih Grada Dubrovnika: U srijedu skupna izložba ‘Rukama složen → Побут інших міст (Подія у Дубровнику) | Сутності: Forum mladih, Dubrovnik, Galerija ART UP",
+        "• Novo izdanje “Miće vinodolske kuharice” predstavljeno u vrtiću “Cvrčak → Побут інших міст (Дитячий садок у Трибалі) | Сутності: Tribalj, Dječji vrtić Cvrčak i mrav, Martina Linarić",
+        "• Sutra je Dan nacionalne sućuti u povodu smrti Mate Miše Kovača. Evo št → Вже публікувалось (Дубль новини про смерть Мішо Ковача) | Сутності: Vlada RH, Mišo Kovač, Dan nacionalne sućuti",
+        "• Objavljene nove cijene goriva. Benzin ostaje na istome, poskupljuje di → Дубль (Дубль новини про ціни на пальне) | Сутності: Vlada RH, gorivo, benzin, dizel",
+        "• Gostujuća izložba u žitnici Rupe - ‘Sulejman veličanstveni: Sjaj osman → Побут інших міст (Виставка у Дубровнику) | Сутності: Dubrovački muzeji, Dubrovnik, Sulejman Veličanstveni",
+        "• Otvorene prijave za Animafest Zagreb 2027. → Побут інших міст (Фестиваль у Загребі) | Сутності: Animafest Zagreb, festival, animirani film",
+        "• Iranci napustili pregovore u Dohi, cirkulira nacrt prijedloga za spora → Геоблок (Переговори Ірану та США в Катарі) | Сутності: Iran, SAD, Doha, Hormuški tjesnac",
+        "• Na Platku pao prvi snijeg ove jeseni, pogledajte → Побут інших міст (Сніг на Платку біля Рієки) | Сутності: Platak, Rijeka, snijeg, DHMZ",
+        "• Crnogorski pjesnik o Mišu Kovaču: ‘Odrastao sam uz tvoju muziku! Divio → Вже публікувалось (Реакція на смерть Мішо Ковача) | Сутності: Nikola K. Čelebić, Mišo Kovač, Crna Gora",
+        "• Raspisan natječaj za Nagradu Ivan Goran Kovačić za najbolju pjesničku  → Побут інших міст (Поетична нагорода у Загребі) | Сутності: Gornovo proljeće, Nagrada Ivan Goran Kovačić, Zagreb",
+        "• Rijeka pod narančastim meteoalarmom zbog bure, službe u pripravnosti → Побут інших міст (Штормова буря у Рієці) | Сутності: Rijeka, bura, meteoalarm, Rijeka plus",
+        "• Ovo su nove cijene goriva: vrijede od sutra do idućeg utorka → Дубль (Дубль новини про ціни на пальне) | Сутності: Vlada RH, cijene goriva, trošarine",
+        "• U Kuparima završen Tečaj granične policije, pohađalo ga 30 policijskih → Побут інших міст (Курс поліції у Купарі) | Сутності: Kupari, granična policija, Policijska akademija",
+        "• Snijeg zabijelio Velebit, na Zavižanu ga je jutros 12 centimetara → Побут інших міст (Сніг на Велебиті) | Сутності: Velebit, Zavižan, snijeg, HAK",
+        "• Napustio nas je povjesničar i arhivist Marijan Sivrić, stručno je ustr → Побут інших міст (Смерть історика з Дубровника) | Сутності: Marijan Sivrić, Arhiv Dubrovačke biskupije, Međugorje",
+        "• Novih 785 tisuća eura za zdravstvene ustanove na području Dubrovačko-n → Побут інших міст (Інвестиції в охорону здоров'я у Дубровнику) | Сутності: Dubrovačko-neretvanska županija, Zrinka Raguž, zdravstvene ustanove",
+        "• Iris Ukić Kotarac (NLSP) u povodu ‘slučaja Šubićevac‘: ‘Tko odlučuje o → Побут інших міст (Місцевий конфлікт у Шибенику) | Сутності: Šibenik, Iris Ukić Kotarac, Šubićevac"
+      ],
+      "rejected_by_reason": {
+        "Побут інших міст": 12,
+        "Вже публікувалось": 2,
+        "Дубль": 2,
+        "Геоблок": 1
+      },
+      "updates_marked": 2,
+      "already_rejected": 4,
+      "rejected_by_code_examples": [
+        "[utakmicu] Skandal u županijskoj ligi; Bibinjci odbili igrati utakmicu s Debeljakom, ovo je razlog: ‘Bilo je pu",
+        "[URL /sport/] Franković primio mlade veslače VK Neptun Rudija Kapetanića i Antu Krešića, prvake Hrvatske u dvojcu ",
+        "[tenisom] Ovaj tjedan kuha se u Rijeci i okolici: Evo tko su novi kandidati “Večere za 5”",
+        "[тег RSS nogomet] Nitko ne želi na funkciju predsjednika NS-a Srbije! UEFA će postaviti prinudnu Upravu",
+        "[URL /sport/] Plivač Nevere prošao je mučan put do europskog zlata: “Na ekranu sam vidio da sam – diskvalificiran…"
+      ]
+    },
+    "backlog": {
+      "total_size": 7,
+      "sources": {
+        "Slobodna dalmacija": 4,
+        "Zadarski list": 1,
+        "023": 2
+      }
+    },
+    "published": {
+      "total": 3,
+      "ukraine_priority": 0,
+      "with_images": 3,
+      "text_only": 0,
+      "og_images_found": 3,
+      "sources": {
+        "023": 3
+      }
+    },
+    "models_used": {
+      "gemini-3.5-flash-lite": 2
+    },
+    "models_by_task": {
+      "filter": "gemini-3.5-flash-lite",
+      "translate": "gemini-3.5-flash-lite"
+    },
+    "model_attempts": [
+      {
+        "task": "filter",
+        "model": "gemini-3-flash-preview",
+        "outcome": "unavailable"
+      },
+      {
+        "task": "filter",
+        "model": "gemini-3-flash-preview",
+        "outcome": "unavailable"
+      },
+      {
+        "task": "filter",
+        "model": "gemini-3.5-flash-lite",
+        "outcome": "ok"
+      },
+      {
+        "task": "translate",
+        "model": "gemini-3.8-flash",
+        "outcome": "unavailable"
+      },
+      {
+        "task": "translate",
+        "model": "gemini-3.5-flash-lite",
+        "outcome": "ok"
+      }
+    ],
+    "exhausted_models": [],
+    "demoted_models": [
+      "filter: gemini-3.6-flash"
+    ],
+    "translate_budget_deferred": [
+      "gemini-3.6-flash"
+    ],
+    "gemini_region_blocked": false,
+    "errors_count": 0,
+    "gemini_retries": 3
   }
 ]
