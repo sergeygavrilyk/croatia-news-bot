@@ -1,58 +1,5 @@
 [
   {
-    "timestamp": "2026-10-17 09:01:04",
-    "execution_time": 149.3,
-    "funnel": {
-      "scraped_total": 35,
-      "scraped_by_source": {
-        "023": 10,
-        "Slobodna dalmacija": 15,
-        "Zadarski list": 10
-      },
-      "already_seen": 7,
-      "rejected_by_keywords": 4,
-      "duplicates_removed_by_ai": 18,
-      "rejection_reasons_list": [
-        "• Hrvatski filmovi u natjecateljskim progr... ➡️ <b>Культурні новини кінофестивалю в Естонії, не стосується Задара чи України.</b>",
-        "• Marin Delač i Lucija Boras najbolji ročn... ➡️ <b>Новини військових навчань у Пожежі (побут інших регіонів).</b>",
-        "• Burno prije izbora u Srbiji: studenti pj... ➡️ <b>Політична ситуація в Сербії (геоблок).</b>",
-        "• Balzam za ispucale usne napravite sami o... ➡️ <b>Світовий шум (побутові поради та рецепти).</b>",
-        "• Ovih liječnika kronično nedostaje u Šibe... ➡️ <b>Локальні проблеми медицини та вакансії в Шибенику.</b>",
-        "• Pomorski kapetan Nedjeljko Kuzma nije kr... ➡️ <b>Локальний судовий процес у Рієці.</b>",
-        "• Zadar bez Mihailovića i Vraneša pao u Be... ➡️ <b>Спорт (результати баскетбольного матчу).</b>",
-        "• Zona posebnog prometnog režima nastavlja... ➡️ <b>Побут та туризм у Дубровнику.</b>",
-        "• Deseci tisuća ljudi danas na prosvjedima... ➡️ <b>Протести у Франції (геоблок).</b>",
-        "• U Ćosićevu dvoranu stiže šest klubova za... ➡️ <b>Спорт (турнір з баскетболу на візках).</b>",
-        "• Delegacija sa stonskog područja u posjet... ➡️ <b>Локальна поїздка делегації зі Стона до Ірландії.</b>",
-        "• Zbog govora mržnje u Splitu uhićene četi... ➡️ <b>Локальні правопорушення та затримання у Спліті.</b>",
-        "• Ribaru je barku obilazila njemu nepoznat... ➡️ <b>Світовий шум (цікавинки про риболовлю).</b>"
-      ]
-    },
-    "backlog": {
-      "total_size": 20,
-      "sources": {
-        "023": 5,
-        "Slobodna dalmacija": 9,
-        "Zadarski list": 6
-      }
-    },
-    "published": {
-      "total": 2,
-      "ukraine_priority": 0,
-      "with_images": 0,
-      "text_only": 2,
-      "sources": {
-        "023": 2
-      }
-    },
-    "models_used": {
-      "gemini-3.5-flash-lite": 1,
-      "gemini-3.6-flash": 1
-    },
-    "errors_count": 0,
-    "gemini_retries": 0
-  },
-  {
     "timestamp": "2026-10-17 10:01:07",
     "execution_time": 106.1,
     "funnel": {
@@ -7519,5 +7466,111 @@
     "gemini_region_blocked": false,
     "errors_count": 0,
     "gemini_retries": 6
+  },
+  {
+    "timestamp": "2026-11-03 13:01:15",
+    "execution_time": 312.4,
+    "funnel": {
+      "scraped_total": 35,
+      "scraped_by_source": {
+        "023": 10,
+        "Slobodna dalmacija": 15,
+        "Zadarski list": 10
+      },
+      "already_seen": 19,
+      "rejected_by_keywords": 7,
+      "rejected_by_rule": {
+        "prvenstvo": 1,
+        "URL /sport/": 1,
+        "sport": 1,
+        "promo": 1,
+        "horoskopu": 1,
+        "nogometnog": 1,
+        "sportašima": 1
+      },
+      "unclassified_by_ai": 0,
+      "duplicates_removed_by_ai": 6,
+      "rejection_reasons_list": [
+        "• Plenković: Crna Gora može u EU ako postoji volja da riješe otvorena pi → Вже публікувалось (Переговори Чорногорії з ЄС) | Сутності: Andrej Plenković, Crna Gora, EU, Hrvatska",
+        "• Sutra privremena prometna regulacija na ovom dijelu Vojnovića → Побут інших міст (Дубровник) | Сутності: Dubrovnik, Vojnovićeva, Domouprava Dubrovnik",
+        "• Boje Kavafisa: Opatijski komorni orkestar spaja glazbu i poeziju → Побут інших міст (Опатія) | Сутності: Opatijski komorni orkestar, Opatija, Centar Gervais",
+        "• Tko ga može nadmašiti? Pobijedio u pjevanju Mišu i Olivera, slušao ga  → Не за тематикою (Портрет місцевого жителя) | Сутності: Šibenik, Nikica Širinić, Skradin",
+        "• Studentsko izdanje Nedjeljne šetnje Palačom šećera 8. studenog → Побут інших міст (Рієка) | Сутності: Rijeka, Muzej grada Rijeke, Palača šećera",
+        "• Reakcija Udruge hrvatskih sudaca: Franković izravno narušava profesion → Вже публікувалось (Реакція суду у Дубровнику) | Сутності: Mato Franković, Dubrovnik, Udruga hrvatskih sudaca"
+      ],
+      "rejected_by_reason": {
+        "Вже публікувалось": 2,
+        "Побут інших міст": 3,
+        "Не за тематикою": 1
+      },
+      "updates_marked": 0,
+      "already_rejected": 13,
+      "rejected_by_code_examples": [
+        "[prvenstvo] Povijesni trenutak za Zadar; Nakon čak 19 godina mise se vraćaju u crkvu sv. Krševana!",
+        "[URL /sport/] Održana županijska prvenstva za mlade do 20 godina u ubrzanom i brzopoteznom šahu",
+        "[sport] Zadarska županija, kojom upravlja HDZ, planira val novih zapošljavanja. Brojke su velike...",
+        "[promo] Prvi ZTC Drive stiže u Rijeku: isprobajte nove automobile, uživajte u dobroj hrani i provedite subot",
+        "[horoskopu] Ministrici obrazovanja ruga se cijela BiH. Objavila video o prokletstvu retrogradnog Merkura",
+        "[nogometnog] Na ispraćaj Miše Kovača na Poljudu dolazi i premijer Plenković",
+        "[sportašima] Srednja škola Delnice bila “poprište” zanimljivog međunarodnog obrazovanja"
+      ]
+    },
+    "backlog": {
+      "total_size": 0,
+      "sources": {}
+    },
+    "published": {
+      "total": 3,
+      "ukraine_priority": 0,
+      "with_images": 3,
+      "text_only": 0,
+      "og_images_found": 2,
+      "sources": {
+        "023": 2,
+        "Zadarski list": 1
+      }
+    },
+    "models_used": {
+      "gemini-3.5-flash-lite": 2
+    },
+    "models_by_task": {
+      "filter": "gemini-3.5-flash-lite",
+      "translate": "gemini-3.5-flash-lite"
+    },
+    "model_attempts": [
+      {
+        "task": "filter",
+        "model": "gemini-3.5-flash-lite",
+        "outcome": "ok"
+      },
+      {
+        "task": "translate",
+        "model": "gemini-3.8-flash",
+        "outcome": "unavailable"
+      },
+      {
+        "task": "translate",
+        "model": "gemini-3.6-flash",
+        "outcome": "unavailable"
+      },
+      {
+        "task": "translate",
+        "model": "gemini-3.5-flash-lite",
+        "outcome": "ok"
+      }
+    ],
+    "exhausted_models": [],
+    "demoted_models": [
+      "filter: gemini-3-flash-preview",
+      "filter: gemini-3.6-flash",
+      "translate: gemini-3.8-flash"
+    ],
+    "translate_budget_deferred": [
+      "gemini-3.5-flash-lite",
+      "gemini-3.6-flash"
+    ],
+    "gemini_region_blocked": false,
+    "errors_count": 0,
+    "gemini_retries": 2
   }
 ]
