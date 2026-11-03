@@ -1,56 +1,5 @@
 [
   {
-    "timestamp": "2026-10-17 07:01:05",
-    "execution_time": 187.7,
-    "funnel": {
-      "scraped_total": 35,
-      "scraped_by_source": {
-        "023": 10,
-        "Slobodna dalmacija": 15,
-        "Zadarski list": 10
-      },
-      "already_seen": 3,
-      "rejected_by_keywords": 7,
-      "duplicates_removed_by_ai": 10,
-      "rejection_reasons_list": [
-        "• Posao vrijedan skoro tri milijuna eura: ... ➡️ <b>Новина стосується Шибеника та державного рівня, не належить до Задара чи української діаспори</b>",
-        "• Balzam za ispucale usne napravite sami o... ➡️ <b>Світовий шум / поради та рецепти</b>",
-        "• Musk predstavio automobil koji leti, u t... ➡️ <b>Інші країни / світовий шум, що не стосується Хорватії чи українців</b>",
-        "• Izvedbom predstave „Spavaj, dijete moje ... ➡️ <b>Культурна подія іншого міста (Рієка/Загреб)</b>",
-        "• Lapadski ogranak Dubrovačkih knjižnica s... ➡️ <b>Побут чужого міста (Дубровник)</b>",
-        "• Trump se pohvalio ingenioznom idejom: “P... ➡️ <b>Інші країни / геоблок</b>",
-        "• Zadar bez Mihailovića i Vraneša pao u Be... ➡️ <b>Дубль новини ID 9 (програш баскетболістів Задара у Відні)</b>",
-        "• Dugogodišnji plesni voditelj Linđa, Mari... ➡️ <b>Побут та культура іншого міста (Дубровник)</b>",
-        "• U Ćosićevu dvoranu stiže šest klubova za... ➡️ <b>Спорт (турнір з баскетболу на візках)</b>",
-        "• Mrvičasti kolač sa šljivama i zobenim pa... ➡️ <b>Світовий шум / рецепти</b>"
-      ]
-    },
-    "backlog": {
-      "total_size": 18,
-      "sources": {
-        "023": 8,
-        "Slobodna dalmacija": 6,
-        "Zadarski list": 4
-      }
-    },
-    "published": {
-      "total": 3,
-      "ukraine_priority": 0,
-      "with_images": 1,
-      "text_only": 2,
-      "sources": {
-        "Slobodna dalmacija": 1,
-        "023": 2
-      }
-    },
-    "models_used": {
-      "gemini-3.5-flash-lite": 2,
-      "gemini-3.6-flash": 0
-    },
-    "errors_count": 0,
-    "gemini_retries": 0
-  },
-  {
     "timestamp": "2026-10-17 08:01:08",
     "execution_time": 199.6,
     "funnel": {
@@ -7385,5 +7334,123 @@
     "gemini_region_blocked": false,
     "errors_count": 0,
     "gemini_retries": 0
+  },
+  {
+    "timestamp": "2026-11-03 11:01:20",
+    "execution_time": 268.1,
+    "funnel": {
+      "scraped_total": 35,
+      "scraped_by_source": {
+        "023": 10,
+        "Slobodna dalmacija": 15,
+        "Zadarski list": 10
+      },
+      "already_seen": 15,
+      "rejected_by_keywords": 4,
+      "rejected_by_rule": {
+        "sport": 1,
+        "promo": 2,
+        "тег RSS nogomet": 1
+      },
+      "unclassified_by_ai": 0,
+      "duplicates_removed_by_ai": 11,
+      "rejection_reasons_list": [
+        "• Nakon godina stečaja veliki preokret. Poznata talijanska grupacija pre → Побут інших міст (Vrbovsko) | Сутності: Vrbovsko, Cedar, Florian grupa, Dražen Mufić",
+        "• Otvorena su birališta, cijeli svijet iščekuje tko će imati većinu u Ko → Геоблок (Вибори в США) | Сутності: Kongres, SAD, Senat, Zastupnički dom",
+        "• Predstavljeni veliki planovi uređenja centra Veprinca. Pogledajte kako → Побут інших міст (Opatija) | Сутності: Veprinac, Opatija, Petra Klanjac Majkić",
+        "• Bonačić Obradović: ‘U rebalansu proračuna nema novca za umirovljenike, → Вже публікувалось (Політичні дебати у Дубровнику) | Сутності: Dubrovnik, Anita Bonačić Obradović, Mato Franković, SDP",
+        "• Nova dimenzija peptidne njege: Olival predstavlja dva inovativna proiz → Реклама (Продвиження косметики) | Сутності: Olival, Peptidi, Kozmetika, SPF",
+        "• Croatia Records objavila detalje; Komemoracija za Matu Mišu Kovača odr → Вже публікувалось (Комеморація Мішо Ковача) | Сутності: Mišo Kovač, Croatia Records, Lisinski, Zagreb",
+        "• Teksaška avantura Vojka Lončarića: Zapalio Steel Guitar Festival u Aus → Геоблок (Фестиваль у США) | Сутності: Vojko Lončarić, Selce, Austin, Steel Guitar Festival",
+        "• Načelnik PU Ivan Pavličević o tvrdnjama gradonačelnika Frankovića oko  → Вже публікувалось (Коментар політика про наркотики) | Сутності: Ivan Pavličević, Mato Franković, Dubrovnik, HRT",
+        "• Obljetnica pod motom “25 godina dječjeg glasa – 25 godina ideja koje m → Побут інших міст (Opatija) | Сутності: Opatija, Dječje gradsko vijeće, Studeni",
+        "• Na blagdan Svih svetih provaljeno u cvjećarnicu na zadarskom Poluotoku → Вже публікувалось (Прокража у Задарі) | Сутності: Zadar, Poluotok, Policijska uprava zadarska, Cvjećarnica",
+        "• U Zlobinu obnovljen spomenik NOB-u. Klarić: Od ideje pretvaranja u par → Побут інших міст (Zlobin) | Сутності: Zlobin, Bakar, NOB, Crkva sv. Ivana Krstitelja"
+      ],
+      "rejected_by_reason": {
+        "Побут інших міст": 4,
+        "Геоблок": 2,
+        "Вже публікувалось": 4,
+        "Реклама": 1
+      },
+      "updates_marked": 0,
+      "already_rejected": 10,
+      "rejected_by_code_examples": [
+        "[sport] Spajanje generacija u Zadru; U petak u Providurovoj palači svečani bal „More iskustva i val mladosti",
+        "[promo] Caffe Yacht Club Galeb u Kostreni postao je nositelj priznanja Hausbrandt Place of Excellence",
+        "[promo] Kvarnerska baština u 13 odabranih fotografija",
+        "[тег RSS nogomet] Udinese predstavio novog trenera. Posljednje je vodio Veronu"
+      ]
+    },
+    "backlog": {
+      "total_size": 2,
+      "sources": {
+        "Slobodna dalmacija": 1,
+        "023": 1
+      }
+    },
+    "published": {
+      "total": 3,
+      "ukraine_priority": 1,
+      "with_images": 3,
+      "text_only": 0,
+      "og_images_found": 2,
+      "sources": {
+        "Slobodna dalmacija": 1,
+        "023": 2
+      }
+    },
+    "models_used": {
+      "gemini-3.5-flash-lite": 2
+    },
+    "models_by_task": {
+      "filter": "gemini-3.5-flash-lite",
+      "translate": "gemini-3.5-flash-lite"
+    },
+    "model_attempts": [
+      {
+        "task": "filter",
+        "model": "gemini-3-flash-preview",
+        "outcome": "unavailable"
+      },
+      {
+        "task": "filter",
+        "model": "gemini-3.6-flash",
+        "outcome": "unavailable"
+      },
+      {
+        "task": "filter",
+        "model": "gemini-3.6-flash",
+        "outcome": "unavailable"
+      },
+      {
+        "task": "filter",
+        "model": "gemini-3.5-flash-lite",
+        "outcome": "ok"
+      },
+      {
+        "task": "translate",
+        "model": "gemini-3.8-flash",
+        "outcome": "unavailable"
+      },
+      {
+        "task": "translate",
+        "model": "gemini-3.8-flash",
+        "outcome": "unavailable"
+      },
+      {
+        "task": "translate",
+        "model": "gemini-3.5-flash-lite",
+        "outcome": "ok"
+      }
+    ],
+    "exhausted_models": [],
+    "demoted_models": [],
+    "translate_budget_deferred": [
+      "gemini-3.6-flash"
+    ],
+    "gemini_region_blocked": false,
+    "errors_count": 0,
+    "gemini_retries": 5
   }
 ]
