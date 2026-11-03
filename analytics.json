@@ -1,46 +1,5 @@
 [
   {
-    "timestamp": "2026-10-16 15:01:13",
-    "execution_time": 256.3,
-    "funnel": {
-      "scraped_total": 35,
-      "scraped_by_source": {
-        "023": 10,
-        "Slobodna dalmacija": 15,
-        "Zadarski list": 10
-      },
-      "already_seen": 28,
-      "rejected_by_keywords": 4,
-      "duplicates_removed_by_ai": 0,
-      "rejection_reasons_list": []
-    },
-    "backlog": {
-      "total_size": 63,
-      "sources": {
-        "Slobodna dalmacija": 34,
-        "Zadarski list": 18,
-        "023": 11
-      }
-    },
-    "published": {
-      "total": 3,
-      "ukraine_priority": 0,
-      "with_images": 2,
-      "text_only": 1,
-      "sources": {
-        "023": 1,
-        "Zadarski list": 1,
-        "Slobodna dalmacija": 1
-      }
-    },
-    "models_used": {
-      "gemini-3.5-flash-lite": 1,
-      "gemini-3.6-flash": 0
-    },
-    "errors_count": 0,
-    "gemini_retries": 4
-  },
-  {
     "timestamp": "2026-10-16 16:01:09",
     "execution_time": 301.3,
     "funnel": {
@@ -7210,5 +7169,135 @@
     "gemini_region_blocked": false,
     "errors_count": 0,
     "gemini_retries": 4
+  },
+  {
+    "timestamp": "2026-11-03 08:01:17",
+    "execution_time": 194.1,
+    "funnel": {
+      "scraped_total": 35,
+      "scraped_by_source": {
+        "023": 10,
+        "Slobodna dalmacija": 15,
+        "Zadarski list": 10
+      },
+      "already_seen": 6,
+      "rejected_by_keywords": 5,
+      "rejected_by_rule": {
+        "тег RSS sport": 1,
+        "sport": 2,
+        "sporta": 1,
+        "nogometaša": 1
+      },
+      "unclassified_by_ai": 0,
+      "duplicates_removed_by_ai": 13,
+      "rejection_reasons_list": [
+        "• Lukanović osniva resor za branitelje i civilno društvo, uskoro i izbor → Побут інших міст (Рієка) | Сутності: Ivica Lukanović, Primorsko-goranska županija, Županijska skupština",
+        "• Mali pelješki kreativci na djelu: U Putnikoviću otvorena izložba dječj → Побут інших міст (Пельєшац) | Сутності: Muzej vinogradarstva, Putniković, Pelješac",
+        "• Od istraga do blokada. Što bi za Trumpa mogao značiti gubitak kontrole → Геоблок (Вибори в США) | Сутності: Donald Trump, Kongres, SAD",
+        "• U Sponzi se može pogledati izložba ‘Hrvatska Móra Jókaija‘: hrvatski k → Побут інших міст (Дубровник) | Сутності: Državni arhiv u Dubrovniku, Nikolina Pozniak, Zagreb",
+        "• U Opatiji sutra počinje savjetovanje ekonomista, stižu Plenković i Ćor → Побут інших міст (Опатія) | Сутності: Andrej Plenković, Opatija, Tomislav Ćorić",
+        "• Dubrovnik priprema novo povećanje nameta za male iznajmljivače i nije  → Побут інших міст (Дубровник) | Сутності: Dubrovnik, turistička pristojba, iznajmljivači",
+        "• Palestinci masovno izašli na izbore i srušili Netanyahuovu računicu. S → Геоблок (Ізраїль) | Сутності: Benjamin Netanyahu, Izrael, Palestinci",
+        "• Franković je govorio o kamionima kokaina, poznati odvjetnik otvorio oz → Побут інших міст (Дубровник) | Сутності: Mato Franković, Dubrovnik, kokain",
+        "• Zadarski plesni ansambl 35. obljetnicu obilježava filmom o svojoj povi → Вже публікувалось (Культурні події Задара) | Сутності: Zadarski plesni ansambl, Kazalište lutaka Zadar, Zadar",
+        "• Objavljen popis svih vjerovnika Studenca. Samo banke potražuju preko 4 → Не за тематикою (Фінансовий звіт компанії) | Сутності: Studenac, Fina, Domagoj Poljak",
+        "• Zračna luka Ruđer Bošković mora vratiti 22 milijuna eura u europsku bl → Побут інших міст (Дубровник) | Сутності: Zračna luka Ruđer Bošković, Dubrovnik, EU",
+        "• Ovakvo otvaranje hrvatskog povijesnog filma još nije viđeno: Pogledalo → Не за тематикою (Кінопрокат) | Сутності: Božidar Domagoj Burić, Posljednji rimski bog, Hrvatska",
+        "• Policija upala na noćni “car meet” na parkiralištu trgovačkog centra.  → Побут інших міст (Загреб) | Сутності: Zagreb, car meet, policija"
+      ],
+      "rejected_by_reason": {
+        "Побут інших міст": 8,
+        "Геоблок": 2,
+        "Вже публікувалось": 1,
+        "Не за тематикою": 2
+      },
+      "updates_marked": 0,
+      "already_rejected": 5,
+      "rejected_by_code_examples": [
+        "[тег RSS sport] Košarkaši Zadra tri su četvrtine držali korak s višestruko skupljim Dubaijem, a onda je stigla serij",
+        "[sport] Zadarska županija planira zaposliti 29 novih izvršitelja: \"Cilj nije povećavanje broja zaposlenih sa",
+        "[sporta] Gradonačelnik Franković čestitao Borni Butijeru na osvojenoj bronci na Europskom U23 prvenstvu",
+        "[sport] Tko je sve dobio novac za uspjehe u kulturi? Među nagrađenima i Urban, Belan i Mrle",
+        "[nogometaša] “Granica je tanka kao između dobrog vica i uvrede”: Fotograf o tome što golo tijelo čini umjetnošću"
+      ]
+    },
+    "backlog": {
+      "total_size": 3,
+      "sources": {
+        "023": 3
+      }
+    },
+    "published": {
+      "total": 3,
+      "ukraine_priority": 1,
+      "with_images": 3,
+      "text_only": 0,
+      "og_images_found": 2,
+      "sources": {
+        "Zadarski list": 1,
+        "023": 2
+      }
+    },
+    "models_used": {
+      "gemini-3.5-flash-lite": 1,
+      "gemini-3.6-flash": 1
+    },
+    "models_by_task": {
+      "filter": "gemini-3.5-flash-lite",
+      "translate": "gemini-3.6-flash"
+    },
+    "model_attempts": [
+      {
+        "task": "filter",
+        "model": "gemini-3-flash-preview",
+        "outcome": "unavailable"
+      },
+      {
+        "task": "filter",
+        "model": "gemini-3-flash-preview",
+        "outcome": "unavailable"
+      },
+      {
+        "task": "filter",
+        "model": "gemini-3.6-flash",
+        "outcome": "unavailable"
+      },
+      {
+        "task": "filter",
+        "model": "gemini-3.6-flash",
+        "outcome": "unavailable"
+      },
+      {
+        "task": "filter",
+        "model": "gemini-3.5-flash-lite",
+        "outcome": "ok"
+      },
+      {
+        "task": "translate",
+        "model": "gemini-3.8-flash",
+        "outcome": "unavailable"
+      },
+      {
+        "task": "translate",
+        "model": "gemini-3.8-flash",
+        "outcome": "unavailable"
+      },
+      {
+        "task": "translate",
+        "model": "gemini-3.6-flash",
+        "outcome": "unavailable"
+      },
+      {
+        "task": "translate",
+        "model": "gemini-3.6-flash",
+        "outcome": "ok"
+      }
+    ],
+    "exhausted_models": [],
+    "demoted_models": [],
+    "translate_budget_deferred": [],
+    "gemini_region_blocked": false,
+    "errors_count": 0,
+    "gemini_retries": 7
   }
 ]
