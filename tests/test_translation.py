@@ -90,13 +90,23 @@ def test_quota_skips_model_for_the_rest_of_run(bot, fake_gemini):
     assert calls == ["gemini-3.8-flash", "gemini-3.6-flash", "gemini-3.6-flash"]
 
 
-def test_503_retries_same_model_504_does_not(bot, fake_gemini):
-    calls = fake_gemini(bot, {"gemini-3.8-flash": [unavailable_error(), translations(0)]})
+def test_503_and_504_go_to_next_model_without_retry(bot, fake_gemini):
+    """R-19: повтор після 503 допомагав 7 разів з 53 і списував денну квоту — тепер одразу наступна модель."""
+    calls = fake_gemini(bot, {"gemini-3.8-flash": [unavailable_error()], "gemini-3.6-flash": [translations(0)]})
     bot.generate_news_texts_json("p", {0}, bot._empty_stats())
-    assert calls == ["gemini-3.8-flash", "gemini-3.8-flash"]
+    assert calls == ["gemini-3.8-flash", "gemini-3.6-flash"]
     calls = fake_gemini(bot, {"gemini-3.8-flash": [deadline_error()], "gemini-3.6-flash": [translations(0)]})
     bot.generate_news_texts_json("p", {0}, bot._empty_stats())
     assert calls == ["gemini-3.8-flash", "gemini-3.6-flash"]
+
+
+def test_connection_reset_and_wrong_ids_still_retry_same_model(bot, fake_gemini):
+    calls = fake_gemini(bot, {"gemini-3.8-flash": [ConnectionError("Connection reset by peer"), translations(0)]})
+    bot.generate_news_texts_json("p", {0}, bot._empty_stats())
+    assert calls == ["gemini-3.8-flash", "gemini-3.8-flash"]
+    calls = fake_gemini(bot, {"gemini-3.8-flash": [translations(5, 6), translations(0)]})
+    bot.generate_news_texts_json("p", {0}, bot._empty_stats())
+    assert calls == ["gemini-3.8-flash", "gemini-3.8-flash"]
 
 
 def test_all_models_failed_raises(bot, fake_gemini):

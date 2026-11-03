@@ -61,6 +61,15 @@ def test_translate_defers_shared_model_when_budget_spent(bot):
     assert bot.FILTER_MODELS[1] == SHARED
 
 
+def test_lite_is_never_budgeted(bot):
+    """03.11: lite (500/добу) теж ставала «у кінець», і 3.6-flash поверталась на 2-ге місце."""
+    lite = "gemini-3.5-flash-lite"
+    runs = [run_with(PT_MIDNIGHT + 60, SHARED, 20), run_with(PT_MIDNIGHT + 60, lite, 30)]
+    stats = bot._empty_stats()
+    assert bot.translate_cascade_with_budget(stats, runs, NOON_UTC) == ["gemini-3.8-flash", lite, SHARED]
+    assert stats["translate_budget_deferred"] == [SHARED]
+
+
 def test_budget_ignores_model_not_in_filter_cascade(load_bot):
     bot = load_bot(GEMINI_FILTER_MODELS="gemini-3.5-flash-lite")
     runs = [run_with(PT_MIDNIGHT + 60, SHARED, 50, task="translate")]

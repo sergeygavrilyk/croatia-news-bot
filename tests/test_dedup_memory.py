@@ -63,17 +63,41 @@ def test_demoted_after_two_failed_runs_in_window(bot):
 def test_not_demoted_when_answered_or_old_or_single_run(bot):
     answered = [run(7000, ("filter", "p", "unavailable")),
                 run(3600, ("filter", "p", "unavailable"), ("filter", "p", "ok"))]
-    old = [run(4 * 3600, ("filter", "p", "unavailable")), run(3600, ("filter", "p", "timeout"))]
+    older_than_lookback = [run(26 * 3600, ("filter", "p", "unavailable")), run(3600, ("filter", "p", "timeout"))]
     single = [run(3600, ("filter", "p", "quota"))]
     bad_answer = [run(7000, ("filter", "p", "bad_response")), run(3600, ("filter", "p", "bad_response"))]
-    for runs in (answered, old, single, bad_answer):
+    for runs in (answered, older_than_lookback, single, bad_answer):
         assert bot.demoted_models(runs, "filter", NOW) == set()
+
+
+def test_streak_not_broken_by_runs_where_model_was_not_tried(bot):
+    """R-19, сценарій 03.11: невдачі о 08:01 і 09:01, о 10:01 модель відкладена й не пробувалась."""
+    runs = [run(4 * 3600, ("filter", "p", "unavailable")),
+            run(3 * 3600, ("filter", "p", "unavailable")),
+            run(2 * 3600, ("filter", "lite", "ok"))]
+    # 11:01 — з останньої спроби (08:01 + 1 год = 09:01) минуло лише 2 год → лишається в кінці
+    assert bot.demoted_models(runs[:3], "filter", NOW - 3600) == {"p"}
+    # 12:01 — минуло 3 год → пробна спроба на звичному місці
+    assert bot.demoted_models(runs, "filter", NOW) == set()
+
+
+def test_failed_probe_demotes_again_and_successful_probe_restores(bot):
+    failed = [run(5 * 3600, ("filter", "p", "unavailable")), run(1800, ("filter", "p", "unavailable"))]
+    assert bot.demoted_models(failed, "filter", NOW) == {"p"}
+    restored = [run(5 * 3600, ("filter", "p", "unavailable")), run(1800, ("filter", "p", "ok"))]
+    assert bot.demoted_models(restored, "filter", NOW) == set()
+
+
+def test_location_only_run_is_ignored_by_memory(bot):
+    runs = [run(7000, ("filter", "p", "unavailable")), run(5000, ("filter", "p", "location")),
+            run(3600, ("filter", "p", "unavailable"))]
+    assert bot.demoted_models(runs, "filter", NOW) == {"p"}
 
 
 def test_model_promoted_again_after_window(bot):
     runs = [run(7000, ("filter", "p", "unavailable")), run(3600, ("filter", "p", "unavailable"))]
     assert bot.demoted_models(runs, "filter", NOW) == {"p"}
-    assert bot.demoted_models(runs, "filter", NOW + 3 * 3600) == set()
+    assert bot.demoted_models(runs, "filter", NOW + 2 * 3600) == set()  # остання спроба 3 год тому → пробна
 
 
 def test_reorder_cascade_keeps_all_models(bot):
