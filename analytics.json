@@ -1,69 +1,5 @@
 [
   {
-    "timestamp": "2026-10-17 11:01:03",
-    "execution_time": 200.8,
-    "funnel": {
-      "scraped_total": 35,
-      "scraped_by_source": {
-        "023": 10,
-        "Slobodna dalmacija": 15,
-        "Zadarski list": 10
-      },
-      "already_seen": 8,
-      "rejected_by_keywords": 2,
-      "duplicates_removed_by_ai": 22,
-      "rejection_reasons_list": [
-        "• Divan jesenski dan i fenonenalna marenda... ➡️ <b>Побут та захід міста Дубровник, не стосується Задара</b>",
-        "• Brod “Galeb” kasni pri dolasku u riječku... ➡️ <b>Побут та події міста Рієка</b>",
-        "• Vozač prešao u suprotni trak na državnoj... ➡️ <b>Дублікат ДТП, яка вже присутня в історії</b>",
-        "• Kuma sam u Dalmaciji, koliko da mladoj d... ➡️ <b>Побутове обговорення із соцмереж, інформаційний шум</b>",
-        "• Papa Lav danas izlazi iz bolnice nakon o... ➡️ <b>Геоблок: міжнародні події, що не стосуються України чи біженців</b>",
-        "• Balzam za ispucale usne napravite sami o... ➡️ <b>Світовий шум: побутові поради та рецепти</b>",
-        "• Policija izvela veliku akciju kontrole t... ➡️ <b>Дрібні локальні події та перевірки в місті Кнін</b>",
-        "• Zadar bez Mihailovića i Vraneša pao u Be... ➡️ <b>Спорт: результати баскетбольного матчу</b>",
-        "• Boćari Debeljaka ove će sezone nastupiti... ➡️ <b>Спорт: бочарський клуб та турніри</b>",
-        "• Policija i dalje traga za osobom koja je... ➡️ <b>Локальний кримінал та пошуки у Бродсько-Посавській жупанії</b>",
-        "• U Ćosićevu dvoranu stiže šest klubova za... ➡️ <b>Спорт: турнір з баскетболу на візках</b>",
-        "• Druga šansa za posrnule poduzetnike: pog... ➡️ <b>Економіка та статистика іншої жупанії (Шибеник)</b>",
-        "• Most protiv spalionice u Rijeci: “Tražim... ➡️ <b>Локальна політика та побут міста Рієка</b>",
-        "• Marin Delač i Lucija Boras najbolji ročn... ➡️ <b>Внутрішнє змагання військовослужбовців, не належить до головних тем</b>",
-        "• Film Ive Kraljević »Ovu sobu ostavite za... ➡️ <b>Культура та кінофестивалі, не відповідає Кроку 5</b>",
-        "• Ovih liječnika kronično nedostaje u Šibe... ➡️ <b>Медичні вакансії та проблеми Шибеницько-Кнінської жупанії</b>",
-        "• Hrvatski filmovi u natjecateljskim progr... ➡️ <b>Культура та кінофестивалі</b>",
-        "• Zona posebnog prometnog režima nastavlja... ➡️ <b>Побут та транспортний режим міста Дубровник</b>",
-        "• Delegacija sa stonskog područja u posjet... ➡️ <b>Локальний візит делегації громади Стон до Ірландії</b>",
-        "• Ribaru je barku obilazila njemu nepoznat... ➡️ <b>Світовий шум: цікавинки про фауну Адріатичного моря</b>",
-        "• Rat zbog šteta od divljači eskalira! Lov... ➡️ <b>Реакції та суперечка щодо закону про дичину, який вже є в історії</b>",
-        "• Objavljen popis 100 najboljih serija, im... ➡️ <b>Світовий шум: розважальний рейтинг серіалів</b>"
-      ]
-    },
-    "backlog": {
-      "total_size": 25,
-      "sources": {
-        "023": 5,
-        "Slobodna dalmacija": 13,
-        "Zadarski list": 7
-      }
-    },
-    "published": {
-      "total": 3,
-      "ukraine_priority": 0,
-      "with_images": 2,
-      "text_only": 1,
-      "sources": {
-        "023": 1,
-        "Slobodna dalmacija": 1,
-        "Zadarski list": 1
-      }
-    },
-    "models_used": {
-      "gemini-3.5-flash-lite": 0,
-      "gemini-3.6-flash": 2
-    },
-    "errors_count": 0,
-    "gemini_retries": 0
-  },
-  {
     "timestamp": "2026-10-17 12:01:07",
     "execution_time": 183.6,
     "funnel": {
@@ -7601,5 +7537,142 @@
     "gemini_region_blocked": false,
     "errors_count": 0,
     "gemini_retries": 0
+  },
+  {
+    "timestamp": "2026-11-03 15:01:20",
+    "execution_time": 189.2,
+    "funnel": {
+      "scraped_total": 35,
+      "scraped_by_source": {
+        "023": 10,
+        "Slobodna dalmacija": 15,
+        "Zadarski list": 10
+      },
+      "already_seen": 15,
+      "rejected_by_keywords": 7,
+      "rejected_by_rule": {
+        "тег RSS lifestyle": 2,
+        "prvenstvo": 1,
+        "sportom": 1,
+        "horoskopu": 1,
+        "URL /sport/": 1,
+        "тег RSS nogomet": 1
+      },
+      "unclassified_by_ai": 0,
+      "duplicates_removed_by_ai": 10,
+      "rejection_reasons_list": [
+        "• Kremlj potvrdio sudjelovanje na pregovorima s ukrajinskom i američkom  → Геоблок (Міжнародні переговори за межами Хорватії) | Сутності: Kremlj, Kijev, Washington, Abu Dabi",
+        "• Budućnost liječenja raka je u terapiji prilagođenoj svakom pacijentu → Світовий шум (Медичні технології лікування раку) | Сутності: UPMC, Međunarodni onkološki forum",
+        "• Evo prognoze Norvežana za Dalmaciju i kontinent za sljedećih 10 dana,  → Вже публікувалось (Прогноз погоди вже є в історії) | Сутності: DHMZ, Dalmacija, Gorska Hrvatska",
+        "• VIDEO Reporter HRT-a ‘usosio‘ vozačicu, začuo se uzrujani mužev glas s → Вже публікувалось (Шторм на Паšкому мосту вже описано в історії) | Сутності: HRT, Edi Škovrlj, Paški most",
+        "• Engleski tabloidi imaju svježeg favorita za ulogu Jamesa Bonda → Геоблок (Голлівудські новини) | Сутності: The Sun, Callum Turner, James Bond, Berkshire",
+        "• UNESCO-ovi gradovi medijske i informacijske pismenosti: ‘Danas je vrlo → Побут інших міст (Подія у Дубровнику) | Сутності: UNESCO, Dubrovnik, Al Rayyan, Stradun",
+        "• Hitovi Videosexa i FIT-a za predbožićni party u Tvornici kulture → Не за тематикою (Концерт у Загребі) | Сутності: Tvornica kulture, Anja Rupel, Videosex, Zagreb",
+        "• Obnavlja se opatijski Lungomare uz plažu Belveder → Побут інших міст (Ремонт набережної в Опатії) | Сутності: Opatija, Lungomare, K.N. Gradnja Plus, Volosko",
+        "• U nekim mjestima na području Grada Čabra voda nije za ljudsku upotrebu → Побут інших міст (Проблеми з водою в Чабрі) | Сутності: Grad Čabar, NZJZ, Prhci, Gornji Žagari",
+        "• Na Podmurvicama uveden individualizirani sustav prikupljanja otpada → Побут інших міст (Своєчасний збір сміття у Рієці) | Сутності: Rijeka, Podmurvice, Čistoća"
+      ],
+      "rejected_by_reason": {
+        "Геоблок": 2,
+        "Світовий шум": 1,
+        "Вже публікувалось": 2,
+        "Побут інших міст": 4,
+        "Не за тематикою": 1
+      },
+      "updates_marked": 0,
+      "already_rejected": 11,
+      "rejected_by_code_examples": [
+        "[тег RSS lifestyle] Gotovo 2000 eura za čišćenje odvoda: kako se zaštititi od nesavjesnih hitnih majstora",
+        "[тег RSS lifestyle] Sjajna ili mat strana aluminijske folije: pokusi u pećnici pokazali su gotovo jednake rezultate",
+        "[prvenstvo] Povijesni trenutak za Zadar; Nakon čak 19 godina mise se vraćaju u crkvu sv. Krševana!",
+        "[sportom] Nekad nisu mogli istrčati ni 200 metara, a danas trče maratone: ‘Promijenilo nam je živote! A tko je",
+        "[horoskopu] Ministrica šokirala objavom: Najavila kako će smanjiti aktivnost zbog ‘retrogradnog Merkura‘",
+        "[URL /sport/] Održana županijska prvenstva za mlade do 20 godina u ubrzanom i brzopoteznom šahu",
+        "[тег RSS nogomet] Iznenađenje u Kupu. Mladost iz Ždralova izbacila Slaven Belupo i kao drugoligaš izborila četvrtfinal"
+      ]
+    },
+    "backlog": {
+      "total_size": 0,
+      "sources": {}
+    },
+    "published": {
+      "total": 3,
+      "ukraine_priority": 0,
+      "with_images": 3,
+      "text_only": 0,
+      "og_images_found": 1,
+      "sources": {
+        "023": 1,
+        "Zadarski list": 2
+      }
+    },
+    "models_used": {
+      "gemini-3.5-flash-lite": 2
+    },
+    "models_by_task": {
+      "filter": "gemini-3.5-flash-lite",
+      "translate": "gemini-3.5-flash-lite"
+    },
+    "model_attempts": [
+      {
+        "task": "filter",
+        "model": "gemini-3-flash-preview",
+        "outcome": "unavailable"
+      },
+      {
+        "task": "filter",
+        "model": "gemini-3-flash-preview",
+        "outcome": "unavailable"
+      },
+      {
+        "task": "filter",
+        "model": "gemini-3.6-flash",
+        "outcome": "unavailable"
+      },
+      {
+        "task": "filter",
+        "model": "gemini-3.6-flash",
+        "outcome": "unavailable"
+      },
+      {
+        "task": "filter",
+        "model": "gemini-3.5-flash-lite",
+        "outcome": "ok"
+      },
+      {
+        "task": "translate",
+        "model": "gemini-3.8-flash",
+        "outcome": "unavailable"
+      },
+      {
+        "task": "translate",
+        "model": "gemini-3.8-flash",
+        "outcome": "unavailable"
+      },
+      {
+        "task": "translate",
+        "model": "gemini-3.6-flash",
+        "outcome": "unavailable"
+      },
+      {
+        "task": "translate",
+        "model": "gemini-3.6-flash",
+        "outcome": "unavailable"
+      },
+      {
+        "task": "translate",
+        "model": "gemini-3.5-flash-lite",
+        "outcome": "ok"
+      }
+    ],
+    "exhausted_models": [],
+    "demoted_models": [],
+    "translate_budget_deferred": [
+      "gemini-3.5-flash-lite",
+      "gemini-3.6-flash"
+    ],
+    "gemini_region_blocked": false,
+    "errors_count": 0,
+    "gemini_retries": 8
   }
 ]
