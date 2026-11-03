@@ -128,3 +128,19 @@ def test_filter_prompt_other_source_same_event(bot, monkeypatch):
     monkeypatch.setattr(bot, "call_gemini_json", fake_call)
     bot.deduplicate_news([{"title": "T", "description": "D", "url": "https://a/1"}], [], bot._empty_stats())
     assert "- ІНШЕ ДЖЕРЕЛО — ТА САМА ПОДІЯ: якщо в HISTORY вже є новина" in captured["prompt"]
+
+
+def test_filter_prompt_geoblock_not_for_ukraine(bot, monkeypatch):
+    """R-20 (03.11): lite відхиляла новини про Україну як «Геоблок» — уточнення власника в КРОЦІ 4.4."""
+    captured = {}
+
+    def fake_call(prompt, stats=None):
+        captured["prompt"] = prompt
+        return bot.NewsFilterResponse(keep=[0], rejected=[])
+
+    monkeypatch.setattr(bot, "call_gemini_json", fake_call)
+    bot.deduplicate_news([{"title": "T", "description": "D", "url": "https://a/1"}], [], bot._empty_stats())
+    assert ("ЯКЩО вони прямо не стосуються українських біженців або українців. УВАГА: події В УКРАЇНІ "
+            "(Київ, фронт, будь-яке українське місто) і події за кордоном, що прямо стосуються війни в Україні "
+            "(мирні переговори, санкції, допомога Україні), — це НЕ геоблок: оцінюй їх за КРОКОМ 5.3.\n"
+            "5. СВІТОВИЙ ШУМ") in captured["prompt"]
