@@ -1,61 +1,5 @@
 [
   {
-    "timestamp": "2026-10-16 16:01:09",
-    "execution_time": 301.3,
-    "funnel": {
-      "scraped_total": 35,
-      "scraped_by_source": {
-        "023": 10,
-        "Slobodna dalmacija": 15,
-        "Zadarski list": 10
-      },
-      "already_seen": 22,
-      "rejected_by_keywords": 3,
-      "duplicates_removed_by_ai": 15,
-      "rejection_reasons_list": [
-        "• Znanstvenici su 1947. bacili suhi led u ... ➡️ <b>Геоблок (події за межами Хорватії та України)</b>",
-        "• Miroslav Ilić u svom četvrtom nastupu u ... ➡️ <b>Шоу-бізнес / Нейтральна подія поза фокусом каналу</b>",
-        "• Edamame, humus i pečeni slanutak: sedam ... ➡️ <b>Світовий шум (поради дієтологів)</b>",
-        "• Proveli smo dan s krčkim maslinarima: uz... ➡️ <b>Побут чужих міст / Репортаж про локальну гастрономію</b>",
-        "• Općina Lopar uputila obavijest vlasnicim... ➡️ <b>Побут чужих міст (не стосується Задара)</b>",
-        "• Obilježena 35. godišnjica pogibije Josip... ➡️ <b>Історія / День пам'яті (дубль або локальна пам'ятна подія іншого регіону)</b>",
-        "• Tesla pokazala novi Roadster koji uz pom... ➡️ <b>Світовий шум (технології без прямого зв'язку з Україною чи Хорватією)</b>",
-        "• Dobre vijesti iz Skradina: ronioci i vat... ➡️ <b>Побут чужих міст (екологічна акція у Скрадині)</b>",
-        "• Jedemo li pogrešno? Svjetski dan hrane u... ➡️ <b>Світовий шум / Абстрактна міжнародна дата</b>",
-        "• Tražite parking u Mokošici? Grad Dubrovn... ➡️ <b>Побут чужих міст (паркінг у Дубровнику)</b>",
-        "• Pas laje sve glasnije dok ga pokušavate ... ➡️ <b>Світовий шум (поради щодо домашніх тварин)</b>",
-        "• Objavljen javni natječaj za zakup osam g... ➡️ <b>Дубль новини ID 14</b>",
-        "• Projekt “Hrvatska pliva 2026”; Prva ovos... ➡️ <b>Спорт (дитяча спортивна школа та плавання)</b>",
-        "• Dobar rad u malim sredinama: Ponos Škole... ➡️ <b>Спорт (дитячий футбольний турнір)</b>",
-        "• Tko je nakon utakmice oštetio autobus i ... ➡️ <b>Кримінал і хуліганство у чужому місті (Рієка)</b>"
-      ]
-    },
-    "backlog": {
-      "total_size": 40,
-      "sources": {
-        "Zadarski list": 19,
-        "Slobodna dalmacija": 13,
-        "023": 8
-      }
-    },
-    "published": {
-      "total": 3,
-      "ukraine_priority": 0,
-      "with_images": 2,
-      "text_only": 1,
-      "sources": {
-        "Slobodna dalmacija": 2,
-        "023": 1
-      }
-    },
-    "models_used": {
-      "gemini-3.5-flash-lite": 2,
-      "gemini-3.6-flash": 0
-    },
-    "errors_count": 0,
-    "gemini_retries": 1
-  },
-  {
     "timestamp": "2026-10-16 19:01:07",
     "execution_time": 330.6,
     "funnel": {
@@ -7299,5 +7243,114 @@
     "gemini_region_blocked": false,
     "errors_count": 0,
     "gemini_retries": 7
+  },
+  {
+    "timestamp": "2026-11-03 09:01:17",
+    "execution_time": 148.3,
+    "funnel": {
+      "scraped_total": 35,
+      "scraped_by_source": {
+        "023": 10,
+        "Slobodna dalmacija": 15,
+        "Zadarski list": 10
+      },
+      "already_seen": 23,
+      "rejected_by_keywords": 3,
+      "rejected_by_rule": {
+        "тег RSS sport": 1,
+        "тег RSS nogomet": 1,
+        "тег RSS košarka": 1
+      },
+      "unclassified_by_ai": 0,
+      "duplicates_removed_by_ai": 3,
+      "rejection_reasons_list": [
+        "• Sjajna atmosfera na otvorenju 4. Kazališnog vikenda za djecu i mlade u → Вже публікувалось (Початок театрального фестивалю) | Сутності: Kazališni vikend, Zadar, Kazalište lutaka, Matija Šango Šimurina",
+        "• Tomić & Co. svečano otvorio novi BMW prodajno-servisni centar u Rijeci → Побут інших міст (Автоцентр у Рієці) | Сутності: Tomić & Co, BMW, Rijeka, Franjo Tomić",
+        "• Oproštaj od Miše Kovača na Poljudu. Lijes s njegovim tijelom bit će pr → Вже публікувалось (Прощання з музикантом) | Сутності: Mišo Kovač, Poljud, Hajduk, Split"
+      ],
+      "rejected_by_reason": {
+        "Вже публікувалось": 2,
+        "Побут інших міст": 1
+      },
+      "updates_marked": 0,
+      "already_rejected": 16,
+      "rejected_by_code_examples": [
+        "[тег RSS sport] Košarkaši Zadra tri su četvrtine držali korak s višestruko skupljim Dubaijem, a onda je stigla serij",
+        "[тег RSS nogomet] Azijski kup u Saudijskoj Arabiji pomaknut sa siječnja na prosinac 2027. zbog ratnog stanja u regiji",
+        "[тег RSS košarka] Karlo Matković odigrao utakmicu karijere u pobjedi Pelicansa nad Memphisom"
+      ]
+    },
+    "backlog": {
+      "total_size": 1,
+      "sources": {
+        "023": 1
+      }
+    },
+    "published": {
+      "total": 3,
+      "ukraine_priority": 0,
+      "with_images": 3,
+      "text_only": 0,
+      "og_images_found": 3,
+      "sources": {
+        "023": 3
+      }
+    },
+    "models_used": {
+      "gemini-3.5-flash-lite": 1,
+      "gemini-3.6-flash": 1
+    },
+    "models_by_task": {
+      "filter": "gemini-3.5-flash-lite",
+      "translate": "gemini-3.6-flash"
+    },
+    "model_attempts": [
+      {
+        "task": "filter",
+        "model": "gemini-3-flash-preview",
+        "outcome": "unavailable"
+      },
+      {
+        "task": "filter",
+        "model": "gemini-3-flash-preview",
+        "outcome": "unavailable"
+      },
+      {
+        "task": "filter",
+        "model": "gemini-3.6-flash",
+        "outcome": "unavailable"
+      },
+      {
+        "task": "filter",
+        "model": "gemini-3.6-flash",
+        "outcome": "unavailable"
+      },
+      {
+        "task": "filter",
+        "model": "gemini-3.5-flash-lite",
+        "outcome": "ok"
+      },
+      {
+        "task": "translate",
+        "model": "gemini-3.8-flash",
+        "outcome": "unavailable"
+      },
+      {
+        "task": "translate",
+        "model": "gemini-3.8-flash",
+        "outcome": "unavailable"
+      },
+      {
+        "task": "translate",
+        "model": "gemini-3.6-flash",
+        "outcome": "ok"
+      }
+    ],
+    "exhausted_models": [],
+    "demoted_models": [],
+    "translate_budget_deferred": [],
+    "gemini_region_blocked": false,
+    "errors_count": 0,
+    "gemini_retries": 6
   }
 ]
