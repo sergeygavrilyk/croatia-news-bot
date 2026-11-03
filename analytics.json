@@ -1,59 +1,5 @@
 [
   {
-    "timestamp": "2026-10-17 08:01:08",
-    "execution_time": 199.6,
-    "funnel": {
-      "scraped_total": 35,
-      "scraped_by_source": {
-        "023": 10,
-        "Slobodna dalmacija": 15,
-        "Zadarski list": 10
-      },
-      "already_seen": 8,
-      "rejected_by_keywords": 7,
-      "duplicates_removed_by_ai": 13,
-      "rejection_reasons_list": [
-        "• Balzam za ispucale usne napravite sami o... ➡️ <b>Стоп-тема: побутові поради та рецепти (світовий шум).</b>",
-        "• Deseci tisuća ljudi danas na prosvjedima... ➡️ <b>Геоблок: масові протести у Франції, що не стосуються українців чи Хорватії.</b>",
-        "• Zadar bez Mihailovića i Vraneša pao u Be... ➡️ <b>Стоп-тема: спорт (результат баскетбольного матчу).</b>",
-        "• Zbog govora mržnje u Splitu uhićene četi... ➡️ <b>Побут чужих міст та спорт: затримання уболівальників у Спліті.</b>",
-        "• Ribaru je barku obilazila njemu nepoznat... ➡️ <b>Світовий шум: розважальний матеріал про екзотичну рибу.</b>",
-        "• U Ćosićevu dvoranu stiže šest klubova za... ➡️ <b>Стоп-тема: спорт (турнір з баскетболу на візках).</b>",
-        "• Musk predstavio automobil koji leti, u t... ➡️ <b>Геоблок та світовий шум: презентація автомобіля Елона Маска в США.</b>",
-        "• Izvedbom predstave „Spavaj, dijete moje ... ➡️ <b>Локальні культурні заходи інших міст, не стосується пріоритетів Задара чи Хорватії.</b>",
-        "• Rat zbog šteta od divljači eskalira! Lov... ➡️ <b>Фільтр історії: коментарі та суперечки щодо закону про мисливство, який вже є у списку HISTORY.</b>",
-        "• Danas pretežno sunčano, nova velika prom... ➡️ <b>Кластеризація дублів: загальний прогноз погоди по Хорватії (залишено детальний прогноз для Задара №9).</b>",
-        "• Posao vrijedan skoro tri milijuna eura: ... ➡️ <b>Побут чужих міст: замовлення на верфі в Шибенику.</b>",
-        "• Lapadski ogranak Dubrovačkih knjižnica s... ➡️ <b>Побут чужих міст: переїзд філіалу бібліотеки в Дубровнику.</b>",
-        "• Tromi Zadar bez dvojice važnih igrača, a... ➡️ <b>Стоп-тема: спорт та дублікат новини №3 про матч KK Zadar.</b>"
-      ]
-    },
-    "backlog": {
-      "total_size": 17,
-      "sources": {
-        "Zadarski list": 5,
-        "023": 5,
-        "Slobodna dalmacija": 7
-      }
-    },
-    "published": {
-      "total": 3,
-      "ukraine_priority": 0,
-      "with_images": 2,
-      "text_only": 1,
-      "sources": {
-        "Slobodna dalmacija": 2,
-        "023": 1
-      }
-    },
-    "models_used": {
-      "gemini-3.5-flash-lite": 0,
-      "gemini-3.6-flash": 2
-    },
-    "errors_count": 0,
-    "gemini_retries": 0
-  },
-  {
     "timestamp": "2026-10-17 09:01:04",
     "execution_time": 149.3,
     "funnel": {
@@ -7452,5 +7398,126 @@
     "gemini_region_blocked": false,
     "errors_count": 0,
     "gemini_retries": 5
+  },
+  {
+    "timestamp": "2026-11-03 12:01:20",
+    "execution_time": 178.8,
+    "funnel": {
+      "scraped_total": 35,
+      "scraped_by_source": {
+        "023": 10,
+        "Slobodna dalmacija": 15,
+        "Zadarski list": 10
+      },
+      "already_seen": 17,
+      "rejected_by_keywords": 3,
+      "rejected_by_rule": {
+        "sport": 2,
+        "URL /sport/": 1
+      },
+      "unclassified_by_ai": 0,
+      "duplicates_removed_by_ai": 14,
+      "rejection_reasons_list": [
+        "• Na MasterChefu im dali da kuhaju američku hranu, kandidati zgroženi: “ → Світовий шум (Кулінарне шоу) | Сутності: MasterChef, Sjeverna Amerika, Stjepan, Amerika",
+        "• HZZO potvrdio nesretan paradoks: zbog rasta mirovina gotovo 14 tisuća  → Вже публікувалось (Доступ до безкоштовного додаткового страхування) | Сутності: HZZO, Mirovina.hr, Hrvatska",
+        "• Policija traži prevaranta; perfidno navukao 71-godišnjeg Šibenčanina n → Побут інших міст (Криптовалютне шахрайство в Шибенику) | Сутності: Šibenik, kriptovalute, policija",
+        "• Most predlaže gradnju termoelektrane na plin u Rijeci → Побут інших міст (Пропозиція термоелектростанції в Рієці) | Сутності: Most, Zvonimir Troskot, Rijeka, LNG terminal",
+        "• Nakon ‘Depre‘, Aleksandar Stanković novu knjigu ‘F32‘ predstavlja u La → Побут інших міст (Книжкова подія в Дубровнику) | Сутності: Aleksandar Stanković, Dubrovnik, Lazareti, F32",
+        "• Mile Kekin u petak u Pogonu: Punk je najkraći put između srca i jezika → Побут інших міст (Музичний альбом та подія) | Сутності: Mile Kekin, Pogon, Marko Mrakovčić, PUN.K",
+        "• Vesna Muhoberac otključala književnu riznicu Mavra Vetranovića: ‘On se → Побут інших міст (Літературна подія у Дубровнику) | Сутності: Vesna Muhoberac, Mavro Vetranović, Dubrovnik, Znanstvena knjižnica",
+        "• Martinja, biciklijada i nordijsko hodanje ovog vikenda u Novom Vinodol → Побут інших міст (Події в Новому Вінодолському) | Сутності: Novi Vinodolski, Martinja, Vinodol",
+        "• Nevjerojatan ulov pomorske policije; Vozio bez ijedne položene kategor → Дубль (Вже є схожа новина про покарання на дорозі) | Сутності: Dugi otok, Zadar, pomorska policija",
+        "• Momci u Kistanjama nestručno petljali po raketi, pa im eksplodirala! Z → Побут інших міст (Інцидент з піротехнікою в Кніні) | Сутності: Knin, Kistanje, raketa, policija",
+        "• Građani PGŽ-a u bankama drže 3,8 milijardi eura, ali rast štednje ovdj → Побут інших міст (Банківські депозити в Приморсько-горанській жупанії) | Сутності: PGŽ, Hrvatska, banke",
+        "• Evo koliko će točno godina života i staža ženama trebati za mirovinu o → Вже публікувалось (Зміни умов виходу на пенсію для жінок) | Сутності: HZMO, Index, Hrvatska",
+        "• Objavljen natječaj za izložbu o križnom putu u djelima suvremenih umje → Побут інших міст (Виставка в Дубровнику) | Сутності: Dubrovačka biskupija, Galerija, Dubrovnik",
+        "• Pokažite srce, pomozite najmlađim pacijentima iz šibenske bolnice; tre → Побут інших міст (Благодійна акція в лікарні Шибеника) | Сутності: RTL pomaže djeci, Šibenik, bolnica"
+      ],
+      "rejected_by_reason": {
+        "Світовий шум": 1,
+        "Вже публікувалось": 2,
+        "Побут інших міст": 10,
+        "Дубль": 1
+      },
+      "updates_marked": 0,
+      "already_rejected": 11,
+      "rejected_by_code_examples": [
+        "[sport] Spajanje generacija u Zadru; U petak u Providurovoj palači svečani bal „More iskustva i val mladosti",
+        "[URL /sport/] Održana županijska prvenstva za mlade do 20 godina u ubrzanom i brzopoteznom šahu",
+        "[sport] Zadarska županija, kojom upravlja HDZ, planira val novih zapošljavanja. Brojke su velike..."
+      ]
+    },
+    "backlog": {
+      "total_size": 0,
+      "sources": {}
+    },
+    "published": {
+      "total": 3,
+      "ukraine_priority": 0,
+      "with_images": 3,
+      "text_only": 0,
+      "og_images_found": 2,
+      "sources": {
+        "023": 2,
+        "Slobodna dalmacija": 1
+      }
+    },
+    "models_used": {
+      "gemini-3.5-flash-lite": 2
+    },
+    "models_by_task": {
+      "filter": "gemini-3.5-flash-lite",
+      "translate": "gemini-3.5-flash-lite"
+    },
+    "model_attempts": [
+      {
+        "task": "filter",
+        "model": "gemini-3-flash-preview",
+        "outcome": "unavailable"
+      },
+      {
+        "task": "filter",
+        "model": "gemini-3-flash-preview",
+        "outcome": "unavailable"
+      },
+      {
+        "task": "filter",
+        "model": "gemini-3.6-flash",
+        "outcome": "unavailable"
+      },
+      {
+        "task": "filter",
+        "model": "gemini-3.6-flash",
+        "outcome": "unavailable"
+      },
+      {
+        "task": "filter",
+        "model": "gemini-3.5-flash-lite",
+        "outcome": "ok"
+      },
+      {
+        "task": "translate",
+        "model": "gemini-3.8-flash",
+        "outcome": "unavailable"
+      },
+      {
+        "task": "translate",
+        "model": "gemini-3.8-flash",
+        "outcome": "unavailable"
+      },
+      {
+        "task": "translate",
+        "model": "gemini-3.5-flash-lite",
+        "outcome": "ok"
+      }
+    ],
+    "exhausted_models": [],
+    "demoted_models": [],
+    "translate_budget_deferred": [
+      "gemini-3.6-flash"
+    ],
+    "gemini_region_blocked": false,
+    "errors_count": 0,
+    "gemini_retries": 6
   }
 ]
