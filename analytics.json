@@ -1,66 +1,5 @@
 [
   {
-    "timestamp": "2026-10-17 14:01:04",
-    "execution_time": 106.6,
-    "funnel": {
-      "scraped_total": 35,
-      "scraped_by_source": {
-        "023": 10,
-        "Slobodna dalmacija": 15,
-        "Zadarski list": 10
-      },
-      "already_seen": 9,
-      "rejected_by_keywords": 4,
-      "duplicates_removed_by_ai": 21,
-      "rejection_reasons_list": [
-        "• Divan jesenski dan i fenonenalna marenda... ➡️ <b>Побут Дубровника (не Задар)</b>",
-        "• Egipćanin kazneno prijavljen za krijumča... ➡️ <b>Дрібний кримінал / побут інших регіонів (не Задар)</b>",
-        "• Spolni odnosi barem jednom tjedno poveza... ➡️ <b>Світовий шум (наукові дослідження, лайфстайл)</b>",
-        "• Groblje u Dalmaciji donijelo pravilnik o... ➡️ <b>Локальний побут Водице (не Задар)</b>",
-        "• Prosvjed protiv megafarmi u Koprivnici: ... ➡️ <b>Локальний протест у Копривниці (не Задар)</b>",
-        "• Zašto se mandarine prodaju u crvenim mre... ➡️ <b>Світовий шум (лайфстайл та побутові поради)</b>",
-        "• Na otočić pokraj Korčule došao važan bis... ➡️ <b>Локальна подія на Корчулі (не Задар)</b>",
-        "• Balzam za ispucale usne napravite sami o... ➡️ <b>Світовий шум (рецепти та догляд за собою)</b>",
-        "• Tegljač koji je vukao golemi stroj je la... ➡️ <b>Побут Спліта та Пелєшаца (не Задар)</b>",
-        "• Marijana Biondić odlazi s mjesta direkto... ➡️ <b>Локальна новина Кріквениці (не Задар)</b>",
-        "• Kuma sam u Dalmaciji, koliko da mladoj d... ➡️ <b>Інформаційний шум (обговорення з соцмереж)</b>",
-        "• Tisuće mladih Albanaca i dalje prosvjedu... ➡️ <b>Геоблок (події в Албанії)</b>",
-        "• Policija izvela veliku akciju kontrole t... ➡️ <b>Дрібні події / побут Кніна (не Задар)</b>",
-        "• Ivana Kekin: “Dvostruke konotacije pretv... ➡️ <b>Другорядний політичний коментар / реакція</b>",
-        "• Boćari Debeljaka ove će sezone nastupiti... ➡️ <b>Спорт</b>",
-        "• HDZ o izjavama Marina Miletića: “Totalit... ➡️ <b>Політична суперечка / інформаційний шум</b>",
-        "• Druga šansa za posrnule poduzetnike: pog... ➡️ <b>Регіональні новини Шибеника (не Задар)</b>",
-        "• Ovih liječnika kronično nedostaje u Šibe... ➡️ <b>Регіональна медицина Шибеника (не Задар)</b>",
-        "• Zona posebnog prometnog režima nastavlja... ➡️ <b>Побут Дубровника (не Задар)</b>",
-        "• Delegacija sa stonskog područja u posjet... ➡️ <b>Локальна новина Стона (не Задар)</b>",
-        "• Čudna riba u Dalmaciji: ribaru je barku ... ➡️ <b>Інформаційний шум (цікавинки про природу)</b>"
-      ]
-    },
-    "backlog": {
-      "total_size": 22,
-      "sources": {
-        "023": 3,
-        "Slobodna dalmacija": 12,
-        "Zadarski list": 7
-      }
-    },
-    "published": {
-      "total": 1,
-      "ukraine_priority": 0,
-      "with_images": 1,
-      "text_only": 0,
-      "sources": {
-        "Zadarski list": 1
-      }
-    },
-    "models_used": {
-      "gemini-3.5-flash-lite": 0,
-      "gemini-3.6-flash": 2
-    },
-    "errors_count": 0,
-    "gemini_retries": 0
-  },
-  {
     "timestamp": "2026-10-17 15:01:10",
     "execution_time": 131.8,
     "funnel": {
@@ -7789,5 +7728,112 @@
     "gemini_region_blocked": false,
     "errors_count": 0,
     "gemini_retries": 4
+  },
+  {
+    "timestamp": "2026-11-03 20:01:18",
+    "execution_time": 177.4,
+    "funnel": {
+      "scraped_total": 35,
+      "scraped_by_source": {
+        "023": 10,
+        "Slobodna dalmacija": 15,
+        "Zadarski list": 10
+      },
+      "already_seen": 16,
+      "rejected_by_keywords": 8,
+      "rejected_by_rule": {
+        "тег RSS lifestyle": 5,
+        "prvenstvo": 1,
+        "sportom": 1,
+        "sport": 1
+      },
+      "unclassified_by_ai": 0,
+      "duplicates_removed_by_ai": 9,
+      "rejection_reasons_list": [
+        "• Ukrajina istražuje optužbe o navodnom zlostavljanju ročnika → Геоблок (Події під Києвом) | Сутності: Ukrajina, Kijev, Nacionalna garda",
+        "• Za ozbiljne zahvate najbliži nam je Split. Veterinarka dr. Oštrić: \"Za → Побут інших міст (Ветеринарні послуги в Дубровнику) | Сутності: Dubrovnik, Split, Zagreb",
+        "• Dječje igralište u Puntu dobiva novu kulu s toboganom → Побут інших міст (Ремонт ігрового майданчика в Пунті) | Сутності: Punat, dječje igralište, tobogan",
+        "• Dječji vrtić Fijolica bogatiji za novu opremu i kvalitetnije uvjete → Побут інших міст (Оснащення дитсадка в Новому Винодольському) | Сутності: Novi Vinodolski, Dječji vrtić Fijolica",
+        "• Otočac  je prvi grad u Hrvatskoj po pitanju edukacija o umjetnoj intel → Побут інших міст (Освіта з ШІ в Оточці) | Сутності: Otočac, Goran Bukovac, umjetna inteligencija",
+        "• Riječki znanstveni mostovi o umjetnoj inteligenciji → Побут інших міст (Науковий симпозіум у Рієці) | Сутності: Rijeka, Medicinski fakultet, umjetna inteligencija",
+        "• Vatikan kaže da je Papa zdrav i spreman za južnoameričku turneju → Світовий шум (Здоров'я Папи Римського) | Сутності: Vatikan, Papa Lav, Matteo Bruni",
+        "• “Sloboda” Marije Crljenko pobjednička fotografija foto natječaja PGŽ-a → Побут інших міст (Фотоконкурс у Рієці) | Сутності: Rijeka, Primorsko-goranska županija, Marija Crljenko",
+        "• Zbog radova privremena izmjena trase linije 12A → Побут інших міст (Зміни маршруту автобуса в Єленє) | Сутності: Jelenje, Podkilavac, linija 12A"
+      ],
+      "rejected_by_reason": {
+        "Геоблок": 1,
+        "Побут інших міст": 7,
+        "Світовий шум": 1
+      },
+      "updates_marked": 0,
+      "already_rejected": 12,
+      "rejected_by_code_examples": [
+        "[тег RSS lifestyle] Lupanje srca koje traje satima može biti fibrilacija atrija, a ne anksioznost",
+        "[тег RSS lifestyle] Koji sukulenti mogu cijelu zimu ostati vani i izdržati i minus 15 stupnjeva",
+        "[тег RSS lifestyle] Kamin na drva i rak pluća: što je pokazalo praćenje više od 50.000 žena",
+        "[тег RSS lifestyle] Gotovo 2000 eura za čišćenje odvoda: kako se zaštititi od nesavjesnih hitnih majstora",
+        "[тег RSS lifestyle] Sjajna ili mat strana aluminijske folije: pokusi u pećnici pokazali su gotovo jednake rezultate",
+        "[prvenstvo] Povijesni trenutak za Zadar; Nakon čak 19 godina mise se vraćaju u crkvu sv. Krševana!",
+        "[sportom] Nekad nisu mogli istrčati ni 200 metara, a danas trče maratone: ‘Promijenilo nam je živote! A tko je",
+        "[sport] Do 3.000 eura potpore poduzetnicima pogođenima radovima na aglomeraciji"
+      ]
+    },
+    "backlog": {
+      "total_size": 0,
+      "sources": {}
+    },
+    "published": {
+      "total": 2,
+      "ukraine_priority": 0,
+      "with_images": 2,
+      "text_only": 0,
+      "og_images_found": 0,
+      "sources": {
+        "Slobodna dalmacija": 1,
+        "Zadarski list": 1
+      }
+    },
+    "models_used": {
+      "gemini-3.5-flash-lite": 2
+    },
+    "models_by_task": {
+      "filter": "gemini-3.5-flash-lite",
+      "translate": "gemini-3.5-flash-lite"
+    },
+    "model_attempts": [
+      {
+        "task": "filter",
+        "model": "gemini-3-flash-preview",
+        "outcome": "unavailable"
+      },
+      {
+        "task": "filter",
+        "model": "gemini-3.6-flash",
+        "outcome": "unavailable"
+      },
+      {
+        "task": "filter",
+        "model": "gemini-3.5-flash-lite",
+        "outcome": "ok"
+      },
+      {
+        "task": "translate",
+        "model": "gemini-3.8-flash",
+        "outcome": "unavailable"
+      },
+      {
+        "task": "translate",
+        "model": "gemini-3.5-flash-lite",
+        "outcome": "ok"
+      }
+    ],
+    "exhausted_models": [],
+    "demoted_models": [],
+    "translate_budget_deferred": [
+      "gemini-3.6-flash"
+    ],
+    "gemini_region_blocked": false,
+    "errors_count": 0,
+    "gemini_retries": 3
   }
 ]
