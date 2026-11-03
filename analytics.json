@@ -1,67 +1,5 @@
 [
   {
-    "timestamp": "2026-10-16 19:01:07",
-    "execution_time": 330.6,
-    "funnel": {
-      "scraped_total": 35,
-      "scraped_by_source": {
-        "023": 10,
-        "Slobodna dalmacija": 15,
-        "Zadarski list": 10
-      },
-      "already_seen": 9,
-      "rejected_by_keywords": 5,
-      "duplicates_removed_by_ai": 22,
-      "rejection_reasons_list": [
-        "• Tito & Tarantula u Boogaloou rekreiraju ... ➡️ <b>Побут чужих міст</b>",
-        "• Dom za starije u Dubrovačkom primorju bi... ➡️ <b>Побут чужих міст</b>",
-        "• Sloj bez kisika u Zmajevu oku kod Rogozn... ➡️ <b>Світовий шум</b>",
-        "• Radovi na dalekovodu na Gornjoj Orehovic... ➡️ <b>Побут чужих міст</b>",
-        "• Vatrogasci lokalizirali požar na Jakljan... ➡️ <b>Побут чужих міст</b>",
-        "• Zašto neki nakon cijepljenja dobiju vruć... ➡️ <b>Світовий шум</b>",
-        "• Obilježena 35. godišnjica pogibije Josip... ➡️ <b>Побут чужих міст</b>",
-        "• Znanstvenici su 1947. bacili suhi led u ... ➡️ <b>Геоблок</b>",
-        "• Rossinijeva Pepeljuga prvi put u Rijeci ... ➡️ <b>Побут чужих міст</b>",
-        "• Dobre vijesti iz Skradina: ronioci i vat... ➡️ <b>Побут чужих міст</b>",
-        "• Edamame, humus i pečeni slanutak: sedam ... ➡️ <b>Світовий шум</b>",
-        "• Predstavljena “Diplomacija iza kulisa” D... ➡️ <b>Побут чужих міст</b>",
-        "• Tražite parking u Mokošici? Grad Dubrovn... ➡️ <b>Побут чужих міст</b>",
-        "• Jedemo li pogrešno? Svjetski dan hrane u... ➡️ <b>Світовий шум</b>",
-        "• Objavljen javni natječaj za zakup osam g... ➡️ <b>Дублікат новини 14</b>",
-        "• Pas laje sve glasnije dok ga pokušavate ... ➡️ <b>Світовий шум</b>",
-        "• Lucija Žeželj predsjednica riječkog Stud... ➡️ <b>Побут чужих міст</b>",
-        "• Dobar rad u malim sredinama: Ponos Škole... ➡️ <b>Спорт</b>",
-        "• Oštra reakcija s Pantovčaka na skandaloz... ➡️ <b>Анти-дубль та спорт</b>",
-        "• Prijevara na Krku: Oštećen za oko 30.000... ➡️ <b>Побут чужих міст</b>",
-        "• Brucoši i strani studenti zaplovili u no... ➡️ <b>Дубль історії</b>",
-        "• Obilježen Svjetski dan kravate: Simbol k... ➡️ <b>Побут чужих міст</b>"
-      ]
-    },
-    "backlog": {
-      "total_size": 43,
-      "sources": {
-        "Zadarski list": 23,
-        "Slobodna dalmacija": 13,
-        "023": 7
-      }
-    },
-    "published": {
-      "total": 3,
-      "ukraine_priority": 1,
-      "with_images": 3,
-      "text_only": 0,
-      "sources": {
-        "Zadarski list": 3
-      }
-    },
-    "models_used": {
-      "gemini-3.5-flash-lite": 2,
-      "gemini-3.6-flash": 0
-    },
-    "errors_count": 0,
-    "gemini_retries": 3
-  },
-  {
     "timestamp": "2026-10-17 07:01:05",
     "execution_time": 187.7,
     "funnel": {
@@ -7352,5 +7290,100 @@
     "gemini_region_blocked": false,
     "errors_count": 0,
     "gemini_retries": 6
+  },
+  {
+    "timestamp": "2026-11-03 10:01:15",
+    "execution_time": 171.2,
+    "funnel": {
+      "scraped_total": 35,
+      "scraped_by_source": {
+        "023": 10,
+        "Slobodna dalmacija": 15,
+        "Zadarski list": 10
+      },
+      "already_seen": 15,
+      "rejected_by_keywords": 8,
+      "rejected_by_rule": {
+        "sport": 1,
+        "тег RSS sport": 1,
+        "promo": 2,
+        "тег RSS nogomet": 2,
+        "sportaša": 1,
+        "oglas": 1
+      },
+      "unclassified_by_ai": 0,
+      "duplicates_removed_by_ai": 6,
+      "rejection_reasons_list": [
+        "• ‘Mare Fjočica‘, ‘Grintalo‘ i ‘Immaculata‘ ovaj tjedan u Kazalištu Mari → Побут інших міст (Дубровник) | Сутності: Mare Fjočica, Kazalište Marina Držića, Dubrovnik, Kolarin",
+        "• Raste studentska satnica. Pomalo nevjerojatno zvuči podatak koliko je  → Не за тематикою (студентська сатирня) | Сутності: Hrvatska, Ministarstvo, Studentska satnica",
+        "• Parfemi od 1600 eura nestali iz poznatog zadarskog centra, policija pr → Дубль (крадіжка парфумів у Задарі) | Сутності: Zadar, Ulica Akcije Maslenice, Policijska postaja Zadar, Krađa parfema",
+        "• Maloljetnik pronašao novac na ulici u Zagrebu pa ga odnio policiji. Tr → Побут інших міст (Загреб) | Сутності: Zagreb, Branimirova ulica, Policijska uprava zagrebačka",
+        "• Počela sezona grijanja: Koliko će Riječani plaćati plin i kakvi ih rač → Побут інших міст (Рієка) | Сутності: Rijeka, Energo, Marko Križanec",
+        "• Amerikanci noćas napali iranski otok Kešm. Teheran: ‘Sporazum o kraju  → Геоблок (конфлікт США та Ірану) | Сутності: SAD, Iran, Otok Kešm, Reuters"
+      ],
+      "rejected_by_reason": {
+        "Побут інших міст": 3,
+        "Не за тематикою": 1,
+        "Дубль": 1,
+        "Геоблок": 1
+      },
+      "updates_marked": 0,
+      "already_rejected": 9,
+      "rejected_by_code_examples": [
+        "[sport] Spajanje generacija u Zadru; U petak u Providurovoj palači svečani bal „More iskustva i val mladosti",
+        "[тег RSS sport] Košarkaši Zadra tri su četvrtine držali korak s višestruko skupljim Dubaijem, a onda je stigla serij",
+        "[promo] Caffe Yacht Club Galeb u Kostreni postao je nositelj priznanja Hausbrandt Place of Excellence",
+        "[promo] Kvarnerska baština u 13 odabranih fotografija",
+        "[тег RSS nogomet] Udinese predstavio novog trenera. Posljednje je vodio Veronu",
+        "[sportaša] Gradonačelnica Crikvenice čestitala jedriličarima Vala na vrhunskim sportskim rezultatima",
+        "[тег RSS nogomet] UZNEMIRUJUĆE Nogometaš Tenerifea preminuo par sati nakon stravičnog sudara s vratarom na terenu",
+        "[oglas] Žena (67) povjerovala u web oglas o ulaganju u zlato. Ostala je bez 20.000 eura"
+      ]
+    },
+    "backlog": {
+      "total_size": 0,
+      "sources": {}
+    },
+    "published": {
+      "total": 3,
+      "ukraine_priority": 0,
+      "with_images": 3,
+      "text_only": 0,
+      "og_images_found": 2,
+      "sources": {
+        "023": 2,
+        "Slobodna dalmacija": 1
+      }
+    },
+    "models_used": {
+      "gemini-3.5-flash-lite": 1,
+      "gemini-3.6-flash": 1
+    },
+    "models_by_task": {
+      "filter": "gemini-3.5-flash-lite",
+      "translate": "gemini-3.6-flash"
+    },
+    "model_attempts": [
+      {
+        "task": "filter",
+        "model": "gemini-3.5-flash-lite",
+        "outcome": "ok"
+      },
+      {
+        "task": "translate",
+        "model": "gemini-3.6-flash",
+        "outcome": "ok"
+      }
+    ],
+    "exhausted_models": [],
+    "demoted_models": [
+      "filter: gemini-3-flash-preview",
+      "filter: gemini-3.6-flash",
+      "translate: gemini-3.8-flash"
+    ],
+    "translate_budget_deferred": [],
+    "gemini_region_blocked": false,
+    "errors_count": 0,
+    "gemini_retries": 0
   }
 ]
