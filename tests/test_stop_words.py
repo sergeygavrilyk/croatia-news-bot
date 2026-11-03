@@ -53,3 +53,27 @@ def test_code_rejections_are_logged_with_titles(bot, monkeypatch):
     bot.send_dry_run_filter_report([], [], [], stats)
     text = recorder.sent[-1]["data"]["text"]
     assert "Відсіяно кодом (до Gemini)" in text and "[derbi] Naslov 0" in text
+
+
+# --- R-21 (03.11): стоп-слова лише в заголовку, адресі й ліді (перші 300 символів опису) ---
+
+LEAD = "Zadarska županija planira zaposliti 29 novih izvršitelja u upravnim odjelima. " * 4  # > 300 символів
+
+
+@pytest.mark.parametrize("deep_text", [
+    "Upravni odjel za obrazovanje, kulturu i sport dobit će dva nova radna mjesta.",
+    "Uređene su učionice, a sportaši škole dobili su novu opremu.",
+    "Natječaj je objavljen kao oglas na stranicama županije.",
+    "Na sjednici se raspravljalo i o prvenstvo mladih u šahu.",
+])
+def test_stop_word_deep_in_article_text_is_not_rejected(bot, deep_text):
+    assert len(LEAD) > bot.STOP_WORDS_DESCRIPTION_CHARS
+    title = "Zadarska županija planira zaposliti 29 novih izvršitelja"
+    assert bot.quality_rejection_reason(title, LEAD + deep_text, "https://a.hr/vijesti/1") is None
+
+
+def test_stop_word_in_title_or_lead_still_rejected(bot):
+    assert bot.quality_rejection_reason("Zadarski sportaš osvojio zlato", LEAD, "https://a.hr/v/1") == "sportaš"
+    lead = "Utakmica KK Zadra počinje u 19 sati. " + LEAD
+    assert bot.quality_rejection_reason("Večeras u Višnjiku veliki susret", lead, "https://a.hr/v/2") == "utakmica"
+    assert bot.quality_rejection_reason("Vijest iz Zadra danas", LEAD, "https://a.hr/sport/3") == "URL /sport/"

@@ -888,6 +888,13 @@ def plain_text(value: str) -> str:
     return BeautifulSoup(value or "", "html.parser").get_text(" ", strip=True)
 
 
+# R-21 (03.11): стоп-слова шукаються в заголовку, адресі й лише на початку опису (лід), а не в усьому
+# тексті статті (до 3500 символів): 31.10–03.11 у 54 з 59 відсіяних новин слово було лише в тексті
+# («Upravni odjel za kulturu i sport», «sportska dvorana»…), серед них новини Задару. Спорт і далі
+# ловлять адреса /sport/, теги RSS і КРОК 4.1 промпту фільтра.
+STOP_WORDS_DESCRIPTION_CHARS = 300
+
+
 def quality_rejection_reason(title: str, description: str, url: str) -> str | None:
     """Why the code rejects an article (None = keep). Same rules and order as before;
     the reason only feeds the admin report («Відсіяно кодом: … (foto 5, sport 3)»)."""
@@ -898,11 +905,12 @@ def quality_rejection_reason(title: str, description: str, url: str) -> str | No
             return f"URL {category}"
 
     text_to_check = f"{title} {plain_text(description)} {url}"
+    stop_word_text = f"{title} {plain_text(description)[:STOP_WORDS_DESCRIPTION_CHARS]} {url}"
     for pattern in (SPORTS_PATTERN, AD_PATTERN):
-        match = pattern.search(text_to_check)
+        match = pattern.search(stop_word_text)
         if match:
             return match.group(0).casefold()
-    normalized_text = text_to_check.casefold()
+    normalized_text = stop_word_text.casefold()
     for keyword in LEGACY_UNWANTED_KEYWORDS:
         if re.search(rf"\b{re.escape(keyword.casefold())}\b", normalized_text, re.IGNORECASE | re.UNICODE):
             return keyword.casefold()
@@ -1233,8 +1241,8 @@ def deduplicate_news(articles: list[dict], history_titles: list[str] | None = No
 5. СВІТОВИЙ ШУМ: Абстрактна наука, поради дієтологів, рецепти.
 
     КРОК 5. ТЕМАТИКА (ЩО ОБОВ'ЯЗКОВО ЗАЛИШИТИ): 
-1. ЗАДАР (Пріоритет №1): Побут, перекриття вулиць, тарифи, ремонти, відключення світла/води, погода, місцевий кримінал. 
-2. ХОРВАТІЯ (Національний рівень): Важливі події всієї країни — великий кримінал, політика, економіка. Межа: великий кримінал, політичні рішення, ціни й закони для всієї країни — залишай, навіть якщо подія в Спліті чи Загребі; ремонт школи, відключення води чи місцевий конфлікт в іншому місті — це КРОК 4.3, відхиляй.
+1. ЗАДАР (Пріоритет №1): Побут, перекриття вулиць, тарифи, ремонти, відключення світла/води, погода, місцевий кримінал, рішення міста і жупанії, культурні події (концерти, виставки, вистави, фестивалі). 
+2. ХОРВАТІЯ (Національний рівень): Важливі події всієї країни — великий кримінал, політика, економіка. Межа: великий кримінал, політичні рішення, ціни й закони для всієї країни — залишай, навіть якщо подія в Спліті чи Загребі; ремонт школи, відключення води чи місцевий конфлікт в іншому місті — це КРОК 4.3, відхиляй. Також залишай практичне для всіх жителів Хорватії: нові закони й правила, зарплати, пенсії й виплати, ціни й тарифи, медицина (HZZO), відкликання товарів, шахрайства — навіть якщо в новині згадане інше місто. Великі концерти й фестивалі загальнонаціонального рівня в будь-якому місті (зірки, зали на кілька тисяч) — залишай; локальні виставки, вистави й презентації інших міст — відхиляй.
 3. УКРАЇНА ТА  УКРАЇНСЬКІ БІЖЕНЦІ: Головні події в Україні (війна, енергетика, економіка, життя, політика, технології, оборона), рішення ЄС (Директива 2001/55), виплати українським біженцям.
 
     КРОК 6. ФІНАЛЬНИЙ ФІЛЬТР:
