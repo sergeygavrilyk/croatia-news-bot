@@ -127,18 +127,27 @@ FILTER_MODELS = parse_models("GEMINI_FILTER_MODELS", DEFAULT_FILTER_MODELS)
 TRANSLATE_MODELS = parse_models("GEMINI_TRANSLATE_MODELS", DEFAULT_TRANSLATE_MODELS)
 # Моделі, чия квота (429) вичерпана в цьому запуску, — до кінця запуску більше не викликаються.
 EXHAUSTED_MODELS: set[str] = set()
-# «Пам'ять» про недоступні моделі (T-21): модель, яка в останніх MODEL_DEMOTE_AFTER_RUNS запусках
-# (за MODEL_DEMOTE_WINDOW_SECONDS) не відповіла жодного разу (503 / таймаут / квота), іде в кінець
-# каскаду. Коли вікно мине, вона знову перша. Дані — з analytics.json (model_attempts).
-MODEL_DEMOTE_WINDOW_SECONDS = 3 * 60 * 60
+# «Пам'ять» про недоступні моделі (T-21, R-19): модель, яка в останніх MODEL_DEMOTE_AFTER_RUNS
+# запусках, де її пробували (за MODEL_MEMORY_LOOKBACK_SECONDS), не відповіла жодного разу
+# (503 / таймаут / квота), іде в кінець каскаду і лишається там, доки з її останньої спроби не мине
+# MODEL_PROBE_INTERVAL_SECONDS — тоді одна пробна спроба на звичному місці. Раніше (до 03.11)
+# відкладена модель не пробувалась, старі невдачі випадали з 3-годинного вікна, і вже через запуск
+# вона знову була першою (03.11: preview відкладалась лише в 3 з 9 запусків). 503 теж списують
+# денну квоту (2.11: 429 у 3.6-flash після 21 виклику, з них лише 5 успішних).
+# Дані — з analytics.json (model_attempts).
 MODEL_DEMOTE_AFTER_RUNS = 2
+MODEL_MEMORY_LOOKBACK_SECONDS = 24 * 60 * 60
+# «Раз на 3 години»: остання спроба о 09:01 → відкладена о 10:01 і 11:01, пробна спроба о 12:01.
+# Мінус 10 хв — запас на «плаваючий» старт запусків (cron-job.org + черга GitHub Actions).
+MODEL_PROBE_INTERVAL_SECONDS = 3 * 60 * 60 - 10 * 60
 MODEL_FAILURE_OUTCOMES = {"unavailable", "timeout", "quota"}
 # Денний бюджет моделі, що стоїть в обох каскадах (зараз gemini-3.6-flash, D-14): її free tier
-# (~20 запитів/добу) — спільний для фільтра й перекладу. Рішення власника 31.10 (R-16): квоту береже
+# (20 запитів/добу) — спільний для фільтра й перекладу. Lite-моделі (500 запитів/добу — AI Studio,
+# 31.10) під бюджет не потрапляють (`has_small_daily_quota()`). Рішення власника 31.10 (R-16): квоту береже
 # фільтр — переклад відкладає таку модель у кінець свого каскаду, коли за добу вже зроблено
 # SHARED_MODEL_TRANSLATE_BUDGET її викликів (8 = ~20 − 11 запусків фільтра − 1 запас).
-# Рахуються всі виклики моделі, крім відмов «location» (D-13) — з запасом, бо невідомо,
-# чи списують квоту відповіді 503/429.
+# Рахуються всі виклики моделі, крім відмов «location» (D-13): 503 теж списують квоту
+# (2.11: 429 після 21 виклику, з них лише 5 успішних).
 SHARED_MODEL_TRANSLATE_BUDGET = 8
 # Денні квоти Gemini API скидаються опівночі за тихоокеанським часом.
 QUOTA_RESET_TZ = "America/Los_Angeles"
@@ -442,24 +451,34 @@ def _run_epoch(run: dict) -> float | None:
 
 
 def demoted_models(runs: list[dict], task: str, now: float | None = None) -> set[str]:
-    """T-21: models that did not answer at all (503 / timeout / quota) in each of the last
-    MODEL_DEMOTE_AFTER_RUNS runs where they were tried for this task, within the window."""
+    """T-21, R-19: models that did not answer at all (503 / timeout / quota) in each of the last
+    MODEL_DEMOTE_AFTER_RUNS runs where they were tried for this task (within the lookback), and
+    whose last try was less than MODEL_PROBE_INTERVAL_SECONDS ago. Runs where the model was not
+    tried (it was demoted, or an earlier model answered) do not break the streak; a run with only
+    a «location» refusal (D-13) is not counted at all."""
     now = time.time() if now is None else now
-    per_model: dict[str, list[bool]] = {}
-    for run in runs:
+    per_model: dict[str, list[tuple[float, bool]]] = {}
+    for run in sorted(runs, key=lambda r: _run_epoch(r) or 0):
         started = _run_epoch(run)
-        if started is None or now - started > MODEL_DEMOTE_WINDOW_SECONDS:
+        if started is None or now - started > MODEL_MEMORY_LOOKBACK_SECONDS:
             continue
         outcomes: dict[str, set[str]] = {}
         for attempt in run.get("model_attempts") or []:
             if isinstance(attempt, dict) and attempt.get("task") == task and attempt.get("model"):
                 outcomes.setdefault(attempt["model"], set()).add(attempt.get("outcome"))
         for model, seen in outcomes.items():
+            if seen <= {"location"}:
+                continue
             per_model.setdefault(model, []).append(
-                "ok" not in seen and bool(seen & MODEL_FAILURE_OUTCOMES)
+                (started, "ok" not in seen and bool(seen & MODEL_FAILURE_OUTCOMES))
             )
-    return {model for model, failed in per_model.items()
-            if len(failed) >= MODEL_DEMOTE_AFTER_RUNS and all(failed[-MODEL_DEMOTE_AFTER_RUNS:])}
+    demoted = set()
+    for model, tried in per_model.items():
+        last = tried[-MODEL_DEMOTE_AFTER_RUNS:]
+        if (len(last) == MODEL_DEMOTE_AFTER_RUNS and all(failed for _, failed in last)
+                and now - last[-1][0] < MODEL_PROBE_INTERVAL_SECONDS):
+            demoted.add(model)
+    return demoted
 
 
 def reorder_cascade(cascade: list[str], demoted: set[str]) -> list[str]:
@@ -510,12 +529,18 @@ def model_calls_today(runs: list[dict], model: str, now: float | None = None) ->
                for run in runs if (_run_epoch(run) or 0) >= start)
 
 
+def has_small_daily_quota(model: str) -> bool:
+    """Free tier (AI Studio, 31.10): Flash models — 20 requests/day, Flash Lite — 500."""
+    return "lite" not in model.lower()
+
+
 def translate_cascade_with_budget(stats: dict | None, runs: list[dict],
                                   now: float | None = None) -> list[str]:
     """R-16: a model that is in both cascades goes to the end of the translation cascade once
     SHARED_MODEL_TRANSLATE_BUDGET of its calls were made today (earlier runs + this run)."""
     current = (stats or {}).get("model_attempts")
     over = {model for model in TRANSLATE_MODELS if model in FILTER_MODELS
+            and has_small_daily_quota(model)
             and model_calls_today(runs, model, now) + _counted_calls(current, model)
             >= SHARED_MODEL_TRANSLATE_BUDGET}
     if not over:
@@ -667,7 +692,7 @@ def send_analytics_to_admin(stats: dict) -> None:
            if stats.get("exhausted_models") else "")
         + (f"\n🧾 Спроби: {html.escape(_model_attempts_summary(stats))}"
            if stats.get("model_attempts") else "")
-        + (f"\n⏬ Відкладено в кінець каскаду (не відповідали в попередніх запусках): "
+        + (f"\n⏬ Відкладено в кінець каскаду (не відповідали 2 запуски поспіль; пробна спроба — раз на 3 год): "
            f"{html.escape(', '.join(stats['demoted_models']))}"
            if stats.get("demoted_models") else "")
         + (f"\n💰 Переклад: {html.escape(', '.join(_short_model(m) for m in stats['translate_budget_deferred']))} "
@@ -1094,11 +1119,15 @@ def _generate_structured_response(prompt: str, schema, stats: dict | None, opera
                     logging.warning("%s: квоту моделі %s вичерпано — до кінця запуску не використовуємо",
                                     operation, model_name)
                     break
-                # A wrong-ID answer or a quick 5xx (e.g. 503) is worth one more try on the same model
-                # before the fallback. A timeout / 504 is not: the model already kept us waiting for
-                # up to GEMINI_TIMEOUT_MS, so we go to the next model at once.
-                should_retry_same_model = attempt == 0 and not is_slow_gemini_failure(exc) and (
-                    is_transient_gemini_error(exc) or isinstance(exc, TranslationIdMismatch)
+                # A wrong-ID answer or a network glitch (connection reset) is worth one more try on
+                # the same model before the fallback. A 5xx (503 «high demand») is not (R-19): the
+                # retry helped 7 times out of 53 (31.10–03.11) and each one costs a request of the
+                # daily quota. A timeout / 504 is not either: the model already kept us waiting for
+                # up to GEMINI_TIMEOUT_MS. In both cases we go to the next model at once.
+                should_retry_same_model = (
+                    attempt == 0 and not is_slow_gemini_failure(exc)
+                    and classify_model_error(exc) != "unavailable"
+                    and (is_transient_gemini_error(exc) or isinstance(exc, TranslationIdMismatch))
                 )
                 if should_retry_same_model:
                     time.sleep(3)
