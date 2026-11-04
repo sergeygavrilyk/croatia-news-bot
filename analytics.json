@@ -1,62 +1,5 @@
 [
   {
-    "timestamp": "2026-10-17 16:01:08",
-    "execution_time": 21.1,
-    "funnel": {
-      "scraped_total": 35,
-      "scraped_by_source": {
-        "023": 10,
-        "Slobodna dalmacija": 15,
-        "Zadarski list": 10
-      },
-      "already_seen": 9,
-      "rejected_by_keywords": 7,
-      "duplicates_removed_by_ai": 19,
-      "rejection_reasons_list": [
-        "• Na rekordnih 170 metara 17. Dubrovačke t... ➡️ <b>Побут чужого міста (Дубровник)</b>",
-        "• Divan jesenski dan i fenonenalna marenda... ➡️ <b>Дубль новини 0</b>",
-        "• Wolt ukida potvrdu kvačicom: alkohol, en... ➡️ <b>Не стосується Задара, загальнонаціональна комерційна зміна</b>",
-        "• Poznati ronilac pokušao oboriti Guinness... ➡️ <b>Не відповідає пріоритетним темам для Задара чи України</b>",
-        "• Četiri dana nakon operacije raka pluća p... ➡️ <b>Геоблок (події за межами Хорватії/України)</b>",
-        "• Spolni odnosi barem jednom tjedno poveza... ➡️ <b>Світовий шум (абстрактна наука, поради)</b>",
-        "• Groblje u Dalmaciji donijelo pravilnik o... ➡️ <b>Побут чужого міста (Водіці)</b>",
-        "• Grad Rijeka dodjeljuje blagdansku potpor... ➡️ <b>Побут чужого міста (Рієка)</b>",
-        "• Zašto se mandarine prodaju u crvenim mre... ➡️ <b>Світовий шум / поради та лайфхаки</b>",
-        "• Na otočić pokraj Korčule došao važan bis... ➡️ <b>Побут іншого міста (Корчула)</b>",
-        "• Policija se sukobila s prosvjednicima u ... ➡️ <b>Геоблок (події у Франції)</b>",
-        "• Balzam za ispucale usne napravite sami o... ➡️ <b>Світовий шум (рецепти та поради)</b>",
-        "• Tegljač koji je vukao golemi stroj je la... ➡️ <b>Побут чужого міста (Спліт, Пельєшац)</b>",
-        "• Egipćanin kazneno prijavljen za krijumča... ➡️ <b>Побут іншого регіону (Горський котар)</b>",
-        "• Kuma sam u Dalmaciji, koliko da mladoj d... ➡️ <b>Інформаційний шум (обговорення в соцмережах про весільні подарунки)</b>",
-        "• Policija izvela veliku akciju kontrole t... ➡️ <b>Побут іншого міста (Кнін)</b>",
-        "• Boćari Debeljaka ove će sezone nastupiti... ➡️ <b>Спорт (бочарська ліга)</b>",
-        "• Druga šansa za posrnule poduzetnike: pog... ➡️ <b>Побут іншого регіону (Шибеник)</b>",
-        "• Ovih liječnika kronično nedostaje u Šibe... ➡️ <b>Побут іншого регіону (Шибеник)</b>"
-      ]
-    },
-    "backlog": {
-      "total_size": 19,
-      "sources": {
-        "023": 4,
-        "Slobodna dalmacija": 11,
-        "Zadarski list": 4
-      }
-    },
-    "published": {
-      "total": 0,
-      "ukraine_priority": 0,
-      "with_images": 0,
-      "text_only": 0,
-      "sources": {}
-    },
-    "models_used": {
-      "gemini-3.5-flash-lite": 1,
-      "gemini-3.6-flash": 0
-    },
-    "errors_count": 0,
-    "gemini_retries": 0
-  },
-  {
     "timestamp": "2026-10-17 19:01:08",
     "execution_time": 87.1,
     "funnel": {
@@ -7884,5 +7827,103 @@
     "gemini_region_blocked": false,
     "errors_count": 0,
     "gemini_retries": 4
+  },
+  {
+    "timestamp": "2026-11-04 09:01:15",
+    "execution_time": 119.3,
+    "funnel": {
+      "scraped_total": 35,
+      "scraped_by_source": {
+        "023": 10,
+        "Slobodna dalmacija": 15,
+        "Zadarski list": 10
+      },
+      "already_seen": 16,
+      "rejected_by_keywords": 5,
+      "rejected_by_rule": {
+        "тег RSS sport": 2,
+        "тег RSS nogomet": 1,
+        "igrača": 1,
+        "promo": 1
+      },
+      "unclassified_by_ai": 0,
+      "duplicates_removed_by_ai": 11,
+      "rejection_reasons_list": [
+        "• Mislio da je na utrci Formule 1? Nijemac jurio Dalmatinom, policija ga → Побут інших міст (Порушення швидкості в районі Госпіча) | Сутності: Німецький водій, Автострада А1, Поліція, Госпіч",
+        "• Od Homera do Trumpa: Kanadski pisac Yann Martel gostuje u emisiji HRT- → Не за тематикою (Телеінтервью з канадським письменником) | Сутності: Ян Мартель, Морана Касапович, HRT, Загреб",
+        "• U subotu se od Konavala do Straduna održava Oldtimer Rally, interes je → Побут інших міст (Ретро-автомобілі в Дубровнику) | Сутності: Oldtimer klub Dubrovnik, Дубровник, Konavle",
+        "• Večer tradicije, pjesme i plesa na Plitvičkim jezerima, stiže i Branko → Побут інших міст (Фольклорна подія на Плітвицьких озерах) | Сутності: Плітвицькі озера, Бранко Уводіч, Mukinje",
+        "• Akademska inkluzija na Sveučilištu u Dubrovniku okuplja poznata imena  → Побут інших міст (Студентський форум у Дубровнику) | Сутності: Свеучиліште у Дубровику, Silva Capurso, Дубровник",
+        "• Vozač (28) poginuo kod Požege. Sletio je autom s ceste pa udario u sta → Побут інших міст (ДТП зі смертельним наслідком біля Пожеги) | Сутності: Пожега, Каменска, Поліція",
+        "• Izborni debakl republikanaca, demokrati osvojili oba doma Kongresa! ‘O → Геоблок (Вибори в США) | Сутності: Дональд Трамп, Сенат США, Демократи, Конгресс США",
+        "• Pobjednici izbora iz sjene. U Senat ušli prvi musliman i prvi otvoreni → Геоблок (Вибори в Сенат США) | Сутності: Абдул Ель-Саєд, Мічиган, Сенат США, Гарі Пітерс",
+        "• Puhovski o rezultatima izbora: ‘Pitanje je kad će Trump početi divljat → Вже публікувалось (Коментар експерта про американські вибори) | Сутності: Жарко Пуховський, Дональд Трамп, США, Іран",
+        "• Iza omiljenog domaćeg nakita stoji priča obitelji koja već pola stolje → Реклама (Промо-історія сімейного ювелірного бренду) | Сутності: Бренд Prahir, Велика Гориця, Дражен Прахір",
+        "• Maja Sulić podijelila je s nama svoju jedinstvenu modnu filozofiju i t → Побут інших міст (Модна розповідь у Рієці) | Сутності: Мая Суліч, Рієка, Tower Center Rijeka"
+      ],
+      "rejected_by_reason": {
+        "Побут інших міст": 6,
+        "Не за тематикою": 1,
+        "Геоблок": 2,
+        "Вже публікувалось": 1,
+        "Реклама": 1
+      },
+      "updates_marked": 0,
+      "already_rejected": 10,
+      "rejected_by_code_examples": [
+        "[тег RSS sport] Zadar ponovno bez Mihailovića, Šare: Nadamo se povratku s barem jednom pobjedom",
+        "[тег RSS sport] Dječje utrke poseban su ukras Božićne utrke Biograd 2026., prijave su otvorene",
+        "[тег RSS nogomet] Sin Cristiana Ronalda prvi put pozvan u portugalsku U-17 reprezentaciju",
+        "[igrača] Sretni Riječanin osvojio je 8.000 eura u izvlačenju igre Joker, evo gdje je uplaćen listić",
+        "[promo] Uručene nagrade »Imam žicu!« najboljim učenicima iz matematike, fizike i IT-ja"
+      ]
+    },
+    "backlog": {
+      "total_size": 5,
+      "sources": {
+        "023": 3,
+        "Zadarski list": 2
+      }
+    },
+    "published": {
+      "total": 3,
+      "ukraine_priority": 0,
+      "with_images": 3,
+      "text_only": 0,
+      "og_images_found": 3,
+      "sources": {
+        "023": 3
+      }
+    },
+    "models_used": {
+      "gemini-3.5-flash-lite": 2
+    },
+    "models_by_task": {
+      "filter": "gemini-3.5-flash-lite",
+      "translate": "gemini-3.5-flash-lite"
+    },
+    "model_attempts": [
+      {
+        "task": "filter",
+        "model": "gemini-3.5-flash-lite",
+        "outcome": "ok"
+      },
+      {
+        "task": "translate",
+        "model": "gemini-3.5-flash-lite",
+        "outcome": "ok"
+      }
+    ],
+    "exhausted_models": [],
+    "demoted_models": [
+      "filter: gemini-3-flash-preview",
+      "filter: gemini-3.6-flash",
+      "translate: gemini-3.8-flash",
+      "translate: gemini-3.6-flash"
+    ],
+    "translate_budget_deferred": [],
+    "gemini_region_blocked": false,
+    "errors_count": 0,
+    "gemini_retries": 0
   }
 ]
