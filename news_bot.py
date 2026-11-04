@@ -204,7 +204,13 @@ class TranslationIdMismatch(ValueError):
     """Gemini returned translation IDs that do not match the batch and cannot be mapped back."""
 
 
-class GeminiRegionUnavailable(RuntimeError):
+class GeminiUnavailable(RuntimeError):
+    """R-22: жодна модель каскаду не відповіла через недоступність Gemini (503 / 504 / таймаут /
+    вичерпана квота) — збій на боці Google, а не бота. Новини лишаються в беклозі, лічильник невдач
+    перекладу не росте, запуск зелений; алерт — коли так 3 запуски поспіль."""
+
+
+class GeminiRegionUnavailable(GeminiUnavailable):
     """D-13: 400 FAILED_PRECONDITION «User location is not supported» — Gemini API не обслуговує
     регіон цього раннера GitHub. Усі моделі відповідають однаково, тож каскад зупиняється,
     новини лишаються в беклозі до наступного запуску, а запуск не вважається збоєм."""
@@ -505,6 +511,20 @@ def apply_model_memory(stats: dict | None, runs: list[dict], now: float | None =
         stats["demoted_models"] = demoted_all
 
 
+# R-22: алерт адміну, коли Gemini недоступний стільки запусків поспіль (менше — лише рядок у звіті).
+GEMINI_UNAVAILABLE_ALERT_AFTER_RUNS = 3
+
+
+def gemini_unavailable_streak(runs: list[dict]) -> int:
+    """How many of the latest runs in a row had «Gemini unavailable» (R-22)."""
+    streak = 0
+    for run in reversed(runs):
+        if not run.get("gemini_unavailable"):
+            break
+        streak += 1
+    return streak
+
+
 def quota_day_start(now: float | None = None) -> float:
     """Epoch of the last midnight in QUOTA_RESET_TZ — when Gemini daily quotas reset."""
     now = time.time() if now is None else now
@@ -664,7 +684,9 @@ def send_analytics_to_admin(stats: dict) -> None:
         f"⏱ Час виконання: {stats['execution_time']} сек\n"
         f"⚠️ Помилок: {stats['errors_count']} | Повторних спроб Gemini: {stats['gemini_retries']}\n\n"
         + ("🌍 <b>Gemini API недоступний з регіону раннера GitHub</b> (400 «location») — "
-           "новини лишились у беклозі до наступного запуску\n\n" if stats.get("gemini_region_blocked") else "") +
+           "новини лишились у беклозі до наступного запуску\n\n" if stats.get("gemini_region_blocked") else "")
+        + ("☁️ <b>Gemini недоступний</b> (усі моделі 503 / 504 / квота) — "
+           "новини лишились у беклозі до наступного запуску\n\n" if stats.get("gemini_unavailable") else "") +
         "🔍 <b>Воронка:</b>\n"
         f"▪️ Переглянуто RSS-записів: {funnel['scraped_total']}\n"
         f"▪️ За джерелами: {html.escape(scraped_src)}\n"
@@ -1053,11 +1075,12 @@ def _generate_structured_response(prompt: str, schema, stats: dict | None, opera
     cascade = models if models is not None else FILTER_MODELS
     available = [model for model in cascade if model not in EXHAUSTED_MODELS]
     if not available:
-        raise RuntimeError(
+        raise GeminiUnavailable(
             f"{operation}: квоту вичерпано для всіх моделей каскаду ({', '.join(cascade)})"
         )
 
     last_error = None
+    outcomes: list[str] = []
     for model_name in available:
         # Retry a transient failure once per model; otherwise move to fallback model.
         # Exhausted quota (429) is not retried: the model is skipped until the end of the run.
@@ -1109,7 +1132,8 @@ def _generate_structured_response(prompt: str, schema, stats: dict | None, opera
 
             except Exception as exc:
                 last_error = exc
-                _record_model_attempt(stats, task, model_name, classify_model_error(exc))
+                outcomes.append(classify_model_error(exc))
+                _record_model_attempt(stats, task, model_name, outcomes[-1])
                 if stats is not None:
                     stats["gemini_retries"] += 1
                 logging.warning(
@@ -1143,6 +1167,12 @@ def _generate_structured_response(prompt: str, schema, stats: dict | None, opera
                 break
         logging.warning("%s: переходимо до резервної моделі після помилки %s", operation, model_name)
 
+    if outcomes and set(outcomes) <= MODEL_FAILURE_OUTCOMES:
+        # R-22: every model was unavailable (503 / 504 / timeout / quota) — Google's side.
+        raise GeminiUnavailable(
+            f"{operation}: Gemini недоступний — усі моделі каскаду ({', '.join(available)}) "
+            f"відповіли 503 / 504 / таймаутом / квотою"
+        ) from last_error
     raise RuntimeError(f"Усі моделі Gemini не змогли виконати операцію {operation}") from last_error
 
 
@@ -1338,8 +1368,8 @@ HISTORY:
             logging.info("Позначено як оновлення: %s", articles[idx]["title"])
         return filtered, rejected
 
-    except GeminiRegionUnavailable:
-        raise  # D-13: not a filter failure — the backlog is unchanged, main() keeps the run green
+    except GeminiUnavailable:
+        raise  # D-13, R-22: not a filter failure — the backlog is unchanged, main() keeps the run green
     except Exception as exc:
         logging.exception("Критична помилка редакційної фільтрації; публікацію зупинено")
         send_alert_to_admin(f"Gemini/валідація фільтрації не спрацювала. Беклог збережено. Помилка: {exc}")
@@ -1510,9 +1540,13 @@ def validate_translation_strict(translation: dict, original_article: dict) -> bo
         translation["content"] = content
 
     content_plain = plain_text(content)
-    title_and_body = f"{title}\n{content_plain}"
-    source_text = f"{original_article.get('title', '')} {plain_text(original_article.get('description', ''))}"
-    sports_text = f"{source_text} {title_and_body} {hashtags}"
+    # R-22: like the scraper's stop-words (R-21) — the source title + lead and the translated title +
+    # first 300 characters, not the whole article («ministar turizma i sporta», «afera „Sport i glazba“»
+    # kept articles stuck in the backlog after the filter had approved them, 04.11).
+    lead_chars = STOP_WORDS_DESCRIPTION_CHARS
+    source_text = (f"{original_article.get('title', '')} "
+                   f"{plain_text(original_article.get('description', ''))[:lead_chars]}")
+    sports_text = f"{source_text} {title}\n{content_plain[:lead_chars]} {hashtags}"
     if SPORTS_PATTERN.search(sports_text):
         logging.warning("Статтю %s заблоковано через спортивну тематику", translation.get("id"))
         return False
@@ -2127,8 +2161,9 @@ def process_backlog(stats: dict | None = None) -> None:
         translations = generate_news_texts_json(
             prompt, expected_ids, stats, id_aliases=_url_number_aliases(batch)
         )
-    except GeminiRegionUnavailable:
-        # D-13: the runner's region, not the articles — the translation failure counter is not raised.
+    except GeminiUnavailable:
+        # D-13, R-22: the runner's region or Google's outage, not the articles — the translation
+        # failure counter is not raised.
         _save_postprocessing_backlog(backlog, evaluated_urls, approved_urls, sent_urls)
         raise
     except Exception as exc:
@@ -2245,6 +2280,7 @@ def _empty_stats() -> dict:
         "demoted_models": [],
         "translate_budget_deferred": [],
         "gemini_region_blocked": False,
+        "gemini_unavailable": False,
         "errors_count": 0,
         "gemini_retries": 0,
     }
@@ -2386,6 +2422,7 @@ def build_weekly_report(runs: list[dict], now: float | None = None,
     demoted_runs = 0
     budget_runs = 0
     region_runs = 0
+    unavailable_runs = 0
     for run in week:
         if run.get("model_attempts"):
             attempt_runs += 1
@@ -2395,6 +2432,8 @@ def build_weekly_report(runs: list[dict], now: float | None = None,
             budget_runs += 1
         if run.get("gemini_region_blocked"):
             region_runs += 1
+        if run.get("gemini_unavailable"):
+            unavailable_runs += 1
         for attempt in run.get("model_attempts") or []:
             if not isinstance(attempt, dict):
                 continue
@@ -2433,6 +2472,8 @@ def build_weekly_report(runs: list[dict], now: float | None = None,
         lines.append(f"💰 Переклад без спільної з фільтром моделі (денний бюджет): у {budget_runs} запусках")
     if region_runs:
         lines.append(f"🌍 Gemini недоступний з регіону раннера GitHub: {region_runs} запусків")
+    if unavailable_runs:
+        lines.append(f"☁️ Gemini недоступний (усі моделі 503 / 504 / квота): {unavailable_runs} запусків")
 
     sources: dict[str, dict[str, int]] = {}
     for run in week:
@@ -2535,6 +2576,18 @@ def main() -> None:
         # D-13: Gemini API does not serve this GitHub runner's region — not a bot failure.
         stats["gemini_region_blocked"] = True
         logging.warning("%s — новини лишаються в беклозі до наступного запуску", exc)
+    except GeminiUnavailable as exc:
+        # R-22: all models 503 / 504 / quota — Google's outage, not a bot failure.
+        stats["gemini_unavailable"] = True
+        logging.warning("%s — новини лишаються в беклозі до наступного запуску", exc)
+        try:
+            if gemini_unavailable_streak(load_analytics()) + 1 >= GEMINI_UNAVAILABLE_ALERT_AFTER_RUNS:
+                send_alert_to_admin(
+                    f"Gemini недоступний {GEMINI_UNAVAILABLE_ALERT_AFTER_RUNS} запуски поспіль "
+                    f"(усі моделі 503 / 504 / квота). Новини чекають у беклозі. Останнє: {exc}"
+                )
+        except Exception:
+            logging.exception("Не вдалося перевірити серію недоступності Gemini")
     except Exception as exc:
         critical_error = True
         stats["errors_count"] += 1
@@ -2563,7 +2616,7 @@ def main() -> None:
             critical_error = True
             logging.exception("Не вдалося зберегти аналітику")
         if (DRY_RUN or stats["published"]["total"] > 0 or stats["errors_count"] > 0
-                or stats.get("gemini_region_blocked")):
+                or stats.get("gemini_region_blocked") or stats.get("gemini_unavailable")):
             send_analytics_to_admin(stats)
         if weekly_due:
             send_weekly_report()  # a failure is only logged: the run itself stays green
