@@ -28,8 +28,8 @@
     ],
     "source": "023",
     "timestamp": 1793782973,
-    "translation_failures": 1,
-    "retry_after": 1793793789.1133409,
+    "translation_failures": 2,
+    "retry_after": 1793804623.1926367,
     "last_translation_error": "Не пройдено сувору перевірку перекладу"
   }
 ]
