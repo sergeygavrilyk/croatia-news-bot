@@ -1,64 +1,5 @@
 [
   {
-    "timestamp": "2026-10-18 12:01:02",
-    "execution_time": 186.0,
-    "funnel": {
-      "scraped_total": 35,
-      "scraped_by_source": {
-        "023": 10,
-        "Slobodna dalmacija": 15,
-        "Zadarski list": 10
-      },
-      "already_seen": 4,
-      "rejected_by_keywords": 6,
-      "duplicates_removed_by_ai": 18,
-      "rejection_reasons_list": [
-        "• Grah, sardine i povrće iz konzerve: nutr... ➡️ <b>Світовий шум</b>",
-        "• Rijeci kronično nedostaje mjesta za bark... ➡️ <b>Побут чужих міст</b>",
-        "• Zemunička taekwondoašica Luana Lleshi os... ➡️ <b>Спорт</b>",
-        "• Limač Dorian Pribilović srebrni u župani... ➡️ <b>Спорт</b>",
-        "• U Senju predstavljena knjiga o bl. Alojz... ➡️ <b>Побут чужих міст</b>",
-        "• Do navodnog susreta s izvanzemaljcima os... ➡️ <b>Світовий шум</b>",
-        "• Primorac i Vitez do vrijednih bodova: Fi... ➡️ <b>Спорт</b>",
-        "• Stalan osjećaj da morate na zahod i nako... ➡️ <b>Світовий шум</b>",
-        "• Zemlja se počela brže okretati i promije... ➡️ <b>Світовий шум</b>",
-        "• Katarina Vučičić iz zadarske Ultime osvo... ➡️ <b>Спорт</b>",
-        "• Tri zlata, srebro i bronca! Zadarski par... ➡️ <b>Спорт</b>",
-        "• Što ako AI ima osjećaje? Zbog jedne mogu... ➡️ <b>Світовий шум</b>",
-        "• Koliko često prati podove: tjedno pranje... ➡️ <b>Світовий шум</b>",
-        "• Tijekom rutinske kontrole prometa ‘pao‘ ... ➡️ <b>Дубль</b>",
-        "• Vozio unatoč poništenoj dozvoli, pa se p... ➡️ <b>Побут чужих міст</b>",
-        "• Kulturna i obiteljska baština: na jednom... ➡️ <b>Побут чужих міст</b>",
-        "• Na današnji dan u Pločama osnivan prvi o... ➡️ <b>Побут чужих міст</b>",
-        "• Dubrovački vodič otkriva tajne posla, al... ➡️ <b>Побут чужих міст</b>"
-      ]
-    },
-    "backlog": {
-      "total_size": 25,
-      "sources": {
-        "023": 6,
-        "Slobodna dalmacija": 12,
-        "Zadarski list": 7
-      }
-    },
-    "published": {
-      "total": 3,
-      "ukraine_priority": 0,
-      "with_images": 3,
-      "text_only": 0,
-      "sources": {
-        "Slobodna dalmacija": 2,
-        "Zadarski list": 1
-      }
-    },
-    "models_used": {
-      "gemini-3.5-flash-lite": 2,
-      "gemini-3.6-flash": 0
-    },
-    "errors_count": 0,
-    "gemini_retries": 0
-  },
-  {
     "timestamp": "2026-10-18 13:01:04",
     "execution_time": 93.5,
     "funnel": {
@@ -8179,5 +8120,112 @@
     "gemini_region_blocked": false,
     "errors_count": 0,
     "gemini_retries": 1
+  },
+  {
+    "timestamp": "2026-11-04 16:01:17",
+    "execution_time": 124.2,
+    "funnel": {
+      "scraped_total": 35,
+      "scraped_by_source": {
+        "023": 10,
+        "Slobodna dalmacija": 15,
+        "Zadarski list": 10
+      },
+      "already_seen": 18,
+      "rejected_by_keywords": 8,
+      "rejected_by_rule": {
+        "тег RSS lifestyle": 1,
+        "КАПС у заголовку": 1,
+        "тег RSS sport": 2,
+        "sport": 1,
+        "URL /sport/": 1,
+        "тег RSS nogomet": 2
+      },
+      "unclassified_by_ai": 0,
+      "duplicates_removed_by_ai": 7,
+      "rejection_reasons_list": [
+        "• Zadrani ne mare za kupone; Zadarska županija na samom dnu u Hrvatskoj  → Побут інших міст (Ціни та купівля по регіонах) | Сутності: Zadrani, Zadarska županija, Google, Hrvatska, Temu",
+        "• Ratko je prije pet godina na kršu posadio nekoliko sadnica, sad bere s → Не за тематикою (Сільське господарство у зaleđu) | Сутності: Ratko Periše, Krković, skradinsko zaleđe, pistacije",
+        "• 170 tisuća eura za savjetovanje, sanjkalište koje ne radi i 73 neriješ → Побут інших міст (Проблеми у Брод Моравицях) | Сутності: Brod Moravice, Primorsko-goranska županija, Ivica Lukanović, Toni Štimac",
+        "• Prevrnuo se kamion koji je prevozio stoku: Promet između Delnica i Rij → Побут інших міст (ДТП з вантажівкою біля Рієки) | Сутності: Delnice, Rijeka, A6, stoka",
+        "• ‘Kamioni nikad ne kasne!‘ Frankovićeva izjava o kokainu dobila nastava → Вже публікувалось (Коментар мера про наркотики) | Сутності: Mato Franković, Dubrovnik, kokain, policija",
+        "• Trumpov poraz mogao bi ohrabriti trgovinske partnere SAD-a na otpor nj → Геоблок (Політика в США) | Сутності: Donald Trump, SAD, Kongres, Kina",
+        "• Regulator privremeno zabranio emitiranje dijela programa TV Informera → Геоблок (Медіа в Сербії) | Сутності: REM, TV Informer, Aleksandar Vučić, Srbija"
+      ],
+      "rejected_by_reason": {
+        "Побут інших міст": 3,
+        "Не за тематикою": 1,
+        "Вже публікувалось": 1,
+        "Геоблок": 2
+      },
+      "updates_marked": 0,
+      "already_rejected": 14,
+      "rejected_by_code_examples": [
+        "[тег RSS lifestyle] Božićni kaktus ne cvate? Premjestite ga u sobu u kojoj se navečer ne pali svjetlo",
+        "[КАПС у заголовку] OSVOJI KINO ULAZNICE Darujemo 4 kino ulaznice za film “POSLJEDNJI RIMSKI BOG” u Cinestaru Zadar",
+        "[тег RSS sport] Lucija Mijolović blista na Svjetskom prvenstvu; Paraplivačica PK Zadar donosi dvije medalje iz Portu",
+        "[sport] Mladi Dubrovčanin s medaljom se vratio u Grad, pogledajte kako su ga dočekali! ‘Povijesni trenutak z",
+        "[URL /sport/] Vojnović je ‘gorio‘: Svečano dočekan judaš i osvajač brončane medalje Europskom prvenstvu Borna Buti",
+        "[тег RSS sport] Juniori i kadeti Rijeke ostvarili pun bodovni učinak, Đivoje: “Neću dopustiti momčadi da sada makne ",
+        "[тег RSS nogomet] Pioniri Rijeke i Pomorca osvojili samo bod u 9. kolu: Igra i dojam ispred rezultata, Dinamo i Gorica",
+        "[тег RSS nogomet] PSG nakon četiri kola na prosjeku od čak pet golova po utakmici Lige prvaka"
+      ]
+    },
+    "backlog": {
+      "total_size": 4,
+      "sources": {
+        "Zadarski list": 1,
+        "Slobodna dalmacija": 2,
+        "023": 1
+      }
+    },
+    "published": {
+      "total": 1,
+      "ukraine_priority": 0,
+      "with_images": 1,
+      "text_only": 0,
+      "og_images_found": 0,
+      "sources": {
+        "Slobodna dalmacija": 1
+      }
+    },
+    "models_used": {
+      "gemini-3.5-flash-lite": 2
+    },
+    "models_by_task": {
+      "filter": "gemini-3.5-flash-lite",
+      "translate": "gemini-3.5-flash-lite"
+    },
+    "model_attempts": [
+      {
+        "task": "filter",
+        "model": "gemini-3.5-flash-lite",
+        "outcome": "ok"
+      },
+      {
+        "task": "translate",
+        "model": "gemini-3.8-flash",
+        "outcome": "unavailable"
+      },
+      {
+        "task": "translate",
+        "model": "gemini-3.6-flash",
+        "outcome": "unavailable"
+      },
+      {
+        "task": "translate",
+        "model": "gemini-3.5-flash-lite",
+        "outcome": "ok"
+      }
+    ],
+    "exhausted_models": [],
+    "demoted_models": [
+      "filter: gemini-3-flash-preview",
+      "filter: gemini-3.6-flash"
+    ],
+    "translate_budget_deferred": [],
+    "gemini_region_blocked": false,
+    "errors_count": 2,
+    "gemini_retries": 2
   }
 ]
