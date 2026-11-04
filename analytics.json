@@ -1,64 +1,5 @@
 [
   {
-    "timestamp": "2026-10-18 08:01:02",
-    "execution_time": 160.0,
-    "funnel": {
-      "scraped_total": 35,
-      "scraped_by_source": {
-        "023": 10,
-        "Slobodna dalmacija": 15,
-        "Zadarski list": 10
-      },
-      "already_seen": 3,
-      "rejected_by_keywords": 6,
-      "duplicates_removed_by_ai": 18,
-      "rejection_reasons_list": [
-        "• Do navodnog susreta s izvanzemaljcima os... ➡️ <b>Світовий шум</b>",
-        "• Kad Gemäldegalerie postane dom. U sklopu... ➡️ <b>Інші країни (Геоблок)</b>",
-        "• Brkato društvo ponovno u Zadru: Patuljas... ➡️ <b>Дубль або несуттєва подія</b>",
-        "• Stalan osjećaj da morate na zahod i nako... ➡️ <b>Світовий шум</b>",
-        "• “Sav taj veličanstveni život” Iide Turpe... ➡️ <b>Світовий шум</b>",
-        "• Dubrovnik ponovno vodeća europska obalna... ➡️ <b>Побут інших міст</b>",
-        "• Ispovijest čovjeka koji je bio jedan od ... ➡️ <b>Інші країни (Геоблок)</b>",
-        "• Katarina Vučičić iz zadarske Ultime osvo... ➡️ <b>Спорт</b>",
-        "• Pariz kao bojno polje autoindustrije: Ki... ➡️ <b>Інші країни (Геоблок)</b>",
-        "• Program Mjeseca hrvatske knjige u listop... ➡️ <b>Побут інших міст</b>",
-        "• Koliko često prati podove: tjedno pranje... ➡️ <b>Світовий шум</b>",
-        "• Volkswagen otkrio novi ID. Tiguan: Vraća... ➡️ <b>Дубль існуючої новини</b>",
-        "• Sezona jest mlada, ali prvi dalmatinski ... ➡️ <b>Спорт</b>",
-        "• Josip Gregov u Rijeci pobijedio u sve tr... ➡️ <b>Спорт</b>",
-        "• Jedna poruka mogla bi promijeniti raspol... ➡️ <b>Світовий шум</b>",
-        "• U strogoj tajnosti: prije 36 godina odra... ➡️ <b>Побут інших міст</b>",
-        "• Drnišani svojom čuvenom delicijom pokori... ➡️ <b>Побут інших міст</b>",
-        "• Danas slavimo Gospu od Danača, čuvaricu ... ➡️ <b>Побут інших міст</b>"
-      ]
-    },
-    "backlog": {
-      "total_size": 20,
-      "sources": {
-        "023": 6,
-        "Slobodna dalmacija": 8,
-        "Zadarski list": 6
-      }
-    },
-    "published": {
-      "total": 2,
-      "ukraine_priority": 0,
-      "with_images": 0,
-      "text_only": 2,
-      "sources": {
-        "023": 1,
-        "Slobodna dalmacija": 1
-      }
-    },
-    "models_used": {
-      "gemini-3.5-flash-lite": 1,
-      "gemini-3.6-flash": 1
-    },
-    "errors_count": 0,
-    "gemini_retries": 0
-  },
-  {
     "timestamp": "2026-10-18 09:01:03",
     "execution_time": 146.1,
     "funnel": {
@@ -8025,5 +7966,103 @@
     "gemini_region_blocked": false,
     "errors_count": 1,
     "gemini_retries": 4
+  },
+  {
+    "timestamp": "2026-11-04 12:01:18",
+    "execution_time": 137.8,
+    "funnel": {
+      "scraped_total": 35,
+      "scraped_by_source": {
+        "023": 10,
+        "Slobodna dalmacija": 15,
+        "Zadarski list": 10
+      },
+      "already_seen": 15,
+      "rejected_by_keywords": 8,
+      "rejected_by_rule": {
+        "КАПС у заголовку": 1,
+        "тег RSS sport": 4,
+        "igrača": 1,
+        "utakmici": 1,
+        "тег RSS nogomet": 1
+      },
+      "unclassified_by_ai": 0,
+      "duplicates_removed_by_ai": 9,
+      "rejection_reasons_list": [
+        "• Otpor u Domu zdravlja PGŽ-a. Više od trećine zaposlenih odbilo potpisa → Побут інших міст (Рієка) | Сутності: Dom zdravlja PGŽ, Primorsko-goranska županija, ugovori o radu",
+        "• ‘Kreativni i u zlatnim godinama‘: novi ciklus besplatnih radionica u O → Побут інших міст (Дубровник) | Сутності: Dubrovačke knjižnice, Ogranak Lapad, Carmela Grgurević",
+        "• UABA Rijeke osuđuje vandalizam nad spomen-pločom posvećenom Titu; pozi → Побут інших міст (Рієка) | Сутності: UABA Rijeka, Josip Broz Tito, Pećine",
+        "• Promet između Kikovice i Oštrovice prekinut zbog nesreće u kojoj su su → Побут інших міст (ДТП на трасі) | Сутності: A6, Kikovica, Oštrovica",
+        "• Studenti RIT Croatia osmislili aplikaciju koja spaja otoke, berbu masl → Побут інших міст (Загреб та Дубровник) | Сутності: RIT Croatia, Zagreb, Dubrovnik",
+        "• Mato Franković o drogama, iznajmljivanju i političkim ambicijama: Na s → Вже публікувалось (Дубровник) | Сутності: Mato Franković, Radio Dubrovnik, Srijedom otvoreno",
+        "• ‘Tko šmrče i gdje? Prema izračunu prosjeka, u Saboru šmrče 15 zastupni → Вже публікувалось (Дубровник) | Сутності: Anita Bonačić Obradović, Ranko Ostojić, SDP Dubrovnik",
+        "• SDP-ovci o priuštivom stanovanju: To je ona verzija u kojoj mladi na k → Побут інших міст (Дубровник) | Сутності: Anita Bonačić Obradović, Ranko Ostojić, Osijek",
+        "• Anita Bonačić Obradović i Ranko Ostojić o rješenju za otpad: Kakva je  → Побут інших міст (Дубровник) | Сутності: Anita Bonačić Obradović, Ranko Ostojić, Čistoća Dubrovnik"
+      ],
+      "rejected_by_reason": {
+        "Побут інших міст": 7,
+        "Вже публікувалось": 2
+      },
+      "updates_marked": 0,
+      "already_rejected": 9,
+      "rejected_by_code_examples": [
+        "[КАПС у заголовку] OSVOJI KINO ULAZNICE Darujemo 4 kino ulaznice za film “POSLJEDNJI RIMSKI BOG” u Cinestaru Zadar",
+        "[тег RSS sport] Lucija Mijolović blista na Svjetskom prvenstvu; Paraplivačica PK Zadar donosi dvije medalje iz Portu",
+        "[тег RSS sport] Zadar ponovno bez Mihailovića, Šare: Nadamo se povratku s barem jednom pobjedom",
+        "[igrača] Kreće nova sezona LIKAR-a: Osam momčadi, više od 150 igrača, a svima je zajedničko jedno – ljubav pr",
+        "[utakmici] Krševan Klarica je u sjajnoj šuterskoj formi, a sada je stigla i službena potvrda",
+        "[тег RSS sport] Brazilac debitira pred domaćom publikom. Camara mijenja Ocona do kraja sezone",
+        "[тег RSS sport] Antonia Ružić preko Čaraeve do drugog kola Hong Konga",
+        "[тег RSS nogomet] Hrvatske nogometašice u Ligi nacija protiv Slovačke, Bugarske i Gibraltara"
+      ]
+    },
+    "backlog": {
+      "total_size": 3,
+      "sources": {
+        "Slobodna dalmacija": 2,
+        "023": 1
+      }
+    },
+    "published": {
+      "total": 3,
+      "ukraine_priority": 0,
+      "with_images": 3,
+      "text_only": 0,
+      "og_images_found": 2,
+      "sources": {
+        "023": 2,
+        "Slobodna dalmacija": 1
+      }
+    },
+    "models_used": {
+      "gemini-3.5-flash-lite": 2
+    },
+    "models_by_task": {
+      "filter": "gemini-3.5-flash-lite",
+      "translate": "gemini-3.5-flash-lite"
+    },
+    "model_attempts": [
+      {
+        "task": "filter",
+        "model": "gemini-3.5-flash-lite",
+        "outcome": "ok"
+      },
+      {
+        "task": "translate",
+        "model": "gemini-3.5-flash-lite",
+        "outcome": "ok"
+      }
+    ],
+    "exhausted_models": [],
+    "demoted_models": [
+      "filter: gemini-3-flash-preview",
+      "filter: gemini-3.6-flash",
+      "translate: gemini-3.8-flash",
+      "translate: gemini-3.6-flash"
+    ],
+    "translate_budget_deferred": [],
+    "gemini_region_blocked": false,
+    "errors_count": 0,
+    "gemini_retries": 0
   }
 ]
