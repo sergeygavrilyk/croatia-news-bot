@@ -1,67 +1,5 @@
 [
   {
-    "timestamp": "2026-10-18 10:01:02",
-    "execution_time": 92.1,
-    "funnel": {
-      "scraped_total": 35,
-      "scraped_by_source": {
-        "023": 10,
-        "Slobodna dalmacija": 15,
-        "Zadarski list": 10
-      },
-      "already_seen": 6,
-      "rejected_by_keywords": 6,
-      "duplicates_removed_by_ai": 22,
-      "rejection_reasons_list": [
-        "• Tommy izlazi na burzu i želi prikupiti 2... ➡️ <b>Економіка національного рівня без прямого зв'язку із Задаром чи біженцями</b>",
-        "• Teška prometna nesreća na Jadranskoj mag... ➡️ <b>Побут і події іншого міста (Шибеник)</b>",
-        "• Zemunička taekwondoašica Luana Lleshi os... ➡️ <b>Спорт</b>",
-        "• Neke ambulante udaljene i 100 kilometara... ➡️ <b>Побут і медицина іншого регіону (Новаля/Лика)</b>",
-        "• Žena na Tehnološkoj cesti u Šibeniku pre... ➡️ <b>Побут і події іншого міста (Шибеник)</b>",
-        "• Do navodnog susreta s izvanzemaljcima os... ➡️ <b>Світовий шум та псевдонаука</b>",
-        "• “Ja ne živim svoj život: ja ga pišem”: P... ➡️ <b>Культурні події іншого міста (Рієка)</b>",
-        "• Vozio unatoč poništenoj dozvoli, pa se p... ➡️ <b>Кримінал і події іншого міста (Шибеник)</b>",
-        "• Stalan osjećaj da morate na zahod i nako... ➡️ <b>Поради дієтологів / абстрактне здоров'я</b>",
-        "• Kad Gemäldegalerie postane dom. U sklopu... ➡️ <b>Події за межами Хорватії та України (Геоблок)</b>",
-        "• Kulturna i obiteljska baština: na jednom... ➡️ <b>Побут і події іншого міста (Шибеник)</b>",
-        "• Katarina Vučičić iz zadarske Ultime osvo... ➡️ <b>Спорт</b>",
-        "• “Sav taj veličanstveni život” Iide Turpe... ➡️ <b>Світовий шум / літературна рецензія</b>",
-        "• Na današnji dan u Pločama osnivan prvi o... ➡️ <b>Історичні події іншого міста (Плоче)</b>",
-        "• Koliko često prati podove: tjedno pranje... ➡️ <b>Поради по дому / світовий шум</b>",
-        "• Dubrovački vodič otkriva tajne posla, al... ➡️ <b>Побут і туризм іншого міста (Дубровник)</b>",
-        "• Josip Gregov u Rijeci pobijedio u sve tr... ➡️ <b>Спорт</b>",
-        "• Dubrovački vodič otkriva tajne posla, al... ➡️ <b>Дубль новини ID 15</b>",
-        "• Nagrada za životno djelo: vrijedno prizn... ➡️ <b>Події іншого міста (Шибеник)</b>",
-        "• Dubrovnik ponovno vodeća europska obalna... ➡️ <b>Події іншого міста (Дубровник)</b>",
-        "• Program Mjeseca hrvatske knjige u listop... ➡️ <b>Культурні події іншого міста (Дубровник)</b>",
-        "• U strogoj tajnosti: prije 36 godina odra... ➡️ <b>Історичні події іншого регіону (Шибеник)</b>"
-      ]
-    },
-    "backlog": {
-      "total_size": 23,
-      "sources": {
-        "023": 6,
-        "Slobodna dalmacija": 12,
-        "Zadarski list": 5
-      }
-    },
-    "published": {
-      "total": 1,
-      "ukraine_priority": 0,
-      "with_images": 1,
-      "text_only": 0,
-      "sources": {
-        "Slobodna dalmacija": 1
-      }
-    },
-    "models_used": {
-      "gemini-3.5-flash-lite": 2,
-      "gemini-3.6-flash": 0
-    },
-    "errors_count": 0,
-    "gemini_retries": 0
-  },
-  {
     "timestamp": "2026-10-18 11:01:09",
     "execution_time": 169.0,
     "funnel": {
@@ -8110,5 +8048,88 @@
     "gemini_region_blocked": false,
     "errors_count": 1,
     "gemini_retries": 2
+  },
+  {
+    "timestamp": "2026-11-04 14:01:27",
+    "execution_time": 131.0,
+    "funnel": {
+      "scraped_total": 35,
+      "scraped_by_source": {
+        "023": 10,
+        "Slobodna dalmacija": 15,
+        "Zadarski list": 10
+      },
+      "already_seen": 23,
+      "rejected_by_keywords": 4,
+      "rejected_by_rule": {
+        "тег RSS lifestyle": 1,
+        "КАПС у заголовку": 1,
+        "тег RSS sport": 1,
+        "promo": 1
+      },
+      "unclassified_by_ai": 0,
+      "duplicates_removed_by_ai": 0,
+      "rejection_reasons_list": [],
+      "rejected_by_reason": {},
+      "updates_marked": 0,
+      "already_rejected": 14,
+      "rejected_by_code_examples": [
+        "[тег RSS lifestyle] Božićni kaktus ne cvate? Premjestite ga u sobu u kojoj se navečer ne pali svjetlo",
+        "[КАПС у заголовку] OSVOJI KINO ULAZNICE Darujemo 4 kino ulaznice za film “POSLJEDNJI RIMSKI BOG” u Cinestaru Zadar",
+        "[тег RSS sport] Lucija Mijolović blista na Svjetskom prvenstvu; Paraplivačica PK Zadar donosi dvije medalje iz Portu",
+        "[promo] Lidl Hrvatska osvojio nagradu HRIO za velika poduzeća u godini obilježavanja 20 godina poslovanja"
+      ]
+    },
+    "backlog": {
+      "total_size": 11,
+      "sources": {
+        "Slobodna dalmacija": 6,
+        "023": 2,
+        "Zadarski list": 3
+      }
+    },
+    "published": {
+      "total": 0,
+      "ukraine_priority": 0,
+      "with_images": 0,
+      "text_only": 0,
+      "og_images_found": 0,
+      "sources": {}
+    },
+    "models_used": {},
+    "models_by_task": {
+      "filter": null,
+      "translate": null
+    },
+    "model_attempts": [
+      {
+        "task": "filter",
+        "model": "gemini-3-flash-preview",
+        "outcome": "unavailable"
+      },
+      {
+        "task": "filter",
+        "model": "gemini-3.6-flash",
+        "outcome": "unavailable"
+      },
+      {
+        "task": "filter",
+        "model": "gemini-3.5-flash-lite",
+        "outcome": "unavailable"
+      },
+      {
+        "task": "filter",
+        "model": "gemini-3.1-flash-lite",
+        "outcome": "unavailable"
+      }
+    ],
+    "exhausted_models": [],
+    "demoted_models": [
+      "translate: gemini-3.8-flash"
+    ],
+    "translate_budget_deferred": [],
+    "gemini_region_blocked": false,
+    "errors_count": 1,
+    "gemini_retries": 4
   }
 ]
