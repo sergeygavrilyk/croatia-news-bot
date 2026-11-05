@@ -129,3 +129,20 @@ def test_translation_prompt_owner_edits_31_10(bot):
     assert "спершу 🇺🇦, потім 📄" in prompt
     assert "не довшим за 800 символів" in prompt and "900" not in prompt
     assert "мови. УВАЖНО ПЕРЕВІРЯЙ ОРФОГРАФІЮ" in prompt and "літери.»" not in prompt
+
+
+def test_translation_prompt_owner_edits_05_11(bot):
+    """R-23 (05.11): правило 3 — 🇺🇦 лише коли Україна головна тема; правило 9 — хештег країни події."""
+    prompt = bot._build_translation_prompt([{"title": "T", "description": "D", "url": "https://a.hr/1"}])
+    assert ("— ГОЛОВНА ТЕМА новини, обов'язково постав емодзі 🇺🇦 на самий початок заголовка та винеси цю "
+            "інформацію у перший абзац. Якщо Україну лише згадано побіжно (у переліку країн, одним реченням) — "
+            "НЕ став 🇺🇦 і НЕ змінюй заголовок чи головну тему: головна подія оригіналу лишається в заголовку й "
+            "першому абзаці, а згадка про Україну — на своєму місці.") in prompt
+    assert "щоб привернути увагу" not in prompt and "Якщо в оригінальній новині згадується Україна" not in prompt
+    assert ("(наприклад, #Hrvatska). Якщо подія в іншій країні — ця країна латиницею (наприклад, #CrnaGora, "
+            "#Ukrajina, #Srbija), а не #Hrvatska.") in prompt
+
+
+@pytest.mark.parametrize("hashtags", ["#CrnaGora #Політика", "#Ukrajina #Політика", "#Srbija #Суспільство"])
+def test_foreign_country_first_hashtag_passes_validation(bot, hashtags):
+    assert bot.validate_translation_strict(make(hashtags), ORIGINAL)
