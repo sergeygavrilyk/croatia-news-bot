@@ -720,6 +720,9 @@ def send_analytics_to_admin(stats: dict) -> None:
         + (f"\n💰 Переклад: {html.escape(', '.join(_short_model(m) for m in stats['translate_budget_deferred']))} "
            f"— у кінці каскаду, денну квоту береже фільтр (бюджет перекладу {SHARED_MODEL_TRANSLATE_BUDGET} викликів)"
            if stats.get("translate_budget_deferred") else "")
+        + (f"\n🔤 Переклад відхилено, буде повторено: "
+           f"{html.escape('; '.join(stats['translation_rejected']))}"
+           if stats.get("translation_rejected") else "")
     )
     api_url = f"https://api.telegram.org/bot{TELEGRAM_BOT_TOKEN}/sendMessage"
     try:
@@ -1511,6 +1514,26 @@ def _latinize_first_hashtag(hashtags: str) -> str:
     return hashtags[:match.start()] + plain + hashtags[match.end():]
 
 
+# R-24 (05.11): літери, дозволені в перекладі, — латиниця й кирилиця (+ апостроф-модифікатор,
+# µ, ª/º). Слово іншим алфавітом (4.11 lite написала «із چهارма» — перське «чотири») — переклад
+# відхиляється, новина лишається в черзі на повторний переклад. Окремі грецькі/івритські/арабські
+# літери-двійники до цього замінює HOMOGLYPHS у clean_generated_field().
+ALLOWED_LETTER_PREFIXES = ("LATIN ", "CYRILLIC ", "MODIFIER LETTER ")
+ALLOWED_OTHER_LETTERS = {"µ", "ª", "º"}
+
+
+def foreign_script_words(text: str, limit: int = 3) -> list[str]:
+    """Words of the text with letters outside Latin/Cyrillic (R-24), at most `limit`."""
+    found = []
+    for word in re.findall(r"\S+", text or ""):
+        if any(ch.isalpha() and ch not in ALLOWED_OTHER_LETTERS
+               and not unicodedata.name(ch, "").startswith(ALLOWED_LETTER_PREFIXES) for ch in word):
+            found.append(word)
+            if len(found) >= limit:
+                break
+    return found
+
+
 def validate_translation_strict(translation: dict, original_article: dict) -> bool:
     title = str(translation.get("title", "")).strip()
     content = normalize_translation_html(translation.get("content", ""))
@@ -1540,6 +1563,12 @@ def validate_translation_strict(translation: dict, original_article: dict) -> bo
         translation["content"] = content
 
     content_plain = plain_text(content)
+    foreign = foreign_script_words(f"{title} {content_plain} {hashtags}")
+    if foreign:
+        translation["rejection_reason"] = f"чужий алфавіт: {' '.join(foreign)}"
+        logging.warning("Переклад %s містить слова чужим алфавітом: %s — перекладемо повторно",
+                        translation.get("id"), " ".join(foreign))
+        return False
     # R-22: like the scraper's stop-words (R-21) — the source title + lead and the translated title +
     # first 300 characters, not the whole article («ministar turizma i sporta», «afera „Sport i glazba“»
     # kept articles stuck in the backlog after the filter had approved them, 04.11).
@@ -2188,9 +2217,17 @@ def process_backlog(stats: dict | None = None) -> None:
             continue
 
         if not validate_translation_strict(translation, item):
-            record_translation_failure(item, "Не пройдено сувору перевірку перекладу")
+            reason = translation.get("rejection_reason")
+            record_translation_failure(
+                item, f"Не пройдено сувору перевірку перекладу ({reason})" if reason
+                else "Не пройдено сувору перевірку перекладу"
+            )
             if stats is not None:
                 stats["errors_count"] += 1
+                if reason:
+                    stats.setdefault("translation_rejected", []).append(
+                        f"{reason} — {str(item.get('title', ''))[:70]}"
+                    )
             continue
 
         title_prefix = UPDATE_PREFIX if item.get("is_update") else ""
