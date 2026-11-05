@@ -1,61 +1,5 @@
 [
   {
-    "timestamp": "2026-10-19 15:01:10",
-    "execution_time": 31.8,
-    "funnel": {
-      "scraped_total": 35,
-      "scraped_by_source": {
-        "023": 10,
-        "Slobodna dalmacija": 15,
-        "Zadarski list": 10
-      },
-      "already_seen": 0,
-      "rejected_by_keywords": 13,
-      "duplicates_removed_by_ai": 16,
-      "rejection_reasons_list": [
-        "• Zlatna jesen u Kutjevu: Obrano 7 milijuna kilograma grožđa, s potpisom ➡️ <b>Побутова новина виноробства з іншого хорватського міста за межами Задара.</b>",
-        "• Galerija Decumanus predstavlja retrospektivu kipara i slikara Ivana Vu ➡️ <b>Культурна подія іншого міста (Крк), що порушує стоп-тему про побутові/культурні новини інших хорватс</b>",
-        "• Spojene srcem i tradicijom: kako su otočanke na Žirju osmislile ‘mrunc ➡️ <b>Подія в регіоні Шибеника, не пов&#x27;язана із Задаром.</b>",
-        "• Pred opatijskim vijećnicima Plan upravljanja destinacijom ➡️ <b>Новина іншого хорватського міста (Опатія) без відношення до Задара.</b>",
-        "• Veliki uspjeh učenice Medicinske škole iz Zadra: njen ‘Konop‘ je osvoj ➡️ <b>Дублює або містить менш важливу інформацію порівняно з уже наявними у стрічці новинами; містить лока</b>",
-        "• Najveća izložba kravata u Hrvatskoj održana u Mrkoplju, svi mogu dopri ➡️ <b>Подія в Мркопалю, не пов&#x27;язана із Задаром.</b>",
-        "• Glazbena poslastica u Zadru; Gordan Tudor kao solist i autor na otvara ➡️ <b>Вже є схожа або детальніша інформація в історії / дублювання культурних анонсів концертного сезону.</b>",
-        "• Rijeka ovog tjedna ugošćuje konferenciju Blue Economy Alpe Adria i 12. ➡️ <b>Подія в Рієці, яка не належить до Задара і не є загальнонаціональною новиною найвищого пріоритету.</b>",
-        "• Odbila se zaustaviti policiji u Zadru: Napuhala 1,26 promila, kazna 1. ➡️ <b>Повторний/рутинний кримінально-дорожній переказ дрібного порушення без системної значущості для діас</b>",
-        "• Otvoreni Dani Slavonije u Rijeci. Ponuda? Standardna, kvalitetna i pra ➡️ <b>Ярмарок у Рієці, що не стосується Задара.</b>",
-        "• Preokret na granici s BiH! Devet prijelaza mijenja status, jedan nesta ➡️ <b>Тематика загальних змін переходів з БіХ, що не є ключовою національною новиною для Задара.</b>",
-        "• Nevjerojatne brojke iz Zadra: svaka sedma nova zgrada u Hrvatskoj nikn ➡️ <b>Неповна або обірвана стаття (незавершений опис) із закликом придбання.</b>",
-        "• Nije imao položeno, alkoholiziran i odbio test na droge: logično kako  ➡️ <b>Подія в Стоні/Дубровнику, що не стосується Задара.</b>",
-        "• Na Orsuli položeni vijenci za poginule konavoske domobrane ➡️ <b>Комеморація в Дубровнику, не пов&#x27;язана із Задаром.</b>",
-        "• Nikad do kraja razjašnjena tragedija broda ‘Kaprije‘: Osamnaest šibens ➡️ <b>Історична спомин-стаття про корабельну катастрофу із Шибеника.</b>",
-        "• Prigodno obilježena 35. obljetnica Samostalne policijsko - dragovoljač ➡️ <b>Подія у Сланому, не пов&#x27;язана із Задаром.</b>"
-      ]
-    },
-    "backlog": {
-      "total_size": 4,
-      "sources": {
-        "Slobodna dalmacija": 1,
-        "023": 3
-      }
-    },
-    "published": {
-      "total": 3,
-      "ukraine_priority": 0,
-      "with_images": 1,
-      "text_only": 2,
-      "sources": {
-        "023": 2,
-        "Slobodna dalmacija": 1
-      }
-    },
-    "models_used": {
-      "gemini-3.5-flash-lite": 2,
-      "gemini-3.6-flash": 0
-    },
-    "errors_count": 0,
-    "gemini_retries": 0
-  },
-  {
     "timestamp": "2026-10-19 16:01:08",
     "execution_time": 21.2,
     "funnel": {
@@ -8687,5 +8631,113 @@
     "gemini_unavailable": true,
     "errors_count": 0,
     "gemini_retries": 5
+  },
+  {
+    "timestamp": "2026-11-05 15:01:22",
+    "execution_time": 52.6,
+    "funnel": {
+      "scraped_total": 35,
+      "scraped_by_source": {
+        "023": 10,
+        "Slobodna dalmacija": 15,
+        "Zadarski list": 10
+      },
+      "already_seen": 22,
+      "rejected_by_keywords": 4,
+      "rejected_by_rule": {
+        "тег RSS lifestyle": 1,
+        "тег RSS sport": 1,
+        "тег RSS košarka": 1,
+        "тег RSS nogomet": 1
+      },
+      "unclassified_by_ai": 0,
+      "duplicates_removed_by_ai": 10,
+      "rejection_reasons_list": [
+        "• Marina Resort Cavtat nakon rasprave u Europskom parlamentu: Projekt se → Побут інших міст (Будівництво марини в Цавтаті) | Сутності: Cavtat, Europski parlament, Marina Resort",
+        "• NOVE SMJERNICE IZ BRUXELLESA Svaki građanin EU-a trebao bi imati zalih → Вже публікувалось (Загальні рекомендації щодо цивільного захисту) | Сутності: EU, Bruxelles, Europska komisija",
+        "• Isporuka cjepiva protiv gripe u Primorsko-goranskoj županiji očekuje s → Побут інших міст (Вакцинація в Рієці) | Сутності: Rijeka, Primorsko-goranska županija, cjepivo",
+        "• IZ OTP-a objašnjavaju zašto jedinu poslovnicu u dubrovačkim zidinama p → Побут інших міст (Зміни в роботі банку в Дубровнику) | Сутності: OTP banka, Dubrovnik, Stradun",
+        "• Ranko Ostojić: Maršavelski je imao važeći sigurnosni certifikat, neće  → Не за тематикою (Політична дискусія про безпековий сертифікат) | Сутності: Aleksandar Maršavelski, SOA, Ranko Ostojić",
+        "• Dubrovački gradonačelnik traži strože kazne: ‘Za trgovanje drogom nema → Побут інших міст (Ініціатива мера Дубровника щодо покарань) | Сутності: Mato Franković, Dubrovnik, Ministarstvo pravosuđa",
+        "• Hari Rončević predstavlja album kojim iskreno progovara o ljubavi, obi → Не за тематикою (Музичний реліз) | Сутності: Hari Rončević, album, Zagrli me",
+        "• ‘Pucajte po nama!‘, riječi Sokolova i danas lede krv u žilama. Ovih 7  → Побут інших міст (Фільм про оборону Дубровника) | Сутності: Dubrovnik, Sokolovi Srđa, dokumentarni film",
+        "• “Od izvora do mora”: Senju prvo mjesto u ekološkom projektu; počelo ur → Побут інших міст (Екологічний проект у місті Сень) | Сутності: Senj, Coca-Cola, ekološki projekt",
+        "• Na 48. Interliberu više od 300 izlagača i gost dobitnik Bookera David  → Побут інших міст (Книжковий ярмарок у Загребі) | Сутності: Interliber, Zagreb, David Szalay"
+      ],
+      "rejected_by_reason": {
+        "Побут інших міст": 7,
+        "Вже публікувалось": 1,
+        "Не за тематикою": 2
+      },
+      "updates_marked": 1,
+      "already_rejected": 19,
+      "rejected_by_code_examples": [
+        "[тег RSS lifestyle] Astma i KOPB zimi: kako hladan zrak sužava dišne putove i što savjetuju stručnjaci",
+        "[тег RSS sport] POVIJEST JE ISPISANA Emanuela Rados prva hrvatska hrvačica na Olimpijskim igrama mladih!",
+        "[тег RSS košarka] Izbornik ženske košarkaške reprezentacije objavio popis igračica za kvalifikacije za EuroBasket",
+        "[тег RSS nogomet] Raphinha produžio ugovor s Barcelonom. Brazilac ostaje na Nou Campu do 2030."
+      ]
+    },
+    "backlog": {
+      "total_size": 5,
+      "sources": {
+        "023": 2,
+        "Zadarski list": 1,
+        "Slobodna dalmacija": 2
+      }
+    },
+    "published": {
+      "total": 0,
+      "ukraine_priority": 0,
+      "with_images": 0,
+      "text_only": 0,
+      "og_images_found": 0,
+      "sources": {}
+    },
+    "models_used": {
+      "gemini-3.1-flash-lite": 1
+    },
+    "models_by_task": {
+      "filter": "gemini-3.1-flash-lite",
+      "translate": null
+    },
+    "model_attempts": [
+      {
+        "task": "filter",
+        "model": "gemini-3.1-flash-lite",
+        "outcome": "ok"
+      },
+      {
+        "task": "translate",
+        "model": "gemini-3.8-flash",
+        "outcome": "unavailable"
+      },
+      {
+        "task": "translate",
+        "model": "gemini-3.5-flash-lite",
+        "outcome": "unavailable"
+      },
+      {
+        "task": "translate",
+        "model": "gemini-3.6-flash",
+        "outcome": "unavailable"
+      }
+    ],
+    "exhausted_models": [],
+    "demoted_models": [
+      "filter: gemini-3-flash-preview",
+      "filter: gemini-3.6-flash",
+      "filter: gemini-3.5-flash-lite",
+      "translate: gemini-3.8-flash",
+      "translate: gemini-3.6-flash",
+      "translate: gemini-3.5-flash-lite"
+    ],
+    "translate_budget_deferred": [
+      "gemini-3.6-flash"
+    ],
+    "gemini_region_blocked": false,
+    "gemini_unavailable": true,
+    "errors_count": 0,
+    "gemini_retries": 3
   }
 ]
