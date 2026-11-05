@@ -1,68 +1,5 @@
 [
   {
-    "timestamp": "2026-10-18 19:01:02",
-    "execution_time": 131.9,
-    "funnel": {
-      "scraped_total": 35,
-      "scraped_by_source": {
-        "023": 10,
-        "Slobodna dalmacija": 15,
-        "Zadarski list": 10
-      },
-      "already_seen": 17,
-      "rejected_by_keywords": 7,
-      "duplicates_removed_by_ai": 23,
-      "rejection_reasons_list": [
-        "• Kiseljenje kupusa: koliko soli staviti u... ➡️ <b>Світовий шум</b>",
-        "• Grad Rijeka osigurao 100.000€ za darovit... ➡️ <b>Побут чужих міст</b>",
-        "• Doživotno i dosmrtno uzdržavanje: Htjeli... ➡️ <b>Не відповідає пріоритетам</b>",
-        "• Astronomi pronašli prvu zelenu zvijezdu,... ➡️ <b>Світовий шум</b>",
-        "• Više poginulih u kanadskoj vojnoj bazi: ... ➡️ <b>Інші країни (Геоблок)</b>",
-        "• Sve je teže izreći sudbonosno ‘da‘, vjen... ➡️ <b>Побут чужих міст</b>",
-        "• Grah, sardine i povrće iz konzerve: nutr... ➡️ <b>Світовий шум</b>",
-        "• Savjetovalište Rab nudi podršku i razgov... ➡️ <b>Побут чужих міст</b>",
-        "• Koja je tajna 60 godina sretnog braka? ‘... ➡️ <b>Побут чужих міст</b>",
-        "• Zemunička taekwondoašica Luana Lleshi os... ➡️ <b>Спорт</b>",
-        "• Od seksualnog odgoja do AI-ja. Iza časop... ➡️ <b>Побут чужих міст</b>",
-        "• Limač Dorian Pribilović srebrni u župani... ➡️ <b>Спорт</b>",
-        "• Do navodnog susreta s izvanzemaljcima os... ➡️ <b>Світовий шум</b>",
-        "• Primorac i Vitez do vrijednih bodova: Fi... ➡️ <b>Спорт</b>",
-        "• Stalan osjećaj da morate na zahod i nako... ➡️ <b>Світовий шум</b>",
-        "• Kruna vikenda Gljivijade u Klani – izlož... ➡️ <b>Побут чужих міст</b>",
-        "• Tri zlata, srebro i bronca! Zadarski par... ➡️ <b>Спорт</b>",
-        "• Katarina Vučičić iz zadarske Ultime osvo... ➡️ <b>Спорт</b>",
-        "• Prvi put potvrđena prisutnost novih vrst... ➡️ <b>Побут чужих міст</b>",
-        "• Tijekom rutinske kontrole prometa ‘pao‘ ... ➡️ <b>Побут чужих міст</b>",
-        "• Vrbovskom odobreno 470.000€ za katastars... ➡️ <b>Побут чужих міст</b>",
-        "• Teška prometna nesreća na Jadranskoj mag... ➡️ <b>Побут чужих міст</b>",
-        "• Urušio se dio kuće u Svetom Kuzmu, stana... ➡️ <b>Побут чужих міст</b>"
-      ]
-    },
-    "backlog": {
-      "total_size": 31,
-      "sources": {
-        "Slobodna dalmacija": 11,
-        "023": 7,
-        "Zadarski list": 13
-      }
-    },
-    "published": {
-      "total": 2,
-      "ukraine_priority": 1,
-      "with_images": 2,
-      "text_only": 0,
-      "sources": {
-        "Zadarski list": 2
-      }
-    },
-    "models_used": {
-      "gemini-3.5-flash-lite": 2,
-      "gemini-3.6-flash": 0
-    },
-    "errors_count": 0,
-    "gemini_retries": 0
-  },
-  {
     "timestamp": "2026-10-19 07:01:10",
     "execution_time": 137.4,
     "funnel": {
@@ -8411,5 +8348,109 @@
     "gemini_unavailable": false,
     "errors_count": 0,
     "gemini_retries": 0
+  },
+  {
+    "timestamp": "2026-11-05 10:01:22",
+    "execution_time": 224.1,
+    "funnel": {
+      "scraped_total": 35,
+      "scraped_by_source": {
+        "023": 10,
+        "Slobodna dalmacija": 15,
+        "Zadarski list": 10
+      },
+      "already_seen": 17,
+      "rejected_by_keywords": 4,
+      "rejected_by_rule": {
+        "тег RSS sport": 2,
+        "utakmice": 1,
+        "тег RSS nogomet": 1
+      },
+      "unclassified_by_ai": 0,
+      "duplicates_removed_by_ai": 9,
+      "rejection_reasons_list": [
+        "• Zatvorili poznanika u riječkom stanu, tukli ga i prijetili: razbojničk → Побут інших міст (Кримінальний інцидент у Рієці) | Сутності: Рієка, поліція, кримінальне розслідування",
+        "• Devet godina varala sustav; Zadranka preko lažnog prebivališta uzela t → Дубль (Дублікат новини 5) | Сутності: Задар, шахрайство, дитяча допомога",
+        "• Evo što kažu Frankovićeve kolege, saborski zastupnici: Za Orešković je → Вже публікувалось (Коментарі політиків щодо заяви про наркотики) | Сутності: Мато Франкович, наркотики, політики",
+        "• Ni u jednom uzorku vode iz javne mreže u Lici i na otocima nema PFAS s → Побут інших міст (Аналіз якості води поза Задаром) | Сутності: Лика, острів Паг, острів Раб, вода",
+        "• Festival prirodnih vina u Lovranu sve privlačniji izlagačima i gostima → Побут інших міст (Локальний фестиваль у Ловрані) | Сутності: Ловран, фестиваль вин, Кіно Слобода",
+        "• Fizički obračun u Domu za starije u Šibeniku: 72-godišnjak napao 82-go → Побут інших міст (Інцидент у будинку для літніх у Шибенику) | Сутності: Шибеник, будинок для літніх, бійка",
+        "• Cemex i AD Plastik u zajedničkom mentorskom programu za zaposlenike → Не за тематикою (Корпоративна новина компаній) | Сутності: Cemex, AD Plastik, менторська програма",
+        "• Dubrovnik ponovno drugi najpoželjniji europski grad prema izboru čitat → Побут інших міст (Туристична нагорода Дубровника) | Сутності: Дубровник, Wanderlust, туризм",
+        "• Zbog brojnih upita spremnici za glomazni otpad po naseljima postavljen → Не за тематикою (Локальний графік вивезення сміття) | Сутності: сміттєві контейнери, громадяни, графік"
+      ],
+      "rejected_by_reason": {
+        "Побут інших міст": 5,
+        "Дубль": 1,
+        "Вже публікувалось": 1,
+        "Не за тематикою": 2
+      },
+      "updates_marked": 0,
+      "already_rejected": 14,
+      "rejected_by_code_examples": [
+        "[тег RSS sport] POVIJEST JE ISPISANA Emanuela Rados prva hrvatska hrvačica na Olimpijskim igrama mladih!",
+        "[тег RSS sport] Strukovna škola Vice Vlatkovića novi je prvak Košarkaške lige srednjih škola Zadarske županije!",
+        "[utakmice] Ako Zadrani preslikaju sve dobro s utakmice protiv Dubaija, iz Subotice će se vratiti s pobjedom u d",
+        "[тег RSS nogomet] Legenda HNL-a progovorila o napadu u Đakovu: ‘Mogao me ubiti. Bojim se za svoju obitelj’"
+      ]
+    },
+    "backlog": {
+      "total_size": 2,
+      "sources": {
+        "Slobodna dalmacija": 1,
+        "023": 1
+      }
+    },
+    "published": {
+      "total": 2,
+      "ukraine_priority": 0,
+      "with_images": 2,
+      "text_only": 0,
+      "og_images_found": 2,
+      "sources": {
+        "023": 1,
+        "Slobodna dalmacija": 1
+      }
+    },
+    "models_used": {
+      "gemini-3.1-flash-lite": 1,
+      "gemini-3.6-flash": 1
+    },
+    "models_by_task": {
+      "filter": "gemini-3.1-flash-lite",
+      "translate": "gemini-3.6-flash"
+    },
+    "model_attempts": [
+      {
+        "task": "filter",
+        "model": "gemini-3.6-flash",
+        "outcome": "timeout"
+      },
+      {
+        "task": "filter",
+        "model": "gemini-3.5-flash-lite",
+        "outcome": "unavailable"
+      },
+      {
+        "task": "filter",
+        "model": "gemini-3.1-flash-lite",
+        "outcome": "ok"
+      },
+      {
+        "task": "translate",
+        "model": "gemini-3.6-flash",
+        "outcome": "ok"
+      }
+    ],
+    "exhausted_models": [],
+    "demoted_models": [
+      "filter: gemini-3-flash-preview",
+      "translate: gemini-3.8-flash"
+    ],
+    "translate_budget_deferred": [],
+    "gemini_region_blocked": false,
+    "gemini_unavailable": false,
+    "errors_count": 1,
+    "gemini_retries": 2
   }
 ]
