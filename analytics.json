@@ -1,51 +1,5 @@
 [
   {
-    "timestamp": "2026-10-20 07:01:08",
-    "execution_time": 162.0,
-    "funnel": {
-      "scraped_total": 35,
-      "scraped_by_source": {
-        "023": 10,
-        "Slobodna dalmacija": 15,
-        "Zadarski list": 10
-      },
-      "already_seen": 3,
-      "rejected_by_keywords": 9,
-      "duplicates_removed_by_ai": 9,
-      "rejection_reasons_list": [
-        "• Kad će biti napravljen i gdje će stajati? Miho Bukvić: ‘Mogao ga je do → Побут чужих міст (Дубровник), не стосується Задара | Сутності: Miho Bukvić, Dubrovnik, Marko Mujan, Pilama",
-        "• EU pred savršenom političkom olujom. Pod pritiskom je sa svih strana,  → Дубль/історія (вже є детальний огляд політичної ситуації та криз в ЄС) | Сутності: Europska unija, Politico, Ukrajina, Nikos Hristodulides",
-        "• U ulozi Carmen izmjenjivat će se operne prvakinje Sofija Petrović i Em → Побут чужих міст (Загреб), культурна подія не загальнонаціонального рівня для діаспори | Сутності: HNK Zagreb, Sofija Petrović, Emilija Rukavina, Carmen",
-        "• Rabljanin u Parizu: “Grad je kao bojište, ovako nešto još nikada nisam → Інші країни (геоблок): події у Франції не стосуються напряму українців у Хорватії | Сутності: Pariz, Francuska, Emmanuel Macron, Laurent Nunez",
-        "• Plemenita gesta s Vitrenjaka; JK Uskok donirao 35 litara klupskog masl → Дубль (новина про благодійну акцію JK Uskok вже є в історії) | Сутності: JK Uskok, Vitrenjak, Zadar, Pučka kuhinja",
-        "• Može li AI pomoći u stvaranju biološkog oružja? Obavještajci upozorava → Світовий шум: абстрактна технологія та безпека за межами Хорватії та України | Сутності: Ken McCallum, MI5, Anthropic, Claude",
-        "• Ponos Medicinske škole Ante Kuzmanića; Učenica Leonarda Rukavina pobje → Дубль (успіх учениці вже є у списку історії) | Сутності: Leonarda Rukavina, Medicinska škola Ante Kuzmanića Zadar, Mali Galović",
-        "• Sunčani utorak samo je predah: jugo s olujnim udarima i pljuskovi s gr → Дубль/історія: прогноз погоди про шторм і дощі вже детально висвітлено в історії | Сутності: Zadar, Nina, Pag, Jugo",
-        "• Psovke i svađe s nevidljivim sugovornikom: što su znanstvenici čuli sn → Світовий шум: абстрактна наука та поради щодо сну | Сутності: Sleep, somnilokviju, Journal of Clinical Neuroscience, Večernji list"
-      ]
-    },
-    "backlog": {
-      "total_size": 0,
-      "sources": {}
-    },
-    "published": {
-      "total": 2,
-      "ukraine_priority": 0,
-      "with_images": 1,
-      "text_only": 1,
-      "sources": {
-        "023": 1,
-        "Slobodna dalmacija": 1
-      }
-    },
-    "models_used": {
-      "gemini-3.6-flash": 1,
-      "gemini-3.5-flash-lite": 1
-    },
-    "errors_count": 0,
-    "gemini_retries": 3
-  },
-  {
     "timestamp": "2026-10-20 08:01:10",
     "execution_time": 211.8,
     "funnel": {
@@ -8841,5 +8795,131 @@
     "gemini_unavailable": true,
     "errors_count": 0,
     "gemini_retries": 4
+  },
+  {
+    "timestamp": "2026-11-05 20:01:19",
+    "execution_time": 242.9,
+    "funnel": {
+      "scraped_total": 35,
+      "scraped_by_source": {
+        "023": 10,
+        "Slobodna dalmacija": 15,
+        "Zadarski list": 10
+      },
+      "already_seen": 18,
+      "rejected_by_keywords": 7,
+      "rejected_by_rule": {
+        "тег RSS lifestyle": 3,
+        "utakmica": 1,
+        "тег RSS nogomet": 2,
+        "sport": 1
+      },
+      "unclassified_by_ai": 0,
+      "duplicates_removed_by_ai": 11,
+      "rejection_reasons_list": [
+        "• Ove subote prva ovosezonska premijera riječkog Baleta. “Last Shelter”  → Побут інших міст (Культурна подія в Рієці) | Сутності: Rijeka, HNK Ivana pl. Zajca, Balet, Last Shelter",
+        "• Windows 11 sam šalje vaše mape na OneDrive: kako isključiti tu postavk → Світовий шум (Технічна порада) | Сутності: Windows 11, OneDrive, Microsoft",
+        "• Autotrolej pojačava vozni red na linijama 1, 4, 5 i 6 subotom → Побут інших міст (Зміни в розкладі автобусів у Рієці) | Сутності: Rijeka, Autotrolej, javni prijevoz",
+        "• Miro Drašković: ‘Turisti su i u svojim zemljama navikli na povremene g → Не за тематикою (Загальна дискусія про закон) | Сутності: Miro Drašković, Zakon o gradnji, turizam",
+        "• Američka gospodarska komora u Hrvatskoj dobila tri nove članice Vijeća → Не за тематикою (Корпоративні зміни в бізнес-палаті) | Сутності: AmCham, Zagreb, Jasminka Horvat Martinović",
+        "• U Srbiji pod istragom direktor BIA-e i ministar. Prikupljali “kapilarn → Геоблок (Політичні події в Сербії) | Сутності: Srbija, BIA, Vladimir Orlić, Vučić",
+        "• Mladi planinar nestao na Triglavu pronađen mrtav. Imao je samo 19 godi → Геоблок (Трагедія в горах Словенії) | Сутності: Triglav, Slovenija, planinar",
+        "• Krenule prijave za komemoraciju u Vukovar → Побут інших міст (Організація поїздки з Госпича) | Сутності: Vukovar, Gospić, Dan sjećanja",
+        "• Možemo: “Ne” trumpovskoj ideji o termoelektrani u Rijeci na uvozni pli → Побут інших міст (Політична дискусія щодо інфраструктури в Рієці) | Сутності: Možemo, Rijeka, termoelektrana",
+        "• Hrvatski Rafale presreo putnički zrakoplov Finnaira koji je označen ka → Дубль (Дублює новину 6) | Сутності: Rafale, Finnair, MORH, Jastrebarsko",
+        "• Most zatražio odgovornost za odloženi otpad kod Benkovca: Hoće li Pašk → Вже публікувалось (Повторна критика щодо сміттєзвалища) | Сутності: Most, Benkovac, otpad, Ivan Matić"
+      ],
+      "rejected_by_reason": {
+        "Побут інших міст": 4,
+        "Світовий шум": 1,
+        "Не за тематикою": 2,
+        "Геоблок": 2,
+        "Дубль": 1,
+        "Вже публікувалось": 1
+      },
+      "updates_marked": 0,
+      "already_rejected": 17,
+      "rejected_by_code_examples": [
+        "[тег RSS lifestyle] Cheesecake s kruškama i hrskavim posipom peče se više od dva sata na niskoj temperaturi",
+        "[тег RSS lifestyle] Tjestenina s brokulom i limunom Ine Garten: obiteljska večera uz 15 minuta kuhanja",
+        "[тег RSS lifestyle] Astma i KOPB zimi: kako hladan zrak sužava dišne putove i što savjetuju stručnjaci",
+        "[utakmica] Bez energije, ideje i poena: Zadar odigrao jednu od najgorih utakmica u povijesti ABA lige",
+        "[тег RSS nogomet] Hajduk se osramotio na Gibraltaru. Splićani su poraženi autogolom u finišu utakmice",
+        "[тег RSS nogomet] Hrvatski reprezentativac jedan od osam kandidata za igrača mjeseca u Premier ligi",
+        "[sport] Nastavlja se ulagati u sport: Klubovima nova oprema, najavljene dodatne potpore i kombi vozilo"
+      ]
+    },
+    "backlog": {
+      "total_size": 2,
+      "sources": {
+        "Zadarski list": 1,
+        "023": 1
+      }
+    },
+    "published": {
+      "total": 2,
+      "ukraine_priority": 0,
+      "with_images": 2,
+      "text_only": 0,
+      "og_images_found": 0,
+      "sources": {
+        "023": 1,
+        "Slobodna dalmacija": 1
+      }
+    },
+    "models_used": {
+      "gemini-3.1-flash-lite": 1,
+      "gemini-3.6-flash": 1
+    },
+    "models_by_task": {
+      "filter": "gemini-3.1-flash-lite",
+      "translate": "gemini-3.6-flash"
+    },
+    "model_attempts": [
+      {
+        "task": "filter",
+        "model": "gemini-3-flash-preview",
+        "outcome": "unavailable"
+      },
+      {
+        "task": "filter",
+        "model": "gemini-3.6-flash",
+        "outcome": "unavailable"
+      },
+      {
+        "task": "filter",
+        "model": "gemini-3.5-flash-lite",
+        "outcome": "unavailable"
+      },
+      {
+        "task": "filter",
+        "model": "gemini-3.1-flash-lite",
+        "outcome": "ok"
+      },
+      {
+        "task": "translate",
+        "model": "gemini-3.8-flash",
+        "outcome": "unavailable"
+      },
+      {
+        "task": "translate",
+        "model": "gemini-3.5-flash-lite",
+        "outcome": "unavailable"
+      },
+      {
+        "task": "translate",
+        "model": "gemini-3.6-flash",
+        "outcome": "ok"
+      }
+    ],
+    "exhausted_models": [],
+    "demoted_models": [],
+    "translate_budget_deferred": [
+      "gemini-3.6-flash"
+    ],
+    "gemini_region_blocked": false,
+    "gemini_unavailable": false,
+    "errors_count": 1,
+    "gemini_retries": 5
   }
 ]
