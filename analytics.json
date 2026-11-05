@@ -1,65 +1,5 @@
 [
   {
-    "timestamp": "2026-10-18 16:01:06",
-    "execution_time": 18.3,
-    "funnel": {
-      "scraped_total": 35,
-      "scraped_by_source": {
-        "023": 10,
-        "Slobodna dalmacija": 15,
-        "Zadarski list": 10
-      },
-      "already_seen": 8,
-      "rejected_by_keywords": 7,
-      "duplicates_removed_by_ai": 22,
-      "rejection_reasons_list": [
-        "• Koja je tajna 60 godina sretnog braka? ‘... ➡️ <b>Світовий шум / Побут</b>",
-        "• Prvi put potvrđena prisutnost novih vrst... ➡️ <b>Побут чужих міст / Регіон не Задар</b>",
-        "• Astronomi pronašli prvu zelenu zvijezdu,... ➡️ <b>Світовий шум</b>",
-        "• Limač Dorian Pribilović srebrni u župani... ➡️ <b>Спорт</b>",
-        "• Vrbovskom odobreno 470.000€ za katastars... ➡️ <b>Побут чужих міст</b>",
-        "• Grah, sardine i povrće iz konzerve: nutr... ➡️ <b>Світовий шум / Поради дієтологів</b>",
-        "• Primorac i Vitez do vrijednih bodova: Fi... ➡️ <b>Спорт</b>",
-        "• Urušio se dio kuće u Svetom Kuzmu, stana... ➡️ <b>Побут чужих міст</b>",
-        "• Zemunička taekwondoašica Luana Lleshi os... ➡️ <b>Спорт</b>",
-        "• Tri zlata, srebro i bronca! Zadarski par... ➡️ <b>Спорт</b>",
-        "• Goran Rock festival u Mrkoplju: Dva dana... ➡️ <b>Побут чужих міст</b>",
-        "• Do navodnog susreta s izvanzemaljcima os... ➡️ <b>Світовий шум</b>",
-        "• Tijekom rutinske kontrole prometa ‘pao‘ ... ➡️ <b>Побут чужих міст / Регіон не Задар</b>",
-        "• Nagradama ovjenčan putopis Dinka Telećan... ➡️ <b>Побут чужих міст</b>",
-        "• Stalan osjećaj da morate na zahod i nako... ➡️ <b>Світовий шум</b>",
-        "• Teška prometna nesreća na Jadranskoj mag... ➡️ <b>Побут чужих міст / Регіон не Задар</b>",
-        "• U Delnicama otvorena izložba “Lirsko-poe... ➡️ <b>Побут чужих міст</b>",
-        "• Katarina Vučičić iz zadarske Ultime osvo... ➡️ <b>Спорт</b>",
-        "• Žena na Tehnološkoj cesti u Šibeniku pre... ➡️ <b>Побут чужих міст / Регіон не Задар</b>",
-        "• Koliko često prati podove: tjedno pranje... ➡️ <b>Світовий шум / Поради</b>",
-        "• Kulturna i obiteljska baština: na jednom... ➡️ <b>Побут чужих міст / Регіон не Задар</b>",
-        "• Na današnji dan u Pločama osnivan prvi o... ➡️ <b>Побут чужих міст</b>"
-      ]
-    },
-    "backlog": {
-      "total_size": 22,
-      "sources": {
-        "Slobodna dalmacija": 9,
-        "023": 7,
-        "Zadarski list": 6
-      }
-    },
-    "published": {
-      "total": 0,
-      "ukraine_priority": 0,
-      "with_images": 0,
-      "text_only": 0,
-      "sources": {}
-    },
-    "models_used": {
-      "gemini-3.5-flash-lite": 1,
-      "gemini-3.6-flash": 0
-    },
-    "errors_count": 0,
-    "gemini_retries": 0
-  },
-  {
     "timestamp": "2026-10-18 19:01:02",
     "execution_time": 131.9,
     "funnel": {
@@ -8378,5 +8318,98 @@
     "gemini_unavailable": false,
     "errors_count": 0,
     "gemini_retries": 4
+  },
+  {
+    "timestamp": "2026-11-05 09:01:18",
+    "execution_time": 55.8,
+    "funnel": {
+      "scraped_total": 35,
+      "scraped_by_source": {
+        "023": 10,
+        "Slobodna dalmacija": 15,
+        "Zadarski list": 10
+      },
+      "already_seen": 16,
+      "rejected_by_keywords": 4,
+      "rejected_by_rule": {
+        "тег RSS sport": 1,
+        "utakmice": 1,
+        "тег RSS nogomet": 1,
+        "promo": 1
+      },
+      "unclassified_by_ai": 0,
+      "duplicates_removed_by_ai": 10,
+      "rejection_reasons_list": [
+        "• Gotovo je. Grad Rijeka u državni proračun vratio 3,8 milijuna eura za  → Побут інших міст (Повернення коштів бюджетом міста Рієка) | Сутності: Grad Rijeka, Mihačeva draga, 3,8 milijuna eura, državni proračun",
+        "• Trokut Akademija – Poduzetnički RAST 2.0: Od poslovne ideje do konkret → Побут інших міст (Освітня програма для підприємців у Шибенику) | Сутності: Trokut Akademija, Šibenik, Poduzetnički RAST 2.0",
+        "• Peka nedjeljom, ribolov s ribarima i mlado ulje bez naplate: 17 domaći → Вже публікувалось (Гастрономічна акція Welcome Taste & Buy у Задарі) | Сутності: Zadarska županija, Welcome Taste & Buy, Mjesec domaćih okusa, Turistička zajednica",
+        "• Kako uvježbati opasne brodske operacije bez stvarnog rizika? Odgovor t → Не за тематикою (Розробка тренажера для морських операцій) | Сутності: LNG EduSim, Donatan Balog, So&Be",
+        "• Radio Šibenik ima veliki razlog za slavlje: 58 godina u eteru i prvo m → Побут інших міст (Річниця місцевої радіостанції Шибеника) | Сутності: Radio Šibenik, Šibenik, 58 godina, Ipsos",
+        "• Ekonomski fakultet u Rijeci gradi partnerstva koja donose znanje i pri → Побут інших міст (Навчальний процес у вузі Рієки) | Сутності: Ekonomski fakultet, Rijeka, Sveučilište u Rijeci",
+        "• Hakeri diljem Europe napadaju hladnjake u supermarketima. Što bi još s → Геоблок (Хакерські атаки на супермаркети у Європі) | Сутності: Europa, supermarketi, kibernetički napad",
+        "• Konavle će ovog vikenda biti u znaku mladih vina i domaćih okusa - spr → Побут інших міст (Локальне винне свято в регіоні Конавле) | Сутності: Konavle, Mratin dan, Šišini dubi, Agroturizam Konavle",
+        "• Apple ostao bez najskupljeg iPhonea, a ne zna kada će stići nove zalih → Світовий шум (Проблеми з постачанням смартфонів Apple) | Сутності: Apple, iPhone Duo, John Ternus, 2000 dolara",
+        "• Na samo par sati od Kvarnera krije se cjelogodišnji vodeni koncept osm → Реклама (Промоція сімейного відпочинку в Шибенику) | Сутності: Aquapark Dalmatia, Amadria Park, Šibenik"
+      ],
+      "rejected_by_reason": {
+        "Побут інших міст": 5,
+        "Вже публікувалось": 1,
+        "Не за тематикою": 1,
+        "Геоблок": 1,
+        "Світовий шум": 1,
+        "Реклама": 1
+      },
+      "updates_marked": 0,
+      "already_rejected": 13,
+      "rejected_by_code_examples": [
+        "[тег RSS sport] Strukovna škola Vice Vlatkovića novi je prvak Košarkaške lige srednjih škola Zadarske županije!",
+        "[utakmice] Ako Zadrani preslikaju sve dobro s utakmice protiv Dubaija, iz Subotice će se vratiti s pobjedom u d",
+        "[тег RSS nogomet] Legenda HNL-a progovorila o napadu u Đakovu: ‘Mogao me ubiti. Bojim se za svoju obitelj’",
+        "[promo] Pontera nekretnine – rast poslovanja koji potvrđuje povjerenje: novogradnja i adaptirani stanovi naj"
+      ]
+    },
+    "backlog": {
+      "total_size": 0,
+      "sources": {}
+    },
+    "published": {
+      "total": 1,
+      "ukraine_priority": 0,
+      "with_images": 1,
+      "text_only": 0,
+      "og_images_found": 0,
+      "sources": {
+        "Slobodna dalmacija": 1
+      }
+    },
+    "models_used": {
+      "gemini-3.6-flash": 2
+    },
+    "models_by_task": {
+      "filter": "gemini-3.6-flash",
+      "translate": "gemini-3.6-flash"
+    },
+    "model_attempts": [
+      {
+        "task": "filter",
+        "model": "gemini-3.6-flash",
+        "outcome": "ok"
+      },
+      {
+        "task": "translate",
+        "model": "gemini-3.6-flash",
+        "outcome": "ok"
+      }
+    ],
+    "exhausted_models": [],
+    "demoted_models": [
+      "filter: gemini-3-flash-preview",
+      "translate: gemini-3.8-flash"
+    ],
+    "translate_budget_deferred": [],
+    "gemini_region_blocked": false,
+    "gemini_unavailable": false,
+    "errors_count": 0,
+    "gemini_retries": 0
   }
 ]
