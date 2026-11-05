@@ -1,58 +1,5 @@
 [
   {
-    "timestamp": "2026-10-19 19:01:13",
-    "execution_time": 25.5,
-    "funnel": {
-      "scraped_total": 35,
-      "scraped_by_source": {
-        "023": 10,
-        "Slobodna dalmacija": 15,
-        "Zadarski list": 10
-      },
-      "already_seen": 3,
-      "rejected_by_keywords": 13,
-      "duplicates_removed_by_ai": 16,
-      "rejection_reasons_list": [
-        "• Za postradala područja na Braču danas iz Like poslano 30 velikih rolo- ➡️ <b>Побутова новина з іншого хорватського регіону, що не стосується Задара</b>",
-        "• Uvodi se policijski sat u Parizu, Lilleu, Nici… Policija zabranjuje pr ➡️ <b>Подія за межами Хорватії та України, не пов&#x27;язана з українцями</b>",
-        "• Tri šalice čaja dnevno povezane su sa sporijim biološkim starenjem kod ➡️ <b>Абстрактна наука та поради щодо здоров&#x27;я</b>",
-        "• Ciklona juri k Dalmaciji, meteoalarm na ‘nogama‘! Grmljavinsko nevrije ➡️ <b>Дублює наявну інформацію про погодні умови в історії (циклон та дощі в середу)</b>",
-        "• Iva Rinčić o prosvjedu na Klobučarićevom trgu: “Vijećnica SDP-a vrijeđ ➡️ <b>Локальна новина іншого міста (Рієка), не стосується Задара</b>",
-        "• Ravnatelj dr. Marijo Bekić o mjesečnom limitu: ‘Sedam odjela prekorači ➡️ <b>Локальна новина іншого міста (Дубровник)</b>",
-        "• Glazbena Rijeka: Lovre Marušić u utorak nastupa u Circolu, ulaz je slo ➡️ <b>Культурна подія в іншому хорватському місті (Рієка)</b>",
-        "• Zadarska županija u rujnu s gotovo 72 tisuće zaposlenih, u deset godin ➡️ <b>Статистика зайнятості за вересень раніше вже покрита іншими матеріалами або не є актуальним термінов</b>",
-        "• LED svjetiljke smanjile protrošnju energije, ali se na dubrovačku javn ➡️ <b>Локальна новина іншого міста (Дубровник)</b>",
-        "• Prigodna prodaja cvijeća za blagdan Svih svetih ➡️ <b>Локальна новина іншого міста (Рієка)</b>",
-        "• Zlatna jesen u Kutjevu: Obrano 7 milijuna kilograma grožđa, s potpisom ➡️ <b>Локальна новина іншого регіону (Славонія)</b>",
-        "• Spojene srcem i tradicijom: kako su otočanke na Žirju osmislile ‘mrunc ➡️ <b>Локальна подія іншого хорватського регіону (Шибеник)</b>",
-        "• Priprema se veliko uređenje uvala Dražanica i Maestral: za izradu plan ➡️ <b>Повністю дублює новину з HISTORY про вибір підрядника для планів Дражаниці та Маестрала</b>",
-        "• Preokret na granici s BiH! Devet prijelaza mijenja status, jedan nesta ➡️ <b>Загальна державна новина про переходи, що дублює або не містить критичних оновлень для цільової ауди</b>",
-        "• Nevjerojatne brojke iz Zadra: svaka sedma nova zgrada u Hrvatskoj nikn ➡️ <b>Перекази загальних тенденцій ринку нерухомості без нових ухвалених рішень</b>",
-        "• Nije imao položeno, alkoholiziran i odbio test na droge: logično kako  ➡️ <b>Поліцейське зведення з іншого регіону (Стон/Дубровник)</b>"
-      ]
-    },
-    "backlog": {
-      "total_size": 0,
-      "sources": {}
-    },
-    "published": {
-      "total": 3,
-      "ukraine_priority": 0,
-      "with_images": 0,
-      "text_only": 3,
-      "sources": {
-        "023": 1,
-        "Slobodna dalmacija": 2
-      }
-    },
-    "models_used": {
-      "gemini-3.5-flash-lite": 2,
-      "gemini-3.6-flash": 0
-    },
-    "errors_count": 0,
-    "gemini_retries": 0
-  },
-  {
     "timestamp": "2026-10-20 07:01:08",
     "execution_time": 162.0,
     "funnel": {
@@ -8792,5 +8739,107 @@
     "gemini_unavailable": false,
     "errors_count": 1,
     "gemini_retries": 3
+  },
+  {
+    "timestamp": "2026-11-05 17:01:27",
+    "execution_time": 242.0,
+    "funnel": {
+      "scraped_total": 35,
+      "scraped_by_source": {
+        "023": 10,
+        "Slobodna dalmacija": 15,
+        "Zadarski list": 10
+      },
+      "already_seen": 24,
+      "rejected_by_keywords": 2,
+      "rejected_by_rule": {
+        "тег RSS lifestyle": 1,
+        "тег RSS nogomet": 1
+      },
+      "unclassified_by_ai": 0,
+      "duplicates_removed_by_ai": 7,
+      "rejection_reasons_list": [
+        "• MUP raspisao natječaj od pet milijuna eura za robotizirano skladište d → Побут інших міст (Будівництво skladišta u Zagrebu) | Сутності: MUP, Zagreb, Senjak, 5 milijuna eura",
+        "• Europski parlament raspravljao o velikom projektu kod Dubrovnika: ‘Rij → Дубль (Дублікат новини про засідання Європарламенту) | Сутності: Europski parlament, Cavtat, Dubrovnik, Marina Resort",
+        "• Zbog počasti Titu Grad Vukovar proziva Keglevićevu stražu; podržao je  → Побут інших міст (Суперечка щодо протоколу між містами) | Сутності: Grad Vukovar, Keglevićeva straža, Željko Kolar, Kumrovec",
+        "• Europski parlament: Za otpad u Gospiću i resort u Cavtatu čeka se mišl → Побут інших міст (Скарги щодо об'єктів у Ґоспичі та Цавтаті) | Сутності: Europski parlament, Gospić, Cavtat, Gordan Bosanac",
+        "• Klinika Denisa Kataneca izdaje novi album na vinilu i najavljuje konce → Побут інших міст (Концерт інді-гурту в Загребі) | Сутності: Klinika Denisa Kataneca, Zagreb, Tvornica kulture, Menart",
+        "• Vucino Živo blato rasprodalo Tvornicu tri mjeseca unaprijed → Побут інших міст (Концерт у Загребі) | Сутності: Živo blato, Siniša Vuco, Tvornica kulture, Zagreb",
+        "• Mijenja se zakon. Stižu stroge kazne za lažne seks snimke, uhođenje i  → Вже публікувалось (Про заяву Хабіяна вже публікувалось раніше) | Сутності: Damir Habijan, Kazneni zakon, Hrvatska, Europska unija"
+      ],
+      "rejected_by_reason": {
+        "Побут інших міст": 5,
+        "Дубль": 1,
+        "Вже публікувалось": 1
+      },
+      "updates_marked": 0,
+      "already_rejected": 23,
+      "rejected_by_code_examples": [
+        "[тег RSS lifestyle] Astma i KOPB zimi: kako hladan zrak sužava dišne putove i što savjetuju stručnjaci",
+        "[тег RSS nogomet] Glavni režiser nogometne senzacije u Ligi prvaka: “Pred nama je još dug put…”"
+      ]
+    },
+    "backlog": {
+      "total_size": 5,
+      "sources": {
+        "Zadarski list": 3,
+        "023": 2
+      }
+    },
+    "published": {
+      "total": 0,
+      "ukraine_priority": 0,
+      "with_images": 0,
+      "text_only": 0,
+      "og_images_found": 1,
+      "sources": {}
+    },
+    "models_used": {
+      "gemini-3.6-flash": 1
+    },
+    "models_by_task": {
+      "filter": "gemini-3.6-flash",
+      "translate": null
+    },
+    "model_attempts": [
+      {
+        "task": "filter",
+        "model": "gemini-3-flash-preview",
+        "outcome": "unavailable"
+      },
+      {
+        "task": "filter",
+        "model": "gemini-3.6-flash",
+        "outcome": "ok"
+      },
+      {
+        "task": "translate",
+        "model": "gemini-3.8-flash",
+        "outcome": "unavailable"
+      },
+      {
+        "task": "translate",
+        "model": "gemini-3.5-flash-lite",
+        "outcome": "unavailable"
+      },
+      {
+        "task": "translate",
+        "model": "gemini-3.6-flash",
+        "outcome": "unavailable"
+      }
+    ],
+    "exhausted_models": [],
+    "demoted_models": [
+      "filter: gemini-3.5-flash-lite",
+      "translate: gemini-3.8-flash",
+      "translate: gemini-3.5-flash-lite"
+    ],
+    "translate_budget_deferred": [
+      "gemini-3.6-flash"
+    ],
+    "gemini_region_blocked": false,
+    "gemini_unavailable": true,
+    "errors_count": 0,
+    "gemini_retries": 4
   }
 ]
