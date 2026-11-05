@@ -1,61 +1,5 @@
 [
   {
-    "timestamp": "2026-10-19 07:01:10",
-    "execution_time": 137.4,
-    "funnel": {
-      "scraped_total": 35,
-      "scraped_by_source": {
-        "023": 10,
-        "Slobodna dalmacija": 15,
-        "Zadarski list": 10
-      },
-      "already_seen": 2,
-      "rejected_by_keywords": 6,
-      "duplicates_removed_by_ai": 15,
-      "rejection_reasons_list": [
-        "• Ilirija je pokretač modernog nautičkog t... ➡️ <b>Реклама / Спонсорський матеріал</b>",
-        "• Plaćate li previše za internet i mobitel... ➡️ <b>Загальнонаціональна економічна новина без прямого впливу на Задар</b>",
-        "• Odličan nastup u Šibeniku; Mladi plivači... ➡️ <b>Спорт</b>",
-        "• Cijelo je raskrižje pokriveno semaforima... ➡️ <b>Побут чужого міста (Цавтат)</b>",
-        "• Francuski pisac Cédric Sapin-Defour pred... ➡️ <b>Культурний шум / Книжкова презентація поза Задаром</b>",
-        "• Uspješan start sezone za PK Zadar u Rije... ➡️ <b>Спорт</b>",
-        "• Luke budućnosti - boljom infrastrukturom... ➡️ <b>Дубль / Анонс туристичної події</b>",
-        "• Film “Žene, luđaci i malo dobrih pedera”... ➡️ <b>Культурний шум / Кінопремія в іншій країні</b>",
-        "• Veliki brkati susret; Više od 40 patulja... ➡️ <b>Дубль події з історії (зустріч шнауцерів вже була у видачі)</b>",
-        "• Čeka nas totalno lud meteo-tjedan: bit ć... ➡️ <b>Дубль новини про погоду</b>",
-        "• Talijanski rock, opera i kazalište stižu... ➡️ <b>Культурна подія в Рієці та Пулі</b>",
-        "• Čeka nas totalno lud meteo-tjedan: bit ć... ➡️ <b>Дубль прогнозу погоди</b>",
-        "• Jugo u utorak otvara vrata kiši, srijeda... ➡️ <b>Дубль інформації про погоду в Задарі</b>",
-        "• Pješačili od tvrđave Imperial do Strinčj... ➡️ <b>Побут та події у Дубровнику</b>",
-        "• Ravnoteža na jednoj nozi odaje godine: o... ➡️ <b>Світовий шум / Поради щодо здоров'я</b>"
-      ]
-    },
-    "backlog": {
-      "total_size": 17,
-      "sources": {
-        "023": 6,
-        "Slobodna dalmacija": 6,
-        "Zadarski list": 5
-      }
-    },
-    "published": {
-      "total": 2,
-      "ukraine_priority": 1,
-      "with_images": 1,
-      "text_only": 1,
-      "sources": {
-        "Zadarski list": 1,
-        "023": 1
-      }
-    },
-    "models_used": {
-      "gemini-3.5-flash-lite": 2,
-      "gemini-3.6-flash": 0
-    },
-    "errors_count": 0,
-    "gemini_retries": 0
-  },
-  {
     "timestamp": "2026-10-19 08:01:12",
     "execution_time": 194.4,
     "funnel": {
@@ -8452,5 +8396,124 @@
     "gemini_unavailable": false,
     "errors_count": 1,
     "gemini_retries": 2
+  },
+  {
+    "timestamp": "2026-11-05 11:01:23",
+    "execution_time": 226.1,
+    "funnel": {
+      "scraped_total": 35,
+      "scraped_by_source": {
+        "023": 10,
+        "Slobodna dalmacija": 15,
+        "Zadarski list": 10
+      },
+      "already_seen": 15,
+      "rejected_by_keywords": 6,
+      "rejected_by_rule": {
+        "тег RSS sport": 2,
+        "тег RSS nogomet": 2,
+        "promo": 1,
+        "URL /sport/": 1
+      },
+      "unclassified_by_ai": 0,
+      "duplicates_removed_by_ai": 11,
+      "rejection_reasons_list": [
+        "• Anušić u SAD-u: Nova vlast se mora udaljiti od Vučićeve velikosrpske p → Вже публікувалось (Політичні заяви міністра оборони) | Сутності: Ivan Anušić, Srbija, Aleksandar Vučić, Harvard",
+        "• Plenković: Hrvatska je članstvom u Vijeću Europe vraćena u svoj civili → Вже публікувалось (Політична промова про річницю членства) | Сутності: Andrej Plenković, Vijeće Europe, Zagreb",
+        "• DRAMA NA EUROPSKOM NEBU Borbeni avioni presretali putničke zrakoplove  → Геоблок (Інцидент з літаком за межами Хорватії) | Сутності: Aer Lingus, Francuska, Euronews, dojave o bombama",
+        "• HSŠKD Narona organizirala radionicu ‘Mali čuvari prirode‘, zasađena tr → Побут інших міст (Локальна подія в іншому місті) | Сутності: HSŠKD Narona, Plivor, sadnja stabala",
+        "• Evo zašto bi trebali pokucati po haubi automobila prije nego upalite m → Світовий шум (Поради щодо догляду за тваринами) | Сутності: mačke, automobili, Dierenbescherming",
+        "• Ključevi dvaju gradskih stanova uručeni Općoj bolnici Dubrovnik: Jedan → Побут інших міст (Розподіл житла в Дубровнику) | Сутності: Dubrovnik, Opća bolnica Dubrovnik, stanovi",
+        "• U Šopotu planulo u pogonu za proizvodnju peleta, policija provodi očev → Дубль (Повтор новини про пожежу) | Сутності: Šopot, požar, skladište peleta",
+        "• Nemojte nasjesti! Prevaranti se predstavljaju kao policijski službenic → Побут інших міст (Попередження поліції в Дубровнику) | Сутності: PU dubrovačko-neretvanska, prijevara, stranci",
+        "• ‘Šmrče se po sudovima, u Saboru i DORH-u, na svakom kantunu‘? Tužitelj → Побут інших міст (Політичний скандал у Дубровнику) | Сутності: Mato Franković, Dubrovnik, kokain, DORH",
+        "• ‘Šmrče se po sudovima, u Saboru i DORH-u, na svakom kantunu‘? Tužitelj → Дубль (Дублікат новини 12) | Сутності: Mato Franković, Dubrovnik, kokain, DORH",
+        "• Kraj Benkovca i dalje leži više od 6400 tona opasnog otpada! Gdje je z → Вже публікувалось (Стара проблема з відходами) | Сутності: Benkovac, Kukalj, otpad, Marija Vučković"
+      ],
+      "rejected_by_reason": {
+        "Вже публікувалось": 3,
+        "Геоблок": 1,
+        "Побут інших міст": 4,
+        "Світовий шум": 1,
+        "Дубль": 2
+      },
+      "updates_marked": 1,
+      "already_rejected": 9,
+      "rejected_by_code_examples": [
+        "[тег RSS sport] POVIJEST JE ISPISANA Emanuela Rados prva hrvatska hrvačica na Olimpijskim igrama mladih!",
+        "[тег RSS sport] Strukovna škola Vice Vlatkovića novi je prvak Košarkaške lige srednjih škola Zadarske županije!",
+        "[тег RSS nogomet] Cristiano Ronaldo nakon sukoba s izbornikom i službeno objavio završetak reprezentativne karijere!",
+        "[promo] Vukovar – grad posebnog značenja na prigodnoj kovanici od 2 eura",
+        "[тег RSS nogomet] Harry Kane je produžio ugovor s Bayernom: “Želim osvojiti još puno titula”",
+        "[URL /sport/] Futsalska momčad Rijeke saznala suparnika u osmini finala Kupa Hrvatske"
+      ]
+    },
+    "backlog": {
+      "total_size": 2,
+      "sources": {
+        "Slobodna dalmacija": 1,
+        "023": 1
+      }
+    },
+    "published": {
+      "total": 3,
+      "ukraine_priority": 0,
+      "with_images": 3,
+      "text_only": 0,
+      "og_images_found": 1,
+      "sources": {
+        "Zadarski list": 2,
+        "023": 1
+      }
+    },
+    "models_used": {
+      "gemini-3.1-flash-lite": 1,
+      "gemini-3.5-flash-lite": 1
+    },
+    "models_by_task": {
+      "filter": "gemini-3.1-flash-lite",
+      "translate": "gemini-3.5-flash-lite"
+    },
+    "model_attempts": [
+      {
+        "task": "filter",
+        "model": "gemini-3-flash-preview",
+        "outcome": "unavailable"
+      },
+      {
+        "task": "filter",
+        "model": "gemini-3.6-flash",
+        "outcome": "unavailable"
+      },
+      {
+        "task": "filter",
+        "model": "gemini-3.1-flash-lite",
+        "outcome": "ok"
+      },
+      {
+        "task": "translate",
+        "model": "gemini-3.8-flash",
+        "outcome": "unavailable"
+      },
+      {
+        "task": "translate",
+        "model": "gemini-3.6-flash",
+        "outcome": "unavailable"
+      },
+      {
+        "task": "translate",
+        "model": "gemini-3.5-flash-lite",
+        "outcome": "ok"
+      }
+    ],
+    "exhausted_models": [],
+    "demoted_models": [
+      "filter: gemini-3.5-flash-lite"
+    ],
+    "translate_budget_deferred": [],
+    "gemini_region_blocked": false,
+    "gemini_unavailable": false,
+    "errors_count": 0,
+    "gemini_retries": 4
   }
 ]
