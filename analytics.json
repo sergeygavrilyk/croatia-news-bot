@@ -1,68 +1,5 @@
 [
   {
-    "timestamp": "2026-10-18 15:01:08",
-    "execution_time": 184.5,
-    "funnel": {
-      "scraped_total": 35,
-      "scraped_by_source": {
-        "023": 10,
-        "Slobodna dalmacija": 15,
-        "Zadarski list": 10
-      },
-      "already_seen": 11,
-      "rejected_by_keywords": 5,
-      "duplicates_removed_by_ai": 22,
-      "rejection_reasons_list": [
-        "• Astronomi pronašli prvu zelenu zvijezdu,... ➡️ <b>Світовий шум</b>",
-        "• U Delnicama otvorena izložba “Lirsko-poe... ➡️ <b>Побут чужих міст</b>",
-        "• Grah, sardine i povrće iz konzerve: nutr... ➡️ <b>Світовий шум</b>",
-        "• SAD sankcionira suce i tužitelje Haškog ... ➡️ <b>Геоблок: події за межами Хорватії та України</b>",
-        "• Zemunička taekwondoašica Luana Lleshi os... ➡️ <b>Спорт</b>",
-        "• Limač Dorian Pribilović srebrni u župani... ➡️ <b>Спорт</b>",
-        "• Do navodnog susreta s izvanzemaljcima os... ➡️ <b>Світовий шум</b>",
-        "• Primorac i Vitez do vrijednih bodova: Fi... ➡️ <b>Спорт</b>",
-        "• Rivijera Crikvenica predstavila svoje ad... ➡️ <b>Побут чужих міст</b>",
-        "• Stalan osjećaj da morate na zahod i nako... ➡️ <b>Світовий шум</b>",
-        "• Tri zlata, srebro i bronca! Zadarski par... ➡️ <b>Спорт</b>",
-        "• Gorski kotar predstavljen u Budimpešti... ➡️ <b>Побут чужих міст</b>",
-        "• Katarina Vučičić iz zadarske Ultime osvo... ➡️ <b>Спорт</b>",
-        "• Tijekom rutinske kontrole prometa ‘pao‘ ... ➡️ <b>Побут чужих міст</b>",
-        "• Grad Crikvenica objavio natječaje za dod... ➡️ <b>Побут чужих міст</b>",
-        "• Koliko često prati podove: tjedno pranje... ➡️ <b>Світовий шум</b>",
-        "• Teška prometna nesreća na Jadranskoj mag... ➡️ <b>Побут чужих міст</b>",
-        "• Papa se prvi put nakon operacije raka pl... ➡️ <b>Світовий шум</b>",
-        "• Žena na Tehnološkoj cesti u Šibeniku pre... ➡️ <b>Побут чужих міст</b>",
-        "• Rijeci kronično nedostaje mjesta za bark... ➡️ <b>Побут чужих міст</b>",
-        "• Vozio unatoč poništenoj dozvoli, pa se p... ➡️ <b>Побут чужих міст</b>",
-        "• U Senju predstavljena knjiga o bl. Alojz... ➡️ <b>Побут чужих міст</b>"
-      ]
-    },
-    "backlog": {
-      "total_size": 27,
-      "sources": {
-        "Zadarski list": 9,
-        "Slobodna dalmacija": 11,
-        "023": 7
-      }
-    },
-    "published": {
-      "total": 3,
-      "ukraine_priority": 0,
-      "with_images": 3,
-      "text_only": 0,
-      "sources": {
-        "Slobodna dalmacija": 2,
-        "Zadarski list": 1
-      }
-    },
-    "models_used": {
-      "gemini-3.5-flash-lite": 2,
-      "gemini-3.6-flash": 0
-    },
-    "errors_count": 0,
-    "gemini_retries": 0
-  },
-  {
     "timestamp": "2026-10-18 16:01:06",
     "execution_time": 18.3,
     "funnel": {
@@ -8329,5 +8266,117 @@
     "gemini_unavailable": false,
     "errors_count": 0,
     "gemini_retries": 2
+  },
+  {
+    "timestamp": "2026-11-05 08:01:21",
+    "execution_time": 246.9,
+    "funnel": {
+      "scraped_total": 35,
+      "scraped_by_source": {
+        "023": 10,
+        "Slobodna dalmacija": 15,
+        "Zadarski list": 10
+      },
+      "already_seen": 10,
+      "rejected_by_keywords": 2,
+      "rejected_by_rule": {
+        "тег RSS sport": 1,
+        "тег RSS košarka": 1
+      },
+      "unclassified_by_ai": 0,
+      "duplicates_removed_by_ai": 16,
+      "rejection_reasons_list": [
+        "• Kako je najelitniji hotel Jugoslavije postao - ruglo Jadrana? Žrtva ra → Побут інших міст (Занепад готелю в Дубровнику) | Сутності: Hotel Belvedere, Dubrovnik, Jugoslavija",
+        "• Zmajlović prozvao Vladu zbog neispunjenih planova pa najavio što će ra → Вже публікувалось (Політичні заяви щодо сміттєпереробки) | Сутності: Zmajlović, SDP, Možemo, otpad",
+        "• Roditelji djece i stanari Gruža uz Magistralu zahvaljuju Libertasu za  → Побут інших міст (Автобусна лінія в Дубровнику) | Сутності: Gruž, Libertas, Dubrovnik",
+        "• U Francuskoj najavljeni masovni prosvjedi i štrajkovi, na ulicama se d → Геоблок (Протести у Франції) | Сутності: Francuska, Macron, štrajkovi",
+        "• Mario Iveković o plaćama: \"Za mene ministar financija sve više postaje → Вже публікувалось (Коментар експерта щодо зарплат) | Сутності: Mario Iveković, plaće, Hrvatska",
+        "• Lijepa vijest iz oporavilišta za kornjače. Severina, Palma i Santo sre → Не за тематикою (Випуск черепах у море) | Сутності: Plavi svijet, kornjače, Veli žal",
+        "• Predstavljena zbirka pjesama ‘Ledena berba‘ Luka Paljetka: Plodovi bog → Побут інших міст (Презентація книги в Дубровнику) | Сутності: Luko Paljetak, Znanstvena knjižnica, Dubrovnik",
+        "• Iz blata nakon razornih poplava rodio se Golem, Neobična predstava sti → Побут інших міст (Вистава в Рієці) | Сутності: Rijeka, poplave, kazalište",
+        "• Prva aktivnost Foruma mladih u ovoj školskoj godini: U kompleksu TUP-a → Побут інших міст (Виставка школярів у Дубровнику) | Сутності: Forum mladih, Dubrovnik, izložba",
+        "• Svirao je s Björk i Rickyjem Martinom, a danas prodaje milijune triler → Не за тематикою (Візит письменника до Загреба) | Сутності: Chris Carter, Zagreb, Interliber",
+        "• Provjerite koje su ulice u četvrtak bez vode → Побут інших міст (Відключення води в Дубровнику) | Сутності: Vodovod, Dubrovnik, voda",
+        "• Habjan i Medvešek donose novu predstavu na Scenu Ribnjak → Побут інших міст (Театральна прем'єра в Загребі) | Сутності: Scena Ribnjak, Zagreb, predstava",
+        "• Predstavljen program simpozija „Kulturna baština Župe dubrovačke” – 30 → Побут інших міст (Науковий симпозіум у Жупі Дубровацькій) | Сутності: Župa dubrovačka, simpozij, baština",
+        "• Od »Svadbe« do filma o plastici u moru: Hrvatski naslovi u središtu fe → Геоблок (Кінофестиваль у Німеччині) | Сутності: Cottbus, hrvatski filmovi, festival",
+        "• Kultni album “Ljubav” Ekatarine Velike postaje plesna predstava. Premi → Побут інших міст (Вистава в Загребі) | Сутності: ZKM, Zagreb, Ekatarina Velika",
+        "• “Društvo nije u stanju zaštititi žensko tijelo”: Kazališna predstava o → Побут інших міст (Театральна критика в Загребі) | Сутності: Saša Božić, Zagreb, kazalište"
+      ],
+      "rejected_by_reason": {
+        "Побут інших міст": 10,
+        "Вже публікувалось": 2,
+        "Геоблок": 2,
+        "Не за тематикою": 2
+      },
+      "updates_marked": 0,
+      "already_rejected": 9,
+      "rejected_by_code_examples": [
+        "[тег RSS sport] Strukovna škola Vice Vlatkovića novi je prvak Košarkaške lige srednjih škola Zadarske županije!",
+        "[тег RSS košarka] VIDEO Luka Dončić je opet imao ludu šutersku večer. Nadmašio je i Michaela Jordana"
+      ]
+    },
+    "backlog": {
+      "total_size": 0,
+      "sources": {}
+    },
+    "published": {
+      "total": 3,
+      "ukraine_priority": 0,
+      "with_images": 3,
+      "text_only": 0,
+      "og_images_found": 2,
+      "sources": {
+        "023": 2,
+        "Slobodna dalmacija": 1
+      }
+    },
+    "models_used": {
+      "gemini-3.1-flash-lite": 1,
+      "gemini-3.6-flash": 1
+    },
+    "models_by_task": {
+      "filter": "gemini-3.1-flash-lite",
+      "translate": "gemini-3.6-flash"
+    },
+    "model_attempts": [
+      {
+        "task": "filter",
+        "model": "gemini-3-flash-preview",
+        "outcome": "unavailable"
+      },
+      {
+        "task": "filter",
+        "model": "gemini-3.6-flash",
+        "outcome": "unavailable"
+      },
+      {
+        "task": "filter",
+        "model": "gemini-3.5-flash-lite",
+        "outcome": "unavailable"
+      },
+      {
+        "task": "filter",
+        "model": "gemini-3.1-flash-lite",
+        "outcome": "ok"
+      },
+      {
+        "task": "translate",
+        "model": "gemini-3.8-flash",
+        "outcome": "unavailable"
+      },
+      {
+        "task": "translate",
+        "model": "gemini-3.6-flash",
+        "outcome": "ok"
+      }
+    ],
+    "exhausted_models": [],
+    "demoted_models": [],
+    "translate_budget_deferred": [],
+    "gemini_region_blocked": false,
+    "gemini_unavailable": false,
+    "errors_count": 0,
+    "gemini_retries": 4
   }
 ]
