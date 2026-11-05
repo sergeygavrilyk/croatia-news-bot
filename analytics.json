@@ -1,63 +1,5 @@
 [
   {
-    "timestamp": "2026-10-19 08:01:12",
-    "execution_time": 194.4,
-    "funnel": {
-      "scraped_total": 35,
-      "scraped_by_source": {
-        "023": 10,
-        "Slobodna dalmacija": 15,
-        "Zadarski list": 10
-      },
-      "already_seen": 2,
-      "rejected_by_keywords": 5,
-      "duplicates_removed_by_ai": 17,
-      "rejection_reasons_list": [
-        "• Sjajan debi na europskoj pozornici; Zadr... ➡️ <b>Спорт</b>",
-        "• Metkovka zadivila Pariz, izborila mjesto... ➡️ <b>Геоблок / Не стосується Задара чи Хорватії напряму</b>",
-        "• Synth-pop duo Pocket Palma singlom “Više... ➡️ <b>Культурний шум / Шоу-бізнес</b>",
-        "• Od nagrađenih pjesama i novih videospoto... ➡️ <b>Дубль / Локальна подія низького пріоритету</b>",
-        "• Položeni vijenci za stradale dubrovačke ... ➡️ <b>Побут інших міст</b>",
-        "• Riječki Carmoto s ponosom predstavlja Vo... ➡️ <b>Реклама</b>",
-        "• Uspješan vikend biogradskih atletičara; ... ➡️ <b>Спорт</b>",
-        "• Zadarski dvojac nastavlja nizati pobjede... ➡️ <b>Спорт</b>",
-        "• Sociolog objasnio što je natjeralo mlade... ➡️ <b>Світовий шум / Події за межами Хорватії та України</b>",
-        "• Odličan nastup u Šibeniku; Mladi plivači... ➡️ <b>Спорт</b>",
-        "• Emotivna i energična svirka Like Kolorad... ➡️ <b>Дубль в історії (подія вже відбулася)</b>",
-        "• Uspješan start sezone za PK Zadar u Rije... ➡️ <b>Спорт</b>",
-        "• Veliki brkati susret; Više od 40 patulja... ➡️ <b>Дубль в історії</b>",
-        "• Cijelo je raskrižje pokriveno semaforima... ➡️ <b>Побут чужих міст</b>",
-        "• Jugo u utorak otvara vrata kiši, srijeda... ➡️ <b>Дубль (повна схожість з прогнозами погоди в інших кандидатах)</b>",
-        "• Čeka nas totalno lud meteo-tjedan: bit ć... ➡️ <b>Дубль (повний аналог новини 19)</b>",
-        "• Čeka nas totalno lud meteo-tjedan: bit ć... ➡️ <b>Погода загальнорегіональна, дублює детальну локальну прогнозу погоди</b>"
-      ]
-    },
-    "backlog": {
-      "total_size": 20,
-      "sources": {
-        "023": 7,
-        "Slobodna dalmacija": 9,
-        "Zadarski list": 4
-      }
-    },
-    "published": {
-      "total": 3,
-      "ukraine_priority": 0,
-      "with_images": 3,
-      "text_only": 0,
-      "sources": {
-        "Zadarski list": 1,
-        "Slobodna dalmacija": 2
-      }
-    },
-    "models_used": {
-      "gemini-3.5-flash-lite": 1,
-      "gemini-3.6-flash": 1
-    },
-    "errors_count": 0,
-    "gemini_retries": 0
-  },
-  {
     "timestamp": "2026-10-19 09:01:09",
     "execution_time": 198.9,
     "funnel": {
@@ -8515,5 +8457,115 @@
     "gemini_unavailable": false,
     "errors_count": 0,
     "gemini_retries": 4
+  },
+  {
+    "timestamp": "2026-11-05 12:01:26",
+    "execution_time": 54.8,
+    "funnel": {
+      "scraped_total": 35,
+      "scraped_by_source": {
+        "023": 10,
+        "Slobodna dalmacija": 15,
+        "Zadarski list": 10
+      },
+      "already_seen": 16,
+      "rejected_by_keywords": 4,
+      "rejected_by_rule": {
+        "тег RSS sport": 1,
+        "nogometaša": 1,
+        "promo": 1,
+        "тег RSS nogomet": 1
+      },
+      "unclassified_by_ai": 0,
+      "duplicates_removed_by_ai": 12,
+      "rejection_reasons_list": [
+        "• Imamo detalje tučnjave u Domu za starije i nemoćne, krenulo je banalno → Побут інших міст (Інцидент у будинку для літніх людей у Шибенику) | Сутності: Шибеник, Cvjetni dom, поліція, бійка",
+        "• Sukošan i Privlaka među tri najbolje općinske mrežne stranice u Hrvats → Не за тематикою (Рейтинг веб-сайтів громад) | Сутності: Сукошан, Привлака, Arcadian CMS, Hiperlink Digital",
+        "• Ružić: “Nismo postigli dogovor sa sindikatima, nastavljamo pregovore i → Вже публікувалось (Переговори уряду та профспілок) | Сутності: Ален Ружич, уряд, профспілки, зарплати",
+        "• Zbog dojava o bombama zrakoplovi prisilno sletjeli u Francuskoj, Bugar → Геоблок (Помилкові повідомлення про бомби в літаках) | Сутності: Франція, Бельгія, Болгарія, авіакомпанії",
+        "• NEVIĐENI INTERES ZA DRŽAVNE POTICAJE Do 10 ujutro stiglo čak 17.600 pr → Вже публікувалось (Повтор новини про субсидії на авто) | Сутності: Фонд захисту довкілля, електромобілі, державні субсидії",
+        "• Zadravec u dolasku, osam radiologa dalo otkaz. Kekin: “Zaustavite njez → Вже публікувалось (Проблеми в лікарні Загреба) | Сутності: Загреб, КБЦ Сестри милосердя, Івана Кекін, радіологи",
+        "• Iz dubrovačke policije upozoravaju: ‘Oprez! Kruži novi oblik prijevare → Побут інших міст (Шахрайство в Дубровнику) | Сутності: Дубровник, поліція, шахрайство, іноземці",
+        "• Teško ozlijeđen 68-godišnji pješak u Rijeci → Побут інших міст (ДТП у Рієці) | Сутності: Рієка, ДТП, пішохід, поліція",
+        "• Znanje ispred vještina – kandidate MasterChefa dočekao test znanja → Світовий шум (Телевізійне кулінарне шоу) | Сутності: MasterChef, кулінарія, телешоу",
+        "• Sutra na dijelu parkinga na Batali neće biti moguće parkirati, evo zaš → Побут інших міст (Перекриття парковки в Дубровнику) | Сутності: Батала, Дубровник, Sanitat, паркування",
+        "• Policija objavila detalje bizarne nesreće koja je zatvorila autocestu  → Побут інших міст (ДТП на трасі Рієка-Загреб) | Сутності: автострада А6, Рієка, Загреб, ДТП",
+        "• Supertalent: Tko sanja o predsjedničkoj fotelji, a tko će doći s autor → Світовий шум (Розважальне телешоу) | Сутності: Supertalent, телешоу, таланти"
+      ],
+      "rejected_by_reason": {
+        "Побут інших міст": 5,
+        "Не за тематикою": 1,
+        "Вже публікувалось": 3,
+        "Геоблок": 1,
+        "Світовий шум": 2
+      },
+      "updates_marked": 0,
+      "already_rejected": 12,
+      "rejected_by_code_examples": [
+        "[тег RSS sport] POVIJEST JE ISPISANA Emanuela Rados prva hrvatska hrvačica na Olimpijskim igrama mladih!",
+        "[nogometaša] Masovna tučnjava mladih nogometaša na utakmici kod Zadra, na teren stigla i interventna policija",
+        "[promo] DOBAR STIL, JOŠ BOLJE CIJENE: SPECIAL PRICES DONOSI 30 % POPUSTA NA ODABRANE KOMADE JESENSKO-ZIMSKE ",
+        "[тег RSS nogomet] Cristiano Ronaldo nakon sukoba s izbornikom i službeno objavio završetak reprezentativne karijere!"
+      ]
+    },
+    "backlog": {
+      "total_size": 5,
+      "sources": {
+        "023": 2,
+        "Zadarski list": 1,
+        "Slobodna dalmacija": 2
+      }
+    },
+    "published": {
+      "total": 0,
+      "ukraine_priority": 0,
+      "with_images": 0,
+      "text_only": 0,
+      "og_images_found": 1,
+      "sources": {}
+    },
+    "models_used": {
+      "gemini-3.1-flash-lite": 1
+    },
+    "models_by_task": {
+      "filter": "gemini-3.1-flash-lite",
+      "translate": null
+    },
+    "model_attempts": [
+      {
+        "task": "filter",
+        "model": "gemini-3.1-flash-lite",
+        "outcome": "ok"
+      },
+      {
+        "task": "translate",
+        "model": "gemini-3.5-flash-lite",
+        "outcome": "unavailable"
+      },
+      {
+        "task": "translate",
+        "model": "gemini-3.8-flash",
+        "outcome": "unavailable"
+      },
+      {
+        "task": "translate",
+        "model": "gemini-3.6-flash",
+        "outcome": "unavailable"
+      }
+    ],
+    "exhausted_models": [],
+    "demoted_models": [
+      "filter: gemini-3-flash-preview",
+      "filter: gemini-3.6-flash",
+      "filter: gemini-3.5-flash-lite",
+      "translate: gemini-3.8-flash"
+    ],
+    "translate_budget_deferred": [
+      "gemini-3.6-flash"
+    ],
+    "gemini_region_blocked": false,
+    "gemini_unavailable": true,
+    "errors_count": 0,
+    "gemini_retries": 3
   }
 ]
