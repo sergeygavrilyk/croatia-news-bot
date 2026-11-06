@@ -1,50 +1,5 @@
 [
   {
-    "timestamp": "2026-10-20 08:01:10",
-    "execution_time": 211.8,
-    "funnel": {
-      "scraped_total": 35,
-      "scraped_by_source": {
-        "023": 10,
-        "Slobodna dalmacija": 15,
-        "Zadarski list": 10
-      },
-      "already_seen": 2,
-      "rejected_by_keywords": 14,
-      "duplicates_removed_by_ai": 7,
-      "rejection_reasons_list": [
-        "• Kad će biti napravljen i gdje će stajati? Miho Bukvić: ‘Mogao ga je do → Побут чужих міст (Дубровник) | Сутності: Miho Bukvić, Dubrovnik, Pilama, Marko Mujan",
-        "• EU pred savršenom političkom olujom. Pod pritiskom je sa svih strana,  → Світовий шум та загальноєвропейська політика без прямого фокусу на хорватських біженцях | Сутності: Europska unija, Politico, Nikos Hristodulides, Donald Trump",
-        "• Bez vode dio Riječke ulice → Побут чужих міст (Дубровник) | Сутності: Vodovod Dubrovnik, Riječka ulica, Dubrovnik",
-        "• Otkriven šesti par Plesa sa zvijezdama: Modni dizajner pred novim izaz → Спорт, розваги та медіа-шоу | Сутності: Ples sa zvijezdama, Ivica Skoko, Rebecca Krajnović, HRT",
-        "• Tko je u četvrtak bez struje? → Побут чужих міст (Дубровник) | Сутності: Elektrojug, Čelopeci, Kučište, Dubrovnik",
-        "• U ulozi Carmen izmjenjivat će se operne prvakinje Sofija Petrović i Em → Побут чужих міст (Загреб) | Сутності: Carmen, Sofija Petrović, Emilija Rukavina, HNK Zagreb",
-        "• Ponos Medicinske škole Ante Kuzmanića; Učenica Leonarda Rukavina pobje → Дубль існуючої новини в історії про перемогу учениці | Сутності: Leonarda Rukavina, Medicinska škola, Zadar, Mali Galović"
-      ]
-    },
-    "backlog": {
-      "total_size": 2,
-      "sources": {
-        "023": 2
-      }
-    },
-    "published": {
-      "total": 3,
-      "ukraine_priority": 1,
-      "with_images": 0,
-      "text_only": 3,
-      "sources": {
-        "023": 3
-      }
-    },
-    "models_used": {
-      "gemini-3.6-flash": 1,
-      "gemini-3.5-flash-lite": 1
-    },
-    "errors_count": 0,
-    "gemini_retries": 3
-  },
-  {
     "timestamp": "2026-10-20 09:01:10",
     "execution_time": 108.4,
     "funnel": {
@@ -8921,5 +8876,112 @@
     "gemini_unavailable": false,
     "errors_count": 1,
     "gemini_retries": 5
+  },
+  {
+    "timestamp": "2026-11-06 08:01:23",
+    "execution_time": 337.2,
+    "funnel": {
+      "scraped_total": 35,
+      "scraped_by_source": {
+        "023": 10,
+        "Slobodna dalmacija": 15,
+        "Zadarski list": 10
+      },
+      "already_seen": 7,
+      "rejected_by_keywords": 7,
+      "rejected_by_rule": {
+        "тег RSS sport": 1,
+        "тег RSS lifestyle": 1,
+        "URL /sport/": 1,
+        "тег RSS košarka": 1,
+        "тег RSS nogomet": 3
+      },
+      "unclassified_by_ai": 0,
+      "duplicates_removed_by_ai": 12,
+      "rejection_reasons_list": [
+        "• Luka za rasuti teret postaje ro-ro terminal: Automobili da, ali staro  → Побут інших міст (Перепрофілювання терміналів порту Рієка) | Сутності: Luka Rijeka, Duško Grabovac, Bakar, Rijeka",
+        "• Knežević: Kad već danima slušamo o kokainu, kamionima droge i testiran → Побут інших міст (Політички суперечки міської ради Дубровника) | Сутності: Viktorija Knežević, Mato Franković, Dubrovnik, Centar",
+        "• Humanitarni posrednici osiguravaju da donacije hrane dođu u prave ruke → Реклама (Промоція та нагородження мережі Konzum) | Сутності: Konzum, Najdonator, Hrvatska",
+        "• Manjgura osvojila regionalni the! award za kampanju Zorana Paunovića u → Побут інших міст (PR-нагорода виборчої кампанії в Макарській) | Сутності: Manjgura, Zoran Paunović, Makarska, HUOJ",
+        "• Novoizabrana guvernerka Teksasa obećala: “Zaštitit ćemo građane od pod → Геоблок (Законодавство щодо дата-центрів у США) | Сутності: Gina Hinojosa, Teksas, SAD, Washington",
+        "• Premijer uručio ugovor: Veliko ulaganje u Zaton, evo što će sve biti n → Побут інших міст (Водопровід у Затоні біля Шибеника) | Сутності: Andrej Plenković, Zaton, Šibenik, Zvonimir Štrkalj",
+        "• Nijedna dubrovačka ustanova ni gradsko poduzeće nemaju ugovor o redovn → Побут інших міст (Тестування на наркотики працівників у Дубровнику) | Сутності: Dubrovnik, Čistoća, Libertas, Gradsko vijeće",
+        "• Počele gužve kod vulkanizera: provjerili smo cijene u Rijeci, razlike  → Побут інших міст (Порівняння цін на шиномонтаж у Рієці) | Сутності: Rijeka, Gumi servis Vodovodna, vulkanizeri",
+        "• Sabatina prvi put u Brelima; dodijeljena priznanja laureatima; nagrađe → Побут інших міст (Зразок виноградарів у Брелах) | Сутності: Brela, Sabatina 2026, Zadružni savez Dalmacije, Ante Buktenica",
+        "• Raspršuju se iluzije o AI-ju: žestoko potonule i azijske burze, sve je → Геоблок (Падіння технологічних акцій на світових біржах) | Сутності: Singapur, Wall Street, Nikkei, Donald Trump",
+        "• Vrtlar zasadio nova stabla u Vukovarskoj: umjesto stare gigantske, čak → Побут інших міст (Висадка дерев на вулиці Дубровника) | Сутності: Vrtlar, Vukovarska ulica, Dubrovnik, Fina",
+        "• Sunčan petak uz buru, a od utorka Zadar očekuje kišovit tjedan i neobi → Вже публікувалось (Прогноз погоди у Задарі вже висвітлювався) | Сутності: Zadar, bura, Velebit, Jadran"
+      ],
+      "rejected_by_reason": {
+        "Побут інших міст": 8,
+        "Реклама": 1,
+        "Геоблок": 2,
+        "Вже публікувалось": 1
+      },
+      "updates_marked": 0,
+      "already_rejected": 6,
+      "rejected_by_code_examples": [
+        "[тег RSS sport] Zadarski Fortius zaključio povijesnu sezonu; Najbolji juniori na pripremama reprezentacije u Makarsk",
+        "[тег RSS lifestyle] Bijele mrlje na noktima najčešće ne znače manjak kalcija, nego staru ozljedu nokta",
+        "[URL /sport/] Uragan Juga u Francuskoj: Strasbourgu nakon vodstva ugasili svjetlo i pobjegli!",
+        "[тег RSS košarka] Stephen Curry se razigrao u nastavku i odveo Warriorse do šeste uzastopne pobjede",
+        "[тег RSS nogomet] Engleski mediji posebno su se naklonili jednom igraču Dinama: “To je bila čista nogometna genijalnos",
+        "[тег RSS nogomet] Napadač Istre 1961 uoči Rijeke: “To je derbi i kao i uvijek izgledi su 50:50”",
+        "[тег RSS nogomet] Bivši napadač Bijelih i Zeleno-žutih: “Volio bih da bodovi ostanu u Puli, ali sve vuče na remi”"
+      ]
+    },
+    "backlog": {
+      "total_size": 5,
+      "sources": {
+        "023": 5
+      }
+    },
+    "published": {
+      "total": 3,
+      "ukraine_priority": 0,
+      "with_images": 3,
+      "text_only": 0,
+      "og_images_found": 2,
+      "sources": {
+        "023": 2,
+        "Zadarski list": 1
+      }
+    },
+    "models_used": {
+      "gemini-3.6-flash": 2
+    },
+    "models_by_task": {
+      "filter": "gemini-3.6-flash",
+      "translate": "gemini-3.6-flash"
+    },
+    "model_attempts": [
+      {
+        "task": "filter",
+        "model": "gemini-3-flash-preview",
+        "outcome": "unavailable"
+      },
+      {
+        "task": "filter",
+        "model": "gemini-3.6-flash",
+        "outcome": "ok"
+      },
+      {
+        "task": "translate",
+        "model": "gemini-3.8-flash",
+        "outcome": "unavailable"
+      },
+      {
+        "task": "translate",
+        "model": "gemini-3.6-flash",
+        "outcome": "ok"
+      }
+    ],
+    "exhausted_models": [],
+    "demoted_models": [],
+    "translate_budget_deferred": [],
+    "gemini_region_blocked": false,
+    "gemini_unavailable": false,
+    "errors_count": 0,
+    "gemini_retries": 2
   }
 ]
