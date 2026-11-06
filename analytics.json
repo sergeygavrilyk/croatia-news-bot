@@ -1,59 +1,5 @@
 [
   {
-    "timestamp": "2026-10-20 11:01:05",
-    "execution_time": 200.5,
-    "funnel": {
-      "scraped_total": 35,
-      "scraped_by_source": {
-        "023": 10,
-        "Slobodna dalmacija": 15,
-        "Zadarski list": 10
-      },
-      "already_seen": 7,
-      "rejected_by_keywords": 11,
-      "duplicates_removed_by_ai": 18,
-      "rejection_reasons_list": [
-        "• Udruga slijepih zahvalila se organizatorima, sudionicima i sugrađanima → Побут інших міст | Сутності: Udruga slijepih, Dubrovnik, Dubrovačka trpeza, Stradun",
-        "• Zelenski u Oslu s Witkoffom zbog pogoršanja odnosa sa SAD-om → Геоблок | Сутності: Volodimir Zelenski, Steve Witkoff, Oslo, SAD",
-        "• Velik odaziv na akciju mjerenja šećera u krvi i tlaka na Mlaki → Побут інших міст | Сутності: Rijeka, Mlaka, Mjesni odbor, šećer",
-        "• Šeks na skupu u Pločama bez dlake na jeziku: ‘Bila su to teška vremena → Побут інших міст | Сутності: Vladimir Šeks, Ploče, HDZ, Franjo Tuđman",
-        "• Legendarni Macola ponovno investira u Korenici; Nakon janjetine i hote → Побут інших міст | Сутності: Macola, Korenica, Željko Orešković, Lika",
-        "• Digitalizacija, novi propisi i manjak radnika: računovođe traže konkre → Побут інших міст | Сутності: HOK, Đurđica Mostarčić, Petrčani, Porezna uprava",
-        "• Ministar financija Ćorić: ‘Zahtjevi sindikata javnih službi nisu prihv → Геоблок | Сутності: Tomislav Ćorić, Vlada, sindikati, proračun",
-        "• Kakva nas zima čeka? DHMZ najavljuje topliji prosinac, evo što pokazuj → Геоблок | Сутності: DHMZ, Hrvatska, prosinac, zima",
-        "• Zadar čeka 13 električnih autobusa iz Kine: na putu je velika prepreka → Дубль в історії | Сутності: Zadar, električni autobusi, Kina, javni prijevoz",
-        "• Veliki pad Revoluta: Aplikacija ne radi, kartice se odbijaju u trgovin → Геоблок | Сутності: Revolut, Hrvatska, Europa, Downdetector",
-        "• Je li hrana pojeftinila i kako to građani osjećaju? SPAR se poziva na  → Геоблок | Сутності: SPAR, DZS, Hrvatska, S-BUDGET",
-        "• Iz gradske uprave upozoravaju na nevrijeme: građanima savjetuju dodata → Побут інших міст | Сутності: Dubrovnik, DHMZ, jugo, meteoaalarm",
-        "• Jadranka Kosor prva gošća podcasta HEJTi! Nove TV → Реклама | Сутності: Nova TV, Jadranka Kosor, Mia Kovačić, Gabrijela Kišiček",
-        "• Proslava u Pločama: Vladimir Šeks ‘opleo‘ po Vučiću, Grmoji, Bulju...‘ → Побут інших міст | Сутності: Vladimir Šeks, Ploče, Aleksandar Vučić, HDZ",
-        "• Tražite posao na jugu Dalmacije? Policija zapošljava, a jedan detalj n → Побут інших міст | Сутності: MUP, Dubrovnik, policija, natječaj",
-        "• Izvanredno se obratila njegova sestra Kim Yo Jong i zaprijetila Južnoj → Геоблок | Сутності: Kim Yo Jong, Kim Jong Un, Sjeverna Koreja, Južna Koreja",
-        "• Studenti najavili ‘ustanak‘ protiv ‘Studenca‘, a iz trgovačkog lanca o → Дубль в історії | Сутності: Studenac, Split, studenti, predstečaj",
-        "• Bez vode dio Riječke ulice → Побут інших міст | Сутності: Vodovod Dubrovnik, Riječka ulica, Dubrovnik, radovi"
-      ]
-    },
-    "backlog": {
-      "total_size": 0,
-      "sources": {}
-    },
-    "published": {
-      "total": 2,
-      "ukraine_priority": 0,
-      "with_images": 0,
-      "text_only": 2,
-      "sources": {
-        "023": 2
-      }
-    },
-    "models_used": {
-      "gemini-3.6-flash": 0,
-      "gemini-3.5-flash-lite": 2
-    },
-    "errors_count": 0,
-    "gemini_retries": 4
-  },
-  {
     "timestamp": "2026-10-20 12:01:09",
     "execution_time": 179.8,
     "funnel": {
@@ -9083,5 +9029,115 @@
     "gemini_unavailable": false,
     "errors_count": 0,
     "gemini_retries": 1
+  },
+  {
+    "timestamp": "2026-11-06 11:01:23",
+    "execution_time": 252.8,
+    "funnel": {
+      "scraped_total": 35,
+      "scraped_by_source": {
+        "023": 10,
+        "Slobodna dalmacija": 15,
+        "Zadarski list": 10
+      },
+      "already_seen": 15,
+      "rejected_by_keywords": 4,
+      "rejected_by_rule": {
+        "URL /sport/": 2,
+        "nogometne": 1,
+        "oglasi": 1
+      },
+      "unclassified_by_ai": 0,
+      "duplicates_removed_by_ai": 12,
+      "rejection_reasons_list": [
+        "• Gradski vijećnici Željko Raguž i Mato Butjerić dobrovoljno se testiral → Побут інших міст (Події у Дубровнику) | Сутності: Željko Raguž, Mato Butjerić, DUSTRA, Dubrovnik",
+        "• Jarak o “Zločinu u Drnišu”: Svjedočenje Aleksićevog strica je i najtež → Вже публікувалось (Кримінальна хроніка поза Задаром) | Сутності: Dosje Jarak, Kristijan Aleksić, Drniš, Voyo",
+        "• Krvavi zločin na Pagu: kuhinjski nož mladiću zabo u prsa dok je ležao  → Дубль (Дублює новину 7) | Сутності: Županijsko državno odvjetništvo, Zadar, Pag, pokušaj ubojstva",
+        "• Ministrica Hrstić u Rijeci o Zadravec: Vjerujem da Uprava bolnice zna  → Побут інших міст (Медичні питання у Рієці) | Сутності: Ministrica Hrstić, Rijeka, KBC Sestre milosrdnice, Zadravec",
+        "• Mladić ležao na kauču, a napadač ga nožem ubo u prsa - sada je optužen → Вже публікувалось (Подія вже є в історії) | Сутності: Županijsko državno odvjetništvo, Zadar, Pag, pokušaj ubojstva",
+        "• Otvara se izložba Sekcije mladih Fotokluba Rijeka, tema je industrijsk → Побут інших міст (Локальна виставка у Рієці) | Сутності: Fotoklub Rijeka, Galerija Principij, Rijeka, izložba",
+        "• Opasna telefonska prijevara širi se Zadrom, prevaranti ciljaju starije → Вже публікувалось (Повтор новини 3) | Сутності: Policijska uprava zadarska, Zadar, prijevara, starije osobe",
+        "• U riječku luku uplovio golemi Grand Benelux, brod izgrađen u pulskom U → Побут інших міст (Судноплавство у Рієці) | Сутності: Grand Benelux, Rijeka, Uljanik, Grimaldi Group",
+        "• Muškarac (41) izazvao prometnu nesreću na A1 kod Šibenika; bio je pija → Побут інших міст (ДТП біля Шибеника) | Сутності: A1, Šibenik, prometna nesreća, HAC",
+        "• U subotu počinju Dani makedonske kulture → Побут інших міст (Культурна подія у Рієці) | Сутності: Dani makedonske kulture, Rijeka, Ilinden",
+        "• Diamond Dust u subotu u Pogonu slavi 20 godina: Svaka nova pjesma doka → Побут інших міст (Концерт у Рієці) | Сутності: Diamond Dust, Rijeka, Pogon, koncert",
+        "• Izet i Borgie u subotu u Nemo Klubu: Svaka pjesma ima svoju priču → Побут інших міст (Концерт у Рієці) | Сутності: Izet Medošević, Borgie, Rijeka, Nemo Klub"
+      ],
+      "rejected_by_reason": {
+        "Побут інших міст": 8,
+        "Вже публікувалось": 3,
+        "Дубль": 1
+      },
+      "updates_marked": 1,
+      "already_rejected": 10,
+      "rejected_by_code_examples": [
+        "[URL /sport/] Dva derbija u Gospinom polju: Square u nedjelju dočekuje Rijeku!",
+        "[nogometne] Punio je dvorane i stadione, ali Mišo je samo na jednom mjestu imao tremu. A što je napravio usred r",
+        "[oglasi] Zadranka krenula prodati auto pa je ‘snervali‘ oglasi za stanove: ‘Kako vi to mislite?!‘ Jadni ljudi",
+        "[URL /sport/] Kimi Antonelli posjetio obiteljsko imanje Ayrtona Senne: “Bio sam zaista emotivan”"
+      ]
+    },
+    "backlog": {
+      "total_size": 3,
+      "sources": {
+        "Slobodna dalmacija": 1,
+        "Zadarski list": 1,
+        "023": 1
+      }
+    },
+    "published": {
+      "total": 3,
+      "ukraine_priority": 0,
+      "with_images": 3,
+      "text_only": 0,
+      "og_images_found": 3,
+      "sources": {
+        "023": 3
+      }
+    },
+    "models_used": {
+      "gemini-3.1-flash-lite": 1,
+      "gemini-3.6-flash": 1
+    },
+    "models_by_task": {
+      "filter": "gemini-3.1-flash-lite",
+      "translate": "gemini-3.6-flash"
+    },
+    "model_attempts": [
+      {
+        "task": "filter",
+        "model": "gemini-3-flash-preview",
+        "outcome": "unavailable"
+      },
+      {
+        "task": "filter",
+        "model": "gemini-3.5-flash-lite",
+        "outcome": "unavailable"
+      },
+      {
+        "task": "filter",
+        "model": "gemini-3.1-flash-lite",
+        "outcome": "ok"
+      },
+      {
+        "task": "translate",
+        "model": "gemini-3.8-flash",
+        "outcome": "unavailable"
+      },
+      {
+        "task": "translate",
+        "model": "gemini-3.6-flash",
+        "outcome": "ok"
+      }
+    ],
+    "exhausted_models": [],
+    "demoted_models": [
+      "filter: gemini-3.6-flash"
+    ],
+    "translate_budget_deferred": [],
+    "gemini_region_blocked": false,
+    "gemini_unavailable": false,
+    "errors_count": 0,
+    "gemini_retries": 3
   }
 ]
