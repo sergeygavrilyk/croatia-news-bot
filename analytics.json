@@ -1,59 +1,5 @@
 [
   {
-    "timestamp": "2026-10-20 15:01:08",
-    "execution_time": 341.4,
-    "funnel": {
-      "scraped_total": 35,
-      "scraped_by_source": {
-        "023": 10,
-        "Slobodna dalmacija": 15,
-        "Zadarski list": 10
-      },
-      "already_seen": 3,
-      "rejected_by_keywords": 15,
-      "duplicates_removed_by_ai": 14,
-      "rejection_reasons_list": [
-        "• Trump, Putin i Xi kroje novi svjetski poredak: “Ovo bi mogla biti nova → Геоблок | Сутності: Trump, Putin, Xi, Zelensky, China",
-        "• Ovo mjesto u Dalmaciji je fenomen. Na pet tisuća radno sposobnih imaju → Побут інших міст | Сутності: Vodice, Šibenik-Knin, Sanja Radin Mačukat",
-        "• Derutni prizori u Nacionalnom parku! Ovog ljeta su ulaznice naplaćival → Побут інших міст | Сутності: National Park Krka, Skradinski Buk, Šibenik",
-        "• Zeleno svjetlo prvom riječkom studiju o umjetnoj inteligenciji → Побут інших міст | Сутності: University of Rijeka, Tehnički fakultet, Željko Vrcan",
-        "• Razum i osjećaji: Ženska snaga u lijepom krajoliku i nesklonim vremeni → Світовий шум | Сутності: Jane Austen, Sense and Sensibility, Georgia Oakley",
-        "• Gimnazija Franje Petrića slavi veliku obljetnicu, pozvani su svi bivši → Дубль в історії | Сутності: Gimnazija Franje Petrića, Zadar, MIOC",
-        "• Plenković: Politika ravnomjernog regionalnog razvoja jedna od najuspje → Дубль в історії | Сутності: Andrej Plenković, Šibenik, Vlada RH",
-        "• Legendarni Macola ponovno investira u Korenici; Nakon janjetine i hote → Побут інших міст | Сутності: Macola, Korenica, Željko Orešković",
-        "• Izložba o Bijenalu mladih u MMSU Rijeka: Retrospektivan pogled na veli → Побут інших міст | Сутності: MMSU Rijeka, Branka Benčić, Bijenale mladih",
-        "• Pogledajte kako je ovaj majstor parkirao svoj BMW: raširio se toliko d → Дубль в історії | Сутності: BMW, Zadar, Prometne zgode i nezgode",
-        "• Svjedokinja na suđenju Obersnelu opisala Baraćeve probleme s plaćanjem → Побут інших міст | Сутності: Vojko Obersnel, Rijeka, Samir Barać",
-        "• Ustaše nakon rata ubili drniškog učitelja zajedno s njegovim vozačem!  → Побут інших міст | Сутності: Vjekoslav Širinić, Drniš, Josip Bitunjac",
-        "• Capak: Razmatra se prestanak rutinskog cijepljenja djece protiv tuberk → Дубль в історії | Сутності: Krunoslav Capak, HZJZ, Zagreb",
-        "• ‘Život u Šibeniku postaje luksuz!‘; Izračunali smo koliko će novi udar → Побут інших міст | Сутності: Šibenik, Željko Burić, Gradsko vijeće"
-      ]
-    },
-    "backlog": {
-      "total_size": 1,
-      "sources": {
-        "Slobodna dalmacija": 1
-      }
-    },
-    "published": {
-      "total": 3,
-      "ukraine_priority": 0,
-      "with_images": 2,
-      "text_only": 1,
-      "sources": {
-        "023": 1,
-        "Zadarski list": 1,
-        "Slobodna dalmacija": 1
-      }
-    },
-    "models_used": {
-      "gemini-3.6-flash": 0,
-      "gemini-3.5-flash-lite": 2
-    },
-    "errors_count": 0,
-    "gemini_retries": 5
-  },
-  {
     "timestamp": "2026-10-20 19:01:09",
     "execution_time": 223.9,
     "funnel": {
@@ -9240,5 +9186,111 @@
     "gemini_unavailable": false,
     "errors_count": 0,
     "gemini_retries": 1
+  },
+  {
+    "timestamp": "2026-11-06 14:01:19",
+    "execution_time": 254.6,
+    "funnel": {
+      "scraped_total": 35,
+      "scraped_by_source": {
+        "023": 10,
+        "Slobodna dalmacija": 15,
+        "Zadarski list": 10
+      },
+      "already_seen": 18,
+      "rejected_by_keywords": 4,
+      "rejected_by_rule": {
+        "тег RSS lifestyle": 1,
+        "košarkaško": 1,
+        "promo": 1,
+        "igračima": 1
+      },
+      "unclassified_by_ai": 0,
+      "duplicates_removed_by_ai": 11,
+      "rejection_reasons_list": [
+        "• Konferencija projekta očuvanja prirodne baštine Šibensko-kninske župan → Побут інших міст (Конференція в Шибенику) | Сутності: Шибеник, Natura 2000, ЄС, природна спадщина",
+        "• Ministranti ustvrdili da je rock mrtav, pa objavili novi singl “Na eng → Не за тематикою (Музичний гурт) | Сутності: Міністранти, Рієка, рок-музика, альбом",
+        "• Dubrovački branitelji ogorčeni nakon proslave HRM-a: ‘Neistine! Uvrije → Побут інших міст (Конфлікт ветеранів у Дубровнику) | Сутності: Дубровник, HRM, ветерани, генерал",
+        "• Lički pčelar Alen Zorić: “Svoj med bih ponudio Hrvatskom saboru!” → Побут інших міст (Санація сміття в Госпичі) | Сутності: Госпич, Ліка, сміттєзвалище, Ернест Петрі",
+        "• Plenković o Frankovićevim navodima: ‘Po toj je logici onda i ovdje des → Вже публікувалось (Коментар політика щодо наркотиків) | Сутності: Андрей Пленкович, Мато Франкович, Дубровник, наркотики",
+        "• Riječki znanstveni mostovi o izazovima AI-ja: Uvoditi nove mogućnosti, → Не за тематикою (Науковий захід у Рієці) | Сутності: Рієка, штучний інтелект, наукова конференція",
+        "• DUNEA U NOVOM PROJEKTU – Skriveno blago franjevačkih samostana postaje → Не за тематикою (Туристичний проект) | Сутності: DUNEA, францисканці, культурна спадщина, туризм",
+        "• EK protiv TikToka zbog “zečjih rupa”: “Iz njih nije lako izaći” → Геоблок (Регулювання соцмереж в ЄС) | Сутності: TikTok, Європейська комісія, цифрові послуги",
+        "• Tehnički fakultet slavi 66. obljetnicu, uvode studij Politehnike za ob → Побут інших міст (Ювілей факультету в Рієці) | Сутності: Рієка, Технічний факультет, STEM, штучний інтелект",
+        "• Prof. emeritus Damir Magaš: Vir ne bi dobio most da nije bilo ideje o  → Не за тематикою (Історична стаття про острів Вір) | Сутності: Вір, Дамір Магаш, Задар, географія",
+        "• Općini Vir i ‘Vodovodu‘ Zadar uručeni ugovori za završetak projekta ag → Вже публікувалось (Повторна новина про підписання контракту) | Сутності: Вір, Vodovod Zadar, агломерація, Марія Вучкович"
+      ],
+      "rejected_by_reason": {
+        "Побут інших міст": 4,
+        "Не за тематикою": 4,
+        "Вже публікувалось": 2,
+        "Геоблок": 1
+      },
+      "updates_marked": 0,
+      "already_rejected": 13,
+      "rejected_by_code_examples": [
+        "[тег RSS lifestyle] Grijanje cijeli dan ili samo po potrebi: stručnjaci objašnjavaju kada se što više isplati",
+        "[košarkaško] Nastavak ulaganja u uređenje javnih površina: otvoreno obnovljeno sportsko igralište na Baldekinu",
+        "[promo] Promo video HTZ-a s Johnom Malkovichem osvojio još jednu nagradu, ovoga puta u Londonu",
+        "[igračima] Manje od dva tjedna do izlaska GTA VI, najskuplje igre u povijesti"
+      ]
+    },
+    "backlog": {
+      "total_size": 0,
+      "sources": {}
+    },
+    "published": {
+      "total": 2,
+      "ukraine_priority": 0,
+      "with_images": 2,
+      "text_only": 0,
+      "og_images_found": 1,
+      "sources": {
+        "023": 1,
+        "Slobodna dalmacija": 1
+      }
+    },
+    "models_used": {
+      "gemini-3.1-flash-lite": 1,
+      "gemini-3.5-flash-lite": 1
+    },
+    "models_by_task": {
+      "filter": "gemini-3.1-flash-lite",
+      "translate": "gemini-3.5-flash-lite"
+    },
+    "model_attempts": [
+      {
+        "task": "filter",
+        "model": "gemini-3-flash-preview",
+        "outcome": "unavailable"
+      },
+      {
+        "task": "filter",
+        "model": "gemini-3.1-flash-lite",
+        "outcome": "ok"
+      },
+      {
+        "task": "translate",
+        "model": "gemini-3.8-flash",
+        "outcome": "unavailable"
+      },
+      {
+        "task": "translate",
+        "model": "gemini-3.5-flash-lite",
+        "outcome": "ok"
+      }
+    ],
+    "exhausted_models": [],
+    "demoted_models": [
+      "filter: gemini-3.6-flash",
+      "filter: gemini-3.5-flash-lite"
+    ],
+    "translate_budget_deferred": [
+      "gemini-3.6-flash"
+    ],
+    "gemini_region_blocked": false,
+    "gemini_unavailable": false,
+    "errors_count": 0,
+    "gemini_retries": 2
   }
 ]
