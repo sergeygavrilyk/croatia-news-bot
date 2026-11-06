@@ -1,59 +1,5 @@
 [
   {
-    "timestamp": "2026-10-20 12:01:09",
-    "execution_time": 179.8,
-    "funnel": {
-      "scraped_total": 35,
-      "scraped_by_source": {
-        "023": 10,
-        "Slobodna dalmacija": 15,
-        "Zadarski list": 10
-      },
-      "already_seen": 5,
-      "rejected_by_keywords": 10,
-      "duplicates_removed_by_ai": 17,
-      "rejection_reasons_list": [
-        "• Ovo mjesto u Dalmaciji je fenomen. Na pet tisuća radno sposobnih imaju → Побут інших міст | Сутності: Vodice, DDK, Sanja Radin Mačukat",
-        "• Udruga slijepih zahvalila se organizatorima, sudionicima i sugrađanima → Побут інших міст | Сутності: Dubrovnik, Udruga slijepih, Stradun",
-        "• Pogledajte kako je ovaj majstor parkirao svoj BMW: raširio se toliko d → Дубль в історії | Сутності: Prometne zgode i nezgode, BMW, Zadar",
-        "• Dovršene dvije akcije uređenja u Parku prirode Učka → Побут інших міст | Сутності: Park prirode Učka, Vela draga, Glas Istre",
-        "• Ustaše nakon rata ubili drniškog učitelja zajedno s njegovim vozačem!  → Побут інших міст | Сутності: Vjekoslav Širinić, Drniš, Josip Bitunjac",
-        "• Legendarni Macola ponovno investira u Korenici; Nakon janjetine i hote → Побут інших міст | Сутності: Macola, Korenica, Željko Orešković",
-        "• Iva Juračić Milat nova ravnateljica Dječjeg vrtića Opatija → Побут інших міст | Сутності: Opatija, Iva Juračić Milat, Dječji vrtić",
-        "• ‘Život u Šibeniku postaje luksuz!‘; Izračunali smo koliko će novi udar → Побут інших міст | Сутності: Šibenik, Željko Burić, Gradsko vijeće",
-        "• Veliki pad Revoluta: Aplikacija ne radi, kartice se odbijaju u trgovin → Світовий шум | Сутності: Revolut, Index, Google Cloud",
-        "• Velik odaziv na akciju mjerenja šećera u krvi i tlaka na Mlaki → Побут інших міст | Сутності: Rijeka, Mlaka, Mjesni odbor",
-        "• Ne možete platiti Revolutom? Riječ je o problemu o kojem se u bankarst → Дубль в історії | Сутності: Revolut, Downdetector, Nik Storonsky",
-        "• Digitalizacija, novi propisi i manjak radnika: računovođe traže konkre → Побут інших міст | Сутності: HOK, Đurđica Mostarčić, Petrčani",
-        "• Kakva nas zima čeka? DHMZ najavljuje topliji prosinac, evo što pokazuj → Світовий шум | Сутності: DHMZ, Novi list, Hrvatska",
-        "• Šeks na skupu u Pločama bez dlake na jeziku: ‘Bila su to teška vremena → Побут інших міст | Сутності: Ploče, HDZ, Josip Manolić",
-        "• Ministar financija Ćorić: ‘Zahtjevi sindikata javnih službi nisu prihv → Світовий шум | Сутності: Tomislav Ćorić, Vlada, Sindikati",
-        "• Zadar čeka 13 električnih autobusa iz Kine: na putu je velika prepreka → Дубль в історії | Сутності: Zadar, Kina, Gaženica",
-        "• Iz gradske uprave upozoravaju na nevrijeme: građanima savjetuju dodata → Побут інших міст | Сутності: Dubrovnik, DHMZ, Jugo"
-      ]
-    },
-    "backlog": {
-      "total_size": 0,
-      "sources": {}
-    },
-    "published": {
-      "total": 3,
-      "ukraine_priority": 0,
-      "with_images": 2,
-      "text_only": 1,
-      "sources": {
-        "023": 1,
-        "Slobodna dalmacija": 2
-      }
-    },
-    "models_used": {
-      "gemini-3.6-flash": 0,
-      "gemini-3.5-flash-lite": 2
-    },
-    "errors_count": 0,
-    "gemini_retries": 4
-  },
-  {
     "timestamp": "2026-10-20 13:01:10",
     "execution_time": 208.9,
     "funnel": {
@@ -9139,5 +9085,113 @@
     "gemini_unavailable": false,
     "errors_count": 0,
     "gemini_retries": 3
+  },
+  {
+    "timestamp": "2026-11-06 12:01:20",
+    "execution_time": 127.5,
+    "funnel": {
+      "scraped_total": 35,
+      "scraped_by_source": {
+        "023": 10,
+        "Slobodna dalmacija": 15,
+        "Zadarski list": 10
+      },
+      "already_seen": 18,
+      "rejected_by_keywords": 6,
+      "rejected_by_rule": {
+        "URL /sport/": 2,
+        "nogometne": 1,
+        "oglasi": 1,
+        "тег RSS nogomet": 1,
+        "sportaša": 1
+      },
+      "unclassified_by_ai": 0,
+      "duplicates_removed_by_ai": 10,
+      "rejection_reasons_list": [
+        "• Nastavak oproštaja od legende: Šibenčani će imati priliku ostaviti pos → Побут інших міст (Прощання з музикантом у Шибенику) | Сутності: Šibenik, Mate Mišo Kovač, HNK Šibenik",
+        "• INTERVJU Barbara Kolar i Duško Ćurlić u Plesu sa zvijezdama slave dvad → Не за тематикою (Розважальне телешоу) | Сутності: Barbara Kolar, Duško Ćurlić, HRT, Ples sa zvijezdama",
+        "• Lovci Raštana Gornjih proslavili blagdan nebeskog zaštitnika i ovozema → Не за тематикою (Локальне релігійне свято мисливців) | Сутності: Raštane Gornje, Sv. Hubert, Lovačko društvo Jarebica",
+        "• Mladi virtuozi Glazbene škole Ivana Matetića Ronjgova dobili veliki pl → Побут інших міст (Концерт у Рієці) | Сутності: Rijeka, Glazbena škola Ivana Matetića Ronjgova, MO Pećine",
+        "• Gubici vode, turizam i klimatske promjene: Stručnjaci u Zadru o proble → Вже публікувалось (Повтор інформації про хакатон у Задарі) | Сутності: Zadar, Sveučilište u Zadru, EIT Water & PDJF Hackathon",
+        "• Od Danske do Portugala, novi val prijetnji letovima lažnim dojavama o  → Геоблок (Події за межами Хорватії) | Сутності: Danska, Portugal, Francuska, prijetnje bombom",
+        "• Što truje građane Knina? ‘Zrak je onečišćen, u vrlo visokim koncentrac → Побут інших міст (Проблеми з повітрям у Кніні) | Сутності: Knin, sumporovodik, Nastavni zavod za javno zdravstvo",
+        "• HDZ Rijeka: Osuđujemo totalitarizme i jasno stojimo uz hrvatske branit → Побут інших міст (Політична заява у Рієці) | Сутності: HDZ Rijeka, Grad Rijeka, Domovinski rat",
+        "• U Šopotu dovršen očevid požara u skladištu, evo što je bio uzrok izbij → Вже публікувалось (Оновлення про пожежу в Шопоті) | Сутності: Šopot, policija, požar",
+        "• Baba Yaga objavila drugi studijski nosač zvuka: Cilj je da album bude  → Не за тематикою (Вихід музичного альбому) | Сутності: Jadranka Ivaniš Yaya, Saša Antić, Baba Yaga, Zadar"
+      ],
+      "rejected_by_reason": {
+        "Побут інших міст": 4,
+        "Не за тематикою": 3,
+        "Вже публікувалось": 2,
+        "Геоблок": 1
+      },
+      "updates_marked": 0,
+      "already_rejected": 13,
+      "rejected_by_code_examples": [
+        "[URL /sport/] Dva derbija u Gospinom polju: Square u nedjelju dočekuje Rijeku!",
+        "[nogometne] Punio je dvorane i stadione, ali Mišo je samo na jednom mjestu imao tremu. A što je napravio usred r",
+        "[oglasi] Zadranka krenula prodati auto pa je ‘snervali‘ oglasi za stanove: ‘Kako vi to mislite?!‘ Jadni ljudi",
+        "[тег RSS nogomet] Thomas Tuchel objavio popis reprezentativaca za oglede protiv Hrvatske i Španjolske u Ligi nacija",
+        "[sportaša] Nikola Zdrilić gostovao u viškovskoj školi: Fair-play temelj svakog pravog sportaša",
+        "[URL /sport/] Kimi Antonelli posjetio obiteljsko imanje Ayrtona Senne: “Bio sam zaista emotivan”"
+      ]
+    },
+    "backlog": {
+      "total_size": 1,
+      "sources": {
+        "023": 1
+      }
+    },
+    "published": {
+      "total": 3,
+      "ukraine_priority": 0,
+      "with_images": 3,
+      "text_only": 0,
+      "og_images_found": 3,
+      "sources": {
+        "023": 3
+      }
+    },
+    "models_used": {
+      "gemini-3.1-flash-lite": 1,
+      "gemini-3.5-flash-lite": 1
+    },
+    "models_by_task": {
+      "filter": "gemini-3.1-flash-lite",
+      "translate": "gemini-3.5-flash-lite"
+    },
+    "model_attempts": [
+      {
+        "task": "filter",
+        "model": "gemini-3.5-flash-lite",
+        "outcome": "unavailable"
+      },
+      {
+        "task": "filter",
+        "model": "gemini-3.1-flash-lite",
+        "outcome": "ok"
+      },
+      {
+        "task": "translate",
+        "model": "gemini-3.6-flash",
+        "outcome": "unavailable"
+      },
+      {
+        "task": "translate",
+        "model": "gemini-3.5-flash-lite",
+        "outcome": "ok"
+      }
+    ],
+    "exhausted_models": [],
+    "demoted_models": [
+      "filter: gemini-3-flash-preview",
+      "filter: gemini-3.6-flash",
+      "translate: gemini-3.8-flash"
+    ],
+    "translate_budget_deferred": [],
+    "gemini_region_blocked": false,
+    "gemini_unavailable": false,
+    "errors_count": 0,
+    "gemini_retries": 2
   }
 ]
