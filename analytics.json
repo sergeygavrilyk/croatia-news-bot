@@ -1,56 +1,5 @@
 [
   {
-    "timestamp": "2026-10-20 10:01:09",
-    "execution_time": 189.0,
-    "funnel": {
-      "scraped_total": 35,
-      "scraped_by_source": {
-        "023": 10,
-        "Slobodna dalmacija": 15,
-        "Zadarski list": 10
-      },
-      "already_seen": 5,
-      "rejected_by_keywords": 13,
-      "duplicates_removed_by_ai": 11,
-      "rejection_reasons_list": [
-        "• Zelenski u Oslu s Witkoffom zbog pogoršanja odnosa sa SAD-om → Геоблок | Сутності: Volodimir Zelenski, Steve Witkoff, Oslo, SAD",
-        "• Jadranka Kosor prva gošća podcasta HEJTi! Nove TV → Побут інших міст | Сутності: Jadranka Kosor, Mia Kovačić, Nova TV, Zagreb",
-        "• Jeste li ga vidjeli? Policija traži muškarca zbog kaznenog djela u zag → Побут інших міст | Сутності: Zagrebačka policija, Britanski trg, Ulica Republike Austrije",
-        "• Za 89 mačaka spašenih iz stana u Rijeci stiže više od dvije tone hrane → Побут інших міст | Сутності: Rijeka, dm, Kitten Safe House",
-        "• Novi propagandni rat u BiH: Plakati optužuju Aliju Izetbegovića za zlo → Геоблок | Сутності: Alija Izetbegović, Istočno Sarajevo, Republika Srpska",
-        "• Proslava u Pločama: Vladimir Šeks ‘opleo‘ po Vučiću, Grmoji, Bulju...‘ → Побут інших міст | Сутності: Vladimir Šeks, Ploče, HDZ",
-        "• Grad Gospić osigurao sredstva za pokrivanje troškova najma stana mladi → Побут інших міст | Сутності: Gospić, Darko Milinović",
-        "• Tražite posao na jugu Dalmacije? Policija zapošljava, a jedan detalj n → Побут інших міст | Сутності: MUP, Dubrovačko-neretvanska županija",
-        "• Izvanredno se obratila njegova sestra Kim Yo Jong i zaprijetila Južnoj → Геоблок | Сутності: Kim Yo Jong, Južna Koreja, Sjeverna Koreja",
-        "• Studenti najavili ‘ustanak‘ protiv ‘Studenca‘, a iz trgovačkog lanca o → Дубль в історії | Сутності: Studenac, Split, Trgovački sud",
-        "• Tko je u četvrtak bez struje? → Дубль в історії | Сутності: Elektrojug, Čelopeci, Kučište"
-      ]
-    },
-    "backlog": {
-      "total_size": 3,
-      "sources": {
-        "Slobodna dalmacija": 2,
-        "023": 1
-      }
-    },
-    "published": {
-      "total": 3,
-      "ukraine_priority": 0,
-      "with_images": 2,
-      "text_only": 1,
-      "sources": {
-        "Slobodna dalmacija": 2,
-        "023": 1
-      }
-    },
-    "models_used": {
-      "gemini-3.6-flash": 0,
-      "gemini-3.5-flash-lite": 2
-    },
-    "errors_count": 0,
-    "gemini_retries": 4
-  },
-  {
     "timestamp": "2026-10-20 11:01:05",
     "execution_time": 200.5,
     "funnel": {
@@ -8994,6 +8943,109 @@
         "Slobodna dalmacija": 1,
         "Zadarski list": 1,
         "023": 1
+      }
+    },
+    "models_used": {
+      "gemini-3.5-flash-lite": 1,
+      "gemini-3.6-flash": 1
+    },
+    "models_by_task": {
+      "filter": "gemini-3.5-flash-lite",
+      "translate": "gemini-3.6-flash"
+    },
+    "model_attempts": [
+      {
+        "task": "filter",
+        "model": "gemini-3.6-flash",
+        "outcome": "unavailable"
+      },
+      {
+        "task": "filter",
+        "model": "gemini-3.5-flash-lite",
+        "outcome": "ok"
+      },
+      {
+        "task": "translate",
+        "model": "gemini-3.6-flash",
+        "outcome": "ok"
+      }
+    ],
+    "exhausted_models": [],
+    "demoted_models": [
+      "filter: gemini-3-flash-preview",
+      "translate: gemini-3.8-flash"
+    ],
+    "translate_budget_deferred": [],
+    "gemini_region_blocked": false,
+    "gemini_unavailable": false,
+    "errors_count": 0,
+    "gemini_retries": 1
+  },
+  {
+    "timestamp": "2026-11-06 10:01:21",
+    "execution_time": 143.2,
+    "funnel": {
+      "scraped_total": 35,
+      "scraped_by_source": {
+        "023": 10,
+        "Slobodna dalmacija": 15,
+        "Zadarski list": 10
+      },
+      "already_seen": 17,
+      "rejected_by_keywords": 3,
+      "rejected_by_rule": {
+        "тег RSS sport": 1,
+        "nogometne": 1,
+        "oglasi": 1
+      },
+      "unclassified_by_ai": 0,
+      "duplicates_removed_by_ai": 14,
+      "rejection_reasons_list": [
+        "• Vikend u Palachu: U petak Abortus, Zlotvori i M.R.Š., u subotu Gliste → Побут інших міст (Рієка) | Сутності: Rijeka, Klub Palach, Abortus, Zlotvori",
+        "• Novo u Dalmalandu: Dječji rođendani u game hallu uz VR zonu i otvoreno → Реклама (Розважальний парк) | Сутності: Dalmaland, Biograd, VR zona",
+        "• Dosad nepoznate činjenice o stravičnom ubojstvu u Drnišu: ‘Svjedočenje → Не за тематикою (Кримінал в іншому місті) | Сутності: Drniš, Kristijan Aleksić, Voyo",
+        "• Bezvremenski hitovi Nene Belana u božićnom izdanju 12. prosinca u HKD- → Побут інших міст (Концерт у Рієці) | Сутності: Neno Belan, Rijeka, HKD",
+        "• Tragovi prostora u Umjetničkoj galeriji: Otvorena izložba slika s liko → Побут інших міст (Виставка у Дубровнику) | Сутності: Dubrovnik, Umjetnička galerija, Matko Vekić",
+        "• Kultni album riječke grupe Let 3 dobiva izdanje na vinilu → Побут інших міст (Рієцький гурт) | Сутності: Let 3, Rijeka, Bombardiranje Srbije",
+        "• Na otočiću Lukovcu u blizini otoka Raba pronađen pečat biskupa Stjepan → Не за тематикою (Археологічна знахідка на Рабі) | Сутності: Rab, Lukovac, biskup Stjepan",
+        "• Paški most slavi 35 godina obrane; Bogat program u nedjelju uz prelet  → Вже публікувалось (Ювілей Паського мосту) | Сутності: Paški most, Domovinski rat, Pag",
+        "• Neil Young objavio 50. nosač zvuka: Osobni problemi, prolaznost i star → Світовий шум (Музичний альбом) | Сутності: Neil Young, Second Song, Kanada",
+        "• Traži se nasljednik Daniela Craiga: Callum, Jack, Joe? Tko će biti Bon → Геоблок (Британське кіно) | Сутності: London, Daniel Craig, James Bond",
+        "• Rijeka je izglasala zabranu veličanja ustaštva, ali provedbu tek treba → Побут інших міст (Рієка) | Сутності: Rijeka, Gradsko vijeće, Čavoglave",
+        "• Riječki Tajni agenti u seksi komediji: Dosad su spašavali svijet, sad  → Побут інших міст (Театр у Рієці) | Сутності: Rijeka, Tajni agenti, Denis Pilepić",
+        "• Dodik mami zastupnike političkih konkurenata da prijeđu njemu: politič → Геоблок (Боснія і Герцеговина) | Сутності: Sarajevo, Milorad Dodik, Draško Stanivuković",
+        "• Tuširanje u hladnoj vodi ima mnoge dobrobiti. Ljudi koji ga prakticira → Світовий шум (Наукове дослідження) | Сутності: Lena Glaser, Basel, Švicarska"
+      ],
+      "rejected_by_reason": {
+        "Побут інших міст": 6,
+        "Реклама": 1,
+        "Не за тематикою": 2,
+        "Вже публікувалось": 1,
+        "Світовий шум": 2,
+        "Геоблок": 2
+      },
+      "updates_marked": 1,
+      "already_rejected": 11,
+      "rejected_by_code_examples": [
+        "[тег RSS sport] Zadarski Fortius zaključio povijesnu sezonu; Najbolji juniori na pripremama reprezentacije u Makarsk",
+        "[nogometne] Punio je dvorane i stadione, ali Mišo je samo na jednom mjestu imao tremu. A što je napravio usred r",
+        "[oglasi] Zadranka krenula prodati auto pa je ‘snervali‘ oglasi za stanove: ‘Jadni studenti, a tek obitelji!‘;"
+      ]
+    },
+    "backlog": {
+      "total_size": 2,
+      "sources": {
+        "023": 2
+      }
+    },
+    "published": {
+      "total": 3,
+      "ukraine_priority": 0,
+      "with_images": 3,
+      "text_only": 0,
+      "og_images_found": 3,
+      "sources": {
+        "023": 3
       }
     },
     "models_used": {
