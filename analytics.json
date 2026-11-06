@@ -1,53 +1,5 @@
 [
   {
-    "timestamp": "2026-10-20 09:01:10",
-    "execution_time": 108.4,
-    "funnel": {
-      "scraped_total": 35,
-      "scraped_by_source": {
-        "023": 10,
-        "Slobodna dalmacija": 15,
-        "Zadarski list": 10
-      },
-      "already_seen": 7,
-      "rejected_by_keywords": 13,
-      "duplicates_removed_by_ai": 12,
-      "rejection_reasons_list": [
-        "• Zelenski u Oslu s Witkoffom zbog pogoršanja odnosa sa SAD-om → Міжнародна політика за межами Хорватії та України | Сутності: Volodimir Zelenski, Steve Witkoff, Oslo, SAD",
-        "• Pri kraju postavljanje zaštitnog sloja nad otpadom u Gospiću: ‘To će o → Побут чужого міста (Госпич) | Сутності: Gospić, PPK Velebit, Kostak-graditeljstvo",
-        "• Kad će biti napravljen i gdje će stajati? Miho Bukvić: ‘Mogao ga je do → Побут чужого міста (Дубровник) | Сутності: Dubrovnik, Miho Bukvić, Marko Mujan, Pile",
-        "• Bez vode dio Riječke ulice → Побут чужого міста (Дубровник) | Сутності: Dubrovnik, Vodovod, Riječka ulica",
-        "• Plemenita gesta s Vitrenjaka; JK Uskok donirao 35 litara klupskog masl → Дубль або несуттєва локальна подія без пріоритету | Сутності: Zadar, JK Uskok, Pučka kuhinja, Nadin",
-        "• Za 89 mačaka spašenih iz stana u Rijeci stiže više od dvije tone hrane → Побут чужого міста (Рієка) | Сутності: Rijeka, Kitten Safe House, dm",
-        "• Tko je u četvrtak bez struje? → Побут чужого міста (Дубровник) | Сутності: Dubrovnik, Elektrojug, Čelopeci",
-        "• Novi propagandni rat u BiH: Plakati optužuju Aliju Izetbegovića za zlo → Події за межами Хорватії та України (Боснія і Герцеговина) | Сутності: BiH, Alija Izetbegović, Istočno Sarajevo",
-        "• Sunčani utorak samo je predah: jugo s olujnim udarima i pljuskovi s gr → Дубль існуючого прогнозу погоди в історії | Сутності: Zadar, Jugo, Zadarska županija",
-        "• Grad Gospić osigurao sredstva za pokrivanje troškova najma stana mladi → Побут чужого міста (Госпич) | Сутності: Gospić, Darko Milinović",
-        "• Znanstvenici razvili novi AI alat koji na temelju fotografije osobe ot → Світовий шум та абстрактна наука | Сутності: Mass General Brigham, Hugo Aerts, SAD",
-        "• Otkriven šesti par Plesa sa zvijezdama: Modni dizajner pred novim izaz → Реклама та шоу-бізнес | Сутності: Ivica Skoko, Rebecca Krajnović, HRT, Ples sa zvijezdama"
-      ]
-    },
-    "backlog": {
-      "total_size": 0,
-      "sources": {}
-    },
-    "published": {
-      "total": 1,
-      "ukraine_priority": 0,
-      "with_images": 0,
-      "text_only": 1,
-      "sources": {
-        "023": 1
-      }
-    },
-    "models_used": {
-      "gemini-3.6-flash": 1,
-      "gemini-3.5-flash-lite": 1
-    },
-    "errors_count": 0,
-    "gemini_retries": 2
-  },
-  {
     "timestamp": "2026-10-20 10:01:09",
     "execution_time": 189.0,
     "funnel": {
@@ -8983,5 +8935,101 @@
     "gemini_unavailable": false,
     "errors_count": 0,
     "gemini_retries": 2
+  },
+  {
+    "timestamp": "2026-11-06 09:01:25",
+    "execution_time": 137.7,
+    "funnel": {
+      "scraped_total": 35,
+      "scraped_by_source": {
+        "023": 10,
+        "Slobodna dalmacija": 15,
+        "Zadarski list": 10
+      },
+      "already_seen": 19,
+      "rejected_by_keywords": 2,
+      "rejected_by_rule": {
+        "тег RSS sport": 1,
+        "тег RSS košarka": 1
+      },
+      "unclassified_by_ai": 0,
+      "duplicates_removed_by_ai": 8,
+      "rejection_reasons_list": [
+        "• Ugostitelji o adventskim cijenama: “Jeftinije fritule mogle bi biti lo → Побут інших міст (Рієка) | Сутності: Рієка, Хрвоє Марган, HOK, Пула",
+        "• Revolucija u liječenju raka pluća; Jednostavna pretraga krvi otkriva p → Не за тематикою (Медичне дослідження) | Сутності: КБЦ Загреб, Текучійська біопсія, Рать плуча",
+        "• Šušnjar: Europa mora ubrzati energetska ulaganja i ojačati konkurentno → Не за тематикою (Енергетична конференція) | Сутності: Анте Шушньяр, Загреб, Європейська комісія",
+        "• Druga akcija ove godine; Hrvatski Rafale zbog sumnje na bombu presreo  → Вже публікувалось (Перехоплення літака) | Сутності: Rafale, Фіннаїр, Ястребарське, Карловац",
+        "• Besramni prevaranti iskoristili franjevce. Prešlo svaku mjeru, morali  → Реклама (Шахрайство з маззю) | Сутності: Монастир Вісовац, Францисканці, Інтернет-шахрайство",
+        "• Rubio poriče da planira napustiti Trumpovu vladu: “Namjera mi je radit → Геоблок (США) | Сутності: Марко Рубіо, Дональд Трамп, Вашингтон, The New York Times",
+        "• Šećerna industrija pred kolapsom; Jedinoj hrvatskoj šećerani prijeti c → Побут інших міст (Жупаня) | Сутності: Сладорана Жупаня, Желько Задро, Хорватська індустрія цукру",
+        "• Piše Kim Cuculić: »Zrinjski« i balet → Побут інших міст (Загреб та Рієка) | Сутності: HNK Загреб, HNK Рієка, Нікола Шубіч Зринський, День хорватського балету"
+      ],
+      "rejected_by_reason": {
+        "Побут інших міст": 3,
+        "Не за тематикою": 2,
+        "Вже публікувалось": 1,
+        "Реклама": 1,
+        "Геоблок": 1
+      },
+      "updates_marked": 0,
+      "already_rejected": 13,
+      "rejected_by_code_examples": [
+        "[тег RSS sport] Zadarski Fortius zaključio povijesnu sezonu; Najbolji juniori na pripremama reprezentacije u Makarsk",
+        "[тег RSS košarka] Stephen Curry se razigrao u nastavku i odveo Warriorse do šeste uzastopne pobjede"
+      ]
+    },
+    "backlog": {
+      "total_size": 6,
+      "sources": {
+        "023": 6
+      }
+    },
+    "published": {
+      "total": 3,
+      "ukraine_priority": 0,
+      "with_images": 3,
+      "text_only": 0,
+      "og_images_found": 1,
+      "sources": {
+        "Slobodna dalmacija": 1,
+        "Zadarski list": 1,
+        "023": 1
+      }
+    },
+    "models_used": {
+      "gemini-3.5-flash-lite": 1,
+      "gemini-3.6-flash": 1
+    },
+    "models_by_task": {
+      "filter": "gemini-3.5-flash-lite",
+      "translate": "gemini-3.6-flash"
+    },
+    "model_attempts": [
+      {
+        "task": "filter",
+        "model": "gemini-3.6-flash",
+        "outcome": "unavailable"
+      },
+      {
+        "task": "filter",
+        "model": "gemini-3.5-flash-lite",
+        "outcome": "ok"
+      },
+      {
+        "task": "translate",
+        "model": "gemini-3.6-flash",
+        "outcome": "ok"
+      }
+    ],
+    "exhausted_models": [],
+    "demoted_models": [
+      "filter: gemini-3-flash-preview",
+      "translate: gemini-3.8-flash"
+    ],
+    "translate_budget_deferred": [],
+    "gemini_region_blocked": false,
+    "gemini_unavailable": false,
+    "errors_count": 0,
+    "gemini_retries": 1
   }
 ]
