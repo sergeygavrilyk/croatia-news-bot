@@ -1,60 +1,5 @@
 [
   {
-    "timestamp": "2026-10-21 09:01:07",
-    "execution_time": 186.3,
-    "funnel": {
-      "scraped_total": 35,
-      "scraped_by_source": {
-        "023": 10,
-        "Slobodna dalmacija": 15,
-        "Zadarski list": 10
-      },
-      "already_seen": 3,
-      "rejected_by_keywords": 9,
-      "duplicates_removed_by_ai": 14,
-      "rejection_reasons_list": [
-        "• Witkoff se sastao sa Zelenskim, danas ide kod Putina: ‘Razgovori su bi → Геоблок | Сутності: Steve Witkoff, Volodymyr Zelenskyy, Marco Rubio, Vladimir Putin, SpaceX",
-        "• Poljaci ogorčeni nakon odmora u Dubrovniku: ‘Umjesto s lijepim uspomen → Дубль в історії | Сутності: Dubrovnik, Poland, Index, Zakon o sigurnosti prometa",
-        "• Djevojčici filter u bazenu povukao kosu, nije mogla izroniti. Helikopt → Побут інших міст | Сутності: Rabac, KBC Rijeka, Njemačka",
-        "• Na muškarca u Šibeniku pala skela od deset metara; policija utvrdila t → Побут інших міст | Сутності: Šibenik, Policijska postaja Šibenik, Opća bolnica Šibenik",
-        "• Rijeci danas i sutra prijeti obilne kiša s olujnim udarima vjetra. Int → Побут інших міст | Сутності: Rijeka, Rijeka plus, DHMZ",
-        "• U petak u ovim ulicama u Dubrovniku neće biti struje, ali ni u Potomju → Побут інших міст | Сутності: Elektrojug, Dubrovnik, Potomje",
-        "• Hrvatska ima više od 200 tvrtki u obrambenom ekosustavu. Sada traže pu → Світовий шум | Сутності: Hrvatska gospodarska komora, ACCIÓ Catalonia, MORH",
-        "• Grad nudi stipendije učenicima i studentima za ovu školsku i akademsku → Побут інших міст | Сутності: Grad Dubrovnik, Stipendije, Hrvatska",
-        "• Mlini slave nebesnog zaštitnika, svetog Ilara. Evo tko će predvoditi m → Побут інших міст | Сутності: Mlini, Sveti Ilar, Fra Tomislav Hrstić, Toma Lučić",
-        "• Mladi vozač zaustavljen kod Jadranova. Imao je 12 grama “trave”, odbio → Побут інших міст | Сутності: Jadranovo, Crikvenica, Zagrebačke oznake",
-        "• Bez vode u Konavlima: evo gdje je pukla cijev i kada će je popraviti → Побут інших міст | Сутності: Konavle, Konavosko komunalno društvo, Poljice",
-        "• Uhvaćeno još dvoje Bugara koji su varali starije Zagrepčanke: ‘U pozad → Побут інших міст | Сутності: Zagreb, Dubrava, Peščenica, Bugarska",
-        "• Poljaci šokirani, mediji se raspisali: ‘Umjesto s lijepim uspomenama s → Дубль в історії | Сутності: Dubrovnik, Index, Poljska",
-        "• Zbog olujnog juga u prekidu brodski promet, a iz DHMZ-a najavljuju kiš → Дубль в історії | Сутності: DHMZ, Jadran, Hrvatski autoklub, Dubrovnik"
-      ]
-    },
-    "backlog": {
-      "total_size": 6,
-      "sources": {
-        "Zadarski list": 1,
-        "023": 4,
-        "Slobodna dalmacija": 1
-      }
-    },
-    "published": {
-      "total": 3,
-      "ukraine_priority": 0,
-      "with_images": 1,
-      "text_only": 2,
-      "sources": {
-        "023": 2,
-        "Zadarski list": 1
-      }
-    },
-    "models_used": {
-      "gemini-3.6-flash": 1,
-      "gemini-3.5-flash-lite": 1
-    },
-    "errors_count": 0,
-    "gemini_retries": 2
-  },
-  {
     "timestamp": "2026-10-21 10:01:09",
     "execution_time": 220.9,
     "funnel": {
@@ -9397,5 +9342,115 @@
     "gemini_unavailable": false,
     "errors_count": 0,
     "gemini_retries": 0
+  },
+  {
+    "timestamp": "2026-11-06 17:01:22",
+    "execution_time": 226.3,
+    "funnel": {
+      "scraped_total": 35,
+      "scraped_by_source": {
+        "023": 10,
+        "Slobodna dalmacija": 15,
+        "Zadarski list": 10
+      },
+      "already_seen": 19,
+      "rejected_by_keywords": 4,
+      "rejected_by_rule": {
+        "тег RSS lifestyle": 3,
+        "košarkaško": 1
+      },
+      "unclassified_by_ai": 0,
+      "duplicates_removed_by_ai": 9,
+      "rejection_reasons_list": [
+        "• Alkoholiziranom vozaču bez vozačke zatečenom u Malinskoj određena kazn → Побут інших міст (ДТП та порушення ПДР у Малінській) | Сутності: Malinska, Krk, policija, prometni prekršaj",
+        "• Od dvije škole do njih 450: završeno je jubilarno izdanje projekta „Ma → Не за тематикою (Національний освітній проект) | Сутності: Mama budi zdrava, SVE za NJU, Hrvatska, škole",
+        "• Obilježeno 20 godina Udruge Pomoć u kući u Novom Vinodolskom → Побут інших міст (Ювілей організації у Новому Вінодольському) | Сутності: Novi Vinodolski, Udruga Pomoć u kući, Tomislav Cvitković",
+        "• Započinje sanacija nerazvrstanih cesta na području Vinodolske općine → Побут інших міст (Ремонт доріг у Вінодольській громаді) | Сутності: Vinodolska općina, Branko Bačić, sanacija cesta",
+        "• Čestitke i poklon za najuspješnijeg plivača Nikolu Zdrilića na prijemu → Спорт (Прийом спортсмена у Вішково) | Сутності: Nikola Zdrilić, Viškovo, plivanje, medalje",
+        "• Duška prekida šutnju i otkriva dugo čuvanu Tajnu: O privlačnosti i zab → Не за тематикою (Музичний реліз) | Сутності: Duška, Tajna, Leo Anđelković",
+        "• Sve teži uvjeti rada hrvatskih ribara: “More treba zaštititi, ali mora → Побут інших міст (Зустріч рибалок у Малі-Лошині) | Сутності: Mali Lošinj, ribari, Hrvatska obrtnička komora",
+        "• PŠ Lički Novi neće se zatvoriti, Grad Gospić jamči opstanak škole → Побут інших міст (Ремонт школи у Лічкі-Нові) | Сутності: Gospić, Lički Novi, škola, obnova",
+        "• “Pomorska sigurnost 2026.”: Luke na meti novih sigurnosnih prijetnji → Не за тематикою (Конференція в Опатії) | Сутності: Opatija, pomorska sigurnost, konferencija"
+      ],
+      "rejected_by_reason": {
+        "Побут інших міст": 5,
+        "Не за тематикою": 3,
+        "Спорт": 1
+      },
+      "updates_marked": 1,
+      "already_rejected": 13,
+      "rejected_by_code_examples": [
+        "[тег RSS lifestyle] Medena pita s kremom od vanilije: kore se peku pet minuta, a kolač odmara preko noći",
+        "[тег RSS lifestyle] Program za osjetljivo rublje ne spašava kožnu jaknu, sako ni haljinu s cirkonima",
+        "[тег RSS lifestyle] Grijanje cijeli dan ili samo po potrebi: stručnjaci objašnjavaju kada se što više isplati",
+        "[košarkaško] Nastavak ulaganja u uređenje javnih površina: otvoreno obnovljeno sportsko igralište na Baldekinu"
+      ]
+    },
+    "backlog": {
+      "total_size": 4,
+      "sources": {
+        "Zadarski list": 3,
+        "023": 1
+      }
+    },
+    "published": {
+      "total": 0,
+      "ukraine_priority": 0,
+      "with_images": 0,
+      "text_only": 0,
+      "og_images_found": 1,
+      "sources": {}
+    },
+    "models_used": {
+      "gemini-3.1-flash-lite": 1
+    },
+    "models_by_task": {
+      "filter": "gemini-3.1-flash-lite",
+      "translate": null
+    },
+    "model_attempts": [
+      {
+        "task": "filter",
+        "model": "gemini-3-flash-preview",
+        "outcome": "unavailable"
+      },
+      {
+        "task": "filter",
+        "model": "gemini-3.6-flash",
+        "outcome": "unavailable"
+      },
+      {
+        "task": "filter",
+        "model": "gemini-3.1-flash-lite",
+        "outcome": "ok"
+      },
+      {
+        "task": "translate",
+        "model": "gemini-3.5-flash-lite",
+        "outcome": "unavailable"
+      },
+      {
+        "task": "translate",
+        "model": "gemini-3.8-flash",
+        "outcome": "unavailable"
+      },
+      {
+        "task": "translate",
+        "model": "gemini-3.6-flash",
+        "outcome": "unavailable"
+      }
+    ],
+    "exhausted_models": [],
+    "demoted_models": [
+      "filter: gemini-3.5-flash-lite",
+      "translate: gemini-3.8-flash"
+    ],
+    "translate_budget_deferred": [
+      "gemini-3.6-flash"
+    ],
+    "gemini_region_blocked": false,
+    "gemini_unavailable": true,
+    "errors_count": 0,
+    "gemini_retries": 5
   }
 ]
