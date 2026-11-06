@@ -1,59 +1,5 @@
 [
   {
-    "timestamp": "2026-10-20 13:01:10",
-    "execution_time": 208.9,
-    "funnel": {
-      "scraped_total": 35,
-      "scraped_by_source": {
-        "023": 10,
-        "Slobodna dalmacija": 15,
-        "Zadarski list": 10
-      },
-      "already_seen": 5,
-      "rejected_by_keywords": 11,
-      "duplicates_removed_by_ai": 15,
-      "rejection_reasons_list": [
-        "• Ovo mjesto u Dalmaciji je fenomen. Na pet tisuća radno sposobnih imaju → Побут інших міст | Сутності: Vodice, DDK, Sanja Radin Mačukat",
-        "• Udruga slijepih zahvalila se organizatorima, sudionicima i sugrađanima → Побут інших міст | Сутності: Dubrovnik, Udruga slijepih, Stradun",
-        "• Dani audiovizualne baštine u Art-kinu: Posveta Nikoli Tanhoferu i Vlak → Побут інших міст | Сутності: Rijeka, Nikola Tanhofer, Art-kino",
-        "• Gimnazija Franej Petrića slavi veliku obljetnicu, pozvani su svi bivši → Дубль в історії | Сутності: Gimnazija Franje Petrića, Zadar, MIOC",
-        "• Ivan Valušek i Charlie Jurković predstavljaju “Around the D” na palubi → Побут інших міст | Сутності: Rijeka, Ivan Valušek, Marina",
-        "• Ministar Davor Božinović o navodima da navijače obučavaju ljudi s vojn → Дубль в історії | Сутності: Davor Božinović, Ivan Penava, MUP",
-        "• Legendarni Macola ponovno investira u Korenici; Nakon janjetine i hote → Побут інших міст | Сутності: Korenica, Macola, Željko Orešković",
-        "• Riječki Možemo traži od Butkovića i Plenkovića objašnjenja o projektu  → Побут інших міст | Сутності: Rijeka, Porto Baroš, ACI",
-        "• Zabrinjavajući trendovi plavljenja obale i pojave klizišta u PGŽ. Istr → Побут інших міст | Сутності: Rijeka, Igor Ružić, PGŽ",
-        "• Pogledajte kako je ovaj majstor parkirao svoj BMW: raširio se toliko d → Дубль в історії | Сутності: Zadar, BMW, Prometne zgode i nezgode",
-        "• Ustaše nakon rata ubili drniškog učitelja zajedno s njegovim vozačem!  → Побут інших міст | Сутності: Drniš, Vjekoslav Širinić, Razvođe",
-        "• ‘Život u Šibeniku postaje luksuz!‘; Izračunali smo koliko će novi udar → Побут інших міст | Сутності: Šibenik, Željko Burić, Krešimirov dom",
-        "• Ne možete platiti Revolutom? Riječ je o problemu o kojem se u bankarst → Дубль в історії | Сутності: Revolut, Nik Storonsky, Google Cloud",
-        "• Šeks na skupu u Pločama bez dlake na jeziku: ‘Bila su to teška vremena → Побут інших міст | Сутності: Ploče, Vladimir Šeks, HDZ",
-        "• Ministar financija Ćorić: ‘Zahtjevi sindikata javnih službi nisu prihv → Дубль в історії | Сутності: Tomislav Ćorić, Vlada RH, Zagreb"
-      ]
-    },
-    "backlog": {
-      "total_size": 1,
-      "sources": {
-        "Zadarski list": 1
-      }
-    },
-    "published": {
-      "total": 3,
-      "ukraine_priority": 0,
-      "with_images": 2,
-      "text_only": 1,
-      "sources": {
-        "Slobodna dalmacija": 2,
-        "023": 1
-      }
-    },
-    "models_used": {
-      "gemini-3.6-flash": 0,
-      "gemini-3.5-flash-lite": 2
-    },
-    "errors_count": 0,
-    "gemini_retries": 4
-  },
-  {
     "timestamp": "2026-10-20 15:01:08",
     "execution_time": 341.4,
     "funnel": {
@@ -9193,5 +9139,106 @@
     "gemini_unavailable": false,
     "errors_count": 0,
     "gemini_retries": 2
+  },
+  {
+    "timestamp": "2026-11-06 13:01:20",
+    "execution_time": 32.5,
+    "funnel": {
+      "scraped_total": 35,
+      "scraped_by_source": {
+        "023": 10,
+        "Slobodna dalmacija": 15,
+        "Zadarski list": 10
+      },
+      "already_seen": 20,
+      "rejected_by_keywords": 5,
+      "rejected_by_rule": {
+        "URL /sport/": 1,
+        "nogometne": 1,
+        "promo": 2,
+        "nagradna igra": 1
+      },
+      "unclassified_by_ai": 0,
+      "duplicates_removed_by_ai": 10,
+      "rejection_reasons_list": [
+        "• Jeftinije žitarice spustile cijene hrane u listopadu → Світовий шум (Глобальні ціни на продукти) | Сутності: FAO, UN, žitarice, cijene hrane",
+        "• Skupina dubrovačkih branitelja o proslavi HRM-a: ‘Iznesene su neistine → Побут інших міст (Політичні суперечки у Дубровнику) | Сутності: Dubrovnik, HRM, branitelji, general Marinović",
+        "• Neno Belan 12. prosinca u HKD-u: Bezvremenski hitovi u božićnom izdanj → Побут інших міст (Концерт у Рієці) | Сутності: Neno Belan, Rijeka, koncert, HKD",
+        "• Iz šibenskog Crvenog križa uputili hitni poziv: ‘Stanje je vrlo teško, → Побут інших міст (Акція у Шибенику) | Сутності: Crveni križ, Šibenik, darivanje krvi",
+        "• KBC Rijeka u 20 godina postao vodeći edukacijski centar za minimalno i → Побут інших міст (Ювілей лікарні у Рієці) | Сутності: KBC Rijeka, kirurgija, edukacijski centar",
+        "• Dvojica dubrovačkih političara testirala se na droge, poručuju: ‘Sužav → Побут інших міст (Скандал у Дубровнику) | Сутності: Dubrovnik, političari, testiranje na droge",
+        "• Vedran Pavlek izvukao čak 50 milijuna eura, a pola tog iznosa zadržao  → Не за тематикою (Кримінальна справа щодо лижного спорту) | Сутності: Vedran Pavlek, USKOK, Hrvatski skijaški savez",
+        "• Neke ljude nikad ne prebolimo: IVXN predstavlja novi singl „Samo ti” → Не за тематикою (Музичний реліз) | Сутності: IVXN, Ivan Milić, glazba",
+        "• Plenković obišao Petrovačku dolu: U fokusu Vlade pronalazak svih nesta → Вже публікувалось (Пошук зниклих безвісти) | Сутності: Andrej Plenković, Vukovar, nestale osobe",
+        "• Slavlje tiska, kreativnosti i zajednice: U Galeriji Kortil otvorena iz → Побут інших міст (Виставка у Рієці) | Сутності: Galerija Kortil, Rijeka, izložba"
+      ],
+      "rejected_by_reason": {
+        "Світовий шум": 1,
+        "Побут інших міст": 6,
+        "Не за тематикою": 2,
+        "Вже публікувалось": 1
+      },
+      "updates_marked": 0,
+      "already_rejected": 14,
+      "rejected_by_code_examples": [
+        "[URL /sport/] Dva derbija u Gospinom polju: Square u nedjelju dočekuje Rijeku!",
+        "[nogometne] Punio je dvorane i stadione, ali Mišo je samo na jednom mjestu imao tremu. A što je napravio usred r",
+        "[promo] ROĐENDANSKA PREDSTAVA ZA POSJETITELJE – SKLISKE VJEŽBE",
+        "[promo] 20 GODINA TOWER CENTRA RIJEKA",
+        "[nagradna igra] Nagradna igra „20 × 500 € na Tower poklon karticama“"
+      ]
+    },
+    "backlog": {
+      "total_size": 0,
+      "sources": {}
+    },
+    "published": {
+      "total": 1,
+      "ukraine_priority": 0,
+      "with_images": 1,
+      "text_only": 0,
+      "og_images_found": 1,
+      "sources": {
+        "023": 1
+      }
+    },
+    "models_used": {
+      "gemini-3.1-flash-lite": 1,
+      "gemini-3.5-flash-lite": 1
+    },
+    "models_by_task": {
+      "filter": "gemini-3.1-flash-lite",
+      "translate": "gemini-3.5-flash-lite"
+    },
+    "model_attempts": [
+      {
+        "task": "filter",
+        "model": "gemini-3.6-flash",
+        "outcome": "unavailable"
+      },
+      {
+        "task": "filter",
+        "model": "gemini-3.1-flash-lite",
+        "outcome": "ok"
+      },
+      {
+        "task": "translate",
+        "model": "gemini-3.5-flash-lite",
+        "outcome": "ok"
+      }
+    ],
+    "exhausted_models": [],
+    "demoted_models": [
+      "filter: gemini-3-flash-preview",
+      "filter: gemini-3.5-flash-lite",
+      "translate: gemini-3.8-flash"
+    ],
+    "translate_budget_deferred": [
+      "gemini-3.6-flash"
+    ],
+    "gemini_region_blocked": false,
+    "gemini_unavailable": false,
+    "errors_count": 0,
+    "gemini_retries": 1
   }
 ]
