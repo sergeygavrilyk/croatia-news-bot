@@ -146,3 +146,48 @@ def test_translation_prompt_owner_edits_05_11(bot):
 @pytest.mark.parametrize("hashtags", ["#CrnaGora #Політика", "#Ukrajina #Політика", "#Srbija #Суспільство"])
 def test_foreign_country_first_hashtag_passes_validation(bot, hashtags):
     assert bot.validate_translation_strict(make(hashtags), ORIGINAL)
+
+
+# --- R-24 (05.11): слова чужим алфавітом у перекладі ---
+
+@pytest.mark.parametrize("content", [
+    "Програма призначена для родин із چهارма та більше дітьми.",   # 4.11, lite: перське «чотири»
+    "Міністр сказав שלום журналістам.",
+    "Новина про 東京 і Загреб.",
+])
+def test_foreign_script_translation_rejected(bot, content):
+    item = make("#Zadar #Суспільство", content=content)
+    assert not bot.validate_translation_strict(item, ORIGINAL)
+    assert item["rejection_reason"].startswith("чужий алфавіт:")
+
+
+@pytest.mark.parametrize("content", [
+    "Міністр Ivan Šipić сказав, що м'ясо подорожчає на 5 % 🇺🇦 📄.",
+    "Компанія Apple і бренд Mercedes-Benz — в Đakovo та Čakovec.",
+    "Апостроф-модифікатор: обʼєкт, памʼять; мікрограм — 5 µg.",
+])
+def test_latin_cyrillic_emoji_and_apostrophes_pass(bot, content):
+    assert bot.validate_translation_strict(make("#Zadar #Суспільство", content=content), ORIGINAL)
+
+
+def test_foreign_script_reason_in_backlog_and_report(bot, monkeypatch, tmp_path):
+    import json
+    json.dump([{"name": "023", "url": "https://023.hr/feed/"}], open(tmp_path / "feeds.json", "w"))
+    now = 1_900_000_000
+    json.dump([{"title": "Odobrene prve novčane potpore za velike obitelji", "description": "Opis " * 20,
+                "url": "https://www.novilist.hr/v-1/", "image_urls": [], "source": "Zadarski list",
+                "timestamp": now}], open(tmp_path / "news_backlog.json", "w"))
+    monkeypatch.setattr(bot.time, "time", lambda: now + 100)
+    monkeypatch.setattr(bot, "deduplicate_news", lambda a, h=None, stats=None: ([a[0]], []))
+    monkeypatch.setattr(bot, "add_og_images", lambda batch, stats=None: None)
+    monkeypatch.setattr(bot, "generate_news_texts_json", lambda p, ids, stats=None, id_aliases=None: [
+        {"id": 0, "title": "Допомога багатодітним", "content": "Для родин із چهارма дітьми.",
+         "hashtags": "#Hrvatska #Економіка"}])
+    sent = []
+    monkeypatch.setattr(bot, "send_to_telegram", lambda *a, **k: sent.append(a) or (True, "text"))
+    stats = bot._empty_stats()
+    bot.process_backlog(stats)
+    backlog = json.load(open(tmp_path / "news_backlog.json"))
+    assert sent == [] and backlog[0]["translation_failures"] == 1
+    assert "чужий алфавіт: چهارма" in backlog[0]["last_translation_error"]
+    assert stats["translation_rejected"] == ["чужий алфавіт: چهارма — Odobrene prve novčane potpore za velike obitelji"]
