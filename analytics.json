@@ -1,55 +1,5 @@
 [
   {
-    "timestamp": "2026-10-22 10:01:13",
-    "execution_time": 165.9,
-    "funnel": {
-      "scraped_total": 35,
-      "scraped_by_source": {
-        "023": 10,
-        "Slobodna dalmacija": 15,
-        "Zadarski list": 10
-      },
-      "already_seen": 9,
-      "rejected_by_keywords": 13,
-      "duplicates_removed_by_ai": 10,
-      "rejection_reasons_list": [
-        "• Uz predstave »Spavaj, dijete moje malo, spavaj« i »Under the Skin«: Sn → Культура інших міст | Сутності: Rijeka, Eleonora-Magdalena Vrdoljak, Matija Ferlin, Jon Fosse",
-        "• Riječka 128. brigada obilježava 35. godišnjicu osnutka → Побут інших міст | Сутності: Rijeka, 128. brigada, Sveti Vid, Dragan Dvorčić",
-        "• Nastavlja se program pomoćnika u nastavi, u Dubrovniku imaju jednu od  → Побут інших міст | Сутності: Dubrovnik, Mato Franković, DURA, Europski socijalni fond",
-        "• Dubrovnik traži više vremena za Plan upravljanja, Krstulović poručio:  → Побут інших міст | Сутності: Dubrovnik, UNESCO, Marin Krstulović, Stari grad",
-        "• Biljana Borzan treći put izabrana u vodstvo europskih socijaldemokrata → Світовий шум | Сутності: Biljana Borzan, Europski parlament, S&D, SDP",
-        "• Dobre vijesti za stanovnike ove općine: povećan broj studentskih stipe → Побут інших міст | Сутності: Općina Bilice, Ive Ćaleta-Car, Bilice, 1.000 eura",
-        "• Ova mjesta u Konavlima nemaju vodu, trebali bi je dobiti do 14 sati → Побут інших міст | Сутності: Konavle, Močići, Dobrota, Konavosko komunalno društvo",
-        "• Plastični otpad iz Neretve: znanstvenici pozivaju građane, volontere i → Побут інших міст | Сутності: Neretva, Metković, Tethys4adrion, Pero Tutman",
-        "• Iznajmljivači, ovo su nova pravila koje uvodi AIRBNB, a stupaju na sna → Світовий шум | Сутності: Airbnb, BBC, 20. studenog",
-        "• Danas toplo, i do 20 Celzijevih, a evo hoće li nam trebati kišobrani n → Дубль в історії | Сутності: DHMZ, Jadran, Hrvatska"
-      ]
-    },
-    "backlog": {
-      "total_size": 4,
-      "sources": {
-        "Zadarski list": 1,
-        "023": 3
-      }
-    },
-    "published": {
-      "total": 3,
-      "ukraine_priority": 0,
-      "with_images": 1,
-      "text_only": 2,
-      "sources": {
-        "023": 2,
-        "Slobodna dalmacija": 1
-      }
-    },
-    "models_used": {
-      "gemini-3.5-flash-lite": 2,
-      "gemini-3.6-flash": 0
-    },
-    "errors_count": 0,
-    "gemini_retries": 0
-  },
-  {
     "timestamp": "2026-10-22 11:01:26",
     "execution_time": 191.7,
     "funnel": {
@@ -9767,6 +9717,103 @@
     ],
     "exhausted_models": [],
     "demoted_models": [
+      "translate: gemini-3.6-flash"
+    ],
+    "translate_budget_deferred": [
+      "gemini-3.6-flash"
+    ],
+    "gemini_region_blocked": false,
+    "gemini_unavailable": false,
+    "errors_count": 0,
+    "gemini_retries": 1
+  },
+  {
+    "timestamp": "2026-11-07 15:01:18",
+    "execution_time": 133.5,
+    "funnel": {
+      "scraped_total": 35,
+      "scraped_by_source": {
+        "023": 10,
+        "Slobodna dalmacija": 15,
+        "Zadarski list": 10
+      },
+      "already_seen": 22,
+      "rejected_by_keywords": 9,
+      "rejected_by_rule": {
+        "тег RSS lifestyle": 1,
+        "тег RSS sport": 2,
+        "košarkaških": 1,
+        "košarkaši": 1,
+        "тег RSS nogomet": 3,
+        "URL /sport/": 1
+      },
+      "unclassified_by_ai": 0,
+      "duplicates_removed_by_ai": 3,
+      "rejection_reasons_list": [
+        "• Zadravec nakon nezapamćenog bijega radiologa: Zajedništvo i profesiona → Вже публікувалось (Коментар Задравец щодо призначення та скандалу з радіологами) | Сутності: Dijana Zadravec, KBC Sestre milosrdnice, Zavod za radiologiju, Zagreb",
+        "• U Dubrovniku bi se mjesec studeni - ili novembar - trebao zvati ‘warmb → Побут інших міст (Тепла погода та побут у Дубровнику) | Сутності: Dubrovnik, Stradun, warmbar, studeni",
+        "• Mladi Šibenčanin otkriva zašto se odlučio za opasan policijski posao,  → Побут інших міст (Інтерв'ю з молодим поліцейським у Шибенику) | Сутності: Šibenik, Sandro Jurišić, PU šibensko-kninska, Policijska akademija"
+      ],
+      "rejected_by_reason": {
+        "Вже публікувалось": 1,
+        "Побут інших міст": 2
+      },
+      "updates_marked": 0,
+      "already_rejected": 12,
+      "rejected_by_code_examples": [
+        "[тег RSS lifestyle] Punomasni mliječni proizvodi u kanadskom istraživanju nisu pogoršali kolesterol ni tjelesnu težinu",
+        "[тег RSS sport] Zlato protiv prvoligaša Varaždina skrenulo pogled na Privlaku; Sabunjar okuplja 150 djece i ruši sve",
+        "[košarkaških] Od školskih klupa s legendom i košarkaških dana, do svjetskog zlata za NP Krka. Puno je razloga za r",
+        "[košarkaši] Nova suradnja za KK Zadar: Košarkaši dobili dodatnu podršku u brizi o zdravlju i regeneraciji",
+        "[тег RSS sport] ISTRA 1961 – RIJEKA 18 SATI Bijeli u derbiju susjeda na ljestvici traže povratak pobjedama",
+        "[тег RSS nogomet] Zoran Bogolin nadmudrio Damira Milinovića. Šuke iskoristio Đilasov dar u nastavku",
+        "[URL /sport/] Moguće je da se posljednje utrke Formule 1 ove sezone neće voziti u Dohi i Abu Dhabiju. Ovo je “plan",
+        "[тег RSS nogomet] Izbornik Vatrenih još jednom se osvrnuo na situaciju s Kramarićem: “Pokušao sam mu objasniti…”",
+        "[тег RSS nogomet] Bilić objavio popis reprezentativaca za oglede s Češkom i Engleskom. Nova lica dolaze iz Hajduka"
+      ]
+    },
+    "backlog": {
+      "total_size": 0,
+      "sources": {}
+    },
+    "published": {
+      "total": 1,
+      "ukraine_priority": 0,
+      "with_images": 1,
+      "text_only": 0,
+      "og_images_found": 0,
+      "sources": {
+        "Slobodna dalmacija": 1
+      }
+    },
+    "models_used": {
+      "gemini-3.6-flash": 1,
+      "gemini-3.5-flash-lite": 1
+    },
+    "models_by_task": {
+      "filter": "gemini-3.6-flash",
+      "translate": "gemini-3.5-flash-lite"
+    },
+    "model_attempts": [
+      {
+        "task": "filter",
+        "model": "gemini-3-flash-preview",
+        "outcome": "unavailable"
+      },
+      {
+        "task": "filter",
+        "model": "gemini-3.6-flash",
+        "outcome": "ok"
+      },
+      {
+        "task": "translate",
+        "model": "gemini-3.5-flash-lite",
+        "outcome": "ok"
+      }
+    ],
+    "exhausted_models": [],
+    "demoted_models": [
+      "translate: gemini-3.8-flash",
       "translate: gemini-3.6-flash"
     ],
     "translate_budget_deferred": [
