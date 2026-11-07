@@ -1,58 +1,5 @@
 [
   {
-    "timestamp": "2026-10-22 09:01:11",
-    "execution_time": 177.2,
-    "funnel": {
-      "scraped_total": 35,
-      "scraped_by_source": {
-        "023": 10,
-        "Slobodna dalmacija": 15,
-        "Zadarski list": 10
-      },
-      "already_seen": 6,
-      "rejected_by_keywords": 9,
-      "duplicates_removed_by_ai": 14,
-      "rejection_reasons_list": [
-        "• Dubrovnik traži više vremena za Plan upravljanja, Krstulović poručio:  → Побут інших міст | Сутності: Dubrovnik, UNESCO, Marin Krstulović, Plan upravljanja",
-        "• Ovog vikenda počinje zimsko računanje vremena → Світовий шум | Сутності: Vlada RH, Rijeka, zimsko računanje vremena",
-        "• Biljana Borzan treći put izabrana u vodstvo europskih socijaldemokrata → Геоблок | Сутності: Biljana Borzan, Europski parlament, S&D",
-        "• Dobre vijesti za stanovnike ove općine: povećan broj studentskih stipe → Побут інших міст | Сутності: Općina Bilice, Ive Ćaleta-Car, studentske stipendije",
-        "• Od Čavala do Sobola u nedjelju: promijenjen datum druge jesenske šetnj → Побут інших міст | Сутності: Čavle, Soboli, Turistička zajednica",
-        "• Ova mjesta u Konavlima nemaju vodu, trebali bi je dobiti do 14 sati → Побут інших міст | Сутності: Konavle, Močići, Konavosko komunalno društvo",
-        "• Ako Plenković i HDZ odbiju smijeniti Bilandžića vladajuća koalicija po → Геоблок | Сутності: Andrej Plenković, Ivan Penava, Tomislav Bilandžić, HDZ",
-        "• Plastični otpad iz Neretve: znanstvenici pozivaju građane, volontere i → Побут інших міст | Сутності: Neretva, Metković, Institut za oceanografiju i ribarstvo, Tethys4adrion",
-        "• Severina najavila novu Arenu Zagreb: Turneja “Ja samo pjevam” dobiva B → Реклама | Сутності: Severina, Arena Zagreb, Ja samo pjevam",
-        "• Iznajmljivači, ovo su nova pravila koje uvodi AIRBNB, a stupaju na sna → Світовий шум | Сутності: Airbnb, BBC, čišćenje smještaja",
-        "• Danas toplo, i do 20 Celzijevih, a evo hoće li nam trebati kišobrani n → Дубль в історії | Сутності: DHMZ, Jadran, Hrvatska",
-        "• Svečana sjednica u Cavtatu, načelnik Božo Lasić poručio: Konavle nisu  → Побут інших міст | Сутності: Cavtat, Konavle, Božo Lasić, Branko Bačić",
-        "• Velika rekonstrukcija Gradske uprave! Odlazi polovica pročelnika, grad → Побут інших міст | Сутності: Šibenik, Željko Burić, Gradska uprava",
-        "• Pitali smo u Sanitatu hoće li automobili sa sustavom kamera zamijenti  → Побут інших міст | Сутності: Sanitat, Dubrovnik, Scan a Car"
-      ]
-    },
-    "backlog": {
-      "total_size": 4,
-      "sources": {
-        "023": 4
-      }
-    },
-    "published": {
-      "total": 3,
-      "ukraine_priority": 0,
-      "with_images": 1,
-      "text_only": 2,
-      "sources": {
-        "023": 2,
-        "Slobodna dalmacija": 1
-      }
-    },
-    "models_used": {
-      "gemini-3.5-flash-lite": 2,
-      "gemini-3.6-flash": 0
-    },
-    "errors_count": 0,
-    "gemini_retries": 0
-  },
-  {
     "timestamp": "2026-10-22 10:01:13",
     "execution_time": 165.9,
     "funnel": {
@@ -9737,5 +9684,97 @@
     "gemini_unavailable": false,
     "errors_count": 0,
     "gemini_retries": 3
+  },
+  {
+    "timestamp": "2026-11-07 14:01:20",
+    "execution_time": 29.8,
+    "funnel": {
+      "scraped_total": 35,
+      "scraped_by_source": {
+        "023": 10,
+        "Slobodna dalmacija": 15,
+        "Zadarski list": 10
+      },
+      "already_seen": 25,
+      "rejected_by_keywords": 8,
+      "rejected_by_rule": {
+        "тег RSS lifestyle": 1,
+        "тег RSS sport": 1,
+        "košarkaških": 1,
+        "košarkaši": 1,
+        "тег RSS nogomet": 3,
+        "URL /sport/": 1
+      },
+      "unclassified_by_ai": 0,
+      "duplicates_removed_by_ai": 1,
+      "rejection_reasons_list": [
+        "• Radnicima rapskog poduzeća Dundovo plaće rastu 300 do 400 eura bruto → Побут інших міст (Підвищення зарплат у комунальній компанії міста Раб) | Сутності: Dundovo d.o.o., Rab, SIKD, plaće"
+      ],
+      "rejected_by_reason": {
+        "Побут інших міст": 1
+      },
+      "updates_marked": 0,
+      "already_rejected": 16,
+      "rejected_by_code_examples": [
+        "[тег RSS lifestyle] Punomasni mliječni proizvodi u kanadskom istraživanju nisu pogoršali kolesterol ni tjelesnu težinu",
+        "[тег RSS sport] Zlato protiv prvoligaša Varaždina skrenulo pogled na Privlaku; Sabunjar okuplja 150 djece i ruši sve",
+        "[košarkaških] Od školskih klupa s legendom i košarkaških dana, do svjetskog zlata za NP Krka. Puno je razloga za r",
+        "[košarkaši] Nova suradnja za KK Zadar: Košarkaši dobili dodatnu podršku u brizi o zdravlju i regeneraciji",
+        "[тег RSS nogomet] Zoran Bogolin nadmudrio Damira Milinovića. Šuke iskoristio Đilasov dar u nastavku",
+        "[URL /sport/] Moguće je da se posljednje utrke Formule 1 ove sezone neće voziti u Dohi i Abu Dhabiju. Ovo je “plan",
+        "[тег RSS nogomet] Izbornik Vatrenih još jednom se osvrnuo na situaciju s Kramarićem: “Pokušao sam mu objasniti…”",
+        "[тег RSS nogomet] Bilić objavio popis reprezentativaca za oglede s Češkom i Engleskom. Nova lica dolaze iz Hajduka"
+      ]
+    },
+    "backlog": {
+      "total_size": 0,
+      "sources": {}
+    },
+    "published": {
+      "total": 1,
+      "ukraine_priority": 0,
+      "with_images": 1,
+      "text_only": 0,
+      "og_images_found": 0,
+      "sources": {
+        "Zadarski list": 1
+      }
+    },
+    "models_used": {
+      "gemini-3-flash-preview": 1,
+      "gemini-3.5-flash-lite": 1
+    },
+    "models_by_task": {
+      "filter": "gemini-3-flash-preview",
+      "translate": "gemini-3.5-flash-lite"
+    },
+    "model_attempts": [
+      {
+        "task": "filter",
+        "model": "gemini-3-flash-preview",
+        "outcome": "ok"
+      },
+      {
+        "task": "translate",
+        "model": "gemini-3.8-flash",
+        "outcome": "unavailable"
+      },
+      {
+        "task": "translate",
+        "model": "gemini-3.5-flash-lite",
+        "outcome": "ok"
+      }
+    ],
+    "exhausted_models": [],
+    "demoted_models": [
+      "translate: gemini-3.6-flash"
+    ],
+    "translate_budget_deferred": [
+      "gemini-3.6-flash"
+    ],
+    "gemini_region_blocked": false,
+    "gemini_unavailable": false,
+    "errors_count": 0,
+    "gemini_retries": 1
   }
 ]
