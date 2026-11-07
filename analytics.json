@@ -1,64 +1,5 @@
 [
   {
-    "timestamp": "2026-10-21 16:01:12",
-    "execution_time": 319.9,
-    "funnel": {
-      "scraped_total": 35,
-      "scraped_by_source": {
-        "023": 10,
-        "Slobodna dalmacija": 15,
-        "Zadarski list": 10
-      },
-      "already_seen": 4,
-      "rejected_by_keywords": 12,
-      "duplicates_removed_by_ai": 20,
-      "rejection_reasons_list": [
-        "• Na Rabu žene čine gotovo trećinu dobrovoljnih darivatelja krvi → Побут інших міст | Сутності: Rab, Ivica Lukanović, KBC Rijeka, Crveni križ",
-        "• Brigade Sveti Vid i Goranski risovi na postamentima na riječkom Korzu  → Побут інших міст | Сутності: Rijeka, 128. brigada, 138. brigada, Korzo",
-        "• Umjetna inteligencija iz obične fotografije lica procjenjuje biološku  → Світовий шум | Сутності: Mass General Brigham, Harvard, The Lancet, Hugo Aerts",
-        "• Dubrovački političar nasmijao objavom: ‘Ovo je posljednje što se sjeća → Побут інших міст | Сутності: Valentin Dujmović, Dubrovnik, HNS",
-        "• Uzbuna u Šoićima. Tvrtka povezana s aferom u Lici kupila zemljište u K → Побут інших міст | Сутності: Kostrena, Šoići, Kemis-Termoclean, Mirela Marunić",
-        "• Šokantne scene s trajekta; Ovcu svezali konopcem za drvenu paletu i pr → Дубль в історії | Сутності: Jadrolinija, Prijatelji životinja, Državni inspektorat",
-        "• Šibenčanin Karlo (41) već se 16 godina bori s teškom bolešću. Sada se  → Побут інших міст | Сутності: Karlo Rodin, Šibenik, Moskva",
-        "• Hrvatski i francuski piloti Rafalea uvježbavaju zračnu borbu → Хорватія (Національний рівень) | Сутності: Zagreb, Pleso, Rafale, MORH",
-        "• Dvojica prosvjednika u Koromačnom kažnjena zbog vrijeđanja policajaca → Побут інших міст | Сутності: Koromačno, Holcim, Istarska policija, Gospić",
-        "• Zadar krši zakonsku obvezu? Prijatelji životinja traže hitno uvođenje  → Дубль в історії | Сутності: Grad Zadar, Prijatelji životinja, UKV program",
-        "• Serijski kradljivac ‘operirao‘ po Dolini Neretve i Dubrovačkom primorj → Побут інших міст | Сутності: Ston, Metković, Dolina Neretve, Topolo",
-        "• Dubrovnik treći put najbolji veliki grad za život u Hrvatskoj. Frankov → Побут інших міст | Сутності: Dubrovnik, Mato Franković, Velibor Puzović, Šibenik",
-        "• Uhićen na djelu u Topolom, a onda šok! Policija ga povezuje s još seda → Дубль в історії | Сутності: Ston, Metković, Topolo, Dubrovačko primorje",
-        "• Visoki dužnosnik Europske komisije Raffaele Fitto i ministrica MRRFEU  → Побут інших міст | Сутності: Šibenik, Trokut Šibenik, Raffaele Fitto, Nataša Mikuš Žigman",
-        "• Ministarstvo vanjskih i europskih poslova izdalo preporuke za odlazak  → Геоблок | Сутності: MVEP, Srbija, Beograd, Novi Sad",
-        "• Franković uzvraća na prozivke turista o dubrovačkoj ‘pohlepi‘: ‘A gdje → Побут інших міст | Сутності: Dubrovnik, Mato Franković, Index, Poljska",
-        "• Obilježen završetak radova na projektu energetske obnove ambulante u K → Побут інших міст | Сутності: Kuna Pelješka, Branko Bačić, Orebić, Dom zdravlja",
-        "• Živi od 700 € mjesečno, a kupovao automobile, motore, gliser, stan...  → Хорватія (Національний рівень) | Сутності: Jakša Cvitanović Cvik, USKOK, Split, Ana Birimiša",
-        "• Gotovo 500 brodova i jahti, više od 3.000 zaposlenih: Mali brodari u 2 → Хорватія (Національний рівень) | Сутності: Hrvatska udruga privatnih brodara, Jadran, Hrvatska",
-        "• Plenković potvrdio rast godišnjeg dodatka za umirovljenike, evo koliko → Хорватія (Національний рівень) | Сутності: Andrej Plenković, Vlada, Svi sveti, Poznanovac"
-      ]
-    },
-    "backlog": {
-      "total_size": 2,
-      "sources": {
-        "Slobodna dalmacija": 2
-      }
-    },
-    "published": {
-      "total": 3,
-      "ukraine_priority": 0,
-      "with_images": 1,
-      "text_only": 2,
-      "sources": {
-        "023": 2,
-        "Slobodna dalmacija": 1
-      }
-    },
-    "models_used": {
-      "gemini-3.5-flash-lite": 2,
-      "gemini-3.6-flash": 0
-    },
-    "errors_count": 0,
-    "gemini_retries": 0
-  },
-  {
     "timestamp": "2026-10-21 19:01:09",
     "execution_time": 170.5,
     "funnel": {
@@ -9624,5 +9565,87 @@
     "gemini_unavailable": false,
     "errors_count": 0,
     "gemini_retries": 0
+  },
+  {
+    "timestamp": "2026-11-07 11:01:15",
+    "execution_time": 103.8,
+    "funnel": {
+      "scraped_total": 35,
+      "scraped_by_source": {
+        "023": 10,
+        "Slobodna dalmacija": 15,
+        "Zadarski list": 10
+      },
+      "already_seen": 24,
+      "rejected_by_keywords": 4,
+      "rejected_by_rule": {
+        "тег RSS sport": 1,
+        "košarkaških": 1,
+        "košarkaši": 1,
+        "тег RSS nogomet": 1
+      },
+      "unclassified_by_ai": 0,
+      "duplicates_removed_by_ai": 0,
+      "rejection_reasons_list": [],
+      "rejected_by_reason": {},
+      "updates_marked": 0,
+      "already_rejected": 15,
+      "rejected_by_code_examples": [
+        "[тег RSS sport] Zlato protiv prvoligaša Varaždina skrenulo pogled na Privlaku; Sabunjar okuplja 150 djece i ruši sve",
+        "[košarkaških] Od školskih klupa s legendom i košarkaških dana, do svjetskog zlata za NP Krka. Puno je razloga za r",
+        "[košarkaši] Nova suradnja za KK Zadar: Košarkaši dobili dodatnu podršku u brizi o zdravlju i regeneraciji",
+        "[тег RSS nogomet] Bivši vratar Rijeke otkrio davnu epizodu s Mandžom: ‘Opsovao mi je majku srpsku, pa prišao u prekidu"
+      ]
+    },
+    "backlog": {
+      "total_size": 8,
+      "sources": {
+        "Slobodna dalmacija": 3,
+        "Zadarski list": 3,
+        "023": 2
+      }
+    },
+    "published": {
+      "total": 0,
+      "ukraine_priority": 0,
+      "with_images": 0,
+      "text_only": 0,
+      "og_images_found": 0,
+      "sources": {}
+    },
+    "models_used": {},
+    "models_by_task": {
+      "filter": null,
+      "translate": null
+    },
+    "model_attempts": [
+      {
+        "task": "filter",
+        "model": "gemini-3-flash-preview",
+        "outcome": "unavailable"
+      },
+      {
+        "task": "filter",
+        "model": "gemini-3.6-flash",
+        "outcome": "unavailable"
+      },
+      {
+        "task": "filter",
+        "model": "gemini-3.5-flash-lite",
+        "outcome": "unavailable"
+      },
+      {
+        "task": "filter",
+        "model": "gemini-3.1-flash-lite",
+        "outcome": "unavailable"
+      }
+    ],
+    "exhausted_models": [],
+    "demoted_models": [],
+    "translate_budget_deferred": [],
+    "gemini_region_blocked": false,
+    "gemini_unavailable": true,
+    "errors_count": 0,
+    "gemini_retries": 4
   }
 ]
