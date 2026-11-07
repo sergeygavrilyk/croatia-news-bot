@@ -1,64 +1,5 @@
 [
   {
-    "timestamp": "2026-10-21 13:01:12",
-    "execution_time": 188.0,
-    "funnel": {
-      "scraped_total": 35,
-      "scraped_by_source": {
-        "023": 10,
-        "Slobodna dalmacija": 15,
-        "Zadarski list": 10
-      },
-      "already_seen": 3,
-      "rejected_by_keywords": 11,
-      "duplicates_removed_by_ai": 19,
-      "rejection_reasons_list": [
-        "• Umjetna inteligencija iz obične fotografije lica procjenjuje biološku  → Світовий шум | Сутності: Mass General Brigham, Hugo Aerts, The Lancet Digital Health",
-        "• ‘Puhali smo na hladno?‘ Stradun po kiš kao procvjetala proljetna livad → Побут інших міст | Сутності: Dubrovnik, Stradun, Jugo",
-        "• Otvoreno e-savjetovanje o Strategiji zelene urbane obnove Senja → Побут інших міст | Сутності: Grad Senj, Strategija zelene urbane obnove",
-        "• Dalmatinski biser najkvalitetniji je veliki grad za život u Hrvatskoj! → Побут інших міст | Сутності: Dubrovnik, Velibor Puzović, Mato Franković",
-        "• Večeras zatvaranje autoceste Rijeka – Zagreb od Oštrovice do Delnica → Побут інших міст | Сутності: Rijeka, Zagreb, Hrvatske autoceste",
-        "• Šokantne scene s trajekta; Ovcu svezali konopcem za drvenu paletu i pr → Дубль в історії | Сутності: Jadrolinija, Prijatelji životinja, Državni inspektorat",
-        "• Franković odgovara Poljacima: Gostoprimstvo podrazumijeva i poštovanje → Побут інших міст | Сутності: Dubrovnik, Mato Franković, Index.hr",
-        "• Za božićno-novogodišnje kićenje Rijeke u dvije godine 350.000 eura → Побут інших міст | Сутності: Rijeka, Iva Rinčić, Rijeka Advent",
-        "• Turistička jesen u Zadru; Rujan na razini prošle godine, ali prva polo → Дубль в історії | Сутності: Zadar, Turistička zajednica grada Zadra, eVisitor",
-        "• Nevjerojatno! U rujnu za dlaku izbjegnuta tragedija u Šibeniku, nakon  → Побут інших міст | Сутності: Šibenik, ŠibenikIN, Opća bolnica Šibenik",
-        "• Ministar turizma Glavina objavio: Novi zakon o ugostiteljskoj djelatno → Дубль в історії | Сутності: Tonči Glavina, Vlada Republike Hrvatske, Zakon o ugostiteljskoj djelatnosti",
-        "• Počelo suđenje Bojanu Ivoševiću zbog prijetnje novinarki Slobodne Dalm → Побут інших міст | Сутності: Bojan Ivošević, Nikolina Lulić, Split",
-        "• SDP i Možemo! oštro po Buriću nakon najave novog poskupljenja: ‘Ta eki → Побут інших міст | Сутності: Šibenik, Željko Burić, SDP",
-        "• Lažni liječnici pritvoreni nakon što su starijim ženama otuđili desetk → Побут інших міст | Сутності: Zagreb, Dubrava, Peščenica",
-        "• Prvičani ogorčeni: ‘Životi nam ovise o vremenskim prilikama! A rješenj → Побут інших міст | Сутності: Prvić, Vodice, Gordan Gradiška",
-        "• Povjerenica EU za proširenje, Marta Kos: Morate se dogovoriti s Hrvats → Геоблок | Сутності: Marta Kos, Crna Gora, Hrvatska, Andrija Mandić",
-        "• Izgleda potpuno bezazleno! Ova životinja mogla bi vas koštati 300 eura → Дубль в історії | Сутності: Općinski sud u Zadru, Hrvatska",
-        "• U ovom masliniku u zaleđu Pirovca događa se puno više od berbe maslina → Побут інших міст | Сутності: Pirovac, Udruga hrvatskih branitelja, Ante Jurišić",
-        "• Izbezumljena ovca vezana za paletu na Jadrolinijinu trajektu šokirala  → Дубль в історії | Сутності: Jadrolinija, Prijatelji životinja, Državni inspektorat"
-      ]
-    },
-    "backlog": {
-      "total_size": 8,
-      "sources": {
-        "Slobodna dalmacija": 5,
-        "023": 3
-      }
-    },
-    "published": {
-      "total": 3,
-      "ukraine_priority": 0,
-      "with_images": 1,
-      "text_only": 2,
-      "sources": {
-        "023": 2,
-        "Zadarski list": 1
-      }
-    },
-    "models_used": {
-      "gemini-3.5-flash-lite": 2,
-      "gemini-3.6-flash": 0
-    },
-    "errors_count": 0,
-    "gemini_retries": 0
-  },
-  {
     "timestamp": "2026-10-21 14:01:15",
     "execution_time": 245.0,
     "funnel": {
@@ -9561,5 +9502,101 @@
     "gemini_unavailable": false,
     "errors_count": 0,
     "gemini_retries": 4
+  },
+  {
+    "timestamp": "2026-11-07 09:01:16",
+    "execution_time": 160.2,
+    "funnel": {
+      "scraped_total": 35,
+      "scraped_by_source": {
+        "023": 10,
+        "Slobodna dalmacija": 15,
+        "Zadarski list": 10
+      },
+      "already_seen": 17,
+      "rejected_by_keywords": 2,
+      "rejected_by_rule": {
+        "тег RSS sport": 1,
+        "košarkaši": 1
+      },
+      "unclassified_by_ai": 0,
+      "duplicates_removed_by_ai": 11,
+      "rejection_reasons_list": [
+        "• Martinje na Sušaku uz istarske ritmove i domaća vina: Pogon priprema v → Побут інших міст (Концерт у Рієці) | Сутності: Martinje, Sušak, Rijeka, Gustafi, Pogon",
+        "• Zadarska bolnica dobila novi rukovodeći kadar: Objavljena imena svih p → Вже публікувалось (Призначення в лікарні Задара) | Сутності: Opća bolnica Zadar, Zadar, кадри",
+        "• Ministrica koja u BiH vodi obrazovanje probleme pripisala retrogradnom → Геоблок (Подія в Боснії і Герцеговині) | Сутності: Jasna Duraković, BiH, SDP BiH",
+        "• Razgolićeni turisti, opijanje, drogiranje: ‘Gdje su nestali naši ‘gale → Побут інших міст (Проблема туризму в Дубровнику) | Сутності: Dubrovnik, Ane Stražičić Rodriguez, Mato Franković",
+        "• Tragedija je, u naše doba, politika”: Što je sve stalo u nevjerojatan  → Геоблок (Вшанування діяча у Франції) | Сутності: André Malraux, Pariz, Francuska",
+        "• Giorgio Otranto: ‘Svoje utočište pronalazim u melodiji pjesme, pokretu → Побут інших міст (Вистава у Рієці) | Сутності: Giorgio Otranto, HNK Ivana pl. Zajca, Rijeka",
+        "• Koliko može izdržati baterija električnog automobila? Toyota kupcima n → Реклама (Презентація авто бренду Toyota) | Сутності: Toyota, Hrvatska, baterija",
+        "• Kia ispisuje povijest u Europi: Šesti put zaredom njezin automobil međ → Реклама (Промо новинки Kia) | Сутності: Kia EV2, Europa, Europski automobil godine",
+        "• Električni Volkswagen stigao u Hrvatsku: Cijena počinje od 24.950 eura → Реклама (Тест-драйв та ціни VW) | Сутності: Volkswagen, ID. Polo, Hrvatska",
+        "• VIDEO Glas koji godinama osvaja generacije. Kod Macana danas gostuje D → Реклама (Анонс випуску подкасту) | Сутності: Krešimir Macan, Danijela Martinović, Špica s Macanom",
+        "• Španjolski automobili s kineskim kapitalom stigli u Hrvatsku: Četiri S → Реклама (Вихід автобренду на ринок) | Сутності: Ebro, Auto Hrvatska, Španjolska"
+      ],
+      "rejected_by_reason": {
+        "Побут інших міст": 3,
+        "Вже публікувалось": 1,
+        "Геоблок": 2,
+        "Реклама": 5
+      },
+      "updates_marked": 0,
+      "already_rejected": 12,
+      "rejected_by_code_examples": [
+        "[тег RSS sport] Zlato protiv prvoligaša Varaždina skrenulo pogled na Privlaku; Sabunjar okuplja 150 djece i ruši sve",
+        "[košarkaši] Nova suradnja za KK Zadar: Košarkaši dobili dodatnu podršku u brizi o zdravlju i regeneraciji"
+      ]
+    },
+    "backlog": {
+      "total_size": 5,
+      "sources": {
+        "Slobodna dalmacija": 1,
+        "Zadarski list": 2,
+        "023": 2
+      }
+    },
+    "published": {
+      "total": 3,
+      "ukraine_priority": 0,
+      "with_images": 3,
+      "text_only": 0,
+      "og_images_found": 1,
+      "sources": {
+        "023": 1,
+        "Slobodna dalmacija": 1,
+        "Zadarski list": 1
+      }
+    },
+    "models_used": {
+      "gemini-3.6-flash": 1,
+      "gemini-3.5-flash-lite": 1
+    },
+    "models_by_task": {
+      "filter": "gemini-3.6-flash",
+      "translate": "gemini-3.5-flash-lite"
+    },
+    "model_attempts": [
+      {
+        "task": "filter",
+        "model": "gemini-3.6-flash",
+        "outcome": "ok"
+      },
+      {
+        "task": "translate",
+        "model": "gemini-3.5-flash-lite",
+        "outcome": "ok"
+      }
+    ],
+    "exhausted_models": [],
+    "demoted_models": [
+      "filter: gemini-3-flash-preview",
+      "translate: gemini-3.8-flash",
+      "translate: gemini-3.6-flash"
+    ],
+    "translate_budget_deferred": [],
+    "gemini_region_blocked": false,
+    "gemini_unavailable": false,
+    "errors_count": 0,
+    "gemini_retries": 0
   }
 ]
