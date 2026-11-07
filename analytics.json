@@ -1,57 +1,5 @@
 [
   {
-    "timestamp": "2026-10-22 14:01:15",
-    "execution_time": 190.3,
-    "funnel": {
-      "scraped_total": 35,
-      "scraped_by_source": {
-        "023": 10,
-        "Slobodna dalmacija": 15,
-        "Zadarski list": 10
-      },
-      "already_seen": 2,
-      "rejected_by_keywords": 15,
-      "duplicates_removed_by_ai": 11,
-      "rejection_reasons_list": [
-        "• Hrvatska nacionalna vizija Jasne Vojnić pozvala Hrvate u Srbiji da iza → Геоблок | Сутності: Jasna Vojnić, Srbija, DSHV, izbori",
-        "• Mihajlo Mihajlov – prvi disident u Zadru za vrijeme Jugoslavije: tko s → Світовий шум | Сутності: Sveučilište u Zadru, Mihajlo Mihajlov, Zadar, 1966",
-        "• Macron zabranio “nezakonite” prosvjede u Francuskoj. Za sve krivi kraj → Геоблок | Сутності: Emmanuel Macron, Francuska, Pariz, prosvjedi",
-        "• Proširenje prava na obeštećenje radnika izloženih azbestu: 220 radnika → Геоблок | Сутності: Plobest, Salonit, Marija Vučković, azbest",
-        "• Tragedija u zagrebačkom Zoo vrtu; Utopilo se mladunče vodenkonja? Prij → Побут інших міст | Сутності: Zagreb, Zoološki vrt, Prijatelji životinja, vodenkonj",
-        "• U zagrebačkom ZOO-u uginulo mladunče patuljastog vodenkonja: “Shrvani  → Дубль в історії | Сутності: Zagreb, Zoološki vrt, Ivan Cizelj, vodenkonj",
-        "• Sutra na Vojnoviću i Pilama posebna prometna regulativa. Evo što se ra → Побут інших міст | Сутності: Dubrovnik, Vojnović, Pile, promet",
-        "• Besplatna radionica Nauči spasiti život – Pokreni srce uz AVD → Побут інших міст | Сутності: Rijeka, Crveni križ, AVD, prva pomoć",
-        "• Svečana sjednica u Cavtatu, načelnik Božo Lasić poručio: ‘Konavle nisu → Побут інших міст | Сутності: Konavle, Cavtat, Božo Lasić, Branko Bačić",
-        "• Dva i pol mjeseca je od tragedije na moru u kojoj je poginuo ugledni z → Світовий шум | Сутності: Tomislav Sorić, Zadar, Mali Iž, Županijsko državno odvjetništvo",
-        "• Odana počast braniteljima u parku Striježice u Župi dubrovačkoj → Побут інших міст | Сутності: Župa dubrovačka, Striježice, branitelji, Miro Bajo"
-      ]
-    },
-    "backlog": {
-      "total_size": 6,
-      "sources": {
-        "Zadarski list": 1,
-        "Slobodna dalmacija": 1,
-        "023": 4
-      }
-    },
-    "published": {
-      "total": 3,
-      "ukraine_priority": 0,
-      "with_images": 1,
-      "text_only": 2,
-      "sources": {
-        "Slobodna dalmacija": 1,
-        "023": 2
-      }
-    },
-    "models_used": {
-      "gemini-3.5-flash-lite": 2,
-      "gemini-3.6-flash": 0
-    },
-    "errors_count": 0,
-    "gemini_retries": 1
-  },
-  {
     "timestamp": "2026-10-22 16:01:11",
     "execution_time": 243.3,
     "funnel": {
@@ -9903,5 +9851,91 @@
     "gemini_unavailable": false,
     "errors_count": 0,
     "gemini_retries": 3
+  },
+  {
+    "timestamp": "2026-11-07 20:01:18",
+    "execution_time": 111.7,
+    "funnel": {
+      "scraped_total": 35,
+      "scraped_by_source": {
+        "023": 10,
+        "Slobodna dalmacija": 15,
+        "Zadarski list": 10
+      },
+      "already_seen": 19,
+      "rejected_by_keywords": 6,
+      "rejected_by_rule": {
+        "тег RSS lifestyle": 2,
+        "URL /sport/": 1,
+        "тег RSS košarka": 2,
+        "тег RSS sport": 1
+      },
+      "unclassified_by_ai": 0,
+      "duplicates_removed_by_ai": 9,
+      "rejection_reasons_list": [
+        "• Antonio Tajani izložen napadima hakera: “U sve uvlače i moju obitelj” → Геоблок (Кібератака в Італії) | Сутності: Antonio Tajani, dark web, Italija, Kijev",
+        "• Izvedena prva ovosezonska premijera riječkog Baleta. Zadnje utočište o → Побут інших міст (Балетна прем'єра у Рієці) | Сутності: Balet riječkog HNK, Rijeka, Serge Aimé Coulibaly, Last Shelter",
+        "• Književna večer s Ivanom Šojat u petak: Susret sa svestranom hrvatskom → Побут інших міст (Литературний вечір у Дубровнику) | Сутності: Ivana Šojat, Dubrovnik, Dubrovačke knjižnice, Saloča od zrcala",
+        "• U šumarijama Otok i Gunja meteorološke postaje u sklopu projekta RETFO → Побут інших міст (Метеостанції в Отіку та Гуні) | Сутності: Otok, Gunja, RETFOR, Hrvatske šume",
+        "• Dubrovnik Jazz Outbreak 2026 otvoren nastupom KUG Jazz Collectivea i N → Побут інших міст (Джазовий фестиваль у Дубровнику) | Сутності: Dubrovnik, Dubrovnik Jazz Outbreak, KUG Jazz Collective, Nadja Noordhuis",
+        "• Mediji javljali da su im se studenti arhitekture podsmjehivali, studen → Побут інших міст (Дискусія у виші Загреба) | Сутності: Siniša Justić, Arhitektonski fakultet, Zagreb, Stadion Maksimir",
+        "• Paragvajski predsjednik opozvan i stavljen u kućni pritvor nakon propa → Геоблок (Імпічмент президента Парагваю) | Сутності: Santiago Pena, Paragvaj, Ueno banka, BBC",
+        "• Više mrtvih i ranjenih u Krakovu u napadu desničarskog ekstremista. “S → Геоблок (Стрілянина у Польщі) | Сутності: Krakov, Poljska, Glavni trg, ulica Dietla",
+        "• Puljak: U Hrvatskoj treba pomesti klijentelizam koji upropašatava druš → Не за тематикою (Політична заява партії Centar) | Сутності: Marijana Puljak, Centar, Osječko-baranjska županija, Slavonija"
+      ],
+      "rejected_by_reason": {
+        "Геоблок": 3,
+        "Побут інших міст": 5,
+        "Не за тематикою": 1
+      },
+      "updates_marked": 0,
+      "already_rejected": 11,
+      "rejected_by_code_examples": [
+        "[тег RSS lifestyle] Domaći sok od jabuka bez konzervansa: dva načina pripreme i pravilno čuvanje u bocama",
+        "[тег RSS lifestyle] Punomasni mliječni proizvodi u kanadskom istraživanju nisu pogoršali kolesterol ni tjelesnu težinu",
+        "[URL /sport/] Što radi ‘profi Ironman‘? To dobro zna Željko Cota: 6000 kalorija na pjatu, tri treninga dnevno, bic",
+        "[тег RSS košarka] Matjaž Kek bijesan nakon poraza: “Nerazumljivo, neodgovorno i bez rezona”",
+        "[тег RSS košarka] Košarkašice FSV-a u derbiju začelja upisale prvu ovosezonsku pobjedu",
+        "[тег RSS sport] Rijeka doživjela bolan poraz. Hat-trick Frederiksena i crveni kartoni Puljića i Majstorovića šokiral"
+      ]
+    },
+    "backlog": {
+      "total_size": 0,
+      "sources": {}
+    },
+    "published": {
+      "total": 0,
+      "ukraine_priority": 0,
+      "with_images": 0,
+      "text_only": 0,
+      "og_images_found": 0,
+      "sources": {}
+    },
+    "models_used": {
+      "gemini-3.6-flash": 1
+    },
+    "models_by_task": {
+      "filter": "gemini-3.6-flash",
+      "translate": null
+    },
+    "model_attempts": [
+      {
+        "task": "filter",
+        "model": "gemini-3-flash-preview",
+        "outcome": "unavailable"
+      },
+      {
+        "task": "filter",
+        "model": "gemini-3.6-flash",
+        "outcome": "ok"
+      }
+    ],
+    "exhausted_models": [],
+    "demoted_models": [],
+    "translate_budget_deferred": [],
+    "gemini_region_blocked": false,
+    "gemini_unavailable": false,
+    "errors_count": 0,
+    "gemini_retries": 1
   }
 ]
