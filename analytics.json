@@ -1,58 +1,5 @@
 [
   {
-    "timestamp": "2026-10-22 08:01:08",
-    "execution_time": 165.9,
-    "funnel": {
-      "scraped_total": 35,
-      "scraped_by_source": {
-        "023": 10,
-        "Slobodna dalmacija": 15,
-        "Zadarski list": 10
-      },
-      "already_seen": 0,
-      "rejected_by_keywords": 8,
-      "duplicates_removed_by_ai": 14,
-      "rejection_reasons_list": [
-        "• Vratite se u djetinjstvo uz Ljubana, Peru i Dragu; “Vlak u snijegu” st → Культурна подія інших міст | Сутності: Providurova palača, Kino Zona, Vlak u snijegu, Zagreb",
-        "• Severina najavila novu Arenu Zagreb: Turneja “Ja samo pjevam” dobiva B → Реклама | Сутності: Severina, Arena Zagreb, Ja samo pjevam, Eventim",
-        "• Iznajmljivači, ovo su nova pravila koje uvodi AIRBNB, a stupaju na sna → Світовий шум | Сутності: Airbnb, BBC, Zakon, Iznajmljivači",
-        "• Danas toplo, i do 20 Celzijevih, a evo hoće li nam tebati kišobrani na → Дубль в історії | Сутності: DHMZ, Jadran, Dalmacija, Prognoza",
-        "• Prvi put u Hrvatskoj izvedena nova pretraga za bolesnike s bolestima j → Побут інших міст | Сутності: KBC Sestre milosrdnice, Zagreb, Sanja Stojsavljević Shapeski, EUS-PPG",
-        "• Svečana sjednica u Cavtatu, načelnik Božo Lasić poručio: Konavle nisu  → Побут інших міст | Сутності: Cavtat, Konavle, Božo Lasić, Branko Bačić",
-        "• Prava pošta na 20 milja. Od braka do braka za šampjera i dva cara → Світовий шум | Сутності: Rino Šupić, Zubatac, Haswing, Jadran",
-        "• Velika rekonstrukcija Gradske uprave! Odlazi polovica pročelnika, grad → Побут інших міст | Сутності: Šibenik, Željko Burić, Gradska uprava, Mirjana Žurić",
-        "• Odlazak žene koja je Zadru darovala srce; Sestra Melhiora Biošić nakon → Дубль в історії | Сутності: Melhiora Biošić, Zadar, Split, Zadarska nadbiskupija",
-        "• Michaela Selinger, operna prvakinja »Zajca«: Pravi je dar pjevati u Po → Побут інших міст | Сутності: HNK Zajc, Rijeka, Michaela Selinger, Pepeljuga",
-        "• Pitali smo u Sanitatu hoće li automobili sa sustavom kamera zamijenti  → Побут інших міст | Сутності: Sanitat, Dubrovnik, Scan a Car, Parking",
-        "• Darivanjem uzornih vozača PU dubrovačko-neretvanska obilježila Naciona → Побут інших міст | Сутності: PU dubrovačko-neretvanska, Nacionalni dan sigurnosti, Dubrovnik, Policija",
-        "• Damir Fabijanić otvoriti će izložbu \"Dubrovački ljetnikovac\" → Побут інших міст | Сутності: Damir Fabijanić, Dubrovački ljetnikovac, Umjetnička galerija Dubrovnik, Zagreb",
-        "• Zatvara se Prirodoslovni muzej Dubrovnik → Побут інших міст | Сутності: Prirodoslovni muzej Dubrovnik, Dubrovnik, Stolarija"
-      ]
-    },
-    "backlog": {
-      "total_size": 3,
-      "sources": {
-        "023": 3
-      }
-    },
-    "published": {
-      "total": 3,
-      "ukraine_priority": 0,
-      "with_images": 1,
-      "text_only": 2,
-      "sources": {
-        "023": 2,
-        "Zadarski list": 1
-      }
-    },
-    "models_used": {
-      "gemini-3.5-flash-lite": 2,
-      "gemini-3.6-flash": 0
-    },
-    "errors_count": 0,
-    "gemini_retries": 0
-  },
-  {
     "timestamp": "2026-10-22 09:01:11",
     "execution_time": 177.2,
     "funnel": {
@@ -9682,5 +9629,113 @@
     "gemini_unavailable": false,
     "errors_count": 0,
     "gemini_retries": 0
+  },
+  {
+    "timestamp": "2026-11-07 13:01:19",
+    "execution_time": 168.3,
+    "funnel": {
+      "scraped_total": 35,
+      "scraped_by_source": {
+        "023": 10,
+        "Slobodna dalmacija": 15,
+        "Zadarski list": 10
+      },
+      "already_seen": 19,
+      "rejected_by_keywords": 5,
+      "rejected_by_rule": {
+        "тег RSS sport": 1,
+        "košarkaških": 1,
+        "košarkaši": 1,
+        "тег RSS nogomet": 2
+      },
+      "unclassified_by_ai": 0,
+      "duplicates_removed_by_ai": 11,
+      "rejection_reasons_list": [
+        "• Učenik Turističke i ugostiteljske škole Đivo Vukajlović osvojio zlatnu → Побут інших міст (Дубровник) | Сутності: Đivo Vukajlović, AEHT 2026, Ferrara, Dubrovnik",
+        "• Kremlj objavio tko će se naći u ruskoj delegaciji na pregovorima s Ukr → Вже публікувалось (Переговори по Україні) | Сутності: Kremlj, Sergej Rjabkov, Dmitrij Peskov, Abu Dhabi",
+        "• Mile Kekin u Pogonu: Dvosatni koncert novih pjesama i starih uspješnic → Побут інших міст (Рієка) | Сутності: Mile Kekin, Pogon, Hladno pivo",
+        "• Pavlomirska žlahtina najbolje je mlado bijelo vino na Sabatini → Побут інших міст (Брела) | Сутності: Pavlomir, Sabatina, Brela, Marinko Vladić",
+        "• Zadarska županija daje 30.000 eura za stadion u Vukovaru, a kada će Za → Спорт (Стадіон у Vukovaru) | Сутності: Zadarska županija, Josip Bilaver, Vukovar",
+        "• Nakon 35 godina Fiesta odlazi sa scene. Posljednji koncert pretvorili  → Побут інших міст (Рієка) | Сутності: Fiesta, Rijeka, Udruga osoba s mišićnom distrofijom",
+        "• USKOK podigao optužnicu protiv dvojca iz šibenske bolnice: objavljeni  → Побут інших міст (Шибеник та Загреб) | Сутності: USKOK, KBC Zagreb, Šibenska bolnica",
+        "• Radnicima rapskog poduzeća Dundovo plaće rastu 300 do 400 eura bruzo → Побут інших міст (Раб) | Сутності: Dundovo, Rab, SIKD",
+        "• Gospićani sa zebnjom čekaju prvi snijeg ove sezone → Побут інших міст (Госпіч) | Сутності: Gospić, Zimska služba",
+        "• Gospićki darivatelji krvi kao svijetli primjer humanosti, Pavelić ušao → Побут інших міст (Госпіч) | Сутності: Gospić, Crveni križ, Goran Pavelić",
+        "• Sidrene cijene. Gotovo polovica poduzetnika dići će cijene, a 30 posto → Не за тематикою (Загальні ціни для бізнесу) | Сутності: Hrvatska, Poduzetnici"
+      ],
+      "rejected_by_reason": {
+        "Побут інших міст": 8,
+        "Вже публікувалось": 1,
+        "Спорт": 1,
+        "Не за тематикою": 1
+      },
+      "updates_marked": 0,
+      "already_rejected": 9,
+      "rejected_by_code_examples": [
+        "[тег RSS sport] Zlato protiv prvoligaša Varaždina skrenulo pogled na Privlaku; Sabunjar okuplja 150 djece i ruši sve",
+        "[košarkaških] Od školskih klupa s legendom i košarkaških dana, do svjetskog zlata za NP Krka. Puno je razloga za r",
+        "[košarkaši] Nova suradnja za KK Zadar: Košarkaši dobili dodatnu podršku u brizi o zdravlju i regeneraciji",
+        "[тег RSS nogomet] Izbornik Vatrenih još jednom se osvrnuo na situaciju s Kramarićem: “Pokušao sam mu objasniti…”",
+        "[тег RSS nogomet] Bilić objavio popis reprezentativaca za oglede s Češkom i Engleskom. Nova lica dolaze iz Hajduka"
+      ]
+    },
+    "backlog": {
+      "total_size": 0,
+      "sources": {}
+    },
+    "published": {
+      "total": 2,
+      "ukraine_priority": 0,
+      "with_images": 2,
+      "text_only": 0,
+      "og_images_found": 0,
+      "sources": {
+        "Slobodna dalmacija": 1,
+        "Zadarski list": 1
+      }
+    },
+    "models_used": {
+      "gemini-3.5-flash-lite": 2
+    },
+    "models_by_task": {
+      "filter": "gemini-3.5-flash-lite",
+      "translate": "gemini-3.5-flash-lite"
+    },
+    "model_attempts": [
+      {
+        "task": "filter",
+        "model": "gemini-3.6-flash",
+        "outcome": "unavailable"
+      },
+      {
+        "task": "filter",
+        "model": "gemini-3.5-flash-lite",
+        "outcome": "ok"
+      },
+      {
+        "task": "translate",
+        "model": "gemini-3.8-flash",
+        "outcome": "unavailable"
+      },
+      {
+        "task": "translate",
+        "model": "gemini-3.6-flash",
+        "outcome": "unavailable"
+      },
+      {
+        "task": "translate",
+        "model": "gemini-3.5-flash-lite",
+        "outcome": "ok"
+      }
+    ],
+    "exhausted_models": [],
+    "demoted_models": [
+      "filter: gemini-3-flash-preview"
+    ],
+    "translate_budget_deferred": [],
+    "gemini_region_blocked": false,
+    "gemini_unavailable": false,
+    "errors_count": 0,
+    "gemini_retries": 3
   }
 ]
