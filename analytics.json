@@ -1,65 +1,5 @@
 [
   {
-    "timestamp": "2026-10-21 14:01:15",
-    "execution_time": 245.0,
-    "funnel": {
-      "scraped_total": 35,
-      "scraped_by_source": {
-        "023": 10,
-        "Slobodna dalmacija": 15,
-        "Zadarski list": 10
-      },
-      "already_seen": 3,
-      "rejected_by_keywords": 11,
-      "duplicates_removed_by_ai": 20,
-      "rejection_reasons_list": [
-        "• Srpski državljani neće moći glasati u Rijeci. Evo što se događa → Геоблок | Сутності: Rijeka, Srbija, Zoran Stanković, Zagreb",
-        "• Dubrovnik treći put najbolji veliki grad za život u Hrvatskoj. Frankov → Побут інших міст | Сутності: Dubrovnik, Velibor Puzović, Šibenik, Mato Franković",
-        "• Prometna nesreća na A7 između tunela Škurinje I i tunela Katarina → Побут інших міст | Сутності: A7, Škurinje, Katarina, HAC",
-        "• Uhićen na djelu u Topolom, a onda šok! Policija ga povezuje s još seda → Побут інших міст | Сутності: Topol, Ston, Metković, Neretva",
-        "• Umjetna inteligencija iz obične fotografije lica procjenjuje biološku  → Світовий шум | Сутності: Mass General Brigham, Hugo Aerts, Raymond Mak, The Lancet",
-        "• MVEP: Uhićenja u Srbiji nastavak “neutemeljenih optužbi protiv Hrvatsk → Геоблок | Сутності: MVEP, Srbija, Zagreb, Beograd",
-        "• Visoki dužnosnik Europske komisije Raffaele Fitto i ministrica MRRFEU  → Побут інших міст | Сутності: Raffaele Fitto, Nataša Mikuš Žigman, Trokut Šibenik, Diana Mudrinić",
-        "• Šokantne scene s trajekta; Ovcu svezali konopcem za drvenu paletu i pr → Дубль в історії | Сутності: Jadrolinija, Prijatelji životinja, DIRH",
-        "• KBC Rijeka: Zdravstveno stanje djevojčice ozlijeđene u bazenu u Istri  → Побут інших міст | Сутності: KBC Rijeka, Rabac, Kristina Lah Tomulić",
-        "• Turistička jesen u Zadru; Rujan na razini prošle godine, ali prva polo → Дубль в історії | Сутності: Zadar, eVisitor, Njemačka, Poljska",
-        "• Radionice o gackim čakavskim govorima za učenike osnovne škole → Побут інших міст | Сутності: Otočac, Muzej Gacke, Dragocjenka Bilović",
-        "• Ministarstvo vanjskih i europskih poslova izdalo preporuke za odlazak  → Дубль в історії | Сутності: MVEP, Srbija, Zagreb, Beograd",
-        "• Franković uzvraća na prozivke turista o dubrovačkoj ‘pohlepi‘: ‘A gdje → Побут інших міст | Сутності: Dubrovnik, Mato Franković, Index.hr, Poljska",
-        "• Obilježen završetak radova na projektu energetske obnove ambulante u K → Побут інших міст | Сутності: Kuna Pelješka, Branko Bačić, Blaž Pezo, Tomislav Ančić",
-        "• ‘Puhali smo na hladno?‘ Stradun po kiš kao procvjetala proljetna livad → Побут інших міст | Сутності: Dubrovnik, Stradun, Jadran",
-        "• Dalmatinski biser najkvalitetniji je veliki grad za život u Hrvatskoj! → Дубль в історії | Сутності: Dubrovnik, Šibenik, Velibor Puzović, Mato Franković",
-        "• Franković odgovara Poljacima: Gostoprimstvo podrazumijeva i poštovanje → Дубль в історії | Сутності: Dubrovnik, Mato Franković, Index.hr, Poljska",
-        "• Nevjerojatno! U rujnu za dlaku izbjegnuta tragedija u Šibeniku, nakon  → Побут інших міст | Сутності: Šibenik, ŠibenikIN, Jerolim Mileta",
-        "• Ministar turizma Glavina objavio: Novi zakon o ugostiteljskoj djelatno → Реклама | Сутності: Tonći Glavina, Vlada RH, Zakon o ugostiteljskoj djelatnosti",
-        "• Stariji Šibenčanin grubo nasjeo na laži prevarantice; dopisivali se, s → Побут інших міст | Сутності: Šibenik, Općinsko državno odvjetništvo, Policijska postaja Šibenik"
-      ]
-    },
-    "backlog": {
-      "total_size": 6,
-      "sources": {
-        "Slobodna dalmacija": 4,
-        "023": 2
-      }
-    },
-    "published": {
-      "total": 3,
-      "ukraine_priority": 0,
-      "with_images": 1,
-      "text_only": 2,
-      "sources": {
-        "023": 2,
-        "Slobodna dalmacija": 1
-      }
-    },
-    "models_used": {
-      "gemini-3.5-flash-lite": 2,
-      "gemini-3.6-flash": 0
-    },
-    "errors_count": 0,
-    "gemini_retries": 0
-  },
-  {
     "timestamp": "2026-10-21 16:01:12",
     "execution_time": 319.9,
     "funnel": {
@@ -9565,6 +9505,92 @@
         "023": 1,
         "Slobodna dalmacija": 1,
         "Zadarski list": 1
+      }
+    },
+    "models_used": {
+      "gemini-3.6-flash": 1,
+      "gemini-3.5-flash-lite": 1
+    },
+    "models_by_task": {
+      "filter": "gemini-3.6-flash",
+      "translate": "gemini-3.5-flash-lite"
+    },
+    "model_attempts": [
+      {
+        "task": "filter",
+        "model": "gemini-3.6-flash",
+        "outcome": "ok"
+      },
+      {
+        "task": "translate",
+        "model": "gemini-3.5-flash-lite",
+        "outcome": "ok"
+      }
+    ],
+    "exhausted_models": [],
+    "demoted_models": [
+      "filter: gemini-3-flash-preview",
+      "translate: gemini-3.8-flash",
+      "translate: gemini-3.6-flash"
+    ],
+    "translate_budget_deferred": [],
+    "gemini_region_blocked": false,
+    "gemini_unavailable": false,
+    "errors_count": 0,
+    "gemini_retries": 0
+  },
+  {
+    "timestamp": "2026-11-07 10:01:16",
+    "execution_time": 134.0,
+    "funnel": {
+      "scraped_total": 35,
+      "scraped_by_source": {
+        "023": 10,
+        "Slobodna dalmacija": 15,
+        "Zadarski list": 10
+      },
+      "already_seen": 26,
+      "rejected_by_keywords": 3,
+      "rejected_by_rule": {
+        "тег RSS sport": 1,
+        "košarkaši": 1,
+        "тег RSS nogomet": 1
+      },
+      "unclassified_by_ai": 0,
+      "duplicates_removed_by_ai": 2,
+      "rejection_reasons_list": [
+        "• Uhićen reketar (46) koji je pokušao iznuditi 300.000 eura. Žrtva nije  → Побут інших міст (Справа про вимагання в Загребі) | Сутності: zagrebačka policija, 300.000 eura, Zagreb, 46-godišnjak",
+        "• Hrvatska poduzeća plaćaju struju čak 20 posto skuplje nego u EU-u: HUP → Не за тематикою (Аналітична заява HUP про ціни) | Сутності: HUP, EU, 20 posto, Fokus tjedna"
+      ],
+      "rejected_by_reason": {
+        "Побут інших міст": 1,
+        "Не за тематикою": 1
+      },
+      "updates_marked": 0,
+      "already_rejected": 19,
+      "rejected_by_code_examples": [
+        "[тег RSS sport] Zlato protiv prvoligaša Varaždina skrenulo pogled na Privlaku; Sabunjar okuplja 150 djece i ruši sve",
+        "[košarkaši] Nova suradnja za KK Zadar: Košarkaši dobili dodatnu podršku u brizi o zdravlju i regeneraciji",
+        "[тег RSS nogomet] Bivši vratar Rijeke otkrio davnu epizodu s Mandžom: ‘Opsovao mi je majku srpsku, pa prišao u prekidu"
+      ]
+    },
+    "backlog": {
+      "total_size": 2,
+      "sources": {
+        "Slobodna dalmacija": 1,
+        "Zadarski list": 1
+      }
+    },
+    "published": {
+      "total": 3,
+      "ukraine_priority": 0,
+      "with_images": 3,
+      "text_only": 0,
+      "og_images_found": 1,
+      "sources": {
+        "Slobodna dalmacija": 1,
+        "Zadarski list": 1,
+        "023": 1
       }
     },
     "models_used": {
