@@ -1,57 +1,5 @@
 [
   {
-    "timestamp": "2026-10-22 11:01:26",
-    "execution_time": 191.7,
-    "funnel": {
-      "scraped_total": 35,
-      "scraped_by_source": {
-        "023": 10,
-        "Slobodna dalmacija": 15,
-        "Zadarski list": 10
-      },
-      "already_seen": 5,
-      "rejected_by_keywords": 15,
-      "duplicates_removed_by_ai": 12,
-      "rejection_reasons_list": [
-        "• Uz predstave »Spavaj, dijete moje malo, spavaj« i »Under the Skin«: Sn → Культурний шум | Сутності: Rijeka, Eleonora-Magdalena Vrdoljak, Matija Ferlin, Jon Fosse",
-        "• Miletić: Građani Čabra imaju pravo znati tko im zagađuje zrak, tražim  → Побут інших міст | Сутності: Marin Miletić, Čabar, Finvest, Gerovo",
-        "• Odana počast braniteljima u parku Striježice u Župi dubrovačkoj → Побут інших міст | Сутності: Župa dubrovačka, Striježice, Miro Bajo, Domovinski rat",
-        "• Zbog dogradnje čvora Matulji – Opatija sutra na snazi privremena regul → Побут інших міст | Сутності: Matulji, Opatija, Rijeka, Hrvatske autoceste",
-        "• Slavni Poljak obožava Dalmaciju i svoju kuću na Pelješcu, a nikad neće → Світовий шум | Сутності: Robert Makłowicz, Pelješac, Krakov, Dalmacija",
-        "• Osnovana Hrvatska komora logopeda, no tisuće djece i dalje strahuju da → Дубль в історії | Сутності: Hrvatska komora logopeda, Ministarstvo zdravstva, Irena Hrstić, HALP",
-        "• Nastavlja se program pomoćnika u nastavi, u Dubrovniku imaju jednu od  → Побут інших міст | Сутності: Grad Dubrovnik, Mato Franković, Europski socijalni fond, Dubrovnik",
-        "• Riječka 128. brigada obilježava 35. godišnjicu osnutka → Побут інших міст | Сутності: Rijeka, 128. brigada, Sveti Vid, Drenova",
-        "• Dubrovnik traži više vremena za Plan upravljanja, Krstulović poručio:  → Побут інших міст | Сутності: Dubrovnik, UNESCO, Marin Krstulović, Stari grad",
-        "• Ovog vikenda počinje zimsko računanje vremena → Світовий шум | Сутності: Vlada RH, HAKOM, Rijeka, Zimsko računanje vremena",
-        "• Dobre vijesti za stanovnike ove općine: povećan broj studentskih stipe → Побут інших міст | Сутності: Općina Bilice, Ive Ćaleta-Car, Bilice",
-        "• Ova mjesta u Konavlima nemaju vodu, trebali bi je dobiti do 14 sati → Побут інших міст | Сутності: Konavle, Močići, Dobrota, Konavosko komunalno društvo"
-      ]
-    },
-    "backlog": {
-      "total_size": 4,
-      "sources": {
-        "Zadarski list": 1,
-        "023": 3
-      }
-    },
-    "published": {
-      "total": 3,
-      "ukraine_priority": 0,
-      "with_images": 1,
-      "text_only": 2,
-      "sources": {
-        "023": 2,
-        "Slobodna dalmacija": 1
-      }
-    },
-    "models_used": {
-      "gemini-3.5-flash-lite": 2,
-      "gemini-3.6-flash": 0
-    },
-    "errors_count": 0,
-    "gemini_retries": 0
-  },
-  {
     "timestamp": "2026-10-22 12:01:10",
     "execution_time": 240.5,
     "funnel": {
@@ -9823,5 +9771,88 @@
     "gemini_unavailable": false,
     "errors_count": 0,
     "gemini_retries": 1
+  },
+  {
+    "timestamp": "2026-11-07 16:01:20",
+    "execution_time": 30.1,
+    "funnel": {
+      "scraped_total": 35,
+      "scraped_by_source": {
+        "023": 10,
+        "Slobodna dalmacija": 15,
+        "Zadarski list": 10
+      },
+      "already_seen": 20,
+      "rejected_by_keywords": 6,
+      "rejected_by_rule": {
+        "тег RSS lifestyle": 1,
+        "тег RSS sport": 2,
+        "košarkaških": 1,
+        "košarkaši": 1,
+        "тег RSS nogomet": 1
+      },
+      "unclassified_by_ai": 0,
+      "duplicates_removed_by_ai": 9,
+      "rejection_reasons_list": [
+        "• Rijeka kroz objektiv mladih fotografa: Pogled na prošlost i suvremeni  → Побут інших міст (Локальна фотовиставка у Рієці) | Сутності: Rijeka, Galerija Principij, Fotoklub Rijeka",
+        "• Dubrovnik ulaže u kvalitetniji život građana – od obrazovanja do skrbi → Побут інших міст (Ремонт школи в Дубровнику) | Сутності: Dubrovnik, OŠ Mokošica, Grad Dubrovnik",
+        "• Miletić i Nemarnik: Općina Viškovo novim nametima opterećuje obitelji  → Побут інших міст (Місцеві податки в громаді Вишково) | Сутності: Marin Miletić, Most, Viškovo, Sanja Udović",
+        "• Jadroliniji trajekt Valun koji inače spaja Papratno sa Sobrom tegle dv → Побут інших міст (Поломка порома на локальній лінії біля Дубровника) | Сутності: Jadrolinija, trajekt Valun, Prapratno, Sobra",
+        "• UABA Rijeka organizirala posjet selu Lipa za učenike Medicinske škole  → Побут інших міст (Шкільна екскурсія в Рієці) | Сутності: UABA Rijeka, Medicinska škola Rijeka, Lipa",
+        "• Povratak tradicije: na jedan dan oživjelo tovernaško iskustvo, donosim → Побут інших міст (Локальний винний захід у Шибенику) | Сутності: Šibenik, Arsen Dedić, toverna",
+        "• Koralji iz DV-a Pahuljica učili u stomatološkoj ordinaciji, masliniku  → Побут інших міст (Захід у дитсадку на острові Раб) | Сутності: DV Pahuljica, Supetarska Draga, Rab",
+        "• Loparani o potrebama mještana, poljoprivredi i proračunu za 2027. godi → Побут інших міст (Громадські збори в Лопарі) | Сутності: Lopar, Zdenko Jakuc, Rab",
+        "• SDP: “Plenkovićevo kadroviranje u zdravstvu ima cijenu, plaćaju je pac → Вже публікувалось (Політична реакція на ситуацію, що вже є в історії) | Сутності: SDP, Dijana Zadravec, KBC Sestre milosrdnice"
+      ],
+      "rejected_by_reason": {
+        "Побут інших міст": 8,
+        "Вже публікувалось": 1
+      },
+      "updates_marked": 0,
+      "already_rejected": 10,
+      "rejected_by_code_examples": [
+        "[тег RSS lifestyle] Punomasni mliječni proizvodi u kanadskom istraživanju nisu pogoršali kolesterol ni tjelesnu težinu",
+        "[тег RSS sport] Zlato protiv prvoligaša Varaždina skrenulo pogled na Privlaku; Sabunjar okuplja 150 djece i ruši sve",
+        "[košarkaških] Od školskih klupa s legendom i košarkaških dana, do svjetskog zlata za NP Krka. Puno je razloga za r",
+        "[košarkaši] Nova suradnja za KK Zadar: Košarkaši dobili dodatnu podršku u brizi o zdravlju i regeneraciji",
+        "[тег RSS sport] ISTRA 1961 – RIJEKA 18 SATI Kek napravio tri promjene u odnosu na posljednji susret",
+        "[тег RSS nogomet] Zoran Bogolin nadmudrio Damira Milinovića. Šuke iskoristio Đilasov dar u nastavku"
+      ]
+    },
+    "backlog": {
+      "total_size": 0,
+      "sources": {}
+    },
+    "published": {
+      "total": 0,
+      "ukraine_priority": 0,
+      "with_images": 0,
+      "text_only": 0,
+      "og_images_found": 0,
+      "sources": {}
+    },
+    "models_used": {
+      "gemini-3-flash-preview": 1
+    },
+    "models_by_task": {
+      "filter": "gemini-3-flash-preview",
+      "translate": null
+    },
+    "model_attempts": [
+      {
+        "task": "filter",
+        "model": "gemini-3-flash-preview",
+        "outcome": "ok"
+      }
+    ],
+    "exhausted_models": [],
+    "demoted_models": [
+      "translate: gemini-3.8-flash"
+    ],
+    "translate_budget_deferred": [],
+    "gemini_region_blocked": false,
+    "gemini_unavailable": false,
+    "errors_count": 0,
+    "gemini_retries": 0
   }
 ]
