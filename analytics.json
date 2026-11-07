@@ -1,58 +1,5 @@
 [
   {
-    "timestamp": "2026-10-22 12:01:10",
-    "execution_time": 240.5,
-    "funnel": {
-      "scraped_total": 35,
-      "scraped_by_source": {
-        "023": 10,
-        "Slobodna dalmacija": 15,
-        "Zadarski list": 10
-      },
-      "already_seen": 5,
-      "rejected_by_keywords": 14,
-      "duplicates_removed_by_ai": 15,
-      "rejection_reasons_list": [
-        "• Papa Lav je dobro i neće trebati dodatno liječenje → Геоблок | Сутності: Папа Римський, Володимир Зеленський, Ватикан, Рим",
-        "• Crikvenica najbolji mali grad za obrazovanje, demografiju i mlade → Побут інших міст | Сутності: Цриквеница, Івона Матошич Гашпарович, Шибеник",
-        "• Odana počast braniteljima u parku Striježice u Župi dubrovačkoj → Побут інших міст | Сутності: Жупа дубровачка, Міро Байо, Парк Стріжеіце",
-        "• U Čavlima nezadovoljni radovima na uređenju Doma kulture: “Razloga je  → Побут інших міст | Сутності: Чавле, Івана Цвітан Поліч, Дом культури",
-        "• Slavni Poljak obožava Dalmaciju i svoju kuću na Pelješcu, a nikad neće → Світовий шум | Сутності: Роберт Маклович, Пелєшац, Польща, Краків",
-        "• Tragedija u zagrebačkom Zoo vrtu; Utopilo se mladunče vodenkonja? Prij → Побут інших міст | Сутності: Загребський зоопарк, Приятелі живойіна, Державна інспекція",
-        "• U nautici rastu prihodi i investicije, stručnjaci upozoravaju na profi → Дубль в історії | Сутності: Біоград-на-Мору, HUP, HGK, Пашко Клисович",
-        "• Nastavlja se program pomoćnika u nastavi, u Dubrovniku imaju jednu od  → Побут інших міст | Сутності: Дубровник, Мато Франкович, Європейський соціальний фонд",
-        "• Sutra u Posedarju počinje jedinstvena „Berba maslina” – okus i tradici → Дубль в історії | Сутності: Поседар'є, Новиградське море, ОПГ Новакович",
-        "• Miletić: Građani Čabra imaju pravo znati tko im zagađuje zrak, tražim  → Побут інших міст | Сутності: Марін Милетич, Чабар, Гертово, Фінвест",
-        "• Dubrovnik traži više vremena za Plan upravljanja, Krstulović poručio:  → Побут інших міст | Сутності: Дубровник, ЮНЕСКО, Марін Крстулович, Ірена Хрстич",
-        "• Zbog dogradnje čvora Matulji – Opatija sutra na snazi privremena regul → Побут інших міст | Сутності: Матульї, Опатія, Рієка, ГП Крк",
-        "• Dobre vijesti za stanovnike ove općine: povećan broj studentskih stipe → Побут інших міст | Сутності: Білиці, Іве Чалета-Кар",
-        "• Plenković u Crnoj Gori pozdravio zadnje odluke Podgorice: “To je korak → Геоблок | Сутності: Андрей Пленкович, Чорногорія, Мілойко Спаїч, Подгориця",
-        "• Osnovana Hrvatska komora logopeda, no tisuće djece i dalje strahuju da → Дубль в історії | Сутності: Хорватська палата логопедів, Ірена Хрстич, Зоран Міланович, Андрей Пленкович"
-      ]
-    },
-    "backlog": {
-      "total_size": 2,
-      "sources": {
-        "023": 2
-      }
-    },
-    "published": {
-      "total": 3,
-      "ukraine_priority": 0,
-      "with_images": 0,
-      "text_only": 3,
-      "sources": {
-        "023": 3
-      }
-    },
-    "models_used": {
-      "gemini-3.5-flash-lite": 2,
-      "gemini-3.6-flash": 0
-    },
-    "errors_count": 0,
-    "gemini_retries": 0
-  },
-  {
     "timestamp": "2026-10-22 14:01:15",
     "execution_time": 190.3,
     "funnel": {
@@ -9854,5 +9801,107 @@
     "gemini_unavailable": false,
     "errors_count": 0,
     "gemini_retries": 0
+  },
+  {
+    "timestamp": "2026-11-07 17:01:22",
+    "execution_time": 251.3,
+    "funnel": {
+      "scraped_total": 35,
+      "scraped_by_source": {
+        "023": 10,
+        "Slobodna dalmacija": 15,
+        "Zadarski list": 10
+      },
+      "already_seen": 21,
+      "rejected_by_keywords": 4,
+      "rejected_by_rule": {
+        "тег RSS lifestyle": 1,
+        "тег RSS sport": 1,
+        "тег RSS nogomet": 2
+      },
+      "unclassified_by_ai": 0,
+      "duplicates_removed_by_ai": 8,
+      "rejection_reasons_list": [
+        "• Rasprodane izvedbe plesne predstave “Ljubav” prema kultnom albumu Ekat → Побут інших міст (Культурна подія у Загребі) | Сутності: Згребацький театр молоді, Матеа Білосніч, Саша Божич, Загреб",
+        "• Stravično krvoproliće na gradskom trgu u Poljskoj: Napadač nasumično p → Геоблок (Стрілянина в Польщі) | Сутності: Краків, Польща, Поліція",
+        "• ANC pretrpio težak poraz na lokalnim izborima u Južnoafričkoj Republic → Геоблок (Вибори в ПАР) | Сутності: Африканський національний конгрес, Нельсон Мандела, ПАР",
+        "• Dogradonačelnik Puzović primio plenarne predavače XXXVIII. Simpozija H → Побут інших міст (Подія у Дубровнику) | Сутності: Дубровник, Велибор Пузович, Студентський центр",
+        "• Prosvjedi u Francuskoj započeli mirno. Žele pritisnuti vladu, ali broj → Геоблок (Протести у Франції) | Сутності: Франція, Протести, Уряд",
+        "• Umro Vladimir Štengl, prvi poslijeratni gradonačelnik Vukovara → Побут інших міст (Помер ексмер Вukовара) | Сутності: Вуковар, Владімір Штенгл, HDZ",
+        "• Petero mrtvih, desetak ozlijeđenih u pucnjavi u Krakovu. Napadač uhvać → Дубль (Дублює новину 3) | Сутності: Краків, Польща, Поліція",
+        "• Zbog obilne kiše poplavljeni šatori za raseljene iz Gaze: “Spavamo na  → Геоблок (Потоп у Газі) | Сутності: Газа, Палестина, ХАМАС"
+      ],
+      "rejected_by_reason": {
+        "Побут інших міст": 3,
+        "Геоблок": 4,
+        "Дубль": 1
+      },
+      "updates_marked": 1,
+      "already_rejected": 13,
+      "rejected_by_code_examples": [
+        "[тег RSS lifestyle] Punomasni mliječni proizvodi u kanadskom istraživanju nisu pogoršali kolesterol ni tjelesnu težinu",
+        "[тег RSS sport] Zlato protiv prvoligaša Varaždina skrenulo pogled na Privlaku; Sabunjar okuplja 150 djece i ruši sve",
+        "[тег RSS nogomet] Slaven Belupo slavio u Velikoj Gorici u utakmici sa osam pogodaka",
+        "[тег RSS nogomet] Grobničan vodio na poluvremenu pa ostao bez svega u nastavku utakmice u Požegi"
+      ]
+    },
+    "backlog": {
+      "total_size": 0,
+      "sources": {}
+    },
+    "published": {
+      "total": 2,
+      "ukraine_priority": 1,
+      "with_images": 2,
+      "text_only": 0,
+      "og_images_found": 0,
+      "sources": {
+        "Zadarski list": 1,
+        "Slobodna dalmacija": 1
+      }
+    },
+    "models_used": {
+      "gemini-3.5-flash-lite": 2
+    },
+    "models_by_task": {
+      "filter": "gemini-3.5-flash-lite",
+      "translate": "gemini-3.5-flash-lite"
+    },
+    "model_attempts": [
+      {
+        "task": "filter",
+        "model": "gemini-3-flash-preview",
+        "outcome": "unavailable"
+      },
+      {
+        "task": "filter",
+        "model": "gemini-3.6-flash",
+        "outcome": "unavailable"
+      },
+      {
+        "task": "filter",
+        "model": "gemini-3.5-flash-lite",
+        "outcome": "ok"
+      },
+      {
+        "task": "translate",
+        "model": "gemini-3.8-flash",
+        "outcome": "unavailable"
+      },
+      {
+        "task": "translate",
+        "model": "gemini-3.5-flash-lite",
+        "outcome": "ok"
+      }
+    ],
+    "exhausted_models": [],
+    "demoted_models": [],
+    "translate_budget_deferred": [
+      "gemini-3.6-flash"
+    ],
+    "gemini_region_blocked": false,
+    "gemini_unavailable": false,
+    "errors_count": 0,
+    "gemini_retries": 3
   }
 ]
