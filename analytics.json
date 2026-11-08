@@ -1,59 +1,5 @@
 [
   {
-    "timestamp": "2026-10-30 10:01:12",
-    "execution_time": 164.4,
-    "funnel": {
-      "scraped_total": 35,
-      "scraped_by_source": {
-        "023": 10,
-        "Slobodna dalmacija": 15,
-        "Zadarski list": 10
-      },
-      "already_seen": 5,
-      "rejected_by_keywords": 10,
-      "duplicates_removed_by_ai": 15,
-      "rejection_reasons_list": [
-        "• Žigman: “Rast hrvatskog gospodarstva bit će oko 2,5 posto, gotovo trip → Економіка країни | Сутності: Ante Žigman, HNB, Zagreb, Europa",
-        "• Veliki posao tvrtke iz poduzetničke zone u Stankovcima: šibenski ponto → Побут інших міст | Сутності: Marinetek Adriatic, Stankovci, Grčka, Šibenik",
-        "• U Novom Vinodolskom obilježili blagdan Svih svetih → Побут інших міст | Сутності: Novi Vinodolski, Tomislav Cvitković, Svi sveti",
-        "• Provaljivao u protupožarne ormariće i krao vatrogasnu opremu! → Дубль | Сутності: Benkovac, Zadar, vatrogasne cijevi",
-        "• Među poginulim pripadnicima EUFOR-a u padu helikoptera i 24-godišnja s → Геоблок | Сутності: EUFOR, Brčko, Sarajevo, Guido Crosetto",
-        "• Oduvijek ste htjeli imati maslinu, a nemate maslinik? Evo sjajne prili → Побут інших міст | Сутності: Korčula, Sandra Komparak, OPG Komparak",
-        "• Tanker u Hormuškom tjesnacu pogođen dvjema eksplozivnim napravama prič → Геоблок | Сутності: Hormuški tjesnac, UKMTO, Kairo, Oman",
-        "• Bradata aukcija i ove godine u Šibeniku: Slaven Bilić ima važnu poruku → Побут інших міст | Сутності: Šibenik, Slaven Bilić, Movember, Bradata aukcija",
-        "• U Gospiću nastavljen „rat plakatima“: “Gradonačelniče, volontirate li  → Побут інших міст | Сутності: Gospić, Darko Milinović, Smiljansko polje",
-        "• Serija neobičnih krađa u Benkovcu, dva mjeseca provaljivao i krao po g → Дубль | Сутності: Benkovac, Zadar, vatrogasne ormariće",
-        "• UGP traži od Vlade pojašnjenje: Koliko stvarno završava kod radnika, a → Економіка країни | Сутності: Udruga glas poduzetnika, Vlada RH, Zagreb",
-        "• Zadar ponovno pušta brkove i brade za plemenit cilj: U Bradatu aukciju → Дубль | Сутності: Zadar, Slaven Bilić, Bradata aukcija, Movember",
-        "• Raspored bogoslužja za blagdane; Nadbiskup Zgrablić predvodi mise u ka → Історія | Сутності: Milan Zgrablić, Zadar, Katedrala sv. Stošije, Svi sveti",
-        "• S polica trgovina hitno se povlači delikatesna namirnica. Provjerite h → Світовий шум | Сутності: Državni inspektorat, Kaufland, Slatina, Klorpirifos",
-        "• Od zdravstva i novih luka do razvoja vinarstva: listopad u znaku ulaga → Побут інших міст | Сутності: Blaž Pezo, Pelješac, Dubrovnik, Kuna Pelješka"
-      ]
-    },
-    "backlog": {
-      "total_size": 8,
-      "sources": {
-        "Slobodna dalmacija": 2,
-        "023": 6
-      }
-    },
-    "published": {
-      "total": 3,
-      "ukraine_priority": 0,
-      "with_images": 0,
-      "text_only": 3,
-      "sources": {
-        "023": 3
-      }
-    },
-    "models_used": {
-      "gemini-3.5-flash-lite": 2,
-      "gemini-3.6-flash": 0
-    },
-    "errors_count": 0,
-    "gemini_retries": 0
-  },
-  {
     "timestamp": "2026-10-30 11:01:21",
     "execution_time": 166.5,
     "funnel": {
@@ -10049,6 +9995,87 @@
       "filter: gemini-3-flash-preview",
       "translate: gemini-3.8-flash"
     ],
+    "translate_budget_deferred": [],
+    "gemini_region_blocked": false,
+    "gemini_unavailable": false,
+    "errors_count": 0,
+    "gemini_retries": 1
+  },
+  {
+    "timestamp": "2026-11-08 11:01:22",
+    "execution_time": 109.3,
+    "funnel": {
+      "scraped_total": 35,
+      "scraped_by_source": {
+        "023": 10,
+        "Slobodna dalmacija": 15,
+        "Zadarski list": 10
+      },
+      "already_seen": 23,
+      "rejected_by_keywords": 5,
+      "rejected_by_rule": {
+        "тег RSS sport": 3,
+        "utakmici": 1,
+        "тег RSS nogomet": 1
+      },
+      "unclassified_by_ai": 0,
+      "duplicates_removed_by_ai": 5,
+      "rejection_reasons_list": [
+        "• Slavni glumac Geoffrey Rush za “Novi list”: “O ovome sam razmišljao do → Світовий шум (Інтерв'ю з австралійським актором) | Сутності: Geoffrey Rush, Novi list, Oscar, Pirati s Kariba",
+        "• Ovo je urnebesno! Pogledajte kako je čovjek pokušao prevariti policiju → Побут інших міст (Дрібне порушення ПДР у Лозоваці) | Сутності: Lozovac, PU šibensko-kninska, Šibenik-Drniš-Knin, 61-godišnji vozač",
+        "• Irena Hrstić s mjesta nesreće: “Svi teško ozlijeđeni bili su u bolnica → Вже публікувалось (Коментарі урядовців щодо ДТП з автобусом) | Сутності: Irena Hrstić, Tomo Medved, Ivanić-Grad, autocesta A3",
+        "• Nova Srbija najavljuje zaokret prema Hrvatskoj, ali od jednog važnog p → Геоблок (Зовнішня політика Сербії) | Сутності: Srbija, Aleksandar Vučić, Hrvatska, Kosovo",
+        "• Dodik uvjeren da promjene u Kongresu neće utjecati na odnos Bijele kuć → Геоблок (Заяви Додіка щодо політики США) | Сутності: Milorad Dodik, Republika Srpska, BiH, Donald Trump"
+      ],
+      "rejected_by_reason": {
+        "Світовий шум": 1,
+        "Побут інших міст": 1,
+        "Вже публікувалось": 1,
+        "Геоблок": 2
+      },
+      "updates_marked": 0,
+      "already_rejected": 18,
+      "rejected_by_code_examples": [
+        "[тег RSS sport] Zadar nakon dva poraza u ABA ligi dočekuje Kvarner koji je nanizao četiri pobjede",
+        "[тег RSS sport] Jazine Arbanasi izgubile od neporažene Šibenke",
+        "[тег RSS sport] Plovanija na Kondor Openu s 24 natjecatelja, Karlu Baričeviću prvi nastup odmah u kadetskoj teškoj k",
+        "[utakmici] Zadar će protiv Kvarnera pokušati donekle isprati gorak okus sramotne izvedbe u Subotici",
+        "[тег RSS nogomet] Leo Messi  i druge godine zaredom osvojio MLS Golden Boot. Petar Musa je zabio četiri gola manje"
+      ]
+    },
+    "backlog": {
+      "total_size": 0,
+      "sources": {}
+    },
+    "published": {
+      "total": 0,
+      "ukraine_priority": 0,
+      "with_images": 0,
+      "text_only": 0,
+      "og_images_found": 0,
+      "sources": {}
+    },
+    "models_used": {
+      "gemini-3.6-flash": 1
+    },
+    "models_by_task": {
+      "filter": "gemini-3.6-flash",
+      "translate": null
+    },
+    "model_attempts": [
+      {
+        "task": "filter",
+        "model": "gemini-3-flash-preview",
+        "outcome": "unavailable"
+      },
+      {
+        "task": "filter",
+        "model": "gemini-3.6-flash",
+        "outcome": "ok"
+      }
+    ],
+    "exhausted_models": [],
+    "demoted_models": [],
     "translate_budget_deferred": [],
     "gemini_region_blocked": false,
     "gemini_unavailable": false,
