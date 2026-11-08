@@ -1,60 +1,5 @@
 [
   {
-    "timestamp": "2026-10-30 19:43:07",
-    "execution_time": 167.8,
-    "funnel": {
-      "scraped_total": 35,
-      "scraped_by_source": {
-        "023": 10,
-        "Slobodna dalmacija": 15,
-        "Zadarski list": 10
-      },
-      "already_seen": 4,
-      "rejected_by_keywords": 11,
-      "duplicates_removed_by_ai": 17,
-      "rejection_reasons_list": [
-        "• Ako se mobitel s Androidom preko noći prazni, krivac može biti automat → Світовий шум | Сутності: Android, Google, Samsung",
-        "• Grad Imotski organizira veliki novogodišnji doček → Побут інших міст | Сутності: Imotski, Prljavo kazalište, Nova gradska tržnica",
-        "• “Oda Grobniku, čez sliku i haiku” Tonija Buterina prva haiku zbirka na → Побут інших міст | Сутності: Toni Buterin, Grobnik, Katedra Čakavskog sabora",
-        "• Zagrepčanin pred Dušni dan došao na šibensko groblje, ostao potpuno za → Побут інших міст | Сутності: Šibenik, Groblje Kvanj, Mihovil Antolić",
-        "• Predstavljena pjesnička zbirka “Rep svih stvari” Nataše Govedić: Duhov → Побут інших міст | Сутності: Nataša Govedić, Zagreb, Kyoto, Sandorf",
-        "• Pao potpis za veliki projekt, kreće gradnja Inkluzivnog centra Korčula → Побут інших міст | Сутності: Blaž Pezo, Korčula, Inkluzivni centar, Kap u moru",
-        "• Nadbiskup Uzinić na blagdan Svih svetih vodi misu i molitvu na Kozali → Побут інших міст | Сутності: Mate Uzinić, Rijeka, Kozala, Trsat",
-        "• Krsnu slavu imaju i Hrvati katolici, ne samo Srbi. Zbog krsne slave če → Світовий шум | Сутності: Hrvati katolici, Ivo Mišur, Ministarstvo kulture RH, Dolina Neretve",
-        "• Most u Delnicama osnovao podružnicu → Побут інших міст | Сутності: Delnice, Most, Davorin Klobučar, Marino Žagar",
-        "• Dubrovnik domaćin središnjeg globalnog događanja UNESCO-ove inicijativ → Побут інших міст | Сутності: Dubrovnik, UNESCO, Al Rayyan, Mato Franković",
-        "• Položeni vijenci i zapaljene svijeće u Opatiji uoči blagdana Svih svet → Побут інших міст | Сутності: Opatija, Fernando Kirigin, Volosko",
-        "• Drama na nebu, zrakoplov iz Grčke prisilno sletio u Split, u njemu 165 → Побут інших міст | Сутності: Jet2, Split, Samos, Manchester",
-        "• Deseci tisuća prosvjednika diljem Italije: Za veće plaće i bolje javne → Геоблок | Сутності: Italija, Rim, Milano, Torino",
-        "• Vijeće sigurnosti UN-a produžilo mandat EUFOR-u, većina poduprla OHR → Геоблок | Сутності: Vijeće sigurnosti UN, EUFOR, OHR, BiH",
-        "• Senna M objavljuje futuristički videospot za pjesmu “AI” u kojemu budu → Реклама | Сутності: Senna M, Zagreb, NASA, AI",
-        "• Župan Pezo potpisao ugovor, kreće gradnja Inkluzivnog centra Korčula.  → Дубль в історії | Сутності: Blaž Pezo, Korčula, Inkluzivni centar",
-        "• Šibenski Možemo! uoči radova na Šubićevcu: ‘Protivimo se uklanjanju sv → Побут інших міст | Сутності: Šibenik, Maja Šintić, Možemo!, Šubićevac"
-      ]
-    },
-    "backlog": {
-      "total_size": 1,
-      "sources": {
-        "Slobodna dalmacija": 1
-      }
-    },
-    "published": {
-      "total": 3,
-      "ukraine_priority": 0,
-      "with_images": 3,
-      "text_only": 0,
-      "sources": {
-        "Slobodna dalmacija": 3
-      }
-    },
-    "models_used": {
-      "gemini-3.5-flash-lite": 2,
-      "gemini-3.6-flash": 0
-    },
-    "errors_count": 0,
-    "gemini_retries": 0
-  },
-  {
     "timestamp": "2026-10-30 20:01:07",
     "execution_time": 119.8,
     "funnel": {
@@ -10204,6 +10149,88 @@
     "demoted_models": [
       "filter: gemini-3-flash-preview"
     ],
+    "translate_budget_deferred": [],
+    "gemini_region_blocked": false,
+    "gemini_unavailable": false,
+    "errors_count": 0,
+    "gemini_retries": 0
+  },
+  {
+    "timestamp": "2026-11-08 17:01:26",
+    "execution_time": 10.0,
+    "funnel": {
+      "scraped_total": 35,
+      "scraped_by_source": {
+        "023": 10,
+        "Slobodna dalmacija": 15,
+        "Zadarski list": 10
+      },
+      "already_seen": 20,
+      "rejected_by_keywords": 13,
+      "rejected_by_rule": {
+        "тег RSS lifestyle": 3,
+        "тег RSS sport": 3,
+        "URL /sport/": 1,
+        "igrač": 1,
+        "utakmici": 1,
+        "тег RSS nogomet": 4
+      },
+      "unclassified_by_ai": 0,
+      "duplicates_removed_by_ai": 2,
+      "rejection_reasons_list": [
+        "• Njemački mediji pišu o ustaškim simbolima na Thompsonovom koncertu u S → Геоблок (Концерт хорватського співака у Німеччині) | Сутності: Thompson, Stuttgart, ustaški simboli",
+        "• Nisam Grinch, ali mrzim Božić u jeseni: Kako smo krenuli, do 2030. bor → Побут інших міст (Суб'єктивна думка про різдвяний декор у Спліті) | Сутності: Split, Božić, salon namještaja"
+      ],
+      "rejected_by_reason": {
+        "Геоблок": 1,
+        "Побут інших міст": 1
+      },
+      "updates_marked": 0,
+      "already_rejected": 17,
+      "rejected_by_code_examples": [
+        "[тег RSS lifestyle] Koji kućanski uređaji troše struju i kad su ugašeni ako ostanu u utičnici",
+        "[тег RSS lifestyle] Svaki stupanj manje štedi oko sedam posto energije: ovo su preporučene temperature po prostorijama",
+        "[тег RSS lifestyle] Švedske rolice s cimetom oblikuju se u čvoriće i peku 25 minuta na 200 °C",
+        "[тег RSS sport] Zadar nakon dva poraza u ABA ligi dočekuje Kvarner koji je nanizao četiri pobjede",
+        "[тег RSS sport] Jazine Arbanasi izgubile od neporažene Šibenke",
+        "[тег RSS sport] Plovanija na Kondor Openu s 24 natjecatelja, Karlu Baričeviću prvi nastup odmah u kadetskoj teškoj k",
+        "[URL /sport/] Četvrto odličje ove godine: Željko Perković treći na European Championship WSF prvenstvo u Sofiji",
+        "[igrač] Kapusta ponovno s Mazalinom: Prošlosezonski play Zadra pojačao uzdrmanu Cibonu",
+        "[utakmici] Zadar će protiv Kvarnera pokušati donekle isprati gorak okus sramotne izvedbe u Subotici",
+        "[тег RSS nogomet] Pobjede Milana i Atalante, Modrić i Pašalić nastupili",
+        "[тег RSS nogomet] Carlos Martin u 89. minuti zabio za pobjedu Hajduka kod Osijeka",
+        "[тег RSS nogomet] Podjela bodova u dvoboju Napolija i lidera Lazija. Šutalo morao izaći zbog ozljede",
+        "[тег RSS nogomet] Mario Carević dobio otkaz na klupi Gorice. Već se spominje i mogući nasljednik"
+      ]
+    },
+    "backlog": {
+      "total_size": 0,
+      "sources": {}
+    },
+    "published": {
+      "total": 0,
+      "ukraine_priority": 0,
+      "with_images": 0,
+      "text_only": 0,
+      "og_images_found": 0,
+      "sources": {}
+    },
+    "models_used": {
+      "gemini-3-flash-preview": 1
+    },
+    "models_by_task": {
+      "filter": "gemini-3-flash-preview",
+      "translate": null
+    },
+    "model_attempts": [
+      {
+        "task": "filter",
+        "model": "gemini-3-flash-preview",
+        "outcome": "ok"
+      }
+    ],
+    "exhausted_models": [],
+    "demoted_models": [],
     "translate_budget_deferred": [],
     "gemini_region_blocked": false,
     "gemini_unavailable": false,
