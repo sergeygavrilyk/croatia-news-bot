@@ -1,58 +1,5 @@
 [
   {
-    "timestamp": "2026-10-30 11:01:21",
-    "execution_time": 166.5,
-    "funnel": {
-      "scraped_total": 35,
-      "scraped_by_source": {
-        "023": 10,
-        "Slobodna dalmacija": 15,
-        "Zadarski list": 10
-      },
-      "already_seen": 8,
-      "rejected_by_keywords": 12,
-      "duplicates_removed_by_ai": 13,
-      "rejection_reasons_list": [
-        "• Najposjećeniji nacionalni park u Dalmaciji značajno spustio cijene. Do → Побут інших міст | Сутності: Nacionalni park Krka, Katia Župan, Skradinski buk",
-        "• Otkazana predstava „Uho“ u petak i subotu → Побут інших міст | Сутності: Novi list, Rijeka, Predstava Uho",
-        "• Radeta predao falsificiran dokument na Gradsko vijeće? Dva različita p → Дубль в історії | Сутності: Daniel Radeta, Erol Gaši, Ivica Žuvela, Diklo",
-        "• Položeni vijenci povodom blagdana Svih Svetih i Dušnog dana → Побут інших міст | Сутності: Grad Dubrovnik, Marko Potrebica, Boninovo",
-        "• U Novom Vinodolskom obilježili blagdan Svih svetih → Побут інших міст | Сутності: Novi Vinodolski, Tomislav Cvitković, Mario Frlan",
-        "• Od nedjelje slobodno prema Gradu: gasi se crveno svjetlo na ulazu u du → Побут інших міст | Сутності: Dubrovnik, Pobrežje, Zona posebnog režima",
-        "• Poznata japanska glumica, pjevačica i manekenka Miona Hori u Dubrovnik → Геоблок | Сутності: Miona Hori, Dubrovnik, Proto Fish Restaurant",
-        "• Provaljivao u protupožarne ormariće i krao vatrogasnu opremu! → Дубль в історії | Сутності: Benkovac, Zadarska policija, Općinsko državno odvjetništvo",
-        "• Oduvijek ste htjeli imati maslinu, a nemate maslinik? Evo sjajne prili → Побут інших міст | Сутності: Korčula, Sandra Komparak, OPG Komparak",
-        "• Bradata aukcija i ove godine u Šibeniku: Slaven Bilić ima važnu poruku → Дубль в історії | Сутності: Bradata aukcija, Slaven Bilić, Šibenik, Movember",
-        "• Serija neobičnih krađa u Benkovcu, dva mjeseca provaljivao i krao po g → Дубль в історії | Сутності: Benkovac, PU zadarska, Zadar",
-        "• Radetina točka o odlagalištu Diklo uvrštena na dnevni red; Gaši: ‘Moj  → Дубль в історії | Сутності: Erol Gaši, Daniel Radeta, Šime Erlić, Diklo",
-        "• Bez brige, radi se o vježbi u gruškoj luci u kojoj sudjeluju i dubrova → Побут інших міст | Сутності: JVP Dubrovački vatrogasci, Luka Dubrovnik, Obala pape Ivana Pavla II"
-      ]
-    },
-    "backlog": {
-      "total_size": 7,
-      "sources": {
-        "Slobodna dalmacija": 3,
-        "023": 4
-      }
-    },
-    "published": {
-      "total": 3,
-      "ukraine_priority": 1,
-      "with_images": 1,
-      "text_only": 2,
-      "sources": {
-        "Zadarski list": 1,
-        "023": 2
-      }
-    },
-    "models_used": {
-      "gemini-3.5-flash-lite": 2,
-      "gemini-3.6-flash": 0
-    },
-    "errors_count": 0,
-    "gemini_retries": 0
-  },
-  {
     "timestamp": "2026-10-30 12:01:16",
     "execution_time": 164.0,
     "funnel": {
@@ -10081,5 +10028,84 @@
     "gemini_unavailable": false,
     "errors_count": 0,
     "gemini_retries": 1
+  },
+  {
+    "timestamp": "2026-11-08 12:01:20",
+    "execution_time": 28.6,
+    "funnel": {
+      "scraped_total": 35,
+      "scraped_by_source": {
+        "023": 10,
+        "Slobodna dalmacija": 15,
+        "Zadarski list": 10
+      },
+      "already_seen": 20,
+      "rejected_by_keywords": 4,
+      "rejected_by_rule": {
+        "тег RSS sport": 3,
+        "utakmici": 1
+      },
+      "unclassified_by_ai": 0,
+      "duplicates_removed_by_ai": 9,
+      "rejection_reasons_list": [
+        "• Mladi motociklist skrivio prometnu nesreću na rivi, ozlijeđen 79-godiš → Побут інших міст (ДТП у Шибенику) | Сутності: Šibenik, motociklist, prometna nesreća, 79-godišnji pješak",
+        "• Osam unesrećenih je KBC-u Sestre milosrdnice: Teško ozlijeđena putnica → Вже публікувалось (ДТП з автобусом біля Іванич-Града) | Сутності: Ivanić-Grad, KBC Sestre milosrdnice, autobusna nesreća, Zagreb",
+        "• Udruga hrvatskih sudaca: Dubrovački sudovi u gotovo 80 posto osuđujući → Побут інших міст (Судова статистика в Дубровнику) | Сутності: Dubrovnik, Udruga hrvatskih sudaca, Mato Franković, trgovina drogama",
+        "• Započeo ciklus edukacije za 41 učenika nadarenih za matematiku → Побут інших міст (Освітній центр у Ґоспичі) | Сутності: Gospić, Centar izvrsnosti, matematika, Ličko-senjska županija",
+        "• Vlada je jug prometno ostavila na cjedilu! Dubrovčane tješe brzom cest → Побут інших міст (Транспортна інфраструктура Дубровника) | Сутності: Dubrovnik, Vlada RH, željeznica, Pelješki most",
+        "• Marko Kutlić singlom “Leptir u vatri” najavljuje album “Moram dalje” i → Не за тематикою (Реліз пісні та анонс концерту) | Сутності: Marko Kutlić, Leptir u vatri, Zagreb, Moram dalje",
+        "• Počinje obnova Vrata sv. Roka: Pješaci mogu prolaziti, ali automobili  → Вже публікувалось (Реставрація Вріт св. Рока у Задарі) | Сутності: Zadar, Vrata sv. Roka, obnova, Liburnska obala",
+        "• Preživjeli putnici svjedoče: “Vozač je zaspao. Prevrtali smo se po tra → Вже публікувалось (Свідчення пасажирів ДТП біля Іванич-Града) | Сутності: Ivanić-Grad, autocesta A3, autobusna nesreća, svjedočanstva",
+        "• Policija temeljito ‘pročešljala‘ stan, apartman i automobil mladog dil → Побут інших міст (Затримання наркодилера у Шибенику) | Сутності: Šibenik, kokain, policija, 27-godišnjak"
+      ],
+      "rejected_by_reason": {
+        "Побут інших міст": 5,
+        "Вже публікувалось": 3,
+        "Не за тематикою": 1
+      },
+      "updates_marked": 0,
+      "already_rejected": 15,
+      "rejected_by_code_examples": [
+        "[тег RSS sport] Zadar nakon dva poraza u ABA ligi dočekuje Kvarner koji je nanizao četiri pobjede",
+        "[тег RSS sport] Jazine Arbanasi izgubile od neporažene Šibenke",
+        "[тег RSS sport] Plovanija na Kondor Openu s 24 natjecatelja, Karlu Baričeviću prvi nastup odmah u kadetskoj teškoj k",
+        "[utakmici] Zadar će protiv Kvarnera pokušati donekle isprati gorak okus sramotne izvedbe u Subotici"
+      ]
+    },
+    "backlog": {
+      "total_size": 0,
+      "sources": {}
+    },
+    "published": {
+      "total": 0,
+      "ukraine_priority": 0,
+      "with_images": 0,
+      "text_only": 0,
+      "og_images_found": 0,
+      "sources": {}
+    },
+    "models_used": {
+      "gemini-3.6-flash": 1
+    },
+    "models_by_task": {
+      "filter": "gemini-3.6-flash",
+      "translate": null
+    },
+    "model_attempts": [
+      {
+        "task": "filter",
+        "model": "gemini-3.6-flash",
+        "outcome": "ok"
+      }
+    ],
+    "exhausted_models": [],
+    "demoted_models": [
+      "filter: gemini-3-flash-preview"
+    ],
+    "translate_budget_deferred": [],
+    "gemini_region_blocked": false,
+    "gemini_unavailable": false,
+    "errors_count": 0,
+    "gemini_retries": 0
   }
 ]
