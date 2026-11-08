@@ -1,62 +1,5 @@
 [
   {
-    "timestamp": "2026-10-30 13:01:16",
-    "execution_time": 166.5,
-    "funnel": {
-      "scraped_total": 35,
-      "scraped_by_source": {
-        "023": 10,
-        "Slobodna dalmacija": 15,
-        "Zadarski list": 10
-      },
-      "already_seen": 7,
-      "rejected_by_keywords": 8,
-      "duplicates_removed_by_ai": 17,
-      "rejection_reasons_list": [
-        "• Krenula evakuacija izgladnjelih stanovnika okupiranog Oleškog → Геоблок | Сутності: Oleško, Dmytro Lubinets, Melania Trump, Yana Lantratova",
-        "• Elena Tomeček Zdjelar objavila singl “Ljubomora” → Реклама | Сутності: Elena Tomeček Zdjelar, Ljubomora, Rijeka, E.N.I.",
-        "• Motoklub Beštije obilježava 20 godina postojanja, jubilarna obljetnica → Побут інших міст | Сутності: Motoklub Beštije, Bibinje, Zmajo, Sexymotherfuckers",
-        "• Riječki bend Ritam promjena predstavlja novi singl uoči zagrebačkog ko → Реклама | Сутності: Ritam promjena, Zajedno, Zagreb, SAX",
-        "• Šibenski Možemo uoči radova na Šubićevcu: ‘Protivimo se uklanjanju sva → Побут інших міст | Сутності: Šibenik, Možemo, Maja Šintić, Šubićevac",
-        "• U Gospiću održana komemoracija povodom dana Svih svetih i Dušnog dana → Побут інших міст | Сутності: Gospić, Ličko-senjska županija, Josip Šimatović, Ernest Petry",
-        "• Od nedjelje slobodno prema Gradu: gasi se crveno svjetlo na ulazu u du → Побут інших міст | Сутності: Dubrovnik, Zona posebnog prometnog režima, Pobrežje",
-        "• Dubrovački muzeji sudjelovali na Forumu pomorskih muzeja Mediterana i  → Побут інших міст | Сутності: Dubrovački muzeji, Ana Kaznačić Skurić, Kreta, Dubrovnik",
-        "• Halubajski zvončari uručili donaciju Dječjem vrtiću Krnjevo → Побут інших міст | Сутності: Halubajski zvončari, Viškovo, Dječji vrtić Krnjevo, Kristijan Frlan",
-        "• Poznati Poljak na Pelješcu doživio gestu koja ga je oduševila: ‘Pitao  → Світовий шум | Сутності: Robert Makłowicz, Pelješac, Krakov, Poljska",
-        "• Članovi Udruge dragovoljaca i veterana Domovinskog rata Dalmacijacemen → Побут інших міст | Сутності: Dalmacijacement, Cemex, Alen Voloder, Mate Šimunović",
-        "• Od ponedjeljka privremena regulacija prometa u Ulici Marka Marojice, e → Побут інших міст | Сутності: Ulica Marka Marojice, Montovjerna, Batala, Dubrovnik",
-        "• Veliko priznaje u Marakešu: Dubrovnik dobitinik nagrade Jean-Paul L’Al → Побут інших міст | Сутності: Dubrovnik, Marakeş, Mato Franković, Jean-Paul L’Allier",
-        "• Japanska zvijezda stigla u Dubrovnik, uživala je u morskoj spizi, prob → Світовий шум | Сутності: Miona Hori, Dubrovnik, Proto, Nogizaka46",
-        "• Najposjećeniji nacionalni park u Dalmaciji značajno spustio cijene. Do → Побут інших міст | Сутності: Nacionalni park Krka, Skradinski buk, Roški slap, Puljani",
-        "• Položeni vijenci povodom blagdana Svih Svetih i Dušnog dana → Побут інших міст | Сутності: Dubrovnik, Boninovo, Marko Potrebica, Blaž Pezo",
-        "• Veliki posao tvrtke iz poduzetničke zone u Stankovcima: šibenski ponto → Побут інших міст | Сутності: Marinetek Adriatic, Stankovci, Šibenik, Grčka"
-      ]
-    },
-    "backlog": {
-      "total_size": 5,
-      "sources": {
-        "Zadarski list": 2,
-        "Slobodna dalmacija": 3
-      }
-    },
-    "published": {
-      "total": 3,
-      "ukraine_priority": 0,
-      "with_images": 1,
-      "text_only": 2,
-      "sources": {
-        "023": 2,
-        "Zadarski list": 1
-      }
-    },
-    "models_used": {
-      "gemini-3.5-flash-lite": 2,
-      "gemini-3.6-flash": 0
-    },
-    "errors_count": 0,
-    "gemini_retries": 0
-  },
-  {
     "timestamp": "2026-10-30 14:01:14",
     "execution_time": 175.8,
     "funnel": {
@@ -10132,5 +10075,90 @@
     "gemini_unavailable": false,
     "errors_count": 0,
     "gemini_retries": 0
+  },
+  {
+    "timestamp": "2026-11-08 14:01:16",
+    "execution_time": 103.3,
+    "funnel": {
+      "scraped_total": 35,
+      "scraped_by_source": {
+        "023": 10,
+        "Slobodna dalmacija": 15,
+        "Zadarski list": 10
+      },
+      "already_seen": 20,
+      "rejected_by_keywords": 8,
+      "rejected_by_rule": {
+        "тег RSS lifestyle": 1,
+        "тег RSS sport": 3,
+        "URL /sport/": 1,
+        "igrač": 1,
+        "utakmici": 1,
+        "тег RSS nogomet": 1
+      },
+      "unclassified_by_ai": 0,
+      "duplicates_removed_by_ai": 5,
+      "rejection_reasons_list": [
+        "• Dva desetljeća u dijamantnoj prašini: Diamond Dust odličnim koncertom  → Побут інших міст (Концерт у Рієці) | Сутності: Diamond Dust, Pogon, Rijeka, Eruption",
+        "• S 26 godina preuzeo Kazalište Marina Držića: ‘Da sam znao što me čeka, → Побут інших міст (Театральне життя у Дубровнику) | Сутності: Kazalište Marina Držića, Paolo Tišljarić, Dubrovnik",
+        "• Festival čokolade u Opatiji ušao u završnicu: izuzetan odaziv publike  → Побут інших міст (Фестиваль в Опатії) | Сутності: Festival čokolade, Opatija, Centar Gervais, Fernando Kirigin",
+        "• Kišna nedjelja nije pokazala najljepše strane, ali ima zato onih koji  → Побут інших міст (Погода у Дубровнику) | Сутності: Dubrovnik, Grad, kiša",
+        "• Penava najavio da će se sutra u koaliciji raspravljati o otkazima lije → Вже публікувалось (Коментар політика щодо звільнення лікарів) | Сутності: Ivan Penava, Domovinski pokret, KBC Sestre milosrdnice, Vukovar"
+      ],
+      "rejected_by_reason": {
+        "Побут інших міст": 4,
+        "Вже публікувалось": 1
+      },
+      "updates_marked": 0,
+      "already_rejected": 16,
+      "rejected_by_code_examples": [
+        "[тег RSS lifestyle] Švedske rolice s cimetom oblikuju se u čvoriće i peku 25 minuta na 200 °C",
+        "[тег RSS sport] Zadar nakon dva poraza u ABA ligi dočekuje Kvarner koji je nanizao četiri pobjede",
+        "[тег RSS sport] Jazine Arbanasi izgubile od neporažene Šibenke",
+        "[тег RSS sport] Plovanija na Kondor Openu s 24 natjecatelja, Karlu Baričeviću prvi nastup odmah u kadetskoj teškoj k",
+        "[URL /sport/] Četvrto odličje ove godine: Željko Perković treći na European Championship WSF prvenstvo u Sofiji",
+        "[igrač] Kapusta ponovno s Mazalinom: Prošlosezonski play Zadra pojačao uzdrmanu Cibonu",
+        "[utakmici] Zadar će protiv Kvarnera pokušati donekle isprati gorak okus sramotne izvedbe u Subotici",
+        "[тег RSS nogomet] VIDEO Boca Juniors zahvaljujući pogotku u šestoj minuti nadoknade osvojila svoj 36. naslov prvaka"
+      ]
+    },
+    "backlog": {
+      "total_size": 0,
+      "sources": {}
+    },
+    "published": {
+      "total": 0,
+      "ukraine_priority": 0,
+      "with_images": 0,
+      "text_only": 0,
+      "og_images_found": 0,
+      "sources": {}
+    },
+    "models_used": {
+      "gemini-3.6-flash": 1
+    },
+    "models_by_task": {
+      "filter": "gemini-3.6-flash",
+      "translate": null
+    },
+    "model_attempts": [
+      {
+        "task": "filter",
+        "model": "gemini-3-flash-preview",
+        "outcome": "unavailable"
+      },
+      {
+        "task": "filter",
+        "model": "gemini-3.6-flash",
+        "outcome": "ok"
+      }
+    ],
+    "exhausted_models": [],
+    "demoted_models": [],
+    "translate_budget_deferred": [],
+    "gemini_region_blocked": false,
+    "gemini_unavailable": false,
+    "errors_count": 0,
+    "gemini_retries": 1
   }
 ]
