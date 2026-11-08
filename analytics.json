@@ -1,63 +1,5 @@
 [
   {
-    "timestamp": "2026-10-30 14:01:14",
-    "execution_time": 175.8,
-    "funnel": {
-      "scraped_total": 35,
-      "scraped_by_source": {
-        "023": 10,
-        "Slobodna dalmacija": 15,
-        "Zadarski list": 10
-      },
-      "already_seen": 6,
-      "rejected_by_keywords": 9,
-      "duplicates_removed_by_ai": 22,
-      "rejection_reasons_list": [
-        "• Sanader: O radu SOA-e oko otpada u Gospiću možemo razgovarati kad dobi → Політика | Сутності: Ante Sanader, HDZ, DORH, Gospić, Sabor",
-        "• Župan Pezo potpisao ugovor, kreće gradnja Inkluzivnog centra Korčula.  → Побут інших міст | Сутності: Blaž Pezo, Korčula, Inkluzivni centar, Dubrovačko-neretvanska županija",
-        "• AM i KI: Sanacija Sovjaka propala, a vladajući na Viškovu izglasali 10 → Побут інших міст | Сутності: Viškovo, Bojan Kurelić, SDP, Sovjak",
-        "• U ponedjeljak ujutro u ovom pelješkom mjestu neće biti struje → Побут інших міст | Сутності: Pelješac, Elektrojug, Podvlaštica, struja",
-        "• HZJZ: Nema pokazatelja prodora onečišćenja u duboke podzemne vode u Go → Дубль в історії | Сутності: HZJZ, Gospić, PFAS, Calcit Lika",
-        "• Motoklub Beštije obilježava 20 godina postojanja, jubilarna obljetnica → Побут інших міст | Сутності: Motoklub Beštije, Bibinje, Zmajo, rođendan",
-        "• Propao prijedlog o nadzoru SOA-e zbog otpada u Gospiću: “Pokušavaju sv → Політика | Сутності: SOA, Gospić, Ranko Ostojic, Zvonimir Troskot",
-        "• Šibenski Možemo! uoči radova na Šubićevcu: ‘Protivimo se uklanjanju sv → Побут інших міст | Сутності: Šibenik, Maja Šintić, Možemo, Šubićevac",
-        "• Tajnik Torcide prijetio novinarima i analitičaru, izrečena mu mjera → Побут інших міст | Сутності: Ivan Rinčić, Torcida, Split, novinari",
-        "• Od nedjelje slobodno prema gradu: gasi se crveno svjetlo na ulazu u du → Побут інших міст | Сутності: Dubrovnik, Zona posebnog prometnog režima, Pobrežje",
-        "• Studentski studeni u Art-kinu donosi i premijeru krimi drame Soba 23 s → Побут інших міст | Сутності: Rijeka, Art-kino, Soba 23, STIFF",
-        "• Zbog visokotehnološke prevare, Lenac u prvih 9 mjeseci s gubitkom od 4 → Побут інших міст | Сутності: Viktor Lenac, Rijeka, Palumbo Grupa, Zagrebačka burza",
-        "• Roditelji uporno nisu htjeli cijepiti djecu, umrla su! Sada tuže liječ → Геоблок | Сутності: Teksas, ospice, Children's Health Defense, SAD",
-        "• Elena Tomeček Zdjelar objavila singl “Ljubomora” → Побут інших міст | Сутності: Elena Tomeček Zdjelar, Rijeka, Ljubomora, E.N.I.",
-        "• Dubrovački muzeji sudjelovali na Forumu pomorskih muzeja Mediterana i  → Побут інших міст | Сутності: Dubrovački muzeji, Ana Kaznačić Skurić, Kreta, Dubrovnik",
-        "• Izglasan rebalans državnog proračuna, evo što donosi → Економіка | Сутності: Hrvatski sabor, proračun, Andrej Plenković, Vlada",
-        "• Poznati Poljak na Pelješcu doživio gestu koja ga je oduševila: ‘Pitao  → Світовий шум | Сутності: Robert Makłowicz, Pelješac, Poljska, Krakov",
-        "• Objavljene neslužbene nove cijene goriva, evo što se očekuje od utorka → Економіка | Сутності: RTL, gorivo, dizel, Hrvatska",
-        "• Članovi Udruge dragovoljaca i veterana Domovinskog rata Dalmacijacemen → Побут інших міст | Сутності: Dalmacijacement, Cemex, Alen Voloder, Sv. Juraj",
-        "• Od ponedjeljka privremena regulacija prometa u Ulici Marka Marojice, e → Побут інших міст | Сутності: Dubrovnik, Ulica Marka Marojice, Montovjerna, Batala",
-        "• Veliko priznaje u Marakešu: Dubrovnik dobitinik nagrade Jean-Paul L’Al → Побут інших міст | Сутності: Dubrovnik, Mato Franković, Marakeš, OWHC",
-        "• Japanska zvijezda stigla u Dubrovnik, uživala je u morskoj spizi, prob → Побут інших міст | Сутності: Miona Hori, Dubrovnik, Proto, Japan"
-      ]
-    },
-    "backlog": {
-      "total_size": 0,
-      "sources": {}
-    },
-    "published": {
-      "total": 3,
-      "ukraine_priority": 0,
-      "with_images": 3,
-      "text_only": 0,
-      "sources": {
-        "Slobodna dalmacija": 3
-      }
-    },
-    "models_used": {
-      "gemini-3.5-flash-lite": 2,
-      "gemini-3.6-flash": 0
-    },
-    "errors_count": 0,
-    "gemini_retries": 0
-  },
-  {
     "timestamp": "2026-10-30 17:01:17",
     "execution_time": 175.6,
     "funnel": {
@@ -10160,5 +10102,87 @@
     "gemini_unavailable": false,
     "errors_count": 0,
     "gemini_retries": 1
+  },
+  {
+    "timestamp": "2026-11-08 15:01:22",
+    "execution_time": 17.1,
+    "funnel": {
+      "scraped_total": 35,
+      "scraped_by_source": {
+        "023": 10,
+        "Slobodna dalmacija": 15,
+        "Zadarski list": 10
+      },
+      "already_seen": 21,
+      "rejected_by_keywords": 9,
+      "rejected_by_rule": {
+        "тег RSS lifestyle": 2,
+        "тег RSS sport": 3,
+        "URL /sport/": 1,
+        "igrač": 1,
+        "utakmici": 1,
+        "тег RSS nogomet": 1
+      },
+      "unclassified_by_ai": 0,
+      "duplicates_removed_by_ai": 4,
+      "rejection_reasons_list": [
+        "• Učenici Pomorsko-tehničke škole Dubrovnik snimaju dokumentarac o pomor → Побут інших міст (Шкільний проєкт та зйомки фільму в Дубровнику) | Сутності: Pomorsko-tehnička škola Dubrovnik, Ivo Račić, Dubrovnik, Cavtat",
+        "• Kekin odgovorila Zadravec: Javna bolnica nije ničiji privatni feud → Вже публікувалось (Коментар щодо конфлікту в лікарні) | Сутності: Ivana Kekin, Dijana Zadravec, KBC Sestre milosrdnice, Možemo!",
+        "• Dr. Keranović: Svi kod nas primljeni pacijenti stabilno su i nisu živo → Вже публікувалось (Коментар лікаря щодо стану постраждалих у ДТП) | Сутності: Adis Keranović, KBC Zagreb, Ivanić-Grad, ДТП з автобусом",
+        "• Međunarodni znanstveni skup i izložba o Šenoinu romanu Čuvaj se senjsk → Побут інших міст (Науковий симпозіум та виставка в Загребі) | Сутності: Senjsko muzejsko društvo, August Šenoa, Senj, Zagreb"
+      ],
+      "rejected_by_reason": {
+        "Побут інших міст": 2,
+        "Вже публікувалось": 2
+      },
+      "updates_marked": 0,
+      "already_rejected": 18,
+      "rejected_by_code_examples": [
+        "[тег RSS lifestyle] Svaki stupanj manje štedi oko sedam posto energije: ovo su preporučene temperature po prostorijama",
+        "[тег RSS lifestyle] Švedske rolice s cimetom oblikuju se u čvoriće i peku 25 minuta na 200 °C",
+        "[тег RSS sport] Zadar nakon dva poraza u ABA ligi dočekuje Kvarner koji je nanizao četiri pobjede",
+        "[тег RSS sport] Jazine Arbanasi izgubile od neporažene Šibenke",
+        "[тег RSS sport] Plovanija na Kondor Openu s 24 natjecatelja, Karlu Baričeviću prvi nastup odmah u kadetskoj teškoj k",
+        "[URL /sport/] Četvrto odličje ove godine: Željko Perković treći na European Championship WSF prvenstvo u Sofiji",
+        "[igrač] Kapusta ponovno s Mazalinom: Prošlosezonski play Zadra pojačao uzdrmanu Cibonu",
+        "[utakmici] Zadar će protiv Kvarnera pokušati donekle isprati gorak okus sramotne izvedbe u Subotici",
+        "[тег RSS nogomet] VIDEO Boca Juniors zahvaljujući pogotku u šestoj minuti nadoknade osvojila svoj 36. naslov prvaka"
+      ]
+    },
+    "backlog": {
+      "total_size": 0,
+      "sources": {}
+    },
+    "published": {
+      "total": 0,
+      "ukraine_priority": 0,
+      "with_images": 0,
+      "text_only": 0,
+      "og_images_found": 0,
+      "sources": {}
+    },
+    "models_used": {
+      "gemini-3.6-flash": 1
+    },
+    "models_by_task": {
+      "filter": "gemini-3.6-flash",
+      "translate": null
+    },
+    "model_attempts": [
+      {
+        "task": "filter",
+        "model": "gemini-3.6-flash",
+        "outcome": "ok"
+      }
+    ],
+    "exhausted_models": [],
+    "demoted_models": [
+      "filter: gemini-3-flash-preview"
+    ],
+    "translate_budget_deferred": [],
+    "gemini_region_blocked": false,
+    "gemini_unavailable": false,
+    "errors_count": 0,
+    "gemini_retries": 0
   }
 ]
