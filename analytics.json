@@ -1,60 +1,5 @@
 [
   {
-    "timestamp": "2026-10-30 09:01:16",
-    "execution_time": 164.5,
-    "funnel": {
-      "scraped_total": 35,
-      "scraped_by_source": {
-        "023": 10,
-        "Slobodna dalmacija": 15,
-        "Zadarski list": 10
-      },
-      "already_seen": 0,
-      "rejected_by_keywords": 6,
-      "duplicates_removed_by_ai": 17,
-      "rejection_reasons_list": [
-        "• Hrvatska je u top deset tržišta za rabljena vozila. Lažni kilometri vi → Світовий шум | Сутності: carVertical, Hrvatska, rabljena vozila, Rokas Medonis",
-        "• Među poginulim pripadnicima EUFOR-a u padu helikoptera i 24-godišnja s → Геоблок | Сутності: EUFOR, Brčko, Bosna i Hercegovina, Guido Crosetto",
-        "• S polica trgovina hitno se povlači delikatesna namirnica. Provjerite h → Побут інших міст | Сутності: Državni inspektorat, K Kaufland, Naturala, klorpirifos",
-        "• Tanker u Hormuškom tjesnacu pogođen dvjema eksplozivnim napravama prič → Геоблок | Сутності: Hormuški tjesnac, UKMTO, Iran, SAD",
-        "• Radeta predao falsificiran dokument na Gradsko vijeće? Dva različita p → Дубль в історії | Сутності: Daniel Radeta, Gradsko vijeće Zadar, Ivica Žuvela, Erol Gaši",
-        "• Od zdravstva i novih luka do razvoja vinarstva: listopad u znaku ulaga → Побут інших міст | Сутності: Blaž Pezo, Pelješac, Dubrovačko-neretvanska županija, Kuna Pelješka",
-        "• U Gospiću nastavljen „rat plakatima“: “Gradonačelniče, volontirate li  → Побут інших міст | Сутності: Gospić, Darko Milinović, Gospić je naš dom, Smiljansko polje",
-        "• Bez brige, radi se o vježbi u gruškoj luci u kojoj sudjeluju i dubrova → Побут інших міст | Сутності: JVP Dubrovački vatrogasci, Luka Dubrovnik, Obala pape Ivana Pavla II",
-        "• Otvoren natječaji za studentske i učeničke stipendije Grada Rijeke → Побут інших міст | Сутності: Grad Rijeka, Iva Rinčić, stipendije",
-        "• Kakva prilika za siguran posao! Gradska ustanova raspisala natječaj za → Побут інших міст | Сутності: Šibenik, Dječji vrtić Smilje",
-        "• Riječki program lokalnog partnerstva: Sedam projekata za ljepši i ugod → Побут інших міст | Сутності: Grad Rijeka, Riječki program lokalnog partnerstva, Iva Rinčić",
-        "• Traže godišnji i bolovanje uz zamjensku skrb: ‘Kao majka djeteta s inv → Світовий шум | Сутності: Ministarstvo rada, GI PDSI, Dženita Lazarević, Dubrovnik",
-        "• Grad Rijeka povećao iznose blagdanskih potpora → Побут інших міст | Сутності: Grad Rijeka, blagdanske potpore, Titov trg",
-        "• Pogledajte što sve možete pročitati u novom broju Dubrovačkog vjesnika → Реклама | Сутності: Dubrovački vjesnik, Dubrovnik",
-        "• Lagarde odlazi, tko dolazi? Šanse Borisa Vujčića su male, favoriti su  → Геоблок | Сутності: Christine Lagarde, ECB, Boris Vujčić, António Costa",
-        "• Završena energetska obnova zgrade Policijske uprave dubrovačko-neretva → Побут інших міст | Сутності: PU dubrovačko-neretvanska, MUP, Dubrovnik",
-        "• Dubrovački muzeji prelaze na zimsko radno vrijeme → Побут інших міст | Сутності: Dubrovački muzeji, Knežev dvor, Dubrovnik"
-      ]
-    },
-    "backlog": {
-      "total_size": 6,
-      "sources": {
-        "023": 6
-      }
-    },
-    "published": {
-      "total": 3,
-      "ukraine_priority": 0,
-      "with_images": 0,
-      "text_only": 3,
-      "sources": {
-        "023": 3
-      }
-    },
-    "models_used": {
-      "gemini-3.5-flash-lite": 2,
-      "gemini-3.6-flash": 0
-    },
-    "errors_count": 0,
-    "gemini_retries": 0
-  },
-  {
     "timestamp": "2026-10-30 10:01:12",
     "execution_time": 164.4,
     "funnel": {
@@ -10017,5 +9962,97 @@
     "gemini_unavailable": false,
     "errors_count": 0,
     "gemini_retries": 0
+  },
+  {
+    "timestamp": "2026-11-08 10:01:18",
+    "execution_time": 37.1,
+    "funnel": {
+      "scraped_total": 35,
+      "scraped_by_source": {
+        "023": 10,
+        "Slobodna dalmacija": 15,
+        "Zadarski list": 10
+      },
+      "already_seen": 22,
+      "rejected_by_keywords": 4,
+      "rejected_by_rule": {
+        "тег RSS sport": 3,
+        "тег RSS nogomet": 1
+      },
+      "unclassified_by_ai": 0,
+      "duplicates_removed_by_ai": 6,
+      "rejection_reasons_list": [
+        "• U gluho doba noći pijani Bosanac napravio dar-mar na cesti: kada se ot → Побут інших міст (ДТП у Водицях) | Сутності: Водиці, Шибеник, Біоград",
+        "• Kočijaši teško ozlijeđeni u pucnjavi u Krakovu → Геоблок (Стрілянина в Кракові) | Сутності: Краків, Польща",
+        "• Devet timova hitne medicinske službe na mjestu nesreće, helikopter sle → Вже публікувалось (ДТП з автобусом біля Загреба) | Сутності: Загреб, Автомагістраль A3, Іванич-Граду",
+        "• Po uzoru na Portugalce županija pokreće zanimljiv projekt: ‘I naši sta → Побут інших міст (Транспортний проєкт у Шибенику) | Сутності: Шибеник, Кнін",
+        "• Solarima na krovovima možete uštedjeti tisuće eura, a ima i poticaja.  → Світовий шум (Поради щодо сонячних панелей) | Сутності: Європа, Хорватія, Далмація",
+        "• Teška nesreća kod Zagreba: prevrnuo se autobus iz Srbije, dvoje poginu → Дубль (ДТП з автобусом біля Загреба) | Сутності: Загреб, Іванич-Граду, Сербія"
+      ],
+      "rejected_by_reason": {
+        "Побут інших міст": 2,
+        "Геоблок": 1,
+        "Вже публікувалось": 1,
+        "Світовий шум": 1,
+        "Дубль": 1
+      },
+      "updates_marked": 0,
+      "already_rejected": 16,
+      "rejected_by_code_examples": [
+        "[тег RSS sport] Zadar nakon dva poraza u ABA ligi dočekuje Kvarner koji je nanizao četiri pobjede",
+        "[тег RSS sport] Jazine Arbanasi izgubile od neporažene Šibenke",
+        "[тег RSS sport] Plovanija na Kondor Openu s 24 natjecatelja, Karlu Baričeviću prvi nastup odmah u kadetskoj teškoj k",
+        "[тег RSS nogomet] Leo Messi  i druge godine zaredom osvojio MLS Golden Boot. Petar Musa je zabio četiri gola manje"
+      ]
+    },
+    "backlog": {
+      "total_size": 0,
+      "sources": {}
+    },
+    "published": {
+      "total": 1,
+      "ukraine_priority": 0,
+      "with_images": 1,
+      "text_only": 0,
+      "og_images_found": 0,
+      "sources": {
+        "Slobodna dalmacija": 1
+      }
+    },
+    "models_used": {
+      "gemini-3.5-flash-lite": 1,
+      "gemini-3.6-flash": 1
+    },
+    "models_by_task": {
+      "filter": "gemini-3.5-flash-lite",
+      "translate": "gemini-3.6-flash"
+    },
+    "model_attempts": [
+      {
+        "task": "filter",
+        "model": "gemini-3.6-flash",
+        "outcome": "unavailable"
+      },
+      {
+        "task": "filter",
+        "model": "gemini-3.5-flash-lite",
+        "outcome": "ok"
+      },
+      {
+        "task": "translate",
+        "model": "gemini-3.6-flash",
+        "outcome": "ok"
+      }
+    ],
+    "exhausted_models": [],
+    "demoted_models": [
+      "filter: gemini-3-flash-preview",
+      "translate: gemini-3.8-flash"
+    ],
+    "translate_budget_deferred": [],
+    "gemini_region_blocked": false,
+    "gemini_unavailable": false,
+    "errors_count": 0,
+    "gemini_retries": 1
   }
 ]
