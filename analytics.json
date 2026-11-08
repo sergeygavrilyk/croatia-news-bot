@@ -1,61 +1,5 @@
 [
   {
-    "timestamp": "2026-10-22 19:01:13",
-    "execution_time": 174.9,
-    "funnel": {
-      "scraped_total": 35,
-      "scraped_by_source": {
-        "023": 10,
-        "Slobodna dalmacija": 15,
-        "Zadarski list": 10
-      },
-      "already_seen": 7,
-      "rejected_by_keywords": 10,
-      "duplicates_removed_by_ai": 17,
-      "rejection_reasons_list": [
-        "• Jedan hrvatski časnik nestao, a drugi ozlijeđen u napadu dronovima na  → Геоблок | Сутності: Wine Trader, Crno more, MVEP, Rumunjska",
-        "• Deseci tisuća ljudi na završnom skupu Studentske liste: “Srbiju od slo → Геоблок | Сутності: Studentska lista, Srbija, Aleksandar Vučić",
-        "• Crnogorac koji se borio na dubrovačkom ratištu: ‘Sramota me, bio sam a → Світовий шум | Сутності: Anđelko Jovanović, Dubrovnik, JNA, Konavle",
-        "• Tajne ličkog podzemlja: U Gliginoj pećini otkriveni ostaci ljudi stari → Побут інших міст | Сутності: Gligina pećina, Grabovača, Lika, brončano doba",
-        "• Crnogorac koji se borio na dubrovačkom ratištu: ‘Sramota me, bio sam a → Дубль | Сутності: Anđelko Jovanović, Dubrovnik, Konavle, JNA",
-        "• Šimrak: Radojčić od 2013. više nije spominjala Kaštijun, a njezinoj ud → Побут інших міст | Сутності: Maksimilijan Šimrak, Dušica Radojčić, Zelena Istra, Kaštijun",
-        "• Tisuće kamenih brazda na Malti vjerojatno su mlađe nego što su arheolo → Геоблок | Сутності: Joel Grima, Malta, Gozo, Clapham Junction",
-        "• Iznajmljivač iz Rijeke priznao koliko zaradi nakon svih troškova i pro → Побут інших міст | Сутності: Rijeka, Booking, Airbnb, Hvar",
-        "• Jadrolinijin div ‘Dalmacija‘ izvan pogona sve do siječnja: ‘Ispričavam → Дубль | Сутності: Jadrolinija, Dalmacija, Split, Ancona",
-        "• Šime, Ante, Marija i Mare; Otkriveno koja su bila najpopularnija imena → Побут інших міст | Сутності: Arbanasi, Zadar, Milan Perović, Sveučilište u Zadru",
-        "• SDP na udaru: Haker koji je slao Bernardićevu čestitku ukrao i sve oso → Побут інших міст | Сутності: SDP, Davor Bernardić, AZOP, Zagreb",
-        "• Zbog dubrovačke Zone Ispisano je 68.500 kazni, a iznos koji je naplaće → Побут інших міст | Сутності: Dubrovnik, Mato Franković, Zona posebnog prometnog režima",
-        "• Tragedija u zagrebačkom Zoo vrtu; Utopilo se mladunče vodenkonja? Prij → Побут інших міст | Сутності: Zagrebački zoološki vrt, Prijatelji životinja, Zagreb, Tayri",
-        "• Mihajlo Mihajlov – prvi disident u Zadru za vrijeme Jugoslavije: tko s → Побут інших міст | Сутності: Mihajlo Mihajlov, Sveučilište u Zadru, Slobodan glas, Dostojevski",
-        "• Proširenje prava na obeštećenje radnika izloženih azbestu: 220 radnika → Побут інших міст | Сутності: Plobest, Salonit, Marija Vučković, azbest",
-        "• Sutra na Vojnoviću i Pilama posebna prometna regulativa. Evo što se ra → Побут інших міст | Сутності: Vojnović, Pile, Dubrovnik, Lapad Graditelj",
-        "• Svečana sjednica u Cavtatu, načelnik Božo Lasić poručio: ‘Konavle nisu → Побут інших міст | Сутності: Cavtat, Konavle, Božo Lasić, Branko Bačić"
-      ]
-    },
-    "backlog": {
-      "total_size": 1,
-      "sources": {
-        "Slobodna dalmacija": 1
-      }
-    },
-    "published": {
-      "total": 3,
-      "ukraine_priority": 0,
-      "with_images": 1,
-      "text_only": 2,
-      "sources": {
-        "023": 2,
-        "Slobodna dalmacija": 1
-      }
-    },
-    "models_used": {
-      "gemini-3.5-flash-lite": 2,
-      "gemini-3.6-flash": 0
-    },
-    "errors_count": 0,
-    "gemini_retries": 0
-  },
-  {
     "timestamp": "2026-10-30 09:01:16",
     "execution_time": 164.5,
     "funnel": {
@@ -9988,5 +9932,90 @@
     "gemini_unavailable": false,
     "errors_count": 0,
     "gemini_retries": 2
+  },
+  {
+    "timestamp": "2026-11-08 09:01:11",
+    "execution_time": 89.6,
+    "funnel": {
+      "scraped_total": 35,
+      "scraped_by_source": {
+        "023": 10,
+        "Slobodna dalmacija": 15,
+        "Zadarski list": 10
+      },
+      "already_seen": 26,
+      "rejected_by_keywords": 3,
+      "rejected_by_rule": {
+        "тег RSS sport": 2,
+        "тег RSS košarka": 1
+      },
+      "unclassified_by_ai": 0,
+      "duplicates_removed_by_ai": 5,
+      "rejection_reasons_list": [
+        "• Mići plavi mirakuli ćakulaju po štrumpfovski: Pazinski gimnazijalci pr → Побут інших міст (Шкільний захід у Пазині) | Сутності: Pazin, Pazinski kolegij, Štrumpfovi, čakavština",
+        "• Drugo kolo bez pobjeda: Karamarko zatrpao koš Jazina, Bundović nezaust → Спорт (Баскетбольні матчі задарських клубів) | Сутності: Jazine, Puntamika, Šibenka, Prva muška liga",
+        "• U Indoneziji veliki prosvjedi protiv podatkovnih centara: Bez vode nem → Геоблок (Протести в Індонезії) | Сутності: Indonezija, Batam, El Nino, podatkovni centri",
+        "• Znate li od čega su izrađene suvremene varalice? Donosimo kratak pregl → Світовий шум (Матеріали для рибальських принад) | Сутності: varalice, balza, abachi, ribolov",
+        "• Plavi svijet Branka Šuljića: Temelj za nautičku strategiju → Не за тематикою (Огляд книги про морський сектор) | Сутності: Biograd Boat Show, Branko Šuljić, Plava knjiga hrvatske nautike, Hrvatska udruga poslodavaca"
+      ],
+      "rejected_by_reason": {
+        "Побут інших міст": 1,
+        "Спорт": 1,
+        "Геоблок": 1,
+        "Світовий шум": 1,
+        "Не за тематикою": 1
+      },
+      "updates_marked": 0,
+      "already_rejected": 18,
+      "rejected_by_code_examples": [
+        "[тег RSS sport] Jazine Arbanasi izgubile od neporažene Šibenke",
+        "[тег RSS sport] Plovanija na Kondor Openu s 24 natjecatelja, Karlu Baričeviću prvi nastup odmah u kadetskoj teškoj k",
+        "[тег RSS košarka] VIDEO Nikola Jokić i Ivica Zubac ostvarili “double-double” učinak u međusobnom sudaru u Mexico Cityj"
+      ]
+    },
+    "backlog": {
+      "total_size": 0,
+      "sources": {}
+    },
+    "published": {
+      "total": 2,
+      "ukraine_priority": 0,
+      "with_images": 2,
+      "text_only": 0,
+      "og_images_found": 1,
+      "sources": {
+        "023": 1,
+        "Zadarski list": 1
+      }
+    },
+    "models_used": {
+      "gemini-3.6-flash": 2
+    },
+    "models_by_task": {
+      "filter": "gemini-3.6-flash",
+      "translate": "gemini-3.6-flash"
+    },
+    "model_attempts": [
+      {
+        "task": "filter",
+        "model": "gemini-3.6-flash",
+        "outcome": "ok"
+      },
+      {
+        "task": "translate",
+        "model": "gemini-3.6-flash",
+        "outcome": "ok"
+      }
+    ],
+    "exhausted_models": [],
+    "demoted_models": [
+      "filter: gemini-3-flash-preview",
+      "translate: gemini-3.8-flash"
+    ],
+    "translate_budget_deferred": [],
+    "gemini_region_blocked": false,
+    "gemini_unavailable": false,
+    "errors_count": 0,
+    "gemini_retries": 0
   }
 ]
