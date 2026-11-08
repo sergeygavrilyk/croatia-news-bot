@@ -1,58 +1,5 @@
 [
   {
-    "timestamp": "2026-10-22 16:01:11",
-    "execution_time": 243.3,
-    "funnel": {
-      "scraped_total": 35,
-      "scraped_by_source": {
-        "023": 10,
-        "Slobodna dalmacija": 15,
-        "Zadarski list": 10
-      },
-      "already_seen": 7,
-      "rejected_by_keywords": 14,
-      "duplicates_removed_by_ai": 12,
-      "rejection_reasons_list": [
-        "• Tisuće kamenih brazda na Malti vjerojatno su mlađe nego što su arheolo → Світовий шум | Сутності: Мальта, Джоел Гріма, University of Malta, Clapham Junction",
-        "• S gradilišta na širem području Ravne Gore ukraden građevinski materija → Побут інших міст | Сутності: Равна Гора, Спліт, Крадіжка, Будматеріали",
-        "• Šime, Ante, Marija i Mare; Otkriveno koja su bila najpopularnija imena → Дубль в історії | Сутності: Задар, Арбанаси, Наукова бібліотека, Мілан Перович",
-        "• Imperial Riviera i Valamar podržali rad DVD-ova Rab i Lopar → Побут інших міст | Сутності: Раб, Лопар, Valamar, Imperial Riviera",
-        "• Mihajlo Mihajlov – prvi disident u Zadru za vrijeme Jugoslavije: tko s → Дубль в історії | Сутності: Задар, Михайло Михайлов, Спецслужба, Югославія",
-        "• Tragedija u zagrebačkom Zoo vrtu; Utopilo se mladunče vodenkonja? Prij → Побут інших міст | Сутності: Загреб, Зоопарк, Державний інспектор, Віоденіць",
-        "• Dobro raspoloženi Obersnel: O blokiranoj imovini saznao sam iz Novog l → Побут інших міст | Сутності: Рієка, Войко Оберснел, УСКОК, Земельна ділянка",
-        "• Ekipa Sretno pobjednica memorijalnog kupa “Četiri zvonika” → Спорт | Сутності: Раб, Підводний риболов, Чотири дзвіниці, Бруно Жиц",
-        "• Sutra na Vojnoviću i Pilama posebna prometna regulativa. Evo što se ra → Побут інших міст | Сутності: Дубровник, Войновіч, Піли, Транспортна регуляція",
-        "• Uzgajivači ovaca i koza okupili se na savjetovanju i izložbi u Novalji → Побут інших міст | Сутності: Новаля, Паг, Міністерство сільського господарства, Сир",
-        "• Svečana sjednica u Cavtatu, načelnik Božo Lasić poručio: ‘Konavle nisu → Побут інших міст | Сутності: Цавтат, Конавле, Божо Ласич, Бранко Бачич",
-        "• Odana počast braniteljima u parku Striježice u Župi dubrovačkoj → Побут інших міст | Сутності: Жупа дубровницька, Стрієжиці, Меморіал, Ветерани"
-      ]
-    },
-    "backlog": {
-      "total_size": 4,
-      "sources": {
-        "Zadarski list": 1,
-        "Slobodna dalmacija": 2,
-        "023": 1
-      }
-    },
-    "published": {
-      "total": 3,
-      "ukraine_priority": 0,
-      "with_images": 2,
-      "text_only": 1,
-      "sources": {
-        "Slobodna dalmacija": 2,
-        "023": 1
-      }
-    },
-    "models_used": {
-      "gemini-3.5-flash-lite": 2,
-      "gemini-3.6-flash": 0
-    },
-    "errors_count": 0,
-    "gemini_retries": 2
-  },
-  {
     "timestamp": "2026-10-22 19:01:13",
     "execution_time": 174.9,
     "funnel": {
@@ -9937,5 +9884,109 @@
     "gemini_unavailable": false,
     "errors_count": 0,
     "gemini_retries": 1
+  },
+  {
+    "timestamp": "2026-11-08 08:01:20",
+    "execution_time": 249.9,
+    "funnel": {
+      "scraped_total": 35,
+      "scraped_by_source": {
+        "023": 10,
+        "Slobodna dalmacija": 15,
+        "Zadarski list": 10
+      },
+      "already_seen": 12,
+      "rejected_by_keywords": 5,
+      "rejected_by_rule": {
+        "тег RSS sport": 2,
+        "тег RSS košarka": 1,
+        "тег RSS nogomet": 1,
+        "URL /sport/": 1
+      },
+      "unclassified_by_ai": 0,
+      "duplicates_removed_by_ai": 10,
+      "rejection_reasons_list": [
+        "• Slijedi li dvije godine veta u američkoj politici? Trump ima plan kako → Геоблок (Внутрішня політика США) | Сутності: Donald Trump, Ovalni ured, Вашингтон, США",
+        "• Franković odgovorio sucima: ‘Nacionalne podatke ne možete sakriti iza  → Не за тематикою (Дискусія щодо судових вироків) | Сутності: Mato Franković, Udruga hrvatskih sudaca, Дубровник",
+        "• Sramotne slike iz centra velikog dalmatinskog grada! Reagirali i antif → Побут інших міст (Графіті у Шибенику) | Сутності: Шибеник, Ulica grada Vukovara, gat Vrulje",
+        "• Giljevići osvojili drugi po redu Pločanski krak: Natjecanje u lovu lig → Спорт (Турнір з риболовлі) | Сутності: Ploče, Pločanski krak, ERK Periska",
+        "• Nakon kišnog utorka Zadar se zagrijava do 21°C, a sljedeći vikend dono → Вже публікувалось (Прогноз погоди у Задарі) | Сутності: Задар, DHMZ, погода в Задарі",
+        "• Mario Hezonja promašio je svih 11 lopti u porazu Cavsa od aktualnih NB → Спорт (Баскетбольний матч NBA) | Сутності: Mario Hezonja, Cleveland Cavaliers, New York Knicks, NBA",
+        "• Čudo pod Dinarom! U strašnoj eksploziji izgubio vid, sluh i udove, a o → Побут інших міст (Весілля у Врліці) | Сутності: Динара, Врліка, цетинський край",
+        "• Pobio roditelje i sestru, pa nevine ljude u Krakovu: Što je motiv stra → Геоблок (Стрілянина у Польщі) | Сутності: Краків, Польща, Tomasz Waszczuk, Karol Nawrocki",
+        "• Vlada nas je prometno ostavila na cjedilu, tješe nas brzom cestom do a → Побут інших міст (Транспорт Дубровника) | Сутності: Дубровник, Pelješki most, Влада Хорватії",
+        "• Danas pretežno sunčano, idući tjedan na Kvarner stiže obilnija kiša → Побут інших міст (Погода в Рієці) | Сутності: Рієка, Кварнер, DHMZ"
+      ],
+      "rejected_by_reason": {
+        "Геоблок": 2,
+        "Не за тематикою": 1,
+        "Побут інших міст": 4,
+        "Спорт": 2,
+        "Вже публікувалось": 1
+      },
+      "updates_marked": 0,
+      "already_rejected": 9,
+      "rejected_by_code_examples": [
+        "[тег RSS sport] Jazine Arbanasi izgubile od neporažene Šibenke",
+        "[тег RSS sport] Plovanija na Kondor Openu s 24 natjecatelja, Karlu Baričeviću prvi nastup odmah u kadetskoj teškoj k",
+        "[тег RSS košarka] VIDEO Nikola Jokić i Ivica Zubac ostvarili “double-double” učinak u međusobnom sudaru u Mexico Cityj",
+        "[тег RSS nogomet] Lokomotiva projurila kroz Poreč, Kraljevica usporila Pomorac… Cresani bez milosti",
+        "[URL /sport/] Rijeka je ponovo podigla brončanu prašinu i otvorila našoj futsalskoj reprezentaciji put prema SP-u"
+      ]
+    },
+    "backlog": {
+      "total_size": 3,
+      "sources": {
+        "Zadarski list": 2,
+        "023": 1
+      }
+    },
+    "published": {
+      "total": 3,
+      "ukraine_priority": 0,
+      "with_images": 3,
+      "text_only": 0,
+      "og_images_found": 2,
+      "sources": {
+        "023": 2,
+        "Zadarski list": 1
+      }
+    },
+    "models_used": {
+      "gemini-3.6-flash": 2
+    },
+    "models_by_task": {
+      "filter": "gemini-3.6-flash",
+      "translate": "gemini-3.6-flash"
+    },
+    "model_attempts": [
+      {
+        "task": "filter",
+        "model": "gemini-3-flash-preview",
+        "outcome": "unavailable"
+      },
+      {
+        "task": "filter",
+        "model": "gemini-3.6-flash",
+        "outcome": "ok"
+      },
+      {
+        "task": "translate",
+        "model": "gemini-3.8-flash",
+        "outcome": "unavailable"
+      },
+      {
+        "task": "translate",
+        "model": "gemini-3.6-flash",
+        "outcome": "ok"
+      }
+    ],
+    "exhausted_models": [],
+    "demoted_models": [],
+    "translate_budget_deferred": [],
+    "gemini_region_blocked": false,
+    "gemini_unavailable": false,
+    "errors_count": 0,
+    "gemini_retries": 2
   }
 ]
