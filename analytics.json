@@ -1,84 +1,5 @@
 [
   {
-    "timestamp": "2026-10-31 14:01:06",
-    "execution_time": 22.4,
-    "funnel": {
-      "scraped_total": 35,
-      "scraped_by_source": {
-        "023": 10,
-        "Slobodna dalmacija": 15,
-        "Zadarski list": 10
-      },
-      "already_seen": 25,
-      "rejected_by_keywords": 5,
-      "rejected_by_rule": {
-        "igrač": 1,
-        "тег RSS sport": 1,
-        "sportom": 1,
-        "šport": 1,
-        "nogomet": 1
-      },
-      "unclassified_by_ai": 0,
-      "duplicates_removed_by_ai": 5,
-      "rejection_reasons_list": [
-        "• Na popisu poreznih dužnika iz Zadarske županije 1455 imena, najveći po → Вже публікувалось (Публікація списку боржників Податкової служби) | Сутності: Porezna uprava, Zadarska županija, 31. listopada, 1455 imena",
-        "• Što se događa na vijaduktu iznad crikveničkih škola? Hrvatske ceste ip → Побут інших міст (Цріквеніца) | Сутності: Crikvenica, vijadukt Dubračina, Hrvatske ceste, Sitolor",
-        "• Usvojene dvije ključne odluke, može se krenuti s zapošljavanjem u novo → Побут інших міст (Дубровник) | Сутності: Dubrovnik, Medarevo, Centar Ragusa, Dživo Brčić",
-        "• Iranski vrhovni vođa naredio vojsci odgovor u slučaju napada: ‘Više ne → Геоблок (Іран) | Сутності: Modžtaba Hamenei, Iran, SAD",
-        "• Nakon teškog izbornog poraza SNS se okreće – Vučiću. Jednoglasno ga pr → Геоблок (Сербія) | Сутності: SNS, Aleksandar Vučić, Srbija"
-      ],
-      "rejected_by_reason": {
-        "Вже публікувалось": 1,
-        "Побут інших міст": 2,
-        "Геоблок": 2
-      },
-      "updates_marked": 0,
-      "already_rejected": 14,
-      "rejected_by_code_examples": [
-        "[igrač] Nije pogodio nijedan broj, a osvojio je 80.000 eura: Zagrepčanin je s listićem od 7,80 eura promašio",
-        "[тег RSS sport] Zadar se u Dubrovniku zagrijao tek u drugoj četvrtini, a onda prešao granicu od sto poena",
-        "[sportom] Osnovan poseban Odjel za izdavanje građevinskih dozvola, istodobno ukinut dosadašnji Odjel za gospod",
-        "[šport] Evo gdje će Dubrovnik potrošiti milijune eura prema prijedlogu rebelansa ovogodišnjeg proračuna",
-        "[nogomet] Trumpova administracija pokrenula istragu zbog neobičnog kandidata. Zove se isto kao republikanski s"
-      ]
-    },
-    "backlog": {
-      "total_size": 0,
-      "sources": {}
-    },
-    "published": {
-      "total": 0,
-      "ukraine_priority": 0,
-      "with_images": 0,
-      "text_only": 0,
-      "og_images_found": 0,
-      "sources": {}
-    },
-    "models_used": {
-      "gemini-3.6-flash": 1
-    },
-    "models_by_task": {
-      "filter": "gemini-3.6-flash",
-      "translate": null
-    },
-    "model_attempts": [
-      {
-        "task": "filter",
-        "model": "gemini-3.6-flash",
-        "outcome": "ok"
-      }
-    ],
-    "exhausted_models": [],
-    "demoted_models": [
-      "filter: gemini-3-flash-preview",
-      "translate: gemini-3.8-flash"
-    ],
-    "translate_budget_deferred": [],
-    "gemini_region_blocked": false,
-    "errors_count": 0,
-    "gemini_retries": 0
-  },
-  {
     "timestamp": "2026-10-31 15:01:13",
     "execution_time": 116.5,
     "funnel": {
@@ -10294,5 +10215,99 @@
     "gemini_unavailable": false,
     "errors_count": 0,
     "gemini_retries": 2
+  },
+  {
+    "timestamp": "2026-11-09 15:01:29",
+    "execution_time": 119.0,
+    "funnel": {
+      "scraped_total": 35,
+      "scraped_by_source": {
+        "023": 10,
+        "Slobodna dalmacija": 15,
+        "Zadarski list": 10
+      },
+      "already_seen": 22,
+      "rejected_by_keywords": 3,
+      "rejected_by_rule": {
+        "тег RSS lifestyle": 1,
+        "тег RSS sport": 1,
+        "sport": 1
+      },
+      "unclassified_by_ai": 0,
+      "duplicates_removed_by_ai": 7,
+      "rejection_reasons_list": [
+        "• Novi detalji sa suđenja kćeri Nediljka Dujića u slučaju ‘Nakaze‘; svje → Вже публікувалось (Судіння дочки Недильє Дуїча) | Сутності: Anna Dujić, Nediljko Dujić, Skradin, Karlovac",
+        "• Riječka Fabula donijela u Hrvatsku prvi Red Dot: Grand Prix u kategori → Побут інших міст (Рієцька агенція виграла дизайн-нагороду) | Сутності: Fabula, Rijeka, Red Dot Award, Berilin",
+        "• Kako je Almayer na Campo Kaštelu preuzeo odgovornost za novu stvarnost → Реклама (Промо-стаття готелю в Задарі) | Сутності: Almayer Art & Heritage Hotel, Zadar, Campo Kaštel",
+        "• Klimatski samit COP31 poziva svijet na bržu borbu protiv globalnog zat → Геоблок (Кліматичний саміт у Туреччині) | Сутності: COP31, Turska, UN, Simon Stiell",
+        "• Zbog velikog interesa “Još gori” će u Močvari održati još jedan koncer → Побут інших міст (Концерт у Загребі) | Сутності: Još gori, Močvara, Zagreb, Aleksandar Stojković ST",
+        "• Unatoč kiši i 13 stupnjeva zraka, Zadrani su otvorili novu sezonu zims → Дубль (Зимове купання в Задарі) | Сутності: Zadar, Vlatka Bilafer Huljev, zimsko kupanje",
+        "• Grupa Diamond Dust u Pogonu proslavila dvadeset godina rada → Побут інших міст (Концерт у Рієці) | Сутності: Diamond Dust, Rijeka, Pogon, Eruption"
+      ],
+      "rejected_by_reason": {
+        "Вже публікувалось": 1,
+        "Побут інших міст": 3,
+        "Реклама": 1,
+        "Геоблок": 1,
+        "Дубль": 1
+      },
+      "updates_marked": 0,
+      "already_rejected": 15,
+      "rejected_by_code_examples": [
+        "[тег RSS lifestyle] Može li se manjak željeza prepoznati po licu: liječnici o trendu „ferritin face” s društvenih mreža",
+        "[тег RSS sport] Dva zlata, srebro i sedam bronci; Mlade nade zadarske Ultime zablistale na jakom međunarodnom turnir",
+        "[sport] Puntarski osnovnoškolci se upoznali s veslanjem: Veliki odaziv i entuzijazam"
+      ]
+    },
+    "backlog": {
+      "total_size": 4,
+      "sources": {
+        "Zadarski list": 2,
+        "Slobodna dalmacija": 1,
+        "023": 1
+      }
+    },
+    "published": {
+      "total": 3,
+      "ukraine_priority": 0,
+      "with_images": 3,
+      "text_only": 0,
+      "og_images_found": 3,
+      "sources": {
+        "023": 3
+      }
+    },
+    "models_used": {
+      "gemini-3.5-flash-lite": 2
+    },
+    "models_by_task": {
+      "filter": "gemini-3.5-flash-lite",
+      "translate": "gemini-3.5-flash-lite"
+    },
+    "model_attempts": [
+      {
+        "task": "filter",
+        "model": "gemini-3.5-flash-lite",
+        "outcome": "ok"
+      },
+      {
+        "task": "translate",
+        "model": "gemini-3.5-flash-lite",
+        "outcome": "ok"
+      }
+    ],
+    "exhausted_models": [],
+    "demoted_models": [
+      "filter: gemini-3-flash-preview",
+      "filter: gemini-3.6-flash",
+      "translate: gemini-3.8-flash"
+    ],
+    "translate_budget_deferred": [
+      "gemini-3.6-flash"
+    ],
+    "gemini_region_blocked": false,
+    "gemini_unavailable": false,
+    "errors_count": 0,
+    "gemini_retries": 0
   }
 ]
