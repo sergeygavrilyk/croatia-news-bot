@@ -1,107 +1,5 @@
 [
   {
-    "timestamp": "2026-10-31 08:01:30",
-    "execution_time": 334.7,
-    "funnel": {
-      "scraped_total": 35,
-      "scraped_by_source": {
-        "023": 10,
-        "Slobodna dalmacija": 15,
-        "Zadarski list": 10
-      },
-      "already_seen": 1,
-      "rejected_by_keywords": 11,
-      "rejected_by_rule": {
-        "igrač": 1,
-        "sportska": 2,
-        "тег RSS sport": 1,
-        "sportskom": 1,
-        "oglasnika": 1,
-        "sport": 1,
-        "тег RSS nogomet": 1,
-        "košarkašica": 1,
-        "horoskop": 1,
-        "тег RSS košarka": 1
-      },
-      "unclassified_by_ai": 0,
-      "duplicates_removed_by_ai": 10,
-      "rejection_reasons_list": [
-        "• Gotovo 150 tisuća mladih najavilo prosvjede u Njemačkoj: Policija stra → Геоблок | Сутності: Німеччина, Gen Z, Франкфурт, поліція",
-        "• Urod bolji nego lani, ali troškovi lete u nebo; Porez na meljavu veći  → Дубль в історії | Сутності: Анте Вулін, Пакоштане, Вранське озеро",
-        "• Šoping obavite danas. Na blagdan Svih svetih na riječkom području nema → Побут інших міст | Сутності: Рієка, Всі святих, торгові центри",
-        "• Od sutra ovo morate imati upaljeno čim sjednete za volan: policija upo → Дубль | Сутності: Хорватія, поліція, Закон про безпеку дорожнього руху",
-        "• Dvojite oko toga da li kupiti barku za ribolov ili ostati obalni ribol → Світовий шум | Сутності: риболовля, барка, адріатика",
-        "• Drama oko mega resorta u Cavtatu seli u Bruxelles: Sumnja se na nezako → Геоблок | Сутності: Кавтат, Європейський парламент, Gordan Bosanac",
-        "• Prijetnje i uvrede novinarima otvaraju pitanje sigurnosti i slobode go → Побут інших міст | Сутності: Спліт, Siniša Vuković, Муніципальний суд",
-        "• Sud naložio Trumpu da prestane prijetiti kaznenim progonom izbornih du → Геоблок | Сутності: Дональд Трамп, Міністерство юстиції США, Конгресс",
-        "• Listopad se oprašta sunčanim danom do 18 stupnjeva, idući tjedan donos → Дубль в історії | Сутності: Задар, погода, октябр",
-        "• Dobili lokacijsku dozvolu, a projekt im završio pred Europarlamentom:  → Дубль | Сутності: Кавтат, Marina Resort, Європарламент"
-      ]
-    },
-    "backlog": {
-      "total_size": 3,
-      "sources": {
-        "Slobodna dalmacija": 2,
-        "023": 1
-      }
-    },
-    "published": {
-      "total": 3,
-      "ukraine_priority": 0,
-      "with_images": 3,
-      "text_only": 0,
-      "og_images_found": 1,
-      "sources": {
-        "Slobodna dalmacija": 1,
-        "023": 1,
-        "Zadarski list": 1
-      }
-    },
-    "models_used": {
-      "gemini-3.5-flash-lite": 1,
-      "gemini-3.6-flash": 1
-    },
-    "models_by_task": {
-      "filter": "gemini-3.5-flash-lite",
-      "translate": "gemini-3.6-flash"
-    },
-    "model_attempts": [
-      {
-        "task": "filter",
-        "model": "gemini-3-flash-preview",
-        "outcome": "unavailable"
-      },
-      {
-        "task": "filter",
-        "model": "gemini-3.5-flash-lite",
-        "outcome": "ok"
-      },
-      {
-        "task": "translate",
-        "model": "gemini-3.8-flash",
-        "outcome": "unavailable"
-      },
-      {
-        "task": "translate",
-        "model": "gemini-3.8-flash",
-        "outcome": "unavailable"
-      },
-      {
-        "task": "translate",
-        "model": "gemini-3.6-flash",
-        "outcome": "unavailable"
-      },
-      {
-        "task": "translate",
-        "model": "gemini-3.6-flash",
-        "outcome": "ok"
-      }
-    ],
-    "exhausted_models": [],
-    "errors_count": 0,
-    "gemini_retries": 4
-  },
-  {
     "timestamp": "2026-10-31 09:01:11",
     "execution_time": 233.0,
     "funnel": {
@@ -10281,6 +10179,100 @@
     "translate_budget_deferred": [
       "gemini-3.6-flash"
     ],
+    "gemini_region_blocked": false,
+    "gemini_unavailable": false,
+    "errors_count": 0,
+    "gemini_retries": 1
+  },
+  {
+    "timestamp": "2026-11-09 08:01:21",
+    "execution_time": 226.2,
+    "funnel": {
+      "scraped_total": 35,
+      "scraped_by_source": {
+        "023": 10,
+        "Slobodna dalmacija": 15,
+        "Zadarski list": 10
+      },
+      "already_seen": 12,
+      "rejected_by_keywords": 1,
+      "rejected_by_rule": {
+        "тег RSS lifestyle": 1
+      },
+      "unclassified_by_ai": 0,
+      "duplicates_removed_by_ai": 12,
+      "rejection_reasons_list": [
+        "• Dijete vam ima bicikl? Gotovo sigurno ste u prekršaju! Dubrovačka djec → Побут інших міст (Локальні правила для дітей-велосипедистів у Дубровнику) | Сутності: Дубровник, велосипеди, діти, закон",
+        "• Njemačka razmatra radni dan od 12 sati: “Radilo bi se tri puta tjedno  → Геоблок (Трудове законодавство Німеччини) | Сутності: Німеччина, Фрідріх Мерц, робочий день",
+        "• Ponedjeljak u Zadru počinje naopako: dio grada bez vode, a Strossmayer → Вже публікувалось (Про ці ремонти та відключення вже повідомлялося раніше) | Сутності: Задар, вулиця Строссмайєра, відключення води",
+        "• Privlačka lignjada odlučena za 65 grama: 26 ekipa izvuklo iz mora goto → Спорт (Змагання з вилову кальмарів) | Сутності: Привлака, змагання, лігняда, рибалки",
+        "• “Mogli bismo otkriti 80 posto opasnih asteroida”: Hrvatski fizičar obj → Світовий шум (Абстрактні наукові прогнози про астероїди) | Сутності: астероїди, Желько Івезич, наука",
+        "• “Budi lijepa, vrijedna i voljena”: Goranska kreatorica torbicama šalje → Побут інших міст (Дизайнерка з іншого регіону) | Сутності: Адріана Райчич, Рієка, Горський Котар",
+        "• Po struci inženjer, u duši – slikar. Željko Delač na platnima čuva lje → Побут інших міст (Локальна виставка художника в іншому регіоні) | Сутності: Желько Делач, Брод Моравиці, виставка",
+        "• Jugo sutra jača do olujnog, u četvrtak i 20°C, a za vikend Zadar čeka  → Вже публікувалось (Прогноз погоди на тиждень вже є в історії) | Сутності: Задар, прогноз погоди, вітер Юго",
+        "• Sandi je prvak u neobičnom natjecanju: ‘Nije isto rikati u šumi, doma  → Спорт (Змагання з імітації реву оленів) | Сутності: Санді Збашник, Rika Fest, Горський Котар",
+        "• Mufić: ‘Zbog odugovlačenja Gradskog vijeća sve je postalo neizvjesno’ → Побут інших міст (Ремонт доріг у місті Врбовско) | Сутності: Дражен Муфич, Врбовско, ремонт доріг",
+        "• Došli su u Gorski kotar iz Njemačke s irokez-frizurama, a onda se dogo → Побут інших міст (Історія про туристів в іншому регіоні) | Сутності: Кочічін, туризм, Горський Котар",
+        "• Pri kraju je energetska obnova Doma zdravlja Delnice → Побут інших міст (Ремонт медичного закладу в Делницях) | Сутності: Делниці, Будинок здоров'я, ремонт"
+      ],
+      "rejected_by_reason": {
+        "Побут інших міст": 6,
+        "Геоблок": 1,
+        "Вже публікувалось": 2,
+        "Спорт": 2,
+        "Світовий шум": 1
+      },
+      "updates_marked": 0,
+      "already_rejected": 12,
+      "rejected_by_code_examples": [
+        "[тег RSS lifestyle] Koliko dugo čuvati vino: rosé do godinu dana, a ozbiljna crna i do deset godina"
+      ]
+    },
+    "backlog": {
+      "total_size": 2,
+      "sources": {
+        "023": 2
+      }
+    },
+    "published": {
+      "total": 3,
+      "ukraine_priority": 0,
+      "with_images": 3,
+      "text_only": 0,
+      "og_images_found": 1,
+      "sources": {
+        "023": 1,
+        "Zadarski list": 2
+      }
+    },
+    "models_used": {
+      "gemini-3-flash-preview": 1,
+      "gemini-3.6-flash": 1
+    },
+    "models_by_task": {
+      "filter": "gemini-3-flash-preview",
+      "translate": "gemini-3.6-flash"
+    },
+    "model_attempts": [
+      {
+        "task": "filter",
+        "model": "gemini-3-flash-preview",
+        "outcome": "ok"
+      },
+      {
+        "task": "translate",
+        "model": "gemini-3.8-flash",
+        "outcome": "unavailable"
+      },
+      {
+        "task": "translate",
+        "model": "gemini-3.6-flash",
+        "outcome": "ok"
+      }
+    ],
+    "exhausted_models": [],
+    "demoted_models": [],
+    "translate_budget_deferred": [],
     "gemini_region_blocked": false,
     "gemini_unavailable": false,
     "errors_count": 0,
