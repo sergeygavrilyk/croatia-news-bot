@@ -1,110 +1,5 @@
 [
   {
-    "timestamp": "2026-10-31 13:01:12",
-    "execution_time": 104.9,
-    "funnel": {
-      "scraped_total": 35,
-      "scraped_by_source": {
-        "023": 10,
-        "Slobodna dalmacija": 15,
-        "Zadarski list": 10
-      },
-      "already_seen": 10,
-      "rejected_by_keywords": 7,
-      "rejected_by_rule": {
-        "igrač": 1,
-        "тег RSS sport": 1,
-        "sportom": 2,
-        "šport": 2,
-        "nogomet": 1
-      },
-      "unclassified_by_ai": 0,
-      "duplicates_removed_by_ai": 16,
-      "rejection_reasons_list": [
-        "• Alan Hržica i bend ispunili dvoranu HKD-a u dvosatnom koncertu → Не за тематикою (Християнський концерт у Рієці) | Сутності: Alan Hržica, HKD na Sušaku, Rijeka",
-        "• Oni u Dubrovačko-neretvanskoj županiji najviše duguju poreza državi → Дубль (Дублікат списку податкових боржників) | Сутності: Porezna uprava, Dubrovačko-neretvanska županija, 1.754.744.869 eura",
-        "• Demografski potres u Dalmaciji: broj razvoda u Šibensko-kninskoj župan → Побут інших міст (Статистика розлучень у Шибеницько-Кнінській жупанії) | Сутності: Šibensko-kninska županija, Državni zavod za statistiku, 5.674 brakova",
-        "• Delegacija Grada Senja uoči blagdana Svih svetih obišla gradsko groblj → Побут інших міст (Покладання вінків у місті Сень) | Сутності: Željko Tomljanović, Grad Senj, groblje sv. Vid",
-        "• Riječanka i njena tvrtka prvi na listi najvećih poreznih dužnika u Hrv → Дубль (Дублікат списку боржників з акцентом на Рієку) | Сутності: D.M.G.S. Trade desk, Gordana Dobrijević, Rijeka, 41,3 milijuna eura",
-        "• Zadnjeg dana listopada bura je konačno modno zauzdala najprometniju ši → Побут інших міст (Погода та вуличні фото у Шибенику) | Сутності: Šibenik, Poljana, bura",
-        "• Opća opasnost objavila novi singl “Što je ljubav” → Не за тематикою (Реліз пісні музичного гурту) | Сутності: Opća opasnost, Što je ljubav, Zlatko Grgić Grga",
-        "• Raguž: Kakva je razlika između apartmana i javnog bilježnika? Frankovi → Побут інших міст (Дискусія міської ради Дубровника) | Сутності: Željko Raguž, Mato Franković, Dubrovnik",
-        "• Infinity band Croatia predstavlja “Like a prayer” uz Marcelu Oroši i P → Не за тематикою (Музичний кавер-проєкт) | Сутності: Infinity band Croatia, Marcela Oroši, Rijeka",
-        "• Franković ponovno šokira: ‘Kamioni kokaina i dalje stižu u Dubrovnik,  → Побут інших міст (Заяви мера Дубровника на сесії міськради) | Сутності: Mato Franković, Dubrovnik, DORH",
-        "• Banka tajkuna bliskog SNS-u ostala bez dozvole nakon optužbi o pokušaj → Геоблок (Відкликання ліцензії банку в Сербії) | Сутності: ALTA banka, Narodna banka Srbije, Davor Macura, Beograd",
-        "• Preokret za blagdan: Svi sveti na Jadranu uz olujnu buru, a od ponedje → Вже публікувалось (Прогноз погоди на День усіх святих) | Сутності: Bojan Lipovšćak, Jadran, bura",
-        "• Pupovca zadnjih dana baš upadljivo muči “dekoncentracija”. Opet se odb → Не за тематикою (Політичний коментар щодо голосування в Саборі) | Сутності: Milorad Pupovac, SDSS, Hrvatski sabor",
-        "• Franković opet o ‘kamionima kokaina‘: Sezona je bila dobra, potražnja  → Дубль (Повтор висловлювань мера Дубровника про наркотики) | Сутності: Mato Franković, Dubrovnik, Sabor",
-        "• Zašto se više ne znamo svađati, a da se ne zamrzimo? “Razumjeti drugog → Не за тематикою (Абстрактна культурно-психологічна подія) | Сутності: Festival empatije, Zagreb, Rijeka, Osijek",
-        "• Rasprava oko ljetnikovca Bonda-Majstorović završila na županu Pezu. Fr → Побут інших міст (Місцеві бюджетні суперечки у Дубровнику) | Сутності: Bonačić-Obradović, ljetnikovac Bonda-Majstorović, Dubrovnik"
-      ],
-      "rejected_by_reason": {
-        "Не за тематикою": 5,
-        "Дубль": 3,
-        "Побут інших міст": 6,
-        "Геоблок": 1,
-        "Вже публікувалось": 1
-      },
-      "updates_marked": 0,
-      "already_rejected": 0,
-      "rejected_by_code_examples": [
-        "[igrač] Nije pogodio nijedan broj, a osvojio je 80.000 eura: Zagrepčanin je s listićem od 7,80 eura promašio",
-        "[тег RSS sport] Zadar se u Dubrovniku zagrijao tek u drugoj četvrtini, a onda prešao granicu od sto poena",
-        "[sportom] Erlić vijećnicima podnio polugodišnje izvješće, a novi ustroj gradske uprave prošao s 13 glasova za",
-        "[sportom] Osnovan poseban Odjel za izdavanje građevinskih dozvola, istodobno ukinut dosadašnji Odjel za gospod",
-        "[šport] Evo gdje će Dubrovnik potrošiti milijune eura prema prijedlogu rebelansa ovogodišnjeg proračuna",
-        "[šport] Evo gdje će se trošiti milijuni eura prema prijedlogu rebelansa ovogodišnjeg proračuna",
-        "[nogomet] Trumpova administracija pokrenula istragu zbog neobičnog kandidata. Zove se isto kao republikanski s"
-      ]
-    },
-    "backlog": {
-      "total_size": 0,
-      "sources": {}
-    },
-    "published": {
-      "total": 2,
-      "ukraine_priority": 0,
-      "with_images": 2,
-      "text_only": 0,
-      "og_images_found": 0,
-      "sources": {
-        "Zadarski list": 1,
-        "Slobodna dalmacija": 1
-      }
-    },
-    "models_used": {
-      "gemini-3.6-flash": 1,
-      "gemini-3.5-flash-lite": 1
-    },
-    "models_by_task": {
-      "filter": "gemini-3.6-flash",
-      "translate": "gemini-3.5-flash-lite"
-    },
-    "model_attempts": [
-      {
-        "task": "filter",
-        "model": "gemini-3.6-flash",
-        "outcome": "ok"
-      },
-      {
-        "task": "translate",
-        "model": "gemini-3.5-flash-lite",
-        "outcome": "ok"
-      }
-    ],
-    "exhausted_models": [],
-    "demoted_models": [
-      "filter: gemini-3-flash-preview",
-      "translate: gemini-3.8-flash"
-    ],
-    "translate_budget_deferred": [
-      "gemini-3.6-flash"
-    ],
-    "gemini_region_blocked": false,
-    "errors_count": 0,
-    "gemini_retries": 0
-  },
-  {
     "timestamp": "2026-10-31 13:18:47",
     "execution_time": 16.2,
     "funnel": {
@@ -10270,5 +10165,110 @@
     "gemini_unavailable": false,
     "errors_count": 0,
     "gemini_retries": 0
+  },
+  {
+    "timestamp": "2026-11-09 13:01:26",
+    "execution_time": 258.1,
+    "funnel": {
+      "scraped_total": 35,
+      "scraped_by_source": {
+        "023": 10,
+        "Slobodna dalmacija": 15,
+        "Zadarski list": 10
+      },
+      "already_seen": 17,
+      "rejected_by_keywords": 6,
+      "rejected_by_rule": {
+        "тег RSS sport": 3,
+        "URL /sport/": 1,
+        "sportaša": 1,
+        "тег RSS nogomet": 1
+      },
+      "unclassified_by_ai": 0,
+      "duplicates_removed_by_ai": 10,
+      "rejection_reasons_list": [
+        "• U Rupi uhićen lažni liječnik iz Bugarske: Građane prevario za više od  → Побут інших міст (Арешт у Рієці) | Сутності: Рієка, Болгарія, Рупа",
+        "• Zaustavljen u prometu, pronađena mu droga u autu, a onda je uslijedilo → Побут інших міст (Інцидент у Дубровнику) | Сутності: Дубровник, амфетамін",
+        "• Zbog nesreće s poginulima na A3 vozaču autobusa slijedi kaznena prijav → Вже публікувалось (Повторення новини про ДТП на A3) | Сутності: Автострада А3, Іваніч-Град, Сербія",
+        "• Hrvatski sabor sutra aktualnim prijepodnevom započinje novu sjednicu,  → Не за тематикою (Загальнополітичні новини Загреба) | Сутності: Сабор, Влада, Єврорада",
+        "• Prodavali cvijeće na crno i nudili nesigurne lampione; Državni inspekt → Не за тематикою (Інспекція по всій Хорватії) | Сутності: Державний інспекторат, Всі святі",
+        "• Hrstić o slučaju Zadravec: “Koliko znam, pristigla je jedna žalba na n → Вже публікувалось (Коментар щодо справи Задравец) | Сутності: Ірена Хрстіч, Діяна Задравец, Загреб",
+        "• Plesni studio Lazareti briljirao na Stage international dance natjecan → Геоблок (Змагання у Скоп'є) | Сутності: Скоп'є, Лазареті, Пантомима",
+        "• Hrstić: Od 11 hospitaliziranih nakon prometne nesreće, pet se priprema → Вже публікувалось (Коментар про стан постраждалих у ДТП) | Сутності: Ірена Хрстіч, Іваніч-Град, А3",
+        "• Preminuo je čuveni kuhar s Krapnja Ive Svirčić. Kuhao je za predsjedni → Не за тематикою (Некролог кухарю з Крапаня) | Сутності: Іве Свірчіч, Крапань, Вашингтон",
+        "• U Šibeniku uhićena Čehinja za kojom su raspisana dva europska uhidbena → Побут інших міст (Арешт у Шибенику) | Сутності: Шибеник, Чехія"
+      ],
+      "rejected_by_reason": {
+        "Побут інших міст": 3,
+        "Вже публікувалось": 3,
+        "Не за тематикою": 3,
+        "Геоблок": 1
+      },
+      "updates_marked": 0,
+      "already_rejected": 12,
+      "rejected_by_code_examples": [
+        "[тег RSS sport] Dva zlata, srebro i sedam bronci; Mlade nade zadarske Ultime zablistale na jakom međunarodnom turnir",
+        "[тег RSS sport] Tri zlata i srebro na Zagreb Openu; BK Ares Diabolik najuspješniji klub u kadetskom uzrastu",
+        "[тег RSS sport] Prava žetva medalja zadarske Plovanije; Među 70 klubova iz tri države zauzeli visoko 7. mjesto",
+        "[URL /sport/] Uspješan nastup Jugaša na mitingu ‘Mladost‘ u Zagrebu",
+        "[sportaša] Ministrica izrazila sućut obitelji sportaša preminulog u Klinici za psihijatriju: “Okolnosti slučaja",
+        "[тег RSS nogomet] Posljednja momčad HNL-a dovela trofejnog trenera: “Situacija u Gorici je izazovna…”"
+      ]
+    },
+    "backlog": {
+      "total_size": 4,
+      "sources": {
+        "023": 4
+      }
+    },
+    "published": {
+      "total": 3,
+      "ukraine_priority": 0,
+      "with_images": 3,
+      "text_only": 0,
+      "og_images_found": 3,
+      "sources": {
+        "023": 3
+      }
+    },
+    "models_used": {
+      "gemini-3.5-flash-lite": 1,
+      "gemini-3.6-flash": 1
+    },
+    "models_by_task": {
+      "filter": "gemini-3.5-flash-lite",
+      "translate": "gemini-3.6-flash"
+    },
+    "model_attempts": [
+      {
+        "task": "filter",
+        "model": "gemini-3-flash-preview",
+        "outcome": "unavailable"
+      },
+      {
+        "task": "filter",
+        "model": "gemini-3.6-flash",
+        "outcome": "unavailable"
+      },
+      {
+        "task": "filter",
+        "model": "gemini-3.5-flash-lite",
+        "outcome": "ok"
+      },
+      {
+        "task": "translate",
+        "model": "gemini-3.6-flash",
+        "outcome": "ok"
+      }
+    ],
+    "exhausted_models": [],
+    "demoted_models": [
+      "translate: gemini-3.8-flash"
+    ],
+    "translate_budget_deferred": [],
+    "gemini_region_blocked": false,
+    "gemini_unavailable": false,
+    "errors_count": 0,
+    "gemini_retries": 2
   }
 ]
