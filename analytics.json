@@ -1,91 +1,5 @@
 [
   {
-    "timestamp": "2026-10-31 15:01:13",
-    "execution_time": 116.5,
-    "funnel": {
-      "scraped_total": 35,
-      "scraped_by_source": {
-        "023": 10,
-        "Slobodna dalmacija": 15,
-        "Zadarski list": 10
-      },
-      "already_seen": 22,
-      "rejected_by_keywords": 7,
-      "rejected_by_rule": {
-        "тег RSS lifestyle": 1,
-        "igrač": 1,
-        "тег RSS sport": 1,
-        "sportom": 1,
-        "šport": 1,
-        "тег RSS nogomet": 1,
-        "URL /sport/": 1
-      },
-      "unclassified_by_ai": 0,
-      "duplicates_removed_by_ai": 6,
-      "rejection_reasons_list": [
-        "• Ima 72 godine, a policija ga je zaustavila kod Permana: U automobilu p → Побут інших міст (Перевезення нелегалів у регіоні Опатії) | Сутності: Permani, Opatija, Crna Gora, Slovenija",
-        "• Kakav dan za uživanje, susrete i đir Stradunom! → Побут інших міст (Прогулянки та погода в Дубровнику) | Сутності: Stradun, Dubrovnik, прогулянка, погода",
-        "• Od kitova do slonova: Tuguju li i divlje životinje? → Світовий шум (Наукове дослідження про поведінку тварин) | Сутності: Olaf Meynecke, Sveučilište Griffith, Andrew Mulville, grbavi kit",
-        "• Društvo „Juraj Dalmatinac“ na donatorskoj večeri u Zagrebu prikupilo 7 → Побут інших міст (Благодійний захід у Загребі для Шибеника) | Сутності: Juraj Dalmatinac, Šibenik, Zagreb, Peti kupe",
-        "• Poljski predsjednik Nawrocki optužio premijera Tuska za nasilno preuzi → Геоблок (Політичний конфлікт у Польщі) | Сутності: Karol Nawrocki, Donald Tusk, Poljska, Anna Korwin-Piotrowska",
-        "• Franković predložio testiranje svih političara u Hrvatskoj: ‘Da vidimo → Побут інших міст (Заява мера Дубровника на міській сесії) | Сутності: Mato Franković, Dubrovnik, Gradsko vijeće, kokain"
-      ],
-      "rejected_by_reason": {
-        "Побут інших міст": 4,
-        "Світовий шум": 1,
-        "Геоблок": 1
-      },
-      "updates_marked": 0,
-      "already_rejected": 14,
-      "rejected_by_code_examples": [
-        "[тег RSS lifestyle] Kako jednim listom toaletnog papira provjeriti odvodi li ventilator vlagu iz kupaonice",
-        "[igrač] Nije pogodio nijedan broj, a osvojio je 80.000 eura: Zagrepčanin je s listićem od 7,80 eura promašio",
-        "[тег RSS sport] Zadar se u Dubrovniku zagrijao tek u drugoj četvrtini, a onda prešao granicu od sto poena",
-        "[sportom] Osnovan poseban Odjel za izdavanje građevinskih dozvola, istodobno ukinut dosadašnji Odjel za gospod",
-        "[šport] Evo gdje će Dubrovnik potrošiti milijune eura prema prijedlogu rebelansa ovogodišnjeg proračuna",
-        "[тег RSS nogomet] Orijent u 18 minuta nadoknadio dva gola zaostatka i ostvario novu domaću pobjedu",
-        "[URL /sport/] Riječki plivač Nikola Zdrilić nakon brojnih peripetija ipak osvojio zlato  posljednjeg dana EP-a"
-      ]
-    },
-    "backlog": {
-      "total_size": 0,
-      "sources": {}
-    },
-    "published": {
-      "total": 0,
-      "ukraine_priority": 0,
-      "with_images": 0,
-      "text_only": 0,
-      "og_images_found": 0,
-      "sources": {}
-    },
-    "models_used": {
-      "gemini-3.6-flash": 1
-    },
-    "models_by_task": {
-      "filter": "gemini-3.6-flash",
-      "translate": null
-    },
-    "model_attempts": [
-      {
-        "task": "filter",
-        "model": "gemini-3-flash-preview",
-        "outcome": "unavailable"
-      },
-      {
-        "task": "filter",
-        "model": "gemini-3.6-flash",
-        "outcome": "ok"
-      }
-    ],
-    "exhausted_models": [],
-    "demoted_models": [],
-    "translate_budget_deferred": [],
-    "gemini_region_blocked": false,
-    "errors_count": 0,
-    "gemini_retries": 1
-  },
-  {
     "timestamp": "2026-10-31 16:01:08",
     "execution_time": 167.2,
     "funnel": {
@@ -10309,5 +10223,111 @@
     "gemini_unavailable": false,
     "errors_count": 0,
     "gemini_retries": 0
+  },
+  {
+    "timestamp": "2026-11-09 16:01:20",
+    "execution_time": 218.8,
+    "funnel": {
+      "scraped_total": 35,
+      "scraped_by_source": {
+        "023": 10,
+        "Slobodna dalmacija": 15,
+        "Zadarski list": 10
+      },
+      "already_seen": 21,
+      "rejected_by_keywords": 4,
+      "rejected_by_rule": {
+        "тег RSS lifestyle": 1,
+        "тег RSS sport": 1,
+        "тег RSS nogomet": 1,
+        "sport": 1
+      },
+      "unclassified_by_ai": 0,
+      "duplicates_removed_by_ai": 10,
+      "rejection_reasons_list": [
+        "• Mratin dan u Konavlima okupio brojne ljubitelje vina, tradicije i dobr → Побут інших міст (Виноградська подія у Конавле) | Сутності: Konavle, Royal Oak, Mratin dan",
+        "• Brojeve kartica, lozinke i bankovne izvode ne dijelite s ChatGPT-om ni → Світовий шум (Поради про безпеку даних) | Сутності: ChatGPT, Nava Knafo, National Bank Financial",
+        "• Proglašena pobjednica natječaja “Zeleni life-hack” za 2026. godinu → Побут інших міст (Екологічний конкурс в Опатії) | Сутності: Opatija, Marta Jurada, Žlica",
+        "• Redovna Skupština Hrvatskog časničkog zbora Dubrovačko neretvanske žup → Побут інших міст (Збори офіцерського зібрання в Дубровнику) | Сутності: Dubrovnik, Hrvatski časnički zbor, Dubrovačko-neretvanska županija",
+        "• Ivan Đikić dobitnik prestižne njemačke nagrade Otto Warburg za 2027. g → Геоблок (Нагорода хорватського вченого у Німеччині) | Сутності: Ivan Đikić, Frankfurt, Otto Warburg",
+        "• Županijska organizacija SDP-a o Centru za gospodarenje otpadom: Što se → Побут інших міст (Сміттєвий центр у Дубровнику) | Сутності: SDP, Dubrovačko-neretvanska županija, Blaž Pezo",
+        "• Svečani doček: Zlatna Ana Bobanović vratila se u svoju Salezijansku kl → Спорт (Досягнення юної плавчині) | Сутності: Rijeka, Ana Bobanović, Salezijanska klasična gimnazija",
+        "• Čak 381 polaznik novog ciklusa Sveučilišta za treću životnu dob. Evo k → Побут інших міст (Університет для третього віку в Дубровнику) | Сутності: Sveučilište u Dubrovniku, Nebojša Stojčić, Dubrovnik",
+        "• Merz predložio bavarsku konzervativku Aigner za predsjednicu Njemačke → Геоблок (Політичні події у Німеччині) | Сутності: Friedrich Merz, Ilse Aigner, Frank-Walter Steinmeier",
+        "• Pločanin Maro (9) jedri ko veliki, već je i na Mrduji bio! ‘Najdraže m → Спорт (Юний моряк на регаті) | Сутності: Maro Barčot, Ploče Sailing, Mrdujska regata"
+      ],
+      "rejected_by_reason": {
+        "Побут інших міст": 5,
+        "Світовий шум": 1,
+        "Геоблок": 2,
+        "Спорт": 2
+      },
+      "updates_marked": 0,
+      "already_rejected": 14,
+      "rejected_by_code_examples": [
+        "[тег RSS lifestyle] Može li se manjak željeza prepoznati po licu: liječnici o trendu „ferritin face” s društvenih mreža",
+        "[тег RSS sport] Dva zlata, srebro i sedam bronci; Mlade nade zadarske Ultime zablistale na jakom međunarodnom turnir",
+        "[тег RSS nogomet] Kustić na Skupštini HNS-a: “Utakmica u Splitu je pokazala koliko igrači stoje iza Slavena”",
+        "[sport] Puntarski osnovnoškolci se upoznali s veslanjem: Veliki odaziv i entuzijazam"
+      ]
+    },
+    "backlog": {
+      "total_size": 1,
+      "sources": {
+        "Zadarski list": 1
+      }
+    },
+    "published": {
+      "total": 3,
+      "ukraine_priority": 0,
+      "with_images": 3,
+      "text_only": 0,
+      "og_images_found": 1,
+      "sources": {
+        "023": 1,
+        "Zadarski list": 1,
+        "Slobodna dalmacija": 1
+      }
+    },
+    "models_used": {
+      "gemini-3.5-flash-lite": 2
+    },
+    "models_by_task": {
+      "filter": "gemini-3.5-flash-lite",
+      "translate": "gemini-3.5-flash-lite"
+    },
+    "model_attempts": [
+      {
+        "task": "filter",
+        "model": "gemini-3-flash-preview",
+        "outcome": "unavailable"
+      },
+      {
+        "task": "filter",
+        "model": "gemini-3.6-flash",
+        "outcome": "unavailable"
+      },
+      {
+        "task": "filter",
+        "model": "gemini-3.5-flash-lite",
+        "outcome": "ok"
+      },
+      {
+        "task": "translate",
+        "model": "gemini-3.5-flash-lite",
+        "outcome": "ok"
+      }
+    ],
+    "exhausted_models": [],
+    "demoted_models": [
+      "translate: gemini-3.8-flash"
+    ],
+    "translate_budget_deferred": [
+      "gemini-3.6-flash"
+    ],
+    "gemini_region_blocked": false,
+    "gemini_unavailable": false,
+    "errors_count": 0,
+    "gemini_retries": 2
   }
 ]
