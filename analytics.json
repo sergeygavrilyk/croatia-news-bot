@@ -1,91 +1,5 @@
 [
   {
-    "timestamp": "2026-10-31 13:18:47",
-    "execution_time": 16.2,
-    "funnel": {
-      "scraped_total": 35,
-      "scraped_by_source": {
-        "023": 10,
-        "Slobodna dalmacija": 15,
-        "Zadarski list": 10
-      },
-      "already_seen": 26,
-      "rejected_by_keywords": 7,
-      "rejected_by_rule": {
-        "igrač": 1,
-        "тег RSS sport": 1,
-        "sportom": 2,
-        "šport": 2,
-        "nogomet": 1
-      },
-      "unclassified_by_ai": 0,
-      "duplicates_removed_by_ai": 2,
-      "rejection_reasons_list": [
-        "• FOTO Sjajan koncert Mašinka i Piške vrište. Pogledajte kako je bilo na → Побут інших міст (Концерт у Рієці) | Сутності: Mašinko, Pičke vrište, Palach, Rijeka, punk",
-        "• Mato Franković: Cijeli svijet zbog održivog turizma hvali Dubrovnik, n → Побут інших міст (Звіт мера Дубровника) | Сутності: Mato Franković, Dubrovnik, Ragusa, Gospino polje"
-      ],
-      "rejected_by_reason": {
-        "Побут інших міст": 2
-      },
-      "updates_marked": 0,
-      "already_rejected": 15,
-      "rejected_by_code_examples": [
-        "[igrač] Nije pogodio nijedan broj, a osvojio je 80.000 eura: Zagrepčanin je s listićem od 7,80 eura promašio",
-        "[тег RSS sport] Zadar se u Dubrovniku zagrijao tek u drugoj četvrtini, a onda prešao granicu od sto poena",
-        "[sportom] Erlić vijećnicima podnio polugodišnje izvješće, a novi ustroj gradske uprave prošao s 13 glasova za",
-        "[sportom] Osnovan poseban Odjel za izdavanje građevinskih dozvola, istodobno ukinut dosadašnji Odjel za gospod",
-        "[šport] Evo gdje će Dubrovnik potrošiti milijune eura prema prijedlogu rebelansa ovogodišnjeg proračuna",
-        "[šport] Evo gdje će se trošiti milijuni eura prema prijedlogu rebelansa ovogodišnjeg proračuna",
-        "[nogomet] Trumpova administracija pokrenula istragu zbog neobičnog kandidata. Zove se isto kao republikanski s"
-      ]
-    },
-    "backlog": {
-      "total_size": 0,
-      "sources": {}
-    },
-    "published": {
-      "total": 0,
-      "ukraine_priority": 0,
-      "with_images": 0,
-      "text_only": 0,
-      "og_images_found": 0,
-      "sources": {}
-    },
-    "models_used": {
-      "gemini-3.5-flash-lite": 1
-    },
-    "models_by_task": {
-      "filter": "gemini-3.5-flash-lite",
-      "translate": null
-    },
-    "model_attempts": [
-      {
-        "task": "filter",
-        "model": "gemini-3.6-flash",
-        "outcome": "unavailable"
-      },
-      {
-        "task": "filter",
-        "model": "gemini-3.6-flash",
-        "outcome": "unavailable"
-      },
-      {
-        "task": "filter",
-        "model": "gemini-3.5-flash-lite",
-        "outcome": "ok"
-      }
-    ],
-    "exhausted_models": [],
-    "demoted_models": [
-      "filter: gemini-3-flash-preview",
-      "translate: gemini-3.8-flash"
-    ],
-    "translate_budget_deferred": [],
-    "gemini_region_blocked": false,
-    "errors_count": 0,
-    "gemini_retries": 2
-  },
-  {
     "timestamp": "2026-10-31 14:01:06",
     "execution_time": 22.4,
     "funnel": {
@@ -10264,6 +10178,116 @@
     "exhausted_models": [],
     "demoted_models": [
       "translate: gemini-3.8-flash"
+    ],
+    "translate_budget_deferred": [],
+    "gemini_region_blocked": false,
+    "gemini_unavailable": false,
+    "errors_count": 0,
+    "gemini_retries": 2
+  },
+  {
+    "timestamp": "2026-11-09 14:01:19",
+    "execution_time": 237.2,
+    "funnel": {
+      "scraped_total": 35,
+      "scraped_by_source": {
+        "023": 10,
+        "Slobodna dalmacija": 15,
+        "Zadarski list": 10
+      },
+      "already_seen": 13,
+      "rejected_by_keywords": 7,
+      "rejected_by_rule": {
+        "тег RSS lifestyle": 1,
+        "тег RSS sport": 3,
+        "тег RSS nogomet": 2,
+        "тег RSS košarka": 1
+      },
+      "unclassified_by_ai": 0,
+      "duplicates_removed_by_ai": 12,
+      "rejection_reasons_list": [
+        "• Uprava Klinike Sveti Ivan prihvatila zahtjeve zaposlenika za veću sigu → Побут інших міст (Загреб) | Сутності: Klinika Sveti Ivan, Majda Grah, Zagreb",
+        "• Obrtnik s Paga tri godine skrivao prihode na računima obitelji kako ne → Вже публікувалось | Сутності: Pag, Utaja poreza, Policija",
+        "• Vampir, Batman… Bond? Niz glumaca na probnom snimanju za ulogu Jamesa  → Геоблок | Сутності: Robert Pattinson, James Bond, Amazon",
+        "• Riječki bend Crooks & Straights nastupio na festivalu u Teksasu → Геоблок | Сутності: Rijeka, Crooks & Straights, Texas",
+        "• U Dubrovniku 31-godišnjak pao zbog ‘piza speeda‘, a onda tek otkrili o → Побут інших міст (Дубровник) | Сутності: Dubrovnik, Policija, Amfetamin",
+        "• De Rigo predstavio kolekcije naočala za 2026/2027. godinu – Police, Fu → Реклама | Сутності: De Rigo, Police, Furla",
+        "• Oni su zaslužni za našu slobodu: Odana počast hrvatskim braniteljima p → Побут інших міст (Дубровник) | Сутності: Dubrovnik, Mato Franković, Bosanka",
+        "• Capak: Cjepivo protiv gripe do srijede u svim županijama, interes je v → Вже публікувалось | Сутності: Krunoslav Capak, HZJZ, Hrvatska",
+        "• Vozio kroz Župu dobro urađen; pogledajte koliko je ‘majstor‘ napuhao → Побут інших міст (Дубровник) | Сутності: Dubrovnik, Župa dubrovačka, Policija",
+        "• U sudaru dviju brodica kod otoka Plavnika jedna osoba lakše ozlijeđena → Побут інших міст (Крк) | Сутності: Rijeka, Otok Plavnik, Ministarstvo",
+        "• Na Bulevaru uhvaćen 22-godišnjak rekorder u prekršajima; otkrio se tak → Побут інших міст (Дубровник) | Сутності: Dubrovnik, Policija, Motocikl",
+        "• Milanović na Fakultetu političkih znanosti: Europska unija nije država → Вже публікувалось | Сутності: Zoran Milanović, Zagreb, Europska unija"
+      ],
+      "rejected_by_reason": {
+        "Побут інших міст": 6,
+        "Вже публікувалось": 3,
+        "Геоблок": 2,
+        "Реклама": 1
+      },
+      "updates_marked": 0,
+      "already_rejected": 9,
+      "rejected_by_code_examples": [
+        "[тег RSS lifestyle] Može li se manjak željeza prepoznati po licu: liječnici o trendu „ferritin face” s društvenih mreža",
+        "[тег RSS sport] Dva zlata, srebro i sedam bronci; Mlade nade zadarske Ultime zablistale na jakom međunarodnom turnir",
+        "[тег RSS sport] Tri zlata i srebro na Zagreb Openu; BK Ares Diabolik najuspješniji klub u kadetskom uzrastu",
+        "[тег RSS sport] Prava žetva medalja zadarske Plovanije; Među 70 klubova iz tri države zauzeli visoko 7. mjesto",
+        "[тег RSS nogomet] Engleski izbornik Thomas Tuchel ostao bez braniča Cityja. Evo koga je pozvao za sudar s Vatrenima",
+        "[тег RSS košarka] Izbornik košarkaške reprezentacije objavio popis igrača za Poljsku i Nizozemsku",
+        "[тег RSS nogomet] Španjolci bez Laminea Yamala i Mikela Oyarzabala protiv Češke u Pragu"
+      ]
+    },
+    "backlog": {
+      "total_size": 4,
+      "sources": {
+        "Slobodna dalmacija": 1,
+        "023": 3
+      }
+    },
+    "published": {
+      "total": 3,
+      "ukraine_priority": 0,
+      "with_images": 3,
+      "text_only": 0,
+      "og_images_found": 2,
+      "sources": {
+        "023": 2,
+        "Slobodna dalmacija": 1
+      }
+    },
+    "models_used": {
+      "gemini-3.5-flash-lite": 2
+    },
+    "models_by_task": {
+      "filter": "gemini-3.5-flash-lite",
+      "translate": "gemini-3.5-flash-lite"
+    },
+    "model_attempts": [
+      {
+        "task": "filter",
+        "model": "gemini-3.5-flash-lite",
+        "outcome": "ok"
+      },
+      {
+        "task": "translate",
+        "model": "gemini-3.8-flash",
+        "outcome": "unavailable"
+      },
+      {
+        "task": "translate",
+        "model": "gemini-3.6-flash",
+        "outcome": "unavailable"
+      },
+      {
+        "task": "translate",
+        "model": "gemini-3.5-flash-lite",
+        "outcome": "ok"
+      }
+    ],
+    "exhausted_models": [],
+    "demoted_models": [
+      "filter: gemini-3-flash-preview",
+      "filter: gemini-3.6-flash"
     ],
     "translate_budget_deferred": [],
     "gemini_region_blocked": false,
