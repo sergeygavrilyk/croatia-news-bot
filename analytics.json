@@ -1,104 +1,5 @@
 [
   {
-    "timestamp": "2026-11-01 09:01:09",
-    "execution_time": 133.9,
-    "funnel": {
-      "scraped_total": 35,
-      "scraped_by_source": {
-        "023": 10,
-        "Slobodna dalmacija": 15,
-        "Zadarski list": 10
-      },
-      "already_seen": 16,
-      "rejected_by_keywords": 9,
-      "rejected_by_rule": {
-        "URL /sport/": 4,
-        "sport": 1,
-        "košarkaši": 1,
-        "oglas": 1,
-        "utakmice": 1,
-        "тег RSS košarka": 1
-      },
-      "unclassified_by_ai": 0,
-      "duplicates_removed_by_ai": 1,
-      "rejection_reasons_list": [
-        "• Sve je počelo s 95 teza protiv prodaje oprosta grijeha: Kako je Martin → Світовий шум (Історична та релігійна річниця) | Сутності: Martin Luther, Wittenberg, Dan reformacije, 95 teza"
-      ],
-      "rejected_by_reason": {
-        "Світовий шум": 1
-      },
-      "updates_marked": 1,
-      "already_rejected": 12,
-      "rejected_by_code_examples": [
-        "[URL /sport/] Jug nanio prvi poraz Solarisu, evo kako su završile druge utakmice 6. kola prvenstva",
-        "[sport] Dubrovnik potvrđuje kvalitetu života: ulaganja u sport i obrazovanje te bogat adventski program",
-        "[košarkaši] Ovako je govorio Mišo: ‘I telefonski imenik bi prodao u 100 tisuća primjeraka s mojom slikom, ali ka",
-        "[oglas] Sindikalist Dražen Jović: U privatnom sektoru nužna kontrola isplate plaća i veća pokrivenost kolekt",
-        "[utakmice] Tišina s Pantovčaka. Zašto se Milanović u drugom mandatu potpuno povukao iz političkih sukoba?",
-        "[URL /sport/] Prije 60 godina na Kantridi je tijekom treninga prestalo kucati srce riječke nogometne legende",
-        "[тег RSS košarka] VIDEO Mario Hezonja i Karlo Matković odigrali zapažene role u pobjedama Cavaliersa i Pelicansa",
-        "[URL /sport/] Meksička boksačka ikona pobjedom nad Francuzom Mbilijom u Rijadu osvojila novi WBC naslov",
-        "[URL /sport/] Mladen Devetak uoči Varaždina: “Moramo biti pravi od početka utakmice, čvrsti i agresivni”"
-      ]
-    },
-    "backlog": {
-      "total_size": 0,
-      "sources": {}
-    },
-    "published": {
-      "total": 2,
-      "ukraine_priority": 0,
-      "with_images": 2,
-      "text_only": 0,
-      "og_images_found": 1,
-      "sources": {
-        "023": 1,
-        "Zadarski list": 1
-      }
-    },
-    "models_used": {
-      "gemini-3-flash-preview": 1,
-      "gemini-3.6-flash": 1
-    },
-    "models_by_task": {
-      "filter": "gemini-3-flash-preview",
-      "translate": "gemini-3.6-flash"
-    },
-    "model_attempts": [
-      {
-        "task": "filter",
-        "model": "gemini-3-flash-preview",
-        "outcome": "ok"
-      },
-      {
-        "task": "translate",
-        "model": "gemini-3.8-flash",
-        "outcome": "unavailable"
-      },
-      {
-        "task": "translate",
-        "model": "gemini-3.8-flash",
-        "outcome": "unavailable"
-      },
-      {
-        "task": "translate",
-        "model": "gemini-3.6-flash",
-        "outcome": "unavailable"
-      },
-      {
-        "task": "translate",
-        "model": "gemini-3.6-flash",
-        "outcome": "ok"
-      }
-    ],
-    "exhausted_models": [],
-    "demoted_models": [],
-    "translate_budget_deferred": [],
-    "gemini_region_blocked": false,
-    "errors_count": 0,
-    "gemini_retries": 3
-  },
-  {
     "timestamp": "2026-11-01 10:01:09",
     "execution_time": 142.9,
     "funnel": {
@@ -10310,5 +10211,97 @@
     "gemini_unavailable": false,
     "errors_count": 0,
     "gemini_retries": 2
+  },
+  {
+    "timestamp": "2026-11-10 10:01:19",
+    "execution_time": 181.6,
+    "funnel": {
+      "scraped_total": 35,
+      "scraped_by_source": {
+        "023": 10,
+        "Slobodna dalmacija": 15,
+        "Zadarski list": 10
+      },
+      "already_seen": 17,
+      "rejected_by_keywords": 5,
+      "rejected_by_rule": {
+        "тег RSS sport": 1,
+        "košarkaške": 1,
+        "тег RSS košarka": 2,
+        "тег RSS nogomet": 1
+      },
+      "unclassified_by_ai": 0,
+      "duplicates_removed_by_ai": 9,
+      "rejection_reasons_list": [
+        "• Marija Bosilj Kidjemet objavila autobiografsku priču o unutarnjem svij → Побут інших міст (Презентація книги у Загребі) | Сутності: Marija Bosilj Kidjemet, Zagreb, Novi Marof",
+        "• Apel umirovljenika s Korčule: ‘Nadam se da će netko od njih ovo pročit → Побут інших міст (Проблеми пенсіонера з квитками на Корчулі) | Сутності: Ante I. Curać, Korčula, Split, Dubrovnik",
+        "• Habijan užasnut snimkom s Jankomira: “To prvi put čujem” → Побут інших міст (Скандал у лікарні Загреба) | Сутності: Damir Habijan, Jankomir, Zagreb, Kristian Periš",
+        "• Kuzma & Shaka Zulu stižu u petak u Pogon → Побут інших міст (Концерт у клубі іншого міста) | Сутності: Kuzma & Shaka Zulu, Pogon, Split",
+        "• Kultno mjesto Šibenčana u Zagrebu ponovno otvara vrata. Postoji već 45 → Побут інших міст (Відкриття клубу шибеничан у Загребі) | Сутності: Klub Šibenčana, Zagreb, Šibenik",
+        "• Tragičan kraj mlade ptice iz Telašćice; Posljednji zmijar s GPS odašil → Дубль (Дублікат новини ID 5 про орла-змієїда) | Сутності: Telašćica, Biom, Konya, Turska",
+        "• Jugo zaustavilo dvije pomorske linije prema Rabu → Побут інших міст (Скасування поромів на острові Раб) | Сутності: Rab, Lopar, Valbiska, Novalja",
+        "• Stanković u Dubrovniku: Nakon što je izašla Depra, javilo mi se sedam  → Побут інших міст (Презентація книги у Дубровнику) | Сутності: Aleksandar Stanković, Dubrovnik, Lazareti",
+        "• Ante Tomić: Franković govori o kamionima kokaina, a HDZ se smeteno pon → Побут інших міст (Політична колонка про мерію Дубровника) | Сутності: Ante Tomić, Mato Franković, Dubrovnik"
+      ],
+      "rejected_by_reason": {
+        "Побут інших міст": 8,
+        "Дубль": 1
+      },
+      "updates_marked": 1,
+      "already_rejected": 12,
+      "rejected_by_code_examples": [
+        "[тег RSS sport] GODINE SU SAMO BROJ! Natalija Gulin pomela dvostruko mlađu konkurenciju i zasjela na sam VRH SVIJETA",
+        "[košarkaške] Mijatović objavio popis: Božić, Mavra, konačno i Mazalin, ali i najbolji dvojac zadarskog starta sez",
+        "[тег RSS košarka] Porazi hrvatskih reprezentativaca u NBA ligi. Warriorsi uvjerljivi protiv Pelicansa, Zubac izgubio n",
+        "[тег RSS nogomet] Američki izbornik Pochettino glavni kandidat za preuzimanje klupe Manchester Uniteda",
+        "[тег RSS košarka] Zubac i Hezonja poraženi, Matkovićevi Pelicansi doživjeli pravi debakl, a Wembanyama briljirao"
+      ]
+    },
+    "backlog": {
+      "total_size": 4,
+      "sources": {
+        "023": 4
+      }
+    },
+    "published": {
+      "total": 3,
+      "ukraine_priority": 0,
+      "with_images": 3,
+      "text_only": 0,
+      "og_images_found": 2,
+      "sources": {
+        "023": 2,
+        "Slobodna dalmacija": 1
+      }
+    },
+    "models_used": {
+      "gemini-3.6-flash": 2
+    },
+    "models_by_task": {
+      "filter": "gemini-3.6-flash",
+      "translate": "gemini-3.6-flash"
+    },
+    "model_attempts": [
+      {
+        "task": "filter",
+        "model": "gemini-3.6-flash",
+        "outcome": "ok"
+      },
+      {
+        "task": "translate",
+        "model": "gemini-3.6-flash",
+        "outcome": "ok"
+      }
+    ],
+    "exhausted_models": [],
+    "demoted_models": [
+      "filter: gemini-3-flash-preview",
+      "translate: gemini-3.8-flash"
+    ],
+    "translate_budget_deferred": [],
+    "gemini_region_blocked": false,
+    "gemini_unavailable": false,
+    "errors_count": 0,
+    "gemini_retries": 0
   }
 ]
