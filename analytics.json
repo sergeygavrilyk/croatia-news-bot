@@ -1,102 +1,5 @@
 [
   {
-    "timestamp": "2026-11-01 12:01:07",
-    "execution_time": 56.6,
-    "funnel": {
-      "scraped_total": 35,
-      "scraped_by_source": {
-        "023": 10,
-        "Slobodna dalmacija": 15,
-        "Zadarski list": 10
-      },
-      "already_seen": 17,
-      "rejected_by_keywords": 8,
-      "rejected_by_rule": {
-        "URL /sport/": 3,
-        "sportaše": 1,
-        "sport": 1,
-        "košarkaši": 1,
-        "oglas": 1,
-        "nogometni": 1
-      },
-      "unclassified_by_ai": 0,
-      "duplicates_removed_by_ai": 6,
-      "rejection_reasons_list": [
-        "• Crna Gora uvela vize za pet zemalja: idući tjedan PlenKović u Bruxelle → Геоблок (Візова політика Чорногорії) | Сутності: Crna Gora, Plenković, Bruxelles, vize",
-        "• U šetnji gradom sreli smo i bivši misicu, dok Mišine pjesme odzvanjaju → Побут інших міст (Прогулянка та вшанування у Шибенику) | Сутності: Šibenik, Mišo Kovač, Maja Cvjetković, Poljana",
-        "• Imate li i vi neke svoje trikove zbog kojih uspješnije lovite lignje?  → Світовий шум (Поради з лову кальмарів) | Сутності: lignje, skosavice, dipovi, savjeti",
-        "• U masovnoj tučnjavi Kosovar nožem ozlijedio 24-godišnjaka, zadržan je  → Вже публікувалось (Бійка в Задарі вже є в HISTORY) | Сутності: Zadar, Kosovar, Policijska postaja Zadar, Relja",
-        "• Ljeto više nije rezervirano za najbogatije: Jesen postaje nova špica s → Світовий шум (Аналітика світового ринку розкоші) | Сутності: Deloitte, Kina, Europa, Global Powers of Luxury",
-        "• Bježao od policije brzinom do 180 km/h, brzo je uhićen → Побут інших міст (Погоня за порушником у Пожезі) | Сутності: Požega, Bilice, Slavonija, Levanjska Varoš"
-      ],
-      "rejected_by_reason": {
-        "Геоблок": 1,
-        "Побут інших міст": 2,
-        "Світовий шум": 2,
-        "Вже публікувалось": 1
-      },
-      "updates_marked": 0,
-      "already_rejected": 12,
-      "rejected_by_code_examples": [
-        "[URL /sport/] Dubrovački judo klub Fortudo: Borna Butjer brončani na Europskom prvenstvu U23 u Napulju",
-        "[sportaše] Tri državne medalje za Karate klub Bibinje: Stipan Tikulin viceprvak Hrvatske",
-        "[URL /sport/] Jug nanio prvi poraz Solarisu, evo kako su završile druge utakmice 6. kola prvenstva",
-        "[sport] Dubrovnik potvrđuje kvalitetu života: ulaganja u sport i obrazovanje te bogat adventski program",
-        "[košarkaši] Ovako je govorio Mišo: ‘I telefonski imenik bih prodao u 100 tisuća primjeraka s mojom slikom, ali k",
-        "[oglas] Sindikalist Dražen Jović: U privatnom sektoru nužna kontrola isplate plaća i veća pokrivenost kolekt",
-        "[URL /sport/] RIJEKA – VARAŽDIN 15 SATI Čekamo službene sastave s Rujevice",
-        "[nogometni] Profesor iz Rijeke upozorava: Hrvatskoj ne prijete francuski neredi, nego nešto puno opasnije"
-      ]
-    },
-    "backlog": {
-      "total_size": 0,
-      "sources": {}
-    },
-    "published": {
-      "total": 0,
-      "ukraine_priority": 0,
-      "with_images": 0,
-      "text_only": 0,
-      "og_images_found": 0,
-      "sources": {}
-    },
-    "models_used": {
-      "gemini-3.6-flash": 1
-    },
-    "models_by_task": {
-      "filter": "gemini-3.6-flash",
-      "translate": null
-    },
-    "model_attempts": [
-      {
-        "task": "filter",
-        "model": "gemini-3-flash-preview",
-        "outcome": "unavailable"
-      },
-      {
-        "task": "filter",
-        "model": "gemini-3-flash-preview",
-        "outcome": "unavailable"
-      },
-      {
-        "task": "filter",
-        "model": "gemini-3.6-flash",
-        "outcome": "unavailable"
-      },
-      {
-        "task": "filter",
-        "model": "gemini-3.6-flash",
-        "outcome": "ok"
-      }
-    ],
-    "exhausted_models": [],
-    "demoted_models": [],
-    "translate_budget_deferred": [],
-    "gemini_region_blocked": false,
-    "errors_count": 0,
-    "gemini_retries": 3
-  },
-  {
     "timestamp": "2026-11-01 13:01:08",
     "execution_time": 266.4,
     "funnel": {
@@ -10338,5 +10241,100 @@
     "gemini_unavailable": false,
     "errors_count": 0,
     "gemini_retries": 2
+  },
+  {
+    "timestamp": "2026-11-10 13:01:28",
+    "execution_time": 126.8,
+    "funnel": {
+      "scraped_total": 35,
+      "scraped_by_source": {
+        "023": 10,
+        "Slobodna dalmacija": 15,
+        "Zadarski list": 10
+      },
+      "already_seen": 17,
+      "rejected_by_keywords": 2,
+      "rejected_by_rule": {
+        "тег RSS sport": 1,
+        "тег RSS nogomet": 1
+      },
+      "unclassified_by_ai": 0,
+      "duplicates_removed_by_ai": 11,
+      "rejection_reasons_list": [
+        "• Plenković Đujiću: Uzaludan vam posao. Opet ću biti tamo gdje jesam, sa → Вже публікувалось (Політичні дебати в хорватському парламенті) | Сутності: Andrej Plenković, Đujić, Hrvatski sabor, SDP",
+        "• Trideset godina poslije prvog koncerta, legendarni ‘Organizator kiše‘  → Побут інших міст (Концерт у Дубровнику) | Сутності: Mirso Đulančić, Lazareti, Dubrovnik, Leonardo Klešković",
+        "• Na Donjoj Vežici uklonjen natpis tržnice, prostor postaje poslovnica E → Побут інших міст (Закриття ринку в Рієці) | Сутності: Donja Vežica, Rijeka, Erste banka, Tržnica",
+        "• Počelo uređenje vanjskog dijela Trsatskog svetišta. Marijin perivoj do → Побут інших міст (Урегулювання святилища в Рієці) | Сутності: Trsatsko svetište, Rijeka, Fra Dragan Grizelj, Marijin perivoj",
+        "• Što se događa s kraljicom Jadrana? Nema više redova na peškarijama; ‘M → Побут інших міст (Проблеми з виловом риби в Дубровнику) | Сутності: Dubrovnik, Jadransko more, Srdela, Europska unija",
+        "• Šušnjar brani bazne cijene: To je jednokratna mjera usmjerena na zašti → Вже публікувалось (Коментарі міністра щодо цін) | Сутності: Ante Šušnjar, Hrvatski sabor, Martin Kordić, Vlada",
+        "• Mandić uputila Deklaraciju Gradskom vijeću Rijeke: “Osuda komunizma ni → Побут інших міст (Політична декларація в міськраді Рієки) | Сутності: Rijeka, Petra Mandić, Most, Gradsko vijeće",
+        "• Grad Dubrovnik jača sustav civilne zaštite: Nabavljene samostojeće mob → Побут інших міст (Захист від повеней у Дубровнику) | Сутності: Dubrovnik, Civilna zaštita, Mobilne barijere, Poplave",
+        "• Roditelj kažnjen jer je dijete koristilo pirotehniku i dobilo opekline → Побут інших міст (Інцидент з піротехнікою в Спліті) | Сутності: Splitsko-dalmatinska policija, Pirotehnika, Bolnica, Roditelj",
+        "• Na HTV-u dokumentarac o nastanku hit mjuzikla “Radio Dubrava” na pjesm → Побут інших міст (Документальний фільм про мюзикл у Загребі) | Сутності: Radio Dubrava, Prljavo kazalište, HTV, Zagreb",
+        "• Francuska pozvala na razgovor iranskog veleposlanika nakon napada hake → Геоблок (Дипломатичний конфлікт Франції та Ірану) | Сутності: Francuska, Iran, Jean-Noël Barrot, Pariz"
+      ],
+      "rejected_by_reason": {
+        "Вже публікувалось": 2,
+        "Побут інших міст": 8,
+        "Геоблок": 1
+      },
+      "updates_marked": 0,
+      "already_rejected": 12,
+      "rejected_by_code_examples": [
+        "[тег RSS sport] NOVI DRŽAVNI PRVAK Mladi Luka Perica iz benkovačke “Sipe” pomeo konkurenciju u Puli!",
+        "[тег RSS nogomet] Dobre vijesti za Bayern, vratio se trener Vincent Kompany"
+      ]
+    },
+    "backlog": {
+      "total_size": 2,
+      "sources": {
+        "Slobodna dalmacija": 1,
+        "023": 1
+      }
+    },
+    "published": {
+      "total": 3,
+      "ukraine_priority": 1,
+      "with_images": 3,
+      "text_only": 0,
+      "og_images_found": 1,
+      "sources": {
+        "Zadarski list": 1,
+        "023": 1,
+        "Slobodna dalmacija": 1
+      }
+    },
+    "models_used": {
+      "gemini-3.5-flash-lite": 2
+    },
+    "models_by_task": {
+      "filter": "gemini-3.5-flash-lite",
+      "translate": "gemini-3.5-flash-lite"
+    },
+    "model_attempts": [
+      {
+        "task": "filter",
+        "model": "gemini-3.5-flash-lite",
+        "outcome": "ok"
+      },
+      {
+        "task": "translate",
+        "model": "gemini-3.5-flash-lite",
+        "outcome": "ok"
+      }
+    ],
+    "exhausted_models": [],
+    "demoted_models": [
+      "filter: gemini-3-flash-preview",
+      "filter: gemini-3.6-flash",
+      "translate: gemini-3.8-flash"
+    ],
+    "translate_budget_deferred": [
+      "gemini-3.6-flash"
+    ],
+    "gemini_region_blocked": false,
+    "gemini_unavailable": false,
+    "errors_count": 0,
+    "gemini_retries": 0
   }
 ]
