@@ -1,100 +1,5 @@
 [
   {
-    "timestamp": "2026-10-31 20:01:11",
-    "execution_time": 146.6,
-    "funnel": {
-      "scraped_total": 35,
-      "scraped_by_source": {
-        "023": 10,
-        "Slobodna dalmacija": 15,
-        "Zadarski list": 10
-      },
-      "already_seen": 16,
-      "rejected_by_keywords": 9,
-      "rejected_by_rule": {
-        "тег RSS lifestyle": 3,
-        "sportova": 1,
-        "utakmica": 1,
-        "URL /sport/": 2,
-        "тег RSS nogomet": 2
-      },
-      "unclassified_by_ai": 0,
-      "duplicates_removed_by_ai": 9,
-      "rejection_reasons_list": [
-        "• SMOi od Frankovića traži dokaz ili ispriku: \"Ako se neutemeljene tvrdn → Побут інших міст (Конфлікт щодо оренди житла в Дубровнику) | Сутності: SMOi, Mato Franković, Dubrovnik, Vedran Tomić",
-        "• Oproštaj od Miše Kovača: Otišao je glas Dalmacije i simbol jednog vrem → Вже публікувалось (Співчуття щодо смерті Мішо Ковача) | Сутності: Mišo Kovač, Andrej Plenković, Željko Burić, Šibenik",
-        "• \"Bio je vjeran sebi, odan Damlaciji\", \"Nije mu trebala reklama. Digne  → Вже публікувалось (Реакції політиків на смерть Мішо Ковача) | Сутності: Mišo Kovač, Mato Franković, Branko Bačić, Božo Lasić",
-        "• Plenković: Mišo Kovač više je od pjevača, postao je simbol zavičaja i  → Вже публікувалось (Співчуття прем'єр-міністра щодо смерті Мішо Ковача) | Сутності: Andrej Plenković, Mišo Kovač, Hrvatska",
-        "• Kolege o glazbenoj legendi, Tereza: ‘On je stvarno bio veličina. Dugo  → Вже публікувалось (Спогади колег-музикантів про Мішо Ковача) | Сутності: Mišo Kovač, Tereza Kesovija, Dražen Zečić, Neno Ninčević",
-        "• Jandroković: Mišo je bio neponovljiva glazbena osobnost → Вже публікувалось (Співчуття спікера парламенту про смерть Ковача) | Сутності: Gordan Jandroković, Mišo Kovač, Hrvatski sabor",
-        "• Na Gen Zi okupljanjima u Njemačkoj znatno manje sudionika od najavljen → Геоблок (Протести молоді в Німеччині) | Сутності: Gen Z regelt, Njemačka, Berlin, Muenchen",
-        "• Nagrada Predrag Matvejević za “Taksim bop” Karla Ilića → Не за тематикою (Регіональна літературна премія) | Сутності: Karlo Ilić, Taksim bop, Predrag Matvejević, Ex libris",
-        "• Vučić nakon poraza na izborima ugostio bivšeg mađarskog premijera Orba → Геоблок (Зустріч Вучича та Орбана в Белграді) | Сутності: Aleksandar Vučić, Viktor Orban, Beograd, Srbija"
-      ],
-      "rejected_by_reason": {
-        "Побут інших міст": 1,
-        "Вже публікувалось": 5,
-        "Геоблок": 2,
-        "Не за тематикою": 1
-      },
-      "updates_marked": 0,
-      "already_rejected": 10,
-      "rejected_by_code_examples": [
-        "[тег RSS lifestyle] Koliko šetnje treba psu: veterinarka objašnjava pravu mjeru za štence, odrasle i starije pse",
-        "[sportova] Preminuo Mišo Kovač, šibenski pjevač koji je prodao više od 20 milijuna ploča, a brkove pustio nakon",
-        "[тег RSS lifestyle] Kamenac iz kuhala skida limunska kiselina: litra vode, dvije vrećice i sat vremena",
-        "[тег RSS lifestyle] Kako jednim listom toaletnog papira provjeriti odvodi li ventilator vlagu iz kupaonice",
-        "[utakmica] Pogledajte kako se Poljud oprostio od voljenog Miše. Nakon tužne vijesti, svi su zapjevali njegov hi",
-        "[URL /sport/] Vaterpolisti Primorja EB ostvarili uvjerljivu pobjedu u Splitu. Riječani stisnuli gas u posljednjoj ",
-        "[тег RSS nogomet] Senzacija kola, Rudeš srušio Dinamo! Pobjedu mu je donio bivši igrač Modrih",
-        "[URL /sport/] Futsalska momčad Rijeke s deset pogodaka u mreži Splićana krenula u obranu naslova osvajača Kupa Hrv",
-        "[тег RSS nogomet] Matanović pogotkom pokrenuo Freiburg prema pobjedi kod Augsburga"
-      ]
-    },
-    "backlog": {
-      "total_size": 0,
-      "sources": {}
-    },
-    "published": {
-      "total": 0,
-      "ukraine_priority": 0,
-      "with_images": 0,
-      "text_only": 0,
-      "og_images_found": 0,
-      "sources": {}
-    },
-    "models_used": {
-      "gemini-3.6-flash": 1
-    },
-    "models_by_task": {
-      "filter": "gemini-3.6-flash",
-      "translate": null
-    },
-    "model_attempts": [
-      {
-        "task": "filter",
-        "model": "gemini-3-flash-preview",
-        "outcome": "unavailable"
-      },
-      {
-        "task": "filter",
-        "model": "gemini-3.6-flash",
-        "outcome": "unavailable"
-      },
-      {
-        "task": "filter",
-        "model": "gemini-3.6-flash",
-        "outcome": "ok"
-      }
-    ],
-    "exhausted_models": [],
-    "demoted_models": [],
-    "translate_budget_deferred": [],
-    "gemini_region_blocked": false,
-    "errors_count": 0,
-    "gemini_retries": 2
-  },
-  {
     "timestamp": "2026-11-01 08:01:05",
     "execution_time": 331.6,
     "funnel": {
@@ -10296,6 +10201,111 @@
     "translate_budget_deferred": [
       "gemini-3.6-flash"
     ],
+    "gemini_region_blocked": false,
+    "gemini_unavailable": false,
+    "errors_count": 0,
+    "gemini_retries": 2
+  },
+  {
+    "timestamp": "2026-11-10 08:01:22",
+    "execution_time": 291.0,
+    "funnel": {
+      "scraped_total": 35,
+      "scraped_by_source": {
+        "023": 10,
+        "Slobodna dalmacija": 15,
+        "Zadarski list": 10
+      },
+      "already_seen": 7,
+      "rejected_by_keywords": 5,
+      "rejected_by_rule": {
+        "тег RSS sport": 5
+      },
+      "unclassified_by_ai": 0,
+      "duplicates_removed_by_ai": 13,
+      "rejection_reasons_list": [
+        "• Krleža i Ivančić razotkrivaju “domoljublje” kao profiterstvo. Ovo je p → Побут інших міст (Театральна вистава у Загребі) | Сутності: Kazalište Komedija, Uršula Cetinski, Miroslav Krleža, Viktor Ivančić, Zagreb",
+        "• Na pustila nas je Ana Kravić, autorica zbirke ‘Na livadi kamenih lepti → Побут інших міст (Подія в громаді Конавле) | Сутності: Ana Kravić, Božo Lasić, Konavle, Sniježnica",
+        "• Roman Monike Herceg o nasilju i obiteljskoj šutnji dobiva kazališnu ve → Побут інших міст (Театральна прем'єра в Рієці) | Сутності: Monika Herceg, HNK Rijeka, Roman Nikolić, Doroteja Šušak, Rijeka",
+        "• Drakula kakvog još niste vidjeli: Umjesto čudovišta, na pozornici je n → Побут інших міст (Фестиваль лялькових театрів у Рієці) | Сутності: Gradsko kazalište lutaka Rijeka, Rijeka, Gruzija, Charlie Chaplin",
+        "• VIDEO Najslađe što ćete vidjeti danas. Dijele se snimke s Pelješca, te → Не за тематикою (Вірусне відео з твариною) | Сутності: Pelješac, Tuna Bar Pelješac, собака-гітарист",
+        "• Potrošačka industrija progutala Advent. Sve je podređeno zaradi, duhov → Не за тематикою (Абстрактні роздуми про комерціалізацію Адвенту) | Сутності: Advent, Ron Howard, Grinch, Imagine Entertainment",
+        "• VIDEO Najslađe što ćete vidjeti danas. Dijele se snimke s Pelješca, te → Дубль (Дублікат новини ID 12) | Сутності: Pelješac, Tuna Bar Pelješac, собака-гітарист",
+        "• Zašto Vance ne može okrenuti leđa Trumpu: “Još uvijek ima veliku podrš → Геоблок (Внутрішня політика США) | Сутності: JD Vance, Donald Trump, Marco Rubio, SAD, Reuters",
+        "• Ova je ulica u utorak bez vode → Побут інших міст (Відключення води в Дубровнику) | Сутності: Ulica Iva Dulčića, Dubrovnik, Vodovod Dubrovnik",
+        "• Odvjetnik obitelj preminulog mladića iz Jankomira: ‘Kristian nije bio  → Вже публікувалось (Коментар адвоката щодо інциденту в Янкомірі з історії) | Сутності: Kristian Josip Periš, Leon Zrinić, Klinika Sveti Ivan, Jankomir, Zagreb",
+        "• Dubrovnik Jazz Outbreak 2026 zaključen nastupom Bojana Z → Побут інших міст (Локальний джазовий фестиваль у Дубровнику) | Сутності: Dubrovnik Jazz Outbreak, Bojan Z, Lazareti, Dubrovnik",
+        "• Znate li naješkati iglicu namijenjenu velikim predatorima? Evo što tre → Світовий шум (Поради та інструкції з риболовлі) | Сутності: панкінг, риболовля, сарган, хижа риба",
+        "• Vrsta koja se očito udomaćila u našem moru. U Kaštel Štafiliću snimlje → Не за тематикою (Знахідка тропічного молюска біля Спліта) | Сутності: Melibe viridis, Kaštel Štafilić, Resnik, Maja Plazibat"
+      ],
+      "rejected_by_reason": {
+        "Побут інших міст": 6,
+        "Не за тематикою": 3,
+        "Дубль": 1,
+        "Геоблок": 1,
+        "Вже публікувалось": 1,
+        "Світовий шум": 1
+      },
+      "updates_marked": 0,
+      "already_rejected": 6,
+      "rejected_by_code_examples": [
+        "[тег RSS sport] Veliki uspjeh PK Zadar u Zagrebu; Pet medalja na međunarodnom mitingu „Mladost 2026.“",
+        "[тег RSS sport] Ulaznice za Cro Copa u HNK Zadar planule za šest sati, a organizator ovaj tjedan ponovno otvara prij",
+        "[тег RSS sport] Bronca s Poljuda i četiri C finala na Mladosti: plivači Jadere istoga vikenda nastupili u Splitu i Z",
+        "[тег RSS sport] Niko Šare i Ivan Vraneš na Mijatovićevu popisu za utakmice protiv Poljske i Nizozemske, u stožeru i ",
+        "[тег RSS sport] Četvrta utakmica u 12 dana, a Zadar i dalje bez poraza: Kvarner pao s 29 razlike"
+      ]
+    },
+    "backlog": {
+      "total_size": 6,
+      "sources": {
+        "Slobodna dalmacija": 2,
+        "023": 4
+      }
+    },
+    "published": {
+      "total": 3,
+      "ukraine_priority": 1,
+      "with_images": 3,
+      "text_only": 0,
+      "og_images_found": 1,
+      "sources": {
+        "Zadarski list": 2,
+        "023": 1
+      }
+    },
+    "models_used": {
+      "gemini-3.6-flash": 2
+    },
+    "models_by_task": {
+      "filter": "gemini-3.6-flash",
+      "translate": "gemini-3.6-flash"
+    },
+    "model_attempts": [
+      {
+        "task": "filter",
+        "model": "gemini-3-flash-preview",
+        "outcome": "unavailable"
+      },
+      {
+        "task": "filter",
+        "model": "gemini-3.6-flash",
+        "outcome": "ok"
+      },
+      {
+        "task": "translate",
+        "model": "gemini-3.8-flash",
+        "outcome": "unavailable"
+      },
+      {
+        "task": "translate",
+        "model": "gemini-3.6-flash",
+        "outcome": "ok"
+      }
+    ],
+    "exhausted_models": [],
+    "demoted_models": [],
+    "translate_budget_deferred": [],
     "gemini_region_blocked": false,
     "gemini_unavailable": false,
     "errors_count": 0,
