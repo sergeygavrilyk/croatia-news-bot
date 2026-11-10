@@ -1,102 +1,5 @@
 [
   {
-    "timestamp": "2026-11-01 15:01:11",
-    "execution_time": 128.3,
-    "funnel": {
-      "scraped_total": 35,
-      "scraped_by_source": {
-        "023": 10,
-        "Slobodna dalmacija": 15,
-        "Zadarski list": 10
-      },
-      "already_seen": 23,
-      "rejected_by_keywords": 3,
-      "rejected_by_rule": {
-        "тег RSS lifestyle": 1,
-        "URL /sport/": 1,
-        "тег RSS nogomet": 1
-      },
-      "unclassified_by_ai": 0,
-      "duplicates_removed_by_ai": 4,
-      "rejection_reasons_list": [
-        "• Brojni Puljani polažu cvijeće i pale svijeće za najmilije → Побут інших міст (Пула) | Сутності: Пула, Pulapromet, Svi sveti, groblja",
-        "• Žestok obračun usred Zadra: mladić ozlijeđen oštrim predmetom, državlj → Вже публікувалось (Бійка в Задарі) | Сутності: Zadar, Zrinsko-Frankopanska, policija",
-        "• Komemoracija poginulima u Novom Sadu – prvi put izravno prenošena na j → Геоблок (Сербія) | Сутності: Novi Sad, RTS, RTV",
-        "• Crna Gora uvela vize za pet zemalja, Rusija i Bjelorusija uzvraćaju is → Геоблок (Чорногорія) | Сутності: Crna Gora, Rusija, Bjelorusija, EU"
-      ],
-      "rejected_by_reason": {
-        "Побут інших міст": 1,
-        "Вже публікувалось": 1,
-        "Геоблок": 2
-      },
-      "updates_marked": 0,
-      "already_rejected": 16,
-      "rejected_by_code_examples": [
-        "[тег RSS lifestyle] Koliko dugo smijete čuvati sirovo, dimljeno i suho meso u hladnjaku i zamrzivaču",
-        "[URL /sport/] Dubrovački judo klub Fortudo: Borna Butjer brončani na Europskom prvenstvu U23 u Napulju",
-        "[тег RSS nogomet] Iz Dinama su i službeno potvrdili smjenu trenera. Jerko Leko će privremeno preuzeti Modre"
-      ]
-    },
-    "backlog": {
-      "total_size": 0,
-      "sources": {}
-    },
-    "published": {
-      "total": 1,
-      "ukraine_priority": 0,
-      "with_images": 1,
-      "text_only": 0,
-      "og_images_found": 0,
-      "sources": {
-        "Slobodna dalmacija": 1
-      }
-    },
-    "models_used": {
-      "gemini-3.5-flash-lite": 2
-    },
-    "models_by_task": {
-      "filter": "gemini-3.5-flash-lite",
-      "translate": "gemini-3.5-flash-lite"
-    },
-    "model_attempts": [
-      {
-        "task": "filter",
-        "model": "gemini-3-flash-preview",
-        "outcome": "unavailable"
-      },
-      {
-        "task": "filter",
-        "model": "gemini-3.6-flash",
-        "outcome": "unavailable"
-      },
-      {
-        "task": "filter",
-        "model": "gemini-3.6-flash",
-        "outcome": "unavailable"
-      },
-      {
-        "task": "filter",
-        "model": "gemini-3.5-flash-lite",
-        "outcome": "ok"
-      },
-      {
-        "task": "translate",
-        "model": "gemini-3.5-flash-lite",
-        "outcome": "ok"
-      }
-    ],
-    "exhausted_models": [],
-    "demoted_models": [
-      "translate: gemini-3.8-flash"
-    ],
-    "translate_budget_deferred": [
-      "gemini-3.6-flash"
-    ],
-    "gemini_region_blocked": false,
-    "errors_count": 0,
-    "gemini_retries": 3
-  },
-  {
     "timestamp": "2026-11-01 16:01:08",
     "execution_time": 293.1,
     "funnel": {
@@ -10336,6 +10239,101 @@
     "exhausted_models": [],
     "demoted_models": [
       "filter: gemini-3-flash-preview"
+    ],
+    "translate_budget_deferred": [
+      "gemini-3.6-flash"
+    ],
+    "gemini_region_blocked": false,
+    "gemini_unavailable": false,
+    "errors_count": 0,
+    "gemini_retries": 1
+  },
+  {
+    "timestamp": "2026-11-10 16:01:30",
+    "execution_time": 203.8,
+    "funnel": {
+      "scraped_total": 35,
+      "scraped_by_source": {
+        "023": 10,
+        "Slobodna dalmacija": 15,
+        "Zadarski list": 10
+      },
+      "already_seen": 20,
+      "rejected_by_keywords": 3,
+      "rejected_by_rule": {
+        "тег RSS lifestyle": 2,
+        "тег RSS sport": 1
+      },
+      "unclassified_by_ai": 0,
+      "duplicates_removed_by_ai": 9,
+      "rejection_reasons_list": [
+        "• Most na granici obojili samo do pola. Klobučar: Baš jadno i bijedno, i → Побут інших міст (Брод на Купі) | Сутності: Брод на Купі, Петрина, Даворін Клобучар",
+        "• Otvoren javni poziv za 22 ureda u riječkoj Sinergani → Побут інших міст (Рієка) | Сутності: Рієка, Сінергана, Порін",
+        "• Podmukla prijevara širi se i na šibenskom području, policija tijekom d → Вже публікувалось (Аналогічний випадок вже публікувався) | Сутності: Шибеник, поліція, шахрайство",
+        "• Otvorena izložba “Hrvatski ratni plakat 1991. – 1995.” → Побут інших міст (Рієка) | Сутності: Музей міста Рієки, Виставка, Марійо Реляновіч",
+        "• Glazbom i solidarnošću obilježeno 80 godina UNICEF-a → Побут інших міст (Загреб) | Сутності: Загреб, ЮНІСЕФ, Концертна зала Ватрослава Лисинського",
+        "• Austrijska knjižnica u Rijeci obilježila 15 godina djelovanja: Kulturn → Побут інших міст (Рієка) | Сутності: Рієка, Австрійська бібліотека, Філософський факультет",
+        "• Psihomodo Pop pripremaju posebno koncertno iskustvo u Tvornici kulture → Побут інших міст (Концерт у Загребі) | Сутності: Психомодо Поп, Загреб, Творніца културі",
+        "• PGS nakon burne sjednice u Bakru: “Želimo biti dio rješenja, a ne dio  → Побут інших міст (Бакр) | Сутності: Бакр, ПГС, Міська рада",
+        "• Martinja u Crikvenici odgođena za subotu, 14. studenoga → Побут інших міст (Цриквеница) | Сутності: Цриквеница, Мартінья, Свєта Луція"
+      ],
+      "rejected_by_reason": {
+        "Побут інших міст": 8,
+        "Вже публікувалось": 1
+      },
+      "updates_marked": 0,
+      "already_rejected": 10,
+      "rejected_by_code_examples": [
+        "[тег RSS lifestyle] Zašto kruh u hladnjaku brže otvrdne i gdje ga je bolje čuvati",
+        "[тег RSS lifestyle] Kako zaštititi rajčice, paprike i cvijeće u posudama kad se noćna temperatura približi nuli",
+        "[тег RSS sport] NOVI DRŽAVNI PRVAK Mladi Luka Perica iz benkovačke “Sipe” pomeo konkurenciju u Puli!"
+      ]
+    },
+    "backlog": {
+      "total_size": 1,
+      "sources": {
+        "Zadarski list": 1
+      }
+    },
+    "published": {
+      "total": 3,
+      "ukraine_priority": 0,
+      "with_images": 3,
+      "text_only": 0,
+      "og_images_found": 0,
+      "sources": {
+        "Slobodna dalmacija": 2,
+        "Zadarski list": 1
+      }
+    },
+    "models_used": {
+      "gemini-3.5-flash-lite": 2
+    },
+    "models_by_task": {
+      "filter": "gemini-3.5-flash-lite",
+      "translate": "gemini-3.5-flash-lite"
+    },
+    "model_attempts": [
+      {
+        "task": "filter",
+        "model": "gemini-3.5-flash-lite",
+        "outcome": "ok"
+      },
+      {
+        "task": "translate",
+        "model": "gemini-3.8-flash",
+        "outcome": "unavailable"
+      },
+      {
+        "task": "translate",
+        "model": "gemini-3.5-flash-lite",
+        "outcome": "ok"
+      }
+    ],
+    "exhausted_models": [],
+    "demoted_models": [
+      "filter: gemini-3-flash-preview",
+      "filter: gemini-3.6-flash"
     ],
     "translate_budget_deferred": [
       "gemini-3.6-flash"
