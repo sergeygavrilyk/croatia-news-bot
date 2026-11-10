@@ -1,99 +1,5 @@
 [
   {
-    "timestamp": "2026-11-01 17:01:13",
-    "execution_time": 36.7,
-    "funnel": {
-      "scraped_total": 35,
-      "scraped_by_source": {
-        "023": 10,
-        "Slobodna dalmacija": 15,
-        "Zadarski list": 10
-      },
-      "already_seen": 17,
-      "rejected_by_keywords": 8,
-      "rejected_by_rule": {
-        "тег RSS lifestyle": 3,
-        "URL /sport/": 1,
-        "utakmicu": 1,
-        "тег RSS sport": 2,
-        "igračaka": 1
-      },
-      "unclassified_by_ai": 0,
-      "duplicates_removed_by_ai": 8,
-      "rejection_reasons_list": [
-        "• Studeni za Vukovarce najtužniji mjesec u godini → Побут інших міст (Вуковар) | Сутності: Вуковар, День усіх святих, Овчара, Любиця Балог",
-        "• Riječki nadbiskup osudio nasilne prosvjede u Europi. Dirnula ga pjesma → Побут інших міст (Рієка) | Сутності: Рієка, Мате Узиніч, День усіх святих, Мішо Ковач",
-        "• Kako su Pat i Mat gradili aerodrom → Світовий шум (Фелельєтон про будівництво) | Сутності: Пат і Мат, Будівництво, Аеропорт, Бетон",
-        "• Njemačka policija čuva opljačkane trgovine u Frankfurtu → Геоблок (Безпорядки у Німеччині) | Сутності: Франкфурт, Німеччина, Поліція, Протести",
-        "• Iz Trpnja stiže glazbena priča koja dira u srce: ženska klapa Divna im → Побут інших міст (Трпань) | Сутності: Трпань, Клапа Дивна, Грлица је запавила, Музика",
-        "• Osječani posjećuju gradska groblja u povodu blagdana Svih svetih → Побут інших міст (Осієк) | Сутності: Осієк, Укоп, День усіх святих, Кладовища",
-        "• Na Holywinu se okupilo oko 300 mladih vjernika. Promišljali što svetos → Побут інших міст (Рієка) | Сутності: Рієка, Holywin, Іван Селеткович, Молодь",
-        "• Medico organizira besplatno PSA testiranje tijekom studenog u Rijeci i → Побут інших міст (Рієка та Пула) | Сутності: Рієка, Пула, Спеціальна лікарня Medico, PSA тестування"
-      ],
-      "rejected_by_reason": {
-        "Побут інших міст": 6,
-        "Світовий шум": 1,
-        "Геоблок": 1
-      },
-      "updates_marked": 0,
-      "already_rejected": 11,
-      "rejected_by_code_examples": [
-        "[тег RSS lifestyle] Kako pahuljicama čilija odvratiti štakore i miševe od hranilice za ptice",
-        "[тег RSS lifestyle] Kako gulilicom za povrće brzo narezati kupus za salatu i zašto mu dodati vodu",
-        "[тег RSS lifestyle] Koliko dugo smijete čuvati sirovo, dimljeno i suho meso u hladnjaku i zamrzivaču",
-        "[URL /sport/] Dubrovački judo klub Fortudo: Borna Butjer brončani na Europskom prvenstvu U23 u Napulju",
-        "[utakmicu] Renata Kolombo otvoreno o prijetnjama i ekstremizmu: “Branitelje se može poštovati i bez ustaškog po",
-        "[тег RSS sport] Matjaž Kek: “Ništa nam se ne poklapa u zadnje vrijeme, ali s radom će i to doći”",
-        "[тег RSS sport] Frukove spektakularne škarice i Vekićev obranjeni penal dovoljni samo za bod. Strukan se nije prosla",
-        "[igračaka] U Delnicama otvoreni prostori Moto kluba Mountain Riders"
-      ]
-    },
-    "backlog": {
-      "total_size": 0,
-      "sources": {}
-    },
-    "published": {
-      "total": 0,
-      "ukraine_priority": 0,
-      "with_images": 0,
-      "text_only": 0,
-      "og_images_found": 0,
-      "sources": {}
-    },
-    "models_used": {
-      "gemini-3.5-flash-lite": 1
-    },
-    "models_by_task": {
-      "filter": "gemini-3.5-flash-lite",
-      "translate": null
-    },
-    "model_attempts": [
-      {
-        "task": "filter",
-        "model": "gemini-3.6-flash",
-        "outcome": "unavailable"
-      },
-      {
-        "task": "filter",
-        "model": "gemini-3.6-flash",
-        "outcome": "unavailable"
-      },
-      {
-        "task": "filter",
-        "model": "gemini-3.5-flash-lite",
-        "outcome": "ok"
-      }
-    ],
-    "exhausted_models": [],
-    "demoted_models": [
-      "filter: gemini-3-flash-preview"
-    ],
-    "translate_budget_deferred": [],
-    "gemini_region_blocked": false,
-    "errors_count": 0,
-    "gemini_retries": 2
-  },
-  {
     "timestamp": "2026-11-01 20:01:10",
     "execution_time": 224.5,
     "funnel": {
@@ -10332,5 +10238,104 @@
     "gemini_unavailable": false,
     "errors_count": 0,
     "gemini_retries": 2
+  },
+  {
+    "timestamp": "2026-11-10 20:01:23",
+    "execution_time": 96.7,
+    "funnel": {
+      "scraped_total": 35,
+      "scraped_by_source": {
+        "023": 10,
+        "Slobodna dalmacija": 15,
+        "Zadarski list": 10
+      },
+      "already_seen": 15,
+      "rejected_by_keywords": 4,
+      "rejected_by_rule": {
+        "тег RSS lifestyle": 3,
+        "utakmice": 1
+      },
+      "unclassified_by_ai": 0,
+      "duplicates_removed_by_ai": 14,
+      "rejection_reasons_list": [
+        "• Kako brzo odmagliti stakla u autu: topao zrak, klima i isključena reci → Світовий шум (Поради щодо догляду за склом авто) | Сутності: автомобіль, конденсат, поради водіям",
+        "• Viktor Gržinčić izlaže povijest Klane kroz stare fotografije → Побут інших міст (Локальна виставка в місті Клана) | Сутності: Віктор Гржинчич, Клана, виставка фотографій",
+        "• Znate li za fenomen šibenskih kita? Smrika je za crno, maslina za bilo → Побут інших міст (Історичні звичаї міста Шибеник) | Сутності: Шибеник, Арсен Дедіч, традиції виноробства",
+        "• Mrsić: Upravno vijeće podržalo odluku o izvanrednim otkazima na Klinic → Вже публікувалось (Реакція на інцидент у психіатричній клініці) | Сутності: Мірандо Мрсич, клініка Св. Івана, Янкомир",
+        "• Put koji je započeo na vrećama brašna i smeđim strunjačama, 60 godina  → Спорт | Сутності: Klapa Kaše, Андрія Хабулін, дзюдо, Дубровник",
+        "• Na Interliberu predstavljeni posljednji svesci biblioteke “Djela Miros → Вже публікувалось (Деталі книжкової виставки Interliber) | Сутності: Interliber, Мирослав Крлежа, Загреб",
+        "• Marija Bazdan: ‘Mi smo šutjeli i kad smo bili u pravu, a danas vam se  → Побут інших міст (Інтерв'ю з викладачем у Дубровнику) | Сутності: Марія Баздан, Дубровник, школа туризму",
+        "• Dio parkirališta kod ex Gracianija zatvoren do kraja siječnja → Побут інших міст (Закриття парковки в Рієці) | Сутності: Рієка, Rijeka plus, паркувальний майданчик",
+        "• Sveučilištu pet milijuna eura za povezivanje znanosti s gospodarstvom  → Побут інших міст (Локальний проект університету Дубровника) | Сутності: Університет Дубровника, EUNICoast, науковий грант",
+        "• Interliber: Pisac krimića Chris Carter predstavio novi roman i družio  → Вже публікувалось (Візит письменника на Interliber) | Сутності: Кріс Картер, Interliber, Загреб",
+        "• Crveni križ Mali Lošinj prikuplja priloge za prijevoz pacijenata → Побут інших міст (Благодійна акція в Малому Лошині) | Сутності: Червоний Хрест, Малий Лошинь, збір коштів",
+        "• Koalicija udruga u zdravstvu: Tragedija u Jankomiru zahtijeva temeljit → Вже публікувалось (Заклик до реформи після смерті пацієнта) | Сутності: Коаліція асоціацій у сфері охорони здоров'я, Янкомир, реформа",
+        "• Djeca se u Loparu okušala u ručnom radu → Побут інших міст (Дитяча майстерня на острові Раб) | Сутності: Лопар, острів Раб, майстер-клас",
+        "• Krčkom filmu bronca na europskim Lovie Awardsima → Побут інших міст (Нагорода за туристичний фільм про Крк) | Сутності: острів Крк, Lovie Awards, промо-фільм"
+      ],
+      "rejected_by_reason": {
+        "Світовий шум": 1,
+        "Побут інших міст": 8,
+        "Вже публікувалось": 4,
+        "Спорт": 1
+      },
+      "updates_marked": 1,
+      "already_rejected": 8,
+      "rejected_by_code_examples": [
+        "[тег RSS lifestyle] Farmaceutkinja objašnjava zašto kipući napitak pogoršava grlobolju i što piti umjesto njega",
+        "[тег RSS lifestyle] Zašto kruh u hladnjaku brže otvrdne i gdje ga je bolje čuvati",
+        "[тег RSS lifestyle] Kako zaštititi rajčice, paprike i cvijeće u posudama kad se noćna temperatura približi nuli",
+        "[utakmice] Uhićeno još pet osoba iz Torcidina kortea zbog uzvikivanja nacističkih i antisemitskih parola"
+      ]
+    },
+    "backlog": {
+      "total_size": 0,
+      "sources": {}
+    },
+    "published": {
+      "total": 2,
+      "ukraine_priority": 0,
+      "with_images": 2,
+      "text_only": 0,
+      "og_images_found": 1,
+      "sources": {
+        "Slobodna dalmacija": 1,
+        "023": 1
+      }
+    },
+    "models_used": {
+      "gemini-3-flash-preview": 1,
+      "gemini-3.5-flash-lite": 1
+    },
+    "models_by_task": {
+      "filter": "gemini-3-flash-preview",
+      "translate": "gemini-3.5-flash-lite"
+    },
+    "model_attempts": [
+      {
+        "task": "filter",
+        "model": "gemini-3-flash-preview",
+        "outcome": "ok"
+      },
+      {
+        "task": "translate",
+        "model": "gemini-3.8-flash",
+        "outcome": "unavailable"
+      },
+      {
+        "task": "translate",
+        "model": "gemini-3.5-flash-lite",
+        "outcome": "ok"
+      }
+    ],
+    "exhausted_models": [],
+    "demoted_models": [],
+    "translate_budget_deferred": [
+      "gemini-3.6-flash"
+    ],
+    "gemini_region_blocked": false,
+    "gemini_unavailable": false,
+    "errors_count": 0,
+    "gemini_retries": 1
   }
 ]
