@@ -1,102 +1,5 @@
 [
   {
-    "timestamp": "2026-11-01 13:01:08",
-    "execution_time": 266.4,
-    "funnel": {
-      "scraped_total": 35,
-      "scraped_by_source": {
-        "023": 10,
-        "Slobodna dalmacija": 15,
-        "Zadarski list": 10
-      },
-      "already_seen": 19,
-      "rejected_by_keywords": 5,
-      "rejected_by_rule": {
-        "URL /sport/": 2,
-        "sportaše": 1,
-        "тег RSS nogomet": 1,
-        "nogometni": 1
-      },
-      "unclassified_by_ai": 0,
-      "duplicates_removed_by_ai": 5,
-      "rejection_reasons_list": [
-        "• Rezultati izbora u Srbiji: Ponavlja se glasanje na 53 mjesta, ali bez  → Геоблок (Повторне голосування na виборах у Сербії) | Сутності: Srbija, Beograd, Aleksandar Vučić, Studentska lista",
-        "• Šibenik priprema veliki oproštaj od svog Miše: ‘Neka nas njegove pjesm → Вже публікувалось (В історії вже є новина про смерть Мішо Ковача) | Сутності: Šibenik, Mišo Kovač, Mate Bralić, sv. Mihovil",
-        "• HAC izdao upozorenje: zbog radova se zatvara dionica autoceste A1 izme → Побут інших міст (Ремонтні роботи та перекриття автотраси А1 біля Плоче) | Сутності: HAC, autocesta A1, Ploče, Karamatići",
-        "• Cavtatska mega marina i smeće iz Gospića u četvrtak su teme u Europsko → Побут інших міст (Локальні проблеми сміття в Ґоспичі та марини в Цавтаті) | Сутності: Europski parlament, Gospić, Cavtat, Bruxelles",
-        "• Neugodno iznenađenje za kupce! Ova staklenka zimnice povučena je iz tr → Не за тематикою (Загальна стаття про відкликання консервації з магазинів) | Сутності: Hrvatska, trgovine, pesticidi, sigurnost hrane"
-      ],
-      "rejected_by_reason": {
-        "Геоблок": 1,
-        "Вже публікувалось": 1,
-        "Побут інших міст": 2,
-        "Не за тематикою": 1
-      },
-      "updates_marked": 0,
-      "already_rejected": 14,
-      "rejected_by_code_examples": [
-        "[URL /sport/] Dubrovački judo klub Fortudo: Borna Butjer brončani na Europskom prvenstvu U23 u Napulju",
-        "[sportaše] Tri državne medalje za Karate klub Bibinje: Stipan Tikulin viceprvak Hrvatske",
-        "[тег RSS nogomet] Iz Dinama su i službeno potvrdili smjenu trenera. Jerko Leko će privremeno preuzeti Modre",
-        "[URL /sport/] RIJEKA – VARAŽDIN 15 SATI Stigli su sastavi. Kek je napravio jednu promjenu u odnosu na najave",
-        "[nogometni] Profesor iz Rijeke upozorava: Hrvatskoj ne prijete francuski neredi, nego nešto puno opasnije"
-      ]
-    },
-    "backlog": {
-      "total_size": 0,
-      "sources": {}
-    },
-    "published": {
-      "total": 2,
-      "ukraine_priority": 1,
-      "with_images": 2,
-      "text_only": 0,
-      "og_images_found": 0,
-      "sources": {
-        "Zadarski list": 1,
-        "Slobodna dalmacija": 1
-      }
-    },
-    "models_used": {
-      "gemini-3.6-flash": 1,
-      "gemini-3.5-flash-lite": 1
-    },
-    "models_by_task": {
-      "filter": "gemini-3.6-flash",
-      "translate": "gemini-3.5-flash-lite"
-    },
-    "model_attempts": [
-      {
-        "task": "filter",
-        "model": "gemini-3-flash-preview",
-        "outcome": "unavailable"
-      },
-      {
-        "task": "filter",
-        "model": "gemini-3.6-flash",
-        "outcome": "ok"
-      },
-      {
-        "task": "translate",
-        "model": "gemini-3.8-flash",
-        "outcome": "unavailable"
-      },
-      {
-        "task": "translate",
-        "model": "gemini-3.5-flash-lite",
-        "outcome": "ok"
-      }
-    ],
-    "exhausted_models": [],
-    "demoted_models": [],
-    "translate_budget_deferred": [
-      "gemini-3.6-flash"
-    ],
-    "gemini_region_blocked": false,
-    "errors_count": 0,
-    "gemini_retries": 2
-  },
-  {
     "timestamp": "2026-11-01 14:01:09",
     "execution_time": 180.0,
     "funnel": {
@@ -10336,5 +10239,102 @@
     "gemini_unavailable": false,
     "errors_count": 0,
     "gemini_retries": 0
+  },
+  {
+    "timestamp": "2026-11-10 14:01:29",
+    "execution_time": 124.9,
+    "funnel": {
+      "scraped_total": 35,
+      "scraped_by_source": {
+        "023": 10,
+        "Slobodna dalmacija": 15,
+        "Zadarski list": 10
+      },
+      "already_seen": 23,
+      "rejected_by_keywords": 2,
+      "rejected_by_rule": {
+        "тег RSS lifestyle": 1,
+        "тег RSS sport": 1
+      },
+      "unclassified_by_ai": 0,
+      "duplicates_removed_by_ai": 8,
+      "rejection_reasons_list": [
+        "• Abu Dhabi: Zapadni partneri za snažnu europsku sigurnosnu arhitekturu → Геоблок (Засідання в ОАЕ щодо європейської безпеки) | Сутності: Abu Dhabi, EU, NATO, Ukrajina",
+        "• Poljski napadač posjećivao stranice o norveškom masovnom ubojici Breiv → Геоблок (Інцидент у Польщі) | Сутності: Krakov, Breivik, Ministarstvo pravosuđa",
+        "• Otvoren Interliber, mjesto susreta autora i čitatelja, nakladnika i kn → Побут інших міст (Книжковий ярмарок у Загребі) | Сутності: Interliber, Nina Obuljen Koržinek, Ministarstvo kulture",
+        "• Žene preferiraju više temperature i lakše podnose hladnoću. Otkriveno  → Світовий шум (Наукове дослідження про чутливість до температури) | Сутності: Nature, Bruxelles, Cambridge, testosteron",
+        "• Kekin: Tragedija u Jankomiru je neprihvatljiva, više se nikad ne smije → Вже публікувалось (Коментар щодо інциденту в лікарні) | Сутності: Ivana Kekin, Jankomir, Sveti Ivan, Zagreb",
+        "• Konzum predstavio Keti, AI asistenticu za kupnju dostupnu putem WhatsA → Реклама (Запуск AI-асистента для покупок) | Сутності: Konzum, Keti, WhatsApp, Fortenova",
+        "• Dugi Lipa u Zagrebu: Otac Due Lipe stiže na Crowd & Loud konferenciju → Побут інших міст (Конференція event-індустрії у Загребі) | Сутності: Dugi Lipa, Due Lipa, Zagreb, Crowd & Loud",
+        "• Tomaševića pitali kada je saznao za Perišev slučaj: “Želim da se rasvi → Вже публікувалось (Реакція мера на подію в лікарні) | Сутності: Tomislav Tomašević, Kristijan Josip Periš, Sveti Ivan, Zagreb"
+      ],
+      "rejected_by_reason": {
+        "Геоблок": 2,
+        "Побут інших міст": 2,
+        "Світовий шум": 1,
+        "Вже публікувалось": 2,
+        "Реклама": 1
+      },
+      "updates_marked": 0,
+      "already_rejected": 15,
+      "rejected_by_code_examples": [
+        "[тег RSS lifestyle] Kako zaštititi rajčice, paprike i cvijeće u posudama kad se noćna temperatura približi nuli",
+        "[тег RSS sport] NOVI DRŽAVNI PRVAK Mladi Luka Perica iz benkovačke “Sipe” pomeo konkurenciju u Puli!"
+      ]
+    },
+    "backlog": {
+      "total_size": 1,
+      "sources": {
+        "023": 1
+      }
+    },
+    "published": {
+      "total": 3,
+      "ukraine_priority": 1,
+      "with_images": 3,
+      "text_only": 0,
+      "og_images_found": 1,
+      "sources": {
+        "Zadarski list": 1,
+        "Slobodna dalmacija": 1,
+        "023": 1
+      }
+    },
+    "models_used": {
+      "gemini-3.5-flash-lite": 2
+    },
+    "models_by_task": {
+      "filter": "gemini-3.5-flash-lite",
+      "translate": "gemini-3.5-flash-lite"
+    },
+    "model_attempts": [
+      {
+        "task": "filter",
+        "model": "gemini-3-flash-preview",
+        "outcome": "unavailable"
+      },
+      {
+        "task": "filter",
+        "model": "gemini-3.5-flash-lite",
+        "outcome": "ok"
+      },
+      {
+        "task": "translate",
+        "model": "gemini-3.5-flash-lite",
+        "outcome": "ok"
+      }
+    ],
+    "exhausted_models": [],
+    "demoted_models": [
+      "filter: gemini-3.6-flash",
+      "translate: gemini-3.8-flash"
+    ],
+    "translate_budget_deferred": [
+      "gemini-3.6-flash"
+    ],
+    "gemini_region_blocked": false,
+    "gemini_unavailable": false,
+    "errors_count": 0,
+    "gemini_retries": 1
   }
 ]
