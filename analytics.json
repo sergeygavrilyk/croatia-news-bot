@@ -1,100 +1,5 @@
 [
   {
-    "timestamp": "2026-11-01 10:01:09",
-    "execution_time": 142.9,
-    "funnel": {
-      "scraped_total": 35,
-      "scraped_by_source": {
-        "023": 10,
-        "Slobodna dalmacija": 15,
-        "Zadarski list": 10
-      },
-      "already_seen": 15,
-      "rejected_by_keywords": 7,
-      "rejected_by_rule": {
-        "sportaše": 1,
-        "URL /sport/": 2,
-        "sport": 1,
-        "košarkaši": 1,
-        "oglas": 1,
-        "utakmice": 1
-      },
-      "unclassified_by_ai": 0,
-      "duplicates_removed_by_ai": 6,
-      "rejection_reasons_list": [
-        "• Riječani obilaze groblja i grobove svojih najmilijih, prisjećaju se, d → Побут інших міст (Відвідування цвинтарів у Рієці) | Сутності: Rijeka, Svi sveti, Mate Uzinić",
-        "• Mladićima na tlu eksplodirala vatrometna raketa, jedan hitno prebačen  → Побут інших міст (Інцидент у Кістанє) | Сутності: Kistanje, Split, policija",
-        "• Novi Sad obilježava drugu obljetnicu smrtonosnog urušavanja nadstrešni → Геоблок (Події в Сербії) | Сутності: Novi Sad, Srbija, Beograd",
-        "• Dalmaciju zahvatio val zahladnjenja, upaljeni meteoalarmi zbog olujne  → Вже публікувалось (Погоду та штормове попередження вже висвітлювали) | Сутності: Dalmacija, meteoalarm, bura",
-        "• Gradonačelnik Šime Erlić na web stranicama Grada Zadra: Odlagalište Di → Вже публікувалось (Про закриття сміттєзвалища Дікло вже повідомлялося) | Сутності: Zadar, Diklo, Šime Erlić",
-        "• Znanstvenici s PMF-a objasnili kako stanica regulira duljinu diobenog  → Світовий шум (Наукове дослідження біологів) | Сутності: PMF Zagreb, Shane A. Fiorenza, Nenad Pavin"
-      ],
-      "rejected_by_reason": {
-        "Побут інших міст": 2,
-        "Геоблок": 1,
-        "Вже публікувалось": 2,
-        "Світовий шум": 1
-      },
-      "updates_marked": 0,
-      "already_rejected": 9,
-      "rejected_by_code_examples": [
-        "[sportaše] Tri državne medalje za Karate klub Bibinje: Stipan Tikulin viceprvak Hrvatske",
-        "[URL /sport/] Jug nanio prvi poraz Solarisu, evo kako su završile druge utakmice 6. kola prvenstva",
-        "[sport] Dubrovnik potvrđuje kvalitetu života: ulaganja u sport i obrazovanje te bogat adventski program",
-        "[košarkaši] Ovako je govorio Mišo: ‘I telefonski imenik bih prodao u 100 tisuća primjeraka s mojom slikom, ali k",
-        "[oglas] Sindikalist Dražen Jović: U privatnom sektoru nužna kontrola isplate plaća i veća pokrivenost kolekt",
-        "[utakmice] Tišina s Pantovčaka. Zašto se Milanović u drugom mandatu potpuno povukao iz političkih sukoba?",
-        "[URL /sport/] Prije 60 godina na Kantridi je tijekom treninga prestalo kucati srce riječke nogometne legende"
-      ]
-    },
-    "backlog": {
-      "total_size": 0,
-      "sources": {}
-    },
-    "published": {
-      "total": 1,
-      "ukraine_priority": 0,
-      "with_images": 1,
-      "text_only": 0,
-      "og_images_found": 0,
-      "sources": {
-        "Zadarski list": 1
-      }
-    },
-    "models_used": {
-      "gemini-3.6-flash": 2
-    },
-    "models_by_task": {
-      "filter": "gemini-3.6-flash",
-      "translate": "gemini-3.6-flash"
-    },
-    "model_attempts": [
-      {
-        "task": "filter",
-        "model": "gemini-3-flash-preview",
-        "outcome": "unavailable"
-      },
-      {
-        "task": "filter",
-        "model": "gemini-3.6-flash",
-        "outcome": "ok"
-      },
-      {
-        "task": "translate",
-        "model": "gemini-3.6-flash",
-        "outcome": "ok"
-      }
-    ],
-    "exhausted_models": [],
-    "demoted_models": [
-      "translate: gemini-3.8-flash"
-    ],
-    "translate_budget_deferred": [],
-    "gemini_region_blocked": false,
-    "errors_count": 0,
-    "gemini_retries": 1
-  },
-  {
     "timestamp": "2026-11-01 11:01:15",
     "execution_time": 28.4,
     "funnel": {
@@ -10303,5 +10208,115 @@
     "gemini_unavailable": false,
     "errors_count": 0,
     "gemini_retries": 0
+  },
+  {
+    "timestamp": "2026-11-10 11:01:23",
+    "execution_time": 137.3,
+    "funnel": {
+      "scraped_total": 35,
+      "scraped_by_source": {
+        "023": 10,
+        "Slobodna dalmacija": 15,
+        "Zadarski list": 10
+      },
+      "already_seen": 14,
+      "rejected_by_keywords": 4,
+      "rejected_by_rule": {
+        "тег RSS sport": 3,
+        "košarkaške": 1
+      },
+      "unclassified_by_ai": 0,
+      "duplicates_removed_by_ai": 17,
+      "rejection_reasons_list": [
+        "• Orašar na Rabu rasprodan već prvog dana prodaje ulaznica → Побут інших міст (Острів Раб) | Сутності: Раб, Орашар, Український класичний балет",
+        "• Meghan neće govoriti na skupu u Bruxellesu. Otac joj uhićen zbog ogavn → Геоблок (Брюссель) | Сутності: Меган Маркл, Брюссель, Принц Гаррі",
+        "• Dubrovnik Fashion Ball: Večer visoke mode, elegancije i velikog srca → Побут інших міст (Дубровник) | Сутності: Дубровник, Valamar Lacroma, Два скаліна",
+        "• Zbog lošeg vremena otkazane trajektne, katamaranske i brodske linije,  → Вже публікувалось (Перервані поромні лінії через негоду) | Сутності: Брестова, Порозіна, Задар",
+        "• Tribina posvećena zdravoj prehrani, kuhanju i usvajanju kvalitetnijih  → Світовий шум (Здорове харчування) | Сутності: Матульї, Івана Періч, Мая Ілчіч",
+        "• Teška prometna nesreća na izlazu iz Zadra: sudarila se dva automobila, → Дубль (Дублює ID 1) | Сутності: Задар, Жмирічі, Кожино",
+        "• Apokaliptični prizori na autocesti u Bugarskoj: 11 mrtvih, deseci ozli → Геоблок (ДТП у Болгарії) | Сутності: Болгарія, Ямбол, Румен Радев",
+        "• Penzioner s Korčule: Zašto nam kompliciraju život? Imam dva pitanja s  → Побут інших міст (Корчула) | Сутності: Корчула, Анте І. Цурач, Жрново",
+        "• Proglašena elementarna nepogoda za područje grada Senja → Побут інших міст (Сень) | Сутності: Сень, Лічко-сенська жупанія, суша",
+        "• Dubrovačka ribarnica nikad siromašnija, a jedina riba koju se čeka u r → Побут інших міст (Дубровник) | Сутності: Дубровник, срдела, Євросоюз",
+        "• Hrstić o Jankomiru: Žalosno je što smo informaciju dobili tek za 15 da → Вже публікувалось (Реакція на подію в Jankomir) | Сутності: Андрей Пленковіч, Янкомір, Ірена Хрстіч",
+        "• Preminuo je Ivan Braco Negodić, ratni načelnik topništva u obrani Grad → Не за тематикою | Сутності: Іван Брако Негодіч, Дубровник, Боніново",
+        "• U Hrvatskoj aktivno 71,2 posto registriranih poslovnih subjekata → Не за тематикою | Сутності: ДЗС, Хорватія, бізнес",
+        "• Prošlo je 35 tužnih godina otkad nas je napustio Porporelaš Mario Mata → Не за тематикою | Сутності: Маріо Матана, Порворела, Дубровник",
+        "• Premijer žestoko po SDP-u i Možemo!: “Kako vas nije sram? U jeku zataš → Вже публікувалось (Політичні коментарі щодо Jankomir) | Сутності: Андрей Пленковіч, СДП, Можемо!",
+        "• Metkovka prošla četiri mjeseca bolova i straha pa otkrila tešku dijagn → Побут інших міст (Меткович) | Сутності: Меткович, Міла Маненіца, КБЦ Спліт",
+        "• Uz povećani promet, Crobexi porasli drugi dan zaredom → Не за тематикою | Сутності: Загребська біржа, Crobex, Кончар"
+      ],
+      "rejected_by_reason": {
+        "Побут інших міст": 6,
+        "Геоблок": 2,
+        "Вже публікувалось": 3,
+        "Світовий шум": 1,
+        "Дубль": 1,
+        "Не за тематикою": 4
+      },
+      "updates_marked": 0,
+      "already_rejected": 8,
+      "rejected_by_code_examples": [
+        "[тег RSS sport] NOVI DRŽAVNI PRVAK Mladi Luka Perica iz benkovačke “Sipe” pomeo konkurenciju u Puli!",
+        "[тег RSS sport] GODINE SU SAMO BROJ! Natalija Gulin pomela dvostruko mlađu konkurenciju i zasjela na sam VRH SVIJETA",
+        "[košarkaške] Mijatović objavio popis: Božić, Mavra, konačno i Mazalin, ali i najbolji dvojac zadarskog starta sez",
+        "[тег RSS sport] Legendarni Tom Brady neočekivano napustio engleski klub. Razlog je i dalje nepoznat"
+      ]
+    },
+    "backlog": {
+      "total_size": 1,
+      "sources": {
+        "023": 1
+      }
+    },
+    "published": {
+      "total": 3,
+      "ukraine_priority": 0,
+      "with_images": 3,
+      "text_only": 0,
+      "og_images_found": 3,
+      "sources": {
+        "023": 3
+      }
+    },
+    "models_used": {
+      "gemini-3.5-flash-lite": 1,
+      "gemini-3.6-flash": 1
+    },
+    "models_by_task": {
+      "filter": "gemini-3.5-flash-lite",
+      "translate": "gemini-3.6-flash"
+    },
+    "model_attempts": [
+      {
+        "task": "filter",
+        "model": "gemini-3-flash-preview",
+        "outcome": "unavailable"
+      },
+      {
+        "task": "filter",
+        "model": "gemini-3.6-flash",
+        "outcome": "unavailable"
+      },
+      {
+        "task": "filter",
+        "model": "gemini-3.5-flash-lite",
+        "outcome": "ok"
+      },
+      {
+        "task": "translate",
+        "model": "gemini-3.6-flash",
+        "outcome": "ok"
+      }
+    ],
+    "exhausted_models": [],
+    "demoted_models": [
+      "translate: gemini-3.8-flash"
+    ],
+    "translate_budget_deferred": [],
+    "gemini_region_blocked": false,
+    "gemini_unavailable": false,
+    "errors_count": 0,
+    "gemini_retries": 2
   }
 ]
