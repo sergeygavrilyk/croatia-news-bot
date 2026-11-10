@@ -1,112 +1,5 @@
 [
   {
-    "timestamp": "2026-11-01 16:01:08",
-    "execution_time": 293.1,
-    "funnel": {
-      "scraped_total": 35,
-      "scraped_by_source": {
-        "023": 10,
-        "Slobodna dalmacija": 15,
-        "Zadarski list": 10
-      },
-      "already_seen": 18,
-      "rejected_by_keywords": 6,
-      "rejected_by_rule": {
-        "тег RSS lifestyle": 3,
-        "URL /sport/": 1,
-        "тег RSS nogomet": 1,
-        "тег RSS sport": 1
-      },
-      "unclassified_by_ai": 0,
-      "duplicates_removed_by_ai": 7,
-      "rejection_reasons_list": [
-        "• Udruga umirovljenika Crikvenice i Vinodolske općine proslavila okrugli → Побут інших міст (Ювілей товариства пенсіонерів у Цриквениці) | Сутності: Udruga umirovljenika, Crikvenica, Vinodolska općina, hotel Katarina",
-        "• Ogorčeni građani ostavili poruke pored porušenih stabala na Šubićevcu: → Побут інших міст (Протест проти вирубки дерев у Шибенику) | Сутності: Šibenik, Šubićevac, Hrvatska Dendrofobna Zajednica",
-        "• Jezivi produžetak sezone: Vještice, pauci i obitelj Addams zavladali O → Побут інших міст (Хелловінська вечірка в Омішалі) | Сутності: Kamp Omišalj, Omišalj, obitelj Opić",
-        "• U eksploziji vatrometne rakete teško ozlijeđen 23-godišnjak → Побут інших міст (Інцидент з піротехнікою в Кістанє) | Сутності: Kistanje, Split, Knin",
-        "• Peticija o prostornom planu podijelila loparske vijećnike → Побут інших міст (Місцева сесія міськради в Лопарі) | Сутності: Lopar, Općinsko vijeće, Damir Paparić",
-        "• Zagrepčani na blagdan Svih svetih obilaze groblja → Побут інших міст (Локальний транспортний режим у Загребі) | Сутності: Zagreb, Mirogoj, ZET",
-        "• Crna Gora pred ulaskom u EU, ali duhovi prošlosti još je vuku na drugu → Геоблок (Політична ситуація в Чорногорії) | Сутності: Aleksandar Musić, Crna Gora, Hrvatska"
-      ],
-      "rejected_by_reason": {
-        "Побут інших міст": 6,
-        "Геоблок": 1
-      },
-      "updates_marked": 0,
-      "already_rejected": 12,
-      "rejected_by_code_examples": [
-        "[тег RSS lifestyle] Kako pahuljicama čilija odvratiti štakore i miševe od hranilice za ptice",
-        "[тег RSS lifestyle] Kako gulilicom za povrće brzo narezati kupus za salatu i zašto mu dodati vodu",
-        "[тег RSS lifestyle] Koliko dugo smijete čuvati sirovo, dimljeno i suho meso u hladnjaku i zamrzivaču",
-        "[URL /sport/] Dubrovački judo klub Fortudo: Borna Butjer brončani na Europskom prvenstvu U23 u Napulju",
-        "[тег RSS nogomet] Nova pobjeda Coma. Momčad Smolčića i Baturine bolja od Bašićeve Venezije",
-        "[тег RSS sport] Carlosu Alcarazu pobjednički trofej u Beču nakon lagane pobjede nad Australcem"
-      ]
-    },
-    "backlog": {
-      "total_size": 0,
-      "sources": {}
-    },
-    "published": {
-      "total": 2,
-      "ukraine_priority": 1,
-      "with_images": 1,
-      "text_only": 1,
-      "og_images_found": 0,
-      "sources": {
-        "Zadarski list": 2
-      }
-    },
-    "models_used": {
-      "gemini-3.6-flash": 1,
-      "gemini-3.5-flash-lite": 1
-    },
-    "models_by_task": {
-      "filter": "gemini-3.6-flash",
-      "translate": "gemini-3.5-flash-lite"
-    },
-    "model_attempts": [
-      {
-        "task": "filter",
-        "model": "gemini-3-flash-preview",
-        "outcome": "unavailable"
-      },
-      {
-        "task": "filter",
-        "model": "gemini-3.6-flash",
-        "outcome": "unavailable"
-      },
-      {
-        "task": "filter",
-        "model": "gemini-3.6-flash",
-        "outcome": "ok"
-      },
-      {
-        "task": "translate",
-        "model": "gemini-3.8-flash",
-        "outcome": "unavailable"
-      },
-      {
-        "task": "translate",
-        "model": "gemini-3.8-flash",
-        "outcome": "unavailable"
-      },
-      {
-        "task": "translate",
-        "model": "gemini-3.5-flash-lite",
-        "outcome": "ok"
-      }
-    ],
-    "exhausted_models": [],
-    "demoted_models": [],
-    "translate_budget_deferred": [
-      "gemini-3.6-flash"
-    ],
-    "gemini_region_blocked": false,
-    "errors_count": 0,
-    "gemini_retries": 4
-  },
-  {
     "timestamp": "2026-11-01 17:01:13",
     "execution_time": 36.7,
     "funnel": {
@@ -10342,5 +10235,102 @@
     "gemini_unavailable": false,
     "errors_count": 0,
     "gemini_retries": 1
+  },
+  {
+    "timestamp": "2026-11-10 17:01:27",
+    "execution_time": 50.4,
+    "funnel": {
+      "scraped_total": 35,
+      "scraped_by_source": {
+        "023": 10,
+        "Slobodna dalmacija": 15,
+        "Zadarski list": 10
+      },
+      "already_seen": 24,
+      "rejected_by_keywords": 4,
+      "rejected_by_rule": {
+        "тег RSS lifestyle": 2,
+        "тег RSS sport": 2
+      },
+      "unclassified_by_ai": 0,
+      "duplicates_removed_by_ai": 7,
+      "rejection_reasons_list": [
+        "• Klub gradskih zastupnika HDZ-DP-HSU traži od Tomaševića izvješće o smr → Побут інших міст (Загреб) | Сутності: HDZ-DP-HSU, Tomašević, Kristijan Josip Periš, Zagreb",
+        "• Pravobranitelj: Utvrditi odgovornosti u slučaju smrti pacijenta na Jan → Вже публікувалось (смерть пацієнта в Загребі) | Сутності: Darijo Jurišić, Kristian Josip Periš, Sveti Ivan, Ministarstvo zdravstva",
+        "• Muzejska zona u Zračnoj luci Franjo Tuđman osvojila srebrnu nagradu th → Побут інших міст (Загреб) | Сутності: Zračna luka Franjo Tuđman, Hrvatski povijesni muzej, Zagreb, the! Award",
+        "• Rubio: Gospodarski pritisak na Iran daje rezultate, vojna akcija nije  → Геоблок (події в Ірані та США) | Сутності: Marco Rubio, G7, Iran, Pariz, Donald Trump",
+        "• HTZ provodi adventsku kampanju na 11 tržišta → Реклама (туристична кампанія) | Сутності: Hrvatska turistička zajednica, Advent, Hrvatska",
+        "• Opatijske glazbene matineje: Tribine o klasičnoj glazbi uz izvedbu uži → Побут інших міст (Опатія) | Сутності: Opatija, Joseph Haydn, Dora Pejačević, Gustav Mahler",
+        "• Vrdoljakova tvrtka zatvara pogon u Belišću. Najavljuje sudske tužbe → Побут інших міст (Беліще) | Сутності: Livit, Ivan Vrdoljak, Belišće, Kombel, Ivana Jerbić"
+      ],
+      "rejected_by_reason": {
+        "Побут інших міст": 4,
+        "Вже публікувалось": 1,
+        "Геоблок": 1,
+        "Реклама": 1
+      },
+      "updates_marked": 0,
+      "already_rejected": 14,
+      "rejected_by_code_examples": [
+        "[тег RSS lifestyle] Zašto kruh u hladnjaku brže otvrdne i gdje ga je bolje čuvati",
+        "[тег RSS lifestyle] Kako zaštititi rajčice, paprike i cvijeće u posudama kad se noćna temperatura približi nuli",
+        "[тег RSS sport] NOVI DRŽAVNI PRVAK Mladi Luka Perica iz benkovačke “Sipe” pomeo konkurenciju u Puli!",
+        "[тег RSS sport] Sinner najavio povratak u prosincu, želi spreman dočekati Australian Open"
+      ]
+    },
+    "backlog": {
+      "total_size": 0,
+      "sources": {}
+    },
+    "published": {
+      "total": 1,
+      "ukraine_priority": 0,
+      "with_images": 1,
+      "text_only": 0,
+      "og_images_found": 0,
+      "sources": {
+        "023": 1
+      }
+    },
+    "models_used": {
+      "gemini-3.5-flash-lite": 2
+    },
+    "models_by_task": {
+      "filter": "gemini-3.5-flash-lite",
+      "translate": "gemini-3.5-flash-lite"
+    },
+    "model_attempts": [
+      {
+        "task": "filter",
+        "model": "gemini-3-flash-preview",
+        "outcome": "unavailable"
+      },
+      {
+        "task": "filter",
+        "model": "gemini-3.5-flash-lite",
+        "outcome": "ok"
+      },
+      {
+        "task": "translate",
+        "model": "gemini-3.8-flash",
+        "outcome": "unavailable"
+      },
+      {
+        "task": "translate",
+        "model": "gemini-3.5-flash-lite",
+        "outcome": "ok"
+      }
+    ],
+    "exhausted_models": [],
+    "demoted_models": [
+      "filter: gemini-3.6-flash"
+    ],
+    "translate_budget_deferred": [
+      "gemini-3.6-flash"
+    ],
+    "gemini_region_blocked": false,
+    "gemini_unavailable": false,
+    "errors_count": 0,
+    "gemini_retries": 2
   }
 ]
