@@ -1,109 +1,5 @@
 [
   {
-    "timestamp": "2026-11-01 08:01:05",
-    "execution_time": 331.6,
-    "funnel": {
-      "scraped_total": 35,
-      "scraped_by_source": {
-        "023": 10,
-        "Slobodna dalmacija": 15,
-        "Zadarski list": 10
-      },
-      "already_seen": 7,
-      "rejected_by_keywords": 10,
-      "rejected_by_rule": {
-        "URL /sport/": 5,
-        "sport": 1,
-        "košarkaši": 1,
-        "oglas": 1,
-        "тег RSS košarka": 1,
-        "тег RSS nogomet": 1
-      },
-      "unclassified_by_ai": 0,
-      "duplicates_removed_by_ai": 9,
-      "rejection_reasons_list": [
-        "• Blagdan je Svih svetih, ovo su tradicionalni hrvatski običaji na taj d → Вже публікувалось (Традиції та святкування Дня всіх святих вже в історії) | Сутності: Blagdan Svih svetih, Hrvatska, Dušni dan",
-        "• Katolička Crkva slavi sve kanonizirane svece, ali i one koji to nisu.  → Побут інших міст (Традиції свята на острові Корчула) | Сутності: Korčula, Lumbija, Blagdan Svih svetih",
-        "• Neobičan susret u Lopudskim vratima. Naletio na jato fan-fanova pa ulo → Побут інших міст (Локальний вилов риби біля острова Лопуд) | Сутності: Lopudska vrata, Domagoj Kulišić, fan-fan",
-        "• Što se mijenja u Međugorju? Vatikan poslao svog čovjeka, evo kakve ovl → Геоблок (Релігійні події у Боснії та Герцеговині) | Сутності: Međugorje, Vatikan, Francesco Cavina, Papa Lav XIV",
-        "• Danas moguća slaba kiša, u najvišem gorju susnježica i snijeg → Побут інших міст (Загальний прогноз погоди з акцентом на Рієку) | Сутності: DHMZ, Hrvatska, Rijeka, Velebit",
-        "• Nakon Straduna, evo subotnje špice u Uvali Lapad → Побут інших міст (Міський побут у Дубровнику) | Сутності: Dubrovnik, Stradun, Uvala Lapad",
-        "• Razlika između tuge i tuposti: kako anhedonija utječe na raspoloženje  → Світовий шум (Поради з психології щодо ангедонії) | Сутності: anhedonija, iStock, sezonska potištenost",
-        "• Anita Baturina, Mišina supruga s kojom je dobio sina Edija i kći Ivanu → Вже публікувалось (Спогади та реакція ексдружини після смерті Мішо Ковача) | Сутності: Anita Baturina, Mišo Kovač, Edi Kovač, Ivana Kovač",
-        "• Boninovo obasjano svijećama i ispunjeno cvjetnim aranžmanima → Побут інших міст (Облаштування цвинтаря у Дубровнику) | Сутності: groblje Boninovo, Dubrovnik, Blagdan Svih svetih"
-      ],
-      "rejected_by_reason": {
-        "Вже публікувалось": 2,
-        "Побут інших міст": 5,
-        "Геоблок": 1,
-        "Світовий шум": 1
-      },
-      "updates_marked": 0,
-      "already_rejected": 4,
-      "rejected_by_code_examples": [
-        "[URL /sport/] Jug nanio prvi poraz Solarisu, evo kako su završile druge utakmice 6. kola prvenstva",
-        "[sport] Dubrovnik potvrđuje kvalitetu života: ulaganja u sport i obrazovanje te bogat adventski program",
-        "[košarkaši] Ovako je govorio Mišo: ‘I telefonski imenik bi prodao u 100 tisuća primjeraka s mojom slikom, ali ka",
-        "[oglas] Sindikalist Dražen Jović: U privatnom sektoru nužna kontrola isplate plaća i veća pokrivenost kolekt",
-        "[URL /sport/] Prije 60 godina na Kantridi je tijekom treninga prestalo kucati srce riječke nogometne legende",
-        "[тег RSS košarka] VIDEO Mario Hezonja i Karlo Matković odigrali zapažene role u pobjedama Cavaliersa i Pelicansa",
-        "[URL /sport/] Meksička boksačka ikona pobjedom nad Francuzom Mbilijom u Rijadu osvojila novi WBC naslov",
-        "[URL /sport/] Mladen Devetak uoči Varaždina: “Moramo biti pravi od početka utakmice, čvrsti i agresivni”",
-        "[URL /sport/] Rijeka na Rujevici dočekuje momčad koju je dobila samo dvaput u posljednjih deset međusobnih susreta",
-        "[тег RSS nogomet] Talijanski mediji: “Profesor Luka je u svojim rukama držao ključeve pobjede Milana nad Interom”"
-      ]
-    },
-    "backlog": {
-      "total_size": 0,
-      "sources": {}
-    },
-    "published": {
-      "total": 3,
-      "ukraine_priority": 0,
-      "with_images": 3,
-      "text_only": 0,
-      "og_images_found": 3,
-      "sources": {
-        "023": 3
-      }
-    },
-    "models_used": {
-      "gemini-3.6-flash": 2
-    },
-    "models_by_task": {
-      "filter": "gemini-3.6-flash",
-      "translate": "gemini-3.6-flash"
-    },
-    "model_attempts": [
-      {
-        "task": "filter",
-        "model": "gemini-3-flash-preview",
-        "outcome": "unavailable"
-      },
-      {
-        "task": "filter",
-        "model": "gemini-3.6-flash",
-        "outcome": "ok"
-      },
-      {
-        "task": "translate",
-        "model": "gemini-3.8-flash",
-        "outcome": "unavailable"
-      },
-      {
-        "task": "translate",
-        "model": "gemini-3.6-flash",
-        "outcome": "ok"
-      }
-    ],
-    "exhausted_models": [],
-    "demoted_models": [],
-    "translate_budget_deferred": [],
-    "gemini_region_blocked": false,
-    "errors_count": 0,
-    "gemini_retries": 2
-  },
-  {
     "timestamp": "2026-11-01 09:01:09",
     "execution_time": 133.9,
     "funnel": {
@@ -10305,6 +10201,110 @@
     ],
     "exhausted_models": [],
     "demoted_models": [],
+    "translate_budget_deferred": [],
+    "gemini_region_blocked": false,
+    "gemini_unavailable": false,
+    "errors_count": 0,
+    "gemini_retries": 2
+  },
+  {
+    "timestamp": "2026-11-10 09:01:22",
+    "execution_time": 183.7,
+    "funnel": {
+      "scraped_total": 35,
+      "scraped_by_source": {
+        "023": 10,
+        "Slobodna dalmacija": 15,
+        "Zadarski list": 10
+      },
+      "already_seen": 19,
+      "rejected_by_keywords": 5,
+      "rejected_by_rule": {
+        "тег RSS sport": 3,
+        "košarkaške": 1,
+        "тег RSS košarka": 1
+      },
+      "unclassified_by_ai": 0,
+      "duplicates_removed_by_ai": 9,
+      "rejection_reasons_list": [
+        "• Ovaj video na TikToku otkrio koji su najopasniji kvartovi u Hrvatskoj; → Не за тематикою (Опитування на TikTok про небезпечні райони) | Сутності: TikTok, Задар, Crvene kuće, Hrvatska",
+        "• VIDEO/Jeste li vidjeli novo blagdansko osvjetljenje poviše Straduna? B → Побут інших міст (Нове новорічне освітлення в Дубровнику) | Сутності: Дубровник, Stradun, Facebook",
+        "• Čvor Rakitje ide u veliku rekonstrukciju: Radovi će trajati 540 dana,  → Побут інших міст (Реконструкція розв'язки біля Свети Неделі) | Сутності: HAC, Sveta Nedelja, Rakitje, Gip Pionir",
+        "• Aleksandar Stanković: O depri sam pričao u Lepoglavi, javio mi se lik  → Побут інших міст (Презентация книги Александара Станковича в Дубровнике) | Сутності: Aleksandar Stanković, Dubrovnik, Lazareti, F32",
+        "• SDP -ov rejting slabi, Možemo! im je sve bliže: Hoće li ljevica prije  → Не за тематикою (Падіння рейтингу партії СДП) | Сутності: SDP, HDZ, Promocija plus, CRO Demoskop",
+        "• Znanstvenici izdvojili 10 načina prehrane povezanih sa sporijim biološ → Світовий шум (Дослідження німецьких вчених про харчування) | Сутності: Nature Communications, DZNE, Njemačka",
+        "• Studenti žele da im se rad uvrsti u staž, da imaju pravo na bolovanje. → Побут інших міст (Ініціатива студентів у Дубровнику) | Сутності: Dubrovnik, Hrvatski studentski zbor",
+        "• Francuska tvrdi da iza nezapamćenog hakerskog napada na zamrzivače u s → Геоблок (Кібератака в супермаркетах Франції) | Сутності: Francuska, IRGC, Jean-Noël Barrot",
+        "• Sedam dana do sidrene cijene: što se od rujna promijenilo, tko bi moga → Вже публікувалось (Перенесення терміну запровадження цін) | Сутності: Vlada, Narodne novine, sidrena cijena"
+      ],
+      "rejected_by_reason": {
+        "Не за тематикою": 2,
+        "Побут інших міст": 4,
+        "Світовий шум": 1,
+        "Геоблок": 1,
+        "Вже публікувалось": 1
+      },
+      "updates_marked": 0,
+      "already_rejected": 11,
+      "rejected_by_code_examples": [
+        "[тег RSS sport] GODINE SU SAMO BROJ! Natalija Gulin pomela dvostruko mlađu konkurenciju i zasjela na sam VRH SVIJETA",
+        "[тег RSS sport] Veliki uspjeh PK Zadar u Zagrebu; Pet medalja na međunarodnom mitingu „Mladost 2026.“",
+        "[тег RSS sport] Ulaznice za Cro Copa u HNK Zadar planule za šest sati, a organizator ovaj tjedan ponovno otvara prij",
+        "[košarkaške] Mijatović objavio popis: Božić, Mavra, konačno i Mazalin, ali i najbolji dvojac zadarskog starta sez",
+        "[тег RSS košarka] Zubac i Hezonja poraženi, Matkovićevi Pelicansi doživjeli pravi debakl, a Wembanyama briljirao"
+      ]
+    },
+    "backlog": {
+      "total_size": 3,
+      "sources": {
+        "023": 3
+      }
+    },
+    "published": {
+      "total": 3,
+      "ukraine_priority": 0,
+      "with_images": 3,
+      "text_only": 0,
+      "og_images_found": 2,
+      "sources": {
+        "023": 2,
+        "Slobodna dalmacija": 1
+      }
+    },
+    "models_used": {
+      "gemini-3.5-flash-lite": 1,
+      "gemini-3.6-flash": 1
+    },
+    "models_by_task": {
+      "filter": "gemini-3.5-flash-lite",
+      "translate": "gemini-3.6-flash"
+    },
+    "model_attempts": [
+      {
+        "task": "filter",
+        "model": "gemini-3.6-flash",
+        "outcome": "unavailable"
+      },
+      {
+        "task": "filter",
+        "model": "gemini-3.5-flash-lite",
+        "outcome": "ok"
+      },
+      {
+        "task": "translate",
+        "model": "gemini-3.8-flash",
+        "outcome": "unavailable"
+      },
+      {
+        "task": "translate",
+        "model": "gemini-3.6-flash",
+        "outcome": "ok"
+      }
+    ],
+    "exhausted_models": [],
+    "demoted_models": [
+      "filter: gemini-3-flash-preview"
+    ],
     "translate_budget_deferred": [],
     "gemini_region_blocked": false,
     "gemini_unavailable": false,
