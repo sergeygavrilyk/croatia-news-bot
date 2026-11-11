@@ -1,111 +1,5 @@
 [
   {
-    "timestamp": "2026-11-02 11:01:14",
-    "execution_time": 298.0,
-    "funnel": {
-      "scraped_total": 35,
-      "scraped_by_source": {
-        "023": 10,
-        "Slobodna dalmacija": 15,
-        "Zadarski list": 10
-      },
-      "already_seen": 22,
-      "rejected_by_keywords": 5,
-      "rejected_by_rule": {
-        "sportaše": 1,
-        "košarkaši": 1,
-        "košarkaše": 1,
-        "URL /sport/": 1,
-        "igraču": 1
-      },
-      "unclassified_by_ai": 0,
-      "duplicates_removed_by_ai": 5,
-      "rejection_reasons_list": [
-        "• Objavljivao fotografiju osuđenika za ratni zločin, reagirala policija → Побут інших міст (Оточац) | Сутності: Оточац, поліція, соцмережі",
-        "• Ramajana: Spektakularna adaptacija svjetskog epa stiže u Zagreb → Побут інших міст (Загреб) | Сутності: Загреб, Рамаяна, кінотеатр",
-        "• Šibensko-kninska županija ima trojicu poreznih dužnika koji su ušli u  → Побут інших міст (Шибеник) | Сутності: Шибеник, податкова, боржники",
-        "• U utorak tijekom jutra obustava pitke vode u Bribiru → Побут інших міст (Брибір) | Сутності: Брибір, вода, ремонт",
-        "• Queens of the Stone Age po prvi put na pozornici pulske Arene → Побут інших міст (Пула) | Сутності: Пула, концерт, Арена"
-      ],
-      "rejected_by_reason": {
-        "Побут інших міст": 5
-      },
-      "updates_marked": 0,
-      "already_rejected": 16,
-      "rejected_by_code_examples": [
-        "[sportaše] Ekonomsko-birotehnička i trgovačka škola Zadar dobila novi sjaj; Uređene učionice i sportska dvorana",
-        "[košarkaši] Marsonia prekinula pobjednički niz Jazina, Puntamika poražena na domaćem parketu",
-        "[košarkaše] Euroligaški div čeka Zadrane: Modrićeva momčad nema što izgubiti, a može dobiti jako puno",
-        "[URL /sport/] Okupila se hrvatska rukometna reprezentacija, slijede kvalifikacije za EURO 2028.",
-        "[igraču] Sreća se osmjehnula igraču u Moravicama. Osvojio je Joker 5 u iznosu od 8.000 eura"
-      ]
-    },
-    "backlog": {
-      "total_size": 4,
-      "sources": {
-        "Slobodna dalmacija": 3,
-        "Zadarski list": 1
-      }
-    },
-    "published": {
-      "total": 2,
-      "ukraine_priority": 0,
-      "with_images": 2,
-      "text_only": 0,
-      "og_images_found": 2,
-      "sources": {
-        "023": 2
-      }
-    },
-    "models_used": {
-      "gemini-3.5-flash-lite": 2
-    },
-    "models_by_task": {
-      "filter": "gemini-3.5-flash-lite",
-      "translate": "gemini-3.5-flash-lite"
-    },
-    "model_attempts": [
-      {
-        "task": "filter",
-        "model": "gemini-3-flash-preview",
-        "outcome": "unavailable"
-      },
-      {
-        "task": "filter",
-        "model": "gemini-3.6-flash",
-        "outcome": "unavailable"
-      },
-      {
-        "task": "filter",
-        "model": "gemini-3.6-flash",
-        "outcome": "unavailable"
-      },
-      {
-        "task": "filter",
-        "model": "gemini-3.5-flash-lite",
-        "outcome": "ok"
-      },
-      {
-        "task": "translate",
-        "model": "gemini-3.8-flash",
-        "outcome": "unavailable"
-      },
-      {
-        "task": "translate",
-        "model": "gemini-3.5-flash-lite",
-        "outcome": "ok"
-      }
-    ],
-    "exhausted_models": [],
-    "demoted_models": [],
-    "translate_budget_deferred": [
-      "gemini-3.6-flash"
-    ],
-    "gemini_region_blocked": false,
-    "errors_count": 1,
-    "gemini_retries": 4
-  },
-  {
     "timestamp": "2026-11-02 12:01:25",
     "execution_time": 403.3,
     "funnel": {
@@ -10302,5 +10196,112 @@
     "gemini_unavailable": false,
     "errors_count": 0,
     "gemini_retries": 0
+  },
+  {
+    "timestamp": "2026-11-11 12:01:17",
+    "execution_time": 312.8,
+    "funnel": {
+      "scraped_total": 35,
+      "scraped_by_source": {
+        "023": 10,
+        "Slobodna dalmacija": 15,
+        "Zadarski list": 10
+      },
+      "already_seen": 23,
+      "rejected_by_keywords": 1,
+      "rejected_by_rule": {
+        "oglas": 1
+      },
+      "unclassified_by_ai": 0,
+      "duplicates_removed_by_ai": 10,
+      "rejection_reasons_list": [
+        "• UPUZ-HR: Potrebno je utvrditi sve okolnosti nemilog događaja u Jankomi → Побут інших міст (Загреб) | Сутності: UPUZ-HR, Psihijatrijska bolnica Sveti Ivan, Jankomir, Kristian Josip Periš",
+        "• Prvi ovogodišnji suhi norveški bakalar stigao je u prodaju, a kilogram → Побут інших міст (Шибеник) | Сутності: Šibenik, N1, bakalar, Norveška",
+        "• Vrgorac je izgradio 12 stanova, Osijek gradi 206, a Dubrovnik? Nula! → Побут інших міст (Вргорац, Осієк, Дубровник) | Сутності: Vrgorac, Osijek, Dubrovnik, SDP",
+        "• Zračna luka Rijeka zabilježila najveći porast putničkog prometa. I dal → Не за тематикою (Статистика аеропортів Хорватії) | Сутності: DZS, Split, Dubrovnik, Zagreb, Zadar",
+        "• Objavio gradonačelnik Franković: oni će zagrijati Stradun na ovogodišn → Побут інших міст (Дубровник) | Сутності: Mato Franković, Gipsy Kings, Stradun, Dubrovnik",
+        "• Stanoviti Mihail želi posijati paniku po Europi. Sad je natjerao Itali → Геоблок (Італія) | Сутності: Italija, Giuseppe Valditara, La7, Mihail",
+        "• Lopov se namjerio na odojke: Iz štale u Gračacu nestalo šest malih svi → Вже публікувалось (Крайна одоjкiв у Грачацу) | Сутності: Gračac, Zadar, Općinsko državno odvjetništvo",
+        "• Zajc u vašem gradu – budimo zajedno: kazalište koje povezuje generacij → Побут інших міст (Рієка) | Сутності: HNK Ivana pl. Zajca, Rijeka",
+        "• Šest zlata, srebro i titula najboljeg: Riječki chef Vehid Šaldić osvoj → Геоблок (Албанія) | Сутності: Vehid Šaldić, Tirana, HKS, Gastro ALB",
+        "• Wayne Rooney ulazi u britanski reality show: Uprihodit će 800 tisuća f → Світовий шум (Шоу-бізнес) | Сутності: Wayne Rooney, Coleen, Manchester United, Australija"
+      ],
+      "rejected_by_reason": {
+        "Побут інших міст": 5,
+        "Не за тематикою": 1,
+        "Геоблок": 2,
+        "Вже публікувалось": 1,
+        "Світовий шум": 1
+      },
+      "updates_marked": 0,
+      "already_rejected": 12,
+      "rejected_by_code_examples": [
+        "[oglas] Kliknuo je na oglas i ostao bez 17.250 eura! Obećali su mu bogatstvo, a evo kako su ga prevarili"
+      ]
+    },
+    "backlog": {
+      "total_size": 3,
+      "sources": {
+        "Slobodna dalmacija": 1,
+        "023": 2
+      }
+    },
+    "published": {
+      "total": 3,
+      "ukraine_priority": 0,
+      "with_images": 3,
+      "text_only": 0,
+      "og_images_found": 2,
+      "sources": {
+        "Slobodna dalmacija": 1,
+        "023": 2
+      }
+    },
+    "models_used": {
+      "gemini-3.5-flash-lite": 2
+    },
+    "models_by_task": {
+      "filter": "gemini-3.5-flash-lite",
+      "translate": "gemini-3.5-flash-lite"
+    },
+    "model_attempts": [
+      {
+        "task": "filter",
+        "model": "gemini-3-flash-preview",
+        "outcome": "unavailable"
+      },
+      {
+        "task": "filter",
+        "model": "gemini-3.6-flash",
+        "outcome": "unavailable"
+      },
+      {
+        "task": "filter",
+        "model": "gemini-3.5-flash-lite",
+        "outcome": "ok"
+      },
+      {
+        "task": "translate",
+        "model": "gemini-3.8-flash",
+        "outcome": "unavailable"
+      },
+      {
+        "task": "translate",
+        "model": "gemini-3.6-flash",
+        "outcome": "unavailable"
+      },
+      {
+        "task": "translate",
+        "model": "gemini-3.5-flash-lite",
+        "outcome": "ok"
+      }
+    ],
+    "exhausted_models": [],
+    "demoted_models": [],
+    "translate_budget_deferred": [],
+    "gemini_region_blocked": false,
+    "gemini_unavailable": false,
+    "errors_count": 0,
+    "gemini_retries": 4
   }
 ]
