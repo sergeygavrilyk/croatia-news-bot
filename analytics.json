@@ -1,104 +1,5 @@
 [
   {
-    "timestamp": "2026-11-01 20:01:10",
-    "execution_time": 224.5,
-    "funnel": {
-      "scraped_total": 35,
-      "scraped_by_source": {
-        "023": 10,
-        "Slobodna dalmacija": 15,
-        "Zadarski list": 10
-      },
-      "already_seen": 15,
-      "rejected_by_keywords": 8,
-      "rejected_by_rule": {
-        "тег RSS lifestyle": 5,
-        "sporta": 1,
-        "тег RSS sport": 1,
-        "тег RSS nogomet": 1
-      },
-      "unclassified_by_ai": 0,
-      "duplicates_removed_by_ai": 9,
-      "rejection_reasons_list": [
-        "• Britanski premijer “otvoren” za službenu ispriku zbog ropstva, no iskl → Геоблок (Політика Великої Британії щодо колоніального минулого) | Сутності: Andy Burnham, Commonwealth, Velika Britanija",
-        "• Krsnu slavu imaju i Hrvati katolici, ne samo Srbi. Zbog krsne slave če → Не за тематикою (Етнографічна стаття про релігійні звичаї) | Сутності: Hrvati katolici, krsna slava, dolina Neretve",
-        "• UN traži istragu smrti svog djelatnika kojeg su zatočili hutisti → Геоблок (Смерть співробітника ООН у Ємені) | Сутності: UN, Mohamad El Šami, hutisti",
-        "• Mural “Bare Baretu”: Boris naslikao posvetu svom rođaku Goranu → Побут інших міст (Створення муралу в Загребі) | Сутності: Boris Bare, Goran Bare, Zagreb",
-        "• Nadbiskup Uzinić na misi citirao stihove Miša Kovača: ‘Ova pjesma saži → Вже публікувалось (Реакція на смерть Мішо Ковача, який є в історії) | Сутності: Mate Uzinić, Mišo Kovač, Rijeka",
-        "• Nova knjiga Franje Deranje nudi mračne zaplete, ali i razmišljanja o g → Побут інших міст (Презентація книги в Цриквениці) | Сутності: Franjo Deranja, Crikvenica, Braća po mlijeku",
-        "• Otvoren natječaj za salon crno-bijele fotografije “Fernando Soprano” → Побут інших міст (Фотоконкурс у Рієці) | Сутності: Fernando Soprano, Rijeka, Hrvatski fotosavez",
-        "• STIFF traži volontere → Побут інших міст (Пошук волонтерів для фестивалю в Рієці) | Сутності: STIFF, Rijeka, Art-kino Croatia",
-        "• Zaljubljenike u pisanu riječ okupile književne prevoditeljice Snježana → Побут інших міст (Літературний захід на Малому Лошині) | Сутності: Snježana Husić, Ana Badurina, Mali Lošinj"
-      ],
-      "rejected_by_reason": {
-        "Геоблок": 2,
-        "Не за тематикою": 1,
-        "Побут інших міст": 5,
-        "Вже публікувалось": 1
-      },
-      "updates_marked": 1,
-      "already_rejected": 9,
-      "rejected_by_code_examples": [
-        "[тег RSS lifestyle] Kroasani s makom od gotovog tijesta za pizzu: brza zamjena za makovnjaču",
-        "[тег RSS lifestyle] Na kojoj rešetki peći pizzu, kruh i lazanje da tijesto ne ostane gnjecavo",
-        "[тег RSS lifestyle] Kako pahuljicama čilija odvratiti štakore i miševe od hranilice za ptice",
-        "[тег RSS lifestyle] Kako gulilicom za povrće brzo narezati kupus za salatu i zašto mu dodati vodu",
-        "[тег RSS lifestyle] Koliko dugo smijete čuvati sirovo, dimljeno i suho meso u hladnjaku i zamrzivaču",
-        "[sporta] Tri kluba obilježila 8. kolo - uvjerljivi Velebit, Abeceda i Sabunjar!",
-        "[тег RSS sport] Odbojkaši Rijeke velikim preokretom u Rovinju upisali gostujuću pobjedu",
-        "[тег RSS nogomet] Osijek uvjerljiv protiv Lokomotive na kišnom Maksimiru"
-      ]
-    },
-    "backlog": {
-      "total_size": 0,
-      "sources": {}
-    },
-    "published": {
-      "total": 3,
-      "ukraine_priority": 0,
-      "with_images": 3,
-      "text_only": 0,
-      "og_images_found": 0,
-      "sources": {
-        "Slobodna dalmacija": 2,
-        "Zadarski list": 1
-      }
-    },
-    "models_used": {
-      "gemini-3-flash-preview": 1,
-      "gemini-3.5-flash-lite": 1
-    },
-    "models_by_task": {
-      "filter": "gemini-3-flash-preview",
-      "translate": "gemini-3.5-flash-lite"
-    },
-    "model_attempts": [
-      {
-        "task": "filter",
-        "model": "gemini-3-flash-preview",
-        "outcome": "ok"
-      },
-      {
-        "task": "translate",
-        "model": "gemini-3.8-flash",
-        "outcome": "unavailable"
-      },
-      {
-        "task": "translate",
-        "model": "gemini-3.5-flash-lite",
-        "outcome": "ok"
-      }
-    ],
-    "exhausted_models": [],
-    "demoted_models": [],
-    "translate_budget_deferred": [
-      "gemini-3.6-flash"
-    ],
-    "gemini_region_blocked": false,
-    "errors_count": 0,
-    "gemini_retries": 1
-  },
-  {
     "timestamp": "2026-11-02 08:01:12",
     "execution_time": 331.4,
     "funnel": {
@@ -10337,5 +10238,110 @@
     "gemini_unavailable": false,
     "errors_count": 0,
     "gemini_retries": 1
+  },
+  {
+    "timestamp": "2026-11-11 08:01:22",
+    "execution_time": 294.3,
+    "funnel": {
+      "scraped_total": 35,
+      "scraped_by_source": {
+        "023": 10,
+        "Slobodna dalmacija": 15,
+        "Zadarski list": 10
+      },
+      "already_seen": 7,
+      "rejected_by_keywords": 3,
+      "rejected_by_rule": {
+        "košarkaškom": 1,
+        "igraču": 1,
+        "sport": 1
+      },
+      "unclassified_by_ai": 0,
+      "duplicates_removed_by_ai": 15,
+      "rejection_reasons_list": [
+        "• Orban gradio karijeru na borbi protiv migranata, njegov mlađi brat na  → Геоблок (Події в Угорщині не стосуються українців у Хорватіji) | Сутності: Aron Orban, Viktor Orban, Budimpešta, Mađarska",
+        "• Potpisuju se novi međuvlasnički ugovori, za nepoštivanje kućnog reda u → Вже публікувалось (Дублює тему нових угод для власників квартир з HISTORY) | Сутності: Zakon o upravljanju zgradama, Hrvatska, međuvlasnički ugovori",
+        "• Nije sve samo šala: Učenici iz Crikvenice pokrenuli kampanju protiv na → Побут інших міст (Подія у Цриквениці) | Сутності: Crikvenica, Srednja škola dr. Antuna Barca, CARING 2.0",
+        "• Stigla je promjena vremena: Dalmacija se danas grije na 20 °C, pomorci → Дубль (Повністю дублює інформацію про погоду з ID 21) | Сутності: Dalmacija, Jadran, DHMZ",
+        "• Već 25 godina Opatija ima gradsko vijeće u kojem glavnu riječ vode – d → Побут інших міст (Подія в Опатії) | Сутності: Opatija, Dječje gradsko vijeće, Društvo Naša djeca",
+        "• Burna povijest ‘Lava‘, jedinog kitolovca na Jadranu: svašta je prošao, → Світовий шум (Історична розповідь про старий норвезький корабель) | Сутності: Lav, Jadran, Lošinj, Norveška",
+        "• Kraj priče oko državnog tajnika u MUP-u. Penava tražio smjenu, Plenkov → Вже публікувалось (Дублює попередні політичні новини та реакції уряду) | Сутності: Domovinski pokret, Tomislav Bilandžić, Andrej Plenković, Ivan Penava",
+        "• Jasen Boko: Odisej je plovio Jadranom, stigao do Mljeta, a na Korčuli  → Побут інших міст (Літературний вечір у Дубровнику) | Сутності: Jasen Boko, Dubrovnik, Mljet, Korčula",
+        "• U Hrvatskoj preko tisuću ljudi želi posvojiti dijete, ali svaki deseti → Вже публікувалось (Інформація про усиновлення вже є в публікаціях) | Сутності: Ministarstvo rada, Margareta Mađerić, Hrvatska, posvojenje",
+        "• Potres s epicentrom u Crnoj Gori osjetio se i na dubrovačkom području → Геоблок (Землетрус у Чорногорії) | Сутності: EMSC, Crna Gora, Bileća, Dubrovnik",
+        "• Diljem Europe padaju cijene hrane, u Hrvatskoj – rastu. Zašto? → Вже публікувалось (Тема інфляції та цін на їжу вже була в історії) | Сутності: DZS, Eurostat, Hrvatska, EU",
+        "• Nova invazivna vrsta viđena na Mljetu → Побут інших міст (Новина з Млєту) | Сутності: Nacionalni park Mljet, Hierodula transcaucasica, Mljet",
+        "• Neobičan potez. Zbog sukoba oko Dijane Zadravec bolnica razmatra razdv → Вже публікувалось (Продовження конфлікту в загребській лікарні) | Сутності: KBC Sestara milosrdnica, Dijana Zadravec, Zagreb, Klinika za tumore",
+        "• Rijetka guska iz sjevernih krajeva Europe fotografirana na Rabu. Evo o → Побут інших міст (Спостереження за птахом на Рабі) | Сутності: Lopar, Rab, Branta leucopsis",
+        "• Od kultnog »Ronda« do novog filma dobitnika Zlatne palme: Zagreb Film  → Побут інших міст (Кінофестиваль у Загребі) | Сутності: Zagreb Film Festival, Zagreb, Zlatna kolica"
+      ],
+      "rejected_by_reason": {
+        "Геоблок": 2,
+        "Вже публікувалось": 5,
+        "Побут інших міст": 6,
+        "Дубль": 1,
+        "Світовий шум": 1
+      },
+      "updates_marked": 0,
+      "already_rejected": 5,
+      "rejected_by_code_examples": [
+        "[košarkaškom] Grad Zadar KK Zadru isplaćuje još milijun eura, novac ide za dospjele obveze kluba",
+        "[igraču] Jedan listić vrijedi gotovo 1,7 milijuna eura: provjerite jesu li ovo vaši brojevi",
+        "[sport] Sedammetarski sveti Marin krasi Lopar: Na muralu kleše tri tornja San Marina"
+      ]
+    },
+    "backlog": {
+      "total_size": 5,
+      "sources": {
+        "023": 5
+      }
+    },
+    "published": {
+      "total": 3,
+      "ukraine_priority": 0,
+      "with_images": 3,
+      "text_only": 0,
+      "og_images_found": 3,
+      "sources": {
+        "023": 3
+      }
+    },
+    "models_used": {
+      "gemini-3.5-flash-lite": 1,
+      "gemini-3.8-flash": 1
+    },
+    "models_by_task": {
+      "filter": "gemini-3.5-flash-lite",
+      "translate": "gemini-3.8-flash"
+    },
+    "model_attempts": [
+      {
+        "task": "filter",
+        "model": "gemini-3-flash-preview",
+        "outcome": "unavailable"
+      },
+      {
+        "task": "filter",
+        "model": "gemini-3.6-flash",
+        "outcome": "unavailable"
+      },
+      {
+        "task": "filter",
+        "model": "gemini-3.5-flash-lite",
+        "outcome": "ok"
+      },
+      {
+        "task": "translate",
+        "model": "gemini-3.8-flash",
+        "outcome": "ok"
+      }
+    ],
+    "exhausted_models": [],
+    "demoted_models": [],
+    "translate_budget_deferred": [],
+    "gemini_region_blocked": false,
+    "gemini_unavailable": false,
+    "errors_count": 0,
+    "gemini_retries": 2
   }
 ]
