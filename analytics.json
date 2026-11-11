@@ -1,121 +1,5 @@
 [
   {
-    "timestamp": "2026-11-02 09:01:15",
-    "execution_time": 338.2,
-    "funnel": {
-      "scraped_total": 35,
-      "scraped_by_source": {
-        "023": 10,
-        "Slobodna dalmacija": 15,
-        "Zadarski list": 10
-      },
-      "already_seen": 16,
-      "rejected_by_keywords": 4,
-      "rejected_by_rule": {
-        "sportaše": 1,
-        "тег RSS sport": 1,
-        "košarkaši": 1,
-        "košarkaše": 1
-      },
-      "unclassified_by_ai": 0,
-      "duplicates_removed_by_ai": 9,
-      "rejection_reasons_list": [
-        "• Bugarska izabrala prvu predsjednicu Ilijanu Jotovu → Геоблок (Вибори у Болгарії) | Сутності: Ilijana Jotova, Bugarska, Andrej Gjurov",
-        "• U Perzijskom zaljevu projektilom pogođen LNG tanker. Na njemu su i tro → Геоблок (Обстріл танкера в Перській затоці) | Сутності: Perzijski zaljev, Nakilat, Siniša Orlić",
-        "• Usred noći planula kuća na Mljetu, u njoj se nalazila žena. Vatrogasci → Побут інших міст (Пожежа в будинку на Млєті) | Сутності: Mljet, Prožurska Luka, JVP Mljet",
-        "• Objavljeni detalji oproštaja od Miše Kovača; Ulaz na Poljud besplatan  → Вже публікувалось (Подробиці похорону Мішо Ковача) | Сутності: Mišo Kovač, Poljud, Mirogoj, Split",
-        "• Predstavljena knjiga ‘Ponos i prkos‘ Mata Miša Morettija posvećena civ → Побут інших міст (Презентація книги в Цавтаті) | Сутності: Mato Mišo Moretti, Cavtat, Konavle",
-        "• USKOK opet na terenu; Uhićenja i pretresi u Zagrebu, Osijeku i Krapins → Дубль (Дубль новини про затримання USKOK) | Сутності: USKOK, Zagreb, Osijek",
-        "• Nakon 35 godina završava mirovna misija UN-a u Zapadnoj Sahari. Nije u → Геоблок (Завершення місії ООН у Західній Сахарі) | Сутності: UN, Zapadna Sahara, MINURSO, Maroko",
-        "• Kako neki duguju milijune, a mali poduzetnici zbog nekoliko stotina eu → Вже публікувалось (Коментар щодо списку податкових боржників) | Сутності: Udruga Glas poduzetnika, Porezna uprava, Ministarstvo financija",
-        "• Sinoć je na Gradskom groblju u Gospiću služena sveta misa povodom blad → Побут інших міст (Меса на цвинтарі в Ґоспичі) | Сутності: Gospić, Marko Maglić, Gradsko groblje"
-      ],
-      "rejected_by_reason": {
-        "Геоблок": 3,
-        "Побут інших міст": 3,
-        "Вже публікувалось": 2,
-        "Дубль": 1
-      },
-      "updates_marked": 0,
-      "already_rejected": 9,
-      "rejected_by_code_examples": [
-        "[sportaše] Ekonomsko-birotehnička i trgovačka škola Zadar dobila novi sjaj; Uređene učionice i sportska dvorana",
-        "[тег RSS sport] Ivan Nekić i Vice Radonić iz Beča donijeli dva zlata za zadarski Ares – Diabolik i hrvatsku policiju",
-        "[košarkaši] Marsonia prekinula pobjednički niz Jazina, Puntamika poražena na domaćem parketu",
-        "[košarkaše] Euroligaški div čeka Zadrane: Modrićeva momčad nema što izgubiti, a može dobiti jako puno"
-      ]
-    },
-    "backlog": {
-      "total_size": 2,
-      "sources": {
-        "Zadarski list": 1,
-        "023": 1
-      }
-    },
-    "published": {
-      "total": 3,
-      "ukraine_priority": 0,
-      "with_images": 3,
-      "text_only": 0,
-      "og_images_found": 1,
-      "sources": {
-        "Zadarski list": 2,
-        "023": 1
-      }
-    },
-    "models_used": {
-      "gemini-3.6-flash": 1,
-      "gemini-3.5-flash-lite": 1
-    },
-    "models_by_task": {
-      "filter": "gemini-3.6-flash",
-      "translate": "gemini-3.5-flash-lite"
-    },
-    "model_attempts": [
-      {
-        "task": "filter",
-        "model": "gemini-3-flash-preview",
-        "outcome": "unavailable"
-      },
-      {
-        "task": "filter",
-        "model": "gemini-3.6-flash",
-        "outcome": "ok"
-      },
-      {
-        "task": "translate",
-        "model": "gemini-3.8-flash",
-        "outcome": "unavailable"
-      },
-      {
-        "task": "translate",
-        "model": "gemini-3.8-flash",
-        "outcome": "unavailable"
-      },
-      {
-        "task": "translate",
-        "model": "gemini-3.6-flash",
-        "outcome": "unavailable"
-      },
-      {
-        "task": "translate",
-        "model": "gemini-3.6-flash",
-        "outcome": "unavailable"
-      },
-      {
-        "task": "translate",
-        "model": "gemini-3.5-flash-lite",
-        "outcome": "ok"
-      }
-    ],
-    "exhausted_models": [],
-    "demoted_models": [],
-    "translate_budget_deferred": [],
-    "gemini_region_blocked": false,
-    "errors_count": 0,
-    "gemini_retries": 5
-  },
-  {
     "timestamp": "2026-11-02 10:01:20",
     "execution_time": 150.1,
     "funnel": {
@@ -10349,5 +10233,92 @@
     "gemini_unavailable": false,
     "errors_count": 0,
     "gemini_retries": 2
+  },
+  {
+    "timestamp": "2026-11-11 10:01:17",
+    "execution_time": 147.0,
+    "funnel": {
+      "scraped_total": 35,
+      "scraped_by_source": {
+        "023": 10,
+        "Slobodna dalmacija": 15,
+        "Zadarski list": 10
+      },
+      "already_seen": 21,
+      "rejected_by_keywords": 4,
+      "rejected_by_rule": {
+        "oglas": 1,
+        "тег RSS nogomet": 1,
+        "тег RSS sport": 1,
+        "тег RSS košarka": 1
+      },
+      "unclassified_by_ai": 0,
+      "duplicates_removed_by_ai": 6,
+      "rejection_reasons_list": [
+        "• Cemex nastavlja partnerstvo s Eko školama iz Kaštela i Solina → Побут інших міст (Каштела та Солін) | Сутності: Cemex Hrvatska, Kaštela, Solin, Eko škole",
+        "• Pulska austrougarska palača postaje oaza knjiga na 32. Sa(n)jam knjige → Побут інших міст (Пула) | Сутності: Sa(n)jam knjige u Istri, Pula, Dom hrvatskih branitelja",
+        "• Muzej Gacke okončao još jedan program → Побут інших міст (Оточац) | Сутності: Muzej Gacke, Otočac, Osnovna škola Otočac",
+        "• Vatrogasci otkrili detalje o požaru crkve u Kupjaku: “Učinili smo sve  → Побут інших міст (Куп'як) | Сутності: DVD Ravna Gora, Kupjak, Crkva Svetog Vida",
+        "• Dean i Damjan iz Rijeke žele živjeti. Čim su navršili 21 godinu, vrata → Побут інших міст (Рієка) | Сутності: Dean, Damjan, Rijeka, Cerebralna paraliza",
+        "• Nakon raspuštanja, HDZ Otočac dobio povjerenicu Nadu Rogić → Побут інших міст (Оточац) | Сутності: HDZ Otočac, Nada Rogić, Ličko-senjska županija"
+      ],
+      "rejected_by_reason": {
+        "Побут інших міст": 6
+      },
+      "updates_marked": 1,
+      "already_rejected": 14,
+      "rejected_by_code_examples": [
+        "[oglas] Oglas iz snova u Hrvatskoj; Nude 2600 eura neto plaće, božićnicu, uskrsnicu i poručuju da je vikend ",
+        "[тег RSS nogomet] Davor Šuker dobio veliko priznanje u Meksiku. Uvršten je među nogometne legende",
+        "[тег RSS sport] Noskova svladala Coco Gauff za polufinale WTA Finala",
+        "[тег RSS košarka] Boston Celticsi kanonadom trica došli do uvjerljive pobjede u Philadelphiji"
+      ]
+    },
+    "backlog": {
+      "total_size": 5,
+      "sources": {
+        "023": 5
+      }
+    },
+    "published": {
+      "total": 3,
+      "ukraine_priority": 0,
+      "with_images": 3,
+      "text_only": 0,
+      "og_images_found": 3,
+      "sources": {
+        "023": 3
+      }
+    },
+    "models_used": {
+      "gemini-3.5-flash-lite": 1,
+      "gemini-3.8-flash": 1
+    },
+    "models_by_task": {
+      "filter": "gemini-3.5-flash-lite",
+      "translate": "gemini-3.8-flash"
+    },
+    "model_attempts": [
+      {
+        "task": "filter",
+        "model": "gemini-3.5-flash-lite",
+        "outcome": "ok"
+      },
+      {
+        "task": "translate",
+        "model": "gemini-3.8-flash",
+        "outcome": "ok"
+      }
+    ],
+    "exhausted_models": [],
+    "demoted_models": [
+      "filter: gemini-3-flash-preview",
+      "filter: gemini-3.6-flash"
+    ],
+    "translate_budget_deferred": [],
+    "gemini_region_blocked": false,
+    "gemini_unavailable": false,
+    "errors_count": 0,
+    "gemini_retries": 0
   }
 ]
