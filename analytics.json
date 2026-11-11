@@ -1,121 +1,5 @@
 [
   {
-    "timestamp": "2026-11-02 17:01:16",
-    "execution_time": 216.2,
-    "funnel": {
-      "scraped_total": 35,
-      "scraped_by_source": {
-        "023": 10,
-        "Slobodna dalmacija": 15,
-        "Zadarski list": 10
-      },
-      "already_seen": 19,
-      "rejected_by_keywords": 8,
-      "rejected_by_rule": {
-        "тег RSS lifestyle": 2,
-        "sponzori": 1,
-        "sporta": 1,
-        "sportu": 1,
-        "тег RSS sport": 2,
-        "igrača": 1
-      },
-      "unclassified_by_ai": 0,
-      "duplicates_removed_by_ai": 6,
-      "rejection_reasons_list": [
-        "• Maro Kapović: U DPDS-u smo ponosni što prvi nakon 450 godina obnavljam → Побут інших міст (Дубровник) | Сутності: Maro Kapović, DPDS, Drezvenik, Dubrovnik",
-        "• Sindikat zagrebačke Čistoće: Odluka Vrhovnog suda ne mijenja naše prio → Побут інших міст (Загреб) | Сутності: Čistoća, Vrhovni sud, Zagreb, Sindikat",
-        "• Britanski melankolični indie velikani Tindersticks najavili novi album → Побут інших міст (Загреб) | Сутності: Tindersticks, Lisinski, Zagreb, Dog Roses",
-        "• Ružić: Problem oko logopeda sigurno će se riješi → Вже публікувалось (коментар політика) | Сутності: Alen Ružić, SDP, Anita Curiš Krok, logopedi",
-        "• Male sredine u Hrvatskoj mogle bi ostati bez ljekarni, brojke otkrivaj → Світовий шум | Сутності: Hrvatska, ljekarne, EU, starije stanovništvo",
-        "• Milanović uručio odličja veteranima, pripadnicima “Tigrova”: Davno su  → Вже публікувалось (вручення відзнак) | Сутності: Zoran Milanović, Tigrovi, Domovinski rat, Hrvatska"
-      ],
-      "rejected_by_reason": {
-        "Побут інших міст": 3,
-        "Вже публікувалось": 2,
-        "Світовий шум": 1
-      },
-      "updates_marked": 0,
-      "already_rejected": 14,
-      "rejected_by_code_examples": [
-        "[тег RSS lifestyle] Deset tisuća koraka dnevno nije znanstvena granica: najviše dobivaju oni koji se najmanje kreću",
-        "[sponzori] Inovacije za plavu budućnost; Regionalni timovi u Zadru traže rješenja za pametniji nadzor vodovoda ",
-        "[тег RSS lifestyle] Kapljice na prozorima zimi ne znače uvijek previše vlage u stanu, važna je i vrsta stakla",
-        "[sporta] Održana edukacija „Školovanje vina i vinara“ – 36 uzoraka vina i vrijedna razmjena znanja i iskustav",
-        "[sportu] Šibenčani se okupili na ‘groblju stabala‘, javio se aktivist Šimić: Nisan zva nikoga ni huška. A mal",
-        "[тег RSS sport] Riječanka Ana Bobanović osvojila zlato na Olimpijskim igrama mladih!",
-        "[igrača] Mario Mamić: Odluke o kupnji i prodaji igrača donosio je moj otac Zdravko Mamić",
-        "[тег RSS sport] Franka Golemac je imala zapaženu ulogu u pobjedi Rijeke nad Nebom: “Rad nam se vratio”"
-      ]
-    },
-    "backlog": {
-      "total_size": 0,
-      "sources": {}
-    },
-    "published": {
-      "total": 3,
-      "ukraine_priority": 0,
-      "with_images": 3,
-      "text_only": 0,
-      "og_images_found": 0,
-      "sources": {
-        "Zadarski list": 3
-      }
-    },
-    "models_used": {
-      "gemini-3.5-flash-lite": 2
-    },
-    "models_by_task": {
-      "filter": "gemini-3.5-flash-lite",
-      "translate": "gemini-3.5-flash-lite"
-    },
-    "model_attempts": [
-      {
-        "task": "filter",
-        "model": "gemini-3.6-flash",
-        "outcome": "unavailable"
-      },
-      {
-        "task": "filter",
-        "model": "gemini-3.6-flash",
-        "outcome": "quota"
-      },
-      {
-        "task": "filter",
-        "model": "gemini-3.5-flash-lite",
-        "outcome": "ok"
-      },
-      {
-        "task": "translate",
-        "model": "gemini-3.8-flash",
-        "outcome": "unavailable"
-      },
-      {
-        "task": "translate",
-        "model": "gemini-3.8-flash",
-        "outcome": "unavailable"
-      },
-      {
-        "task": "translate",
-        "model": "gemini-3.5-flash-lite",
-        "outcome": "ok"
-      }
-    ],
-    "exhausted_models": [
-      "gemini-3.6-flash"
-    ],
-    "demoted_models": [
-      "filter: gemini-3-flash-preview",
-      "translate: gemini-3.8-flash"
-    ],
-    "translate_budget_deferred": [
-      "gemini-3.5-flash-lite",
-      "gemini-3.6-flash"
-    ],
-    "gemini_region_blocked": false,
-    "errors_count": 0,
-    "gemini_retries": 4
-  },
-  {
     "timestamp": "2026-11-02 20:01:20",
     "execution_time": 284.8,
     "funnel": {
@@ -10226,5 +10110,109 @@
     "gemini_unavailable": false,
     "errors_count": 1,
     "gemini_retries": 4
+  },
+  {
+    "timestamp": "2026-11-11 20:01:17",
+    "execution_time": 267.1,
+    "funnel": {
+      "scraped_total": 35,
+      "scraped_by_source": {
+        "023": 10,
+        "Slobodna dalmacija": 15,
+        "Zadarski list": 10
+      },
+      "already_seen": 16,
+      "rejected_by_keywords": 7,
+      "rejected_by_rule": {
+        "тег RSS lifestyle": 4,
+        "sportaš": 1,
+        "igraču": 1,
+        "тег RSS nogomet": 1
+      },
+      "unclassified_by_ai": 0,
+      "duplicates_removed_by_ai": 12,
+      "rejection_reasons_list": [
+        "• Anušić: “Milanović ponižava pobjedničku Hrvatsku vojsku i radi protiv  → Не за тематикою (Політичні заяви та суперечки) | Сутності: Ivan Anušić, Zoran Milanović, MORH, NSATU, EUMAM",
+        "• Čak sedam nominacija za Nagradu hrvatskog glumišta za Kazalište Marina → Побут інших міст (Номінації театру в Дубровнику) | Сутності: Kazalište Marina Držića, Nagrada hrvatskog glumišta, Romano Nikolić, Dubrovnik",
+        "• Postavljena infrastruktura na Trgu mlikarice u Dražicama → Побут інших міст (Інфраструктура в Dražice) | Сутності: Trg mlikarice, Dražice, Općina Jelenje, Primorsko-goranska županija",
+        "• Pisma Pauline Bogdan Bijelić postala dio Zbirke Nika Kapetanića u Drža → Побут інших міст (Передача листів до архіву Дубровника) | Сутності: Paulina Bogdan Bijelić, Niko Kapetanić, Državni arhiv u Dubrovniku",
+        "• Općina Kostrena u povodu božićnih blagdana daruje starije sumještane → Побут інших міст (Різдвяні виплати в Кострені) | Сутності: Općina Kostrena, Kostrena",
+        "• Dubrovački HDZ obilježio 37. obljetnicu od svog osnivanja u gradu → Побут інших міст (Річниця HDZ у Дубровнику) | Сутності: HDZ Dubrovnik, Mato Franković, Branko Bačić, Dubrovnik",
+        "• U Trstu otvorena izložba “Morem vođeni – Liburni i njihov svijet” → Геоблок (Виставка у Трієсті, Італія) | Сутності: Trst, Liburni, Arheološki muzej Zadar, Sveučilište u Zadru",
+        "• Prikupljanje ponuda za pružanje ugostiteljskih usluga na manifestaciji → Побут інших міст (Закупівля послуг у Кострені) | Сутності: Mikulna 2026, Kostrena, Centar kulture Kostrena",
+        "• Božićnice od 100 eura za oko 9.000 umirovljenika, KK Zadru milijun eur → Вже публікувалось (Рішення про божичниці для пенсіонерів Задара) | Сутності: Šime Erlić, KK Zadar, Kožino, Zadar",
+        "• U Podhumu na mjestu starih topola posađeno18 koprivića → Побут інших міст (Озеленення в Podhum) | Сутності: Podhum, Celtis australis, Općina Jelenje",
+        "• Povremeno zatvaranje prometa u Ulici Bajčevo selo → Побут інших міст (Перекриття дороги в Čavle) | Сутності: Ulica Bajčevo selo, Buzdohanj, Općina Čavle",
+        "• Proizvođačke udruge Krupan list i Tabakum pridružili se paneuropskoj i → Не за тематикою (Звернення тютюнових асоціацій) | Сутності: Krupan list, Tabakum, Ursula von der Leyen, Europska komisija"
+      ],
+      "rejected_by_reason": {
+        "Не за тематикою": 2,
+        "Побут інших міст": 8,
+        "Геоблок": 1,
+        "Вже публікувалось": 1
+      },
+      "updates_marked": 0,
+      "already_rejected": 11,
+      "rejected_by_code_examples": [
+        "[тег RSS lifestyle] Pašteta od bukovače, jablanovače i medenjače: recept mikologa Željka Križevca bez vrhnja i jakih zač",
+        "[тег RSS lifestyle] Kako očistiti zagorenu masnoću u pećnici sodom bikarbonom i alkoholnim octom",
+        "[тег RSS lifestyle] Trener košarkaša Milwaukee Bucksa objašnjava koliko čučnjeva raditi i koliko se odmarati između tren",
+        "[тег RSS lifestyle] Tvrdo kuhana jaja lakše ćete oguliti ako ih prije toga ohladite u hladnoj vodi",
+        "[sportaš] Jadranka Vlatko o tragičnom slučaju Kristiana Josipa Periša: ‘S ljudske i liječničke strane ovo je g",
+        "[igraču] Netko je u Istri dobio 236.165,91 eura na Lotu",
+        "[тег RSS nogomet] Slaven Bilić: “Ovo je prilika da pokažemo kako je ono na Rujevici bio loš dan”"
+      ]
+    },
+    "backlog": {
+      "total_size": 1,
+      "sources": {
+        "Zadarski list": 1
+      }
+    },
+    "published": {
+      "total": 3,
+      "ukraine_priority": 0,
+      "with_images": 3,
+      "text_only": 0,
+      "og_images_found": 0,
+      "sources": {
+        "Slobodna dalmacija": 2,
+        "Zadarski list": 1
+      }
+    },
+    "models_used": {
+      "gemini-3.6-flash": 1,
+      "gemini-3.8-flash": 1
+    },
+    "models_by_task": {
+      "filter": "gemini-3.6-flash",
+      "translate": "gemini-3.8-flash"
+    },
+    "model_attempts": [
+      {
+        "task": "filter",
+        "model": "gemini-3-flash-preview",
+        "outcome": "unavailable"
+      },
+      {
+        "task": "filter",
+        "model": "gemini-3.6-flash",
+        "outcome": "ok"
+      },
+      {
+        "task": "translate",
+        "model": "gemini-3.8-flash",
+        "outcome": "ok"
+      }
+    ],
+    "exhausted_models": [],
+    "demoted_models": [],
+    "translate_budget_deferred": [
+      "gemini-3.6-flash"
+    ],
+    "gemini_region_blocked": false,
+    "gemini_unavailable": false,
+    "errors_count": 0,
+    "gemini_retries": 1
   }
 ]
