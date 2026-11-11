@@ -1,108 +1,5 @@
 [
   {
-    "timestamp": "2026-11-02 08:01:12",
-    "execution_time": 331.4,
-    "funnel": {
-      "scraped_total": 35,
-      "scraped_by_source": {
-        "023": 10,
-        "Slobodna dalmacija": 15,
-        "Zadarski list": 10
-      },
-      "already_seen": 10,
-      "rejected_by_keywords": 6,
-      "rejected_by_rule": {
-        "тег RSS sport": 1,
-        "košarkaše": 1,
-        "тег RSS košarka": 1,
-        "тег RSS nogomet": 1,
-        "URL /sport/": 2
-      },
-      "unclassified_by_ai": 0,
-      "duplicates_removed_by_ai": 9,
-      "rejection_reasons_list": [
-        "• Planula kuća na Mljetu, brzom intervencijom vatrogasaca zaustavljeno š → Побут інших міст (Пожежа в будинку на острові Млєт) | Сутності: Mljet, Prožurska Luka, JVP Mljet, požar",
-        "• Provjerili smo što se događa s predstečajnom nagodbom DI Klana. Direkt → Побут інших міст (Банкрутство підприємства в Рієці) | Сутності: DI Klana, Miladin Marković, Rijeka, Trgovački sud u Rijeci",
-        "• ‘Važno je o bolesti govoriti otvoreno i poticati muškarce da pravodobn → Не за тематикою (Загальна статистика захворюваності чоловіків) | Сутності: rak prostate, HZJZ, Dubrovačko-neretvanska županija, Hrvatska",
-        "• U matuljskim vrtićima djecu uče kako se svađati manje, a razumjeti viš → Побут інших міст (Освітня програма у дитсадку Матулі) | Сутності: Dječji vrtić Matulji, Općina Matulji, Dubravka Uroda, Mladi kompetentni lideri",
-        "• Vrijeme ove nedjelje nije bilo idealno, u Uvali se prkosilo hladnoći i → Побут інших міст (Прогулянки під дощем у Дубровнику) | Сутності: Uvala Lapad, Dubrovnik, kiša, šetnja",
-        "• Bura s olujnim udarima ne popušta do utorka u podne, a nedjelja i pone → Вже публікувалось (Попередження про штормову буру вже є в історії) | Сутності: Zadar, Zadarska županija, bura, Velebit",
-        "• Rođena je u Istri, a postala svjetska baletna zvijezda. Priča o umjetn → Побут інших міст (Вистава про балерину в Рієці) | Сутності: Carlotta Grisi, Vižinada, Rijeka, Zajednica Talijana Rijeka",
-        "• Amerikanci odlučuju hoće li Trumpu vezati ruke → Геоблок (Вибори в США) | Сутності: SAD, Donald Trump, Kongres, Senat",
-        "• Film koji je osvojio Cannes stigao je u hrvatska kina: Inspiriran je n → Не за тематикою (Прем'єра іспанського фільму в кінотеатрах) | Сутності: Crna kugla, Federico García Lorca, Javier Calvo, Cannes"
-      ],
-      "rejected_by_reason": {
-        "Побут інших міст": 5,
-        "Не за тематикою": 2,
-        "Вже публікувалось": 1,
-        "Геоблок": 1
-      },
-      "updates_marked": 0,
-      "already_rejected": 6,
-      "rejected_by_code_examples": [
-        "[тег RSS sport] Ivan Nekić i Vice Radonić iz Beča donijeli dva zlata za zadarski Ares – Diabolik i hrvatsku policiju",
-        "[košarkaše] Euroligaški div čeka Zadrane: Modrićeva momčad nema što izgubiti, a može dobiti jako puno",
-        "[тег RSS košarka] VIDEO Luka Dončić  ubacio je 45 poena uz rekordnih 14 skokova u pobjedi protiv Raptorsa",
-        "[тег RSS nogomet] Orijent je nadoknadio dva gola zaostatka protiv Vukovara: “Pokazali smo karakter!”",
-        "[URL /sport/] Kuglačice Mlake svladale posljednji sastav lige, Rijeci malo nedostajalo protiv Kustošije",
-        "[URL /sport/] Riječki boćari ispustili bodove kod Zrinjevca, novi poraz Svetog Jakova"
-      ]
-    },
-    "backlog": {
-      "total_size": 2,
-      "sources": {
-        "023": 2
-      }
-    },
-    "published": {
-      "total": 3,
-      "ukraine_priority": 0,
-      "with_images": 3,
-      "text_only": 0,
-      "og_images_found": 1,
-      "sources": {
-        "023": 1,
-        "Zadarski list": 1,
-        "Slobodna dalmacija": 1
-      }
-    },
-    "models_used": {
-      "gemini-3.6-flash": 2
-    },
-    "models_by_task": {
-      "filter": "gemini-3.6-flash",
-      "translate": "gemini-3.6-flash"
-    },
-    "model_attempts": [
-      {
-        "task": "filter",
-        "model": "gemini-3-flash-preview",
-        "outcome": "unavailable"
-      },
-      {
-        "task": "filter",
-        "model": "gemini-3.6-flash",
-        "outcome": "ok"
-      },
-      {
-        "task": "translate",
-        "model": "gemini-3.8-flash",
-        "outcome": "unavailable"
-      },
-      {
-        "task": "translate",
-        "model": "gemini-3.6-flash",
-        "outcome": "ok"
-      }
-    ],
-    "exhausted_models": [],
-    "demoted_models": [],
-    "translate_budget_deferred": [],
-    "gemini_region_blocked": false,
-    "errors_count": 0,
-    "gemini_retries": 2
-  },
-  {
     "timestamp": "2026-11-02 09:01:15",
     "execution_time": 338.2,
     "funnel": {
@@ -10338,6 +10235,115 @@
     ],
     "exhausted_models": [],
     "demoted_models": [],
+    "translate_budget_deferred": [],
+    "gemini_region_blocked": false,
+    "gemini_unavailable": false,
+    "errors_count": 0,
+    "gemini_retries": 2
+  },
+  {
+    "timestamp": "2026-11-11 09:01:19",
+    "execution_time": 321.1,
+    "funnel": {
+      "scraped_total": 35,
+      "scraped_by_source": {
+        "023": 10,
+        "Slobodna dalmacija": 15,
+        "Zadarski list": 10
+      },
+      "already_seen": 13,
+      "rejected_by_keywords": 4,
+      "rejected_by_rule": {
+        "oglas": 1,
+        "тег RSS košarka": 1,
+        "promo": 2
+      },
+      "unclassified_by_ai": 0,
+      "duplicates_removed_by_ai": 14,
+      "rejection_reasons_list": [
+        "• Predivan kraj potrage; Vlasnik albuma Životinjsko carstvo iz 1987. je  → Не за тематикою (Пошук власника старого альбому) | Сутності: Šime Predovan, Nin, Kraš, Životinjsko carstvo",
+        "• Ušao među milijardere: Pogledajte svu imovinu Paula McCartneyja → Світовий шум (Статки британського музиканта) | Сутності: Paul McCartney, Forbes, Beatles",
+        "• Zakon ne smije imati VIP ulaz, Hrvatska treba razmotriti španjolski mo → Не за тематикою (Політична ініціатива щодо закону) | Сутності: Viktorija Knežević, Hrvatska, Španjolska",
+        "• Nije cilj samo naučiti djecu kako koristiti novu tehnologiju, nego ih  → Не за тематикою (Програма грамотності використання AI) | Сутності: Hrvatski Telekom, ERF, Dora Dodig Hundrić",
+        "• U vašim su domovima: evo koje bi mete hakeri mogli napasti nakon hladn → Геоблок (Кібератаки в супермаркетах Європи) | Сутності: Juhan Lepassaar, ENISA, AFP, Francuska",
+        "• Malenica sam odredio redoslijed kandidata za Ustavni sud, oporba prosv → Вже публікувалось (Кандидати до Уstavnog suda) | Сутності: Odbor za Ustav, Ana Horvat Vuković, Goran Selanec, Hrvatski sabor",
+        "• Što bi mogle biti nove mete hakera: ‘Danas su to hladnjaci, sutra rout → Дубль (Дубль новини ID 5 про хакерів) | Сутності: Juhan Lepassaar, ENISA, AFP",
+        "• Stigla je promjena vremena: jug zemlje danas se grije na 20 °C, pomorc → Дубль (Дубль прогнозу погоди ID 20 та 21) | Сутності: Jadran, Dalmacija, Hrvatska",
+        "• Objavljene cijene izvođača na splitskom Adventu. Cetinski je 25.000, a → Побут інших міст (Витрати на артистів на Advent у Спліті) | Сутності: Split, Advent, Bijelo dugme, Toni Cetinski",
+        "• Jeste li vidjeli cijene? Ovo meso se prodaje za samo 2 €, ali ono što  → Не за тематикою (Ціни на свинину та ринок) | Сутності: Hrvatska, Kina, Europska unija",
+        "• Vrijeme za produbljivanje smisla života; Susret za djevojke od 15 do 2 → Не за тематикою (Духовний сусрет для дівчат) | Сутності: Bibinje, Karmelićanke, Zadar",
+        "• Američki ministar preselio iz svojeg doma u vojnu bazu. Navodno je dob → Геоблок (Загрози американському міністру) | Сутності: Scott Bessent, SAD, Iran, New York Times",
+        "• INTERVJU Kuzma i Shaka Zulu ovog petka u Rijeci: “Postoji samo radost  → Побут інших міст (Концерт у Рієці) | Сутності: Kuzma & Shaka Zulu, Rijeka, Pogon",
+        "• Olujno jugo pa nagli pad temperature: Zadar u petak čeka više od 30 mm → Дубль (Дубль прогнозу погоди ID 20) | Сутності: Zadar, DHMZ, Jadran"
+      ],
+      "rejected_by_reason": {
+        "Не за тематикою": 5,
+        "Світовий шум": 1,
+        "Геоблок": 2,
+        "Вже публікувалось": 1,
+        "Дубль": 3,
+        "Побут інших міст": 2
+      },
+      "updates_marked": 0,
+      "already_rejected": 8,
+      "rejected_by_code_examples": [
+        "[oglas] Oglas iz snova u Hrvatskoj; Nude 2600 eura neto plaće, božićnicu, uskrsnicu i poručuju da je vikend ",
+        "[тег RSS košarka] Boston Celticsi kanonadom trica došli do uvjerljive pobjede u Philadelphiji",
+        "[promo] Što je muškarac bez brkova? Movember podsjeća na važnost brige o muškom zdravlju",
+        "[promo] Do 40% popusta u Analizi u Rijeci! Black Friday i Movember donose mjesec dana pogodnosti za zdravlje"
+      ]
+    },
+    "backlog": {
+      "total_size": 5,
+      "sources": {
+        "023": 5
+      }
+    },
+    "published": {
+      "total": 3,
+      "ukraine_priority": 0,
+      "with_images": 3,
+      "text_only": 0,
+      "og_images_found": 2,
+      "sources": {
+        "023": 2,
+        "Slobodna dalmacija": 1
+      }
+    },
+    "models_used": {
+      "gemini-3.5-flash-lite": 1,
+      "gemini-3.6-flash": 1
+    },
+    "models_by_task": {
+      "filter": "gemini-3.5-flash-lite",
+      "translate": "gemini-3.6-flash"
+    },
+    "model_attempts": [
+      {
+        "task": "filter",
+        "model": "gemini-3-flash-preview",
+        "outcome": "unavailable"
+      },
+      {
+        "task": "filter",
+        "model": "gemini-3.5-flash-lite",
+        "outcome": "ok"
+      },
+      {
+        "task": "translate",
+        "model": "gemini-3.8-flash",
+        "outcome": "unavailable"
+      },
+      {
+        "task": "translate",
+        "model": "gemini-3.6-flash",
+        "outcome": "ok"
+      }
+    ],
+    "exhausted_models": [],
+    "demoted_models": [
+      "filter: gemini-3.6-flash"
+    ],
     "translate_budget_deferred": [],
     "gemini_region_blocked": false,
     "gemini_unavailable": false,
