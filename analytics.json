@@ -1,128 +1,5 @@
 [
   {
-    "timestamp": "2026-11-02 16:01:19",
-    "execution_time": 335.9,
-    "funnel": {
-      "scraped_total": 35,
-      "scraped_by_source": {
-        "023": 10,
-        "Slobodna dalmacija": 15,
-        "Zadarski list": 10
-      },
-      "already_seen": 16,
-      "rejected_by_keywords": 7,
-      "rejected_by_rule": {
-        "тег RSS lifestyle": 2,
-        "sponzori": 1,
-        "sporta": 1,
-        "sportu": 1,
-        "тег RSS sport": 1,
-        "тег RSS nogomet": 1
-      },
-      "unclassified_by_ai": 0,
-      "duplicates_removed_by_ai": 8,
-      "rejection_reasons_list": [
-        "• Andro Vlahušić: Naša djeca trebaju ključ od svojega stana, a ne ugovor → Побут інших міст (Дубровник) | Сутності: Andro Vlahušić, Franković, Dubrovnik, podstanarstvo",
-        "• Usporedba cijena u Hrvatskoj i zapadnoj Europi; Možemo li si još uvije → Не за тематикою (аналіз ринку нерухомості) | Сутності: Hrvatska, DOMinvest, Saša Perko, nekretnine",
-        "• U Pakoštanima su se na poseban način oprostili od Miše, pogledajte: ‘S → Вже публікувалось (прощання з Mišo Kovač) | Сутності: Pakoštane, Mišo Kovač, krmine",
-        "• Baština na Brajdi uskoro u novom ruhu, u tijeku obnova gradskog perila → Побут інших міст (Рієка) | Сутності: Rijeka, Art-kvart, Brajda, perilo",
-        "• Na Pećinama crnom bojom prekrivena spomen-ploča Titu, traže hitnu sana → Побут інших міст (Рієка) | Сутності: Rijeka, Pećine, Josip Broz Tito, spomen-ploča",
-        "• U Zajcu svečana koncertna izvedba opere “Nikola Šubić Zrinjski” uz dvi → Побут інших міст (Рієка) | Сутності: Rijeka, HNK Zajc, Nikola Šubić Zrinjski, Kristina Kolar",
-        "• Riječka tvrtka predstavila inovaciju: Drvene kućice montiraju se za sa → Побут інших міст (Рієка) | Сутності: Rijeka, Arctic, HoReCa Adria, drvene kućice",
-        "• Grad Rijeka daje 68 novih stipendija, natječaj je otvoren do 10. stude → Побут інших міст (Рієка) | Сутності: Rijeka, Marija Japundža Broznić, stipendije"
-      ],
-      "rejected_by_reason": {
-        "Побут інших міст": 6,
-        "Не за тематикою": 1,
-        "Вже публікувалось": 1
-      },
-      "updates_marked": 0,
-      "already_rejected": 12,
-      "rejected_by_code_examples": [
-        "[тег RSS lifestyle] Deset tisuća koraka dnevno nije znanstvena granica: najviše dobivaju oni koji se najmanje kreću",
-        "[sponzori] Inovacije za plavu budućnost; Regionalni timovi u Zadru traže rješenja za pametniji nadzor vodovoda ",
-        "[тег RSS lifestyle] Kapljice na prozorima zimi ne znače uvijek previše vlage u stanu, važna je i vrsta stakla",
-        "[sporta] Održana edukacija „Školovanje vina i vinara“ – 36 uzoraka vina i vrijedna razmjena znanja i iskustav",
-        "[sportu] Šibenčani se okupili na ‘groblju stabala‘, javio se aktivist Šimić: Nisan zva nikoga ni huška. A mal",
-        "[тег RSS sport] Franka Golemac je imala zapaženu ulogu u pobjedi Rijeke nad Nebom: “Rad nam se vratio”",
-        "[тег RSS nogomet] Skandal trese Zlatnu loptu: Netko je pogodio prvih pet igrača i zaradio bogatstvo, organizatori naja"
-      ]
-    },
-    "backlog": {
-      "total_size": 1,
-      "sources": {
-        "Zadarski list": 1
-      }
-    },
-    "published": {
-      "total": 3,
-      "ukraine_priority": 0,
-      "with_images": 3,
-      "text_only": 0,
-      "og_images_found": 1,
-      "sources": {
-        "Zadarski list": 2,
-        "023": 1
-      }
-    },
-    "models_used": {
-      "gemini-3.5-flash-lite": 2
-    },
-    "models_by_task": {
-      "filter": "gemini-3.5-flash-lite",
-      "translate": "gemini-3.5-flash-lite"
-    },
-    "model_attempts": [
-      {
-        "task": "filter",
-        "model": "gemini-3-flash-preview",
-        "outcome": "unavailable"
-      },
-      {
-        "task": "filter",
-        "model": "gemini-3.5-flash-lite",
-        "outcome": "ok"
-      },
-      {
-        "task": "translate",
-        "model": "gemini-3.8-flash",
-        "outcome": "unavailable"
-      },
-      {
-        "task": "translate",
-        "model": "gemini-3.8-flash",
-        "outcome": "unavailable"
-      },
-      {
-        "task": "translate",
-        "model": "gemini-3.6-flash",
-        "outcome": "unavailable"
-      },
-      {
-        "task": "translate",
-        "model": "gemini-3.6-flash",
-        "outcome": "unavailable"
-      },
-      {
-        "task": "translate",
-        "model": "gemini-3.5-flash-lite",
-        "outcome": "ok"
-      }
-    ],
-    "exhausted_models": [],
-    "demoted_models": [
-      "filter: gemini-3.6-flash",
-      "translate: gemini-3.8-flash"
-    ],
-    "translate_budget_deferred": [
-      "gemini-3.5-flash-lite",
-      "gemini-3.6-flash"
-    ],
-    "gemini_region_blocked": false,
-    "errors_count": 0,
-    "gemini_retries": 5
-  },
-  {
     "timestamp": "2026-11-02 17:01:16",
     "execution_time": 216.2,
     "funnel": {
@@ -10230,5 +10107,124 @@
     "gemini_unavailable": false,
     "errors_count": 0,
     "gemini_retries": 2
+  },
+  {
+    "timestamp": "2026-11-11 17:01:23",
+    "execution_time": 253.1,
+    "funnel": {
+      "scraped_total": 35,
+      "scraped_by_source": {
+        "023": 10,
+        "Slobodna dalmacija": 15,
+        "Zadarski list": 10
+      },
+      "already_seen": 22,
+      "rejected_by_keywords": 5,
+      "rejected_by_rule": {
+        "тег RSS lifestyle": 2,
+        "igračica": 1,
+        "тег RSS nogomet": 1,
+        "тег RSS košarka": 1
+      },
+      "unclassified_by_ai": 0,
+      "duplicates_removed_by_ai": 10,
+      "rejection_reasons_list": [
+        "• Lažne dojave o bombama u 6300 talijanskih škola, prijetnje i drugdje u → Геоблок (Події в школах Італії та Європи) | Сутності: Італія, Шотландія, Європа, школи",
+        "• Riječani u Novu godinu uz ABBA-u i disko ritam. Advent na četiri lokac → Побут інших міст (Новорічний доעם та ярмарок у Рієці) | Сутності: Рієка, Корзо, ABBA Tribute, Різдвяний ярмарок",
+        "• Ovim se riječima šibenski gradonačelnik danas oprostio od Miše: ‘Bio j → Побут інших міст (Комеморація співака в Загребі) | Сутності: Мато Мішо Ковач, Загреб, Шибеник, Жельцко Бурич",
+        "• Riječki obrt Majstoraj izradio alat za baznu cijenu i objavu cjenika → Побут інших міст (Рієцький сервіс для цін) | Сутності: Майсторай, Рієка, Захист споживачів, Ціни",
+        "• Evo što nam sve donosi jesenska matineja Trija Kamov → Побут інших міст (Музичний концерт у Рієці) | Сутності: Рієка, Тріо Камов, Вєтослав Гржиніч, HNK",
+        "• Izložba Andree Muse u petak u Galeriji suvremene umjetnosti Grobnik → Побут інших міст (Виставка у Гробнику) | Сутності: Андреа Муса, Гробник, Галерея, Виставка",
+        "• Rapski srednjoškolci iz Brna donijeli inicijativu za kabinetsku nastav → Побут інших міст (Шкільна ініціатива на Рабі) | Сутності: Раб, Брно, Erasmus+, Школа",
+        "• Britanski saludge metalci Conjurer dolaze prodrmati zagrebački Boogalo → Побут інших міст (Концерт метал-гурту в Загребі) | Сутності: Conjurer, Загреб, Boogaloo, Метал концерт",
+        "• Vjeko Alilović u Opatiji vodi radionicu o organizaciji uspješnjog doga → Побут інших міст (Подія в Опатії) | Сутності: Опатія, Hubbazia, Вєко Алілович, Радіо",
+        "• “Između groteske i harmonije”: Boris Kačić izlaže u Šporeru → Побут інших міст (Виставка мистецтва в Опатії) | Сутності: Борис Качич, Опатія, Шпорер, Виставка"
+      ],
+      "rejected_by_reason": {
+        "Геоблок": 1,
+        "Побут інших міст": 9
+      },
+      "updates_marked": 1,
+      "already_rejected": 13,
+      "rejected_by_code_examples": [
+        "[тег RSS lifestyle] Trener košarkaša Milwaukee Bucksa objašnjava koliko čučnjeva raditi i koliko se odmarati između tren",
+        "[тег RSS lifestyle] Tvrdo kuhana jaja lakše ćete oguliti ako ih prije toga ohladite u hladnoj vodi",
+        "[igračica] Rabljanka Teanna Halović ponovno pozvana među hrvatske juniorke",
+        "[тег RSS nogomet] Olić uoči dvoboja s Njemačkom na Rujevici: “Želimo se pokazati u što boljem svjetlu”",
+        "[тег RSS košarka] Hrvatske košarkašice porazom otvorile posljednji krug kvalifikacija za EP. Bugarke prejake unatoč bo"
+      ]
+    },
+    "backlog": {
+      "total_size": 4,
+      "sources": {
+        "Zadarski list": 2,
+        "Slobodna dalmacija": 2
+      }
+    },
+    "published": {
+      "total": 2,
+      "ukraine_priority": 1,
+      "with_images": 2,
+      "text_only": 0,
+      "og_images_found": 0,
+      "sources": {
+        "Zadarski list": 1,
+        "Slobodna dalmacija": 1
+      }
+    },
+    "models_used": {
+      "gemini-3.5-flash-lite": 2
+    },
+    "models_by_task": {
+      "filter": "gemini-3.5-flash-lite",
+      "translate": "gemini-3.5-flash-lite"
+    },
+    "model_attempts": [
+      {
+        "task": "filter",
+        "model": "gemini-3.1-flash-lite",
+        "outcome": "unavailable"
+      },
+      {
+        "task": "filter",
+        "model": "gemini-3-flash-preview",
+        "outcome": "unavailable"
+      },
+      {
+        "task": "filter",
+        "model": "gemini-3.6-flash",
+        "outcome": "unavailable"
+      },
+      {
+        "task": "filter",
+        "model": "gemini-3.5-flash-lite",
+        "outcome": "ok"
+      },
+      {
+        "task": "translate",
+        "model": "gemini-3.8-flash",
+        "outcome": "unavailable"
+      },
+      {
+        "task": "translate",
+        "model": "gemini-3.5-flash-lite",
+        "outcome": "ok"
+      }
+    ],
+    "exhausted_models": [],
+    "demoted_models": [
+      "filter: gemini-3-flash-preview",
+      "filter: gemini-3.6-flash",
+      "filter: gemini-3.5-flash-lite",
+      "translate: gemini-3.8-flash",
+      "translate: gemini-3.5-flash-lite"
+    ],
+    "translate_budget_deferred": [
+      "gemini-3.6-flash"
+    ],
+    "gemini_region_blocked": false,
+    "gemini_unavailable": false,
+    "errors_count": 1,
+    "gemini_retries": 4
   }
 ]
