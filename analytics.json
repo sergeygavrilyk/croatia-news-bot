@@ -1,141 +1,5 @@
 [
   {
-    "timestamp": "2026-11-02 15:01:19",
-    "execution_time": 220.5,
-    "funnel": {
-      "scraped_total": 35,
-      "scraped_by_source": {
-        "023": 10,
-        "Slobodna dalmacija": 15,
-        "Zadarski list": 10
-      },
-      "already_seen": 21,
-      "rejected_by_keywords": 6,
-      "rejected_by_rule": {
-        "sponzori": 1,
-        "тег RSS lifestyle": 1,
-        "sportu": 1,
-        "sport": 1,
-        "тег RSS nogomet": 1,
-        "oglasi": 1
-      },
-      "unclassified_by_ai": 0,
-      "duplicates_removed_by_ai": 12,
-      "rejection_reasons_list": [
-        "• U Srbiji uhićen vlasnik ALTA banke, sumnja se da je iz trezora iznio 3 → Геоблок (Події в Сербії) | Сутності: Damir Macura, ALTA banka, Srbija, Narodna banka Srbije",
-        "• Kreativna radionica u Privlaci; Udruga ANA kroz priču o čarobnom svjet → Побут інших міст (Дитяча майстерня в Привлаці) | Сутності: Privlaka, Udruga ANA, Karla Pap",
-        "• Počinje program Subotnja zimska jutra u Dubrovniku: Upoznajte Grad kro → Побут інших міст (Туристична програма в Дубровнику) | Сутності: Dubrovnik, Turistička zajednica, Subotnja zimska jutra",
-        "• Dubrovačko-neretvanskoj županiji 785.000 eura za nabavu zdravstvene op → Побут інших міст (Медичне обладнання в Дубровнику) | Сутності: Dubrovačko-neretvanska županija, Dom zdravlja, Europski fond",
-        "• Od srijede radovi u Ulici Dinka Šimunovića, uvodi se regulacija promet → Побут інших міст (Ремонт доріг у Рієці) | Сутності: Rijeka, Ulica Dinka Šimunovića, KD Vodovod i kanalizacija",
-        "• Zbog napada na navijače Ajaxa Zadrani završili ‘iza rešetaka‘, otkrive → Вже публікувалось (Атака на вболівальників у Задарі) | Сутності: Zadar, Općinsko državno odvjetništvo, Nizozemci",
-        "• Hrvatske šume povisile cijene drvnih sortimenata za približno deset po → Не за тематикою (Підвищення цін на деревину) | Сутності: Hrvatske šume, drvni sortimenti, Hrvatska",
-        "• Dronom pogođen LNG tanker na kojem su trojica hrvatskih pomoraca → Дубль (Дублює новину про хорватських моряків) | Сутності: Perzijski zaljev, Al Mayeda, Siniša Orlić",
-        "• Kolege i prijatelji oprostili se od Gorana Bare: “Uvrstite ga u lektir → Світовий шум (Прощання з музикантом) | Сутності: Goran Bare, Aleksandar Dragaš, KD Lisinski",
-        "• Oko Velebita danima bruje avioni i helikopteri, specijalci izvode akci → Побут інших міст (Військові навчання на Велебіті) | Сутності: Velebit, Zemunik, Dragan Andrijević",
-        "• Potresni dokumentarac o sustavima iza masovnog uništavanja civila u Ga → Геоблок (Показ документального фільму в Рієці) | Сутності: Art-kino, Yuval Abraham, Gaza",
-        "• Gabon: Pronađeno tijelo riječkog pomorca nestalog nakon potonuća platf → Вже публікувалось (Загибель моряка в Габоні) | Сутності: Damir Parać, Gabon, Rijeka"
-      ],
-      "rejected_by_reason": {
-        "Геоблок": 2,
-        "Побут інших міст": 5,
-        "Вже публікувалось": 2,
-        "Не за тематикою": 1,
-        "Дубль": 1,
-        "Світовий шум": 1
-      },
-      "updates_marked": 0,
-      "already_rejected": 13,
-      "rejected_by_code_examples": [
-        "[sponzori] Inovacije za plavu budućnost; Regionalni timovi u Zadru traže rješenja za pametniji nadzor vodovoda ",
-        "[тег RSS lifestyle] Kapljice na prozorima zimi ne znače uvijek previše vlage u stanu, važna je i vrsta stakla",
-        "[sportu] Šibenčani se okupili na ‘groblju stabala‘, javio se aktivist Šimić: Nisan zva nikoga ni huška. A mal",
-        "[sport] Croatia Yachting predstavio novo poglavlje svoje priče",
-        "[тег RSS nogomet] NY Times objavio interne dokumente FIFA-e. Savez će Infantinu platiti četiri milijuna dolara poreza ",
-        "[oglasi] Velike promjene: Radnici će moći usporediti plaću s kolegama i zatražiti objašnjenje od poslodavca"
-      ]
-    },
-    "backlog": {
-      "total_size": 0,
-      "sources": {}
-    },
-    "published": {
-      "total": 2,
-      "ukraine_priority": 0,
-      "with_images": 2,
-      "text_only": 0,
-      "og_images_found": 0,
-      "sources": {
-        "Zadarski list": 2
-      }
-    },
-    "models_used": {
-      "gemini-3.5-flash-lite": 1,
-      "gemini-3.6-flash": 1
-    },
-    "models_by_task": {
-      "filter": "gemini-3.5-flash-lite",
-      "translate": "gemini-3.6-flash"
-    },
-    "model_attempts": [
-      {
-        "task": "filter",
-        "model": "gemini-3-flash-preview",
-        "outcome": "unavailable"
-      },
-      {
-        "task": "filter",
-        "model": "gemini-3-flash-preview",
-        "outcome": "unavailable"
-      },
-      {
-        "task": "filter",
-        "model": "gemini-3.6-flash",
-        "outcome": "unavailable"
-      },
-      {
-        "task": "filter",
-        "model": "gemini-3.6-flash",
-        "outcome": "unavailable"
-      },
-      {
-        "task": "filter",
-        "model": "gemini-3.5-flash-lite",
-        "outcome": "ok"
-      },
-      {
-        "task": "translate",
-        "model": "gemini-3.8-flash",
-        "outcome": "unavailable"
-      },
-      {
-        "task": "translate",
-        "model": "gemini-3.8-flash",
-        "outcome": "unavailable"
-      },
-      {
-        "task": "translate",
-        "model": "gemini-3.6-flash",
-        "outcome": "unavailable"
-      },
-      {
-        "task": "translate",
-        "model": "gemini-3.6-flash",
-        "outcome": "ok"
-      }
-    ],
-    "exhausted_models": [],
-    "demoted_models": [
-      "translate: gemini-3.8-flash"
-    ],
-    "translate_budget_deferred": [
-      "gemini-3.5-flash-lite",
-      "gemini-3.6-flash"
-    ],
-    "gemini_region_blocked": false,
-    "errors_count": 0,
-    "gemini_retries": 7
-  },
-  {
     "timestamp": "2026-11-02 16:01:19",
     "execution_time": 335.9,
     "funnel": {
@@ -10250,5 +10114,121 @@
     "gemini_unavailable": true,
     "errors_count": 0,
     "gemini_retries": 4
+  },
+  {
+    "timestamp": "2026-11-11 16:02:16",
+    "execution_time": 143.2,
+    "funnel": {
+      "scraped_total": 35,
+      "scraped_by_source": {
+        "023": 10,
+        "Slobodna dalmacija": 15,
+        "Zadarski list": 10
+      },
+      "already_seen": 22,
+      "rejected_by_keywords": 3,
+      "rejected_by_rule": {
+        "тег RSS lifestyle": 2,
+        "sportašima": 1
+      },
+      "unclassified_by_ai": 0,
+      "duplicates_removed_by_ai": 19,
+      "rejection_reasons_list": [
+        "• Slovenija spustila benzin na 1,50 eura, Talijani i Austrijanci pune sp → Геоблок (Ціни на пальне в Словенії) | Сутності: Словенія, Бензин, Ціни, Італія, Австрія",
+        "• Posljednji oproštaj od Miše Kovača: Bio je simbol hrvatske pjesme → Не за тематикою (Прощання з музикантом у Загребі) | Сутності: Мішо Ковач, Загреб, Музика, Комеморація",
+        "• Dodijeljene zahvalnice za sedamnaestu Dubrovačku trpezu → Побут інших міст (Благодійна подія у Дубровнику) | Сутності: Дубровник, Мато Франкович, Благодійність, Гастрономія",
+        "• Počelo uklanjanje gotovo 54 tisuće tona otpada iz bivše vojarne Šepuri → Вже публікувалось (Початок санації сміттєзвалища) | Сутності: Шепуріне, Нін, Еміл Чурко, Відходи",
+        "• U Puntu obilježena 108. obljetnica završetka Prvoga svjetskog rata → Побут інших міст (Подія на острові Крк) | Сутності: Пунат, Крк, Перша світова війна, Комеморація",
+        "• Uklanja se gotovo 54 tisuće tona otpada s područja bivše vojarne u Šep → Дубль (Початок санації сміттєзвалища) | Сутності: Шепуріне, Нін, Еміл Чурко, Відходи",
+        "• “Baci oko (objektiva) na okoliš”: Opatijski srednjoškolci predstavili  → Побут інших міст (Виставка в Опатії) | Сутності: Опатія, Фотографія, Екологія, Молодь",
+        "• Volonteri creske škole uspješno proveli još jednu humanitarnu akciju “ → Побут інших міст (Акція на острові Црес) | Сутності: Црес, Гуманітарна акція, Школа, Рієка",
+        "• Što je ostalo od lokalnog novinarstva? Lokalne teme danas imaju global → Побут інших міст (Дискусія про журналістику в Рієці) | Сутності: Рієка, Журналістика, HND, Медіа",
+        "• Ovaj pašnjak vrijedi pravo bogatstvo! Na javnoj dražbi oglašena prodaj → Побут інших міст (Продаж землі біля Дубровника) | Сутності: Дубровник, Мочічі, Аукціон, Нерухомість",
+        "• Kvarner predstavio adute u zdravstvenom turizmu → Побут інших міст (Просування туризму на Кварнері) | Сутності: Кварнер, Рієка, Медичний туризм, Словенія",
+        "• Uočeno onečišćenje mora u uvali Žurkovo → Побут інших міст (Забруднення моря в Кострені) | Сутності: Кострена, Журково, Забруднення моря, Рієка",
+        "• Devet dizajnera na modnoj pisti, a večer obilježila i važna poruka o m → Вже публікувалось (Модна подія в Бібінє) | Сутності: Бібінє, ModernA, Мода, Психічне здоров'я",
+        "• Pahuljici priznanje “30+” za dugogodišnju podršku roditeljima → Побут інших міст (Нагорода дитсадку на Рабі) | Сутності: Раб, Цріквеніца, Дитячий садок, Виховання",
+        "• Grad Senj ima prijedlog odluke o zabrani građevinskih radova tijekom s → Побут інших міст (Заборона будівництва в Сені) | Сутності: Сень, Будівництво, Заборона, Туризм",
+        "• Objavljeno kada je ispraćaj svećenika koji je iznenada preminuo na Mol → Вже публікувалось (Інформація про похорон священника) | Сутності: Задар, Молат, Дон Збігнєв Корч, Похорон",
+        "• Prosječna starost hrvatskih hotela 55 godina. Gotovo 90% objekata treb → Не за тематикою (Аналіз стану готелів у Хорватії) | Сутності: Хорватія, Готелі, Туризм, Інвестиції",
+        "• Sveta Lucija razvija ideju amaterskog kazališta na Rabu → Побут інших міст (Театральна ініціатива на Рабі) | Сутності: Раб, Театр, Культура, Аматори",
+        "• Policijska akcija u zadarskom kraju dobila neočekivan rasplet: Ono što → Дубль (Вилучення зброї у пенсіонера) | Сутності: Задар, Поліція, Зброя, Пенсіонер"
+      ],
+      "rejected_by_reason": {
+        "Геоблок": 1,
+        "Не за тематикою": 2,
+        "Побут інших міст": 11,
+        "Вже публікувалось": 3,
+        "Дубль": 2
+      },
+      "updates_marked": 1,
+      "already_rejected": 7,
+      "rejected_by_code_examples": [
+        "[тег RSS lifestyle] Trener košarkaša Milwaukee Bucksa objašnjava koliko čučnjeva raditi i koliko se odmarati između tren",
+        "[тег RSS lifestyle] Tvrdo kuhana jaja lakše ćete oguliti ako ih prije toga ohladite u hladnoj vodi",
+        "[sportašima] Frkanj domaćin otvorenog županijskog prvenstva u kros duatlonu"
+      ]
+    },
+    "backlog": {
+      "total_size": 8,
+      "sources": {
+        "Zadarski list": 5,
+        "Slobodna dalmacija": 3
+      }
+    },
+    "published": {
+      "total": 3,
+      "ukraine_priority": 0,
+      "with_images": 3,
+      "text_only": 0,
+      "og_images_found": 0,
+      "sources": {
+        "Slobodna dalmacija": 3
+      }
+    },
+    "models_used": {
+      "gemini-3.1-flash-lite": 1,
+      "gemini-3.6-flash": 1
+    },
+    "models_by_task": {
+      "filter": "gemini-3.1-flash-lite",
+      "translate": "gemini-3.6-flash"
+    },
+    "model_attempts": [
+      {
+        "task": "filter",
+        "model": "gemini-3.1-flash-lite",
+        "outcome": "ok"
+      },
+      {
+        "task": "translate",
+        "model": "gemini-3.5-flash-lite",
+        "outcome": "unavailable"
+      },
+      {
+        "task": "translate",
+        "model": "gemini-3.8-flash",
+        "outcome": "unavailable"
+      },
+      {
+        "task": "translate",
+        "model": "gemini-3.6-flash",
+        "outcome": "ok"
+      }
+    ],
+    "exhausted_models": [],
+    "demoted_models": [
+      "filter: gemini-3-flash-preview",
+      "filter: gemini-3.6-flash",
+      "filter: gemini-3.5-flash-lite",
+      "translate: gemini-3.8-flash"
+    ],
+    "translate_budget_deferred": [
+      "gemini-3.6-flash"
+    ],
+    "gemini_region_blocked": false,
+    "gemini_unavailable": false,
+    "errors_count": 0,
+    "gemini_retries": 2
   }
 ]
