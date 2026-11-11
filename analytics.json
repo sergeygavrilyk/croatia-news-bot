@@ -1,118 +1,5 @@
 [
   {
-    "timestamp": "2026-11-02 13:01:20",
-    "execution_time": 193.3,
-    "funnel": {
-      "scraped_total": 35,
-      "scraped_by_source": {
-        "023": 10,
-        "Slobodna dalmacija": 15,
-        "Zadarski list": 10
-      },
-      "already_seen": 17,
-      "rejected_by_keywords": 6,
-      "rejected_by_rule": {
-        "тег RSS lifestyle": 1,
-        "sportu": 1,
-        "sport": 1,
-        "oglasi": 1,
-        "тег RSS košarka": 1,
-        "tenisom": 1
-      },
-      "unclassified_by_ai": 0,
-      "duplicates_removed_by_ai": 11,
-      "rejection_reasons_list": [
-        "• Plenković u Strasbourgu: Perspektiva mladih i energetska sigurnost klj → Геоблок (Подія у Франції) | Сутності: Andrej Plenković, Strasbourg, Vijeće Europe, demokracija",
-        "• Vrludao vozilom s 2.88 promila alkohola u krvi → Побут інших міст (Кримінал у Корениці) | Сутності: Korenica, Ličko-senjska, Bosna i Hercegovina, alkohol",
-        "• U utorak izložba fotografija Stipe Suraća \"Let There Be… Bass\" i promo → Не за тематикою (Культурна подія у Задарі) | Сутності: Stipe Surać, Rich Men, Zadar, Kneževa palača",
-        "• Fanovi u Pakoštanama za oproštaj od Miše skuhali 5 janjećih glava: Uvi → Вже публікувалось (Смерть Мішо Ковача) | Сутності: Pakoštane, Mate Mišo Kovač, janjetina",
-        "• Nova škola u Mokošici prve učenike primit će već u drugom polugodištu, → Побут інших міст (Школа в Дубровнику) | Сутності: Mokošica, Dubrovnik, Mato Franković, škola",
-        "• Burne nominacije u MasterChefu: Koga će spasiti? → Світовий шум (Телешоу) | Сутності: MasterChef, Mario, Liberije, Monika",
-        "• ‘Nazivaju me ljubomornim, protivnikom privatnog vlasništva i zagovorni → Побут інших міст (Ситуація з житлом у Дубровнику) | Сутності: Mato Franković, Dubrovnik, stanovi, apartmani",
-        "• VIDEO Kći Miše Kovača prvi put se javila nakon njegove smrti: evo što  → Вже публікувалось (Реакція доньки на смерть Мішо Ковача) | Сутності: Ivana Kovač, Mišo Kovač, Instagram",
-        "• Na društvenim mrežama isticao fotografije osoba osuđenih za ratni zloč → Побут інших міст (Інцидент в Оточаці) | Сутності: Otočac, Lika, policija, Domovinski rat",
-        "• Hrvati nisu svjesni što sve mogu dobiti kada im se rodi dijete! U pita → Світовий шум (Обговорення в соцмережах) | Сутності: Hrvatska, Reddit, dijete, plaćanja",
-        "• 20 sekundi od katastrofe: Prijavljen strojovođa vlaka koji je umalo iz → Побут інших міст (Інцидент на залізниці біля Рієки) | Сутності: Rijeka, Škrljevo, strojovođa, željeznica"
-      ],
-      "rejected_by_reason": {
-        "Геоблок": 1,
-        "Побут інших міст": 5,
-        "Не за тематикою": 1,
-        "Вже публікувалось": 2,
-        "Світовий шум": 2
-      },
-      "updates_marked": 0,
-      "already_rejected": 9,
-      "rejected_by_code_examples": [
-        "[тег RSS lifestyle] Kapljice na prozorima zimi ne znače uvijek previše vlage u stanu, važna je i vrsta stakla",
-        "[sportu] Šibenčani se okupili na ‘groblju stabala‘, javio se aktivist Šimić: Nisan zva nikoga ni huška. A mal",
-        "[sport] Croatia Yachting predstavio novo poglavlje svoje priče",
-        "[oglasi] Online prijevare sve su uvjerljivije, a građani često ne znaju kome se obratiti: ‘Da se sami ne pobr",
-        "[тег RSS košarka] Košarkaši Kvarnera nižu pobjede: “Na zadnje dvije utakmice to nije bila najljepša košarka, možemo bo",
-        "[tenisom] Ovaj tjedan kuha se u Rijeci i okolici: Evo tko su novi kandidati “Večere za 5”"
-      ]
-    },
-    "backlog": {
-      "total_size": 5,
-      "sources": {
-        "Zadarski list": 1,
-        "023": 1,
-        "Slobodna dalmacija": 3
-      }
-    },
-    "published": {
-      "total": 3,
-      "ukraine_priority": 1,
-      "with_images": 3,
-      "text_only": 0,
-      "og_images_found": 2,
-      "sources": {
-        "Zadarski list": 1,
-        "023": 2
-      }
-    },
-    "models_used": {
-      "gemini-3.5-flash-lite": 2
-    },
-    "models_by_task": {
-      "filter": "gemini-3.5-flash-lite",
-      "translate": "gemini-3.5-flash-lite"
-    },
-    "model_attempts": [
-      {
-        "task": "filter",
-        "model": "gemini-3.6-flash",
-        "outcome": "unavailable"
-      },
-      {
-        "task": "filter",
-        "model": "gemini-3.6-flash",
-        "outcome": "unavailable"
-      },
-      {
-        "task": "filter",
-        "model": "gemini-3.5-flash-lite",
-        "outcome": "ok"
-      },
-      {
-        "task": "translate",
-        "model": "gemini-3.5-flash-lite",
-        "outcome": "ok"
-      }
-    ],
-    "exhausted_models": [],
-    "demoted_models": [
-      "filter: gemini-3-flash-preview",
-      "translate: gemini-3.8-flash"
-    ],
-    "translate_budget_deferred": [
-      "gemini-3.6-flash"
-    ],
-    "gemini_region_blocked": false,
-    "errors_count": 0,
-    "gemini_retries": 2
-  },
-  {
     "timestamp": "2026-11-02 14:01:13",
     "execution_time": 220.7,
     "funnel": {
@@ -10295,5 +10182,110 @@
     "gemini_unavailable": false,
     "errors_count": 0,
     "gemini_retries": 3
+  },
+  {
+    "timestamp": "2026-11-11 14:01:19",
+    "execution_time": 127.8,
+    "funnel": {
+      "scraped_total": 35,
+      "scraped_by_source": {
+        "023": 10,
+        "Slobodna dalmacija": 15,
+        "Zadarski list": 10
+      },
+      "already_seen": 19,
+      "rejected_by_keywords": 1,
+      "rejected_by_rule": {
+        "oglas": 1
+      },
+      "unclassified_by_ai": 0,
+      "duplicates_removed_by_ai": 12,
+      "rejection_reasons_list": [
+        "• “Vi nama Zadravec, mi vama Jankomir”: Tragična smrt pacijenta postala  → Вже публікувалось (Коментар до події, що вже є в історії) | Сутності: Загреб, лікарня Св. Івана, політика, Крістіан Йосип Періш",
+        "• Netflixova opcija Smart Downloads sama preuzima sljedeću epizodu i bri → Світовий шум | Сутності: Netflix, Smart Downloads, мобільний додаток",
+        "• Objavljene nominacije za Nagradu hrvatskog glumišta. Nagrađen Paolo Ma → Не за тематикою (Культурна подія загальнонаціонального рівня) | Сутності: Паоло Магеллі, Нагорода хорватського театру, Загреб",
+        "• Božinović: Policija je snimku iz Jankomira dobila tek dva tjedna nakon → Вже публікувалось (Реакція міністра на подію) | Сутності: Давор Божинович, лікарня Янкомир, поліція, Крістіан Йосип Періш",
+        "• Tribina “Izgubi, zadrži by Ivana Perić i Maja Ilčić” u Matuljima → Побут інших міст (Локальна подія в Матульї) | Сутності: Матульї, здорове харчування, Івана Перич, Мая Ілчич",
+        "• Vlašić Iljkić: 70.000 zahtjeva za inkluzivni dodatak čeka obradu → Не за тематикою (Політична дискусія) | Сутності: Мартіна Влашич Ілчич, інклюзивна допомога, Андрей Пленкович",
+        "• Lugarić: Menstruacija i menopauza nisu privatne stvari žene ako utječu → Не за тематикою (Парламентська дискусія) | Сутності: Марія Лугарич, менструація, менопауза, робоче місце",
+        "• Vlada imenovala Viktora Makovca svojim povjerenikom za Buje → Побут інших міст (Призначення в місті Бує) | Сутності: Віктор Маковац, Бує, Фабриціо Віжинтин, УСКОК",
+        "• Raspudić: Nismo protiv podatkovnog centra, ali pitanje je kakav i gdje → Побут інших міст (Політична дискусія щодо Топуського) | Сутності: Ніно Распудич, Топуське, центр даних",
+        "• Milijuni radnika u Španjolskoj štrajkaju zbog stambene krize → Геоблок (Події в Іспанії) | Сутності: Іспанія, страйк, житлова криза, Мадрид",
+        "• Rinčić za Novu na Korzo dovodi Abba tribute bend iz Novog Sada → Побут інших міст (Новорічна програма в Рієці) | Сутності: Рієка, Іва Ринчич, Абба, Новий рік",
+        "• Novi Akcijski plan protiv raka donosi razvoj onkološke mreže → Не за тематикою (Національний план охорони здоров'я) | Сутності: Марія Бубаш, онкологія, Хорватський інститут громадського здоров'я"
+      ],
+      "rejected_by_reason": {
+        "Вже публікувалось": 2,
+        "Світовий шум": 1,
+        "Не за тематикою": 4,
+        "Побут інших міст": 4,
+        "Геоблок": 1
+      },
+      "updates_marked": 1,
+      "already_rejected": 12,
+      "rejected_by_code_examples": [
+        "[oglas] Kliknuo je na oglas i ostao bez 17.250 eura! Obećali su mu bogatstvo, a evo kako su ga prevarili"
+      ]
+    },
+    "backlog": {
+      "total_size": 5,
+      "sources": {
+        "Slobodna dalmacija": 4,
+        "023": 1
+      }
+    },
+    "published": {
+      "total": 0,
+      "ukraine_priority": 0,
+      "with_images": 0,
+      "text_only": 0,
+      "og_images_found": 1,
+      "sources": {}
+    },
+    "models_used": {
+      "gemini-3.1-flash-lite": 1
+    },
+    "models_by_task": {
+      "filter": "gemini-3.1-flash-lite",
+      "translate": null
+    },
+    "model_attempts": [
+      {
+        "task": "filter",
+        "model": "gemini-3.5-flash-lite",
+        "outcome": "unavailable"
+      },
+      {
+        "task": "filter",
+        "model": "gemini-3.1-flash-lite",
+        "outcome": "ok"
+      },
+      {
+        "task": "translate",
+        "model": "gemini-3.6-flash",
+        "outcome": "unavailable"
+      },
+      {
+        "task": "translate",
+        "model": "gemini-3.5-flash-lite",
+        "outcome": "unavailable"
+      },
+      {
+        "task": "translate",
+        "model": "gemini-3.8-flash",
+        "outcome": "unavailable"
+      }
+    ],
+    "exhausted_models": [],
+    "demoted_models": [
+      "filter: gemini-3-flash-preview",
+      "filter: gemini-3.6-flash",
+      "translate: gemini-3.8-flash"
+    ],
+    "translate_budget_deferred": [],
+    "gemini_region_blocked": false,
+    "gemini_unavailable": true,
+    "errors_count": 0,
+    "gemini_retries": 4
   }
 ]
