@@ -1,114 +1,5 @@
 [
   {
-    "timestamp": "2026-11-03 09:01:17",
-    "execution_time": 148.3,
-    "funnel": {
-      "scraped_total": 35,
-      "scraped_by_source": {
-        "023": 10,
-        "Slobodna dalmacija": 15,
-        "Zadarski list": 10
-      },
-      "already_seen": 23,
-      "rejected_by_keywords": 3,
-      "rejected_by_rule": {
-        "тег RSS sport": 1,
-        "тег RSS nogomet": 1,
-        "тег RSS košarka": 1
-      },
-      "unclassified_by_ai": 0,
-      "duplicates_removed_by_ai": 3,
-      "rejection_reasons_list": [
-        "• Sjajna atmosfera na otvorenju 4. Kazališnog vikenda za djecu i mlade u → Вже публікувалось (Початок театрального фестивалю) | Сутності: Kazališni vikend, Zadar, Kazalište lutaka, Matija Šango Šimurina",
-        "• Tomić & Co. svečano otvorio novi BMW prodajno-servisni centar u Rijeci → Побут інших міст (Автоцентр у Рієці) | Сутності: Tomić & Co, BMW, Rijeka, Franjo Tomić",
-        "• Oproštaj od Miše Kovača na Poljudu. Lijes s njegovim tijelom bit će pr → Вже публікувалось (Прощання з музикантом) | Сутності: Mišo Kovač, Poljud, Hajduk, Split"
-      ],
-      "rejected_by_reason": {
-        "Вже публікувалось": 2,
-        "Побут інших міст": 1
-      },
-      "updates_marked": 0,
-      "already_rejected": 16,
-      "rejected_by_code_examples": [
-        "[тег RSS sport] Košarkaši Zadra tri su četvrtine držali korak s višestruko skupljim Dubaijem, a onda je stigla serij",
-        "[тег RSS nogomet] Azijski kup u Saudijskoj Arabiji pomaknut sa siječnja na prosinac 2027. zbog ratnog stanja u regiji",
-        "[тег RSS košarka] Karlo Matković odigrao utakmicu karijere u pobjedi Pelicansa nad Memphisom"
-      ]
-    },
-    "backlog": {
-      "total_size": 1,
-      "sources": {
-        "023": 1
-      }
-    },
-    "published": {
-      "total": 3,
-      "ukraine_priority": 0,
-      "with_images": 3,
-      "text_only": 0,
-      "og_images_found": 3,
-      "sources": {
-        "023": 3
-      }
-    },
-    "models_used": {
-      "gemini-3.5-flash-lite": 1,
-      "gemini-3.6-flash": 1
-    },
-    "models_by_task": {
-      "filter": "gemini-3.5-flash-lite",
-      "translate": "gemini-3.6-flash"
-    },
-    "model_attempts": [
-      {
-        "task": "filter",
-        "model": "gemini-3-flash-preview",
-        "outcome": "unavailable"
-      },
-      {
-        "task": "filter",
-        "model": "gemini-3-flash-preview",
-        "outcome": "unavailable"
-      },
-      {
-        "task": "filter",
-        "model": "gemini-3.6-flash",
-        "outcome": "unavailable"
-      },
-      {
-        "task": "filter",
-        "model": "gemini-3.6-flash",
-        "outcome": "unavailable"
-      },
-      {
-        "task": "filter",
-        "model": "gemini-3.5-flash-lite",
-        "outcome": "ok"
-      },
-      {
-        "task": "translate",
-        "model": "gemini-3.8-flash",
-        "outcome": "unavailable"
-      },
-      {
-        "task": "translate",
-        "model": "gemini-3.8-flash",
-        "outcome": "unavailable"
-      },
-      {
-        "task": "translate",
-        "model": "gemini-3.6-flash",
-        "outcome": "ok"
-      }
-    ],
-    "exhausted_models": [],
-    "demoted_models": [],
-    "translate_budget_deferred": [],
-    "gemini_region_blocked": false,
-    "errors_count": 0,
-    "gemini_retries": 6
-  },
-  {
     "timestamp": "2026-11-03 10:01:15",
     "execution_time": 171.2,
     "funnel": {
@@ -10101,6 +9992,106 @@
       "total_size": 2,
       "sources": {
         "023": 2
+      }
+    },
+    "published": {
+      "total": 3,
+      "ukraine_priority": 0,
+      "with_images": 3,
+      "text_only": 0,
+      "og_images_found": 2,
+      "sources": {
+        "Slobodna dalmacija": 1,
+        "023": 2
+      }
+    },
+    "models_used": {
+      "gemini-3.6-flash": 2
+    },
+    "models_by_task": {
+      "filter": "gemini-3.6-flash",
+      "translate": "gemini-3.6-flash"
+    },
+    "model_attempts": [
+      {
+        "task": "filter",
+        "model": "gemini-3.6-flash",
+        "outcome": "ok"
+      },
+      {
+        "task": "translate",
+        "model": "gemini-3.8-flash",
+        "outcome": "unavailable"
+      },
+      {
+        "task": "translate",
+        "model": "gemini-3.6-flash",
+        "outcome": "ok"
+      }
+    ],
+    "exhausted_models": [],
+    "demoted_models": [
+      "filter: gemini-3-flash-preview"
+    ],
+    "translate_budget_deferred": [],
+    "gemini_region_blocked": false,
+    "gemini_unavailable": false,
+    "errors_count": 0,
+    "gemini_retries": 1
+  },
+  {
+    "timestamp": "2026-11-12 10:01:20",
+    "execution_time": 236.5,
+    "funnel": {
+      "scraped_total": 35,
+      "scraped_by_source": {
+        "023": 10,
+        "Slobodna dalmacija": 15,
+        "Zadarski list": 10
+      },
+      "already_seen": 17,
+      "rejected_by_keywords": 5,
+      "rejected_by_rule": {
+        "тег RSS lifestyle": 1,
+        "sporta": 1,
+        "sportaš": 1,
+        "тег RSS košarka": 1,
+        "utakmici": 1
+      },
+      "unclassified_by_ai": 0,
+      "duplicates_removed_by_ai": 10,
+      "rejection_reasons_list": [
+        "• Cijepljenje protiv gripe u PGŽ od petka → Побут інших міст (Вакцинація від грипу в Рієці) | Сутності: Rijeka, PGŽ, Andrea Petaros Šuran,  Nastavni zavod za javno zdravstvo",
+        "• Od vijesti i prognoze do prometa, prekida struje i marende: aplikacija → Реклама (Промоція мобільного додатку 023.hr) | Сутності: 023.hr, Zadar, Android, iPhone",
+        "• U Gospiću održano predavanje „Novac u ženskim rukama“ → Побут інших міст (Лекція з фінансової грамотності у Госпичі) | Сутності: Gospić, Novac u ženskim rukama, UMFO",
+        "• Dubrovačko-neretvanska županija ima drugi najbolji županijski web! → Побут інших міст (Рейтинг вебсайту Дубровницької жупанії) | Сутності: Dubrovačko-neretvanska županija, Indeks weba Hrvatske, Međimurje",
+        "• Gospićka knjižnica nagradila naj-čitatelje → Побут інших міст (Нагородження читачів у бібліотеці Госпича) | Сутності: Gospić, Samostalna narodna knjižnica, Milan Šarić",
+        "• Volkswagen izvijestio o rekordnoj prodaji svojih hibrida i električnih → Геоблок (Продажі Volkswagen у Китаї) | Сутності: Volkswagen, Kina, hibridna vozila",
+        "• Stigao dio ukrasa za ovogodišnji Advent, Stradun polako dobiva blagdan → Побут інших міст (Прикрашання Дубровника до Адвенту) | Сутності: Dubrovnik, Stradun, Advent 2026",
+        "• Novljanima, Crikveničanima i Vinodolcima preporučuje se prokuhavanje v → Побут інших міст (Проклик про воду у Нові Винодольскі) | Сутності: Novi Vinodolski, Crikvenica, Žrnovnica",
+        "• U šibenskom kvartu izbušene gume na devet automobila. Policija otkrila → Побут інших міст (Пошкодження шин авто у Шибенику) | Сутності: Šibenik, Vidici, PU šibensko-kninska",
+        "• HLK o Jankomiru: Snimka postupanja prema pacijentu duboko je uznemiruj → Вже публікувалось (Коментар Лікарської палати щодо випадку в Янкомирі) | Сутності: Hrvatska liječnička komora, Jankomir, Sveti Ivan"
+      ],
+      "rejected_by_reason": {
+        "Побут інших міст": 7,
+        "Реклама": 1,
+        "Геоблок": 1,
+        "Вже публікувалось": 1
+      },
+      "updates_marked": 1,
+      "already_rejected": 12,
+      "rejected_by_code_examples": [
+        "[тег RSS lifestyle] Energetska pića i dodaci za trening povezani sa srčanim udarima kod mladih, pokazala je analiza više",
+        "[sporta] Poznati svi ovogodišnji laureati povodom Dana Grada Zadra; Uz nagrade Vijeća, Erlić dodjeljuje šest ",
+        "[sportaš] Jadranka Vlatko o smrti Kristiana Josipa Periša: ‘Nevjerojatno! Imala sam puno takvih slučajeva, zna",
+        "[тег RSS košarka] Zvijezda Warriorsa je osjetila čudnu bol za vrijeme utakmice. Nije se više vraćala u igru",
+        "[utakmici] Priveden muškarac (31) koji je na utakmici Rijeka – Union aktivirao topovski udar i ozlijedio petero"
+      ]
+    },
+    "backlog": {
+      "total_size": 2,
+      "sources": {
+        "Slobodna dalmacija": 2
       }
     },
     "published": {
