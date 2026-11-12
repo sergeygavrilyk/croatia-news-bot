@@ -1,111 +1,5 @@
 [
   {
-    "timestamp": "2026-11-03 13:01:15",
-    "execution_time": 312.4,
-    "funnel": {
-      "scraped_total": 35,
-      "scraped_by_source": {
-        "023": 10,
-        "Slobodna dalmacija": 15,
-        "Zadarski list": 10
-      },
-      "already_seen": 19,
-      "rejected_by_keywords": 7,
-      "rejected_by_rule": {
-        "prvenstvo": 1,
-        "URL /sport/": 1,
-        "sport": 1,
-        "promo": 1,
-        "horoskopu": 1,
-        "nogometnog": 1,
-        "sportašima": 1
-      },
-      "unclassified_by_ai": 0,
-      "duplicates_removed_by_ai": 6,
-      "rejection_reasons_list": [
-        "• Plenković: Crna Gora može u EU ako postoji volja da riješe otvorena pi → Вже публікувалось (Переговори Чорногорії з ЄС) | Сутності: Andrej Plenković, Crna Gora, EU, Hrvatska",
-        "• Sutra privremena prometna regulacija na ovom dijelu Vojnovića → Побут інших міст (Дубровник) | Сутності: Dubrovnik, Vojnovićeva, Domouprava Dubrovnik",
-        "• Boje Kavafisa: Opatijski komorni orkestar spaja glazbu i poeziju → Побут інших міст (Опатія) | Сутності: Opatijski komorni orkestar, Opatija, Centar Gervais",
-        "• Tko ga može nadmašiti? Pobijedio u pjevanju Mišu i Olivera, slušao ga  → Не за тематикою (Портрет місцевого жителя) | Сутності: Šibenik, Nikica Širinić, Skradin",
-        "• Studentsko izdanje Nedjeljne šetnje Palačom šećera 8. studenog → Побут інших міст (Рієка) | Сутності: Rijeka, Muzej grada Rijeke, Palača šećera",
-        "• Reakcija Udruge hrvatskih sudaca: Franković izravno narušava profesion → Вже публікувалось (Реакція суду у Дубровнику) | Сутності: Mato Franković, Dubrovnik, Udruga hrvatskih sudaca"
-      ],
-      "rejected_by_reason": {
-        "Вже публікувалось": 2,
-        "Побут інших міст": 3,
-        "Не за тематикою": 1
-      },
-      "updates_marked": 0,
-      "already_rejected": 13,
-      "rejected_by_code_examples": [
-        "[prvenstvo] Povijesni trenutak za Zadar; Nakon čak 19 godina mise se vraćaju u crkvu sv. Krševana!",
-        "[URL /sport/] Održana županijska prvenstva za mlade do 20 godina u ubrzanom i brzopoteznom šahu",
-        "[sport] Zadarska županija, kojom upravlja HDZ, planira val novih zapošljavanja. Brojke su velike...",
-        "[promo] Prvi ZTC Drive stiže u Rijeku: isprobajte nove automobile, uživajte u dobroj hrani i provedite subot",
-        "[horoskopu] Ministrici obrazovanja ruga se cijela BiH. Objavila video o prokletstvu retrogradnog Merkura",
-        "[nogometnog] Na ispraćaj Miše Kovača na Poljudu dolazi i premijer Plenković",
-        "[sportašima] Srednja škola Delnice bila “poprište” zanimljivog međunarodnog obrazovanja"
-      ]
-    },
-    "backlog": {
-      "total_size": 0,
-      "sources": {}
-    },
-    "published": {
-      "total": 3,
-      "ukraine_priority": 0,
-      "with_images": 3,
-      "text_only": 0,
-      "og_images_found": 2,
-      "sources": {
-        "023": 2,
-        "Zadarski list": 1
-      }
-    },
-    "models_used": {
-      "gemini-3.5-flash-lite": 2
-    },
-    "models_by_task": {
-      "filter": "gemini-3.5-flash-lite",
-      "translate": "gemini-3.5-flash-lite"
-    },
-    "model_attempts": [
-      {
-        "task": "filter",
-        "model": "gemini-3.5-flash-lite",
-        "outcome": "ok"
-      },
-      {
-        "task": "translate",
-        "model": "gemini-3.8-flash",
-        "outcome": "unavailable"
-      },
-      {
-        "task": "translate",
-        "model": "gemini-3.6-flash",
-        "outcome": "unavailable"
-      },
-      {
-        "task": "translate",
-        "model": "gemini-3.5-flash-lite",
-        "outcome": "ok"
-      }
-    ],
-    "exhausted_models": [],
-    "demoted_models": [
-      "filter: gemini-3-flash-preview",
-      "filter: gemini-3.6-flash",
-      "translate: gemini-3.8-flash"
-    ],
-    "translate_budget_deferred": [
-      "gemini-3.5-flash-lite",
-      "gemini-3.6-flash"
-    ],
-    "gemini_region_blocked": false,
-    "errors_count": 0,
-    "gemini_retries": 2
-  },
-  {
     "timestamp": "2026-11-03 14:01:16",
     "execution_time": 26.9,
     "funnel": {
@@ -10113,5 +10007,126 @@
     "gemini_unavailable": true,
     "errors_count": 0,
     "gemini_retries": 3
+  },
+  {
+    "timestamp": "2026-11-12 14:01:21",
+    "execution_time": 306.3,
+    "funnel": {
+      "scraped_total": 35,
+      "scraped_by_source": {
+        "023": 10,
+        "Slobodna dalmacija": 15,
+        "Zadarski list": 10
+      },
+      "already_seen": 20,
+      "rejected_by_keywords": 4,
+      "rejected_by_rule": {
+        "тег RSS lifestyle": 2,
+        "sporta": 1,
+        "košarku": 1
+      },
+      "unclassified_by_ai": 0,
+      "duplicates_removed_by_ai": 19,
+      "rejection_reasons_list": [
+        "• Super subota donosi odlične prilike za shopping → Реклама (Рекламна акція торгового центру) | Сутності: Super subota, shopping, popusti",
+        "• Ekologija grada: Odvoz otpada zbog odbijanja prihvata mogao bi biti pr → Вже публікувалось (Проблема відходів вже висвітлювалась) | Сутності: Ekologija grada, otpad, Hrvatska, Diklo",
+        "• Dubrovački vam u novom broju daruje poseban prilog o prijateljstvu Dub → Побут інших міст (Локальна подія в Дубровнику) | Сутності: Dubrovački vjesnik, Dubrovnik, Vukovar",
+        "• Barbir: Država ne može tražiti od malih iznajmljivača da poštuju pravi → Вже публікувалось (Політична дискусія щодо оренди) | Сутності: Damir Barbir, Sabor, iznajmljivači",
+        "• Karijeru počela u zadarskoj Hitnoj, a ovdje ima i vrijedne nekretnine! → Вже публікувалось (Деталі про відставку вже є в новині 23) | Сутності: Majda Grah, Zagreb, imovinska kartica",
+        "• ‘Talačka situacija‘ u Zadru: Radeta se vezao za govornicu, novinarima  → Дубль (Дублює подію з новини 10) | Сутності: Daniel Radeta, Zadar, Gradsko vijeće",
+        "• Koliko će novca PGŽ dati Katji Đujić? Lukanović: “Ja uopće ni ne znam  → Побут інших міст (Локальні питання Приморсько-горанської жупанії) | Сутності: PGŽ, Katja Đujić, Opatija",
+        "• DRŽAVA DAJE PROSTORE U ZAKUP NA 10 GODINA U Zadru se opet nudi atrakti → Не за тематикою (Загальнодержавний тендер на оренду) | Сутності: Državne nekretnine, Zadar, poslovni prostori",
+        "• Cirkus na zadarskom GV-u, prekinuta sjednica, Radeta se zavezao za gov → Вже публікувалось (Подія вже висвітлена в історії) | Сутності: Zadar, Gradsko vijeće, Daniel Radeta",
+        "• Europski bankari se okrenuli Redditu da prate raspoloženje malih ulaga → Світовий шум (Аналітика фінансових ринків) | Сутності: Reddit, ESB, ChatGPT",
+        "• KAO NEKAD PUPIĆ BAKRAČ Daniel Radeta ostao za govornicom nakon prekida → Вже публікувалось (Коментар до події в міськраді) | Сутності: Daniel Radeta, Zadar, prosvjed",
+        "• Sindikat osudio objavljivanje imena liječnika u slučaju smrti pacijent → Вже публікувалось (Реакція на інцидент у лікарні) | Сутності: Hrvatski liječnički sindikat, Jankomir, liječnici",
+        "• Erlić nakon prekinute sjednice napao oporbu: “SDP izašao iz vijećnice, → Вже публікувалось (Політична реакція на події в міськраді) | Сутності: Šime Erlić, Zadar, SDP",
+        "• Janaf otkrio detalje o sanaciji naftovoda. Počelo prikupljanje nafte i → Вже публікувалось (Оновлення щодо нафтопроводу вже є в історії) | Сутності: Janaf, naftovod, sanacija",
+        "• Mladić (24) došao na benzinsku na Dalmatini, natočio lagano 500 litara → Побут інших міст (Кримінал у Шибенику) | Сутності: Šibenik, krađa, gorivo",
+        "• Obitelj Periš organizira oproštajno okupljanje na središnjem zagrebačk → Вже публікувалось (Реакція на трагедію в лікарні) | Сутності: Zagreb, Kristian Josip Periš, prosvjed",
+        "• Glavina: Zakon o ugostiteljskoj djelatnosti nije zakon zabrana, nego z → Вже публікувалось (Законодавча ініціатива вже згадувалась) | Сутності: Tonči Glavina, Sabor, Zakon o ugostiteljstvu",
+        "• Maslinari očajni! Spas traže u uljarama na jugu, ali ni ondje nema mje → Побут інших міст (Проблеми фермерів у Спліті) | Сутності: Split, maslinari, uljare",
+        "• Učenica opatijske škole Chiara Markus uspješna na natjecanju u Italiji → Побут інших міст (Шкільне досягнення в Опатії) | Сутності: Opatija, Chiara Markus, Italija"
+      ],
+      "rejected_by_reason": {
+        "Реклама": 1,
+        "Вже публікувалось": 10,
+        "Побут інших міст": 5,
+        "Дубль": 1,
+        "Не за тематикою": 1,
+        "Світовий шум": 1
+      },
+      "updates_marked": 1,
+      "already_rejected": 13,
+      "rejected_by_code_examples": [
+        "[тег RSS lifestyle] Kinder Bueno kocke s hrskavim kadaifom, namazom od lješnjaka i kremom od vanilije",
+        "[тег RSS lifestyle] Energetska pića i dodaci za trening povezani sa srčanim udarima kod mladih, pokazala je analiza više",
+        "[sporta] Poznati svi ovogodišnji laureati povodom Dana Grada Zadra; Uz nagrade Vijeća, Erlić dodjeljuje šest ",
+        "[košarku] Ružnu, zastarjelu i dosadnu košarku zamijenila je moderna, lijepa, brza i tečna igra. Ili ipak ne?"
+      ]
+    },
+    "backlog": {
+      "total_size": 3,
+      "sources": {
+        "Slobodna dalmacija": 2,
+        "Zadarski list": 1
+      }
+    },
+    "published": {
+      "total": 3,
+      "ukraine_priority": 1,
+      "with_images": 3,
+      "text_only": 0,
+      "og_images_found": 1,
+      "sources": {
+        "Zadarski list": 1,
+        "023": 1,
+        "Slobodna dalmacija": 1
+      }
+    },
+    "models_used": {
+      "gemini-3.1-flash-lite": 1,
+      "gemini-3.6-flash": 1
+    },
+    "models_by_task": {
+      "filter": "gemini-3.1-flash-lite",
+      "translate": "gemini-3.6-flash"
+    },
+    "model_attempts": [
+      {
+        "task": "filter",
+        "model": "gemini-3.1-flash-lite",
+        "outcome": "ok"
+      },
+      {
+        "task": "translate",
+        "model": "gemini-3.5-flash-lite",
+        "outcome": "unavailable"
+      },
+      {
+        "task": "translate",
+        "model": "gemini-3.8-flash",
+        "outcome": "unavailable"
+      },
+      {
+        "task": "translate",
+        "model": "gemini-3.6-flash",
+        "outcome": "ok"
+      }
+    ],
+    "exhausted_models": [],
+    "demoted_models": [
+      "filter: gemini-3-flash-preview",
+      "filter: gemini-3.6-flash",
+      "filter: gemini-3.5-flash-lite",
+      "translate: gemini-3.8-flash"
+    ],
+    "translate_budget_deferred": [
+      "gemini-3.6-flash"
+    ],
+    "gemini_region_blocked": false,
+    "gemini_unavailable": false,
+    "errors_count": 0,
+    "gemini_retries": 2
   }
 ]
