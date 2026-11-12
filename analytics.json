@@ -1,97 +1,5 @@
 [
   {
-    "timestamp": "2026-11-03 14:01:16",
-    "execution_time": 26.9,
-    "funnel": {
-      "scraped_total": 35,
-      "scraped_by_source": {
-        "023": 10,
-        "Slobodna dalmacija": 15,
-        "Zadarski list": 10
-      },
-      "already_seen": 15,
-      "rejected_by_keywords": 6,
-      "rejected_by_rule": {
-        "тег RSS lifestyle": 1,
-        "prvenstvo": 1,
-        "sportom": 1,
-        "horoskopu": 1,
-        "URL /sport/": 1,
-        "sporta": 1
-      },
-      "unclassified_by_ai": 0,
-      "duplicates_removed_by_ai": 14,
-      "rejection_reasons_list": [
-        "• Franković: ‘Gospodo suci, maknite dilere i drogu s ulica! Ne tražite i → Побут інших міст (Дубровник) | Сутності: Mato Franković, Udruga hrvatskih sudaca, Dubrovnik, kokain",
-        "• Milanović uručio odlikovanja dobrovoljnim darivateljima krvi: “Hvala v → Не за тематикою | Сутності: Zoran Milanović, Red Danice hrvatske, Zagreb",
-        "• Grad Dubrovnik organizira podjelu 600 sadnica voćaka, evo gdje ih može → Побут інших міст (Дубровник) | Сутності: Grad Dubrovnik, Gruž, sadnice voćaka",
-        "• Nastavlja se serijal besplatnih edukacija Razvojnog centra Ličko-senjs → Побут інших міст (Личко-сенська жупанія) | Сутності: Ličko-senjska županija, Razvojni centar, Dubravka Lecić",
-        "• Objavljen cjenik Centra za starije osobe Ragusa ispod bolnice, Grad Du → Побут інших міст (Дубровник) | Сутності: Centar Ragusa, Grad Dubrovnik, starije osobe",
-        "• Roditelji-njegovatelji 20 godina čekaju da im se riješi status. Ružić  → Вже публікувалось (Реакція міністра) | Сутності: Alen Ružić, Ministarstvo rada, Zakon o socijalnoj skrbi",
-        "• Jelica Čučević o ulozi u ‘Mari Fjočici‘: ‘Moja Lukre je velika kunduri → Побут інших міст (Дубровник) | Сутності: Jelica Čučević, Kazalište Marina Držića, Mare Fjočica, Dubrovnik",
-        "• Budućnost lučkih gradova u fokusu Naples Shipping Weeka: sudjelovao i  → Побут інших міст (Рієка) | Сутності: Propeller Club Rijeka, Naples Shipping Week, Rijeka, Luka Rijeka",
-        "• U četvrtak se otvara izložba slika s likovnih radionica Umjetničke gal → Побут інших міст (Дубровник) | Сутності: Umjetnička galerija Dubrovnik, Matko Vekić, Tragovi prostora",
-        "• Tomašević: Potpisao sam odluku za poništenje natječaja od 40 milijuna  → Побут інших міст (Загреб) | Сутності: Tomislav Tomašević, Zagreb, Vodoopskrba i odvodnja, USKOK",
-        "• Zbog radova u srijedu dio Crikvenice bez vode → Побут інших міст (Цриквениця) | Сутності: Crikvenica, VIO Žrnovnica, voda",
-        "• Tommy ne namjerava stati na Brodokomercu? Mamić otkrio što planira na  → Реклама | Сутності: Tommy Grupa, Tomislav Mamić, Brodokomerc",
-        "• “Naših dvajset let”: Slavljenička izložba Udruge Vali seli pred riječk → Побут інших міст (Кострена та Рієка) | Сутності: Udruga Vali, Kostrena, Rijeka, Galerija Garbas",
-        "• Izložba “RISO i prijateljice: 420.000 otisaka kasnije” u četvrtak u Ga → Побут інших міст (Рієка) | Сутності: Galerija Kortil, Ana Labudović, Rijeka, RISO"
-      ],
-      "rejected_by_reason": {
-        "Побут інших міст": 11,
-        "Не за тематикою": 1,
-        "Вже публікувалось": 1,
-        "Реклама": 1
-      },
-      "updates_marked": 0,
-      "already_rejected": 9,
-      "rejected_by_code_examples": [
-        "[тег RSS lifestyle] Sjajna ili mat strana aluminijske folije: pokusi u pećnici pokazali su gotovo jednake rezultate",
-        "[prvenstvo] Povijesni trenutak za Zadar; Nakon čak 19 godina mise se vraćaju u crkvu sv. Krševana!",
-        "[sportom] Nekad nisu mogli istrčati ni 200 metara, a danas trče maratone: ‘Promijenilo nam je živote! A tko je",
-        "[horoskopu] Ministrica šokirala objavom: Najavila kako će smanjiti aktivnost zbog ‘retrogradnog Merkura‘",
-        "[URL /sport/] Održana županijska prvenstva za mlade do 20 godina u ubrzanom i brzopoteznom šahu",
-        "[sporta] HTZ predstavlja ukupnu hrvatsku turističku ponudu na sajmu WTM u Londonu"
-      ]
-    },
-    "backlog": {
-      "total_size": 0,
-      "sources": {}
-    },
-    "published": {
-      "total": 0,
-      "ukraine_priority": 0,
-      "with_images": 0,
-      "text_only": 0,
-      "og_images_found": 0,
-      "sources": {}
-    },
-    "models_used": {
-      "gemini-3.5-flash-lite": 1
-    },
-    "models_by_task": {
-      "filter": "gemini-3.5-flash-lite",
-      "translate": null
-    },
-    "model_attempts": [
-      {
-        "task": "filter",
-        "model": "gemini-3.5-flash-lite",
-        "outcome": "ok"
-      }
-    ],
-    "exhausted_models": [],
-    "demoted_models": [
-      "filter: gemini-3-flash-preview",
-      "filter: gemini-3.6-flash",
-      "translate: gemini-3.8-flash"
-    ],
-    "translate_budget_deferred": [],
-    "gemini_region_blocked": false,
-    "errors_count": 0,
-    "gemini_retries": 0
-  },
-  {
     "timestamp": "2026-11-03 15:01:20",
     "execution_time": 189.2,
     "funnel": {
@@ -10128,5 +10036,84 @@
     "gemini_unavailable": false,
     "errors_count": 0,
     "gemini_retries": 2
+  },
+  {
+    "timestamp": "2026-11-12 15:01:18",
+    "execution_time": 131.9,
+    "funnel": {
+      "scraped_total": 35,
+      "scraped_by_source": {
+        "023": 10,
+        "Slobodna dalmacija": 15,
+        "Zadarski list": 10
+      },
+      "already_seen": 19,
+      "rejected_by_keywords": 1,
+      "rejected_by_rule": {
+        "тег RSS lifestyle": 1
+      },
+      "unclassified_by_ai": 0,
+      "duplicates_removed_by_ai": 0,
+      "rejection_reasons_list": [],
+      "rejected_by_reason": {},
+      "updates_marked": 0,
+      "already_rejected": 17,
+      "rejected_by_code_examples": [
+        "[тег RSS lifestyle] Kinder Bueno kocke s hrskavim kadaifom, namazom od lješnjaka i kremom od vanilije"
+      ]
+    },
+    "backlog": {
+      "total_size": 18,
+      "sources": {
+        "Slobodna dalmacija": 7,
+        "Zadarski list": 9,
+        "023": 2
+      }
+    },
+    "published": {
+      "total": 0,
+      "ukraine_priority": 0,
+      "with_images": 0,
+      "text_only": 0,
+      "og_images_found": 0,
+      "sources": {}
+    },
+    "models_used": {},
+    "models_by_task": {
+      "filter": null,
+      "translate": null
+    },
+    "model_attempts": [
+      {
+        "task": "filter",
+        "model": "gemini-3-flash-preview",
+        "outcome": "unavailable"
+      },
+      {
+        "task": "filter",
+        "model": "gemini-3.6-flash",
+        "outcome": "unavailable"
+      },
+      {
+        "task": "filter",
+        "model": "gemini-3.5-flash-lite",
+        "outcome": "unavailable"
+      },
+      {
+        "task": "filter",
+        "model": "gemini-3.1-flash-lite",
+        "outcome": "unavailable"
+      }
+    ],
+    "exhausted_models": [],
+    "demoted_models": [
+      "translate: gemini-3.8-flash",
+      "translate: gemini-3.5-flash-lite"
+    ],
+    "translate_budget_deferred": [],
+    "gemini_region_blocked": false,
+    "gemini_unavailable": true,
+    "errors_count": 0,
+    "gemini_retries": 4
   }
 ]
