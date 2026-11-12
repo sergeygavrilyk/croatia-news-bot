@@ -1,142 +1,5 @@
 [
   {
-    "timestamp": "2026-11-03 15:01:20",
-    "execution_time": 189.2,
-    "funnel": {
-      "scraped_total": 35,
-      "scraped_by_source": {
-        "023": 10,
-        "Slobodna dalmacija": 15,
-        "Zadarski list": 10
-      },
-      "already_seen": 15,
-      "rejected_by_keywords": 7,
-      "rejected_by_rule": {
-        "тег RSS lifestyle": 2,
-        "prvenstvo": 1,
-        "sportom": 1,
-        "horoskopu": 1,
-        "URL /sport/": 1,
-        "тег RSS nogomet": 1
-      },
-      "unclassified_by_ai": 0,
-      "duplicates_removed_by_ai": 10,
-      "rejection_reasons_list": [
-        "• Kremlj potvrdio sudjelovanje na pregovorima s ukrajinskom i američkom  → Геоблок (Міжнародні переговори за межами Хорватії) | Сутності: Kremlj, Kijev, Washington, Abu Dabi",
-        "• Budućnost liječenja raka je u terapiji prilagođenoj svakom pacijentu → Світовий шум (Медичні технології лікування раку) | Сутності: UPMC, Međunarodni onkološki forum",
-        "• Evo prognoze Norvežana za Dalmaciju i kontinent za sljedećih 10 dana,  → Вже публікувалось (Прогноз погоди вже є в історії) | Сутності: DHMZ, Dalmacija, Gorska Hrvatska",
-        "• VIDEO Reporter HRT-a ‘usosio‘ vozačicu, začuo se uzrujani mužev glas s → Вже публікувалось (Шторм на Паšкому мосту вже описано в історії) | Сутності: HRT, Edi Škovrlj, Paški most",
-        "• Engleski tabloidi imaju svježeg favorita za ulogu Jamesa Bonda → Геоблок (Голлівудські новини) | Сутності: The Sun, Callum Turner, James Bond, Berkshire",
-        "• UNESCO-ovi gradovi medijske i informacijske pismenosti: ‘Danas je vrlo → Побут інших міст (Подія у Дубровнику) | Сутності: UNESCO, Dubrovnik, Al Rayyan, Stradun",
-        "• Hitovi Videosexa i FIT-a za predbožićni party u Tvornici kulture → Не за тематикою (Концерт у Загребі) | Сутності: Tvornica kulture, Anja Rupel, Videosex, Zagreb",
-        "• Obnavlja se opatijski Lungomare uz plažu Belveder → Побут інших міст (Ремонт набережної в Опатії) | Сутності: Opatija, Lungomare, K.N. Gradnja Plus, Volosko",
-        "• U nekim mjestima na području Grada Čabra voda nije za ljudsku upotrebu → Побут інших міст (Проблеми з водою в Чабрі) | Сутності: Grad Čabar, NZJZ, Prhci, Gornji Žagari",
-        "• Na Podmurvicama uveden individualizirani sustav prikupljanja otpada → Побут інших міст (Своєчасний збір сміття у Рієці) | Сутності: Rijeka, Podmurvice, Čistoća"
-      ],
-      "rejected_by_reason": {
-        "Геоблок": 2,
-        "Світовий шум": 1,
-        "Вже публікувалось": 2,
-        "Побут інших міст": 4,
-        "Не за тематикою": 1
-      },
-      "updates_marked": 0,
-      "already_rejected": 11,
-      "rejected_by_code_examples": [
-        "[тег RSS lifestyle] Gotovo 2000 eura za čišćenje odvoda: kako se zaštititi od nesavjesnih hitnih majstora",
-        "[тег RSS lifestyle] Sjajna ili mat strana aluminijske folije: pokusi u pećnici pokazali su gotovo jednake rezultate",
-        "[prvenstvo] Povijesni trenutak za Zadar; Nakon čak 19 godina mise se vraćaju u crkvu sv. Krševana!",
-        "[sportom] Nekad nisu mogli istrčati ni 200 metara, a danas trče maratone: ‘Promijenilo nam je živote! A tko je",
-        "[horoskopu] Ministrica šokirala objavom: Najavila kako će smanjiti aktivnost zbog ‘retrogradnog Merkura‘",
-        "[URL /sport/] Održana županijska prvenstva za mlade do 20 godina u ubrzanom i brzopoteznom šahu",
-        "[тег RSS nogomet] Iznenađenje u Kupu. Mladost iz Ždralova izbacila Slaven Belupo i kao drugoligaš izborila četvrtfinal"
-      ]
-    },
-    "backlog": {
-      "total_size": 0,
-      "sources": {}
-    },
-    "published": {
-      "total": 3,
-      "ukraine_priority": 0,
-      "with_images": 3,
-      "text_only": 0,
-      "og_images_found": 1,
-      "sources": {
-        "023": 1,
-        "Zadarski list": 2
-      }
-    },
-    "models_used": {
-      "gemini-3.5-flash-lite": 2
-    },
-    "models_by_task": {
-      "filter": "gemini-3.5-flash-lite",
-      "translate": "gemini-3.5-flash-lite"
-    },
-    "model_attempts": [
-      {
-        "task": "filter",
-        "model": "gemini-3-flash-preview",
-        "outcome": "unavailable"
-      },
-      {
-        "task": "filter",
-        "model": "gemini-3-flash-preview",
-        "outcome": "unavailable"
-      },
-      {
-        "task": "filter",
-        "model": "gemini-3.6-flash",
-        "outcome": "unavailable"
-      },
-      {
-        "task": "filter",
-        "model": "gemini-3.6-flash",
-        "outcome": "unavailable"
-      },
-      {
-        "task": "filter",
-        "model": "gemini-3.5-flash-lite",
-        "outcome": "ok"
-      },
-      {
-        "task": "translate",
-        "model": "gemini-3.8-flash",
-        "outcome": "unavailable"
-      },
-      {
-        "task": "translate",
-        "model": "gemini-3.8-flash",
-        "outcome": "unavailable"
-      },
-      {
-        "task": "translate",
-        "model": "gemini-3.6-flash",
-        "outcome": "unavailable"
-      },
-      {
-        "task": "translate",
-        "model": "gemini-3.6-flash",
-        "outcome": "unavailable"
-      },
-      {
-        "task": "translate",
-        "model": "gemini-3.5-flash-lite",
-        "outcome": "ok"
-      }
-    ],
-    "exhausted_models": [],
-    "demoted_models": [],
-    "translate_budget_deferred": [
-      "gemini-3.5-flash-lite",
-      "gemini-3.6-flash"
-    ],
-    "gemini_region_blocked": false,
-    "errors_count": 0,
-    "gemini_retries": 8
-  },
-  {
     "timestamp": "2026-11-03 16:01:24",
     "execution_time": 242.2,
     "funnel": {
@@ -10107,6 +9970,91 @@
     ],
     "exhausted_models": [],
     "demoted_models": [
+      "translate: gemini-3.8-flash",
+      "translate: gemini-3.5-flash-lite"
+    ],
+    "translate_budget_deferred": [],
+    "gemini_region_blocked": false,
+    "gemini_unavailable": true,
+    "errors_count": 0,
+    "gemini_retries": 4
+  },
+  {
+    "timestamp": "2026-11-12 16:01:20",
+    "execution_time": 30.1,
+    "funnel": {
+      "scraped_total": 35,
+      "scraped_by_source": {
+        "023": 10,
+        "Slobodna dalmacija": 15,
+        "Zadarski list": 10
+      },
+      "already_seen": 24,
+      "rejected_by_keywords": 3,
+      "rejected_by_rule": {
+        "тег RSS lifestyle": 2,
+        "тег RSS nogomet": 1
+      },
+      "unclassified_by_ai": 0,
+      "duplicates_removed_by_ai": 0,
+      "rejection_reasons_list": [],
+      "rejected_by_reason": {},
+      "updates_marked": 0,
+      "already_rejected": 12,
+      "rejected_by_code_examples": [
+        "[тег RSS lifestyle] Prhki keksi s orasima i bademima: sat vremena u hladnjaku i oko deset minuta u pećnici",
+        "[тег RSS lifestyle] Kinder Bueno kocke s hrskavim kadaifom, namazom od lješnjaka i kremom od vanilije",
+        "[тег RSS nogomet] ENGLESKA – HRVATSKA 20.30 SATI Vatreni na kultnom stadionu traže iskupljenje za Rujevicu"
+      ]
+    },
+    "backlog": {
+      "total_size": 26,
+      "sources": {
+        "Slobodna dalmacija": 9,
+        "Zadarski list": 14,
+        "023": 3
+      }
+    },
+    "published": {
+      "total": 0,
+      "ukraine_priority": 0,
+      "with_images": 0,
+      "text_only": 0,
+      "og_images_found": 0,
+      "sources": {}
+    },
+    "models_used": {},
+    "models_by_task": {
+      "filter": null,
+      "translate": null
+    },
+    "model_attempts": [
+      {
+        "task": "filter",
+        "model": "gemini-3.1-flash-lite",
+        "outcome": "unavailable"
+      },
+      {
+        "task": "filter",
+        "model": "gemini-3-flash-preview",
+        "outcome": "unavailable"
+      },
+      {
+        "task": "filter",
+        "model": "gemini-3.6-flash",
+        "outcome": "unavailable"
+      },
+      {
+        "task": "filter",
+        "model": "gemini-3.5-flash-lite",
+        "outcome": "unavailable"
+      }
+    ],
+    "exhausted_models": [],
+    "demoted_models": [
+      "filter: gemini-3-flash-preview",
+      "filter: gemini-3.6-flash",
+      "filter: gemini-3.5-flash-lite",
       "translate: gemini-3.8-flash",
       "translate: gemini-3.5-flash-lite"
     ],
