@@ -1,127 +1,5 @@
 [
   {
-    "timestamp": "2026-11-03 16:01:24",
-    "execution_time": 242.2,
-    "funnel": {
-      "scraped_total": 35,
-      "scraped_by_source": {
-        "023": 10,
-        "Slobodna dalmacija": 15,
-        "Zadarski list": 10
-      },
-      "already_seen": 16,
-      "rejected_by_keywords": 10,
-      "rejected_by_rule": {
-        "тег RSS lifestyle": 3,
-        "prvenstvo": 1,
-        "sportom": 1,
-        "horoskopu": 1,
-        "nogometnim": 1,
-        "oglasi": 1,
-        "igračima": 1,
-        "тег RSS sport": 1
-      },
-      "unclassified_by_ai": 0,
-      "duplicates_removed_by_ai": 7,
-      "rejection_reasons_list": [
-        "• Melania Trump najavila da će biti domaćin susreta predstavnika Rusije  → Геоблок (США та міжнародна політика) | Сутності: Melania Trump, Bijela kuća, Rusija, Ukrajina",
-        "• UHS: Frankovićeve tvrdnje o konzumaciji droge u pravosuđu su neprihvat → Побут інших міст (Дубровник) | Сутності: UHS, Dubrovnik, Mate Franković, pravosuđe",
-        "• ‘Pročešljali‘ smo liste čekanja u šibenskoj bolnici, kraće su od split → Побут інших міст (Шибеник) | Сутності: Irena Hrstić, Šibenik, Opća bolnica, liste čekanja",
-        "• Ključni donator republikanaca Elon Musk preko Tesle se protivi izgledn → Геоблок (США та глобальні ринки) | Сутності: Elon Musk, Tesla, Vijetnam, SAD",
-        "• Od srijede privremena prometna regulacija na Batali → Побут інших міст (Дубровник) | Сутності: Batala, Dubrovnik, promet, radovi",
-        "• Na šest stanova u Rijeci, 78 prijava. Može li novi zakon riješiti hrva → Побут інших міст (Рієка) | Сутності: Rijeka, Zakon o priuštivom stanovanju, najam stanova",
-        "• Prijetnje bombom preusmjerile letove diljem Europe. Dojave bile lažne, → Геоблок (Події в Європі) | Сутності: Europa, Poljska, zračna luka, prijetnje bombom"
-      ],
-      "rejected_by_reason": {
-        "Геоблок": 3,
-        "Побут інших міст": 4
-      },
-      "updates_marked": 1,
-      "already_rejected": 11,
-      "rejected_by_code_examples": [
-        "[тег RSS lifestyle] Kamin na drva i rak pluća: što je pokazalo praćenje više od 50.000 žena",
-        "[тег RSS lifestyle] Gotovo 2000 eura za čišćenje odvoda: kako se zaštititi od nesavjesnih hitnih majstora",
-        "[тег RSS lifestyle] Sjajna ili mat strana aluminijske folije: pokusi u pećnici pokazali su gotovo jednake rezultate",
-        "[prvenstvo] Povijesni trenutak za Zadar; Nakon čak 19 godina mise se vraćaju u crkvu sv. Krševana!",
-        "[sportom] Nekad nisu mogli istrčati ni 200 metara, a danas trče maratone: ‘Promijenilo nam je živote! A tko je",
-        "[horoskopu] Ministrica šokirala objavom: Najavila kako će smanjiti aktivnost zbog ‘retrogradnog Merkura‘",
-        "[nogometnim] Veliki oproštaj od Miše na Poljudu. Potresena supruga i neuješni Grdović: “Teško je pjevati”",
-        "[oglasi] Collins Dictionary odabrao riječ godine – mogging",
-        "[igračima] Mario Mamić: Ne znam koliko sam novca zadržao, a koliko vratio tati Zdravku",
-        "[тег RSS sport] Dvostruka olimpijska pobjednica objavila kraj karijere. Prije godinu dana je doživjela težak pad na "
-      ]
-    },
-    "backlog": {
-      "total_size": 0,
-      "sources": {}
-    },
-    "published": {
-      "total": 2,
-      "ukraine_priority": 1,
-      "with_images": 2,
-      "text_only": 0,
-      "og_images_found": 0,
-      "sources": {
-        "Slobodna dalmacija": 1,
-        "Zadarski list": 1
-      }
-    },
-    "models_used": {
-      "gemini-3.5-flash-lite": 1,
-      "gemini-3.6-flash": 1
-    },
-    "models_by_task": {
-      "filter": "gemini-3.5-flash-lite",
-      "translate": "gemini-3.6-flash"
-    },
-    "model_attempts": [
-      {
-        "task": "filter",
-        "model": "gemini-3-flash-preview",
-        "outcome": "unavailable"
-      },
-      {
-        "task": "filter",
-        "model": "gemini-3.6-flash",
-        "outcome": "unavailable"
-      },
-      {
-        "task": "filter",
-        "model": "gemini-3.6-flash",
-        "outcome": "unavailable"
-      },
-      {
-        "task": "filter",
-        "model": "gemini-3.5-flash-lite",
-        "outcome": "ok"
-      },
-      {
-        "task": "translate",
-        "model": "gemini-3.8-flash",
-        "outcome": "unavailable"
-      },
-      {
-        "task": "translate",
-        "model": "gemini-3.8-flash",
-        "outcome": "unavailable"
-      },
-      {
-        "task": "translate",
-        "model": "gemini-3.6-flash",
-        "outcome": "ok"
-      }
-    ],
-    "exhausted_models": [],
-    "demoted_models": [],
-    "translate_budget_deferred": [
-      "gemini-3.5-flash-lite",
-      "gemini-3.6-flash"
-    ],
-    "gemini_region_blocked": false,
-    "errors_count": 0,
-    "gemini_retries": 5
-  },
-  {
     "timestamp": "2026-11-03 17:01:19",
     "execution_time": 161.9,
     "funnel": {
@@ -10061,6 +9939,133 @@
     "translate_budget_deferred": [],
     "gemini_region_blocked": false,
     "gemini_unavailable": true,
+    "errors_count": 0,
+    "gemini_retries": 4
+  },
+  {
+    "timestamp": "2026-11-12 17:01:26",
+    "execution_time": 285.1,
+    "funnel": {
+      "scraped_total": 35,
+      "scraped_by_source": {
+        "023": 10,
+        "Slobodna dalmacija": 15,
+        "Zadarski list": 10
+      },
+      "already_seen": 24,
+      "rejected_by_keywords": 4,
+      "rejected_by_rule": {
+        "тег RSS lifestyle": 3,
+        "тег RSS nogomet": 1
+      },
+      "unclassified_by_ai": 0,
+      "duplicates_removed_by_ai": 18,
+      "rejection_reasons_list": [
+        "• Plenković: “Milanović je na besramnom spinu i besramnim lažima dobio i → Вже публікувалось (Політична реакція на тему допомоги Україні) | Сутності: Andrej Plenković, Zoran Milanović, Hrvatska vojska, Ukrajina",
+        "• Studeni u znaku vrhunske opreme za kupaonicu; Iskoristite 25% popusta  → Реклама (Рекламна акція магазину сантехніки) | Сутності: Kera Term, Zadar, Hansgrohe, popust",
+        "• U Hrvatskoj su opasan otpad, u Španjolskoj, Italiji i Grčkoj sirovina. → Побут інших міст (Проблеми утилізації відходів у Сплітському регіоні) | Сутності: maslinari, Splitsko-dalmatinska županija, otpad, uljare",
+        "• Krao parfeme po Rijeci, uhvatila ga policija → Побут інших міст (Дрібний кримінал у Рієці) | Сутності: Rijeka, policija, krađa, parfemi",
+        "• Zašto su specijalci zauzeli trajekt?! Dramatični prizori vježbe vojske → Побут інших міст (Військові навчання у Спліті) | Сутності: Split, policija, vojska, vježba",
+        "• Obećanjem nasljedstva navela više od 40 osoba na uplatu novca, zaradil → Побут інших міст (Шахрайство у громаді Велика) | Сутності: policija, Velika, prijevara, nasljedstvo",
+        "• Andro Vlahušić o planu Turističke zajednice grada: Dubrovnik bi na dne → Побут інших міст (Туристична політика Дубровника) | Сутності: Dubrovnik, Turistička zajednica, turisti, plan upravljanja",
+        "• FOTO Obilježili 80 godina rada: Centar na Rujevici zalog za svijetlu b → Побут інших міст (Ювілей автоклубу в Рієці) | Сутності: Autoklub Rijeka, Rujevica, Opatija, obljetnica",
+        "• Dubravka Šuica u društvu princa Harrya u Bruxellesu → Світовий шум (Світська хроніка) | Сутності: Dubravka Šuica, princ Harry, Bruxelles",
+        "• U pucnjavi u Washingtonu najmanje jedna osoba ubijena, sve se dogodilo → Геоблок (Кримінал у США) | Сутності: Washington, Bijela kuća, pucnjava, policija",
+        "• Položeni vijenci u Komolcu i na Strinčjeri u spomen na poginule branit → Побут інших міст (Вшанування пам'яті у Дубровнику) | Сутності: Dubrovnik, branitelji, Komolac, Strinčjera",
+        "• Plenković: “U Jankomiru se dogodilo ozbiljno zataškavanje, a Zadravec  → Вже публікувалось (Коментар прем'єра щодо інцидентів у лікарнях) | Сутності: Andrej Plenković, Dijana Zadravec, KBC Sestre milosrdnice, Jankomir",
+        "• Možemo! traži žurnu gradnju doma za starije i nemoćne na Kantridi; Rin → Побут інших міст (Політична ініціатива у Рієці) | Сутності: Rijeka, Možemo!, dom za starije, Kantrida",
+        "• Održana konferencija za ugostitelje: rasprava o komunalnom redu, uređe → Вже публікувалось (Конференція про якість послуг у Задарі) | Сутності: Zadar, Turistička zajednica, ugostitelji, Petrčane",
+        "• Grad Rijeka ostao bez zgrade Istravina na Delti, izgubljen je i novac  → Побут інших міст (Майнові питання у Рієці) | Сутності: Rijeka, Istravin, Delta, Slavko Linić",
+        "• Imenovan novi lučki kapetan u Pločama, na dužnost stupa Toni Grgić → Побут інших міст (Кадрове призначення у Плоче) | Сутності: Ploče, Vlada RH, Toni Grgić, lučka kapetanija",
+        "• TranziT #7 završava dvjema premijerama: od plesne izvedbe Tonija Flega → Побут інших міст (Культурна подія у Рієці) | Сутності: Rijeka, TranziT, kazalište, festival",
+        "• Zbog lošeg vremena u prekidu niz brodskih i trajektnih linija, evo pop → Вже публікувалось (Загальна інформація про перебої у русі) | Сутності: Jadrolinija, vrijeme, trajekt, HAK"
+      ],
+      "rejected_by_reason": {
+        "Вже публікувалось": 4,
+        "Реклама": 1,
+        "Побут інших міст": 11,
+        "Світовий шум": 1,
+        "Геоблок": 1
+      },
+      "updates_marked": 2,
+      "already_rejected": 9,
+      "rejected_by_code_examples": [
+        "[тег RSS lifestyle] Izbjeljivač nije za svaku površinu, a s nekim sredstvima za čišćenje stvara otrovne plinove",
+        "[тег RSS lifestyle] Prhki keksi s orasima i bademima: sat vremena u hladnjaku i oko deset minuta u pećnici",
+        "[тег RSS lifestyle] Kinder Bueno kocke s hrskavim kadaifom, namazom od lješnjaka i kremom od vanilije",
+        "[тег RSS nogomet] ENGLESKA – HRVATSKA 20.30 SATI Vatreni na kultnom stadionu traže iskupljenje za Rujevicu"
+      ]
+    },
+    "backlog": {
+      "total_size": 12,
+      "sources": {
+        "Zadarski list": 9,
+        "Slobodna dalmacija": 3
+      }
+    },
+    "published": {
+      "total": 3,
+      "ukraine_priority": 0,
+      "with_images": 3,
+      "text_only": 0,
+      "og_images_found": 1,
+      "sources": {
+        "Slobodna dalmacija": 2,
+        "023": 1
+      }
+    },
+    "models_used": {
+      "gemini-3.1-flash-lite": 1,
+      "gemini-3.5-flash-lite": 1
+    },
+    "models_by_task": {
+      "filter": "gemini-3.1-flash-lite",
+      "translate": "gemini-3.5-flash-lite"
+    },
+    "model_attempts": [
+      {
+        "task": "filter",
+        "model": "gemini-3-flash-preview",
+        "outcome": "unavailable"
+      },
+      {
+        "task": "filter",
+        "model": "gemini-3.6-flash",
+        "outcome": "unavailable"
+      },
+      {
+        "task": "filter",
+        "model": "gemini-3.5-flash-lite",
+        "outcome": "unavailable"
+      },
+      {
+        "task": "filter",
+        "model": "gemini-3.1-flash-lite",
+        "outcome": "ok"
+      },
+      {
+        "task": "translate",
+        "model": "gemini-3.8-flash",
+        "outcome": "unavailable"
+      },
+      {
+        "task": "translate",
+        "model": "gemini-3.5-flash-lite",
+        "outcome": "ok"
+      }
+    ],
+    "exhausted_models": [],
+    "demoted_models": [
+      "filter: gemini-3-flash-preview",
+      "filter: gemini-3.6-flash",
+      "filter: gemini-3.5-flash-lite",
+      "filter: gemini-3.1-flash-lite"
+    ],
+    "translate_budget_deferred": [
+      "gemini-3.6-flash"
+    ],
+    "gemini_region_blocked": false,
+    "gemini_unavailable": false,
     "errors_count": 0,
     "gemini_retries": 4
   }
