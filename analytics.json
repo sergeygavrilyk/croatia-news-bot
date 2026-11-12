@@ -1,120 +1,5 @@
 [
   {
-    "timestamp": "2026-11-03 17:01:19",
-    "execution_time": 161.9,
-    "funnel": {
-      "scraped_total": 35,
-      "scraped_by_source": {
-        "023": 10,
-        "Slobodna dalmacija": 15,
-        "Zadarski list": 10
-      },
-      "already_seen": 18,
-      "rejected_by_keywords": 7,
-      "rejected_by_rule": {
-        "тег RSS lifestyle": 3,
-        "prvenstvo": 1,
-        "sportom": 1,
-        "horoskopu": 1,
-        "sport": 1
-      },
-      "unclassified_by_ai": 0,
-      "duplicates_removed_by_ai": 7,
-      "rejection_reasons_list": [
-        "• Pet zadanih postavki zbog kojih Chrome troši radnu memoriju i kako ih  → Світовий шум (Поради щодо споживання пам'яті браузера) | Сутності: Google Chrome, ASUS TUF Gaming, RAM, Windows",
-        "• Šansa za život od prvog udisaja: Osigurajte novi inkubator za OB Šiben → Побут інших міст (Шибеник) | Сутності: RTL pomaže djeci, Šibensko-kninska županija, Opća bolnica",
-        "• Neke koncesije za marine i plaže istječu, a neke nove će se nuditi u 2 → Побут інших міст (Дубровник) | Сутності: Dubrovnik, ACI Club, Marina Lumbarda, Slano",
-        "• Otvoren natječaj za Melodije Istre i Kvarnera 2027. → Побут інших міст (Рієка) | Сутності: Rijeka, Istra, Kvarner, MIK",
-        "• “Anđeli u bijelom” Laure Tine: Mlada Riječanka objavila pjesmu posveće → Побут інших міст (Рієка) | Сутності: Rijeka, Laura Tina, Lovran, Anđeli u bijelom",
-        "• U SAD-u otvorena birališta na izborima koji se smatraju referendumom o → Геоблок (Вибори в США) | Сутності: SAD, Donald Trump, New York, Kalifornija",
-        "• Marina Punat i GP Krk darovali krčkim školama 3D printere i prijenosna → Побут інших міст (Острів Крк) | Сутності: Marina Punat, GP Krk, Otok Krk, 3D printeri"
-      ],
-      "rejected_by_reason": {
-        "Світовий шум": 1,
-        "Побут інших міст": 5,
-        "Геоблок": 1
-      },
-      "updates_marked": 0,
-      "already_rejected": 14,
-      "rejected_by_code_examples": [
-        "[тег RSS lifestyle] Kamin na drva i rak pluća: što je pokazalo praćenje više od 50.000 žena",
-        "[тег RSS lifestyle] Gotovo 2000 eura za čišćenje odvoda: kako se zaštititi od nesavjesnih hitnih majstora",
-        "[тег RSS lifestyle] Sjajna ili mat strana aluminijske folije: pokusi u pećnici pokazali su gotovo jednake rezultate",
-        "[prvenstvo] Povijesni trenutak za Zadar; Nakon čak 19 godina mise se vraćaju u crkvu sv. Krševana!",
-        "[sportom] Nekad nisu mogli istrčati ni 200 metara, a danas trče maratone: ‘Promijenilo nam je živote! A tko je",
-        "[horoskopu] Ministrica šokirala objavom: Najavila kako će smanjiti aktivnost zbog ‘retrogradnog Merkura‘",
-        "[sport] U senjskoj školi radionice o istraživanju Velebita"
-      ]
-    },
-    "backlog": {
-      "total_size": 0,
-      "sources": {}
-    },
-    "published": {
-      "total": 3,
-      "ukraine_priority": 0,
-      "with_images": 3,
-      "text_only": 0,
-      "og_images_found": 1,
-      "sources": {
-        "023": 1,
-        "Zadarski list": 2
-      }
-    },
-    "models_used": {
-      "gemini-3.5-flash-lite": 2
-    },
-    "models_by_task": {
-      "filter": "gemini-3.5-flash-lite",
-      "translate": "gemini-3.5-flash-lite"
-    },
-    "model_attempts": [
-      {
-        "task": "filter",
-        "model": "gemini-3.5-flash-lite",
-        "outcome": "ok"
-      },
-      {
-        "task": "translate",
-        "model": "gemini-3.8-flash",
-        "outcome": "unavailable"
-      },
-      {
-        "task": "translate",
-        "model": "gemini-3.8-flash",
-        "outcome": "unavailable"
-      },
-      {
-        "task": "translate",
-        "model": "gemini-3.6-flash",
-        "outcome": "unavailable"
-      },
-      {
-        "task": "translate",
-        "model": "gemini-3.6-flash",
-        "outcome": "unavailable"
-      },
-      {
-        "task": "translate",
-        "model": "gemini-3.5-flash-lite",
-        "outcome": "ok"
-      }
-    ],
-    "exhausted_models": [],
-    "demoted_models": [
-      "filter: gemini-3-flash-preview",
-      "filter: gemini-3.6-flash",
-      "translate: gemini-3.8-flash"
-    ],
-    "translate_budget_deferred": [
-      "gemini-3.5-flash-lite",
-      "gemini-3.6-flash"
-    ],
-    "gemini_region_blocked": false,
-    "errors_count": 0,
-    "gemini_retries": 4
-  },
-  {
     "timestamp": "2026-11-03 20:01:18",
     "execution_time": 177.4,
     "funnel": {
@@ -10068,5 +9953,113 @@
     "gemini_unavailable": false,
     "errors_count": 0,
     "gemini_retries": 4
+  },
+  {
+    "timestamp": "2026-11-12 20:01:13",
+    "execution_time": 157.1,
+    "funnel": {
+      "scraped_total": 35,
+      "scraped_by_source": {
+        "023": 10,
+        "Slobodna dalmacija": 15,
+        "Zadarski list": 10
+      },
+      "already_seen": 14,
+      "rejected_by_keywords": 6,
+      "rejected_by_rule": {
+        "тег RSS lifestyle": 5,
+        "тег RSS nogomet": 1
+      },
+      "unclassified_by_ai": 0,
+      "duplicates_removed_by_ai": 16,
+      "rejection_reasons_list": [
+        "• FOTO Hrvatski boćari i boćarice nakon drugog dana SP-a osigurali tri o → Спорт (Світовий чемпіонат з бочче) | Сутності: Hrvatski boćari, Rijeka, Markica Dodig",
+        "• Ana Perišić: ‘Pomažemo maltretiranim osobama da nanovo prepoznaju vlas → Побут інших міст (Лекція у Дубровнику) | Сутності: Ana Perišić, Dubrovnik, Split",
+        "• ADHD, AI i “Vlak kroz mozak”: Nova kampanja za podizanje svijesti o ne → Геоблок (Словенський документальний фільм) | Сутності: ADHD, Slovenija, Digital Da Vincis",
+        "• ZG Skupština: Tomašević će u roku od 30 dana podnijeti izvješće o smrt → Вже публікувалось (Реакція міської влади Загреба на смерть у лікарні) | Сутності: Tomislav Tomašević, Zagreb, Kristijan Josip Periš",
+        "• Potpisan ugovor s izvođačem radova na dogradnji luke Prigradica → Побут інших міст (Будівництво порту в громаді Блато) | Сутності: luka Prigradica, Blato, Branko Bačić",
+        "• U dubini jame na Predolcu otkrivene vrste životinja za koje se nije zn → Побут інших міст (Відкриття нових видів тварин у Метковичі) | Сутності: Metković, Predolac, Zrinka Korljan",
+        "• Na tečaju Junior spasilac sudjelovalo 11 učenika crikveničkih osnovnih → Побут інших міст (Курси рятувальників у Цриквениці) | Сутності: Crikvenica, Crveni križ, Junior-spasilac",
+        "• VIDEO Radeta objavio novi video iz zadarske Gradske vijećnice: ‘Ljudi  → Дубль (Подія з Радетою у мерії Задара) | Сутності: Daniel Radeta, Zadar, Gradska vijećnica",
+        "• PGS: Usvojen je naš prijedlog o naknadi troškova prijevoza branitelja  → Побут інших міст (Транспортні пільги для ветеранів у Рієці) | Сутності: PGS, Primorsko-goranska županija, Gorski kotar",
+        "• Film Dom tehnike u petak u MO Kozala → Побут інших міст (Кінопоказ у Рієці) | Сутності: Rijeka, Kozala, Dom tehnike",
+        "• Rekorder “Martinja” u PGŽ-u vozio s 1,57 promila → Побут інших міст (ДТП та п'яні водії у Рієці) | Сутності: Rijeka, Martinje, PU primorsko-goranska",
+        "• Opatijski proračun se smanjio za 3 milijuna i 845.000 eura: Klub Neve  → Побут інших міст (Політичні зміни у міськраді Опатії) | Сутності: Opatija, Kristian Tončić, Neva Slani",
+        "• U Rijeci teško ozlijeđena pješakinja. Na pješakom prijelazu ju oborilo → Побут інших міст (ДТП з пішоходом у Рієці) | Сутності: Rijeka, Vukovarska ulica, KBC Rijeka",
+        "• Baterije sve zanimljivije poduzećima: omogućuju niže troškove energije → Світовий шум (Загальні поради щодо енергоефективності бізнесу) | Сутності: solarni paneli, baterije, električna energija",
+        "• “ISPOD RADARA” Predstavljeni knjiga i istoimeni serijal koji govore o  → Побут інших міст (Презентація книги у Рієці) | Сутності: Rijeka, Mihovil Pirnat, Ispod radara",
+        "• U petak počinje cijepljenje protiv gripe, treba se javiti svom liječni → Побут інших міст (Вакцинація від грипу в Рієці) | Сутності: Rijeka, NZZJZ PGŽ, cijepljenje"
+      ],
+      "rejected_by_reason": {
+        "Спорт": 1,
+        "Побут інших міст": 11,
+        "Геоблок": 1,
+        "Вже публікувалось": 1,
+        "Дубль": 1,
+        "Світовий шум": 1
+      },
+      "updates_marked": 2,
+      "already_rejected": 9,
+      "rejected_by_code_examples": [
+        "[тег RSS lifestyle] Pileća prsa ili bataci i zabatci: dijetetičarka uspoređuje kalorije, vitamine i pripremu",
+        "[тег RSS lifestyle] Rublje se može sušiti vani i zimi: smrznuta odjeća gubi vlagu ako je zrak suh i puše vjetar",
+        "[тег RSS lifestyle] Izbjeljivač nije za svaku površinu, a s nekim sredstvima za čišćenje stvara otrovne plinove",
+        "[тег RSS lifestyle] Prhki keksi s orasima i bademima: sat vremena u hladnjaku i oko deset minuta u pećnici",
+        "[тег RSS lifestyle] Kinder Bueno kocke s hrskavim kadaifom, namazom od lješnjaka i kremom od vanilije",
+        "[тег RSS nogomet] Turci s novim izbornikom poveli protiv Belgije. Na kraju su ostali bez svega"
+      ]
+    },
+    "backlog": {
+      "total_size": 8,
+      "sources": {
+        "Slobodna dalmacija": 4,
+        "Zadarski list": 4
+      }
+    },
+    "published": {
+      "total": 3,
+      "ukraine_priority": 0,
+      "with_images": 3,
+      "text_only": 0,
+      "og_images_found": 0,
+      "sources": {
+        "Slobodna dalmacija": 1,
+        "Zadarski list": 2
+      }
+    },
+    "models_used": {
+      "gemini-3-flash-preview": 1,
+      "gemini-3.5-flash-lite": 1
+    },
+    "models_by_task": {
+      "filter": "gemini-3-flash-preview",
+      "translate": "gemini-3.5-flash-lite"
+    },
+    "model_attempts": [
+      {
+        "task": "filter",
+        "model": "gemini-3-flash-preview",
+        "outcome": "ok"
+      },
+      {
+        "task": "translate",
+        "model": "gemini-3.8-flash",
+        "outcome": "unavailable"
+      },
+      {
+        "task": "translate",
+        "model": "gemini-3.5-flash-lite",
+        "outcome": "ok"
+      }
+    ],
+    "exhausted_models": [],
+    "demoted_models": [],
+    "translate_budget_deferred": [
+      "gemini-3.6-flash"
+    ],
+    "gemini_region_blocked": false,
+    "gemini_unavailable": false,
+    "errors_count": 0,
+    "gemini_retries": 1
   }
 ]
