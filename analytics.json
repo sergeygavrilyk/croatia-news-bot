@@ -1,103 +1,5 @@
 [
   {
-    "timestamp": "2026-11-04 12:01:18",
-    "execution_time": 137.8,
-    "funnel": {
-      "scraped_total": 35,
-      "scraped_by_source": {
-        "023": 10,
-        "Slobodna dalmacija": 15,
-        "Zadarski list": 10
-      },
-      "already_seen": 15,
-      "rejected_by_keywords": 8,
-      "rejected_by_rule": {
-        "КАПС у заголовку": 1,
-        "тег RSS sport": 4,
-        "igrača": 1,
-        "utakmici": 1,
-        "тег RSS nogomet": 1
-      },
-      "unclassified_by_ai": 0,
-      "duplicates_removed_by_ai": 9,
-      "rejection_reasons_list": [
-        "• Otpor u Domu zdravlja PGŽ-a. Više od trećine zaposlenih odbilo potpisa → Побут інших міст (Рієка) | Сутності: Dom zdravlja PGŽ, Primorsko-goranska županija, ugovori o radu",
-        "• ‘Kreativni i u zlatnim godinama‘: novi ciklus besplatnih radionica u O → Побут інших міст (Дубровник) | Сутності: Dubrovačke knjižnice, Ogranak Lapad, Carmela Grgurević",
-        "• UABA Rijeke osuđuje vandalizam nad spomen-pločom posvećenom Titu; pozi → Побут інших міст (Рієка) | Сутності: UABA Rijeka, Josip Broz Tito, Pećine",
-        "• Promet između Kikovice i Oštrovice prekinut zbog nesreće u kojoj su su → Побут інших міст (ДТП на трасі) | Сутності: A6, Kikovica, Oštrovica",
-        "• Studenti RIT Croatia osmislili aplikaciju koja spaja otoke, berbu masl → Побут інших міст (Загреб та Дубровник) | Сутності: RIT Croatia, Zagreb, Dubrovnik",
-        "• Mato Franković o drogama, iznajmljivanju i političkim ambicijama: Na s → Вже публікувалось (Дубровник) | Сутності: Mato Franković, Radio Dubrovnik, Srijedom otvoreno",
-        "• ‘Tko šmrče i gdje? Prema izračunu prosjeka, u Saboru šmrče 15 zastupni → Вже публікувалось (Дубровник) | Сутності: Anita Bonačić Obradović, Ranko Ostojić, SDP Dubrovnik",
-        "• SDP-ovci o priuštivom stanovanju: To je ona verzija u kojoj mladi na k → Побут інших міст (Дубровник) | Сутності: Anita Bonačić Obradović, Ranko Ostojić, Osijek",
-        "• Anita Bonačić Obradović i Ranko Ostojić o rješenju za otpad: Kakva je  → Побут інших міст (Дубровник) | Сутності: Anita Bonačić Obradović, Ranko Ostojić, Čistoća Dubrovnik"
-      ],
-      "rejected_by_reason": {
-        "Побут інших міст": 7,
-        "Вже публікувалось": 2
-      },
-      "updates_marked": 0,
-      "already_rejected": 9,
-      "rejected_by_code_examples": [
-        "[КАПС у заголовку] OSVOJI KINO ULAZNICE Darujemo 4 kino ulaznice za film “POSLJEDNJI RIMSKI BOG” u Cinestaru Zadar",
-        "[тег RSS sport] Lucija Mijolović blista na Svjetskom prvenstvu; Paraplivačica PK Zadar donosi dvije medalje iz Portu",
-        "[тег RSS sport] Zadar ponovno bez Mihailovića, Šare: Nadamo se povratku s barem jednom pobjedom",
-        "[igrača] Kreće nova sezona LIKAR-a: Osam momčadi, više od 150 igrača, a svima je zajedničko jedno – ljubav pr",
-        "[utakmici] Krševan Klarica je u sjajnoj šuterskoj formi, a sada je stigla i službena potvrda",
-        "[тег RSS sport] Brazilac debitira pred domaćom publikom. Camara mijenja Ocona do kraja sezone",
-        "[тег RSS sport] Antonia Ružić preko Čaraeve do drugog kola Hong Konga",
-        "[тег RSS nogomet] Hrvatske nogometašice u Ligi nacija protiv Slovačke, Bugarske i Gibraltara"
-      ]
-    },
-    "backlog": {
-      "total_size": 3,
-      "sources": {
-        "Slobodna dalmacija": 2,
-        "023": 1
-      }
-    },
-    "published": {
-      "total": 3,
-      "ukraine_priority": 0,
-      "with_images": 3,
-      "text_only": 0,
-      "og_images_found": 2,
-      "sources": {
-        "023": 2,
-        "Slobodna dalmacija": 1
-      }
-    },
-    "models_used": {
-      "gemini-3.5-flash-lite": 2
-    },
-    "models_by_task": {
-      "filter": "gemini-3.5-flash-lite",
-      "translate": "gemini-3.5-flash-lite"
-    },
-    "model_attempts": [
-      {
-        "task": "filter",
-        "model": "gemini-3.5-flash-lite",
-        "outcome": "ok"
-      },
-      {
-        "task": "translate",
-        "model": "gemini-3.5-flash-lite",
-        "outcome": "ok"
-      }
-    ],
-    "exhausted_models": [],
-    "demoted_models": [
-      "filter: gemini-3-flash-preview",
-      "filter: gemini-3.6-flash",
-      "translate: gemini-3.8-flash",
-      "translate: gemini-3.6-flash"
-    ],
-    "translate_budget_deferred": [],
-    "gemini_region_blocked": false,
-    "errors_count": 0,
-    "gemini_retries": 0
-  },
-  {
     "timestamp": "2026-11-04 13:01:19",
     "execution_time": 144.3,
     "funnel": {
@@ -10043,5 +9945,99 @@
     "gemini_unavailable": false,
     "errors_count": 0,
     "gemini_retries": 0
+  },
+  {
+    "timestamp": "2026-11-13 13:01:18",
+    "execution_time": 247.4,
+    "funnel": {
+      "scraped_total": 35,
+      "scraped_by_source": {
+        "023": 10,
+        "Slobodna dalmacija": 15,
+        "Zadarski list": 10
+      },
+      "already_seen": 19,
+      "rejected_by_keywords": 4,
+      "rejected_by_rule": {
+        "utakmice": 1,
+        "тег RSS sport": 2,
+        "sporta": 1
+      },
+      "unclassified_by_ai": 0,
+      "duplicates_removed_by_ai": 7,
+      "rejection_reasons_list": [
+        "• Hrstić: Propusta u slučaju smrti Periša je bilo, inspekcijski nadzor s → Вже публікувалось (Смерть пацієнта в загреبській психіатрії) | Сутності: Irena Hrstić, Kristian Josip Periš, Klinika za psihijatriju Sveti Ivan, Zagreb",
+        "• Kaos s parkingom u dubrovačkom kvartu, pogledajte što ljudi izvode, ov → Побут інших міст (Проблеми з паркуванням у Дубровнику) | Сутності: Dubrovnik, TUP, Ivana Gorana Kovačića, Komunalno redarstvo",
+        "• Do sada se na Danu sjećanja u Vukovaru očekuju najmanje tri puna autob → Побут інших міст (Поїздка ветеранів з Госпича) | Сутності: Gospić, Vukovar, Dan sjećanja, autobusi",
+        "• U krivolovu ubio srnu loveći zabranjenom noćnom optikom → Побут інших міст (Кримінал у Госпичі) | Сутності: Gospić, Lički Osik, krivolov, srna",
+        "• Grad Dubrovnik provodi anketu o sadnji i očuvanju autohtonih biljnih v → Побут інших міст (Озеленення в Дубровнику) | Сутності: Grad Dubrovnik, Mjesec sadnje, autohtone biljke, anketa",
+        "• Na Trsatu će biti izložena škrinja s tijelom sv. Tripuna, stražu će ču → Побут інших міст (Реліквії на Трсаті) | Сутності: Trsat, sv. Tripun, Bokeljska mornarica, Kotor",
+        "• SDP upozorava na prijeteći kolaps sustava gospodarenja otpadom: Vlada  → Побут інших міст (Проблеми зі сміттям у Загребі) | Сутності: SDP, Miro Marković, Zagreb, otpad"
+      ],
+      "rejected_by_reason": {
+        "Вже публікувалось": 1,
+        "Побут інших міст": 6
+      },
+      "updates_marked": 0,
+      "already_rejected": 12,
+      "rejected_by_code_examples": [
+        "[utakmice] Dirljiva gesta hrvatskih navijača na Wembleyju; Podigli transparent u čast tragično preminulog Krist",
+        "[тег RSS sport] Košarkaši Zadra oduševili učenike u Zemuniku; Već sutradan na tjelesnom svi su htjeli igrati samo ko",
+        "[sporta] Osigurano 300 tisuća eura za sportska igrališta i objekte",
+        "[тег RSS sport] Odbojkaši Rijeke i Grobničana, te odbojkašice Rijeke i Drenove saznali suparnike u osmini finala Kup"
+      ]
+    },
+    "backlog": {
+      "total_size": 3,
+      "sources": {
+        "Zadarski list": 2,
+        "023": 1
+      }
+    },
+    "published": {
+      "total": 3,
+      "ukraine_priority": 0,
+      "with_images": 3,
+      "text_only": 0,
+      "og_images_found": 2,
+      "sources": {
+        "023": 2,
+        "Slobodna dalmacija": 1
+      }
+    },
+    "models_used": {
+      "gemini-3.5-flash-lite": 1,
+      "gemini-3.8-flash": 1
+    },
+    "models_by_task": {
+      "filter": "gemini-3.5-flash-lite",
+      "translate": "gemini-3.8-flash"
+    },
+    "model_attempts": [
+      {
+        "task": "filter",
+        "model": "gemini-3-flash-preview",
+        "outcome": "unavailable"
+      },
+      {
+        "task": "filter",
+        "model": "gemini-3.5-flash-lite",
+        "outcome": "ok"
+      },
+      {
+        "task": "translate",
+        "model": "gemini-3.8-flash",
+        "outcome": "ok"
+      }
+    ],
+    "exhausted_models": [],
+    "demoted_models": [
+      "filter: gemini-3.6-flash"
+    ],
+    "translate_budget_deferred": [],
+    "gemini_region_blocked": false,
+    "gemini_unavailable": false,
+    "errors_count": 0,
+    "gemini_retries": 1
   }
 ]
