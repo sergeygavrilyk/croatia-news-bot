@@ -1,110 +1,5 @@
 [
   {
-    "timestamp": "2026-11-04 17:01:30",
-    "execution_time": 248.2,
-    "funnel": {
-      "scraped_total": 35,
-      "scraped_by_source": {
-        "023": 10,
-        "Slobodna dalmacija": 15,
-        "Zadarski list": 10
-      },
-      "already_seen": 20,
-      "rejected_by_keywords": 8,
-      "rejected_by_rule": {
-        "тег RSS lifestyle": 2,
-        "КАПС у заголовку": 1,
-        "тег RSS sport": 2,
-        "sport": 1,
-        "URL /sport/": 1,
-        "тег RSS nogomet": 1
-      },
-      "unclassified_by_ai": 0,
-      "duplicates_removed_by_ai": 5,
-      "rejection_reasons_list": [
-        "• Ministar Habijan odgovorio Frankoviću koji je progovorio o ‘kamionima  → Не за тематикою (суперечка про вживання наркотиків чиновниками) | Сутності: Damir Habijan, Mato Franković, Dubrovnik",
-        "• Kraljevički vijećnici prihvatili izvješće gradonačelnika: podrška snaž → Побут інших міст (інфраструктурні проекти у Кралєвиці) | Сутності: Kraljevica, Dalibor Čandrlić, autocesta A7",
-        "• Kad za Vitu Feraru kažete da je uspješan, to je deminutiv. On je Vito  → Спорт (чемпіонат світу з риболовлі) | Сутності: Vito Ferara, Tribunj, svjetski prvak",
-        "• Most traži ostavku Maršavelskog, člana Vijeća za građanski nadzor SOA- → Дубль (політична реакція на скандал з Маршавельським) | Сутності: Most, Aleksandar Maršavelski, SOA",
-        "• Mate Mišo Kovač pokopan u krugu obitelji na Mirogoju uz sina Edija → Вже публікувалось (похорон співака після прощання) | Сутності: Mate Mišo Kovač, Mirogoj, Zagreb"
-      ],
-      "rejected_by_reason": {
-        "Не за тематикою": 1,
-        "Побут інших міст": 1,
-        "Спорт": 1,
-        "Дубль": 1,
-        "Вже публікувалось": 1
-      },
-      "updates_marked": 0,
-      "already_rejected": 14,
-      "rejected_by_code_examples": [
-        "[тег RSS lifestyle] Pročišćivač zraka ili odvlaživač: koji uređaj rješava vlagu, a koji pelud i prašinu",
-        "[тег RSS lifestyle] Božićni kaktus ne cvate? Premjestite ga u sobu u kojoj se navečer ne pali svjetlo",
-        "[КАПС у заголовку] OSVOJI KINO ULAZNICE Darujemo 4 kino ulaznice za film “POSLJEDNJI RIMSKI BOG” u Cinestaru Zadar",
-        "[тег RSS sport] Lucija Mijolović blista na Svjetskom prvenstvu; Paraplivačica PK Zadar donosi dvije medalje iz Portu",
-        "[sport] Mladi Dubrovčanin s medaljom se vratio u Grad, pogledajte kako su ga dočekali! ‘Povijesni trenutak z",
-        "[URL /sport/] Vojnović je ‘gorio‘: Svečano dočekan judaš i osvajač brončane medalje Europskom prvenstvu Borna Buti",
-        "[тег RSS sport] Juniori i kadeti Rijeke ostvarili pun bodovni učinak, Đivoje: “Neću dopustiti momčadi da sada makne ",
-        "[тег RSS nogomet] Pioniri Rijeke i Pomorca osvojili samo bod u 9. kolu: Igra i dojam ispred rezultata, Dinamo i Gorica"
-      ]
-    },
-    "backlog": {
-      "total_size": 3,
-      "sources": {
-        "Zadarski list": 1,
-        "Slobodna dalmacija": 1,
-        "023": 1
-      }
-    },
-    "published": {
-      "total": 3,
-      "ukraine_priority": 0,
-      "with_images": 3,
-      "text_only": 0,
-      "og_images_found": 0,
-      "sources": {
-        "Zadarski list": 2,
-        "Slobodna dalmacija": 1
-      }
-    },
-    "models_used": {
-      "gemini-3.6-flash": 1,
-      "gemini-3.5-flash-lite": 1
-    },
-    "models_by_task": {
-      "filter": "gemini-3.6-flash",
-      "translate": "gemini-3.5-flash-lite"
-    },
-    "model_attempts": [
-      {
-        "task": "filter",
-        "model": "gemini-3-flash-preview",
-        "outcome": "unavailable"
-      },
-      {
-        "task": "filter",
-        "model": "gemini-3.6-flash",
-        "outcome": "ok"
-      },
-      {
-        "task": "translate",
-        "model": "gemini-3.5-flash-lite",
-        "outcome": "ok"
-      }
-    ],
-    "exhausted_models": [],
-    "demoted_models": [
-      "translate: gemini-3.8-flash",
-      "translate: gemini-3.6-flash"
-    ],
-    "translate_budget_deferred": [
-      "gemini-3.6-flash"
-    ],
-    "gemini_region_blocked": false,
-    "errors_count": 0,
-    "gemini_retries": 1
-  },
-  {
     "timestamp": "2026-11-04 20:01:18",
     "execution_time": 138.8,
     "funnel": {
@@ -10064,5 +9959,104 @@
     "gemini_unavailable": false,
     "errors_count": 0,
     "gemini_retries": 3
+  },
+  {
+    "timestamp": "2026-11-13 20:01:34",
+    "execution_time": 132.4,
+    "funnel": {
+      "scraped_total": 35,
+      "scraped_by_source": {
+        "023": 10,
+        "Slobodna dalmacija": 15,
+        "Zadarski list": 10
+      },
+      "already_seen": 13,
+      "rejected_by_keywords": 5,
+      "rejected_by_rule": {
+        "тег RSS lifestyle": 4,
+        "sportu": 1
+      },
+      "unclassified_by_ai": 0,
+      "duplicates_removed_by_ai": 11,
+      "rejection_reasons_list": [
+        "• Čelnici EU o bizarnim ruskim zahtjevima: Europska sigurnosna arhitektu → Дубль (Дублює новину про формат переговорів щодо України) | Сутності: ЄС, Україна, Росія, Фрідріх Мерц",
+        "• Costa: Bitno je da Europa govori jednim glasom → Дубль (Дублює новину про представництво Європи на переговорах) | Сутності: Антоніо Коста, ЄС, Україна, Дональд Трамп",
+        "• Koje autohtone biljke posaditi u dubrovačkom đardinu? Evo što kaže hor → Побут інших міст (Поради щодо озеленення садів у Дубровнику) | Сутності: Дубровник, автохтонні рослини, садівництво",
+        "• U Trsatskom svetištu častili relikvije sv. Tripuna. Škrinja zastala u  → Побут інших міст (Релігійна подія у Рієці) | Сутності: Рієка, Котор, св. Трипун, Трсат",
+        "• Fra Ma Fu festival: Osam nagrada za izvrsnost u reportažnom novinarstv → Побут інших міст (Локальний фестиваль журналістики у Загребі) | Сутності: Fra Ma Fu festival, Загреб, журналістика",
+        "• Iskustva Dubrovkinja iz Društva multiple skleroze: ‘Zdravstveno stanje → Побут інших міст (Проблеми пацієнтів у Дубровнику) | Сутності: Дубровник, розсіяний склероз, HZZO",
+        "• Zeleni Kastav u ponedjeljak, sudjeluje desetak izlagača s bogatom ponu → Побут інших міст (Локальний ярмарок у місті Кастав) | Сутності: Кастав, Зелений Кастав, ярмарок",
+        "• Plenković o slučaju Periš: Došlo je do “evolucije” stajališta gradskih → Вже публікувалось (Коментар прем'єра щодо вже відомого інциденту в лікарні) | Сутності: Андрей Пленкович, клініка Светий Іван, Крістіан Йосип Періш",
+        "• Slovenske nagrade znanstvenicama iz Cresa Zorani Medarić i Kristini Se → Побут інших міст (Нагородження вчених із Цреса в Словенії) | Сутності: Црес, Словенія, Зорана Медарич, Крістіна Сепчич",
+        "• Psihijatrijsko društvo: Smrt pacijenta uzdrmala povjerenje u psihijatr → Вже публікувалось (Реакція професійної спільноти на смерть пацієнта) | Сутності: Хорватське психіатричне товариство, клініка Светий Іван, Крістіан Йосип Періш",
+        "• Kekin traži preispitivanje psihijatrijske skrbi u Hrvatskoj: “Zabrinja → Вже публікувалось (Політична реакція на інцидент у психіатричній клініці) | Сутності: Івана Кекін, клініка Светий Іван, Ірена Хрстич"
+      ],
+      "rejected_by_reason": {
+        "Дубль": 2,
+        "Побут інших міст": 6,
+        "Вже публікувалось": 3
+      },
+      "updates_marked": 1,
+      "already_rejected": 8,
+      "rejected_by_code_examples": [
+        "[тег RSS lifestyle] Adventski vijenci 2026.: sušene hortenzije, bordo nijanse, tanke svijeće i aranžmani u zdjelama",
+        "[тег RSS lifestyle] Pet ulja koja dobro podnose prženje i zašto suncokretovo nije među njima",
+        "[тег RSS lifestyle] Rolada od bukovače, žutog kruha i jablanovače s tvrdo kuhanim jajima u sredini",
+        "[тег RSS lifestyle] Suha koža zimi: dermatologinja savjetuje kraće tuširanje i kremu u roku od tri minute",
+        "[sportu] Donesena odluka o dodjeli financijskih potpora za razvoj turističkog proizvoda - naglasak na sportu"
+      ]
+    },
+    "backlog": {
+      "total_size": 3,
+      "sources": {
+        "Slobodna dalmacija": 2,
+        "023": 1
+      }
+    },
+    "published": {
+      "total": 3,
+      "ukraine_priority": 1,
+      "with_images": 3,
+      "text_only": 0,
+      "og_images_found": 2,
+      "sources": {
+        "Zadarski list": 1,
+        "023": 2
+      }
+    },
+    "models_used": {
+      "gemini-3-flash-preview": 1,
+      "gemini-3.5-flash-lite": 1
+    },
+    "models_by_task": {
+      "filter": "gemini-3-flash-preview",
+      "translate": "gemini-3.5-flash-lite"
+    },
+    "model_attempts": [
+      {
+        "task": "filter",
+        "model": "gemini-3-flash-preview",
+        "outcome": "ok"
+      },
+      {
+        "task": "translate",
+        "model": "gemini-3.8-flash",
+        "outcome": "unavailable"
+      },
+      {
+        "task": "translate",
+        "model": "gemini-3.5-flash-lite",
+        "outcome": "ok"
+      }
+    ],
+    "exhausted_models": [],
+    "demoted_models": [],
+    "translate_budget_deferred": [
+      "gemini-3.6-flash"
+    ],
+    "gemini_region_blocked": false,
+    "gemini_unavailable": false,
+    "errors_count": 0,
+    "gemini_retries": 1
   }
 ]
