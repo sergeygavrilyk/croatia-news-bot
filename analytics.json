@@ -1,103 +1,5 @@
 [
   {
-    "timestamp": "2026-11-04 09:01:15",
-    "execution_time": 119.3,
-    "funnel": {
-      "scraped_total": 35,
-      "scraped_by_source": {
-        "023": 10,
-        "Slobodna dalmacija": 15,
-        "Zadarski list": 10
-      },
-      "already_seen": 16,
-      "rejected_by_keywords": 5,
-      "rejected_by_rule": {
-        "тег RSS sport": 2,
-        "тег RSS nogomet": 1,
-        "igrača": 1,
-        "promo": 1
-      },
-      "unclassified_by_ai": 0,
-      "duplicates_removed_by_ai": 11,
-      "rejection_reasons_list": [
-        "• Mislio da je na utrci Formule 1? Nijemac jurio Dalmatinom, policija ga → Побут інших міст (Порушення швидкості в районі Госпіча) | Сутності: Німецький водій, Автострада А1, Поліція, Госпіч",
-        "• Od Homera do Trumpa: Kanadski pisac Yann Martel gostuje u emisiji HRT- → Не за тематикою (Телеінтервью з канадським письменником) | Сутності: Ян Мартель, Морана Касапович, HRT, Загреб",
-        "• U subotu se od Konavala do Straduna održava Oldtimer Rally, interes je → Побут інших міст (Ретро-автомобілі в Дубровнику) | Сутності: Oldtimer klub Dubrovnik, Дубровник, Konavle",
-        "• Večer tradicije, pjesme i plesa na Plitvičkim jezerima, stiže i Branko → Побут інших міст (Фольклорна подія на Плітвицьких озерах) | Сутності: Плітвицькі озера, Бранко Уводіч, Mukinje",
-        "• Akademska inkluzija na Sveučilištu u Dubrovniku okuplja poznata imena  → Побут інших міст (Студентський форум у Дубровнику) | Сутності: Свеучиліште у Дубровику, Silva Capurso, Дубровник",
-        "• Vozač (28) poginuo kod Požege. Sletio je autom s ceste pa udario u sta → Побут інших міст (ДТП зі смертельним наслідком біля Пожеги) | Сутності: Пожега, Каменска, Поліція",
-        "• Izborni debakl republikanaca, demokrati osvojili oba doma Kongresa! ‘O → Геоблок (Вибори в США) | Сутності: Дональд Трамп, Сенат США, Демократи, Конгресс США",
-        "• Pobjednici izbora iz sjene. U Senat ušli prvi musliman i prvi otvoreni → Геоблок (Вибори в Сенат США) | Сутності: Абдул Ель-Саєд, Мічиган, Сенат США, Гарі Пітерс",
-        "• Puhovski o rezultatima izbora: ‘Pitanje je kad će Trump početi divljat → Вже публікувалось (Коментар експерта про американські вибори) | Сутності: Жарко Пуховський, Дональд Трамп, США, Іран",
-        "• Iza omiljenog domaćeg nakita stoji priča obitelji koja već pola stolje → Реклама (Промо-історія сімейного ювелірного бренду) | Сутності: Бренд Prahir, Велика Гориця, Дражен Прахір",
-        "• Maja Sulić podijelila je s nama svoju jedinstvenu modnu filozofiju i t → Побут інших міст (Модна розповідь у Рієці) | Сутності: Мая Суліч, Рієка, Tower Center Rijeka"
-      ],
-      "rejected_by_reason": {
-        "Побут інших міст": 6,
-        "Не за тематикою": 1,
-        "Геоблок": 2,
-        "Вже публікувалось": 1,
-        "Реклама": 1
-      },
-      "updates_marked": 0,
-      "already_rejected": 10,
-      "rejected_by_code_examples": [
-        "[тег RSS sport] Zadar ponovno bez Mihailovića, Šare: Nadamo se povratku s barem jednom pobjedom",
-        "[тег RSS sport] Dječje utrke poseban su ukras Božićne utrke Biograd 2026., prijave su otvorene",
-        "[тег RSS nogomet] Sin Cristiana Ronalda prvi put pozvan u portugalsku U-17 reprezentaciju",
-        "[igrača] Sretni Riječanin osvojio je 8.000 eura u izvlačenju igre Joker, evo gdje je uplaćen listić",
-        "[promo] Uručene nagrade »Imam žicu!« najboljim učenicima iz matematike, fizike i IT-ja"
-      ]
-    },
-    "backlog": {
-      "total_size": 5,
-      "sources": {
-        "023": 3,
-        "Zadarski list": 2
-      }
-    },
-    "published": {
-      "total": 3,
-      "ukraine_priority": 0,
-      "with_images": 3,
-      "text_only": 0,
-      "og_images_found": 3,
-      "sources": {
-        "023": 3
-      }
-    },
-    "models_used": {
-      "gemini-3.5-flash-lite": 2
-    },
-    "models_by_task": {
-      "filter": "gemini-3.5-flash-lite",
-      "translate": "gemini-3.5-flash-lite"
-    },
-    "model_attempts": [
-      {
-        "task": "filter",
-        "model": "gemini-3.5-flash-lite",
-        "outcome": "ok"
-      },
-      {
-        "task": "translate",
-        "model": "gemini-3.5-flash-lite",
-        "outcome": "ok"
-      }
-    ],
-    "exhausted_models": [],
-    "demoted_models": [
-      "filter: gemini-3-flash-preview",
-      "filter: gemini-3.6-flash",
-      "translate: gemini-3.8-flash",
-      "translate: gemini-3.6-flash"
-    ],
-    "translate_budget_deferred": [],
-    "gemini_region_blocked": false,
-    "errors_count": 0,
-    "gemini_retries": 0
-  },
-  {
     "timestamp": "2026-11-04 10:01:29",
     "execution_time": 119.8,
     "funnel": {
@@ -10069,5 +9971,103 @@
     "translation_rejected": [
       "чужий алфавіт: Кнеز, — Međunarodna premijera: kako je mali Biograd postao svjetski simbol bor"
     ]
+  },
+  {
+    "timestamp": "2026-11-13 10:01:11",
+    "execution_time": 134.3,
+    "funnel": {
+      "scraped_total": 35,
+      "scraped_by_source": {
+        "023": 10,
+        "Slobodna dalmacija": 15,
+        "Zadarski list": 10
+      },
+      "already_seen": 25,
+      "rejected_by_keywords": 3,
+      "rejected_by_rule": {
+        "sportaša": 1,
+        "тег RSS sport": 1,
+        "promo": 1
+      },
+      "unclassified_by_ai": 0,
+      "duplicates_removed_by_ai": 4,
+      "rejection_reasons_list": [
+        "• FOTO Divanhana za naježiti se: „Kafu mi draga ispeci“ na Sušaku → Побут інших міст (Концерт у Рієці) | Сутності: Divanhana, Sušak, Hrvatski kulturni dom, Radio Sevdah",
+        "• Skandal u Nvidiji razotkrio koliko su tehnološke kompanije ranjive: “N → Геоблок (Технологічний ринок США) | Сутності: Nvidia, Kongres SAD, AI",
+        "• U »3. maju« kreće gradnja dvaju riječnih kruzera, potvrđen je ugovor s → Побут інших міст (Суднобудування в Рієці) | Сутності: 3. maj, Scenic grupa, Rijeka, MKM Yachts",
+        "• Najavljeni brojni programi Frankofonije u Rijeci 2026., evo detalja → Побут інших міст (Культурна подія в Рієці) | Сутності: Frankofonija, Rijeka, Francuska alijansa, Sales Gosses"
+      ],
+      "rejected_by_reason": {
+        "Побут інших міст": 3,
+        "Геоблок": 1
+      },
+      "updates_marked": 0,
+      "already_rejected": 17,
+      "rejected_by_code_examples": [
+        "[sportaša] Deseto izdanje Atletske utrke “Dani sjećanja od Škabrnje do Vukovara” više od 500 sudionika",
+        "[тег RSS sport] Partizan u subotu dolazi u Zadar, a jedan euro od svake ulaznice ide za nabavu cistoskopa",
+        "[promo] Rođendanske popuste i duple bodove"
+      ]
+    },
+    "backlog": {
+      "total_size": 1,
+      "sources": {
+        "Slobodna dalmacija": 1
+      }
+    },
+    "published": {
+      "total": 3,
+      "ukraine_priority": 0,
+      "with_images": 3,
+      "text_only": 0,
+      "og_images_found": 1,
+      "sources": {
+        "Slobodna dalmacija": 1,
+        "023": 1,
+        "Zadarski list": 1
+      }
+    },
+    "models_used": {
+      "gemini-3.5-flash-lite": 1,
+      "gemini-3.6-flash": 1
+    },
+    "models_by_task": {
+      "filter": "gemini-3.5-flash-lite",
+      "translate": "gemini-3.6-flash"
+    },
+    "model_attempts": [
+      {
+        "task": "filter",
+        "model": "gemini-3.5-flash-lite",
+        "outcome": "ok"
+      },
+      {
+        "task": "translate",
+        "model": "gemini-3.5-flash-lite",
+        "outcome": "unavailable"
+      },
+      {
+        "task": "translate",
+        "model": "gemini-3.8-flash",
+        "outcome": "unavailable"
+      },
+      {
+        "task": "translate",
+        "model": "gemini-3.6-flash",
+        "outcome": "ok"
+      }
+    ],
+    "exhausted_models": [],
+    "demoted_models": [
+      "filter: gemini-3-flash-preview",
+      "filter: gemini-3.6-flash",
+      "translate: gemini-3.8-flash",
+      "translate: gemini-3.6-flash"
+    ],
+    "translate_budget_deferred": [],
+    "gemini_region_blocked": false,
+    "gemini_unavailable": false,
+    "errors_count": 0,
+    "gemini_retries": 2
   }
 ]
