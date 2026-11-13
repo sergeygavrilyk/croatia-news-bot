@@ -1,106 +1,5 @@
 [
   {
-    "timestamp": "2026-11-04 10:01:29",
-    "execution_time": 119.8,
-    "funnel": {
-      "scraped_total": 35,
-      "scraped_by_source": {
-        "023": 10,
-        "Slobodna dalmacija": 15,
-        "Zadarski list": 10
-      },
-      "already_seen": 15,
-      "rejected_by_keywords": 9,
-      "rejected_by_rule": {
-        "тег RSS sport": 4,
-        "utakmici": 1,
-        "тег RSS nogomet": 2,
-        "turnir": 1,
-        "igrača": 1
-      },
-      "unclassified_by_ai": 0,
-      "duplicates_removed_by_ai": 7,
-      "rejection_reasons_list": [
-        "• Trump je stjeran u kut, a cijenu bi mogla platiti – Europa. Ovo je pet → Геоблок (Політичні події в США) | Сутності: Trump, Europa, Washington, NATO, Ukrajina",
-        "• Četvorica mladića kazneno prijavljena zbog krađe vatrogasnih aparata p → Побут інших міст (Крадіжка в Дубровнику) | Сутності: MUP, Dubrovnik, Nova Mokošica",
-        "• Ne stišavaju se reakcije na vožnju lijesa Poljudom: ‘Najveće legende s → Вже публікувалось (Похорон Мішо Ковача) | Сутності: Mišo Kovač, Poljud, Split",
-        "• Odnio cijelu kasu iz dućana na Smiljevcu, ali nije daleko dogurao... → Дубль (Крадіжка каси на Smiljevcu) | Сутності: Zadar, Smiljevac, Policija",
-        "• Šibenčanin Jaki (17) ne govori, ali itekako ima što reći. A sada ostva → Не за тематикою (Історія художника з Шибеника) | Сутності: Jakov Knežević, Šibenik, Zagreb",
-        "• Usporite ako idete preko Vojnovića! Zbog rezidbe stabla koje predstavl → Побут інших міст (Робітники в Дубровнику) | Сутності: Dubrovnik, Ulica Iva Vojnovića, Lapad",
-        "• Dubrovački kardiolog: ‘Franković je u pravu, šmrče se nemilice! A ako  → Вже публікувалось (Коментар щодо наркотиків у Дубровнику) | Сутності: Pero Markunović, Mato Franković, Dubrovnik"
-      ],
-      "rejected_by_reason": {
-        "Геоблок": 1,
-        "Побут інших міст": 2,
-        "Вже публікувалось": 2,
-        "Дубль": 1,
-        "Не за тематикою": 1
-      },
-      "updates_marked": 0,
-      "already_rejected": 10,
-      "rejected_by_code_examples": [
-        "[тег RSS sport] Zadar ponovno bez Mihailovića, Šare: Nadamo se povratku s barem jednom pobjedom",
-        "[тег RSS sport] Dječje utrke poseban su ukras Božićne utrke Biograd 2026., prijave su otvorene",
-        "[utakmici] Krševan Klarica je u sjajnoj šuterskoj formi, a sada je stigla i službena potvrda",
-        "[тег RSS sport] Brazilac debitira pred domaćom publikom. Camara mijenja Ocona do kraja sezone",
-        "[тег RSS sport] Antonia Ružić preko Čaraeve do drugog kola Hong Konga",
-        "[тег RSS nogomet] Hrvatske nogometašice u Ligi nacija protiv Slovačke, Bugarske i Gibraltara",
-        "[turnir] Ove subote Memorijalni turnir u sjećanje na legendarnog Marijana Tabara – Marina",
-        "[тег RSS nogomet] Sin Cristiana Ronalda prvi put pozvan u portugalsku U-17 reprezentaciju",
-        "[igrača] Sretni Riječanin osvojio je 8.000 eura u izvlačenju igre Joker, evo gdje je uplaćen listić"
-      ]
-    },
-    "backlog": {
-      "total_size": 6,
-      "sources": {
-        "Slobodna dalmacija": 1,
-        "023": 4,
-        "Zadarski list": 1
-      }
-    },
-    "published": {
-      "total": 3,
-      "ukraine_priority": 0,
-      "with_images": 3,
-      "text_only": 0,
-      "og_images_found": 2,
-      "sources": {
-        "023": 2,
-        "Zadarski list": 1
-      }
-    },
-    "models_used": {
-      "gemini-3.5-flash-lite": 2
-    },
-    "models_by_task": {
-      "filter": "gemini-3.5-flash-lite",
-      "translate": "gemini-3.5-flash-lite"
-    },
-    "model_attempts": [
-      {
-        "task": "filter",
-        "model": "gemini-3.5-flash-lite",
-        "outcome": "ok"
-      },
-      {
-        "task": "translate",
-        "model": "gemini-3.5-flash-lite",
-        "outcome": "ok"
-      }
-    ],
-    "exhausted_models": [],
-    "demoted_models": [
-      "filter: gemini-3-flash-preview",
-      "filter: gemini-3.6-flash",
-      "translate: gemini-3.8-flash",
-      "translate: gemini-3.6-flash"
-    ],
-    "translate_budget_deferred": [],
-    "gemini_region_blocked": false,
-    "errors_count": 0,
-    "gemini_retries": 0
-  },
-  {
     "timestamp": "2026-11-04 11:01:31",
     "execution_time": 98.1,
     "funnel": {
@@ -10069,5 +9968,100 @@
     "gemini_unavailable": false,
     "errors_count": 0,
     "gemini_retries": 2
+  },
+  {
+    "timestamp": "2026-11-13 11:01:20",
+    "execution_time": 184.8,
+    "funnel": {
+      "scraped_total": 35,
+      "scraped_by_source": {
+        "023": 10,
+        "Slobodna dalmacija": 15,
+        "Zadarski list": 10
+      },
+      "already_seen": 20,
+      "rejected_by_keywords": 5,
+      "rejected_by_rule": {
+        "sportaša": 1,
+        "promo": 2,
+        "тег RSS nogomet": 1,
+        "URL /sport/": 1
+      },
+      "unclassified_by_ai": 0,
+      "duplicates_removed_by_ai": 6,
+      "rejection_reasons_list": [
+        "• Namamo pojma o tome pa smo pitali AI da nam predloži: Od zlatnog do me → Побут інших міст (Нова ілюмінація в Дубровнику) | Сутності: Дубровник, Stradun, AI",
+        "• Andrinja uz bogat program događanja: Od predstave i knjige do jedrilič → Спорт (День громади Пунат та спорт) | Сутності: Punat, Andrinja, Luka Modrić",
+        "• 10% popusta u PEVEX-u do nedjelje na cjelokupni iznos računa → Реклама (Знижки в магазині Pevex) | Сутності: Pevex, popust, vikend",
+        "• Lidija Hrastić-Novak imenovana vršiteljicom dužnosti ravnateljice Klin → Вже публікувалось (Оновлення щодо лікарні в Янкомірі) | Сутності: Zagreb, Klinika za psihijatriju Sv. Ivan, Lidija Hrastić-Novak",
+        "• Tragedija u Jankomiru stavlja SDP i Možemo! pred prvi veliki test: “Ni → Вже публікувалось (Реакція партій на трагедію в психіатрії) | Сутності: SDP, Možemo!, Zagreb, Klinika Sv. Ivan",
+        "• FOTO/VIDEO Obilna kiša poplavila Klanu i Fužine: izlilo se jezero Baje → Побут інших міст (Повені в Клані та Фужине) | Сутності: Klana, Fužine, Gorski kotar, jezero Bajer"
+      ],
+      "rejected_by_reason": {
+        "Побут інших міст": 2,
+        "Спорт": 1,
+        "Реклама": 1,
+        "Вже публікувалось": 2
+      },
+      "updates_marked": 0,
+      "already_rejected": 11,
+      "rejected_by_code_examples": [
+        "[sportaša] Deseto izdanje Atletske utrke “Dani sjećanja od Škabrnje do Vukovara” više od 500 sudionika",
+        "[promo] 10 stvari koje morate znati o Središnjem registru stanovništva",
+        "[тег RSS nogomet] Infantino je dobio novog izazivača. Iza njega je stao i jedan moćni europski državnik",
+        "[URL /sport/] Brzonogi igrač HMNK Rijeka uoči Torcide: “Igramo pred svojim navijačima, bodovi ostaju u Rijeci”",
+        "[promo] Rođendanske popuste i duple bodove"
+      ]
+    },
+    "backlog": {
+      "total_size": 0,
+      "sources": {}
+    },
+    "published": {
+      "total": 3,
+      "ukraine_priority": 0,
+      "with_images": 3,
+      "text_only": 0,
+      "og_images_found": 0,
+      "sources": {
+        "Slobodna dalmacija": 1,
+        "Zadarski list": 2
+      }
+    },
+    "models_used": {
+      "gemini-3.5-flash-lite": 1,
+      "gemini-3.6-flash": 1
+    },
+    "models_by_task": {
+      "filter": "gemini-3.5-flash-lite",
+      "translate": "gemini-3.6-flash"
+    },
+    "model_attempts": [
+      {
+        "task": "filter",
+        "model": "gemini-3.6-flash",
+        "outcome": "unavailable"
+      },
+      {
+        "task": "filter",
+        "model": "gemini-3.5-flash-lite",
+        "outcome": "ok"
+      },
+      {
+        "task": "translate",
+        "model": "gemini-3.6-flash",
+        "outcome": "ok"
+      }
+    ],
+    "exhausted_models": [],
+    "demoted_models": [
+      "filter: gemini-3-flash-preview",
+      "translate: gemini-3.8-flash"
+    ],
+    "translate_budget_deferred": [],
+    "gemini_region_blocked": false,
+    "gemini_unavailable": false,
+    "errors_count": 0,
+    "gemini_retries": 1
   }
 ]
