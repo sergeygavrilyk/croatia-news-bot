@@ -1,88 +1,5 @@
 [
   {
-    "timestamp": "2026-11-04 14:01:27",
-    "execution_time": 131.0,
-    "funnel": {
-      "scraped_total": 35,
-      "scraped_by_source": {
-        "023": 10,
-        "Slobodna dalmacija": 15,
-        "Zadarski list": 10
-      },
-      "already_seen": 23,
-      "rejected_by_keywords": 4,
-      "rejected_by_rule": {
-        "тег RSS lifestyle": 1,
-        "КАПС у заголовку": 1,
-        "тег RSS sport": 1,
-        "promo": 1
-      },
-      "unclassified_by_ai": 0,
-      "duplicates_removed_by_ai": 0,
-      "rejection_reasons_list": [],
-      "rejected_by_reason": {},
-      "updates_marked": 0,
-      "already_rejected": 14,
-      "rejected_by_code_examples": [
-        "[тег RSS lifestyle] Božićni kaktus ne cvate? Premjestite ga u sobu u kojoj se navečer ne pali svjetlo",
-        "[КАПС у заголовку] OSVOJI KINO ULAZNICE Darujemo 4 kino ulaznice za film “POSLJEDNJI RIMSKI BOG” u Cinestaru Zadar",
-        "[тег RSS sport] Lucija Mijolović blista na Svjetskom prvenstvu; Paraplivačica PK Zadar donosi dvije medalje iz Portu",
-        "[promo] Lidl Hrvatska osvojio nagradu HRIO za velika poduzeća u godini obilježavanja 20 godina poslovanja"
-      ]
-    },
-    "backlog": {
-      "total_size": 11,
-      "sources": {
-        "Slobodna dalmacija": 6,
-        "023": 2,
-        "Zadarski list": 3
-      }
-    },
-    "published": {
-      "total": 0,
-      "ukraine_priority": 0,
-      "with_images": 0,
-      "text_only": 0,
-      "og_images_found": 0,
-      "sources": {}
-    },
-    "models_used": {},
-    "models_by_task": {
-      "filter": null,
-      "translate": null
-    },
-    "model_attempts": [
-      {
-        "task": "filter",
-        "model": "gemini-3-flash-preview",
-        "outcome": "unavailable"
-      },
-      {
-        "task": "filter",
-        "model": "gemini-3.6-flash",
-        "outcome": "unavailable"
-      },
-      {
-        "task": "filter",
-        "model": "gemini-3.5-flash-lite",
-        "outcome": "unavailable"
-      },
-      {
-        "task": "filter",
-        "model": "gemini-3.1-flash-lite",
-        "outcome": "unavailable"
-      }
-    ],
-    "exhausted_models": [],
-    "demoted_models": [
-      "translate: gemini-3.8-flash"
-    ],
-    "translate_budget_deferred": [],
-    "gemini_region_blocked": false,
-    "errors_count": 1,
-    "gemini_retries": 4
-  },
-  {
     "timestamp": "2026-11-04 15:01:19",
     "execution_time": 183.9,
     "funnel": {
@@ -10044,6 +9961,98 @@
     ],
     "gemini_region_blocked": false,
     "gemini_unavailable": false,
+    "errors_count": 0,
+    "gemini_retries": 4
+  },
+  {
+    "timestamp": "2026-11-13 15:01:27",
+    "execution_time": 183.2,
+    "funnel": {
+      "scraped_total": 35,
+      "scraped_by_source": {
+        "023": 10,
+        "Slobodna dalmacija": 15,
+        "Zadarski list": 10
+      },
+      "already_seen": 18,
+      "rejected_by_keywords": 8,
+      "rejected_by_rule": {
+        "тег RSS lifestyle": 1,
+        "utakmice": 2,
+        "тег RSS sport": 1,
+        "sporta": 1,
+        "sport": 1,
+        "URL /sport/": 1,
+        "тег RSS nogomet": 1
+      },
+      "unclassified_by_ai": 0,
+      "duplicates_removed_by_ai": 0,
+      "rejection_reasons_list": [],
+      "rejected_by_reason": {},
+      "updates_marked": 0,
+      "already_rejected": 11,
+      "rejected_by_code_examples": [
+        "[тег RSS lifestyle] Suha koža zimi: dermatologinja savjetuje kraće tuširanje i kremu u roku od tri minute",
+        "[utakmice] Dirljiva gesta hrvatskih navijača na Wembleyju; Podigli transparent u čast tragično preminulog Krist",
+        "[тег RSS sport] Košarkaši Zadra oduševili učenike u Zemuniku; Već sutradan na tjelesnom svi su htjeli igrati samo ko",
+        "[sporta] Osigurano 300 tisuća eura za sportska igrališta i objekte",
+        "[utakmice] Torcidaši optuženi za poticanje na mržnju, tužiteljstvo traži do dvije godine zatvora",
+        "[sport] Priča o kiši i izrada kišnih štapova razveselile loparske mališane",
+        "[URL /sport/] Kadeti Rijeke izgubili nakon jedanaesteraca od Hajduka u finalu Olea cupa u Novalji",
+        "[тег RSS nogomet] Maurizio Pochettino vodit će reprezentaciju SAD do utorka, a onda preuzima Manchester United"
+      ]
+    },
+    "backlog": {
+      "total_size": 9,
+      "sources": {
+        "023": 2,
+        "Slobodna dalmacija": 2,
+        "Zadarski list": 5
+      }
+    },
+    "published": {
+      "total": 0,
+      "ukraine_priority": 0,
+      "with_images": 0,
+      "text_only": 0,
+      "og_images_found": 0,
+      "sources": {}
+    },
+    "models_used": {},
+    "models_by_task": {
+      "filter": null,
+      "translate": null
+    },
+    "model_attempts": [
+      {
+        "task": "filter",
+        "model": "gemini-3.5-flash-lite",
+        "outcome": "unavailable"
+      },
+      {
+        "task": "filter",
+        "model": "gemini-3.1-flash-lite",
+        "outcome": "unavailable"
+      },
+      {
+        "task": "filter",
+        "model": "gemini-3-flash-preview",
+        "outcome": "unavailable"
+      },
+      {
+        "task": "filter",
+        "model": "gemini-3.6-flash",
+        "outcome": "unavailable"
+      }
+    ],
+    "exhausted_models": [],
+    "demoted_models": [
+      "filter: gemini-3-flash-preview",
+      "filter: gemini-3.6-flash"
+    ],
+    "translate_budget_deferred": [],
+    "gemini_region_blocked": false,
+    "gemini_unavailable": true,
     "errors_count": 0,
     "gemini_retries": 4
   }
