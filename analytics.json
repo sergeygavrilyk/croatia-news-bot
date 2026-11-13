@@ -1,115 +1,5 @@
 [
   {
-    "timestamp": "2026-11-04 15:01:19",
-    "execution_time": 183.9,
-    "funnel": {
-      "scraped_total": 35,
-      "scraped_by_source": {
-        "023": 10,
-        "Slobodna dalmacija": 15,
-        "Zadarski list": 10
-      },
-      "already_seen": 20,
-      "rejected_by_keywords": 7,
-      "rejected_by_rule": {
-        "тег RSS lifestyle": 1,
-        "КАПС у заголовку": 1,
-        "тег RSS sport": 1,
-        "sport": 1,
-        "URL /sport/": 1,
-        "тег RSS nogomet": 1,
-        "promo": 1
-      },
-      "unclassified_by_ai": 0,
-      "duplicates_removed_by_ai": 13,
-      "rejection_reasons_list": [
-        "• Pomorcima nude više od 20.000 dolara da prođu kroz ratnu zonu: ‘Stavlj → Геоблок (Світовий кримінал на морях) | Сутності: Невена Мелван, Синдікат моряків, Чорне море, Габон",
-        "• Obilježavanje Dana sjećanja na žrtve Domovinskog rata 12. studenoga u  → Побут інших міст (Місто Сень) | Сутності: Сень, Йосип Луцик, Дім культури, Вітчизняна війна",
-        "• Zašto u rashladni sustav automobila ne biste smjeli uliti samo vodu, o → Світовий шум (Поради з експлуатації авто) | Сутності: Скотті Кілер, BookMyGarage, Антифриз, Автомобілі",
-        "• Bonačić Obradović: ‘U Dubrovniku se ne gospodari otpadom, već otpad go → Побут інших міст (Дубровник сміттєзвалище) | Сутності: Аніта Боначич Обрадович, Дубровник, Грабовіца, Мато Франкович",
-        "• Županija subvencionira kamate, poduzetnicima na raspolaganju četiri mi → Побут інших міст (Приморсько-горанська жупанія) | Сутності: Рієка, Івіца Луканович, ХБОК, Гроші",
-        "• Dubrovnik u fokusu Reutersa na svjetskoj turističkoj burzi u Londonu → Побут інших міст (Туризм у Дубровнику) | Сутності: Дубровник, Міро Драшкович, Reuters, Лондон",
-        "• Ministarstvo mora, prometa i infrastrukture: ‘Riječ je o financijskoj  → Вже публікувалось (Коментар про аеропорт Дубровника) | Сутності: Міністерство моря, Дубровник, Мато Франкович, ЄС",
-        "• Novi uzlet Karlobaga uz ulaganja od 800 tisuća eura → Побут інших міст (Місто Карлобаг) | Сутності: Карлобаг, Борис Смойвер, Башкі Оштарії",
-        "• U Šibeniku otvoren prvi veliki baterijski sustav na hrvatskoj prijenos → Побут інших міст (Шибеник батарейний парк) | Сутності: Шибеник, NextGrid Energy, IMPOL-TLM, Енергетика",
-        "• ‘Kamioni nikad ne kasne!‘ Frankovićeva izjava o kokainu dobila nastava → Вже публікувалось (Реакція на слова про наркотики) | Сутності: Мато Франкович, Дубровник, Кокаїн, Поліція",
-        "• Ražine dobile svoje ‘malo Krško‘! Ovo je prvi ovakav sustav u Hrvatsko → Дубль (Дублює новину 11) | Сутності: Шибеник, Ражине, IMPOL-TLM, Акумулятор",
-        "• Radovi na groblju Dubac ulaze u završnu fazu! Raspolagat će s više od  → Побут інших міст (Кладовище Дубровник) | Сутності: Дубровник, Кладовище Дубац, Будівництво",
-        "• Uz dječje sportske igre svečano otvoreno obnovljeno dječje igralište n → Побут інших міст (Майданчик у Босанці) | Сутності: Босанка, Ігровий майданчик, Дубровник"
-      ],
-      "rejected_by_reason": {
-        "Геоблок": 1,
-        "Побут інших міст": 8,
-        "Світовий шум": 1,
-        "Вже публікувалось": 2,
-        "Дубль": 1
-      },
-      "updates_marked": 0,
-      "already_rejected": 8,
-      "rejected_by_code_examples": [
-        "[тег RSS lifestyle] Božićni kaktus ne cvate? Premjestite ga u sobu u kojoj se navečer ne pali svjetlo",
-        "[КАПС у заголовку] OSVOJI KINO ULAZNICE Darujemo 4 kino ulaznice za film “POSLJEDNJI RIMSKI BOG” u Cinestaru Zadar",
-        "[тег RSS sport] Lucija Mijolović blista na Svjetskom prvenstvu; Paraplivačica PK Zadar donosi dvije medalje iz Portu",
-        "[sport] Mladi Dubrovčanin s medaljom se vratio u Grad, pogledajte kako su ga dočekali! ‘Povijesni trenutak z",
-        "[URL /sport/] Vojnović je ‘gorio‘: Svečano dočekan judaš i osvajač brončane medalje Europskom prvenstvu Borna Buti",
-        "[тег RSS nogomet] Legendarni Rafa Nadal postaje dio uprave Real Madrida! “Spreman sam učiti…”",
-        "[promo] Lidl Hrvatska osvojio nagradu HRIO za velika poduzeća u godini obilježavanja 20 godina poslovanja"
-      ]
-    },
-    "backlog": {
-      "total_size": 3,
-      "sources": {
-        "Slobodna dalmacija": 2,
-        "023": 1
-      }
-    },
-    "published": {
-      "total": 3,
-      "ukraine_priority": 0,
-      "with_images": 3,
-      "text_only": 0,
-      "og_images_found": 2,
-      "sources": {
-        "023": 2,
-        "Zadarski list": 1
-      }
-    },
-    "models_used": {
-      "gemini-3.5-flash-lite": 2
-    },
-    "models_by_task": {
-      "filter": "gemini-3.5-flash-lite",
-      "translate": "gemini-3.5-flash-lite"
-    },
-    "model_attempts": [
-      {
-        "task": "filter",
-        "model": "gemini-3.5-flash-lite",
-        "outcome": "ok"
-      },
-      {
-        "task": "translate",
-        "model": "gemini-3.6-flash",
-        "outcome": "unavailable"
-      },
-      {
-        "task": "translate",
-        "model": "gemini-3.5-flash-lite",
-        "outcome": "ok"
-      }
-    ],
-    "exhausted_models": [],
-    "demoted_models": [
-      "filter: gemini-3-flash-preview",
-      "filter: gemini-3.6-flash",
-      "translate: gemini-3.8-flash"
-    ],
-    "translate_budget_deferred": [],
-    "gemini_region_blocked": false,
-    "errors_count": 0,
-    "gemini_retries": 1
-  },
-  {
     "timestamp": "2026-11-04 16:01:17",
     "execution_time": 124.2,
     "funnel": {
@@ -10055,5 +9945,120 @@
     "gemini_unavailable": true,
     "errors_count": 0,
     "gemini_retries": 4
+  },
+  {
+    "timestamp": "2026-11-13 16:01:27",
+    "execution_time": 94.6,
+    "funnel": {
+      "scraped_total": 35,
+      "scraped_by_source": {
+        "023": 10,
+        "Slobodna dalmacija": 15,
+        "Zadarski list": 10
+      },
+      "already_seen": 21,
+      "rejected_by_keywords": 7,
+      "rejected_by_rule": {
+        "тег RSS lifestyle": 2,
+        "utakmice": 2,
+        "sportu": 1,
+        "sporta": 1,
+        "тег RSS nogomet": 1
+      },
+      "unclassified_by_ai": 0,
+      "duplicates_removed_by_ai": 14,
+      "rejection_reasons_list": [
+        "• Jandroković mađarskoj kolegici: Za otvorena pitanja potreban konstrukt → Не за тематикою (Дипломатичні переговори в Словаччині) | Сутності: Gordan Jandroković, Agnes Forsthoffer, Bratislava, Višegradska skupina",
+        "• VIDEO Kaos na magistrali prema Dubrovniku: teška prometna nesreća kod  → Побут інших міст (ДТП біля Дубровника) | Сутності: Ratac, Dubrovnik, Jadranska magistrala, prometna nesreća",
+        "• Plenković će u ponedjeljak u Parizu primiti priznanje uglednog tjednik → Не за тематикою (Візит прем'єра до Франції) | Сутності: Andrej Plenković, Pariz, L’Express, Europska unija",
+        "• VIDEO: Na Ratcu sudar osobnog i teretnog vozila koje je prevozilo drug → Дубль (Повтор новини про ДТП) | Сутності: Ratac, Dubrovnik, prometna nesreća",
+        "• Prirodoslovni muzej slavi tri obljetnice: Mali muzej koji radi velike  → Побут інших міст (Ювілей музею в Рієці) | Сутності: Rijeka, Prirodoslovni muzej, obljetnica",
+        "• Mala djela ljubavi koja mijenjaju živote; Marijini obroci Hrvatska obi → Не за тематикою (Благодійна подія в Загребі) | Сутності: Marijini obroci, Doris Pinčić, hotel Esplanade, Zagreb",
+        "• Istražili smo koliko se u Dalmaciji čeka na dječjeg psihijatra: stanje → Вже публікувалось (Проблема нестачі лікарів) | Сутності: Dalmacija, psihijatrija, Šibenik, Zadar, Split",
+        "• Samo 4,2 posto svjetskog voznog parka čine električni automobili, ali  → Світовий шум (Глобальна статистика електромобілів) | Сутності: električni automobili, Transport & Environment, Bruxelles",
+        "• Iva Rinčić predlaže 4,6 posto veći proračun Grada Rijeke za 2027. godi → Побут інших міст (Бюджет міста Рієка) | Сутності: Iva Rinčić, Rijeka, proračun",
+        "• Gradonačelnica Iva Rinčić pridružila se potrebitima u prodaji “Uličnih → Побут інших міст (Благодійна акція в Рієці) | Сутності: Iva Rinčić, Rijeka, Ulične svjetiljke, beskućnici",
+        "• Dokumentarno-igrani film “Kralj Tomislav” u programu Nove TV: Što je č → Не за тематикою (Телевізійний фільм про історію) | Сутності: Kralj Tomislav, Nova TV, dokumentarni film",
+        "• U Domu kulture upriličen je kulturno-umjetnički program u povodu Dana  → Побут інших міст (Захід у місті Сень) | Сутності: Senj, Dom kulture, Dan sjećanja",
+        "• Rapski šestaši kroz igru učili o suradnji, povjerenju i timskom radu → Побут інших міст (Шкільні заходи на острові Раб) | Сутності: Rab, Osnovna škola Ivana Rabljanina, radionice",
+        "• Ruđer protiv praznovjerja: Petak 13. pretvorili u dan znanosti, otkrić → Не за тематикою (Науковий день у Загребі) | Сутності: Institut Ruđer Bošković, Zagreb, znanost"
+      ],
+      "rejected_by_reason": {
+        "Не за тематикою": 5,
+        "Побут інших міст": 6,
+        "Дубль": 1,
+        "Вже публікувалось": 1,
+        "Світовий шум": 1
+      },
+      "updates_marked": 1,
+      "already_rejected": 9,
+      "rejected_by_code_examples": [
+        "[тег RSS lifestyle] Rolada od bukovače, žutog kruha i jablanovače s tvrdo kuhanim jajima u sredini",
+        "[тег RSS lifestyle] Suha koža zimi: dermatologinja savjetuje kraće tuširanje i kremu u roku od tri minute",
+        "[utakmice] Dirljiva gesta hrvatskih navijača na Wembleyju; Podigli transparent u čast tragično preminulog Krist",
+        "[sportu] Donesena odluka o dodjeli financijskih potpora za razvoj turističkog proizvoda - naglasak na sportu",
+        "[sporta] Osigurano 300 tisuća eura za sportska igrališta i objekte",
+        "[тег RSS nogomet] Češki izbornik uoči Osijeka: “Za Hrvatsku se pripremamo kao za finale SP-a”",
+        "[utakmice] Torcidaši optuženi za poticanje na mržnju, tužiteljstvo traži do dvije godine zatvora"
+      ]
+    },
+    "backlog": {
+      "total_size": 0,
+      "sources": {}
+    },
+    "published": {
+      "total": 2,
+      "ukraine_priority": 0,
+      "with_images": 2,
+      "text_only": 0,
+      "og_images_found": 1,
+      "sources": {
+        "023": 1,
+        "Zadarski list": 1
+      }
+    },
+    "models_used": {
+      "gemini-3.1-flash-lite": 1,
+      "gemini-3.6-flash": 1
+    },
+    "models_by_task": {
+      "filter": "gemini-3.1-flash-lite",
+      "translate": "gemini-3.6-flash"
+    },
+    "model_attempts": [
+      {
+        "task": "filter",
+        "model": "gemini-3.1-flash-lite",
+        "outcome": "ok"
+      },
+      {
+        "task": "translate",
+        "model": "gemini-3.8-flash",
+        "outcome": "unavailable"
+      },
+      {
+        "task": "translate",
+        "model": "gemini-3.5-flash-lite",
+        "outcome": "unavailable"
+      },
+      {
+        "task": "translate",
+        "model": "gemini-3.6-flash",
+        "outcome": "ok"
+      }
+    ],
+    "exhausted_models": [],
+    "demoted_models": [
+      "filter: gemini-3-flash-preview",
+      "filter: gemini-3.6-flash",
+      "filter: gemini-3.5-flash-lite"
+    ],
+    "translate_budget_deferred": [
+      "gemini-3.6-flash"
+    ],
+    "gemini_region_blocked": false,
+    "gemini_unavailable": false,
+    "errors_count": 0,
+    "gemini_retries": 2
   }
 ]
