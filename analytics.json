@@ -1,113 +1,5 @@
 [
   {
-    "timestamp": "2026-11-04 13:01:19",
-    "execution_time": 144.3,
-    "funnel": {
-      "scraped_total": 35,
-      "scraped_by_source": {
-        "023": 10,
-        "Slobodna dalmacija": 15,
-        "Zadarski list": 10
-      },
-      "already_seen": 19,
-      "rejected_by_keywords": 5,
-      "rejected_by_rule": {
-        "тег RSS lifestyle": 1,
-        "КАПС у заголовку": 1,
-        "тег RSS sport": 1,
-        "igrača": 1,
-        "promo": 1
-      },
-      "unclassified_by_ai": 0,
-      "duplicates_removed_by_ai": 9,
-      "rejection_reasons_list": [
-        "• Radio Korzo slavi: Zlatni mikrofoni Davoru Jurkotiću i Sari Ivelji Ćik → Побут інших міст (Рієка) | Сутності: Radio Korzo, Davor Jurkotić, Sara Ivelja Ćiković, Sveti Martin na Muri",
-        "• Planirate smjestiti roditelja u ovaj dom? Nemojte brzati prije nego vi → Побут інших міст (Дубровник) | Сутності: Dubrovnik, Centar Ragusa, Mato Franković, Medarevo",
-        "• Charles LeClerc postao otac! Malena Bianca nova je članica obitelji → Спорт (Формула 1) | Сутності: Charles LeClerc, Alexandra Saint Mleux, Bianca, Ferrari",
-        "• Dubrovačka SDP-ovka: Ispada da šmrču 2 gradska vijećnika, 15 saborskih → Побут інших міст (Дубровник) | Сутності: Dubrovnik, Mato Franković, Anita Bonačić Obradović, Ranko Ostojić",
-        "• Capak: Cjepivo protiv gripe stiglo u Hrvatsku, sutra počinje cijepljen → Вже публікувалось (Початок вакцинації проти грипу) | Сутності: Krunoslav Capak, HZJZ, Hrvatska, Gripa",
-        "• U Šibeniku osvanuo transparent, zbog Mišina ispraćaja javno prozvani H → Вже публікувалось (Похорон Мішо Ковача) | Сутності: Mate Mišo Kovač, Šibenik, Split, Poljud",
-        "• Birači kaznili Trumpa: Demokrati premoćnom pobjedom preuzeli Kongres → Геоблок (США) | Сутності: Donald Trump, Washington, SAD, Kongres",
-        "• Grad Senj organizira autobusni prijevoz u Vukovar → Побут інших міст (Сень) | Сутності: Senj, Vukovar, Škabrnja, Dan sjećanja",
-        "• Ćorić: Da nema energetskog šoka, imali bi inflaciju od 2 posto, no i o → Побут інших міст (Опатія) | Сутності: Tomislav Ćorić, Opatija, Hrvatska, Bliski istok"
-      ],
-      "rejected_by_reason": {
-        "Побут інших міст": 5,
-        "Спорт": 1,
-        "Вже публікувалось": 2,
-        "Геоблок": 1
-      },
-      "updates_marked": 0,
-      "already_rejected": 11,
-      "rejected_by_code_examples": [
-        "[тег RSS lifestyle] Božićni kaktus ne cvate? Premjestite ga u sobu u kojoj se navečer ne pali svjetlo",
-        "[КАПС у заголовку] OSVOJI KINO ULAZNICE Darujemo 4 kino ulaznice za film “POSLJEDNJI RIMSKI BOG” u Cinestaru Zadar",
-        "[тег RSS sport] Lucija Mijolović blista na Svjetskom prvenstvu; Paraplivačica PK Zadar donosi dvije medalje iz Portu",
-        "[igrača] Kreće nova sezona LIKAR-a: Osam momčadi, više od 150 igrača, a svima je zajedničko jedno – ljubav pr",
-        "[promo] Lidl Hrvatska osvojio nagradu HRIO za velika poduzeća u godini obilježavanja 20 godina poslovanja"
-      ]
-    },
-    "backlog": {
-      "total_size": 3,
-      "sources": {
-        "Slobodna dalmacija": 2,
-        "023": 1
-      }
-    },
-    "published": {
-      "total": 2,
-      "ukraine_priority": 0,
-      "with_images": 2,
-      "text_only": 0,
-      "og_images_found": 1,
-      "sources": {
-        "023": 1,
-        "Zadarski list": 1
-      }
-    },
-    "models_used": {
-      "gemini-3.5-flash-lite": 1,
-      "gemini-3.6-flash": 1
-    },
-    "models_by_task": {
-      "filter": "gemini-3.5-flash-lite",
-      "translate": "gemini-3.6-flash"
-    },
-    "model_attempts": [
-      {
-        "task": "filter",
-        "model": "gemini-3.5-flash-lite",
-        "outcome": "ok"
-      },
-      {
-        "task": "translate",
-        "model": "gemini-3.5-flash-lite",
-        "outcome": "unavailable"
-      },
-      {
-        "task": "translate",
-        "model": "gemini-3.8-flash",
-        "outcome": "unavailable"
-      },
-      {
-        "task": "translate",
-        "model": "gemini-3.6-flash",
-        "outcome": "ok"
-      }
-    ],
-    "exhausted_models": [],
-    "demoted_models": [
-      "filter: gemini-3-flash-preview",
-      "filter: gemini-3.6-flash",
-      "translate: gemini-3.8-flash",
-      "translate: gemini-3.6-flash"
-    ],
-    "translate_budget_deferred": [],
-    "gemini_region_blocked": false,
-    "errors_count": 1,
-    "gemini_retries": 2
-  },
-  {
     "timestamp": "2026-11-04 14:01:27",
     "execution_time": 131.0,
     "funnel": {
@@ -10039,5 +9931,120 @@
     "gemini_unavailable": false,
     "errors_count": 0,
     "gemini_retries": 1
+  },
+  {
+    "timestamp": "2026-11-13 14:01:23",
+    "execution_time": 224.7,
+    "funnel": {
+      "scraped_total": 35,
+      "scraped_by_source": {
+        "023": 10,
+        "Slobodna dalmacija": 15,
+        "Zadarski list": 10
+      },
+      "already_seen": 21,
+      "rejected_by_keywords": 9,
+      "rejected_by_rule": {
+        "тег RSS lifestyle": 1,
+        "utakmice": 1,
+        "тег RSS sport": 2,
+        "sporta": 1,
+        "URL /sport/": 1,
+        "тег RSS nogomet": 1,
+        "nogometnog": 1,
+        "тег RSS košarka": 1
+      },
+      "unclassified_by_ai": 0,
+      "duplicates_removed_by_ai": 5,
+      "rejection_reasons_list": [
+        "• Održan okrugli stol “Transparentnost plaća i borba protiv rodnog jaza  → Вже публікувалось (Дискусія про зарплати, не є суттєвим оновленням) | Сутності: SDP, Hrvatski sabor, Zakon o radu",
+        "• Po ovim temperaturama dobra je i ovakva banja: Pogledajte kako su lapa → Побут інших міст (Локальна подія в Дубровнику) | Сутності: Lapad, Dubrovnik, vrapci",
+        "• Ministarstvo: Nitko od osumnjičenih zbog Periševe smrti nije ozlijeđen → Вже публікувалось (Коментар міністерства щодо вже відомої справи) | Сутності: Kristian Josip Periš, Ministarstvo pravosuđa, Remetinec",
+        "• Osnovano Gospodarsko-socijalno vijeće Dubrovačko-neretvanske županije, → Побут інших міст (Локальна подія в Дубровнику) | Сутності: Dubrovačko-neretvanska županija, Blaž Pezo, Ljubo Nikolić",
+        "• Plenković očekuje od Crne Gore napredak u rješavanju otvorenih pitanja → Геоблок (Зовнішня політика, не стосується українців) | Сутності: Andrej Plenković, Crna Gora, EU, Antonio Costa"
+      ],
+      "rejected_by_reason": {
+        "Вже публікувалось": 2,
+        "Побут інших міст": 2,
+        "Геоблок": 1
+      },
+      "updates_marked": 1,
+      "already_rejected": 13,
+      "rejected_by_code_examples": [
+        "[тег RSS lifestyle] Suha koža zimi: dermatologinja savjetuje kraće tuširanje i kremu u roku od tri minute",
+        "[utakmice] Dirljiva gesta hrvatskih navijača na Wembleyju; Podigli transparent u čast tragično preminulog Krist",
+        "[тег RSS sport] Košarkaši Zadra oduševili učenike u Zemuniku; Već sutradan na tjelesnom svi su htjeli igrati samo ko",
+        "[sporta] Osigurano 300 tisuća eura za sportska igrališta i objekte",
+        "[URL /sport/] Kadeti Rijeke izgubili nakon jedanaesteraca od Hajduka u finalu Olea cupa u Novalji",
+        "[тег RSS nogomet] Maurizio Pochettino vodit će reprezentaciju SAD do utorka, a onda preuzima Manchester United",
+        "[nogometnog] Potvrđena optužnica protiv Darija Šimića zbog dozvole za kamp u Tisnom",
+        "[тег RSS košarka] Košarkašice FSV-a će susret osmine finala Kupa ipak igrati 24. studenoga",
+        "[тег RSS sport] Ela Znaor i Eman Pozderović se okitili titulama prvaka Europe u kickboxingu!"
+      ]
+    },
+    "backlog": {
+      "total_size": 0,
+      "sources": {}
+    },
+    "published": {
+      "total": 3,
+      "ukraine_priority": 0,
+      "with_images": 3,
+      "text_only": 0,
+      "og_images_found": 1,
+      "sources": {
+        "023": 1,
+        "Zadarski list": 2
+      }
+    },
+    "models_used": {
+      "gemini-3.1-flash-lite": 1,
+      "gemini-3.5-flash-lite": 1
+    },
+    "models_by_task": {
+      "filter": "gemini-3.1-flash-lite",
+      "translate": "gemini-3.5-flash-lite"
+    },
+    "model_attempts": [
+      {
+        "task": "filter",
+        "model": "gemini-3-flash-preview",
+        "outcome": "unavailable"
+      },
+      {
+        "task": "filter",
+        "model": "gemini-3.6-flash",
+        "outcome": "unavailable"
+      },
+      {
+        "task": "filter",
+        "model": "gemini-3.5-flash-lite",
+        "outcome": "unavailable"
+      },
+      {
+        "task": "filter",
+        "model": "gemini-3.1-flash-lite",
+        "outcome": "ok"
+      },
+      {
+        "task": "translate",
+        "model": "gemini-3.8-flash",
+        "outcome": "unavailable"
+      },
+      {
+        "task": "translate",
+        "model": "gemini-3.5-flash-lite",
+        "outcome": "ok"
+      }
+    ],
+    "exhausted_models": [],
+    "demoted_models": [],
+    "translate_budget_deferred": [
+      "gemini-3.6-flash"
+    ],
+    "gemini_region_blocked": false,
+    "gemini_unavailable": false,
+    "errors_count": 0,
+    "gemini_retries": 4
   }
 ]
