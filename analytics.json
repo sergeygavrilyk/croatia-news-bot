@@ -1,112 +1,5 @@
 [
   {
-    "timestamp": "2026-11-04 16:01:17",
-    "execution_time": 124.2,
-    "funnel": {
-      "scraped_total": 35,
-      "scraped_by_source": {
-        "023": 10,
-        "Slobodna dalmacija": 15,
-        "Zadarski list": 10
-      },
-      "already_seen": 18,
-      "rejected_by_keywords": 8,
-      "rejected_by_rule": {
-        "тег RSS lifestyle": 1,
-        "КАПС у заголовку": 1,
-        "тег RSS sport": 2,
-        "sport": 1,
-        "URL /sport/": 1,
-        "тег RSS nogomet": 2
-      },
-      "unclassified_by_ai": 0,
-      "duplicates_removed_by_ai": 7,
-      "rejection_reasons_list": [
-        "• Zadrani ne mare za kupone; Zadarska županija na samom dnu u Hrvatskoj  → Побут інших міст (Ціни та купівля по регіонах) | Сутності: Zadrani, Zadarska županija, Google, Hrvatska, Temu",
-        "• Ratko je prije pet godina na kršu posadio nekoliko sadnica, sad bere s → Не за тематикою (Сільське господарство у зaleđu) | Сутності: Ratko Periše, Krković, skradinsko zaleđe, pistacije",
-        "• 170 tisuća eura za savjetovanje, sanjkalište koje ne radi i 73 neriješ → Побут інших міст (Проблеми у Брод Моравицях) | Сутності: Brod Moravice, Primorsko-goranska županija, Ivica Lukanović, Toni Štimac",
-        "• Prevrnuo se kamion koji je prevozio stoku: Promet između Delnica i Rij → Побут інших міст (ДТП з вантажівкою біля Рієки) | Сутності: Delnice, Rijeka, A6, stoka",
-        "• ‘Kamioni nikad ne kasne!‘ Frankovićeva izjava o kokainu dobila nastava → Вже публікувалось (Коментар мера про наркотики) | Сутності: Mato Franković, Dubrovnik, kokain, policija",
-        "• Trumpov poraz mogao bi ohrabriti trgovinske partnere SAD-a na otpor nj → Геоблок (Політика в США) | Сутності: Donald Trump, SAD, Kongres, Kina",
-        "• Regulator privremeno zabranio emitiranje dijela programa TV Informera → Геоблок (Медіа в Сербії) | Сутності: REM, TV Informer, Aleksandar Vučić, Srbija"
-      ],
-      "rejected_by_reason": {
-        "Побут інших міст": 3,
-        "Не за тематикою": 1,
-        "Вже публікувалось": 1,
-        "Геоблок": 2
-      },
-      "updates_marked": 0,
-      "already_rejected": 14,
-      "rejected_by_code_examples": [
-        "[тег RSS lifestyle] Božićni kaktus ne cvate? Premjestite ga u sobu u kojoj se navečer ne pali svjetlo",
-        "[КАПС у заголовку] OSVOJI KINO ULAZNICE Darujemo 4 kino ulaznice za film “POSLJEDNJI RIMSKI BOG” u Cinestaru Zadar",
-        "[тег RSS sport] Lucija Mijolović blista na Svjetskom prvenstvu; Paraplivačica PK Zadar donosi dvije medalje iz Portu",
-        "[sport] Mladi Dubrovčanin s medaljom se vratio u Grad, pogledajte kako su ga dočekali! ‘Povijesni trenutak z",
-        "[URL /sport/] Vojnović je ‘gorio‘: Svečano dočekan judaš i osvajač brončane medalje Europskom prvenstvu Borna Buti",
-        "[тег RSS sport] Juniori i kadeti Rijeke ostvarili pun bodovni učinak, Đivoje: “Neću dopustiti momčadi da sada makne ",
-        "[тег RSS nogomet] Pioniri Rijeke i Pomorca osvojili samo bod u 9. kolu: Igra i dojam ispred rezultata, Dinamo i Gorica",
-        "[тег RSS nogomet] PSG nakon četiri kola na prosjeku od čak pet golova po utakmici Lige prvaka"
-      ]
-    },
-    "backlog": {
-      "total_size": 4,
-      "sources": {
-        "Zadarski list": 1,
-        "Slobodna dalmacija": 2,
-        "023": 1
-      }
-    },
-    "published": {
-      "total": 1,
-      "ukraine_priority": 0,
-      "with_images": 1,
-      "text_only": 0,
-      "og_images_found": 0,
-      "sources": {
-        "Slobodna dalmacija": 1
-      }
-    },
-    "models_used": {
-      "gemini-3.5-flash-lite": 2
-    },
-    "models_by_task": {
-      "filter": "gemini-3.5-flash-lite",
-      "translate": "gemini-3.5-flash-lite"
-    },
-    "model_attempts": [
-      {
-        "task": "filter",
-        "model": "gemini-3.5-flash-lite",
-        "outcome": "ok"
-      },
-      {
-        "task": "translate",
-        "model": "gemini-3.8-flash",
-        "outcome": "unavailable"
-      },
-      {
-        "task": "translate",
-        "model": "gemini-3.6-flash",
-        "outcome": "unavailable"
-      },
-      {
-        "task": "translate",
-        "model": "gemini-3.5-flash-lite",
-        "outcome": "ok"
-      }
-    ],
-    "exhausted_models": [],
-    "demoted_models": [
-      "filter: gemini-3-flash-preview",
-      "filter: gemini-3.6-flash"
-    ],
-    "translate_budget_deferred": [],
-    "gemini_region_blocked": false,
-    "errors_count": 2,
-    "gemini_retries": 2
-  },
-  {
     "timestamp": "2026-11-04 17:01:30",
     "execution_time": 248.2,
     "funnel": {
@@ -10060,5 +9953,116 @@
     "gemini_unavailable": false,
     "errors_count": 0,
     "gemini_retries": 2
+  },
+  {
+    "timestamp": "2026-11-13 17:01:27",
+    "execution_time": 209.0,
+    "funnel": {
+      "scraped_total": 35,
+      "scraped_by_source": {
+        "023": 10,
+        "Slobodna dalmacija": 15,
+        "Zadarski list": 10
+      },
+      "already_seen": 19,
+      "rejected_by_keywords": 6,
+      "rejected_by_rule": {
+        "тег RSS lifestyle": 2,
+        "utakmice": 1,
+        "sportu": 1,
+        "тег RSS nogomet": 1,
+        "URL /sport/": 1
+      },
+      "unclassified_by_ai": 0,
+      "duplicates_removed_by_ai": 7,
+      "rejection_reasons_list": [
+        "• U Opatiji predstavljeni najbolji aduti Zadarske županije → Вже публікувалось (Презентація гастрономії Задарського краю) | Сутності: Opatija, Zadarska županija, Hotel Continental, Okusi i mirisi zadarskog kraja",
+        "• Od ponedjeljka privremena regulacija prometa u Ulici Drenovski put → Побут інших міст (Ремонт у Рієці) | Сутності: Rijeka, Ulica Drenovski put, KD Vodovod i kanalizacija",
+        "• Dirljiva komemoracija za prof. dr. sc. Ivicu Zdrilića, profesora Odjel → Дубль (Комеморація проф. Івиці Здриліча) | Сутності: Sveučilište u Zadru, Ivica Zdrilić, Josip Faričić, Šime Erlić",
+        "• Samo 13 posto regija ostvaruje polovicu svih noćenja. EU kreće u borbu → Геоблок (Стратегія ЄС щодо туризму) | Сутності: Europska komisija, EU, Održivi turizam",
+        "• “Časoslov ljubavi” Amalije ​Zoričić oduševio Novljane → Побут інших міст (Подія у Новім Винодолськім) | Сутності: Novi Vinodolski, Narodna knjižnica, Mjesec hrvatske knjige, Amalija Zoričić",
+        "• TZ Zadarske županije u Düsseldorfu organizirala poslovni susret turist → Вже публікувалось (Зустріч з німецькими туроператорами) | Сутності: TZ Zadarske županije, Düsseldorf, Hrvatska turistička zajednica, Njemačka",
+        "• Rinčić predlaže rekordni proračun: Nove škole i vrtići, sportska dvora → Побут інших міст (Празький бюджет у Рієці) | Сутності: Rijeka, Iva Rinčić, Gradsko vijeće"
+      ],
+      "rejected_by_reason": {
+        "Вже публікувалось": 2,
+        "Побут інших міст": 3,
+        "Дубль": 1,
+        "Геоблок": 1
+      },
+      "updates_marked": 0,
+      "already_rejected": 11,
+      "rejected_by_code_examples": [
+        "[тег RSS lifestyle] Rolada od bukovače, žutog kruha i jablanovače s tvrdo kuhanim jajima u sredini",
+        "[тег RSS lifestyle] Suha koža zimi: dermatologinja savjetuje kraće tuširanje i kremu u roku od tri minute",
+        "[utakmice] Dirljiva gesta hrvatskih navijača na Wembleyju; Podigli transparent u čast tragično preminulog Krist",
+        "[sportu] Donesena odluka o dodjeli financijskih potpora za razvoj turističkog proizvoda - naglasak na sportu",
+        "[тег RSS nogomet] Otočki mediji izračunali su da je Manchester United od odlaska Alexa Fergusona potrošio 130 milijuna",
+        "[URL /sport/] Rijeka ispratila Orijent s četiri pogotka u mreži. Fruk, Jurić, Bodetić i Gojak strijelci"
+      ]
+    },
+    "backlog": {
+      "total_size": 0,
+      "sources": {}
+    },
+    "published": {
+      "total": 3,
+      "ukraine_priority": 0,
+      "with_images": 3,
+      "text_only": 0,
+      "og_images_found": 0,
+      "sources": {
+        "Slobodna dalmacija": 2,
+        "Zadarski list": 1
+      }
+    },
+    "models_used": {
+      "gemini-3.5-flash-lite": 2
+    },
+    "models_by_task": {
+      "filter": "gemini-3.5-flash-lite",
+      "translate": "gemini-3.5-flash-lite"
+    },
+    "model_attempts": [
+      {
+        "task": "filter",
+        "model": "gemini-3.1-flash-lite",
+        "outcome": "unavailable"
+      },
+      {
+        "task": "filter",
+        "model": "gemini-3-flash-preview",
+        "outcome": "unavailable"
+      },
+      {
+        "task": "filter",
+        "model": "gemini-3.6-flash",
+        "outcome": "unavailable"
+      },
+      {
+        "task": "filter",
+        "model": "gemini-3.5-flash-lite",
+        "outcome": "ok"
+      },
+      {
+        "task": "translate",
+        "model": "gemini-3.5-flash-lite",
+        "outcome": "ok"
+      }
+    ],
+    "exhausted_models": [],
+    "demoted_models": [
+      "filter: gemini-3-flash-preview",
+      "filter: gemini-3.6-flash",
+      "filter: gemini-3.5-flash-lite",
+      "translate: gemini-3.8-flash"
+    ],
+    "translate_budget_deferred": [
+      "gemini-3.6-flash"
+    ],
+    "gemini_region_blocked": false,
+    "gemini_unavailable": false,
+    "errors_count": 0,
+    "gemini_retries": 3
   }
 ]
