@@ -1,112 +1,5 @@
 [
   {
-    "timestamp": "2026-11-03 20:01:18",
-    "execution_time": 177.4,
-    "funnel": {
-      "scraped_total": 35,
-      "scraped_by_source": {
-        "023": 10,
-        "Slobodna dalmacija": 15,
-        "Zadarski list": 10
-      },
-      "already_seen": 16,
-      "rejected_by_keywords": 8,
-      "rejected_by_rule": {
-        "тег RSS lifestyle": 5,
-        "prvenstvo": 1,
-        "sportom": 1,
-        "sport": 1
-      },
-      "unclassified_by_ai": 0,
-      "duplicates_removed_by_ai": 9,
-      "rejection_reasons_list": [
-        "• Ukrajina istražuje optužbe o navodnom zlostavljanju ročnika → Геоблок (Події під Києвом) | Сутності: Ukrajina, Kijev, Nacionalna garda",
-        "• Za ozbiljne zahvate najbliži nam je Split. Veterinarka dr. Oštrić: \"Za → Побут інших міст (Ветеринарні послуги в Дубровнику) | Сутності: Dubrovnik, Split, Zagreb",
-        "• Dječje igralište u Puntu dobiva novu kulu s toboganom → Побут інших міст (Ремонт ігрового майданчика в Пунті) | Сутності: Punat, dječje igralište, tobogan",
-        "• Dječji vrtić Fijolica bogatiji za novu opremu i kvalitetnije uvjete → Побут інших міст (Оснащення дитсадка в Новому Винодольському) | Сутності: Novi Vinodolski, Dječji vrtić Fijolica",
-        "• Otočac  je prvi grad u Hrvatskoj po pitanju edukacija o umjetnoj intel → Побут інших міст (Освіта з ШІ в Оточці) | Сутності: Otočac, Goran Bukovac, umjetna inteligencija",
-        "• Riječki znanstveni mostovi o umjetnoj inteligenciji → Побут інших міст (Науковий симпозіум у Рієці) | Сутності: Rijeka, Medicinski fakultet, umjetna inteligencija",
-        "• Vatikan kaže da je Papa zdrav i spreman za južnoameričku turneju → Світовий шум (Здоров'я Папи Римського) | Сутності: Vatikan, Papa Lav, Matteo Bruni",
-        "• “Sloboda” Marije Crljenko pobjednička fotografija foto natječaja PGŽ-a → Побут інших міст (Фотоконкурс у Рієці) | Сутності: Rijeka, Primorsko-goranska županija, Marija Crljenko",
-        "• Zbog radova privremena izmjena trase linije 12A → Побут інших міст (Зміни маршруту автобуса в Єленє) | Сутності: Jelenje, Podkilavac, linija 12A"
-      ],
-      "rejected_by_reason": {
-        "Геоблок": 1,
-        "Побут інших міст": 7,
-        "Світовий шум": 1
-      },
-      "updates_marked": 0,
-      "already_rejected": 12,
-      "rejected_by_code_examples": [
-        "[тег RSS lifestyle] Lupanje srca koje traje satima može biti fibrilacija atrija, a ne anksioznost",
-        "[тег RSS lifestyle] Koji sukulenti mogu cijelu zimu ostati vani i izdržati i minus 15 stupnjeva",
-        "[тег RSS lifestyle] Kamin na drva i rak pluća: što je pokazalo praćenje više od 50.000 žena",
-        "[тег RSS lifestyle] Gotovo 2000 eura za čišćenje odvoda: kako se zaštititi od nesavjesnih hitnih majstora",
-        "[тег RSS lifestyle] Sjajna ili mat strana aluminijske folije: pokusi u pećnici pokazali su gotovo jednake rezultate",
-        "[prvenstvo] Povijesni trenutak za Zadar; Nakon čak 19 godina mise se vraćaju u crkvu sv. Krševana!",
-        "[sportom] Nekad nisu mogli istrčati ni 200 metara, a danas trče maratone: ‘Promijenilo nam je živote! A tko je",
-        "[sport] Do 3.000 eura potpore poduzetnicima pogođenima radovima na aglomeraciji"
-      ]
-    },
-    "backlog": {
-      "total_size": 0,
-      "sources": {}
-    },
-    "published": {
-      "total": 2,
-      "ukraine_priority": 0,
-      "with_images": 2,
-      "text_only": 0,
-      "og_images_found": 0,
-      "sources": {
-        "Slobodna dalmacija": 1,
-        "Zadarski list": 1
-      }
-    },
-    "models_used": {
-      "gemini-3.5-flash-lite": 2
-    },
-    "models_by_task": {
-      "filter": "gemini-3.5-flash-lite",
-      "translate": "gemini-3.5-flash-lite"
-    },
-    "model_attempts": [
-      {
-        "task": "filter",
-        "model": "gemini-3-flash-preview",
-        "outcome": "unavailable"
-      },
-      {
-        "task": "filter",
-        "model": "gemini-3.6-flash",
-        "outcome": "unavailable"
-      },
-      {
-        "task": "filter",
-        "model": "gemini-3.5-flash-lite",
-        "outcome": "ok"
-      },
-      {
-        "task": "translate",
-        "model": "gemini-3.8-flash",
-        "outcome": "unavailable"
-      },
-      {
-        "task": "translate",
-        "model": "gemini-3.5-flash-lite",
-        "outcome": "ok"
-      }
-    ],
-    "exhausted_models": [],
-    "demoted_models": [],
-    "translate_budget_deferred": [
-      "gemini-3.6-flash"
-    ],
-    "gemini_region_blocked": false,
-    "errors_count": 0,
-    "gemini_retries": 3
-  },
-  {
     "timestamp": "2026-11-04 08:01:17",
     "execution_time": 228.2,
     "funnel": {
@@ -10061,5 +9954,123 @@
     "gemini_unavailable": false,
     "errors_count": 0,
     "gemini_retries": 1
+  },
+  {
+    "timestamp": "2026-11-13 08:01:15",
+    "execution_time": 221.4,
+    "funnel": {
+      "scraped_total": 35,
+      "scraped_by_source": {
+        "023": 10,
+        "Slobodna dalmacija": 15,
+        "Zadarski list": 10
+      },
+      "already_seen": 5,
+      "rejected_by_keywords": 7,
+      "rejected_by_rule": {
+        "sportaša": 1,
+        "тег RSS sport": 1,
+        "nogometnog": 1,
+        "URL /sport/": 3,
+        "utakmicu": 1
+      },
+      "unclassified_by_ai": 0,
+      "duplicates_removed_by_ai": 10,
+      "rejection_reasons_list": [
+        "• U Lišanima Ostrovičkim proslava svetkovine sv. Nikole Tavelića, nebesk → Не за тематикою (Церковне свяto в іншому місці) | Сутності: Lišani Ostrovički, fra Antonio Mravak, crkva sv. Nikole Tavelića",
+        "• Obnovljena kotlovnica Doma zdravlja u Kostreni → Побут інших міст (Ремонт у Кострені) | Сутності: Kostrena, Dom zdravlja, kotlovnica",
+        "• Što sve možete pročitati u novom broju Dubrovačkog vjesnika? → Реклама (Промо нового номера журналу) | Сутності: Dubrovački vjesnik, Moskar, Dubrovnik",
+        "• Na dva kolnika pored Gospića zabranjen promet zbog obilnih kiša → Побут інших міст (Затоплені дороги біля Ґоспіча) | Сутності: Gospić, Stožer civilne zaštite, kiša",
+        "• HAK: Prekinute brojne brodske linije, otoci odsječeni → Вже публікувалось (Дубль новини ID 5) | Сутності: HAK, trajektne linije, Jadran",
+        "• Mrkopaljski osnovci obilježili 240 godina školstva: Mala smo škola ali → Побут інших міст (Ювілей школи в Мркопалі) | Сутності: Mrkopalj, OŠ Mrkopalj, Božana",
+        "• Predsjednik Gradskog vijeća: O Deklaraciji Petre Mandić idući petak → Побут інших міст (Політичні дебати в Рієці) | Сутності: Rijeka, Robert Kurelić, Petra Mandić",
+        "• Proglasili ga tehničarom iz Jankomira i nacrtali mu metu na čelu: Čovj → Дубль (Повтор новини ID 14) | Сутності: Krešimir Radušić, Jankomir, Dubrovnik",
+        "• Romano Nikolić i Dorotea Šušak: “Bavimo se iskustvima obiteljskih trau → Побут інших міст (Театральна прем'єра в Рієці) | Сутності: Rijeka, HNK Ivana pl. Zajca, Romano Nikolić",
+        "• Kakav susret u Drnišu! Njih 20 na okupu nakon 60 godina, došli sa svih → Побут інших міст (Зустріч випускників у Дрниші) | Сутності: Drniš, Ekonomska škola, maturanti"
+      ],
+      "rejected_by_reason": {
+        "Не за тематикою": 1,
+        "Побут інших міст": 6,
+        "Реклама": 1,
+        "Вже публікувалось": 1,
+        "Дубль": 1
+      },
+      "updates_marked": 0,
+      "already_rejected": 4,
+      "rejected_by_code_examples": [
+        "[sportaša] Deseto izdanje Atletske utrke “Dani sjećanja od Škabrnje do Vukovara” više od 500 sudionika",
+        "[тег RSS sport] Partizan u subotu dolazi u Zadar, a jedan euro od svake ulaznice ide za nabavu cistoskopa",
+        "[nogometnog] Potvrđena USKOK-ova optužnica protiv Darija Šimića: Prepiske iz mobitela otkrivaju detalje",
+        "[URL /sport/] Uragan Jugaša u drugom poluvremenu, Špilar digao rampu, rapsodija u napadu, Pays d‘Aix potopljen s v",
+        "[utakmicu] VIDEO Nadolazeća zvijezda Pistonsa odigrala je savršenu utakmicu koja je odlučena tek nakon dva prod",
+        "[URL /sport/] Rijeka danas dočekuje Orijent na Rujevici. Za navijače je otvorena zapadna tribina",
+        "[URL /sport/] Odbojkašice Rijeke večeras u Dvorani mladosti dočekuju ekipu CRO Teama"
+      ]
+    },
+    "backlog": {
+      "total_size": 6,
+      "sources": {
+        "Zadarski list": 2,
+        "Slobodna dalmacija": 2,
+        "023": 2
+      }
+    },
+    "published": {
+      "total": 3,
+      "ukraine_priority": 0,
+      "with_images": 3,
+      "text_only": 0,
+      "og_images_found": 2,
+      "sources": {
+        "023": 2,
+        "Slobodna dalmacija": 1
+      }
+    },
+    "models_used": {
+      "gemini-3.5-flash-lite": 2
+    },
+    "models_by_task": {
+      "filter": "gemini-3.5-flash-lite",
+      "translate": "gemini-3.5-flash-lite"
+    },
+    "model_attempts": [
+      {
+        "task": "filter",
+        "model": "gemini-3-flash-preview",
+        "outcome": "unavailable"
+      },
+      {
+        "task": "filter",
+        "model": "gemini-3.6-flash",
+        "outcome": "unavailable"
+      },
+      {
+        "task": "filter",
+        "model": "gemini-3.5-flash-lite",
+        "outcome": "ok"
+      },
+      {
+        "task": "translate",
+        "model": "gemini-3.8-flash",
+        "outcome": "unavailable"
+      },
+      {
+        "task": "translate",
+        "model": "gemini-3.6-flash",
+        "outcome": "unavailable"
+      },
+      {
+        "task": "translate",
+        "model": "gemini-3.5-flash-lite",
+        "outcome": "ok"
+      }
+    ],
+    "exhausted_models": [],
+    "demoted_models": [],
+    "translate_budget_deferred": [],
+    "gemini_region_blocked": false,
+    "gemini_unavailable": false,
+    "errors_count": 0,
+    "gemini_retries": 4
   }
 ]
