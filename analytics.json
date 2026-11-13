@@ -1,120 +1,5 @@
 [
   {
-    "timestamp": "2026-11-04 11:01:31",
-    "execution_time": 98.1,
-    "funnel": {
-      "scraped_total": 35,
-      "scraped_by_source": {
-        "023": 10,
-        "Slobodna dalmacija": 15,
-        "Zadarski list": 10
-      },
-      "already_seen": 17,
-      "rejected_by_keywords": 10,
-      "rejected_by_rule": {
-        "тег RSS sport": 5,
-        "igrača": 1,
-        "utakmici": 1,
-        "тег RSS nogomet": 2,
-        "turnir": 1
-      },
-      "unclassified_by_ai": 0,
-      "duplicates_removed_by_ai": 9,
-      "rejection_reasons_list": [
-        "• Novi crni rekord na ličkoj dionici autoceste A1: Vozio dvostruko brže  → Побут інших міст (Лічка ділянка автошляху A1) | Сутності: Audi, Autocesta A1, Gospić, Njemačka",
-        "• Jadran Kapor o aferi na dubrovačkom aerodromu: Pitali smo, slali upite → Побут інших міст (Аеропорт у Дубровнику) | Сутності: Jadran Kapor, Dubrovnik, Aerodrom",
-        "• Plenković u Opatiji: Problema je pregršt, ali mi idemo u dobrom smjeru → Вже публікувалось (Коментар прем'єра в Опатії) | Сутності: Andrej Plenković, Opatija, Vlada",
-        "• HZJZ objavio prve podatke; U Hrvatskoj prijavljeno 428 slučajeva gripe → Вже публікувалось (Статистика грипу в Хорватії) | Сутності: HZJZ, Hrvatska, Gripa",
-        "• U punom Kazalištu Marina Držića: Kolarini po pedeseti, jubilarni put o → Побут інших міст (Театр у Дубровнику) | Сутності: Kolarini, Kazalište Marina Držića, Dubrovnik",
-        "• Potpuno prekinut promet na autocesti Rijeka – Zagreb! → Побут інших міст (ДТП на трасах Рієка-Загреб) | Сутності: Autocesta A6, Rijeka, Zagreb",
-        "• Božena i Frane su dokaz da se od zemlje može živjeti, i bez poticaja!  → Побут інших міст (Село Отавіце) | Сутності: Božena Gabrilović Štrkalj, Frane Štrkalj, Otavice, OPG",
-        "• Ovaj tjedan konačno bi trebalo stići cjepivo protiv gripe. Ordinacije  → Дубль (Дублює новину 4 про грип) | Сутності: HZJZ, Hrvatska, Gripa",
-        "• Poslušajte svjedočanstvo Albine Grčić u Zadru: Nakon tog iskustva u Me → Не за тематикою (Особисте релігійне свідчення співачки) | Сутності: Albina Grčić, Zadar, Crkva sv. Frane"
-      ],
-      "rejected_by_reason": {
-        "Побут інших міст": 5,
-        "Вже публікувалось": 2,
-        "Дубль": 1,
-        "Не за тематикою": 1
-      },
-      "updates_marked": 0,
-      "already_rejected": 11,
-      "rejected_by_code_examples": [
-        "[тег RSS sport] Lucija Mijolović blista na Svjetskom prvenstvu; Paraplivačica PK Zadar donosi dvije medalje iz Portu",
-        "[тег RSS sport] Zadar ponovno bez Mihailovića, Šare: Nadamo se povratku s barem jednom pobjedom",
-        "[тег RSS sport] Dječje utrke poseban su ukras Božićne utrke Biograd 2026., prijave su otvorene",
-        "[igrača] Kreće nova sezona LIKAR-a: Osam momčadi, više od 150 igrača, a svima je zajedničko jedno – ljubav pr",
-        "[utakmici] Krševan Klarica je u sjajnoj šuterskoj formi, a sada je stigla i službena potvrda",
-        "[тег RSS sport] Brazilac debitira pred domaćom publikom. Camara mijenja Ocona do kraja sezone",
-        "[тег RSS sport] Antonia Ružić preko Čaraeve do drugog kola Hong Konga",
-        "[тег RSS nogomet] Hrvatske nogometašice u Ligi nacija protiv Slovačke, Bugarske i Gibraltara",
-        "[turnir] Ove subote Memorijalni turnir u sjećanje na legendarnog Marijana Tabara – Marina",
-        "[тег RSS nogomet] Sin Cristiana Ronalda prvi put pozvan u portugalsku U-17 reprezentaciju"
-      ]
-    },
-    "backlog": {
-      "total_size": 3,
-      "sources": {
-        "023": 3
-      }
-    },
-    "published": {
-      "total": 2,
-      "ukraine_priority": 0,
-      "with_images": 2,
-      "text_only": 0,
-      "og_images_found": 3,
-      "sources": {
-        "023": 2
-      }
-    },
-    "models_used": {
-      "gemini-3.5-flash-lite": 2
-    },
-    "models_by_task": {
-      "filter": "gemini-3.5-flash-lite",
-      "translate": "gemini-3.5-flash-lite"
-    },
-    "model_attempts": [
-      {
-        "task": "filter",
-        "model": "gemini-3-flash-preview",
-        "outcome": "unavailable"
-      },
-      {
-        "task": "filter",
-        "model": "gemini-3.6-flash",
-        "outcome": "unavailable"
-      },
-      {
-        "task": "filter",
-        "model": "gemini-3.5-flash-lite",
-        "outcome": "ok"
-      },
-      {
-        "task": "translate",
-        "model": "gemini-3.8-flash",
-        "outcome": "unavailable"
-      },
-      {
-        "task": "translate",
-        "model": "gemini-3.6-flash",
-        "outcome": "unavailable"
-      },
-      {
-        "task": "translate",
-        "model": "gemini-3.5-flash-lite",
-        "outcome": "ok"
-      }
-    ],
-    "exhausted_models": [],
-    "demoted_models": [],
-    "translate_budget_deferred": [],
-    "gemini_region_blocked": false,
-    "errors_count": 1,
-    "gemini_retries": 4
-  },
-  {
     "timestamp": "2026-11-04 12:01:18",
     "execution_time": 137.8,
     "funnel": {
@@ -10063,5 +9948,100 @@
     "gemini_unavailable": false,
     "errors_count": 0,
     "gemini_retries": 1
+  },
+  {
+    "timestamp": "2026-11-13 12:01:19",
+    "execution_time": 140.1,
+    "funnel": {
+      "scraped_total": 35,
+      "scraped_by_source": {
+        "023": 10,
+        "Slobodna dalmacija": 15,
+        "Zadarski list": 10
+      },
+      "already_seen": 16,
+      "rejected_by_keywords": 4,
+      "rejected_by_rule": {
+        "тег RSS sport": 2,
+        "sporta": 1,
+        "promo": 1
+      },
+      "unclassified_by_ai": 0,
+      "duplicates_removed_by_ai": 11,
+      "rejection_reasons_list": [
+        "• Na susretu hrvatske dijaspore u Argentini Dubrovnik predstavljen kao g → Побут інших міст (Захід у Дубровнику та Аргентині) | Сутності: Dubrovnik, Argentina, Marko Potrebica",
+        "• Noćnim ciljnikom ustrijelio srnu: 38-godišnjak osumnjičen za protuzako → Побут інших міст (Браконьєрство у Госпичі) | Сутності: Gospić, Lički Osik, srna",
+        "• INTERVJU Andrija Jarak: “Novinarstvo može usmjeriti reflektor gdje tre → Реклама (Промо телевізійної передачі) | Сутності: Andrija Jarak, RTL, Dosje Jarak",
+        "• Zdravstvo se raspada, HDZ daje novac DP-u za istraživanje komunizma, a → Вже публікувалось (Політична реакція на кризу в охороні здоров'я) | Сутності: HDZ, DP, hitna medicinska pomoć",
+        "• Student Filozofskog fakulteta kazneno prijavljen zbog snimanja kolegic → Побут інших міст (Кримінал у Загребі) | Сутності: Zagreb, Filozofski fakultet, policija",
+        "• Ponovljen natječaj za adventske kućice u Lapadu i na Brsaljama → Побут інших міст (Адвент-будиночки у Дубровнику) | Сутності: Dubrovnik, Lapad, Brsalje",
+        "• Kako razlikujete wobblere namijenjene panuli od onih za spinning? Dono → Світовий шум (Поради щодо риболовлі) | Сутності: wobbleri, spinning, panula",
+        "• I Dubrovnik će utihnuti na 8 minuta za Kristiana Periša → Вже публікувалось (Акція пам'яті щодо події в Янкомірі) | Сутності: Dubrovnik, Kristian Josip Periš, Jankomir",
+        "• Pretragom doma i vozila 45-godišnjaka u Rijeci pronađeni kokain, table → Побут інших міст (Наркоторгівля у Рієці) | Сутності: Rijeka, kokain, policija",
+        "• Upravljali vozilima pod utjecajem alkohola i droge u Rijeku, Krku i Vr → Побут інших міст (ДТП та порушення в інших містах) | Сутності: Rijeka, Krk, Vrbovsko",
+        "• Kad podvodni ribolov dobije neočekivan obrat. Susret koji se pamti za  → Світовий шум (Розповідь про підводне полювання) | Сутності: Čiovo, Šolta, Neno Kuvačić"
+      ],
+      "rejected_by_reason": {
+        "Побут інших міст": 6,
+        "Реклама": 1,
+        "Вже публікувалось": 2,
+        "Світовий шум": 2
+      },
+      "updates_marked": 1,
+      "already_rejected": 10,
+      "rejected_by_code_examples": [
+        "[тег RSS sport] Košarkaši Zadra oduševili učenike u Zemuniku; Već sutradan na tjelesnom svi su htjeli igrati samo ko",
+        "[sporta] Osigurano 300 tisuća eura za sportska igrališta i objekte",
+        "[тег RSS sport] Odbojkaši Rijeke i Grobničana, te odbojkašice Rijeke i Drenove saznali suparnike u osmini finala Kup",
+        "[promo] 10 stvari koje morate znati o Središnjem registru stanovništva"
+      ]
+    },
+    "backlog": {
+      "total_size": 1,
+      "sources": {
+        "023": 1
+      }
+    },
+    "published": {
+      "total": 3,
+      "ukraine_priority": 1,
+      "with_images": 3,
+      "text_only": 0,
+      "og_images_found": 2,
+      "sources": {
+        "Zadarski list": 1,
+        "023": 2
+      }
+    },
+    "models_used": {
+      "gemini-3-flash-preview": 1,
+      "gemini-3.6-flash": 1
+    },
+    "models_by_task": {
+      "filter": "gemini-3-flash-preview",
+      "translate": "gemini-3.6-flash"
+    },
+    "model_attempts": [
+      {
+        "task": "filter",
+        "model": "gemini-3-flash-preview",
+        "outcome": "ok"
+      },
+      {
+        "task": "translate",
+        "model": "gemini-3.6-flash",
+        "outcome": "ok"
+      }
+    ],
+    "exhausted_models": [],
+    "demoted_models": [
+      "filter: gemini-3.6-flash",
+      "translate: gemini-3.8-flash"
+    ],
+    "translate_budget_deferred": [],
+    "gemini_region_blocked": false,
+    "gemini_unavailable": false,
+    "errors_count": 0,
+    "gemini_retries": 0
   }
 ]
