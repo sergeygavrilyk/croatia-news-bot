@@ -1,118 +1,5 @@
 [
   {
-    "timestamp": "2026-11-05 14:01:19",
-    "execution_time": 155.1,
-    "funnel": {
-      "scraped_total": 35,
-      "scraped_by_source": {
-        "023": 10,
-        "Slobodna dalmacija": 15,
-        "Zadarski list": 10
-      },
-      "already_seen": 23,
-      "rejected_by_keywords": 3,
-      "rejected_by_rule": {
-        "тег RSS sport": 1,
-        "тег RSS košarka": 1,
-        "тег RSS nogomet": 1
-      },
-      "unclassified_by_ai": 0,
-      "duplicates_removed_by_ai": 9,
-      "rejection_reasons_list": [
-        "• Darivatelj krvi iz Šibenika primio državno odlikovanje: ‘To su naši he → Побут інших міст (Нагородження донорів крові у Шибенику) | Сутності: Šibenik, Tomislav Zjačić, Zoran Milanović, Crveni križ",
-        "• “Brk nije moda. Brk je poruka”: Održano predavanje o samopregledu test → Побут інших міст (Лекція про здоров'я у Рієці) | Сутності: Rijeka, Jadran Mandekić, Medicinska škola Rijeka",
-        "• Vatrogasci u ovoj godini odradili više od 1.500 intervencija → Побут інших міст (Звіт пожежників у Дубровнику) | Сутності: Dubrovačko-neretvanska županija, Blaž Pezo, Stjepan Simović",
-        "• Priča o BMW-u koji se istodobno vodio u dvije države: kad se povoljna  → Світовий шум (Поради щодо купівлі вживаних авто) | Сутності: BMW, Mađarska, Litva, Crni petak",
-        "• Grad Šibenik traži 4 pročelnika, otkrivamo tko se sve prijavio: ‘Grado → Побут інших міст (Вибори керівників відділів у Шибенику) | Сутності: Šibenik, Maja Morić Kulušić, Gradska uprava",
-        "• Inciijativa “Protiv sječe”: Pohvala za japanski vrt, kritika za Deltu → Побут інших міст (Благоустрій парку у Рієці) | Сутності: Rijeka, Iva Rinčić, Petar Ćurić, Delta",
-        "• Kristian Gašparini jednoglasno izabran na novi četverogodišnji mandat  → Побут інших міст (Призначення директора компанії у Рієці) | Сутності: Rijeka, Kristian Gašparini, Ekoplus, Marišćina",
-        "• Građani pozvani na uređenje parka Ponsal na Mlaki; očekuju ih tri radi → Побут інших міст (Акція з прибирання парку у Рієці) | Сутності: Rijeka, Mlaka, Urbani separe, Čistoća",
-        "• Vlada odobrila sudjelovanje Oružanih snaga RH u nizu NATO operacija: n → Вже публікувалось (Участь армії у місіях НАТО) | Сутності: Vlada RH, NATO, Kosovo, Poljska, Andrej Plenković"
-      ],
-      "rejected_by_reason": {
-        "Побут інших міст": 7,
-        "Світовий шум": 1,
-        "Вже публікувалось": 1
-      },
-      "updates_marked": 2,
-      "already_rejected": 19,
-      "rejected_by_code_examples": [
-        "[тег RSS sport] POVIJEST JE ISPISANA Emanuela Rados prva hrvatska hrvačica na Olimpijskim igrama mladih!",
-        "[тег RSS košarka] Izbornik ženske košarkaške reprezentacije objavio popis igračica za kvalifikacije za EuroBasket",
-        "[тег RSS nogomet] Raphinha produžio ugovor s Barcelonom. Brazilac ostaje na Nou Campu do 2030."
-      ]
-    },
-    "backlog": {
-      "total_size": 6,
-      "sources": {
-        "023": 3,
-        "Zadarski list": 1,
-        "Slobodna dalmacija": 2
-      }
-    },
-    "published": {
-      "total": 0,
-      "ukraine_priority": 0,
-      "with_images": 0,
-      "text_only": 0,
-      "og_images_found": 0,
-      "sources": {}
-    },
-    "models_used": {
-      "gemini-3.1-flash-lite": 1
-    },
-    "models_by_task": {
-      "filter": "gemini-3.1-flash-lite",
-      "translate": null
-    },
-    "model_attempts": [
-      {
-        "task": "filter",
-        "model": "gemini-3-flash-preview",
-        "outcome": "unavailable"
-      },
-      {
-        "task": "filter",
-        "model": "gemini-3.6-flash",
-        "outcome": "unavailable"
-      },
-      {
-        "task": "filter",
-        "model": "gemini-3.1-flash-lite",
-        "outcome": "ok"
-      },
-      {
-        "task": "translate",
-        "model": "gemini-3.8-flash",
-        "outcome": "unavailable"
-      },
-      {
-        "task": "translate",
-        "model": "gemini-3.5-flash-lite",
-        "outcome": "unavailable"
-      },
-      {
-        "task": "translate",
-        "model": "gemini-3.6-flash",
-        "outcome": "unavailable"
-      }
-    ],
-    "exhausted_models": [],
-    "demoted_models": [
-      "filter: gemini-3.5-flash-lite",
-      "translate: gemini-3.8-flash",
-      "translate: gemini-3.6-flash",
-      "translate: gemini-3.5-flash-lite"
-    ],
-    "translate_budget_deferred": [
-      "gemini-3.6-flash"
-    ],
-    "gemini_region_blocked": false,
-    "gemini_unavailable": true,
-    "errors_count": 0,
-    "gemini_retries": 5
-  },
-  {
     "timestamp": "2026-11-05 15:01:22",
     "execution_time": 52.6,
     "funnel": {
@@ -9944,5 +9831,89 @@
     "gemini_unavailable": false,
     "errors_count": 0,
     "gemini_retries": 2
+  },
+  {
+    "timestamp": "2026-11-14 15:01:16",
+    "execution_time": 6.2,
+    "funnel": {
+      "scraped_total": 35,
+      "scraped_by_source": {
+        "023": 10,
+        "Slobodna dalmacija": 15,
+        "Zadarski list": 10
+      },
+      "already_seen": 27,
+      "rejected_by_keywords": 5,
+      "rejected_by_rule": {
+        "тег RSS sport": 1,
+        "sport": 1,
+        "URL /sport/": 2,
+        "тег RSS nogomet": 1
+      },
+      "unclassified_by_ai": 0,
+      "duplicates_removed_by_ai": 5,
+      "rejection_reasons_list": [
+        "• Snijeg u petak donio probleme vozačima, a danas planinarima zimsku idi → Побут інших міст (Погода і планири в Горському котарі) | Сутності: Platak, Snježnik, Gorski kotar, Relja Paškvan",
+        "• Četiri izvora iz kojih ne biste trebali instalirati aplikacije na Andr → Світовий шум (Безпека додатків на Android) | Сутності: Google Play, Android, Сінгапур, Google",
+        "• Uzinić: “Glas udovice ponovno će se čuti u vapaju žrtava Vukovara i Šk → Геоблок (Церковні заяви у Рієці) | Сутності: Узиніч, Рієка, Вуковар, Шкабрня",
+        "• Udruga Franak prijavila Republiku Hrvatsku i Vrhovni sud Europskoj kom → Вже публікувалось (Позов Удруги Франка про кредити) | Сутності: Удруга Франка, Європейська комісія, Верховний суд, Хорватія",
+        "• Župan Petry napadnut u gospićkoj pizzeriji: “Rekao mi je ‘nisi mi zapo → Побут інших міст (Інцидент із жупаном у Госпічі) | Сутності: Петрі, Госпіч, Лічко-сенська поліція, 24sata"
+      ],
+      "rejected_by_reason": {
+        "Побут інших міст": 2,
+        "Світовий шум": 1,
+        "Геоблок": 1,
+        "Вже публікувалось": 1
+      },
+      "updates_marked": 0,
+      "already_rejected": 18,
+      "rejected_by_code_examples": [
+        "[тег RSS sport] Zadar dočekuje Partizan uz sjećanje na Badnjak i 84:68: „Ako dobijemo priliku, prihvatit ćemo je obj",
+        "[sport] Arena Sport se povlači iz Hrvatske: Liga prvaka ostaje do 2027., Premier liga do 2028., a nasljednic",
+        "[URL /sport/] Utakmica s humanitarnim predznakom: Square dočekuje Osijek, zbog interesa navijača fan zona već od 1",
+        "[тег RSS nogomet] BSK u produžecima izbacio Goricu iz Kupa. Krznar porazom debitirao na klupi Turopoljaca",
+        "[URL /sport/] Zrinka Ljutić ostala nadomak postolja na slalomu održanom u finskom Leviju"
+      ]
+    },
+    "backlog": {
+      "total_size": 0,
+      "sources": {}
+    },
+    "published": {
+      "total": 0,
+      "ukraine_priority": 0,
+      "with_images": 0,
+      "text_only": 0,
+      "og_images_found": 0,
+      "sources": {}
+    },
+    "models_used": {
+      "gemini-3.5-flash-lite": 1
+    },
+    "models_by_task": {
+      "filter": "gemini-3.5-flash-lite",
+      "translate": null
+    },
+    "model_attempts": [
+      {
+        "task": "filter",
+        "model": "gemini-3.6-flash",
+        "outcome": "unavailable"
+      },
+      {
+        "task": "filter",
+        "model": "gemini-3.5-flash-lite",
+        "outcome": "ok"
+      }
+    ],
+    "exhausted_models": [],
+    "demoted_models": [
+      "filter: gemini-3-flash-preview"
+    ],
+    "translate_budget_deferred": [],
+    "gemini_region_blocked": false,
+    "gemini_unavailable": false,
+    "errors_count": 0,
+    "gemini_retries": 1
   }
 ]
