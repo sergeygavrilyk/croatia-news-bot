@@ -1,107 +1,5 @@
 [
   {
-    "timestamp": "2026-11-05 17:01:27",
-    "execution_time": 242.0,
-    "funnel": {
-      "scraped_total": 35,
-      "scraped_by_source": {
-        "023": 10,
-        "Slobodna dalmacija": 15,
-        "Zadarski list": 10
-      },
-      "already_seen": 24,
-      "rejected_by_keywords": 2,
-      "rejected_by_rule": {
-        "тег RSS lifestyle": 1,
-        "тег RSS nogomet": 1
-      },
-      "unclassified_by_ai": 0,
-      "duplicates_removed_by_ai": 7,
-      "rejection_reasons_list": [
-        "• MUP raspisao natječaj od pet milijuna eura za robotizirano skladište d → Побут інших міст (Будівництво skladišta u Zagrebu) | Сутності: MUP, Zagreb, Senjak, 5 milijuna eura",
-        "• Europski parlament raspravljao o velikom projektu kod Dubrovnika: ‘Rij → Дубль (Дублікат новини про засідання Європарламенту) | Сутності: Europski parlament, Cavtat, Dubrovnik, Marina Resort",
-        "• Zbog počasti Titu Grad Vukovar proziva Keglevićevu stražu; podržao je  → Побут інших міст (Суперечка щодо протоколу між містами) | Сутності: Grad Vukovar, Keglevićeva straža, Željko Kolar, Kumrovec",
-        "• Europski parlament: Za otpad u Gospiću i resort u Cavtatu čeka se mišl → Побут інших міст (Скарги щодо об'єктів у Ґоспичі та Цавтаті) | Сутності: Europski parlament, Gospić, Cavtat, Gordan Bosanac",
-        "• Klinika Denisa Kataneca izdaje novi album na vinilu i najavljuje konce → Побут інших міст (Концерт інді-гурту в Загребі) | Сутності: Klinika Denisa Kataneca, Zagreb, Tvornica kulture, Menart",
-        "• Vucino Živo blato rasprodalo Tvornicu tri mjeseca unaprijed → Побут інших міст (Концерт у Загребі) | Сутності: Živo blato, Siniša Vuco, Tvornica kulture, Zagreb",
-        "• Mijenja se zakon. Stižu stroge kazne za lažne seks snimke, uhođenje i  → Вже публікувалось (Про заяву Хабіяна вже публікувалось раніше) | Сутності: Damir Habijan, Kazneni zakon, Hrvatska, Europska unija"
-      ],
-      "rejected_by_reason": {
-        "Побут інших міст": 5,
-        "Дубль": 1,
-        "Вже публікувалось": 1
-      },
-      "updates_marked": 0,
-      "already_rejected": 23,
-      "rejected_by_code_examples": [
-        "[тег RSS lifestyle] Astma i KOPB zimi: kako hladan zrak sužava dišne putove i što savjetuju stručnjaci",
-        "[тег RSS nogomet] Glavni režiser nogometne senzacije u Ligi prvaka: “Pred nama je još dug put…”"
-      ]
-    },
-    "backlog": {
-      "total_size": 5,
-      "sources": {
-        "Zadarski list": 3,
-        "023": 2
-      }
-    },
-    "published": {
-      "total": 0,
-      "ukraine_priority": 0,
-      "with_images": 0,
-      "text_only": 0,
-      "og_images_found": 1,
-      "sources": {}
-    },
-    "models_used": {
-      "gemini-3.6-flash": 1
-    },
-    "models_by_task": {
-      "filter": "gemini-3.6-flash",
-      "translate": null
-    },
-    "model_attempts": [
-      {
-        "task": "filter",
-        "model": "gemini-3-flash-preview",
-        "outcome": "unavailable"
-      },
-      {
-        "task": "filter",
-        "model": "gemini-3.6-flash",
-        "outcome": "ok"
-      },
-      {
-        "task": "translate",
-        "model": "gemini-3.8-flash",
-        "outcome": "unavailable"
-      },
-      {
-        "task": "translate",
-        "model": "gemini-3.5-flash-lite",
-        "outcome": "unavailable"
-      },
-      {
-        "task": "translate",
-        "model": "gemini-3.6-flash",
-        "outcome": "unavailable"
-      }
-    ],
-    "exhausted_models": [],
-    "demoted_models": [
-      "filter: gemini-3.5-flash-lite",
-      "translate: gemini-3.8-flash",
-      "translate: gemini-3.5-flash-lite"
-    ],
-    "translate_budget_deferred": [
-      "gemini-3.6-flash"
-    ],
-    "gemini_region_blocked": false,
-    "gemini_unavailable": true,
-    "errors_count": 0,
-    "gemini_retries": 4
-  },
-  {
     "timestamp": "2026-11-05 20:01:19",
     "execution_time": 242.9,
     "funnel": {
@@ -9864,6 +9762,107 @@
       "filter: gemini-3.6-flash"
     ],
     "translate_budget_deferred": [],
+    "gemini_region_blocked": false,
+    "gemini_unavailable": false,
+    "errors_count": 0,
+    "gemini_retries": 1
+  },
+  {
+    "timestamp": "2026-11-14 20:01:12",
+    "execution_time": 118.3,
+    "funnel": {
+      "scraped_total": 35,
+      "scraped_by_source": {
+        "023": 10,
+        "Slobodna dalmacija": 15,
+        "Zadarski list": 10
+      },
+      "already_seen": 15,
+      "rejected_by_keywords": 14,
+      "rejected_by_rule": {
+        "тег RSS sport": 2,
+        "тег RSS lifestyle": 3,
+        "URL /sport/": 3,
+        "nogometaš": 1,
+        "тег RSS nogomet": 3,
+        "тег RSS košarka": 2
+      },
+      "unclassified_by_ai": 0,
+      "duplicates_removed_by_ai": 5,
+      "rejection_reasons_list": [
+        "• Prosvjed protiv projekta KOdeCONet Zero i spaljivanja otpada u Holcimu → Побут інших міст (Протест проти спалювання відходів в Істрії) | Сутності: Istarska županija, Holcim, Koromačno, KOdeCONet Zero",
+        "• ‘Inovacija‘ na Širokoj i Ulici od puča: probužani su kameni stupići, e → Побут інших міст (Пошкодження кам'яних стовпчиків у Дубровнику) | Сутності: Široka ulica, Ulica od puča, Dubrovnik, kameni stupići",
+        "• Dan blizanaca: Dječja kuća prepuna smijeha i duplog veselja → Побут інших міст (Захід для близнюків у Рієці) | Сутності: Rijeka, Dječja kuća, Udruga Gemini, Dan blizanaca",
+        "• Iranska mornarica: Naftni tanker “prekršio pravila” i naletio na minu  → Геоблок (Інцидент з танкером в Ірані) | Сутності: Iranska mornarica, Hormuški tjesnac, naftni tanker, IRNA",
+        "• Most prikupio 7500 potpisa za raskid koncesijskog ugovora s tvrtkom Co → Побут інших міст (Петиція щодо пляжу готелю в Рієці) | Сутності: Most, JTH Costabella, Hilton Rijeka, Primorsko-goranska županija"
+      ],
+      "rejected_by_reason": {
+        "Побут інших міст": 4,
+        "Геоблок": 1
+      },
+      "updates_marked": 0,
+      "already_rejected": 13,
+      "rejected_by_code_examples": [
+        "[тег RSS sport] Zadar srušio neporaženi Partizan na Višnjiku i upisao najveću pobjedu sezone",
+        "[тег RSS sport] Livaković uoči Češke odgovorio na pitanja o Barceloni: “Strpljivo čekam svoju priliku”",
+        "[тег RSS lifestyle] Lupanje i pucketanje iz bojlera: uzrok otkriva trenutak u kojem se zvuk javlja",
+        "[тег RSS lifestyle] Pohana piletina bez brašna: odresci prvo odstoje u marinadi s parmezanom i limunom",
+        "[тег RSS lifestyle] Zašto mačke predu: osim zadovoljstva, taj zvuk može značiti glad, stres ili bol",
+        "[URL /sport/] Iva Oberan osvojila broncu na Grand Prixu Zagreb!",
+        "[nogometaš] Bivši nogometaš napravio zaokret u karijeri i ušao u biznis s nekretninama: ‘Top agenti su kao golge",
+        "[URL /sport/] Utakmica s humanitarnim predznakom: Square dočekuje Osijek, zbog interesa navijača fan zona već od 1",
+        "[URL /sport/] Torcida slavila na Zametu! Futsalska momčad Rijeke doživjela težak poraz",
+        "[тег RSS nogomet] Norveška pobijedila Wales i ostala u igri za četvrtfinale",
+        "[тег RSS košarka] Crikvenica izgubila nakon produžetka u Zadru. Bivši igrač Kvarnera zabio za pobjedu domaćina",
+        "[тег RSS košarka] Hrvatske košarkašice uvjerljivo nadigrale Češku u gostima u važnom dvoboju za plasman na EP",
+        "[тег RSS nogomet] Livaković uoči Češke progovorio i o statusu u Barceloni: “Strpljiv sam i čekam priliku”",
+        "[тег RSS nogomet] Slaven Bilić: “Bod nam je dosta, ali ne bih volio 0:0. Gvardiol? Nemam sumnje u njega”"
+      ]
+    },
+    "backlog": {
+      "total_size": 0,
+      "sources": {}
+    },
+    "published": {
+      "total": 1,
+      "ukraine_priority": 0,
+      "with_images": 1,
+      "text_only": 0,
+      "og_images_found": 1,
+      "sources": {
+        "023": 1
+      }
+    },
+    "models_used": {
+      "gemini-3-flash-preview": 1,
+      "gemini-3.5-flash-lite": 1
+    },
+    "models_by_task": {
+      "filter": "gemini-3-flash-preview",
+      "translate": "gemini-3.5-flash-lite"
+    },
+    "model_attempts": [
+      {
+        "task": "filter",
+        "model": "gemini-3-flash-preview",
+        "outcome": "ok"
+      },
+      {
+        "task": "translate",
+        "model": "gemini-3.8-flash",
+        "outcome": "unavailable"
+      },
+      {
+        "task": "translate",
+        "model": "gemini-3.5-flash-lite",
+        "outcome": "ok"
+      }
+    ],
+    "exhausted_models": [],
+    "demoted_models": [],
+    "translate_budget_deferred": [
+      "gemini-3.6-flash"
+    ],
     "gemini_region_blocked": false,
     "gemini_unavailable": false,
     "errors_count": 0,
