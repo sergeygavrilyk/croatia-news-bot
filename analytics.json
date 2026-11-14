@@ -1,124 +1,5 @@
 [
   {
-    "timestamp": "2026-11-05 11:01:23",
-    "execution_time": 226.1,
-    "funnel": {
-      "scraped_total": 35,
-      "scraped_by_source": {
-        "023": 10,
-        "Slobodna dalmacija": 15,
-        "Zadarski list": 10
-      },
-      "already_seen": 15,
-      "rejected_by_keywords": 6,
-      "rejected_by_rule": {
-        "тег RSS sport": 2,
-        "тег RSS nogomet": 2,
-        "promo": 1,
-        "URL /sport/": 1
-      },
-      "unclassified_by_ai": 0,
-      "duplicates_removed_by_ai": 11,
-      "rejection_reasons_list": [
-        "• Anušić u SAD-u: Nova vlast se mora udaljiti od Vučićeve velikosrpske p → Вже публікувалось (Політичні заяви міністра оборони) | Сутності: Ivan Anušić, Srbija, Aleksandar Vučić, Harvard",
-        "• Plenković: Hrvatska je članstvom u Vijeću Europe vraćena u svoj civili → Вже публікувалось (Політична промова про річницю членства) | Сутності: Andrej Plenković, Vijeće Europe, Zagreb",
-        "• DRAMA NA EUROPSKOM NEBU Borbeni avioni presretali putničke zrakoplove  → Геоблок (Інцидент з літаком за межами Хорватії) | Сутності: Aer Lingus, Francuska, Euronews, dojave o bombama",
-        "• HSŠKD Narona organizirala radionicu ‘Mali čuvari prirode‘, zasađena tr → Побут інших міст (Локальна подія в іншому місті) | Сутності: HSŠKD Narona, Plivor, sadnja stabala",
-        "• Evo zašto bi trebali pokucati po haubi automobila prije nego upalite m → Світовий шум (Поради щодо догляду за тваринами) | Сутності: mačke, automobili, Dierenbescherming",
-        "• Ključevi dvaju gradskih stanova uručeni Općoj bolnici Dubrovnik: Jedan → Побут інших міст (Розподіл житла в Дубровнику) | Сутності: Dubrovnik, Opća bolnica Dubrovnik, stanovi",
-        "• U Šopotu planulo u pogonu za proizvodnju peleta, policija provodi očev → Дубль (Повтор новини про пожежу) | Сутності: Šopot, požar, skladište peleta",
-        "• Nemojte nasjesti! Prevaranti se predstavljaju kao policijski službenic → Побут інших міст (Попередження поліції в Дубровнику) | Сутності: PU dubrovačko-neretvanska, prijevara, stranci",
-        "• ‘Šmrče se po sudovima, u Saboru i DORH-u, na svakom kantunu‘? Tužitelj → Побут інших міст (Політичний скандал у Дубровнику) | Сутності: Mato Franković, Dubrovnik, kokain, DORH",
-        "• ‘Šmrče se po sudovima, u Saboru i DORH-u, na svakom kantunu‘? Tužitelj → Дубль (Дублікат новини 12) | Сутності: Mato Franković, Dubrovnik, kokain, DORH",
-        "• Kraj Benkovca i dalje leži više od 6400 tona opasnog otpada! Gdje je z → Вже публікувалось (Стара проблема з відходами) | Сутності: Benkovac, Kukalj, otpad, Marija Vučković"
-      ],
-      "rejected_by_reason": {
-        "Вже публікувалось": 3,
-        "Геоблок": 1,
-        "Побут інших міст": 4,
-        "Світовий шум": 1,
-        "Дубль": 2
-      },
-      "updates_marked": 1,
-      "already_rejected": 9,
-      "rejected_by_code_examples": [
-        "[тег RSS sport] POVIJEST JE ISPISANA Emanuela Rados prva hrvatska hrvačica na Olimpijskim igrama mladih!",
-        "[тег RSS sport] Strukovna škola Vice Vlatkovića novi je prvak Košarkaške lige srednjih škola Zadarske županije!",
-        "[тег RSS nogomet] Cristiano Ronaldo nakon sukoba s izbornikom i službeno objavio završetak reprezentativne karijere!",
-        "[promo] Vukovar – grad posebnog značenja na prigodnoj kovanici od 2 eura",
-        "[тег RSS nogomet] Harry Kane je produžio ugovor s Bayernom: “Želim osvojiti još puno titula”",
-        "[URL /sport/] Futsalska momčad Rijeke saznala suparnika u osmini finala Kupa Hrvatske"
-      ]
-    },
-    "backlog": {
-      "total_size": 2,
-      "sources": {
-        "Slobodna dalmacija": 1,
-        "023": 1
-      }
-    },
-    "published": {
-      "total": 3,
-      "ukraine_priority": 0,
-      "with_images": 3,
-      "text_only": 0,
-      "og_images_found": 1,
-      "sources": {
-        "Zadarski list": 2,
-        "023": 1
-      }
-    },
-    "models_used": {
-      "gemini-3.1-flash-lite": 1,
-      "gemini-3.5-flash-lite": 1
-    },
-    "models_by_task": {
-      "filter": "gemini-3.1-flash-lite",
-      "translate": "gemini-3.5-flash-lite"
-    },
-    "model_attempts": [
-      {
-        "task": "filter",
-        "model": "gemini-3-flash-preview",
-        "outcome": "unavailable"
-      },
-      {
-        "task": "filter",
-        "model": "gemini-3.6-flash",
-        "outcome": "unavailable"
-      },
-      {
-        "task": "filter",
-        "model": "gemini-3.1-flash-lite",
-        "outcome": "ok"
-      },
-      {
-        "task": "translate",
-        "model": "gemini-3.8-flash",
-        "outcome": "unavailable"
-      },
-      {
-        "task": "translate",
-        "model": "gemini-3.6-flash",
-        "outcome": "unavailable"
-      },
-      {
-        "task": "translate",
-        "model": "gemini-3.5-flash-lite",
-        "outcome": "ok"
-      }
-    ],
-    "exhausted_models": [],
-    "demoted_models": [
-      "filter: gemini-3.5-flash-lite"
-    ],
-    "translate_budget_deferred": [],
-    "gemini_region_blocked": false,
-    "gemini_unavailable": false,
-    "errors_count": 0,
-    "gemini_retries": 4
-  },
-  {
     "timestamp": "2026-11-05 12:01:26",
     "execution_time": 54.8,
     "funnel": {
@@ -10006,5 +9887,97 @@
     "gemini_unavailable": false,
     "errors_count": 0,
     "gemini_retries": 1
+  },
+  {
+    "timestamp": "2026-11-14 12:01:16",
+    "execution_time": 49.7,
+    "funnel": {
+      "scraped_total": 35,
+      "scraped_by_source": {
+        "023": 10,
+        "Slobodna dalmacija": 15,
+        "Zadarski list": 10
+      },
+      "already_seen": 24,
+      "rejected_by_keywords": 3,
+      "rejected_by_rule": {
+        "тег RSS sport": 1,
+        "sport": 1,
+        "тег RSS nogomet": 1
+      },
+      "unclassified_by_ai": 0,
+      "duplicates_removed_by_ai": 3,
+      "rejection_reasons_list": [
+        "• Erliću kupi naočale! Zadrani sasuli gradonačelniku lavinu komentara na → Вже публікувалось (Реакції та коментарі до конфлікту в міській раді) | Сутності: Šime Erlić, Daniel Radeta, Zadar, HDZ",
+        "• 8 minuta šutnje za Kristiana Josipa Periša: Na skupu u Zagrebu nije bi → Побут інших міст (Локальна акція пам'яті в Загребі) | Сутності: Kristian Josip Periš, Zagreb, Cvjetni trg, Klinika Sveti Ivan",
+        "• Ćorić: “Nema gubitnika i dobitnika, uz snažnu socijalnu komponentu otv → Вже публікувалось (Коментар міністра до вже представленого бюджету) | Сутності: Tomislav Ćorić, Vlada Hrvatske, proračun 2027"
+      ],
+      "rejected_by_reason": {
+        "Вже публікувалось": 2,
+        "Побут інших міст": 1
+      },
+      "updates_marked": 0,
+      "already_rejected": 14,
+      "rejected_by_code_examples": [
+        "[тег RSS sport] Zadar dočekuje Partizan uz sjećanje na Badnjak i 84:68: „Ako dobijemo priliku, prihvatit ćemo je obj",
+        "[sport] Arena Sport se povlači iz Hrvatske: Liga prvaka ostaje do 2027., Premier liga do 2028., a nasljednic",
+        "[тег RSS nogomet] Argentina izgubila prvu utakmicu odigranu nakon što se Leo Messi oprostio od reprezentacije"
+      ]
+    },
+    "backlog": {
+      "total_size": 4,
+      "sources": {
+        "023": 1,
+        "Zadarski list": 3
+      }
+    },
+    "published": {
+      "total": 0,
+      "ukraine_priority": 0,
+      "with_images": 0,
+      "text_only": 0,
+      "og_images_found": 1,
+      "sources": {}
+    },
+    "models_used": {
+      "gemini-3-flash-preview": 1
+    },
+    "models_by_task": {
+      "filter": "gemini-3-flash-preview",
+      "translate": null
+    },
+    "model_attempts": [
+      {
+        "task": "filter",
+        "model": "gemini-3-flash-preview",
+        "outcome": "ok"
+      },
+      {
+        "task": "translate",
+        "model": "gemini-3.5-flash-lite",
+        "outcome": "unavailable"
+      },
+      {
+        "task": "translate",
+        "model": "gemini-3.8-flash",
+        "outcome": "unavailable"
+      },
+      {
+        "task": "translate",
+        "model": "gemini-3.6-flash",
+        "outcome": "unavailable"
+      }
+    ],
+    "exhausted_models": [],
+    "demoted_models": [
+      "translate: gemini-3.8-flash"
+    ],
+    "translate_budget_deferred": [
+      "gemini-3.6-flash"
+    ],
+    "gemini_region_blocked": false,
+    "gemini_unavailable": true,
+    "errors_count": 0,
+    "gemini_retries": 3
   }
 ]
