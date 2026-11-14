@@ -1,117 +1,5 @@
 [
   {
-    "timestamp": "2026-11-05 08:01:21",
-    "execution_time": 246.9,
-    "funnel": {
-      "scraped_total": 35,
-      "scraped_by_source": {
-        "023": 10,
-        "Slobodna dalmacija": 15,
-        "Zadarski list": 10
-      },
-      "already_seen": 10,
-      "rejected_by_keywords": 2,
-      "rejected_by_rule": {
-        "тег RSS sport": 1,
-        "тег RSS košarka": 1
-      },
-      "unclassified_by_ai": 0,
-      "duplicates_removed_by_ai": 16,
-      "rejection_reasons_list": [
-        "• Kako je najelitniji hotel Jugoslavije postao - ruglo Jadrana? Žrtva ra → Побут інших міст (Занепад готелю в Дубровнику) | Сутності: Hotel Belvedere, Dubrovnik, Jugoslavija",
-        "• Zmajlović prozvao Vladu zbog neispunjenih planova pa najavio što će ra → Вже публікувалось (Політичні заяви щодо сміттєпереробки) | Сутності: Zmajlović, SDP, Možemo, otpad",
-        "• Roditelji djece i stanari Gruža uz Magistralu zahvaljuju Libertasu za  → Побут інших міст (Автобусна лінія в Дубровнику) | Сутності: Gruž, Libertas, Dubrovnik",
-        "• U Francuskoj najavljeni masovni prosvjedi i štrajkovi, na ulicama se d → Геоблок (Протести у Франції) | Сутності: Francuska, Macron, štrajkovi",
-        "• Mario Iveković o plaćama: \"Za mene ministar financija sve više postaje → Вже публікувалось (Коментар експерта щодо зарплат) | Сутності: Mario Iveković, plaće, Hrvatska",
-        "• Lijepa vijest iz oporavilišta za kornjače. Severina, Palma i Santo sre → Не за тематикою (Випуск черепах у море) | Сутності: Plavi svijet, kornjače, Veli žal",
-        "• Predstavljena zbirka pjesama ‘Ledena berba‘ Luka Paljetka: Plodovi bog → Побут інших міст (Презентація книги в Дубровнику) | Сутності: Luko Paljetak, Znanstvena knjižnica, Dubrovnik",
-        "• Iz blata nakon razornih poplava rodio se Golem, Neobična predstava sti → Побут інших міст (Вистава в Рієці) | Сутності: Rijeka, poplave, kazalište",
-        "• Prva aktivnost Foruma mladih u ovoj školskoj godini: U kompleksu TUP-a → Побут інших міст (Виставка школярів у Дубровнику) | Сутності: Forum mladih, Dubrovnik, izložba",
-        "• Svirao je s Björk i Rickyjem Martinom, a danas prodaje milijune triler → Не за тематикою (Візит письменника до Загреба) | Сутності: Chris Carter, Zagreb, Interliber",
-        "• Provjerite koje su ulice u četvrtak bez vode → Побут інших міст (Відключення води в Дубровнику) | Сутності: Vodovod, Dubrovnik, voda",
-        "• Habjan i Medvešek donose novu predstavu na Scenu Ribnjak → Побут інших міст (Театральна прем'єра в Загребі) | Сутності: Scena Ribnjak, Zagreb, predstava",
-        "• Predstavljen program simpozija „Kulturna baština Župe dubrovačke” – 30 → Побут інших міст (Науковий симпозіум у Жупі Дубровацькій) | Сутності: Župa dubrovačka, simpozij, baština",
-        "• Od »Svadbe« do filma o plastici u moru: Hrvatski naslovi u središtu fe → Геоблок (Кінофестиваль у Німеччині) | Сутності: Cottbus, hrvatski filmovi, festival",
-        "• Kultni album “Ljubav” Ekatarine Velike postaje plesna predstava. Premi → Побут інших міст (Вистава в Загребі) | Сутності: ZKM, Zagreb, Ekatarina Velika",
-        "• “Društvo nije u stanju zaštititi žensko tijelo”: Kazališna predstava o → Побут інших міст (Театральна критика в Загребі) | Сутності: Saša Božić, Zagreb, kazalište"
-      ],
-      "rejected_by_reason": {
-        "Побут інших міст": 10,
-        "Вже публікувалось": 2,
-        "Геоблок": 2,
-        "Не за тематикою": 2
-      },
-      "updates_marked": 0,
-      "already_rejected": 9,
-      "rejected_by_code_examples": [
-        "[тег RSS sport] Strukovna škola Vice Vlatkovića novi je prvak Košarkaške lige srednjih škola Zadarske županije!",
-        "[тег RSS košarka] VIDEO Luka Dončić je opet imao ludu šutersku večer. Nadmašio je i Michaela Jordana"
-      ]
-    },
-    "backlog": {
-      "total_size": 0,
-      "sources": {}
-    },
-    "published": {
-      "total": 3,
-      "ukraine_priority": 0,
-      "with_images": 3,
-      "text_only": 0,
-      "og_images_found": 2,
-      "sources": {
-        "023": 2,
-        "Slobodna dalmacija": 1
-      }
-    },
-    "models_used": {
-      "gemini-3.1-flash-lite": 1,
-      "gemini-3.6-flash": 1
-    },
-    "models_by_task": {
-      "filter": "gemini-3.1-flash-lite",
-      "translate": "gemini-3.6-flash"
-    },
-    "model_attempts": [
-      {
-        "task": "filter",
-        "model": "gemini-3-flash-preview",
-        "outcome": "unavailable"
-      },
-      {
-        "task": "filter",
-        "model": "gemini-3.6-flash",
-        "outcome": "unavailable"
-      },
-      {
-        "task": "filter",
-        "model": "gemini-3.5-flash-lite",
-        "outcome": "unavailable"
-      },
-      {
-        "task": "filter",
-        "model": "gemini-3.1-flash-lite",
-        "outcome": "ok"
-      },
-      {
-        "task": "translate",
-        "model": "gemini-3.8-flash",
-        "outcome": "unavailable"
-      },
-      {
-        "task": "translate",
-        "model": "gemini-3.6-flash",
-        "outcome": "ok"
-      }
-    ],
-    "exhausted_models": [],
-    "demoted_models": [],
-    "translate_budget_deferred": [],
-    "gemini_region_blocked": false,
-    "gemini_unavailable": false,
-    "errors_count": 0,
-    "gemini_retries": 4
-  },
-  {
     "timestamp": "2026-11-05 09:01:18",
     "execution_time": 55.8,
     "funnel": {
@@ -10051,5 +9939,97 @@
     "gemini_unavailable": false,
     "errors_count": 0,
     "gemini_retries": 2
+  },
+  {
+    "timestamp": "2026-11-14 09:01:16",
+    "execution_time": 264.2,
+    "funnel": {
+      "scraped_total": 35,
+      "scraped_by_source": {
+        "023": 10,
+        "Slobodna dalmacija": 15,
+        "Zadarski list": 10
+      },
+      "already_seen": 21,
+      "rejected_by_keywords": 3,
+      "rejected_by_rule": {
+        "sport": 1,
+        "URL /sport/": 1,
+        "тег RSS košarka": 1
+      },
+      "unclassified_by_ai": 0,
+      "duplicates_removed_by_ai": 5,
+      "rejection_reasons_list": [
+        "• Mađarske vlasti našle čak 17 milijuna eura kod bivšeg Orbanovog minist → Геоблок (Угорщина) | Сутності: Miklós Seszták, Péter Magyar, Viktor Orbán, Budimpešta",
+        "• Još Gori u subotu u Azimutu: Stojković i braća Sinkauz donose ‘Raj na  → Побут інших міст (Шибеник) | Сутності: Još Gori, Aleksandar Stojković, NKC Azimut, Šibenik",
+        "• VIDEO U novoj Špici s Macanom gostuje Ranko Rajović: “Roditelji više n → Світовий шум | Сутності: Ranko Rajović, Krešimir Macan, Špica s Macanom",
+        "• Učenici Turističko-ugostiteljske škole Šibenik županijski prvaci u fut → Спорт (Шибеник) | Сутності: Turističko-ugostiteljska škola Šibenik, Šibenik, Stjepan Dučkić",
+        "• Dođite nešto lijepo pojesti kod Maje i Mirka Andrića, pomoći ćete plem → Побут інших міст (Орашац) | Сутності: Konoba Veranda 2.0, Maja Andrić, Mirko Andrić, Orašać"
+      ],
+      "rejected_by_reason": {
+        "Геоблок": 1,
+        "Побут інших міст": 2,
+        "Світовий шум": 1,
+        "Спорт": 1
+      },
+      "updates_marked": 2,
+      "already_rejected": 12,
+      "rejected_by_code_examples": [
+        "[sport] Arena Sport se povlači iz Hrvatske: Liga prvaka ostaje do 2027., Premier liga do 2028., a nasljednic",
+        "[URL /sport/] Elina Svitolina pobijedila Arinu Sabaljenko i plasirala se u polufinale turnira u Indian Wellsu",
+        "[тег RSS košarka] VIDEO Ivica Zubac odigrao je sjajnu partiju u pobjedi Pacersa nad aktualnim prvacima"
+      ]
+    },
+    "backlog": {
+      "total_size": 2,
+      "sources": {
+        "Zadarski list": 1,
+        "Slobodna dalmacija": 1
+      }
+    },
+    "published": {
+      "total": 3,
+      "ukraine_priority": 0,
+      "with_images": 3,
+      "text_only": 0,
+      "og_images_found": 2,
+      "sources": {
+        "023": 2,
+        "Zadarski list": 1
+      }
+    },
+    "models_used": {
+      "gemini-3.6-flash": 2
+    },
+    "models_by_task": {
+      "filter": "gemini-3.6-flash",
+      "translate": "gemini-3.6-flash"
+    },
+    "model_attempts": [
+      {
+        "task": "filter",
+        "model": "gemini-3-flash-preview",
+        "outcome": "unavailable"
+      },
+      {
+        "task": "filter",
+        "model": "gemini-3.6-flash",
+        "outcome": "ok"
+      },
+      {
+        "task": "translate",
+        "model": "gemini-3.6-flash",
+        "outcome": "ok"
+      }
+    ],
+    "exhausted_models": [],
+    "demoted_models": [
+      "translate: gemini-3.8-flash"
+    ],
+    "translate_budget_deferred": [],
+    "gemini_region_blocked": false,
+    "gemini_unavailable": false,
+    "errors_count": 0,
+    "gemini_retries": 1
   }
 ]
