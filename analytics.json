@@ -1,113 +1,5 @@
 [
   {
-    "timestamp": "2026-11-05 15:01:22",
-    "execution_time": 52.6,
-    "funnel": {
-      "scraped_total": 35,
-      "scraped_by_source": {
-        "023": 10,
-        "Slobodna dalmacija": 15,
-        "Zadarski list": 10
-      },
-      "already_seen": 22,
-      "rejected_by_keywords": 4,
-      "rejected_by_rule": {
-        "тег RSS lifestyle": 1,
-        "тег RSS sport": 1,
-        "тег RSS košarka": 1,
-        "тег RSS nogomet": 1
-      },
-      "unclassified_by_ai": 0,
-      "duplicates_removed_by_ai": 10,
-      "rejection_reasons_list": [
-        "• Marina Resort Cavtat nakon rasprave u Europskom parlamentu: Projekt se → Побут інших міст (Будівництво марини в Цавтаті) | Сутності: Cavtat, Europski parlament, Marina Resort",
-        "• NOVE SMJERNICE IZ BRUXELLESA Svaki građanin EU-a trebao bi imati zalih → Вже публікувалось (Загальні рекомендації щодо цивільного захисту) | Сутності: EU, Bruxelles, Europska komisija",
-        "• Isporuka cjepiva protiv gripe u Primorsko-goranskoj županiji očekuje s → Побут інших міст (Вакцинація в Рієці) | Сутності: Rijeka, Primorsko-goranska županija, cjepivo",
-        "• IZ OTP-a objašnjavaju zašto jedinu poslovnicu u dubrovačkim zidinama p → Побут інших міст (Зміни в роботі банку в Дубровнику) | Сутності: OTP banka, Dubrovnik, Stradun",
-        "• Ranko Ostojić: Maršavelski je imao važeći sigurnosni certifikat, neće  → Не за тематикою (Політична дискусія про безпековий сертифікат) | Сутності: Aleksandar Maršavelski, SOA, Ranko Ostojić",
-        "• Dubrovački gradonačelnik traži strože kazne: ‘Za trgovanje drogom nema → Побут інших міст (Ініціатива мера Дубровника щодо покарань) | Сутності: Mato Franković, Dubrovnik, Ministarstvo pravosuđa",
-        "• Hari Rončević predstavlja album kojim iskreno progovara o ljubavi, obi → Не за тематикою (Музичний реліз) | Сутності: Hari Rončević, album, Zagrli me",
-        "• ‘Pucajte po nama!‘, riječi Sokolova i danas lede krv u žilama. Ovih 7  → Побут інших міст (Фільм про оборону Дубровника) | Сутності: Dubrovnik, Sokolovi Srđa, dokumentarni film",
-        "• “Od izvora do mora”: Senju prvo mjesto u ekološkom projektu; počelo ur → Побут інших міст (Екологічний проект у місті Сень) | Сутності: Senj, Coca-Cola, ekološki projekt",
-        "• Na 48. Interliberu više od 300 izlagača i gost dobitnik Bookera David  → Побут інших міст (Книжковий ярмарок у Загребі) | Сутності: Interliber, Zagreb, David Szalay"
-      ],
-      "rejected_by_reason": {
-        "Побут інших міст": 7,
-        "Вже публікувалось": 1,
-        "Не за тематикою": 2
-      },
-      "updates_marked": 1,
-      "already_rejected": 19,
-      "rejected_by_code_examples": [
-        "[тег RSS lifestyle] Astma i KOPB zimi: kako hladan zrak sužava dišne putove i što savjetuju stručnjaci",
-        "[тег RSS sport] POVIJEST JE ISPISANA Emanuela Rados prva hrvatska hrvačica na Olimpijskim igrama mladih!",
-        "[тег RSS košarka] Izbornik ženske košarkaške reprezentacije objavio popis igračica za kvalifikacije za EuroBasket",
-        "[тег RSS nogomet] Raphinha produžio ugovor s Barcelonom. Brazilac ostaje na Nou Campu do 2030."
-      ]
-    },
-    "backlog": {
-      "total_size": 5,
-      "sources": {
-        "023": 2,
-        "Zadarski list": 1,
-        "Slobodna dalmacija": 2
-      }
-    },
-    "published": {
-      "total": 0,
-      "ukraine_priority": 0,
-      "with_images": 0,
-      "text_only": 0,
-      "og_images_found": 0,
-      "sources": {}
-    },
-    "models_used": {
-      "gemini-3.1-flash-lite": 1
-    },
-    "models_by_task": {
-      "filter": "gemini-3.1-flash-lite",
-      "translate": null
-    },
-    "model_attempts": [
-      {
-        "task": "filter",
-        "model": "gemini-3.1-flash-lite",
-        "outcome": "ok"
-      },
-      {
-        "task": "translate",
-        "model": "gemini-3.8-flash",
-        "outcome": "unavailable"
-      },
-      {
-        "task": "translate",
-        "model": "gemini-3.5-flash-lite",
-        "outcome": "unavailable"
-      },
-      {
-        "task": "translate",
-        "model": "gemini-3.6-flash",
-        "outcome": "unavailable"
-      }
-    ],
-    "exhausted_models": [],
-    "demoted_models": [
-      "filter: gemini-3-flash-preview",
-      "filter: gemini-3.6-flash",
-      "filter: gemini-3.5-flash-lite",
-      "translate: gemini-3.8-flash",
-      "translate: gemini-3.6-flash",
-      "translate: gemini-3.5-flash-lite"
-    ],
-    "translate_budget_deferred": [
-      "gemini-3.6-flash"
-    ],
-    "gemini_region_blocked": false,
-    "gemini_unavailable": true,
-    "errors_count": 0,
-    "gemini_retries": 3
-  },
-  {
     "timestamp": "2026-11-05 16:01:36",
     "execution_time": 91.0,
     "funnel": {
@@ -9915,5 +9807,87 @@
     "gemini_unavailable": false,
     "errors_count": 0,
     "gemini_retries": 1
+  },
+  {
+    "timestamp": "2026-11-14 16:01:14",
+    "execution_time": 5.5,
+    "funnel": {
+      "scraped_total": 35,
+      "scraped_by_source": {
+        "023": 10,
+        "Slobodna dalmacija": 15,
+        "Zadarski list": 10
+      },
+      "already_seen": 23,
+      "rejected_by_keywords": 8,
+      "rejected_by_rule": {
+        "тег RSS lifestyle": 1,
+        "тег RSS sport": 2,
+        "sport": 1,
+        "URL /sport/": 1,
+        "тег RSS nogomet": 3
+      },
+      "unclassified_by_ai": 0,
+      "duplicates_removed_by_ai": 4,
+      "rejection_reasons_list": [
+        "• Karavana bikera na pločanskoj rivi; odmor u Neretvi prije nastavka do  → Вже публікувалось (Події до Дня пам'яті жертв Вukovara) | Сутності: Vukovar, Moto Klub Korčula, Prevlaka",
+        "• Prijedlog proračuna otkrio: Domovinski pokret i Ivan Penava izborili m → Вже публікувалось (Державний бюджет на 2027 рік) | Сутності: Domovinski pokret, Ivan Penava, Macelj",
+        "• FOTO Ljubav na zadarskoj špici? Poznati influencer Brane viđen u prisn → Реклама (Світське плітка про інфлюенсера) | Сутності: Zadar, Kalelarga, Branimir Ramljak",
+        "• Okusi Punta predstavljeni u riječkom Paviljonu → Побут інших міст (Гастрономічний фестиваль у Рієці) | Сутності: Rijeka, Krk Made, Antonija Mikac"
+      ],
+      "rejected_by_reason": {
+        "Вже публікувалось": 2,
+        "Реклама": 1,
+        "Побут інших міст": 1
+      },
+      "updates_marked": 0,
+      "already_rejected": 17,
+      "rejected_by_code_examples": [
+        "[тег RSS lifestyle] Zašto mačke predu: osim zadovoljstva, taj zvuk može značiti glad, stres ili bol",
+        "[тег RSS sport] Zadar dočekuje Partizan uz sjećanje na Badnjak i 84:68: „Ako dobijemo priliku, prihvatit ćemo je obj",
+        "[sport] Arena Sport se povlači iz Hrvatske: Liga prvaka ostaje do 2027., Premier liga do 2028., a nasljednic",
+        "[URL /sport/] Utakmica s humanitarnim predznakom: Square dočekuje Osijek, zbog interesa navijača fan zona već od 1",
+        "[тег RSS nogomet] Šivalec zabio za remi U-19 vrste protiv Češke, Hrvatska U-17 uvjerljiva protiv Kosova",
+        "[тег RSS nogomet] Još jedan prvoligaš ispao iz Kupa u produžecima. Momčad riječkog stručnjaka u četvrtfinalu",
+        "[тег RSS sport] Zrinka Ljutić: “U neku ruku mi je bilo drago startati malo iza”",
+        "[тег RSS nogomet] BSK u produžecima izbacio Goricu iz Kupa. Krznar porazom debitirao na klupi Turopoljaca"
+      ]
+    },
+    "backlog": {
+      "total_size": 0,
+      "sources": {}
+    },
+    "published": {
+      "total": 0,
+      "ukraine_priority": 0,
+      "with_images": 0,
+      "text_only": 0,
+      "og_images_found": 0,
+      "sources": {}
+    },
+    "models_used": {
+      "gemini-3.5-flash-lite": 1
+    },
+    "models_by_task": {
+      "filter": "gemini-3.5-flash-lite",
+      "translate": null
+    },
+    "model_attempts": [
+      {
+        "task": "filter",
+        "model": "gemini-3.5-flash-lite",
+        "outcome": "ok"
+      }
+    ],
+    "exhausted_models": [],
+    "demoted_models": [
+      "filter: gemini-3-flash-preview",
+      "filter: gemini-3.6-flash"
+    ],
+    "translate_budget_deferred": [],
+    "gemini_region_blocked": false,
+    "gemini_unavailable": false,
+    "errors_count": 0,
+    "gemini_retries": 0
   }
 ]
