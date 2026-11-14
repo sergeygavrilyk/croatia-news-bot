@@ -1,118 +1,5 @@
 [
   {
-    "timestamp": "2026-11-04 20:01:18",
-    "execution_time": 138.8,
-    "funnel": {
-      "scraped_total": 35,
-      "scraped_by_source": {
-        "023": 10,
-        "Slobodna dalmacija": 15,
-        "Zadarski list": 10
-      },
-      "already_seen": 13,
-      "rejected_by_keywords": 8,
-      "rejected_by_rule": {
-        "тег RSS lifestyle": 4,
-        "URL /sport/": 2,
-        "sport": 1,
-        "тег RSS sport": 1
-      },
-      "unclassified_by_ai": 0,
-      "duplicates_removed_by_ai": 13,
-      "rejection_reasons_list": [
-        "• Ovo je pet mogućih promjena američke vanjske politike pod utjecajem de → Геоблок (Політика США) | Сутності: WASHINGTON, Donald Trump, Kongres, SAD",
-        "• Nosili smo školske knjige u saketu Marlbora, kočoperili se u ‘vjetnamk → Не за тематикою (Ностальгічні спогади та есе) | Сутності: Stradun, Dubrovnik, SAD, CNN",
-        "• Ovo su nosili Sulejman Veličanstveni, Hurem, Mehmed II. Osvajač... U R → Побут інших міст (Локальна виставка у Дубровнику) | Сутності: Dubrovnik, Rupe, Sulejman Veličanstveni, Turska",
-        "• Ni izmijenjeni plan predstečajne nagodbe nije prošao: Općina ponovo od → Побут інших міст (Місцеві фінансові питання громади Кланад) | Сутності: Klana, DI Klana, Sanja Sušnik",
-        "• Android mobitele može srušiti skriveni SMS, zaštitu donosi listopadsko → Світовий шум (Загальна технологічна вразливість Android) | Сутності: Android, Google, CVE-2026-58882, SMS of Death",
-        "• Franković primio Bornu Butijera povodom osvojene bronce na Europskom U → Спорт (Нагородження дзюдоїста у Дубровнику) | Сутності: Dubrovnik, Mato Franković, Borna Butijer, Judo klub Fortitudo",
-        "• Trump i republikanci potrošili stotine milijuna dolara, a rezultati ni → Геоблок (Вибори та фінанси в США) | Сутності: WASHINGTON, Donald Trump, Elon Musk, SAD",
-        "• Pogledajte koji je kaos napravila prestrašena maca kod veterinara u Vo → Світовий шум (Вірусне відео з котом у Водиці) | Сутності: Vodice, Lucia Jurišić, TikTok",
-        "• Trgovina Action u četvrtak se otvara u Industrijskoj zoni Bakar, evo š → Побут інших міст (Відкриття магазину в Бакарі) | Сутності: Bakar, Kukuljanovo, Action, Galerija Bakar",
-        "• Grad Rijeka će sutra provesti deložaciju sedmero korisnika nužnog smje → Побут інших міст (Виселення мешканців у Рієці) | Сутності: Rijeka, Mihačeva draga, Iva Rinčić",
-        "• Iva Rinčić najavila natječaj za ugostiteljski dio “Galeba”, početna ci → Побут інших міст (Комунальний орендований конкурс у Рієці) | Сутності: Rijeka, Galeb, Iva Rinčić",
-        "• Bob Dylan stigao u privatnu audijenciju kod pape Lava XIV → Геоблок (Аудієнція у Ватикані) | Сутності: Vatikan, Bob Dylan, papa Lav XIV, Rim",
-        "• Konji iz zaleđa Vinodola došli u Ličko polje: za prolaznike simpatično → Побут інших міст (Проблема з конями у Горському Котарі) | Сутності: Ličko polje, Lič, Gorski kotar, Vinodol"
-      ],
-      "rejected_by_reason": {
-        "Геоблок": 3,
-        "Не за тематикою": 1,
-        "Побут інших міст": 6,
-        "Світовий шум": 2,
-        "Спорт": 1
-      },
-      "updates_marked": 0,
-      "already_rejected": 9,
-      "rejected_by_code_examples": [
-        "[тег RSS lifestyle] Dodatni ciklus centrifuge može skratiti sušenje ručnika i posteljine u hladnim mjesecima",
-        "[тег RSS lifestyle] Srčani udar i srčani zastoj nisu isto: kako ih razlikovati i kako pomoći",
-        "[тег RSS lifestyle] Pročišćivač zraka ili odvlaživač: koji uređaj rješava vlagu, a koji pelud i prašinu",
-        "[тег RSS lifestyle] Božićni kaktus ne cvate? Premjestite ga u sobu u kojoj se navečer ne pali svjetlo",
-        "[URL /sport/] Matea Račević u Španjolskoj na FIDE Svjetskom prvenstvu za mlade šahiste",
-        "[sport] Mladi Dubrovčanin s medaljom se vratio u Grad, pogledajte kako su ga dočekali! ‘Povijesni trenutak z",
-        "[URL /sport/] Vojnović je ‘gorio‘: Svečano dočekan judaš i osvajač brončane medalje Europskom prvenstvu Borna Buti",
-        "[тег RSS sport] Hrvatski rukometaši uvjerljivom pobjedom nad Litvom otvorili kvalifikacije za EURO"
-      ]
-    },
-    "backlog": {
-      "total_size": 1,
-      "sources": {
-        "Zadarski list": 1
-      }
-    },
-    "published": {
-      "total": 3,
-      "ukraine_priority": 1,
-      "with_images": 3,
-      "text_only": 0,
-      "og_images_found": 0,
-      "sources": {
-        "Zadarski list": 1,
-        "023": 1,
-        "Slobodna dalmacija": 1
-      }
-    },
-    "models_used": {
-      "gemini-3.6-flash": 1,
-      "gemini-3.5-flash-lite": 1
-    },
-    "models_by_task": {
-      "filter": "gemini-3.6-flash",
-      "translate": "gemini-3.5-flash-lite"
-    },
-    "model_attempts": [
-      {
-        "task": "filter",
-        "model": "gemini-3-flash-preview",
-        "outcome": "unavailable"
-      },
-      {
-        "task": "filter",
-        "model": "gemini-3.6-flash",
-        "outcome": "ok"
-      },
-      {
-        "task": "translate",
-        "model": "gemini-3.8-flash",
-        "outcome": "unavailable"
-      },
-      {
-        "task": "translate",
-        "model": "gemini-3.5-flash-lite",
-        "outcome": "ok"
-      }
-    ],
-    "exhausted_models": [],
-    "demoted_models": [],
-    "translate_budget_deferred": [
-      "gemini-3.6-flash"
-    ],
-    "gemini_region_blocked": false,
-    "gemini_unavailable": false,
-    "errors_count": 0,
-    "gemini_retries": 2
-  },
-  {
     "timestamp": "2026-11-05 08:01:21",
     "execution_time": 246.9,
     "funnel": {
@@ -10058,5 +9945,111 @@
     "gemini_unavailable": false,
     "errors_count": 0,
     "gemini_retries": 1
+  },
+  {
+    "timestamp": "2026-11-14 08:01:21",
+    "execution_time": 329.5,
+    "funnel": {
+      "scraped_total": 35,
+      "scraped_by_source": {
+        "023": 10,
+        "Slobodna dalmacija": 15,
+        "Zadarski list": 10
+      },
+      "already_seen": 9,
+      "rejected_by_keywords": 6,
+      "rejected_by_rule": {
+        "sport": 1,
+        "тег RSS lifestyle": 1,
+        "тег RSS košarka": 2,
+        "тег RSS nogomet": 1,
+        "URL /sport/": 1
+      },
+      "unclassified_by_ai": 0,
+      "duplicates_removed_by_ai": 12,
+      "rejection_reasons_list": [
+        "• Policija u stanu pronašla mrtvu ženu, sumnja se na ubojstvo → Побут інших міст (Вінковці) | Сутності: Vinkovci, Stari Mikanovci, PU vukovarsko-srijemska",
+        "• Libertas Riders i ove godine u karavani do grada heroja: ‘Ne smetaju n → Побут інших міст (Дубровник) | Сутності: MK Libertas Riders, Dubrovnik, Vukovar",
+        "• Voljen Grbac nagrađen na Festivalu turističkog filma u Solinu → Побут інших міст (Солин) | Сутності: Voljen Grbac, Solin, Fez, ITF CRO",
+        "• Crvenkapica Una iz prometne šume svratila do svoje škole u Gružu → Побут інших міст (Дубровник) | Сутності: Denis Pavela, OŠ Ivana Gundulića, Gruž, Dubrovnik",
+        "• Microsoft objavio da su sve usluge ponovno uspostavljene nakon globaln → Не за тематикою (Збій Microsoft) | Сутності: Microsoft, Teams, Outlook, Copilot",
+        "• Svi postojeći dubrovački iznajmljivači u sljedećih 10 godina mogu izgu → Побут інших міст (Дубровник) | Сутності: Dubrovnik, Nedjeljko Pinezić, otok Krk",
+        "• Rubio oštro o Haškom sudu, najavio da će ga razmontirati: “Prestanite  → Геоблок (США) | Сутності: Marco Rubio, ICC, Washington, SAD",
+        "• U Donjem Pazarištu poplava uzela maha, voda od sinoć ulazi u kuće → Побут інших міст (Донє Пазаріште) | Сутності: Donje Pazarište, Gospić, Tisovac, Lika",
+        "• Mještani Cavtata pred Europskim parlamentom ustali protiv resorta: ‘Tr → Побут інших міст (Цавтат) | Сутності: Cavtat, Europski parlament, uvala Prahivac",
+        "• Danas sunčano i hladno, već sutra ponovo kiša. Platak osvanuo u bijelo → Дубль (Прогноз погоди) | Сутності: DHMZ, Platak, Rijeka, Hrvatska",
+        "• Dubravka Šešelj i Jure Jovica predstavili izložbu „Naši likovni trenut → Побут інших міст (Плоче) | Сутності: Dubravka Šešelj, Jure Jovica, Ploče, Karla Šestan",
+        "• Svečano otvoren simpozij „Kulturna baština Župe dubrovačke“ → Побут інших міст (Жупа Дубровачка) | Сутності: Župa dubrovačka, Sheraton Dubrovnik Riviera, Srebreno"
+      ],
+      "rejected_by_reason": {
+        "Побут інших міст": 9,
+        "Не за тематикою": 1,
+        "Геоблок": 1,
+        "Дубль": 1
+      },
+      "updates_marked": 0,
+      "already_rejected": 4,
+      "rejected_by_code_examples": [
+        "[sport] Arena Sport se povlači iz Hrvatske: Liga prvaka ostaje do 2027., Premier liga do 2028., a nasljednic",
+        "[тег RSS lifestyle] Ručnici mirišu na vlagu i nakon pranja: kako ih očistiti octom i pranjem na višoj temperaturi",
+        "[тег RSS košarka] VIDEO Ivica Zubac odigrao je sjajnu partiju u pobjedi Pacersa nad aktualnim prvacima",
+        "[тег RSS košarka] Barcelona nadoknadila “minus 14” na ulazu u posljednju četvrtinu pa tricom u finišu srušila Panathin",
+        "[тег RSS nogomet] “Nesretni” Bilić postao je prvi izbornik hrvatske nogometne reprezentacije koji je doživio četiri uz",
+        "[URL /sport/] Elvir Husarić najavio “rušenje” – Luke Sutona i Torcide. Na Zametu se sprema nova golijada"
+      ]
+    },
+    "backlog": {
+      "total_size": 2,
+      "sources": {
+        "023": 1,
+        "Slobodna dalmacija": 1
+      }
+    },
+    "published": {
+      "total": 3,
+      "ukraine_priority": 0,
+      "with_images": 3,
+      "text_only": 0,
+      "og_images_found": 3,
+      "sources": {
+        "023": 3
+      }
+    },
+    "models_used": {
+      "gemini-3.6-flash": 2
+    },
+    "models_by_task": {
+      "filter": "gemini-3.6-flash",
+      "translate": "gemini-3.6-flash"
+    },
+    "model_attempts": [
+      {
+        "task": "filter",
+        "model": "gemini-3-flash-preview",
+        "outcome": "unavailable"
+      },
+      {
+        "task": "filter",
+        "model": "gemini-3.6-flash",
+        "outcome": "ok"
+      },
+      {
+        "task": "translate",
+        "model": "gemini-3.8-flash",
+        "outcome": "unavailable"
+      },
+      {
+        "task": "translate",
+        "model": "gemini-3.6-flash",
+        "outcome": "ok"
+      }
+    ],
+    "exhausted_models": [],
+    "demoted_models": [],
+    "translate_budget_deferred": [],
+    "gemini_region_blocked": false,
+    "gemini_unavailable": false,
+    "errors_count": 0,
+    "gemini_retries": 2
   }
 ]
