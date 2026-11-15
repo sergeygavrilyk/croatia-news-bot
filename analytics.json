@@ -1,131 +1,5 @@
 [
   {
-    "timestamp": "2026-11-05 20:01:19",
-    "execution_time": 242.9,
-    "funnel": {
-      "scraped_total": 35,
-      "scraped_by_source": {
-        "023": 10,
-        "Slobodna dalmacija": 15,
-        "Zadarski list": 10
-      },
-      "already_seen": 18,
-      "rejected_by_keywords": 7,
-      "rejected_by_rule": {
-        "тег RSS lifestyle": 3,
-        "utakmica": 1,
-        "тег RSS nogomet": 2,
-        "sport": 1
-      },
-      "unclassified_by_ai": 0,
-      "duplicates_removed_by_ai": 11,
-      "rejection_reasons_list": [
-        "• Ove subote prva ovosezonska premijera riječkog Baleta. “Last Shelter”  → Побут інших міст (Культурна подія в Рієці) | Сутності: Rijeka, HNK Ivana pl. Zajca, Balet, Last Shelter",
-        "• Windows 11 sam šalje vaše mape na OneDrive: kako isključiti tu postavk → Світовий шум (Технічна порада) | Сутності: Windows 11, OneDrive, Microsoft",
-        "• Autotrolej pojačava vozni red na linijama 1, 4, 5 i 6 subotom → Побут інших міст (Зміни в розкладі автобусів у Рієці) | Сутності: Rijeka, Autotrolej, javni prijevoz",
-        "• Miro Drašković: ‘Turisti su i u svojim zemljama navikli na povremene g → Не за тематикою (Загальна дискусія про закон) | Сутності: Miro Drašković, Zakon o gradnji, turizam",
-        "• Američka gospodarska komora u Hrvatskoj dobila tri nove članice Vijeća → Не за тематикою (Корпоративні зміни в бізнес-палаті) | Сутності: AmCham, Zagreb, Jasminka Horvat Martinović",
-        "• U Srbiji pod istragom direktor BIA-e i ministar. Prikupljali “kapilarn → Геоблок (Політичні події в Сербії) | Сутності: Srbija, BIA, Vladimir Orlić, Vučić",
-        "• Mladi planinar nestao na Triglavu pronađen mrtav. Imao je samo 19 godi → Геоблок (Трагедія в горах Словенії) | Сутності: Triglav, Slovenija, planinar",
-        "• Krenule prijave za komemoraciju u Vukovar → Побут інших міст (Організація поїздки з Госпича) | Сутності: Vukovar, Gospić, Dan sjećanja",
-        "• Možemo: “Ne” trumpovskoj ideji o termoelektrani u Rijeci na uvozni pli → Побут інших міст (Політична дискусія щодо інфраструктури в Рієці) | Сутності: Možemo, Rijeka, termoelektrana",
-        "• Hrvatski Rafale presreo putnički zrakoplov Finnaira koji je označen ka → Дубль (Дублює новину 6) | Сутності: Rafale, Finnair, MORH, Jastrebarsko",
-        "• Most zatražio odgovornost za odloženi otpad kod Benkovca: Hoće li Pašk → Вже публікувалось (Повторна критика щодо сміттєзвалища) | Сутності: Most, Benkovac, otpad, Ivan Matić"
-      ],
-      "rejected_by_reason": {
-        "Побут інших міст": 4,
-        "Світовий шум": 1,
-        "Не за тематикою": 2,
-        "Геоблок": 2,
-        "Дубль": 1,
-        "Вже публікувалось": 1
-      },
-      "updates_marked": 0,
-      "already_rejected": 17,
-      "rejected_by_code_examples": [
-        "[тег RSS lifestyle] Cheesecake s kruškama i hrskavim posipom peče se više od dva sata na niskoj temperaturi",
-        "[тег RSS lifestyle] Tjestenina s brokulom i limunom Ine Garten: obiteljska večera uz 15 minuta kuhanja",
-        "[тег RSS lifestyle] Astma i KOPB zimi: kako hladan zrak sužava dišne putove i što savjetuju stručnjaci",
-        "[utakmica] Bez energije, ideje i poena: Zadar odigrao jednu od najgorih utakmica u povijesti ABA lige",
-        "[тег RSS nogomet] Hajduk se osramotio na Gibraltaru. Splićani su poraženi autogolom u finišu utakmice",
-        "[тег RSS nogomet] Hrvatski reprezentativac jedan od osam kandidata za igrača mjeseca u Premier ligi",
-        "[sport] Nastavlja se ulagati u sport: Klubovima nova oprema, najavljene dodatne potpore i kombi vozilo"
-      ]
-    },
-    "backlog": {
-      "total_size": 2,
-      "sources": {
-        "Zadarski list": 1,
-        "023": 1
-      }
-    },
-    "published": {
-      "total": 2,
-      "ukraine_priority": 0,
-      "with_images": 2,
-      "text_only": 0,
-      "og_images_found": 0,
-      "sources": {
-        "023": 1,
-        "Slobodna dalmacija": 1
-      }
-    },
-    "models_used": {
-      "gemini-3.1-flash-lite": 1,
-      "gemini-3.6-flash": 1
-    },
-    "models_by_task": {
-      "filter": "gemini-3.1-flash-lite",
-      "translate": "gemini-3.6-flash"
-    },
-    "model_attempts": [
-      {
-        "task": "filter",
-        "model": "gemini-3-flash-preview",
-        "outcome": "unavailable"
-      },
-      {
-        "task": "filter",
-        "model": "gemini-3.6-flash",
-        "outcome": "unavailable"
-      },
-      {
-        "task": "filter",
-        "model": "gemini-3.5-flash-lite",
-        "outcome": "unavailable"
-      },
-      {
-        "task": "filter",
-        "model": "gemini-3.1-flash-lite",
-        "outcome": "ok"
-      },
-      {
-        "task": "translate",
-        "model": "gemini-3.8-flash",
-        "outcome": "unavailable"
-      },
-      {
-        "task": "translate",
-        "model": "gemini-3.5-flash-lite",
-        "outcome": "unavailable"
-      },
-      {
-        "task": "translate",
-        "model": "gemini-3.6-flash",
-        "outcome": "ok"
-      }
-    ],
-    "exhausted_models": [],
-    "demoted_models": [],
-    "translate_budget_deferred": [
-      "gemini-3.6-flash"
-    ],
-    "gemini_region_blocked": false,
-    "gemini_unavailable": false,
-    "errors_count": 1,
-    "gemini_retries": 5
-  },
-  {
     "timestamp": "2026-11-06 08:01:23",
     "execution_time": 337.2,
     "funnel": {
@@ -9867,5 +9741,103 @@
     "gemini_unavailable": false,
     "errors_count": 0,
     "gemini_retries": 1
+  },
+  {
+    "timestamp": "2026-11-15 08:01:14",
+    "execution_time": 332.4,
+    "funnel": {
+      "scraped_total": 35,
+      "scraped_by_source": {
+        "023": 10,
+        "Slobodna dalmacija": 15,
+        "Zadarski list": 10
+      },
+      "already_seen": 9,
+      "rejected_by_keywords": 3,
+      "rejected_by_rule": {
+        "тег RSS lifestyle": 1,
+        "тег RSS košarka": 2
+      },
+      "unclassified_by_ai": 0,
+      "duplicates_removed_by_ai": 12,
+      "rejection_reasons_list": [
+        "• Mirso na 30. rođendan ‘Organizatora kiše‘ u Lazaretima okupio dubrovač → Побут інших міст (Концерт у Дубровнику) | Сутності: Mirso Đulančić, Lazareti, Dubrovnik",
+        "• Ima 64 godine i 30 godina vatrogasnog iskustva. Iz Argentine želi doći → Побут інших міст (Волонтерство пожежника в Макарській) | Сутності: Jorge Vuković, Argentina, Makarska",
+        "• Bumbete, kokain, buncek i demografija: Zar nije lijepo živjeti u gradu → Побут інших міст (Міські теми Дубровника) | Сутності: Dubrovnik, božićna rasvjeta",
+        "• Meta kažnjena s 805 milijuna eura: Facebook je pristupao fotografijama → Геоблок (Штраф компанії Meta в Італії) | Сутності: Meta, Facebook, 805 milijuna eura, Італія",
+        "• Zadarski pedijatar 35 godina čuvao crtež djevojčice iz Škabrnje, a sad → Вже публікувалось (Історія про малюнок зі Škabrnje) | Сутності: Damir Letinić, Škabrnja, Zadar",
+        "• Prva generacija Akademije filma i medija uči od oskarovaca, stigle mob → Побут інших міст (Навчальний курс у Дубровнику) | Сутності: Dubrovnik, Sveučilište u Dubrovniku, FMSA",
+        "• Pjesme od izrezanih novina: Riječki autor napravio je knjigu kakvu još → Побут інших міст (Презентація книги в Рієці) | Сутності: Enver Krivac, Rijeka, VBZ",
+        "• Piaggio osvježio svoje najpoznatije skutere: Beverly i Medley stižu u  → Не за тематикою (Огляд нових моделей скутерів) | Сутності: Piaggio, Beverly, Medley",
+        "• Kinezi mijenjaju hrvatsko tržište automobila: Nekadašnji hitovi ispada → Вже публікувалось (Пільги на електромобілі в Хорватії) | Сутності: Fond za zaštitu okoliša, električna vozila, 17.759 prijava",
+        "• Kia je napravila automobil od zemlje s terena na kojima je Rafael Nada → Спорт (Промо-проєкт з тенісистом Надалем) | Сутності: Kia, Rafael Nadal, Kia EV4 GT",
+        "• Ima 897 KS, dug je 5,2 metra i stoji 126 tisuća eura: Kineski gorostas → Не за тематикою (Огляд преміального автомобіля) | Сутності: Zeekr, Zeekr 9X, 897 KS",
+        "• FOTO Vratili se kaputi. Riječki Korzo kao jesenska modna revija na otv → Побут інших міст (Вулична мода в Рієці) | Сутності: Rijeka, Korzo"
+      ],
+      "rejected_by_reason": {
+        "Побут інших міст": 6,
+        "Геоблок": 1,
+        "Вже публікувалось": 2,
+        "Не за тематикою": 2,
+        "Спорт": 1
+      },
+      "updates_marked": 0,
+      "already_rejected": 7,
+      "rejected_by_code_examples": [
+        "[тег RSS lifestyle] Papir za pečenje može poslužiti više puta, a baciti ga treba kad postane krhak",
+        "[тег RSS košarka] Bek Kvarnera uoči današnjeg susreta s Alkarom: “Uz pravu koncentraciju i čvrstinu možemo pobijediti”",
+        "[тег RSS košarka] VIDEO Mario Hezonja odigrao je najbolju partiju u dresu Cavaliersa. I s drugom petorkom dobili su Ma"
+      ]
+    },
+    "backlog": {
+      "total_size": 0,
+      "sources": {}
+    },
+    "published": {
+      "total": 3,
+      "ukraine_priority": 0,
+      "with_images": 3,
+      "text_only": 0,
+      "og_images_found": 3,
+      "sources": {
+        "023": 3
+      }
+    },
+    "models_used": {
+      "gemini-3.6-flash": 2
+    },
+    "models_by_task": {
+      "filter": "gemini-3.6-flash",
+      "translate": "gemini-3.6-flash"
+    },
+    "model_attempts": [
+      {
+        "task": "filter",
+        "model": "gemini-3-flash-preview",
+        "outcome": "unavailable"
+      },
+      {
+        "task": "filter",
+        "model": "gemini-3.6-flash",
+        "outcome": "ok"
+      },
+      {
+        "task": "translate",
+        "model": "gemini-3.8-flash",
+        "outcome": "unavailable"
+      },
+      {
+        "task": "translate",
+        "model": "gemini-3.6-flash",
+        "outcome": "ok"
+      }
+    ],
+    "exhausted_models": [],
+    "demoted_models": [],
+    "translate_budget_deferred": [],
+    "gemini_region_blocked": false,
+    "gemini_unavailable": false,
+    "errors_count": 0,
+    "gemini_retries": 2
   }
 ]
