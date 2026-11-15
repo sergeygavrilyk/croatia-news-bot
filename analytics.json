@@ -1,115 +1,5 @@
 [
   {
-    "timestamp": "2026-11-06 11:01:23",
-    "execution_time": 252.8,
-    "funnel": {
-      "scraped_total": 35,
-      "scraped_by_source": {
-        "023": 10,
-        "Slobodna dalmacija": 15,
-        "Zadarski list": 10
-      },
-      "already_seen": 15,
-      "rejected_by_keywords": 4,
-      "rejected_by_rule": {
-        "URL /sport/": 2,
-        "nogometne": 1,
-        "oglasi": 1
-      },
-      "unclassified_by_ai": 0,
-      "duplicates_removed_by_ai": 12,
-      "rejection_reasons_list": [
-        "• Gradski vijećnici Željko Raguž i Mato Butjerić dobrovoljno se testiral → Побут інших міст (Події у Дубровнику) | Сутності: Željko Raguž, Mato Butjerić, DUSTRA, Dubrovnik",
-        "• Jarak o “Zločinu u Drnišu”: Svjedočenje Aleksićevog strica je i najtež → Вже публікувалось (Кримінальна хроніка поза Задаром) | Сутності: Dosje Jarak, Kristijan Aleksić, Drniš, Voyo",
-        "• Krvavi zločin na Pagu: kuhinjski nož mladiću zabo u prsa dok je ležao  → Дубль (Дублює новину 7) | Сутності: Županijsko državno odvjetništvo, Zadar, Pag, pokušaj ubojstva",
-        "• Ministrica Hrstić u Rijeci o Zadravec: Vjerujem da Uprava bolnice zna  → Побут інших міст (Медичні питання у Рієці) | Сутності: Ministrica Hrstić, Rijeka, KBC Sestre milosrdnice, Zadravec",
-        "• Mladić ležao na kauču, a napadač ga nožem ubo u prsa - sada je optužen → Вже публікувалось (Подія вже є в історії) | Сутності: Županijsko državno odvjetništvo, Zadar, Pag, pokušaj ubojstva",
-        "• Otvara se izložba Sekcije mladih Fotokluba Rijeka, tema je industrijsk → Побут інших міст (Локальна виставка у Рієці) | Сутності: Fotoklub Rijeka, Galerija Principij, Rijeka, izložba",
-        "• Opasna telefonska prijevara širi se Zadrom, prevaranti ciljaju starije → Вже публікувалось (Повтор новини 3) | Сутності: Policijska uprava zadarska, Zadar, prijevara, starije osobe",
-        "• U riječku luku uplovio golemi Grand Benelux, brod izgrađen u pulskom U → Побут інших міст (Судноплавство у Рієці) | Сутності: Grand Benelux, Rijeka, Uljanik, Grimaldi Group",
-        "• Muškarac (41) izazvao prometnu nesreću na A1 kod Šibenika; bio je pija → Побут інших міст (ДТП біля Шибеника) | Сутності: A1, Šibenik, prometna nesreća, HAC",
-        "• U subotu počinju Dani makedonske kulture → Побут інших міст (Культурна подія у Рієці) | Сутності: Dani makedonske kulture, Rijeka, Ilinden",
-        "• Diamond Dust u subotu u Pogonu slavi 20 godina: Svaka nova pjesma doka → Побут інших міст (Концерт у Рієці) | Сутності: Diamond Dust, Rijeka, Pogon, koncert",
-        "• Izet i Borgie u subotu u Nemo Klubu: Svaka pjesma ima svoju priču → Побут інших міст (Концерт у Рієці) | Сутності: Izet Medošević, Borgie, Rijeka, Nemo Klub"
-      ],
-      "rejected_by_reason": {
-        "Побут інших міст": 8,
-        "Вже публікувалось": 3,
-        "Дубль": 1
-      },
-      "updates_marked": 1,
-      "already_rejected": 10,
-      "rejected_by_code_examples": [
-        "[URL /sport/] Dva derbija u Gospinom polju: Square u nedjelju dočekuje Rijeku!",
-        "[nogometne] Punio je dvorane i stadione, ali Mišo je samo na jednom mjestu imao tremu. A što je napravio usred r",
-        "[oglasi] Zadranka krenula prodati auto pa je ‘snervali‘ oglasi za stanove: ‘Kako vi to mislite?!‘ Jadni ljudi",
-        "[URL /sport/] Kimi Antonelli posjetio obiteljsko imanje Ayrtona Senne: “Bio sam zaista emotivan”"
-      ]
-    },
-    "backlog": {
-      "total_size": 3,
-      "sources": {
-        "Slobodna dalmacija": 1,
-        "Zadarski list": 1,
-        "023": 1
-      }
-    },
-    "published": {
-      "total": 3,
-      "ukraine_priority": 0,
-      "with_images": 3,
-      "text_only": 0,
-      "og_images_found": 3,
-      "sources": {
-        "023": 3
-      }
-    },
-    "models_used": {
-      "gemini-3.1-flash-lite": 1,
-      "gemini-3.6-flash": 1
-    },
-    "models_by_task": {
-      "filter": "gemini-3.1-flash-lite",
-      "translate": "gemini-3.6-flash"
-    },
-    "model_attempts": [
-      {
-        "task": "filter",
-        "model": "gemini-3-flash-preview",
-        "outcome": "unavailable"
-      },
-      {
-        "task": "filter",
-        "model": "gemini-3.5-flash-lite",
-        "outcome": "unavailable"
-      },
-      {
-        "task": "filter",
-        "model": "gemini-3.1-flash-lite",
-        "outcome": "ok"
-      },
-      {
-        "task": "translate",
-        "model": "gemini-3.8-flash",
-        "outcome": "unavailable"
-      },
-      {
-        "task": "translate",
-        "model": "gemini-3.6-flash",
-        "outcome": "ok"
-      }
-    ],
-    "exhausted_models": [],
-    "demoted_models": [
-      "filter: gemini-3.6-flash"
-    ],
-    "translate_budget_deferred": [],
-    "gemini_region_blocked": false,
-    "gemini_unavailable": false,
-    "errors_count": 0,
-    "gemini_retries": 3
-  },
-  {
     "timestamp": "2026-11-06 12:01:20",
     "execution_time": 127.5,
     "funnel": {
@@ -9775,5 +9665,107 @@
     "gemini_unavailable": false,
     "errors_count": 0,
     "gemini_retries": 0
+  },
+  {
+    "timestamp": "2026-11-15 12:01:20",
+    "execution_time": 397.6,
+    "funnel": {
+      "scraped_total": 35,
+      "scraped_by_source": {
+        "023": 10,
+        "Slobodna dalmacija": 15,
+        "Zadarski list": 10
+      },
+      "already_seen": 20,
+      "rejected_by_keywords": 5,
+      "rejected_by_rule": {
+        "sport": 1,
+        "URL /sport/": 3,
+        "utakmice": 1
+      },
+      "unclassified_by_ai": 0,
+      "duplicates_removed_by_ai": 8,
+      "rejection_reasons_list": [
+        "• Odron stijene na cesti kod Buzeta udario automobil. Vozilo se prevrnul → Побут інших міст (ДТП через зсув скелі біля Бузета) | Сутності: Buzet, dron stijene, prometna nesreća, D201",
+        "• Pijan jurio po neosvijetljenoj cesti pa retrovizorom udario pješaka ko → Побут інших міст (ДТП з пішоходом у Шибенику) | Сутності: Šibenik, Podsolarsko, prometna nesreća, PU šibensko-kninska",
+        "• Pijani vozač s 1,29 promila alkohola u krvi prešao u suprotnu traku i  → Побут інших міст (Смертельна ДТП у Преспі біля Б'єловара) | Сутності: Prespa, Bjelovar, prometna nesreća, pijani vozač",
+        "• Napio se pa sjeo na bicikl, nije to bila dobra odluka; 64-godišnjak pa → Побут інших міст (Падіння п'яного велосипедиста у Водиці) | Сутності: Vodice, Ulica Plimica, prometna nesreća, PU šibensko-kninska",
+        "• Nobelovac koji je upozorio na opasnosti umjetne inteligencije sada tvr → Світовий шум (Застереження нобелівського лауреата щодо ШІ) | Сутності: Geoffrey Hinton, umjetna inteligencija, AI Safety Foundation, Kanada",
+        "• Ovo je nemoguće! Živko nije mogao vjerovati koliko je rodila jedna mas → Побут інших міст (Рекордний урожай оливків у долині Неретви) | Сутності: dolina Neretve, Živko Mustapić, maslina, 335 kg",
+        "• Znanstvenici dokazali da popularni preparat može pomoći i u rastu brad → Світовий шум (Дослідження препарату для росту бороди) | Сутності: minoksidil, rast brade, The Journal of Dermatological Treatment",
+        "• Microsoft otkrio uzrok globalnog pada Outlooka i Teamsa: Nije riječ o  → Світовий шум (Причина глобального збою сервісів Microsoft) | Сутності: Microsoft, Outlook, Teams, Copilot"
+      ],
+      "rejected_by_reason": {
+        "Побут інших міст": 5,
+        "Світовий шум": 3
+      },
+      "updates_marked": 0,
+      "already_rejected": 11,
+      "rejected_by_code_examples": [
+        "[sport] Od Dunda Maroja do polumaratona: tjedan pred nama donosi kazalište, koncerte, film i sport",
+        "[URL /sport/] Izvrstan start Jugovih plivača u Zadru, doplivali do 6 medalja i niza osobnih rekorda",
+        "[URL /sport/] Rekordna četiri poraza u nizu dovela su ‘kockaste” u nezahvalnu situaciju: Hrvatskoj treba bod proti",
+        "[URL /sport/] Samuel Kolega jedanaesti nakon prve vožnje u Leviju. Zubčić i Rodeš ostali bez druge vožnje",
+        "[utakmice] Horor u svlačionici. Maskirani napadači upali tijekom utakmice i palicama pretukli mladića"
+      ]
+    },
+    "backlog": {
+      "total_size": 0,
+      "sources": {}
+    },
+    "published": {
+      "total": 2,
+      "ukraine_priority": 0,
+      "with_images": 1,
+      "text_only": 1,
+      "og_images_found": 0,
+      "sources": {
+        "023": 1,
+        "Zadarski list": 1
+      }
+    },
+    "models_used": {
+      "gemini-3.6-flash": 2
+    },
+    "models_by_task": {
+      "filter": "gemini-3.6-flash",
+      "translate": "gemini-3.6-flash"
+    },
+    "model_attempts": [
+      {
+        "task": "filter",
+        "model": "gemini-3-flash-preview",
+        "outcome": "unavailable"
+      },
+      {
+        "task": "filter",
+        "model": "gemini-3.6-flash",
+        "outcome": "ok"
+      },
+      {
+        "task": "translate",
+        "model": "gemini-3.8-flash",
+        "outcome": "unavailable"
+      },
+      {
+        "task": "translate",
+        "model": "gemini-3.5-flash-lite",
+        "outcome": "unavailable"
+      },
+      {
+        "task": "translate",
+        "model": "gemini-3.6-flash",
+        "outcome": "ok"
+      }
+    ],
+    "exhausted_models": [],
+    "demoted_models": [],
+    "translate_budget_deferred": [
+      "gemini-3.6-flash"
+    ],
+    "gemini_region_blocked": false,
+    "gemini_unavailable": false,
+    "errors_count": 0,
+    "gemini_retries": 3
   }
 ]
