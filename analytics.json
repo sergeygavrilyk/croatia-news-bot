@@ -1,112 +1,5 @@
 [
   {
-    "timestamp": "2026-11-06 15:01:25",
-    "execution_time": 109.7,
-    "funnel": {
-      "scraped_total": 35,
-      "scraped_by_source": {
-        "023": 10,
-        "Slobodna dalmacija": 15,
-        "Zadarski list": 10
-      },
-      "already_seen": 21,
-      "rejected_by_keywords": 6,
-      "rejected_by_rule": {
-        "тег RSS lifestyle": 2,
-        "košarkaško": 1,
-        "тег RSS nogomet": 2,
-        "URL /sport/": 1
-      },
-      "unclassified_by_ai": 0,
-      "duplicates_removed_by_ai": 6,
-      "rejection_reasons_list": [
-        "• Europa troši enormne iznose zbog skupih energenata. Povjerenik EK: Pri → Світовий шум (Загальні поради щодо енергоефективності) | Сутності: Dan Jørgensen, CESEC, Zagreb, EU",
-        "• Pripreme za adventski ‘photo point‘ u punom jeku: Mreža od lampica raz → Побут інших міст (Прикрашання міста Дубровник) | Сутності: Dubrovnik, Stradun, Advent",
-        "• Za petoricu osumnjičenih za odlaganje otpada u Igranima predložen istr → Побут інших міст (Кримінальна справа в Ігране) | Сутності: Split, Igrane, Općinsko državno odvjetništvo",
-        "• Brojna događanja za Svjetski dan siromaha u Rijeci: U svakom čovjeku p → Побут інших міст (Локальні заходи в Рієці) | Сутності: Rijeka, Mate Uzinić, Svjetski dan siromaha",
-        "• Zmajlović Budiši: Prije nego što drži lekcije o otpadu, neka objasni z → Вже публікувалось (Політична дискусія щодо відходів) | Сутності: Mihael Zmajlović, Mirko Budiša, SDP, Fond za zaštitu okoliša",
-        "• MO Centar-Sušak uručio priznanja najistaknutijim pojedincima, udrugama → Побут інших міст (Локальні нагороди в Рієці) | Сутності: Rijeka, Centar-Sušak, Josip Čekada"
-      ],
-      "rejected_by_reason": {
-        "Світовий шум": 1,
-        "Побут інших міст": 4,
-        "Вже публікувалось": 1
-      },
-      "updates_marked": 2,
-      "already_rejected": 14,
-      "rejected_by_code_examples": [
-        "[тег RSS lifestyle] Program za osjetljivo rublje ne spašava kožnu jaknu, sako ni haljinu s cirkonima",
-        "[тег RSS lifestyle] Grijanje cijeli dan ili samo po potrebi: stručnjaci objašnjavaju kada se što više isplati",
-        "[košarkaško] Nastavak ulaganja u uređenje javnih površina: otvoreno obnovljeno sportsko igralište na Baldekinu",
-        "[тег RSS nogomet] El Arabi Hilal Soudani zapečatio sudbinu Orijenta. Krimejčani završili utakmicu s dva igrača manje",
-        "[тег RSS nogomet] Španjolski izbornik Luis de la Fuente pozvao tri debitanta za utakmice Lige nacije",
-        "[URL /sport/] Hrvatski rukometaši u Finskoj nastavljaju kvalifikacije za EURO: “Moramo biti oprezni”"
-      ]
-    },
-    "backlog": {
-      "total_size": 0,
-      "sources": {}
-    },
-    "published": {
-      "total": 2,
-      "ukraine_priority": 0,
-      "with_images": 2,
-      "text_only": 0,
-      "og_images_found": 0,
-      "sources": {
-        "Zadarski list": 2
-      }
-    },
-    "models_used": {
-      "gemini-3.1-flash-lite": 1,
-      "gemini-3.6-flash": 1
-    },
-    "models_by_task": {
-      "filter": "gemini-3.1-flash-lite",
-      "translate": "gemini-3.6-flash"
-    },
-    "model_attempts": [
-      {
-        "task": "filter",
-        "model": "gemini-3.5-flash-lite",
-        "outcome": "unavailable"
-      },
-      {
-        "task": "filter",
-        "model": "gemini-3.1-flash-lite",
-        "outcome": "ok"
-      },
-      {
-        "task": "translate",
-        "model": "gemini-3.5-flash-lite",
-        "outcome": "unavailable"
-      },
-      {
-        "task": "translate",
-        "model": "gemini-3.8-flash",
-        "outcome": "unavailable"
-      },
-      {
-        "task": "translate",
-        "model": "gemini-3.6-flash",
-        "outcome": "ok"
-      }
-    ],
-    "exhausted_models": [],
-    "demoted_models": [
-      "filter: gemini-3-flash-preview",
-      "filter: gemini-3.6-flash",
-      "translate: gemini-3.8-flash"
-    ],
-    "translate_budget_deferred": [
-      "gemini-3.6-flash"
-    ],
-    "gemini_region_blocked": false,
-    "gemini_unavailable": false,
-    "errors_count": 0,
-    "gemini_retries": 3
-  },
-  {
     "timestamp": "2026-11-06 16:01:21",
     "execution_time": 144.2,
     "funnel": {
@@ -9732,5 +9625,104 @@
     "gemini_unavailable": false,
     "errors_count": 0,
     "gemini_retries": 1
+  },
+  {
+    "timestamp": "2026-11-15 16:01:20",
+    "execution_time": 183.1,
+    "funnel": {
+      "scraped_total": 35,
+      "scraped_by_source": {
+        "023": 10,
+        "Slobodna dalmacija": 15,
+        "Zadarski list": 10
+      },
+      "already_seen": 24,
+      "rejected_by_keywords": 7,
+      "rejected_by_rule": {
+        "тег RSS lifestyle": 1,
+        "тег RSS sport": 1,
+        "sport": 2,
+        "igrač": 1,
+        "URL /sport/": 1,
+        "тег RSS košarka": 1
+      },
+      "unclassified_by_ai": 0,
+      "duplicates_removed_by_ai": 2,
+      "rejection_reasons_list": [
+        "• Analitičar Predrag Bejaković: “Bez pomoći države siromašno bi bilo 40  → Світовий шум (Абстрактні роздуми експерта про соціальний захист та бідність) | Сутності: Predrag Bejaković, Hrvatska, BDP",
+        "• Učenici OŠ Zvonka Cara prvaci županije u šahu → Спорт (Шкільний чемпіонат із шахів у місті Криквениця) | Сутності: OŠ Zvonka Cara, Crikvenica, šah"
+      ],
+      "rejected_by_reason": {
+        "Світовий шум": 1,
+        "Спорт": 1
+      },
+      "updates_marked": 1,
+      "already_rejected": 15,
+      "rejected_by_code_examples": [
+        "[тег RSS lifestyle] Promatračke studije povezuju redovito jedenje jaja s manjim rizikom od Alzheimerove bolesti",
+        "[тег RSS sport] Sandra Profaca i Ivica Vukman pobjednici 10. Atletske utrke “Dani sjećanja od Škabrnje do Vukovara”",
+        "[sport] Od Dunda Maroja do polumaratona: tjedan pred nama donosi kazalište, koncerte, film i sport",
+        "[igrač] Zadar se učvrstio na prvom mjestu, Posedarje bolje u golijadi, Primorac dobro prošao na gostovanju",
+        "[sport] Sandra Profaca i Ivica Vukman pobjednici 10. Atletske utrke „Dani sjećanja od Škabrnje do Vukovara“",
+        "[URL /sport/] Izvrstan start Jugovih plivača u Zadru, doplivali do 6 medalja i niza osobnih rekorda",
+        "[тег RSS košarka] Košarkaši Kvarnera se protiv Alkara vratili iz “minus 16”. Krajnović promašio tricu za produžetak"
+      ]
+    },
+    "backlog": {
+      "total_size": 0,
+      "sources": {}
+    },
+    "published": {
+      "total": 2,
+      "ukraine_priority": 1,
+      "with_images": 2,
+      "text_only": 0,
+      "og_images_found": 0,
+      "sources": {
+        "Zadarski list": 1,
+        "Slobodna dalmacija": 1
+      }
+    },
+    "models_used": {
+      "gemini-3-flash-preview": 1,
+      "gemini-3.6-flash": 1
+    },
+    "models_by_task": {
+      "filter": "gemini-3-flash-preview",
+      "translate": "gemini-3.6-flash"
+    },
+    "model_attempts": [
+      {
+        "task": "filter",
+        "model": "gemini-3-flash-preview",
+        "outcome": "ok"
+      },
+      {
+        "task": "translate",
+        "model": "gemini-3.5-flash-lite",
+        "outcome": "unavailable"
+      },
+      {
+        "task": "translate",
+        "model": "gemini-3.8-flash",
+        "outcome": "unavailable"
+      },
+      {
+        "task": "translate",
+        "model": "gemini-3.6-flash",
+        "outcome": "ok"
+      }
+    ],
+    "exhausted_models": [],
+    "demoted_models": [
+      "translate: gemini-3.8-flash"
+    ],
+    "translate_budget_deferred": [
+      "gemini-3.6-flash"
+    ],
+    "gemini_region_blocked": false,
+    "gemini_unavailable": false,
+    "errors_count": 0,
+    "gemini_retries": 2
   }
 ]
