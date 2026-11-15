@@ -1,101 +1,5 @@
 [
   {
-    "timestamp": "2026-11-06 09:01:25",
-    "execution_time": 137.7,
-    "funnel": {
-      "scraped_total": 35,
-      "scraped_by_source": {
-        "023": 10,
-        "Slobodna dalmacija": 15,
-        "Zadarski list": 10
-      },
-      "already_seen": 19,
-      "rejected_by_keywords": 2,
-      "rejected_by_rule": {
-        "тег RSS sport": 1,
-        "тег RSS košarka": 1
-      },
-      "unclassified_by_ai": 0,
-      "duplicates_removed_by_ai": 8,
-      "rejection_reasons_list": [
-        "• Ugostitelji o adventskim cijenama: “Jeftinije fritule mogle bi biti lo → Побут інших міст (Рієка) | Сутності: Рієка, Хрвоє Марган, HOK, Пула",
-        "• Revolucija u liječenju raka pluća; Jednostavna pretraga krvi otkriva p → Не за тематикою (Медичне дослідження) | Сутності: КБЦ Загреб, Текучійська біопсія, Рать плуча",
-        "• Šušnjar: Europa mora ubrzati energetska ulaganja i ojačati konkurentno → Не за тематикою (Енергетична конференція) | Сутності: Анте Шушньяр, Загреб, Європейська комісія",
-        "• Druga akcija ove godine; Hrvatski Rafale zbog sumnje na bombu presreo  → Вже публікувалось (Перехоплення літака) | Сутності: Rafale, Фіннаїр, Ястребарське, Карловац",
-        "• Besramni prevaranti iskoristili franjevce. Prešlo svaku mjeru, morali  → Реклама (Шахрайство з маззю) | Сутності: Монастир Вісовац, Францисканці, Інтернет-шахрайство",
-        "• Rubio poriče da planira napustiti Trumpovu vladu: “Namjera mi je radit → Геоблок (США) | Сутності: Марко Рубіо, Дональд Трамп, Вашингтон, The New York Times",
-        "• Šećerna industrija pred kolapsom; Jedinoj hrvatskoj šećerani prijeti c → Побут інших міст (Жупаня) | Сутності: Сладорана Жупаня, Желько Задро, Хорватська індустрія цукру",
-        "• Piše Kim Cuculić: »Zrinjski« i balet → Побут інших міст (Загреб та Рієка) | Сутності: HNK Загреб, HNK Рієка, Нікола Шубіч Зринський, День хорватського балету"
-      ],
-      "rejected_by_reason": {
-        "Побут інших міст": 3,
-        "Не за тематикою": 2,
-        "Вже публікувалось": 1,
-        "Реклама": 1,
-        "Геоблок": 1
-      },
-      "updates_marked": 0,
-      "already_rejected": 13,
-      "rejected_by_code_examples": [
-        "[тег RSS sport] Zadarski Fortius zaključio povijesnu sezonu; Najbolji juniori na pripremama reprezentacije u Makarsk",
-        "[тег RSS košarka] Stephen Curry se razigrao u nastavku i odveo Warriorse do šeste uzastopne pobjede"
-      ]
-    },
-    "backlog": {
-      "total_size": 6,
-      "sources": {
-        "023": 6
-      }
-    },
-    "published": {
-      "total": 3,
-      "ukraine_priority": 0,
-      "with_images": 3,
-      "text_only": 0,
-      "og_images_found": 1,
-      "sources": {
-        "Slobodna dalmacija": 1,
-        "Zadarski list": 1,
-        "023": 1
-      }
-    },
-    "models_used": {
-      "gemini-3.5-flash-lite": 1,
-      "gemini-3.6-flash": 1
-    },
-    "models_by_task": {
-      "filter": "gemini-3.5-flash-lite",
-      "translate": "gemini-3.6-flash"
-    },
-    "model_attempts": [
-      {
-        "task": "filter",
-        "model": "gemini-3.6-flash",
-        "outcome": "unavailable"
-      },
-      {
-        "task": "filter",
-        "model": "gemini-3.5-flash-lite",
-        "outcome": "ok"
-      },
-      {
-        "task": "translate",
-        "model": "gemini-3.6-flash",
-        "outcome": "ok"
-      }
-    ],
-    "exhausted_models": [],
-    "demoted_models": [
-      "filter: gemini-3-flash-preview",
-      "translate: gemini-3.8-flash"
-    ],
-    "translate_budget_deferred": [],
-    "gemini_region_blocked": false,
-    "gemini_unavailable": false,
-    "errors_count": 0,
-    "gemini_retries": 1
-  },
-  {
     "timestamp": "2026-11-06 10:01:21",
     "execution_time": 143.2,
     "funnel": {
@@ -9818,5 +9722,77 @@
     "gemini_unavailable": false,
     "errors_count": 1,
     "gemini_retries": 1
+  },
+  {
+    "timestamp": "2026-11-15 10:01:15",
+    "execution_time": 94.6,
+    "funnel": {
+      "scraped_total": 35,
+      "scraped_by_source": {
+        "023": 10,
+        "Slobodna dalmacija": 15,
+        "Zadarski list": 10
+      },
+      "already_seen": 25,
+      "rejected_by_keywords": 0,
+      "rejected_by_rule": {},
+      "unclassified_by_ai": 0,
+      "duplicates_removed_by_ai": 2,
+      "rejection_reasons_list": [
+        "• Teško ozlijeđen mladić u Murvici: pao je s motocikla i udario u drugi, → Дубль (Дублікат новини про ДТП у Мурвіці) | Сутності: Murvica, 18-godišnjak, motocikl, Opća bolnica Zadar",
+        "• Iz Grada Dubrovnika objasnili čemu služe otvori na stupićima u povijes → Побут інших міст (Комунальні питання та об'єкти в Дубровнику) | Сутності: Grad Dubrovnik, Široka ulica, Stradun, stupić"
+      ],
+      "rejected_by_reason": {
+        "Дубль": 1,
+        "Побут інших міст": 1
+      },
+      "updates_marked": 0,
+      "already_rejected": 19
+    },
+    "backlog": {
+      "total_size": 1,
+      "sources": {
+        "Slobodna dalmacija": 1
+      }
+    },
+    "published": {
+      "total": 1,
+      "ukraine_priority": 0,
+      "with_images": 1,
+      "text_only": 0,
+      "og_images_found": 0,
+      "sources": {
+        "Slobodna dalmacija": 1
+      }
+    },
+    "models_used": {
+      "gemini-3.6-flash": 2
+    },
+    "models_by_task": {
+      "filter": "gemini-3.6-flash",
+      "translate": "gemini-3.6-flash"
+    },
+    "model_attempts": [
+      {
+        "task": "filter",
+        "model": "gemini-3.6-flash",
+        "outcome": "ok"
+      },
+      {
+        "task": "translate",
+        "model": "gemini-3.6-flash",
+        "outcome": "ok"
+      }
+    ],
+    "exhausted_models": [],
+    "demoted_models": [
+      "filter: gemini-3-flash-preview",
+      "translate: gemini-3.8-flash"
+    ],
+    "translate_budget_deferred": [],
+    "gemini_region_blocked": false,
+    "gemini_unavailable": false,
+    "errors_count": 0,
+    "gemini_retries": 0
   }
 ]
