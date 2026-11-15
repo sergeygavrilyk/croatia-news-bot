@@ -1,115 +1,5 @@
 [
   {
-    "timestamp": "2026-11-06 17:01:22",
-    "execution_time": 226.3,
-    "funnel": {
-      "scraped_total": 35,
-      "scraped_by_source": {
-        "023": 10,
-        "Slobodna dalmacija": 15,
-        "Zadarski list": 10
-      },
-      "already_seen": 19,
-      "rejected_by_keywords": 4,
-      "rejected_by_rule": {
-        "тег RSS lifestyle": 3,
-        "košarkaško": 1
-      },
-      "unclassified_by_ai": 0,
-      "duplicates_removed_by_ai": 9,
-      "rejection_reasons_list": [
-        "• Alkoholiziranom vozaču bez vozačke zatečenom u Malinskoj određena kazn → Побут інших міст (ДТП та порушення ПДР у Малінській) | Сутності: Malinska, Krk, policija, prometni prekršaj",
-        "• Od dvije škole do njih 450: završeno je jubilarno izdanje projekta „Ma → Не за тематикою (Національний освітній проект) | Сутності: Mama budi zdrava, SVE za NJU, Hrvatska, škole",
-        "• Obilježeno 20 godina Udruge Pomoć u kući u Novom Vinodolskom → Побут інших міст (Ювілей організації у Новому Вінодольському) | Сутності: Novi Vinodolski, Udruga Pomoć u kući, Tomislav Cvitković",
-        "• Započinje sanacija nerazvrstanih cesta na području Vinodolske općine → Побут інших міст (Ремонт доріг у Вінодольській громаді) | Сутності: Vinodolska općina, Branko Bačić, sanacija cesta",
-        "• Čestitke i poklon za najuspješnijeg plivača Nikolu Zdrilića na prijemu → Спорт (Прийом спортсмена у Вішково) | Сутності: Nikola Zdrilić, Viškovo, plivanje, medalje",
-        "• Duška prekida šutnju i otkriva dugo čuvanu Tajnu: O privlačnosti i zab → Не за тематикою (Музичний реліз) | Сутності: Duška, Tajna, Leo Anđelković",
-        "• Sve teži uvjeti rada hrvatskih ribara: “More treba zaštititi, ali mora → Побут інших міст (Зустріч рибалок у Малі-Лошині) | Сутності: Mali Lošinj, ribari, Hrvatska obrtnička komora",
-        "• PŠ Lički Novi neće se zatvoriti, Grad Gospić jamči opstanak škole → Побут інших міст (Ремонт школи у Лічкі-Нові) | Сутності: Gospić, Lički Novi, škola, obnova",
-        "• “Pomorska sigurnost 2026.”: Luke na meti novih sigurnosnih prijetnji → Не за тематикою (Конференція в Опатії) | Сутності: Opatija, pomorska sigurnost, konferencija"
-      ],
-      "rejected_by_reason": {
-        "Побут інших міст": 5,
-        "Не за тематикою": 3,
-        "Спорт": 1
-      },
-      "updates_marked": 1,
-      "already_rejected": 13,
-      "rejected_by_code_examples": [
-        "[тег RSS lifestyle] Medena pita s kremom od vanilije: kore se peku pet minuta, a kolač odmara preko noći",
-        "[тег RSS lifestyle] Program za osjetljivo rublje ne spašava kožnu jaknu, sako ni haljinu s cirkonima",
-        "[тег RSS lifestyle] Grijanje cijeli dan ili samo po potrebi: stručnjaci objašnjavaju kada se što više isplati",
-        "[košarkaško] Nastavak ulaganja u uređenje javnih površina: otvoreno obnovljeno sportsko igralište na Baldekinu"
-      ]
-    },
-    "backlog": {
-      "total_size": 4,
-      "sources": {
-        "Zadarski list": 3,
-        "023": 1
-      }
-    },
-    "published": {
-      "total": 0,
-      "ukraine_priority": 0,
-      "with_images": 0,
-      "text_only": 0,
-      "og_images_found": 1,
-      "sources": {}
-    },
-    "models_used": {
-      "gemini-3.1-flash-lite": 1
-    },
-    "models_by_task": {
-      "filter": "gemini-3.1-flash-lite",
-      "translate": null
-    },
-    "model_attempts": [
-      {
-        "task": "filter",
-        "model": "gemini-3-flash-preview",
-        "outcome": "unavailable"
-      },
-      {
-        "task": "filter",
-        "model": "gemini-3.6-flash",
-        "outcome": "unavailable"
-      },
-      {
-        "task": "filter",
-        "model": "gemini-3.1-flash-lite",
-        "outcome": "ok"
-      },
-      {
-        "task": "translate",
-        "model": "gemini-3.5-flash-lite",
-        "outcome": "unavailable"
-      },
-      {
-        "task": "translate",
-        "model": "gemini-3.8-flash",
-        "outcome": "unavailable"
-      },
-      {
-        "task": "translate",
-        "model": "gemini-3.6-flash",
-        "outcome": "unavailable"
-      }
-    ],
-    "exhausted_models": [],
-    "demoted_models": [
-      "filter: gemini-3.5-flash-lite",
-      "translate: gemini-3.8-flash"
-    ],
-    "translate_budget_deferred": [
-      "gemini-3.6-flash"
-    ],
-    "gemini_region_blocked": false,
-    "gemini_unavailable": true,
-    "errors_count": 0,
-    "gemini_retries": 5
-  },
-  {
     "timestamp": "2026-11-06 20:01:20",
     "execution_time": 226.6,
     "funnel": {
@@ -9712,5 +9602,111 @@
     "gemini_unavailable": false,
     "errors_count": 0,
     "gemini_retries": 0
+  },
+  {
+    "timestamp": "2026-11-15 20:01:11",
+    "execution_time": 263.0,
+    "funnel": {
+      "scraped_total": 35,
+      "scraped_by_source": {
+        "023": 10,
+        "Slobodna dalmacija": 15,
+        "Zadarski list": 10
+      },
+      "already_seen": 14,
+      "rejected_by_keywords": 11,
+      "rejected_by_rule": {
+        "тег RSS lifestyle": 3,
+        "тег RSS sport": 3,
+        "sport": 2,
+        "igrač": 1,
+        "тег RSS nogomet": 1,
+        "тег RSS košarka": 1
+      },
+      "unclassified_by_ai": 0,
+      "duplicates_removed_by_ai": 8,
+      "rejection_reasons_list": [
+        "• Književna večer s Ivanom Šojat u Saloči od zrcala: Od kvantne fizike i → Побут інших міст (Литературний вечір у Дубровнику) | Сутності: Ivana Šojat, Saloča od zrcala, Dubrovnik, Mjesec hrvatske knjige",
+        "• Andrea Musa izložila “Uzorke pohranjenog vremena II” → Побут інших міст (Виставка у Гробнику) | Сутності: Andrea Musa, Grad Grobnik, Ivo Bogović, Katerina Jovanović",
+        "• \"Iako investitor nije bio prisutan, organizirani su pokušaji nereda i  → Побут інших міст (Громадські слухання в Цавтаті) | Сутності: Cavtat, Dom kulture u Cavtatu, Marina Cavtat & Resort, Građanska inicijativa Čista luka",
+        "• Hrvatska zbog birokracije gubi vrhunskog enologa, a istarski vinari sm → Побут інших міст (Історія енолога в Пулі) | Сутності: Timothya Tima Whitfielda, Kirsten Andrea, Pula, Južnoafrička Republika",
+        "• Novi izgled Precrkve u Čilipima, spoj tradicije i suvremenosti → Побут інших міст (Благоустрій площі в Чіліпі) | Сутності: Općina Konavle, Precrkva u Čilipima, Čilipi",
+        "• Let 3 u Tvornici kulture: Večer puna ljubavi, decibela te bundi → Побут інших міст (Концерт гурту Let 3 у Загребі) | Сутності: Let 3, Tvornica kulture, Zagreb, Vladimir Šeks",
+        "• “Eksterminator II” Tonija Starešinića: Komentar na suludo digitalno ov → Побут інших міст (Джазовий концерт у Загребі) | Сутності: Toni Starešinić, Močvara, Zagreb, NO Jazz Festival",
+        "• Pobjednik Zagreb Film Festivala “Josephine” Beth de Araújo → Побут інших міст (Кінофестиваль у Загребі) | Сутності: Zagreb Film Festival, Josephine, Beth de Araújo, Zlatna kolica"
+      ],
+      "rejected_by_reason": {
+        "Побут інших міст": 8
+      },
+      "updates_marked": 1,
+      "already_rejected": 9,
+      "rejected_by_code_examples": [
+        "[тег RSS lifestyle] Bolne podlaktice od tipkanja: fizioterapeutkinje savjetuju tri istezanja i lakat pod kutom od 90 stu",
+        "[тег RSS lifestyle] Umak za božićno pečenje možete skuhati unaprijed i čuvati ga u zamrzivaču do blagdana",
+        "[тег RSS lifestyle] Promatračke studije povezuju redovito jedenje jaja s manjim rizikom od Alzheimerove bolesti",
+        "[тег RSS sport] Sandra Profaca i Ivica Vukman pobjednici 10. Atletske utrke “Dani sjećanja od Škabrnje do Vukovara”",
+        "[sport] Od Dunda Maroja do polumaratona: tjedan pred nama donosi kazalište, koncerte, film i sport",
+        "[igrač] Zadar se učvrstio na prvom mjestu, Posedarje bolje u golijadi, Primorac dobro prošao na gostovanju",
+        "[sport] Sandra Profaca i Ivica Vukman pobjednici 10. Atletske utrke „Dani sjećanja od Škabrnje do Vukovara“",
+        "[тег RSS nogomet] Ronaldinho se vratio na teren nakon 11 godina! Sudjelovao je u akciji za gol, a njegova momčad je up",
+        "[тег RSS sport] Rukometaši Zameta nadigrali Ribolu Kaštela, Kozalčani uvjerljivi u Poreču",
+        "[тег RSS sport] Pavić u paru s Arevalom pobijedio u dva seta na startu ATP Finala",
+        "[тег RSS košarka] Nije najveća zvijezda WNBA-a, ali na Instagramu je nadmašila i Caitlin Clark: Prati je 4,3 milijuna "
+      ]
+    },
+    "backlog": {
+      "total_size": 0,
+      "sources": {}
+    },
+    "published": {
+      "total": 2,
+      "ukraine_priority": 0,
+      "with_images": 1,
+      "text_only": 1,
+      "og_images_found": 0,
+      "sources": {
+        "023": 1,
+        "Zadarski list": 1
+      }
+    },
+    "models_used": {
+      "gemini-3.6-flash": 1,
+      "gemini-3.5-flash-lite": 1
+    },
+    "models_by_task": {
+      "filter": "gemini-3.6-flash",
+      "translate": "gemini-3.5-flash-lite"
+    },
+    "model_attempts": [
+      {
+        "task": "filter",
+        "model": "gemini-3-flash-preview",
+        "outcome": "unavailable"
+      },
+      {
+        "task": "filter",
+        "model": "gemini-3.6-flash",
+        "outcome": "ok"
+      },
+      {
+        "task": "translate",
+        "model": "gemini-3.8-flash",
+        "outcome": "unavailable"
+      },
+      {
+        "task": "translate",
+        "model": "gemini-3.5-flash-lite",
+        "outcome": "ok"
+      }
+    ],
+    "exhausted_models": [],
+    "demoted_models": [],
+    "translate_budget_deferred": [
+      "gemini-3.6-flash"
+    ],
+    "gemini_region_blocked": false,
+    "gemini_unavailable": false,
+    "errors_count": 0,
+    "gemini_retries": 2
   }
 ]
