@@ -1,99 +1,5 @@
 [
   {
-    "timestamp": "2026-11-06 16:01:21",
-    "execution_time": 144.2,
-    "funnel": {
-      "scraped_total": 35,
-      "scraped_by_source": {
-        "023": 10,
-        "Slobodna dalmacija": 15,
-        "Zadarski list": 10
-      },
-      "already_seen": 18,
-      "rejected_by_keywords": 5,
-      "rejected_by_rule": {
-        "тег RSS lifestyle": 3,
-        "košarkaško": 1,
-        "URL /sport/": 1
-      },
-      "unclassified_by_ai": 0,
-      "duplicates_removed_by_ai": 8,
-      "rejection_reasons_list": [
-        "• Započela prva generacija Film & Media Sound Academy. Dobitnici Oscara  → Побут інших міст (Освітній модуль у Дубровнику) | Сутності: Dubrovnik, Film & Media Sound Academy, Oscar, Emmy",
-        "• Svjetski multimedijalni fenomen stigao u Zagreb: Oživjele poznate slik → Побут інших міст (Виставка у Загребі) | Сутності: Zagreb, Zagrebački velesajam, Van Gogh Alive, Vincent van Gogh",
-        "• Može li cijeli Gorski kotar u bliskoj budućnosti postati geopark UNESC → Побут інших міст (Засідання у Делниці) | Сутності: Gorski kotar, Delnice, UNESCO, Geopark Papuk",
-        "• “Tužibabe” za smeće u Kastvu nagrađivane i 1400. godine. Rijeka tek uv → Побут інших міст (Наукова конференція у Каставі) | Сутності: Kastav, Rijeka, Maja Polić, Istra",
-        "• Nakon Trumpovog poraza na izborima, cijene nafte pale ispod 98 dolara → Геоблок (Світові ціни на нафту) | Сутності: Trump, SAD, London, Bliski istok",
-        "• Dobar posao s automobilima: Golemi brod Grimaldi grupe najavio novi is → Побут інших міст (Розвантаження авто в порту Рієки) | Сутності: Luka Rijeka, Grimaldi grupa, BYD, Leapmotor",
-        "• Županija preuzela u posjed bivše prostore PIK-a, gradit će se školski  → Побут інших міст (Будівництво школи в Рієці) | Сутності: Primorsko-goranska županija, PIK d.d., Rijeka, Krešimirova",
-        "• Zelena akcija pokreće kampanju protiv megalomanskog data centra u Topu → Побут інших міст (Протест у Загребі щодо дата-центру) | Сутності: Zelena akcija, Topusko, Zagreb, Trg bana Josipa Jelačića"
-      ],
-      "rejected_by_reason": {
-        "Побут інших міст": 7,
-        "Геоблок": 1
-      },
-      "updates_marked": 0,
-      "already_rejected": 12,
-      "rejected_by_code_examples": [
-        "[тег RSS lifestyle] Medena pita s kremom od vanilije: kore se peku pet minuta, a kolač odmara preko noći",
-        "[тег RSS lifestyle] Program za osjetljivo rublje ne spašava kožnu jaknu, sako ni haljinu s cirkonima",
-        "[тег RSS lifestyle] Grijanje cijeli dan ili samo po potrebi: stručnjaci objašnjavaju kada se što više isplati",
-        "[košarkaško] Nastavak ulaganja u uređenje javnih površina: otvoreno obnovljeno sportsko igralište na Baldekinu",
-        "[URL /sport/] VIDEO Matjaž Kek najavio susjedski derbi u Puli: “Istra dobro radi svoj posao, ali imamo i mi dovolj"
-      ]
-    },
-    "backlog": {
-      "total_size": 1,
-      "sources": {
-        "Zadarski list": 1
-      }
-    },
-    "published": {
-      "total": 3,
-      "ukraine_priority": 0,
-      "with_images": 3,
-      "text_only": 0,
-      "og_images_found": 2,
-      "sources": {
-        "023": 2,
-        "Zadarski list": 1
-      }
-    },
-    "models_used": {
-      "gemini-3.6-flash": 1,
-      "gemini-3.5-flash-lite": 1
-    },
-    "models_by_task": {
-      "filter": "gemini-3.6-flash",
-      "translate": "gemini-3.5-flash-lite"
-    },
-    "model_attempts": [
-      {
-        "task": "filter",
-        "model": "gemini-3.6-flash",
-        "outcome": "ok"
-      },
-      {
-        "task": "translate",
-        "model": "gemini-3.5-flash-lite",
-        "outcome": "ok"
-      }
-    ],
-    "exhausted_models": [],
-    "demoted_models": [
-      "filter: gemini-3-flash-preview",
-      "filter: gemini-3.5-flash-lite",
-      "translate: gemini-3.8-flash"
-    ],
-    "translate_budget_deferred": [
-      "gemini-3.6-flash"
-    ],
-    "gemini_region_blocked": false,
-    "gemini_unavailable": false,
-    "errors_count": 0,
-    "gemini_retries": 0
-  },
-  {
     "timestamp": "2026-11-06 17:01:22",
     "execution_time": 226.3,
     "funnel": {
@@ -9724,5 +9630,87 @@
     "gemini_unavailable": false,
     "errors_count": 0,
     "gemini_retries": 2
+  },
+  {
+    "timestamp": "2026-11-15 17:01:18",
+    "execution_time": 14.2,
+    "funnel": {
+      "scraped_total": 35,
+      "scraped_by_source": {
+        "023": 10,
+        "Slobodna dalmacija": 15,
+        "Zadarski list": 10
+      },
+      "already_seen": 23,
+      "rejected_by_keywords": 8,
+      "rejected_by_rule": {
+        "тег RSS lifestyle": 2,
+        "тег RSS sport": 1,
+        "sport": 2,
+        "igrač": 1,
+        "URL /sport/": 1,
+        "тег RSS košarka": 1
+      },
+      "unclassified_by_ai": 0,
+      "duplicates_removed_by_ai": 4,
+      "rejection_reasons_list": [
+        "• Stari časopisi iz osamdesetih postali su pjesme: Enver Krivac otkriva  → Не за тематикою (Презентація книги автора з Рієки) | Сутності: Enver Krivac, Neka jedu kolaže, Rijeka",
+        "• Riječki Tajni agenti privukli više od 5.000 gledatelja: Sve svoje nevo → Побут інших міст (Локальний кінопроєкт у місті Рієка) | Сутності: Tajni agenti 010, Rijeka, 5.000 gledatelja",
+        "• “Gulliverova putovanja” nisu dječja knjiga: Swift je zapravo pisao jed → Світовий шум (Історія написання книги та назви компанії) | Сутності: Jonathan Swift, Gulliverova putovanja, Yahoo!",
+        "• “Promjene moraju osmisliti političke elite, a ne da ih gura ulica”: Ek → Не за тематикою (Інтерв'ю з економістом про політичну ситуацію) | Сутності: Mladen Vedriš, Hrvatska, SAD, Washington"
+      ],
+      "rejected_by_reason": {
+        "Не за тематикою": 2,
+        "Побут інших міст": 1,
+        "Світовий шум": 1
+      },
+      "updates_marked": 0,
+      "already_rejected": 15,
+      "rejected_by_code_examples": [
+        "[тег RSS lifestyle] Umak za božićno pečenje možete skuhati unaprijed i čuvati ga u zamrzivaču do blagdana",
+        "[тег RSS lifestyle] Promatračke studije povezuju redovito jedenje jaja s manjim rizikom od Alzheimerove bolesti",
+        "[тег RSS sport] Sandra Profaca i Ivica Vukman pobjednici 10. Atletske utrke “Dani sjećanja od Škabrnje do Vukovara”",
+        "[sport] Od Dunda Maroja do polumaratona: tjedan pred nama donosi kazalište, koncerte, film i sport",
+        "[igrač] Zadar se učvrstio na prvom mjestu, Posedarje bolje u golijadi, Primorac dobro prošao na gostovanju",
+        "[sport] Sandra Profaca i Ivica Vukman pobjednici 10. Atletske utrke „Dani sjećanja od Škabrnje do Vukovara“",
+        "[URL /sport/] Izvrstan start Jugovih plivača u Zadru, doplivali do 6 medalja i niza osobnih rekorda",
+        "[тег RSS košarka] Košarkaši Kvarnera se protiv Alkara vratili iz “minus 16”. Krajnović promašio tricu za produžetak"
+      ]
+    },
+    "backlog": {
+      "total_size": 0,
+      "sources": {}
+    },
+    "published": {
+      "total": 0,
+      "ukraine_priority": 0,
+      "with_images": 0,
+      "text_only": 0,
+      "og_images_found": 0,
+      "sources": {}
+    },
+    "models_used": {
+      "gemini-3-flash-preview": 1
+    },
+    "models_by_task": {
+      "filter": "gemini-3-flash-preview",
+      "translate": null
+    },
+    "model_attempts": [
+      {
+        "task": "filter",
+        "model": "gemini-3-flash-preview",
+        "outcome": "ok"
+      }
+    ],
+    "exhausted_models": [],
+    "demoted_models": [
+      "translate: gemini-3.8-flash"
+    ],
+    "translate_budget_deferred": [],
+    "gemini_region_blocked": false,
+    "gemini_unavailable": false,
+    "errors_count": 0,
+    "gemini_retries": 0
   }
 ]
