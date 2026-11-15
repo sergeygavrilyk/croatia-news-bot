@@ -1,1 +1,16 @@
-[]
+[
+  {
+    "title": "Zadar slavi svoj dan: bogat program, sportska nadmetanja, kultura i koncert Mladena Grdovića",
+    "description": "Zadar se i ove godine priprema za proslavu Dana grada i blagdana svojega zaštitnika sv. Krševana. Od 14. do 28. studenoga grad će živjeti uz bogat program kulturnih, sportskih, društvenih i svečanih događanja namijenjenih svim generacijama. Središnja proslava održat će se u utorak, 24. studenoga, na...",
+    "url": "https://slobodnadalmacija.hr/dalmacija/zadar/zadar-slavi-svoj-dan-bogat-program-sportska-nadmetanja-kultura-i-koncert-mladena-grdovica-1590491",
+    "image_urls": [
+      "https://static.slobodnadalmacija.hr/images/slike/2026/11/15/32863725.jpg"
+    ],
+    "source": "Slobodna dalmacija",
+    "timestamp": 1794730380,
+    "is_update": true,
+    "translation_failures": 1,
+    "retry_after": 1794737065.2930472,
+    "last_translation_error": "Не пройдено сувору перевірку перекладу"
+  }
+]
