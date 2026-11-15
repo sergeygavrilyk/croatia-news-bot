@@ -1,106 +1,5 @@
 [
   {
-    "timestamp": "2026-11-06 13:01:20",
-    "execution_time": 32.5,
-    "funnel": {
-      "scraped_total": 35,
-      "scraped_by_source": {
-        "023": 10,
-        "Slobodna dalmacija": 15,
-        "Zadarski list": 10
-      },
-      "already_seen": 20,
-      "rejected_by_keywords": 5,
-      "rejected_by_rule": {
-        "URL /sport/": 1,
-        "nogometne": 1,
-        "promo": 2,
-        "nagradna igra": 1
-      },
-      "unclassified_by_ai": 0,
-      "duplicates_removed_by_ai": 10,
-      "rejection_reasons_list": [
-        "• Jeftinije žitarice spustile cijene hrane u listopadu → Світовий шум (Глобальні ціни на продукти) | Сутності: FAO, UN, žitarice, cijene hrane",
-        "• Skupina dubrovačkih branitelja o proslavi HRM-a: ‘Iznesene su neistine → Побут інших міст (Політичні суперечки у Дубровнику) | Сутності: Dubrovnik, HRM, branitelji, general Marinović",
-        "• Neno Belan 12. prosinca u HKD-u: Bezvremenski hitovi u božićnom izdanj → Побут інших міст (Концерт у Рієці) | Сутності: Neno Belan, Rijeka, koncert, HKD",
-        "• Iz šibenskog Crvenog križa uputili hitni poziv: ‘Stanje je vrlo teško, → Побут інших міст (Акція у Шибенику) | Сутності: Crveni križ, Šibenik, darivanje krvi",
-        "• KBC Rijeka u 20 godina postao vodeći edukacijski centar za minimalno i → Побут інших міст (Ювілей лікарні у Рієці) | Сутності: KBC Rijeka, kirurgija, edukacijski centar",
-        "• Dvojica dubrovačkih političara testirala se na droge, poručuju: ‘Sužav → Побут інших міст (Скандал у Дубровнику) | Сутності: Dubrovnik, političari, testiranje na droge",
-        "• Vedran Pavlek izvukao čak 50 milijuna eura, a pola tog iznosa zadržao  → Не за тематикою (Кримінальна справа щодо лижного спорту) | Сутності: Vedran Pavlek, USKOK, Hrvatski skijaški savez",
-        "• Neke ljude nikad ne prebolimo: IVXN predstavlja novi singl „Samo ti” → Не за тематикою (Музичний реліз) | Сутності: IVXN, Ivan Milić, glazba",
-        "• Plenković obišao Petrovačku dolu: U fokusu Vlade pronalazak svih nesta → Вже публікувалось (Пошук зниклих безвісти) | Сутності: Andrej Plenković, Vukovar, nestale osobe",
-        "• Slavlje tiska, kreativnosti i zajednice: U Galeriji Kortil otvorena iz → Побут інших міст (Виставка у Рієці) | Сутності: Galerija Kortil, Rijeka, izložba"
-      ],
-      "rejected_by_reason": {
-        "Світовий шум": 1,
-        "Побут інших міст": 6,
-        "Не за тематикою": 2,
-        "Вже публікувалось": 1
-      },
-      "updates_marked": 0,
-      "already_rejected": 14,
-      "rejected_by_code_examples": [
-        "[URL /sport/] Dva derbija u Gospinom polju: Square u nedjelju dočekuje Rijeku!",
-        "[nogometne] Punio je dvorane i stadione, ali Mišo je samo na jednom mjestu imao tremu. A što je napravio usred r",
-        "[promo] ROĐENDANSKA PREDSTAVA ZA POSJETITELJE – SKLISKE VJEŽBE",
-        "[promo] 20 GODINA TOWER CENTRA RIJEKA",
-        "[nagradna igra] Nagradna igra „20 × 500 € na Tower poklon karticama“"
-      ]
-    },
-    "backlog": {
-      "total_size": 0,
-      "sources": {}
-    },
-    "published": {
-      "total": 1,
-      "ukraine_priority": 0,
-      "with_images": 1,
-      "text_only": 0,
-      "og_images_found": 1,
-      "sources": {
-        "023": 1
-      }
-    },
-    "models_used": {
-      "gemini-3.1-flash-lite": 1,
-      "gemini-3.5-flash-lite": 1
-    },
-    "models_by_task": {
-      "filter": "gemini-3.1-flash-lite",
-      "translate": "gemini-3.5-flash-lite"
-    },
-    "model_attempts": [
-      {
-        "task": "filter",
-        "model": "gemini-3.6-flash",
-        "outcome": "unavailable"
-      },
-      {
-        "task": "filter",
-        "model": "gemini-3.1-flash-lite",
-        "outcome": "ok"
-      },
-      {
-        "task": "translate",
-        "model": "gemini-3.5-flash-lite",
-        "outcome": "ok"
-      }
-    ],
-    "exhausted_models": [],
-    "demoted_models": [
-      "filter: gemini-3-flash-preview",
-      "filter: gemini-3.5-flash-lite",
-      "translate: gemini-3.8-flash"
-    ],
-    "translate_budget_deferred": [
-      "gemini-3.6-flash"
-    ],
-    "gemini_region_blocked": false,
-    "gemini_unavailable": false,
-    "errors_count": 0,
-    "gemini_retries": 1
-  },
-  {
     "timestamp": "2026-11-06 14:01:19",
     "execution_time": 254.6,
     "funnel": {
@@ -9743,5 +9642,104 @@
     "gemini_unavailable": true,
     "errors_count": 0,
     "gemini_retries": 4
+  },
+  {
+    "timestamp": "2026-11-15 14:01:13",
+    "execution_time": 185.9,
+    "funnel": {
+      "scraped_total": 35,
+      "scraped_by_source": {
+        "023": 10,
+        "Slobodna dalmacija": 15,
+        "Zadarski list": 10
+      },
+      "already_seen": 24,
+      "rejected_by_keywords": 6,
+      "rejected_by_rule": {
+        "sport": 2,
+        "igrač": 1,
+        "URL /sport/": 3
+      },
+      "unclassified_by_ai": 0,
+      "duplicates_removed_by_ai": 7,
+      "rejection_reasons_list": [
+        "• Mladi žele ostati na Korčuli i Lastovu, a od čega će živjeti? Otočanka → Побут інших міст (Проблеми працевлаштування молоді на островах Корчула та Ластово) | Сутності: Korčula, Lastovo, OPG",
+        "• Što se dogodilo u Jankomiru? Stručnjakinje upozorile na stroga pravila → Вже публікувалось (Коментарі експертів щодо смерті пацієнта в лікарні Янкомир) | Сутності: Jankomir, Kristian Josip Periš, Vesna Šendula-Jengić, Morana Brkljačić",
+        "• Mnoge je opet neugodno iznenadila, a nekima je već dodijala: Kišna sez → Побут інших міст (Дощова погода та прогулянки в Дубровнику) | Сутності: Stradun, Dubrovnik",
+        "• “Nisu kak’ spada”: Kids from the sky na riječkom koncertu pjesmu posve → Побут інших міст (Локальний концерт гурту у Рієці) | Сутності: Kids from the sky, Rijeka, Pogon kulture",
+        "• Dubrovačka biskupija preuzela Franjevački samostan sv. Vlaha u Pridvor → Побут інших міст (Передача францисканського монастиря у Прідвор'є) | Сутності: Dubrovačka biskupija, Pridvorje, Zadar",
+        "• Otočac pozvao građane na odgovoran odnos prema podzemlju krša → Побут інших міст (Екологічні проблеми та сміття в місті Оточаць) | Сутності: Otočac, Goran Bukovac, Lika",
+        "• Umjetnik, putopisac i florist koji je izlagao na Igrama ima novi proje → Побут інших міст (Різдвяний проект загребського флориста) | Сутності: Saša Šekoranja, Zagreb"
+      ],
+      "rejected_by_reason": {
+        "Побут інших міст": 6,
+        "Вже публікувалось": 1
+      },
+      "updates_marked": 0,
+      "already_rejected": 12,
+      "rejected_by_code_examples": [
+        "[sport] Od Dunda Maroja do polumaratona: tjedan pred nama donosi kazalište, koncerte, film i sport",
+        "[igrač] Zadar se učvrstio na prvom mjestu, Posedarje bolje u golijadi, Primorac dobro prošao na gostovanju",
+        "[sport] Sandra Profaca i Ivica Vukman pobjednici 10. Atletske utrke „Dani sjećanja od Škabrnje do Vukovara“",
+        "[URL /sport/] Izvrstan start Jugovih plivača u Zadru, doplivali do 6 medalja i niza osobnih rekorda",
+        "[URL /sport/] Rekordna četiri poraza u nizu dovela su ‘kockaste” u nezahvalnu situaciju: Hrvatskoj treba bod proti",
+        "[URL /sport/] Samuel Kolega na devetom mjestu zaključio prvi slalom sezone, slavio Brazilac Braathen"
+      ]
+    },
+    "backlog": {
+      "total_size": 0,
+      "sources": {}
+    },
+    "published": {
+      "total": 2,
+      "ukraine_priority": 0,
+      "with_images": 2,
+      "text_only": 0,
+      "og_images_found": 0,
+      "sources": {
+        "Zadarski list": 1,
+        "Slobodna dalmacija": 1
+      }
+    },
+    "models_used": {
+      "gemini-3.6-flash": 2
+    },
+    "models_by_task": {
+      "filter": "gemini-3.6-flash",
+      "translate": "gemini-3.6-flash"
+    },
+    "model_attempts": [
+      {
+        "task": "filter",
+        "model": "gemini-3.6-flash",
+        "outcome": "ok"
+      },
+      {
+        "task": "translate",
+        "model": "gemini-3.8-flash",
+        "outcome": "unavailable"
+      },
+      {
+        "task": "translate",
+        "model": "gemini-3.5-flash-lite",
+        "outcome": "unavailable"
+      },
+      {
+        "task": "translate",
+        "model": "gemini-3.6-flash",
+        "outcome": "ok"
+      }
+    ],
+    "exhausted_models": [],
+    "demoted_models": [
+      "filter: gemini-3-flash-preview"
+    ],
+    "translate_budget_deferred": [
+      "gemini-3.6-flash"
+    ],
+    "gemini_region_blocked": false,
+    "gemini_unavailable": false,
+    "errors_count": 0,
+    "gemini_retries": 2
   }
 ]
