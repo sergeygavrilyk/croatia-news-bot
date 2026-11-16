@@ -1,115 +1,5 @@
 [
   {
-    "timestamp": "2026-11-06 20:01:20",
-    "execution_time": 226.6,
-    "funnel": {
-      "scraped_total": 35,
-      "scraped_by_source": {
-        "023": 10,
-        "Slobodna dalmacija": 15,
-        "Zadarski list": 10
-      },
-      "already_seen": 13,
-      "rejected_by_keywords": 9,
-      "rejected_by_rule": {
-        "тег RSS lifestyle": 5,
-        "košarkaško": 1,
-        "тег RSS nogomet": 2,
-        "sportaše": 1
-      },
-      "unclassified_by_ai": 0,
-      "duplicates_removed_by_ai": 12,
-      "rejection_reasons_list": [
-        "• Riječki dečki tehničke kulture na Korzu: Izložba koja spaja 80 godina  → Побут інших міст (Місцева виставка у Рієці) | Сутності: Rijeka, Korzo, Zajednica tehničke kulture",
-        "• Šibensku županiju pogodila epidemija razvoda, brojke su alarmantne! Št → Побут інших міст (Статистика розлучень у Шибеницькому регіоні) | Сутності: Šibensko-kninska županija, Hrvatska, razvodi",
-        "• Sjećanje na riječkog gradonačelnika Giovannija de Ciottu: Zaslužan za  → Побут інших міст (Вшанування пам'яті ексмера Рієки) | Сутності: Giovanni de Ciotta, Rijeka, Vedran Vivoda, Groblje Kozala",
-        "• Profesorica Iva Štefanac iz Rijeke je došla živjeti na poluotok odakle → Побут інших міст (Дитяча виставка на півострові Пелєшаць) | Сутності: Pelješac, Putniković, Iva Štefanac, Teo Antunović",
-        "• Požar u Dvorcu Sveti Križ Začretje; jedna osoba prevezena u bolnicu → Побут інших міст (Пожежа у замку в Светий Кріж Зачретє) | Сутності: Dvorac Sveti Križ Začretje, Zvonko Ortner, Opća bolnica Zabok",
-        "• Tužna vijest s Korčule: preminula je Tamara Vučetić (101). Bila je prv → Побут інших міст (Смерть науковиці з острова Корчула) | Сутності: Tamara Vučetić, Vela Luka, Korčula, Katarina Gugić",
-        "• FBI uhitio Thomasa Marklea, oca vojvotkinje od Sussexa → Геоблок (Арешт батька Меган Маркл у США) | Сутності: FBI, Thomas Markle, Meghan Markle, Reuters",
-        "• Nakon gruške, u rekonstrukciju kreće i zelena placa na Grudi, a evo gd → Побут інших міст (Ремонт та перенесення ринку в Груді) | Сутності: Gruda, Konavle, Božo Lasić, Zelena placa",
-        "• Traže se AmbasadoRI mira → Побут інших міст (Конкурс на місцеву нагороду в Рієці) | Сутності: Rijeka, AmbasadoRI mira, Grad Rijeka",
-        "• Dramatično obraćanje mještana iz zaleđa Skradina: ‘Tlo nam podrhtava,  → Побут інших міст (Конфлікт щодо кар'єру в районі Скрадина) | Сутності: Skradin, Velika Kremenica, Lađevci, Krkovići",
-        "• Izjednačenje na vrhu “Večere za 5”: Kandidati birali riječku pobjednic → Не за тематикою (Телевізійне кулінарне шоу в Рієці) | Сутності: Večera za 5, Rijeka, Viškovo, Hreljin",
-        "• Riječka kiša povezala osnovce i srednjoškolce u Učeničkom domu Kvarner → Побут інших міст (Шкільний проектний день у Рієці) | Сутності: Rijeka, Učenički dom Kvarner, Buzet"
-      ],
-      "rejected_by_reason": {
-        "Побут інших міст": 10,
-        "Геоблок": 1,
-        "Не за тематикою": 1
-      },
-      "updates_marked": 1,
-      "already_rejected": 9,
-      "rejected_by_code_examples": [
-        "[тег RSS lifestyle] Kolumbijski liječnik savjetuje 15 minuta laganog hodanja nakon obroka zbog šećera u krvi",
-        "[тег RSS lifestyle] Kuhanje na plin: napu uključite prije paljenja plamenika, ne tek kad se pojavi dim",
-        "[тег RSS lifestyle] Prije paljenja automobila nekoliko puta pokucajte po poklopcu motora, ispod njega može biti mačka",
-        "[тег RSS lifestyle] Medena pita s kremom od vanilije: kore se peku pet minuta, a kolač odmara preko noći",
-        "[тег RSS lifestyle] Program za osjetljivo rublje ne spašava kožnu jaknu, sako ni haljinu s cirkonima",
-        "[košarkaško] Nastavak ulaganja u uređenje javnih površina: otvoreno obnovljeno sportsko igralište na Baldekinu",
-        "[тег RSS nogomet] Slaven Bilić se oglasio nakon Kramarićevog “otkaza”: “Složili smo se da je najbolje da zaliječi ozlj",
-        "[тег RSS nogomet] Rudeš u Maksimiru upisao i treću uzastopnu pobjedu i stigao na sedmo mjesto",
-        "[sportaše] Ove nedjelje uz jezero Bajer prvo kolo Zimske lige Kvarnera “Igor Malešević”"
-      ]
-    },
-    "backlog": {
-      "total_size": 2,
-      "sources": {
-        "Zadarski list": 2
-      }
-    },
-    "published": {
-      "total": 3,
-      "ukraine_priority": 0,
-      "with_images": 3,
-      "text_only": 0,
-      "og_images_found": 1,
-      "sources": {
-        "023": 2,
-        "Zadarski list": 1
-      }
-    },
-    "models_used": {
-      "gemini-3.6-flash": 1,
-      "gemini-3.5-flash-lite": 1
-    },
-    "models_by_task": {
-      "filter": "gemini-3.6-flash",
-      "translate": "gemini-3.5-flash-lite"
-    },
-    "model_attempts": [
-      {
-        "task": "filter",
-        "model": "gemini-3-flash-preview",
-        "outcome": "unavailable"
-      },
-      {
-        "task": "filter",
-        "model": "gemini-3.6-flash",
-        "outcome": "ok"
-      },
-      {
-        "task": "translate",
-        "model": "gemini-3.8-flash",
-        "outcome": "unavailable"
-      },
-      {
-        "task": "translate",
-        "model": "gemini-3.5-flash-lite",
-        "outcome": "ok"
-      }
-    ],
-    "exhausted_models": [],
-    "demoted_models": [],
-    "translate_budget_deferred": [
-      "gemini-3.6-flash"
-    ],
-    "gemini_region_blocked": false,
-    "gemini_unavailable": false,
-    "errors_count": 0,
-    "gemini_retries": 2
-  },
-  {
     "timestamp": "2026-11-07 08:01:24",
     "execution_time": 126.8,
     "funnel": {
@@ -9704,6 +9594,116 @@
     "translate_budget_deferred": [
       "gemini-3.6-flash"
     ],
+    "gemini_region_blocked": false,
+    "gemini_unavailable": false,
+    "errors_count": 0,
+    "gemini_retries": 2
+  },
+  {
+    "timestamp": "2026-11-16 08:01:26",
+    "execution_time": 331.0,
+    "funnel": {
+      "scraped_total": 35,
+      "scraped_by_source": {
+        "023": 10,
+        "Slobodna dalmacija": 15,
+        "Zadarski list": 10
+      },
+      "already_seen": 8,
+      "rejected_by_keywords": 7,
+      "rejected_by_rule": {
+        "sportaš": 1,
+        "тег RSS sport": 1,
+        "prvenstvo": 1,
+        "URL /sport/": 2,
+        "sporta": 1,
+        "promo": 1
+      },
+      "unclassified_by_ai": 0,
+      "duplicates_removed_by_ai": 13,
+      "rejection_reasons_list": [
+        "• Na promociju Grada trošimo bogatstvo, a onda pustimo turiste da lutaju → Не за тематикою (Описова колонка про проблеми туризму в Задарі) | Сутності: Zadar, turizam, promocija grada",
+        "• Revolucija u riječkoj Luci. Brodovi gase motore, Zagrebačka obala i Br → Побут інших міст (Електрифікація порту в Рієці) | Сутності: Rijeka, Lučka uprava Rijeka, Končar, Brajdica",
+        "• Neki su se vratili iz inozemstva, drugi od hobija stvorili posao: u Pl → Побут інших міст (Бізнес-конференція у Ploče) | Сутності: Ploče, Next Gen Neretva, Udruga ISKRA, Dom kulture",
+        "• Potrošili smo dosadašnje motore gospodarstva. Vlada očekuje samo 2% ra → Вже публікувалось (Аналітичний коментар до раніше представленого бюджету) | Сутності: Vlada RH, proračun 2027, Europska komisija, Maastricht",
+        "• Bez obzira na silnu lovu koju ima, ili poso kojim se bavi, ili politik → Не за тематикою (Гумористично-описова колонка без новинної цінності) | Сутності: balkanoid, kino, fejleton",
+        "• Pločanski branitelji prikupili više od 8 tona mandarina za djecu Vukov → Побут інших міст (Благодійна акція ветеранів у Ploče) | Сутності: Ploče, Vukovar, Udruga branitelja Grada Ploča, mandarine",
+        "• Srbija se trese uoči promjene vlasti. Uhićenja se nižu, a Vučić čeka p → Геоблок (Політичні події та вибори в Сербії) | Сутності: Srbija, Ana Brnabić, Aleksandar Vučić, SNS",
+        "• Poznati riječki lokal ponovno otvara vrata u prosincu. Evo tko preuzim → Побут інших міст (Відкриття ресторану в Рієці) | Сутності: Rijeka, Primorska konoba, TZG Rijeke, Forester",
+        "• Mlade obitelji traže zemljišta, umirovljenici napuštaju gradove, a sta → Не за тематикою (Загальний огляд тенденцій ринку нерухомості) | Сутності: Dalmatinska zagora, Split, nekretnine",
+        "• Ni tragedija, ni groteska, ni mjuzikl: Što je pošlo po zlu s novim “Ri → Побут інших міст (Театральна рецензія на виставу в Загребі) | Сутності: HNK Zagreb, Richard III, Vito Taufer, Shakespeare",
+        "• 24 dana, 24 dara: aplikacija 023.hr u prosincu svaki dan otvara novi a → Реклама (Промоція мобільного додатку 023.hr) | Сутності: 023.hr, Zadar, Adventski kalendar, aplikacija",
+        "• Dom bi trebao biti sigurno mjesto. Ova potresna predstava otkriva što  → Побут інших міст (Локальна вистава у театрі Рієки) | Сутності: Rijeka, HNK Ivana pl. Zajca, Monika Herceg, Dorotea Šušak",
+        "• Jedan od najperspektivnijih mladih europskih dirigenata prvi put stiže → Побут інших міст (Концерт класичної музики у Рієці) | Сутності: Rijeka, HNK Ivana pl. Zajca, Martynas Stakionis, Toni Kranjac"
+      ],
+      "rejected_by_reason": {
+        "Не за тематикою": 3,
+        "Побут інших міст": 7,
+        "Вже публікувалось": 1,
+        "Геоблок": 1,
+        "Реклама": 1
+      },
+      "updates_marked": 0,
+      "already_rejected": 7,
+      "rejected_by_code_examples": [
+        "[sportaš] Zadrani u subotu na Narodnom trgu odaju počast Kristianu Josipu Perišu: osam minuta šutnje, svijeće ",
+        "[тег RSS sport] Zadarske hrvačice vratile se iz Sesvetskog Kraljevca sa zlatom i srebrom s Prvenstva Hrvatske",
+        "[prvenstvo] Teo Josić sa 7,5 bodova najbolji među 29 mladih šahista na kadetskom prvenstvu u Bibinju",
+        "[URL /sport/] Predstavnice Karate kluba Kakato, sestre Agata i Marta Bjelica, ostvarile zapažene rezultate u Split",
+        "[URL /sport/] Jugašice nakon drame peteraca izbacile osvajačice Kupa u njihovom domu i ušle u veliko finale!",
+        "[sporta] Vitomir Maričić: Muško zdravlje ne smije biti tabu, o raku i mentalnom zdravlju muškaraca treba govo",
+        "[promo] Što učiniti kada posumnjate da ste prevareni? Brzina reakcije može biti ključna"
+      ]
+    },
+    "backlog": {
+      "total_size": 3,
+      "sources": {
+        "Zadarski list": 1,
+        "023": 2
+      }
+    },
+    "published": {
+      "total": 3,
+      "ukraine_priority": 0,
+      "with_images": 2,
+      "text_only": 1,
+      "og_images_found": 2,
+      "sources": {
+        "023": 3
+      }
+    },
+    "models_used": {
+      "gemini-3.6-flash": 2
+    },
+    "models_by_task": {
+      "filter": "gemini-3.6-flash",
+      "translate": "gemini-3.6-flash"
+    },
+    "model_attempts": [
+      {
+        "task": "filter",
+        "model": "gemini-3-flash-preview",
+        "outcome": "unavailable"
+      },
+      {
+        "task": "filter",
+        "model": "gemini-3.6-flash",
+        "outcome": "ok"
+      },
+      {
+        "task": "translate",
+        "model": "gemini-3.8-flash",
+        "outcome": "unavailable"
+      },
+      {
+        "task": "translate",
+        "model": "gemini-3.6-flash",
+        "outcome": "ok"
+      }
+    ],
+    "exhausted_models": [],
+    "demoted_models": [],
+    "translate_budget_deferred": [],
     "gemini_region_blocked": false,
     "gemini_unavailable": false,
     "errors_count": 0,
