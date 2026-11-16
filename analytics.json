@@ -1,102 +1,5 @@
 [
   {
-    "timestamp": "2026-11-07 15:01:18",
-    "execution_time": 133.5,
-    "funnel": {
-      "scraped_total": 35,
-      "scraped_by_source": {
-        "023": 10,
-        "Slobodna dalmacija": 15,
-        "Zadarski list": 10
-      },
-      "already_seen": 22,
-      "rejected_by_keywords": 9,
-      "rejected_by_rule": {
-        "тег RSS lifestyle": 1,
-        "тег RSS sport": 2,
-        "košarkaških": 1,
-        "košarkaši": 1,
-        "тег RSS nogomet": 3,
-        "URL /sport/": 1
-      },
-      "unclassified_by_ai": 0,
-      "duplicates_removed_by_ai": 3,
-      "rejection_reasons_list": [
-        "• Zadravec nakon nezapamćenog bijega radiologa: Zajedništvo i profesiona → Вже публікувалось (Коментар Задравец щодо призначення та скандалу з радіологами) | Сутності: Dijana Zadravec, KBC Sestre milosrdnice, Zavod za radiologiju, Zagreb",
-        "• U Dubrovniku bi se mjesec studeni - ili novembar - trebao zvati ‘warmb → Побут інших міст (Тепла погода та побут у Дубровнику) | Сутності: Dubrovnik, Stradun, warmbar, studeni",
-        "• Mladi Šibenčanin otkriva zašto se odlučio za opasan policijski posao,  → Побут інших міст (Інтерв'ю з молодим поліцейським у Шибенику) | Сутності: Šibenik, Sandro Jurišić, PU šibensko-kninska, Policijska akademija"
-      ],
-      "rejected_by_reason": {
-        "Вже публікувалось": 1,
-        "Побут інших міст": 2
-      },
-      "updates_marked": 0,
-      "already_rejected": 12,
-      "rejected_by_code_examples": [
-        "[тег RSS lifestyle] Punomasni mliječni proizvodi u kanadskom istraživanju nisu pogoršali kolesterol ni tjelesnu težinu",
-        "[тег RSS sport] Zlato protiv prvoligaša Varaždina skrenulo pogled na Privlaku; Sabunjar okuplja 150 djece i ruši sve",
-        "[košarkaških] Od školskih klupa s legendom i košarkaških dana, do svjetskog zlata za NP Krka. Puno je razloga za r",
-        "[košarkaši] Nova suradnja za KK Zadar: Košarkaši dobili dodatnu podršku u brizi o zdravlju i regeneraciji",
-        "[тег RSS sport] ISTRA 1961 – RIJEKA 18 SATI Bijeli u derbiju susjeda na ljestvici traže povratak pobjedama",
-        "[тег RSS nogomet] Zoran Bogolin nadmudrio Damira Milinovića. Šuke iskoristio Đilasov dar u nastavku",
-        "[URL /sport/] Moguće je da se posljednje utrke Formule 1 ove sezone neće voziti u Dohi i Abu Dhabiju. Ovo je “plan",
-        "[тег RSS nogomet] Izbornik Vatrenih još jednom se osvrnuo na situaciju s Kramarićem: “Pokušao sam mu objasniti…”",
-        "[тег RSS nogomet] Bilić objavio popis reprezentativaca za oglede s Češkom i Engleskom. Nova lica dolaze iz Hajduka"
-      ]
-    },
-    "backlog": {
-      "total_size": 0,
-      "sources": {}
-    },
-    "published": {
-      "total": 1,
-      "ukraine_priority": 0,
-      "with_images": 1,
-      "text_only": 0,
-      "og_images_found": 0,
-      "sources": {
-        "Slobodna dalmacija": 1
-      }
-    },
-    "models_used": {
-      "gemini-3.6-flash": 1,
-      "gemini-3.5-flash-lite": 1
-    },
-    "models_by_task": {
-      "filter": "gemini-3.6-flash",
-      "translate": "gemini-3.5-flash-lite"
-    },
-    "model_attempts": [
-      {
-        "task": "filter",
-        "model": "gemini-3-flash-preview",
-        "outcome": "unavailable"
-      },
-      {
-        "task": "filter",
-        "model": "gemini-3.6-flash",
-        "outcome": "ok"
-      },
-      {
-        "task": "translate",
-        "model": "gemini-3.5-flash-lite",
-        "outcome": "ok"
-      }
-    ],
-    "exhausted_models": [],
-    "demoted_models": [
-      "translate: gemini-3.8-flash",
-      "translate: gemini-3.6-flash"
-    ],
-    "translate_budget_deferred": [
-      "gemini-3.6-flash"
-    ],
-    "gemini_region_blocked": false,
-    "gemini_unavailable": false,
-    "errors_count": 0,
-    "gemini_retries": 1
-  },
-  {
     "timestamp": "2026-11-07 16:01:20",
     "execution_time": 30.1,
     "funnel": {
@@ -9753,5 +9656,96 @@
     "gemini_unavailable": true,
     "errors_count": 0,
     "gemini_retries": 3
+  },
+  {
+    "timestamp": "2026-11-16 16:01:20",
+    "execution_time": 171.0,
+    "funnel": {
+      "scraped_total": 35,
+      "scraped_by_source": {
+        "023": 10,
+        "Slobodna dalmacija": 15,
+        "Zadarski list": 10
+      },
+      "already_seen": 19,
+      "rejected_by_keywords": 8,
+      "rejected_by_rule": {
+        "тег RSS lifestyle": 2,
+        "КАПС у заголовку": 1,
+        "sport": 1,
+        "utakmice": 1,
+        "тег RSS košarka": 3
+      },
+      "unclassified_by_ai": 0,
+      "duplicates_removed_by_ai": 0,
+      "rejection_reasons_list": [],
+      "rejected_by_reason": {},
+      "updates_marked": 0,
+      "already_rejected": 12,
+      "rejected_by_code_examples": [
+        "[тег RSS lifestyle] Narančasti plamen na plinskom štednjaku: što znači i kako ponovno dobiti stabilan plavi plamen",
+        "[тег RSS lifestyle] Višekratne vrećice za kupnju najbolje je oprati nakon svake upotrebe, a način ovisi o materijalu",
+        "[КАПС у заголовку] OSVOJI KINO ULAZNICE Darujemo 4 kino ulaznice za film “IGRE GLADI: SVITANJE NAD ŽETVOM ” u Cinestaru",
+        "[sport] Gradska vijećnica prelazi iz GKZD u Županiju. SDP: Novi institut zapošljavanja koji još nije uvršten",
+        "[utakmice] Četrnaest Torcidaša iz kortea na slobodi",
+        "[тег RSS košarka] Kraljevičani uvjerljivi protiv Kastva, nakon pet kola su jedina neporažena momčad u ligi",
+        "[тег RSS košarka] Riječanka boljom završnicom došla do četvrte ovosezonske pobjede",
+        "[тег RSS košarka] Kvarner u osmini finala Kupa ugošćuje Alkar, Škrljevo ide u goste Virtusu, a prava fešta bi se mogla"
+      ]
+    },
+    "backlog": {
+      "total_size": 17,
+      "sources": {
+        "Slobodna dalmacija": 4,
+        "023": 2,
+        "Zadarski list": 11
+      }
+    },
+    "published": {
+      "total": 0,
+      "ukraine_priority": 0,
+      "with_images": 0,
+      "text_only": 0,
+      "og_images_found": 0,
+      "sources": {}
+    },
+    "models_used": {},
+    "models_by_task": {
+      "filter": null,
+      "translate": null
+    },
+    "model_attempts": [
+      {
+        "task": "filter",
+        "model": "gemini-3.6-flash",
+        "outcome": "unavailable"
+      },
+      {
+        "task": "filter",
+        "model": "gemini-3.5-flash-lite",
+        "outcome": "unavailable"
+      },
+      {
+        "task": "filter",
+        "model": "gemini-3.1-flash-lite",
+        "outcome": "unavailable"
+      },
+      {
+        "task": "filter",
+        "model": "gemini-3-flash-preview",
+        "outcome": "unavailable"
+      }
+    ],
+    "exhausted_models": [],
+    "demoted_models": [
+      "filter: gemini-3-flash-preview",
+      "translate: gemini-3.8-flash",
+      "translate: gemini-3.5-flash-lite"
+    ],
+    "translate_budget_deferred": [],
+    "gemini_region_blocked": false,
+    "gemini_unavailable": true,
+    "errors_count": 0,
+    "gemini_retries": 4
   }
 ]
