@@ -1,115 +1,5 @@
 [
   {
-    "timestamp": "2026-11-07 08:01:24",
-    "execution_time": 126.8,
-    "funnel": {
-      "scraped_total": 35,
-      "scraped_by_source": {
-        "023": 10,
-        "Slobodna dalmacija": 15,
-        "Zadarski list": 10
-      },
-      "already_seen": 11,
-      "rejected_by_keywords": 2,
-      "rejected_by_rule": {
-        "тег RSS sport": 1,
-        "тег RSS košarka": 1
-      },
-      "unclassified_by_ai": 0,
-      "duplicates_removed_by_ai": 11,
-      "rejection_reasons_list": [
-        "• Nova slikovnica Frane Kršlovića donosi dirljivu priču o “srcu na kamen → Не за тематикою (Книга про історію лісу в Задарі) | Сутності: Frane Kršlović, Kožino, Diklo, Kožinski Bori",
-        "• FOTO Osmijesi, sunce i zanimljive modne kombinacije: Pogledajte tko je → Побут інших міст (Рієка) | Сутності: Rijeka, Korzo, Marko Gracin",
-        "• Preminuo bivši načelnik općine kod Šibenika: ‘Bio je na čelu u nimalo  → Побут інших міст (Шибеник) | Сутності: Davor Čaleta-Car, Bilice, Šibenik",
-        "• Slučaj Aleksandra Maršavelskog mijenja sve. Ostojić: ‘Nećemo valjda to → Вже публікувалось (Справа професора Маршавелського) | Сутності: Aleksandar Maršavelski, Ivica Kukavica, Domovinski pokret, Zagreb",
-        "• Pogledajte što možete pročitati u novom broju Dubrovačkog vjesnika → Побут інших міст (Дубровник) | Сутності: Dubrovački vjesnik, Moskar, Dubrovnik",
-        "• Učenici TUŠ-a Ana Klepo i Marko Lonac briljirali u koktelima i doma do → Дубль (Аналогічна новина вже є в історії) | Сутності: Ana Klepo, Marko Lonac, Omiš, Grand Gourmet",
-        "• Od Vučićevih skupova do tri prsta. Aca Lukas zaradio je titulu najveće → Геоблок (Сербія) | Сутності: Aca Lukas, Aleksandar Vučić, Beograd, SNS",
-        "• Stajaće ovacije šibenskoj predstavi o vršnjačkom nasilju i više od 200 → Вже публікувалось (Закриття фестивалю дитячих театрів) | Сутності: Zadar, Šibenik, Matija Šango Šimurina, Kazališni vikend",
-        "• Snijeg u gorju, mraz i olujna bura. Meteorolog: ‘Čeka nas promjenjivo  → Вже публікувалось (Прогноз погоди на вихідні) | Сутності: Hrvatska, HRT, Velebit",
-        "• Muzej Mimara ponovno otvara vrata. Nakon šest godina posjetitelji mogu → Побут інших міст (Загреб) | Сутності: Muzej Mimara, Zagreb, Rooseveltov trg",
-        "• Samo dvije županije imaju više učenika nego prije 13 godina. Evo gdje  → Побут інших міст (Статистика шкіл у регіонах) | Сутності: Ministarstvo znanosti, Vukovarsko-srijemska županija, Zagreb, Istarska županija"
-      ],
-      "rejected_by_reason": {
-        "Не за тематикою": 1,
-        "Побут інших міст": 5,
-        "Вже публікувалось": 3,
-        "Дубль": 1,
-        "Геоблок": 1
-      },
-      "updates_marked": 0,
-      "already_rejected": 11,
-      "rejected_by_code_examples": [
-        "[тег RSS sport] Zlato protiv prvoligaša Varaždina skrenulo pogled na Privlaku; Sabunjar okuplja 150 djece i ruši sve",
-        "[тег RSS košarka] VIDEO Luka Dončić je zabio 53 poena i pogodio ključni šut za pobjedu. LeBron pobrao zvižduke"
-      ]
-    },
-    "backlog": {
-      "total_size": 5,
-      "sources": {
-        "Zadarski list": 2,
-        "023": 3
-      }
-    },
-    "published": {
-      "total": 3,
-      "ukraine_priority": 0,
-      "with_images": 3,
-      "text_only": 0,
-      "og_images_found": 2,
-      "sources": {
-        "023": 2,
-        "Zadarski list": 1
-      }
-    },
-    "models_used": {
-      "gemini-3.5-flash-lite": 2
-    },
-    "models_by_task": {
-      "filter": "gemini-3.5-flash-lite",
-      "translate": "gemini-3.5-flash-lite"
-    },
-    "model_attempts": [
-      {
-        "task": "filter",
-        "model": "gemini-3-flash-preview",
-        "outcome": "unavailable"
-      },
-      {
-        "task": "filter",
-        "model": "gemini-3.6-flash",
-        "outcome": "unavailable"
-      },
-      {
-        "task": "filter",
-        "model": "gemini-3.5-flash-lite",
-        "outcome": "ok"
-      },
-      {
-        "task": "translate",
-        "model": "gemini-3.8-flash",
-        "outcome": "unavailable"
-      },
-      {
-        "task": "translate",
-        "model": "gemini-3.6-flash",
-        "outcome": "unavailable"
-      },
-      {
-        "task": "translate",
-        "model": "gemini-3.5-flash-lite",
-        "outcome": "ok"
-      }
-    ],
-    "exhausted_models": [],
-    "demoted_models": [],
-    "translate_budget_deferred": [],
-    "gemini_region_blocked": false,
-    "gemini_unavailable": false,
-    "errors_count": 0,
-    "gemini_retries": 4
-  },
-  {
     "timestamp": "2026-11-07 09:01:16",
     "execution_time": 160.2,
     "funnel": {
@@ -9708,5 +9598,96 @@
     "gemini_unavailable": false,
     "errors_count": 0,
     "gemini_retries": 2
+  },
+  {
+    "timestamp": "2026-11-16 09:01:18",
+    "execution_time": 188.2,
+    "funnel": {
+      "scraped_total": 35,
+      "scraped_by_source": {
+        "023": 10,
+        "Slobodna dalmacija": 15,
+        "Zadarski list": 10
+      },
+      "already_seen": 19,
+      "rejected_by_keywords": 7,
+      "rejected_by_rule": {
+        "promo": 2,
+        "sportaš": 1,
+        "sporta": 2,
+        "igrača": 1,
+        "URL /sport/": 1
+      },
+      "unclassified_by_ai": 0,
+      "duplicates_removed_by_ai": 5,
+      "rejection_reasons_list": [
+        "• Rijeka će večeras u Koloni sjećanja odati počast Vukovaru i Škabrnji.  → Побут інших міст (Захід у Рієці) | Сутності: Rijeka, Kolona sjećanja, Vukovar, Armada",
+        "• Grad Zadar kreće u uređenje dječjeg igrališta, parka i trga u samom sr → Вже публікувалось (Іграліште у Вели Іж вже в історії) | Сутності: Grad Zadar, Veli Iž, dječje igralište",
+        "• Pavil1on prvi otvara advent u Rijeci: blagdanski program počinje 20. s → Побут інших міст (Адвент у Рієці) | Сутності: Rijeka, Advent, Pavil1on",
+        "• Ravnatelj Mladen Mavar šokiran snimkama iz Jankomira: U psihijatrijski → Вже публікувалось (Коментар щодо події у Загребі) | Сутності: Mladen Mavar, Jankomir, Zagreb, Klinika Sveti Ivan",
+        "• Zadarska sopranistica Nela Šarić fantastičnom izvedbom Gilde oduševila → Побут інших міст (Опера у Спліті) | Сутності: Nela Šarić, Split, HNK Split, Rigoletto"
+      ],
+      "rejected_by_reason": {
+        "Побут інших міст": 3,
+        "Вже публікувалось": 2
+      },
+      "updates_marked": 0,
+      "already_rejected": 13,
+      "rejected_by_code_examples": [
+        "[promo] Obilježavanje Dana sjećanja u Benkovcu: Paljenje svijeća u Vukovarskoj ulici i besplatna projekcija ",
+        "[sportaš] Zadrani u subotu na Narodnom trgu odaju počast Kristianu Josipu Perišu: osam minuta šutnje, svijeće ",
+        "[sporta] Cro Cop oduševio Zadar: Prepuno kazalište na večeri ‘Licem u lice s Mirkom Filipovićem‘",
+        "[igrača] Abeceda se vraća s bodovima iz Benkovca, povijesni rezultat Paga",
+        "[URL /sport/] Predstavnice Karate kluba Kakato, sestre Agata i Marta Bjelica, ostvarile zapažene rezultate u Split",
+        "[sporta] Vitomir Maričić: Muško zdravlje ne smije biti tabu, o raku i mentalnom zdravlju muškaraca treba govo",
+        "[promo] Što učiniti kada posumnjate da ste prevareni? Brzina reakcije može biti ključna"
+      ]
+    },
+    "backlog": {
+      "total_size": 2,
+      "sources": {
+        "023": 2
+      }
+    },
+    "published": {
+      "total": 3,
+      "ukraine_priority": 1,
+      "with_images": 3,
+      "text_only": 0,
+      "og_images_found": 0,
+      "sources": {
+        "Zadarski list": 2,
+        "Slobodna dalmacija": 1
+      }
+    },
+    "models_used": {
+      "gemini-3.6-flash": 2
+    },
+    "models_by_task": {
+      "filter": "gemini-3.6-flash",
+      "translate": "gemini-3.6-flash"
+    },
+    "model_attempts": [
+      {
+        "task": "filter",
+        "model": "gemini-3.6-flash",
+        "outcome": "ok"
+      },
+      {
+        "task": "translate",
+        "model": "gemini-3.6-flash",
+        "outcome": "ok"
+      }
+    ],
+    "exhausted_models": [],
+    "demoted_models": [
+      "filter: gemini-3-flash-preview",
+      "translate: gemini-3.8-flash"
+    ],
+    "translate_budget_deferred": [],
+    "gemini_region_blocked": false,
+    "gemini_unavailable": false,
+    "errors_count": 0,
+    "gemini_retries": 0
   }
 ]
