@@ -1,91 +1,5 @@
 [
   {
-    "timestamp": "2026-11-07 10:01:16",
-    "execution_time": 134.0,
-    "funnel": {
-      "scraped_total": 35,
-      "scraped_by_source": {
-        "023": 10,
-        "Slobodna dalmacija": 15,
-        "Zadarski list": 10
-      },
-      "already_seen": 26,
-      "rejected_by_keywords": 3,
-      "rejected_by_rule": {
-        "тег RSS sport": 1,
-        "košarkaši": 1,
-        "тег RSS nogomet": 1
-      },
-      "unclassified_by_ai": 0,
-      "duplicates_removed_by_ai": 2,
-      "rejection_reasons_list": [
-        "• Uhićen reketar (46) koji je pokušao iznuditi 300.000 eura. Žrtva nije  → Побут інших міст (Справа про вимагання в Загребі) | Сутності: zagrebačka policija, 300.000 eura, Zagreb, 46-godišnjak",
-        "• Hrvatska poduzeća plaćaju struju čak 20 posto skuplje nego u EU-u: HUP → Не за тематикою (Аналітична заява HUP про ціни) | Сутності: HUP, EU, 20 posto, Fokus tjedna"
-      ],
-      "rejected_by_reason": {
-        "Побут інших міст": 1,
-        "Не за тематикою": 1
-      },
-      "updates_marked": 0,
-      "already_rejected": 19,
-      "rejected_by_code_examples": [
-        "[тег RSS sport] Zlato protiv prvoligaša Varaždina skrenulo pogled na Privlaku; Sabunjar okuplja 150 djece i ruši sve",
-        "[košarkaši] Nova suradnja za KK Zadar: Košarkaši dobili dodatnu podršku u brizi o zdravlju i regeneraciji",
-        "[тег RSS nogomet] Bivši vratar Rijeke otkrio davnu epizodu s Mandžom: ‘Opsovao mi je majku srpsku, pa prišao u prekidu"
-      ]
-    },
-    "backlog": {
-      "total_size": 2,
-      "sources": {
-        "Slobodna dalmacija": 1,
-        "Zadarski list": 1
-      }
-    },
-    "published": {
-      "total": 3,
-      "ukraine_priority": 0,
-      "with_images": 3,
-      "text_only": 0,
-      "og_images_found": 1,
-      "sources": {
-        "Slobodna dalmacija": 1,
-        "Zadarski list": 1,
-        "023": 1
-      }
-    },
-    "models_used": {
-      "gemini-3.6-flash": 1,
-      "gemini-3.5-flash-lite": 1
-    },
-    "models_by_task": {
-      "filter": "gemini-3.6-flash",
-      "translate": "gemini-3.5-flash-lite"
-    },
-    "model_attempts": [
-      {
-        "task": "filter",
-        "model": "gemini-3.6-flash",
-        "outcome": "ok"
-      },
-      {
-        "task": "translate",
-        "model": "gemini-3.5-flash-lite",
-        "outcome": "ok"
-      }
-    ],
-    "exhausted_models": [],
-    "demoted_models": [
-      "filter: gemini-3-flash-preview",
-      "translate: gemini-3.8-flash",
-      "translate: gemini-3.6-flash"
-    ],
-    "translate_budget_deferred": [],
-    "gemini_region_blocked": false,
-    "gemini_unavailable": false,
-    "errors_count": 0,
-    "gemini_retries": 0
-  },
-  {
     "timestamp": "2026-11-07 11:01:15",
     "execution_time": 103.8,
     "funnel": {
@@ -9689,5 +9603,110 @@
     "gemini_unavailable": false,
     "errors_count": 0,
     "gemini_retries": 1
+  },
+  {
+    "timestamp": "2026-11-16 11:01:27",
+    "execution_time": 322.4,
+    "funnel": {
+      "scraped_total": 35,
+      "scraped_by_source": {
+        "023": 10,
+        "Slobodna dalmacija": 15,
+        "Zadarski list": 10
+      },
+      "already_seen": 15,
+      "rejected_by_keywords": 9,
+      "rejected_by_rule": {
+        "promo": 3,
+        "sporta": 1,
+        "igrača": 1,
+        "URL /sport/": 3,
+        "тег RSS nogomet": 1
+      },
+      "unclassified_by_ai": 0,
+      "duplicates_removed_by_ai": 8,
+      "rejection_reasons_list": [
+        "• Poznate okolnosti prometne nesreće na Ratcu u kojoj su ozlijeđene dvij → Побут інших міст (ДТП у дубровницькому регіоні) | Сутності: Ratac, D-8, Dubrovnik",
+        "• Objavljene nove cijene goriva, pojeftinjuju i benzin i dizel → Вже публікувалось (Нові ціни на пальне) | Сутності: Vlada RH, benzin, dizel",
+        "• Zadarska nadbiskupija objavila predivnu vijest; U Kistanjama kršteno d → Не за тематикою (Хрещення в родині) | Сутності: Zadarska nadbiskupija, Kistanje, Roko Glasnović",
+        "• Skinut natpis Studenca sa zgrade PEMO centra u Vukovarskoj, stiže novi → Побут інших міст (Зміна магазину в Дубровнику) | Сутності: Studenac, Ribola, Dubrovnik",
+        "• Izložba o improviziranim oružjima u Domovinskom ratu: Svjedočanstvo hr → Побут інших міст (Виставка у Загребі) | Сутності: Policijska akademija, Muzej policije, Zagreb",
+        "• Od sutra jeftinije gorivo → Дубль (Дублікат новини про пальне) | Сутності: Vlada RH, gorivo, benzin",
+        "• Četvero kandidata na MasterChefu pred Goranovim izazovom u četiri faze → Не за тематикою (Телешоу MasterChef) | Сутності: MasterChef, Goran Kočiš",
+        "• Stanka Gjurić opet predsjednica žirija Egipatsko-američkog filmskog fe → Не за тематикою (Кінофестиваль у Нью-Йорку) | Сутності: Stanka Gjurić, New York, Egyptian American Film Festival"
+      ],
+      "rejected_by_reason": {
+        "Побут інших міст": 3,
+        "Вже публікувалось": 1,
+        "Не за тематикою": 3,
+        "Дубль": 1
+      },
+      "updates_marked": 0,
+      "already_rejected": 10,
+      "rejected_by_code_examples": [
+        "[promo] Obilježavanje Dana sjećanja u Benkovcu: Paljenje svijeća u Vukovarskoj ulici i besplatna projekcija ",
+        "[sporta] Cro Cop oduševio Zadar: Prepuno kazalište na večeri ‘Licem u lice s Mirkom Filipovićem‘",
+        "[igrača] Abeceda se vraća s bodovima iz Benkovca, povijesni rezultat Paga",
+        "[URL /sport/] Predstavnice Karate kluba Kakato, sestre Agata i Marta Bjelica, ostvarile zapažene rezultate u Split",
+        "[тег RSS nogomet] Ovo su mogući suparnici Hrvatske u “baražu” za ostanak u elitnom rangu Lige nacija",
+        "[URL /sport/] Opatijkama susjedski derbi na Zametu, Senkinje poražene u Velikoj Gorici",
+        "[URL /sport/] Vratarka Zameta nakon drugog uzastopnog poraza: “Ovo razdoblje moramo prebroditi”",
+        "[promo] Koja je tajna dugovječnosti? Centar Zlata predstavio novu kreativnu kampanju",
+        "[promo] INA – pokretač gospodarstva na Kvarneru i dobar susjed lokalnoj zajednici"
+      ]
+    },
+    "backlog": {
+      "total_size": 2,
+      "sources": {
+        "Slobodna dalmacija": 1,
+        "Zadarski list": 1
+      }
+    },
+    "published": {
+      "total": 3,
+      "ukraine_priority": 0,
+      "with_images": 2,
+      "text_only": 1,
+      "og_images_found": 2,
+      "sources": {
+        "023": 3
+      }
+    },
+    "models_used": {
+      "gemini-3.6-flash": 2
+    },
+    "models_by_task": {
+      "filter": "gemini-3.6-flash",
+      "translate": "gemini-3.6-flash"
+    },
+    "model_attempts": [
+      {
+        "task": "filter",
+        "model": "gemini-3-flash-preview",
+        "outcome": "unavailable"
+      },
+      {
+        "task": "filter",
+        "model": "gemini-3.6-flash",
+        "outcome": "ok"
+      },
+      {
+        "task": "translate",
+        "model": "gemini-3.8-flash",
+        "outcome": "unavailable"
+      },
+      {
+        "task": "translate",
+        "model": "gemini-3.6-flash",
+        "outcome": "ok"
+      }
+    ],
+    "exhausted_models": [],
+    "demoted_models": [],
+    "translate_budget_deferred": [],
+    "gemini_region_blocked": false,
+    "gemini_unavailable": false,
+    "errors_count": 0,
+    "gemini_retries": 2
   }
 ]
