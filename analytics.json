@@ -1,88 +1,5 @@
 [
   {
-    "timestamp": "2026-11-07 16:01:20",
-    "execution_time": 30.1,
-    "funnel": {
-      "scraped_total": 35,
-      "scraped_by_source": {
-        "023": 10,
-        "Slobodna dalmacija": 15,
-        "Zadarski list": 10
-      },
-      "already_seen": 20,
-      "rejected_by_keywords": 6,
-      "rejected_by_rule": {
-        "тег RSS lifestyle": 1,
-        "тег RSS sport": 2,
-        "košarkaških": 1,
-        "košarkaši": 1,
-        "тег RSS nogomet": 1
-      },
-      "unclassified_by_ai": 0,
-      "duplicates_removed_by_ai": 9,
-      "rejection_reasons_list": [
-        "• Rijeka kroz objektiv mladih fotografa: Pogled na prošlost i suvremeni  → Побут інших міст (Локальна фотовиставка у Рієці) | Сутності: Rijeka, Galerija Principij, Fotoklub Rijeka",
-        "• Dubrovnik ulaže u kvalitetniji život građana – od obrazovanja do skrbi → Побут інших міст (Ремонт школи в Дубровнику) | Сутності: Dubrovnik, OŠ Mokošica, Grad Dubrovnik",
-        "• Miletić i Nemarnik: Općina Viškovo novim nametima opterećuje obitelji  → Побут інших міст (Місцеві податки в громаді Вишково) | Сутності: Marin Miletić, Most, Viškovo, Sanja Udović",
-        "• Jadroliniji trajekt Valun koji inače spaja Papratno sa Sobrom tegle dv → Побут інших міст (Поломка порома на локальній лінії біля Дубровника) | Сутності: Jadrolinija, trajekt Valun, Prapratno, Sobra",
-        "• UABA Rijeka organizirala posjet selu Lipa za učenike Medicinske škole  → Побут інших міст (Шкільна екскурсія в Рієці) | Сутності: UABA Rijeka, Medicinska škola Rijeka, Lipa",
-        "• Povratak tradicije: na jedan dan oživjelo tovernaško iskustvo, donosim → Побут інших міст (Локальний винний захід у Шибенику) | Сутності: Šibenik, Arsen Dedić, toverna",
-        "• Koralji iz DV-a Pahuljica učili u stomatološkoj ordinaciji, masliniku  → Побут інших міст (Захід у дитсадку на острові Раб) | Сутності: DV Pahuljica, Supetarska Draga, Rab",
-        "• Loparani o potrebama mještana, poljoprivredi i proračunu za 2027. godi → Побут інших міст (Громадські збори в Лопарі) | Сутності: Lopar, Zdenko Jakuc, Rab",
-        "• SDP: “Plenkovićevo kadroviranje u zdravstvu ima cijenu, plaćaju je pac → Вже публікувалось (Політична реакція на ситуацію, що вже є в історії) | Сутності: SDP, Dijana Zadravec, KBC Sestre milosrdnice"
-      ],
-      "rejected_by_reason": {
-        "Побут інших міст": 8,
-        "Вже публікувалось": 1
-      },
-      "updates_marked": 0,
-      "already_rejected": 10,
-      "rejected_by_code_examples": [
-        "[тег RSS lifestyle] Punomasni mliječni proizvodi u kanadskom istraživanju nisu pogoršali kolesterol ni tjelesnu težinu",
-        "[тег RSS sport] Zlato protiv prvoligaša Varaždina skrenulo pogled na Privlaku; Sabunjar okuplja 150 djece i ruši sve",
-        "[košarkaških] Od školskih klupa s legendom i košarkaških dana, do svjetskog zlata za NP Krka. Puno je razloga za r",
-        "[košarkaši] Nova suradnja za KK Zadar: Košarkaši dobili dodatnu podršku u brizi o zdravlju i regeneraciji",
-        "[тег RSS sport] ISTRA 1961 – RIJEKA 18 SATI Kek napravio tri promjene u odnosu na posljednji susret",
-        "[тег RSS nogomet] Zoran Bogolin nadmudrio Damira Milinovića. Šuke iskoristio Đilasov dar u nastavku"
-      ]
-    },
-    "backlog": {
-      "total_size": 0,
-      "sources": {}
-    },
-    "published": {
-      "total": 0,
-      "ukraine_priority": 0,
-      "with_images": 0,
-      "text_only": 0,
-      "og_images_found": 0,
-      "sources": {}
-    },
-    "models_used": {
-      "gemini-3-flash-preview": 1
-    },
-    "models_by_task": {
-      "filter": "gemini-3-flash-preview",
-      "translate": null
-    },
-    "model_attempts": [
-      {
-        "task": "filter",
-        "model": "gemini-3-flash-preview",
-        "outcome": "ok"
-      }
-    ],
-    "exhausted_models": [],
-    "demoted_models": [
-      "translate: gemini-3.8-flash"
-    ],
-    "translate_budget_deferred": [],
-    "gemini_region_blocked": false,
-    "gemini_unavailable": false,
-    "errors_count": 0,
-    "gemini_retries": 0
-  },
-  {
     "timestamp": "2026-11-07 17:01:22",
     "execution_time": 251.3,
     "funnel": {
@@ -9747,5 +9664,122 @@
     "gemini_unavailable": true,
     "errors_count": 0,
     "gemini_retries": 4
+  },
+  {
+    "timestamp": "2026-11-16 17:01:18",
+    "execution_time": 300.9,
+    "funnel": {
+      "scraped_total": 35,
+      "scraped_by_source": {
+        "023": 10,
+        "Slobodna dalmacija": 15,
+        "Zadarski list": 10
+      },
+      "already_seen": 18,
+      "rejected_by_keywords": 7,
+      "rejected_by_rule": {
+        "тег RSS lifestyle": 3,
+        "КАПС у заголовку": 1,
+        "sport": 1,
+        "тег RSS nogomet": 1,
+        "utakmice": 1
+      },
+      "unclassified_by_ai": 0,
+      "duplicates_removed_by_ai": 13,
+      "rejection_reasons_list": [
+        "• Bugarska spasila posadu broda s pšenicom potopljenog u Crnom moru → Геоблок (Аварія судна біля узбережжя Болгарії) | Сутності: Bugarska, Crno more, m/v BETUL 8, Rumunjska",
+        "• Talijanski sud odredio nadzor poslovanja Revoluta → Геоблок (Рішення суду в Мілані) | Сутності: Revolut, Sud u Milanu, Italija, Revolut Bank UAB",
+        "• Treća sreća za HDZ-ova bivšeg vijećnika! Bilić na čelu šibenskog teatr → Побут інших міст (Призначення директора театру в Шибенику) | Сутності: Jakov Bilić, Šibenik, HNK u Šibeniku, HDZ",
+        "• Kako u aplikaciji Google Photos isključiti značajke Geminija i zaštiti → Світовий шум (Поради з налаштування додатків) | Сутності: Google Photos, Gemini, Android, Ask Photos",
+        "• Na jugu Hrvatske zabrinuti ReMaL-om: Smjet ćeš naložiti par metara drv → Побут інших міст (Облік дров'яних печей у Дубровнику) | Сутності: Dubrovnik, ReMaL, kotlovi za rakiju",
+        "• Rano otkrivanje ključno je za sprječavanje ozbiljnih komplikacija → Побут інших міст (Місцевий захід з перевірки здоров'я у Госпичі) | Сутності: Gospić, Ljekarna Ličko-senjske županije, Svjetski dan šećerne bolesti",
+        "• Ode Studenac iz Dubrovnika! Pao je natpis, odmah je osvanuo novi. A ev → Побут інших міст (Зміна власника магазинів у Дубровнику) | Сутності: Dubrovnik, Studenac, Ribola, PEMO centar",
+        "• Raye i Rosalia vode u nominacijama za Grammy → Світовий шум (Номінації на музичну премію) | Сутності: Raye, Rosalia, Grammy, Los Angeles",
+        "• Nagradu “Oboji svijet” osvojilo 183 učenička rada o prihvaćanju različ → Не за тематикою (Шкільний конкурс малюнків) | Сутності: Forum za slobodu odgoja, Oboji svijet, Tatjana Katkić Stanić",
+        "• Vujčić: Umjetna inteligencija i dug rizici za financijsku stabilnost e → Світовий шум (Заява ЄЦБ про фінансові ризики) | Сутності: Boris Vujčić, ECB, eurozona",
+        "• Robert Pattinson novi je James Bond! “Ovo mi je najveća čast u životu” → Світовий шум (Новини шоу-бізнесу) | Сутності: Robert Pattinson, James Bond, Daniel Craig, London",
+        "• Gospić se sutra klanja žrtvi Vukovara i Škabrnje → Побут інших міст (Місцеві заходи вшанування у Госпичі) | Сутності: Gospić, Vukovar, Škabrnja, Vukovarska ulica",
+        "• Ponovno otvorena obalna šetnica u blizini Hotela Ičići → Побут інших міст (Ремонт променаду в Ічичі) | Сутності: Ičići, Hotel Ičići, Opatija"
+      ],
+      "rejected_by_reason": {
+        "Геоблок": 2,
+        "Побут інших міст": 6,
+        "Світовий шум": 4,
+        "Не за тематикою": 1
+      },
+      "updates_marked": 0,
+      "already_rejected": 8,
+      "rejected_by_code_examples": [
+        "[тег RSS lifestyle] Nordijski domovi ostaju topli i na minus 30 zahvaljujući izolaciji i izboru energenta",
+        "[тег RSS lifestyle] Narančasti plamen na plinskom štednjaku: što znači i kako ponovno dobiti stabilan plavi plamen",
+        "[тег RSS lifestyle] Višekratne vrećice za kupnju najbolje je oprati nakon svake upotrebe, a način ovisi o materijalu",
+        "[КАПС у заголовку] OSVOJI KINO ULAZNICE Darujemo 4 kino ulaznice za film “IGRE GLADI: SVITANJE NAD ŽETVOM ” u Cinestaru",
+        "[sport] Gradska vijećnica prelazi iz GKZD u Županiju. SDP: Novi institut zapošljavanja koji još nije uvršten",
+        "[тег RSS nogomet] Vincent Kompany nakon tri tjedna ponovo vodio trening Bayerna",
+        "[utakmice] Četrnaest Torcidaša iz kortea na slobodi"
+      ]
+    },
+    "backlog": {
+      "total_size": 11,
+      "sources": {
+        "Zadarski list": 7,
+        "Slobodna dalmacija": 3,
+        "023": 1
+      }
+    },
+    "published": {
+      "total": 3,
+      "ukraine_priority": 0,
+      "with_images": 2,
+      "text_only": 1,
+      "og_images_found": 0,
+      "sources": {
+        "Slobodna dalmacija": 1,
+        "023": 1,
+        "Zadarski list": 1
+      }
+    },
+    "models_used": {
+      "gemini-3.6-flash": 2
+    },
+    "models_by_task": {
+      "filter": "gemini-3.6-flash",
+      "translate": "gemini-3.6-flash"
+    },
+    "model_attempts": [
+      {
+        "task": "filter",
+        "model": "gemini-3.6-flash",
+        "outcome": "ok"
+      },
+      {
+        "task": "translate",
+        "model": "gemini-3.8-flash",
+        "outcome": "unavailable"
+      },
+      {
+        "task": "translate",
+        "model": "gemini-3.5-flash-lite",
+        "outcome": "unavailable"
+      },
+      {
+        "task": "translate",
+        "model": "gemini-3.6-flash",
+        "outcome": "ok"
+      }
+    ],
+    "exhausted_models": [],
+    "demoted_models": [
+      "filter: gemini-3-flash-preview",
+      "translate: gemini-3.8-flash",
+      "translate: gemini-3.5-flash-lite"
+    ],
+    "translate_budget_deferred": [
+      "gemini-3.6-flash"
+    ],
+    "gemini_region_blocked": false,
+    "gemini_unavailable": false,
+    "errors_count": 0,
+    "gemini_retries": 2
   }
 ]
