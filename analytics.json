@@ -1,94 +1,5 @@
 [
   {
-    "timestamp": "2026-11-07 12:01:19",
-    "execution_time": 197.3,
-    "funnel": {
-      "scraped_total": 35,
-      "scraped_by_source": {
-        "023": 10,
-        "Slobodna dalmacija": 15,
-        "Zadarski list": 10
-      },
-      "already_seen": 26,
-      "rejected_by_keywords": 4,
-      "rejected_by_rule": {
-        "тег RSS sport": 1,
-        "košarkaških": 1,
-        "košarkaši": 1,
-        "тег RSS nogomet": 1
-      },
-      "unclassified_by_ai": 0,
-      "duplicates_removed_by_ai": 6,
-      "rejection_reasons_list": [
-        "• Dvojica muškaraca se potukla oko parkiranja u zagrebačkoj garaži. Jeda → Побут інших міст (Бійка через паркування в Загребі) | Сутності: Zagreb, Trešnjevka, Ulica braće Domany, policija",
-        "• Knežević: ‘Idemo istom odlučnošću na političku korupciju. I na klijent → Побут інших міст (Політичні суперечки у Дубровнику) | Сутності: Viktorija Knežević, Mato Franković, Dubrovnik, Centar",
-        "• Moći ćete se kupati na Belviju, evo koliko će koštati i trajati sanaci → Побут інших міст (Ремонтні роботи в Дубровнику) | Сутності: Dubrovnik, Uvala Miramare, Grad Dubrovnik, Octopus",
-        "• Dvojici višestrukih prometnih prekršitelja u Rijeci sud trajno oduzeo  → Побут інших міст (Вилучення авто у порушників у Рієці) | Сутності: Rijeka, Pećine, prometna policija, sud",
-        "• Bilo je svakog blaga; Oživjela tradicija trgovanja u staroj gradskoj j → Побут інших міст (Локальний ярмарок у Шибенику) | Сутності: Šibenik, Mala loža, Šibensko-kninska županija, Ajmo Lokalno",
-        "• Kokain u Saboru, sudovima i DORH-u? Kriminalist upozorava: “Takve tvrd → Не за тематикою (Коментар експерта щодо заяв про кокаїн) | Сутності: Dubravko Klarić, Mato Franković, Hrvatski sabor, DORH"
-      ],
-      "rejected_by_reason": {
-        "Побут інших міст": 5,
-        "Не за тематикою": 1
-      },
-      "updates_marked": 0,
-      "already_rejected": 11,
-      "rejected_by_code_examples": [
-        "[тег RSS sport] Zlato protiv prvoligaša Varaždina skrenulo pogled na Privlaku; Sabunjar okuplja 150 djece i ruši sve",
-        "[košarkaških] Od školskih klupa s legendom i košarkaških dana, do svjetskog zlata za NP Krka. Puno je razloga za r",
-        "[košarkaši] Nova suradnja za KK Zadar: Košarkaši dobili dodatnu podršku u brizi o zdravlju i regeneraciji",
-        "[тег RSS nogomet] Bivši vratar Rijeke otkrio davnu epizodu s Mandžom: ‘Opsovao mi je majku srpsku, pa prišao u prekidu"
-      ]
-    },
-    "backlog": {
-      "total_size": 3,
-      "sources": {
-        "Slobodna dalmacija": 2,
-        "Zadarski list": 1
-      }
-    },
-    "published": {
-      "total": 3,
-      "ukraine_priority": 0,
-      "with_images": 3,
-      "text_only": 0,
-      "og_images_found": 2,
-      "sources": {
-        "023": 2,
-        "Zadarski list": 1
-      }
-    },
-    "models_used": {
-      "gemini-3.6-flash": 1,
-      "gemini-3.8-flash": 1
-    },
-    "models_by_task": {
-      "filter": "gemini-3.6-flash",
-      "translate": "gemini-3.8-flash"
-    },
-    "model_attempts": [
-      {
-        "task": "filter",
-        "model": "gemini-3.6-flash",
-        "outcome": "ok"
-      },
-      {
-        "task": "translate",
-        "model": "gemini-3.8-flash",
-        "outcome": "ok"
-      }
-    ],
-    "exhausted_models": [],
-    "demoted_models": [
-      "filter: gemini-3-flash-preview"
-    ],
-    "translate_budget_deferred": [],
-    "gemini_region_blocked": false,
-    "gemini_unavailable": false,
-    "errors_count": 0,
-    "gemini_retries": 0
-  },
-  {
     "timestamp": "2026-11-07 13:01:19",
     "execution_time": 168.3,
     "funnel": {
@@ -9691,6 +9602,104 @@
       "sources": {
         "Slobodna dalmacija": 1,
         "Zadarski list": 2
+      }
+    },
+    "models_used": {
+      "gemini-3.6-flash": 1,
+      "gemini-3.5-flash-lite": 1
+    },
+    "models_by_task": {
+      "filter": "gemini-3.6-flash",
+      "translate": "gemini-3.5-flash-lite"
+    },
+    "model_attempts": [
+      {
+        "task": "filter",
+        "model": "gemini-3.6-flash",
+        "outcome": "ok"
+      },
+      {
+        "task": "translate",
+        "model": "gemini-3.5-flash-lite",
+        "outcome": "ok"
+      }
+    ],
+    "exhausted_models": [],
+    "demoted_models": [
+      "filter: gemini-3-flash-preview",
+      "translate: gemini-3.8-flash"
+    ],
+    "translate_budget_deferred": [
+      "gemini-3.6-flash"
+    ],
+    "gemini_region_blocked": false,
+    "gemini_unavailable": false,
+    "errors_count": 0,
+    "gemini_retries": 0
+  },
+  {
+    "timestamp": "2026-11-16 13:01:20",
+    "execution_time": 139.8,
+    "funnel": {
+      "scraped_total": 35,
+      "scraped_by_source": {
+        "023": 10,
+        "Slobodna dalmacija": 15,
+        "Zadarski list": 10
+      },
+      "already_seen": 12,
+      "rejected_by_keywords": 4,
+      "rejected_by_rule": {
+        "КАПС у заголовку": 2,
+        "sporta": 1,
+        "tenisača": 1
+      },
+      "unclassified_by_ai": 0,
+      "duplicates_removed_by_ai": 12,
+      "rejection_reasons_list": [
+        "• Humanitarna izvedba lutkarske predstave ‘Čarobni grah‘ u subotu u Kinu → Побут інших міст (дитяча вистава у Дубровнику) | Сутності: Kulturno društvo Aster, Kino Sloboda, Dubrovnik, представа Čarobni grah",
+        "• Roditelji iz Knina na mukama, brojna djeca ostala bez mjesta u vrtiću, → Побут інших міст (проблема з дитсадками у Кніні) | Сутності: Knin, vrtic.app, дитсадки Кніна",
+        "• Božinović o smrti u bolnici Sveti Ivan: Policija još čeka uzrok smrti, → Вже публікувалось (коментар міністра щодо розслідування у клініці) | Сутності: Davor Božinović, Klinika Sveti Ivan, Kristian Josip Periš, Zagreb",
+        "• Pezo u Vukovaru uručio donaciju od deset tona mandarina → Побут інших міст (акція передачі мандарин у Вуковарі) | Сутності: Blaž Pezo, Ivan Bosančić, Vukovar, Caritas",
+        "• Alen Đuras iz Plesa sa zvijezdama objavio novi singl. Videospot inspir → Не за тематикою (прем'єра пісні) | Сутності: Alen Đuras, Ples sa zvijezdama, Matija Cvek, Poljubi me",
+        "• Trokut Akademija – Poduzetnički RAST 2.0 počinje! → Побут інших міст (семінар у Шибенику) | Сутності: Trokut Akademija, Šibenik, Poduzetnički RAST 2.0",
+        "• Vozač (63) izazvao totalni kaos na cesti, teško je ozlijeđen; uletio u → Побут інших міст (ДТП біля Дубровника) | Сутності: Ratac, Dubrovnik, D-8, ДТП",
+        "• Emotivan novi singl i spot Nine Badrić “Zašto te još volim”. Snimljen  → Не за тематикою (прем'єра кліпу) | Сутності: Nina Badrić, Zašto te još volim, Medveja",
+        "• Nakon više desetljeća, ugovorena izgradnja 380 metara ceste od Rešetar → Побут інших міст (будівництво дороги у Рієці) | Сутності: Rešetari, Srdoči, Rijeka, Kastav",
+        "• Noćas gorjeli automobili u Šibeniku; planulo jedno vozilo, požar se pr → Побут інших міст (підпал авто у Шибенику) | Сутності: Šibenik, пожежа авто, поліція",
+        "• Marko Tolja predstavlja svoju novu pjesmu koju donosi u dvije inačice → Не за тематикою (реліз пісні) | Сутності: Marko Tolja, Instagram, нова пісня",
+        "• SMOi traži od Glavine da objasni zašto tvrdi da se rješenja neće ukida → Вже публікувалось (дискусія щодо закону про оренду) | Сутності: SMOi, Tonči Glavina, Zakon o ugostiteljskoj djelatnosti"
+      ],
+      "rejected_by_reason": {
+        "Побут інших міст": 7,
+        "Вже публікувалось": 2,
+        "Не за тематикою": 3
+      },
+      "updates_marked": 0,
+      "already_rejected": 7,
+      "rejected_by_code_examples": [
+        "[КАПС у заголовку] OSVOJI KINO ULAZNICE Darujemo 4 kino ulaznice za film “IGRE GLADI: SVITANJE NAD ŽETVOM ” u Cinestaru",
+        "[КАПС у заголовку] POGLED U BUDUĆNOST NAUTIČKOG LUKSUZA: CROYA objavila datume za 2027. godinu",
+        "[sporta] Cro Cop oduševio Zadar: Prepuno kazalište na večeri ‘Licem u lice s Mirkom Filipovićem‘",
+        "[tenisača] Zapaljen automobil Aleksandre Prijović i Filipa Živojinovića. Plamen zahvatio još jedno vozilo"
+      ]
+    },
+    "backlog": {
+      "total_size": 6,
+      "sources": {
+        "Zadarski list": 5,
+        "Slobodna dalmacija": 1
+      }
+    },
+    "published": {
+      "total": 3,
+      "ukraine_priority": 1,
+      "with_images": 2,
+      "text_only": 1,
+      "og_images_found": 0,
+      "sources": {
+        "Zadarski list": 2,
+        "023": 1
       }
     },
     "models_used": {
