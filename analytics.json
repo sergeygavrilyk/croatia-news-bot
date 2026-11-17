@@ -1,89 +1,5 @@
 [
   {
-    "timestamp": "2026-11-08 16:01:26",
-    "execution_time": 14.0,
-    "funnel": {
-      "scraped_total": 35,
-      "scraped_by_source": {
-        "023": 10,
-        "Slobodna dalmacija": 15,
-        "Zadarski list": 10
-      },
-      "already_seen": 21,
-      "rejected_by_keywords": 11,
-      "rejected_by_rule": {
-        "тег RSS lifestyle": 3,
-        "тег RSS sport": 3,
-        "URL /sport/": 1,
-        "igrač": 1,
-        "utakmici": 1,
-        "тег RSS nogomet": 2
-      },
-      "unclassified_by_ai": 0,
-      "duplicates_removed_by_ai": 3,
-      "rejection_reasons_list": [
-        "• 36. bijenale iz São Paula u Berlinu: Gdje se slatka voda susreće sa sl → Геоблок (Культурна подія в Берліні) | Сутності: 36. bijenale, Berlin, Kuća kultura svijeta, Hugh Stubbins",
-        "• Plenković razgovarao sa srpskim premijerom o autobusnoj nesreći kod Iv → Вже публікувалось (Реакція керівників урядів на ДТП з історії) | Сутності: Andrej Plenković, Đuro Macut, Ivanić-Grad, автобусна nesreća",
-        "• U Grižanima održano tradicionalno ocjenjivanje i smotra vina → Побут інших міст (Локальний захід оцінювання вина в Ґріжане) | Сутності: Grižane, Martinja va Grižah, Željko Blažeković, Dom kulture"
-      ],
-      "rejected_by_reason": {
-        "Геоблок": 1,
-        "Вже публікувалось": 1,
-        "Побут інших міст": 1
-      },
-      "updates_marked": 0,
-      "already_rejected": 18,
-      "rejected_by_code_examples": [
-        "[тег RSS lifestyle] Koji kućanski uređaji troše struju i kad su ugašeni ako ostanu u utičnici",
-        "[тег RSS lifestyle] Svaki stupanj manje štedi oko sedam posto energije: ovo su preporučene temperature po prostorijama",
-        "[тег RSS lifestyle] Švedske rolice s cimetom oblikuju se u čvoriće i peku 25 minuta na 200 °C",
-        "[тег RSS sport] Zadar nakon dva poraza u ABA ligi dočekuje Kvarner koji je nanizao četiri pobjede",
-        "[тег RSS sport] Jazine Arbanasi izgubile od neporažene Šibenke",
-        "[тег RSS sport] Plovanija na Kondor Openu s 24 natjecatelja, Karlu Baričeviću prvi nastup odmah u kadetskoj teškoj k",
-        "[URL /sport/] Četvrto odličje ove godine: Željko Perković treći na European Championship WSF prvenstvo u Sofiji",
-        "[igrač] Kapusta ponovno s Mazalinom: Prošlosezonski play Zadra pojačao uzdrmanu Cibonu",
-        "[utakmici] Zadar će protiv Kvarnera pokušati donekle isprati gorak okus sramotne izvedbe u Subotici",
-        "[тег RSS nogomet] Podjela bodova u dvoboju Napolija i lidera Lazija. Šutalo morao izaći zbog ozljede",
-        "[тег RSS nogomet] Mario Carević dobio otkaz na klupi Gorice. Već se spominje i mogući nasljednik"
-      ]
-    },
-    "backlog": {
-      "total_size": 0,
-      "sources": {}
-    },
-    "published": {
-      "total": 0,
-      "ukraine_priority": 0,
-      "with_images": 0,
-      "text_only": 0,
-      "og_images_found": 0,
-      "sources": {}
-    },
-    "models_used": {
-      "gemini-3.6-flash": 1
-    },
-    "models_by_task": {
-      "filter": "gemini-3.6-flash",
-      "translate": null
-    },
-    "model_attempts": [
-      {
-        "task": "filter",
-        "model": "gemini-3.6-flash",
-        "outcome": "ok"
-      }
-    ],
-    "exhausted_models": [],
-    "demoted_models": [
-      "filter: gemini-3-flash-preview"
-    ],
-    "translate_budget_deferred": [],
-    "gemini_region_blocked": false,
-    "gemini_unavailable": false,
-    "errors_count": 0,
-    "gemini_retries": 0
-  },
-  {
     "timestamp": "2026-11-08 17:01:26",
     "execution_time": 10.0,
     "funnel": {
@@ -10018,5 +9934,115 @@
     "gemini_unavailable": true,
     "errors_count": 0,
     "gemini_retries": 3
+  },
+  {
+    "timestamp": "2026-11-17 17:01:17",
+    "execution_time": 295.1,
+    "funnel": {
+      "scraped_total": 35,
+      "scraped_by_source": {
+        "023": 10,
+        "Slobodna dalmacija": 15,
+        "Zadarski list": 10
+      },
+      "already_seen": 21,
+      "rejected_by_keywords": 5,
+      "rejected_by_rule": {
+        "тег RSS lifestyle": 1,
+        "sportaše": 1,
+        "тег RSS sport": 2,
+        "nogometne": 1
+      },
+      "unclassified_by_ai": 0,
+      "duplicates_removed_by_ai": 8,
+      "rejection_reasons_list": [
+        "• Svečanim činom prisege u Rijeci 164 osobe stekle su pravo na hrvatsko  → Побут інших міст (Отримання громадянства в Рієці) | Сутності: Рієка, хрватське громадянство, PU primorsko-goranska",
+        "• Riječ Libertas posebno zvoni na istoku i jugu Lijepe naše: Vukovar je  → Не за тематикою (Історичне партнерство Вуковара та Дубровника) | Сутності: Вуковар, Дубровник, 1993, Libertas",
+        "• Tomašević očekuje nove sankcije u klinici u kojoj je ubijen Periš. Jav → Побут інших міст (Коментар щодо інциденту в лікарні Загреба) | Сутності: Томашевич, Загреб, Клініка Sveti Ivan, Kristian Josip Periš",
+        "• Bloomberg: Američke financijske institucije neće financirati Južnu int → Геоблок (Фінансування газового проекту в Боснії) | Сутності: Bloomberg, EXIM Bank, США, Боснія і Герцеговина",
+        "• Sidrene cijene od danas se zovu bazne i postaju trajne: tko prodaje hr → Вже публікувалось (Набрання чинності правилами про базові ціни) | Сутності: Міністерство господарства, базові ціни, Хорватія",
+        "• Novi veliki problemi u SAD-u, sad je pala mreža za špijune. Opet kažu  → Геоблок (Збій мережі АНБ у США) | Сутності: США, NSA, CNN",
+        "• HOK objavio upute za obrtnike o baznim cijenama i objavi cjenika → Вже публікувалось (Роз'яснення HOK щодо базових цін) | Сутності: HOK, базові ціни, обртники",
+        "• Obilježena 35. godišnjica stradanja Vukovara i Škabrnje te Dan sjećanj → Побут інших міст (Місцеві покладання квітів у Рієці) | Сутності: Рієка, Вуковар, Шкабрня, PU primorsko-goranska"
+      ],
+      "rejected_by_reason": {
+        "Побут інших міст": 3,
+        "Не за тематикою": 1,
+        "Геоблок": 2,
+        "Вже публікувалось": 2
+      },
+      "updates_marked": 0,
+      "already_rejected": 18,
+      "rejected_by_code_examples": [
+        "[тег RSS lifestyle] Omjer struka i visine: kako kod kuće provjeriti imate li previše masnoće oko trbuha",
+        "[sportaše] Glazbom i velikim srcem za zadarske sportaše; Humanitarni koncert Danka Tomanića i prijatelja odušev",
+        "[тег RSS sport] Ponos grada sporta; Gradonačelnik Erlić ugostio 180 zadarskih sportaša, 28 klubova dobilo dodatna sr",
+        "[nogometne] Vatreni u Vukovaru uoči Dana sjećanja; Izbornik Slaven Bilić i stožer odali počast poginulim branite",
+        "[тег RSS sport] Rekordan odaziv u Zemuniku Donjem: djeca učila taekwondo i hrvatski znakovni jezik na Sportskom danu"
+      ]
+    },
+    "backlog": {
+      "total_size": 5,
+      "sources": {
+        "Zadarski list": 1,
+        "Slobodna dalmacija": 1,
+        "023": 3
+      }
+    },
+    "published": {
+      "total": 3,
+      "ukraine_priority": 0,
+      "with_images": 3,
+      "text_only": 0,
+      "og_images_found": 0,
+      "sources": {
+        "023": 1,
+        "Zadarski list": 1,
+        "Slobodna dalmacija": 1
+      }
+    },
+    "models_used": {
+      "gemini-3.6-flash": 1,
+      "gemini-3.5-flash-lite": 1
+    },
+    "models_by_task": {
+      "filter": "gemini-3.6-flash",
+      "translate": "gemini-3.5-flash-lite"
+    },
+    "model_attempts": [
+      {
+        "task": "filter",
+        "model": "gemini-3-flash-preview",
+        "outcome": "unavailable"
+      },
+      {
+        "task": "filter",
+        "model": "gemini-3.6-flash",
+        "outcome": "ok"
+      },
+      {
+        "task": "translate",
+        "model": "gemini-3.8-flash",
+        "outcome": "unavailable"
+      },
+      {
+        "task": "translate",
+        "model": "gemini-3.5-flash-lite",
+        "outcome": "ok"
+      }
+    ],
+    "exhausted_models": [],
+    "demoted_models": [
+      "translate: gemini-3.8-flash",
+      "translate: gemini-3.6-flash",
+      "translate: gemini-3.5-flash-lite"
+    ],
+    "translate_budget_deferred": [
+      "gemini-3.6-flash"
+    ],
+    "gemini_region_blocked": false,
+    "gemini_unavailable": false,
+    "errors_count": 0,
+    "gemini_retries": 2
   }
 ]
