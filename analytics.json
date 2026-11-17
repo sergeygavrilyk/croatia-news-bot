@@ -1,87 +1,5 @@
 [
   {
-    "timestamp": "2026-11-08 15:01:22",
-    "execution_time": 17.1,
-    "funnel": {
-      "scraped_total": 35,
-      "scraped_by_source": {
-        "023": 10,
-        "Slobodna dalmacija": 15,
-        "Zadarski list": 10
-      },
-      "already_seen": 21,
-      "rejected_by_keywords": 9,
-      "rejected_by_rule": {
-        "тег RSS lifestyle": 2,
-        "тег RSS sport": 3,
-        "URL /sport/": 1,
-        "igrač": 1,
-        "utakmici": 1,
-        "тег RSS nogomet": 1
-      },
-      "unclassified_by_ai": 0,
-      "duplicates_removed_by_ai": 4,
-      "rejection_reasons_list": [
-        "• Učenici Pomorsko-tehničke škole Dubrovnik snimaju dokumentarac o pomor → Побут інших міст (Шкільний проєкт та зйомки фільму в Дубровнику) | Сутності: Pomorsko-tehnička škola Dubrovnik, Ivo Račić, Dubrovnik, Cavtat",
-        "• Kekin odgovorila Zadravec: Javna bolnica nije ničiji privatni feud → Вже публікувалось (Коментар щодо конфлікту в лікарні) | Сутності: Ivana Kekin, Dijana Zadravec, KBC Sestre milosrdnice, Možemo!",
-        "• Dr. Keranović: Svi kod nas primljeni pacijenti stabilno su i nisu živo → Вже публікувалось (Коментар лікаря щодо стану постраждалих у ДТП) | Сутності: Adis Keranović, KBC Zagreb, Ivanić-Grad, ДТП з автобусом",
-        "• Međunarodni znanstveni skup i izložba o Šenoinu romanu Čuvaj se senjsk → Побут інших міст (Науковий симпозіум та виставка в Загребі) | Сутності: Senjsko muzejsko društvo, August Šenoa, Senj, Zagreb"
-      ],
-      "rejected_by_reason": {
-        "Побут інших міст": 2,
-        "Вже публікувалось": 2
-      },
-      "updates_marked": 0,
-      "already_rejected": 18,
-      "rejected_by_code_examples": [
-        "[тег RSS lifestyle] Svaki stupanj manje štedi oko sedam posto energije: ovo su preporučene temperature po prostorijama",
-        "[тег RSS lifestyle] Švedske rolice s cimetom oblikuju se u čvoriće i peku 25 minuta na 200 °C",
-        "[тег RSS sport] Zadar nakon dva poraza u ABA ligi dočekuje Kvarner koji je nanizao četiri pobjede",
-        "[тег RSS sport] Jazine Arbanasi izgubile od neporažene Šibenke",
-        "[тег RSS sport] Plovanija na Kondor Openu s 24 natjecatelja, Karlu Baričeviću prvi nastup odmah u kadetskoj teškoj k",
-        "[URL /sport/] Četvrto odličje ove godine: Željko Perković treći na European Championship WSF prvenstvo u Sofiji",
-        "[igrač] Kapusta ponovno s Mazalinom: Prošlosezonski play Zadra pojačao uzdrmanu Cibonu",
-        "[utakmici] Zadar će protiv Kvarnera pokušati donekle isprati gorak okus sramotne izvedbe u Subotici",
-        "[тег RSS nogomet] VIDEO Boca Juniors zahvaljujući pogotku u šestoj minuti nadoknade osvojila svoj 36. naslov prvaka"
-      ]
-    },
-    "backlog": {
-      "total_size": 0,
-      "sources": {}
-    },
-    "published": {
-      "total": 0,
-      "ukraine_priority": 0,
-      "with_images": 0,
-      "text_only": 0,
-      "og_images_found": 0,
-      "sources": {}
-    },
-    "models_used": {
-      "gemini-3.6-flash": 1
-    },
-    "models_by_task": {
-      "filter": "gemini-3.6-flash",
-      "translate": null
-    },
-    "model_attempts": [
-      {
-        "task": "filter",
-        "model": "gemini-3.6-flash",
-        "outcome": "ok"
-      }
-    ],
-    "exhausted_models": [],
-    "demoted_models": [
-      "filter: gemini-3-flash-preview"
-    ],
-    "translate_budget_deferred": [],
-    "gemini_region_blocked": false,
-    "gemini_unavailable": false,
-    "errors_count": 0,
-    "gemini_retries": 0
-  },
-  {
     "timestamp": "2026-11-08 16:01:26",
     "execution_time": 14.0,
     "funnel": {
@@ -9991,5 +9909,114 @@
     "gemini_unavailable": true,
     "errors_count": 0,
     "gemini_retries": 4
+  },
+  {
+    "timestamp": "2026-11-17 16:01:28",
+    "execution_time": 125.8,
+    "funnel": {
+      "scraped_total": 35,
+      "scraped_by_source": {
+        "023": 10,
+        "Slobodna dalmacija": 15,
+        "Zadarski list": 10
+      },
+      "already_seen": 20,
+      "rejected_by_keywords": 5,
+      "rejected_by_rule": {
+        "sportaše": 1,
+        "тег RSS sport": 2,
+        "nogometne": 1,
+        "тег RSS nogomet": 1
+      },
+      "unclassified_by_ai": 0,
+      "duplicates_removed_by_ai": 10,
+      "rejection_reasons_list": [
+        "• LPG tanker potonuo kod bugarske obale → Геоблок (Подія у Болгарії) | Сутності: LPG tanker, Bugarska, Crno more, Gas Husky",
+        "• Prijatelji životinja: Jadransko more plaća cijenu još dviju godina koć → Не за тематикою (Захист морського дна) | Сутності: Jadransko more, Prijatelji životinja, Ministarstvo poljoprivrede, koćarenje",
+        "• Luka Ploče dala pozajmicu društvu Energia Naturalis d.o.o. → Не за тематикою (Фінансова операція компанії) | Сутності: Luka Ploče, Energia Naturalis, Zagrebačka burza",
+        "• Rinčić na otvorenju Sinergane: U tijeku je javni poziv za ulazak prvih → Побут інших міст (Рієка) | Сутності: Sinergana, Rijeka, inkubator, IT industrija",
+        "• Od ponedjeljka privremena regulacija prometa zbog radova na sustavu ob → Побут інших міст (Дубровник) | Сутності: Montovjerna, Batala, Ulica bana Josipa Jelačića, oborinska odvodnja",
+        "• Božinović: Policija će istražiti sve okolnosti curenja snimke iz Janko → Вже публікувалось (Коментар щодо інциденту в лікарні) | Сутності: Davor Božinović, Jankomir, Klinika za psihijatriju, MUP",
+        "• Na otoku Krku alkoholizirani vozač izazvao prometnu nesreću upravljaju → Побут інших міст (Острів Крк) | Сутності: Krk, Županje, alkoholizirani vozač, prometna nesreća",
+        "• Noć kazališta: Obilazak Galerije Zajc uz stručno vodstvo i nastup izne → Побут інших міст (Локальна подія в Рієці) | Сутності: HNK Ivana pl. Zajca, Rijeka, Noć kazališta, Galerija Zajc",
+        "• Kako je ničiji favorit, mimo svih najava, izabran za najpoznatijeg fil → Світовий шум (Вибір актора на роль агента 007) | Сутності: Robert Pattinson, James Bond, 007",
+        "• Privremena obustava isporuke plina u dijelu općine Čavle → Побут інших міст (Громада Чавле) | Сутності: Čavle, Energo, isporuka plina, vodno-komunalna infrastruktura"
+      ],
+      "rejected_by_reason": {
+        "Геоблок": 1,
+        "Не за тематикою": 2,
+        "Побут інших міст": 5,
+        "Вже публікувалось": 1,
+        "Світовий шум": 1
+      },
+      "updates_marked": 0,
+      "already_rejected": 16,
+      "rejected_by_code_examples": [
+        "[sportaše] Glazbom i velikim srcem za zadarske sportaše; Humanitarni koncert Danka Tomanića i prijatelja odušev",
+        "[тег RSS sport] Ponos grada sporta; Gradonačelnik Erlić ugostio 180 zadarskih sportaša, 28 klubova dobilo dodatna sr",
+        "[nogometne] Vatreni u Vukovaru uoči Dana sjećanja; Izbornik Slaven Bilić i stožer odali počast poginulim branite",
+        "[тег RSS sport] Rekordan odaziv u Zemuniku Donjem: djeca učila taekwondo i hrvatski znakovni jezik na Sportskom danu",
+        "[тег RSS nogomet] Šokatno priznanje engleske nogometne legende: “Došao bih kući, zaključao se na dva dana i samo pio…”"
+      ]
+    },
+    "backlog": {
+      "total_size": 8,
+      "sources": {
+        "Slobodna dalmacija": 2,
+        "023": 6
+      }
+    },
+    "published": {
+      "total": 0,
+      "ukraine_priority": 0,
+      "with_images": 0,
+      "text_only": 0,
+      "og_images_found": 0,
+      "sources": {}
+    },
+    "models_used": {
+      "gemini-3.5-flash-lite": 1
+    },
+    "models_by_task": {
+      "filter": "gemini-3.5-flash-lite",
+      "translate": null
+    },
+    "model_attempts": [
+      {
+        "task": "filter",
+        "model": "gemini-3.5-flash-lite",
+        "outcome": "ok"
+      },
+      {
+        "task": "translate",
+        "model": "gemini-3.8-flash",
+        "outcome": "unavailable"
+      },
+      {
+        "task": "translate",
+        "model": "gemini-3.5-flash-lite",
+        "outcome": "unavailable"
+      },
+      {
+        "task": "translate",
+        "model": "gemini-3.6-flash",
+        "outcome": "unavailable"
+      }
+    ],
+    "exhausted_models": [],
+    "demoted_models": [
+      "filter: gemini-3-flash-preview",
+      "filter: gemini-3.6-flash",
+      "translate: gemini-3.8-flash",
+      "translate: gemini-3.6-flash",
+      "translate: gemini-3.5-flash-lite"
+    ],
+    "translate_budget_deferred": [
+      "gemini-3.6-flash"
+    ],
+    "gemini_region_blocked": false,
+    "gemini_unavailable": true,
+    "errors_count": 0,
+    "gemini_retries": 3
   }
 ]
