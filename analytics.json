@@ -1,87 +1,5 @@
 [
   {
-    "timestamp": "2026-11-08 17:01:26",
-    "execution_time": 10.0,
-    "funnel": {
-      "scraped_total": 35,
-      "scraped_by_source": {
-        "023": 10,
-        "Slobodna dalmacija": 15,
-        "Zadarski list": 10
-      },
-      "already_seen": 20,
-      "rejected_by_keywords": 13,
-      "rejected_by_rule": {
-        "тег RSS lifestyle": 3,
-        "тег RSS sport": 3,
-        "URL /sport/": 1,
-        "igrač": 1,
-        "utakmici": 1,
-        "тег RSS nogomet": 4
-      },
-      "unclassified_by_ai": 0,
-      "duplicates_removed_by_ai": 2,
-      "rejection_reasons_list": [
-        "• Njemački mediji pišu o ustaškim simbolima na Thompsonovom koncertu u S → Геоблок (Концерт хорватського співака у Німеччині) | Сутності: Thompson, Stuttgart, ustaški simboli",
-        "• Nisam Grinch, ali mrzim Božić u jeseni: Kako smo krenuli, do 2030. bor → Побут інших міст (Суб'єктивна думка про різдвяний декор у Спліті) | Сутності: Split, Božić, salon namještaja"
-      ],
-      "rejected_by_reason": {
-        "Геоблок": 1,
-        "Побут інших міст": 1
-      },
-      "updates_marked": 0,
-      "already_rejected": 17,
-      "rejected_by_code_examples": [
-        "[тег RSS lifestyle] Koji kućanski uređaji troše struju i kad su ugašeni ako ostanu u utičnici",
-        "[тег RSS lifestyle] Svaki stupanj manje štedi oko sedam posto energije: ovo su preporučene temperature po prostorijama",
-        "[тег RSS lifestyle] Švedske rolice s cimetom oblikuju se u čvoriće i peku 25 minuta na 200 °C",
-        "[тег RSS sport] Zadar nakon dva poraza u ABA ligi dočekuje Kvarner koji je nanizao četiri pobjede",
-        "[тег RSS sport] Jazine Arbanasi izgubile od neporažene Šibenke",
-        "[тег RSS sport] Plovanija na Kondor Openu s 24 natjecatelja, Karlu Baričeviću prvi nastup odmah u kadetskoj teškoj k",
-        "[URL /sport/] Četvrto odličje ove godine: Željko Perković treći na European Championship WSF prvenstvo u Sofiji",
-        "[igrač] Kapusta ponovno s Mazalinom: Prošlosezonski play Zadra pojačao uzdrmanu Cibonu",
-        "[utakmici] Zadar će protiv Kvarnera pokušati donekle isprati gorak okus sramotne izvedbe u Subotici",
-        "[тег RSS nogomet] Pobjede Milana i Atalante, Modrić i Pašalić nastupili",
-        "[тег RSS nogomet] Carlos Martin u 89. minuti zabio za pobjedu Hajduka kod Osijeka",
-        "[тег RSS nogomet] Podjela bodova u dvoboju Napolija i lidera Lazija. Šutalo morao izaći zbog ozljede",
-        "[тег RSS nogomet] Mario Carević dobio otkaz na klupi Gorice. Već se spominje i mogući nasljednik"
-      ]
-    },
-    "backlog": {
-      "total_size": 0,
-      "sources": {}
-    },
-    "published": {
-      "total": 0,
-      "ukraine_priority": 0,
-      "with_images": 0,
-      "text_only": 0,
-      "og_images_found": 0,
-      "sources": {}
-    },
-    "models_used": {
-      "gemini-3-flash-preview": 1
-    },
-    "models_by_task": {
-      "filter": "gemini-3-flash-preview",
-      "translate": null
-    },
-    "model_attempts": [
-      {
-        "task": "filter",
-        "model": "gemini-3-flash-preview",
-        "outcome": "ok"
-      }
-    ],
-    "exhausted_models": [],
-    "demoted_models": [],
-    "translate_budget_deferred": [],
-    "gemini_region_blocked": false,
-    "gemini_unavailable": false,
-    "errors_count": 0,
-    "gemini_retries": 0
-  },
-  {
     "timestamp": "2026-11-08 20:01:17",
     "execution_time": 121.0,
     "funnel": {
@@ -10044,5 +9962,130 @@
     "gemini_unavailable": false,
     "errors_count": 0,
     "gemini_retries": 2
+  },
+  {
+    "timestamp": "2026-11-17 20:01:20",
+    "execution_time": 182.3,
+    "funnel": {
+      "scraped_total": 35,
+      "scraped_by_source": {
+        "023": 10,
+        "Slobodna dalmacija": 15,
+        "Zadarski list": 10
+      },
+      "already_seen": 12,
+      "rejected_by_keywords": 10,
+      "rejected_by_rule": {
+        "тег RSS lifestyle": 5,
+        "sportaše": 1,
+        "sporta": 1,
+        "URL /sport/": 1,
+        "тег RSS košarka": 1,
+        "тег RSS nogomet": 1
+      },
+      "unclassified_by_ai": 0,
+      "duplicates_removed_by_ai": 13,
+      "rejection_reasons_list": [
+        "• Moldavija zatvorila svoj zračni prostor zbog upada drona → Геоблок (Подія в Молдові) | Сутності: Молдова, Кишинів, Shahed, дрон",
+        "• Marko Novaselić izabran za predsjednika Udruge Dalmatinaca Sveti Jeron → Побут інших міст (Локальна подія в Рієці) | Сутності: Марко Новаселіч, Рієка, Удруга Далматинаца",
+        "• Zadarska vina, paški sir i gin u Opatiji: dvadesetak proizvođača preds → Вже публікувалось (Подія вже була в історії) | Сутності: Задар, Опатія, вино, сир",
+        "• Još nisu stigli, a kad će ne znamo?! Odgođena revolucija na šibenskim  → Побут інших міст (Локальні проблеми Шибеника) | Сутності: Шибеник, автобуси, громадський транспорт",
+        "• Centar za autizam Rijeka obilježio 30 godina djelovanja, planiraju nov → Побут інших міст (Локальна подія в Рієці) | Сутності: Рієка, Центр аутизму, Іва Рінчич",
+        "• Pločanski branitelji podijeili osam tona mandarina djeci u Vukovaru i  → Вже публікувалось (Подія вшанування пам'яті) | Сутності: Плоче, Вуковар, мандарини, ветерани",
+        "• Trump kaže da “vrlo ozbiljno” shvaća potencijalnu iransku prijetnju Wa → Геоблок (Події в США) | Сутності: Дональд Трамп, Іран, Вашингтон",
+        "• OŠ Ivana Gundulića čuva uspomenu na Vukovar i Škabrnju: Siniša Glavaše → Вже публікувалось (Вшанування пам'яті) | Сутності: Дубровник, Вуковар, Шкабрня",
+        "• Linardići dobili novo dječje igralište → Побут інших міст (Локальна подія на острові Крк) | Сутності: Лінардічі, дитячий майданчик, Врбнік",
+        "• Čekaonice u Dalmaciji pune ovakvih slučajeva. Gripa ili viroza prođu,  → Світовий шум (Поради щодо здоров'я) | Сутності: Далмація, грип, віруси",
+        "• Mreža podrške pomogla 6.000 žrtava i svjedoka kaznenih djela, djeluju  → Побут інших міст (Локальна подія в Рієці) | Сутності: Рієка, Мережа підтримки, жертви злочинів",
+        "• U Vukovarskoj ulici i ispred crkve sv. Vlaha zapaljene svijeće u znak  → Вже публікувалось (Вшанування пам'яті) | Сутності: Вуковар, Шкабрня, свічки",
+        "• Jasminki Ledić nagrada za životno djelo Zaklade Sveučilišta u Rijeci → Побут інших міст (Локальна подія в Рієці) | Сутності: Рієка, Ясмінка Ледіч, Університет"
+      ],
+      "rejected_by_reason": {
+        "Геоблок": 2,
+        "Побут інших міст": 6,
+        "Вже публікувалось": 4,
+        "Світовий шум": 1
+      },
+      "updates_marked": 1,
+      "already_rejected": 11,
+      "rejected_by_code_examples": [
+        "[тег RSS lifestyle] Nutricionist s Harvarda Walter Willett za ručak jede kruh, maslac od kikirikija i mrkvu",
+        "[тег RSS lifestyle] Rajčice, citrusi i slana jela ne bi se trebali zamatati u aluminijsku foliju, savjetuje dijetetičark",
+        "[тег RSS lifestyle] Jabuke u hladnjaku ostaju svježe šest do osam tjedana, a na kuhinjskom pultu tek do dva",
+        "[тег RSS lifestyle] Kako zgusnuti prerijetku juhu bez brašna: kuhari preporučuju krumpir i krumpirov škrob",
+        "[тег RSS lifestyle] Omjer struka i visine: kako kod kuće provjeriti imate li previše masnoće oko trbuha",
+        "[sportaše] Glazbom i velikim srcem za zadarske sportaše; Humanitarni koncert Danka Tomanića i prijatelja odušev",
+        "[sporta] Dovršetak glavnih građevinskih radova na vanjskom olimpijskom bazenu trebao bi biti u prvim mjesecim",
+        "[URL /sport/] Nexe nakon rušenja Zagreba ostvario veliku europsku pobjedu. Riječki rukometaši zabio čak 12 golova",
+        "[тег RSS košarka] Hrvatske košarkašice poražene od Španjolske u Poreču. To je drugi poraz Bralićeva sastava",
+        "[тег RSS nogomet] Hrvatska U-21 golovima Segečića i Topića svladala Njemačku na kišnoj Rujevici"
+      ]
+    },
+    "backlog": {
+      "total_size": 2,
+      "sources": {
+        "Zadarski list": 1,
+        "Slobodna dalmacija": 1
+      }
+    },
+    "published": {
+      "total": 3,
+      "ukraine_priority": 0,
+      "with_images": 2,
+      "text_only": 1,
+      "og_images_found": 0,
+      "sources": {
+        "023": 3
+      }
+    },
+    "models_used": {
+      "gemini-3.1-flash-lite": 1,
+      "gemini-3.5-flash-lite": 1
+    },
+    "models_by_task": {
+      "filter": "gemini-3.1-flash-lite",
+      "translate": "gemini-3.5-flash-lite"
+    },
+    "model_attempts": [
+      {
+        "task": "filter",
+        "model": "gemini-3-flash-preview",
+        "outcome": "unavailable"
+      },
+      {
+        "task": "filter",
+        "model": "gemini-3.6-flash",
+        "outcome": "unavailable"
+      },
+      {
+        "task": "filter",
+        "model": "gemini-3.5-flash-lite",
+        "outcome": "unavailable"
+      },
+      {
+        "task": "filter",
+        "model": "gemini-3.1-flash-lite",
+        "outcome": "ok"
+      },
+      {
+        "task": "translate",
+        "model": "gemini-3.8-flash",
+        "outcome": "unavailable"
+      },
+      {
+        "task": "translate",
+        "model": "gemini-3.5-flash-lite",
+        "outcome": "ok"
+      }
+    ],
+    "exhausted_models": [],
+    "demoted_models": [],
+    "translate_budget_deferred": [
+      "gemini-3.6-flash"
+    ],
+    "gemini_region_blocked": false,
+    "gemini_unavailable": false,
+    "errors_count": 0,
+    "gemini_retries": 4
   }
 ]
