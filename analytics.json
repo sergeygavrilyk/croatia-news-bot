@@ -1,82 +1,5 @@
 [
   {
-    "timestamp": "2026-11-08 13:01:22",
-    "execution_time": 16.4,
-    "funnel": {
-      "scraped_total": 35,
-      "scraped_by_source": {
-        "023": 10,
-        "Slobodna dalmacija": 15,
-        "Zadarski list": 10
-      },
-      "already_seen": 23,
-      "rejected_by_keywords": 4,
-      "rejected_by_rule": {
-        "тег RSS sport": 3,
-        "utakmici": 1
-      },
-      "unclassified_by_ai": 0,
-      "duplicates_removed_by_ai": 6,
-      "rejection_reasons_list": [
-        "• Ivana Jeličić, časnica na brodovima Jadrolinije: “Žena barba? Ako može → Не за тематикою (Інтерв'ю та нагорода морячки) | Сутності: Ivana Jeličić, Jadrolinija, Marko Polo, INNO2MARE",
-        "• U centru grada policija uhvatila vozača s više od dva promila alkohola → Побут інших міст (П'яний водій у Шибенику) | Сутності: Šibenik, Ulica kralja Zvonimira, Općinski sud u Šibeniku",
-        "• Opatijski kukali otvorili zimsku sezonu kupanja → Побут інших міст (Зимове купання в Опатії) | Сутності: Opatija, Opatijski kukali, kupalište Slatina",
-        "• Pijan oštetio imovinu državne firme pa pobjegao s mjesta nesreće: poli → Побут інших міст (ДТП та пошкодження майна у Водицах) | Сутності: Vodice, HEP, zadarske registarske oznake",
-        "• U tijeku manjinski izbori u Srbiji, Hrvati biraju novi saziv HNV-a → Геоблок (Вибори хорватської меншини в Сербії) | Сутності: Subotica, Srbija, Hrvatsko nacionalno vijeće, Jasna Vojnić",
-        "• Plenković izrazio sućut obiteljima poginulih u nesreći autobusa → Вже публікувалось (Коментар Прем'єра до ДТП з автобусом) | Сутності: Andrej Plenković, Ivanić-Grad, autocesta A3"
-      ],
-      "rejected_by_reason": {
-        "Не за тематикою": 1,
-        "Побут інших міст": 3,
-        "Геоблок": 1,
-        "Вже публікувалось": 1
-      },
-      "updates_marked": 0,
-      "already_rejected": 18,
-      "rejected_by_code_examples": [
-        "[тег RSS sport] Zadar nakon dva poraza u ABA ligi dočekuje Kvarner koji je nanizao četiri pobjede",
-        "[тег RSS sport] Jazine Arbanasi izgubile od neporažene Šibenke",
-        "[тег RSS sport] Plovanija na Kondor Openu s 24 natjecatelja, Karlu Baričeviću prvi nastup odmah u kadetskoj teškoj k",
-        "[utakmici] Zadar će protiv Kvarnera pokušati donekle isprati gorak okus sramotne izvedbe u Subotici"
-      ]
-    },
-    "backlog": {
-      "total_size": 0,
-      "sources": {}
-    },
-    "published": {
-      "total": 0,
-      "ukraine_priority": 0,
-      "with_images": 0,
-      "text_only": 0,
-      "og_images_found": 0,
-      "sources": {}
-    },
-    "models_used": {
-      "gemini-3.6-flash": 1
-    },
-    "models_by_task": {
-      "filter": "gemini-3.6-flash",
-      "translate": null
-    },
-    "model_attempts": [
-      {
-        "task": "filter",
-        "model": "gemini-3.6-flash",
-        "outcome": "ok"
-      }
-    ],
-    "exhausted_models": [],
-    "demoted_models": [
-      "filter: gemini-3-flash-preview"
-    ],
-    "translate_budget_deferred": [],
-    "gemini_region_blocked": false,
-    "gemini_unavailable": false,
-    "errors_count": 0,
-    "gemini_retries": 0
-  },
-  {
     "timestamp": "2026-11-08 14:01:16",
     "execution_time": 103.3,
     "funnel": {
@@ -9925,5 +9848,120 @@
     "gemini_unavailable": false,
     "errors_count": 0,
     "gemini_retries": 3
+  },
+  {
+    "timestamp": "2026-11-17 14:01:22",
+    "execution_time": 268.3,
+    "funnel": {
+      "scraped_total": 35,
+      "scraped_by_source": {
+        "023": 10,
+        "Slobodna dalmacija": 15,
+        "Zadarski list": 10
+      },
+      "already_seen": 18,
+      "rejected_by_keywords": 6,
+      "rejected_by_rule": {
+        "тег RSS sport": 2,
+        "nogometne": 1,
+        "promo": 1,
+        "тег RSS nogomet": 2
+      },
+      "unclassified_by_ai": 0,
+      "duplicates_removed_by_ai": 10,
+      "rejection_reasons_list": [
+        "• Rijeku očekuju nepovoljni vremenski uvjeti: Na snazi narančasti meteoa → Побут інших міст (Погода у Рієці) | Сутності: Rijeka, DHMZ, narandžasti meteoalarm",
+        "• Limitirana serija Mlade Graševine Vinarije Kutjevo berbe 2026. je u pr → Реклама (Продіж нового вина) | Сутності: Vinarija Kutjevo, Mlada Graševina, 2026",
+        "• Gradski toranj u Rijeci sutra po prvi put svijetli u novom ruhu i to u → Побут інших міст (Ілюмінація у Рієці) | Сутності: Rijeka, Gradski toranj, Vukovar",
+        "• Nastavlja se blagdansko ukrašavanje Grada: Jelka zablistala ispred Sve → Побут інших міст (Прикрашання міста) | Сутності: Dubrovnik, Stradun, Advent",
+        "• VIO Žrnovnica Crikvenica Vinodol: Zamućena voda za ljudsku potrošnju → Побут інших міст (Замучення води в Цриквениці) | Сутності: Crikvenica, Novi Vinodolski, VIO Žrnovnica",
+        "• Apel Općine Ston: ‘Građani nam strahuju, ovo je pitanje javne sigurnos → Побут інших міст (Небезпечні об'єкти в Стоні) | Сутності: Ston, Općina Ston, stara jezgra",
+        "• Marinko Koljanin zadovoljan što će riječko Gradsko vijeće raspravljati → Побут інших міст (Дискусія у міськраді Рієки) | Сутності: Rijeka, Marinko Koljanin, Gradsko vijeće",
+        "• Šibenski vaterpolisti slave povratak svog ključnog čovjeka, uskoro ih  → Спорт (Ватерполісти Шибеника) | Сутності: Šibenik, Solaris, Marin Šparada",
+        "• Nakon ‘Kafetarije‘ i ‘Ribarskih svađa‘, dubrovačku publiku očekuje još → Побут інших міст (Театральна прем'єра в Дубровнику) | Сутності: Dubrovnik, Kazalište Marina Držića, Carlo Goldoni",
+        "• ‘Hitno je potrebno postupanje nadležnih institucija zbog derutnih, zap → Дубль (Дублює новину 7) | Сутності: Ston, Općina Ston"
+      ],
+      "rejected_by_reason": {
+        "Побут інших міст": 7,
+        "Реклама": 1,
+        "Спорт": 1,
+        "Дубль": 1
+      },
+      "updates_marked": 0,
+      "already_rejected": 14,
+      "rejected_by_code_examples": [
+        "[тег RSS sport] Ponos grada sporta; Gradonačelnik Erlić ugostio 180 zadarskih sportaša, 28 klubova dobilo dodatna sr",
+        "[nogometne] Vatreni u Vukovaru uoči Dana sjećanja; Izbornik Slaven Bilić i stožer odali počast poginulim branite",
+        "[тег RSS sport] Rekordan odaziv u Zemuniku Donjem: djeca učila taekwondo i hrvatski znakovni jezik na Sportskom danu",
+        "[promo] Movember u Merkuru – panel o humoru, mentalnom zdravlju i preventivnim pregledima",
+        "[тег RSS nogomet] Andrej Plenković:  “Moj stav o novom stadionu Maksimir identičan je od prvog trenutka”",
+        "[тег RSS nogomet] Davor Šuker u velikom intervjuu za kultni španjolski dnevnik: “Luka Modrić je jedan od najboljih na "
+      ]
+    },
+    "backlog": {
+      "total_size": 8,
+      "sources": {
+        "023": 7,
+        "Slobodna dalmacija": 1
+      }
+    },
+    "published": {
+      "total": 0,
+      "ukraine_priority": 0,
+      "with_images": 0,
+      "text_only": 0,
+      "og_images_found": 1,
+      "sources": {}
+    },
+    "models_used": {
+      "gemini-3.5-flash-lite": 1
+    },
+    "models_by_task": {
+      "filter": "gemini-3.5-flash-lite",
+      "translate": null
+    },
+    "model_attempts": [
+      {
+        "task": "filter",
+        "model": "gemini-3-flash-preview",
+        "outcome": "unavailable"
+      },
+      {
+        "task": "filter",
+        "model": "gemini-3.6-flash",
+        "outcome": "unavailable"
+      },
+      {
+        "task": "filter",
+        "model": "gemini-3.5-flash-lite",
+        "outcome": "ok"
+      },
+      {
+        "task": "translate",
+        "model": "gemini-3.5-flash-lite",
+        "outcome": "unavailable"
+      },
+      {
+        "task": "translate",
+        "model": "gemini-3.8-flash",
+        "outcome": "unavailable"
+      },
+      {
+        "task": "translate",
+        "model": "gemini-3.6-flash",
+        "outcome": "unavailable"
+      }
+    ],
+    "exhausted_models": [],
+    "demoted_models": [
+      "translate: gemini-3.8-flash"
+    ],
+    "translate_budget_deferred": [
+      "gemini-3.6-flash"
+    ],
+    "gemini_region_blocked": false,
+    "gemini_unavailable": true,
+    "errors_count": 0,
+    "gemini_retries": 5
   }
 ]
