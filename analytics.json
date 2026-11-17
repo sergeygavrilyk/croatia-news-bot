@@ -1,97 +1,5 @@
 [
   {
-    "timestamp": "2026-11-08 10:01:18",
-    "execution_time": 37.1,
-    "funnel": {
-      "scraped_total": 35,
-      "scraped_by_source": {
-        "023": 10,
-        "Slobodna dalmacija": 15,
-        "Zadarski list": 10
-      },
-      "already_seen": 22,
-      "rejected_by_keywords": 4,
-      "rejected_by_rule": {
-        "тег RSS sport": 3,
-        "тег RSS nogomet": 1
-      },
-      "unclassified_by_ai": 0,
-      "duplicates_removed_by_ai": 6,
-      "rejection_reasons_list": [
-        "• U gluho doba noći pijani Bosanac napravio dar-mar na cesti: kada se ot → Побут інших міст (ДТП у Водицях) | Сутності: Водиці, Шибеник, Біоград",
-        "• Kočijaši teško ozlijeđeni u pucnjavi u Krakovu → Геоблок (Стрілянина в Кракові) | Сутності: Краків, Польща",
-        "• Devet timova hitne medicinske službe na mjestu nesreće, helikopter sle → Вже публікувалось (ДТП з автобусом біля Загреба) | Сутності: Загреб, Автомагістраль A3, Іванич-Граду",
-        "• Po uzoru na Portugalce županija pokreće zanimljiv projekt: ‘I naši sta → Побут інших міст (Транспортний проєкт у Шибенику) | Сутності: Шибеник, Кнін",
-        "• Solarima na krovovima možete uštedjeti tisuće eura, a ima i poticaja.  → Світовий шум (Поради щодо сонячних панелей) | Сутності: Європа, Хорватія, Далмація",
-        "• Teška nesreća kod Zagreba: prevrnuo se autobus iz Srbije, dvoje poginu → Дубль (ДТП з автобусом біля Загреба) | Сутності: Загреб, Іванич-Граду, Сербія"
-      ],
-      "rejected_by_reason": {
-        "Побут інших міст": 2,
-        "Геоблок": 1,
-        "Вже публікувалось": 1,
-        "Світовий шум": 1,
-        "Дубль": 1
-      },
-      "updates_marked": 0,
-      "already_rejected": 16,
-      "rejected_by_code_examples": [
-        "[тег RSS sport] Zadar nakon dva poraza u ABA ligi dočekuje Kvarner koji je nanizao četiri pobjede",
-        "[тег RSS sport] Jazine Arbanasi izgubile od neporažene Šibenke",
-        "[тег RSS sport] Plovanija na Kondor Openu s 24 natjecatelja, Karlu Baričeviću prvi nastup odmah u kadetskoj teškoj k",
-        "[тег RSS nogomet] Leo Messi  i druge godine zaredom osvojio MLS Golden Boot. Petar Musa je zabio četiri gola manje"
-      ]
-    },
-    "backlog": {
-      "total_size": 0,
-      "sources": {}
-    },
-    "published": {
-      "total": 1,
-      "ukraine_priority": 0,
-      "with_images": 1,
-      "text_only": 0,
-      "og_images_found": 0,
-      "sources": {
-        "Slobodna dalmacija": 1
-      }
-    },
-    "models_used": {
-      "gemini-3.5-flash-lite": 1,
-      "gemini-3.6-flash": 1
-    },
-    "models_by_task": {
-      "filter": "gemini-3.5-flash-lite",
-      "translate": "gemini-3.6-flash"
-    },
-    "model_attempts": [
-      {
-        "task": "filter",
-        "model": "gemini-3.6-flash",
-        "outcome": "unavailable"
-      },
-      {
-        "task": "filter",
-        "model": "gemini-3.5-flash-lite",
-        "outcome": "ok"
-      },
-      {
-        "task": "translate",
-        "model": "gemini-3.6-flash",
-        "outcome": "ok"
-      }
-    ],
-    "exhausted_models": [],
-    "demoted_models": [
-      "filter: gemini-3-flash-preview",
-      "translate: gemini-3.8-flash"
-    ],
-    "translate_budget_deferred": [],
-    "gemini_region_blocked": false,
-    "gemini_unavailable": false,
-    "errors_count": 0,
-    "gemini_retries": 1
-  },
-  {
     "timestamp": "2026-11-08 11:01:22",
     "execution_time": 109.3,
     "funnel": {
@@ -9841,5 +9749,116 @@
     "gemini_unavailable": true,
     "errors_count": 0,
     "gemini_retries": 4
+  },
+  {
+    "timestamp": "2026-11-17 11:01:16",
+    "execution_time": 135.2,
+    "funnel": {
+      "scraped_total": 35,
+      "scraped_by_source": {
+        "023": 10,
+        "Slobodna dalmacija": 15,
+        "Zadarski list": 10
+      },
+      "already_seen": 19,
+      "rejected_by_keywords": 4,
+      "rejected_by_rule": {
+        "тег RSS sport": 1,
+        "URL /sport/": 2,
+        "тег RSS nogomet": 1
+      },
+      "unclassified_by_ai": 0,
+      "duplicates_removed_by_ai": 9,
+      "rejection_reasons_list": [
+        "• Zbog dvije nesreće na autocesti A6 promet bio obustavljen oko tri sata → Побут інших міст (Рієка) | Сутності: A6, Rijeka, Tuhobić, PU primorsko-goranska",
+        "• Dalmacija će se 14. prosinca okupiti u Šibeniku! Sprema se vrlo poseba → Побут інших міст (Шибеник) | Сутності: Šibenik, Dalmacija, Zlatko Dalić",
+        "• Od ozljeda zadobivenih u prometnoj nesreći u Baranji umro 20-godišnji  → Побут інших міст (Бараня) | Сутності: Baranja, Duboševica, Topolje, osječko-baranjska policija",
+        "• Sedam 007: Prisjetili smo se svih filmskih Bondova. Koji vam je najdra → Світовий шум (Кіно) | Сутності: James Bond, Robert Pattinson, Eon Productions",
+        "• Alarmantno izvješće o stanju u PB Ugljanu; O 56 teških pacijenata noću → Вже публікувалось (Психіатрична лікарня Углян) | Сутності: Ugljan, CPT, Split, Rijeka",
+        "• Policajci u šumi kraj Dubrovnika uočili sumnjivca, čim ih je primijeti → Побут інших міст (Дубровник) | Сутності: Gruda, Župa dubrovačka, Dubrovnik",
+        "• Velika vijest iz EU; Odobren novi lijek za rak gušterače koji udvostru → Світовий шум (Новий медичний препарат) | Сутності: Rasonque, Europska komisija, FDA",
+        "• Najviše smrti od tumora u Dalmaciji je u Šibensko-kninskoj županiji. J → Побут інших міст (Шибеник) | Сутності: Šibenik, HZJZ, Dalmacija",
+        "• Erlić primio najbolje zadarske učiteljice, dvije osvojile prestižne dr → Дубль (Дубль новини ID 2) | Сутності: Zadar, Šime Erlić, Anita Mustać"
+      ],
+      "rejected_by_reason": {
+        "Побут інших міст": 5,
+        "Світовий шум": 2,
+        "Вже публікувалось": 1,
+        "Дубль": 1
+      },
+      "updates_marked": 0,
+      "already_rejected": 13,
+      "rejected_by_code_examples": [
+        "[тег RSS sport] Sjajan nastup zadarskih karataša; KK Optimist osvojio čak 20 medalja u Dalmatinskoj ligi!",
+        "[URL /sport/] Čestitka župana Blaža Peza Ivi Oberan: ‘Dubrovniku i našoj Županiji donijela si još jedan razlog za ",
+        "[URL /sport/] Bronca Ive Oberan obilježila Grand Prix Zagreb: ‘Sad iz svoje države s medaljom idem na Grand Slam u",
+        "[тег RSS nogomet] Španjolci bruje o hrvatskom čudu: “Odbio je Barcelonu,  želi samo u Real Madrid”"
+      ]
+    },
+    "backlog": {
+      "total_size": 10,
+      "sources": {
+        "023": 8,
+        "Slobodna dalmacija": 2
+      }
+    },
+    "published": {
+      "total": 0,
+      "ukraine_priority": 0,
+      "with_images": 0,
+      "text_only": 0,
+      "og_images_found": 1,
+      "sources": {}
+    },
+    "models_used": {
+      "gemini-3.5-flash-lite": 1
+    },
+    "models_by_task": {
+      "filter": "gemini-3.5-flash-lite",
+      "translate": null
+    },
+    "model_attempts": [
+      {
+        "task": "filter",
+        "model": "gemini-3-flash-preview",
+        "outcome": "unavailable"
+      },
+      {
+        "task": "filter",
+        "model": "gemini-3.6-flash",
+        "outcome": "unavailable"
+      },
+      {
+        "task": "filter",
+        "model": "gemini-3.5-flash-lite",
+        "outcome": "ok"
+      },
+      {
+        "task": "translate",
+        "model": "gemini-3.8-flash",
+        "outcome": "unavailable"
+      },
+      {
+        "task": "translate",
+        "model": "gemini-3.6-flash",
+        "outcome": "unavailable"
+      },
+      {
+        "task": "translate",
+        "model": "gemini-3.5-flash-lite",
+        "outcome": "unavailable"
+      }
+    ],
+    "exhausted_models": [],
+    "demoted_models": [
+      "translate: gemini-3.8-flash",
+      "translate: gemini-3.6-flash",
+      "translate: gemini-3.5-flash-lite"
+    ],
+    "translate_budget_deferred": [],
+    "gemini_region_blocked": false,
+    "gemini_unavailable": true,
+    "errors_count": 0,
+    "gemini_retries": 5
   }
 ]
