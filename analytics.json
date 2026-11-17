@@ -1,91 +1,5 @@
 [
   {
-    "timestamp": "2026-11-07 20:01:18",
-    "execution_time": 111.7,
-    "funnel": {
-      "scraped_total": 35,
-      "scraped_by_source": {
-        "023": 10,
-        "Slobodna dalmacija": 15,
-        "Zadarski list": 10
-      },
-      "already_seen": 19,
-      "rejected_by_keywords": 6,
-      "rejected_by_rule": {
-        "тег RSS lifestyle": 2,
-        "URL /sport/": 1,
-        "тег RSS košarka": 2,
-        "тег RSS sport": 1
-      },
-      "unclassified_by_ai": 0,
-      "duplicates_removed_by_ai": 9,
-      "rejection_reasons_list": [
-        "• Antonio Tajani izložen napadima hakera: “U sve uvlače i moju obitelj” → Геоблок (Кібератака в Італії) | Сутності: Antonio Tajani, dark web, Italija, Kijev",
-        "• Izvedena prva ovosezonska premijera riječkog Baleta. Zadnje utočište o → Побут інших міст (Балетна прем'єра у Рієці) | Сутності: Balet riječkog HNK, Rijeka, Serge Aimé Coulibaly, Last Shelter",
-        "• Književna večer s Ivanom Šojat u petak: Susret sa svestranom hrvatskom → Побут інших міст (Литературний вечір у Дубровнику) | Сутності: Ivana Šojat, Dubrovnik, Dubrovačke knjižnice, Saloča od zrcala",
-        "• U šumarijama Otok i Gunja meteorološke postaje u sklopu projekta RETFO → Побут інших міст (Метеостанції в Отіку та Гуні) | Сутності: Otok, Gunja, RETFOR, Hrvatske šume",
-        "• Dubrovnik Jazz Outbreak 2026 otvoren nastupom KUG Jazz Collectivea i N → Побут інших міст (Джазовий фестиваль у Дубровнику) | Сутності: Dubrovnik, Dubrovnik Jazz Outbreak, KUG Jazz Collective, Nadja Noordhuis",
-        "• Mediji javljali da su im se studenti arhitekture podsmjehivali, studen → Побут інших міст (Дискусія у виші Загреба) | Сутності: Siniša Justić, Arhitektonski fakultet, Zagreb, Stadion Maksimir",
-        "• Paragvajski predsjednik opozvan i stavljen u kućni pritvor nakon propa → Геоблок (Імпічмент президента Парагваю) | Сутності: Santiago Pena, Paragvaj, Ueno banka, BBC",
-        "• Više mrtvih i ranjenih u Krakovu u napadu desničarskog ekstremista. “S → Геоблок (Стрілянина у Польщі) | Сутності: Krakov, Poljska, Glavni trg, ulica Dietla",
-        "• Puljak: U Hrvatskoj treba pomesti klijentelizam koji upropašatava druš → Не за тематикою (Політична заява партії Centar) | Сутності: Marijana Puljak, Centar, Osječko-baranjska županija, Slavonija"
-      ],
-      "rejected_by_reason": {
-        "Геоблок": 3,
-        "Побут інших міст": 5,
-        "Не за тематикою": 1
-      },
-      "updates_marked": 0,
-      "already_rejected": 11,
-      "rejected_by_code_examples": [
-        "[тег RSS lifestyle] Domaći sok od jabuka bez konzervansa: dva načina pripreme i pravilno čuvanje u bocama",
-        "[тег RSS lifestyle] Punomasni mliječni proizvodi u kanadskom istraživanju nisu pogoršali kolesterol ni tjelesnu težinu",
-        "[URL /sport/] Što radi ‘profi Ironman‘? To dobro zna Željko Cota: 6000 kalorija na pjatu, tri treninga dnevno, bic",
-        "[тег RSS košarka] Matjaž Kek bijesan nakon poraza: “Nerazumljivo, neodgovorno i bez rezona”",
-        "[тег RSS košarka] Košarkašice FSV-a u derbiju začelja upisale prvu ovosezonsku pobjedu",
-        "[тег RSS sport] Rijeka doživjela bolan poraz. Hat-trick Frederiksena i crveni kartoni Puljića i Majstorovića šokiral"
-      ]
-    },
-    "backlog": {
-      "total_size": 0,
-      "sources": {}
-    },
-    "published": {
-      "total": 0,
-      "ukraine_priority": 0,
-      "with_images": 0,
-      "text_only": 0,
-      "og_images_found": 0,
-      "sources": {}
-    },
-    "models_used": {
-      "gemini-3.6-flash": 1
-    },
-    "models_by_task": {
-      "filter": "gemini-3.6-flash",
-      "translate": null
-    },
-    "model_attempts": [
-      {
-        "task": "filter",
-        "model": "gemini-3-flash-preview",
-        "outcome": "unavailable"
-      },
-      {
-        "task": "filter",
-        "model": "gemini-3.6-flash",
-        "outcome": "ok"
-      }
-    ],
-    "exhausted_models": [],
-    "demoted_models": [],
-    "translate_budget_deferred": [],
-    "gemini_region_blocked": false,
-    "gemini_unavailable": false,
-    "errors_count": 0,
-    "gemini_retries": 1
-  },
-  {
     "timestamp": "2026-11-08 08:01:20",
     "execution_time": 249.9,
     "funnel": {
@@ -9794,6 +9708,116 @@
     "translate_budget_deferred": [
       "gemini-3.6-flash"
     ],
+    "gemini_region_blocked": false,
+    "gemini_unavailable": false,
+    "errors_count": 0,
+    "gemini_retries": 3
+  },
+  {
+    "timestamp": "2026-11-17 08:01:21",
+    "execution_time": 229.0,
+    "funnel": {
+      "scraped_total": 35,
+      "scraped_by_source": {
+        "023": 10,
+        "Slobodna dalmacija": 15,
+        "Zadarski list": 10
+      },
+      "already_seen": 11,
+      "rejected_by_keywords": 6,
+      "rejected_by_rule": {
+        "тег RSS sport": 3,
+        "тег RSS košarka": 1,
+        "тег RSS nogomet": 1,
+        "URL /sport/": 1
+      },
+      "unclassified_by_ai": 0,
+      "duplicates_removed_by_ai": 9,
+      "rejection_reasons_list": [
+        "• VIDEO Ukrajinci noćas srušili središnji dio Krimskog mosta. Snimke pot → Вже публікувалось (Подія вже є в історії) | Сутності: Кримський міст, Україна, Росія, Сергій Аксьонов",
+        "• Ingrid Belac-Lovasić dobila i drugi spor. Sud naložio Medicinskom faku → Побут інших міст (Локальний трудовий спір у Рієці) | Сутності: Інгрід Белац-Ловасич, Рієка, Медичний факультет",
+        "• Kremlj: ‘Sastanak Putina, Trumpa i Xija pogrešno je uspoređivati s Jal → Геоблок (Зустріч лідерів у Китаї) | Сутності: Володимир Путін, Дональд Трамп, Сі Цзіньпін, Кремль",
+        "• Moj otac bi sutra slavio rođendan, a ja ću opet zapaliti svijeću za Vu → Вже публікувалось (Особисті спогади про війну) | Сутності: Вуковар, Шкабрня, Хорватія",
+        "• Jubilej koji se rijetko viđa! Ova časna sestra proslavila je 100 godin → Не за тематикою (Приватна подія, 100-річчя черниці) | Сутності: Кармела Баришич, Неретва, Відоньє",
+        "• Boris Vujčić upozorava na rizike nove tehnologije: “Trend zaduživanja  → Світовий шум (Економічна аналітика щодо ШІ) | Сутності: Борис Вуйчич, Штучний інтелект, Європейський центральний банк",
+        "• Otvorena izložba ‘Dubrovnik kao palimpsest‘ Fadila Vejzovića, sin Enes → Побут інших міст (Локальна виставка у Дубровнику) | Сутності: Фаділ Вейзович, Дубровник, Галерея Дульчич",
+        "• Danas počinje nova etapa u povijesti Srbije. Počinje prijenos vlasti,  → Геоблок (Політичні зміни у Сербії) | Сутності: Сербія, Александар Вучич, Новий Сад",
+        "• Petorica vukovarskih branitelja danas sjede Saboru, otkrili što ih naj → Вже публікувалось (Спогади ветеранів про падіння Вуковара) | Сутності: Вуковар, Сабор, Томіслав Задро"
+      ],
+      "rejected_by_reason": {
+        "Вже публікувалось": 3,
+        "Побут інших міст": 2,
+        "Геоблок": 2,
+        "Не за тематикою": 1,
+        "Світовий шум": 1
+      },
+      "updates_marked": 1,
+      "already_rejected": 9,
+      "rejected_by_code_examples": [
+        "[тег RSS sport] Talentirani Drnišanin od 202 cm stiže u Zadar: “Velika mu je želja bila doći baš u naš klub”",
+        "[тег RSS sport] Zadar nakon osam kola ima najbolji napad i najbolju obranu Premijer lige, a u ABA ligi nitko ne prim",
+        "[тег RSS sport] Laura Župan i Leni Matulić donijeli Zadru dvije bronce, na Višnjiku 550 plivača i dva nova kadetska ",
+        "[тег RSS košarka] VIDEO Mario Hezonja potvrdio ugovor s devet poena, njegov suigrač ubacio čak 39 poena",
+        "[тег RSS nogomet] Dinamo doveo trenera juniora Barcelone, debitirat će na klupi Modrih u petak u Opatiji",
+        "[URL /sport/] Danil Medvedev finale u Torinu otvorio pobjedom nad Flavijom Cobollijem"
+      ]
+    },
+    "backlog": {
+      "total_size": 2,
+      "sources": {
+        "023": 2
+      }
+    },
+    "published": {
+      "total": 3,
+      "ukraine_priority": 1,
+      "with_images": 3,
+      "text_only": 0,
+      "og_images_found": 1,
+      "sources": {
+        "Zadarski list": 1,
+        "023": 1,
+        "Slobodna dalmacija": 1
+      }
+    },
+    "models_used": {
+      "gemini-3.1-flash-lite": 1,
+      "gemini-3.8-flash": 1
+    },
+    "models_by_task": {
+      "filter": "gemini-3.1-flash-lite",
+      "translate": "gemini-3.8-flash"
+    },
+    "model_attempts": [
+      {
+        "task": "filter",
+        "model": "gemini-3-flash-preview",
+        "outcome": "unavailable"
+      },
+      {
+        "task": "filter",
+        "model": "gemini-3.6-flash",
+        "outcome": "unavailable"
+      },
+      {
+        "task": "filter",
+        "model": "gemini-3.5-flash-lite",
+        "outcome": "unavailable"
+      },
+      {
+        "task": "filter",
+        "model": "gemini-3.1-flash-lite",
+        "outcome": "ok"
+      },
+      {
+        "task": "translate",
+        "model": "gemini-3.8-flash",
+        "outcome": "ok"
+      }
+    ],
+    "exhausted_models": [],
+    "demoted_models": [],
+    "translate_budget_deferred": [],
     "gemini_region_blocked": false,
     "gemini_unavailable": false,
     "errors_count": 0,
