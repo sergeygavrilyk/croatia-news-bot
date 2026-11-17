@@ -1,90 +1,5 @@
 [
   {
-    "timestamp": "2026-11-08 09:01:11",
-    "execution_time": 89.6,
-    "funnel": {
-      "scraped_total": 35,
-      "scraped_by_source": {
-        "023": 10,
-        "Slobodna dalmacija": 15,
-        "Zadarski list": 10
-      },
-      "already_seen": 26,
-      "rejected_by_keywords": 3,
-      "rejected_by_rule": {
-        "тег RSS sport": 2,
-        "тег RSS košarka": 1
-      },
-      "unclassified_by_ai": 0,
-      "duplicates_removed_by_ai": 5,
-      "rejection_reasons_list": [
-        "• Mići plavi mirakuli ćakulaju po štrumpfovski: Pazinski gimnazijalci pr → Побут інших міст (Шкільний захід у Пазині) | Сутності: Pazin, Pazinski kolegij, Štrumpfovi, čakavština",
-        "• Drugo kolo bez pobjeda: Karamarko zatrpao koš Jazina, Bundović nezaust → Спорт (Баскетбольні матчі задарських клубів) | Сутності: Jazine, Puntamika, Šibenka, Prva muška liga",
-        "• U Indoneziji veliki prosvjedi protiv podatkovnih centara: Bez vode nem → Геоблок (Протести в Індонезії) | Сутності: Indonezija, Batam, El Nino, podatkovni centri",
-        "• Znate li od čega su izrađene suvremene varalice? Donosimo kratak pregl → Світовий шум (Матеріали для рибальських принад) | Сутності: varalice, balza, abachi, ribolov",
-        "• Plavi svijet Branka Šuljića: Temelj za nautičku strategiju → Не за тематикою (Огляд книги про морський сектор) | Сутності: Biograd Boat Show, Branko Šuljić, Plava knjiga hrvatske nautike, Hrvatska udruga poslodavaca"
-      ],
-      "rejected_by_reason": {
-        "Побут інших міст": 1,
-        "Спорт": 1,
-        "Геоблок": 1,
-        "Світовий шум": 1,
-        "Не за тематикою": 1
-      },
-      "updates_marked": 0,
-      "already_rejected": 18,
-      "rejected_by_code_examples": [
-        "[тег RSS sport] Jazine Arbanasi izgubile od neporažene Šibenke",
-        "[тег RSS sport] Plovanija na Kondor Openu s 24 natjecatelja, Karlu Baričeviću prvi nastup odmah u kadetskoj teškoj k",
-        "[тег RSS košarka] VIDEO Nikola Jokić i Ivica Zubac ostvarili “double-double” učinak u međusobnom sudaru u Mexico Cityj"
-      ]
-    },
-    "backlog": {
-      "total_size": 0,
-      "sources": {}
-    },
-    "published": {
-      "total": 2,
-      "ukraine_priority": 0,
-      "with_images": 2,
-      "text_only": 0,
-      "og_images_found": 1,
-      "sources": {
-        "023": 1,
-        "Zadarski list": 1
-      }
-    },
-    "models_used": {
-      "gemini-3.6-flash": 2
-    },
-    "models_by_task": {
-      "filter": "gemini-3.6-flash",
-      "translate": "gemini-3.6-flash"
-    },
-    "model_attempts": [
-      {
-        "task": "filter",
-        "model": "gemini-3.6-flash",
-        "outcome": "ok"
-      },
-      {
-        "task": "translate",
-        "model": "gemini-3.6-flash",
-        "outcome": "ok"
-      }
-    ],
-    "exhausted_models": [],
-    "demoted_models": [
-      "filter: gemini-3-flash-preview",
-      "translate: gemini-3.8-flash"
-    ],
-    "translate_budget_deferred": [],
-    "gemini_region_blocked": false,
-    "gemini_unavailable": false,
-    "errors_count": 0,
-    "gemini_retries": 0
-  },
-  {
     "timestamp": "2026-11-08 10:01:18",
     "execution_time": 37.1,
     "funnel": {
@@ -9815,5 +9730,116 @@
     "gemini_unavailable": true,
     "errors_count": 0,
     "gemini_retries": 3
+  },
+  {
+    "timestamp": "2026-11-17 10:01:21",
+    "execution_time": 40.3,
+    "funnel": {
+      "scraped_total": 35,
+      "scraped_by_source": {
+        "023": 10,
+        "Slobodna dalmacija": 15,
+        "Zadarski list": 10
+      },
+      "already_seen": 14,
+      "rejected_by_keywords": 6,
+      "rejected_by_rule": {
+        "тег RSS sport": 3,
+        "URL /sport/": 3
+      },
+      "unclassified_by_ai": 0,
+      "duplicates_removed_by_ai": 13,
+      "rejection_reasons_list": [
+        "• Blokada proračuna. Europi prijeti raskol zbog 45 milijardi eura za Kij → Вже публікувалось (Фінансова допомога Україні) | Сутності: Єврокомісія, Україна, 45 мільярдів євро, Кредит",
+        "• Mladić (23) pokušao pobjeći kroz šumu u Župi, ali nije bio dovoljno br → Побут інших міст (Кримінал у Дубровнику) | Сутності: Поліція, Дубровник, Жупа, Наркотики",
+        "• VIDEO Srušio se borbeni avion vojske Srbije. Pilot je poginuo, uzrok n → Геоблок (Авіакатастрофа в Сербії) | Сутності: Сербія, МіГ-29, Белград, Авіакатастрофа",
+        "• Faričić: Zaustavimo haranje Jadranom! Tko ima pravo zajedničko prirodn → Дубль (Повтор новини про вилов риби) | Сутності: Йосип Фаричич, Університет Задара, Рибальство",
+        "• Poplave u Vinodolu: Građani imaju rok do 1. prosinca za prijavu štete → Побут інших міст (Повінь у Вінодолі) | Сутності: Вінодол, Повінь, Збитки",
+        "• 10 stvari koje morate znati o Središnjem registru stanovništva → Вже публікувалось (Центральний реєстр населення) | Сутності: Реєстр населення, Хорватія, Документи",
+        "• Pupovac zapalio svijeću za žrtve Vukovara i Škabrnje: “Pamtimo sve koj → Вже публікувалось (Вшанування пам'яті жертв) | Сутності: Милорад Пуповац, Вуковар, Шкабрня, СДСС",
+        "• Od Grada do Trakošćana: ‘Druga strana povijesti‘ oživjela glazbu plemi → Побут інших міст (Культурна подія в Дубровнику) | Сутності: Дубровник, Вараждин, Культура",
+        "• Grabovača na međunarodnom speleološkom skupu: Znanost i tajne krša pri → Побут інших міст (Подія в Пазіні) | Сутності: Грабавача, Пазін, Спелеологія",
+        "• Gdje danas na marendu: jelovnici zadarskih restorana svako jutro od 10 → Реклама (Огляд ресторанних меню) | Сутності: Задар, Ресторани, Меню",
+        "• Zbog mimohoda za Vukovar i Škabrnju večeras se obustavlja promet dijel → Побут інших міст (Перекриття доріг у Цриквениці) | Сутності: Цриквениця, Вуковарська вулиця, Рух транспорту",
+        "• Glazba i poezija u istoj priči: Opatijski komorni orkestar priredio ve → Побут інших міст (Концерт в Опатії) | Сутності: Опатія, Оркестр, Концерт",
+        "• HEP ulaže 480 milijuna eura u golemi projekt u Lici. Nastaje jezero s  → Побут інших міст (Будівництво ГЕС у Ліці) | Сутності: HEP, Ліка, Косинь, ГЕС"
+      ],
+      "rejected_by_reason": {
+        "Вже публікувалось": 3,
+        "Побут інших міст": 7,
+        "Геоблок": 1,
+        "Дубль": 1,
+        "Реклама": 1
+      },
+      "updates_marked": 1,
+      "already_rejected": 9,
+      "rejected_by_code_examples": [
+        "[тег RSS sport] Sjajan nastup zadarskih karataša; KK Optimist osvojio čak 20 medalja u Dalmatinskoj ligi!",
+        "[тег RSS sport] Talentirani Drnišanin od 202 cm stiže u Zadar: “Velika mu je želja bila doći baš u naš klub”",
+        "[тег RSS sport] Zadar nakon osam kola ima najbolji napad i najbolju obranu Premijer lige, a u ABA ligi nitko ne prim",
+        "[URL /sport/] Čestitka župana Blaža Peza Ivi Oberan: ‘Dubrovniku i našoj Županiji donijela si još jedan razlog za ",
+        "[URL /sport/] Bronca Ive Oberan obilježila Grand Prix Zagreb: ‘Sad iz svoje države s medaljom idem na Grand Slam u",
+        "[URL /sport/] Jakov Puljić i Ante Majstorović saznali kazne za nepromišljene crvene kartone zarađene u Puli"
+      ]
+    },
+    "backlog": {
+      "total_size": 7,
+      "sources": {
+        "023": 6,
+        "Slobodna dalmacija": 1
+      }
+    },
+    "published": {
+      "total": 0,
+      "ukraine_priority": 0,
+      "with_images": 0,
+      "text_only": 0,
+      "og_images_found": 3,
+      "sources": {}
+    },
+    "models_used": {
+      "gemini-3.1-flash-lite": 1
+    },
+    "models_by_task": {
+      "filter": "gemini-3.1-flash-lite",
+      "translate": null
+    },
+    "model_attempts": [
+      {
+        "task": "filter",
+        "model": "gemini-3.5-flash-lite",
+        "outcome": "unavailable"
+      },
+      {
+        "task": "filter",
+        "model": "gemini-3.1-flash-lite",
+        "outcome": "ok"
+      },
+      {
+        "task": "translate",
+        "model": "gemini-3.8-flash",
+        "outcome": "unavailable"
+      },
+      {
+        "task": "translate",
+        "model": "gemini-3.6-flash",
+        "outcome": "unavailable"
+      },
+      {
+        "task": "translate",
+        "model": "gemini-3.5-flash-lite",
+        "outcome": "unavailable"
+      }
+    ],
+    "exhausted_models": [],
+    "demoted_models": [
+      "filter: gemini-3-flash-preview",
+      "filter: gemini-3.6-flash"
+    ],
+    "translate_budget_deferred": [],
+    "gemini_region_blocked": false,
+    "gemini_unavailable": true,
+    "errors_count": 0,
+    "gemini_retries": 4
   }
 ]
