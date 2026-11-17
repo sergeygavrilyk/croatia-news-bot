@@ -1,109 +1,5 @@
 [
   {
-    "timestamp": "2026-11-08 08:01:20",
-    "execution_time": 249.9,
-    "funnel": {
-      "scraped_total": 35,
-      "scraped_by_source": {
-        "023": 10,
-        "Slobodna dalmacija": 15,
-        "Zadarski list": 10
-      },
-      "already_seen": 12,
-      "rejected_by_keywords": 5,
-      "rejected_by_rule": {
-        "тег RSS sport": 2,
-        "тег RSS košarka": 1,
-        "тег RSS nogomet": 1,
-        "URL /sport/": 1
-      },
-      "unclassified_by_ai": 0,
-      "duplicates_removed_by_ai": 10,
-      "rejection_reasons_list": [
-        "• Slijedi li dvije godine veta u američkoj politici? Trump ima plan kako → Геоблок (Внутрішня політика США) | Сутності: Donald Trump, Ovalni ured, Вашингтон, США",
-        "• Franković odgovorio sucima: ‘Nacionalne podatke ne možete sakriti iza  → Не за тематикою (Дискусія щодо судових вироків) | Сутності: Mato Franković, Udruga hrvatskih sudaca, Дубровник",
-        "• Sramotne slike iz centra velikog dalmatinskog grada! Reagirali i antif → Побут інших міст (Графіті у Шибенику) | Сутності: Шибеник, Ulica grada Vukovara, gat Vrulje",
-        "• Giljevići osvojili drugi po redu Pločanski krak: Natjecanje u lovu lig → Спорт (Турнір з риболовлі) | Сутності: Ploče, Pločanski krak, ERK Periska",
-        "• Nakon kišnog utorka Zadar se zagrijava do 21°C, a sljedeći vikend dono → Вже публікувалось (Прогноз погоди у Задарі) | Сутності: Задар, DHMZ, погода в Задарі",
-        "• Mario Hezonja promašio je svih 11 lopti u porazu Cavsa od aktualnih NB → Спорт (Баскетбольний матч NBA) | Сутності: Mario Hezonja, Cleveland Cavaliers, New York Knicks, NBA",
-        "• Čudo pod Dinarom! U strašnoj eksploziji izgubio vid, sluh i udove, a o → Побут інших міст (Весілля у Врліці) | Сутності: Динара, Врліка, цетинський край",
-        "• Pobio roditelje i sestru, pa nevine ljude u Krakovu: Što je motiv stra → Геоблок (Стрілянина у Польщі) | Сутності: Краків, Польща, Tomasz Waszczuk, Karol Nawrocki",
-        "• Vlada nas je prometno ostavila na cjedilu, tješe nas brzom cestom do a → Побут інших міст (Транспорт Дубровника) | Сутності: Дубровник, Pelješki most, Влада Хорватії",
-        "• Danas pretežno sunčano, idući tjedan na Kvarner stiže obilnija kiša → Побут інших міст (Погода в Рієці) | Сутності: Рієка, Кварнер, DHMZ"
-      ],
-      "rejected_by_reason": {
-        "Геоблок": 2,
-        "Не за тематикою": 1,
-        "Побут інших міст": 4,
-        "Спорт": 2,
-        "Вже публікувалось": 1
-      },
-      "updates_marked": 0,
-      "already_rejected": 9,
-      "rejected_by_code_examples": [
-        "[тег RSS sport] Jazine Arbanasi izgubile od neporažene Šibenke",
-        "[тег RSS sport] Plovanija na Kondor Openu s 24 natjecatelja, Karlu Baričeviću prvi nastup odmah u kadetskoj teškoj k",
-        "[тег RSS košarka] VIDEO Nikola Jokić i Ivica Zubac ostvarili “double-double” učinak u međusobnom sudaru u Mexico Cityj",
-        "[тег RSS nogomet] Lokomotiva projurila kroz Poreč, Kraljevica usporila Pomorac… Cresani bez milosti",
-        "[URL /sport/] Rijeka je ponovo podigla brončanu prašinu i otvorila našoj futsalskoj reprezentaciji put prema SP-u"
-      ]
-    },
-    "backlog": {
-      "total_size": 3,
-      "sources": {
-        "Zadarski list": 2,
-        "023": 1
-      }
-    },
-    "published": {
-      "total": 3,
-      "ukraine_priority": 0,
-      "with_images": 3,
-      "text_only": 0,
-      "og_images_found": 2,
-      "sources": {
-        "023": 2,
-        "Zadarski list": 1
-      }
-    },
-    "models_used": {
-      "gemini-3.6-flash": 2
-    },
-    "models_by_task": {
-      "filter": "gemini-3.6-flash",
-      "translate": "gemini-3.6-flash"
-    },
-    "model_attempts": [
-      {
-        "task": "filter",
-        "model": "gemini-3-flash-preview",
-        "outcome": "unavailable"
-      },
-      {
-        "task": "filter",
-        "model": "gemini-3.6-flash",
-        "outcome": "ok"
-      },
-      {
-        "task": "translate",
-        "model": "gemini-3.8-flash",
-        "outcome": "unavailable"
-      },
-      {
-        "task": "translate",
-        "model": "gemini-3.6-flash",
-        "outcome": "ok"
-      }
-    ],
-    "exhausted_models": [],
-    "demoted_models": [],
-    "translate_budget_deferred": [],
-    "gemini_region_blocked": false,
-    "gemini_unavailable": false,
-    "errors_count": 0,
-    "gemini_retries": 2
-  },
-  {
     "timestamp": "2026-11-08 09:01:11",
     "execution_time": 89.6,
     "funnel": {
@@ -9820,6 +9716,103 @@
     "translate_budget_deferred": [],
     "gemini_region_blocked": false,
     "gemini_unavailable": false,
+    "errors_count": 0,
+    "gemini_retries": 3
+  },
+  {
+    "timestamp": "2026-11-17 09:01:19",
+    "execution_time": 73.6,
+    "funnel": {
+      "scraped_total": 35,
+      "scraped_by_source": {
+        "023": 10,
+        "Slobodna dalmacija": 15,
+        "Zadarski list": 10
+      },
+      "already_seen": 19,
+      "rejected_by_keywords": 3,
+      "rejected_by_rule": {
+        "тег RSS sport": 3
+      },
+      "unclassified_by_ai": 0,
+      "duplicates_removed_by_ai": 8,
+      "rejection_reasons_list": [
+        "• Mostovi i arhitektura: druga edukativna radionica namijenjena učenicim → Побут інших міст (Дубровник) | Сутності: Дубровник, Центр за дјецу, ТХП, Радионица",
+        "• Međunarodni studentski filmski festival STIFF donosi 37 filmskih ostva → Побут інших міст (Рієка) | Сутності: Рієка, STIFF, Кінофестиваль, Арт-кіно",
+        "• Predstave na TranziT-u propituju suodnos fikcije i fakcije te svjesnog → Побут інших міст (Рієка) | Сутності: Рієка, TranziT, Тоні Флего, Театр",
+        "• Jubilej koji se rijetko viđa! Ova časna sestra iz Neretve proslavila j → Не за тематикою (Особистий ювілей в Неретві) | Сутності: Неретва, Кармела Баришич, Століття, Віджу",
+        "• Ministarstvo kulture i medija: ‘Odbacujemo navode o Praškom kvadrijena → Вже публікувалось (Празьке квадрієнале) | Сутності: Міністерство культури, Празьке квадрієнале, Марко Тадич, Матія Ферлін",
+        "• Jako jugo i kiša večeras, a nakon toplog početka tjedna stiže zahlađen → Вже публікувалось (Прогноз погоди) | Сутності: Задар, ДХМЗ, Погода, Юго",
+        "• Kesteni u kuhinji: kako ih pravilno ispeći, skuhati i jednostavno ogul → Світовий шум (Поради з кулінарії) | Сутності: Кестені, Рецепт, Приготування",
+        "• Evo što se događa s vašim tijelom kada redovito pijete crni čaj → Світовий шум (Користь чаю) | Сутності: Чорний чай, Здоров'я, Окислення, Camellia sinensis"
+      ],
+      "rejected_by_reason": {
+        "Побут інших міст": 3,
+        "Не за тематикою": 1,
+        "Вже публікувалось": 2,
+        "Світовий шум": 2
+      },
+      "updates_marked": 0,
+      "already_rejected": 13,
+      "rejected_by_code_examples": [
+        "[тег RSS sport] Talentirani Drnišanin od 202 cm stiže u Zadar: “Velika mu je želja bila doći baš u naš klub”",
+        "[тег RSS sport] Zadar nakon osam kola ima najbolji napad i najbolju obranu Premijer lige, a u ABA ligi nitko ne prim",
+        "[тег RSS sport] Laura Župan i Leni Matulić donijeli Zadru dvije bronce, na Višnjiku 550 plivača i dva nova kadetska "
+      ]
+    },
+    "backlog": {
+      "total_size": 5,
+      "sources": {
+        "023": 3,
+        "Zadarski list": 1,
+        "Slobodna dalmacija": 1
+      }
+    },
+    "published": {
+      "total": 0,
+      "ukraine_priority": 0,
+      "with_images": 0,
+      "text_only": 0,
+      "og_images_found": 1,
+      "sources": {}
+    },
+    "models_used": {
+      "gemini-3.5-flash-lite": 1
+    },
+    "models_by_task": {
+      "filter": "gemini-3.5-flash-lite",
+      "translate": null
+    },
+    "model_attempts": [
+      {
+        "task": "filter",
+        "model": "gemini-3.5-flash-lite",
+        "outcome": "ok"
+      },
+      {
+        "task": "translate",
+        "model": "gemini-3.8-flash",
+        "outcome": "unavailable"
+      },
+      {
+        "task": "translate",
+        "model": "gemini-3.6-flash",
+        "outcome": "unavailable"
+      },
+      {
+        "task": "translate",
+        "model": "gemini-3.5-flash-lite",
+        "outcome": "unavailable"
+      }
+    ],
+    "exhausted_models": [],
+    "demoted_models": [
+      "filter: gemini-3-flash-preview",
+      "filter: gemini-3.6-flash"
+    ],
+    "translate_budget_deferred": [],
+    "gemini_region_blocked": false,
+    "gemini_unavailable": true,
     "errors_count": 0,
     "gemini_retries": 3
   }
