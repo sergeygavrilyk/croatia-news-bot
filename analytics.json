@@ -1,89 +1,5 @@
 [
   {
-    "timestamp": "2026-11-09 09:01:28",
-    "execution_time": 220.4,
-    "funnel": {
-      "scraped_total": 35,
-      "scraped_by_source": {
-        "023": 10,
-        "Slobodna dalmacija": 15,
-        "Zadarski list": 10
-      },
-      "already_seen": 28,
-      "rejected_by_keywords": 0,
-      "rejected_by_rule": {},
-      "unclassified_by_ai": 0,
-      "duplicates_removed_by_ai": 1,
-      "rejection_reasons_list": [
-        "• Veliko preslagivanje riječkih komunalaca, 60-ak radnika Poslovnih sust → Побут інших міст (Рієка) | Сутності: Рієка, Poslovni sustavi, Tomislav Mazal, комунальники"
-      ],
-      "rejected_by_reason": {
-        "Побут інших міст": 1
-      },
-      "updates_marked": 0,
-      "already_rejected": 23
-    },
-    "backlog": {
-      "total_size": 2,
-      "sources": {
-        "023": 2
-      }
-    },
-    "published": {
-      "total": 3,
-      "ukraine_priority": 0,
-      "with_images": 3,
-      "text_only": 0,
-      "og_images_found": 3,
-      "sources": {
-        "023": 3
-      }
-    },
-    "models_used": {
-      "gemini-3.5-flash-lite": 2
-    },
-    "models_by_task": {
-      "filter": "gemini-3.5-flash-lite",
-      "translate": "gemini-3.5-flash-lite"
-    },
-    "model_attempts": [
-      {
-        "task": "filter",
-        "model": "gemini-3-flash-preview",
-        "outcome": "unavailable"
-      },
-      {
-        "task": "filter",
-        "model": "gemini-3.6-flash",
-        "outcome": "unavailable"
-      },
-      {
-        "task": "filter",
-        "model": "gemini-3.5-flash-lite",
-        "outcome": "ok"
-      },
-      {
-        "task": "translate",
-        "model": "gemini-3.6-flash",
-        "outcome": "unavailable"
-      },
-      {
-        "task": "translate",
-        "model": "gemini-3.5-flash-lite",
-        "outcome": "ok"
-      }
-    ],
-    "exhausted_models": [],
-    "demoted_models": [
-      "translate: gemini-3.8-flash"
-    ],
-    "translate_budget_deferred": [],
-    "gemini_region_blocked": false,
-    "gemini_unavailable": false,
-    "errors_count": 0,
-    "gemini_retries": 3
-  },
-  {
     "timestamp": "2026-11-09 10:01:29",
     "execution_time": 227.3,
     "funnel": {
@@ -10090,5 +10006,89 @@
     "gemini_unavailable": false,
     "errors_count": 0,
     "gemini_retries": 1
+  },
+  {
+    "timestamp": "2026-11-18 10:01:14",
+    "execution_time": 5.7,
+    "funnel": {
+      "scraped_total": 35,
+      "scraped_by_source": {
+        "023": 10,
+        "Slobodna dalmacija": 15,
+        "Zadarski list": 10
+      },
+      "already_seen": 18,
+      "rejected_by_keywords": 2,
+      "rejected_by_rule": {
+        "URL /sport/": 1,
+        "тег RSS nogomet": 1
+      },
+      "unclassified_by_ai": 0,
+      "duplicates_removed_by_ai": 14,
+      "rejection_reasons_list": [
+        "• Škabrnja 35 godina poslije: župan Bilaver prisjetio se dana u podrumu, → Вже публікувалось (Річниця подій у Шкабрні) | Сутності: Škabrnja, Oleg Butković, Tonči Glavina, Bilaver",
+        "• Putinov veliki povratak. Sprema li se nova Jalta, koja će Europi u Ukr → Геоблок (Зустріч світових лідерів) | Сутності: Vladimir Putin, Donald Trump, Xi Jinping, Shenzhen",
+        "• Mato Franković oštro povodom Dana sjećanja: ‘Da Vukovarci nisu bili za → Вже публікувалось (Коментар щодо річниці) | Сутності: Mato Franković, Vukovar, Škabrnja, Facebook",
+        "• Svećenik kod Brčkog sinoć izboden nožem: ‘Borio se s napadačem i uspio → Геоблок (Інцидент у Боснії) | Сутності: Filip Maršić, Brčko, Boće, BiH",
+        "• Noć kazališta i ‘Pjesme o djeci‘ u subotu u Kazalištu Marina Držića → Побут інших міст (Дитяча вистава у Дубровнику) | Сутності: Dubrovnik, Kazalište Marina Držića, Noć kazališta",
+        "• Veliki hakerski napad na korisnike iPhonea i iPada, oštećeni nisu mora → Світовий шум (Глобальна кібератака) | Сутності: Apple, iPhone, iPad, Optimizely, Report URI",
+        "• Teško ozlijeđen maloljetni vozač mopeda, hitno je prebačen u splitsku  → Побут інших міст (ДТП у Книні) | Сутності: Knin, Ulica svetog Ante, moped, splitska bolnica",
+        "• Prekinuli su uzimati lijek za mršavljenje, pa završili u bolnici zbog  → Світовий шум (Медичне дослідження) | Сутності: GLP-1, Mounjaro, Zepbound, tirzepatid",
+        "• Filmska priča o boksaču Rockyju emotivna je posveta upornosti gubitnik → Світовий шум (Кінорецензія) | Сутності: Rocky, Michael Jackson, Whitney Houston, Freddie Mercury",
+        "• Kolona sjećanja u Vukovaru. Plenković: ‘Od nove vlasti u Srbiji očekuj → Вже публікувалось (Колона пам'яті у Вukovari) | Сутності: Andrej Plenković, Vukovar, Bolnica Dr. Juraj Njavro, Srbija",
+        "• Cijene ne prestaju rasti! U ovoj dalmatinskoj županiji sve se teže spa → Побут інших міст (Ціни у Шибенику) | Сутності: Šibensko-kninska županija, košarica, cijene",
+        "• Et Ješua poziva na izložbu dubrovačkih slikara s donacijskom namjenom  → Побут інших міст (Виставка у Дубровнику) | Сутності: Et Ješua, Antun Zanini, Dominikanski samostan, Dubrovnik",
+        "• VIDEO Pljuskovi i nevere na Jadranu, poslijepodne smirivanje: DHMZ obj → Вже публікувалось (Прогноз погоди) | Сутності: DHMZ, Jadran, Hrvatska, prognoza",
+        "• Osigurano 40.000 eura: Županija dijeli potpore za ribarstvo i marikult → Побут інших міст (Гранти у Шибенику) | Сутності: Šibensko-kninska županija, ribarstvo, marikultura"
+      ],
+      "rejected_by_reason": {
+        "Вже публікувалось": 4,
+        "Геоблок": 2,
+        "Побут інших міст": 5,
+        "Світовий шум": 3
+      },
+      "updates_marked": 0,
+      "already_rejected": 13,
+      "rejected_by_code_examples": [
+        "[URL /sport/] Matjaž Kek se oglasio nakon medijskih naklapanja da preuzima Makedoniju: “Nisam došao u Rijeku na tr",
+        "[тег RSS nogomet] “Gospodin hladnokrvni” je okrunio ludi preokret i ponovo podsjetio na legendarnog Gerda Mullera"
+      ]
+    },
+    "backlog": {
+      "total_size": 0,
+      "sources": {}
+    },
+    "published": {
+      "total": 0,
+      "ukraine_priority": 0,
+      "with_images": 0,
+      "text_only": 0,
+      "og_images_found": 0,
+      "sources": {}
+    },
+    "models_used": {
+      "gemini-3.5-flash-lite": 1
+    },
+    "models_by_task": {
+      "filter": "gemini-3.5-flash-lite",
+      "translate": null
+    },
+    "model_attempts": [
+      {
+        "task": "filter",
+        "model": "gemini-3.5-flash-lite",
+        "outcome": "ok"
+      }
+    ],
+    "exhausted_models": [],
+    "demoted_models": [
+      "filter: gemini-3-flash-preview",
+      "filter: gemini-3.6-flash"
+    ],
+    "translate_budget_deferred": [],
+    "gemini_region_blocked": false,
+    "gemini_unavailable": false,
+    "errors_count": 0,
+    "gemini_retries": 0
   }
 ]
