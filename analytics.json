@@ -1,110 +1,5 @@
 [
   {
-    "timestamp": "2026-11-09 13:01:26",
-    "execution_time": 258.1,
-    "funnel": {
-      "scraped_total": 35,
-      "scraped_by_source": {
-        "023": 10,
-        "Slobodna dalmacija": 15,
-        "Zadarski list": 10
-      },
-      "already_seen": 17,
-      "rejected_by_keywords": 6,
-      "rejected_by_rule": {
-        "тег RSS sport": 3,
-        "URL /sport/": 1,
-        "sportaša": 1,
-        "тег RSS nogomet": 1
-      },
-      "unclassified_by_ai": 0,
-      "duplicates_removed_by_ai": 10,
-      "rejection_reasons_list": [
-        "• U Rupi uhićen lažni liječnik iz Bugarske: Građane prevario za više od  → Побут інших міст (Арешт у Рієці) | Сутності: Рієка, Болгарія, Рупа",
-        "• Zaustavljen u prometu, pronađena mu droga u autu, a onda je uslijedilo → Побут інших міст (Інцидент у Дубровнику) | Сутності: Дубровник, амфетамін",
-        "• Zbog nesreće s poginulima na A3 vozaču autobusa slijedi kaznena prijav → Вже публікувалось (Повторення новини про ДТП на A3) | Сутності: Автострада А3, Іваніч-Град, Сербія",
-        "• Hrvatski sabor sutra aktualnim prijepodnevom započinje novu sjednicu,  → Не за тематикою (Загальнополітичні новини Загреба) | Сутності: Сабор, Влада, Єврорада",
-        "• Prodavali cvijeće na crno i nudili nesigurne lampione; Državni inspekt → Не за тематикою (Інспекція по всій Хорватії) | Сутності: Державний інспекторат, Всі святі",
-        "• Hrstić o slučaju Zadravec: “Koliko znam, pristigla je jedna žalba na n → Вже публікувалось (Коментар щодо справи Задравец) | Сутності: Ірена Хрстіч, Діяна Задравец, Загреб",
-        "• Plesni studio Lazareti briljirao na Stage international dance natjecan → Геоблок (Змагання у Скоп'є) | Сутності: Скоп'є, Лазареті, Пантомима",
-        "• Hrstić: Od 11 hospitaliziranih nakon prometne nesreće, pet se priprema → Вже публікувалось (Коментар про стан постраждалих у ДТП) | Сутності: Ірена Хрстіч, Іваніч-Град, А3",
-        "• Preminuo je čuveni kuhar s Krapnja Ive Svirčić. Kuhao je za predsjedni → Не за тематикою (Некролог кухарю з Крапаня) | Сутності: Іве Свірчіч, Крапань, Вашингтон",
-        "• U Šibeniku uhićena Čehinja za kojom su raspisana dva europska uhidbena → Побут інших міст (Арешт у Шибенику) | Сутності: Шибеник, Чехія"
-      ],
-      "rejected_by_reason": {
-        "Побут інших міст": 3,
-        "Вже публікувалось": 3,
-        "Не за тематикою": 3,
-        "Геоблок": 1
-      },
-      "updates_marked": 0,
-      "already_rejected": 12,
-      "rejected_by_code_examples": [
-        "[тег RSS sport] Dva zlata, srebro i sedam bronci; Mlade nade zadarske Ultime zablistale na jakom međunarodnom turnir",
-        "[тег RSS sport] Tri zlata i srebro na Zagreb Openu; BK Ares Diabolik najuspješniji klub u kadetskom uzrastu",
-        "[тег RSS sport] Prava žetva medalja zadarske Plovanije; Među 70 klubova iz tri države zauzeli visoko 7. mjesto",
-        "[URL /sport/] Uspješan nastup Jugaša na mitingu ‘Mladost‘ u Zagrebu",
-        "[sportaša] Ministrica izrazila sućut obitelji sportaša preminulog u Klinici za psihijatriju: “Okolnosti slučaja",
-        "[тег RSS nogomet] Posljednja momčad HNL-a dovela trofejnog trenera: “Situacija u Gorici je izazovna…”"
-      ]
-    },
-    "backlog": {
-      "total_size": 4,
-      "sources": {
-        "023": 4
-      }
-    },
-    "published": {
-      "total": 3,
-      "ukraine_priority": 0,
-      "with_images": 3,
-      "text_only": 0,
-      "og_images_found": 3,
-      "sources": {
-        "023": 3
-      }
-    },
-    "models_used": {
-      "gemini-3.5-flash-lite": 1,
-      "gemini-3.6-flash": 1
-    },
-    "models_by_task": {
-      "filter": "gemini-3.5-flash-lite",
-      "translate": "gemini-3.6-flash"
-    },
-    "model_attempts": [
-      {
-        "task": "filter",
-        "model": "gemini-3-flash-preview",
-        "outcome": "unavailable"
-      },
-      {
-        "task": "filter",
-        "model": "gemini-3.6-flash",
-        "outcome": "unavailable"
-      },
-      {
-        "task": "filter",
-        "model": "gemini-3.5-flash-lite",
-        "outcome": "ok"
-      },
-      {
-        "task": "translate",
-        "model": "gemini-3.6-flash",
-        "outcome": "ok"
-      }
-    ],
-    "exhausted_models": [],
-    "demoted_models": [
-      "translate: gemini-3.8-flash"
-    ],
-    "translate_budget_deferred": [],
-    "gemini_region_blocked": false,
-    "gemini_unavailable": false,
-    "errors_count": 0,
-    "gemini_retries": 2
-  },
-  {
     "timestamp": "2026-11-09 14:01:19",
     "execution_time": 237.2,
     "funnel": {
@@ -10037,5 +9932,122 @@
     "gemini_unavailable": true,
     "errors_count": 0,
     "gemini_retries": 3
+  },
+  {
+    "timestamp": "2026-11-18 14:01:25",
+    "execution_time": 213.1,
+    "funnel": {
+      "scraped_total": 35,
+      "scraped_by_source": {
+        "023": 10,
+        "Slobodna dalmacija": 15,
+        "Zadarski list": 10
+      },
+      "already_seen": 20,
+      "rejected_by_keywords": 5,
+      "rejected_by_rule": {
+        "тег RSS lifestyle": 1,
+        "URL /sport/": 1,
+        "тег RSS nogomet": 1,
+        "nogometnog": 1,
+        "тег RSS košarka": 1
+      },
+      "unclassified_by_ai": 0,
+      "duplicates_removed_by_ai": 10,
+      "rejection_reasons_list": [
+        "• “Progovori čez hartu – kratke štorije”: predstavljena nova zbirka Kate → Побут інших міст (Культурна подія в Гробнику) | Сутності: Grobnik, Katedra Čakavskog sabora, književnost",
+        "• Tragedija na putu za Škabrnju: troje poginulih u stravičnom sudaru dva → Вже публікувалось (Трагедія на шляху до Шкабрні) | Сутності: Slunj, D1, Škabrnja, prometna nesreća",
+        "• Evo kako je izgledao zadarski porat osamdesetih. Možda nekoga i prepoz → Не за тематикою (Історичні фотографії порту) | Сутності: Zadar, Gradska luka, retro fotografije",
+        "• Zbog velikog interesa za novo izdanje Off.line Speed datinga dodan još → Не за тематикою (Локальний захід знайомств) | Сутності: Off.line Speed dating, Zadar",
+        "• Bruno Šimleša u Saloči od zrcala predstavlja putopis ‘U srcu divljine‘ → Побут інших міст (Подія в Дубровнику) | Сутності: Bruno Šimleša, Dubrovnik, Narodna knjižnica",
+        "• Gotovina: “Škabrnja i Vukovar su tragedije s početka Domovinskog rata  → Вже публікувалось (Коментар генерала до дня пам'яті) | Сутності: Ante Gotovina, Škabrnja, Vukovar",
+        "• General Gotovina iz Škabrnje: ‘Bili smo slabo naoružani, ali stvorili  → Дубль (Повтор заяви генерала) | Сутності: Ante Gotovina, Škabrnja, Vukovar",
+        "• Odgođen sutrašnji ABBA tribute koncert u Pogonu → Побут інших міст (Скасування концерту в Рієці) | Сутності: ABBA tribute, Rijeka, Pogon",
+        "• Učenici Područne škole Luka Šipanska iskazali poštovanje prema stradal → Побут інших міст (Шкільна акція в Дубровнику) | Сутності: Luka Šipanska, Vukovar, Škabrnja",
+        "• Kapelica se prisjeća žrtve Vukovara i Škabrnje, a velika hrvatska band → Вже публікувалось (Вшанування пам'яті) | Сутності: Vukovar, Škabrnja, Kapelica"
+      ],
+      "rejected_by_reason": {
+        "Побут інших міст": 4,
+        "Вже публікувалось": 3,
+        "Не за тематикою": 2,
+        "Дубль": 1
+      },
+      "updates_marked": 0,
+      "already_rejected": 12,
+      "rejected_by_code_examples": [
+        "[тег RSS lifestyle] Studija na 340.000 odraslih povezala vrstu alkoholnog pića s rizikom smrti od srčanih bolesti",
+        "[URL /sport/] Ante Delija potpisao novi ugovor s UFC-om na četiri borbe",
+        "[тег RSS nogomet] Hrvatska je pala za jedno mjesto u odnosu na listopada na najnovijoj rang listi FIFA-e",
+        "[nogometnog] U prometnoj nesreći poginuo i predsjednik NK Topusko Miroslav Žugaj: išli su u Škabrnju",
+        "[тег RSS košarka] Kirci pobijedili Pulu i izborili osminu finala Kupa “Krešimir Ćosić”. U Crikvenicu dolazi – Split"
+      ]
+    },
+    "backlog": {
+      "total_size": 2,
+      "sources": {
+        "023": 2
+      }
+    },
+    "published": {
+      "total": 0,
+      "ukraine_priority": 0,
+      "with_images": 0,
+      "text_only": 0,
+      "og_images_found": 0,
+      "sources": {}
+    },
+    "models_used": {
+      "gemini-3.1-flash-lite": 1
+    },
+    "models_by_task": {
+      "filter": "gemini-3.1-flash-lite",
+      "translate": null
+    },
+    "model_attempts": [
+      {
+        "task": "filter",
+        "model": "gemini-3-flash-preview",
+        "outcome": "unavailable"
+      },
+      {
+        "task": "filter",
+        "model": "gemini-3.6-flash",
+        "outcome": "unavailable"
+      },
+      {
+        "task": "filter",
+        "model": "gemini-3.5-flash-lite",
+        "outcome": "unavailable"
+      },
+      {
+        "task": "filter",
+        "model": "gemini-3.1-flash-lite",
+        "outcome": "ok"
+      },
+      {
+        "task": "translate",
+        "model": "gemini-3.6-flash",
+        "outcome": "unavailable"
+      },
+      {
+        "task": "translate",
+        "model": "gemini-3.5-flash-lite",
+        "outcome": "unavailable"
+      },
+      {
+        "task": "translate",
+        "model": "gemini-3.8-flash",
+        "outcome": "unavailable"
+      }
+    ],
+    "exhausted_models": [],
+    "demoted_models": [
+      "translate: gemini-3.8-flash"
+    ],
+    "translate_budget_deferred": [],
+    "gemini_region_blocked": false,
+    "gemini_unavailable": true,
+    "errors_count": 0,
+    "gemini_retries": 6
   }
 ]
