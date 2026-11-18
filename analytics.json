@@ -1,106 +1,5 @@
 [
   {
-    "timestamp": "2026-11-09 12:01:28",
-    "execution_time": 118.6,
-    "funnel": {
-      "scraped_total": 35,
-      "scraped_by_source": {
-        "023": 10,
-        "Slobodna dalmacija": 15,
-        "Zadarski list": 10
-      },
-      "already_seen": 17,
-      "rejected_by_keywords": 10,
-      "rejected_by_rule": {
-        "тег RSS sport": 2,
-        "sporta": 1,
-        "URL /sport/": 2,
-        "sportom": 1,
-        "тег RSS nogomet": 1,
-        "тег RSS košarka": 2,
-        "promo": 1
-      },
-      "unclassified_by_ai": 0,
-      "duplicates_removed_by_ai": 5,
-      "rejection_reasons_list": [
-        "• Kreće velika obnova zadarskih ulica; Doznajte koje su sve ceste na pop → Вже публікувалось (Ремонт доріг у Задари) | Сутності: Задар, вулиця Строссмаєра, Filius, Vodovod",
-        "• Goran Bare naslovno lice Rockmarkovog kalendara za 2027. godinu → Не за тематикою (Музичний календар) | Сутності: Горан Баре, Rockmark, Культурний календар, Загреб",
-        "• Ovo su nove cijene goriva i plina u bocama. Stupaju na snagu sutra i v → Вже публікувалось (Ціни на паливо) | Сутності: Уряд Хорватії, ціни на паливо, бензин, дизель",
-        "• Gdje su tuge nježnije – novi autorski adut Mateja Mudrovčića Mudrog → Не за тематикою (Музична новинка) | Сутності: Матей Мудровчич Мудрий, музика, новий сингл",
-        "• Peter Magyar tvrdi da je priveden brat bivšeg premijera Orbana → Геоблок (Події в Угорщині) | Сутності: Петер Мадяр, Віктор Орбан, Арон Орбан, Будапешт"
-      ],
-      "rejected_by_reason": {
-        "Вже публікувалось": 2,
-        "Не за тематикою": 2,
-        "Геоблок": 1
-      },
-      "updates_marked": 0,
-      "already_rejected": 12,
-      "rejected_by_code_examples": [
-        "[тег RSS sport] Tri zlata i srebro na Zagreb Openu; BK Ares Diabolik najuspješniji klub u kadetskom uzrastu",
-        "[тег RSS sport] Prava žetva medalja zadarske Plovanije; Među 70 klubova iz tri države zauzeli visoko 7. mjesto",
-        "[sporta] Veliko priznanje za istaknutog zadarskog djelatnika; Radomir Jurić postao počasni turistički vodič",
-        "[URL /sport/] Uspješan nastup Jugaša na mitingu ‘Mladost‘ u Zagrebu",
-        "[sportom] More, jedra, olignji i Daleka obala ujedinili Šipan, pogledajte kako je bilo!",
-        "[тег RSS nogomet] Posljednja momčad HNL-a dovela trofejnog trenera: “Situacija u Gorici je izazovna…”",
-        "[тег RSS košarka] Košarkaši Kvarnera gostuju u Zadru. Riječani četiri kola ne znaju za poraz",
-        "[promo] Okusi i mirisi zadarskog kraja u Zagrebu: Dvadesetak proizvođača predstavilo bogatstvo domaće ponude",
-        "[тег RSS košarka] Bek DepoLink Škrljeva nakon pobjede: “Htjeli smo popraviti dojam nakon Zaboka”",
-        "[URL /sport/] Kapetan vaterpolista Primorja EB: “Na nama je da nastavimo raditi kao što smo radili do sada”"
-      ]
-    },
-    "backlog": {
-      "total_size": 5,
-      "sources": {
-        "Zadarski list": 1,
-        "023": 4
-      }
-    },
-    "published": {
-      "total": 3,
-      "ukraine_priority": 0,
-      "with_images": 3,
-      "text_only": 0,
-      "og_images_found": 1,
-      "sources": {
-        "Slobodna dalmacija": 1,
-        "023": 1,
-        "Zadarski list": 1
-      }
-    },
-    "models_used": {
-      "gemini-3.5-flash-lite": 2
-    },
-    "models_by_task": {
-      "filter": "gemini-3.5-flash-lite",
-      "translate": "gemini-3.5-flash-lite"
-    },
-    "model_attempts": [
-      {
-        "task": "filter",
-        "model": "gemini-3.5-flash-lite",
-        "outcome": "ok"
-      },
-      {
-        "task": "translate",
-        "model": "gemini-3.5-flash-lite",
-        "outcome": "ok"
-      }
-    ],
-    "exhausted_models": [],
-    "demoted_models": [
-      "filter: gemini-3-flash-preview",
-      "filter: gemini-3.6-flash",
-      "translate: gemini-3.8-flash",
-      "translate: gemini-3.6-flash"
-    ],
-    "translate_budget_deferred": [],
-    "gemini_region_blocked": false,
-    "gemini_unavailable": false,
-    "errors_count": 0,
-    "gemini_retries": 0
-  },
-  {
     "timestamp": "2026-11-09 13:01:26",
     "execution_time": 258.1,
     "funnel": {
@@ -10044,5 +9943,99 @@
     "gemini_unavailable": false,
     "errors_count": 0,
     "gemini_retries": 0
+  },
+  {
+    "timestamp": "2026-11-18 13:01:21",
+    "execution_time": 128.5,
+    "funnel": {
+      "scraped_total": 35,
+      "scraped_by_source": {
+        "023": 10,
+        "Slobodna dalmacija": 15,
+        "Zadarski list": 10
+      },
+      "already_seen": 24,
+      "rejected_by_keywords": 3,
+      "rejected_by_rule": {
+        "тег RSS košarka": 1,
+        "URL /sport/": 1,
+        "тег RSS nogomet": 1
+      },
+      "unclassified_by_ai": 0,
+      "duplicates_removed_by_ai": 6,
+      "rejection_reasons_list": [
+        "• \"I u mom gradu Vukovar svijetli\": Šibenčani odali počast gradu heroju  → Побут інших міст (Шибеник) | Сутності: Шибеник, Вуковар, Трґ палих бранітєля, Желько",
+        "• Ordinacija dentalne medicine Jurković 25. obljetnicu obilježila presel → Побут інших міст (Опатія) | Сутності: Опатія, Ординація Юркович, Трамонтана Малл, Кварнер",
+        "• Od Nove godine nova pravila igre: cijene zakupa gradskih poslovnih pro → Побут інших міст (Кнін) | Сутності: Кнін, міська управа, ділові приміщення",
+        "• Ovoga petka u Crikvenici svečana projekcija filma “Goranski risovi: pr → Побут інших міст (Цриквеньиця) | Сутності: Цриквеньиця, 138 бригада, зал Зора, Горські рисі",
+        "• VIDEO Moćna poruka s mora: pogledajte kako su u Šibeniku odali počast  → Побут інших міст (Шибеник) | Сутності: Шибеник, Шкабрня, Shadow Nautics, Вуковар",
+        "• “Human” je riječ godine: izbor kao podsjećanje što znači biti čovjek → Світовий шум (Лондон) | Сутності: Лондон, Кембридж, Франческа Вудворд, Human"
+      ],
+      "rejected_by_reason": {
+        "Побут інших міст": 5,
+        "Світовий шум": 1
+      },
+      "updates_marked": 0,
+      "already_rejected": 16,
+      "rejected_by_code_examples": [
+        "[тег RSS košarka] Kirci pobijedili Pulu i izborili osminu finala Kupa “Krešimir Ćosić”. U Crikvenicu dolazi – Split",
+        "[URL /sport/] Tiger Woods se nakon dvije godine vraća natjecateljskom golu. Posljednju pobjedu ostvario je 2019.",
+        "[тег RSS nogomet] Orbanovim padovom završilo je vrijeme izdašnog financiranja mađarskih nogometnih klubova. Neki se ve"
+      ]
+    },
+    "backlog": {
+      "total_size": 2,
+      "sources": {
+        "023": 2
+      }
+    },
+    "published": {
+      "total": 0,
+      "ukraine_priority": 0,
+      "with_images": 0,
+      "text_only": 0,
+      "og_images_found": 2,
+      "sources": {}
+    },
+    "models_used": {
+      "gemini-3.5-flash-lite": 1
+    },
+    "models_by_task": {
+      "filter": "gemini-3.5-flash-lite",
+      "translate": null
+    },
+    "model_attempts": [
+      {
+        "task": "filter",
+        "model": "gemini-3.5-flash-lite",
+        "outcome": "ok"
+      },
+      {
+        "task": "translate",
+        "model": "gemini-3.6-flash",
+        "outcome": "unavailable"
+      },
+      {
+        "task": "translate",
+        "model": "gemini-3.5-flash-lite",
+        "outcome": "unavailable"
+      },
+      {
+        "task": "translate",
+        "model": "gemini-3.8-flash",
+        "outcome": "unavailable"
+      }
+    ],
+    "exhausted_models": [],
+    "demoted_models": [
+      "filter: gemini-3-flash-preview",
+      "filter: gemini-3.6-flash",
+      "translate: gemini-3.8-flash"
+    ],
+    "translate_budget_deferred": [],
+    "gemini_region_blocked": false,
+    "gemini_unavailable": true,
+    "errors_count": 0,
+    "gemini_retries": 3
   }
 ]
