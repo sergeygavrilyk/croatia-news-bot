@@ -1,99 +1,5 @@
 [
   {
-    "timestamp": "2026-11-09 08:01:21",
-    "execution_time": 226.2,
-    "funnel": {
-      "scraped_total": 35,
-      "scraped_by_source": {
-        "023": 10,
-        "Slobodna dalmacija": 15,
-        "Zadarski list": 10
-      },
-      "already_seen": 12,
-      "rejected_by_keywords": 1,
-      "rejected_by_rule": {
-        "тег RSS lifestyle": 1
-      },
-      "unclassified_by_ai": 0,
-      "duplicates_removed_by_ai": 12,
-      "rejection_reasons_list": [
-        "• Dijete vam ima bicikl? Gotovo sigurno ste u prekršaju! Dubrovačka djec → Побут інших міст (Локальні правила для дітей-велосипедистів у Дубровнику) | Сутності: Дубровник, велосипеди, діти, закон",
-        "• Njemačka razmatra radni dan od 12 sati: “Radilo bi se tri puta tjedno  → Геоблок (Трудове законодавство Німеччини) | Сутності: Німеччина, Фрідріх Мерц, робочий день",
-        "• Ponedjeljak u Zadru počinje naopako: dio grada bez vode, a Strossmayer → Вже публікувалось (Про ці ремонти та відключення вже повідомлялося раніше) | Сутності: Задар, вулиця Строссмайєра, відключення води",
-        "• Privlačka lignjada odlučena za 65 grama: 26 ekipa izvuklo iz mora goto → Спорт (Змагання з вилову кальмарів) | Сутності: Привлака, змагання, лігняда, рибалки",
-        "• “Mogli bismo otkriti 80 posto opasnih asteroida”: Hrvatski fizičar obj → Світовий шум (Абстрактні наукові прогнози про астероїди) | Сутності: астероїди, Желько Івезич, наука",
-        "• “Budi lijepa, vrijedna i voljena”: Goranska kreatorica torbicama šalje → Побут інших міст (Дизайнерка з іншого регіону) | Сутності: Адріана Райчич, Рієка, Горський Котар",
-        "• Po struci inženjer, u duši – slikar. Željko Delač na platnima čuva lje → Побут інших міст (Локальна виставка художника в іншому регіоні) | Сутності: Желько Делач, Брод Моравиці, виставка",
-        "• Jugo sutra jača do olujnog, u četvrtak i 20°C, a za vikend Zadar čeka  → Вже публікувалось (Прогноз погоди на тиждень вже є в історії) | Сутності: Задар, прогноз погоди, вітер Юго",
-        "• Sandi je prvak u neobičnom natjecanju: ‘Nije isto rikati u šumi, doma  → Спорт (Змагання з імітації реву оленів) | Сутності: Санді Збашник, Rika Fest, Горський Котар",
-        "• Mufić: ‘Zbog odugovlačenja Gradskog vijeća sve je postalo neizvjesno’ → Побут інших міст (Ремонт доріг у місті Врбовско) | Сутності: Дражен Муфич, Врбовско, ремонт доріг",
-        "• Došli su u Gorski kotar iz Njemačke s irokez-frizurama, a onda se dogo → Побут інших міст (Історія про туристів в іншому регіоні) | Сутності: Кочічін, туризм, Горський Котар",
-        "• Pri kraju je energetska obnova Doma zdravlja Delnice → Побут інших міст (Ремонт медичного закладу в Делницях) | Сутності: Делниці, Будинок здоров'я, ремонт"
-      ],
-      "rejected_by_reason": {
-        "Побут інших міст": 6,
-        "Геоблок": 1,
-        "Вже публікувалось": 2,
-        "Спорт": 2,
-        "Світовий шум": 1
-      },
-      "updates_marked": 0,
-      "already_rejected": 12,
-      "rejected_by_code_examples": [
-        "[тег RSS lifestyle] Koliko dugo čuvati vino: rosé do godinu dana, a ozbiljna crna i do deset godina"
-      ]
-    },
-    "backlog": {
-      "total_size": 2,
-      "sources": {
-        "023": 2
-      }
-    },
-    "published": {
-      "total": 3,
-      "ukraine_priority": 0,
-      "with_images": 3,
-      "text_only": 0,
-      "og_images_found": 1,
-      "sources": {
-        "023": 1,
-        "Zadarski list": 2
-      }
-    },
-    "models_used": {
-      "gemini-3-flash-preview": 1,
-      "gemini-3.6-flash": 1
-    },
-    "models_by_task": {
-      "filter": "gemini-3-flash-preview",
-      "translate": "gemini-3.6-flash"
-    },
-    "model_attempts": [
-      {
-        "task": "filter",
-        "model": "gemini-3-flash-preview",
-        "outcome": "ok"
-      },
-      {
-        "task": "translate",
-        "model": "gemini-3.8-flash",
-        "outcome": "unavailable"
-      },
-      {
-        "task": "translate",
-        "model": "gemini-3.6-flash",
-        "outcome": "ok"
-      }
-    ],
-    "exhausted_models": [],
-    "demoted_models": [],
-    "translate_budget_deferred": [],
-    "gemini_region_blocked": false,
-    "gemini_unavailable": false,
-    "errors_count": 0,
-    "gemini_retries": 1
-  },
-  {
     "timestamp": "2026-11-09 09:01:28",
     "execution_time": 220.4,
     "funnel": {
@@ -10094,5 +10000,95 @@
     "gemini_unavailable": false,
     "errors_count": 0,
     "gemini_retries": 2
+  },
+  {
+    "timestamp": "2026-11-18 09:01:19",
+    "execution_time": 209.9,
+    "funnel": {
+      "scraped_total": 35,
+      "scraped_by_source": {
+        "023": 10,
+        "Slobodna dalmacija": 15,
+        "Zadarski list": 10
+      },
+      "already_seen": 25,
+      "rejected_by_keywords": 6,
+      "rejected_by_rule": {
+        "тег RSS lifestyle": 1,
+        "тег RSS nogomet": 2,
+        "тег RSS košarka": 2,
+        "URL /sport/": 1
+      },
+      "unclassified_by_ai": 0,
+      "duplicates_removed_by_ai": 3,
+      "rejection_reasons_list": [
+        "• Franković: ‘Vukovar nikad nije pokoren, a imam jasnu poruku za sve one → Вже публікувалось (Коментар щодо річниці у Вukovari) | Сутності: Mato Franković, Vukovar, Domovinski rat, Škabrnja",
+        "• Claudio je čelnik primorsko-goranskih branitelja: “Mi smo antifašisti  → Побут інших міст (Асоціація ветеранів у Рієці) | Сутності: Claudio Vukonić, Primorsko-goranska županija, Zlatko Tomašić, Marinko Žuža",
+        "• Od groblja tenkova do sloma obrane. Ovih deset trenutaka obilježilo je → Вже публікувалось (Історія битви за Вуковар) | Сутності: Vukovar, JNA, Domovinski rat, Hrvatska"
+      ],
+      "rejected_by_reason": {
+        "Вже публікувалось": 2,
+        "Побут інших міст": 1
+      },
+      "updates_marked": 0,
+      "already_rejected": 20,
+      "rejected_by_code_examples": [
+        "[тег RSS lifestyle] Štiti li crno vino srce? Dijetetičarka British Heart Foundationa o resveratrolu i dokazima",
+        "[тег RSS nogomet] “Gospodin hladnokrvni” je okrunio ludi preokret i ponovo podsjetio na legendarnog Gerda Mullera",
+        "[тег RSS košarka] VIDEO Ušao je u igru dok je Dončić odmarao, zabio je tricu u posljednjoj sekundi i odveo Lakerse u p",
+        "[тег RSS košarka] VIDEO Iako nije bio starter s 40 poena odveo Utah do druge pobjede. Pistonsi prekinuli niz Spursa",
+        "[URL /sport/] Članovi Kluba dizača utega Rječina 75 osvojili tri zlatne medalje na pojedinačnom PH",
+        "[тег RSS nogomet] Ivica Olić nakon rujevičke pobjede: “Dečki su već pokazali da imaju karakter za izvući se iz teških "
+      ]
+    },
+    "backlog": {
+      "total_size": 0,
+      "sources": {}
+    },
+    "published": {
+      "total": 2,
+      "ukraine_priority": 0,
+      "with_images": 0,
+      "text_only": 2,
+      "og_images_found": 1,
+      "sources": {
+        "023": 2
+      }
+    },
+    "models_used": {
+      "gemini-3.5-flash-lite": 1,
+      "gemini-3.6-flash": 1
+    },
+    "models_by_task": {
+      "filter": "gemini-3.5-flash-lite",
+      "translate": "gemini-3.6-flash"
+    },
+    "model_attempts": [
+      {
+        "task": "filter",
+        "model": "gemini-3.5-flash-lite",
+        "outcome": "ok"
+      },
+      {
+        "task": "translate",
+        "model": "gemini-3.8-flash",
+        "outcome": "unavailable"
+      },
+      {
+        "task": "translate",
+        "model": "gemini-3.6-flash",
+        "outcome": "ok"
+      }
+    ],
+    "exhausted_models": [],
+    "demoted_models": [
+      "filter: gemini-3-flash-preview",
+      "filter: gemini-3.6-flash"
+    ],
+    "translate_budget_deferred": [],
+    "gemini_region_blocked": false,
+    "gemini_unavailable": false,
+    "errors_count": 0,
+    "gemini_retries": 1
   }
 ]
