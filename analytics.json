@@ -1,110 +1,5 @@
 [
   {
-    "timestamp": "2026-11-10 08:01:22",
-    "execution_time": 291.0,
-    "funnel": {
-      "scraped_total": 35,
-      "scraped_by_source": {
-        "023": 10,
-        "Slobodna dalmacija": 15,
-        "Zadarski list": 10
-      },
-      "already_seen": 7,
-      "rejected_by_keywords": 5,
-      "rejected_by_rule": {
-        "тег RSS sport": 5
-      },
-      "unclassified_by_ai": 0,
-      "duplicates_removed_by_ai": 13,
-      "rejection_reasons_list": [
-        "• Krleža i Ivančić razotkrivaju “domoljublje” kao profiterstvo. Ovo je p → Побут інших міст (Театральна вистава у Загребі) | Сутності: Kazalište Komedija, Uršula Cetinski, Miroslav Krleža, Viktor Ivančić, Zagreb",
-        "• Na pustila nas je Ana Kravić, autorica zbirke ‘Na livadi kamenih lepti → Побут інших міст (Подія в громаді Конавле) | Сутності: Ana Kravić, Božo Lasić, Konavle, Sniježnica",
-        "• Roman Monike Herceg o nasilju i obiteljskoj šutnji dobiva kazališnu ve → Побут інших міст (Театральна прем'єра в Рієці) | Сутності: Monika Herceg, HNK Rijeka, Roman Nikolić, Doroteja Šušak, Rijeka",
-        "• Drakula kakvog još niste vidjeli: Umjesto čudovišta, na pozornici je n → Побут інших міст (Фестиваль лялькових театрів у Рієці) | Сутності: Gradsko kazalište lutaka Rijeka, Rijeka, Gruzija, Charlie Chaplin",
-        "• VIDEO Najslađe što ćete vidjeti danas. Dijele se snimke s Pelješca, te → Не за тематикою (Вірусне відео з твариною) | Сутності: Pelješac, Tuna Bar Pelješac, собака-гітарист",
-        "• Potrošačka industrija progutala Advent. Sve je podređeno zaradi, duhov → Не за тематикою (Абстрактні роздуми про комерціалізацію Адвенту) | Сутності: Advent, Ron Howard, Grinch, Imagine Entertainment",
-        "• VIDEO Najslađe što ćete vidjeti danas. Dijele se snimke s Pelješca, te → Дубль (Дублікат новини ID 12) | Сутності: Pelješac, Tuna Bar Pelješac, собака-гітарист",
-        "• Zašto Vance ne može okrenuti leđa Trumpu: “Još uvijek ima veliku podrš → Геоблок (Внутрішня політика США) | Сутності: JD Vance, Donald Trump, Marco Rubio, SAD, Reuters",
-        "• Ova je ulica u utorak bez vode → Побут інших міст (Відключення води в Дубровнику) | Сутності: Ulica Iva Dulčića, Dubrovnik, Vodovod Dubrovnik",
-        "• Odvjetnik obitelj preminulog mladića iz Jankomira: ‘Kristian nije bio  → Вже публікувалось (Коментар адвоката щодо інциденту в Янкомірі з історії) | Сутності: Kristian Josip Periš, Leon Zrinić, Klinika Sveti Ivan, Jankomir, Zagreb",
-        "• Dubrovnik Jazz Outbreak 2026 zaključen nastupom Bojana Z → Побут інших міст (Локальний джазовий фестиваль у Дубровнику) | Сутності: Dubrovnik Jazz Outbreak, Bojan Z, Lazareti, Dubrovnik",
-        "• Znate li naješkati iglicu namijenjenu velikim predatorima? Evo što tre → Світовий шум (Поради та інструкції з риболовлі) | Сутності: панкінг, риболовля, сарган, хижа риба",
-        "• Vrsta koja se očito udomaćila u našem moru. U Kaštel Štafiliću snimlje → Не за тематикою (Знахідка тропічного молюска біля Спліта) | Сутності: Melibe viridis, Kaštel Štafilić, Resnik, Maja Plazibat"
-      ],
-      "rejected_by_reason": {
-        "Побут інших міст": 6,
-        "Не за тематикою": 3,
-        "Дубль": 1,
-        "Геоблок": 1,
-        "Вже публікувалось": 1,
-        "Світовий шум": 1
-      },
-      "updates_marked": 0,
-      "already_rejected": 6,
-      "rejected_by_code_examples": [
-        "[тег RSS sport] Veliki uspjeh PK Zadar u Zagrebu; Pet medalja na međunarodnom mitingu „Mladost 2026.“",
-        "[тег RSS sport] Ulaznice za Cro Copa u HNK Zadar planule za šest sati, a organizator ovaj tjedan ponovno otvara prij",
-        "[тег RSS sport] Bronca s Poljuda i četiri C finala na Mladosti: plivači Jadere istoga vikenda nastupili u Splitu i Z",
-        "[тег RSS sport] Niko Šare i Ivan Vraneš na Mijatovićevu popisu za utakmice protiv Poljske i Nizozemske, u stožeru i ",
-        "[тег RSS sport] Četvrta utakmica u 12 dana, a Zadar i dalje bez poraza: Kvarner pao s 29 razlike"
-      ]
-    },
-    "backlog": {
-      "total_size": 6,
-      "sources": {
-        "Slobodna dalmacija": 2,
-        "023": 4
-      }
-    },
-    "published": {
-      "total": 3,
-      "ukraine_priority": 1,
-      "with_images": 3,
-      "text_only": 0,
-      "og_images_found": 1,
-      "sources": {
-        "Zadarski list": 2,
-        "023": 1
-      }
-    },
-    "models_used": {
-      "gemini-3.6-flash": 2
-    },
-    "models_by_task": {
-      "filter": "gemini-3.6-flash",
-      "translate": "gemini-3.6-flash"
-    },
-    "model_attempts": [
-      {
-        "task": "filter",
-        "model": "gemini-3-flash-preview",
-        "outcome": "unavailable"
-      },
-      {
-        "task": "filter",
-        "model": "gemini-3.6-flash",
-        "outcome": "ok"
-      },
-      {
-        "task": "translate",
-        "model": "gemini-3.8-flash",
-        "outcome": "unavailable"
-      },
-      {
-        "task": "translate",
-        "model": "gemini-3.6-flash",
-        "outcome": "ok"
-      }
-    ],
-    "exhausted_models": [],
-    "demoted_models": [],
-    "translate_budget_deferred": [],
-    "gemini_region_blocked": false,
-    "gemini_unavailable": false,
-    "errors_count": 0,
-    "gemini_retries": 2
-  },
-  {
     "timestamp": "2026-11-10 09:01:22",
     "execution_time": 183.7,
     "funnel": {
@@ -10086,5 +9981,93 @@
     "gemini_unavailable": false,
     "errors_count": 0,
     "gemini_retries": 4
+  },
+  {
+    "timestamp": "2026-11-19 09:01:30",
+    "execution_time": 117.4,
+    "funnel": {
+      "scraped_total": 35,
+      "scraped_by_source": {
+        "023": 10,
+        "Slobodna dalmacija": 15,
+        "Zadarski list": 10
+      },
+      "already_seen": 25,
+      "rejected_by_keywords": 2,
+      "rejected_by_rule": {
+        "тег RSS košarka": 1,
+        "igračima": 1
+      },
+      "unclassified_by_ai": 0,
+      "duplicates_removed_by_ai": 6,
+      "rejection_reasons_list": [
+        "• Porazne brojke domaćeg mljekarstva; Proizvodimo tek 39 posto svojih po → Не за тематикою (Статистика молочного виробництва Хорватії) | Сутності: Міністерство сільського господарства, Угорщина, Словенія, CLAL",
+        "• Inspekcija otkrila pet ozbiljnih propusta u bolnici Jankomir nakon smr → Побут інших міст (Інцидент у загреبській лікарні) | Сутності: Клініка Янкомір, Светі Іван, Міністерство охорони здоров'я, Загреб",
+        "• Novi detalji užasa u Makarskoj. Napadač došao na vrata bivše djevojke, → Побут інших міст (Напад у Макарскі) | Сутності: Макарска, Велі Брдо, Боснія і Герцеговина, Спліт",
+        "• Svi srednjoškolci Gorskog kotara dobivat će 250 eura mjesečno, bez obz → Побут інших міст (Стипендії у Горському котарі) | Сутності: Горський котар, Приморсько-горанська жупанія, Стипендії",
+        "• Ston odao počast žrtvama Vukovara i Škabrnje, upaljene baklje na stons → Побут інших міст (Вшанування жертв у Стоні) | Сутності: Стон, Вуковар, Шкабрня, Домовинський рат",
+        "• Mladić (24) iz BiH napao majku bivše djevojke u Makarskoj, ona helikop → Вже публікувалось (Дубль новини 4 про напад) | Сутності: Макарска, Боснія і Герцеговина, Спліт"
+      ],
+      "rejected_by_reason": {
+        "Не за тематикою": 1,
+        "Побут інших міст": 4,
+        "Вже публікувалось": 1
+      },
+      "updates_marked": 0,
+      "already_rejected": 18,
+      "rejected_by_code_examples": [
+        "[тег RSS košarka] Hezonja briljirao, ali Cleveland je izgubio na nevjerojatan način. Lakersima prekinut niz pobjeda",
+        "[igračima] GTA 6 izaziva globalnu ludnicu, milijuni ljudi otvaraju bolovanje: ‘Ovo je poput slijetanja na Mjese"
+      ]
+    },
+    "backlog": {
+      "total_size": 3,
+      "sources": {
+        "Slobodna dalmacija": 1,
+        "023": 2
+      }
+    },
+    "published": {
+      "total": 3,
+      "ukraine_priority": 0,
+      "with_images": 2,
+      "text_only": 1,
+      "og_images_found": 0,
+      "sources": {
+        "Slobodna dalmacija": 2,
+        "023": 1
+      }
+    },
+    "models_used": {
+      "gemini-3.5-flash-lite": 2
+    },
+    "models_by_task": {
+      "filter": "gemini-3.5-flash-lite",
+      "translate": "gemini-3.5-flash-lite"
+    },
+    "model_attempts": [
+      {
+        "task": "filter",
+        "model": "gemini-3.5-flash-lite",
+        "outcome": "ok"
+      },
+      {
+        "task": "translate",
+        "model": "gemini-3.5-flash-lite",
+        "outcome": "ok"
+      }
+    ],
+    "exhausted_models": [],
+    "demoted_models": [
+      "filter: gemini-3-flash-preview",
+      "filter: gemini-3.6-flash",
+      "translate: gemini-3.8-flash",
+      "translate: gemini-3.6-flash"
+    ],
+    "translate_budget_deferred": [],
+    "gemini_region_blocked": false,
+    "gemini_unavailable": false,
+    "errors_count": 0,
+    "gemini_retries": 0
   }
 ]
