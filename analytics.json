@@ -1,112 +1,5 @@
 [
   {
-    "timestamp": "2026-11-09 20:01:21",
-    "execution_time": 282.6,
-    "funnel": {
-      "scraped_total": 35,
-      "scraped_by_source": {
-        "023": 10,
-        "Slobodna dalmacija": 15,
-        "Zadarski list": 10
-      },
-      "already_seen": 14,
-      "rejected_by_keywords": 8,
-      "rejected_by_rule": {
-        "тег RSS lifestyle": 4,
-        "utakmice": 1,
-        "turnir": 1,
-        "тег RSS nogomet": 2
-      },
-      "unclassified_by_ai": 0,
-      "duplicates_removed_by_ai": 10,
-      "rejection_reasons_list": [
-        "• Polarni vrtlog oslabio tjednima prije uobičajenog, meteorolozi ne iskl → Геоблок (Погода в Європі та світі) | Сутності: Arktik, Europa, Sjeverna Amerika, Azija, meteorolozi",
-        "• Četvorki iz Jankomira uručen izvanredni otkaz. Odvjetnik: “Periš nije  → Вже публікувалось (Інцидент у психіатричній клініці) | Сутності: Jankomir, Kristian Josip Periš, Klinika za psihijatriju, Krešimir Devčić",
-        "• Naš novinar otkriva nepoznate priče o Miši: U njegovom stanu je dogovo → Спорт (Новина про футболістів та клуб) | Сутності: Mišo, Šibenik, Hajduk, Split, Ćiro",
-        "• Misec hrvatskoga libra održan u Korniću: okupljanje čitatelja svih gen → Побут інших міст (Культурна подія в Kornić) | Сутності: Kornić, Etno kuća Kornić, Katedra Čakavskoga sabora, Jakica",
-        "• Skoro tisuću mjera policije prema vozačima. Evo koliko ih je sankcioni → Побут інших міст (ДТП та поліція в Дубровнику) | Сутності: Dubrovnik, Neretva, policija",
-        "• Puntarski osnovnoškolci se upoznali s veslanjem → Побут інших міст (Шкільна подія в Пунаті) | Сутності: Punat, Osnovna škola Punat, Jaht klub Punat, Marina Punat",
-        "• Sporna sanacija vijadukta Dubračina: Kvarcni pijesak samo u zatvorenom → Побут інших міст (Ремонт у Цриквениці) | Сутності: Crikvenica, vijadukt Dubračina, Sitolor, Hrvatske ceste",
-        "• Svaki kamen dobio svoj broj: počela je sanacija omiljene dubrovačke pl → Побут інших міст (Санкція пляжу в Дубровнику) | Сутності: Dubrovnik, Bellevue, Octopus, Uvala Miramare",
-        "• Branimir Marković od ove jeseni ima i svoj mali mjuzikl, izvode ga dje → Побут інших міст (Шкільний мюзикл у Равній Горі) | Сутності: Ravna Gora, Branimir Marković",
-        "• Za Grlić Radmana Thompsonov koncert u Stuttgartu protekao je bez incid → Геоблок (Концерт у Німеччині) | Сутності: Stuttgart, Marko Perković Thompson, Gordan Grlić Radman, Porsche arena"
-      ],
-      "rejected_by_reason": {
-        "Геоблок": 2,
-        "Вже публікувалось": 1,
-        "Спорт": 1,
-        "Побут інших міст": 6
-      },
-      "updates_marked": 1,
-      "already_rejected": 10,
-      "rejected_by_code_examples": [
-        "[тег RSS lifestyle] Mramorni kolač Carle Hall ide u hladnu pećnicu i peče se do sat i pol na 150 °C",
-        "[тег RSS lifestyle] Kuhar Solomon Ince objašnjava kako malo limunova soka mijenja okus jela kod kuće",
-        "[тег RSS lifestyle] Kako zimi provjetravati stan: prozori širom na nekoliko minuta, a ne satima na kip",
-        "[тег RSS lifestyle] Može li se manjak željeza prepoznati po licu: liječnici o trendu „ferritin face” s društvenih mreža",
-        "[utakmice] Sjajni Luka Bičić bio je vođa raspoloženog Zadra koji se otrijeznio od subotičke utakmice",
-        "[turnir] Kostrenjanima memorijalni turnir »Željko Borić«",
-        "[тег RSS nogomet] Dinamo potvrdio, Jerko Leko ostaje trener. Potpisao je do kraja sezone",
-        "[тег RSS nogomet] Bilić pozvao Majera jer je Sučić bolestan. Utakmice najavio i kapetan Dinama: “Jedino nam preostaje "
-      ]
-    },
-    "backlog": {
-      "total_size": 0,
-      "sources": {}
-    },
-    "published": {
-      "total": 3,
-      "ukraine_priority": 0,
-      "with_images": 3,
-      "text_only": 0,
-      "og_images_found": 1,
-      "sources": {
-        "023": 1,
-        "Slobodna dalmacija": 1,
-        "Zadarski list": 1
-      }
-    },
-    "models_used": {
-      "gemini-3.5-flash-lite": 1,
-      "gemini-3.8-flash": 1
-    },
-    "models_by_task": {
-      "filter": "gemini-3.5-flash-lite",
-      "translate": "gemini-3.8-flash"
-    },
-    "model_attempts": [
-      {
-        "task": "filter",
-        "model": "gemini-3-flash-preview",
-        "outcome": "unavailable"
-      },
-      {
-        "task": "filter",
-        "model": "gemini-3.6-flash",
-        "outcome": "unavailable"
-      },
-      {
-        "task": "filter",
-        "model": "gemini-3.5-flash-lite",
-        "outcome": "ok"
-      },
-      {
-        "task": "translate",
-        "model": "gemini-3.8-flash",
-        "outcome": "ok"
-      }
-    ],
-    "exhausted_models": [],
-    "demoted_models": [],
-    "translate_budget_deferred": [
-      "gemini-3.6-flash"
-    ],
-    "gemini_region_blocked": false,
-    "gemini_unavailable": false,
-    "errors_count": 0,
-    "gemini_retries": 2
-  },
-  {
     "timestamp": "2026-11-10 08:01:22",
     "execution_time": 291.0,
     "funnel": {
@@ -10084,5 +9977,114 @@
     "gemini_unavailable": true,
     "errors_count": 0,
     "gemini_retries": 5
+  },
+  {
+    "timestamp": "2026-11-19 08:01:18",
+    "execution_time": 252.2,
+    "funnel": {
+      "scraped_total": 35,
+      "scraped_by_source": {
+        "023": 10,
+        "Slobodna dalmacija": 15,
+        "Zadarski list": 10
+      },
+      "already_seen": 9,
+      "rejected_by_keywords": 0,
+      "rejected_by_rule": {},
+      "unclassified_by_ai": 0,
+      "duplicates_removed_by_ai": 17,
+      "rejection_reasons_list": [
+        "• Aplikacija Zadar Smart City širi se na javne bicikle, biciklističke st → Вже публікувалось (Проєкт Smart City вже є в історіі) | Сутності: Zadar Smart City, Grad Zadar, Dyvolve, Park & Ride",
+        "• Rijeka sljedećeg tjedna dobiva prve nove pročelnike. S kandidatima oso → Побут інших міст (Рієка) | Сутності: Rijeka, Gradsko vijeće, Iva Rinčić",
+        "• Dubrovački trgovci i ugostitelji o sidrenim cijenama: ‘Nemaju smisla o → Не за тематикою (Загальнонаціональні цінники) | Сутності: Dubrovnik, sidrene cijene, Hrvatska",
+        "• Bruxelles ima drukčiju računicu za Hrvatsku. Gospodarstvo će rasti, al → Не за тематикою (Прогнози ЄК) | Сутності: Europska komisija, BDP, Hrvatska, Bruxelles",
+        "• Nakon smrti pacijenta u Jankomiru počela su stizati potresna svjedočan → Вже публікувалось (Справа у Янкомірі) | Сутності: Jankomir, Ivan Turudić, Klinika Sveti Ivan, DORH",
+        "• Stiže nagla promjena vremena: olujno jugo okreće na jak sjeverozapadnj → Дубль (Дублює новину 5) | Сутності: DHMZ, Hrvatska, jugo, vrijeme",
+        "• Velika potražnja za vrtlarima u Hrvatskoj; Otvoreno je stotinjak radni → Не за тематикою (Вакансії садівників) | Сутності: Hrvatska, vrtlari, Agram vrt, Zagreb",
+        "• Skupština Srbije pretvorena u Vučićev politički teatar, Studentska lis → Геоблок (Сербія) | Сутності: Skupština Srbije, Aleksandar Vučić, Studentska lista, Beograd",
+        "• Ovo je povrće preko noći postalo luksuz. Cijena mu gotovo udvostručena → Не за тематикою (Ціни на овочі) | Сутності: Hrvatska, povrće, cijene, košarica",
+        "• Rješenje za dvojicu mladića traži i Grad Rijeka, majke Deana i Damjana → Побут інших міст (Рієка) | Сутності: Grad Rijeka, Dean Doknić, Damjan Volarić",
+        "• Kod Torcidinog grafita na Ilijinoj glavici odana počast žrtvi Vukovara → Вже публікувалось (День пам'яті) | Сутності: Torcida Dubrovnik, Vukovar, Škabrnja, Ilijina glavica",
+        "• Tjedan talijanske kuhinje u svijetu. Riječka publika upoznala proizvod → Побут інших міст (Рієка) | Сутності: Rijeka, Zajednica Talijana, Generalni konzulat Italije, Cilento",
+        "• Svetom misom u Europskom parlamentu u Bruxellesu obilježen Dan sjećanj → Вже публікувалось (Брюссель) | Сутності: Europski parlament, Bruxelles, Bože Radoš, Vukovar",
+        "• KBC Rijeka se priključio europskoj akciji protiv antimikrobne rezisten → Побут інших міст (Рієка) | Сутності: KBC Rijeka, EU-JAMRAI 2, Hrvatska",
+        "• Trideset i pet godina od pada Nadina: dan nakon Škabrnje selo je spalj → Вже публікувалось (Річниця падіння Надіна) | Сутності: Nadin, JNA, Škabrnja, Ravni kotari",
+        "• Prije 60 godina promijenio je Opatiju: Priča o hotelu koji je redefini → Побут інших міст (Опатія) | Сутності: Opatija, Hotel Ambasador, Hrvatski muzej turizma, Zdravko Bregovac",
+        "• HEP-ov projekt u Kosinjskoj dolini potopit će dio naselja, ali i jednu → Не за тематикою (ГЕС Косинь) | Сутності: HEP, Kosinjska dolina, Lika, Senj"
+      ],
+      "rejected_by_reason": {
+        "Вже публікувалось": 5,
+        "Побут інших міст": 5,
+        "Не за тематикою": 5,
+        "Дубль": 1,
+        "Геоблок": 1
+      },
+      "updates_marked": 0,
+      "already_rejected": 9
+    },
+    "backlog": {
+      "total_size": 5,
+      "sources": {
+        "023": 4,
+        "Zadarski list": 1
+      }
+    },
+    "published": {
+      "total": 3,
+      "ukraine_priority": 0,
+      "with_images": 1,
+      "text_only": 2,
+      "og_images_found": 0,
+      "sources": {
+        "023": 2,
+        "Slobodna dalmacija": 1
+      }
+    },
+    "models_used": {
+      "gemini-3.5-flash-lite": 2
+    },
+    "models_by_task": {
+      "filter": "gemini-3.5-flash-lite",
+      "translate": "gemini-3.5-flash-lite"
+    },
+    "model_attempts": [
+      {
+        "task": "filter",
+        "model": "gemini-3-flash-preview",
+        "outcome": "unavailable"
+      },
+      {
+        "task": "filter",
+        "model": "gemini-3.6-flash",
+        "outcome": "unavailable"
+      },
+      {
+        "task": "filter",
+        "model": "gemini-3.5-flash-lite",
+        "outcome": "ok"
+      },
+      {
+        "task": "translate",
+        "model": "gemini-3.8-flash",
+        "outcome": "unavailable"
+      },
+      {
+        "task": "translate",
+        "model": "gemini-3.6-flash",
+        "outcome": "unavailable"
+      },
+      {
+        "task": "translate",
+        "model": "gemini-3.5-flash-lite",
+        "outcome": "ok"
+      }
+    ],
+    "exhausted_models": [],
+    "demoted_models": [],
+    "translate_budget_deferred": [],
+    "gemini_region_blocked": false,
+    "gemini_unavailable": false,
+    "errors_count": 0,
+    "gemini_retries": 4
   }
 ]
