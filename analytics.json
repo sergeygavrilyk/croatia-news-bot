@@ -1,109 +1,5 @@
 [
   {
-    "timestamp": "2026-11-10 09:01:22",
-    "execution_time": 183.7,
-    "funnel": {
-      "scraped_total": 35,
-      "scraped_by_source": {
-        "023": 10,
-        "Slobodna dalmacija": 15,
-        "Zadarski list": 10
-      },
-      "already_seen": 19,
-      "rejected_by_keywords": 5,
-      "rejected_by_rule": {
-        "тег RSS sport": 3,
-        "košarkaške": 1,
-        "тег RSS košarka": 1
-      },
-      "unclassified_by_ai": 0,
-      "duplicates_removed_by_ai": 9,
-      "rejection_reasons_list": [
-        "• Ovaj video na TikToku otkrio koji su najopasniji kvartovi u Hrvatskoj; → Не за тематикою (Опитування на TikTok про небезпечні райони) | Сутності: TikTok, Задар, Crvene kuće, Hrvatska",
-        "• VIDEO/Jeste li vidjeli novo blagdansko osvjetljenje poviše Straduna? B → Побут інших міст (Нове новорічне освітлення в Дубровнику) | Сутності: Дубровник, Stradun, Facebook",
-        "• Čvor Rakitje ide u veliku rekonstrukciju: Radovi će trajati 540 dana,  → Побут інших міст (Реконструкція розв'язки біля Свети Неделі) | Сутності: HAC, Sveta Nedelja, Rakitje, Gip Pionir",
-        "• Aleksandar Stanković: O depri sam pričao u Lepoglavi, javio mi se lik  → Побут інших міст (Презентация книги Александара Станковича в Дубровнике) | Сутності: Aleksandar Stanković, Dubrovnik, Lazareti, F32",
-        "• SDP -ov rejting slabi, Možemo! im je sve bliže: Hoće li ljevica prije  → Не за тематикою (Падіння рейтингу партії СДП) | Сутності: SDP, HDZ, Promocija plus, CRO Demoskop",
-        "• Znanstvenici izdvojili 10 načina prehrane povezanih sa sporijim biološ → Світовий шум (Дослідження німецьких вчених про харчування) | Сутності: Nature Communications, DZNE, Njemačka",
-        "• Studenti žele da im se rad uvrsti u staž, da imaju pravo na bolovanje. → Побут інших міст (Ініціатива студентів у Дубровнику) | Сутності: Dubrovnik, Hrvatski studentski zbor",
-        "• Francuska tvrdi da iza nezapamćenog hakerskog napada na zamrzivače u s → Геоблок (Кібератака в супермаркетах Франції) | Сутності: Francuska, IRGC, Jean-Noël Barrot",
-        "• Sedam dana do sidrene cijene: što se od rujna promijenilo, tko bi moga → Вже публікувалось (Перенесення терміну запровадження цін) | Сутності: Vlada, Narodne novine, sidrena cijena"
-      ],
-      "rejected_by_reason": {
-        "Не за тематикою": 2,
-        "Побут інших міст": 4,
-        "Світовий шум": 1,
-        "Геоблок": 1,
-        "Вже публікувалось": 1
-      },
-      "updates_marked": 0,
-      "already_rejected": 11,
-      "rejected_by_code_examples": [
-        "[тег RSS sport] GODINE SU SAMO BROJ! Natalija Gulin pomela dvostruko mlađu konkurenciju i zasjela na sam VRH SVIJETA",
-        "[тег RSS sport] Veliki uspjeh PK Zadar u Zagrebu; Pet medalja na međunarodnom mitingu „Mladost 2026.“",
-        "[тег RSS sport] Ulaznice za Cro Copa u HNK Zadar planule za šest sati, a organizator ovaj tjedan ponovno otvara prij",
-        "[košarkaške] Mijatović objavio popis: Božić, Mavra, konačno i Mazalin, ali i najbolji dvojac zadarskog starta sez",
-        "[тег RSS košarka] Zubac i Hezonja poraženi, Matkovićevi Pelicansi doživjeli pravi debakl, a Wembanyama briljirao"
-      ]
-    },
-    "backlog": {
-      "total_size": 3,
-      "sources": {
-        "023": 3
-      }
-    },
-    "published": {
-      "total": 3,
-      "ukraine_priority": 0,
-      "with_images": 3,
-      "text_only": 0,
-      "og_images_found": 2,
-      "sources": {
-        "023": 2,
-        "Slobodna dalmacija": 1
-      }
-    },
-    "models_used": {
-      "gemini-3.5-flash-lite": 1,
-      "gemini-3.6-flash": 1
-    },
-    "models_by_task": {
-      "filter": "gemini-3.5-flash-lite",
-      "translate": "gemini-3.6-flash"
-    },
-    "model_attempts": [
-      {
-        "task": "filter",
-        "model": "gemini-3.6-flash",
-        "outcome": "unavailable"
-      },
-      {
-        "task": "filter",
-        "model": "gemini-3.5-flash-lite",
-        "outcome": "ok"
-      },
-      {
-        "task": "translate",
-        "model": "gemini-3.8-flash",
-        "outcome": "unavailable"
-      },
-      {
-        "task": "translate",
-        "model": "gemini-3.6-flash",
-        "outcome": "ok"
-      }
-    ],
-    "exhausted_models": [],
-    "demoted_models": [
-      "filter: gemini-3-flash-preview"
-    ],
-    "translate_budget_deferred": [],
-    "gemini_region_blocked": false,
-    "gemini_unavailable": false,
-    "errors_count": 0,
-    "gemini_retries": 2
-  },
-  {
     "timestamp": "2026-11-10 10:01:19",
     "execution_time": 181.6,
     "funnel": {
@@ -10036,6 +9932,103 @@
       "sources": {
         "Slobodna dalmacija": 2,
         "023": 1
+      }
+    },
+    "models_used": {
+      "gemini-3.5-flash-lite": 2
+    },
+    "models_by_task": {
+      "filter": "gemini-3.5-flash-lite",
+      "translate": "gemini-3.5-flash-lite"
+    },
+    "model_attempts": [
+      {
+        "task": "filter",
+        "model": "gemini-3.5-flash-lite",
+        "outcome": "ok"
+      },
+      {
+        "task": "translate",
+        "model": "gemini-3.5-flash-lite",
+        "outcome": "ok"
+      }
+    ],
+    "exhausted_models": [],
+    "demoted_models": [
+      "filter: gemini-3-flash-preview",
+      "filter: gemini-3.6-flash",
+      "translate: gemini-3.8-flash",
+      "translate: gemini-3.6-flash"
+    ],
+    "translate_budget_deferred": [],
+    "gemini_region_blocked": false,
+    "gemini_unavailable": false,
+    "errors_count": 0,
+    "gemini_retries": 0
+  },
+  {
+    "timestamp": "2026-11-19 10:01:28",
+    "execution_time": 121.9,
+    "funnel": {
+      "scraped_total": 35,
+      "scraped_by_source": {
+        "023": 10,
+        "Slobodna dalmacija": 15,
+        "Zadarski list": 10
+      },
+      "already_seen": 20,
+      "rejected_by_keywords": 5,
+      "rejected_by_rule": {
+        "тег RSS sport": 1,
+        "promo": 1,
+        "sporta": 1,
+        "тег RSS košarka": 1,
+        "igračima": 1
+      },
+      "unclassified_by_ai": 0,
+      "duplicates_removed_by_ai": 9,
+      "rejection_reasons_list": [
+        "• Sastanak Trumpa, Xija i Putina oko rata u Ukrajini i Iranu, nuklearnog → Геоблок (Саміт світових лідерів) | Сутності: Trump, Xi, Putin, Ukrajina, SAD",
+        "• Novi medicinski uređaj u Thalassotherapiji Crikvenica: od sada precizn → Побут інших міст (Цриквеница) | Сутності: Thalassotherapia Crikvenica, Crikvenica, plemizmograf",
+        "• ACI marina Dubrovnik tradicionalnom ACI Staff regatom obilježila završ → Спорт (Вітрильна регата) | Сутності: ACI marina Dubrovnik, Dubrovnik, ACI Staff regata",
+        "• Razina vitamina D pada u jesen i zimi. Evo kako osigurati dovoljan uno → Світовий шум (Поради про вітаміни) | Сутності: Vitamin D, imunitet, zdravlje",
+        "• Večer klapske pjesme, tradicije i zajedništva u Centru za kulturu Korč → Побут інших міст (Корчула) | Сутності: Centar za kulturu Korčula, Korčula, Martinovo lito",
+        "• Jesenska subotnja špica u City Galleriji: popusti do 70% u više od 30  → Реклама (Знижки в ТЦ) | Сутності: City Galleria, Zadar, Viktor, Gligora",
+        "• Prozračujete li pravilno tijekom zime? Najčešće pogreške zbog kojih gu → Світовий шум (Поради щодо провітрювання) | Сутності: zima, prozračivanje, dom",
+        "• Naš Vlaho pokazao stan Gorana Ivaniševića u kojem živi s njegovom bivš → Світовий шум (Шоу-бізнес) | Сутності: Goran Ivanišević, Tatjana Dragović, Vlaho Arbulić, Zagreb",
+        "• Misa povodom 100 godina Mješovitog katedralnog zbora → Побут інших міст (Дубровник) | Сутності: Mješoviti katedralni zbor, Dubrovnik, Roko Glasnović"
+      ],
+      "rejected_by_reason": {
+        "Геоблок": 1,
+        "Побут інших міст": 3,
+        "Спорт": 1,
+        "Світовий шум": 3,
+        "Реклама": 1
+      },
+      "updates_marked": 0,
+      "already_rejected": 12,
+      "rejected_by_code_examples": [
+        "[тег RSS sport] Olimpijska i svjetska prvakinja u maratonu suspendirana zbog dopinga",
+        "[promo] Od dnevnog svjetla do privatnosti: zavjese koje rade više od ukrasa",
+        "[sporta] Sofascore osvojio Ameriku: Google ga je proglasio najboljom sportskom aplikacijom",
+        "[тег RSS košarka] Hezonja briljirao, ali Cleveland je izgubio na nevjerojatan način. Lakersima prekinut niz pobjeda",
+        "[igračima] GTA 6 izaziva globalnu ludnicu, milijuni ljudi otvaraju bolovanje: ‘Ovo je poput slijetanja na Mjese"
+      ]
+    },
+    "backlog": {
+      "total_size": 1,
+      "sources": {
+        "Slobodna dalmacija": 1
+      }
+    },
+    "published": {
+      "total": 3,
+      "ukraine_priority": 0,
+      "with_images": 1,
+      "text_only": 2,
+      "og_images_found": 1,
+      "sources": {
+        "023": 3
       }
     },
     "models_used": {
