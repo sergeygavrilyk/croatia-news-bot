@@ -1,102 +1,5 @@
 [
   {
-    "timestamp": "2026-11-10 14:01:29",
-    "execution_time": 124.9,
-    "funnel": {
-      "scraped_total": 35,
-      "scraped_by_source": {
-        "023": 10,
-        "Slobodna dalmacija": 15,
-        "Zadarski list": 10
-      },
-      "already_seen": 23,
-      "rejected_by_keywords": 2,
-      "rejected_by_rule": {
-        "тег RSS lifestyle": 1,
-        "тег RSS sport": 1
-      },
-      "unclassified_by_ai": 0,
-      "duplicates_removed_by_ai": 8,
-      "rejection_reasons_list": [
-        "• Abu Dhabi: Zapadni partneri za snažnu europsku sigurnosnu arhitekturu → Геоблок (Засідання в ОАЕ щодо європейської безпеки) | Сутності: Abu Dhabi, EU, NATO, Ukrajina",
-        "• Poljski napadač posjećivao stranice o norveškom masovnom ubojici Breiv → Геоблок (Інцидент у Польщі) | Сутності: Krakov, Breivik, Ministarstvo pravosuđa",
-        "• Otvoren Interliber, mjesto susreta autora i čitatelja, nakladnika i kn → Побут інших міст (Книжковий ярмарок у Загребі) | Сутності: Interliber, Nina Obuljen Koržinek, Ministarstvo kulture",
-        "• Žene preferiraju više temperature i lakše podnose hladnoću. Otkriveno  → Світовий шум (Наукове дослідження про чутливість до температури) | Сутності: Nature, Bruxelles, Cambridge, testosteron",
-        "• Kekin: Tragedija u Jankomiru je neprihvatljiva, više se nikad ne smije → Вже публікувалось (Коментар щодо інциденту в лікарні) | Сутності: Ivana Kekin, Jankomir, Sveti Ivan, Zagreb",
-        "• Konzum predstavio Keti, AI asistenticu za kupnju dostupnu putem WhatsA → Реклама (Запуск AI-асистента для покупок) | Сутності: Konzum, Keti, WhatsApp, Fortenova",
-        "• Dugi Lipa u Zagrebu: Otac Due Lipe stiže na Crowd & Loud konferenciju → Побут інших міст (Конференція event-індустрії у Загребі) | Сутності: Dugi Lipa, Due Lipa, Zagreb, Crowd & Loud",
-        "• Tomaševića pitali kada je saznao za Perišev slučaj: “Želim da se rasvi → Вже публікувалось (Реакція мера на подію в лікарні) | Сутності: Tomislav Tomašević, Kristijan Josip Periš, Sveti Ivan, Zagreb"
-      ],
-      "rejected_by_reason": {
-        "Геоблок": 2,
-        "Побут інших міст": 2,
-        "Світовий шум": 1,
-        "Вже публікувалось": 2,
-        "Реклама": 1
-      },
-      "updates_marked": 0,
-      "already_rejected": 15,
-      "rejected_by_code_examples": [
-        "[тег RSS lifestyle] Kako zaštititi rajčice, paprike i cvijeće u posudama kad se noćna temperatura približi nuli",
-        "[тег RSS sport] NOVI DRŽAVNI PRVAK Mladi Luka Perica iz benkovačke “Sipe” pomeo konkurenciju u Puli!"
-      ]
-    },
-    "backlog": {
-      "total_size": 1,
-      "sources": {
-        "023": 1
-      }
-    },
-    "published": {
-      "total": 3,
-      "ukraine_priority": 1,
-      "with_images": 3,
-      "text_only": 0,
-      "og_images_found": 1,
-      "sources": {
-        "Zadarski list": 1,
-        "Slobodna dalmacija": 1,
-        "023": 1
-      }
-    },
-    "models_used": {
-      "gemini-3.5-flash-lite": 2
-    },
-    "models_by_task": {
-      "filter": "gemini-3.5-flash-lite",
-      "translate": "gemini-3.5-flash-lite"
-    },
-    "model_attempts": [
-      {
-        "task": "filter",
-        "model": "gemini-3-flash-preview",
-        "outcome": "unavailable"
-      },
-      {
-        "task": "filter",
-        "model": "gemini-3.5-flash-lite",
-        "outcome": "ok"
-      },
-      {
-        "task": "translate",
-        "model": "gemini-3.5-flash-lite",
-        "outcome": "ok"
-      }
-    ],
-    "exhausted_models": [],
-    "demoted_models": [
-      "filter: gemini-3.6-flash",
-      "translate: gemini-3.8-flash"
-    ],
-    "translate_budget_deferred": [
-      "gemini-3.6-flash"
-    ],
-    "gemini_region_blocked": false,
-    "gemini_unavailable": false,
-    "errors_count": 0,
-    "gemini_retries": 1
-  },
-  {
     "timestamp": "2026-11-10 15:01:28",
     "execution_time": 147.7,
     "funnel": {
@@ -10088,5 +9991,110 @@
     "gemini_unavailable": false,
     "errors_count": 0,
     "gemini_retries": 5
+  },
+  {
+    "timestamp": "2026-11-19 15:01:17",
+    "execution_time": 134.1,
+    "funnel": {
+      "scraped_total": 35,
+      "scraped_by_source": {
+        "023": 10,
+        "Slobodna dalmacija": 15,
+        "Zadarski list": 10
+      },
+      "already_seen": 22,
+      "rejected_by_keywords": 5,
+      "rejected_by_rule": {
+        "košarkaškom": 1,
+        "тег RSS nogomet": 3,
+        "тег RSS sport": 1
+      },
+      "unclassified_by_ai": 0,
+      "duplicates_removed_by_ai": 6,
+      "rejection_reasons_list": [
+        "• Habijan: Broj zatvorenika raste svakog tjedna, to dugoročno nije održi → Вже публікувалось (Звіт про роботу пенітенціарної системи) | Сутності: Damir Habijan, Hrvatski sabor, zatvorski sustav, Drniš",
+        "• Još nekoliko dana kiša, a onda Norvežani prognoziraju značajan preokre → Не за тематикою (Загальний прогноз погоди) | Сутності: DHMZ, Hrvatska, Dalmacija, vrijeme",
+        "• Riječki nadbiskup Mate Uzinić u posjetu matuljskoj općinskoj upravi i  → Побут інших міст (Візит архієпископа до Матульї) | Сутності: Mate Uzinić, Matulji, Riječka nadbiskupija",
+        "• Hladan tuš iz Ministarstva: Učenicima koji se odazovu bojkotu nastave  → Вже публікувалось (Реакція міністерства на страйк) | Сутності: MZOM, bojkot nastave, učenici, Hrvatska",
+        "• Kandidat studenata Aleksandar Čupić izabran za predsjednika srbijansko → Геоблок (Політичні події в Сербії) | Сутності: Aleksandar Čupić, Srbija, parlament",
+        "• Sutra bojkot nastave diljem Hrvatske. Učenici i studenti dižu glas, ov → Вже публікувалось (Анонс страйку учнів) | Сутності: bojkot nastave, učenici, Hrvatska"
+      ],
+      "rejected_by_reason": {
+        "Вже публікувалось": 3,
+        "Не за тематикою": 1,
+        "Побут інших міст": 1,
+        "Геоблок": 1
+      },
+      "updates_marked": 1,
+      "already_rejected": 14,
+      "rejected_by_code_examples": [
+        "[košarkaškom] Giergia nakon 15 godina pravosudne agonije: Svoj ću dres spaliti, neću šutjeti! A je**vjetrima plaća",
+        "[тег RSS nogomet] Talijani pišu da Lazio želi Perišića. Hrvat ponovo surađuje s Gattusom?",
+        "[тег RSS nogomet] Novo produljenje ugovora kod Kraljeva. Francuski veznjak ostaje u Real Madridu",
+        "[тег RSS nogomet] Budimir uoči početka Svjetskog U-17 prvenstva: “Senegal je odlična ekipa, a nama se dogodila mala oz",
+        "[тег RSS sport] ATP Finale: Pavić i Arevalo stigli do polufinala bez poraza"
+      ]
+    },
+    "backlog": {
+      "total_size": 5,
+      "sources": {
+        "023": 3,
+        "Zadarski list": 2
+      }
+    },
+    "published": {
+      "total": 0,
+      "ukraine_priority": 0,
+      "with_images": 0,
+      "text_only": 0,
+      "og_images_found": 0,
+      "sources": {}
+    },
+    "models_used": {
+      "gemini-3.1-flash-lite": 1
+    },
+    "models_by_task": {
+      "filter": "gemini-3.1-flash-lite",
+      "translate": null
+    },
+    "model_attempts": [
+      {
+        "task": "filter",
+        "model": "gemini-3.5-flash-lite",
+        "outcome": "unavailable"
+      },
+      {
+        "task": "filter",
+        "model": "gemini-3.1-flash-lite",
+        "outcome": "ok"
+      },
+      {
+        "task": "translate",
+        "model": "gemini-3.5-flash-lite",
+        "outcome": "unavailable"
+      },
+      {
+        "task": "translate",
+        "model": "gemini-3.8-flash",
+        "outcome": "unavailable"
+      },
+      {
+        "task": "translate",
+        "model": "gemini-3.6-flash",
+        "outcome": "unavailable"
+      }
+    ],
+    "exhausted_models": [],
+    "demoted_models": [
+      "filter: gemini-3-flash-preview",
+      "filter: gemini-3.6-flash",
+      "translate: gemini-3.8-flash",
+      "translate: gemini-3.6-flash"
+    ],
+    "translate_budget_deferred": [],
+    "gemini_region_blocked": false,
+    "gemini_unavailable": true,
+    "errors_count": 0,
+    "gemini_retries": 4
   }
 ]
