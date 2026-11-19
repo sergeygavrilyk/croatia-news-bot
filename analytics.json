@@ -1,97 +1,5 @@
 [
   {
-    "timestamp": "2026-11-10 10:01:19",
-    "execution_time": 181.6,
-    "funnel": {
-      "scraped_total": 35,
-      "scraped_by_source": {
-        "023": 10,
-        "Slobodna dalmacija": 15,
-        "Zadarski list": 10
-      },
-      "already_seen": 17,
-      "rejected_by_keywords": 5,
-      "rejected_by_rule": {
-        "тег RSS sport": 1,
-        "košarkaške": 1,
-        "тег RSS košarka": 2,
-        "тег RSS nogomet": 1
-      },
-      "unclassified_by_ai": 0,
-      "duplicates_removed_by_ai": 9,
-      "rejection_reasons_list": [
-        "• Marija Bosilj Kidjemet objavila autobiografsku priču o unutarnjem svij → Побут інших міст (Презентація книги у Загребі) | Сутності: Marija Bosilj Kidjemet, Zagreb, Novi Marof",
-        "• Apel umirovljenika s Korčule: ‘Nadam se da će netko od njih ovo pročit → Побут інших міст (Проблеми пенсіонера з квитками на Корчулі) | Сутності: Ante I. Curać, Korčula, Split, Dubrovnik",
-        "• Habijan užasnut snimkom s Jankomira: “To prvi put čujem” → Побут інших міст (Скандал у лікарні Загреба) | Сутності: Damir Habijan, Jankomir, Zagreb, Kristian Periš",
-        "• Kuzma & Shaka Zulu stižu u petak u Pogon → Побут інших міст (Концерт у клубі іншого міста) | Сутності: Kuzma & Shaka Zulu, Pogon, Split",
-        "• Kultno mjesto Šibenčana u Zagrebu ponovno otvara vrata. Postoji već 45 → Побут інших міст (Відкриття клубу шибеничан у Загребі) | Сутності: Klub Šibenčana, Zagreb, Šibenik",
-        "• Tragičan kraj mlade ptice iz Telašćice; Posljednji zmijar s GPS odašil → Дубль (Дублікат новини ID 5 про орла-змієїда) | Сутності: Telašćica, Biom, Konya, Turska",
-        "• Jugo zaustavilo dvije pomorske linije prema Rabu → Побут інших міст (Скасування поромів на острові Раб) | Сутності: Rab, Lopar, Valbiska, Novalja",
-        "• Stanković u Dubrovniku: Nakon što je izašla Depra, javilo mi se sedam  → Побут інших міст (Презентація книги у Дубровнику) | Сутності: Aleksandar Stanković, Dubrovnik, Lazareti",
-        "• Ante Tomić: Franković govori o kamionima kokaina, a HDZ se smeteno pon → Побут інших міст (Політична колонка про мерію Дубровника) | Сутності: Ante Tomić, Mato Franković, Dubrovnik"
-      ],
-      "rejected_by_reason": {
-        "Побут інших міст": 8,
-        "Дубль": 1
-      },
-      "updates_marked": 1,
-      "already_rejected": 12,
-      "rejected_by_code_examples": [
-        "[тег RSS sport] GODINE SU SAMO BROJ! Natalija Gulin pomela dvostruko mlađu konkurenciju i zasjela na sam VRH SVIJETA",
-        "[košarkaške] Mijatović objavio popis: Božić, Mavra, konačno i Mazalin, ali i najbolji dvojac zadarskog starta sez",
-        "[тег RSS košarka] Porazi hrvatskih reprezentativaca u NBA ligi. Warriorsi uvjerljivi protiv Pelicansa, Zubac izgubio n",
-        "[тег RSS nogomet] Američki izbornik Pochettino glavni kandidat za preuzimanje klupe Manchester Uniteda",
-        "[тег RSS košarka] Zubac i Hezonja poraženi, Matkovićevi Pelicansi doživjeli pravi debakl, a Wembanyama briljirao"
-      ]
-    },
-    "backlog": {
-      "total_size": 4,
-      "sources": {
-        "023": 4
-      }
-    },
-    "published": {
-      "total": 3,
-      "ukraine_priority": 0,
-      "with_images": 3,
-      "text_only": 0,
-      "og_images_found": 2,
-      "sources": {
-        "023": 2,
-        "Slobodna dalmacija": 1
-      }
-    },
-    "models_used": {
-      "gemini-3.6-flash": 2
-    },
-    "models_by_task": {
-      "filter": "gemini-3.6-flash",
-      "translate": "gemini-3.6-flash"
-    },
-    "model_attempts": [
-      {
-        "task": "filter",
-        "model": "gemini-3.6-flash",
-        "outcome": "ok"
-      },
-      {
-        "task": "translate",
-        "model": "gemini-3.6-flash",
-        "outcome": "ok"
-      }
-    ],
-    "exhausted_models": [],
-    "demoted_models": [
-      "filter: gemini-3-flash-preview",
-      "translate: gemini-3.8-flash"
-    ],
-    "translate_budget_deferred": [],
-    "gemini_region_blocked": false,
-    "gemini_unavailable": false,
-    "errors_count": 0,
-    "gemini_retries": 0
-  },
-  {
     "timestamp": "2026-11-10 11:01:23",
     "execution_time": 137.3,
     "funnel": {
@@ -10062,5 +9970,118 @@
     "gemini_unavailable": false,
     "errors_count": 0,
     "gemini_retries": 0
+  },
+  {
+    "timestamp": "2026-11-19 11:01:23",
+    "execution_time": 312.8,
+    "funnel": {
+      "scraped_total": 35,
+      "scraped_by_source": {
+        "023": 10,
+        "Slobodna dalmacija": 15,
+        "Zadarski list": 10
+      },
+      "already_seen": 20,
+      "rejected_by_keywords": 4,
+      "rejected_by_rule": {
+        "тег RSS nogomet": 1,
+        "тег RSS sport": 2,
+        "promo": 1
+      },
+      "unclassified_by_ai": 0,
+      "duplicates_removed_by_ai": 6,
+      "rejection_reasons_list": [
+        "• Velika fešta u Kistanjama; Ana i Božo krstili su svoje 10. dijete! ‘Bo → Не за тематикою (Приватна подія хрещення) | Сутності: Kistanje, Zadarska nadbiskupija, Ana Antić",
+        "• Guillermo Varela predvodi novo poglavlje Anantara Adriatic Istria Reso → Побут інших міст (Туристичний об'єкт в Істрії) | Сутності: Savudrija, Istra, Anantara Hotels",
+        "• Koncert u Dvoru: Komorni orkestar Tijardović iz Splita po prvi put gos → Побут інших міст (Концерт у Дубровнику) | Сутності: Dubrovnik, Komorni orkestar Tijardović, Knežev dvor",
+        "• Što sve donosi Advent u Crikvenici? Dolaze Parni valjak, S.A.R.S., Pek → Побут інших міст (Локальна подія в Цриквениці) | Сутності: Crikvenica, Advent, Parni valjak",
+        "• Sindikat znanosti uz mlade u štrajku: Društvu trebaju mladi koji se bo → Вже публікувалось (Реакція на студентський страйк) | Сутності: Sindikat znanosti, Štrajk mladih, Hrvatska",
+        "• Preporuka prokuhavanja vode i dalje je na snazi, započelo ispiranje vo → Побут інших міст (Водопостачання в Рієці) | Сутності: Rijeka, Vodovod i kanalizacija, Voda"
+      ],
+      "rejected_by_reason": {
+        "Не за тематикою": 1,
+        "Побут інших міст": 4,
+        "Вже публікувалось": 1
+      },
+      "updates_marked": 1,
+      "already_rejected": 13,
+      "rejected_by_code_examples": [
+        "[тег RSS nogomet] FIFA potvrdila: Infantino ima dva protukandidata u borbi za novi mandat",
+        "[тег RSS sport] Vlada RH nagradila Filipa Hrgovića za svjetski naslov. Evo o kojem iznosu se radi",
+        "[тег RSS sport] Olimpijska i svjetska prvakinja u maratonu suspendirana zbog dopinga",
+        "[promo] Od dnevnog svjetla do privatnosti: zavjese koje rade više od ukrasa"
+      ]
+    },
+    "backlog": {
+      "total_size": 3,
+      "sources": {
+        "Zadarski list": 1,
+        "023": 1,
+        "Slobodna dalmacija": 1
+      }
+    },
+    "published": {
+      "total": 3,
+      "ukraine_priority": 0,
+      "with_images": 1,
+      "text_only": 2,
+      "og_images_found": 0,
+      "sources": {
+        "023": 2,
+        "Slobodna dalmacija": 1
+      }
+    },
+    "models_used": {
+      "gemini-3.1-flash-lite": 1,
+      "gemini-3.5-flash-lite": 1
+    },
+    "models_by_task": {
+      "filter": "gemini-3.1-flash-lite",
+      "translate": "gemini-3.5-flash-lite"
+    },
+    "model_attempts": [
+      {
+        "task": "filter",
+        "model": "gemini-3-flash-preview",
+        "outcome": "unavailable"
+      },
+      {
+        "task": "filter",
+        "model": "gemini-3.6-flash",
+        "outcome": "unavailable"
+      },
+      {
+        "task": "filter",
+        "model": "gemini-3.5-flash-lite",
+        "outcome": "unavailable"
+      },
+      {
+        "task": "filter",
+        "model": "gemini-3.1-flash-lite",
+        "outcome": "ok"
+      },
+      {
+        "task": "translate",
+        "model": "gemini-3.8-flash",
+        "outcome": "unavailable"
+      },
+      {
+        "task": "translate",
+        "model": "gemini-3.6-flash",
+        "outcome": "unavailable"
+      },
+      {
+        "task": "translate",
+        "model": "gemini-3.5-flash-lite",
+        "outcome": "ok"
+      }
+    ],
+    "exhausted_models": [],
+    "demoted_models": [],
+    "translate_budget_deferred": [],
+    "gemini_region_blocked": false,
+    "gemini_unavailable": false,
+    "errors_count": 0,
+    "gemini_retries": 5
   }
 ]
