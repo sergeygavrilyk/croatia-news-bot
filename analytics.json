@@ -1,100 +1,5 @@
 [
   {
-    "timestamp": "2026-11-10 13:01:28",
-    "execution_time": 126.8,
-    "funnel": {
-      "scraped_total": 35,
-      "scraped_by_source": {
-        "023": 10,
-        "Slobodna dalmacija": 15,
-        "Zadarski list": 10
-      },
-      "already_seen": 17,
-      "rejected_by_keywords": 2,
-      "rejected_by_rule": {
-        "тег RSS sport": 1,
-        "тег RSS nogomet": 1
-      },
-      "unclassified_by_ai": 0,
-      "duplicates_removed_by_ai": 11,
-      "rejection_reasons_list": [
-        "• Plenković Đujiću: Uzaludan vam posao. Opet ću biti tamo gdje jesam, sa → Вже публікувалось (Політичні дебати в хорватському парламенті) | Сутності: Andrej Plenković, Đujić, Hrvatski sabor, SDP",
-        "• Trideset godina poslije prvog koncerta, legendarni ‘Organizator kiše‘  → Побут інших міст (Концерт у Дубровнику) | Сутності: Mirso Đulančić, Lazareti, Dubrovnik, Leonardo Klešković",
-        "• Na Donjoj Vežici uklonjen natpis tržnice, prostor postaje poslovnica E → Побут інших міст (Закриття ринку в Рієці) | Сутності: Donja Vežica, Rijeka, Erste banka, Tržnica",
-        "• Počelo uređenje vanjskog dijela Trsatskog svetišta. Marijin perivoj do → Побут інших міст (Урегулювання святилища в Рієці) | Сутності: Trsatsko svetište, Rijeka, Fra Dragan Grizelj, Marijin perivoj",
-        "• Što se događa s kraljicom Jadrana? Nema više redova na peškarijama; ‘M → Побут інших міст (Проблеми з виловом риби в Дубровнику) | Сутності: Dubrovnik, Jadransko more, Srdela, Europska unija",
-        "• Šušnjar brani bazne cijene: To je jednokratna mjera usmjerena na zašti → Вже публікувалось (Коментарі міністра щодо цін) | Сутності: Ante Šušnjar, Hrvatski sabor, Martin Kordić, Vlada",
-        "• Mandić uputila Deklaraciju Gradskom vijeću Rijeke: “Osuda komunizma ni → Побут інших міст (Політична декларація в міськраді Рієки) | Сутності: Rijeka, Petra Mandić, Most, Gradsko vijeće",
-        "• Grad Dubrovnik jača sustav civilne zaštite: Nabavljene samostojeće mob → Побут інших міст (Захист від повеней у Дубровнику) | Сутності: Dubrovnik, Civilna zaštita, Mobilne barijere, Poplave",
-        "• Roditelj kažnjen jer je dijete koristilo pirotehniku i dobilo opekline → Побут інших міст (Інцидент з піротехнікою в Спліті) | Сутності: Splitsko-dalmatinska policija, Pirotehnika, Bolnica, Roditelj",
-        "• Na HTV-u dokumentarac o nastanku hit mjuzikla “Radio Dubrava” na pjesm → Побут інших міст (Документальний фільм про мюзикл у Загребі) | Сутності: Radio Dubrava, Prljavo kazalište, HTV, Zagreb",
-        "• Francuska pozvala na razgovor iranskog veleposlanika nakon napada hake → Геоблок (Дипломатичний конфлікт Франції та Ірану) | Сутності: Francuska, Iran, Jean-Noël Barrot, Pariz"
-      ],
-      "rejected_by_reason": {
-        "Вже публікувалось": 2,
-        "Побут інших міст": 8,
-        "Геоблок": 1
-      },
-      "updates_marked": 0,
-      "already_rejected": 12,
-      "rejected_by_code_examples": [
-        "[тег RSS sport] NOVI DRŽAVNI PRVAK Mladi Luka Perica iz benkovačke “Sipe” pomeo konkurenciju u Puli!",
-        "[тег RSS nogomet] Dobre vijesti za Bayern, vratio se trener Vincent Kompany"
-      ]
-    },
-    "backlog": {
-      "total_size": 2,
-      "sources": {
-        "Slobodna dalmacija": 1,
-        "023": 1
-      }
-    },
-    "published": {
-      "total": 3,
-      "ukraine_priority": 1,
-      "with_images": 3,
-      "text_only": 0,
-      "og_images_found": 1,
-      "sources": {
-        "Zadarski list": 1,
-        "023": 1,
-        "Slobodna dalmacija": 1
-      }
-    },
-    "models_used": {
-      "gemini-3.5-flash-lite": 2
-    },
-    "models_by_task": {
-      "filter": "gemini-3.5-flash-lite",
-      "translate": "gemini-3.5-flash-lite"
-    },
-    "model_attempts": [
-      {
-        "task": "filter",
-        "model": "gemini-3.5-flash-lite",
-        "outcome": "ok"
-      },
-      {
-        "task": "translate",
-        "model": "gemini-3.5-flash-lite",
-        "outcome": "ok"
-      }
-    ],
-    "exhausted_models": [],
-    "demoted_models": [
-      "filter: gemini-3-flash-preview",
-      "filter: gemini-3.6-flash",
-      "translate: gemini-3.8-flash"
-    ],
-    "translate_budget_deferred": [
-      "gemini-3.6-flash"
-    ],
-    "gemini_region_blocked": false,
-    "gemini_unavailable": false,
-    "errors_count": 0,
-    "gemini_retries": 0
-  },
-  {
     "timestamp": "2026-11-10 14:01:29",
     "execution_time": 124.9,
     "funnel": {
@@ -10065,5 +9970,123 @@
     "gemini_unavailable": false,
     "errors_count": 0,
     "gemini_retries": 0
+  },
+  {
+    "timestamp": "2026-11-19 14:01:16",
+    "execution_time": 234.0,
+    "funnel": {
+      "scraped_total": 35,
+      "scraped_by_source": {
+        "023": 10,
+        "Slobodna dalmacija": 15,
+        "Zadarski list": 10
+      },
+      "already_seen": 16,
+      "rejected_by_keywords": 0,
+      "rejected_by_rule": {},
+      "unclassified_by_ai": 0,
+      "duplicates_removed_by_ai": 20,
+      "rejection_reasons_list": [
+        "• Bluetooth zvučnik uz ruter može usporiti Wi-Fi, stručnjaci savjetuju r → Світовий шум (Поради щодо техніки) | Сутності: Bluetooth, Wi-Fi, Hyperoptic",
+        "• Detalji krčke tragedije: 54-godišnjak se neregistriranim motociklom za → Побут інших міст (ДТП на острові Крк) | Сутності: Крк, мотоцикліст, ДТП",
+        "• Sutra predavanje Damira Fabijanića ‘O fotografiji bez dlake na objekti → Побут інших міст (Культурна подія в Дубровнику) | Сутності: Дамір Фабіяніч, Дубровник, фотографія",
+        "• Priča 023 portala o vatrogaskinjama iz DVD-a Tkon ušla u finale Izbora → Вже публікувалось (Локальна новина про конкурс) | Сутності: Ткон, пожежники, 023 portal",
+        "• Velika količina kiše sručila se nad Rijeku, poplavio parking kod Expor → Побут інших міст (Погода та повінь у Рієці) | Сутності: Рієка, повінь, Кварнер",
+        "• Policija kod Dubrovnika upala u stan 20-godišnjaku, pronašli šokantan  → Побут інших міст (Кримінал у Дубровнику) | Сутності: Дубровник, поліція, піротехніка",
+        "• Atomsko sklonište u pulskom Kinu Forum slavi 50 godina postojanja → Побут інших міст (Концерт у Загребі) | Сутності: Атомське склоніште, Загреб, концерт",
+        "• U novom prostoru Centra za djecu, mlade i obitelj Dubrovnik u TUP-u za → Побут інших міст (Освітня подія в Дубровнику) | Сутності: Дубровник, Robo.Du Days, техніка",
+        "• U Nadinu obilježena 35. obljetnica stradanja → Вже публікувалось (Подія в Надіні вже згадувалась) | Сутності: Надін, річниця, страждання",
+        "• Zabranjeno pušenje u Lisinskom kao “Neuštekani”. Dodan još jedan termi → Побут інших міст (Концерт у Загребі) | Сутності: Забранено пушенє, Загреб, Лісінскі",
+        "• Kod 20-godišnjaka u Novoj Mokošici pronađen cijeli arsenal pirotehnike → Дубль (Дубль новини 5) | Сутності: Дубровник, поліція, піротехніка",
+        "• dm Hrvatska ostvario rast prometa za 10,6 posto, na 631,6 milijuna eur → Не за тематикою (Фінансовий звіт компанії) | Сутності: dm Hrvatska, економіка, Хорватія",
+        "• Komisija shvatila da 60 aglomeracija u Hrvatskoj ne pročišćava otpadne → Не за тематикою (Адміністративне питання ЄС) | Сутності: Європейська комісія, Хорватія, очисні споруди",
+        "• Zar u 21. stoljeću građanima još treba slati ovakva upozorenja?! Iz za → Вже публікувалось (Повторний заклик комунальників) | Сутності: Грачац, Водовод Задар, каналізація",
+        "• Znanstvenici zagrebačkog PMF-a otkrili kako bakterije ubrzavaju sintez → Світовий шум (Наукове дослідження) | Сутності: ПМФ Загреб, бактерії, наука",
+        "• Zadarski Muzej iluzija zatvorio je vrata nakon deset godina rada, svem → Вже публікувалось (Закриття музею) | Сутності: Музей ілюзій, Задар, закриття",
+        "• Mladi filmaši u Gospiću → Побут інших міст (Кіномайстерня в Госпічі) | Сутності: Госпіч, кіно, молодь",
+        "• Rapski lovci proslavili svetog Huberta misom i druženjem u Kamporu → Побут інших міст (Локальна подія на острові Раб) | Сутності: Раб, мисливці, святий Губерт",
+        "• Samo 200 primjeraka: NSK i Mozaik knjiga predstavljaju luksuznu monogr → Побут інших міст (Культурна подія в Загребі) | Сутності: НСК, Загреб, монографія",
+        "• Falkensteiner planira ulaganja u Hrvatskoj od 200 milijuna eura. Velik → Побут інших міст (Інвестиції на острові Крк) | Сутності: Falkensteiner, Крк, інвестиції"
+      ],
+      "rejected_by_reason": {
+        "Світовий шум": 2,
+        "Побут інших міст": 11,
+        "Вже публікувалось": 4,
+        "Дубль": 1,
+        "Не за тематикою": 2
+      },
+      "updates_marked": 0,
+      "already_rejected": 8
+    },
+    "backlog": {
+      "total_size": 3,
+      "sources": {
+        "023": 2,
+        "Zadarski list": 1
+      }
+    },
+    "published": {
+      "total": 3,
+      "ukraine_priority": 0,
+      "with_images": 1,
+      "text_only": 2,
+      "og_images_found": 0,
+      "sources": {
+        "023": 2,
+        "Slobodna dalmacija": 1
+      }
+    },
+    "models_used": {
+      "gemini-3.1-flash-lite": 1,
+      "gemini-3.5-flash-lite": 1
+    },
+    "models_by_task": {
+      "filter": "gemini-3.1-flash-lite",
+      "translate": "gemini-3.5-flash-lite"
+    },
+    "model_attempts": [
+      {
+        "task": "filter",
+        "model": "gemini-3-flash-preview",
+        "outcome": "unavailable"
+      },
+      {
+        "task": "filter",
+        "model": "gemini-3.6-flash",
+        "outcome": "unavailable"
+      },
+      {
+        "task": "filter",
+        "model": "gemini-3.5-flash-lite",
+        "outcome": "unavailable"
+      },
+      {
+        "task": "filter",
+        "model": "gemini-3.1-flash-lite",
+        "outcome": "ok"
+      },
+      {
+        "task": "translate",
+        "model": "gemini-3.8-flash",
+        "outcome": "unavailable"
+      },
+      {
+        "task": "translate",
+        "model": "gemini-3.6-flash",
+        "outcome": "unavailable"
+      },
+      {
+        "task": "translate",
+        "model": "gemini-3.5-flash-lite",
+        "outcome": "ok"
+      }
+    ],
+    "exhausted_models": [],
+    "demoted_models": [],
+    "translate_budget_deferred": [],
+    "gemini_region_blocked": false,
+    "gemini_unavailable": false,
+    "errors_count": 0,
+    "gemini_retries": 5
   }
 ]
