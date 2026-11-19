@@ -1,102 +1,5 @@
 [
   {
-    "timestamp": "2026-11-10 15:01:28",
-    "execution_time": 147.7,
-    "funnel": {
-      "scraped_total": 35,
-      "scraped_by_source": {
-        "023": 10,
-        "Slobodna dalmacija": 15,
-        "Zadarski list": 10
-      },
-      "already_seen": 21,
-      "rejected_by_keywords": 3,
-      "rejected_by_rule": {
-        "тег RSS lifestyle": 1,
-        "тег RSS sport": 1,
-        "utakmice": 1
-      },
-      "unclassified_by_ai": 0,
-      "duplicates_removed_by_ai": 8,
-      "rejection_reasons_list": [
-        "• The Uprising: Pobuna engleskih kmetova i Robin Hood kao uljez → Світовий шум (Британська історична драма) | Сутності: Paul Greengrass, The Uprising, Robin Hood, Kmetovi",
-        "• Netflix podigao cijene na hrvatskom tržištu; Evo koliko ćete od sada p → Реклама (Підвищення цін на сервіс) | Сутності: Netflix, Hrvatska, Osnovni paket, Standard",
-        "• Francuska bi trebala izbjeći recesiju na kraju godine, pokazuje novo i → Геоблок (Економіка Франції) | Сутності: Francuska, Eurozona, Reuters, Središnja banka",
-        "• Studenac prenosi poslovanje četiriju dubrovačkih trgovina na Ribolu. E → Побут інших міст (Передача магазинів у Дубровнику) | Сутності: Studenac, Ribola, Dubrovnik",
-        "• MOST Dubrovnik: Pozivamo OTP banku da preispita odluku o ukidanju goto → Побут інших міст (Банк у Дубровнику) | Сутності: MOST, OTP banka, Dubrovnik, Stradun",
-        "• Razotkriven Dodikov čovjek u State Departmentu: Samozatajni savjetnik  → Геоблок (Американський дипломат) | Сутності: Alexander Alden, State Department, Milorad Dodik, Semafor",
-        "• Na Stradunu testirali blagdanske lampice, netko je sve snimio, Dubrovč → Побут інших міст (Тестування ілюмінації в Дубровнику) | Сутності: Stradun, Dubrovnik, Rekla-kazala, Lampice",
-        "• Interpol uhitio stotine krijumčara afričkih migranata u Europu: “Iskor → Геоблок (Операція Інтерполу щодо мігрантів) | Сутності: Interpol, Communis Maris, Europa, Afrika"
-      ],
-      "rejected_by_reason": {
-        "Світовий шум": 1,
-        "Реклама": 1,
-        "Геоблок": 3,
-        "Побут інших міст": 3
-      },
-      "updates_marked": 0,
-      "already_rejected": 12,
-      "rejected_by_code_examples": [
-        "[тег RSS lifestyle] Kako zaštititi rajčice, paprike i cvijeće u posudama kad se noćna temperatura približi nuli",
-        "[тег RSS sport] NOVI DRŽAVNI PRVAK Mladi Luka Perica iz benkovačke “Sipe” pomeo konkurenciju u Puli!",
-        "[utakmice] Vatreni u Ligi nacija na Wemblyju i Opusu u programu Nove TV"
-      ]
-    },
-    "backlog": {
-      "total_size": 1,
-      "sources": {
-        "Slobodna dalmacija": 1
-      }
-    },
-    "published": {
-      "total": 3,
-      "ukraine_priority": 0,
-      "with_images": 3,
-      "text_only": 0,
-      "og_images_found": 1,
-      "sources": {
-        "023": 1,
-        "Zadarski list": 2
-      }
-    },
-    "models_used": {
-      "gemini-3.5-flash-lite": 1,
-      "gemini-3.8-flash": 1
-    },
-    "models_by_task": {
-      "filter": "gemini-3.5-flash-lite",
-      "translate": "gemini-3.8-flash"
-    },
-    "model_attempts": [
-      {
-        "task": "filter",
-        "model": "gemini-3.6-flash",
-        "outcome": "unavailable"
-      },
-      {
-        "task": "filter",
-        "model": "gemini-3.5-flash-lite",
-        "outcome": "ok"
-      },
-      {
-        "task": "translate",
-        "model": "gemini-3.8-flash",
-        "outcome": "ok"
-      }
-    ],
-    "exhausted_models": [],
-    "demoted_models": [
-      "filter: gemini-3-flash-preview"
-    ],
-    "translate_budget_deferred": [
-      "gemini-3.6-flash"
-    ],
-    "gemini_region_blocked": false,
-    "gemini_unavailable": false,
-    "errors_count": 0,
-    "gemini_retries": 1
-  },
-  {
     "timestamp": "2026-11-10 16:01:30",
     "execution_time": 203.8,
     "funnel": {
@@ -10096,5 +9999,107 @@
     "gemini_unavailable": true,
     "errors_count": 0,
     "gemini_retries": 4
+  },
+  {
+    "timestamp": "2026-11-19 16:01:40",
+    "execution_time": 134.4,
+    "funnel": {
+      "scraped_total": 35,
+      "scraped_by_source": {
+        "023": 10,
+        "Slobodna dalmacija": 15,
+        "Zadarski list": 10
+      },
+      "already_seen": 24,
+      "rejected_by_keywords": 4,
+      "rejected_by_rule": {
+        "športa": 1,
+        "košarkaškom": 1,
+        "тег RSS nogomet": 2
+      },
+      "unclassified_by_ai": 0,
+      "duplicates_removed_by_ai": 8,
+      "rejection_reasons_list": [
+        "• Putin pozvao Europljane u Moskvu da razjasne stajalište o pregovorima  → Вже публікувалось (Переговори щодо України) | Сутності: Vladimir Putin, Moskva, Ukrajina, SAD",
+        "• HUBOL protiv linča, proziva odgovorne za sustavni podbačaj u psihijatr → Вже публікувалось (Коментар щодо стану психіатрії) | Сутності: HUBOL, psihijatrija, Vlada RH",
+        "• Kiša i južina učinile svoje? Neočekivan prizor snimljen danas u zadars → Дубль (Автомобіль у морі) | Сутності: Zadar, uvala Draženica, BMW",
+        "• LET 333: Pristigla prva serija fotorobota novih članova budućeg benda; → Не за тематикою (Розважальний контент) | Сутності: Let 3, glazbeni projekt, Facebook",
+        "• FOTO Nezgoda u uvali Draženica; BMW završio u moru → Вже публікувалось (Автомобіль у морі) | Сутності: Zadar, uvala Draženica, BMW",
+        "• Riječki startup BillKO drugi na natjecanju EUREKA: Digitalno rješenje  → Побут інших міст (Локальний успіх стартапу в Рієці) | Сутності: Rijeka, BillKO, EUREKA, startup",
+        "• Rostuhar predstavio “Portret Hrvata”: Domoljublje može pripadati svima → Не за тематикою (Культурний проект у Загребі) | Сутності: Davor Rostuhar, Zagreb, Portret Hrvata",
+        "• Habijan: Četiri medicinska tehničara iz Jankomira nisu napadnuta u Rem → Вже публікувалось (Коментар міністра щодо інциденту) | Сутності: Damir Habijan, Remetinec, Jankomir"
+      ],
+      "rejected_by_reason": {
+        "Вже публікувалось": 4,
+        "Дубль": 1,
+        "Не за тематикою": 2,
+        "Побут інших міст": 1
+      },
+      "updates_marked": 0,
+      "already_rejected": 15,
+      "rejected_by_code_examples": [
+        "[športa] Grad Dubrovnik poziva na dostavu prijedloga programa Feste sv. Vlaha i Dana Grada 2027. godine",
+        "[košarkaškom] Giergia nakon 15 godina pravosudne agonije: Svoj ću dres spaliti, neću šutjeti! A je**vjetrima plaća",
+        "[тег RSS nogomet] Talijani pišu da Lazio želi Perišića. Hrvat ponovo surađuje s Gattusom?",
+        "[тег RSS nogomet] Novo produljenje ugovora kod Kraljeva. Francuski veznjak ostaje u Real Madridu"
+      ]
+    },
+    "backlog": {
+      "total_size": 4,
+      "sources": {
+        "023": 3,
+        "Zadarski list": 1
+      }
+    },
+    "published": {
+      "total": 0,
+      "ukraine_priority": 0,
+      "with_images": 0,
+      "text_only": 0,
+      "og_images_found": 2,
+      "sources": {}
+    },
+    "models_used": {
+      "gemini-3.1-flash-lite": 1
+    },
+    "models_by_task": {
+      "filter": "gemini-3.1-flash-lite",
+      "translate": null
+    },
+    "model_attempts": [
+      {
+        "task": "filter",
+        "model": "gemini-3.1-flash-lite",
+        "outcome": "ok"
+      },
+      {
+        "task": "translate",
+        "model": "gemini-3.5-flash-lite",
+        "outcome": "unavailable"
+      },
+      {
+        "task": "translate",
+        "model": "gemini-3.8-flash",
+        "outcome": "unavailable"
+      },
+      {
+        "task": "translate",
+        "model": "gemini-3.6-flash",
+        "outcome": "unavailable"
+      }
+    ],
+    "exhausted_models": [],
+    "demoted_models": [
+      "filter: gemini-3-flash-preview",
+      "filter: gemini-3.6-flash",
+      "filter: gemini-3.5-flash-lite",
+      "translate: gemini-3.8-flash",
+      "translate: gemini-3.6-flash"
+    ],
+    "translate_budget_deferred": [],
+    "gemini_region_blocked": false,
+    "gemini_unavailable": true,
+    "errors_count": 0,
+    "gemini_retries": 3
   }
 ]
