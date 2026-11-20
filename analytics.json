@@ -1,124 +1,5 @@
 [
   {
-    "timestamp": "2026-11-11 17:01:23",
-    "execution_time": 253.1,
-    "funnel": {
-      "scraped_total": 35,
-      "scraped_by_source": {
-        "023": 10,
-        "Slobodna dalmacija": 15,
-        "Zadarski list": 10
-      },
-      "already_seen": 22,
-      "rejected_by_keywords": 5,
-      "rejected_by_rule": {
-        "тег RSS lifestyle": 2,
-        "igračica": 1,
-        "тег RSS nogomet": 1,
-        "тег RSS košarka": 1
-      },
-      "unclassified_by_ai": 0,
-      "duplicates_removed_by_ai": 10,
-      "rejection_reasons_list": [
-        "• Lažne dojave o bombama u 6300 talijanskih škola, prijetnje i drugdje u → Геоблок (Події в школах Італії та Європи) | Сутності: Італія, Шотландія, Європа, школи",
-        "• Riječani u Novu godinu uz ABBA-u i disko ritam. Advent na četiri lokac → Побут інших міст (Новорічний доעם та ярмарок у Рієці) | Сутності: Рієка, Корзо, ABBA Tribute, Різдвяний ярмарок",
-        "• Ovim se riječima šibenski gradonačelnik danas oprostio od Miše: ‘Bio j → Побут інших міст (Комеморація співака в Загребі) | Сутності: Мато Мішо Ковач, Загреб, Шибеник, Жельцко Бурич",
-        "• Riječki obrt Majstoraj izradio alat za baznu cijenu i objavu cjenika → Побут інших міст (Рієцький сервіс для цін) | Сутності: Майсторай, Рієка, Захист споживачів, Ціни",
-        "• Evo što nam sve donosi jesenska matineja Trija Kamov → Побут інших міст (Музичний концерт у Рієці) | Сутності: Рієка, Тріо Камов, Вєтослав Гржиніч, HNK",
-        "• Izložba Andree Muse u petak u Galeriji suvremene umjetnosti Grobnik → Побут інших міст (Виставка у Гробнику) | Сутності: Андреа Муса, Гробник, Галерея, Виставка",
-        "• Rapski srednjoškolci iz Brna donijeli inicijativu za kabinetsku nastav → Побут інших міст (Шкільна ініціатива на Рабі) | Сутності: Раб, Брно, Erasmus+, Школа",
-        "• Britanski saludge metalci Conjurer dolaze prodrmati zagrebački Boogalo → Побут інших міст (Концерт метал-гурту в Загребі) | Сутності: Conjurer, Загреб, Boogaloo, Метал концерт",
-        "• Vjeko Alilović u Opatiji vodi radionicu o organizaciji uspješnjog doga → Побут інших міст (Подія в Опатії) | Сутності: Опатія, Hubbazia, Вєко Алілович, Радіо",
-        "• “Između groteske i harmonije”: Boris Kačić izlaže u Šporeru → Побут інших міст (Виставка мистецтва в Опатії) | Сутності: Борис Качич, Опатія, Шпорер, Виставка"
-      ],
-      "rejected_by_reason": {
-        "Геоблок": 1,
-        "Побут інших міст": 9
-      },
-      "updates_marked": 1,
-      "already_rejected": 13,
-      "rejected_by_code_examples": [
-        "[тег RSS lifestyle] Trener košarkaša Milwaukee Bucksa objašnjava koliko čučnjeva raditi i koliko se odmarati između tren",
-        "[тег RSS lifestyle] Tvrdo kuhana jaja lakše ćete oguliti ako ih prije toga ohladite u hladnoj vodi",
-        "[igračica] Rabljanka Teanna Halović ponovno pozvana među hrvatske juniorke",
-        "[тег RSS nogomet] Olić uoči dvoboja s Njemačkom na Rujevici: “Želimo se pokazati u što boljem svjetlu”",
-        "[тег RSS košarka] Hrvatske košarkašice porazom otvorile posljednji krug kvalifikacija za EP. Bugarke prejake unatoč bo"
-      ]
-    },
-    "backlog": {
-      "total_size": 4,
-      "sources": {
-        "Zadarski list": 2,
-        "Slobodna dalmacija": 2
-      }
-    },
-    "published": {
-      "total": 2,
-      "ukraine_priority": 1,
-      "with_images": 2,
-      "text_only": 0,
-      "og_images_found": 0,
-      "sources": {
-        "Zadarski list": 1,
-        "Slobodna dalmacija": 1
-      }
-    },
-    "models_used": {
-      "gemini-3.5-flash-lite": 2
-    },
-    "models_by_task": {
-      "filter": "gemini-3.5-flash-lite",
-      "translate": "gemini-3.5-flash-lite"
-    },
-    "model_attempts": [
-      {
-        "task": "filter",
-        "model": "gemini-3.1-flash-lite",
-        "outcome": "unavailable"
-      },
-      {
-        "task": "filter",
-        "model": "gemini-3-flash-preview",
-        "outcome": "unavailable"
-      },
-      {
-        "task": "filter",
-        "model": "gemini-3.6-flash",
-        "outcome": "unavailable"
-      },
-      {
-        "task": "filter",
-        "model": "gemini-3.5-flash-lite",
-        "outcome": "ok"
-      },
-      {
-        "task": "translate",
-        "model": "gemini-3.8-flash",
-        "outcome": "unavailable"
-      },
-      {
-        "task": "translate",
-        "model": "gemini-3.5-flash-lite",
-        "outcome": "ok"
-      }
-    ],
-    "exhausted_models": [],
-    "demoted_models": [
-      "filter: gemini-3-flash-preview",
-      "filter: gemini-3.6-flash",
-      "filter: gemini-3.5-flash-lite",
-      "translate: gemini-3.8-flash",
-      "translate: gemini-3.5-flash-lite"
-    ],
-    "translate_budget_deferred": [
-      "gemini-3.6-flash"
-    ],
-    "gemini_region_blocked": false,
-    "gemini_unavailable": false,
-    "errors_count": 1,
-    "gemini_retries": 4
-  },
-  {
     "timestamp": "2026-11-11 20:01:17",
     "execution_time": 267.1,
     "funnel": {
@@ -10128,6 +10009,108 @@
       "filter: gemini-3-flash-preview",
       "translate: gemini-3.8-flash"
     ],
+    "translate_budget_deferred": [
+      "gemini-3.6-flash"
+    ],
+    "gemini_region_blocked": false,
+    "gemini_unavailable": false,
+    "errors_count": 0,
+    "gemini_retries": 2
+  },
+  {
+    "timestamp": "2026-11-20 20:01:17",
+    "execution_time": 322.7,
+    "funnel": {
+      "scraped_total": 35,
+      "scraped_by_source": {
+        "023": 10,
+        "Slobodna dalmacija": 15,
+        "Zadarski list": 10
+      },
+      "already_seen": 17,
+      "rejected_by_keywords": 6,
+      "rejected_by_rule": {
+        "тег RSS lifestyle": 3,
+        "turnir": 1,
+        "тег RSS nogomet": 1,
+        "turnira": 1
+      },
+      "unclassified_by_ai": 0,
+      "duplicates_removed_by_ai": 8,
+      "rejection_reasons_list": [
+        "• Erasmus Week za studente Ekonomskog fakulteta Rijeka: Lakši prvi korac → Побут інших міст (Студентський захід у Рієці) | Сутності: Erasmus Week, Ekonomski fakultet Rijeka, Sveučilište u Rijeci",
+        "• Blaž Pezo sudjelovao na sjednici Vijeća za upravljanje razvojem turizm → Побут інших міст (Туристичний форум у Поречі) | Сутності: Blaž Pezo, Dani hrvatskog turizma, Poreč",
+        "• Matija Kaštelan predstavljao Rab na europskom kongresu mladih poljopri → Побут інших міст (Подія для фермерів острова Раб) | Сутності: Matija Kaštelan, OPG Natura Rab, Bruxelles",
+        "• Zagrebačka nadbiskupija: Pronađeni ostaci hrvatskog velikana Ivana Zak → Побут інших міст (Археологічна знахідка у Загребі) | Сутності: Ivan Zakmardi, Zagrebačka katedrala, Zagrebačka nadbiskupija",
+        "• Ivica Prtenjača zaključio književnu jesen u Vrbovskom → Побут інших міст (Литературний вечір у Врбовско) | Сутності: Ivica Prtenjača, Vrbovsko, Gradska knjižnica",
+        "• Priznanje filmu “Samo jedna kapljica – čitav oblak miomirisa” → Побут інших міст (Кінонагорода у Соліні) | Сутності: Martinšćica, Sanjin Badurina, Solin",
+        "• Gospić dobiva sportsku dvoranu za borilačke sportove i kuglanu → Побут інших міст (Будівництво спорткомплексу в Ґоспичі) | Сутності: Grad Gospić, Balinovac, 6 milijuna eura",
+        "• Najbolji hrvatski hoteli na panelu HGK: Članice platforme Stories Croa → Не за тематикою (Професійна панельна дискусія готельєрів) | Сутності: HGK, MICHELIN Ključ, Stories Croatia"
+      ],
+      "rejected_by_reason": {
+        "Побут інших міст": 7,
+        "Не за тематикою": 1
+      },
+      "updates_marked": 0,
+      "already_rejected": 13,
+      "rejected_by_code_examples": [
+        "[тег RSS lifestyle] Pet jednostavnih istezanja za veću gipkost: fiziolog preporučuje desetak minuta dvaput na dan",
+        "[тег RSS lifestyle] Liječnica s Cleveland Clinic izdvaja šest svakodnevnih navika koje pomažu imunosnom sustavu",
+        "[тег RSS lifestyle] Ljepljivo tijesto ne posipajte odmah brašnom: pomažu ulje, voda i 20 minuta odmora",
+        "[turnir] Zadar Open Championship 2026. okupio 345 boraca iz tri države: Dva zadarska kluba osvojila čak 104 m",
+        "[тег RSS nogomet] Hrvatska remizirala sa Senegalom na startu Svjetskog U-17 prvenstva, iako je imala igrača više od 42",
+        "[turnira] Mladi kuglači Goranina osvojili brdo medalja"
+      ]
+    },
+    "backlog": {
+      "total_size": 1,
+      "sources": {
+        "Zadarski list": 1
+      }
+    },
+    "published": {
+      "total": 3,
+      "ukraine_priority": 0,
+      "with_images": 1,
+      "text_only": 2,
+      "og_images_found": 0,
+      "sources": {
+        "023": 2,
+        "Slobodna dalmacija": 1
+      }
+    },
+    "models_used": {
+      "gemini-3.6-flash": 1,
+      "gemini-3.5-flash-lite": 1
+    },
+    "models_by_task": {
+      "filter": "gemini-3.6-flash",
+      "translate": "gemini-3.5-flash-lite"
+    },
+    "model_attempts": [
+      {
+        "task": "filter",
+        "model": "gemini-3-flash-preview",
+        "outcome": "unavailable"
+      },
+      {
+        "task": "filter",
+        "model": "gemini-3.6-flash",
+        "outcome": "ok"
+      },
+      {
+        "task": "translate",
+        "model": "gemini-3.8-flash",
+        "outcome": "unavailable"
+      },
+      {
+        "task": "translate",
+        "model": "gemini-3.5-flash-lite",
+        "outcome": "ok"
+      }
+    ],
+    "exhausted_models": [],
+    "demoted_models": [],
     "translate_budget_deferred": [
       "gemini-3.6-flash"
     ],
