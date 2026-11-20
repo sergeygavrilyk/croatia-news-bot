@@ -1,112 +1,5 @@
 [
   {
-    "timestamp": "2026-11-11 12:01:17",
-    "execution_time": 312.8,
-    "funnel": {
-      "scraped_total": 35,
-      "scraped_by_source": {
-        "023": 10,
-        "Slobodna dalmacija": 15,
-        "Zadarski list": 10
-      },
-      "already_seen": 23,
-      "rejected_by_keywords": 1,
-      "rejected_by_rule": {
-        "oglas": 1
-      },
-      "unclassified_by_ai": 0,
-      "duplicates_removed_by_ai": 10,
-      "rejection_reasons_list": [
-        "• UPUZ-HR: Potrebno je utvrditi sve okolnosti nemilog događaja u Jankomi → Побут інших міст (Загреб) | Сутності: UPUZ-HR, Psihijatrijska bolnica Sveti Ivan, Jankomir, Kristian Josip Periš",
-        "• Prvi ovogodišnji suhi norveški bakalar stigao je u prodaju, a kilogram → Побут інших міст (Шибеник) | Сутності: Šibenik, N1, bakalar, Norveška",
-        "• Vrgorac je izgradio 12 stanova, Osijek gradi 206, a Dubrovnik? Nula! → Побут інших міст (Вргорац, Осієк, Дубровник) | Сутності: Vrgorac, Osijek, Dubrovnik, SDP",
-        "• Zračna luka Rijeka zabilježila najveći porast putničkog prometa. I dal → Не за тематикою (Статистика аеропортів Хорватії) | Сутності: DZS, Split, Dubrovnik, Zagreb, Zadar",
-        "• Objavio gradonačelnik Franković: oni će zagrijati Stradun na ovogodišn → Побут інших міст (Дубровник) | Сутності: Mato Franković, Gipsy Kings, Stradun, Dubrovnik",
-        "• Stanoviti Mihail želi posijati paniku po Europi. Sad je natjerao Itali → Геоблок (Італія) | Сутності: Italija, Giuseppe Valditara, La7, Mihail",
-        "• Lopov se namjerio na odojke: Iz štale u Gračacu nestalo šest malih svi → Вже публікувалось (Крайна одоjкiв у Грачацу) | Сутності: Gračac, Zadar, Općinsko državno odvjetništvo",
-        "• Zajc u vašem gradu – budimo zajedno: kazalište koje povezuje generacij → Побут інших міст (Рієка) | Сутності: HNK Ivana pl. Zajca, Rijeka",
-        "• Šest zlata, srebro i titula najboljeg: Riječki chef Vehid Šaldić osvoj → Геоблок (Албанія) | Сутності: Vehid Šaldić, Tirana, HKS, Gastro ALB",
-        "• Wayne Rooney ulazi u britanski reality show: Uprihodit će 800 tisuća f → Світовий шум (Шоу-бізнес) | Сутності: Wayne Rooney, Coleen, Manchester United, Australija"
-      ],
-      "rejected_by_reason": {
-        "Побут інших міст": 5,
-        "Не за тематикою": 1,
-        "Геоблок": 2,
-        "Вже публікувалось": 1,
-        "Світовий шум": 1
-      },
-      "updates_marked": 0,
-      "already_rejected": 12,
-      "rejected_by_code_examples": [
-        "[oglas] Kliknuo je na oglas i ostao bez 17.250 eura! Obećali su mu bogatstvo, a evo kako su ga prevarili"
-      ]
-    },
-    "backlog": {
-      "total_size": 3,
-      "sources": {
-        "Slobodna dalmacija": 1,
-        "023": 2
-      }
-    },
-    "published": {
-      "total": 3,
-      "ukraine_priority": 0,
-      "with_images": 3,
-      "text_only": 0,
-      "og_images_found": 2,
-      "sources": {
-        "Slobodna dalmacija": 1,
-        "023": 2
-      }
-    },
-    "models_used": {
-      "gemini-3.5-flash-lite": 2
-    },
-    "models_by_task": {
-      "filter": "gemini-3.5-flash-lite",
-      "translate": "gemini-3.5-flash-lite"
-    },
-    "model_attempts": [
-      {
-        "task": "filter",
-        "model": "gemini-3-flash-preview",
-        "outcome": "unavailable"
-      },
-      {
-        "task": "filter",
-        "model": "gemini-3.6-flash",
-        "outcome": "unavailable"
-      },
-      {
-        "task": "filter",
-        "model": "gemini-3.5-flash-lite",
-        "outcome": "ok"
-      },
-      {
-        "task": "translate",
-        "model": "gemini-3.8-flash",
-        "outcome": "unavailable"
-      },
-      {
-        "task": "translate",
-        "model": "gemini-3.6-flash",
-        "outcome": "unavailable"
-      },
-      {
-        "task": "translate",
-        "model": "gemini-3.5-flash-lite",
-        "outcome": "ok"
-      }
-    ],
-    "exhausted_models": [],
-    "demoted_models": [],
-    "translate_budget_deferred": [],
-    "gemini_region_blocked": false,
-    "gemini_unavailable": false,
-    "errors_count": 0,
-    "gemini_retries": 4
-  },
-  {
     "timestamp": "2026-11-11 13:01:19",
     "execution_time": 158.4,
     "funnel": {
@@ -10168,6 +10061,106 @@
       "filter: gemini-3.6-flash",
       "translate: gemini-3.8-flash",
       "translate: gemini-3.6-flash"
+    ],
+    "translate_budget_deferred": [],
+    "gemini_region_blocked": false,
+    "gemini_unavailable": false,
+    "errors_count": 0,
+    "gemini_retries": 1
+  },
+  {
+    "timestamp": "2026-11-20 13:01:14",
+    "execution_time": 146.8,
+    "funnel": {
+      "scraped_total": 35,
+      "scraped_by_source": {
+        "023": 10,
+        "Slobodna dalmacija": 15,
+        "Zadarski list": 10
+      },
+      "already_seen": 18,
+      "rejected_by_keywords": 3,
+      "rejected_by_rule": {
+        "тег RSS sport": 1,
+        "turnir": 1,
+        "тег RSS nogomet": 1
+      },
+      "unclassified_by_ai": 0,
+      "duplicates_removed_by_ai": 12,
+      "rejection_reasons_list": [
+        "• Koristite li velikog crva kao ješku u udičarenju? Evo kako ga možete i → Світовий шум (Поради з риболовлі) | Сутності: veliki crv, Eunice aphroditois, Jadran, udičarenje",
+        "• Osnovna škola Lapad prisjetila se Đura Bokuna: Njegova bivša učiteljic → Побут інших міст (Подія у школі Дубровника) | Сутності: Osnovna škola Lapad, Đuro Bokun, Mirjana Kaznačić, Dubrovnik",
+        "• Peticija 20 tisuća Splićana urodila plodom; Šuta otkazao Dinu Merlina, → Побут інших міст (Скасування концерту в Спліті) | Сутності: Tomislav Šuta, Dino Merlin, Split, Riva",
+        "• Poništen natječaj za prodaju Vile Svežanj. Država odustala od milijuna → Побут інших міст (Продаж нерухомості в Кострені) | Сутності: Vila Svežanj, Kostrena, Branko Bačić, Kukuljanovo",
+        "• Čekao da šogor upiše tvrtku u registar pa mu dan kasnije sredio posao  → Побут інших міст (Локальна справа у Загребі) | Сутності: USKOK, Zagreb, Policijska uprava zagrebačka",
+        "• Hrstić: Kekin smrt pacijenta koristi za političke obračune → Вже публікувалось (Коментар щодо події з історії) | Сутності: Irena Hrstić, Ivana Kekin, Klinika Sv. Ivan, Kristian Josip Periš",
+        "• Šibenski SDP-ovci se pitaju: Kako je šuma postala građevinsko područje → Побут інших міст (Забудова в Шибенику) | Сутності: SDP Šibenik, Šubićevac, Tvrđava sv. Ivana",
+        "• Rješavaju se prometna uska grla u Zadarskoj županiji, uskoro kreću rad → Вже публікувалось (Ремонт доріг у Задарській жупанії) | Сутності: Zadarska županija, 4,9 milijuna eura, Vlada RH",
+        "• Sanacija vijadukta Dubračina probila rok, nastavlja se regulacija prom → Побут інших міст (Ремонт дороги в Цріквениці) | Сутності: Crikvenica, vijadukt Dubračina, Kotorska ulica",
+        "• Craft pekarnica Babushka novi zakupac na Tržnici Zamet → Побут інших міст (Відкриття пекарні в Рієці) | Сутності: Babushka Artisan Bakery, Tržnica Zamet, Rijeka",
+        "• “Croatia – I hear it’s beautiful” vidjelo desetak posto čovječanstva.  → Не за тематикою (Фільм про проморолик Бузета) | Сутності: John Malkovich, Buzet, Hum, Croatia – I hear it’s beautiful",
+        "• Oporba podržala Štrajk mladih i upozorila na nejednakosti i teškoće os → Дубль (Реакція політика на страйк) | Сутності: Marin Živković, Možemo!, Hrvatski sabor, Štrajk mladih"
+      ],
+      "rejected_by_reason": {
+        "Світовий шум": 1,
+        "Побут інших міст": 7,
+        "Вже публікувалось": 2,
+        "Не за тематикою": 1,
+        "Дубль": 1
+      },
+      "updates_marked": 0,
+      "already_rejected": 13,
+      "rejected_by_code_examples": [
+        "[тег RSS sport] Penjački spektakl u Zadru; Višnjik sutra ugošćuje više od stotinu natjecatelja Sv. Krševan Boulder O",
+        "[turnir] Zadar Open Championship 2026. okupio 345 boraca iz tri države: Dva zadarska kluba osvojila čak 104 m",
+        "[тег RSS nogomet] Veliki derbi u četvrtfinalu Lige nacija. Ovo su svi parovi"
+      ]
+    },
+    "backlog": {
+      "total_size": 1,
+      "sources": {
+        "Zadarski list": 1
+      }
+    },
+    "published": {
+      "total": 3,
+      "ukraine_priority": 0,
+      "with_images": 3,
+      "text_only": 0,
+      "og_images_found": 1,
+      "sources": {
+        "Slobodna dalmacija": 1,
+        "023": 1,
+        "Zadarski list": 1
+      }
+    },
+    "models_used": {
+      "gemini-3.6-flash": 2
+    },
+    "models_by_task": {
+      "filter": "gemini-3.6-flash",
+      "translate": "gemini-3.6-flash"
+    },
+    "model_attempts": [
+      {
+        "task": "filter",
+        "model": "gemini-3.6-flash",
+        "outcome": "ok"
+      },
+      {
+        "task": "translate",
+        "model": "gemini-3.8-flash",
+        "outcome": "unavailable"
+      },
+      {
+        "task": "translate",
+        "model": "gemini-3.6-flash",
+        "outcome": "ok"
+      }
+    ],
+    "exhausted_models": [],
+    "demoted_models": [
+      "filter: gemini-3-flash-preview"
     ],
     "translate_budget_deferred": [],
     "gemini_region_blocked": false,
