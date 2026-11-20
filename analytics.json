@@ -1,121 +1,5 @@
 [
   {
-    "timestamp": "2026-11-11 16:02:16",
-    "execution_time": 143.2,
-    "funnel": {
-      "scraped_total": 35,
-      "scraped_by_source": {
-        "023": 10,
-        "Slobodna dalmacija": 15,
-        "Zadarski list": 10
-      },
-      "already_seen": 22,
-      "rejected_by_keywords": 3,
-      "rejected_by_rule": {
-        "тег RSS lifestyle": 2,
-        "sportašima": 1
-      },
-      "unclassified_by_ai": 0,
-      "duplicates_removed_by_ai": 19,
-      "rejection_reasons_list": [
-        "• Slovenija spustila benzin na 1,50 eura, Talijani i Austrijanci pune sp → Геоблок (Ціни на пальне в Словенії) | Сутності: Словенія, Бензин, Ціни, Італія, Австрія",
-        "• Posljednji oproštaj od Miše Kovača: Bio je simbol hrvatske pjesme → Не за тематикою (Прощання з музикантом у Загребі) | Сутності: Мішо Ковач, Загреб, Музика, Комеморація",
-        "• Dodijeljene zahvalnice za sedamnaestu Dubrovačku trpezu → Побут інших міст (Благодійна подія у Дубровнику) | Сутності: Дубровник, Мато Франкович, Благодійність, Гастрономія",
-        "• Počelo uklanjanje gotovo 54 tisuće tona otpada iz bivše vojarne Šepuri → Вже публікувалось (Початок санації сміттєзвалища) | Сутності: Шепуріне, Нін, Еміл Чурко, Відходи",
-        "• U Puntu obilježena 108. obljetnica završetka Prvoga svjetskog rata → Побут інших міст (Подія на острові Крк) | Сутності: Пунат, Крк, Перша світова війна, Комеморація",
-        "• Uklanja se gotovo 54 tisuće tona otpada s područja bivše vojarne u Šep → Дубль (Початок санації сміттєзвалища) | Сутності: Шепуріне, Нін, Еміл Чурко, Відходи",
-        "• “Baci oko (objektiva) na okoliš”: Opatijski srednjoškolci predstavili  → Побут інших міст (Виставка в Опатії) | Сутності: Опатія, Фотографія, Екологія, Молодь",
-        "• Volonteri creske škole uspješno proveli još jednu humanitarnu akciju “ → Побут інших міст (Акція на острові Црес) | Сутності: Црес, Гуманітарна акція, Школа, Рієка",
-        "• Što je ostalo od lokalnog novinarstva? Lokalne teme danas imaju global → Побут інших міст (Дискусія про журналістику в Рієці) | Сутності: Рієка, Журналістика, HND, Медіа",
-        "• Ovaj pašnjak vrijedi pravo bogatstvo! Na javnoj dražbi oglašena prodaj → Побут інших міст (Продаж землі біля Дубровника) | Сутності: Дубровник, Мочічі, Аукціон, Нерухомість",
-        "• Kvarner predstavio adute u zdravstvenom turizmu → Побут інших міст (Просування туризму на Кварнері) | Сутності: Кварнер, Рієка, Медичний туризм, Словенія",
-        "• Uočeno onečišćenje mora u uvali Žurkovo → Побут інших міст (Забруднення моря в Кострені) | Сутності: Кострена, Журково, Забруднення моря, Рієка",
-        "• Devet dizajnera na modnoj pisti, a večer obilježila i važna poruka o m → Вже публікувалось (Модна подія в Бібінє) | Сутності: Бібінє, ModernA, Мода, Психічне здоров'я",
-        "• Pahuljici priznanje “30+” za dugogodišnju podršku roditeljima → Побут інших міст (Нагорода дитсадку на Рабі) | Сутності: Раб, Цріквеніца, Дитячий садок, Виховання",
-        "• Grad Senj ima prijedlog odluke o zabrani građevinskih radova tijekom s → Побут інших міст (Заборона будівництва в Сені) | Сутності: Сень, Будівництво, Заборона, Туризм",
-        "• Objavljeno kada je ispraćaj svećenika koji je iznenada preminuo na Mol → Вже публікувалось (Інформація про похорон священника) | Сутності: Задар, Молат, Дон Збігнєв Корч, Похорон",
-        "• Prosječna starost hrvatskih hotela 55 godina. Gotovo 90% objekata treb → Не за тематикою (Аналіз стану готелів у Хорватії) | Сутності: Хорватія, Готелі, Туризм, Інвестиції",
-        "• Sveta Lucija razvija ideju amaterskog kazališta na Rabu → Побут інших міст (Театральна ініціатива на Рабі) | Сутності: Раб, Театр, Культура, Аматори",
-        "• Policijska akcija u zadarskom kraju dobila neočekivan rasplet: Ono što → Дубль (Вилучення зброї у пенсіонера) | Сутності: Задар, Поліція, Зброя, Пенсіонер"
-      ],
-      "rejected_by_reason": {
-        "Геоблок": 1,
-        "Не за тематикою": 2,
-        "Побут інших міст": 11,
-        "Вже публікувалось": 3,
-        "Дубль": 2
-      },
-      "updates_marked": 1,
-      "already_rejected": 7,
-      "rejected_by_code_examples": [
-        "[тег RSS lifestyle] Trener košarkaša Milwaukee Bucksa objašnjava koliko čučnjeva raditi i koliko se odmarati između tren",
-        "[тег RSS lifestyle] Tvrdo kuhana jaja lakše ćete oguliti ako ih prije toga ohladite u hladnoj vodi",
-        "[sportašima] Frkanj domaćin otvorenog županijskog prvenstva u kros duatlonu"
-      ]
-    },
-    "backlog": {
-      "total_size": 8,
-      "sources": {
-        "Zadarski list": 5,
-        "Slobodna dalmacija": 3
-      }
-    },
-    "published": {
-      "total": 3,
-      "ukraine_priority": 0,
-      "with_images": 3,
-      "text_only": 0,
-      "og_images_found": 0,
-      "sources": {
-        "Slobodna dalmacija": 3
-      }
-    },
-    "models_used": {
-      "gemini-3.1-flash-lite": 1,
-      "gemini-3.6-flash": 1
-    },
-    "models_by_task": {
-      "filter": "gemini-3.1-flash-lite",
-      "translate": "gemini-3.6-flash"
-    },
-    "model_attempts": [
-      {
-        "task": "filter",
-        "model": "gemini-3.1-flash-lite",
-        "outcome": "ok"
-      },
-      {
-        "task": "translate",
-        "model": "gemini-3.5-flash-lite",
-        "outcome": "unavailable"
-      },
-      {
-        "task": "translate",
-        "model": "gemini-3.8-flash",
-        "outcome": "unavailable"
-      },
-      {
-        "task": "translate",
-        "model": "gemini-3.6-flash",
-        "outcome": "ok"
-      }
-    ],
-    "exhausted_models": [],
-    "demoted_models": [
-      "filter: gemini-3-flash-preview",
-      "filter: gemini-3.6-flash",
-      "filter: gemini-3.5-flash-lite",
-      "translate: gemini-3.8-flash"
-    ],
-    "translate_budget_deferred": [
-      "gemini-3.6-flash"
-    ],
-    "gemini_region_blocked": false,
-    "gemini_unavailable": false,
-    "errors_count": 0,
-    "gemini_retries": 2
-  },
-  {
     "timestamp": "2026-11-11 17:01:23",
     "execution_time": 253.1,
     "funnel": {
@@ -10152,5 +10036,104 @@
     "gemini_unavailable": false,
     "errors_count": 0,
     "gemini_retries": 3
+  },
+  {
+    "timestamp": "2026-11-20 17:01:18",
+    "execution_time": 152.5,
+    "funnel": {
+      "scraped_total": 35,
+      "scraped_by_source": {
+        "023": 10,
+        "Slobodna dalmacija": 15,
+        "Zadarski list": 10
+      },
+      "already_seen": 23,
+      "rejected_by_keywords": 5,
+      "rejected_by_rule": {
+        "тег RSS lifestyle": 2,
+        "turnir": 1,
+        "тег RSS sport": 1,
+        "тег RSS nogomet": 1
+      },
+      "unclassified_by_ai": 0,
+      "duplicates_removed_by_ai": 5,
+      "rejection_reasons_list": [
+        "• U međunarodnoj akciji u Srbiji šest uhićenih zbog seksualnog zlostavlj → Геоблок (Спецоперація та арешти в Сербії) | Сутності: Сербія, MUP Srbije, Europol, акція Mozaik",
+        "• Zbog snimanja TV showa zatvara se dio parkinga na Lapadskoj obali → Побут інших міст (Обмеження паркування в Дубровнику) | Сутності: Дубровник, Lapadska obala, Sanitat",
+        "• Premijera opere “Razgovori karmelićanki” na sceni HNK2 → Побут інших міст (Опера у Загребі) | Сутності: Загреб, HNK2, Muzička akademija, Hervé Niquet",
+        "• Općina Unešić dodijelit će 13 stipendija za redovite studente - za tro → Побут інших міст (Місцеві стипендії в Унешичі) | Сутності: Općina Unešić, Унешич, студентські стипендії",
+        "• Na odluke kupaca sve veći utjecaj imaju digitalni alati → Не за тематикою (Соціологічне дослідження звичок покупців) | Сутності: HGK, Хорватія, покупці, цифрові інструменти"
+      ],
+      "rejected_by_reason": {
+        "Геоблок": 1,
+        "Побут інших міст": 3,
+        "Не за тематикою": 1
+      },
+      "updates_marked": 0,
+      "already_rejected": 17,
+      "rejected_by_code_examples": [
+        "[тег RSS lifestyle] Liječnica s Cleveland Clinic izdvaja šest svakodnevnih navika koje pomažu imunosnom sustavu",
+        "[тег RSS lifestyle] Ljepljivo tijesto ne posipajte odmah brašnom: pomažu ulje, voda i 20 minuta odmora",
+        "[turnir] Zadar Open Championship 2026. okupio 345 boraca iz tri države: Dva zadarska kluba osvojila čak 104 m",
+        "[тег RSS sport] Uvjerljiva pobjeda Alcaraza na ATP Finalu. Španjolac nadigrao Talijana za treću pobjedu u trećem nas",
+        "[тег RSS nogomet] Bilić o Irskoj: “Kvaliteta je na našoj strani. Vjerujem da ćemo to i pokazati”"
+      ]
+    },
+    "backlog": {
+      "total_size": 0,
+      "sources": {}
+    },
+    "published": {
+      "total": 2,
+      "ukraine_priority": 1,
+      "with_images": 2,
+      "text_only": 0,
+      "og_images_found": 0,
+      "sources": {
+        "Zadarski list": 1,
+        "Slobodna dalmacija": 1
+      }
+    },
+    "models_used": {
+      "gemini-3.6-flash": 2
+    },
+    "models_by_task": {
+      "filter": "gemini-3.6-flash",
+      "translate": "gemini-3.6-flash"
+    },
+    "model_attempts": [
+      {
+        "task": "filter",
+        "model": "gemini-3.6-flash",
+        "outcome": "ok"
+      },
+      {
+        "task": "translate",
+        "model": "gemini-3.5-flash-lite",
+        "outcome": "unavailable"
+      },
+      {
+        "task": "translate",
+        "model": "gemini-3.8-flash",
+        "outcome": "unavailable"
+      },
+      {
+        "task": "translate",
+        "model": "gemini-3.6-flash",
+        "outcome": "ok"
+      }
+    ],
+    "exhausted_models": [],
+    "demoted_models": [
+      "filter: gemini-3-flash-preview",
+      "translate: gemini-3.8-flash"
+    ],
+    "translate_budget_deferred": [
+      "gemini-3.6-flash"
+    ],
+    "gemini_region_blocked": false,
+    "gemini_unavailable": false,
+    "errors_count": 0,
+    "gemini_retries": 2
   }
 ]
