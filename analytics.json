@@ -1,104 +1,5 @@
 [
   {
-    "timestamp": "2026-11-10 20:01:23",
-    "execution_time": 96.7,
-    "funnel": {
-      "scraped_total": 35,
-      "scraped_by_source": {
-        "023": 10,
-        "Slobodna dalmacija": 15,
-        "Zadarski list": 10
-      },
-      "already_seen": 15,
-      "rejected_by_keywords": 4,
-      "rejected_by_rule": {
-        "тег RSS lifestyle": 3,
-        "utakmice": 1
-      },
-      "unclassified_by_ai": 0,
-      "duplicates_removed_by_ai": 14,
-      "rejection_reasons_list": [
-        "• Kako brzo odmagliti stakla u autu: topao zrak, klima i isključena reci → Світовий шум (Поради щодо догляду за склом авто) | Сутності: автомобіль, конденсат, поради водіям",
-        "• Viktor Gržinčić izlaže povijest Klane kroz stare fotografije → Побут інших міст (Локальна виставка в місті Клана) | Сутності: Віктор Гржинчич, Клана, виставка фотографій",
-        "• Znate li za fenomen šibenskih kita? Smrika je za crno, maslina za bilo → Побут інших міст (Історичні звичаї міста Шибеник) | Сутності: Шибеник, Арсен Дедіч, традиції виноробства",
-        "• Mrsić: Upravno vijeće podržalo odluku o izvanrednim otkazima na Klinic → Вже публікувалось (Реакція на інцидент у психіатричній клініці) | Сутності: Мірандо Мрсич, клініка Св. Івана, Янкомир",
-        "• Put koji je započeo na vrećama brašna i smeđim strunjačama, 60 godina  → Спорт | Сутності: Klapa Kaše, Андрія Хабулін, дзюдо, Дубровник",
-        "• Na Interliberu predstavljeni posljednji svesci biblioteke “Djela Miros → Вже публікувалось (Деталі книжкової виставки Interliber) | Сутності: Interliber, Мирослав Крлежа, Загреб",
-        "• Marija Bazdan: ‘Mi smo šutjeli i kad smo bili u pravu, a danas vam se  → Побут інших міст (Інтерв'ю з викладачем у Дубровнику) | Сутності: Марія Баздан, Дубровник, школа туризму",
-        "• Dio parkirališta kod ex Gracianija zatvoren do kraja siječnja → Побут інших міст (Закриття парковки в Рієці) | Сутності: Рієка, Rijeka plus, паркувальний майданчик",
-        "• Sveučilištu pet milijuna eura za povezivanje znanosti s gospodarstvom  → Побут інших міст (Локальний проект університету Дубровника) | Сутності: Університет Дубровника, EUNICoast, науковий грант",
-        "• Interliber: Pisac krimića Chris Carter predstavio novi roman i družio  → Вже публікувалось (Візит письменника на Interliber) | Сутності: Кріс Картер, Interliber, Загреб",
-        "• Crveni križ Mali Lošinj prikuplja priloge za prijevoz pacijenata → Побут інших міст (Благодійна акція в Малому Лошині) | Сутності: Червоний Хрест, Малий Лошинь, збір коштів",
-        "• Koalicija udruga u zdravstvu: Tragedija u Jankomiru zahtijeva temeljit → Вже публікувалось (Заклик до реформи після смерті пацієнта) | Сутності: Коаліція асоціацій у сфері охорони здоров'я, Янкомир, реформа",
-        "• Djeca se u Loparu okušala u ručnom radu → Побут інших міст (Дитяча майстерня на острові Раб) | Сутності: Лопар, острів Раб, майстер-клас",
-        "• Krčkom filmu bronca na europskim Lovie Awardsima → Побут інших міст (Нагорода за туристичний фільм про Крк) | Сутності: острів Крк, Lovie Awards, промо-фільм"
-      ],
-      "rejected_by_reason": {
-        "Світовий шум": 1,
-        "Побут інших міст": 8,
-        "Вже публікувалось": 4,
-        "Спорт": 1
-      },
-      "updates_marked": 1,
-      "already_rejected": 8,
-      "rejected_by_code_examples": [
-        "[тег RSS lifestyle] Farmaceutkinja objašnjava zašto kipući napitak pogoršava grlobolju i što piti umjesto njega",
-        "[тег RSS lifestyle] Zašto kruh u hladnjaku brže otvrdne i gdje ga je bolje čuvati",
-        "[тег RSS lifestyle] Kako zaštititi rajčice, paprike i cvijeće u posudama kad se noćna temperatura približi nuli",
-        "[utakmice] Uhićeno još pet osoba iz Torcidina kortea zbog uzvikivanja nacističkih i antisemitskih parola"
-      ]
-    },
-    "backlog": {
-      "total_size": 0,
-      "sources": {}
-    },
-    "published": {
-      "total": 2,
-      "ukraine_priority": 0,
-      "with_images": 2,
-      "text_only": 0,
-      "og_images_found": 1,
-      "sources": {
-        "Slobodna dalmacija": 1,
-        "023": 1
-      }
-    },
-    "models_used": {
-      "gemini-3-flash-preview": 1,
-      "gemini-3.5-flash-lite": 1
-    },
-    "models_by_task": {
-      "filter": "gemini-3-flash-preview",
-      "translate": "gemini-3.5-flash-lite"
-    },
-    "model_attempts": [
-      {
-        "task": "filter",
-        "model": "gemini-3-flash-preview",
-        "outcome": "ok"
-      },
-      {
-        "task": "translate",
-        "model": "gemini-3.8-flash",
-        "outcome": "unavailable"
-      },
-      {
-        "task": "translate",
-        "model": "gemini-3.5-flash-lite",
-        "outcome": "ok"
-      }
-    ],
-    "exhausted_models": [],
-    "demoted_models": [],
-    "translate_budget_deferred": [
-      "gemini-3.6-flash"
-    ],
-    "gemini_region_blocked": false,
-    "gemini_unavailable": false,
-    "errors_count": 0,
-    "gemini_retries": 1
-  },
-  {
     "timestamp": "2026-11-11 08:01:22",
     "execution_time": 294.3,
     "funnel": {
@@ -10136,5 +10037,113 @@
     "gemini_unavailable": true,
     "errors_count": 0,
     "gemini_retries": 5
+  },
+  {
+    "timestamp": "2026-11-20 08:01:13",
+    "execution_time": 322.2,
+    "funnel": {
+      "scraped_total": 35,
+      "scraped_by_source": {
+        "023": 10,
+        "Slobodna dalmacija": 15,
+        "Zadarski list": 10
+      },
+      "already_seen": 4,
+      "rejected_by_keywords": 4,
+      "rejected_by_rule": {
+        "тег RSS sport": 2,
+        "nogometu": 1,
+        "тег RSS nogomet": 1
+      },
+      "unclassified_by_ai": 0,
+      "duplicates_removed_by_ai": 15,
+      "rejection_reasons_list": [
+        "• Večer sevdalinke uz nastup Armina Muzaferije i posebnu gošću, Lejlu Ča → Побут інших міст (Концерт у Дубровнику) | Сутності: Dubrovnik, Armin Muzaferija, Večer sevdalinke",
+        "• Najmlađa na Malti bila je Rabljanka: Franki Žic bronca u francuskoj ma → Геоблок (Манікюрний конкурс на Мальті) | Сутності: Malta, Franka Žic, Rab",
+        "• Trogodišnjak iz Zadra preživio stravičan požar, sestra otkrila kako je → Дубль (Дублікат новини про одужання хлопчика) | Сутності: Zadar, požar, Simona Zrilić",
+        "• Inspirativna priča: Nekad je bio ovisnik, a sad popravlja odbačene bic → Побут інших міст (Історія з міста Плоче) | Сутності: Ploče, Robert Petrušić, велосипеди",
+        "• Kupci, oprez: iz trgovačkog lanca povlači se ovaj proizvod, može biti  → Вже публікувалось (Вже є в історії) | Сутності: Lidl, J.D. Gross čokolada, Hrvatska",
+        "• Shore jigging iz snova. Na 20 metara od kraja dobio lampugu težu od 5  → Не за тематикою (Любительська риболовля) | Сутності: Murter, Ivan Olivari, shore jigging",
+        "• Pogledajte što vam donosi novi broj Dubrovačkog vjesnika → Побут інших міст (Анонс газети Дубровника) | Сутності: Dubrovački vjesnik, Dubrovnik, Mato Franković",
+        "• Nestabilan petak u Dalmaciji: stižu pljuskovi i jaki udari vjetra na m → Дубль (Дублікат прогнозу погоди) | Сутності: Dalmacija, DHMZ, prognoza vremena",
+        "• Izložba kolektiva Disnovation.org u Galeriji Filodrammatica: zabrinuto → Побут інших міст (Виставка у Рієці) | Сутності: Rijeka, Filodrammatica, Disnovation.org",
+        "• Ston se urušava, Općina pred zidom: ‘Konzervatori su poručili da preuz → Побут інших міст (Проблема у місті Стон) | Сутності: Ston, konzervatori, stara jezgra",
+        "• Mali dom na Platku od sutra ponovo otvara vrata → Побут інших міст (Відкриття притулку на Платку) | Сутності: Platak, Mali dom, Rijeka",
+        "• Maslinari su očajni! Zbog problema s uljarama najavljuju ono najgore,  → Побут інших міст (Проблема олійниць у Спліті) | Сутності: Splitsko-dalmatinska županija, Blaženko Boban, uljare",
+        "• Zbog vjetra u prekidu niz katamaranskih linija, evo popisa → Дубль (Дублікат транспортного зведення) | Сутності: HAK, A3 Zagreb, katamaranske linije",
+        "• U Kazalištu Marina Držića premijerno zaigrali Goldonijevi ‘Zaljubljeni → Побут інших міст (Театральна вистава у Дубровнику) | Сутності: Dubrovnik, Kazalište Marina Držića, Carlo Goldoni",
+        "• Otok Korčula proglašen najpoželjnijom destinacijom na otocima u sklopu → Побут інших міст (Нагорода острова Корчула) | Сутності: Korčula, Poreč, Dani hrvatskog turizma"
+      ],
+      "rejected_by_reason": {
+        "Побут інших міст": 9,
+        "Геоблок": 1,
+        "Дубль": 3,
+        "Вже публікувалось": 1,
+        "Не за тематикою": 1
+      },
+      "updates_marked": 0,
+      "already_rejected": 4,
+      "rejected_by_code_examples": [
+        "[тег RSS sport] Zadrani na Bosnu čekaju do veljače, ABA liga zbog odgođenog prvog kola promijenila cijeli kalendar",
+        "[nogometu] Hrvatski policijski službenici dvostruki prvaci svijeta u dvoranskom malom nogometu – trojica senior",
+        "[тег RSS sport] Primorjaši sutra gostuju kod Juga: “Ovo je proces, ništa tu ne ide brzo”",
+        "[тег RSS nogomet] Opatijci se vraćaju kući nakon 2.456 dana, no nisu baš oduševljeni novim stadionom"
+      ]
+    },
+    "backlog": {
+      "total_size": 6,
+      "sources": {
+        "023": 5,
+        "Zadarski list": 1
+      }
+    },
+    "published": {
+      "total": 3,
+      "ukraine_priority": 1,
+      "with_images": 3,
+      "text_only": 0,
+      "og_images_found": 1,
+      "sources": {
+        "Zadarski list": 1,
+        "023": 1,
+        "Slobodna dalmacija": 1
+      }
+    },
+    "models_used": {
+      "gemini-3.6-flash": 2
+    },
+    "models_by_task": {
+      "filter": "gemini-3.6-flash",
+      "translate": "gemini-3.6-flash"
+    },
+    "model_attempts": [
+      {
+        "task": "filter",
+        "model": "gemini-3-flash-preview",
+        "outcome": "unavailable"
+      },
+      {
+        "task": "filter",
+        "model": "gemini-3.6-flash",
+        "outcome": "ok"
+      },
+      {
+        "task": "translate",
+        "model": "gemini-3.8-flash",
+        "outcome": "unavailable"
+      },
+      {
+        "task": "translate",
+        "model": "gemini-3.6-flash",
+        "outcome": "ok"
+      }
+    ],
+    "exhausted_models": [],
+    "demoted_models": [],
+    "translate_budget_deferred": [],
+    "gemini_region_blocked": false,
+    "gemini_unavailable": false,
+    "errors_count": 0,
+    "gemini_retries": 2
   }
 ]
