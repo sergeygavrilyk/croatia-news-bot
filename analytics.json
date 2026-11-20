@@ -1,110 +1,5 @@
 [
   {
-    "timestamp": "2026-11-11 08:01:22",
-    "execution_time": 294.3,
-    "funnel": {
-      "scraped_total": 35,
-      "scraped_by_source": {
-        "023": 10,
-        "Slobodna dalmacija": 15,
-        "Zadarski list": 10
-      },
-      "already_seen": 7,
-      "rejected_by_keywords": 3,
-      "rejected_by_rule": {
-        "košarkaškom": 1,
-        "igraču": 1,
-        "sport": 1
-      },
-      "unclassified_by_ai": 0,
-      "duplicates_removed_by_ai": 15,
-      "rejection_reasons_list": [
-        "• Orban gradio karijeru na borbi protiv migranata, njegov mlađi brat na  → Геоблок (Події в Угорщині не стосуються українців у Хорватіji) | Сутності: Aron Orban, Viktor Orban, Budimpešta, Mađarska",
-        "• Potpisuju se novi međuvlasnički ugovori, za nepoštivanje kućnog reda u → Вже публікувалось (Дублює тему нових угод для власників квартир з HISTORY) | Сутності: Zakon o upravljanju zgradama, Hrvatska, međuvlasnički ugovori",
-        "• Nije sve samo šala: Učenici iz Crikvenice pokrenuli kampanju protiv na → Побут інших міст (Подія у Цриквениці) | Сутності: Crikvenica, Srednja škola dr. Antuna Barca, CARING 2.0",
-        "• Stigla je promjena vremena: Dalmacija se danas grije na 20 °C, pomorci → Дубль (Повністю дублює інформацію про погоду з ID 21) | Сутності: Dalmacija, Jadran, DHMZ",
-        "• Već 25 godina Opatija ima gradsko vijeće u kojem glavnu riječ vode – d → Побут інших міст (Подія в Опатії) | Сутності: Opatija, Dječje gradsko vijeće, Društvo Naša djeca",
-        "• Burna povijest ‘Lava‘, jedinog kitolovca na Jadranu: svašta je prošao, → Світовий шум (Історична розповідь про старий норвезький корабель) | Сутності: Lav, Jadran, Lošinj, Norveška",
-        "• Kraj priče oko državnog tajnika u MUP-u. Penava tražio smjenu, Plenkov → Вже публікувалось (Дублює попередні політичні новини та реакції уряду) | Сутності: Domovinski pokret, Tomislav Bilandžić, Andrej Plenković, Ivan Penava",
-        "• Jasen Boko: Odisej je plovio Jadranom, stigao do Mljeta, a na Korčuli  → Побут інших міст (Літературний вечір у Дубровнику) | Сутності: Jasen Boko, Dubrovnik, Mljet, Korčula",
-        "• U Hrvatskoj preko tisuću ljudi želi posvojiti dijete, ali svaki deseti → Вже публікувалось (Інформація про усиновлення вже є в публікаціях) | Сутності: Ministarstvo rada, Margareta Mađerić, Hrvatska, posvojenje",
-        "• Potres s epicentrom u Crnoj Gori osjetio se i na dubrovačkom području → Геоблок (Землетрус у Чорногорії) | Сутності: EMSC, Crna Gora, Bileća, Dubrovnik",
-        "• Diljem Europe padaju cijene hrane, u Hrvatskoj – rastu. Zašto? → Вже публікувалось (Тема інфляції та цін на їжу вже була в історії) | Сутності: DZS, Eurostat, Hrvatska, EU",
-        "• Nova invazivna vrsta viđena na Mljetu → Побут інших міст (Новина з Млєту) | Сутності: Nacionalni park Mljet, Hierodula transcaucasica, Mljet",
-        "• Neobičan potez. Zbog sukoba oko Dijane Zadravec bolnica razmatra razdv → Вже публікувалось (Продовження конфлікту в загребській лікарні) | Сутності: KBC Sestara milosrdnica, Dijana Zadravec, Zagreb, Klinika za tumore",
-        "• Rijetka guska iz sjevernih krajeva Europe fotografirana na Rabu. Evo o → Побут інших міст (Спостереження за птахом на Рабі) | Сутності: Lopar, Rab, Branta leucopsis",
-        "• Od kultnog »Ronda« do novog filma dobitnika Zlatne palme: Zagreb Film  → Побут інших міст (Кінофестиваль у Загребі) | Сутності: Zagreb Film Festival, Zagreb, Zlatna kolica"
-      ],
-      "rejected_by_reason": {
-        "Геоблок": 2,
-        "Вже публікувалось": 5,
-        "Побут інших міст": 6,
-        "Дубль": 1,
-        "Світовий шум": 1
-      },
-      "updates_marked": 0,
-      "already_rejected": 5,
-      "rejected_by_code_examples": [
-        "[košarkaškom] Grad Zadar KK Zadru isplaćuje još milijun eura, novac ide za dospjele obveze kluba",
-        "[igraču] Jedan listić vrijedi gotovo 1,7 milijuna eura: provjerite jesu li ovo vaši brojevi",
-        "[sport] Sedammetarski sveti Marin krasi Lopar: Na muralu kleše tri tornja San Marina"
-      ]
-    },
-    "backlog": {
-      "total_size": 5,
-      "sources": {
-        "023": 5
-      }
-    },
-    "published": {
-      "total": 3,
-      "ukraine_priority": 0,
-      "with_images": 3,
-      "text_only": 0,
-      "og_images_found": 3,
-      "sources": {
-        "023": 3
-      }
-    },
-    "models_used": {
-      "gemini-3.5-flash-lite": 1,
-      "gemini-3.8-flash": 1
-    },
-    "models_by_task": {
-      "filter": "gemini-3.5-flash-lite",
-      "translate": "gemini-3.8-flash"
-    },
-    "model_attempts": [
-      {
-        "task": "filter",
-        "model": "gemini-3-flash-preview",
-        "outcome": "unavailable"
-      },
-      {
-        "task": "filter",
-        "model": "gemini-3.6-flash",
-        "outcome": "unavailable"
-      },
-      {
-        "task": "filter",
-        "model": "gemini-3.5-flash-lite",
-        "outcome": "ok"
-      },
-      {
-        "task": "translate",
-        "model": "gemini-3.8-flash",
-        "outcome": "ok"
-      }
-    ],
-    "exhausted_models": [],
-    "demoted_models": [],
-    "translate_budget_deferred": [],
-    "gemini_region_blocked": false,
-    "gemini_unavailable": false,
-    "errors_count": 0,
-    "gemini_retries": 2
-  },
-  {
     "timestamp": "2026-11-11 09:01:19",
     "execution_time": 321.1,
     "funnel": {
@@ -10145,5 +10040,107 @@
     "gemini_unavailable": false,
     "errors_count": 0,
     "gemini_retries": 2
+  },
+  {
+    "timestamp": "2026-11-20 09:01:28",
+    "execution_time": 205.6,
+    "funnel": {
+      "scraped_total": 35,
+      "scraped_by_source": {
+        "023": 10,
+        "Slobodna dalmacija": 15,
+        "Zadarski list": 10
+      },
+      "already_seen": 16,
+      "rejected_by_keywords": 5,
+      "rejected_by_rule": {
+        "тег RSS sport": 4,
+        "promo": 1
+      },
+      "unclassified_by_ai": 0,
+      "duplicates_removed_by_ai": 8,
+      "rejection_reasons_list": [
+        "• TZ Rijeke na sajmu u Barceloni: promocija destinacije poslovnog turizm → Побут інших міст (Туризм у Рієці) | Сутності: TZ Rijeke, Barcelona, IBTM World, WTM London",
+        "• Ugostitelji čekaju odluku Ustavnog suda: nabili su nam velike troškove → Вже публікувалось (Ціни та угоститєлі) | Сутності: Gordan Šestić, N1, Vlada RH, Ustavni sud",
+        "• Uzorci s gospićke tržnice pokazali: samo krumpir uzgojen izvan Like im → Побут інших міст (Крупиці в Госпичі) | Сутності: Gospić, Ličko-senjska županija, HAPIH, Državni inspektorat",
+        "• Tribina „‘Skalini i druge prepreke‘ s poznatim licima otvara pitanje ž → Побут інших міст (Життя з інвалідністю в Дубровнику) | Сутності: Dubrovnik, Promenada, invalititet",
+        "• Piše Kim Cuculić: Biti human → Світовий шум (Слово року за версією Кембриджа) | Сутності: Kim Cuculić, Cambridge, The Human League",
+        "• General Čermak prodao penthouse u Lapadu za milijunski iznos, drugi s  → Побут інших міст (Продаж нерухомості в Дубровнику) | Сутності: Ivan Čermak, Marijana Čermak, Dubrovnik, Lapad",
+        "• FOTO Štrajk mladih i u Rijeci donio važne poruke: “Stop vojnom roku, n → Вже публікувалось (Штрајк молоді) | Сутності: Inicijativa Štrajk mladih, Zagreb, Rijeka, Zadar",
+        "• HAC postavio 158 od 212 autocestovnih portala: novi sustav naplate od  → Вже публікувалось (Нова система наплати на автомагістралях) | Сутності: HAC, Crolibertas, Hrvatske autoceste"
+      ],
+      "rejected_by_reason": {
+        "Побут інших міст": 4,
+        "Вже публікувалось": 3,
+        "Світовий шум": 1
+      },
+      "updates_marked": 0,
+      "already_rejected": 12,
+      "rejected_by_code_examples": [
+        "[тег RSS sport] Penjački spektakl u Zadru; Višnjik sutra ugošćuje više od stotinu natjecatelja Sv. Krševan Boulder O",
+        "[тег RSS sport] Zadarski pečat u reprezentaciji; Čak osmero boksača iz Zadra na trodnevnim pripremama u Puli",
+        "[promo] Zaboravite liječenje bez jasne dijagnoze: SB dr. Nemec pregledom otkriva pravi uzrok boli prije nego",
+        "[тег RSS sport] Razgovarali smo s kondicijskim trenerom pobjednice WTA Finala: “Mira ima otvorenu cestu prema veliki",
+        "[тег RSS sport] Primorjaši sutra gostuju kod Juga: “Ovo je proces, ništa tu ne ide brzo”"
+      ]
+    },
+    "backlog": {
+      "total_size": 8,
+      "sources": {
+        "023": 8
+      }
+    },
+    "published": {
+      "total": 0,
+      "ukraine_priority": 0,
+      "with_images": 0,
+      "text_only": 0,
+      "og_images_found": 3,
+      "sources": {}
+    },
+    "models_used": {
+      "gemini-3.5-flash-lite": 1
+    },
+    "models_by_task": {
+      "filter": "gemini-3.5-flash-lite",
+      "translate": null
+    },
+    "model_attempts": [
+      {
+        "task": "filter",
+        "model": "gemini-3.6-flash",
+        "outcome": "unavailable"
+      },
+      {
+        "task": "filter",
+        "model": "gemini-3.5-flash-lite",
+        "outcome": "ok"
+      },
+      {
+        "task": "translate",
+        "model": "gemini-3.6-flash",
+        "outcome": "unavailable"
+      },
+      {
+        "task": "translate",
+        "model": "gemini-3.5-flash-lite",
+        "outcome": "unavailable"
+      },
+      {
+        "task": "translate",
+        "model": "gemini-3.8-flash",
+        "outcome": "unavailable"
+      }
+    ],
+    "exhausted_models": [],
+    "demoted_models": [
+      "filter: gemini-3-flash-preview",
+      "translate: gemini-3.8-flash"
+    ],
+    "translate_budget_deferred": [],
+    "gemini_region_blocked": false,
+    "gemini_unavailable": true,
+    "errors_count": 0,
+    "gemini_retries": 4
   }
 ]
