@@ -1,97 +1,5 @@
 [
   {
-    "timestamp": "2026-11-11 11:01:19",
-    "execution_time": 193.6,
-    "funnel": {
-      "scraped_total": 35,
-      "scraped_by_source": {
-        "023": 10,
-        "Slobodna dalmacija": 15,
-        "Zadarski list": 10
-      },
-      "already_seen": 19,
-      "rejected_by_keywords": 4,
-      "rejected_by_rule": {
-        "oglas": 2,
-        "тег RSS sport": 1,
-        "тег RSS nogomet": 1
-      },
-      "unclassified_by_ai": 0,
-      "duplicates_removed_by_ai": 8,
-      "rejection_reasons_list": [
-        "• Iz Supernove nestali parfemi vrijedni više od pet tisuća eura: Mladi Z → Вже публікувалось (крадіжка парфумів у Задарі) | Сутності: Zadar, Privlaka, Supernova, 5000 eura",
-        "• Stiže nova sezona “Dosjea Jarak”. Prva epizoda donosi potresnu priču o → Реклама (анонс телешоу Voyo) | Сутності: Dosje Jarak, Voyo, Drniš, Kristijan Aleksić",
-        "• Meteoalarm za riječko područje: Najavljene obilne kiše i olujni udari  → Побут інших міст (погода в Рієці) | Сутності: Rijeka, DHMZ, jugo",
-        "• Stonska policija brzo ušla u trag prevarantu koji je 81-godišnjaka ‘na → Побут інших міст (шахрайство у Стоні) | Сутності: Ston, Zagreb, 81-godišnjak",
-        "• Nevjerojatan gaf u MasterChefu, oba tanjura bila na rubu sirovog. Iska → Не за тематикою (кулінарне телешоу) | Сутності: MasterChef, Dominik Škalec, Danijela, Filip",
-        "• Dvadeset godina, tisuću razloga za shopping: Tower Centar Rijeka slavi → Реклама (акції торгового центру в Рієці) | Сутності: Tower Centar Rijeka, Rijeka, 20 godina",
-        "• INTERVJU Selma Droce iz Divanhane: Sevdalinka je pratila čovjeka kroz  → Побут інших міст (концерт у Рієці) | Сутності: Divanhana, Selma Droce, Rijeka, Sušak",
-        "• Na Rabu o poljoprivredi: Od navodnjavanja do 100 hektara nove otočne p → Побут інших міст (форум на острові Раб) | Сутності: Rab, SDP Rab, Marko Vešligaj, Ivica Lukanović"
-      ],
-      "rejected_by_reason": {
-        "Вже публікувалось": 1,
-        "Реклама": 2,
-        "Побут інших міст": 4,
-        "Не за тематикою": 1
-      },
-      "updates_marked": 0,
-      "already_rejected": 11,
-      "rejected_by_code_examples": [
-        "[oglas] Oglas iz snova u Hrvatskoj; Nude 2600 eura neto plaće, božićnicu, uskrsnicu i poručuju da je vikend ",
-        "[oglas] Kliknuo je na oglas i ostao bez 17.250 eura! Obećali su mu bogatstvo, a evo kako su ga prevarili",
-        "[тег RSS sport] Dora Bašić osvojila zlatnu medalju na Svjetskom kupu u bocciji. Riječanin Luka Wagner zauzeo 14. mje",
-        "[тег RSS nogomet] Davor Šuker dobio veliko priznanje u Meksiku. Uvršten je među nogometne legende"
-      ]
-    },
-    "backlog": {
-      "total_size": 5,
-      "sources": {
-        "Slobodna dalmacija": 1,
-        "023": 4
-      }
-    },
-    "published": {
-      "total": 3,
-      "ukraine_priority": 1,
-      "with_images": 3,
-      "text_only": 0,
-      "og_images_found": 2,
-      "sources": {
-        "Slobodna dalmacija": 1,
-        "023": 2
-      }
-    },
-    "models_used": {
-      "gemini-3.6-flash": 1,
-      "gemini-3.8-flash": 1
-    },
-    "models_by_task": {
-      "filter": "gemini-3.6-flash",
-      "translate": "gemini-3.8-flash"
-    },
-    "model_attempts": [
-      {
-        "task": "filter",
-        "model": "gemini-3.6-flash",
-        "outcome": "ok"
-      },
-      {
-        "task": "translate",
-        "model": "gemini-3.8-flash",
-        "outcome": "ok"
-      }
-    ],
-    "exhausted_models": [],
-    "demoted_models": [
-      "filter: gemini-3-flash-preview"
-    ],
-    "translate_budget_deferred": [],
-    "gemini_region_blocked": false,
-    "gemini_unavailable": false,
-    "errors_count": 0,
-    "gemini_retries": 0
-  },
-  {
     "timestamp": "2026-11-11 12:01:17",
     "execution_time": 312.8,
     "funnel": {
@@ -10153,6 +10061,110 @@
     ],
     "exhausted_models": [],
     "demoted_models": [
+      "filter: gemini-3.6-flash",
+      "translate: gemini-3.8-flash",
+      "translate: gemini-3.6-flash"
+    ],
+    "translate_budget_deferred": [],
+    "gemini_region_blocked": false,
+    "gemini_unavailable": false,
+    "errors_count": 0,
+    "gemini_retries": 1
+  },
+  {
+    "timestamp": "2026-11-20 12:01:16",
+    "execution_time": 118.5,
+    "funnel": {
+      "scraped_total": 35,
+      "scraped_by_source": {
+        "023": 10,
+        "Slobodna dalmacija": 15,
+        "Zadarski list": 10
+      },
+      "already_seen": 19,
+      "rejected_by_keywords": 6,
+      "rejected_by_rule": {
+        "тег RSS sport": 2,
+        "turnir": 1,
+        "oglas": 1,
+        "тег RSS nogomet": 1,
+        "nogomet": 1
+      },
+      "unclassified_by_ai": 0,
+      "duplicates_removed_by_ai": 10,
+      "rejection_reasons_list": [
+        "• Lopovi poharali stanove na Poluotoku: 75-godišnjakinji ukrali novčanik → Вже публікувалось (Подібні крадіжки вже висвітлювалися в історії) | Сутності: Задар, Поліція, Крадіжка, Полуоток",
+        "• Poruka zadarskih studenata s prosvjeda: “Ne radimo ovo samo za sebe, n → Вже публікувалось (Подія вже є в історії) | Сутності: Задар, Студенти, Протест, Університет",
+        "• Pretpremijera božićne krimi-komedije “Hajka” Nevija Marasovića u Art-k → Побут інших міст (Культурна подія в Рієці) | Сутності: Рієка, Фільм, Кіно, Прем'єра",
+        "• Faričić digao buru otvorenim pismom o ‘haranju Jadrana‘: ‘Izlovljavaju → Вже публікувалось (Реакція на попередню заяву ректора) | Сутності: Йосип Фаричич, Задар, Рибальство, Адріатичне море",
+        "• Hrvati će u prosincu potrošiti više od četiri milijarde eura, blagdans → Світовий шум (Загальна економічна статистика) | Сутності: Mastercard, Європа, Споживання, Різдво",
+        "• Otkrivena spomen-ploča poginulom satniku Šerenu Ćatoviću: Počast čovje → Побут інших міст (Локальна подія в Дубровнику) | Сутності: Дубровник, Шерен Чатович, Війна, Пам'ятна дошка",
+        "• Sprema li se veliko poskupljenje komunalne naknade u Gospiću? → Побут інших міст (Локальні комунальні питання Госпича) | Сутності: Госпич, Комунальні послуги, Податки, Міська рада",
+        "• Šuta donio odluku, nema koncerta Dina Merlina u Splitu! A kome će ići  → Побут інших міст (Локальна подія в Спліті) | Сутності: Спліт, Діно Мерлін, Концерт, Томислав Шута",
+        "• Usred gastroduela kandidatima MasterChefa stigla nova pravila koja nit → Світовий шум (Розважальне шоу) | Сутності: MasterChef, Телебачення, Кулінарія",
+        "• Udruga ravnatelja o štrajku učenika: Nastava je redovita, s manje učen → Вже публікувалось (Коментар до вже висвітленого протесту) | Сутності: Студенти, Протест, Антун Ковачич, Школи"
+      ],
+      "rejected_by_reason": {
+        "Вже публікувалось": 4,
+        "Побут інших міст": 4,
+        "Світовий шум": 2
+      },
+      "updates_marked": 0,
+      "already_rejected": 12,
+      "rejected_by_code_examples": [
+        "[тег RSS sport] Penjački spektakl u Zadru; Višnjik sutra ugošćuje više od stotinu natjecatelja Sv. Krševan Boulder O",
+        "[тег RSS sport] Zadarski pečat u reprezentaciji; Čak osmero boksača iz Zadra na trodnevnim pripremama u Puli",
+        "[turnir] Zadar Open Championship 2026. okupio 345 boraca iz tri države: Dva zadarska kluba osvojila čak 104 m",
+        "[oglas] Mislili da su pronašli kupca za perilicu posuđa, Šibenčanin očekivao uplatu, ali uslijedilo je neugo",
+        "[тег RSS nogomet] Hrvatska doznala protivnika u doigravanju Lige nacija",
+        "[nogomet] Mario Mandžukić, Olić, Kranjčar, Eduardo da Silva, Jarni i mnogi drugi 29. prosinca u Areni Zagreb"
+      ]
+    },
+    "backlog": {
+      "total_size": 2,
+      "sources": {
+        "Slobodna dalmacija": 1,
+        "023": 1
+      }
+    },
+    "published": {
+      "total": 3,
+      "ukraine_priority": 0,
+      "with_images": 3,
+      "text_only": 0,
+      "og_images_found": 3,
+      "sources": {
+        "023": 3
+      }
+    },
+    "models_used": {
+      "gemini-3.1-flash-lite": 1,
+      "gemini-3.5-flash-lite": 1
+    },
+    "models_by_task": {
+      "filter": "gemini-3.1-flash-lite",
+      "translate": "gemini-3.5-flash-lite"
+    },
+    "model_attempts": [
+      {
+        "task": "filter",
+        "model": "gemini-3.5-flash-lite",
+        "outcome": "unavailable"
+      },
+      {
+        "task": "filter",
+        "model": "gemini-3.1-flash-lite",
+        "outcome": "ok"
+      },
+      {
+        "task": "translate",
+        "model": "gemini-3.5-flash-lite",
+        "outcome": "ok"
+      }
+    ],
+    "exhausted_models": [],
+    "demoted_models": [
+      "filter: gemini-3-flash-preview",
       "filter: gemini-3.6-flash",
       "translate: gemini-3.8-flash",
       "translate: gemini-3.6-flash"
