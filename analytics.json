@@ -1,115 +1,5 @@
 [
   {
-    "timestamp": "2026-11-11 13:01:19",
-    "execution_time": 158.4,
-    "funnel": {
-      "scraped_total": 35,
-      "scraped_by_source": {
-        "023": 10,
-        "Slobodna dalmacija": 15,
-        "Zadarski list": 10
-      },
-      "already_seen": 17,
-      "rejected_by_keywords": 3,
-      "rejected_by_rule": {
-        "oglas": 1,
-        "тег RSS nogomet": 1,
-        "turnirom": 1
-      },
-      "unclassified_by_ai": 0,
-      "duplicates_removed_by_ai": 13,
-      "rejection_reasons_list": [
-        "• Potraga Kraša je završena! Šime iz Nina je ‘dječak‘ koji im je 1987. p → Не за тематикою (Історія про старий альбом) | Сутності: Kraš, Šime Predovan, Nin, album Životinjsko carstvo",
-        "• Knjiga o ženama pokretačicama Jovane Čutul predstavljena u Kastvu → Побут інших міст (Презентація книги в Каставі) | Сутності: Jovana Čutul, Kastav, Žene koje pokreću",
-        "• Liburnija traži prometnika koji će pratiti i električne autobuse, prij → Не за тематикою (Вакансія в транспортній компанії) | Сутності: Liburnija d.o.o., prometnik, autobusi",
-        "• Najmlađu publiku u Crikvenici očekuje vesela i poučna predstava “Avant → Побут інших міст (Дитяча вистава в Цриквениці) | Сутності: Crikvenica, Avanture Luka Poriluka, dvorana Zora",
-        "• Adventska čarolija na Trgu Gornja vrata: Sukošan spreman za blagdanske → Не за тематикою (Локальна святкова подія) | Сутності: Sukošan, Trg Gornja vrata, Advent",
-        "• Sutra se svečano obilježava početak katastarske izmjere na području Gr → Побут інших міст (Кадастрові роботи на Корчулі) | Сутності: Branko Bačić, Korčula, katastarska izmjera",
-        "• Kirigin najavio sjednicu Gradskog vijeća Opatije. Proračun manji za go → Побут інших міст (Бюджет Опатії) | Сутності: Opatija, Fernando Kirigin, proračun",
-        "• Nova invazivna vrsta pojavila se na Mljetu, iz Nacionalnog parka objav → Не за тематикою (Нова комаха на Млєті) | Сутності: Mljet, Nacionalni park Mljet, invazivna vrsta",
-        "• HDZ Opatija: Građani plaćaju cijenu lošeg planiranja → Вже публікувалось (Політична реакція на бюджет Опатії) | Сутності: HDZ Opatija, Domagoj Tramontana, proračun",
-        "• Hotelijeri poručuju: u sljedećih deset godina u Hrvatskoj trebamo do s → Не за тематикою (Галузева дискусія про готелі) | Сутності: hotelijeri, Hrvatska, turizam",
-        "• Upadaj u kombi: Valovi i Kraj Programa stižu u Karlovac i Križevce → Побут інших міст (Концерти в інших містах) | Сутності: Kraj Programa, Valovi, Karlovac, Križevci",
-        "• Stopama sv. Franje: današnji program odgođen zbog kiše nastavlja se su → Побут інших міст (Благодійна акція в Рієці) | Сутності: Rijeka, Stopama sv. Franje, Trsat",
-        "• HDZ: Lijeva oporba želi da slučaj Jankomir ne bude tema → Вже публікувалось (Політична реакція на інцидент) | Сутності: HDZ, slučaj Jankomir, bolnica"
-      ],
-      "rejected_by_reason": {
-        "Не за тематикою": 5,
-        "Побут інших міст": 6,
-        "Вже публікувалось": 2
-      },
-      "updates_marked": 1,
-      "already_rejected": 8,
-      "rejected_by_code_examples": [
-        "[oglas] Kliknuo je na oglas i ostao bez 17.250 eura! Obećali su mu bogatstvo, a evo kako su ga prevarili",
-        "[тег RSS nogomet] Hrvatska U-17 uzela samo bod protiv Latvije u Karlovcu",
-        "[turnirom] Dječjim turnirom i sportskim druženjem obilježit će otvaranje nove teniske rasvjete"
-      ]
-    },
-    "backlog": {
-      "total_size": 2,
-      "sources": {
-        "Zadarski list": 1,
-        "Slobodna dalmacija": 1
-      }
-    },
-    "published": {
-      "total": 3,
-      "ukraine_priority": 0,
-      "with_images": 3,
-      "text_only": 0,
-      "og_images_found": 2,
-      "sources": {
-        "Slobodna dalmacija": 1,
-        "023": 2
-      }
-    },
-    "models_used": {
-      "gemini-3.1-flash-lite": 1,
-      "gemini-3.6-flash": 1
-    },
-    "models_by_task": {
-      "filter": "gemini-3.1-flash-lite",
-      "translate": "gemini-3.6-flash"
-    },
-    "model_attempts": [
-      {
-        "task": "filter",
-        "model": "gemini-3.6-flash",
-        "outcome": "unavailable"
-      },
-      {
-        "task": "filter",
-        "model": "gemini-3.5-flash-lite",
-        "outcome": "unavailable"
-      },
-      {
-        "task": "filter",
-        "model": "gemini-3.1-flash-lite",
-        "outcome": "ok"
-      },
-      {
-        "task": "translate",
-        "model": "gemini-3.8-flash",
-        "outcome": "unavailable"
-      },
-      {
-        "task": "translate",
-        "model": "gemini-3.6-flash",
-        "outcome": "ok"
-      }
-    ],
-    "exhausted_models": [],
-    "demoted_models": [
-      "filter: gemini-3-flash-preview"
-    ],
-    "translate_budget_deferred": [],
-    "gemini_region_blocked": false,
-    "gemini_unavailable": false,
-    "errors_count": 0,
-    "gemini_retries": 3
-  },
-  {
     "timestamp": "2026-11-11 14:01:19",
     "execution_time": 127.8,
     "funnel": {
@@ -10167,5 +10057,97 @@
     "gemini_unavailable": false,
     "errors_count": 0,
     "gemini_retries": 1
+  },
+  {
+    "timestamp": "2026-11-20 14:01:31",
+    "execution_time": 167.8,
+    "funnel": {
+      "scraped_total": 35,
+      "scraped_by_source": {
+        "023": 10,
+        "Slobodna dalmacija": 15,
+        "Zadarski list": 10
+      },
+      "already_seen": 20,
+      "rejected_by_keywords": 3,
+      "rejected_by_rule": {
+        "тег RSS lifestyle": 1,
+        "turnir": 1,
+        "promo": 1
+      },
+      "unclassified_by_ai": 0,
+      "duplicates_removed_by_ai": 9,
+      "rejection_reasons_list": [
+        "• Crvena, zelena, ljubičasta, žuta, plava u valovima: Sinoć se odmotao s → Побут інших міст (Святкова ілюмінація у Дубровнику) | Сутності: Дубровник, Страдун, Адвент",
+        "• Sandra Krpan: Za priuštivo stanovanje pola posto proračuna, to nije st → Не за тематикою (Політична критика бюджету та коментар депутатки) | Сутності: Сандра Крпан, СДП, житлова політика",
+        "• Općine Čavle dodijelila 77 stipendija učenicima i studentima → Побут інших міст (Місцеві стипендії в громаді Чавле) | Сутності: Чавле, Рієка, стипендії",
+        "• Blagdanska čarolija ponovno stiže u grad pod Nehajem. Najavljen Advent → Побут інших міст (Програма святкових заходів у місті Сень) | Сутності: Сень, Адвент, ковзанка",
+        "• Predstavljen 26. svezak Zbornika Kastavštine, evo što sve donosi → Побут інших міст (Презентація краєзнавчого збірника в Каставі) | Сутності: Кастав, Збірник Каставщини, Деан Юрчич",
+        "• Grad Rijeka ponovo osniva Vijeće građana, Rinčić otkrila detalje → Побут інших міст (Формування ради громадян у Рієці) | Сутності: Рієка, Рада громадян, місцеве самоврядування",
+        "• Plaža Oštro u Kraljevici bit će obnovljena do idućeg ljeta → Побут інших міст (Ремонт місцевого пляжу в Кралєвиці) | Сутності: Кралєвиця, пляж Оштро, Наташа Мікуш Жігман",
+        "• Rijeka razvija pomorski obrambeni zid od kibernetičkih prijetnji → Побут інших міст (Локальний науковий проект у Рієці) | Сутності: Рієка, кібербезпека, морський сектор",
+        "• Vlada darovala Bakru golemo zemljište za širenje zone na Kukuljanovu:  → Побут інших міст (Розширення промислової зони в місті Бакар) | Сутності: Бакар, Кукуляново, Бранко Бачич"
+      ],
+      "rejected_by_reason": {
+        "Побут інших міст": 8,
+        "Не за тематикою": 1
+      },
+      "updates_marked": 1,
+      "already_rejected": 15,
+      "rejected_by_code_examples": [
+        "[тег RSS lifestyle] Ljepljivo tijesto ne posipajte odmah brašnom: pomažu ulje, voda i 20 minuta odmora",
+        "[turnir] Zadar Open Championship 2026. okupio 345 boraca iz tri države: Dva zadarska kluba osvojila čak 104 m",
+        "[promo] Aminess Vival Family Lišanj Hotel proglašen Hotelom godine za obiteljski odmor"
+      ]
+    },
+    "backlog": {
+      "total_size": 1,
+      "sources": {
+        "Zadarski list": 1
+      }
+    },
+    "published": {
+      "total": 3,
+      "ukraine_priority": 0,
+      "with_images": 3,
+      "text_only": 0,
+      "og_images_found": 1,
+      "sources": {
+        "Slobodna dalmacija": 1,
+        "023": 1,
+        "Zadarski list": 1
+      }
+    },
+    "models_used": {
+      "gemini-3-flash-preview": 1,
+      "gemini-3.5-flash-lite": 1
+    },
+    "models_by_task": {
+      "filter": "gemini-3-flash-preview",
+      "translate": "gemini-3.5-flash-lite"
+    },
+    "model_attempts": [
+      {
+        "task": "filter",
+        "model": "gemini-3-flash-preview",
+        "outcome": "ok"
+      },
+      {
+        "task": "translate",
+        "model": "gemini-3.5-flash-lite",
+        "outcome": "ok"
+      }
+    ],
+    "exhausted_models": [],
+    "demoted_models": [
+      "translate: gemini-3.8-flash"
+    ],
+    "translate_budget_deferred": [
+      "gemini-3.6-flash"
+    ],
+    "gemini_region_blocked": false,
+    "gemini_unavailable": false,
+    "errors_count": 0,
+    "gemini_retries": 0
   }
 ]
