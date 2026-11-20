@@ -1,114 +1,5 @@
 [
   {
-    "timestamp": "2026-11-11 09:01:19",
-    "execution_time": 321.1,
-    "funnel": {
-      "scraped_total": 35,
-      "scraped_by_source": {
-        "023": 10,
-        "Slobodna dalmacija": 15,
-        "Zadarski list": 10
-      },
-      "already_seen": 13,
-      "rejected_by_keywords": 4,
-      "rejected_by_rule": {
-        "oglas": 1,
-        "тег RSS košarka": 1,
-        "promo": 2
-      },
-      "unclassified_by_ai": 0,
-      "duplicates_removed_by_ai": 14,
-      "rejection_reasons_list": [
-        "• Predivan kraj potrage; Vlasnik albuma Životinjsko carstvo iz 1987. je  → Не за тематикою (Пошук власника старого альбому) | Сутності: Šime Predovan, Nin, Kraš, Životinjsko carstvo",
-        "• Ušao među milijardere: Pogledajte svu imovinu Paula McCartneyja → Світовий шум (Статки британського музиканта) | Сутності: Paul McCartney, Forbes, Beatles",
-        "• Zakon ne smije imati VIP ulaz, Hrvatska treba razmotriti španjolski mo → Не за тематикою (Політична ініціатива щодо закону) | Сутності: Viktorija Knežević, Hrvatska, Španjolska",
-        "• Nije cilj samo naučiti djecu kako koristiti novu tehnologiju, nego ih  → Не за тематикою (Програма грамотності використання AI) | Сутності: Hrvatski Telekom, ERF, Dora Dodig Hundrić",
-        "• U vašim su domovima: evo koje bi mete hakeri mogli napasti nakon hladn → Геоблок (Кібератаки в супермаркетах Європи) | Сутності: Juhan Lepassaar, ENISA, AFP, Francuska",
-        "• Malenica sam odredio redoslijed kandidata za Ustavni sud, oporba prosv → Вже публікувалось (Кандидати до Уstavnog suda) | Сутності: Odbor za Ustav, Ana Horvat Vuković, Goran Selanec, Hrvatski sabor",
-        "• Što bi mogle biti nove mete hakera: ‘Danas su to hladnjaci, sutra rout → Дубль (Дубль новини ID 5 про хакерів) | Сутності: Juhan Lepassaar, ENISA, AFP",
-        "• Stigla je promjena vremena: jug zemlje danas se grije na 20 °C, pomorc → Дубль (Дубль прогнозу погоди ID 20 та 21) | Сутності: Jadran, Dalmacija, Hrvatska",
-        "• Objavljene cijene izvođača na splitskom Adventu. Cetinski je 25.000, a → Побут інших міст (Витрати на артистів на Advent у Спліті) | Сутності: Split, Advent, Bijelo dugme, Toni Cetinski",
-        "• Jeste li vidjeli cijene? Ovo meso se prodaje za samo 2 €, ali ono što  → Не за тематикою (Ціни на свинину та ринок) | Сутності: Hrvatska, Kina, Europska unija",
-        "• Vrijeme za produbljivanje smisla života; Susret za djevojke od 15 do 2 → Не за тематикою (Духовний сусрет для дівчат) | Сутності: Bibinje, Karmelićanke, Zadar",
-        "• Američki ministar preselio iz svojeg doma u vojnu bazu. Navodno je dob → Геоблок (Загрози американському міністру) | Сутності: Scott Bessent, SAD, Iran, New York Times",
-        "• INTERVJU Kuzma i Shaka Zulu ovog petka u Rijeci: “Postoji samo radost  → Побут інших міст (Концерт у Рієці) | Сутності: Kuzma & Shaka Zulu, Rijeka, Pogon",
-        "• Olujno jugo pa nagli pad temperature: Zadar u petak čeka više od 30 mm → Дубль (Дубль прогнозу погоди ID 20) | Сутності: Zadar, DHMZ, Jadran"
-      ],
-      "rejected_by_reason": {
-        "Не за тематикою": 5,
-        "Світовий шум": 1,
-        "Геоблок": 2,
-        "Вже публікувалось": 1,
-        "Дубль": 3,
-        "Побут інших міст": 2
-      },
-      "updates_marked": 0,
-      "already_rejected": 8,
-      "rejected_by_code_examples": [
-        "[oglas] Oglas iz snova u Hrvatskoj; Nude 2600 eura neto plaće, božićnicu, uskrsnicu i poručuju da je vikend ",
-        "[тег RSS košarka] Boston Celticsi kanonadom trica došli do uvjerljive pobjede u Philadelphiji",
-        "[promo] Što je muškarac bez brkova? Movember podsjeća na važnost brige o muškom zdravlju",
-        "[promo] Do 40% popusta u Analizi u Rijeci! Black Friday i Movember donose mjesec dana pogodnosti za zdravlje"
-      ]
-    },
-    "backlog": {
-      "total_size": 5,
-      "sources": {
-        "023": 5
-      }
-    },
-    "published": {
-      "total": 3,
-      "ukraine_priority": 0,
-      "with_images": 3,
-      "text_only": 0,
-      "og_images_found": 2,
-      "sources": {
-        "023": 2,
-        "Slobodna dalmacija": 1
-      }
-    },
-    "models_used": {
-      "gemini-3.5-flash-lite": 1,
-      "gemini-3.6-flash": 1
-    },
-    "models_by_task": {
-      "filter": "gemini-3.5-flash-lite",
-      "translate": "gemini-3.6-flash"
-    },
-    "model_attempts": [
-      {
-        "task": "filter",
-        "model": "gemini-3-flash-preview",
-        "outcome": "unavailable"
-      },
-      {
-        "task": "filter",
-        "model": "gemini-3.5-flash-lite",
-        "outcome": "ok"
-      },
-      {
-        "task": "translate",
-        "model": "gemini-3.8-flash",
-        "outcome": "unavailable"
-      },
-      {
-        "task": "translate",
-        "model": "gemini-3.6-flash",
-        "outcome": "ok"
-      }
-    ],
-    "exhausted_models": [],
-    "demoted_models": [
-      "filter: gemini-3.6-flash"
-    ],
-    "translate_budget_deferred": [],
-    "gemini_region_blocked": false,
-    "gemini_unavailable": false,
-    "errors_count": 0,
-    "gemini_retries": 2
-  },
-  {
     "timestamp": "2026-11-11 10:01:17",
     "execution_time": 147.0,
     "funnel": {
@@ -10142,5 +10033,112 @@
     "gemini_unavailable": true,
     "errors_count": 0,
     "gemini_retries": 4
+  },
+  {
+    "timestamp": "2026-11-20 10:01:14",
+    "execution_time": 191.6,
+    "funnel": {
+      "scraped_total": 35,
+      "scraped_by_source": {
+        "023": 10,
+        "Slobodna dalmacija": 15,
+        "Zadarski list": 10
+      },
+      "already_seen": 19,
+      "rejected_by_keywords": 5,
+      "rejected_by_rule": {
+        "тег RSS sport": 2,
+        "nogometaš": 1,
+        "тег RSS košarka": 1,
+        "тег RSS nogomet": 1
+      },
+      "unclassified_by_ai": 0,
+      "duplicates_removed_by_ai": 9,
+      "rejection_reasons_list": [
+        "• I Air France ukida velik broj letova prema Zagrebu, evo kakva je situa → Побут інших міст (Скасування авіарейсів у Загребі) | Сутності: Air France, Загреб, Дубровник, Париж",
+        "• Ministranti objavili drugi nosač zvuka: Čvrst i žestok album uronjen u → Побут інших міст (Музичний альбом гурту з Рієки) | Сутності: Міністранти, Рієка, Дражен Балляк, Srca gore",
+        "• Tajanstvena vruja zbunila Dalmatince, prolazite pokraj nje godinama. S → Не за тематикою (Природний феномен у Далмації) | Сутності: Далмація, Вруя, Дпуце, Facebook",
+        "• Senna M otkrio dijete u sebi: Nema kave, alkohola, cigareta, samo tren → Не за тематикою (Нова пісня та технології) | Сутності: Senna M, AI, NASA, Голлівуд",
+        "• Tzitzikostas i Butković na Zagrebačkoj obali: “Ove godine oko 800 tisu → Побут інших міст (Візит єврокомісара в порт Рієки) | Сутності: Апостолос Тдзітдзікостас, Олег Буткович, Рієка, Єврокомісія",
+        "• Nakon više od 50 repriza hit komedije “KBC I MI” došao je red na nasta → Побут інших міст (Театральна вистава в Рієці) | Сутності: KBC Rijeka, Шварцвальдо, театр, комедія",
+        "• Posađeno deset novih čempresa za zeleniju Opatiju → Побут інших міст (Посадка дерев в Опатії) | Сутності: Опатія, Parkovi d.o.o., чорцеси, Хорватія природно твоя",
+        "• Ogroman interes: film „Kontraband” ispunio dvoranu Centra za posjetite → Побут інших міст (Показ фільму в Опатії) | Сутності: Контрабанд, Учка, Опатія, Рієка",
+        "• Hrvatska dobiva prvi film na popularnoj platformi Disney+ → Не за тематикою (Хорватський фільм на Disney+) | Сутності: Disney+, Свадба, Хорватія, стримінг"
+      ],
+      "rejected_by_reason": {
+        "Побут інших міст": 6,
+        "Не за тематикою": 3
+      },
+      "updates_marked": 0,
+      "already_rejected": 12,
+      "rejected_by_code_examples": [
+        "[тег RSS sport] Penjački spektakl u Zadru; Višnjik sutra ugošćuje više od stotinu natjecatelja Sv. Krševan Boulder O",
+        "[тег RSS sport] Zadarski pečat u reprezentaciji; Čak osmero boksača iz Zadra na trodnevnim pripremama u Puli",
+        "[nogometaš] Davor Šuker i Fernando Alonso pozirali uoči spektakla Formule 1",
+        "[тег RSS košarka] Aktualni prvaci upisali devetu ovosezonsku pobjedu. Spursi svladali LA Clipperse",
+        "[тег RSS nogomet] Marco Pašalić i društvo ispali iz MLS doigravanja"
+      ]
+    },
+    "backlog": {
+      "total_size": 6,
+      "sources": {
+        "023": 6
+      }
+    },
+    "published": {
+      "total": 3,
+      "ukraine_priority": 0,
+      "with_images": 3,
+      "text_only": 0,
+      "og_images_found": 1,
+      "sources": {
+        "023": 3
+      }
+    },
+    "models_used": {
+      "gemini-3.5-flash-lite": 2
+    },
+    "models_by_task": {
+      "filter": "gemini-3.5-flash-lite",
+      "translate": "gemini-3.5-flash-lite"
+    },
+    "model_attempts": [
+      {
+        "task": "filter",
+        "model": "gemini-3.6-flash",
+        "outcome": "unavailable"
+      },
+      {
+        "task": "filter",
+        "model": "gemini-3.5-flash-lite",
+        "outcome": "ok"
+      },
+      {
+        "task": "translate",
+        "model": "gemini-3.6-flash",
+        "outcome": "unavailable"
+      },
+      {
+        "task": "translate",
+        "model": "gemini-3.8-flash",
+        "outcome": "unavailable"
+      },
+      {
+        "task": "translate",
+        "model": "gemini-3.5-flash-lite",
+        "outcome": "ok"
+      }
+    ],
+    "exhausted_models": [],
+    "demoted_models": [
+      "filter: gemini-3-flash-preview",
+      "translate: gemini-3.8-flash",
+      "translate: gemini-3.5-flash-lite"
+    ],
+    "translate_budget_deferred": [],
+    "gemini_region_blocked": false,
+    "gemini_unavailable": false,
+    "errors_count": 0,
+    "gemini_retries": 3
   }
 ]
