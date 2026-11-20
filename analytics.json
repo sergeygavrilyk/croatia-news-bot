@@ -1,92 +1,5 @@
 [
   {
-    "timestamp": "2026-11-11 10:01:17",
-    "execution_time": 147.0,
-    "funnel": {
-      "scraped_total": 35,
-      "scraped_by_source": {
-        "023": 10,
-        "Slobodna dalmacija": 15,
-        "Zadarski list": 10
-      },
-      "already_seen": 21,
-      "rejected_by_keywords": 4,
-      "rejected_by_rule": {
-        "oglas": 1,
-        "тег RSS nogomet": 1,
-        "тег RSS sport": 1,
-        "тег RSS košarka": 1
-      },
-      "unclassified_by_ai": 0,
-      "duplicates_removed_by_ai": 6,
-      "rejection_reasons_list": [
-        "• Cemex nastavlja partnerstvo s Eko školama iz Kaštela i Solina → Побут інших міст (Каштела та Солін) | Сутності: Cemex Hrvatska, Kaštela, Solin, Eko škole",
-        "• Pulska austrougarska palača postaje oaza knjiga na 32. Sa(n)jam knjige → Побут інших міст (Пула) | Сутності: Sa(n)jam knjige u Istri, Pula, Dom hrvatskih branitelja",
-        "• Muzej Gacke okončao još jedan program → Побут інших міст (Оточац) | Сутності: Muzej Gacke, Otočac, Osnovna škola Otočac",
-        "• Vatrogasci otkrili detalje o požaru crkve u Kupjaku: “Učinili smo sve  → Побут інших міст (Куп'як) | Сутності: DVD Ravna Gora, Kupjak, Crkva Svetog Vida",
-        "• Dean i Damjan iz Rijeke žele živjeti. Čim su navršili 21 godinu, vrata → Побут інших міст (Рієка) | Сутності: Dean, Damjan, Rijeka, Cerebralna paraliza",
-        "• Nakon raspuštanja, HDZ Otočac dobio povjerenicu Nadu Rogić → Побут інших міст (Оточац) | Сутності: HDZ Otočac, Nada Rogić, Ličko-senjska županija"
-      ],
-      "rejected_by_reason": {
-        "Побут інших міст": 6
-      },
-      "updates_marked": 1,
-      "already_rejected": 14,
-      "rejected_by_code_examples": [
-        "[oglas] Oglas iz snova u Hrvatskoj; Nude 2600 eura neto plaće, božićnicu, uskrsnicu i poručuju da je vikend ",
-        "[тег RSS nogomet] Davor Šuker dobio veliko priznanje u Meksiku. Uvršten je među nogometne legende",
-        "[тег RSS sport] Noskova svladala Coco Gauff za polufinale WTA Finala",
-        "[тег RSS košarka] Boston Celticsi kanonadom trica došli do uvjerljive pobjede u Philadelphiji"
-      ]
-    },
-    "backlog": {
-      "total_size": 5,
-      "sources": {
-        "023": 5
-      }
-    },
-    "published": {
-      "total": 3,
-      "ukraine_priority": 0,
-      "with_images": 3,
-      "text_only": 0,
-      "og_images_found": 3,
-      "sources": {
-        "023": 3
-      }
-    },
-    "models_used": {
-      "gemini-3.5-flash-lite": 1,
-      "gemini-3.8-flash": 1
-    },
-    "models_by_task": {
-      "filter": "gemini-3.5-flash-lite",
-      "translate": "gemini-3.8-flash"
-    },
-    "model_attempts": [
-      {
-        "task": "filter",
-        "model": "gemini-3.5-flash-lite",
-        "outcome": "ok"
-      },
-      {
-        "task": "translate",
-        "model": "gemini-3.8-flash",
-        "outcome": "ok"
-      }
-    ],
-    "exhausted_models": [],
-    "demoted_models": [
-      "filter: gemini-3-flash-preview",
-      "filter: gemini-3.6-flash"
-    ],
-    "translate_budget_deferred": [],
-    "gemini_region_blocked": false,
-    "gemini_unavailable": false,
-    "errors_count": 0,
-    "gemini_retries": 0
-  },
-  {
     "timestamp": "2026-11-11 11:01:19",
     "execution_time": 193.6,
     "funnel": {
@@ -10140,5 +10053,114 @@
     "gemini_unavailable": false,
     "errors_count": 0,
     "gemini_retries": 3
+  },
+  {
+    "timestamp": "2026-11-20 11:01:18",
+    "execution_time": 216.2,
+    "funnel": {
+      "scraped_total": 35,
+      "scraped_by_source": {
+        "023": 10,
+        "Slobodna dalmacija": 15,
+        "Zadarski list": 10
+      },
+      "already_seen": 10,
+      "rejected_by_keywords": 4,
+      "rejected_by_rule": {
+        "тег RSS sport": 2,
+        "oglas": 1,
+        "promo": 1
+      },
+      "unclassified_by_ai": 0,
+      "duplicates_removed_by_ai": 19,
+      "rejection_reasons_list": [
+        "• Policijski službenici iz Doline Neretve darovali mandarine kolegama u  → Побут інших міст (Подія в Долині Неретви) | Сутності: Долина Неретви, Мандарини, Поліція",
+        "• Penava vidi komunizam u štrajku mladih: “Znam i tko stoji iza toga” → Вже публікувалось (Політичний коментар щодо вчорашнього страйку) | Сутності: Іван Пенава, Штрайк молоді, Хорватія",
+        "• Mirno je ‘šetuckao‘ s automobilskom gumom u ruci, ali kad je vidio pol → Дубль (Дублює статтю ID 6) | Сутності: Дубровник, Поліція, Наркотики",
+        "• Zbog odbijanja testa na droge u Šopotu 23-godišnjak ostao bez vozačke  → Вже публікувалось (Дрібне місцеве правопорушення) | Сутності: Шопот, Бенковац, Поліція",
+        "• Riječki HNK s predstavom “Nigdje, niotkuda”“ gostuje u Parizu čak pet  → Побут інших міст (Гастролі театру з Рієки) | Сутності: Рієка, HNK Зайц, Париж",
+        "• Neobičan pokušaj mladog dubrovačkog dilera; po gradu hodao s kotačem u → Побут інших міст (Кримінал у Дубровнику) | Сутності: Дубровник, Поліція, Марихуана",
+        "• Upoznajte finaliste akcije Najiznajmljivači: Tradicije različite, ali  → Реклама (Промо-акція орендодавців) | Сутності: Плітвицькі озера, Кавтат, Найізнаймлювачі",
+        "• U organizaciji Udruge Et Ješua: Otvorena izložba dubrovačkih slikara s → Побут інших міст (Виставка в Дубровнику) | Сутності: Дубровник, Dominikanski samostan, Izložba",
+        "• Pametnom prehranom do snažnog tijela i zdravijeg života → Світовий шум (Поради з дієтології) | Сутності: Здорове харчування, Протеїни, Здоров'я",
+        "• Pločanski lovci slave veliki jubilej, sprema se prava fešta! A ovo je  → Побут інших міст (Ювілей товариства в Плоче) | Сутності: Плоче, Долина Неретви, Мисливці",
+        "• Filmski petak u Zadru; Gledamo tajni projekt studija A24 o Elizabeth H → Вже публікувалось (Подія вже була в історії раніше) | Сутності: Задар, Providurova palača, Filmski petak",
+        "• Utjecaj debljine na muško zdravlje → Світовий шум (Загальна медична стаття) | Сутності: Хорватія, Movember, Ожиріння",
+        "• Pa kako preživjeti?! Umirovljenici Šibensko-kninske županije najsiroma → Побут інших міст (Пенсії в Шибенику) | Сутності: Шибеник, Уміровлініци, Пенсії",
+        "• Zadar ponosan na svoje mlade talente; Udruga „Igrajmo se” danas gostuj → Побут інших міст (Гастролі театру з Задара в Б’єловар) | Сутності: Задар, Б’єловар, Іграймо се",
+        "• Riziko faktori za moždani udar kod muškaraca i prevencija → Світовий шум (Медична профілактика) | Сутності: Хорватія, HZJZ, Мозковий удар",
+        "• Otvoren Park ispod platane na Pilama: Uređen je sanitarni čvor i parki → Побут інших міст (Відкриття парку в Дубровнику) | Сутності: Дубровник, Pile, Mato Franković",
+        "• Ne samo brkovi: Što u studenom treba reći o muškom srcu → Світовий шум (Медична стаття про здоров'я) | Сутності: Хорватія, Інфаркт, Серце",
+        "• Nakon premijere ‘Zaljubljenika‘ uslijedilo opušteno druženje dubrovačk → Побут інших міст (Театр у Дубровнику) | Сутності: Дубровник, Kazalište Marina Držića, Zaljubljenici",
+        "• Muško zdravlje iz perspektive urologa → Світовий шум (Загальна стаття про здоров'я) | Сутності: Movember, Урологія, Хорватія"
+      ],
+      "rejected_by_reason": {
+        "Побут інших міст": 9,
+        "Вже публікувалось": 3,
+        "Дубль": 1,
+        "Реклама": 1,
+        "Світовий шум": 5
+      },
+      "updates_marked": 0,
+      "already_rejected": 6,
+      "rejected_by_code_examples": [
+        "[тег RSS sport] Penjački spektakl u Zadru; Višnjik sutra ugošćuje više od stotinu natjecatelja Sv. Krševan Boulder O",
+        "[тег RSS sport] Zadarski pečat u reprezentaciji; Čak osmero boksača iz Zadra na trodnevnim pripremama u Puli",
+        "[oglas] Mislili da su pronašli kupca za perilicu posuđa, Šibenčanin očekivao uplatu, ali uslijedilo je neugo",
+        "[promo] Pustolovnu knjižicu „Sv. Nikola i Barba – Obilazak morskih parkova” i četiri samoljepljive sličice!"
+      ]
+    },
+    "backlog": {
+      "total_size": 5,
+      "sources": {
+        "Slobodna dalmacija": 1,
+        "023": 4
+      }
+    },
+    "published": {
+      "total": 3,
+      "ukraine_priority": 0,
+      "with_images": 3,
+      "text_only": 0,
+      "og_images_found": 3,
+      "sources": {
+        "023": 3
+      }
+    },
+    "models_used": {
+      "gemini-3.5-flash-lite": 2
+    },
+    "models_by_task": {
+      "filter": "gemini-3.5-flash-lite",
+      "translate": "gemini-3.5-flash-lite"
+    },
+    "model_attempts": [
+      {
+        "task": "filter",
+        "model": "gemini-3-flash-preview",
+        "outcome": "unavailable"
+      },
+      {
+        "task": "filter",
+        "model": "gemini-3.5-flash-lite",
+        "outcome": "ok"
+      },
+      {
+        "task": "translate",
+        "model": "gemini-3.5-flash-lite",
+        "outcome": "ok"
+      }
+    ],
+    "exhausted_models": [],
+    "demoted_models": [
+      "filter: gemini-3.6-flash",
+      "translate: gemini-3.8-flash",
+      "translate: gemini-3.6-flash"
+    ],
+    "translate_budget_deferred": [],
+    "gemini_region_blocked": false,
+    "gemini_unavailable": false,
+    "errors_count": 0,
+    "gemini_retries": 1
   }
 ]
