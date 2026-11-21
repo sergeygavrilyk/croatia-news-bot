@@ -1,105 +1,5 @@
 [
   {
-    "timestamp": "2026-11-12 08:01:24",
-    "execution_time": 261.5,
-    "funnel": {
-      "scraped_total": 35,
-      "scraped_by_source": {
-        "023": 10,
-        "Slobodna dalmacija": 15,
-        "Zadarski list": 10
-      },
-      "already_seen": 9,
-      "rejected_by_keywords": 0,
-      "rejected_by_rule": {},
-      "unclassified_by_ai": 0,
-      "duplicates_removed_by_ai": 17,
-      "rejection_reasons_list": [
-        "• Rusija želi dogovarati budućnost Europe s Amerikom, ali – bez Europe z → Вже публікувалось (Повторення переговорів) | Сутності: Abu Dhabi, SAD, Rusija, Ukrajina",
-        "• Objavljen dokument koji jasno govori o budućim potezima dubrovačke vla → Побут інших міст (Дубровник) | Сутності: Dubrovnik, Orsula, Mokošica, Plan upravljanja",
-        "• Žena (38) se predozirala u stanu u Zagrebu, a prijatelj ju u nesvijest → Не за тематикою (Кримінал у Загребі) | Сутності: Zagreb, Novi Zagreb, Policija, Hitna pomoć",
-        "• TRI GODINE OD TRAGIČNE NESREĆE Banožićevo suđenje i dalje traje, obran → Вже публікувалось (Суд над Баноžićem) | Сутності: Vinkovci, Mario Banožić, Goran Šarić, Županja",
-        "• Žalimo se na cijene i uvoz, a gledajte ove prizore! Ma neka trune na p → Побут інших міст (Шибеник) | Сутності: Šibenik, Krvavice, Boraja, Smokve",
-        "• “Na rubu smo izdržljivosti”: Još 16 radiologa ustalo protiv imenovanja → Не за тематикою (Скандал у загреبській лікарні) | Сутності: Dijana Zadravec, KBC Sestre milosrdnice, Radiologija",
-        "• Jarak otkriva nepoznate detalje užasa u Drnišu: ‘Ovo je možda najdrama → Не за тематикою (Телешоу) | Сутності: Drniš, Andrija Jarak, Kristijan Aleksić, Voyo",
-        "• Redatelj Sobe 23: ‘Nismo željeli razglednicu Rijeke, nego grad koji ži → Побут інших міст (Рієка, локальний фільм) | Сутності: Rijeka, David Petrović, Soba 23, Gradsko kazalište lutaka",
-        "• “Oj, Lepuri, selo na vrh strane”; Uz molitvu i pjesmu proslavljen blag → Дубль (Вже є в історії) | Сутності: Lepuri, Benkovac, Skradin, Sveti Martin",
-        "• Jarak otkriva nepoznate detalje užasa u Drnišu: ‘Ovo je možda najdrama → Дубль (Дублікат новини 10) | Сутності: Drniš, Andrija Jarak, Kristijan Aleksić, Voyo",
-        "• Bio je autentičan i išao vlastitim putem. Rijeka se oprostila od Klasa → Побут інших міст (Рієка, місцева подія) | Сутності: Rijeka, Klas Grdić, MMSU, HDLU Rijeka",
-        "• WC četke postale su kraljevsko žezlo, a moćnici završili na giljotini: → Побут інших міст (Рієка) | Сутності: Rijeka, Revija lutkarskih kazališta, HKD na Sušaku",
-        "• Privlaka do podneva bez vode, naredna dva tjedna gužva na Lipotici, a  → Вже публікувалось (Водопостачання та поромні лінії) | Сутності: Privlaka, Vodovod Zadar, Olib, Silba",
-        "• Masoni su se u Rijeci okupljali još 1769. godine, i to u prostoru dana → Побут інших міст (Рієка) | Сутності: Rijeka, Zajednica Talijana, Ilirske provincije",
-        "• Više od 15 mm kiše u samo dva sata: petak predvečer donosi pljuskove i → Вже публікувалось (Погода у Задарі) | Сутності: Zadar, HRT, DHMZ, Jugo",
-        "• Oni imaju najveći broj Michelinovih zvjezdica “po kvadratu”. Kvarner b → Геоблок (Іспанія) | Сутності: San Sebastian, Kvarner, Michelin, Španjolska",
-        "• Kvarnerski otoci pod udarom lažnog meda. Tone kineskih pripravaka prod → Побут інших міст (Кастав) | Сутності: Kastav, Primorsko-goranska županija, Med, Pčelari"
-      ],
-      "rejected_by_reason": {
-        "Вже публікувалось": 4,
-        "Побут інших міст": 7,
-        "Не за тематикою": 3,
-        "Дубль": 2,
-        "Геоблок": 1
-      },
-      "updates_marked": 1,
-      "already_rejected": 6
-    },
-    "backlog": {
-      "total_size": 2,
-      "sources": {
-        "023": 2
-      }
-    },
-    "published": {
-      "total": 3,
-      "ukraine_priority": 0,
-      "with_images": 3,
-      "text_only": 0,
-      "og_images_found": 1,
-      "sources": {
-        "Zadarski list": 1,
-        "023": 1,
-        "Slobodna dalmacija": 1
-      }
-    },
-    "models_used": {
-      "gemini-3.5-flash-lite": 1,
-      "gemini-3.8-flash": 1
-    },
-    "models_by_task": {
-      "filter": "gemini-3.5-flash-lite",
-      "translate": "gemini-3.8-flash"
-    },
-    "model_attempts": [
-      {
-        "task": "filter",
-        "model": "gemini-3-flash-preview",
-        "outcome": "unavailable"
-      },
-      {
-        "task": "filter",
-        "model": "gemini-3.6-flash",
-        "outcome": "unavailable"
-      },
-      {
-        "task": "filter",
-        "model": "gemini-3.5-flash-lite",
-        "outcome": "ok"
-      },
-      {
-        "task": "translate",
-        "model": "gemini-3.8-flash",
-        "outcome": "ok"
-      }
-    ],
-    "exhausted_models": [],
-    "demoted_models": [],
-    "translate_budget_deferred": [],
-    "gemini_region_blocked": false,
-    "gemini_unavailable": false,
-    "errors_count": 0,
-    "gemini_retries": 2
-  },
-  {
     "timestamp": "2026-11-12 09:01:20",
     "execution_time": 278.8,
     "funnel": {
@@ -10097,5 +9997,125 @@
     "gemini_unavailable": true,
     "errors_count": 0,
     "gemini_retries": 4
+  },
+  {
+    "timestamp": "2026-11-21 09:01:16",
+    "execution_time": 221.5,
+    "funnel": {
+      "scraped_total": 35,
+      "scraped_by_source": {
+        "023": 10,
+        "Slobodna dalmacija": 15,
+        "Zadarski list": 10
+      },
+      "already_seen": 18,
+      "rejected_by_keywords": 5,
+      "rejected_by_rule": {
+        "тег RSS sport": 2,
+        "košarkaš": 1,
+        "тег RSS nogomet": 1,
+        "тег RSS košarka": 1
+      },
+      "unclassified_by_ai": 0,
+      "duplicates_removed_by_ai": 19,
+      "rejection_reasons_list": [
+        "• Oružje, plan atentata na poznatog repera i ruski trag izazvali diploma → Геоблок (Подія у Данії) | Сутності: Kyivstoner, Danska, Rusija, atentat",
+        "• “Roboti ubojice” koji sami biraju mete sve su bliže ratištima. Velike  → Світовий шум (Міжнародні переговори про зброю) | Сутності: UN, Rusija, roboti ubojice",
+        "• Danas Urban s gudačkim kvartetom u Arsenalu, Noć kazališta i „Pijat na → Вже публікувалось (Події в Задарі) | Сутності: Urban, Arsenal, Zadar, polumaraton",
+        "• Jugo s olujnim udarima i grmljavina u nedjelju, a nakon kratkog predah → Вже публікувалось (Прогноз погоди) | Сутності: Zadar, vrijeme, kiša, jugo",
+        "• Cijepljenje protiv gripe počelo i Dubrovačko-neretvanskoj županiji, ev → Побут інших міст (Медицина в Дубровнику) | Сутності: Dubrovačko-neretvanska županija, cijepljenje, gripa",
+        "• Neobičan sudski obrat. Bernardić mora platiti Glavašu jer ga je ratnim → Не за тематикою (Судова справа політиків) | Сутності: Branimir Glavaš, Davor Bernardić, Osijek",
+        "• Grad Zadar osvojio titulu Šampiona turizma na Danima turizma u Poreču! → Дубль (Дублікат новини 6) | Сутності: Zadar, Dani hrvatskog turizma, Poreč",
+        "• HUP upozorava na rast javne potrošnje. Plaće u državnom sektoru su se  → Не за тематикою (Економічний аналіз) | Сутності: HUP, Hrvoje Stojić, proračun, plaće",
+        "• Zarada kakvu dosad nije ostvario nijedan zabavni proizvod. GTA 6 u sam → Світовий шум (Відеоігри) | Сутності: GTA 6, Rockstar Games, zarada",
+        "• Izračunali smo koliko će Grad Dubrovnik godišnje zaraditi od turista n → Побут інших міст (Туристичний податок у Дубровнику) | Сутності: Dubrovnik, turistički doprinos, Gradsko vijeće",
+        "• Kim Jong Un upadljivao je ignorirao mogući susret s Trumpom, evo što j → Геоблок (Події в Азії) | Сутності: Kim Jong Un, Donald Trump, Sjeverna Koreja",
+        "• Sedam nagrada na Danima hrvatskog turizma stiglo u Dubrovačko-neretvan → Побут інших міст (Нагороди в Дубровнику) | Сутності: Dani hrvatskog turizma, Dubrovačko-neretvanska županija, Dubrovnik",
+        "• Nobelovu nagradu dobila je prije 100 godina, a na vijest je odgovorila → Побут інших міст (Культурна подія в Загребі) | Сутності: Grazia Deledda, Zagreb, Nobelova nagrada",
+        "• Davor Lucianović otvorio izložbu ‘Poklonstvo Otoku‘: ‘Ovo je posveta K → Побут інших міст (Виставка в Дубровнику) | Сутності: Davor Lucianović, Galerija Otok, Dubrovnik",
+        "• Šest tisuća zaposlenih, legendarna izdanja i zgrada koje više nema. Fi → Побут інших міст (Прем'єра фільму в Загребі) | Сутності: Vjesnik, Zagreb, dokumentarni film",
+        "• Zaljubljenici u more i ribolov okušali se u lovu na lignje na Olignjad → Побут інших міст (Рибальське змагання в Дубровнику) | Сутності: Olignjada, Batala, Gruž, Dubrovnik",
+        "• “Izdrži. Duraj. Trpi.”: Predstava koja razotkriva naslijeđe nasilja i  → Побут інших міст (Театральна вистава в Рієці) | Сутності: HNK Rijeka, Monika Herceg, predstava",
+        "• Muškarci u Hrvatskoj žive gotovo šest godina kraće od žena. Statistika → Не за тематикою (Статистика тривалості життя) | Сутності: DZS, Hrvatska, muško zdravlje",
+        "• Srušile se burze diljem svijeta: U samo tjedan dana izbrisano 8,7 bili → Світовий шум (Світові фінансові ринки) | Сутності: Wall Street, S&P 500, burze"
+      ],
+      "rejected_by_reason": {
+        "Геоблок": 2,
+        "Світовий шум": 3,
+        "Вже публікувалось": 2,
+        "Побут інших міст": 8,
+        "Не за тематикою": 3,
+        "Дубль": 1
+      },
+      "updates_marked": 1,
+      "already_rejected": 1,
+      "rejected_by_code_examples": [
+        "[тег RSS sport] Rekordnih 385 trkača na 43. Polumaratonu Nin – Zadar, ujedno i Prvenstvu Hrvatske u pojedinačnoj i e",
+        "[тег RSS sport] Zadar u Zaboku četvrti put ove sezone prebacio stotku, Modrićeva momčad i dalje bez poraza u prvenst",
+        "[košarkaš] Znate li da je Žele Jerkov ustvari šibenski bodul? Priznao nam: ‘Što sam stariji...‘; A za kraj žest",
+        "[тег RSS nogomet] Noć užasa za Bayern! Ostali su bez bodova, ali i teže ozlijeđenog Harryja Kanea na duži period",
+        "[тег RSS košarka] VIDEO Mariju Hezonji pripao “hrvatski derbi” u Clevelandu. Harden ubacio 51 poen"
+      ]
+    },
+    "backlog": {
+      "total_size": 0,
+      "sources": {}
+    },
+    "published": {
+      "total": 3,
+      "ukraine_priority": 0,
+      "with_images": 2,
+      "text_only": 1,
+      "og_images_found": 0,
+      "sources": {
+        "023": 1,
+        "Slobodna dalmacija": 2
+      }
+    },
+    "models_used": {
+      "gemini-3.1-flash-lite": 1,
+      "gemini-3.5-flash-lite": 1
+    },
+    "models_by_task": {
+      "filter": "gemini-3.1-flash-lite",
+      "translate": "gemini-3.5-flash-lite"
+    },
+    "model_attempts": [
+      {
+        "task": "filter",
+        "model": "gemini-3.6-flash",
+        "outcome": "unavailable"
+      },
+      {
+        "task": "filter",
+        "model": "gemini-3.1-flash-lite",
+        "outcome": "ok"
+      },
+      {
+        "task": "translate",
+        "model": "gemini-3.8-flash",
+        "outcome": "unavailable"
+      },
+      {
+        "task": "translate",
+        "model": "gemini-3.6-flash",
+        "outcome": "unavailable"
+      },
+      {
+        "task": "translate",
+        "model": "gemini-3.5-flash-lite",
+        "outcome": "ok"
+      }
+    ],
+    "exhausted_models": [],
+    "demoted_models": [
+      "filter: gemini-3-flash-preview",
+      "filter: gemini-3.5-flash-lite"
+    ],
+    "translate_budget_deferred": [],
+    "gemini_region_blocked": false,
+    "gemini_unavailable": false,
+    "errors_count": 0,
+    "gemini_retries": 3
   }
 ]
