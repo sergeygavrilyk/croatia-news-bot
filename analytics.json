@@ -1,132 +1,5 @@
 [
   {
-    "timestamp": "2026-11-12 17:01:26",
-    "execution_time": 285.1,
-    "funnel": {
-      "scraped_total": 35,
-      "scraped_by_source": {
-        "023": 10,
-        "Slobodna dalmacija": 15,
-        "Zadarski list": 10
-      },
-      "already_seen": 24,
-      "rejected_by_keywords": 4,
-      "rejected_by_rule": {
-        "тег RSS lifestyle": 3,
-        "тег RSS nogomet": 1
-      },
-      "unclassified_by_ai": 0,
-      "duplicates_removed_by_ai": 18,
-      "rejection_reasons_list": [
-        "• Plenković: “Milanović je na besramnom spinu i besramnim lažima dobio i → Вже публікувалось (Політична реакція на тему допомоги Україні) | Сутності: Andrej Plenković, Zoran Milanović, Hrvatska vojska, Ukrajina",
-        "• Studeni u znaku vrhunske opreme za kupaonicu; Iskoristite 25% popusta  → Реклама (Рекламна акція магазину сантехніки) | Сутності: Kera Term, Zadar, Hansgrohe, popust",
-        "• U Hrvatskoj su opasan otpad, u Španjolskoj, Italiji i Grčkoj sirovina. → Побут інших міст (Проблеми утилізації відходів у Сплітському регіоні) | Сутності: maslinari, Splitsko-dalmatinska županija, otpad, uljare",
-        "• Krao parfeme po Rijeci, uhvatila ga policija → Побут інших міст (Дрібний кримінал у Рієці) | Сутності: Rijeka, policija, krađa, parfemi",
-        "• Zašto su specijalci zauzeli trajekt?! Dramatični prizori vježbe vojske → Побут інших міст (Військові навчання у Спліті) | Сутності: Split, policija, vojska, vježba",
-        "• Obećanjem nasljedstva navela više od 40 osoba na uplatu novca, zaradil → Побут інших міст (Шахрайство у громаді Велика) | Сутності: policija, Velika, prijevara, nasljedstvo",
-        "• Andro Vlahušić o planu Turističke zajednice grada: Dubrovnik bi na dne → Побут інших міст (Туристична політика Дубровника) | Сутності: Dubrovnik, Turistička zajednica, turisti, plan upravljanja",
-        "• FOTO Obilježili 80 godina rada: Centar na Rujevici zalog za svijetlu b → Побут інших міст (Ювілей автоклубу в Рієці) | Сутності: Autoklub Rijeka, Rujevica, Opatija, obljetnica",
-        "• Dubravka Šuica u društvu princa Harrya u Bruxellesu → Світовий шум (Світська хроніка) | Сутності: Dubravka Šuica, princ Harry, Bruxelles",
-        "• U pucnjavi u Washingtonu najmanje jedna osoba ubijena, sve se dogodilo → Геоблок (Кримінал у США) | Сутності: Washington, Bijela kuća, pucnjava, policija",
-        "• Položeni vijenci u Komolcu i na Strinčjeri u spomen na poginule branit → Побут інших міст (Вшанування пам'яті у Дубровнику) | Сутності: Dubrovnik, branitelji, Komolac, Strinčjera",
-        "• Plenković: “U Jankomiru se dogodilo ozbiljno zataškavanje, a Zadravec  → Вже публікувалось (Коментар прем'єра щодо інцидентів у лікарнях) | Сутності: Andrej Plenković, Dijana Zadravec, KBC Sestre milosrdnice, Jankomir",
-        "• Možemo! traži žurnu gradnju doma za starije i nemoćne na Kantridi; Rin → Побут інших міст (Політична ініціатива у Рієці) | Сутності: Rijeka, Možemo!, dom za starije, Kantrida",
-        "• Održana konferencija za ugostitelje: rasprava o komunalnom redu, uređe → Вже публікувалось (Конференція про якість послуг у Задарі) | Сутності: Zadar, Turistička zajednica, ugostitelji, Petrčane",
-        "• Grad Rijeka ostao bez zgrade Istravina na Delti, izgubljen je i novac  → Побут інших міст (Майнові питання у Рієці) | Сутності: Rijeka, Istravin, Delta, Slavko Linić",
-        "• Imenovan novi lučki kapetan u Pločama, na dužnost stupa Toni Grgić → Побут інших міст (Кадрове призначення у Плоче) | Сутності: Ploče, Vlada RH, Toni Grgić, lučka kapetanija",
-        "• TranziT #7 završava dvjema premijerama: od plesne izvedbe Tonija Flega → Побут інших міст (Культурна подія у Рієці) | Сутності: Rijeka, TranziT, kazalište, festival",
-        "• Zbog lošeg vremena u prekidu niz brodskih i trajektnih linija, evo pop → Вже публікувалось (Загальна інформація про перебої у русі) | Сутності: Jadrolinija, vrijeme, trajekt, HAK"
-      ],
-      "rejected_by_reason": {
-        "Вже публікувалось": 4,
-        "Реклама": 1,
-        "Побут інших міст": 11,
-        "Світовий шум": 1,
-        "Геоблок": 1
-      },
-      "updates_marked": 2,
-      "already_rejected": 9,
-      "rejected_by_code_examples": [
-        "[тег RSS lifestyle] Izbjeljivač nije za svaku površinu, a s nekim sredstvima za čišćenje stvara otrovne plinove",
-        "[тег RSS lifestyle] Prhki keksi s orasima i bademima: sat vremena u hladnjaku i oko deset minuta u pećnici",
-        "[тег RSS lifestyle] Kinder Bueno kocke s hrskavim kadaifom, namazom od lješnjaka i kremom od vanilije",
-        "[тег RSS nogomet] ENGLESKA – HRVATSKA 20.30 SATI Vatreni na kultnom stadionu traže iskupljenje za Rujevicu"
-      ]
-    },
-    "backlog": {
-      "total_size": 12,
-      "sources": {
-        "Zadarski list": 9,
-        "Slobodna dalmacija": 3
-      }
-    },
-    "published": {
-      "total": 3,
-      "ukraine_priority": 0,
-      "with_images": 3,
-      "text_only": 0,
-      "og_images_found": 1,
-      "sources": {
-        "Slobodna dalmacija": 2,
-        "023": 1
-      }
-    },
-    "models_used": {
-      "gemini-3.1-flash-lite": 1,
-      "gemini-3.5-flash-lite": 1
-    },
-    "models_by_task": {
-      "filter": "gemini-3.1-flash-lite",
-      "translate": "gemini-3.5-flash-lite"
-    },
-    "model_attempts": [
-      {
-        "task": "filter",
-        "model": "gemini-3-flash-preview",
-        "outcome": "unavailable"
-      },
-      {
-        "task": "filter",
-        "model": "gemini-3.6-flash",
-        "outcome": "unavailable"
-      },
-      {
-        "task": "filter",
-        "model": "gemini-3.5-flash-lite",
-        "outcome": "unavailable"
-      },
-      {
-        "task": "filter",
-        "model": "gemini-3.1-flash-lite",
-        "outcome": "ok"
-      },
-      {
-        "task": "translate",
-        "model": "gemini-3.8-flash",
-        "outcome": "unavailable"
-      },
-      {
-        "task": "translate",
-        "model": "gemini-3.5-flash-lite",
-        "outcome": "ok"
-      }
-    ],
-    "exhausted_models": [],
-    "demoted_models": [
-      "filter: gemini-3-flash-preview",
-      "filter: gemini-3.6-flash",
-      "filter: gemini-3.5-flash-lite",
-      "filter: gemini-3.1-flash-lite"
-    ],
-    "translate_budget_deferred": [
-      "gemini-3.6-flash"
-    ],
-    "gemini_region_blocked": false,
-    "gemini_unavailable": false,
-    "errors_count": 0,
-    "gemini_retries": 4
-  },
-  {
     "timestamp": "2026-11-12 20:01:13",
     "execution_time": 157.1,
     "funnel": {
@@ -10063,6 +9936,99 @@
       "filter: gemini-3-flash-preview",
       "translate: gemini-3.8-flash"
     ],
+    "translate_budget_deferred": [],
+    "gemini_region_blocked": false,
+    "gemini_unavailable": false,
+    "errors_count": 0,
+    "gemini_retries": 1
+  },
+  {
+    "timestamp": "2026-11-21 20:01:11",
+    "execution_time": 71.3,
+    "funnel": {
+      "scraped_total": 35,
+      "scraped_by_source": {
+        "023": 10,
+        "Slobodna dalmacija": 15,
+        "Zadarski list": 10
+      },
+      "already_seen": 15,
+      "rejected_by_keywords": 6,
+      "rejected_by_rule": {
+        "sportaša": 2,
+        "тег RSS lifestyle": 1,
+        "sportašu": 1,
+        "URL /sport/": 1,
+        "тег RSS nogomet": 1
+      },
+      "unclassified_by_ai": 0,
+      "duplicates_removed_by_ai": 14,
+      "rejection_reasons_list": [
+        "• Za psihičko zdravlje studenata učestalost vježbanja mogla bi biti važn → Світовий шум (Дослідження в Норвегії) | Сутності: PLOS One, Michael Grasdalsmoen, Norveška",
+        "• Preminuo profesor Ivan Koprić → Побут інших міст (Загреб) | Сутності: Ivan Koprić, Pravni fakultet, Zagreb",
+        "• ACI Marina Skradin proglašena je najboljom malom marinom na Danima hrv → Побут інших міст (Пореч, Скрадин) | Сутності: ACI Marina Skradin, Poreč, Tribunj, Šibensko-kninska županija",
+        "• Ivana Perić i Maja Ilčić održale dvije večeri posvećene zdravijim živo → Побут інших міст (Матулі) | Сутності: Ivana Perić, Maja Ilčić, Matulji, Zvoneća",
+        "• Oni su uhvatli zadnji trenutak: đir sunčanom Uvalom prije kiše → Побут інших міст (Дубровник) | Сутності: Uvala Lapad, Dubrovnik, Tonci Plazibat, Cropix",
+        "• 40 opatijskih srednjoškolaca posjetilo Memorijalni centar Lipa pamti → Побут інших міст (Опатія) | Сутності: Opatija, Lipa pamti, UABA Grada Opatije",
+        "• Kako je Dalmacija otkrila konzerviranje hrane: ‘car ribe‘ izgradio je  → Не за тематикою (Історична стаття) | Сутності: Dalmacija, Zadar, Split, Dubrovnik",
+        "• Emotivna komemoracija za Kristiana Periša. Tisuće podigle bijele jastu → Вже публікувалось (Комеморація у Загребі) | Сутності: Kristian Josip Periš, Klinika Sveti Ivan, Zagreb, Trg bana Jelačića",
+        "• Bilicama 60 tisuća eura za sanaciju pomorskog dobra, refinancirat će s → Побут інших міст (Біліце) | Сутності: Bilice, Ive Ćaleta-Car, Šibensko-kninska županija",
+        "• Riječka kolona za Periša protezala se kroz cijelo Korzo: “Užasnuti smo → Побут інших міст (Рієка) | Сутності: Kristian Josip Periš, Rijeka, Korzo, Jelačićev trg",
+        "• Kristian Tončić iz Opatije novi predsjednik Foruma mladih SDP-a → Не за тематикою (Вибори молодіжки SDP) | Сутності: Kristian Tončić, Forum mladih SDP-a, Opatija, Zagreb",
+        "• Katarina Pernar predsjednica stranke Korak za Hrvatsku, bivših Socijal → Не за тематикою (З'їзд нової партії) | Сутності: Katarina Pernar, Korak za Hrvatsku, Socijaldemokrati, Zagreb",
+        "• HSP Gospić traži odgovore o opasnom otpadu i tvornici litija: “Građani → Побут інших міст (Госпич) | Сутності: HSP Gospić, Darko Milinović, Gospić, Rakitovac",
+        "• Predstavljeno jubilarno 30. izdanja PoZiCe, zbornika koji povezuje Por → Побут інших міст (Цриквениця) | Сутності: PoZiCa, Crikvenica, Poreč, Zabok"
+      ],
+      "rejected_by_reason": {
+        "Світовий шум": 1,
+        "Побут інших міст": 9,
+        "Не за тематикою": 3,
+        "Вже публікувалось": 1
+      },
+      "updates_marked": 0,
+      "already_rejected": 10,
+      "rejected_by_code_examples": [
+        "[sportaša] Osam minuta tišine na Narodnom trgu: Zadrani odali počast Kristianu Josipu Perišu i zatražili odgovo",
+        "[sportaša] Mnoštvo Zadrana na Narodnom trgu u spomen na Kristiana Josipa Periša",
+        "[тег RSS lifestyle] Redovito kretanje može smanjiti masnoću u jetri i bez gubitka kilograma",
+        "[sportašu] Brojni Zadrani na Narodnom trgu odali počast Kristianu Perišu: Osam minuta šutnje i snažan apel za i",
+        "[URL /sport/] Hezonjini Cavaliersi bolji od Zubčevih Pacersa: dubrovčanin upisao upisao double-double učinak u",
+        "[тег RSS nogomet] Varaždin prekinuo pobjednički niz Rudeša, izbili na treće mjesto ljestvice"
+      ]
+    },
+    "backlog": {
+      "total_size": 0,
+      "sources": {}
+    },
+    "published": {
+      "total": 0,
+      "ukraine_priority": 0,
+      "with_images": 0,
+      "text_only": 0,
+      "og_images_found": 0,
+      "sources": {}
+    },
+    "models_used": {
+      "gemini-3.6-flash": 1
+    },
+    "models_by_task": {
+      "filter": "gemini-3.6-flash",
+      "translate": null
+    },
+    "model_attempts": [
+      {
+        "task": "filter",
+        "model": "gemini-3-flash-preview",
+        "outcome": "unavailable"
+      },
+      {
+        "task": "filter",
+        "model": "gemini-3.6-flash",
+        "outcome": "ok"
+      }
+    ],
+    "exhausted_models": [],
+    "demoted_models": [],
     "translate_budget_deferred": [],
     "gemini_region_blocked": false,
     "gemini_unavailable": false,
