@@ -1,84 +1,5 @@
 [
   {
-    "timestamp": "2026-11-12 15:01:18",
-    "execution_time": 131.9,
-    "funnel": {
-      "scraped_total": 35,
-      "scraped_by_source": {
-        "023": 10,
-        "Slobodna dalmacija": 15,
-        "Zadarski list": 10
-      },
-      "already_seen": 19,
-      "rejected_by_keywords": 1,
-      "rejected_by_rule": {
-        "тег RSS lifestyle": 1
-      },
-      "unclassified_by_ai": 0,
-      "duplicates_removed_by_ai": 0,
-      "rejection_reasons_list": [],
-      "rejected_by_reason": {},
-      "updates_marked": 0,
-      "already_rejected": 17,
-      "rejected_by_code_examples": [
-        "[тег RSS lifestyle] Kinder Bueno kocke s hrskavim kadaifom, namazom od lješnjaka i kremom od vanilije"
-      ]
-    },
-    "backlog": {
-      "total_size": 18,
-      "sources": {
-        "Slobodna dalmacija": 7,
-        "Zadarski list": 9,
-        "023": 2
-      }
-    },
-    "published": {
-      "total": 0,
-      "ukraine_priority": 0,
-      "with_images": 0,
-      "text_only": 0,
-      "og_images_found": 0,
-      "sources": {}
-    },
-    "models_used": {},
-    "models_by_task": {
-      "filter": null,
-      "translate": null
-    },
-    "model_attempts": [
-      {
-        "task": "filter",
-        "model": "gemini-3-flash-preview",
-        "outcome": "unavailable"
-      },
-      {
-        "task": "filter",
-        "model": "gemini-3.6-flash",
-        "outcome": "unavailable"
-      },
-      {
-        "task": "filter",
-        "model": "gemini-3.5-flash-lite",
-        "outcome": "unavailable"
-      },
-      {
-        "task": "filter",
-        "model": "gemini-3.1-flash-lite",
-        "outcome": "unavailable"
-      }
-    ],
-    "exhausted_models": [],
-    "demoted_models": [
-      "translate: gemini-3.8-flash",
-      "translate: gemini-3.5-flash-lite"
-    ],
-    "translate_budget_deferred": [],
-    "gemini_region_blocked": false,
-    "gemini_unavailable": true,
-    "errors_count": 0,
-    "gemini_retries": 4
-  },
-  {
     "timestamp": "2026-11-12 16:01:20",
     "execution_time": 30.1,
     "funnel": {
@@ -10042,5 +9963,109 @@
     "gemini_unavailable": false,
     "errors_count": 0,
     "gemini_retries": 0
+  },
+  {
+    "timestamp": "2026-11-21 16:01:14",
+    "execution_time": 239.4,
+    "funnel": {
+      "scraped_total": 35,
+      "scraped_by_source": {
+        "023": 10,
+        "Slobodna dalmacija": 15,
+        "Zadarski list": 10
+      },
+      "already_seen": 20,
+      "rejected_by_keywords": 7,
+      "rejected_by_rule": {
+        "тег RSS lifestyle": 1,
+        "тег RSS sport": 3,
+        "sporta": 1,
+        "тег RSS nogomet": 2
+      },
+      "unclassified_by_ai": 0,
+      "duplicates_removed_by_ai": 6,
+      "rejection_reasons_list": [
+        "• Ruski brod za šverc oružja gori u Finskom zaljevu. Pogođen je dronovim → Геоблок (Подія у Фінській затоці) | Сутності: Sparta II, Finski zaljev, Kalinjingrad, Finska",
+        "• Pravobraniteljica za djecu zabrinuta govorom mržnje prema učenicima na → Вже публікувалось (Коментар омбудсмена щодо минулих протестів) | Сутності: Tatjana Katkić Stanić, Ured pravobraniteljice za djecu, Štrajk mladih",
+        "• Hajdaš Dončić: Mlada obitelj da ništa ne jede i ne pije, mora raditi 1 → Не за тематикою (Політична заява про житло) | Сутності: Siniša Hajdaš Dončić, SDP, Forum mladih, Split",
+        "• Državni inspektorat opozvao proizvod pancete zbog moguće prisutnosti b → Вже публікувалось (Попередження про панчету вже в історії) | Сутності: Državni inspektorat, Panceta kockice VP, Listeria monocytogenes",
+        "• Kako slomiti čovjeka bez zatvora. Čanak opisao kako je Vučićeva BIA ko → Геоблок (Події в Сербії) | Сутності: Nenad Čanak, Aleksandar Vučić, BIA, Srbija",
+        "• Blagoslovljen reljef svetog Mihovila na novoobnovljenom baštinskom hot → Побут інших міст (Приватна подія у Шибенику) | Сутності: Ante Cicvarić, Šibenik, sveti Mihovil"
+      ],
+      "rejected_by_reason": {
+        "Геоблок": 2,
+        "Вже публікувалось": 2,
+        "Не за тематикою": 1,
+        "Побут інших міст": 1
+      },
+      "updates_marked": 0,
+      "already_rejected": 15,
+      "rejected_by_code_examples": [
+        "[тег RSS lifestyle] Redovito kretanje može smanjiti masnoću u jetri i bez gubitka kilograma",
+        "[тег RSS sport] Zadar u Zaboku četvrti put ove sezone prebacio stotku, Modrićeva momčad i dalje bez poraza u prvenst",
+        "[sporta] Vikend u znaku proslave Dana Grada: od bakalara preko plesa do sporta",
+        "[тег RSS sport] ATP Finale: Alcaraz preokretom protiv Sheltona izborio finale",
+        "[тег RSS nogomet] Engleski mediji: Infantino će pobijediti već u prvom krugu",
+        "[тег RSS nogomet] Manchester City osvojio tek bod protiv Fulhama",
+        "[тег RSS sport] Ljutić zadovoljna drugim slalomom sezone: “Bilo je zabavno, a i rezultat je dobar”"
+      ]
+    },
+    "backlog": {
+      "total_size": 0,
+      "sources": {}
+    },
+    "published": {
+      "total": 2,
+      "ukraine_priority": 0,
+      "with_images": 0,
+      "text_only": 2,
+      "og_images_found": 0,
+      "sources": {
+        "Slobodna dalmacija": 1,
+        "023": 1
+      }
+    },
+    "models_used": {
+      "gemini-3.6-flash": 1,
+      "gemini-3.5-flash-lite": 1
+    },
+    "models_by_task": {
+      "filter": "gemini-3.6-flash",
+      "translate": "gemini-3.5-flash-lite"
+    },
+    "model_attempts": [
+      {
+        "task": "filter",
+        "model": "gemini-3-flash-preview",
+        "outcome": "unavailable"
+      },
+      {
+        "task": "filter",
+        "model": "gemini-3.6-flash",
+        "outcome": "ok"
+      },
+      {
+        "task": "translate",
+        "model": "gemini-3.8-flash",
+        "outcome": "unavailable"
+      },
+      {
+        "task": "translate",
+        "model": "gemini-3.5-flash-lite",
+        "outcome": "ok"
+      }
+    ],
+    "exhausted_models": [],
+    "demoted_models": [
+      "translate: gemini-3.8-flash",
+      "translate: gemini-3.5-flash-lite"
+    ],
+    "translate_budget_deferred": [
+      "gemini-3.6-flash"
+    ],
+    "gemini_region_blocked": false,
+    "gemini_unavailable": false,
+    "errors_count": 0,
+    "gemini_retries": 2
   }
 ]
