@@ -1,90 +1,5 @@
 [
   {
-    "timestamp": "2026-11-12 16:01:20",
-    "execution_time": 30.1,
-    "funnel": {
-      "scraped_total": 35,
-      "scraped_by_source": {
-        "023": 10,
-        "Slobodna dalmacija": 15,
-        "Zadarski list": 10
-      },
-      "already_seen": 24,
-      "rejected_by_keywords": 3,
-      "rejected_by_rule": {
-        "тег RSS lifestyle": 2,
-        "тег RSS nogomet": 1
-      },
-      "unclassified_by_ai": 0,
-      "duplicates_removed_by_ai": 0,
-      "rejection_reasons_list": [],
-      "rejected_by_reason": {},
-      "updates_marked": 0,
-      "already_rejected": 12,
-      "rejected_by_code_examples": [
-        "[тег RSS lifestyle] Prhki keksi s orasima i bademima: sat vremena u hladnjaku i oko deset minuta u pećnici",
-        "[тег RSS lifestyle] Kinder Bueno kocke s hrskavim kadaifom, namazom od lješnjaka i kremom od vanilije",
-        "[тег RSS nogomet] ENGLESKA – HRVATSKA 20.30 SATI Vatreni na kultnom stadionu traže iskupljenje za Rujevicu"
-      ]
-    },
-    "backlog": {
-      "total_size": 26,
-      "sources": {
-        "Slobodna dalmacija": 9,
-        "Zadarski list": 14,
-        "023": 3
-      }
-    },
-    "published": {
-      "total": 0,
-      "ukraine_priority": 0,
-      "with_images": 0,
-      "text_only": 0,
-      "og_images_found": 0,
-      "sources": {}
-    },
-    "models_used": {},
-    "models_by_task": {
-      "filter": null,
-      "translate": null
-    },
-    "model_attempts": [
-      {
-        "task": "filter",
-        "model": "gemini-3.1-flash-lite",
-        "outcome": "unavailable"
-      },
-      {
-        "task": "filter",
-        "model": "gemini-3-flash-preview",
-        "outcome": "unavailable"
-      },
-      {
-        "task": "filter",
-        "model": "gemini-3.6-flash",
-        "outcome": "unavailable"
-      },
-      {
-        "task": "filter",
-        "model": "gemini-3.5-flash-lite",
-        "outcome": "unavailable"
-      }
-    ],
-    "exhausted_models": [],
-    "demoted_models": [
-      "filter: gemini-3-flash-preview",
-      "filter: gemini-3.6-flash",
-      "filter: gemini-3.5-flash-lite",
-      "translate: gemini-3.8-flash",
-      "translate: gemini-3.5-flash-lite"
-    ],
-    "translate_budget_deferred": [],
-    "gemini_region_blocked": false,
-    "gemini_unavailable": true,
-    "errors_count": 0,
-    "gemini_retries": 4
-  },
-  {
     "timestamp": "2026-11-12 17:01:26",
     "execution_time": 285.1,
     "funnel": {
@@ -10067,5 +9982,91 @@
     "gemini_unavailable": false,
     "errors_count": 0,
     "gemini_retries": 2
+  },
+  {
+    "timestamp": "2026-11-21 17:01:18",
+    "execution_time": 95.9,
+    "funnel": {
+      "scraped_total": 35,
+      "scraped_by_source": {
+        "023": 10,
+        "Slobodna dalmacija": 15,
+        "Zadarski list": 10
+      },
+      "already_seen": 23,
+      "rejected_by_keywords": 7,
+      "rejected_by_rule": {
+        "тег RSS lifestyle": 1,
+        "тег RSS sport": 2,
+        "URL /sport/": 1,
+        "тег RSS nogomet": 3
+      },
+      "unclassified_by_ai": 0,
+      "duplicates_removed_by_ai": 5,
+      "rejection_reasons_list": [
+        "• Osam postavki na routeru koje štite kućnu mrežu od napadača i neovlašt → Світовий шум (Поради з кібербезпеки роутерів) | Сутності: Lifehacker, router, internet",
+        "• Kapetan potonulog kruzera Costa Concordia pušten iz zatvora → Геоблок (Новини про круїзний лайнер в Італії) | Сутності: Francesco Schettino, Costa Concordia, Rome, Giglio",
+        "• Ruski teretni brod koji je plovio za Kalinjingrad pogođen bespilotnim  → Геоблок (Інцидент з російським судно у Фінській затоці) | Сутності: Kaliningrad, Gulf of Finland, Finland, Gogland",
+        "• Krcati Palach poklonio se kultnom Grču: 44 godine beskompromisnog mrak → Побут інших міст (Концерт у Рієці) | Сутності: Palach, Grč, Rijeka, Harmonija Spazmofilije",
+        "• Premijerno izvedena predstava “Dječja posla – tate bez uputa” → Побут інших міст (Театральна прем'єра в Рієці) | Сутності: Rijeka, David Petrović, Kalvarija, RECiŠOU"
+      ],
+      "rejected_by_reason": {
+        "Світовий шум": 1,
+        "Геоблок": 2,
+        "Побут інших міст": 2
+      },
+      "updates_marked": 0,
+      "already_rejected": 17,
+      "rejected_by_code_examples": [
+        "[тег RSS lifestyle] Redovito kretanje može smanjiti masnoću u jetri i bez gubitka kilograma",
+        "[тег RSS sport] Zadar u Zaboku četvrti put ove sezone prebacio stotku, Modrićeva momčad i dalje bez poraza u prvenst",
+        "[URL /sport/] Hezonjini Cavaliersi bolji od Zubčevih Pacersa: dubrovčanin upisao upisao double-double učinak u",
+        "[тег RSS nogomet] Hajduk preokretom na Maksimiru upisao novu prvenstvenu pobjedu",
+        "[тег RSS sport] ATP Finale: Alcaraz preokretom protiv Sheltona izborio finale",
+        "[тег RSS nogomet] Engleski mediji: Infantino će pobijediti već u prvom krugu",
+        "[тег RSS nogomet] Manchester City osvojio tek bod protiv Fulhama"
+      ]
+    },
+    "backlog": {
+      "total_size": 0,
+      "sources": {}
+    },
+    "published": {
+      "total": 0,
+      "ukraine_priority": 0,
+      "with_images": 0,
+      "text_only": 0,
+      "og_images_found": 0,
+      "sources": {}
+    },
+    "models_used": {
+      "gemini-3.5-flash-lite": 1
+    },
+    "models_by_task": {
+      "filter": "gemini-3.5-flash-lite",
+      "translate": null
+    },
+    "model_attempts": [
+      {
+        "task": "filter",
+        "model": "gemini-3.6-flash",
+        "outcome": "timeout"
+      },
+      {
+        "task": "filter",
+        "model": "gemini-3.5-flash-lite",
+        "outcome": "ok"
+      }
+    ],
+    "exhausted_models": [],
+    "demoted_models": [
+      "filter: gemini-3-flash-preview",
+      "translate: gemini-3.8-flash"
+    ],
+    "translate_budget_deferred": [],
+    "gemini_region_blocked": false,
+    "gemini_unavailable": false,
+    "errors_count": 0,
+    "gemini_retries": 1
   }
 ]
