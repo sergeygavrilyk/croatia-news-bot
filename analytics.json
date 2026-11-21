@@ -1,92 +1,5 @@
 [
   {
-    "timestamp": "2026-11-12 09:01:20",
-    "execution_time": 278.8,
-    "funnel": {
-      "scraped_total": 35,
-      "scraped_by_source": {
-        "023": 10,
-        "Slobodna dalmacija": 15,
-        "Zadarski list": 10
-      },
-      "already_seen": 22,
-      "rejected_by_keywords": 0,
-      "rejected_by_rule": {},
-      "unclassified_by_ai": 0,
-      "duplicates_removed_by_ai": 9,
-      "rejection_reasons_list": [
-        "• Tragedija u Splitu. Trogodišnje dijete palo s trećeg kata, nije mu bil → Побут інших міст (Трагічний інцидент у Спліті) | Сутності: Split, KBC Split, Kristina Bitanga, Čistoća",
-        "• Zbog smrti radnika u šibenskoj zoni Podi optužena trojica odgovornih;  → Побут інших міст (Нещасний випадок на виробництві у Шибенику) | Сутності: Šibenik, zona Podi, Županijsko državno odvjetništvo u Šibeniku",
-        "• Ravnateljica Psihijatrijske bolnice na Jankomiru podnijela ostavku! → Вже публікувалось (Скандал довкола лікарні Святого Івана вже є в історії) | Сутності: Majda Grah, Psihijatrijska bolnica Sveti Ivan, Jankomir, Tomislav Tomašević, Zagreb",
-        "• TEŠKI PROPUSTI NAKON SMRTI MLADOG PACIJENTA Inspekcija utvrdila neprav → Вже публікувалось (Розслідування щодо лікарні Святого Івана вже в історії) | Сутності: Kristian Josip Periš, Klinika za psihijatriju Sveti Ivan, ministrica Hrstić, Zagreb",
-        "• Zdravstvena inspekcija dovršila nadzor u slučaju Periš: ‘Postupci sput → Вже публікувалось (Звіт щодо лікарні Святого Івана вже в історії) | Сутності: Kristian Josip Periš, Klinika za psihijatriju Sveti Ivan, Ministarstvo zdravstva, Zagreb",
-        "• Za ljubitelje dobre hrane i vina, uvala Čikat nezaobilazna je lošinjsk → Реклама (Промо-матеріал готелю та ресторанів на Лошині) | Сутності: uvala Čikat, Lošinj, hotel Bellevue, Matsunoki, Alfred Keller",
-        "• MODNA NOĆ ZA PAMĆENJE: ModernA pretvorila raskošni Berekin Wedding & E → Вже публікувалось (Звіт про модний захід ModernA вже є в історії) | Сутності: ModernA, Berekin Wedding & Events Resort, Zadar",
-        "• Tovareća mužika iz Sali oduševila publiku na 43. Međunarodnoj smotri f → Геоблок (Культурний фестиваль у Празі) | Сутності: Tovareća mužika, Sali, Dugi otok, Prag",
-        "• Na Obali kneza Branimira počela sanacija asfalta, promet deset radnih  → Дубль (Дублікат новини ID 0) | Сутності: Obala kneza Branimira, Filius d.o.o., Trg kneza Višeslava, Zadar"
-      ],
-      "rejected_by_reason": {
-        "Побут інших міст": 2,
-        "Вже публікувалось": 4,
-        "Реклама": 1,
-        "Геоблок": 1,
-        "Дубль": 1
-      },
-      "updates_marked": 0,
-      "already_rejected": 16
-    },
-    "backlog": {
-      "total_size": 2,
-      "sources": {
-        "023": 2
-      }
-    },
-    "published": {
-      "total": 3,
-      "ukraine_priority": 0,
-      "with_images": 3,
-      "text_only": 0,
-      "og_images_found": 2,
-      "sources": {
-        "Slobodna dalmacija": 1,
-        "023": 2
-      }
-    },
-    "models_used": {
-      "gemini-3.6-flash": 2
-    },
-    "models_by_task": {
-      "filter": "gemini-3.6-flash",
-      "translate": "gemini-3.6-flash"
-    },
-    "model_attempts": [
-      {
-        "task": "filter",
-        "model": "gemini-3.6-flash",
-        "outcome": "ok"
-      },
-      {
-        "task": "translate",
-        "model": "gemini-3.8-flash",
-        "outcome": "unavailable"
-      },
-      {
-        "task": "translate",
-        "model": "gemini-3.6-flash",
-        "outcome": "ok"
-      }
-    ],
-    "exhausted_models": [],
-    "demoted_models": [
-      "filter: gemini-3-flash-preview"
-    ],
-    "translate_budget_deferred": [],
-    "gemini_region_blocked": false,
-    "gemini_unavailable": false,
-    "errors_count": 0,
-    "gemini_retries": 1
-  },
-  {
     "timestamp": "2026-11-12 10:01:20",
     "execution_time": 236.5,
     "funnel": {
@@ -10117,5 +10030,89 @@
     "gemini_unavailable": false,
     "errors_count": 0,
     "gemini_retries": 3
+  },
+  {
+    "timestamp": "2026-11-21 10:01:11",
+    "execution_time": 91.4,
+    "funnel": {
+      "scraped_total": 35,
+      "scraped_by_source": {
+        "023": 10,
+        "Slobodna dalmacija": 15,
+        "Zadarski list": 10
+      },
+      "already_seen": 20,
+      "rejected_by_keywords": 4,
+      "rejected_by_rule": {
+        "тег RSS sport": 2,
+        "sporta": 1,
+        "тег RSS nogomet": 1
+      },
+      "unclassified_by_ai": 0,
+      "duplicates_removed_by_ai": 2,
+      "rejection_reasons_list": [
+        "• Rekordnih 385 trkača na 43. Polumaratonu Nin – Zadar, ujedno i Prvenst → Спорт (Спортивний забіг) | Сутності: Polumaraton Nin-Zadar, Atletski klub Alojzije Stepinac, Grad Zadar, Prvenstvo Hrvatske",
+        "• Zaposlenik Anthropica tvrdi da mu je AI riješio najpoznatiji matematič → Світовий шум (Математична гіпотеза) | Сутності: Anthropic, Claude AI, Riemannova hipoteza, BBC"
+      ],
+      "rejected_by_reason": {
+        "Спорт": 1,
+        "Світовий шум": 1
+      },
+      "updates_marked": 0,
+      "already_rejected": 15,
+      "rejected_by_code_examples": [
+        "[тег RSS sport] Rekordnih 385 trkača na 43. Polumaratonu Nin – Zadar, ujedno i Prvenstvu Hrvatske u pojedinačnoj i e",
+        "[тег RSS sport] Zadar u Zaboku četvrti put ove sezone prebacio stotku, Modrićeva momčad i dalje bez poraza u prvenst",
+        "[sporta] Vikend u znaku proslave Dana Grada: od bakalara preko plesa do sporta",
+        "[тег RSS nogomet] Noć užasa za Bayern! Ostali su bez bodova, ali i teže ozlijeđenog Harryja Kanea na duži period"
+      ]
+    },
+    "backlog": {
+      "total_size": 0,
+      "sources": {}
+    },
+    "published": {
+      "total": 2,
+      "ukraine_priority": 0,
+      "with_images": 1,
+      "text_only": 1,
+      "og_images_found": 0,
+      "sources": {
+        "023": 1,
+        "Slobodna dalmacija": 1
+      }
+    },
+    "models_used": {
+      "gemini-3.1-flash-lite": 1,
+      "gemini-3.6-flash": 1
+    },
+    "models_by_task": {
+      "filter": "gemini-3.1-flash-lite",
+      "translate": "gemini-3.6-flash"
+    },
+    "model_attempts": [
+      {
+        "task": "filter",
+        "model": "gemini-3.1-flash-lite",
+        "outcome": "ok"
+      },
+      {
+        "task": "translate",
+        "model": "gemini-3.6-flash",
+        "outcome": "ok"
+      }
+    ],
+    "exhausted_models": [],
+    "demoted_models": [
+      "filter: gemini-3-flash-preview",
+      "filter: gemini-3.6-flash",
+      "filter: gemini-3.5-flash-lite",
+      "translate: gemini-3.8-flash"
+    ],
+    "translate_budget_deferred": [],
+    "gemini_region_blocked": false,
+    "gemini_unavailable": false,
+    "errors_count": 0,
+    "gemini_retries": 0
   }
 ]
