@@ -1,103 +1,5 @@
 [
   {
-    "timestamp": "2026-11-13 10:01:11",
-    "execution_time": 134.3,
-    "funnel": {
-      "scraped_total": 35,
-      "scraped_by_source": {
-        "023": 10,
-        "Slobodna dalmacija": 15,
-        "Zadarski list": 10
-      },
-      "already_seen": 25,
-      "rejected_by_keywords": 3,
-      "rejected_by_rule": {
-        "sportaša": 1,
-        "тег RSS sport": 1,
-        "promo": 1
-      },
-      "unclassified_by_ai": 0,
-      "duplicates_removed_by_ai": 4,
-      "rejection_reasons_list": [
-        "• FOTO Divanhana za naježiti se: „Kafu mi draga ispeci“ na Sušaku → Побут інших міст (Концерт у Рієці) | Сутності: Divanhana, Sušak, Hrvatski kulturni dom, Radio Sevdah",
-        "• Skandal u Nvidiji razotkrio koliko su tehnološke kompanije ranjive: “N → Геоблок (Технологічний ринок США) | Сутності: Nvidia, Kongres SAD, AI",
-        "• U »3. maju« kreće gradnja dvaju riječnih kruzera, potvrđen je ugovor s → Побут інших міст (Суднобудування в Рієці) | Сутності: 3. maj, Scenic grupa, Rijeka, MKM Yachts",
-        "• Najavljeni brojni programi Frankofonije u Rijeci 2026., evo detalja → Побут інших міст (Культурна подія в Рієці) | Сутності: Frankofonija, Rijeka, Francuska alijansa, Sales Gosses"
-      ],
-      "rejected_by_reason": {
-        "Побут інших міст": 3,
-        "Геоблок": 1
-      },
-      "updates_marked": 0,
-      "already_rejected": 17,
-      "rejected_by_code_examples": [
-        "[sportaša] Deseto izdanje Atletske utrke “Dani sjećanja od Škabrnje do Vukovara” više od 500 sudionika",
-        "[тег RSS sport] Partizan u subotu dolazi u Zadar, a jedan euro od svake ulaznice ide za nabavu cistoskopa",
-        "[promo] Rođendanske popuste i duple bodove"
-      ]
-    },
-    "backlog": {
-      "total_size": 1,
-      "sources": {
-        "Slobodna dalmacija": 1
-      }
-    },
-    "published": {
-      "total": 3,
-      "ukraine_priority": 0,
-      "with_images": 3,
-      "text_only": 0,
-      "og_images_found": 1,
-      "sources": {
-        "Slobodna dalmacija": 1,
-        "023": 1,
-        "Zadarski list": 1
-      }
-    },
-    "models_used": {
-      "gemini-3.5-flash-lite": 1,
-      "gemini-3.6-flash": 1
-    },
-    "models_by_task": {
-      "filter": "gemini-3.5-flash-lite",
-      "translate": "gemini-3.6-flash"
-    },
-    "model_attempts": [
-      {
-        "task": "filter",
-        "model": "gemini-3.5-flash-lite",
-        "outcome": "ok"
-      },
-      {
-        "task": "translate",
-        "model": "gemini-3.5-flash-lite",
-        "outcome": "unavailable"
-      },
-      {
-        "task": "translate",
-        "model": "gemini-3.8-flash",
-        "outcome": "unavailable"
-      },
-      {
-        "task": "translate",
-        "model": "gemini-3.6-flash",
-        "outcome": "ok"
-      }
-    ],
-    "exhausted_models": [],
-    "demoted_models": [
-      "filter: gemini-3-flash-preview",
-      "filter: gemini-3.6-flash",
-      "translate: gemini-3.8-flash",
-      "translate: gemini-3.6-flash"
-    ],
-    "translate_budget_deferred": [],
-    "gemini_region_blocked": false,
-    "gemini_unavailable": false,
-    "errors_count": 0,
-    "gemini_retries": 2
-  },
-  {
     "timestamp": "2026-11-13 11:01:20",
     "execution_time": 184.8,
     "funnel": {
@@ -9967,5 +9869,98 @@
     "gemini_unavailable": false,
     "errors_count": 0,
     "gemini_retries": 0
+  },
+  {
+    "timestamp": "2026-11-22 11:01:16",
+    "execution_time": 144.3,
+    "funnel": {
+      "scraped_total": 35,
+      "scraped_by_source": {
+        "023": 10,
+        "Slobodna dalmacija": 15,
+        "Zadarski list": 10
+      },
+      "already_seen": 18,
+      "rejected_by_keywords": 5,
+      "rejected_by_rule": {
+        "тег RSS sport": 2,
+        "URL /sport/": 1,
+        "тег RSS nogomet": 2
+      },
+      "unclassified_by_ai": 0,
+      "duplicates_removed_by_ai": 6,
+      "rejection_reasons_list": [
+        "• FOTO Bijelo dugme na Zametu: kulminacija dvosatnog koncerta uz “Ružica → Побут інших міст (Концерт у Рієці) | Сутності: Bijelo dugme, Centar Zamet, Rijeka, Mladen Vojičić Tifa",
+        "• Razbojstvo u Šibeniku, upali u stan 76-godišnjaka, lakše ga ozlijedili → Побут інших міст (Дрібний кримінал у Шибенику) | Сутності: Šibenik, 76-godišnjak, razbojstvo, policija",
+        "• FOTO Svijet trese GTA 6 groznica, a mi smo je isprobali u novoj riječk → Побут інших міст (Ігровий клуб у Рієці) | Сутності: GTA 6, Friendly Fire Rijeka, Rijeka, Vice City",
+        "• Jeste li znali da škrpinu nalazimo i na 400 metara dubine? Donosimo jo → Світовий шум (Цікаві факти про рибу) | Сутності: škrpina, ribarnica, jadransko more, bodljike",
+        "• Pripremite se na nestabilno vrijeme, u Dalmaciju stiže nagla promjena. → Вже публікувалось (Прогноз погоди для Далмації) | Сутності: Dalmacija, DHMZ, jugo, kiša",
+        "• Dubrovnik s manje gužvi, 30 stambenih potpora i lakšim pristupom za žu → Побут інших міст (Транспортний режим у Дубровнику) | Сутності: Dubrovnik, Zona posebnog prometnog režima, promet"
+      ],
+      "rejected_by_reason": {
+        "Побут інших міст": 4,
+        "Світовий шум": 1,
+        "Вже публікувалось": 1
+      },
+      "updates_marked": 0,
+      "already_rejected": 14,
+      "rejected_by_code_examples": [
+        "[тег RSS sport] Boksači Ares Diabolika na turniru “Sveti Krševan” bez poraza: Kolega svladao protivnika s više od 50",
+        "[тег RSS sport] Leona Rakvin peta u višeboju na Torpedo Cupu, četvero mladih plivača Jadere nastupilo na Kantridi",
+        "[URL /sport/] Timon Haugan vodeći na slalom u Gurglu, samo jedan od tri hrvatska predstavnika izborio drugu vožnju",
+        "[тег RSS nogomet] VIDEO Inter Miami  doživio težak poraz u doigravanju. Pogledajte kako je reagirao Leo Messi",
+        "[тег RSS nogomet] Boca Juniors osvojila južnoameričku verziju Europske lige. Ovo je njihov prvi međunarodni trofej nak"
+      ]
+    },
+    "backlog": {
+      "total_size": 0,
+      "sources": {}
+    },
+    "published": {
+      "total": 1,
+      "ukraine_priority": 0,
+      "with_images": 1,
+      "text_only": 0,
+      "og_images_found": 0,
+      "sources": {
+        "Slobodna dalmacija": 1
+      }
+    },
+    "models_used": {
+      "gemini-3.6-flash": 2
+    },
+    "models_by_task": {
+      "filter": "gemini-3.6-flash",
+      "translate": "gemini-3.6-flash"
+    },
+    "model_attempts": [
+      {
+        "task": "filter",
+        "model": "gemini-3-flash-preview",
+        "outcome": "unavailable"
+      },
+      {
+        "task": "filter",
+        "model": "gemini-3.6-flash",
+        "outcome": "ok"
+      },
+      {
+        "task": "translate",
+        "model": "gemini-3.8-flash",
+        "outcome": "unavailable"
+      },
+      {
+        "task": "translate",
+        "model": "gemini-3.6-flash",
+        "outcome": "ok"
+      }
+    ],
+    "exhausted_models": [],
+    "demoted_models": [],
+    "translate_budget_deferred": [],
+    "gemini_region_blocked": false,
+    "gemini_unavailable": false,
+    "errors_count": 0,
+    "gemini_retries": 2
   }
 ]
