@@ -1,120 +1,5 @@
 [
   {
-    "timestamp": "2026-11-13 16:01:27",
-    "execution_time": 94.6,
-    "funnel": {
-      "scraped_total": 35,
-      "scraped_by_source": {
-        "023": 10,
-        "Slobodna dalmacija": 15,
-        "Zadarski list": 10
-      },
-      "already_seen": 21,
-      "rejected_by_keywords": 7,
-      "rejected_by_rule": {
-        "тег RSS lifestyle": 2,
-        "utakmice": 2,
-        "sportu": 1,
-        "sporta": 1,
-        "тег RSS nogomet": 1
-      },
-      "unclassified_by_ai": 0,
-      "duplicates_removed_by_ai": 14,
-      "rejection_reasons_list": [
-        "• Jandroković mađarskoj kolegici: Za otvorena pitanja potreban konstrukt → Не за тематикою (Дипломатичні переговори в Словаччині) | Сутності: Gordan Jandroković, Agnes Forsthoffer, Bratislava, Višegradska skupina",
-        "• VIDEO Kaos na magistrali prema Dubrovniku: teška prometna nesreća kod  → Побут інших міст (ДТП біля Дубровника) | Сутності: Ratac, Dubrovnik, Jadranska magistrala, prometna nesreća",
-        "• Plenković će u ponedjeljak u Parizu primiti priznanje uglednog tjednik → Не за тематикою (Візит прем'єра до Франції) | Сутності: Andrej Plenković, Pariz, L’Express, Europska unija",
-        "• VIDEO: Na Ratcu sudar osobnog i teretnog vozila koje je prevozilo drug → Дубль (Повтор новини про ДТП) | Сутності: Ratac, Dubrovnik, prometna nesreća",
-        "• Prirodoslovni muzej slavi tri obljetnice: Mali muzej koji radi velike  → Побут інших міст (Ювілей музею в Рієці) | Сутності: Rijeka, Prirodoslovni muzej, obljetnica",
-        "• Mala djela ljubavi koja mijenjaju živote; Marijini obroci Hrvatska obi → Не за тематикою (Благодійна подія в Загребі) | Сутності: Marijini obroci, Doris Pinčić, hotel Esplanade, Zagreb",
-        "• Istražili smo koliko se u Dalmaciji čeka na dječjeg psihijatra: stanje → Вже публікувалось (Проблема нестачі лікарів) | Сутності: Dalmacija, psihijatrija, Šibenik, Zadar, Split",
-        "• Samo 4,2 posto svjetskog voznog parka čine električni automobili, ali  → Світовий шум (Глобальна статистика електромобілів) | Сутності: električni automobili, Transport & Environment, Bruxelles",
-        "• Iva Rinčić predlaže 4,6 posto veći proračun Grada Rijeke za 2027. godi → Побут інших міст (Бюджет міста Рієка) | Сутності: Iva Rinčić, Rijeka, proračun",
-        "• Gradonačelnica Iva Rinčić pridružila se potrebitima u prodaji “Uličnih → Побут інших міст (Благодійна акція в Рієці) | Сутності: Iva Rinčić, Rijeka, Ulične svjetiljke, beskućnici",
-        "• Dokumentarno-igrani film “Kralj Tomislav” u programu Nove TV: Što je č → Не за тематикою (Телевізійний фільм про історію) | Сутності: Kralj Tomislav, Nova TV, dokumentarni film",
-        "• U Domu kulture upriličen je kulturno-umjetnički program u povodu Dana  → Побут інших міст (Захід у місті Сень) | Сутності: Senj, Dom kulture, Dan sjećanja",
-        "• Rapski šestaši kroz igru učili o suradnji, povjerenju i timskom radu → Побут інших міст (Шкільні заходи на острові Раб) | Сутності: Rab, Osnovna škola Ivana Rabljanina, radionice",
-        "• Ruđer protiv praznovjerja: Petak 13. pretvorili u dan znanosti, otkrić → Не за тематикою (Науковий день у Загребі) | Сутності: Institut Ruđer Bošković, Zagreb, znanost"
-      ],
-      "rejected_by_reason": {
-        "Не за тематикою": 5,
-        "Побут інших міст": 6,
-        "Дубль": 1,
-        "Вже публікувалось": 1,
-        "Світовий шум": 1
-      },
-      "updates_marked": 1,
-      "already_rejected": 9,
-      "rejected_by_code_examples": [
-        "[тег RSS lifestyle] Rolada od bukovače, žutog kruha i jablanovače s tvrdo kuhanim jajima u sredini",
-        "[тег RSS lifestyle] Suha koža zimi: dermatologinja savjetuje kraće tuširanje i kremu u roku od tri minute",
-        "[utakmice] Dirljiva gesta hrvatskih navijača na Wembleyju; Podigli transparent u čast tragično preminulog Krist",
-        "[sportu] Donesena odluka o dodjeli financijskih potpora za razvoj turističkog proizvoda - naglasak na sportu",
-        "[sporta] Osigurano 300 tisuća eura za sportska igrališta i objekte",
-        "[тег RSS nogomet] Češki izbornik uoči Osijeka: “Za Hrvatsku se pripremamo kao za finale SP-a”",
-        "[utakmice] Torcidaši optuženi za poticanje na mržnju, tužiteljstvo traži do dvije godine zatvora"
-      ]
-    },
-    "backlog": {
-      "total_size": 0,
-      "sources": {}
-    },
-    "published": {
-      "total": 2,
-      "ukraine_priority": 0,
-      "with_images": 2,
-      "text_only": 0,
-      "og_images_found": 1,
-      "sources": {
-        "023": 1,
-        "Zadarski list": 1
-      }
-    },
-    "models_used": {
-      "gemini-3.1-flash-lite": 1,
-      "gemini-3.6-flash": 1
-    },
-    "models_by_task": {
-      "filter": "gemini-3.1-flash-lite",
-      "translate": "gemini-3.6-flash"
-    },
-    "model_attempts": [
-      {
-        "task": "filter",
-        "model": "gemini-3.1-flash-lite",
-        "outcome": "ok"
-      },
-      {
-        "task": "translate",
-        "model": "gemini-3.8-flash",
-        "outcome": "unavailable"
-      },
-      {
-        "task": "translate",
-        "model": "gemini-3.5-flash-lite",
-        "outcome": "unavailable"
-      },
-      {
-        "task": "translate",
-        "model": "gemini-3.6-flash",
-        "outcome": "ok"
-      }
-    ],
-    "exhausted_models": [],
-    "demoted_models": [
-      "filter: gemini-3-flash-preview",
-      "filter: gemini-3.6-flash",
-      "filter: gemini-3.5-flash-lite"
-    ],
-    "translate_budget_deferred": [
-      "gemini-3.6-flash"
-    ],
-    "gemini_region_blocked": false,
-    "gemini_unavailable": false,
-    "errors_count": 0,
-    "gemini_retries": 2
-  },
-  {
     "timestamp": "2026-11-13 17:01:27",
     "execution_time": 209.0,
     "funnel": {
@@ -9929,5 +9814,91 @@
     "gemini_unavailable": false,
     "errors_count": 0,
     "gemini_retries": 3
+  },
+  {
+    "timestamp": "2026-11-22 17:01:18",
+    "execution_time": 122.7,
+    "funnel": {
+      "scraped_total": 35,
+      "scraped_by_source": {
+        "023": 10,
+        "Slobodna dalmacija": 15,
+        "Zadarski list": 10
+      },
+      "already_seen": 24,
+      "rejected_by_keywords": 6,
+      "rejected_by_rule": {
+        "тег RSS lifestyle": 1,
+        "тег RSS sport": 2,
+        "тег RSS nogomet": 3
+      },
+      "unclassified_by_ai": 0,
+      "duplicates_removed_by_ai": 3,
+      "rejection_reasons_list": [
+        "• HDZ: Stara ljepotica zasjala u potpuno novom ruhu → Побут інших міст (Ремонт офісу партії HDZ у Загребі) | Сутності: HDZ, Krunoslav Katičić, Загреб, Trg žrtava fašizma",
+        "• Ma zamislite, nitko ne grinta na ‘Grintalo‘! A mi smo ‘priveli‘ boduli → Побут інших міст (Локальна театральна вистава з Шибеника) | Сутності: Grintalo, Zoran Mužić, Donatella Klarin, Шибеник",
+        "• Guterres “duboko razočaran” neuspjehom klimatskih pregovora COP31 → Геоблок (Кліматична конференція ООН у Туреччині) | Сутності: António Guterres, COP31, Туреччина, ООН"
+      ],
+      "rejected_by_reason": {
+        "Побут інших міст": 2,
+        "Геоблок": 1
+      },
+      "updates_marked": 0,
+      "already_rejected": 17,
+      "rejected_by_code_examples": [
+        "[тег RSS lifestyle] Smrznuta pizza iz trgovine može biti ukusnija uz maslinovo ulje, bosiljak i pravo mjesto u pećnici",
+        "[тег RSS sport] Boksači Ares Diabolika na turniru “Sveti Krševan” bez poraza: Kolega svladao protivnika s više od 50",
+        "[тег RSS nogomet] Jakirovićev Hull City pobijedio Vuškovića i Brighton golovima u 92. i 95. minuti",
+        "[тег RSS nogomet] Dinamo minimalnim rezultatom pobijedio Istru 1961",
+        "[тег RSS sport] Samuel Kolega nakon odličnog šestog mjesta: “Ovo mi je najbolji ulazak u sezonu u karijeri”",
+        "[тег RSS nogomet] Barcelona preokretom došla do pobjede protiv Villarreala"
+      ]
+    },
+    "backlog": {
+      "total_size": 0,
+      "sources": {}
+    },
+    "published": {
+      "total": 2,
+      "ukraine_priority": 0,
+      "with_images": 2,
+      "text_only": 0,
+      "og_images_found": 0,
+      "sources": {
+        "Slobodna dalmacija": 1,
+        "Zadarski list": 1
+      }
+    },
+    "models_used": {
+      "gemini-3-flash-preview": 1,
+      "gemini-3.5-flash-lite": 1
+    },
+    "models_by_task": {
+      "filter": "gemini-3-flash-preview",
+      "translate": "gemini-3.5-flash-lite"
+    },
+    "model_attempts": [
+      {
+        "task": "filter",
+        "model": "gemini-3-flash-preview",
+        "outcome": "ok"
+      },
+      {
+        "task": "translate",
+        "model": "gemini-3.5-flash-lite",
+        "outcome": "ok"
+      }
+    ],
+    "exhausted_models": [],
+    "demoted_models": [
+      "translate: gemini-3.8-flash"
+    ],
+    "translate_budget_deferred": [
+      "gemini-3.6-flash"
+    ],
+    "gemini_region_blocked": false,
+    "gemini_unavailable": false,
+    "errors_count": 0,
+    "gemini_retries": 0
   }
 ]
