@@ -1,114 +1,5 @@
 [
   {
-    "timestamp": "2026-11-13 09:01:19",
-    "execution_time": 171.1,
-    "funnel": {
-      "scraped_total": 35,
-      "scraped_by_source": {
-        "023": 10,
-        "Slobodna dalmacija": 15,
-        "Zadarski list": 10
-      },
-      "already_seen": 20,
-      "rejected_by_keywords": 4,
-      "rejected_by_rule": {
-        "sportaša": 1,
-        "тег RSS sport": 1,
-        "nogometnog": 1,
-        "utakmicu": 1
-      },
-      "unclassified_by_ai": 0,
-      "duplicates_removed_by_ai": 11,
-      "rejection_reasons_list": [
-        "• Nevjerojatna prijevara: žena (57) prodala priču o lažnom nasljedstvu i → Геоблок (Шахрайство у Славонії не стосується Задара) | Сутності: Пожега, Славонія, 130.000 євро, Поліція",
-        "• Piše Kim Cuculić: Baština u plamenu → Побут інших міст (Пожежі в занедбаних будівлях у Рієці) | Сутності: Рієка, Кім Куцуліч, Пожежа",
-        "• Virtuozne izvedbe Ane Marije Ilić i Sandra Vešligaja: »Riječka glazba  → Побут інших міст (Камерний концерт у Рієці) | Сутності: Рієка, Ана Марія Іліч, Сандро Вешлігай, Концерт",
-        "• Microsoft u golemim problemima, brojne usluge u prekidu, otklanjanje p → Світовий шум (Глобальний збій сервісів Microsoft) | Сутності: Microsoft, Outlook, Teams, Exchange Online",
-        "• Iranci tvrde da je tanker s plinom naletio na minu u Hormuškom tjesnac → Геоблок (Інцидент із танкером в Ірані) | Сутності: Ормузька протока, Іран, Танкер, Міна",
-        "• Struka predlaže uvođenje novog turističkog doprinosa u Dubrovniku.Tko  → Побут інших міст (Туристичний збір у Дубровнику) | Сутності: Дубровник, Туристичний збір, План управління",
-        "• HND upozorava: Objava snimke nadzornih kamera u slučaju Periš je “etič → Вже публікувалось (Реакція HND на трагедію в психіатричній лікарні) | Сутності: Загреб, HND, Крістіан Йосип Періш, Свети Іван",
-        "• Proglasili ga tehničarom iz Jankomira i nacrtali mu metu na čelu: Čovj → Вже публікувалось (Помилкові звинувачення водопровідника щодо випадку в Jankomir) | Сутності: Крешимір Радушич, Дубровник, Янкомір, Поліція",
-        "• Dio Diklovca bez struje do podneva, a na A1 kod Svetog Roka vozi se 60 → Вже публікувалось (Дубль попередніх новин про негоду та вітер) | Сутності: Задар, Diklovac, A1, DHMZ",
-        "• Nakon juga, pljuskova i grmljavine stiže olujna bura, a temperatura do → Вже публікувалось (Прогноз погоди про бурю та дощі в Задарі) | Сутності: Задар, DHMZ, Бура, Шторм",
-        "• Zašto kolege ne vole Dijanu Zadravec? Dva su najveća krimena, ali zadn → Побут інших міст (Кадрові скандали в загреبській лікарні) | Сутності: Діяна Задравец, KBC Sestre milosrdnice, Верховний суд"
-      ],
-      "rejected_by_reason": {
-        "Геоблок": 2,
-        "Побут інших міст": 4,
-        "Світовий шум": 1,
-        "Вже публікувалось": 4
-      },
-      "updates_marked": 0,
-      "already_rejected": 12,
-      "rejected_by_code_examples": [
-        "[sportaša] Deseto izdanje Atletske utrke “Dani sjećanja od Škabrnje do Vukovara” više od 500 sudionika",
-        "[тег RSS sport] Partizan u subotu dolazi u Zadar, a jedan euro od svake ulaznice ide za nabavu cistoskopa",
-        "[nogometnog] Potvrđena USKOK-ova optužnica protiv Darija Šimića: Prepiske iz mobitela otkrivaju detalje",
-        "[utakmicu] VIDEO Nadolazeća zvijezda Pistonsa odigrala je savršenu utakmicu koja je odlučena tek nakon dva prod"
-      ]
-    },
-    "backlog": {
-      "total_size": 3,
-      "sources": {
-        "Slobodna dalmacija": 1,
-        "023": 1,
-        "Zadarski list": 1
-      }
-    },
-    "published": {
-      "total": 2,
-      "ukraine_priority": 0,
-      "with_images": 2,
-      "text_only": 0,
-      "og_images_found": 2,
-      "sources": {
-        "023": 2
-      }
-    },
-    "models_used": {
-      "gemini-3.5-flash-lite": 2
-    },
-    "models_by_task": {
-      "filter": "gemini-3.5-flash-lite",
-      "translate": "gemini-3.5-flash-lite"
-    },
-    "model_attempts": [
-      {
-        "task": "filter",
-        "model": "gemini-3-flash-preview",
-        "outcome": "unavailable"
-      },
-      {
-        "task": "filter",
-        "model": "gemini-3.5-flash-lite",
-        "outcome": "ok"
-      },
-      {
-        "task": "translate",
-        "model": "gemini-3.6-flash",
-        "outcome": "unavailable"
-      },
-      {
-        "task": "translate",
-        "model": "gemini-3.5-flash-lite",
-        "outcome": "ok"
-      }
-    ],
-    "exhausted_models": [],
-    "demoted_models": [
-      "filter: gemini-3.6-flash",
-      "translate: gemini-3.8-flash"
-    ],
-    "translate_budget_deferred": [],
-    "gemini_region_blocked": false,
-    "gemini_unavailable": false,
-    "errors_count": 1,
-    "gemini_retries": 2,
-    "translation_rejected": [
-      "чужий алфавіт: Кнеز, — Međunarodna premijera: kako je mali Biograd postao svjetski simbol bor"
-    ]
-  },
-  {
     "timestamp": "2026-11-13 10:01:11",
     "execution_time": 134.3,
     "funnel": {
@@ -9963,6 +9854,88 @@
       "og_images_found": 0,
       "sources": {
         "Zadarski list": 1
+      }
+    },
+    "models_used": {
+      "gemini-3.6-flash": 2
+    },
+    "models_by_task": {
+      "filter": "gemini-3.6-flash",
+      "translate": "gemini-3.6-flash"
+    },
+    "model_attempts": [
+      {
+        "task": "filter",
+        "model": "gemini-3.6-flash",
+        "outcome": "ok"
+      },
+      {
+        "task": "translate",
+        "model": "gemini-3.6-flash",
+        "outcome": "ok"
+      }
+    ],
+    "exhausted_models": [],
+    "demoted_models": [
+      "filter: gemini-3-flash-preview",
+      "translate: gemini-3.8-flash"
+    ],
+    "translate_budget_deferred": [],
+    "gemini_region_blocked": false,
+    "gemini_unavailable": false,
+    "errors_count": 0,
+    "gemini_retries": 0
+  },
+  {
+    "timestamp": "2026-11-22 10:01:17",
+    "execution_time": 89.3,
+    "funnel": {
+      "scraped_total": 35,
+      "scraped_by_source": {
+        "023": 10,
+        "Slobodna dalmacija": 15,
+        "Zadarski list": 10
+      },
+      "already_seen": 19,
+      "rejected_by_keywords": 3,
+      "rejected_by_rule": {
+        "тег RSS sport": 2,
+        "тег RSS nogomet": 1
+      },
+      "unclassified_by_ai": 0,
+      "duplicates_removed_by_ai": 4,
+      "rejection_reasons_list": [
+        "• Anamarija Pisarović: “U svijetu algoritama i UI-a drugačiji umovi su s → Світовий шум (абстрактні роздуми про освіту та штучний інтелект) | Сутності: Anamarija Pisarović, UN Agenda 2030, SDG 4, UI",
+        "• Čeka je prava tehnika za velike orade. Propustio male pa dočekao pravu → Не за тематикою (історія про приватну риболовлю) | Сутності: Toni Kršulović, orada, kapitalni ulov",
+        "• „Zadar na platnu“- evo kako je javni gradski prostor pretvoren u velik → Вже публікувалось (подія на Калеларзі вже висвітлювалася в історії) | Сутності: Zadar na platnu, Kalelarga, Dan grada Zadra, sv. Krševan",
+        "• Dva velika turistička priznanja stigla u Ličko-senjsku županiju → Побут інших міст (туристичні нагороди міста Новаля) | Сутності: Ličko-senjska županija, Novalja, Poreč, Ernest Petry"
+      ],
+      "rejected_by_reason": {
+        "Світовий шум": 1,
+        "Не за тематикою": 1,
+        "Вже публікувалось": 1,
+        "Побут інших міст": 1
+      },
+      "updates_marked": 0,
+      "already_rejected": 16,
+      "rejected_by_code_examples": [
+        "[тег RSS sport] Boksači Ares Diabolika na turniru “Sveti Krševan” bez poraza: Kolega svladao protivnika s više od 50",
+        "[тег RSS sport] Leona Rakvin peta u višeboju na Torpedo Cupu, četvero mladih plivača Jadere nastupilo na Kantridi",
+        "[тег RSS nogomet] Boca Juniors osvojila južnoameričku verziju Europske lige. Ovo je njihov prvi međunarodni trofej nak"
+      ]
+    },
+    "backlog": {
+      "total_size": 0,
+      "sources": {}
+    },
+    "published": {
+      "total": 2,
+      "ukraine_priority": 0,
+      "with_images": 2,
+      "text_only": 0,
+      "og_images_found": 0,
+      "sources": {
+        "Slobodna dalmacija": 2
       }
     },
     "models_used": {
