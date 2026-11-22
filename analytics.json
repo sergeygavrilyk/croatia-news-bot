@@ -1,100 +1,5 @@
 [
   {
-    "timestamp": "2026-11-13 12:01:19",
-    "execution_time": 140.1,
-    "funnel": {
-      "scraped_total": 35,
-      "scraped_by_source": {
-        "023": 10,
-        "Slobodna dalmacija": 15,
-        "Zadarski list": 10
-      },
-      "already_seen": 16,
-      "rejected_by_keywords": 4,
-      "rejected_by_rule": {
-        "тег RSS sport": 2,
-        "sporta": 1,
-        "promo": 1
-      },
-      "unclassified_by_ai": 0,
-      "duplicates_removed_by_ai": 11,
-      "rejection_reasons_list": [
-        "• Na susretu hrvatske dijaspore u Argentini Dubrovnik predstavljen kao g → Побут інших міст (Захід у Дубровнику та Аргентині) | Сутності: Dubrovnik, Argentina, Marko Potrebica",
-        "• Noćnim ciljnikom ustrijelio srnu: 38-godišnjak osumnjičen za protuzako → Побут інших міст (Браконьєрство у Госпичі) | Сутності: Gospić, Lički Osik, srna",
-        "• INTERVJU Andrija Jarak: “Novinarstvo može usmjeriti reflektor gdje tre → Реклама (Промо телевізійної передачі) | Сутності: Andrija Jarak, RTL, Dosje Jarak",
-        "• Zdravstvo se raspada, HDZ daje novac DP-u za istraživanje komunizma, a → Вже публікувалось (Політична реакція на кризу в охороні здоров'я) | Сутності: HDZ, DP, hitna medicinska pomoć",
-        "• Student Filozofskog fakulteta kazneno prijavljen zbog snimanja kolegic → Побут інших міст (Кримінал у Загребі) | Сутності: Zagreb, Filozofski fakultet, policija",
-        "• Ponovljen natječaj za adventske kućice u Lapadu i na Brsaljama → Побут інших міст (Адвент-будиночки у Дубровнику) | Сутності: Dubrovnik, Lapad, Brsalje",
-        "• Kako razlikujete wobblere namijenjene panuli od onih za spinning? Dono → Світовий шум (Поради щодо риболовлі) | Сутності: wobbleri, spinning, panula",
-        "• I Dubrovnik će utihnuti na 8 minuta za Kristiana Periša → Вже публікувалось (Акція пам'яті щодо події в Янкомірі) | Сутності: Dubrovnik, Kristian Josip Periš, Jankomir",
-        "• Pretragom doma i vozila 45-godišnjaka u Rijeci pronađeni kokain, table → Побут інших міст (Наркоторгівля у Рієці) | Сутності: Rijeka, kokain, policija",
-        "• Upravljali vozilima pod utjecajem alkohola i droge u Rijeku, Krku i Vr → Побут інших міст (ДТП та порушення в інших містах) | Сутності: Rijeka, Krk, Vrbovsko",
-        "• Kad podvodni ribolov dobije neočekivan obrat. Susret koji se pamti za  → Світовий шум (Розповідь про підводне полювання) | Сутності: Čiovo, Šolta, Neno Kuvačić"
-      ],
-      "rejected_by_reason": {
-        "Побут інших міст": 6,
-        "Реклама": 1,
-        "Вже публікувалось": 2,
-        "Світовий шум": 2
-      },
-      "updates_marked": 1,
-      "already_rejected": 10,
-      "rejected_by_code_examples": [
-        "[тег RSS sport] Košarkaši Zadra oduševili učenike u Zemuniku; Već sutradan na tjelesnom svi su htjeli igrati samo ko",
-        "[sporta] Osigurano 300 tisuća eura za sportska igrališta i objekte",
-        "[тег RSS sport] Odbojkaši Rijeke i Grobničana, te odbojkašice Rijeke i Drenove saznali suparnike u osmini finala Kup",
-        "[promo] 10 stvari koje morate znati o Središnjem registru stanovništva"
-      ]
-    },
-    "backlog": {
-      "total_size": 1,
-      "sources": {
-        "023": 1
-      }
-    },
-    "published": {
-      "total": 3,
-      "ukraine_priority": 1,
-      "with_images": 3,
-      "text_only": 0,
-      "og_images_found": 2,
-      "sources": {
-        "Zadarski list": 1,
-        "023": 2
-      }
-    },
-    "models_used": {
-      "gemini-3-flash-preview": 1,
-      "gemini-3.6-flash": 1
-    },
-    "models_by_task": {
-      "filter": "gemini-3-flash-preview",
-      "translate": "gemini-3.6-flash"
-    },
-    "model_attempts": [
-      {
-        "task": "filter",
-        "model": "gemini-3-flash-preview",
-        "outcome": "ok"
-      },
-      {
-        "task": "translate",
-        "model": "gemini-3.6-flash",
-        "outcome": "ok"
-      }
-    ],
-    "exhausted_models": [],
-    "demoted_models": [
-      "filter: gemini-3.6-flash",
-      "translate: gemini-3.8-flash"
-    ],
-    "translate_budget_deferred": [],
-    "gemini_region_blocked": false,
-    "gemini_unavailable": false,
-    "errors_count": 0,
-    "gemini_retries": 0
-  },
-  {
     "timestamp": "2026-11-13 13:01:18",
     "execution_time": 247.4,
     "funnel": {
@@ -9960,5 +9865,91 @@
     "gemini_unavailable": false,
     "errors_count": 0,
     "gemini_retries": 0
+  },
+  {
+    "timestamp": "2026-11-22 13:01:18",
+    "execution_time": 23.0,
+    "funnel": {
+      "scraped_total": 35,
+      "scraped_by_source": {
+        "023": 10,
+        "Slobodna dalmacija": 15,
+        "Zadarski list": 10
+      },
+      "already_seen": 24,
+      "rejected_by_keywords": 6,
+      "rejected_by_rule": {
+        "тег RSS sport": 2,
+        "sport": 1,
+        "sporta": 1,
+        "URL /sport/": 1,
+        "тег RSS nogomet": 1
+      },
+      "unclassified_by_ai": 0,
+      "duplicates_removed_by_ai": 5,
+      "rejection_reasons_list": [
+        "• Na bazenima Kantrida u Rijeci održano je plivačko natjecanje Torpedo C → Спорт (Пливацьке змагання в Рієці) | Сутності: Rijeka, Kantrida, Torpedo Cup, PK Jadera",
+        "• Prosvjedi pred domovima postali su metoda zastrašivanja: “Navikavamo s → Геоблок (Політичні протести у Загребі та Спліті) | Сутності: Zagreb, Split, Katarina Peović, Dalija Orešković",
+        "• Elegancija na kamenoj ljepotici: unatoč kiši Dubrovkinje pokazale da s → Побут інших міст (Прогулянка у Дубровнику під дощем) | Сутності: Dubrovnik, Stradun, Tonći Plazibat, Cropix",
+        "• Komedija „Crnogorska svadba“ zaključila jubilarnu Jesen u Kostreni → Побут інших міст (Культурна подія в Кострені) | Сутності: Kostrena, Crnogorska svadba, Ivan pl. Zajc, Jesen u Kostreni",
+        "• Splitski sindrom širi se regijom: i Severina je preskupa, no u ovom gr → Побут інших міст (Концертні гонорари у Спліті та Тузлі) | Сутності: Split, Dino Merlin, Tuzla, Severina"
+      ],
+      "rejected_by_reason": {
+        "Спорт": 1,
+        "Геоблок": 1,
+        "Побут інших міст": 3
+      },
+      "updates_marked": 0,
+      "already_rejected": 18,
+      "rejected_by_code_examples": [
+        "[тег RSS sport] Boksači Ares Diabolika na turniru “Sveti Krševan” bez poraza: Kolega svladao protivnika s više od 50",
+        "[тег RSS sport] Leona Rakvin peta u višeboju na Torpedo Cupu, četvero mladih plivača Jadere nastupilo na Kantridi",
+        "[sport] Željka Horvat Čeč – »Ronjenje na dah«: zbirka bolnih i odlično prepričanih iskustava",
+        "[sporta] Konjički klub Ana dobio prikolicu za konje",
+        "[URL /sport/] Timon Haugan vodeći na slalom u Gurglu, samo jedan od tri hrvatska predstavnika izborio drugu vožnju",
+        "[тег RSS nogomet] VIDEO Inter Miami  doživio težak poraz u doigravanju. Pogledajte kako je reagirao Leo Messi"
+      ]
+    },
+    "backlog": {
+      "total_size": 0,
+      "sources": {}
+    },
+    "published": {
+      "total": 0,
+      "ukraine_priority": 0,
+      "with_images": 0,
+      "text_only": 0,
+      "og_images_found": 0,
+      "sources": {}
+    },
+    "models_used": {
+      "gemini-3.5-flash-lite": 1
+    },
+    "models_by_task": {
+      "filter": "gemini-3.5-flash-lite",
+      "translate": null
+    },
+    "model_attempts": [
+      {
+        "task": "filter",
+        "model": "gemini-3.6-flash",
+        "outcome": "unavailable"
+      },
+      {
+        "task": "filter",
+        "model": "gemini-3.5-flash-lite",
+        "outcome": "ok"
+      }
+    ],
+    "exhausted_models": [],
+    "demoted_models": [
+      "filter: gemini-3-flash-preview",
+      "translate: gemini-3.8-flash"
+    ],
+    "translate_budget_deferred": [],
+    "gemini_region_blocked": false,
+    "gemini_unavailable": false,
+    "errors_count": 0,
+    "gemini_retries": 1
   }
 ]
