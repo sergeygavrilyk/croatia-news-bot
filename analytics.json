@@ -1,123 +1,5 @@
 [
   {
-    "timestamp": "2026-11-13 08:01:15",
-    "execution_time": 221.4,
-    "funnel": {
-      "scraped_total": 35,
-      "scraped_by_source": {
-        "023": 10,
-        "Slobodna dalmacija": 15,
-        "Zadarski list": 10
-      },
-      "already_seen": 5,
-      "rejected_by_keywords": 7,
-      "rejected_by_rule": {
-        "sportaša": 1,
-        "тег RSS sport": 1,
-        "nogometnog": 1,
-        "URL /sport/": 3,
-        "utakmicu": 1
-      },
-      "unclassified_by_ai": 0,
-      "duplicates_removed_by_ai": 10,
-      "rejection_reasons_list": [
-        "• U Lišanima Ostrovičkim proslava svetkovine sv. Nikole Tavelića, nebesk → Не за тематикою (Церковне свяto в іншому місці) | Сутності: Lišani Ostrovički, fra Antonio Mravak, crkva sv. Nikole Tavelića",
-        "• Obnovljena kotlovnica Doma zdravlja u Kostreni → Побут інших міст (Ремонт у Кострені) | Сутності: Kostrena, Dom zdravlja, kotlovnica",
-        "• Što sve možete pročitati u novom broju Dubrovačkog vjesnika? → Реклама (Промо нового номера журналу) | Сутності: Dubrovački vjesnik, Moskar, Dubrovnik",
-        "• Na dva kolnika pored Gospića zabranjen promet zbog obilnih kiša → Побут інших міст (Затоплені дороги біля Ґоспіча) | Сутності: Gospić, Stožer civilne zaštite, kiša",
-        "• HAK: Prekinute brojne brodske linije, otoci odsječeni → Вже публікувалось (Дубль новини ID 5) | Сутності: HAK, trajektne linije, Jadran",
-        "• Mrkopaljski osnovci obilježili 240 godina školstva: Mala smo škola ali → Побут інших міст (Ювілей школи в Мркопалі) | Сутності: Mrkopalj, OŠ Mrkopalj, Božana",
-        "• Predsjednik Gradskog vijeća: O Deklaraciji Petre Mandić idući petak → Побут інших міст (Політичні дебати в Рієці) | Сутності: Rijeka, Robert Kurelić, Petra Mandić",
-        "• Proglasili ga tehničarom iz Jankomira i nacrtali mu metu na čelu: Čovj → Дубль (Повтор новини ID 14) | Сутності: Krešimir Radušić, Jankomir, Dubrovnik",
-        "• Romano Nikolić i Dorotea Šušak: “Bavimo se iskustvima obiteljskih trau → Побут інших міст (Театральна прем'єра в Рієці) | Сутності: Rijeka, HNK Ivana pl. Zajca, Romano Nikolić",
-        "• Kakav susret u Drnišu! Njih 20 na okupu nakon 60 godina, došli sa svih → Побут інших міст (Зустріч випускників у Дрниші) | Сутності: Drniš, Ekonomska škola, maturanti"
-      ],
-      "rejected_by_reason": {
-        "Не за тематикою": 1,
-        "Побут інших міст": 6,
-        "Реклама": 1,
-        "Вже публікувалось": 1,
-        "Дубль": 1
-      },
-      "updates_marked": 0,
-      "already_rejected": 4,
-      "rejected_by_code_examples": [
-        "[sportaša] Deseto izdanje Atletske utrke “Dani sjećanja od Škabrnje do Vukovara” više od 500 sudionika",
-        "[тег RSS sport] Partizan u subotu dolazi u Zadar, a jedan euro od svake ulaznice ide za nabavu cistoskopa",
-        "[nogometnog] Potvrđena USKOK-ova optužnica protiv Darija Šimića: Prepiske iz mobitela otkrivaju detalje",
-        "[URL /sport/] Uragan Jugaša u drugom poluvremenu, Špilar digao rampu, rapsodija u napadu, Pays d‘Aix potopljen s v",
-        "[utakmicu] VIDEO Nadolazeća zvijezda Pistonsa odigrala je savršenu utakmicu koja je odlučena tek nakon dva prod",
-        "[URL /sport/] Rijeka danas dočekuje Orijent na Rujevici. Za navijače je otvorena zapadna tribina",
-        "[URL /sport/] Odbojkašice Rijeke večeras u Dvorani mladosti dočekuju ekipu CRO Teama"
-      ]
-    },
-    "backlog": {
-      "total_size": 6,
-      "sources": {
-        "Zadarski list": 2,
-        "Slobodna dalmacija": 2,
-        "023": 2
-      }
-    },
-    "published": {
-      "total": 3,
-      "ukraine_priority": 0,
-      "with_images": 3,
-      "text_only": 0,
-      "og_images_found": 2,
-      "sources": {
-        "023": 2,
-        "Slobodna dalmacija": 1
-      }
-    },
-    "models_used": {
-      "gemini-3.5-flash-lite": 2
-    },
-    "models_by_task": {
-      "filter": "gemini-3.5-flash-lite",
-      "translate": "gemini-3.5-flash-lite"
-    },
-    "model_attempts": [
-      {
-        "task": "filter",
-        "model": "gemini-3-flash-preview",
-        "outcome": "unavailable"
-      },
-      {
-        "task": "filter",
-        "model": "gemini-3.6-flash",
-        "outcome": "unavailable"
-      },
-      {
-        "task": "filter",
-        "model": "gemini-3.5-flash-lite",
-        "outcome": "ok"
-      },
-      {
-        "task": "translate",
-        "model": "gemini-3.8-flash",
-        "outcome": "unavailable"
-      },
-      {
-        "task": "translate",
-        "model": "gemini-3.6-flash",
-        "outcome": "unavailable"
-      },
-      {
-        "task": "translate",
-        "model": "gemini-3.5-flash-lite",
-        "outcome": "ok"
-      }
-    ],
-    "exhausted_models": [],
-    "demoted_models": [],
-    "translate_budget_deferred": [],
-    "gemini_region_blocked": false,
-    "gemini_unavailable": false,
-    "errors_count": 0,
-    "gemini_retries": 4
-  },
-  {
     "timestamp": "2026-11-13 09:01:19",
     "execution_time": 171.1,
     "funnel": {
@@ -10030,5 +9912,87 @@
     "gemini_unavailable": false,
     "errors_count": 0,
     "gemini_retries": 2
+  },
+  {
+    "timestamp": "2026-11-22 09:01:13",
+    "execution_time": 111.6,
+    "funnel": {
+      "scraped_total": 35,
+      "scraped_by_source": {
+        "023": 10,
+        "Slobodna dalmacija": 15,
+        "Zadarski list": 10
+      },
+      "already_seen": 20,
+      "rejected_by_keywords": 4,
+      "rejected_by_rule": {
+        "тег RSS sport": 2,
+        "sporta": 1,
+        "тег RSS nogomet": 1
+      },
+      "unclassified_by_ai": 0,
+      "duplicates_removed_by_ai": 4,
+      "rejection_reasons_list": [
+        "• Demokrati nakon pobjede predstavljaju program: U fokusu Iran i morator → Геоблок (Політика у США) | Сутності: Washington, Demokrati, SAD, Iran",
+        "• Zadužuju se Hrvatske ceste, imali li tu nešto veznao za dubrovačku brz → Побут інших міст (Будівництво дороги в Дубровнику) | Сутності: Hrvatske ceste, HBOR, 110.000.000 eura, Dubrovnik",
+        "• Obnova kultne Panorame je u završnoj fazi: arhitektonsko zdanje uskoro → Побут інших міст (Реконструкція готелю в Рієці) | Сутності: Hotel Rivia, Panorama, Rijeka, Ivan Vitić",
+        "• Vlaho Bukovac između svjetla i sjene: ključ za čitanje praškog razdobl → Побут інших міст (Виставка у Загребі) | Сутності: Vlaho Bukovac, Klovićevi dvori, Zagreb, Cavtat"
+      ],
+      "rejected_by_reason": {
+        "Геоблок": 1,
+        "Побут інших міст": 3
+      },
+      "updates_marked": 0,
+      "already_rejected": 17,
+      "rejected_by_code_examples": [
+        "[тег RSS sport] Boksači Ares Diabolika na turniru “Sveti Krševan” bez poraza: Kolega svladao protivnika s više od 50",
+        "[тег RSS sport] Leona Rakvin peta u višeboju na Torpedo Cupu, četvero mladih plivača Jadere nastupilo na Kantridi",
+        "[sporta] Ekipa Elite - priča koja traje 30 godina: Ponosni smo na svaki uspjeh, ali još više na ono što smo i",
+        "[тег RSS nogomet] Zabio je utješni pogodak za Opatiju pa poručio: “Utakmicu smo izgubili zbog nedostatka želje i agres"
+      ]
+    },
+    "backlog": {
+      "total_size": 0,
+      "sources": {}
+    },
+    "published": {
+      "total": 1,
+      "ukraine_priority": 0,
+      "with_images": 1,
+      "text_only": 0,
+      "og_images_found": 0,
+      "sources": {
+        "Zadarski list": 1
+      }
+    },
+    "models_used": {
+      "gemini-3.6-flash": 2
+    },
+    "models_by_task": {
+      "filter": "gemini-3.6-flash",
+      "translate": "gemini-3.6-flash"
+    },
+    "model_attempts": [
+      {
+        "task": "filter",
+        "model": "gemini-3.6-flash",
+        "outcome": "ok"
+      },
+      {
+        "task": "translate",
+        "model": "gemini-3.6-flash",
+        "outcome": "ok"
+      }
+    ],
+    "exhausted_models": [],
+    "demoted_models": [
+      "filter: gemini-3-flash-preview",
+      "translate: gemini-3.8-flash"
+    ],
+    "translate_budget_deferred": [],
+    "gemini_region_blocked": false,
+    "gemini_unavailable": false,
+    "errors_count": 0,
+    "gemini_retries": 0
   }
 ]
