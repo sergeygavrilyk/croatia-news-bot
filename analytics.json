@@ -1,97 +1,5 @@
 [
   {
-    "timestamp": "2026-11-13 15:01:27",
-    "execution_time": 183.2,
-    "funnel": {
-      "scraped_total": 35,
-      "scraped_by_source": {
-        "023": 10,
-        "Slobodna dalmacija": 15,
-        "Zadarski list": 10
-      },
-      "already_seen": 18,
-      "rejected_by_keywords": 8,
-      "rejected_by_rule": {
-        "тег RSS lifestyle": 1,
-        "utakmice": 2,
-        "тег RSS sport": 1,
-        "sporta": 1,
-        "sport": 1,
-        "URL /sport/": 1,
-        "тег RSS nogomet": 1
-      },
-      "unclassified_by_ai": 0,
-      "duplicates_removed_by_ai": 0,
-      "rejection_reasons_list": [],
-      "rejected_by_reason": {},
-      "updates_marked": 0,
-      "already_rejected": 11,
-      "rejected_by_code_examples": [
-        "[тег RSS lifestyle] Suha koža zimi: dermatologinja savjetuje kraće tuširanje i kremu u roku od tri minute",
-        "[utakmice] Dirljiva gesta hrvatskih navijača na Wembleyju; Podigli transparent u čast tragično preminulog Krist",
-        "[тег RSS sport] Košarkaši Zadra oduševili učenike u Zemuniku; Već sutradan na tjelesnom svi su htjeli igrati samo ko",
-        "[sporta] Osigurano 300 tisuća eura za sportska igrališta i objekte",
-        "[utakmice] Torcidaši optuženi za poticanje na mržnju, tužiteljstvo traži do dvije godine zatvora",
-        "[sport] Priča o kiši i izrada kišnih štapova razveselile loparske mališane",
-        "[URL /sport/] Kadeti Rijeke izgubili nakon jedanaesteraca od Hajduka u finalu Olea cupa u Novalji",
-        "[тег RSS nogomet] Maurizio Pochettino vodit će reprezentaciju SAD do utorka, a onda preuzima Manchester United"
-      ]
-    },
-    "backlog": {
-      "total_size": 9,
-      "sources": {
-        "023": 2,
-        "Slobodna dalmacija": 2,
-        "Zadarski list": 5
-      }
-    },
-    "published": {
-      "total": 0,
-      "ukraine_priority": 0,
-      "with_images": 0,
-      "text_only": 0,
-      "og_images_found": 0,
-      "sources": {}
-    },
-    "models_used": {},
-    "models_by_task": {
-      "filter": null,
-      "translate": null
-    },
-    "model_attempts": [
-      {
-        "task": "filter",
-        "model": "gemini-3.5-flash-lite",
-        "outcome": "unavailable"
-      },
-      {
-        "task": "filter",
-        "model": "gemini-3.1-flash-lite",
-        "outcome": "unavailable"
-      },
-      {
-        "task": "filter",
-        "model": "gemini-3-flash-preview",
-        "outcome": "unavailable"
-      },
-      {
-        "task": "filter",
-        "model": "gemini-3.6-flash",
-        "outcome": "unavailable"
-      }
-    ],
-    "exhausted_models": [],
-    "demoted_models": [
-      "filter: gemini-3-flash-preview",
-      "filter: gemini-3.6-flash"
-    ],
-    "translate_budget_deferred": [],
-    "gemini_region_blocked": false,
-    "gemini_unavailable": true,
-    "errors_count": 0,
-    "gemini_retries": 4
-  },
-  {
     "timestamp": "2026-11-13 16:01:27",
     "execution_time": 94.6,
     "funnel": {
@@ -9919,5 +9827,107 @@
     "gemini_unavailable": false,
     "errors_count": 0,
     "gemini_retries": 0
+  },
+  {
+    "timestamp": "2026-11-22 16:01:15",
+    "execution_time": 285.6,
+    "funnel": {
+      "scraped_total": 35,
+      "scraped_by_source": {
+        "023": 10,
+        "Slobodna dalmacija": 15,
+        "Zadarski list": 10
+      },
+      "already_seen": 23,
+      "rejected_by_keywords": 6,
+      "rejected_by_rule": {
+        "тег RSS sport": 4,
+        "тег RSS nogomet": 1,
+        "URL /sport/": 1
+      },
+      "unclassified_by_ai": 0,
+      "duplicates_removed_by_ai": 5,
+      "rejection_reasons_list": [
+        "• NATO u ponedjeljak raspravlja o ruskim povredama zračnog prostora Polj → Геоблок (Подія в Польщі щодо порушення повітряного простору) | Сутності: NATO, Poljska, Rusija, Ukrajina",
+        "• U ponedjeljak bez vode dio stanara uliceu Novoj Mokšici → Побут інших міст (Відключення води в Дубровнику) | Сутності: Vodovod Dubrovnik, Nova Mokošica, Ulica Bartola Kašića, Dubrovnik",
+        "• Bugarin osumnjičen da je prevario dvije starije osobe; oštetio ih za 7 → Побут інших міст (Місцеве шахрайство в Карловаці та Сесвете) | Сутності: Karlovac, Sesvete, zagrebačka policija, 76.000 eura",
+        "• Mrkva je povrće, osim kad je voće. Ne, nisam ja poludio, nego vi ne či → Світовий шум (Побутові факти та класифікація продуктів ЄС) | Сутності: Vijeće EU, direktiva 2001/113/EZ, mrkva",
+        "• Održan stručni simpozil “Neurointervencija – slučajevi iz kojih sam na → Побут інших міст (Медичний симпозіум у Рієці) | Сутності: KBC Rijeka, Sušak, Klinika za neurologiju, Rijeka"
+      ],
+      "rejected_by_reason": {
+        "Геоблок": 1,
+        "Побут інших міст": 3,
+        "Світовий шум": 1
+      },
+      "updates_marked": 0,
+      "already_rejected": 16,
+      "rejected_by_code_examples": [
+        "[тег RSS sport] Boksači Ares Diabolika na turniru “Sveti Krševan” bez poraza: Kolega svladao protivnika s više od 50",
+        "[тег RSS sport] Samuel Kolega nakon odličnog šestog mjesta: “Ovo mi je najbolji ulazak u sezonu u karijeri”",
+        "[тег RSS nogomet] Barcelona preokretom došla do pobjede protiv Villarreala",
+        "[тег RSS sport] VIDEO Marc Marquez osigurao osmi naslov prvaka u MotoGP klasi!",
+        "[тег RSS sport] RIJEKA – GORICA 18 SATI Janković i Kabadayi u prvih 11. Evo cijelog sastava",
+        "[URL /sport/] Samuel Kolega odradio sjajnu drugu vožnju u Austriji i završio na šestom mjestu"
+      ]
+    },
+    "backlog": {
+      "total_size": 0,
+      "sources": {}
+    },
+    "published": {
+      "total": 1,
+      "ukraine_priority": 0,
+      "with_images": 0,
+      "text_only": 1,
+      "og_images_found": 0,
+      "sources": {
+        "023": 1
+      }
+    },
+    "models_used": {
+      "gemini-3.6-flash": 2
+    },
+    "models_by_task": {
+      "filter": "gemini-3.6-flash",
+      "translate": "gemini-3.6-flash"
+    },
+    "model_attempts": [
+      {
+        "task": "filter",
+        "model": "gemini-3-flash-preview",
+        "outcome": "unavailable"
+      },
+      {
+        "task": "filter",
+        "model": "gemini-3.6-flash",
+        "outcome": "ok"
+      },
+      {
+        "task": "translate",
+        "model": "gemini-3.5-flash-lite",
+        "outcome": "unavailable"
+      },
+      {
+        "task": "translate",
+        "model": "gemini-3.8-flash",
+        "outcome": "unavailable"
+      },
+      {
+        "task": "translate",
+        "model": "gemini-3.6-flash",
+        "outcome": "ok"
+      }
+    ],
+    "exhausted_models": [],
+    "demoted_models": [
+      "translate: gemini-3.8-flash"
+    ],
+    "translate_budget_deferred": [
+      "gemini-3.6-flash"
+    ],
+    "gemini_region_blocked": false,
+    "gemini_unavailable": false,
+    "errors_count": 0,
+    "gemini_retries": 3
   }
 ]
