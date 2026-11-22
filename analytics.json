@@ -1,100 +1,5 @@
 [
   {
-    "timestamp": "2026-11-13 11:01:20",
-    "execution_time": 184.8,
-    "funnel": {
-      "scraped_total": 35,
-      "scraped_by_source": {
-        "023": 10,
-        "Slobodna dalmacija": 15,
-        "Zadarski list": 10
-      },
-      "already_seen": 20,
-      "rejected_by_keywords": 5,
-      "rejected_by_rule": {
-        "sportaša": 1,
-        "promo": 2,
-        "тег RSS nogomet": 1,
-        "URL /sport/": 1
-      },
-      "unclassified_by_ai": 0,
-      "duplicates_removed_by_ai": 6,
-      "rejection_reasons_list": [
-        "• Namamo pojma o tome pa smo pitali AI da nam predloži: Od zlatnog do me → Побут інших міст (Нова ілюмінація в Дубровнику) | Сутності: Дубровник, Stradun, AI",
-        "• Andrinja uz bogat program događanja: Od predstave i knjige do jedrilič → Спорт (День громади Пунат та спорт) | Сутності: Punat, Andrinja, Luka Modrić",
-        "• 10% popusta u PEVEX-u do nedjelje na cjelokupni iznos računa → Реклама (Знижки в магазині Pevex) | Сутності: Pevex, popust, vikend",
-        "• Lidija Hrastić-Novak imenovana vršiteljicom dužnosti ravnateljice Klin → Вже публікувалось (Оновлення щодо лікарні в Янкомірі) | Сутності: Zagreb, Klinika za psihijatriju Sv. Ivan, Lidija Hrastić-Novak",
-        "• Tragedija u Jankomiru stavlja SDP i Možemo! pred prvi veliki test: “Ni → Вже публікувалось (Реакція партій на трагедію в психіатрії) | Сутності: SDP, Možemo!, Zagreb, Klinika Sv. Ivan",
-        "• FOTO/VIDEO Obilna kiša poplavila Klanu i Fužine: izlilo se jezero Baje → Побут інших міст (Повені в Клані та Фужине) | Сутності: Klana, Fužine, Gorski kotar, jezero Bajer"
-      ],
-      "rejected_by_reason": {
-        "Побут інших міст": 2,
-        "Спорт": 1,
-        "Реклама": 1,
-        "Вже публікувалось": 2
-      },
-      "updates_marked": 0,
-      "already_rejected": 11,
-      "rejected_by_code_examples": [
-        "[sportaša] Deseto izdanje Atletske utrke “Dani sjećanja od Škabrnje do Vukovara” više od 500 sudionika",
-        "[promo] 10 stvari koje morate znati o Središnjem registru stanovništva",
-        "[тег RSS nogomet] Infantino je dobio novog izazivača. Iza njega je stao i jedan moćni europski državnik",
-        "[URL /sport/] Brzonogi igrač HMNK Rijeka uoči Torcide: “Igramo pred svojim navijačima, bodovi ostaju u Rijeci”",
-        "[promo] Rođendanske popuste i duple bodove"
-      ]
-    },
-    "backlog": {
-      "total_size": 0,
-      "sources": {}
-    },
-    "published": {
-      "total": 3,
-      "ukraine_priority": 0,
-      "with_images": 3,
-      "text_only": 0,
-      "og_images_found": 0,
-      "sources": {
-        "Slobodna dalmacija": 1,
-        "Zadarski list": 2
-      }
-    },
-    "models_used": {
-      "gemini-3.5-flash-lite": 1,
-      "gemini-3.6-flash": 1
-    },
-    "models_by_task": {
-      "filter": "gemini-3.5-flash-lite",
-      "translate": "gemini-3.6-flash"
-    },
-    "model_attempts": [
-      {
-        "task": "filter",
-        "model": "gemini-3.6-flash",
-        "outcome": "unavailable"
-      },
-      {
-        "task": "filter",
-        "model": "gemini-3.5-flash-lite",
-        "outcome": "ok"
-      },
-      {
-        "task": "translate",
-        "model": "gemini-3.6-flash",
-        "outcome": "ok"
-      }
-    ],
-    "exhausted_models": [],
-    "demoted_models": [
-      "filter: gemini-3-flash-preview",
-      "translate: gemini-3.8-flash"
-    ],
-    "translate_budget_deferred": [],
-    "gemini_region_blocked": false,
-    "gemini_unavailable": false,
-    "errors_count": 0,
-    "gemini_retries": 1
-  },
-  {
     "timestamp": "2026-11-13 12:01:19",
     "execution_time": 140.1,
     "funnel": {
@@ -9962,5 +9867,98 @@
     "gemini_unavailable": false,
     "errors_count": 0,
     "gemini_retries": 2
+  },
+  {
+    "timestamp": "2026-11-22 12:01:10",
+    "execution_time": 32.0,
+    "funnel": {
+      "scraped_total": 35,
+      "scraped_by_source": {
+        "023": 10,
+        "Slobodna dalmacija": 15,
+        "Zadarski list": 10
+      },
+      "already_seen": 20,
+      "rejected_by_keywords": 5,
+      "rejected_by_rule": {
+        "тег RSS sport": 2,
+        "sporta": 1,
+        "URL /sport/": 1,
+        "тег RSS nogomet": 1
+      },
+      "unclassified_by_ai": 0,
+      "duplicates_removed_by_ai": 7,
+      "rejection_reasons_list": [
+        "• Fotograf Rino Gropuzzo: “Postali smo veliki puritanci, nevjerojatno je → Побут інших міст (Локальна фотовиставка у Загребі) | Сутності: Rino Gropuzzo, Zagreb, Oktogon, fotografija",
+        "• Web stranica uz dvije godine hostinga, e-pošte i održavanja bez plaćan → Реклама (Промо-акція розробки сайтів у Задарі) | Сутності: Tvornica bitova, Zadar, web stranica, 1080 eura",
+        "• U Zagrebu nožem ubijen 38-godišnji Nepalac, uhićena njegova dva sunaro → Вже публікувалось (Вбивство у Загребі вже згадувалося в історії) | Сутності: Zagreb, Savska cesta, Nepalac, Trnje",
+        "• S dva promila u krvi i bez dozvole autom udario u stup. Završio je u z → Побут інших міст (ДТП у Затоні біля Шибеника) | Сутності: Zaton, Šibenik, поліція, ДТП",
+        "• Zamrzivači su se sami gasili, bolnica je zatvorila hitni prijam, a s r → Геоблок (Серія кібератак у країнах Європи) | Сутності: Europa, хакери, кібератаки, 16 napada",
+        "• Raste domaća potražnja za investicijskim zlatom: ‘Ovo je idealna prili → Не за тематикою (Аналітика та поради щодо купівлі золота) | Сутності: investicijsko zlato, Hrvatska, інвестиції, analitičari",
+        "• Ante Čavčić, zamjenik načelnika PU i dugogodišnji načelnik PP Drniš dj → Побут інших міст (Нагородження поліцейського з Дрниша у Поречі) | Сутності: Ante Čavčić, Drniš, Dani hrvatskog turizma, Poreč"
+      ],
+      "rejected_by_reason": {
+        "Побут інших міст": 3,
+        "Реклама": 1,
+        "Вже публікувалось": 1,
+        "Геоблок": 1,
+        "Не за тематикою": 1
+      },
+      "updates_marked": 0,
+      "already_rejected": 15,
+      "rejected_by_code_examples": [
+        "[тег RSS sport] Boksači Ares Diabolika na turniru “Sveti Krševan” bez poraza: Kolega svladao protivnika s više od 50",
+        "[тег RSS sport] Leona Rakvin peta u višeboju na Torpedo Cupu, četvero mladih plivača Jadere nastupilo na Kantridi",
+        "[sporta] Konjički klub Ana dobio prikolicu za konje",
+        "[URL /sport/] Timon Haugan vodeći na slalom u Gurglu, samo jedan od tri hrvatska predstavnika izborio drugu vožnju",
+        "[тег RSS nogomet] VIDEO Inter Miami  doživio težak poraz u doigravanju. Pogledajte kako je reagirao Leo Messi"
+      ]
+    },
+    "backlog": {
+      "total_size": 0,
+      "sources": {}
+    },
+    "published": {
+      "total": 1,
+      "ukraine_priority": 0,
+      "with_images": 1,
+      "text_only": 0,
+      "og_images_found": 0,
+      "sources": {
+        "Slobodna dalmacija": 1
+      }
+    },
+    "models_used": {
+      "gemini-3.6-flash": 1,
+      "gemini-3.5-flash-lite": 1
+    },
+    "models_by_task": {
+      "filter": "gemini-3.6-flash",
+      "translate": "gemini-3.5-flash-lite"
+    },
+    "model_attempts": [
+      {
+        "task": "filter",
+        "model": "gemini-3.6-flash",
+        "outcome": "ok"
+      },
+      {
+        "task": "translate",
+        "model": "gemini-3.5-flash-lite",
+        "outcome": "ok"
+      }
+    ],
+    "exhausted_models": [],
+    "demoted_models": [
+      "filter: gemini-3-flash-preview",
+      "translate: gemini-3.8-flash"
+    ],
+    "translate_budget_deferred": [
+      "gemini-3.6-flash"
+    ],
+    "gemini_region_blocked": false,
+    "gemini_unavailable": false,
+    "errors_count": 0,
+    "gemini_retries": 0
   }
 ]
