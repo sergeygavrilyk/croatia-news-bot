@@ -1,113 +1,5 @@
 [
   {
-    "timestamp": "2026-11-12 20:01:13",
-    "execution_time": 157.1,
-    "funnel": {
-      "scraped_total": 35,
-      "scraped_by_source": {
-        "023": 10,
-        "Slobodna dalmacija": 15,
-        "Zadarski list": 10
-      },
-      "already_seen": 14,
-      "rejected_by_keywords": 6,
-      "rejected_by_rule": {
-        "тег RSS lifestyle": 5,
-        "тег RSS nogomet": 1
-      },
-      "unclassified_by_ai": 0,
-      "duplicates_removed_by_ai": 16,
-      "rejection_reasons_list": [
-        "• FOTO Hrvatski boćari i boćarice nakon drugog dana SP-a osigurali tri o → Спорт (Світовий чемпіонат з бочче) | Сутності: Hrvatski boćari, Rijeka, Markica Dodig",
-        "• Ana Perišić: ‘Pomažemo maltretiranim osobama da nanovo prepoznaju vlas → Побут інших міст (Лекція у Дубровнику) | Сутності: Ana Perišić, Dubrovnik, Split",
-        "• ADHD, AI i “Vlak kroz mozak”: Nova kampanja za podizanje svijesti o ne → Геоблок (Словенський документальний фільм) | Сутності: ADHD, Slovenija, Digital Da Vincis",
-        "• ZG Skupština: Tomašević će u roku od 30 dana podnijeti izvješće o smrt → Вже публікувалось (Реакція міської влади Загреба на смерть у лікарні) | Сутності: Tomislav Tomašević, Zagreb, Kristijan Josip Periš",
-        "• Potpisan ugovor s izvođačem radova na dogradnji luke Prigradica → Побут інших міст (Будівництво порту в громаді Блато) | Сутності: luka Prigradica, Blato, Branko Bačić",
-        "• U dubini jame na Predolcu otkrivene vrste životinja za koje se nije zn → Побут інших міст (Відкриття нових видів тварин у Метковичі) | Сутності: Metković, Predolac, Zrinka Korljan",
-        "• Na tečaju Junior spasilac sudjelovalo 11 učenika crikveničkih osnovnih → Побут інших міст (Курси рятувальників у Цриквениці) | Сутності: Crikvenica, Crveni križ, Junior-spasilac",
-        "• VIDEO Radeta objavio novi video iz zadarske Gradske vijećnice: ‘Ljudi  → Дубль (Подія з Радетою у мерії Задара) | Сутності: Daniel Radeta, Zadar, Gradska vijećnica",
-        "• PGS: Usvojen je naš prijedlog o naknadi troškova prijevoza branitelja  → Побут інших міст (Транспортні пільги для ветеранів у Рієці) | Сутності: PGS, Primorsko-goranska županija, Gorski kotar",
-        "• Film Dom tehnike u petak u MO Kozala → Побут інших міст (Кінопоказ у Рієці) | Сутності: Rijeka, Kozala, Dom tehnike",
-        "• Rekorder “Martinja” u PGŽ-u vozio s 1,57 promila → Побут інших міст (ДТП та п'яні водії у Рієці) | Сутності: Rijeka, Martinje, PU primorsko-goranska",
-        "• Opatijski proračun se smanjio za 3 milijuna i 845.000 eura: Klub Neve  → Побут інших міст (Політичні зміни у міськраді Опатії) | Сутності: Opatija, Kristian Tončić, Neva Slani",
-        "• U Rijeci teško ozlijeđena pješakinja. Na pješakom prijelazu ju oborilo → Побут інших міст (ДТП з пішоходом у Рієці) | Сутності: Rijeka, Vukovarska ulica, KBC Rijeka",
-        "• Baterije sve zanimljivije poduzećima: omogućuju niže troškove energije → Світовий шум (Загальні поради щодо енергоефективності бізнесу) | Сутності: solarni paneli, baterije, električna energija",
-        "• “ISPOD RADARA” Predstavljeni knjiga i istoimeni serijal koji govore o  → Побут інших міст (Презентація книги у Рієці) | Сутності: Rijeka, Mihovil Pirnat, Ispod radara",
-        "• U petak počinje cijepljenje protiv gripe, treba se javiti svom liječni → Побут інших міст (Вакцинація від грипу в Рієці) | Сутності: Rijeka, NZZJZ PGŽ, cijepljenje"
-      ],
-      "rejected_by_reason": {
-        "Спорт": 1,
-        "Побут інших міст": 11,
-        "Геоблок": 1,
-        "Вже публікувалось": 1,
-        "Дубль": 1,
-        "Світовий шум": 1
-      },
-      "updates_marked": 2,
-      "already_rejected": 9,
-      "rejected_by_code_examples": [
-        "[тег RSS lifestyle] Pileća prsa ili bataci i zabatci: dijetetičarka uspoređuje kalorije, vitamine i pripremu",
-        "[тег RSS lifestyle] Rublje se može sušiti vani i zimi: smrznuta odjeća gubi vlagu ako je zrak suh i puše vjetar",
-        "[тег RSS lifestyle] Izbjeljivač nije za svaku površinu, a s nekim sredstvima za čišćenje stvara otrovne plinove",
-        "[тег RSS lifestyle] Prhki keksi s orasima i bademima: sat vremena u hladnjaku i oko deset minuta u pećnici",
-        "[тег RSS lifestyle] Kinder Bueno kocke s hrskavim kadaifom, namazom od lješnjaka i kremom od vanilije",
-        "[тег RSS nogomet] Turci s novim izbornikom poveli protiv Belgije. Na kraju su ostali bez svega"
-      ]
-    },
-    "backlog": {
-      "total_size": 8,
-      "sources": {
-        "Slobodna dalmacija": 4,
-        "Zadarski list": 4
-      }
-    },
-    "published": {
-      "total": 3,
-      "ukraine_priority": 0,
-      "with_images": 3,
-      "text_only": 0,
-      "og_images_found": 0,
-      "sources": {
-        "Slobodna dalmacija": 1,
-        "Zadarski list": 2
-      }
-    },
-    "models_used": {
-      "gemini-3-flash-preview": 1,
-      "gemini-3.5-flash-lite": 1
-    },
-    "models_by_task": {
-      "filter": "gemini-3-flash-preview",
-      "translate": "gemini-3.5-flash-lite"
-    },
-    "model_attempts": [
-      {
-        "task": "filter",
-        "model": "gemini-3-flash-preview",
-        "outcome": "ok"
-      },
-      {
-        "task": "translate",
-        "model": "gemini-3.8-flash",
-        "outcome": "unavailable"
-      },
-      {
-        "task": "translate",
-        "model": "gemini-3.5-flash-lite",
-        "outcome": "ok"
-      }
-    ],
-    "exhausted_models": [],
-    "demoted_models": [],
-    "translate_budget_deferred": [
-      "gemini-3.6-flash"
-    ],
-    "gemini_region_blocked": false,
-    "gemini_unavailable": false,
-    "errors_count": 0,
-    "gemini_retries": 1
-  },
-  {
     "timestamp": "2026-11-13 08:01:15",
     "execution_time": 221.4,
     "funnel": {
@@ -10034,5 +9926,109 @@
     "gemini_unavailable": false,
     "errors_count": 0,
     "gemini_retries": 1
+  },
+  {
+    "timestamp": "2026-11-22 08:01:10",
+    "execution_time": 272.6,
+    "funnel": {
+      "scraped_total": 35,
+      "scraped_by_source": {
+        "023": 10,
+        "Slobodna dalmacija": 15,
+        "Zadarski list": 10
+      },
+      "already_seen": 10,
+      "rejected_by_keywords": 7,
+      "rejected_by_rule": {
+        "тег RSS sport": 1,
+        "sporta": 1,
+        "тег RSS nogomet": 1,
+        "тег RSS košarka": 1,
+        "URL /sport/": 3
+      },
+      "unclassified_by_ai": 0,
+      "duplicates_removed_by_ai": 10,
+      "rejection_reasons_list": [
+        "• Trump se opet pohvalio sjajnim odnosima s Putinom: “Moj prijatelj” → Геоблок (Заяви Трампа про Путіна) | Сутності: Donald Trump, Vladimir Putin, Washington, Truth Social",
+        "• Novi prijedlog završnog dokumenta ne spominje izričito fosilna goriva → Світовий шум (Кліматична конференція в Туреччині) | Сутності: COP31, Antalija, UN, fosilna goriva",
+        "• Ove godine prosinac na 023.hr donosi 24 iznenađenja: Otvaramo prvi adv → Реклама (Промо-акція мобільного додатку) | Сутності: 023.hr, adventski kalendar, prosinac",
+        "• Ante Mrgudić: ‘Svi sve znaju, a inspekcija dođe u devetom mjesecu‘ → Не за тематикою (Обговорення оренди житла) | Сутності: Ante Mrgudić, nekomercijalni smještaj, inspekcija",
+        "• Plavi svijet Branka Šuljića: Ugrožena srdela i dalje dominira → Не за тематикою (Статистика рибальства) | Сутності: Branko Šuljić, Ministarstvo poljoprivrede, srdela",
+        "• Otpornost na antibiotike mogla bi u idućih 25 godina odnijeti 39 milij → Світовий шум (Попередження ВООЗ про антибіотики) | Сутності: WHO, Jean Pierre Nyemazi, antibiotici",
+        "• Dubrovački gradonačelnik ide korak dalje: evo što će u Saboru zatražit → Побут інших міст (Ініціатива мера Дубровника) | Сутності: Mato Franković, Dubrovnik, Hrvatski sabor",
+        "• Tisak, radio i televizija najvažniji izvor vijesti za samo 15 posto lj → Не за тематикою (Дослідження медіаспоживання) | Сутності: AEM, Generacija Z, news portali",
+        "• Sutra će gotovo svi letovi u Belgiji biti otkazani, traje nacionalni š → Геоблок (Страйк у Бельгії) | Сутності: Bruxelles, Belgija, Skeyes, Bart De Wever",
+        "• Jugo i grmljavina danas, a od večeri sjeverozapadnjak i pad temperatur → Вже публікувалось (Прогноз погоди у Задарі) | Сутності: Zadar, jugo, sjeverozapadnjak"
+      ],
+      "rejected_by_reason": {
+        "Геоблок": 2,
+        "Світовий шум": 2,
+        "Реклама": 1,
+        "Не за тематикою": 3,
+        "Побут інших міст": 1,
+        "Вже публікувалось": 1
+      },
+      "updates_marked": 0,
+      "already_rejected": 9,
+      "rejected_by_code_examples": [
+        "[тег RSS sport] Leona Rakvin peta u višeboju na Torpedo Cupu, četvero mladih plivača Jadere nastupilo na Kantridi",
+        "[sporta] Ekipa Elite - priča koja traje 30 godina: Ponosni smo na svaki uspjeh, ali još više na ono što smo i",
+        "[тег RSS nogomet] Zabio je utješni pogodak za Opatiju pa poručio: “Utakmicu smo izgubili zbog nedostatka želje i agres",
+        "[тег RSS košarka] VIDEO Mihal Bridges tricom sa sirenom odveo prvake do pobjede. Herro i Wembanyama ubacili 50 poena",
+        "[URL /sport/] Odbojkaši Rijeke nakon dvosatne drame u Varaždinu izborili četvrtfinale Kupa",
+        "[URL /sport/] Kuglačice Mlake i Rijeke ostvarile pobjede u prvim susretima četvrtfinala Lige prvakinja",
+        "[URL /sport/] Trener futsalske momčadi Rijeke nakon novog poraza Bijelih: “Radimo sve naopako…”"
+      ]
+    },
+    "backlog": {
+      "total_size": 0,
+      "sources": {}
+    },
+    "published": {
+      "total": 2,
+      "ukraine_priority": 0,
+      "with_images": 0,
+      "text_only": 2,
+      "og_images_found": 0,
+      "sources": {
+        "023": 2
+      }
+    },
+    "models_used": {
+      "gemini-3.6-flash": 2
+    },
+    "models_by_task": {
+      "filter": "gemini-3.6-flash",
+      "translate": "gemini-3.6-flash"
+    },
+    "model_attempts": [
+      {
+        "task": "filter",
+        "model": "gemini-3-flash-preview",
+        "outcome": "unavailable"
+      },
+      {
+        "task": "filter",
+        "model": "gemini-3.6-flash",
+        "outcome": "ok"
+      },
+      {
+        "task": "translate",
+        "model": "gemini-3.8-flash",
+        "outcome": "unavailable"
+      },
+      {
+        "task": "translate",
+        "model": "gemini-3.6-flash",
+        "outcome": "ok"
+      }
+    ],
+    "exhausted_models": [],
+    "demoted_models": [],
+    "translate_budget_deferred": [],
+    "gemini_region_blocked": false,
+    "gemini_unavailable": false,
+    "errors_count": 0,
+    "gemini_retries": 2
   }
 ]
