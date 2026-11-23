@@ -1,104 +1,5 @@
 [
   {
-    "timestamp": "2026-11-13 20:01:34",
-    "execution_time": 132.4,
-    "funnel": {
-      "scraped_total": 35,
-      "scraped_by_source": {
-        "023": 10,
-        "Slobodna dalmacija": 15,
-        "Zadarski list": 10
-      },
-      "already_seen": 13,
-      "rejected_by_keywords": 5,
-      "rejected_by_rule": {
-        "тег RSS lifestyle": 4,
-        "sportu": 1
-      },
-      "unclassified_by_ai": 0,
-      "duplicates_removed_by_ai": 11,
-      "rejection_reasons_list": [
-        "• Čelnici EU o bizarnim ruskim zahtjevima: Europska sigurnosna arhitektu → Дубль (Дублює новину про формат переговорів щодо України) | Сутності: ЄС, Україна, Росія, Фрідріх Мерц",
-        "• Costa: Bitno je da Europa govori jednim glasom → Дубль (Дублює новину про представництво Європи на переговорах) | Сутності: Антоніо Коста, ЄС, Україна, Дональд Трамп",
-        "• Koje autohtone biljke posaditi u dubrovačkom đardinu? Evo što kaže hor → Побут інших міст (Поради щодо озеленення садів у Дубровнику) | Сутності: Дубровник, автохтонні рослини, садівництво",
-        "• U Trsatskom svetištu častili relikvije sv. Tripuna. Škrinja zastala u  → Побут інших міст (Релігійна подія у Рієці) | Сутності: Рієка, Котор, св. Трипун, Трсат",
-        "• Fra Ma Fu festival: Osam nagrada za izvrsnost u reportažnom novinarstv → Побут інших міст (Локальний фестиваль журналістики у Загребі) | Сутності: Fra Ma Fu festival, Загреб, журналістика",
-        "• Iskustva Dubrovkinja iz Društva multiple skleroze: ‘Zdravstveno stanje → Побут інших міст (Проблеми пацієнтів у Дубровнику) | Сутності: Дубровник, розсіяний склероз, HZZO",
-        "• Zeleni Kastav u ponedjeljak, sudjeluje desetak izlagača s bogatom ponu → Побут інших міст (Локальний ярмарок у місті Кастав) | Сутності: Кастав, Зелений Кастав, ярмарок",
-        "• Plenković o slučaju Periš: Došlo je do “evolucije” stajališta gradskih → Вже публікувалось (Коментар прем'єра щодо вже відомого інциденту в лікарні) | Сутності: Андрей Пленкович, клініка Светий Іван, Крістіан Йосип Періш",
-        "• Slovenske nagrade znanstvenicama iz Cresa Zorani Medarić i Kristini Se → Побут інших міст (Нагородження вчених із Цреса в Словенії) | Сутності: Црес, Словенія, Зорана Медарич, Крістіна Сепчич",
-        "• Psihijatrijsko društvo: Smrt pacijenta uzdrmala povjerenje u psihijatr → Вже публікувалось (Реакція професійної спільноти на смерть пацієнта) | Сутності: Хорватське психіатричне товариство, клініка Светий Іван, Крістіан Йосип Періш",
-        "• Kekin traži preispitivanje psihijatrijske skrbi u Hrvatskoj: “Zabrinja → Вже публікувалось (Політична реакція на інцидент у психіатричній клініці) | Сутності: Івана Кекін, клініка Светий Іван, Ірена Хрстич"
-      ],
-      "rejected_by_reason": {
-        "Дубль": 2,
-        "Побут інших міст": 6,
-        "Вже публікувалось": 3
-      },
-      "updates_marked": 1,
-      "already_rejected": 8,
-      "rejected_by_code_examples": [
-        "[тег RSS lifestyle] Adventski vijenci 2026.: sušene hortenzije, bordo nijanse, tanke svijeće i aranžmani u zdjelama",
-        "[тег RSS lifestyle] Pet ulja koja dobro podnose prženje i zašto suncokretovo nije među njima",
-        "[тег RSS lifestyle] Rolada od bukovače, žutog kruha i jablanovače s tvrdo kuhanim jajima u sredini",
-        "[тег RSS lifestyle] Suha koža zimi: dermatologinja savjetuje kraće tuširanje i kremu u roku od tri minute",
-        "[sportu] Donesena odluka o dodjeli financijskih potpora za razvoj turističkog proizvoda - naglasak na sportu"
-      ]
-    },
-    "backlog": {
-      "total_size": 3,
-      "sources": {
-        "Slobodna dalmacija": 2,
-        "023": 1
-      }
-    },
-    "published": {
-      "total": 3,
-      "ukraine_priority": 1,
-      "with_images": 3,
-      "text_only": 0,
-      "og_images_found": 2,
-      "sources": {
-        "Zadarski list": 1,
-        "023": 2
-      }
-    },
-    "models_used": {
-      "gemini-3-flash-preview": 1,
-      "gemini-3.5-flash-lite": 1
-    },
-    "models_by_task": {
-      "filter": "gemini-3-flash-preview",
-      "translate": "gemini-3.5-flash-lite"
-    },
-    "model_attempts": [
-      {
-        "task": "filter",
-        "model": "gemini-3-flash-preview",
-        "outcome": "ok"
-      },
-      {
-        "task": "translate",
-        "model": "gemini-3.8-flash",
-        "outcome": "unavailable"
-      },
-      {
-        "task": "translate",
-        "model": "gemini-3.5-flash-lite",
-        "outcome": "ok"
-      }
-    ],
-    "exhausted_models": [],
-    "demoted_models": [],
-    "translate_budget_deferred": [
-      "gemini-3.6-flash"
-    ],
-    "gemini_region_blocked": false,
-    "gemini_unavailable": false,
-    "errors_count": 0,
-    "gemini_retries": 1
-  },
-  {
     "timestamp": "2026-11-14 08:01:21",
     "execution_time": 329.5,
     "funnel": {
@@ -9880,5 +9781,111 @@
     "gemini_unavailable": false,
     "errors_count": 0,
     "gemini_retries": 1
+  },
+  {
+    "timestamp": "2026-11-23 08:01:17",
+    "execution_time": 256.1,
+    "funnel": {
+      "scraped_total": 35,
+      "scraped_by_source": {
+        "023": 10,
+        "Slobodna dalmacija": 15,
+        "Zadarski list": 10
+      },
+      "already_seen": 5,
+      "rejected_by_keywords": 4,
+      "rejected_by_rule": {
+        "sporta": 1,
+        "тег RSS sport": 1,
+        "тег RSS lifestyle": 1,
+        "URL /sport/": 1
+      },
+      "unclassified_by_ai": 0,
+      "duplicates_removed_by_ai": 15,
+      "rejection_reasons_list": [
+        "• Nekadašnji učenici CZKUOIK-a proslavili 35. godišnjicu mature → Побут інших міст (Шкільна зустріч у Рієці) | Сутності: CZKUOIK, Rijeka, proslava mature, Daisy Žgaljić",
+        "• ACI predstavio monografiju ACI HORIZONS → Побут інших міст (Презентація монографії в Поречі) | Сутності: ACI HORIZONS, Poreč, ACI, nautički turizam",
+        "• Nova pravila za kredite: banka vam više ne smije sama podići minus, a  → Вже публікувалось (Закон про кредити вже публікувався) | Сутності: Zakon o potrošačkim kreditima, CCD2, Hrvatska, Ministarstvo financija",
+        "• Sportski dan za djecu s oštećenjem sluha. Deflimpijci uljepšali nedjel → Спорт (Спортивний день у Рієці) | Сутності: Sportski dan, Dvorana mladosti, Trsat, MRK Zamet",
+        "• Branimir Arapović: Odvoz otpada s Pelješca nas financijski iscrpljuje, → Побут інших міст (Проблема вивозу сміття в Стоні) | Сутності: Komunalno društvo Ston, Pelješac, Ston, Branimir Arapović",
+        "• Siniša Lencović na čelu Gospodarske zone Čavle: ‘Želim pomoći razvoju  → Побут інших міст (Призначення директора в Чавле) | Сутності: Gospodarska zona Čavle, Siniša Lencović, Čavle",
+        "• Narodna čitaonica poziva na posljednji plesnjak ove godine u Kostreni → Побут інших міст (Танцювальний вечір у Кострені) | Сутності: Narodna čitaonica, Kostrena, plesnjak, LP Rock",
+        "• U Grižanama imaju lovca koji će uskoro proslaviti 100. rođendan, a još → Побут інших міст (Ювілей мисливця в Гріжане) | Сутності: LU Srndać, Grižane, Vinodol, Željko Marušić",
+        "• Zima sprema desant na Hrvatsku!? Šolić progovorio o velikom iznenađenj → Вже публікувалось (Прогноз похолодання вже публікувався) | Сутності: Šolić, prognoza, zima, Hrvatska",
+        "• Na tri otočne lokacije niču sunčane elektrane: Jedna će imati čak 20 t → Побут інших міст (Сонячні станції на Цресі) | Сутності: HEP, Cres, Unije, Ustrine",
+        "• Crkvu u Brodu na Kupi podigao je Petar Zrinski prije više od 350 godin → Побут інших міст (Реставрація дзвіниці у Броді на Купі) | Сутності: Brod na Kupi, Petar Zrinski, crkva sv. Marije Magdalene",
+        "• Franković: \"Kad smatram da nešto treba mijenjati, kažem to otvoreno. A → Вже публікувалось (Коментар мера Дубровника щодо наркотиків) | Сутності: Mato Franković, Dubrovnik, ODO Dubrovnik, kokain",
+        "• Čabarski darivatelji krvi primjer su cijeloj zajednici → Побут інших міст (Захід донорів у Чабарі) | Сутності: Crveni križ Čabar, Čabar, darivatelji krvi",
+        "• Kad publika postane dio predstave: Riječki festival zaključile izvedbe → Побут інших міст (Театральний фестиваль у Рієці) | Сутності: TranziT, Rijeka, kazališni festival",
+        "• Na Akademiji dramske umjetnosti organiziraju večer posvećenu radu reda → Побут інших міст (Вечір пам'яті в Загребі) | Сутності: Akademija dramske umjetnosti, Zagreb, Branko Ivanda"
+      ],
+      "rejected_by_reason": {
+        "Побут інших міст": 11,
+        "Вже публікувалось": 3,
+        "Спорт": 1
+      },
+      "updates_marked": 1,
+      "already_rejected": 4,
+      "rejected_by_code_examples": [
+        "[sporta] Iz Neviđana na svjetsku scenu; Pete Radovich dobio prestižnu titulu ambasadora hrvatskog turizma",
+        "[тег RSS sport] Prva medalja s državnog prvenstva u povijesti kluba: Lea Šimurina i Katja Pavlić osvojile srebro",
+        "[тег RSS lifestyle] Kelj umjesto kuhanja u vodi pirjajte na maslacu: recept s češnjakom, čilijem i pistacijama",
+        "[URL /sport/] Dubrovčani i Cavtaćani pomeli konkurenciju na Prvenstvu Hrvatske u radio-upravljanim jedrilicama kla"
+      ]
+    },
+    "backlog": {
+      "total_size": 3,
+      "sources": {
+        "023": 1,
+        "Slobodna dalmacija": 2
+      }
+    },
+    "published": {
+      "total": 3,
+      "ukraine_priority": 0,
+      "with_images": 1,
+      "text_only": 2,
+      "og_images_found": 0,
+      "sources": {
+        "023": 2,
+        "Slobodna dalmacija": 1
+      }
+    },
+    "models_used": {
+      "gemini-3.6-flash": 2
+    },
+    "models_by_task": {
+      "filter": "gemini-3.6-flash",
+      "translate": "gemini-3.6-flash"
+    },
+    "model_attempts": [
+      {
+        "task": "filter",
+        "model": "gemini-3-flash-preview",
+        "outcome": "unavailable"
+      },
+      {
+        "task": "filter",
+        "model": "gemini-3.6-flash",
+        "outcome": "ok"
+      },
+      {
+        "task": "translate",
+        "model": "gemini-3.8-flash",
+        "outcome": "unavailable"
+      },
+      {
+        "task": "translate",
+        "model": "gemini-3.6-flash",
+        "outcome": "ok"
+      }
+    ],
+    "exhausted_models": [],
+    "demoted_models": [],
+    "translate_budget_deferred": [],
+    "gemini_region_blocked": false,
+    "gemini_unavailable": false,
+    "errors_count": 0,
+    "gemini_retries": 2
   }
 ]
