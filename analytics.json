@@ -1,97 +1,5 @@
 [
   {
-    "timestamp": "2026-11-14 09:01:16",
-    "execution_time": 264.2,
-    "funnel": {
-      "scraped_total": 35,
-      "scraped_by_source": {
-        "023": 10,
-        "Slobodna dalmacija": 15,
-        "Zadarski list": 10
-      },
-      "already_seen": 21,
-      "rejected_by_keywords": 3,
-      "rejected_by_rule": {
-        "sport": 1,
-        "URL /sport/": 1,
-        "тег RSS košarka": 1
-      },
-      "unclassified_by_ai": 0,
-      "duplicates_removed_by_ai": 5,
-      "rejection_reasons_list": [
-        "• Mađarske vlasti našle čak 17 milijuna eura kod bivšeg Orbanovog minist → Геоблок (Угорщина) | Сутності: Miklós Seszták, Péter Magyar, Viktor Orbán, Budimpešta",
-        "• Još Gori u subotu u Azimutu: Stojković i braća Sinkauz donose ‘Raj na  → Побут інших міст (Шибеник) | Сутності: Još Gori, Aleksandar Stojković, NKC Azimut, Šibenik",
-        "• VIDEO U novoj Špici s Macanom gostuje Ranko Rajović: “Roditelji više n → Світовий шум | Сутності: Ranko Rajović, Krešimir Macan, Špica s Macanom",
-        "• Učenici Turističko-ugostiteljske škole Šibenik županijski prvaci u fut → Спорт (Шибеник) | Сутності: Turističko-ugostiteljska škola Šibenik, Šibenik, Stjepan Dučkić",
-        "• Dođite nešto lijepo pojesti kod Maje i Mirka Andrića, pomoći ćete plem → Побут інших міст (Орашац) | Сутності: Konoba Veranda 2.0, Maja Andrić, Mirko Andrić, Orašać"
-      ],
-      "rejected_by_reason": {
-        "Геоблок": 1,
-        "Побут інших міст": 2,
-        "Світовий шум": 1,
-        "Спорт": 1
-      },
-      "updates_marked": 2,
-      "already_rejected": 12,
-      "rejected_by_code_examples": [
-        "[sport] Arena Sport se povlači iz Hrvatske: Liga prvaka ostaje do 2027., Premier liga do 2028., a nasljednic",
-        "[URL /sport/] Elina Svitolina pobijedila Arinu Sabaljenko i plasirala se u polufinale turnira u Indian Wellsu",
-        "[тег RSS košarka] VIDEO Ivica Zubac odigrao je sjajnu partiju u pobjedi Pacersa nad aktualnim prvacima"
-      ]
-    },
-    "backlog": {
-      "total_size": 2,
-      "sources": {
-        "Zadarski list": 1,
-        "Slobodna dalmacija": 1
-      }
-    },
-    "published": {
-      "total": 3,
-      "ukraine_priority": 0,
-      "with_images": 3,
-      "text_only": 0,
-      "og_images_found": 2,
-      "sources": {
-        "023": 2,
-        "Zadarski list": 1
-      }
-    },
-    "models_used": {
-      "gemini-3.6-flash": 2
-    },
-    "models_by_task": {
-      "filter": "gemini-3.6-flash",
-      "translate": "gemini-3.6-flash"
-    },
-    "model_attempts": [
-      {
-        "task": "filter",
-        "model": "gemini-3-flash-preview",
-        "outcome": "unavailable"
-      },
-      {
-        "task": "filter",
-        "model": "gemini-3.6-flash",
-        "outcome": "ok"
-      },
-      {
-        "task": "translate",
-        "model": "gemini-3.6-flash",
-        "outcome": "ok"
-      }
-    ],
-    "exhausted_models": [],
-    "demoted_models": [
-      "translate: gemini-3.8-flash"
-    ],
-    "translate_budget_deferred": [],
-    "gemini_region_blocked": false,
-    "gemini_unavailable": false,
-    "errors_count": 0,
-    "gemini_retries": 1
-  },
-  {
     "timestamp": "2026-11-14 10:01:15",
     "execution_time": 206.5,
     "funnel": {
@@ -9842,6 +9750,98 @@
         "Zadarski list": 1,
         "023": 1,
         "Slobodna dalmacija": 1
+      }
+    },
+    "models_used": {
+      "gemini-3.6-flash": 2
+    },
+    "models_by_task": {
+      "filter": "gemini-3.6-flash",
+      "translate": "gemini-3.6-flash"
+    },
+    "model_attempts": [
+      {
+        "task": "filter",
+        "model": "gemini-3.6-flash",
+        "outcome": "ok"
+      },
+      {
+        "task": "translate",
+        "model": "gemini-3.6-flash",
+        "outcome": "ok"
+      }
+    ],
+    "exhausted_models": [],
+    "demoted_models": [
+      "filter: gemini-3-flash-preview",
+      "translate: gemini-3.8-flash"
+    ],
+    "translate_budget_deferred": [],
+    "gemini_region_blocked": false,
+    "gemini_unavailable": false,
+    "errors_count": 0,
+    "gemini_retries": 0
+  },
+  {
+    "timestamp": "2026-11-23 10:01:27",
+    "execution_time": 153.8,
+    "funnel": {
+      "scraped_total": 35,
+      "scraped_by_source": {
+        "023": 10,
+        "Slobodna dalmacija": 15,
+        "Zadarski list": 10
+      },
+      "already_seen": 15,
+      "rejected_by_keywords": 4,
+      "rejected_by_rule": {
+        "sporta": 1,
+        "тег RSS sport": 1,
+        "URL /sport/": 1,
+        "promo": 1
+      },
+      "unclassified_by_ai": 0,
+      "duplicates_removed_by_ai": 7,
+      "rejection_reasons_list": [
+        "• Kuću od 250.000 eura moraju srušiti zbog propusta u gradnji, Trojica m → Побут інших міст (Доні Кралевець) | Сутності: Donji Kraljevec, Međimurje, 250.000 eura",
+        "• ‘Pretenzije na Prevlaku imaju jedino SPC, Udruženje ratnika 1991/2, Mi → Вже публікувалось (Суперечка щодо Превлаки) | Сутності: Ervin Ibrahimović, Miodrag Vlahović, Prevlaka",
+        "• ‘Cjelov od rozolina‘: Sutra nova Lerova premijera u Lazaretima → Побут інших міст (Театр у Дубровнику) | Сутності: Studentski teatar Lero, Davor Mojaš, Dubrovnik",
+        "• U Titove ‘Havaje‘ dolazile su svjetske face, a nakon stotinu godina do → Побут інших міст (Купарі біля Дубровника) | Сутності: Kupari, Dubrovnik, Tito",
+        "• Novi detalji krvavog napada na Pagu; 24-godišnji Indijac uboden je nož → Вже публікувалось (Інцидент на Пагу) | Сутності: Pag, Opća bolnica Zadar, Indija",
+        "• Incident u kući na Pagu: mladi državljanin Indije (24) teško ozlijeđen → Дубль (Дублікат id 11) | Сутності: Pag, Opća bolnica Zadar, PU zadarska",
+        "• Ulice europskih gradova gore zbog - stanova! A EU po zlu spominje Dubr → Геоблок (Протести в Європі) | Сутності: Dubrovnik, Split, EU"
+      ],
+      "rejected_by_reason": {
+        "Побут інших міст": 3,
+        "Вже публікувалось": 2,
+        "Дубль": 1,
+        "Геоблок": 1
+      },
+      "updates_marked": 0,
+      "already_rejected": 11,
+      "rejected_by_code_examples": [
+        "[sporta] Iz Neviđana na svjetsku scenu; Pete Radovich dobio prestižnu titulu ambasadora hrvatskog turizma",
+        "[тег RSS sport] Prva medalja s državnog prvenstva u povijesti kluba: Lea Šimurina i Katja Pavlić osvojile srebro",
+        "[URL /sport/] Dubrovčani i Cavtaćani pomeli konkurenciju na Prvenstvu Hrvatske u radio-upravljanim jedrilicama kla",
+        "[promo] Novi list i INA ponovno nagrađuju najbolje ekoprojekte vrtića i škola. Prijave su otvorene do 30. st"
+      ]
+    },
+    "backlog": {
+      "total_size": 5,
+      "sources": {
+        "023": 4,
+        "Zadarski list": 1
+      }
+    },
+    "published": {
+      "total": 3,
+      "ukraine_priority": 1,
+      "with_images": 2,
+      "text_only": 1,
+      "og_images_found": 0,
+      "sources": {
+        "Zadarski list": 2,
+        "023": 1
       }
     },
     "models_used": {
