@@ -1,111 +1,5 @@
 [
   {
-    "timestamp": "2026-11-14 08:01:21",
-    "execution_time": 329.5,
-    "funnel": {
-      "scraped_total": 35,
-      "scraped_by_source": {
-        "023": 10,
-        "Slobodna dalmacija": 15,
-        "Zadarski list": 10
-      },
-      "already_seen": 9,
-      "rejected_by_keywords": 6,
-      "rejected_by_rule": {
-        "sport": 1,
-        "тег RSS lifestyle": 1,
-        "тег RSS košarka": 2,
-        "тег RSS nogomet": 1,
-        "URL /sport/": 1
-      },
-      "unclassified_by_ai": 0,
-      "duplicates_removed_by_ai": 12,
-      "rejection_reasons_list": [
-        "• Policija u stanu pronašla mrtvu ženu, sumnja se na ubojstvo → Побут інших міст (Вінковці) | Сутності: Vinkovci, Stari Mikanovci, PU vukovarsko-srijemska",
-        "• Libertas Riders i ove godine u karavani do grada heroja: ‘Ne smetaju n → Побут інших міст (Дубровник) | Сутності: MK Libertas Riders, Dubrovnik, Vukovar",
-        "• Voljen Grbac nagrađen na Festivalu turističkog filma u Solinu → Побут інших міст (Солин) | Сутності: Voljen Grbac, Solin, Fez, ITF CRO",
-        "• Crvenkapica Una iz prometne šume svratila do svoje škole u Gružu → Побут інших міст (Дубровник) | Сутності: Denis Pavela, OŠ Ivana Gundulića, Gruž, Dubrovnik",
-        "• Microsoft objavio da su sve usluge ponovno uspostavljene nakon globaln → Не за тематикою (Збій Microsoft) | Сутності: Microsoft, Teams, Outlook, Copilot",
-        "• Svi postojeći dubrovački iznajmljivači u sljedećih 10 godina mogu izgu → Побут інших міст (Дубровник) | Сутності: Dubrovnik, Nedjeljko Pinezić, otok Krk",
-        "• Rubio oštro o Haškom sudu, najavio da će ga razmontirati: “Prestanite  → Геоблок (США) | Сутності: Marco Rubio, ICC, Washington, SAD",
-        "• U Donjem Pazarištu poplava uzela maha, voda od sinoć ulazi u kuće → Побут інших міст (Донє Пазаріште) | Сутності: Donje Pazarište, Gospić, Tisovac, Lika",
-        "• Mještani Cavtata pred Europskim parlamentom ustali protiv resorta: ‘Tr → Побут інших міст (Цавтат) | Сутності: Cavtat, Europski parlament, uvala Prahivac",
-        "• Danas sunčano i hladno, već sutra ponovo kiša. Platak osvanuo u bijelo → Дубль (Прогноз погоди) | Сутності: DHMZ, Platak, Rijeka, Hrvatska",
-        "• Dubravka Šešelj i Jure Jovica predstavili izložbu „Naši likovni trenut → Побут інших міст (Плоче) | Сутності: Dubravka Šešelj, Jure Jovica, Ploče, Karla Šestan",
-        "• Svečano otvoren simpozij „Kulturna baština Župe dubrovačke“ → Побут інших міст (Жупа Дубровачка) | Сутності: Župa dubrovačka, Sheraton Dubrovnik Riviera, Srebreno"
-      ],
-      "rejected_by_reason": {
-        "Побут інших міст": 9,
-        "Не за тематикою": 1,
-        "Геоблок": 1,
-        "Дубль": 1
-      },
-      "updates_marked": 0,
-      "already_rejected": 4,
-      "rejected_by_code_examples": [
-        "[sport] Arena Sport se povlači iz Hrvatske: Liga prvaka ostaje do 2027., Premier liga do 2028., a nasljednic",
-        "[тег RSS lifestyle] Ručnici mirišu na vlagu i nakon pranja: kako ih očistiti octom i pranjem na višoj temperaturi",
-        "[тег RSS košarka] VIDEO Ivica Zubac odigrao je sjajnu partiju u pobjedi Pacersa nad aktualnim prvacima",
-        "[тег RSS košarka] Barcelona nadoknadila “minus 14” na ulazu u posljednju četvrtinu pa tricom u finišu srušila Panathin",
-        "[тег RSS nogomet] “Nesretni” Bilić postao je prvi izbornik hrvatske nogometne reprezentacije koji je doživio četiri uz",
-        "[URL /sport/] Elvir Husarić najavio “rušenje” – Luke Sutona i Torcide. Na Zametu se sprema nova golijada"
-      ]
-    },
-    "backlog": {
-      "total_size": 2,
-      "sources": {
-        "023": 1,
-        "Slobodna dalmacija": 1
-      }
-    },
-    "published": {
-      "total": 3,
-      "ukraine_priority": 0,
-      "with_images": 3,
-      "text_only": 0,
-      "og_images_found": 3,
-      "sources": {
-        "023": 3
-      }
-    },
-    "models_used": {
-      "gemini-3.6-flash": 2
-    },
-    "models_by_task": {
-      "filter": "gemini-3.6-flash",
-      "translate": "gemini-3.6-flash"
-    },
-    "model_attempts": [
-      {
-        "task": "filter",
-        "model": "gemini-3-flash-preview",
-        "outcome": "unavailable"
-      },
-      {
-        "task": "filter",
-        "model": "gemini-3.6-flash",
-        "outcome": "ok"
-      },
-      {
-        "task": "translate",
-        "model": "gemini-3.8-flash",
-        "outcome": "unavailable"
-      },
-      {
-        "task": "translate",
-        "model": "gemini-3.6-flash",
-        "outcome": "ok"
-      }
-    ],
-    "exhausted_models": [],
-    "demoted_models": [],
-    "translate_budget_deferred": [],
-    "gemini_region_blocked": false,
-    "gemini_unavailable": false,
-    "errors_count": 0,
-    "gemini_retries": 2
-  },
-  {
     "timestamp": "2026-11-14 09:01:16",
     "execution_time": 264.2,
     "funnel": {
@@ -9887,5 +9781,97 @@
     "gemini_unavailable": false,
     "errors_count": 0,
     "gemini_retries": 2
+  },
+  {
+    "timestamp": "2026-11-23 09:01:29",
+    "execution_time": 161.1,
+    "funnel": {
+      "scraped_total": 35,
+      "scraped_by_source": {
+        "023": 10,
+        "Slobodna dalmacija": 15,
+        "Zadarski list": 10
+      },
+      "already_seen": 12,
+      "rejected_by_keywords": 4,
+      "rejected_by_rule": {
+        "sporta": 1,
+        "тег RSS sport": 1,
+        "URL /sport/": 2
+      },
+      "unclassified_by_ai": 0,
+      "duplicates_removed_by_ai": 8,
+      "rejection_reasons_list": [
+        "• U Rijeci vozio 133 km/h na cesti gdje je ograničenje 60, drugi napuhao → Побут інших міст (Порушення ПДР у Рієці) | Сутності: Rijeka, Primorsko-goranska županija, 133 km/h, 2,07 promila",
+        "• Šesta humanitarna akcija ‘Osmijeh za osmijeh’ – za Lukasa Hasana → Побут інших міст (Благодійна акція в Дубровнику) | Сутності: Dubrovnik, Hotel Sheraton Dubrovnik Riviera, Udruga Sorriso, Lukas Hasan",
+        "• Riječani su ga zvali “naš Ante”: Sjećanje na skromnog kapucina koji je → Побут інших міст (Релігійні поминальні дні у Рієці) | Сутності: Rijeka, fra Ante Tomičić, crkva Gospe Lurdske, Žabica",
+        "• VIDEO Panika na koncertu u Manchesteru. Zbog ispuštanja nepoznatog pli → Геоблок (Інцидент на концерті у Великій Британії) | Сутності: Manchester, Velika Britanija, Don Toliver, Co-op Live Arena",
+        "• Crni petak može biti “opako crn” za novčanik. Ovo su trikovi kojima na → Світовий шум (Поради з шопінгу та маркетингові хитрощі) | Сутності: Crni petak, 27. studenog, trgovci",
+        "• Snijeg i jaka bura otežavaju promet. Na A1 i Paškom mostu mogu voziti  → Вже публікувалось (Обмеження руху через буру на А1) | Сутності: A1, Paški most, Sveti Rok, Posedarje, HAK",
+        "• Svjetska fotografska elita ponovno zaronila u riječko podmorje. Pogled → Побут інших міст (Захід підводної фотографії у Рієці) | Сутності: Rijeka, Kantrida, Ploče, podvodni fotografi",
+        "• Nova faza Brexita. Deset godina nakon povijesnog razlaza London i Brux → Геоблок (Саміт ЄС та Великої Британії) | Сутності: London, Bruxelles, Velika Britanija, EU"
+      ],
+      "rejected_by_reason": {
+        "Побут інших міст": 4,
+        "Геоблок": 2,
+        "Світовий шум": 1,
+        "Вже публікувалось": 1
+      },
+      "updates_marked": 0,
+      "already_rejected": 8,
+      "rejected_by_code_examples": [
+        "[sporta] Iz Neviđana na svjetsku scenu; Pete Radovich dobio prestižnu titulu ambasadora hrvatskog turizma",
+        "[тег RSS sport] Prva medalja s državnog prvenstva u povijesti kluba: Lea Šimurina i Katja Pavlić osvojile srebro",
+        "[URL /sport/] Dubrovčani i Cavtaćani pomeli konkurenciju na Prvenstvu Hrvatske u radio-upravljanim jedrilicama kla",
+        "[URL /sport/] Od dječaka sa slušnim pomagalom do europskog prvaka. Riječanin Nikola Zdrilić ispisuje povijest"
+      ]
+    },
+    "backlog": {
+      "total_size": 1,
+      "sources": {
+        "Zadarski list": 1
+      }
+    },
+    "published": {
+      "total": 3,
+      "ukraine_priority": 1,
+      "with_images": 2,
+      "text_only": 1,
+      "og_images_found": 0,
+      "sources": {
+        "Zadarski list": 1,
+        "023": 1,
+        "Slobodna dalmacija": 1
+      }
+    },
+    "models_used": {
+      "gemini-3.6-flash": 2
+    },
+    "models_by_task": {
+      "filter": "gemini-3.6-flash",
+      "translate": "gemini-3.6-flash"
+    },
+    "model_attempts": [
+      {
+        "task": "filter",
+        "model": "gemini-3.6-flash",
+        "outcome": "ok"
+      },
+      {
+        "task": "translate",
+        "model": "gemini-3.6-flash",
+        "outcome": "ok"
+      }
+    ],
+    "exhausted_models": [],
+    "demoted_models": [
+      "filter: gemini-3-flash-preview",
+      "translate: gemini-3.8-flash"
+    ],
+    "translate_budget_deferred": [],
+    "gemini_region_blocked": false,
+    "gemini_unavailable": false,
+    "errors_count": 0,
+    "gemini_retries": 0
   }
 ]
