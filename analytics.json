@@ -1,97 +1,5 @@
 [
   {
-    "timestamp": "2026-11-14 12:01:16",
-    "execution_time": 49.7,
-    "funnel": {
-      "scraped_total": 35,
-      "scraped_by_source": {
-        "023": 10,
-        "Slobodna dalmacija": 15,
-        "Zadarski list": 10
-      },
-      "already_seen": 24,
-      "rejected_by_keywords": 3,
-      "rejected_by_rule": {
-        "тег RSS sport": 1,
-        "sport": 1,
-        "тег RSS nogomet": 1
-      },
-      "unclassified_by_ai": 0,
-      "duplicates_removed_by_ai": 3,
-      "rejection_reasons_list": [
-        "• Erliću kupi naočale! Zadrani sasuli gradonačelniku lavinu komentara na → Вже публікувалось (Реакції та коментарі до конфлікту в міській раді) | Сутності: Šime Erlić, Daniel Radeta, Zadar, HDZ",
-        "• 8 minuta šutnje za Kristiana Josipa Periša: Na skupu u Zagrebu nije bi → Побут інших міст (Локальна акція пам'яті в Загребі) | Сутності: Kristian Josip Periš, Zagreb, Cvjetni trg, Klinika Sveti Ivan",
-        "• Ćorić: “Nema gubitnika i dobitnika, uz snažnu socijalnu komponentu otv → Вже публікувалось (Коментар міністра до вже представленого бюджету) | Сутності: Tomislav Ćorić, Vlada Hrvatske, proračun 2027"
-      ],
-      "rejected_by_reason": {
-        "Вже публікувалось": 2,
-        "Побут інших міст": 1
-      },
-      "updates_marked": 0,
-      "already_rejected": 14,
-      "rejected_by_code_examples": [
-        "[тег RSS sport] Zadar dočekuje Partizan uz sjećanje na Badnjak i 84:68: „Ako dobijemo priliku, prihvatit ćemo je obj",
-        "[sport] Arena Sport se povlači iz Hrvatske: Liga prvaka ostaje do 2027., Premier liga do 2028., a nasljednic",
-        "[тег RSS nogomet] Argentina izgubila prvu utakmicu odigranu nakon što se Leo Messi oprostio od reprezentacije"
-      ]
-    },
-    "backlog": {
-      "total_size": 4,
-      "sources": {
-        "023": 1,
-        "Zadarski list": 3
-      }
-    },
-    "published": {
-      "total": 0,
-      "ukraine_priority": 0,
-      "with_images": 0,
-      "text_only": 0,
-      "og_images_found": 1,
-      "sources": {}
-    },
-    "models_used": {
-      "gemini-3-flash-preview": 1
-    },
-    "models_by_task": {
-      "filter": "gemini-3-flash-preview",
-      "translate": null
-    },
-    "model_attempts": [
-      {
-        "task": "filter",
-        "model": "gemini-3-flash-preview",
-        "outcome": "ok"
-      },
-      {
-        "task": "translate",
-        "model": "gemini-3.5-flash-lite",
-        "outcome": "unavailable"
-      },
-      {
-        "task": "translate",
-        "model": "gemini-3.8-flash",
-        "outcome": "unavailable"
-      },
-      {
-        "task": "translate",
-        "model": "gemini-3.6-flash",
-        "outcome": "unavailable"
-      }
-    ],
-    "exhausted_models": [],
-    "demoted_models": [
-      "translate: gemini-3.8-flash"
-    ],
-    "translate_budget_deferred": [
-      "gemini-3.6-flash"
-    ],
-    "gemini_region_blocked": false,
-    "gemini_unavailable": true,
-    "errors_count": 0,
-    "gemini_retries": 3
-  },
-  {
     "timestamp": "2026-11-14 13:01:24",
     "execution_time": 218.0,
     "funnel": {
@@ -9913,5 +9821,123 @@
     "gemini_unavailable": true,
     "errors_count": 0,
     "gemini_retries": 3
+  },
+  {
+    "timestamp": "2026-11-23 13:01:19",
+    "execution_time": 42.9,
+    "funnel": {
+      "scraped_total": 35,
+      "scraped_by_source": {
+        "023": 10,
+        "Slobodna dalmacija": 15,
+        "Zadarski list": 10
+      },
+      "already_seen": 17,
+      "rejected_by_keywords": 4,
+      "rejected_by_rule": {
+        "КАПС у заголовку": 1,
+        "тег RSS nogomet": 2,
+        "URL /sport/": 1
+      },
+      "unclassified_by_ai": 0,
+      "duplicates_removed_by_ai": 13,
+      "rejection_reasons_list": [
+        "• U Metkoviću uhvaćen muškarac za kojim je raspisana europska tjeralica  → Побут інших міст (Кримінал у Метковичі) | Сутності: Metković, Afganistan, silovanje, policija",
+        "• Predstavljao se lažnim identitetom, a za njim raspisan Europski uhidbe → Дубль (Дубль новини 0) | Сутності: Metković, silovanje, policija",
+        "• Renato Mittermayer novi član Upravnog vijeća Klinike Sveti Ivan → Вже публікувалось (Кадрові зміни в клініці) | Сутності: Renato Mittermayer, Klinika Sveti Ivan, Vlada",
+        "• Ryanair uvodi dodatna sjedala na linijama prema i iz Hrvatske za Božić → Вже публікувалось (Додаткові рейси Ryanair) | Сутності: Ryanair, Hrvatska, Božić",
+        "• Ryanair uvodi više od 26.000 dodatnih sjedala na letovima prema Hrvats → Дубль (Дубль новини 5) | Сутності: Ryanair, Hrvatska, Božić",
+        "• Franković najavio Advent u Gradu, komentirao i rasvjetu od pola miliju → Побут інших міст (Локальний захід у Дубровнику) | Сутності: Dubrovnik, Mato Franković, Advent",
+        "• Riječanin Pino Pingvino uoči borbe za finale Asia expressa: “Mrtav sam → Спорт (Реаліті-шоу) | Сутності: Pino Pingvino, Asia Express, Rijeka",
+        "• Crnogorci će sutra položiti vijenac u Konavlima: Naše su ruke čiste i  → Побут інших міст (Подія в Конавле) | Сутності: Konavle, Crna Gora, JNA",
+        "• Predavanje “Čudesni svjetovi Sunčeva sustava” u Centru za posjetitelje → Світовий шум (Наукова лекція) | Сутності: Ante Radonić, Sunčev sustav, Poklon",
+        "• Jedna sekunda na cesti mogla bi vas skupo koštati! Novo pravilo donosi → Вже публікувалось (Закон про полювання) | Сутності: Zakon o lovstvu, Hrvatska poljoprivredna komora",
+        "• Riječki novinar ispao iz Plesa sa zvijezdama. Tko je on? → Спорт (Розважальне шоу) | Сутності: Ivan Dorian Molnar, Ples sa zvijezdama, Rijeka",
+        "• Poduzetnici Vladi: ‘Prije novih nameta pokažite koliko ste uštedjeli n → Вже публікувалось (Економічні вимоги підприємців) | Сутності: Udruga Glas poduzetnika, Ministarstvo financija, proračun",
+        "• Platite dostavu na kućni prag, a paket završi u paketomatu; Udruga pot → Вже публікувалось (Проблеми з доставкою) | Сутності: HAKOM, dostava paketa, Udruga potrošača"
+      ],
+      "rejected_by_reason": {
+        "Побут інших міст": 3,
+        "Дубль": 2,
+        "Вже публікувалось": 5,
+        "Спорт": 2,
+        "Світовий шум": 1
+      },
+      "updates_marked": 2,
+      "already_rejected": 11,
+      "rejected_by_code_examples": [
+        "[КАПС у заголовку] OKUPITE EKIPU, SUTRA KREĆE ADVENTSKA ČAROLIJA U ZADRU Trg Petra Zoranića blista, kućice otvaraju vra",
+        "[тег RSS nogomet] Opatijski gradonačelnik sazvao presicu na stadionu: “Imamo teren kakav je htjela Uprava kluba. Na nj",
+        "[URL /sport/] VIDEO Prvi put je počeo HNL utakmicu i odmah  zabio za Rijeku: “Ovo je početak!”",
+        "[тег RSS nogomet] Lamine Yamal se nakon promašenog jedanesterca ozljedio. Neće igrati u Ligi prvaka"
+      ]
+    },
+    "backlog": {
+      "total_size": 9,
+      "sources": {
+        "Slobodna dalmacija": 1,
+        "023": 8
+      }
+    },
+    "published": {
+      "total": 0,
+      "ukraine_priority": 0,
+      "with_images": 0,
+      "text_only": 0,
+      "og_images_found": 0,
+      "sources": {}
+    },
+    "models_used": {
+      "gemini-3.1-flash-lite": 1
+    },
+    "models_by_task": {
+      "filter": "gemini-3.1-flash-lite",
+      "translate": null
+    },
+    "model_attempts": [
+      {
+        "task": "filter",
+        "model": "gemini-3.6-flash",
+        "outcome": "unavailable"
+      },
+      {
+        "task": "filter",
+        "model": "gemini-3.5-flash-lite",
+        "outcome": "unavailable"
+      },
+      {
+        "task": "filter",
+        "model": "gemini-3.1-flash-lite",
+        "outcome": "ok"
+      },
+      {
+        "task": "translate",
+        "model": "gemini-3.5-flash-lite",
+        "outcome": "unavailable"
+      },
+      {
+        "task": "translate",
+        "model": "gemini-3.8-flash",
+        "outcome": "unavailable"
+      },
+      {
+        "task": "translate",
+        "model": "gemini-3.6-flash",
+        "outcome": "unavailable"
+      }
+    ],
+    "exhausted_models": [],
+    "demoted_models": [
+      "filter: gemini-3-flash-preview",
+      "translate: gemini-3.8-flash",
+      "translate: gemini-3.6-flash"
+    ],
+    "translate_budget_deferred": [
+      "gemini-3.6-flash"
+    ],
+    "gemini_region_blocked": false,
+    "gemini_unavailable": true,
+    "errors_count": 0,
+    "gemini_retries": 5
   }
 ]
