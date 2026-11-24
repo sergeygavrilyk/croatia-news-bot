@@ -1,89 +1,5 @@
 [
   {
-    "timestamp": "2026-11-15 11:01:11",
-    "execution_time": 195.6,
-    "funnel": {
-      "scraped_total": 35,
-      "scraped_by_source": {
-        "023": 10,
-        "Slobodna dalmacija": 15,
-        "Zadarski list": 10
-      },
-      "already_seen": 20,
-      "rejected_by_keywords": 3,
-      "rejected_by_rule": {
-        "URL /sport/": 2,
-        "utakmice": 1
-      },
-      "unclassified_by_ai": 0,
-      "duplicates_removed_by_ai": 4,
-      "rejection_reasons_list": [
-        "• Dubrovnik u The Sunday Timesu: Svijet čita priču o gradu održivog turi → Побут інших міст (Промоція туризму у Дубровнику) | Сутності: Dubrovnik, Mato Franković, The Sunday Times",
-        "• Od danas vrijedi važno pravilo za vozače. I bez snijega možete dobiti  → Вже публікувалось (Зимова гума для авто) | Сутності: HAK, зимова екіпіровка, картки та штрафи, Хорватія",
-        "• Mladić (18) teško stradao kod Zadra; pao s motora pa se zabio u drugi  → Вже публікувалось (ДТП у Мурвиці) | Сутності: Murvica, PU Zadarska, 18-godišnjak, ДТП",
-        "• Zadar slavi svoj dan: bogat program, sportska nadmetanja, kultura i ko → Вже публікувалось (День міста Задар) | Сутності: Zadar, Dan grada, sv. Krševan, Mladen Grdović"
-      ],
-      "rejected_by_reason": {
-        "Побут інших міст": 1,
-        "Вже публікувалось": 3
-      },
-      "updates_marked": 0,
-      "already_rejected": 13,
-      "rejected_by_code_examples": [
-        "[URL /sport/] Rekordna četiri poraza u nizu dovela su ‘kockaste” u nezahvalnu situaciju: Hrvatskoj treba bod proti",
-        "[URL /sport/] Samuel Kolega jedanaesti nakon prve vožnje u Leviju. Zubčić i Rodeš ostali bez druge vožnje",
-        "[utakmice] Horor u svlačionici. Maskirani napadači upali tijekom utakmice i palicama pretukli mladića"
-      ]
-    },
-    "backlog": {
-      "total_size": 1,
-      "sources": {
-        "Zadarski list": 1
-      }
-    },
-    "published": {
-      "total": 3,
-      "ukraine_priority": 1,
-      "with_images": 2,
-      "text_only": 1,
-      "og_images_found": 0,
-      "sources": {
-        "Zadarski list": 1,
-        "Slobodna dalmacija": 1,
-        "023": 1
-      }
-    },
-    "models_used": {
-      "gemini-3.6-flash": 1,
-      "gemini-3.8-flash": 1
-    },
-    "models_by_task": {
-      "filter": "gemini-3.6-flash",
-      "translate": "gemini-3.8-flash"
-    },
-    "model_attempts": [
-      {
-        "task": "filter",
-        "model": "gemini-3.6-flash",
-        "outcome": "ok"
-      },
-      {
-        "task": "translate",
-        "model": "gemini-3.8-flash",
-        "outcome": "ok"
-      }
-    ],
-    "exhausted_models": [],
-    "demoted_models": [
-      "filter: gemini-3-flash-preview"
-    ],
-    "translate_budget_deferred": [],
-    "gemini_region_blocked": false,
-    "gemini_unavailable": false,
-    "errors_count": 0,
-    "gemini_retries": 0
-  },
-  {
     "timestamp": "2026-11-15 12:01:20",
     "execution_time": 397.6,
     "funnel": {
@@ -10000,5 +9916,114 @@
     "gemini_unavailable": false,
     "errors_count": 0,
     "gemini_retries": 0
+  },
+  {
+    "timestamp": "2026-11-24 12:01:17",
+    "execution_time": 159.3,
+    "funnel": {
+      "scraped_total": 35,
+      "scraped_by_source": {
+        "023": 10,
+        "Slobodna dalmacija": 15,
+        "Zadarski list": 10
+      },
+      "already_seen": 23,
+      "rejected_by_keywords": 1,
+      "rejected_by_rule": {
+        "URL /sport/": 1
+      },
+      "unclassified_by_ai": 0,
+      "duplicates_removed_by_ai": 10,
+      "rejection_reasons_list": [
+        "• Humanoidni robot Tonka educirao koprivničke gimnazijalce o sigurnosti  → Побут інших міст (Koprivnica) | Сутності: Tonka, Koprivnica, Gimnazija",
+        "• Crnogorci položili vijenac kraj spomenika ‘Konavoska mati‘ → Геоблок (Konavle) | Сутності: Konavle, JNA, Stega",
+        "• Maloljetniku oduzet neregistrirani električni motocikl nakon pokušaja  → Побут інших міст (Split) | Сутності: Split, Policija, Motocikl",
+        "• Crnogorci danas s posebnim razlogom stižu u Konavle, Lasić ganut gesto → Вже публікувалось (Konavle) | Сутності: Konavle, Branislav Radulović, Božo Lasić",
+        "• Savjeti za sigurnu kupovinu uoči Black Fridaya: Kako izbjeći lažne trg → Вже публікувалось (Black Friday) | Сутності: Black Friday, AZOP, Cyber Monday",
+        "• Savjeti za sigurnu kupovinu uoči Black Fridaya: kako izbjeći lažne trg → Дубль (ID 7) | Сутності: Black Friday, Cyber Monday, AZOP",
+        "• Oporba kritizira proračun za 2027., vladajući ga brane kao ambiciozan → Не за тематикою (Državni proračun) | Сутності: Nikola Grmoja, Most, Hrvatska",
+        "• Plenković: Iz mojih vlada otišla su četiri ministra, a ne 10 ili 30 mi → Не за тематикою (Izjave premijera) | Сутності: Andrej Plenković, Vlada, Hrvatska",
+        "• Selak Raspudić predlaže istražno povjerenstvo za Vinogradsku bolnicu → Не за тематикою (Vinogradska bolnica) | Сутності: Marija Selak Raspudić, KBC Sestre milosrdnice, Hrvatski sabor",
+        "• Grad koji je 1991. ostao bez mosta danas je na UNESCO-ovu popisu: 35 g → Вже публікувалось (Zadar 1991) | Сутності: Zadar, Maslenički most, Modrić"
+      ],
+      "rejected_by_reason": {
+        "Побут інших міст": 2,
+        "Геоблок": 1,
+        "Вже публікувалось": 3,
+        "Дубль": 1,
+        "Не за тематикою": 3
+      },
+      "updates_marked": 0,
+      "already_rejected": 15,
+      "rejected_by_code_examples": [
+        "[URL /sport/] Agata Bjelica vratila iz iz Bara s broncom!"
+      ]
+    },
+    "backlog": {
+      "total_size": 8,
+      "sources": {
+        "023": 7,
+        "Slobodna dalmacija": 1
+      }
+    },
+    "published": {
+      "total": 3,
+      "ukraine_priority": 0,
+      "with_images": 3,
+      "text_only": 0,
+      "og_images_found": 1,
+      "sources": {
+        "Slobodna dalmacija": 1,
+        "023": 2
+      }
+    },
+    "models_used": {
+      "gemini-3.5-flash-lite": 1,
+      "gemini-3.6-flash": 1
+    },
+    "models_by_task": {
+      "filter": "gemini-3.5-flash-lite",
+      "translate": "gemini-3.6-flash"
+    },
+    "model_attempts": [
+      {
+        "task": "filter",
+        "model": "gemini-3.1-flash-lite",
+        "outcome": "unavailable"
+      },
+      {
+        "task": "filter",
+        "model": "gemini-3-flash-preview",
+        "outcome": "unavailable"
+      },
+      {
+        "task": "filter",
+        "model": "gemini-3.6-flash",
+        "outcome": "unavailable"
+      },
+      {
+        "task": "filter",
+        "model": "gemini-3.5-flash-lite",
+        "outcome": "ok"
+      },
+      {
+        "task": "translate",
+        "model": "gemini-3.6-flash",
+        "outcome": "ok"
+      }
+    ],
+    "exhausted_models": [],
+    "demoted_models": [
+      "filter: gemini-3-flash-preview",
+      "filter: gemini-3.6-flash",
+      "filter: gemini-3.5-flash-lite",
+      "translate: gemini-3.8-flash",
+      "translate: gemini-3.5-flash-lite"
+    ],
+    "translate_budget_deferred": [],
+    "gemini_region_blocked": false,
+    "gemini_unavailable": false,
+    "errors_count": 0,
+    "gemini_retries": 3
   }
 ]
