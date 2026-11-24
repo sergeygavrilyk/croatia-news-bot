@@ -1,77 +1,5 @@
 [
   {
-    "timestamp": "2026-11-15 10:01:15",
-    "execution_time": 94.6,
-    "funnel": {
-      "scraped_total": 35,
-      "scraped_by_source": {
-        "023": 10,
-        "Slobodna dalmacija": 15,
-        "Zadarski list": 10
-      },
-      "already_seen": 25,
-      "rejected_by_keywords": 0,
-      "rejected_by_rule": {},
-      "unclassified_by_ai": 0,
-      "duplicates_removed_by_ai": 2,
-      "rejection_reasons_list": [
-        "• Teško ozlijeđen mladić u Murvici: pao je s motocikla i udario u drugi, → Дубль (Дублікат новини про ДТП у Мурвіці) | Сутності: Murvica, 18-godišnjak, motocikl, Opća bolnica Zadar",
-        "• Iz Grada Dubrovnika objasnili čemu služe otvori na stupićima u povijes → Побут інших міст (Комунальні питання та об'єкти в Дубровнику) | Сутності: Grad Dubrovnik, Široka ulica, Stradun, stupić"
-      ],
-      "rejected_by_reason": {
-        "Дубль": 1,
-        "Побут інших міст": 1
-      },
-      "updates_marked": 0,
-      "already_rejected": 19
-    },
-    "backlog": {
-      "total_size": 1,
-      "sources": {
-        "Slobodna dalmacija": 1
-      }
-    },
-    "published": {
-      "total": 1,
-      "ukraine_priority": 0,
-      "with_images": 1,
-      "text_only": 0,
-      "og_images_found": 0,
-      "sources": {
-        "Slobodna dalmacija": 1
-      }
-    },
-    "models_used": {
-      "gemini-3.6-flash": 2
-    },
-    "models_by_task": {
-      "filter": "gemini-3.6-flash",
-      "translate": "gemini-3.6-flash"
-    },
-    "model_attempts": [
-      {
-        "task": "filter",
-        "model": "gemini-3.6-flash",
-        "outcome": "ok"
-      },
-      {
-        "task": "translate",
-        "model": "gemini-3.6-flash",
-        "outcome": "ok"
-      }
-    ],
-    "exhausted_models": [],
-    "demoted_models": [
-      "filter: gemini-3-flash-preview",
-      "translate: gemini-3.8-flash"
-    ],
-    "translate_budget_deferred": [],
-    "gemini_region_blocked": false,
-    "gemini_unavailable": false,
-    "errors_count": 0,
-    "gemini_retries": 0
-  },
-  {
     "timestamp": "2026-11-15 11:01:11",
     "execution_time": 195.6,
     "funnel": {
@@ -9979,5 +9907,98 @@
     "gemini_unavailable": true,
     "errors_count": 0,
     "gemini_retries": 6
+  },
+  {
+    "timestamp": "2026-11-24 11:01:20",
+    "execution_time": 167.7,
+    "funnel": {
+      "scraped_total": 35,
+      "scraped_by_source": {
+        "023": 10,
+        "Slobodna dalmacija": 15,
+        "Zadarski list": 10
+      },
+      "already_seen": 23,
+      "rejected_by_keywords": 3,
+      "rejected_by_rule": {
+        "URL /sport/": 1,
+        "promo": 2
+      },
+      "unclassified_by_ai": 0,
+      "duplicates_removed_by_ai": 8,
+      "rejection_reasons_list": [
+        "• Povodom velikog jubileja Viator je dodijelio hvalevrijednu donaciju KB → Побут інших міст (Спліт) | Сутності: Viator, KBC Split, donacija",
+        "• NZZJZ PGŽ obustavlja cijepljenje protiv gripe u prostorima Zavoda u Ri → Побут інших міст (Рієка) | Сутності: NZZJZ PGŽ, Rijeka, cijepljenje protiv gripe",
+        "• Nepalca koji je na Pagu izbo cimera nožem sumnjiči se za pokušaj ubojs → Вже публікувалось (Інцидент на Пагу вже в історії) | Сутності: Nepalac, Pag, pokušaj ubojstva",
+        "• Nova Aldo kolekcija donosi spoj starog holivudskog sjaja, upečatljivih → Світовий шум | Сутності: Aldo, kolekcija, moda",
+        "• Pijani vozač u Drnišu autom izletio s ceste, preletio prugu i zabio se → Побут інших міст (Дрніш) | Сутності: Drniš, prometna nesreća, alkohol",
+        "• U 61 prometnoj nesreći sudjelovala su i dva strana državljana, tri pje → Побут інших міст (Рієка та область) | Сутності: PU primorsko-goranska, prometne nesreće, statistika",
+        "• ‘Nismo smjeli pristati da se morska granica s Crnom Gorom odredi na št → Геоблок (Відносини Чорногорії) | Сутності: Crna Gora, Ervin Ibrahimović, granica",
+        "• Na DC 404 na čvoru Rijeka Istok upravljala taxi vozilom u suprotnom sm → Побут інших міст (Рієка) | Сутності: Rijeka, DC 404, taxi"
+      ],
+      "rejected_by_reason": {
+        "Побут інших міст": 5,
+        "Вже публікувалось": 1,
+        "Світовий шум": 1,
+        "Геоблок": 1
+      },
+      "updates_marked": 0,
+      "already_rejected": 16,
+      "rejected_by_code_examples": [
+        "[URL /sport/] Agata Bjelica vratila iz iz Bara s broncom!",
+        "[promo] Zašto Santa Lucia? Kozlovići lansirali tri vina s položaja koji istražuju godinama",
+        "[promo] Božićni pokloni bez klišeja: originalne ideje za poklone koji se pamte"
+      ]
+    },
+    "backlog": {
+      "total_size": 10,
+      "sources": {
+        "023": 9,
+        "Slobodna dalmacija": 1
+      }
+    },
+    "published": {
+      "total": 3,
+      "ukraine_priority": 0,
+      "with_images": 3,
+      "text_only": 0,
+      "og_images_found": 0,
+      "sources": {
+        "023": 3
+      }
+    },
+    "models_used": {
+      "gemini-3.1-flash-lite": 1,
+      "gemini-3.6-flash": 1
+    },
+    "models_by_task": {
+      "filter": "gemini-3.1-flash-lite",
+      "translate": "gemini-3.6-flash"
+    },
+    "model_attempts": [
+      {
+        "task": "filter",
+        "model": "gemini-3.1-flash-lite",
+        "outcome": "ok"
+      },
+      {
+        "task": "translate",
+        "model": "gemini-3.6-flash",
+        "outcome": "ok"
+      }
+    ],
+    "exhausted_models": [],
+    "demoted_models": [
+      "filter: gemini-3-flash-preview",
+      "filter: gemini-3.6-flash",
+      "filter: gemini-3.5-flash-lite",
+      "translate: gemini-3.8-flash",
+      "translate: gemini-3.5-flash-lite"
+    ],
+    "translate_budget_deferred": [],
+    "gemini_region_blocked": false,
+    "gemini_unavailable": false,
+    "errors_count": 0,
+    "gemini_retries": 0
   }
 ]
