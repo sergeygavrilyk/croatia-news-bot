@@ -1,107 +1,5 @@
 [
   {
-    "timestamp": "2026-11-15 12:01:20",
-    "execution_time": 397.6,
-    "funnel": {
-      "scraped_total": 35,
-      "scraped_by_source": {
-        "023": 10,
-        "Slobodna dalmacija": 15,
-        "Zadarski list": 10
-      },
-      "already_seen": 20,
-      "rejected_by_keywords": 5,
-      "rejected_by_rule": {
-        "sport": 1,
-        "URL /sport/": 3,
-        "utakmice": 1
-      },
-      "unclassified_by_ai": 0,
-      "duplicates_removed_by_ai": 8,
-      "rejection_reasons_list": [
-        "• Odron stijene na cesti kod Buzeta udario automobil. Vozilo se prevrnul → Побут інших міст (ДТП через зсув скелі біля Бузета) | Сутності: Buzet, dron stijene, prometna nesreća, D201",
-        "• Pijan jurio po neosvijetljenoj cesti pa retrovizorom udario pješaka ko → Побут інших міст (ДТП з пішоходом у Шибенику) | Сутності: Šibenik, Podsolarsko, prometna nesreća, PU šibensko-kninska",
-        "• Pijani vozač s 1,29 promila alkohola u krvi prešao u suprotnu traku i  → Побут інших міст (Смертельна ДТП у Преспі біля Б'єловара) | Сутності: Prespa, Bjelovar, prometna nesreća, pijani vozač",
-        "• Napio se pa sjeo na bicikl, nije to bila dobra odluka; 64-godišnjak pa → Побут інших міст (Падіння п'яного велосипедиста у Водиці) | Сутності: Vodice, Ulica Plimica, prometna nesreća, PU šibensko-kninska",
-        "• Nobelovac koji je upozorio na opasnosti umjetne inteligencije sada tvr → Світовий шум (Застереження нобелівського лауреата щодо ШІ) | Сутності: Geoffrey Hinton, umjetna inteligencija, AI Safety Foundation, Kanada",
-        "• Ovo je nemoguće! Živko nije mogao vjerovati koliko je rodila jedna mas → Побут інших міст (Рекордний урожай оливків у долині Неретви) | Сутності: dolina Neretve, Živko Mustapić, maslina, 335 kg",
-        "• Znanstvenici dokazali da popularni preparat može pomoći i u rastu brad → Світовий шум (Дослідження препарату для росту бороди) | Сутності: minoksidil, rast brade, The Journal of Dermatological Treatment",
-        "• Microsoft otkrio uzrok globalnog pada Outlooka i Teamsa: Nije riječ o  → Світовий шум (Причина глобального збою сервісів Microsoft) | Сутності: Microsoft, Outlook, Teams, Copilot"
-      ],
-      "rejected_by_reason": {
-        "Побут інших міст": 5,
-        "Світовий шум": 3
-      },
-      "updates_marked": 0,
-      "already_rejected": 11,
-      "rejected_by_code_examples": [
-        "[sport] Od Dunda Maroja do polumaratona: tjedan pred nama donosi kazalište, koncerte, film i sport",
-        "[URL /sport/] Izvrstan start Jugovih plivača u Zadru, doplivali do 6 medalja i niza osobnih rekorda",
-        "[URL /sport/] Rekordna četiri poraza u nizu dovela su ‘kockaste” u nezahvalnu situaciju: Hrvatskoj treba bod proti",
-        "[URL /sport/] Samuel Kolega jedanaesti nakon prve vožnje u Leviju. Zubčić i Rodeš ostali bez druge vožnje",
-        "[utakmice] Horor u svlačionici. Maskirani napadači upali tijekom utakmice i palicama pretukli mladića"
-      ]
-    },
-    "backlog": {
-      "total_size": 0,
-      "sources": {}
-    },
-    "published": {
-      "total": 2,
-      "ukraine_priority": 0,
-      "with_images": 1,
-      "text_only": 1,
-      "og_images_found": 0,
-      "sources": {
-        "023": 1,
-        "Zadarski list": 1
-      }
-    },
-    "models_used": {
-      "gemini-3.6-flash": 2
-    },
-    "models_by_task": {
-      "filter": "gemini-3.6-flash",
-      "translate": "gemini-3.6-flash"
-    },
-    "model_attempts": [
-      {
-        "task": "filter",
-        "model": "gemini-3-flash-preview",
-        "outcome": "unavailable"
-      },
-      {
-        "task": "filter",
-        "model": "gemini-3.6-flash",
-        "outcome": "ok"
-      },
-      {
-        "task": "translate",
-        "model": "gemini-3.8-flash",
-        "outcome": "unavailable"
-      },
-      {
-        "task": "translate",
-        "model": "gemini-3.5-flash-lite",
-        "outcome": "unavailable"
-      },
-      {
-        "task": "translate",
-        "model": "gemini-3.6-flash",
-        "outcome": "ok"
-      }
-    ],
-    "exhausted_models": [],
-    "demoted_models": [],
-    "translate_budget_deferred": [
-      "gemini-3.6-flash"
-    ],
-    "gemini_region_blocked": false,
-    "gemini_unavailable": false,
-    "errors_count": 0,
-    "gemini_retries": 3
-  },
-  {
     "timestamp": "2026-11-15 13:01:16",
     "execution_time": 123.8,
     "funnel": {
@@ -10025,5 +9923,87 @@
     "gemini_unavailable": false,
     "errors_count": 0,
     "gemini_retries": 3
+  },
+  {
+    "timestamp": "2026-11-24 13:01:24",
+    "execution_time": 24.1,
+    "funnel": {
+      "scraped_total": 35,
+      "scraped_by_source": {
+        "023": 10,
+        "Slobodna dalmacija": 15,
+        "Zadarski list": 10
+      },
+      "already_seen": 21,
+      "rejected_by_keywords": 3,
+      "rejected_by_rule": {
+        "тег RSS košarka": 2,
+        "тег RSS nogomet": 1
+      },
+      "unclassified_by_ai": 0,
+      "duplicates_removed_by_ai": 0,
+      "rejection_reasons_list": [],
+      "rejected_by_reason": {},
+      "updates_marked": 0,
+      "already_rejected": 13,
+      "rejected_by_code_examples": [
+        "[тег RSS košarka] Memphis ostaje bez Camerona Boozera najmanje na mjesec dana",
+        "[тег RSS nogomet] Hrvatski trener postao novi izbornik reprezentacije Malezije",
+        "[тег RSS košarka] Hrvatski košarkaši kreću po Svjetsko prvenstvo. Jedna promjena u sastavu izbornika Mijatovića, Šarić"
+      ]
+    },
+    "backlog": {
+      "total_size": 19,
+      "sources": {
+        "023": 8,
+        "Slobodna dalmacija": 4,
+        "Zadarski list": 7
+      }
+    },
+    "published": {
+      "total": 0,
+      "ukraine_priority": 0,
+      "with_images": 0,
+      "text_only": 0,
+      "og_images_found": 0,
+      "sources": {}
+    },
+    "models_used": {},
+    "models_by_task": {
+      "filter": null,
+      "translate": null
+    },
+    "model_attempts": [
+      {
+        "task": "filter",
+        "model": "gemini-3.5-flash-lite",
+        "outcome": "unavailable"
+      },
+      {
+        "task": "filter",
+        "model": "gemini-3.1-flash-lite",
+        "outcome": "unavailable"
+      },
+      {
+        "task": "filter",
+        "model": "gemini-3-flash-preview",
+        "outcome": "unavailable"
+      },
+      {
+        "task": "filter",
+        "model": "gemini-3.6-flash",
+        "outcome": "unavailable"
+      }
+    ],
+    "exhausted_models": [],
+    "demoted_models": [
+      "filter: gemini-3-flash-preview",
+      "filter: gemini-3.6-flash"
+    ],
+    "translate_budget_deferred": [],
+    "gemini_region_blocked": false,
+    "gemini_unavailable": true,
+    "errors_count": 0,
+    "gemini_retries": 4
   }
 ]
