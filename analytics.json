@@ -1,102 +1,5 @@
 [
   {
-    "timestamp": "2026-11-15 15:01:17",
-    "execution_time": 87.3,
-    "funnel": {
-      "scraped_total": 35,
-      "scraped_by_source": {
-        "023": 10,
-        "Slobodna dalmacija": 15,
-        "Zadarski list": 10
-      },
-      "already_seen": 23,
-      "rejected_by_keywords": 8,
-      "rejected_by_rule": {
-        "тег RSS lifestyle": 1,
-        "тег RSS sport": 1,
-        "sport": 2,
-        "igrač": 1,
-        "URL /sport/": 2,
-        "тег RSS košarka": 1
-      },
-      "unclassified_by_ai": 0,
-      "duplicates_removed_by_ai": 3,
-      "rejection_reasons_list": [
-        "• Arapske stranke su jezičac na vagi izraelske vlade, ovo će biti ključn → Геоблок (Політичні події та формування уряду в Ізраїлі) | Сутності: Izrael, Isaac Herzog, Gadi Eisenkot, Benjamin Netanyahu",
-        "• Bili smo u Drnišu, cijeli grad je u strahu od nasilnoga sugrađanina: p → Побут інших міст (Місцевий правопорушник та занепокоєння жителів Дрниша) | Сутності: Drniš, Kristijan Aleksić, Luka Milovac, 70 prijava",
-        "• Senjskim vatrogascima pehar u trajno vlasništvo → Побут інших міст (Локальні змагання добровольних пожежних команд) | Сутності: DVD Senj, Senj, Duga Resa, vatrogasci"
-      ],
-      "rejected_by_reason": {
-        "Геоблок": 1,
-        "Побут інших міст": 2
-      },
-      "updates_marked": 0,
-      "already_rejected": 15,
-      "rejected_by_code_examples": [
-        "[тег RSS lifestyle] Promatračke studije povezuju redovito jedenje jaja s manjim rizikom od Alzheimerove bolesti",
-        "[тег RSS sport] Sandra Profaca i Ivica Vukman pobjednici 10. Atletske utrke “Dani sjećanja od Škabrnje do Vukovara”",
-        "[sport] Od Dunda Maroja do polumaratona: tjedan pred nama donosi kazalište, koncerte, film i sport",
-        "[igrač] Zadar se učvrstio na prvom mjestu, Posedarje bolje u golijadi, Primorac dobro prošao na gostovanju",
-        "[sport] Sandra Profaca i Ivica Vukman pobjednici 10. Atletske utrke „Dani sjećanja od Škabrnje do Vukovara“",
-        "[URL /sport/] Izvrstan start Jugovih plivača u Zadru, doplivali do 6 medalja i niza osobnih rekorda",
-        "[тег RSS košarka] Košarkaši Kvarnera se protiv Alkara vratili iz “minus 16”. Krajnović promašio tricu za produžetak",
-        "[URL /sport/] Samuel Kolega na devetom mjestu zaključio prvi slalom sezone, slavio Brazilac Braathen"
-      ]
-    },
-    "backlog": {
-      "total_size": 0,
-      "sources": {}
-    },
-    "published": {
-      "total": 1,
-      "ukraine_priority": 1,
-      "with_images": 1,
-      "text_only": 0,
-      "og_images_found": 0,
-      "sources": {
-        "Zadarski list": 1
-      }
-    },
-    "models_used": {
-      "gemini-3.6-flash": 1,
-      "gemini-3.5-flash-lite": 1
-    },
-    "models_by_task": {
-      "filter": "gemini-3.6-flash",
-      "translate": "gemini-3.5-flash-lite"
-    },
-    "model_attempts": [
-      {
-        "task": "filter",
-        "model": "gemini-3.6-flash",
-        "outcome": "ok"
-      },
-      {
-        "task": "translate",
-        "model": "gemini-3.8-flash",
-        "outcome": "unavailable"
-      },
-      {
-        "task": "translate",
-        "model": "gemini-3.5-flash-lite",
-        "outcome": "ok"
-      }
-    ],
-    "exhausted_models": [],
-    "demoted_models": [
-      "filter: gemini-3-flash-preview",
-      "translate: gemini-3.8-flash",
-      "translate: gemini-3.5-flash-lite"
-    ],
-    "translate_budget_deferred": [
-      "gemini-3.6-flash"
-    ],
-    "gemini_region_blocked": false,
-    "gemini_unavailable": false,
-    "errors_count": 0,
-    "gemini_retries": 1
-  },
-  {
     "timestamp": "2026-11-15 16:01:20",
     "execution_time": 183.1,
     "funnel": {
@@ -9996,5 +9899,126 @@
     "gemini_unavailable": true,
     "errors_count": 0,
     "gemini_retries": 4
+  },
+  {
+    "timestamp": "2026-11-24 16:01:20",
+    "execution_time": 119.0,
+    "funnel": {
+      "scraped_total": 35,
+      "scraped_by_source": {
+        "023": 10,
+        "Slobodna dalmacija": 15,
+        "Zadarski list": 10
+      },
+      "already_seen": 23,
+      "rejected_by_keywords": 3,
+      "rejected_by_rule": {
+        "тег RSS lifestyle": 2,
+        "igrača": 1
+      },
+      "unclassified_by_ai": 0,
+      "duplicates_removed_by_ai": 16,
+      "rejection_reasons_list": [
+        "• Tri gostovanja Hrvatske drame riječkog HNK-a u samo nekoliko dana → Побут інших міст (Культурні події у Рієці, Загребі та Осієку) | Сутності: Hrvatska drama, Riječki HNK, Zagreb, Osijek",
+        "• Pokazno-terenska vježba civilne zaštite na temu postupanja s osobama s → Побут інших міст (Внесок цивільного захисту в Дубровнику) | Сутності: Dubrovnik, Civilna zaštita, Vježba, Osobe s invaliditetom",
+        "• Predstavljena audio-knjiga Jadranke Kosor “Premijerka” → Не за тематикою (Аудіокнига колишньої прем'єрки) | Сутності: Jadranka Kosor, Premijerka, Europska unija, book&zvook",
+        "• Objavljen program Adventa u Vodicama; evo svih popisa koncerata, tko n → Побут інших міст (Анонс Адвенту у Водицях) | Сутності: Vodice, Advent, Trg kneza Branimira, Turistička zajednica",
+        "• Molitva u crkvi Presvetog Srca Isusova u Križišću: Posveta Kraljevice  → Побут інших міст (Релігійна подія в Кріжишщі та Кралєвиці) | Сутності: Križišće, Kraljevica, Riječka nadbiskupija, Krist Kralj",
+        "• Svečano na proslavi Dana grada Zadra; Erlić najavio gradnju novog kvar → Вже публікувалось (Повторення новини про День міста Задара) | Сутності: Zadar, Šime Erlić, Dan grada Zadra, HNK Zadar",
+        "• Tko je mlada Šibenčanka koja je postala savjetnica ministra? Aktivna j → Не за тематикою (Призначення радниці міністра оборони) | Сутності: Nina Mikulandra, Ivan Anušić, Ministarstvo obrane, Šibenik",
+        "• Grad Senj je raspisao natječaj za dodjelu stipendija → Побут інших міст (Стипендії у місті Сені) | Сутності: Senj, Stipendije, Učenici, Studenti",
+        "• Nada Burum nova je predsjednica Strukovne grupe posrednika u prometu n → Побут інших міст (Збори брокерів нерухомості в Дубровнику) | Сутності: Dubrovnik, HGK, Nada Burum, Nekretnine",
+        "• Na Koblerovom trgu štand Hospicija: Skupljaju se prilozi za dizalicu t → Побут інших міст (Благодійна акція в Рієці) | Сутності: Rijeka, Hospicij Marija K. Kozulić, Koblerov trg, Dizalica topline",
+        "• Na Dan grada Zadra dodijeljena priznanja laureatima, Erlić najavio 50  → Вже публікувалось (Дубль новини про День міста Задара та житло) | Сутності: Zadar, Branko Bačić, Šime Erlić, Dan grada",
+        "• Na Filozofskom fakultetu u Zagrebu otvoren skup “Senj između povijesti → Побут інших міст (Науковий симпозіум у Загребі) | Сутності: Zagreb, Filozofski fakultet, Senj, August Šenoa",
+        "• Nadolazeći 25. Mediteranski sajam zdrave hrane u ožujku iduće godine o → Побут інших міст (Ярмарок здорової їжі у Дубровнику) | Сутності: Dubrovnik, Studentski dom, Mediteranski sajam, Zdrava hrana",
+        "• Kultno ime američkog undergrounda OSEES prvi put pred hrvatskom publik → Геоблок (Концерт американського гурту в Загребі) | Сутності: OSEES, Zagreb, Tvornica kulture, John Dwyer",
+        "• Misteriozna smrt u Luci Ploče! Golema guma usmrtila mladića, stručnjak → Дубль (Той самий матеріал про трагедію в Плоче) | Сутності: Luka Ploče, Nesreća na radu, Slobodna Dalmacija, Mladić",
+        "• Bivša ministrica obrane Željka Antunović: “Odnos državnog vrha prema o → Не за тематикою (Політичний подкаст колишньої міністерки) | Сутності: Željka Antunović, Ministarstvo obrane, Nova TV, Vlada"
+      ],
+      "rejected_by_reason": {
+        "Побут інших міст": 9,
+        "Не за тематикою": 3,
+        "Вже публікувалось": 2,
+        "Геоблок": 1,
+        "Дубль": 1
+      },
+      "updates_marked": 3,
+      "already_rejected": 1,
+      "rejected_by_code_examples": [
+        "[тег RSS lifestyle] Koliko vode dnevno piti za stabilan krvni tlak i zašto ni višak nije bezopasan",
+        "[тег RSS lifestyle] Zašto se suhi i mokri sastojci za kolač dodaju naizmjence i kojim redoslijedom",
+        "[igrača] Malonogometna reprezentacija MUP-a osvojila zlato na Svjetskim policijskim igrama u Nizozemskoj - če"
+      ]
+    },
+    "backlog": {
+      "total_size": 39,
+      "sources": {
+        "Zadarski list": 17,
+        "023": 11,
+        "Slobodna dalmacija": 11
+      }
+    },
+    "published": {
+      "total": 0,
+      "ukraine_priority": 0,
+      "with_images": 0,
+      "text_only": 0,
+      "og_images_found": 3,
+      "sources": {}
+    },
+    "models_used": {
+      "gemini-3.5-flash-lite": 1
+    },
+    "models_by_task": {
+      "filter": "gemini-3.5-flash-lite",
+      "translate": null
+    },
+    "model_attempts": [
+      {
+        "task": "filter",
+        "model": "gemini-3-flash-preview",
+        "outcome": "unavailable"
+      },
+      {
+        "task": "filter",
+        "model": "gemini-3.6-flash",
+        "outcome": "unavailable"
+      },
+      {
+        "task": "filter",
+        "model": "gemini-3.5-flash-lite",
+        "outcome": "ok"
+      },
+      {
+        "task": "translate",
+        "model": "gemini-3.8-flash",
+        "outcome": "unavailable"
+      },
+      {
+        "task": "translate",
+        "model": "gemini-3.5-flash-lite",
+        "outcome": "unavailable"
+      },
+      {
+        "task": "translate",
+        "model": "gemini-3.6-flash",
+        "outcome": "unavailable"
+      }
+    ],
+    "exhausted_models": [],
+    "demoted_models": [
+      "filter: gemini-3-flash-preview",
+      "filter: gemini-3.6-flash",
+      "filter: gemini-3.5-flash-lite",
+      "filter: gemini-3.1-flash-lite"
+    ],
+    "translate_budget_deferred": [
+      "gemini-3.6-flash"
+    ],
+    "gemini_region_blocked": false,
+    "gemini_unavailable": true,
+    "errors_count": 0,
+    "gemini_retries": 5
   }
 ]
