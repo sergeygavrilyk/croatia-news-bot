@@ -1,103 +1,5 @@
 [
   {
-    "timestamp": "2026-11-15 08:01:14",
-    "execution_time": 332.4,
-    "funnel": {
-      "scraped_total": 35,
-      "scraped_by_source": {
-        "023": 10,
-        "Slobodna dalmacija": 15,
-        "Zadarski list": 10
-      },
-      "already_seen": 9,
-      "rejected_by_keywords": 3,
-      "rejected_by_rule": {
-        "тег RSS lifestyle": 1,
-        "тег RSS košarka": 2
-      },
-      "unclassified_by_ai": 0,
-      "duplicates_removed_by_ai": 12,
-      "rejection_reasons_list": [
-        "• Mirso na 30. rođendan ‘Organizatora kiše‘ u Lazaretima okupio dubrovač → Побут інших міст (Концерт у Дубровнику) | Сутності: Mirso Đulančić, Lazareti, Dubrovnik",
-        "• Ima 64 godine i 30 godina vatrogasnog iskustva. Iz Argentine želi doći → Побут інших міст (Волонтерство пожежника в Макарській) | Сутності: Jorge Vuković, Argentina, Makarska",
-        "• Bumbete, kokain, buncek i demografija: Zar nije lijepo živjeti u gradu → Побут інших міст (Міські теми Дубровника) | Сутності: Dubrovnik, božićna rasvjeta",
-        "• Meta kažnjena s 805 milijuna eura: Facebook je pristupao fotografijama → Геоблок (Штраф компанії Meta в Італії) | Сутності: Meta, Facebook, 805 milijuna eura, Італія",
-        "• Zadarski pedijatar 35 godina čuvao crtež djevojčice iz Škabrnje, a sad → Вже публікувалось (Історія про малюнок зі Škabrnje) | Сутності: Damir Letinić, Škabrnja, Zadar",
-        "• Prva generacija Akademije filma i medija uči od oskarovaca, stigle mob → Побут інших міст (Навчальний курс у Дубровнику) | Сутності: Dubrovnik, Sveučilište u Dubrovniku, FMSA",
-        "• Pjesme od izrezanih novina: Riječki autor napravio je knjigu kakvu još → Побут інших міст (Презентація книги в Рієці) | Сутності: Enver Krivac, Rijeka, VBZ",
-        "• Piaggio osvježio svoje najpoznatije skutere: Beverly i Medley stižu u  → Не за тематикою (Огляд нових моделей скутерів) | Сутності: Piaggio, Beverly, Medley",
-        "• Kinezi mijenjaju hrvatsko tržište automobila: Nekadašnji hitovi ispada → Вже публікувалось (Пільги на електромобілі в Хорватії) | Сутності: Fond za zaštitu okoliša, električna vozila, 17.759 prijava",
-        "• Kia je napravila automobil od zemlje s terena na kojima je Rafael Nada → Спорт (Промо-проєкт з тенісистом Надалем) | Сутності: Kia, Rafael Nadal, Kia EV4 GT",
-        "• Ima 897 KS, dug je 5,2 metra i stoji 126 tisuća eura: Kineski gorostas → Не за тематикою (Огляд преміального автомобіля) | Сутності: Zeekr, Zeekr 9X, 897 KS",
-        "• FOTO Vratili se kaputi. Riječki Korzo kao jesenska modna revija na otv → Побут інших міст (Вулична мода в Рієці) | Сутності: Rijeka, Korzo"
-      ],
-      "rejected_by_reason": {
-        "Побут інших міст": 6,
-        "Геоблок": 1,
-        "Вже публікувалось": 2,
-        "Не за тематикою": 2,
-        "Спорт": 1
-      },
-      "updates_marked": 0,
-      "already_rejected": 7,
-      "rejected_by_code_examples": [
-        "[тег RSS lifestyle] Papir za pečenje može poslužiti više puta, a baciti ga treba kad postane krhak",
-        "[тег RSS košarka] Bek Kvarnera uoči današnjeg susreta s Alkarom: “Uz pravu koncentraciju i čvrstinu možemo pobijediti”",
-        "[тег RSS košarka] VIDEO Mario Hezonja odigrao je najbolju partiju u dresu Cavaliersa. I s drugom petorkom dobili su Ma"
-      ]
-    },
-    "backlog": {
-      "total_size": 0,
-      "sources": {}
-    },
-    "published": {
-      "total": 3,
-      "ukraine_priority": 0,
-      "with_images": 3,
-      "text_only": 0,
-      "og_images_found": 3,
-      "sources": {
-        "023": 3
-      }
-    },
-    "models_used": {
-      "gemini-3.6-flash": 2
-    },
-    "models_by_task": {
-      "filter": "gemini-3.6-flash",
-      "translate": "gemini-3.6-flash"
-    },
-    "model_attempts": [
-      {
-        "task": "filter",
-        "model": "gemini-3-flash-preview",
-        "outcome": "unavailable"
-      },
-      {
-        "task": "filter",
-        "model": "gemini-3.6-flash",
-        "outcome": "ok"
-      },
-      {
-        "task": "translate",
-        "model": "gemini-3.8-flash",
-        "outcome": "unavailable"
-      },
-      {
-        "task": "translate",
-        "model": "gemini-3.6-flash",
-        "outcome": "ok"
-      }
-    ],
-    "exhausted_models": [],
-    "demoted_models": [],
-    "translate_budget_deferred": [],
-    "gemini_region_blocked": false,
-    "gemini_unavailable": false,
-    "errors_count": 0,
-    "gemini_retries": 2
-  },
-  {
     "timestamp": "2026-11-15 09:01:15",
     "execution_time": 190.3,
     "funnel": {
@@ -9942,5 +9844,97 @@
     "gemini_unavailable": false,
     "errors_count": 0,
     "gemini_retries": 3
+  },
+  {
+    "timestamp": "2026-11-24 09:01:14",
+    "execution_time": 6.4,
+    "funnel": {
+      "scraped_total": 35,
+      "scraped_by_source": {
+        "023": 10,
+        "Slobodna dalmacija": 15,
+        "Zadarski list": 10
+      },
+      "already_seen": 15,
+      "rejected_by_keywords": 7,
+      "rejected_by_rule": {
+        "КАПС у заголовку": 1,
+        "тег RSS sport": 1,
+        "URL /sport/": 1,
+        "promo": 1,
+        "sporta": 1,
+        "тег RSS košarka": 1,
+        "nogometnog": 1
+      },
+      "unclassified_by_ai": 0,
+      "duplicates_removed_by_ai": 0,
+      "rejection_reasons_list": [],
+      "rejected_by_reason": {},
+      "updates_marked": 0,
+      "already_rejected": 8,
+      "rejected_by_code_examples": [
+        "[КАПС у заголовку] OSVOJI KINO ULAZNICE Darujemo 4 kino ulaznice za film “TIGAR OD PAPIRA” u Cinestaru Zadar",
+        "[тег RSS sport] Održan 43. Polumaraton Nin – Zadar; Pobjede i naslovi prvaka Hrvatske za Dračara i Parlov Koštro",
+        "[URL /sport/] Agata Bjelica vratila iz iz Bara s broncom!",
+        "[promo] Božićni pokloni bez klišeja: originalne ideje za poklone koji se pamte",
+        "[sporta] Mladi tekvondoaši iz Otočca uspješni na međunarodnim natjecanjima",
+        "[тег RSS košarka] Pacersi prekinuli niz od četiri poraza, Zubac opet odličan",
+        "[nogometnog] Što se događa na desnici? Dabro prozvao HDZ, Radić mu uzvratio brutalnom porukom: ‘Štakori skviče’"
+      ]
+    },
+    "backlog": {
+      "total_size": 15,
+      "sources": {
+        "023": 10,
+        "Slobodna dalmacija": 1,
+        "Zadarski list": 4
+      }
+    },
+    "published": {
+      "total": 0,
+      "ukraine_priority": 0,
+      "with_images": 0,
+      "text_only": 0,
+      "og_images_found": 0,
+      "sources": {}
+    },
+    "models_used": {},
+    "models_by_task": {
+      "filter": null,
+      "translate": null
+    },
+    "model_attempts": [
+      {
+        "task": "filter",
+        "model": "gemini-3.5-flash-lite",
+        "outcome": "unavailable"
+      },
+      {
+        "task": "filter",
+        "model": "gemini-3.1-flash-lite",
+        "outcome": "unavailable"
+      },
+      {
+        "task": "filter",
+        "model": "gemini-3-flash-preview",
+        "outcome": "unavailable"
+      },
+      {
+        "task": "filter",
+        "model": "gemini-3.6-flash",
+        "outcome": "unavailable"
+      }
+    ],
+    "exhausted_models": [],
+    "demoted_models": [
+      "filter: gemini-3-flash-preview",
+      "filter: gemini-3.6-flash",
+      "translate: gemini-3.8-flash"
+    ],
+    "translate_budget_deferred": [],
+    "gemini_region_blocked": false,
+    "gemini_unavailable": true,
+    "errors_count": 0,
+    "gemini_retries": 4
   }
 ]
