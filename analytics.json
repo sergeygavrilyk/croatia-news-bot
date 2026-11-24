@@ -1,104 +1,5 @@
 [
   {
-    "timestamp": "2026-11-15 14:01:13",
-    "execution_time": 185.9,
-    "funnel": {
-      "scraped_total": 35,
-      "scraped_by_source": {
-        "023": 10,
-        "Slobodna dalmacija": 15,
-        "Zadarski list": 10
-      },
-      "already_seen": 24,
-      "rejected_by_keywords": 6,
-      "rejected_by_rule": {
-        "sport": 2,
-        "igrač": 1,
-        "URL /sport/": 3
-      },
-      "unclassified_by_ai": 0,
-      "duplicates_removed_by_ai": 7,
-      "rejection_reasons_list": [
-        "• Mladi žele ostati na Korčuli i Lastovu, a od čega će živjeti? Otočanka → Побут інших міст (Проблеми працевлаштування молоді на островах Корчула та Ластово) | Сутності: Korčula, Lastovo, OPG",
-        "• Što se dogodilo u Jankomiru? Stručnjakinje upozorile na stroga pravila → Вже публікувалось (Коментарі експертів щодо смерті пацієнта в лікарні Янкомир) | Сутності: Jankomir, Kristian Josip Periš, Vesna Šendula-Jengić, Morana Brkljačić",
-        "• Mnoge je opet neugodno iznenadila, a nekima je već dodijala: Kišna sez → Побут інших міст (Дощова погода та прогулянки в Дубровнику) | Сутності: Stradun, Dubrovnik",
-        "• “Nisu kak’ spada”: Kids from the sky na riječkom koncertu pjesmu posve → Побут інших міст (Локальний концерт гурту у Рієці) | Сутності: Kids from the sky, Rijeka, Pogon kulture",
-        "• Dubrovačka biskupija preuzela Franjevački samostan sv. Vlaha u Pridvor → Побут інших міст (Передача францисканського монастиря у Прідвор'є) | Сутності: Dubrovačka biskupija, Pridvorje, Zadar",
-        "• Otočac pozvao građane na odgovoran odnos prema podzemlju krša → Побут інших міст (Екологічні проблеми та сміття в місті Оточаць) | Сутності: Otočac, Goran Bukovac, Lika",
-        "• Umjetnik, putopisac i florist koji je izlagao na Igrama ima novi proje → Побут інших міст (Різдвяний проект загребського флориста) | Сутності: Saša Šekoranja, Zagreb"
-      ],
-      "rejected_by_reason": {
-        "Побут інших міст": 6,
-        "Вже публікувалось": 1
-      },
-      "updates_marked": 0,
-      "already_rejected": 12,
-      "rejected_by_code_examples": [
-        "[sport] Od Dunda Maroja do polumaratona: tjedan pred nama donosi kazalište, koncerte, film i sport",
-        "[igrač] Zadar se učvrstio na prvom mjestu, Posedarje bolje u golijadi, Primorac dobro prošao na gostovanju",
-        "[sport] Sandra Profaca i Ivica Vukman pobjednici 10. Atletske utrke „Dani sjećanja od Škabrnje do Vukovara“",
-        "[URL /sport/] Izvrstan start Jugovih plivača u Zadru, doplivali do 6 medalja i niza osobnih rekorda",
-        "[URL /sport/] Rekordna četiri poraza u nizu dovela su ‘kockaste” u nezahvalnu situaciju: Hrvatskoj treba bod proti",
-        "[URL /sport/] Samuel Kolega na devetom mjestu zaključio prvi slalom sezone, slavio Brazilac Braathen"
-      ]
-    },
-    "backlog": {
-      "total_size": 0,
-      "sources": {}
-    },
-    "published": {
-      "total": 2,
-      "ukraine_priority": 0,
-      "with_images": 2,
-      "text_only": 0,
-      "og_images_found": 0,
-      "sources": {
-        "Zadarski list": 1,
-        "Slobodna dalmacija": 1
-      }
-    },
-    "models_used": {
-      "gemini-3.6-flash": 2
-    },
-    "models_by_task": {
-      "filter": "gemini-3.6-flash",
-      "translate": "gemini-3.6-flash"
-    },
-    "model_attempts": [
-      {
-        "task": "filter",
-        "model": "gemini-3.6-flash",
-        "outcome": "ok"
-      },
-      {
-        "task": "translate",
-        "model": "gemini-3.8-flash",
-        "outcome": "unavailable"
-      },
-      {
-        "task": "translate",
-        "model": "gemini-3.5-flash-lite",
-        "outcome": "unavailable"
-      },
-      {
-        "task": "translate",
-        "model": "gemini-3.6-flash",
-        "outcome": "ok"
-      }
-    ],
-    "exhausted_models": [],
-    "demoted_models": [
-      "filter: gemini-3-flash-preview"
-    ],
-    "translate_budget_deferred": [
-      "gemini-3.6-flash"
-    ],
-    "gemini_region_blocked": false,
-    "gemini_unavailable": false,
-    "errors_count": 0,
-    "gemini_retries": 2
-  },
-  {
     "timestamp": "2026-11-15 15:01:17",
     "execution_time": 87.3,
     "funnel": {
@@ -10000,6 +9901,94 @@
     "demoted_models": [
       "filter: gemini-3-flash-preview",
       "filter: gemini-3.6-flash",
+      "filter: gemini-3.1-flash-lite"
+    ],
+    "translate_budget_deferred": [],
+    "gemini_region_blocked": false,
+    "gemini_unavailable": true,
+    "errors_count": 0,
+    "gemini_retries": 4
+  },
+  {
+    "timestamp": "2026-11-24 15:01:18",
+    "execution_time": 30.8,
+    "funnel": {
+      "scraped_total": 35,
+      "scraped_by_source": {
+        "023": 10,
+        "Slobodna dalmacija": 15,
+        "Zadarski list": 10
+      },
+      "already_seen": 16,
+      "rejected_by_keywords": 5,
+      "rejected_by_rule": {
+        "тег RSS lifestyle": 2,
+        "igrača": 1,
+        "тег RSS nogomet": 1,
+        "тег RSS sport": 1
+      },
+      "unclassified_by_ai": 0,
+      "duplicates_removed_by_ai": 0,
+      "rejection_reasons_list": [],
+      "rejected_by_reason": {},
+      "updates_marked": 0,
+      "already_rejected": 1,
+      "rejected_by_code_examples": [
+        "[тег RSS lifestyle] Koliko vode dnevno piti za stabilan krvni tlak i zašto ni višak nije bezopasan",
+        "[тег RSS lifestyle] Zašto se suhi i mokri sastojci za kolač dodaju naizmjence i kojim redoslijedom",
+        "[igrača] Malonogometna reprezentacija MUP-a osvojila zlato na Svjetskim policijskim igrama u Nizozemskoj - če",
+        "[тег RSS nogomet] Budimir na vrhu u društvu Harryja Kanea i Erlinga Haalanda. Hrvat je zabio 30 golova glavom u zadnji",
+        "[тег RSS sport] Sinner operirao koljeno, ne zna se kada se vraća na teniske terene"
+      ]
+    },
+    "backlog": {
+      "total_size": 46,
+      "sources": {
+        "023": 12,
+        "Slobodna dalmacija": 16,
+        "Zadarski list": 18
+      }
+    },
+    "published": {
+      "total": 0,
+      "ukraine_priority": 0,
+      "with_images": 0,
+      "text_only": 0,
+      "og_images_found": 0,
+      "sources": {}
+    },
+    "models_used": {},
+    "models_by_task": {
+      "filter": null,
+      "translate": null
+    },
+    "model_attempts": [
+      {
+        "task": "filter",
+        "model": "gemini-3-flash-preview",
+        "outcome": "unavailable"
+      },
+      {
+        "task": "filter",
+        "model": "gemini-3.6-flash",
+        "outcome": "unavailable"
+      },
+      {
+        "task": "filter",
+        "model": "gemini-3.5-flash-lite",
+        "outcome": "unavailable"
+      },
+      {
+        "task": "filter",
+        "model": "gemini-3.1-flash-lite",
+        "outcome": "unavailable"
+      }
+    ],
+    "exhausted_models": [],
+    "demoted_models": [
+      "filter: gemini-3-flash-preview",
+      "filter: gemini-3.6-flash",
+      "filter: gemini-3.5-flash-lite",
       "filter: gemini-3.1-flash-lite"
     ],
     "translate_budget_deferred": [],
