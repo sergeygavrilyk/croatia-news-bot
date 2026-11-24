@@ -1,106 +1,5 @@
 [
   {
-    "timestamp": "2026-11-14 20:01:12",
-    "execution_time": 118.3,
-    "funnel": {
-      "scraped_total": 35,
-      "scraped_by_source": {
-        "023": 10,
-        "Slobodna dalmacija": 15,
-        "Zadarski list": 10
-      },
-      "already_seen": 15,
-      "rejected_by_keywords": 14,
-      "rejected_by_rule": {
-        "тег RSS sport": 2,
-        "тег RSS lifestyle": 3,
-        "URL /sport/": 3,
-        "nogometaš": 1,
-        "тег RSS nogomet": 3,
-        "тег RSS košarka": 2
-      },
-      "unclassified_by_ai": 0,
-      "duplicates_removed_by_ai": 5,
-      "rejection_reasons_list": [
-        "• Prosvjed protiv projekta KOdeCONet Zero i spaljivanja otpada u Holcimu → Побут інших міст (Протест проти спалювання відходів в Істрії) | Сутності: Istarska županija, Holcim, Koromačno, KOdeCONet Zero",
-        "• ‘Inovacija‘ na Širokoj i Ulici od puča: probužani su kameni stupići, e → Побут інших міст (Пошкодження кам'яних стовпчиків у Дубровнику) | Сутності: Široka ulica, Ulica od puča, Dubrovnik, kameni stupići",
-        "• Dan blizanaca: Dječja kuća prepuna smijeha i duplog veselja → Побут інших міст (Захід для близнюків у Рієці) | Сутності: Rijeka, Dječja kuća, Udruga Gemini, Dan blizanaca",
-        "• Iranska mornarica: Naftni tanker “prekršio pravila” i naletio na minu  → Геоблок (Інцидент з танкером в Ірані) | Сутності: Iranska mornarica, Hormuški tjesnac, naftni tanker, IRNA",
-        "• Most prikupio 7500 potpisa za raskid koncesijskog ugovora s tvrtkom Co → Побут інших міст (Петиція щодо пляжу готелю в Рієці) | Сутності: Most, JTH Costabella, Hilton Rijeka, Primorsko-goranska županija"
-      ],
-      "rejected_by_reason": {
-        "Побут інших міст": 4,
-        "Геоблок": 1
-      },
-      "updates_marked": 0,
-      "already_rejected": 13,
-      "rejected_by_code_examples": [
-        "[тег RSS sport] Zadar srušio neporaženi Partizan na Višnjiku i upisao najveću pobjedu sezone",
-        "[тег RSS sport] Livaković uoči Češke odgovorio na pitanja o Barceloni: “Strpljivo čekam svoju priliku”",
-        "[тег RSS lifestyle] Lupanje i pucketanje iz bojlera: uzrok otkriva trenutak u kojem se zvuk javlja",
-        "[тег RSS lifestyle] Pohana piletina bez brašna: odresci prvo odstoje u marinadi s parmezanom i limunom",
-        "[тег RSS lifestyle] Zašto mačke predu: osim zadovoljstva, taj zvuk može značiti glad, stres ili bol",
-        "[URL /sport/] Iva Oberan osvojila broncu na Grand Prixu Zagreb!",
-        "[nogometaš] Bivši nogometaš napravio zaokret u karijeri i ušao u biznis s nekretninama: ‘Top agenti su kao golge",
-        "[URL /sport/] Utakmica s humanitarnim predznakom: Square dočekuje Osijek, zbog interesa navijača fan zona već od 1",
-        "[URL /sport/] Torcida slavila na Zametu! Futsalska momčad Rijeke doživjela težak poraz",
-        "[тег RSS nogomet] Norveška pobijedila Wales i ostala u igri za četvrtfinale",
-        "[тег RSS košarka] Crikvenica izgubila nakon produžetka u Zadru. Bivši igrač Kvarnera zabio za pobjedu domaćina",
-        "[тег RSS košarka] Hrvatske košarkašice uvjerljivo nadigrale Češku u gostima u važnom dvoboju za plasman na EP",
-        "[тег RSS nogomet] Livaković uoči Češke progovorio i o statusu u Barceloni: “Strpljiv sam i čekam priliku”",
-        "[тег RSS nogomet] Slaven Bilić: “Bod nam je dosta, ali ne bih volio 0:0. Gvardiol? Nemam sumnje u njega”"
-      ]
-    },
-    "backlog": {
-      "total_size": 0,
-      "sources": {}
-    },
-    "published": {
-      "total": 1,
-      "ukraine_priority": 0,
-      "with_images": 1,
-      "text_only": 0,
-      "og_images_found": 1,
-      "sources": {
-        "023": 1
-      }
-    },
-    "models_used": {
-      "gemini-3-flash-preview": 1,
-      "gemini-3.5-flash-lite": 1
-    },
-    "models_by_task": {
-      "filter": "gemini-3-flash-preview",
-      "translate": "gemini-3.5-flash-lite"
-    },
-    "model_attempts": [
-      {
-        "task": "filter",
-        "model": "gemini-3-flash-preview",
-        "outcome": "ok"
-      },
-      {
-        "task": "translate",
-        "model": "gemini-3.8-flash",
-        "outcome": "unavailable"
-      },
-      {
-        "task": "translate",
-        "model": "gemini-3.5-flash-lite",
-        "outcome": "ok"
-      }
-    ],
-    "exhausted_models": [],
-    "demoted_models": [],
-    "translate_budget_deferred": [
-      "gemini-3.6-flash"
-    ],
-    "gemini_region_blocked": false,
-    "gemini_unavailable": false,
-    "errors_count": 0,
-    "gemini_retries": 1
-  },
-  {
     "timestamp": "2026-11-15 08:01:14",
     "execution_time": 332.4,
     "funnel": {
@@ -9931,5 +9830,117 @@
     "gemini_unavailable": true,
     "errors_count": 0,
     "gemini_retries": 4
+  },
+  {
+    "timestamp": "2026-11-24 08:01:13",
+    "execution_time": 280.2,
+    "funnel": {
+      "scraped_total": 35,
+      "scraped_by_source": {
+        "023": 10,
+        "Slobodna dalmacija": 15,
+        "Zadarski list": 10
+      },
+      "already_seen": 0,
+      "rejected_by_keywords": 3,
+      "rejected_by_rule": {
+        "КАПС у заголовку": 1,
+        "тег RSS sport": 1,
+        "URL /sport/": 1
+      },
+      "unclassified_by_ai": 0,
+      "duplicates_removed_by_ai": 13,
+      "rejection_reasons_list": [
+        "• Nove teške optužbe na račun hrvatske policije: ‘Rekli smo im da smo ob → Не за тематикою (Проблема мігрантів на кордоні не стосується Задара) | Сутності: Hrvatska policija, Human Rights Watch, migranti, Bosna i Hercegovina",
+        "• Žita ima, ali ne stiže do gladnih. U silosima je 10 milijuna tona, a p → Геоблок (Глобальна продовольча криза) | Сутності: WFP, Luke Lindberg, Donald Trump, Ujedinjeni narodi",
+        "• Ruski dron ušao u Poljsku, vojska izdala zapovijed za obaranje pa odus → Геоблок (Інцидент з дроном у Польщі) | Сутності: Poljska, NATO, Rusija, Ukrajina",
+        "• Prvi snijeg zabijelio Liku, problemi već na cestama. Sutra stižu nove  → Побут інших міст (Проблеми зі снігом у Ліці) | Сутності: Lika, HAC, Baške Oštarije, Senj",
+        "• Direktorice STIFF-a: ‘Raznolikost studentske produkcije daje uvid u ra → Побут інших міст (Локальний студентський фестиваль у Рієці) | Сутності: STIFF, Rijeka, filmski festival",
+        "• Jedino kazalište izvan Italije na talijanskom jeziku slavi 80 godina.  → Побут інших міст (Ювілей театру в Рієці) | Сутності: HNK Ivana pl. Zajca, Rijeka, Talijanska drama, Dubravka Vrgoč",
+        "• U autu francuskih tablica švercao oružje, evo što su mu sve pronašli → Не за тематикою (Зброя на кордоні не стосується Задара) | Сутності: Nova Sela, granični prijelaz, Bosna i Hercegovina, Francuska",
+        "• “Marija Antoaneta za ovo nema vremena”. Nova predstava HNK-a otvara pi → Побут інших міст (Прем'єра вистави в Загребі) | Сутності: HNK u Zagrebu, Sanja Milardović, Marija Antoaneta",
+        "• Kako Dubrovnik dočekuje Advent? Nino Dubretić: ‘Zamislite da 35 posto  → Побут інших міст (Підготовка до Адвенту в Дубровинку) | Сутності: Dubrovnik, Nino Dubretić, Advent",
+        "• Paški uzgajivači janjetine upozoravaju: ‘To je veliki problem! Sezona  → Вже публікувалось (Обмеження на забій худоби) | Сутності: Pag, janjetina, Ministarstvo, klaonice",
+        "• Povratak šefa Nvidije pokrenuo burzovnu euforiju. Wall Street ovako ni → Світовий шум (Ситуація на світовій біржі) | Сутності: Wall Street, Nvidia, Jensen Huang, Dow Jones",
+        "• Božo Lasić o tekstu u crnogorskim medijima: Konavle su u agresiji pret → Побут інших міст (Реакція в Конавле та Дубровнику) | Сутності: Konavle, Dubrovnik, Božo Lasić, Branislav Radulović",
+        "• U Dubrovniku ne postoji navika odvajanja otpada ni kompostiranja: čak  → Побут інших міст (Проблеми з відходами в Дубровнику) | Сутності: Dubrovnik, Konavle, otpad, kompostiranje"
+      ],
+      "rejected_by_reason": {
+        "Не за тематикою": 2,
+        "Геоблок": 2,
+        "Побут інших міст": 7,
+        "Вже публікувалось": 1,
+        "Світовий шум": 1
+      },
+      "updates_marked": 0,
+      "already_rejected": 0,
+      "rejected_by_code_examples": [
+        "[КАПС у заголовку] OSVOJI KINO ULAZNICE Darujemo 4 kino ulaznice za film “TIGAR OD PAPIRA” u Cinestaru Zadar",
+        "[тег RSS sport] Održan 43. Polumaraton Nin – Zadar; Pobjede i naslovi prvaka Hrvatske za Dračara i Parlov Koštro",
+        "[URL /sport/] Agata Bjelica vratila iz iz Bara s broncom!"
+      ]
+    },
+    "backlog": {
+      "total_size": 9,
+      "sources": {
+        "023": 7,
+        "Slobodna dalmacija": 1,
+        "Zadarski list": 1
+      }
+    },
+    "published": {
+      "total": 3,
+      "ukraine_priority": 1,
+      "with_images": 3,
+      "text_only": 0,
+      "og_images_found": 1,
+      "sources": {
+        "Zadarski list": 1,
+        "Slobodna dalmacija": 1,
+        "023": 1
+      }
+    },
+    "models_used": {
+      "gemini-3.5-flash-lite": 1,
+      "gemini-3.6-flash": 1
+    },
+    "models_by_task": {
+      "filter": "gemini-3.5-flash-lite",
+      "translate": "gemini-3.6-flash"
+    },
+    "model_attempts": [
+      {
+        "task": "filter",
+        "model": "gemini-3-flash-preview",
+        "outcome": "unavailable"
+      },
+      {
+        "task": "filter",
+        "model": "gemini-3.6-flash",
+        "outcome": "unavailable"
+      },
+      {
+        "task": "filter",
+        "model": "gemini-3.5-flash-lite",
+        "outcome": "ok"
+      },
+      {
+        "task": "translate",
+        "model": "gemini-3.8-flash",
+        "outcome": "unavailable"
+      },
+      {
+        "task": "translate",
+        "model": "gemini-3.6-flash",
+        "outcome": "ok"
+      }
+    ],
+    "exhausted_models": [],
+    "demoted_models": [],
+    "translate_budget_deferred": [],
+    "gemini_region_blocked": false,
+    "gemini_unavailable": false,
+    "errors_count": 0,
+    "gemini_retries": 3
   }
 ]
