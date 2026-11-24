@@ -1,91 +1,5 @@
 [
   {
-    "timestamp": "2026-11-15 09:01:15",
-    "execution_time": 190.3,
-    "funnel": {
-      "scraped_total": 35,
-      "scraped_by_source": {
-        "023": 10,
-        "Slobodna dalmacija": 15,
-        "Zadarski list": 10
-      },
-      "already_seen": 15,
-      "rejected_by_keywords": 0,
-      "rejected_by_rule": {},
-      "unclassified_by_ai": 0,
-      "duplicates_removed_by_ai": 9,
-      "rejection_reasons_list": [
-        "• Bijeg od mobilizacije?: Rekordan broj Rusa ljetos putovao u inozemstvo → Геоблок (Статистика виїзду росіян за кордон) | Сутності: Rusi, Gruzija, Armenija, Srbija, FSB",
-        "• Spektakularan prizor iz Teksasa, Goleme mehaničke ruke prvi put uhvati → Геоблок (Випробування ракети SpaceX у США) | Сутності: SpaceX, Elon Musk, Starship, Teksas, SAD",
-        "• Na Ugljanu su pacijenti vezani i po 10 sati! Ravnatelj objasnio kako s → Вже публікувалось (Коментарі та обговорення інциденту в Jankomir) | Сутності: Ugljan, Jankomir, Kristian Josip Periš, HRT, Zagreb",
-        "• U zgradi s 41 stanom živi samo jedna obitelj. Kupci morali potpisati s → Вже публікувалось (Дебати в Саборі щодо закону про туризм) | Сутності: Dubrovnik, Mato Franković, Hrvatski sabor, Zakon o ugostiteljskoj djelatnosti",
-        "• U devetoj akciji ‘24 sata bez kompromisa‘ prikupljeno prvih 94 tisuće  → Не за тематикою (Благодійна акція місцевого рівня) | Сутності: 24 sata bez kompromisa, 94 tisuca eura, Hrvatska",
-        "• Tko dobiva, a tko gubi u proračunu za 2027.? Mirovine i obrana dobivaj → Вже публікувалось (Презентація держбюджету 2027 вже публікувалась) | Сутності: Vlada RH, Hrvatski sabor, Proracun 2027, BDP",
-        "• Prepolovili smo studeni i opet upali u ‘kišni mode‘: hoće li sljedeći  → Побут інших міст (Прогноз погоди для Дубровника) | Сутності: Dubrovnik, Dalmacija, N1",
-        "• Izložba “Merkur, Hermes, Tot” u Zagrebu: Što povezuje antičke bogove t → Побут інших міст (Музейна виставка у Загребі) | Сутності: Arheoloski muzej, Zagreb, Ozren Domiter",
-        "• On je branio Vukovar, njegov brat otišao je na stranu agresora: ‘Mi sm → Не за тематикою (Особиста історія захисника Вуковара) | Сутності: Vukovar, Ranko Mugosa, Domovinski rat, Crna Gora"
-      ],
-      "rejected_by_reason": {
-        "Геоблок": 2,
-        "Вже публікувалось": 3,
-        "Не за тематикою": 2,
-        "Побут інших міст": 2
-      },
-      "updates_marked": 1,
-      "already_rejected": 12
-    },
-    "backlog": {
-      "total_size": 1,
-      "sources": {
-        "Slobodna dalmacija": 1
-      }
-    },
-    "published": {
-      "total": 2,
-      "ukraine_priority": 0,
-      "with_images": 1,
-      "text_only": 1,
-      "og_images_found": 0,
-      "sources": {
-        "023": 1,
-        "Zadarski list": 1
-      }
-    },
-    "models_used": {
-      "gemini-3.6-flash": 2
-    },
-    "models_by_task": {
-      "filter": "gemini-3.6-flash",
-      "translate": "gemini-3.6-flash"
-    },
-    "model_attempts": [
-      {
-        "task": "filter",
-        "model": "gemini-3-flash-preview",
-        "outcome": "unavailable"
-      },
-      {
-        "task": "filter",
-        "model": "gemini-3.6-flash",
-        "outcome": "ok"
-      },
-      {
-        "task": "translate",
-        "model": "gemini-3.6-flash",
-        "outcome": "ok"
-      }
-    ],
-    "exhausted_models": [],
-    "demoted_models": [
-      "translate: gemini-3.8-flash"
-    ],
-    "translate_budget_deferred": [],
-    "gemini_region_blocked": false,
-    "gemini_unavailable": false,
-    "errors_count": 1,
-    "gemini_retries": 1
-  },
-  {
     "timestamp": "2026-11-15 10:01:15",
     "execution_time": 94.6,
     "funnel": {
@@ -9936,5 +9850,134 @@
     "gemini_unavailable": true,
     "errors_count": 0,
     "gemini_retries": 4
+  },
+  {
+    "timestamp": "2026-11-24 10:01:18",
+    "execution_time": 128.8,
+    "funnel": {
+      "scraped_total": 35,
+      "scraped_by_source": {
+        "023": 10,
+        "Slobodna dalmacija": 15,
+        "Zadarski list": 10
+      },
+      "already_seen": 13,
+      "rejected_by_keywords": 5,
+      "rejected_by_rule": {
+        "URL /sport/": 1,
+        "promo": 2,
+        "sporta": 1,
+        "тег RSS košarka": 1
+      },
+      "unclassified_by_ai": 0,
+      "duplicates_removed_by_ai": 18,
+      "rejection_reasons_list": [
+        "• Četiri ubojice u prometu: Neprilagođena brzina i nepropisno parkiranje → Побут інших міст (ДТП у Дубровнику) | Сутності: Дубровник, поліція, ДТП",
+        "• Denis Vejzović napustio bolnicu, ide u toplice. Obitelj: “Hvala svima, → Не за тематикою (Особиста історія одужання з Рієки) | Сутності: Рієка, Денис Вейзович, лікування",
+        "• FOTO Andrija Jarak stigao na suđenje Mlađanu, jedno pitanje odmah je s → Вже публікувалось (Коментар до судової справи) | Сутності: Андрія Ярак, Срджан Младян, суд",
+        "• Spremate se za uređenje doma? Donosimo popis najboljih Black Friday ul → Реклама (Рекламна акція магазину) | Сутності: Kera Term, Black Friday, ремонт",
+        "• Radnik poginuo u nesreći u Luci Ploče. Kobno je bilo mijenjanje kotača → Побут інших міст (Інцидент у порту Плоче) | Сутності: Плоче, нещасний випадок, робітник",
+        "• Human Rights Watch optužuje Hrvatsku za sustavno i nasilno protjerivan → Вже публікувалось (Звіт про мігрантів) | Сутності: Human Rights Watch, мігранти, Хорватія",
+        "• Pijani Nepalac nožem pokušao ubiti Indijca na Pagu. Žrtva s teškim ozl → Вже публікувалось (Інцидент на Пагу вже в історії) | Сутності: Паг, напад, поліція",
+        "• Pogledajte kako je zlatna retriverica spasila djevojčicu od utapanja u → Геоблок (Подія в Бразилії) | Сутності: Бразилія, собака, порятунок",
+        "• VIDEO Pucnjava u školi u Kragujevcu! Uhićen 17-godišnji učenik, ozlije → Геоблок (Подія в Сербії) | Сутності: Крагуєвац, стрілянина, школа",
+        "• U Dubrovniku trebamo imati i od čega živjeti i gdje živjeti → Побут інших міст (Політична дискусія в Дубровнику) | Сутності: Дубровник, Вікторія Кнежевич, туризм",
+        "• Naletite na divljač, a niste krivi? Novi zakon mogao bi vas ostaviti s → Не за тематикою (Загальна дискусія про закон) | Сутності: Закон про полювання, автомобілі, збитки",
+        "• Velik interes za “Mjesec domaćih okusa” u Zadarskoj županiji; Domaća h → Вже публікувалось (Повтор новини про гастро-фестиваль) | Сутності: Задарська жупанія, гастрономія, туризм",
+        "• Katarinina va Selcu: Zbog najave lošeg vremena se odgađa središnji pro → Побут інших міст (Скасування заходу в Цриквениці) | Сутності: Цриквениця, погода, захід",
+        "• Rijeka se uključuje u svjetsku kampanju protiv nasilja nad ženama, poz → Побут інших міст (Акція в Рієці) | Сутності: Рієка, насильство над жінками, кампанія",
+        "• Usred dana u Biogradu vozio s više od dva promila; Policija za 28-godi → Не за тематикою (Локальний інцидент у Біограді) | Сутності: Біоград, поліція, алкоголь",
+        "• Važan korak. Ina udvostručila proizvodnju plina na Jadranu, sada pokri → Не за тематикою (Економічна новина про видобуток газу) | Сутності: INA, газ, Адріатика",
+        "• Raste broj blokiranih tvrtki i stečajeva; Evo zašto su mali građevinar → Не за тематикою (Аналітика ринку праці) | Сутності: Хорватія, банкрутство, економіка",
+        "• Blagdan sv. Kate u Vukšiću; Svečano euharistijsko slavlje u 11 sati uz → Не за тематикою (Локальне релігійне свято) | Сутності: Вукшич, свято, церква"
+      ],
+      "rejected_by_reason": {
+        "Побут інших міст": 5,
+        "Не за тематикою": 6,
+        "Вже публікувалось": 4,
+        "Реклама": 1,
+        "Геоблок": 2
+      },
+      "updates_marked": 0,
+      "already_rejected": 5,
+      "rejected_by_code_examples": [
+        "[URL /sport/] Agata Bjelica vratila iz iz Bara s broncom!",
+        "[promo] Zašto Santa Lucia? Kozlovići lansirali tri vina s položaja koji istražuju godinama",
+        "[promo] Božićni pokloni bez klišeja: originalne ideje za poklone koji se pamte",
+        "[sporta] Mladi tekvondoaši iz Otočca uspješni na međunarodnim natjecanjima",
+        "[тег RSS košarka] Pacersi prekinuli niz od četiri poraza, Zubac opet odličan"
+      ]
+    },
+    "backlog": {
+      "total_size": 12,
+      "sources": {
+        "023": 11,
+        "Slobodna dalmacija": 1
+      }
+    },
+    "published": {
+      "total": 0,
+      "ukraine_priority": 0,
+      "with_images": 0,
+      "text_only": 0,
+      "og_images_found": 3,
+      "sources": {}
+    },
+    "models_used": {
+      "gemini-3.1-flash-lite": 1
+    },
+    "models_by_task": {
+      "filter": "gemini-3.1-flash-lite",
+      "translate": null
+    },
+    "model_attempts": [
+      {
+        "task": "filter",
+        "model": "gemini-3.5-flash-lite",
+        "outcome": "unavailable"
+      },
+      {
+        "task": "filter",
+        "model": "gemini-3-flash-preview",
+        "outcome": "unavailable"
+      },
+      {
+        "task": "filter",
+        "model": "gemini-3.6-flash",
+        "outcome": "unavailable"
+      },
+      {
+        "task": "filter",
+        "model": "gemini-3.1-flash-lite",
+        "outcome": "ok"
+      },
+      {
+        "task": "translate",
+        "model": "gemini-3.6-flash",
+        "outcome": "unavailable"
+      },
+      {
+        "task": "translate",
+        "model": "gemini-3.5-flash-lite",
+        "outcome": "unavailable"
+      },
+      {
+        "task": "translate",
+        "model": "gemini-3.8-flash",
+        "outcome": "unavailable"
+      }
+    ],
+    "exhausted_models": [],
+    "demoted_models": [
+      "filter: gemini-3-flash-preview",
+      "filter: gemini-3.6-flash",
+      "filter: gemini-3.1-flash-lite",
+      "translate: gemini-3.8-flash"
+    ],
+    "translate_budget_deferred": [],
+    "gemini_region_blocked": false,
+    "gemini_unavailable": true,
+    "errors_count": 0,
+    "gemini_retries": 6
   }
 ]
