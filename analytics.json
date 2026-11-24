@@ -1,89 +1,5 @@
 [
   {
-    "timestamp": "2026-11-15 13:01:16",
-    "execution_time": 123.8,
-    "funnel": {
-      "scraped_total": 35,
-      "scraped_by_source": {
-        "023": 10,
-        "Slobodna dalmacija": 15,
-        "Zadarski list": 10
-      },
-      "already_seen": 23,
-      "rejected_by_keywords": 6,
-      "rejected_by_rule": {
-        "sport": 2,
-        "igrač": 1,
-        "URL /sport/": 3
-      },
-      "unclassified_by_ai": 0,
-      "duplicates_removed_by_ai": 0,
-      "rejection_reasons_list": [],
-      "rejected_by_reason": {},
-      "updates_marked": 0,
-      "already_rejected": 13,
-      "rejected_by_code_examples": [
-        "[sport] Od Dunda Maroja do polumaratona: tjedan pred nama donosi kazalište, koncerte, film i sport",
-        "[igrač] Zadar se učvrstio na prvom mjestu, Posedarje bolje u golijadi, Primorac dobro prošao na gostovanju",
-        "[sport] Sandra Profaca i Ivica Vukman pobjednici 10. Atletske utrke „Dani sjećanja od Škabrnje do Vukovara“",
-        "[URL /sport/] Izvrstan start Jugovih plivača u Zadru, doplivali do 6 medalja i niza osobnih rekorda",
-        "[URL /sport/] Rekordna četiri poraza u nizu dovela su ‘kockaste” u nezahvalnu situaciju: Hrvatskoj treba bod proti",
-        "[URL /sport/] Samuel Kolega jedanaesti nakon prve vožnje u Leviju. Zubčić i Rodeš ostali bez druge vožnje"
-      ]
-    },
-    "backlog": {
-      "total_size": 5,
-      "sources": {
-        "Slobodna dalmacija": 3,
-        "Zadarski list": 2
-      }
-    },
-    "published": {
-      "total": 0,
-      "ukraine_priority": 0,
-      "with_images": 0,
-      "text_only": 0,
-      "og_images_found": 0,
-      "sources": {}
-    },
-    "models_used": {},
-    "models_by_task": {
-      "filter": null,
-      "translate": null
-    },
-    "model_attempts": [
-      {
-        "task": "filter",
-        "model": "gemini-3.6-flash",
-        "outcome": "unavailable"
-      },
-      {
-        "task": "filter",
-        "model": "gemini-3.5-flash-lite",
-        "outcome": "unavailable"
-      },
-      {
-        "task": "filter",
-        "model": "gemini-3.1-flash-lite",
-        "outcome": "unavailable"
-      },
-      {
-        "task": "filter",
-        "model": "gemini-3-flash-preview",
-        "outcome": "unavailable"
-      }
-    ],
-    "exhausted_models": [],
-    "demoted_models": [
-      "filter: gemini-3-flash-preview"
-    ],
-    "translate_budget_deferred": [],
-    "gemini_region_blocked": false,
-    "gemini_unavailable": true,
-    "errors_count": 0,
-    "gemini_retries": 4
-  },
-  {
     "timestamp": "2026-11-15 14:01:13",
     "execution_time": 185.9,
     "funnel": {
@@ -9999,6 +9915,92 @@
     "demoted_models": [
       "filter: gemini-3-flash-preview",
       "filter: gemini-3.6-flash"
+    ],
+    "translate_budget_deferred": [],
+    "gemini_region_blocked": false,
+    "gemini_unavailable": true,
+    "errors_count": 0,
+    "gemini_retries": 4
+  },
+  {
+    "timestamp": "2026-11-24 14:01:14",
+    "execution_time": 17.0,
+    "funnel": {
+      "scraped_total": 35,
+      "scraped_by_source": {
+        "023": 10,
+        "Slobodna dalmacija": 15,
+        "Zadarski list": 10
+      },
+      "already_seen": 18,
+      "rejected_by_keywords": 4,
+      "rejected_by_rule": {
+        "тег RSS lifestyle": 1,
+        "igrača": 1,
+        "тег RSS sport": 1,
+        "тег RSS košarka": 1
+      },
+      "unclassified_by_ai": 0,
+      "duplicates_removed_by_ai": 0,
+      "rejection_reasons_list": [],
+      "rejected_by_reason": {},
+      "updates_marked": 0,
+      "already_rejected": 5,
+      "rejected_by_code_examples": [
+        "[тег RSS lifestyle] Zašto se suhi i mokri sastojci za kolač dodaju naizmjence i kojim redoslijedom",
+        "[igrača] Malonogometna reprezentacija MUP-a osvojila zlato na Svjetskim policijskim igrama u Nizozemskoj - če",
+        "[тег RSS sport] Sinner operirao koljeno, ne zna se kada se vraća na teniske terene",
+        "[тег RSS košarka] Memphis ostaje bez Camerona Boozera najmanje na mjesec dana"
+      ]
+    },
+    "backlog": {
+      "total_size": 32,
+      "sources": {
+        "023": 9,
+        "Slobodna dalmacija": 10,
+        "Zadarski list": 13
+      }
+    },
+    "published": {
+      "total": 0,
+      "ukraine_priority": 0,
+      "with_images": 0,
+      "text_only": 0,
+      "og_images_found": 0,
+      "sources": {}
+    },
+    "models_used": {},
+    "models_by_task": {
+      "filter": null,
+      "translate": null
+    },
+    "model_attempts": [
+      {
+        "task": "filter",
+        "model": "gemini-3.5-flash-lite",
+        "outcome": "unavailable"
+      },
+      {
+        "task": "filter",
+        "model": "gemini-3-flash-preview",
+        "outcome": "unavailable"
+      },
+      {
+        "task": "filter",
+        "model": "gemini-3.6-flash",
+        "outcome": "unavailable"
+      },
+      {
+        "task": "filter",
+        "model": "gemini-3.1-flash-lite",
+        "outcome": "unavailable"
+      }
+    ],
+    "exhausted_models": [],
+    "demoted_models": [
+      "filter: gemini-3-flash-preview",
+      "filter: gemini-3.6-flash",
+      "filter: gemini-3.1-flash-lite"
     ],
     "translate_budget_deferred": [],
     "gemini_region_blocked": false,
