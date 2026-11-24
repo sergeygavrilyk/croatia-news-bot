@@ -1,87 +1,5 @@
 [
   {
-    "timestamp": "2026-11-15 17:01:18",
-    "execution_time": 14.2,
-    "funnel": {
-      "scraped_total": 35,
-      "scraped_by_source": {
-        "023": 10,
-        "Slobodna dalmacija": 15,
-        "Zadarski list": 10
-      },
-      "already_seen": 23,
-      "rejected_by_keywords": 8,
-      "rejected_by_rule": {
-        "тег RSS lifestyle": 2,
-        "тег RSS sport": 1,
-        "sport": 2,
-        "igrač": 1,
-        "URL /sport/": 1,
-        "тег RSS košarka": 1
-      },
-      "unclassified_by_ai": 0,
-      "duplicates_removed_by_ai": 4,
-      "rejection_reasons_list": [
-        "• Stari časopisi iz osamdesetih postali su pjesme: Enver Krivac otkriva  → Не за тематикою (Презентація книги автора з Рієки) | Сутності: Enver Krivac, Neka jedu kolaže, Rijeka",
-        "• Riječki Tajni agenti privukli više od 5.000 gledatelja: Sve svoje nevo → Побут інших міст (Локальний кінопроєкт у місті Рієка) | Сутності: Tajni agenti 010, Rijeka, 5.000 gledatelja",
-        "• “Gulliverova putovanja” nisu dječja knjiga: Swift je zapravo pisao jed → Світовий шум (Історія написання книги та назви компанії) | Сутності: Jonathan Swift, Gulliverova putovanja, Yahoo!",
-        "• “Promjene moraju osmisliti političke elite, a ne da ih gura ulica”: Ek → Не за тематикою (Інтерв'ю з економістом про політичну ситуацію) | Сутності: Mladen Vedriš, Hrvatska, SAD, Washington"
-      ],
-      "rejected_by_reason": {
-        "Не за тематикою": 2,
-        "Побут інших міст": 1,
-        "Світовий шум": 1
-      },
-      "updates_marked": 0,
-      "already_rejected": 15,
-      "rejected_by_code_examples": [
-        "[тег RSS lifestyle] Umak za božićno pečenje možete skuhati unaprijed i čuvati ga u zamrzivaču do blagdana",
-        "[тег RSS lifestyle] Promatračke studije povezuju redovito jedenje jaja s manjim rizikom od Alzheimerove bolesti",
-        "[тег RSS sport] Sandra Profaca i Ivica Vukman pobjednici 10. Atletske utrke “Dani sjećanja od Škabrnje do Vukovara”",
-        "[sport] Od Dunda Maroja do polumaratona: tjedan pred nama donosi kazalište, koncerte, film i sport",
-        "[igrač] Zadar se učvrstio na prvom mjestu, Posedarje bolje u golijadi, Primorac dobro prošao na gostovanju",
-        "[sport] Sandra Profaca i Ivica Vukman pobjednici 10. Atletske utrke „Dani sjećanja od Škabrnje do Vukovara“",
-        "[URL /sport/] Izvrstan start Jugovih plivača u Zadru, doplivali do 6 medalja i niza osobnih rekorda",
-        "[тег RSS košarka] Košarkaši Kvarnera se protiv Alkara vratili iz “minus 16”. Krajnović promašio tricu za produžetak"
-      ]
-    },
-    "backlog": {
-      "total_size": 0,
-      "sources": {}
-    },
-    "published": {
-      "total": 0,
-      "ukraine_priority": 0,
-      "with_images": 0,
-      "text_only": 0,
-      "og_images_found": 0,
-      "sources": {}
-    },
-    "models_used": {
-      "gemini-3-flash-preview": 1
-    },
-    "models_by_task": {
-      "filter": "gemini-3-flash-preview",
-      "translate": null
-    },
-    "model_attempts": [
-      {
-        "task": "filter",
-        "model": "gemini-3-flash-preview",
-        "outcome": "ok"
-      }
-    ],
-    "exhausted_models": [],
-    "demoted_models": [
-      "translate: gemini-3.8-flash"
-    ],
-    "translate_budget_deferred": [],
-    "gemini_region_blocked": false,
-    "gemini_unavailable": false,
-    "errors_count": 0,
-    "gemini_retries": 0
-  },
-  {
     "timestamp": "2026-11-15 20:01:11",
     "execution_time": 263.0,
     "funnel": {
@@ -10048,5 +9966,122 @@
     "gemini_unavailable": true,
     "errors_count": 0,
     "gemini_retries": 6
+  },
+  {
+    "timestamp": "2026-11-24 20:01:12",
+    "execution_time": 232.3,
+    "funnel": {
+      "scraped_total": 35,
+      "scraped_by_source": {
+        "023": 10,
+        "Slobodna dalmacija": 15,
+        "Zadarski list": 10
+      },
+      "already_seen": 20,
+      "rejected_by_keywords": 4,
+      "rejected_by_rule": {
+        "тег RSS lifestyle": 4
+      },
+      "unclassified_by_ai": 0,
+      "duplicates_removed_by_ai": 19,
+      "rejection_reasons_list": [
+        "• Srđan Kovačević predstavio osječku Orqu na Wall Streetu → Побут інших міст (Презентація компанії з Осієка у Нью-Йорку) | Сутності: Srđan Kovačević, Orqa, Osijek, Wall Street, New York",
+        "• Nedjeljko Kuzma prijavio državne odvjetnike i policajce. Pritvorili ga → Побут інших міст (Місцевий конфлікт з поліцією у Рієці) | Сутності: Nedeljko Kuzma, DORH, USKOK, Rijeka, Facebook",
+        "• U Čaporicama otpad postaje energija i vrijednost za poljoprivredu → Побут інших міст (Будівництво біогазової станції у Трілі) | Сутності: Čaporice, Trilj, bioplinsko postrojenje, biootpad",
+        "• Hrstić i Tomašević dogovorili hitne mjere za Kliniku u kojoj je ubijen → Побут інших міст (Заходи у клініці Загреба) | Сутності: Irena Hrstić, Tomislav Tomašević, Kristian Periš, Klinika Sveti Ivan, Zagreb",
+        "• Zadar nagradio najbolje: Pogledajte fotogaleriju s dodjele javnih priz → Вже публікувалось (Фоторепортаж з нагородження в Задарі) | Сутності: Zadar, Dan grada Zadra, sv. Krševan, Tomislav Sorić",
+        "• Liburnijske vode ispituju izvorišta na Učki. Evo što napraviti ako vam → Побут інших міст (Тестування джерел води на Учці) | Сутності: KD Vodovod i kanalizacija, Liburnijske vode, Učka, Rijeka",
+        "• Zavod za javno zdravstvo proslavio 30. obljetnicu: Tri desetljeća stru → Побут інших міст (Ювілей установи у Дубровнику) | Сутності: Zavod za javno zdravstvo, Dubrovačko-neretvanska županija, Jele Škrabić, Dubrovnik",
+        "• Cijene nafte nadomak 90 dolara → Світовий шум (Коливальні ціни на нафту у світі) | Сутності: cijene nafte, Hormuški tjesnac, London, SAD, Iranska mornarica",
+        "• U mesu divlje svinje ulovljene kod Tribunja otkriven opasan parazit, u → Побут інших міст (Паразит у кабана біля Трибуня) | Сутності: Tribunj, Trichinella spiralis, Veterinarska ambulanta Vodice, trihineloza",
+        "• Doznajte sve o povijesti opatijskog cabareta u Sky baru Centra Gervais → Побут інших міст (Лекція про кабаре в Опатії) | Сутності: Sky bar Centra Gervais, Opatija, Tutzie, Ana Kuranda",
+        "• Odbijeno povećanje komunalne naknade u Crikvenici. Gradonačelnica: Nem → Побут інших міст (Місцевий бюджет Цриквениці) | Сутності: Crikvenica, komunalna naknada, proračun, HDZ",
+        "• Uz vrlo loš odaziv, održani mjesni izbori u Matuljima. Evo rezultata → Побут інших міст (Вибори до місцевих рад у Матулі) | Сутності: Matulji, mjesni izbori, Pužev Komun",
+        "• U izraelskom napadu ubijen šef Hamasove unutarnje sigurnosne službe u  → Геоблок (Події в Ізраїлі та Газі) | Сутності: Naim Abu Nahal, Hamas, Gaza, Benjamin Netanyahu, Izrael",
+        "• Tamikrest premijerno u Rijeci: Spoj hipnotičkog pustinjskog bluesa, ps → Побут інших міст (Концерт у клубі Рієки) | Сутності: Tamikrest, Rijeka, Pogon, Kel Tamasheq",
+        "• Fond: Nastavlja se sanacija Sovjaka, priprema se javna nabava novog iz → Побут інших міст (Очищення звалища у Вішково) | Сутності: jama Sovjak, Viškovo, Rijeka, Fond za zaštitu okoliša",
+        "• Znate li da lignja svoj plijen mora trgati na sitne zalogaje kako se n → Світовий шум (Факти про кальмарів) | Сутності: lignja, tentakule, prijanjaljke",
+        "• Raspudić: U razvijenim demokracijama za ostavku bio bi dovoljan jedan  → Не за тематикою (Політичні дискусії у Саборі без рішень) | Сутності: Nino Raspudić, Andrej Plenković, Sabor, Hrvatska",
+        "• I kraljice vole piletinu. Na ulazu u luku nasukao podlanicu težu od dv → Побут інших міст (Історія рибалки з Велі-Лошиня) | Сутності: Marko Hruby, Veli Lošinj, luka Rovenska, podlanica",
+        "• Tržnica Zamet bez struje u četvrtak do 14:30 sati → Побут інших міст (Відключення світла на ринку у Рієці) | Сутності: Tržnica Zamet, Rijeka, HEP"
+      ],
+      "rejected_by_reason": {
+        "Побут інших міст": 14,
+        "Вже публікувалось": 1,
+        "Світовий шум": 2,
+        "Геоблок": 1,
+        "Не за тематикою": 1
+      },
+      "updates_marked": 1,
+      "already_rejected": 17,
+      "rejected_by_code_examples": [
+        "[тег RSS lifestyle] Slavonski čobanac u običnom loncu: luk, mljevena paprika i do tri sata laganog kuhanja",
+        "[тег RSS lifestyle] Zašto se visok krvni tlak zove tihim ubojicom i od koje vrijednosti postaje teško povišen",
+        "[тег RSS lifestyle] Koliko vode dnevno piti za stabilan krvni tlak i zašto ni višak nije bezopasan",
+        "[тег RSS lifestyle] Zašto se suhi i mokri sastojci za kolač dodaju naizmjence i kojim redoslijedom"
+      ]
+    },
+    "backlog": {
+      "total_size": 11,
+      "sources": {
+        "Zadarski list": 9,
+        "Slobodna dalmacija": 1,
+        "023": 1
+      }
+    },
+    "published": {
+      "total": 3,
+      "ukraine_priority": 0,
+      "with_images": 3,
+      "text_only": 0,
+      "og_images_found": 0,
+      "sources": {
+        "023": 2,
+        "Slobodna dalmacija": 1
+      }
+    },
+    "models_used": {
+      "gemini-3.6-flash": 2
+    },
+    "models_by_task": {
+      "filter": "gemini-3.6-flash",
+      "translate": "gemini-3.6-flash"
+    },
+    "model_attempts": [
+      {
+        "task": "filter",
+        "model": "gemini-3-flash-preview",
+        "outcome": "unavailable"
+      },
+      {
+        "task": "filter",
+        "model": "gemini-3.6-flash",
+        "outcome": "ok"
+      },
+      {
+        "task": "translate",
+        "model": "gemini-3.8-flash",
+        "outcome": "unavailable"
+      },
+      {
+        "task": "translate",
+        "model": "gemini-3.5-flash-lite",
+        "outcome": "unavailable"
+      },
+      {
+        "task": "translate",
+        "model": "gemini-3.6-flash",
+        "outcome": "ok"
+      }
+    ],
+    "exhausted_models": [],
+    "demoted_models": [],
+    "translate_budget_deferred": [
+      "gemini-3.6-flash"
+    ],
+    "gemini_region_blocked": false,
+    "gemini_unavailable": false,
+    "errors_count": 0,
+    "gemini_retries": 3
   }
 ]
