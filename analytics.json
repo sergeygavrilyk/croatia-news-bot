@@ -1,104 +1,5 @@
 [
   {
-    "timestamp": "2026-11-15 16:01:20",
-    "execution_time": 183.1,
-    "funnel": {
-      "scraped_total": 35,
-      "scraped_by_source": {
-        "023": 10,
-        "Slobodna dalmacija": 15,
-        "Zadarski list": 10
-      },
-      "already_seen": 24,
-      "rejected_by_keywords": 7,
-      "rejected_by_rule": {
-        "тег RSS lifestyle": 1,
-        "тег RSS sport": 1,
-        "sport": 2,
-        "igrač": 1,
-        "URL /sport/": 1,
-        "тег RSS košarka": 1
-      },
-      "unclassified_by_ai": 0,
-      "duplicates_removed_by_ai": 2,
-      "rejection_reasons_list": [
-        "• Analitičar Predrag Bejaković: “Bez pomoći države siromašno bi bilo 40  → Світовий шум (Абстрактні роздуми експерта про соціальний захист та бідність) | Сутності: Predrag Bejaković, Hrvatska, BDP",
-        "• Učenici OŠ Zvonka Cara prvaci županije u šahu → Спорт (Шкільний чемпіонат із шахів у місті Криквениця) | Сутності: OŠ Zvonka Cara, Crikvenica, šah"
-      ],
-      "rejected_by_reason": {
-        "Світовий шум": 1,
-        "Спорт": 1
-      },
-      "updates_marked": 1,
-      "already_rejected": 15,
-      "rejected_by_code_examples": [
-        "[тег RSS lifestyle] Promatračke studije povezuju redovito jedenje jaja s manjim rizikom od Alzheimerove bolesti",
-        "[тег RSS sport] Sandra Profaca i Ivica Vukman pobjednici 10. Atletske utrke “Dani sjećanja od Škabrnje do Vukovara”",
-        "[sport] Od Dunda Maroja do polumaratona: tjedan pred nama donosi kazalište, koncerte, film i sport",
-        "[igrač] Zadar se učvrstio na prvom mjestu, Posedarje bolje u golijadi, Primorac dobro prošao na gostovanju",
-        "[sport] Sandra Profaca i Ivica Vukman pobjednici 10. Atletske utrke „Dani sjećanja od Škabrnje do Vukovara“",
-        "[URL /sport/] Izvrstan start Jugovih plivača u Zadru, doplivali do 6 medalja i niza osobnih rekorda",
-        "[тег RSS košarka] Košarkaši Kvarnera se protiv Alkara vratili iz “minus 16”. Krajnović promašio tricu za produžetak"
-      ]
-    },
-    "backlog": {
-      "total_size": 0,
-      "sources": {}
-    },
-    "published": {
-      "total": 2,
-      "ukraine_priority": 1,
-      "with_images": 2,
-      "text_only": 0,
-      "og_images_found": 0,
-      "sources": {
-        "Zadarski list": 1,
-        "Slobodna dalmacija": 1
-      }
-    },
-    "models_used": {
-      "gemini-3-flash-preview": 1,
-      "gemini-3.6-flash": 1
-    },
-    "models_by_task": {
-      "filter": "gemini-3-flash-preview",
-      "translate": "gemini-3.6-flash"
-    },
-    "model_attempts": [
-      {
-        "task": "filter",
-        "model": "gemini-3-flash-preview",
-        "outcome": "ok"
-      },
-      {
-        "task": "translate",
-        "model": "gemini-3.5-flash-lite",
-        "outcome": "unavailable"
-      },
-      {
-        "task": "translate",
-        "model": "gemini-3.8-flash",
-        "outcome": "unavailable"
-      },
-      {
-        "task": "translate",
-        "model": "gemini-3.6-flash",
-        "outcome": "ok"
-      }
-    ],
-    "exhausted_models": [],
-    "demoted_models": [
-      "translate: gemini-3.8-flash"
-    ],
-    "translate_budget_deferred": [
-      "gemini-3.6-flash"
-    ],
-    "gemini_region_blocked": false,
-    "gemini_unavailable": false,
-    "errors_count": 0,
-    "gemini_retries": 2
-  },
-  {
     "timestamp": "2026-11-15 17:01:18",
     "execution_time": 14.2,
     "funnel": {
@@ -10020,5 +9921,132 @@
     "gemini_unavailable": true,
     "errors_count": 0,
     "gemini_retries": 5
+  },
+  {
+    "timestamp": "2026-11-24 17:01:20",
+    "execution_time": 148.3,
+    "funnel": {
+      "scraped_total": 35,
+      "scraped_by_source": {
+        "023": 10,
+        "Slobodna dalmacija": 15,
+        "Zadarski list": 10
+      },
+      "already_seen": 26,
+      "rejected_by_keywords": 2,
+      "rejected_by_rule": {
+        "тег RSS lifestyle": 2
+      },
+      "unclassified_by_ai": 0,
+      "duplicates_removed_by_ai": 18,
+      "rejection_reasons_list": [
+        "• Roboti ubojice sve su bliže. SAD i Rusija blokirali pokušaj zabrane or → Геоблок (Події за межами Хорватії та України) | Сутності: США, Росія, ООН, роботи-вбивці",
+        "• Odbijene žalbe četvorice medicinskih tehničara pritvorenih nakon Periš → Вже публікувалось (Справа про вбивство в Задарі) | Сутності: Крістіан Йосип Периш, Жупанійський суд, медичні техніки",
+        "• Od 1. do 11. prosinca; Božićne radionice izrade ukrasa i razglednica u → Вже публікувалось (Подія в Задарі) | Сутності: Народний музей Задар, різдвяні майстер-класи, Провидурова палаца",
+        "• Rješenje za divlje deponije: Centar za gospodarenje otpadom Lučino raz → Побут інших міст (Сміттєпереробка в Дубровнику) | Сутності: Лучіно роздолє, Дубровник, сміттєпереробний центр",
+        "• Počelo suđenje zbog likvidacije para u garaži zgrade na Markuševcu. An → Вже публікувалось (Судовий процес у Загребі) | Сутності: Загреб, Матія Машала, суд",
+        "• Misteriozna smrt u Luci Ploče! Golema guma usmrtila mladića, stručnjak → Побут інших міст (Інцидент у порту Плоче) | Сутності: Лука Плоче, нещасний випадок, пожежники",
+        "• Europska komisija brani svoju auto-industriju strogim kvotama na uvoz  → Світовий шум (Економічні заходи ЄС) | Сутності: Європейська комісія, автомобільна промисловість, імпортні квоти",
+        "• Dirljiv čin u Konavlima, Crnogorci se poklonili žrtvama JNA. Izrečene  → Побут інших міст (Подія в Конавле) | Сутності: Конавле, Чіліпі, Чорногорія, JNA",
+        "• Crobexi pali uz pad prometa, u fokusu Končar grupa → Світовий шум (Фінансові показники біржі) | Сутності: Загребська біржа, Crobex, Кончар група",
+        "• Deset mladih pinija na Zlatnoj luci: Sukošan sadi stabla koja će nadži → Побут інших міст (Посадка дерев у Сукошані) | Сутності: Сукошан, Златна лука, Хорватська туристична спільнота",
+        "• Bojite se napraviti prvi korak? Oni su ispričali što im se dogodilo ka → Побут інших міст (Конференція в Плоче) | Сутності: Плоче, Next Gen Neretva, конференція",
+        "• Uhićen i otac učenika koji je pucnjavi u Kragujevcu ozlijedio dvije dj → Геоблок (Подія в Сербії) | Сутності: Крагуєвац, Сербія, стрілянина в школі",
+        "• Gradonačelnik Benkovca zaposlio rođaka s bagerom, Grad mu platio 100.0 → Побут інших міст (Корупційний скандал у Бенковаці) | Сутності: Бенковац, Томіслав Буліч, Комісія з конфлікту інтересів",
+        "• Hrvatska policija sudjelovala u međunarodnoj akciji protiv ilegalnih I → Світовий шум (Міжнародна операція) | Сутності: Хорватська поліція, Europol, IPTV",
+        "• Obnovljena još dva stana u zidinama za mlade obitelji, pogledajte kako → Побут інших міст (Житлова програма в Дубровнику) | Сутності: Дубровник, Франкович, житло для молодих сімей",
+        "• Dva zlata i dva srebra za Šahovski klub Crikvenica → Спорт (Шаховий турнір) | Сутності: Цріквеніца, шаховий клуб, чемпіонат",
+        "• UN: Oko 47.000 žena i djevojčica 2025. ubili partneri ili bliski člano → Світовий шум (Глобальна статистика насильства) | Сутності: ООН, феміцид, статистика",
+        "• Ozelenjavanje Grada: Počela sadnja 62 košćele na Vojnoviću → Побут інших міст (Озеленення в Дубровнику) | Сутності: Дубровник, Войнович, посадка дерев"
+      ],
+      "rejected_by_reason": {
+        "Геоблок": 2,
+        "Вже публікувалось": 3,
+        "Побут інших міст": 8,
+        "Світовий шум": 4,
+        "Спорт": 1
+      },
+      "updates_marked": 0,
+      "already_rejected": 13,
+      "rejected_by_code_examples": [
+        "[тег RSS lifestyle] Koliko vode dnevno piti za stabilan krvni tlak i zašto ni višak nije bezopasan",
+        "[тег RSS lifestyle] Zašto se suhi i mokri sastojci za kolač dodaju naizmjence i kojim redoslijedom"
+      ]
+    },
+    "backlog": {
+      "total_size": 28,
+      "sources": {
+        "023": 9,
+        "Zadarski list": 14,
+        "Slobodna dalmacija": 5
+      }
+    },
+    "published": {
+      "total": 0,
+      "ukraine_priority": 0,
+      "with_images": 0,
+      "text_only": 0,
+      "og_images_found": 1,
+      "sources": {}
+    },
+    "models_used": {
+      "gemini-3.1-flash-lite": 1
+    },
+    "models_by_task": {
+      "filter": "gemini-3.1-flash-lite",
+      "translate": null
+    },
+    "model_attempts": [
+      {
+        "task": "filter",
+        "model": "gemini-3.5-flash-lite",
+        "outcome": "unavailable"
+      },
+      {
+        "task": "filter",
+        "model": "gemini-3-flash-preview",
+        "outcome": "unavailable"
+      },
+      {
+        "task": "filter",
+        "model": "gemini-3.6-flash",
+        "outcome": "unavailable"
+      },
+      {
+        "task": "filter",
+        "model": "gemini-3.1-flash-lite",
+        "outcome": "ok"
+      },
+      {
+        "task": "translate",
+        "model": "gemini-3.8-flash",
+        "outcome": "unavailable"
+      },
+      {
+        "task": "translate",
+        "model": "gemini-3.5-flash-lite",
+        "outcome": "unavailable"
+      },
+      {
+        "task": "translate",
+        "model": "gemini-3.6-flash",
+        "outcome": "unavailable"
+      }
+    ],
+    "exhausted_models": [],
+    "demoted_models": [
+      "filter: gemini-3-flash-preview",
+      "filter: gemini-3.6-flash",
+      "filter: gemini-3.1-flash-lite",
+      "translate: gemini-3.8-flash",
+      "translate: gemini-3.5-flash-lite"
+    ],
+    "translate_budget_deferred": [
+      "gemini-3.6-flash"
+    ],
+    "gemini_region_blocked": false,
+    "gemini_unavailable": true,
+    "errors_count": 0,
+    "gemini_retries": 6
   }
 ]
