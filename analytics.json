@@ -1,110 +1,5 @@
 [
   {
-    "timestamp": "2026-11-16 11:01:27",
-    "execution_time": 322.4,
-    "funnel": {
-      "scraped_total": 35,
-      "scraped_by_source": {
-        "023": 10,
-        "Slobodna dalmacija": 15,
-        "Zadarski list": 10
-      },
-      "already_seen": 15,
-      "rejected_by_keywords": 9,
-      "rejected_by_rule": {
-        "promo": 3,
-        "sporta": 1,
-        "igrača": 1,
-        "URL /sport/": 3,
-        "тег RSS nogomet": 1
-      },
-      "unclassified_by_ai": 0,
-      "duplicates_removed_by_ai": 8,
-      "rejection_reasons_list": [
-        "• Poznate okolnosti prometne nesreće na Ratcu u kojoj su ozlijeđene dvij → Побут інших міст (ДТП у дубровницькому регіоні) | Сутності: Ratac, D-8, Dubrovnik",
-        "• Objavljene nove cijene goriva, pojeftinjuju i benzin i dizel → Вже публікувалось (Нові ціни на пальне) | Сутності: Vlada RH, benzin, dizel",
-        "• Zadarska nadbiskupija objavila predivnu vijest; U Kistanjama kršteno d → Не за тематикою (Хрещення в родині) | Сутності: Zadarska nadbiskupija, Kistanje, Roko Glasnović",
-        "• Skinut natpis Studenca sa zgrade PEMO centra u Vukovarskoj, stiže novi → Побут інших міст (Зміна магазину в Дубровнику) | Сутності: Studenac, Ribola, Dubrovnik",
-        "• Izložba o improviziranim oružjima u Domovinskom ratu: Svjedočanstvo hr → Побут інших міст (Виставка у Загребі) | Сутності: Policijska akademija, Muzej policije, Zagreb",
-        "• Od sutra jeftinije gorivo → Дубль (Дублікат новини про пальне) | Сутності: Vlada RH, gorivo, benzin",
-        "• Četvero kandidata na MasterChefu pred Goranovim izazovom u četiri faze → Не за тематикою (Телешоу MasterChef) | Сутності: MasterChef, Goran Kočiš",
-        "• Stanka Gjurić opet predsjednica žirija Egipatsko-američkog filmskog fe → Не за тематикою (Кінофестиваль у Нью-Йорку) | Сутності: Stanka Gjurić, New York, Egyptian American Film Festival"
-      ],
-      "rejected_by_reason": {
-        "Побут інших міст": 3,
-        "Вже публікувалось": 1,
-        "Не за тематикою": 3,
-        "Дубль": 1
-      },
-      "updates_marked": 0,
-      "already_rejected": 10,
-      "rejected_by_code_examples": [
-        "[promo] Obilježavanje Dana sjećanja u Benkovcu: Paljenje svijeća u Vukovarskoj ulici i besplatna projekcija ",
-        "[sporta] Cro Cop oduševio Zadar: Prepuno kazalište na večeri ‘Licem u lice s Mirkom Filipovićem‘",
-        "[igrača] Abeceda se vraća s bodovima iz Benkovca, povijesni rezultat Paga",
-        "[URL /sport/] Predstavnice Karate kluba Kakato, sestre Agata i Marta Bjelica, ostvarile zapažene rezultate u Split",
-        "[тег RSS nogomet] Ovo su mogući suparnici Hrvatske u “baražu” za ostanak u elitnom rangu Lige nacija",
-        "[URL /sport/] Opatijkama susjedski derbi na Zametu, Senkinje poražene u Velikoj Gorici",
-        "[URL /sport/] Vratarka Zameta nakon drugog uzastopnog poraza: “Ovo razdoblje moramo prebroditi”",
-        "[promo] Koja je tajna dugovječnosti? Centar Zlata predstavio novu kreativnu kampanju",
-        "[promo] INA – pokretač gospodarstva na Kvarneru i dobar susjed lokalnoj zajednici"
-      ]
-    },
-    "backlog": {
-      "total_size": 2,
-      "sources": {
-        "Slobodna dalmacija": 1,
-        "Zadarski list": 1
-      }
-    },
-    "published": {
-      "total": 3,
-      "ukraine_priority": 0,
-      "with_images": 2,
-      "text_only": 1,
-      "og_images_found": 2,
-      "sources": {
-        "023": 3
-      }
-    },
-    "models_used": {
-      "gemini-3.6-flash": 2
-    },
-    "models_by_task": {
-      "filter": "gemini-3.6-flash",
-      "translate": "gemini-3.6-flash"
-    },
-    "model_attempts": [
-      {
-        "task": "filter",
-        "model": "gemini-3-flash-preview",
-        "outcome": "unavailable"
-      },
-      {
-        "task": "filter",
-        "model": "gemini-3.6-flash",
-        "outcome": "ok"
-      },
-      {
-        "task": "translate",
-        "model": "gemini-3.8-flash",
-        "outcome": "unavailable"
-      },
-      {
-        "task": "translate",
-        "model": "gemini-3.6-flash",
-        "outcome": "ok"
-      }
-    ],
-    "exhausted_models": [],
-    "demoted_models": [],
-    "translate_budget_deferred": [],
-    "gemini_region_blocked": false,
-    "gemini_unavailable": false,
-    "errors_count": 0,
-    "gemini_retries": 2
-  },
-  {
     "timestamp": "2026-11-16 12:01:13",
     "execution_time": 142.0,
     "funnel": {
@@ -10053,5 +9948,106 @@
     "gemini_unavailable": false,
     "errors_count": 0,
     "gemini_retries": 2
+  },
+  {
+    "timestamp": "2026-11-25 12:01:17",
+    "execution_time": 144.7,
+    "funnel": {
+      "scraped_total": 35,
+      "scraped_by_source": {
+        "023": 10,
+        "Slobodna dalmacija": 15,
+        "Zadarski list": 10
+      },
+      "already_seen": 11,
+      "rejected_by_keywords": 3,
+      "rejected_by_rule": {
+        "тег RSS sport": 1,
+        "igračima": 1,
+        "košarkaša": 1
+      },
+      "unclassified_by_ai": 0,
+      "duplicates_removed_by_ai": 14,
+      "rejection_reasons_list": [
+        "• Njemačka policija razbila organizaciju “Terror 18”. Tinejdžeri priprem → Геоблок (Затримання підлітків у Німеччині) | Сутності: Karlsruhe, Terror 18, Njemačka policija",
+        "• Osnivačice ŽEN-a u Rijeci predstavile fanzin “ŽENEMAŠINE”, pa zasviral → Побут інших міст (Презентація фанзину в Рієці) | Сутності: Rijeka, ŽENEMAŠINE, Galerija IVEX, Zagreb",
+        "• Policija ga snimila presretačem: Nećete vjerovati kojom je brzinom jur → Дубль (Дублікат детальнішої новини №7) | Сутності: Donje Biljane, DC-502, Postaja prometne policije Zadar",
+        "• Ladies’ Brunch & Cars: “Uz brunch učimo o autu, a sav prihod ide žrtva → Побут інших міст (Локальний благодійний захід у Вішково) | Сутності: Viškovo, Gornji Jugi, Rotary klub Karolina Riječka",
+        "• Manifestacija koja okuplja ljubitelje književnosti, glazbe i umjetnost → Побут інших міст (Культурний захід у Цріквениці) | Сутності: Crikvenica, dvorana Zora, Denis Beganović",
+        "• Povjereni alat nije vratio: Radnik osumnjičen za pronevjeru veću od ti → Вже публікувалось (Інцидент із привласненням інструменту вже є в історії) | Сутності: Benkovac, Obrovac, 30-godišnjak",
+        "• Vejanke obljetničkim koncertom oduševile krčku publiku. Pogledajte → Побут інших міст (Концерт на острові Крк) | Сутності: Krk, Vejanke, Naše pjesme, naši snovi",
+        "• Dubrovački SDP: Tražimo pet posto gradskog proračuna svake godine za s → Побут інших міст (Міська політика Дубровника) | Сутності: Dubrovnik, SDP, Anita Bonačić Obradović",
+        "• Uhićen šef Informera, Vučićev propagandist “izazivao paniku i nered u  → Геоблок (Арешт медіа-власника в Белграді) | Сутності: Beograd, Dragan J. Vučićević, Informer, Srbija",
+        "• U Bribiru potpisani ugovori o stipendiranju → Побут інших міст (Стипендії у Брибірі) | Сутності: Bribir, Vinodolska općina, Daniel Grbić",
+        "• Rijetke bolesti, stvarni životi: podržite snimanje filma ‘’Hodajući s  → Побут інших міст (Благодійна ініціатива в Дубровнику) | Сутності: Dubrovnik, Palčići, Hodajući s divovima",
+        "• Uvode se promjene u određivanju novčanih potpora za novorođeno dijete → Дубль (Частина загального засідання Уряду з новини №8) | Сутності: Vlada RH, Ivan Šipić, Zakon o rodiljnim i roditeljskim potporama",
+        "• Jutarnji prvi doznaje: Dijana Zadravec neće biti šefica radiologije! → Дубль (Неофіційний дублікат офіційної новини №18) | Сутності: Dijana Zadravec, KBC Sestre milosrdnice, Jutarnji list",
+        "• Dubrovačke kazne najčitanija tema ECC-a; Nijemci upozoravaju svoje gra → Побут інших міст (Штрафи за в'їзд у Дубровник) | Сутності: Dubrovnik, EVZ Njemačka, ECC-Net"
+      ],
+      "rejected_by_reason": {
+        "Геоблок": 2,
+        "Побут інших міст": 8,
+        "Дубль": 3,
+        "Вже публікувалось": 1
+      },
+      "updates_marked": 0,
+      "already_rejected": 8,
+      "rejected_by_code_examples": [
+        "[тег RSS sport] U čast najvećem zadarskom velikanu; Na rođendan Kreše Ćosića u Zagrebu se otvara izložba s dosad nev",
+        "[igračima] Modrić je bio miran, tvrdoglav i vjerovao je igračima. Probudio je Zadar i pokazao koliko malo treba",
+        "[košarkaša] Predstavljena knjiga o temeljima razvoja mladog košarkaša Tomislava Uzelca-Šćirana"
+      ]
+    },
+    "backlog": {
+      "total_size": 9,
+      "sources": {
+        "Slobodna dalmacija": 3,
+        "Zadarski list": 4,
+        "023": 2
+      }
+    },
+    "published": {
+      "total": 3,
+      "ukraine_priority": 0,
+      "with_images": 3,
+      "text_only": 0,
+      "og_images_found": 2,
+      "sources": {
+        "023": 2,
+        "Slobodna dalmacija": 1
+      }
+    },
+    "models_used": {
+      "gemini-3.6-flash": 1,
+      "gemini-3.5-flash-lite": 1
+    },
+    "models_by_task": {
+      "filter": "gemini-3.6-flash",
+      "translate": "gemini-3.5-flash-lite"
+    },
+    "model_attempts": [
+      {
+        "task": "filter",
+        "model": "gemini-3.6-flash",
+        "outcome": "ok"
+      },
+      {
+        "task": "translate",
+        "model": "gemini-3.5-flash-lite",
+        "outcome": "ok"
+      }
+    ],
+    "exhausted_models": [],
+    "demoted_models": [
+      "filter: gemini-3-flash-preview",
+      "translate: gemini-3.8-flash"
+    ],
+    "translate_budget_deferred": [
+      "gemini-3.6-flash"
+    ],
+    "gemini_region_blocked": false,
+    "gemini_unavailable": false,
+    "errors_count": 0,
+    "gemini_retries": 0
   }
 ]
