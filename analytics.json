@@ -1,101 +1,5 @@
 [
   {
-    "timestamp": "2026-11-16 10:01:26",
-    "execution_time": 133.0,
-    "funnel": {
-      "scraped_total": 35,
-      "scraped_by_source": {
-        "023": 10,
-        "Slobodna dalmacija": 15,
-        "Zadarski list": 10
-      },
-      "already_seen": 18,
-      "rejected_by_keywords": 5,
-      "rejected_by_rule": {
-        "promo": 2,
-        "sporta": 1,
-        "igrača": 1,
-        "URL /sport/": 1
-      },
-      "unclassified_by_ai": 0,
-      "duplicates_removed_by_ai": 6,
-      "rejection_reasons_list": [
-        "• Lovci iz “Potjere” ostali bez finala! Riječke ŠtRIge najbolja ženska k → Побут інших міст (Квіз-турнір у Загребі) | Сутності: Interliber, Zagreb, Hrvatski kviz savez, ŠtRIge",
-        "• Akademski pjevački zbor iz Osijeka gostuje u Dubrovniku s Papandopulov → Побут інших міст (Концерт хору в Дубровнику) | Сутності: Dubrovnik, Osijek, Boris Papandopulo, Hrvatska misa",
-        "• Deset nesreća tijekom vikenda: U Gospiću zaustavljen vozač s 1,55 prom → Побут інших міст (ДТП та порушення у Госпичі) | Сутності: Gospić, Ličko-senjska županija, PU ličko-senjska",
-        "• Večeras u Gospiću premijerno prikazivanje dokumentarnog filma o 138. b → Побут інших міст (Показ фільму в Госпичі) | Сутності: Gospić, 138. brigada HV, Goranski risovi, Franjo Tuđman",
-        "• Nova pravila već stupaju na snagu, a poduzetnici pitaju: Što je bilo s → Вже публікувалось (Коментар бізнесу щодо оголошених правил цін) | Сутності: Udruga Glas poduzetnika, UGP, Vlada RH, cjenici",
-        "• Ušteda na namirnicama za svako kućanstvo! U Plodinama popusti do -30% → Реклама (Рекламна знижка у мережі Plodine) | Сутності: Plodine, Black Friday, popusti"
-      ],
-      "rejected_by_reason": {
-        "Побут інших міст": 4,
-        "Вже публікувалось": 1,
-        "Реклама": 1
-      },
-      "updates_marked": 1,
-      "already_rejected": 13,
-      "rejected_by_code_examples": [
-        "[promo] Obilježavanje Dana sjećanja u Benkovcu: Paljenje svijeća u Vukovarskoj ulici i besplatna projekcija ",
-        "[sporta] Cro Cop oduševio Zadar: Prepuno kazalište na večeri ‘Licem u lice s Mirkom Filipovićem‘",
-        "[igrača] Abeceda se vraća s bodovima iz Benkovca, povijesni rezultat Paga",
-        "[URL /sport/] Predstavnice Karate kluba Kakato, sestre Agata i Marta Bjelica, ostvarile zapažene rezultate u Split",
-        "[promo] INA – pokretač gospodarstva na Kvarneru i dobar susjed lokalnoj zajednici"
-      ]
-    },
-    "backlog": {
-      "total_size": 3,
-      "sources": {
-        "Zadarski list": 1,
-        "023": 2
-      }
-    },
-    "published": {
-      "total": 3,
-      "ukraine_priority": 0,
-      "with_images": 3,
-      "text_only": 0,
-      "og_images_found": 3,
-      "sources": {
-        "023": 3
-      }
-    },
-    "models_used": {
-      "gemini-3.6-flash": 1,
-      "gemini-3.5-flash-lite": 1
-    },
-    "models_by_task": {
-      "filter": "gemini-3.6-flash",
-      "translate": "gemini-3.5-flash-lite"
-    },
-    "model_attempts": [
-      {
-        "task": "filter",
-        "model": "gemini-3.6-flash",
-        "outcome": "ok"
-      },
-      {
-        "task": "translate",
-        "model": "gemini-3.6-flash",
-        "outcome": "unavailable"
-      },
-      {
-        "task": "translate",
-        "model": "gemini-3.5-flash-lite",
-        "outcome": "ok"
-      }
-    ],
-    "exhausted_models": [],
-    "demoted_models": [
-      "filter: gemini-3-flash-preview",
-      "translate: gemini-3.8-flash"
-    ],
-    "translate_budget_deferred": [],
-    "gemini_region_blocked": false,
-    "gemini_unavailable": false,
-    "errors_count": 0,
-    "gemini_retries": 1
-  },
-  {
     "timestamp": "2026-11-16 11:01:27",
     "execution_time": 322.4,
     "funnel": {
@@ -10050,5 +9954,104 @@
     "gemini_unavailable": false,
     "errors_count": 0,
     "gemini_retries": 0
+  },
+  {
+    "timestamp": "2026-11-25 11:01:18",
+    "execution_time": 341.1,
+    "funnel": {
+      "scraped_total": 35,
+      "scraped_by_source": {
+        "023": 10,
+        "Slobodna dalmacija": 15,
+        "Zadarski list": 10
+      },
+      "already_seen": 16,
+      "rejected_by_keywords": 2,
+      "rejected_by_rule": {
+        "тег RSS sport": 2
+      },
+      "unclassified_by_ai": 0,
+      "duplicates_removed_by_ai": 11,
+      "rejection_reasons_list": [
+        "• TZ Dubrovačko primorje u akciji „Hrvatska prirodno tvoja“ → Побут інших міст (Посадка дерев у Дубровницькому примор'ї) | Сутності: TZ Dubrovačko primorje, Hrvatska prirodno tvoja, Dubrovnik",
+        "• Plenković kreće u lov na ‘izdajice’ u samom vrhu HDZ-a? Evo tko mu je  → Не за тематикою (Внутрішньопартійні чутки HDZ) | Сутності: Andrej Plenković, HDZ, Dnevno.hr",
+        "• Poruka zadarskog Foruma žena SDP-a; Zaštita žena od nasilja mora posta → Дубль (Заява партії щодо дня боротьби з насильством) | Сутності: Forum žena SDP-a Zadar, Zadar, Međunarodni dan borbe protiv nasilja nad ženama",
+        "• Akcija Movember: na besplatnom urološkom pregledu 54 muškarca, jedan u → Вже публікувалось (Результати акції Movember у Задарі) | Сутності: Opća bolnica Zadar, Movember, 54 muškarca, Zadar",
+        "• Od utorka svaki dan novi darovi: stiže adventski kalendar 023.hr, a pr → Реклама (Промо-розіграш призів у додатку) | Сутності: 023.hr, Advent u Zadru, aplikacija",
+        "• Večer za maestroti ove subote na Zametu → Побут інших міст (Концерт у районі Замет міста Рієка) | Сутності: Zamet, Rijeka, KUD Zametski koren, Ljubomir Mulec",
+        "• Civilna zaštita izdala upozorenje za Dalmaciju, prijeti opasna kombina → Дубль (Попередження про негоду в Далмації) | Сутності: Ravnateljstvo civilne zaštite, Dalmacija, DHMZ, jugo",
+        "• Hajrudinovo Selce: umjetnik čiji je trag postao dijelom identiteta mje → Побут інших міст (Культурний захід у селищі Селце) | Сутності: Selce, Crikvenica, Hajrudin Kujundžić",
+        "• Općina Viškovo odlučila prisiliti vozače da poštuju propise. Evo što s → Побут інших міст (Регулювання руху в громаді Вішково) | Сутності: Općina Viškovo, Marčelji, MUP",
+        "• Za 150 godina baleta u Hrvatskoj, “Orašar” za djecu u HKD-u na Sušaku → Побут інших міст (Дитяча балетна вистава у Рієці) | Сутності: HKD na Sušaku, Rijeka, HNK Split, Orašar",
+        "• Nagrađen prvi animirani film Vedrana Ružića. Priča o ljudima koji se b → Побут інших міст (Кінофестиваль у Копривниці) | Сутності: Vedran Ružić, Koprivnica, Medviđa"
+      ],
+      "rejected_by_reason": {
+        "Побут інших міст": 6,
+        "Не за тематикою": 1,
+        "Дубль": 2,
+        "Вже публікувалось": 1,
+        "Реклама": 1
+      },
+      "updates_marked": 0,
+      "already_rejected": 13,
+      "rejected_by_code_examples": [
+        "[тег RSS sport] U čast najvećem zadarskom velikanu; Na rođendan Kreše Ćosića u Zagrebu se otvara izložba s dosad nev",
+        "[тег RSS sport] Otkazani veleslalomi skijašica u Tremblantu. Nema dovoljno snijega"
+      ]
+    },
+    "backlog": {
+      "total_size": 5,
+      "sources": {
+        "Zadarski list": 3,
+        "023": 2
+      }
+    },
+    "published": {
+      "total": 3,
+      "ukraine_priority": 1,
+      "with_images": 3,
+      "text_only": 0,
+      "og_images_found": 1,
+      "sources": {
+        "Zadarski list": 2,
+        "023": 1
+      }
+    },
+    "models_used": {
+      "gemini-3.6-flash": 2
+    },
+    "models_by_task": {
+      "filter": "gemini-3.6-flash",
+      "translate": "gemini-3.6-flash"
+    },
+    "model_attempts": [
+      {
+        "task": "filter",
+        "model": "gemini-3-flash-preview",
+        "outcome": "unavailable"
+      },
+      {
+        "task": "filter",
+        "model": "gemini-3.6-flash",
+        "outcome": "ok"
+      },
+      {
+        "task": "translate",
+        "model": "gemini-3.8-flash",
+        "outcome": "unavailable"
+      },
+      {
+        "task": "translate",
+        "model": "gemini-3.6-flash",
+        "outcome": "ok"
+      }
+    ],
+    "exhausted_models": [],
+    "demoted_models": [],
+    "translate_budget_deferred": [],
+    "gemini_region_blocked": false,
+    "gemini_unavailable": false,
+    "errors_count": 0,
+    "gemini_retries": 2
   }
 ]
