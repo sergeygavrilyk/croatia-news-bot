@@ -1,96 +1,5 @@
 [
   {
-    "timestamp": "2026-11-16 09:01:18",
-    "execution_time": 188.2,
-    "funnel": {
-      "scraped_total": 35,
-      "scraped_by_source": {
-        "023": 10,
-        "Slobodna dalmacija": 15,
-        "Zadarski list": 10
-      },
-      "already_seen": 19,
-      "rejected_by_keywords": 7,
-      "rejected_by_rule": {
-        "promo": 2,
-        "sportaš": 1,
-        "sporta": 2,
-        "igrača": 1,
-        "URL /sport/": 1
-      },
-      "unclassified_by_ai": 0,
-      "duplicates_removed_by_ai": 5,
-      "rejection_reasons_list": [
-        "• Rijeka će večeras u Koloni sjećanja odati počast Vukovaru i Škabrnji.  → Побут інших міст (Захід у Рієці) | Сутності: Rijeka, Kolona sjećanja, Vukovar, Armada",
-        "• Grad Zadar kreće u uređenje dječjeg igrališta, parka i trga u samom sr → Вже публікувалось (Іграліште у Вели Іж вже в історії) | Сутності: Grad Zadar, Veli Iž, dječje igralište",
-        "• Pavil1on prvi otvara advent u Rijeci: blagdanski program počinje 20. s → Побут інших міст (Адвент у Рієці) | Сутності: Rijeka, Advent, Pavil1on",
-        "• Ravnatelj Mladen Mavar šokiran snimkama iz Jankomira: U psihijatrijski → Вже публікувалось (Коментар щодо події у Загребі) | Сутності: Mladen Mavar, Jankomir, Zagreb, Klinika Sveti Ivan",
-        "• Zadarska sopranistica Nela Šarić fantastičnom izvedbom Gilde oduševila → Побут інших міст (Опера у Спліті) | Сутності: Nela Šarić, Split, HNK Split, Rigoletto"
-      ],
-      "rejected_by_reason": {
-        "Побут інших міст": 3,
-        "Вже публікувалось": 2
-      },
-      "updates_marked": 0,
-      "already_rejected": 13,
-      "rejected_by_code_examples": [
-        "[promo] Obilježavanje Dana sjećanja u Benkovcu: Paljenje svijeća u Vukovarskoj ulici i besplatna projekcija ",
-        "[sportaš] Zadrani u subotu na Narodnom trgu odaju počast Kristianu Josipu Perišu: osam minuta šutnje, svijeće ",
-        "[sporta] Cro Cop oduševio Zadar: Prepuno kazalište na večeri ‘Licem u lice s Mirkom Filipovićem‘",
-        "[igrača] Abeceda se vraća s bodovima iz Benkovca, povijesni rezultat Paga",
-        "[URL /sport/] Predstavnice Karate kluba Kakato, sestre Agata i Marta Bjelica, ostvarile zapažene rezultate u Split",
-        "[sporta] Vitomir Maričić: Muško zdravlje ne smije biti tabu, o raku i mentalnom zdravlju muškaraca treba govo",
-        "[promo] Što učiniti kada posumnjate da ste prevareni? Brzina reakcije može biti ključna"
-      ]
-    },
-    "backlog": {
-      "total_size": 2,
-      "sources": {
-        "023": 2
-      }
-    },
-    "published": {
-      "total": 3,
-      "ukraine_priority": 1,
-      "with_images": 3,
-      "text_only": 0,
-      "og_images_found": 0,
-      "sources": {
-        "Zadarski list": 2,
-        "Slobodna dalmacija": 1
-      }
-    },
-    "models_used": {
-      "gemini-3.6-flash": 2
-    },
-    "models_by_task": {
-      "filter": "gemini-3.6-flash",
-      "translate": "gemini-3.6-flash"
-    },
-    "model_attempts": [
-      {
-        "task": "filter",
-        "model": "gemini-3.6-flash",
-        "outcome": "ok"
-      },
-      {
-        "task": "translate",
-        "model": "gemini-3.6-flash",
-        "outcome": "ok"
-      }
-    ],
-    "exhausted_models": [],
-    "demoted_models": [
-      "filter: gemini-3-flash-preview",
-      "translate: gemini-3.8-flash"
-    ],
-    "translate_budget_deferred": [],
-    "gemini_region_blocked": false,
-    "gemini_unavailable": false,
-    "errors_count": 0,
-    "gemini_retries": 0
-  },
-  {
     "timestamp": "2026-11-16 10:01:26",
     "execution_time": 133.0,
     "funnel": {
@@ -10017,6 +9926,99 @@
       "og_images_found": 3,
       "sources": {
         "023": 3
+      }
+    },
+    "models_used": {
+      "gemini-3.6-flash": 2
+    },
+    "models_by_task": {
+      "filter": "gemini-3.6-flash",
+      "translate": "gemini-3.6-flash"
+    },
+    "model_attempts": [
+      {
+        "task": "filter",
+        "model": "gemini-3.6-flash",
+        "outcome": "ok"
+      },
+      {
+        "task": "translate",
+        "model": "gemini-3.6-flash",
+        "outcome": "ok"
+      }
+    ],
+    "exhausted_models": [],
+    "demoted_models": [
+      "filter: gemini-3-flash-preview",
+      "translate: gemini-3.8-flash"
+    ],
+    "translate_budget_deferred": [],
+    "gemini_region_blocked": false,
+    "gemini_unavailable": false,
+    "errors_count": 0,
+    "gemini_retries": 0
+  },
+  {
+    "timestamp": "2026-11-25 10:01:16",
+    "execution_time": 184.5,
+    "funnel": {
+      "scraped_total": 35,
+      "scraped_by_source": {
+        "023": 10,
+        "Slobodna dalmacija": 15,
+        "Zadarski list": 10
+      },
+      "already_seen": 17,
+      "rejected_by_keywords": 4,
+      "rejected_by_rule": {
+        "тег RSS sport": 3,
+        "тег RSS košarka": 1
+      },
+      "unclassified_by_ai": 0,
+      "duplicates_removed_by_ai": 9,
+      "rejection_reasons_list": [
+        "• Uhićen vlasnik Informera: Vučićeviću na teret stavljaju kaznena djela  → Геоблок (Арешт медіавласника в Сербії) | Сутності: Dragan J. Vučićević, Informer, Beograd, Srbija",
+        "• Živimo li ili samo ponavljamo pokrete? Plesna predstava THE ONE(s) WHO → Побут інших міст (Танцювальна вистава у Рієці) | Сутності: HKD na Sušaku, Rijeka, THE ONE(s) WHO NEVER LIVED",
+        "• Isprobali smo panoramski kotač, novu adventsku atrakciju → Дубль (Огляд оглядового колеса в Задарі) | Сутності: Pozdrav suncu, Zadar, panoramski kotač",
+        "• “Čudesni svjetovi Sunčeva sustava” Ante Radonića u četvrtak na Učki → Світовий шум (Лекція з астрономії) | Сутності: Ante Radonić, Učka, Centar Poklon",
+        "• “Slavimo bez straha”: Prijatelji životinja pozivaju gradove da novac z → Не за тематикою (Заклик зоозахисників щодо феєрверків) | Сутності: Prijatelji životinja, Hrvatska, vatrometi",
+        "• Riječki Možemo! neće podržati Deklaraciju Petre Mandić. “Osudimo i nas → Побут інших міст (Суперечка міськради Рієки) | Сутності: Možemo!, Petra Mandić, Rijeka, Most",
+        "• Lana Lourdes Rupić uskoro u Rovinju predaje krunu svojoj nasljednici → Побут інших міст (Конкурс краси у Ровіні) | Сутності: Lana Lourdes Rupić, Rovinj, Kraljica Hrvatske",
+        "• Na Rijeka Tattoo Expo stiže više od 120 artista, evo svih detalja → Побут інших міст (Тату-фестиваль у Кострені) | Сутності: Rijeka Tattoo Expo, Kostrena, Rijeka",
+        "• Na kuću direktora srpske državne tvrtke noćas bačena bomba. Optuživan  → Геоблок (Напад з бомбою в Сербії) | Сутності: Slobodan Vujičić, Pro TENT, Obrenovac, Srbija"
+      ],
+      "rejected_by_reason": {
+        "Геоблок": 2,
+        "Побут інших міст": 4,
+        "Дубль": 1,
+        "Світовий шум": 1,
+        "Не за тематикою": 1
+      },
+      "updates_marked": 0,
+      "already_rejected": 14,
+      "rejected_by_code_examples": [
+        "[тег RSS sport] U čast najvećem zadarskom velikanu; Na rođendan Kreše Ćosića u Zagrebu se otvara izložba s dosad nev",
+        "[тег RSS sport] U subotu na Rosuljama malonogometni spektakl u čast Željku Bonatu; Stižu Poskoci, Termiti i Croatia ",
+        "[тег RSS sport] Biograd na Moru 12. prosinca domaćin jubilarne Božićne utrke; Provjerite dionice, satnicu i kako se ",
+        "[тег RSS košarka] U Zagrebu se otvara izložba posvećena velikanu hrvatske košarke"
+      ]
+    },
+    "backlog": {
+      "total_size": 3,
+      "sources": {
+        "Zadarski list": 2,
+        "023": 1
+      }
+    },
+    "published": {
+      "total": 3,
+      "ukraine_priority": 0,
+      "with_images": 3,
+      "text_only": 0,
+      "og_images_found": 2,
+      "sources": {
+        "023": 2,
+        "Zadarski list": 1
       }
     },
     "models_used": {
