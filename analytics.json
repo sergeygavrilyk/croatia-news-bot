@@ -1,96 +1,5 @@
 [
   {
-    "timestamp": "2026-11-16 16:01:20",
-    "execution_time": 171.0,
-    "funnel": {
-      "scraped_total": 35,
-      "scraped_by_source": {
-        "023": 10,
-        "Slobodna dalmacija": 15,
-        "Zadarski list": 10
-      },
-      "already_seen": 19,
-      "rejected_by_keywords": 8,
-      "rejected_by_rule": {
-        "тег RSS lifestyle": 2,
-        "КАПС у заголовку": 1,
-        "sport": 1,
-        "utakmice": 1,
-        "тег RSS košarka": 3
-      },
-      "unclassified_by_ai": 0,
-      "duplicates_removed_by_ai": 0,
-      "rejection_reasons_list": [],
-      "rejected_by_reason": {},
-      "updates_marked": 0,
-      "already_rejected": 12,
-      "rejected_by_code_examples": [
-        "[тег RSS lifestyle] Narančasti plamen na plinskom štednjaku: što znači i kako ponovno dobiti stabilan plavi plamen",
-        "[тег RSS lifestyle] Višekratne vrećice za kupnju najbolje je oprati nakon svake upotrebe, a način ovisi o materijalu",
-        "[КАПС у заголовку] OSVOJI KINO ULAZNICE Darujemo 4 kino ulaznice za film “IGRE GLADI: SVITANJE NAD ŽETVOM ” u Cinestaru",
-        "[sport] Gradska vijećnica prelazi iz GKZD u Županiju. SDP: Novi institut zapošljavanja koji još nije uvršten",
-        "[utakmice] Četrnaest Torcidaša iz kortea na slobodi",
-        "[тег RSS košarka] Kraljevičani uvjerljivi protiv Kastva, nakon pet kola su jedina neporažena momčad u ligi",
-        "[тег RSS košarka] Riječanka boljom završnicom došla do četvrte ovosezonske pobjede",
-        "[тег RSS košarka] Kvarner u osmini finala Kupa ugošćuje Alkar, Škrljevo ide u goste Virtusu, a prava fešta bi se mogla"
-      ]
-    },
-    "backlog": {
-      "total_size": 17,
-      "sources": {
-        "Slobodna dalmacija": 4,
-        "023": 2,
-        "Zadarski list": 11
-      }
-    },
-    "published": {
-      "total": 0,
-      "ukraine_priority": 0,
-      "with_images": 0,
-      "text_only": 0,
-      "og_images_found": 0,
-      "sources": {}
-    },
-    "models_used": {},
-    "models_by_task": {
-      "filter": null,
-      "translate": null
-    },
-    "model_attempts": [
-      {
-        "task": "filter",
-        "model": "gemini-3.6-flash",
-        "outcome": "unavailable"
-      },
-      {
-        "task": "filter",
-        "model": "gemini-3.5-flash-lite",
-        "outcome": "unavailable"
-      },
-      {
-        "task": "filter",
-        "model": "gemini-3.1-flash-lite",
-        "outcome": "unavailable"
-      },
-      {
-        "task": "filter",
-        "model": "gemini-3-flash-preview",
-        "outcome": "unavailable"
-      }
-    ],
-    "exhausted_models": [],
-    "demoted_models": [
-      "filter: gemini-3-flash-preview",
-      "translate: gemini-3.8-flash",
-      "translate: gemini-3.5-flash-lite"
-    ],
-    "translate_budget_deferred": [],
-    "gemini_region_blocked": false,
-    "gemini_unavailable": true,
-    "errors_count": 0,
-    "gemini_retries": 4
-  },
-  {
     "timestamp": "2026-11-16 17:01:18",
     "execution_time": 300.9,
     "funnel": {
@@ -9997,6 +9906,128 @@
     "translate_budget_deferred": [],
     "gemini_region_blocked": false,
     "gemini_unavailable": true,
+    "errors_count": 0,
+    "gemini_retries": 4
+  },
+  {
+    "timestamp": "2026-11-25 20:01:14",
+    "execution_time": 164.3,
+    "funnel": {
+      "scraped_total": 35,
+      "scraped_by_source": {
+        "023": 10,
+        "Slobodna dalmacija": 15,
+        "Zadarski list": 10
+      },
+      "already_seen": 14,
+      "rejected_by_keywords": 5,
+      "rejected_by_rule": {
+        "тег RSS lifestyle": 4,
+        "URL /sport/": 1
+      },
+      "unclassified_by_ai": 0,
+      "duplicates_removed_by_ai": 16,
+      "rejection_reasons_list": [
+        "• Zaboravite Temu; Evo što Hrvati zapravo najviše traže na akciji na Goo → Світовий шум (Дослідження пошукових запитів в інтернеті) | Сутності: Hrvati, Google, Kuponi.hr, Temu",
+        "• Opet dostavljač s tajanstvenim paketom! Donio je ženi tri para istih c → Світовий шум (Фейлетон про онлайн-шопінг) | Сутності: Internet, Butiga, Kauč",
+        "• Zastupnice upozorile na raširenost nasilja nad ženama i nedovoljnu zaš → Вже публікувалось (Заява щодо дня боротьby з насильством) | Сутності: Dragana Jeckov, SDSS, Sabor, Hrvatska",
+        "• Zadrani u velikoj prednosti pred ostatkom Hrvatske; Na putu s posla po → Світовий шум (Тривалість світлового дня взимку) | Сутності: Zadrani, Ilok, Vukovar, Osijek",
+        "• Velika Onofrijeva fontana u narančastoj boji u znak podrške kampanji „ → Побут інших міст (Подія у Дубровнику) | Сутності: Velika Onofrijeva fontana, Dubrovnik, Orange the World",
+        "• Centar predlaže novi, tripartitni model izbora ustavnih sudaca → Не за тематикою (Модель вибору уstavnih sudaca) | Сутності: Marijana Puljak, Centar, GLAS, Sabor",
+        "• Europska unija ima sve više zakona i propisa. Posljednjih petnaest god → Світовий шум (Статистика законів ЄС) | Сутності: EU, Indeks birokracije, Bruxelles",
+        "• KUZ: Nakon poništenja natječaja ključno je zadržati radiologe u Vinogr → Вже публікувалось (Повтор скандалу в лікарні Загреба) | Сутності: KUZ, Dijana Zadravec, KBC Sestre milosrdnice",
+        "• Evaluacija Programa ruralnog razvoja RH – isplaćeno više od 3,2 mlrd.  → Не за тематикою (Оцінка програми сільського розвитку) | Сутності: Ministarstvo poljoprivrede, Hrvatska, Programa ruralnog razvoja",
+        "• Novi model gospodarenja otpadom: manje miješanog otpada, veća kontrola → Побут інших міст (Сміття в Конавле) | Сутності: Konavle, Komunalni otpad, Hrvatska",
+        "• Milatović: “Ovo što radi Hrvatska oko graničnog pitanja pomalo izgleda → Геоблок (Заява президента Чорногорії) | Сутності: Jakov Milatović, Crna Gora, Hrvatska, Bruxelles",
+        "• Hoće li nam gosti okrenuti leđa? Stručnjaci upozoravaju na novu eru u  → Світовий шум (Загальні тренди в європейському туризмі) | Сутності: Europska putnička komisija, Europa, Turizam",
+        "• Ružić: Svaka žena mora znati da u borbi za svoju sigurnost nije sama → Вже публікувалось (Коментар міністра щодо насильства над жінками) | Сутності: Alen Ružić, Ministarstvo, Hrvatska",
+        "• Slao ljudima telefonske imenike na CD-ovima i paprene račune! Bivšeg v → Вже публікувалось (Розшук колишнього вільника) | Сутності: Dušan Oluić, Zadarska županija, Interpol, Srbija",
+        "• Slovenska Ilirika postala članica Zagrebačke burze → Не за тематикою (Співпраця бірж Загреба та Любляни) | Сутності: Zagrebačka burza, Ilirika, Ljubljana, SKDD",
+        "• Nakon pet sati rasprave o slučaju Jankomir zaključak naknadno: policij → Побут інших міст (Комітет у Загребі щодо справи Янкомір) | Сутності: Jankomir, Ivana Kekin, Zagreb, Sabor"
+      ],
+      "rejected_by_reason": {
+        "Світовий шум": 5,
+        "Вже публікувалось": 4,
+        "Побут інших міст": 3,
+        "Не за тематикою": 3,
+        "Геоблок": 1
+      },
+      "updates_marked": 1,
+      "already_rejected": 1,
+      "rejected_by_code_examples": [
+        "[тег RSS lifestyle] Domaća sarma s kiselim kupusom i suhim rebrima: recept i pogreške koje kvare okus",
+        "[тег RSS lifestyle] Držati bojler stalno uključenim ili ga paliti po potrebi: sve ovisi o načinu grijanja vode",
+        "[тег RSS lifestyle] Kada prehlada prelazi u upalu sinusa i koji znakovi traže hitan odlazak liječniku",
+        "[тег RSS lifestyle] Talijanski penicilin: pileća juha s orzo tjesteninom, parmezanom i limunom gotova za sat vremena",
+        "[URL /sport/] Šahovski klub Dubrovnik na Pojedinačnom ubrzanom i brzopoteznom prvenstvu Hrvatske za mlade. Matea R"
+      ]
+    },
+    "backlog": {
+      "total_size": 37,
+      "sources": {
+        "Zadarski list": 23,
+        "Slobodna dalmacija": 12,
+        "023": 2
+      }
+    },
+    "published": {
+      "total": 3,
+      "ukraine_priority": 1,
+      "with_images": 2,
+      "text_only": 1,
+      "og_images_found": 2,
+      "sources": {
+        "Zadarski list": 1,
+        "023": 2
+      }
+    },
+    "models_used": {
+      "gemini-3.5-flash-lite": 1,
+      "gemini-3.6-flash": 1
+    },
+    "models_by_task": {
+      "filter": "gemini-3.5-flash-lite",
+      "translate": "gemini-3.6-flash"
+    },
+    "model_attempts": [
+      {
+        "task": "filter",
+        "model": "gemini-3-flash-preview",
+        "outcome": "unavailable"
+      },
+      {
+        "task": "filter",
+        "model": "gemini-3.6-flash",
+        "outcome": "unavailable"
+      },
+      {
+        "task": "filter",
+        "model": "gemini-3.5-flash-lite",
+        "outcome": "ok"
+      },
+      {
+        "task": "translate",
+        "model": "gemini-3.8-flash",
+        "outcome": "unavailable"
+      },
+      {
+        "task": "translate",
+        "model": "gemini-3.5-flash-lite",
+        "outcome": "unavailable"
+      },
+      {
+        "task": "translate",
+        "model": "gemini-3.6-flash",
+        "outcome": "ok"
+      }
+    ],
+    "exhausted_models": [],
+    "demoted_models": [],
+    "translate_budget_deferred": [
+      "gemini-3.6-flash"
+    ],
+    "gemini_region_blocked": false,
+    "gemini_unavailable": false,
     "errors_count": 0,
     "gemini_retries": 4
   }
