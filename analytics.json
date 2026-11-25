@@ -1,113 +1,5 @@
 [
   {
-    "timestamp": "2026-11-16 15:01:17",
-    "execution_time": 104.9,
-    "funnel": {
-      "scraped_total": 35,
-      "scraped_by_source": {
-        "023": 10,
-        "Slobodna dalmacija": 15,
-        "Zadarski list": 10
-      },
-      "already_seen": 16,
-      "rejected_by_keywords": 5,
-      "rejected_by_rule": {
-        "тег RSS lifestyle": 2,
-        "КАПС у заголовку": 1,
-        "sport": 1,
-        "promo": 1
-      },
-      "unclassified_by_ai": 0,
-      "duplicates_removed_by_ai": 12,
-      "rejection_reasons_list": [
-        "• Hrvatski stručnjaci u Bruxellesu predstavili europski projekt za bolju → Не за тематикою (Презентація медичного проекту в Брюсселі) | Сутності: Hrvatski stručnjaci, Bruxelles, Europski parlament, KOPB, JARED",
-        "• Nagrađeno petero riječkih znanstvenika → Побут інших міст (Нагородження науковців у Рієці) | Сутності: Rijeka, Hrvatska zaklada za znanost, Sveučilište u Rijeci, науковці",
-        "• Najbolji riječki učenici i njihovi mentori nagrađeni za uspjehe na drž → Побут інших міст (Нагородження школярів у Рієці) | Сутності: Rijeka, Iva Rinčić, учні, ментори",
-        "• Proglašeni pobjednici 2. hrvatskog bijenala umjetničkog stakla u Muzej → Вже публікувалось (Переможці бієнале вже в історії) | Сутності: Muzej antičkog stakla, Zadar, 2. hrvatski bijenale umjetničkog stakla",
-        "• U Krasnu održani jubilarni Dani sira → Побут інших міст (День сиру в Красно) | Сутності: Krasno, Senj, Dani sira, Sirana Runolist",
-        "• Splitski liječnik sa svjetskim iskustvom o psihijatrijskoj skrbi u Hrv → Вже публікувалось (Коментар експерта щодо резонансного випадку) | Сутності: Goran Mijaljica, Split, Ugljan, Kristian Periš",
-        "• Trumpov zet ipak neće rušiti bombardirani generalštab, Srbija raskinul → Геоблок (Події в Сербії) | Сутності: Jared Kushner, Beograd, Srbija, Generalštab",
-        "• Odluka o financiranju nove škole u Metkoviću – stiže bespovratnih 13,3 → Побут інших міст (Будівництво школи в Метковичі) | Сутності: Metković, Dubrovačko-neretvanska županija, osnovna škola",
-        "• Ministar Šušnjar: “Kada građani vide baznu cijenu, imaju bolju odluku  → Вже публікувалось (Коментар міністра про базові ціни) | Сутності: Ministar Šušnjar, Ministarstvo gospodarstva, bazne cijene",
-        "• Ćipe amandmanom traži tri milijuna eura za snimanje filma “Trpinjska c → Вже публікувалось (Поправка щодо фінансування фільму) | Сутності: Stipo Mlinarić Ćipe, Domovinski pokret, Trpinjska cesta, Vukovar",
-        "• Dvadeset godina zajedničkih uspomena: Čarolija, ples i slavljenička at → Побут інших міст (Святкування річниці ТРЦ у Рієці) | Сутності: Tower Center Rijeka, Pećine, Rijeka",
-        "• O umjetnoj inteligenciji i tehnologijama dvojne namjene razgovarali na → Побут інших міст (Наукова конференція у Рієці) | Сутності: Sveučilište u Rijeci, Klagenfurt, umjetna inteligencija"
-      ],
-      "rejected_by_reason": {
-        "Не за тематикою": 1,
-        "Побут інших міст": 6,
-        "Вже публікувалось": 4,
-        "Геоблок": 1
-      },
-      "updates_marked": 0,
-      "already_rejected": 11,
-      "rejected_by_code_examples": [
-        "[тег RSS lifestyle] Narančasti plamen na plinskom štednjaku: što znači i kako ponovno dobiti stabilan plavi plamen",
-        "[тег RSS lifestyle] Višekratne vrećice za kupnju najbolje je oprati nakon svake upotrebe, a način ovisi o materijalu",
-        "[КАПС у заголовку] OSVOJI KINO ULAZNICE Darujemo 4 kino ulaznice za film “IGRE GLADI: SVITANJE NAD ŽETVOM ” u Cinestaru",
-        "[sport] Gradska vijećnica prelazi iz GKZD u Županiju. SDP: Novi institut zapošljavanja koji još nije uvršten",
-        "[promo] Lidl Hrvatska nastavlja podršku inicijativi Čisto podzemlje: Edukaciju o zaštiti krškog podzemlja do"
-      ]
-    },
-    "backlog": {
-      "total_size": 9,
-      "sources": {
-        "Slobodna dalmacija": 3,
-        "023": 1,
-        "Zadarski list": 5
-      }
-    },
-    "published": {
-      "total": 0,
-      "ukraine_priority": 0,
-      "with_images": 0,
-      "text_only": 0,
-      "og_images_found": 0,
-      "sources": {}
-    },
-    "models_used": {
-      "gemini-3.6-flash": 1
-    },
-    "models_by_task": {
-      "filter": "gemini-3.6-flash",
-      "translate": null
-    },
-    "model_attempts": [
-      {
-        "task": "filter",
-        "model": "gemini-3.6-flash",
-        "outcome": "ok"
-      },
-      {
-        "task": "translate",
-        "model": "gemini-3.5-flash-lite",
-        "outcome": "unavailable"
-      },
-      {
-        "task": "translate",
-        "model": "gemini-3.8-flash",
-        "outcome": "unavailable"
-      },
-      {
-        "task": "translate",
-        "model": "gemini-3.6-flash",
-        "outcome": "unavailable"
-      }
-    ],
-    "exhausted_models": [],
-    "demoted_models": [
-      "filter: gemini-3-flash-preview",
-      "translate: gemini-3.8-flash"
-    ],
-    "translate_budget_deferred": [
-      "gemini-3.6-flash"
-    ],
-    "gemini_region_blocked": false,
-    "gemini_unavailable": true,
-    "errors_count": 0,
-    "gemini_retries": 3
-  },
-  {
     "timestamp": "2026-11-16 16:01:20",
     "execution_time": 171.0,
     "funnel": {
@@ -10019,6 +9911,88 @@
       "filter: gemini-3-flash-preview",
       "filter: gemini-3.5-flash-lite",
       "translate: gemini-3.8-flash"
+    ],
+    "translate_budget_deferred": [],
+    "gemini_region_blocked": false,
+    "gemini_unavailable": true,
+    "errors_count": 0,
+    "gemini_retries": 4
+  },
+  {
+    "timestamp": "2026-11-25 17:01:22",
+    "execution_time": 14.7,
+    "funnel": {
+      "scraped_total": 35,
+      "scraped_by_source": {
+        "023": 10,
+        "Slobodna dalmacija": 15,
+        "Zadarski list": 10
+      },
+      "already_seen": 18,
+      "rejected_by_keywords": 2,
+      "rejected_by_rule": {
+        "тег RSS lifestyle": 1,
+        "košarke": 1
+      },
+      "unclassified_by_ai": 0,
+      "duplicates_removed_by_ai": 0,
+      "rejection_reasons_list": [],
+      "rejected_by_reason": {},
+      "updates_marked": 0,
+      "already_rejected": 5,
+      "rejected_by_code_examples": [
+        "[тег RSS lifestyle] Talijanski penicilin: pileća juha s orzo tjesteninom, parmezanom i limunom gotova za sat vremena",
+        "[košarke] Legendarni Pino proslavio 89. rođendan u društvu zadarskih legendi. Falio je samo Grdović, evo zašto"
+      ]
+    },
+    "backlog": {
+      "total_size": 41,
+      "sources": {
+        "Slobodna dalmacija": 12,
+        "Zadarski list": 23,
+        "023": 6
+      }
+    },
+    "published": {
+      "total": 0,
+      "ukraine_priority": 0,
+      "with_images": 0,
+      "text_only": 0,
+      "og_images_found": 0,
+      "sources": {}
+    },
+    "models_used": {},
+    "models_by_task": {
+      "filter": null,
+      "translate": null
+    },
+    "model_attempts": [
+      {
+        "task": "filter",
+        "model": "gemini-3.6-flash",
+        "outcome": "unavailable"
+      },
+      {
+        "task": "filter",
+        "model": "gemini-3-flash-preview",
+        "outcome": "unavailable"
+      },
+      {
+        "task": "filter",
+        "model": "gemini-3.5-flash-lite",
+        "outcome": "unavailable"
+      },
+      {
+        "task": "filter",
+        "model": "gemini-3.1-flash-lite",
+        "outcome": "unavailable"
+      }
+    ],
+    "exhausted_models": [],
+    "demoted_models": [
+      "filter: gemini-3-flash-preview",
+      "filter: gemini-3.5-flash-lite",
+      "filter: gemini-3.1-flash-lite"
     ],
     "translate_budget_deferred": [],
     "gemini_region_blocked": false,
