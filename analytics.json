@@ -1,111 +1,5 @@
 [
   {
-    "timestamp": "2026-11-15 20:01:11",
-    "execution_time": 263.0,
-    "funnel": {
-      "scraped_total": 35,
-      "scraped_by_source": {
-        "023": 10,
-        "Slobodna dalmacija": 15,
-        "Zadarski list": 10
-      },
-      "already_seen": 14,
-      "rejected_by_keywords": 11,
-      "rejected_by_rule": {
-        "тег RSS lifestyle": 3,
-        "тег RSS sport": 3,
-        "sport": 2,
-        "igrač": 1,
-        "тег RSS nogomet": 1,
-        "тег RSS košarka": 1
-      },
-      "unclassified_by_ai": 0,
-      "duplicates_removed_by_ai": 8,
-      "rejection_reasons_list": [
-        "• Književna večer s Ivanom Šojat u Saloči od zrcala: Od kvantne fizike i → Побут інших міст (Литературний вечір у Дубровнику) | Сутності: Ivana Šojat, Saloča od zrcala, Dubrovnik, Mjesec hrvatske knjige",
-        "• Andrea Musa izložila “Uzorke pohranjenog vremena II” → Побут інших міст (Виставка у Гробнику) | Сутності: Andrea Musa, Grad Grobnik, Ivo Bogović, Katerina Jovanović",
-        "• \"Iako investitor nije bio prisutan, organizirani su pokušaji nereda i  → Побут інших міст (Громадські слухання в Цавтаті) | Сутності: Cavtat, Dom kulture u Cavtatu, Marina Cavtat & Resort, Građanska inicijativa Čista luka",
-        "• Hrvatska zbog birokracije gubi vrhunskog enologa, a istarski vinari sm → Побут інших міст (Історія енолога в Пулі) | Сутності: Timothya Tima Whitfielda, Kirsten Andrea, Pula, Južnoafrička Republika",
-        "• Novi izgled Precrkve u Čilipima, spoj tradicije i suvremenosti → Побут інших міст (Благоустрій площі в Чіліпі) | Сутності: Općina Konavle, Precrkva u Čilipima, Čilipi",
-        "• Let 3 u Tvornici kulture: Večer puna ljubavi, decibela te bundi → Побут інших міст (Концерт гурту Let 3 у Загребі) | Сутності: Let 3, Tvornica kulture, Zagreb, Vladimir Šeks",
-        "• “Eksterminator II” Tonija Starešinića: Komentar na suludo digitalno ov → Побут інших міст (Джазовий концерт у Загребі) | Сутності: Toni Starešinić, Močvara, Zagreb, NO Jazz Festival",
-        "• Pobjednik Zagreb Film Festivala “Josephine” Beth de Araújo → Побут інших міст (Кінофестиваль у Загребі) | Сутності: Zagreb Film Festival, Josephine, Beth de Araújo, Zlatna kolica"
-      ],
-      "rejected_by_reason": {
-        "Побут інших міст": 8
-      },
-      "updates_marked": 1,
-      "already_rejected": 9,
-      "rejected_by_code_examples": [
-        "[тег RSS lifestyle] Bolne podlaktice od tipkanja: fizioterapeutkinje savjetuju tri istezanja i lakat pod kutom od 90 stu",
-        "[тег RSS lifestyle] Umak za božićno pečenje možete skuhati unaprijed i čuvati ga u zamrzivaču do blagdana",
-        "[тег RSS lifestyle] Promatračke studije povezuju redovito jedenje jaja s manjim rizikom od Alzheimerove bolesti",
-        "[тег RSS sport] Sandra Profaca i Ivica Vukman pobjednici 10. Atletske utrke “Dani sjećanja od Škabrnje do Vukovara”",
-        "[sport] Od Dunda Maroja do polumaratona: tjedan pred nama donosi kazalište, koncerte, film i sport",
-        "[igrač] Zadar se učvrstio na prvom mjestu, Posedarje bolje u golijadi, Primorac dobro prošao na gostovanju",
-        "[sport] Sandra Profaca i Ivica Vukman pobjednici 10. Atletske utrke „Dani sjećanja od Škabrnje do Vukovara“",
-        "[тег RSS nogomet] Ronaldinho se vratio na teren nakon 11 godina! Sudjelovao je u akciji za gol, a njegova momčad je up",
-        "[тег RSS sport] Rukometaši Zameta nadigrali Ribolu Kaštela, Kozalčani uvjerljivi u Poreču",
-        "[тег RSS sport] Pavić u paru s Arevalom pobijedio u dva seta na startu ATP Finala",
-        "[тег RSS košarka] Nije najveća zvijezda WNBA-a, ali na Instagramu je nadmašila i Caitlin Clark: Prati je 4,3 milijuna "
-      ]
-    },
-    "backlog": {
-      "total_size": 0,
-      "sources": {}
-    },
-    "published": {
-      "total": 2,
-      "ukraine_priority": 0,
-      "with_images": 1,
-      "text_only": 1,
-      "og_images_found": 0,
-      "sources": {
-        "023": 1,
-        "Zadarski list": 1
-      }
-    },
-    "models_used": {
-      "gemini-3.6-flash": 1,
-      "gemini-3.5-flash-lite": 1
-    },
-    "models_by_task": {
-      "filter": "gemini-3.6-flash",
-      "translate": "gemini-3.5-flash-lite"
-    },
-    "model_attempts": [
-      {
-        "task": "filter",
-        "model": "gemini-3-flash-preview",
-        "outcome": "unavailable"
-      },
-      {
-        "task": "filter",
-        "model": "gemini-3.6-flash",
-        "outcome": "ok"
-      },
-      {
-        "task": "translate",
-        "model": "gemini-3.8-flash",
-        "outcome": "unavailable"
-      },
-      {
-        "task": "translate",
-        "model": "gemini-3.5-flash-lite",
-        "outcome": "ok"
-      }
-    ],
-    "exhausted_models": [],
-    "demoted_models": [],
-    "translate_budget_deferred": [
-      "gemini-3.6-flash"
-    ],
-    "gemini_region_blocked": false,
-    "gemini_unavailable": false,
-    "errors_count": 0,
-    "gemini_retries": 2
-  },
-  {
     "timestamp": "2026-11-16 08:01:26",
     "execution_time": 331.0,
     "funnel": {
@@ -10083,5 +9977,101 @@
     "gemini_unavailable": false,
     "errors_count": 0,
     "gemini_retries": 3
+  },
+  {
+    "timestamp": "2026-11-25 08:01:12",
+    "execution_time": 264.0,
+    "funnel": {
+      "scraped_total": 35,
+      "scraped_by_source": {
+        "023": 10,
+        "Slobodna dalmacija": 15,
+        "Zadarski list": 10
+      },
+      "already_seen": 9,
+      "rejected_by_keywords": 0,
+      "rejected_by_rule": {},
+      "unclassified_by_ai": 0,
+      "duplicates_removed_by_ai": 16,
+      "rejection_reasons_list": [
+        "• CGO Lučino razdolje i dalje bez građevinske dozvole za 4. fazu! → Побут інших міст (Центр відходів у Дубровницько-Неретванській жупанії) | Сутності: CGO Lučino razdolje, SDP, Hrvatske vode",
+        "• Tko je koga promijenio? Plenković tvrdi da se DP približio HDZ-u, Pena → Не за тематикою (Політична дискусія без конкретних урядових рішень) | Сутності: Andrej Plenković, Ivan Penava, HDZ, Domovinski pokret",
+        "• \"16 dana aktivizma protiv rodno uvjetovanog nasilja“: Nasilje nad žena → Побут інших міст (Акція проти насильства у Дубровнику) | Сутності: KRUG Dubrovnik, Dubrovnik",
+        "• Krku prijeti prometni kolaps? Više od 26 tisuća vozila dnevno prelazi  → Побут інших міст (Транспортна проблема острова Крк) | Сутності: Krk, Krk most",
+        "• Godinu i pol Luke Kolovrata na čelu Imotskoga: Što je napravljeno, a š → Побут інших міст (Звіт мера міста Імотські) | Сутності: Luka Kolovrat, Imotski",
+        "• Vozači sami napravili obilaznicu jer je cesta pod vodom. Gradonačelnik → Побут інших міст (Затоплення дороги в Делницях) | Сутності: Zalesina, Stari Laz, Igor Pleše, Delnice",
+        "• Blagdan je svete Katarine, odbrojava se do Božića: Čestitamo svima koj → Світовий шум (Традиції до дня святої Катерини) | Сутності: Sveta Katarina",
+        "• Ni peticija nije pomogla. Kraljevica ostaje bez jedine bankarske poslo → Побут інших міст (Закриття банку в Кралєвиці) | Сутності: Erste banka, Kraljevica",
+        "• Njemačko društvo za zaštitu potrošača savjetuje svojim građanima što s → Побут інших міст (Штрафи за проїзд у Дубровнику) | Сутності: EVZ Deutschland, Dubrovnik",
+        "• Predstava Kazališta Marina Držića okićena Nagradama hrvatskog glumišta → Побут інших міст (Театральна премія театру з Дубровника) | Сутності: Kazalište Marina Držića, Zagreb, Dubrovnik",
+        "• Glumci Talijanske drame osvajaju Italiju i europske pozornice: ‘Naša b → Побут інших міст (Ювілей театру в Рієці) | Сутності: Talijanska drama, HNK Ivana pl. Zajca, Rijeka",
+        "• Na šibenskim dočecima nastupale su svjetske face, a nitko se cijenom n → Побут інших міст (Концерти в Спліті та Шибенику) | Сутності: Split, Šibenik, Dino Merlin",
+        "• Predstava “Nigdje, niotkuda” riječkog Zajca gostuje u Parizu s pet uza → Побут інших міст (Гастролі театру з Рієки) | Сутності: HNK Ivana pl. Zajca, Rijeka, Pariz",
+        "• Lerovci godinu zaključili premijerom ‘Cjelova od rozolina‘, predstavom → Побут інших міст (Прем'єра театру у Дубровнику) | Сутності: Teatar Lero, Davor Mojaš, Dubrovnik",
+        "• Što je stvarnost, a što san? Fotografije Ivice Nikolca brišu granicu i → Побут інших міст (Виставка фотографій у Рієці) | Сутності: Ivica Nikolac, Galerija Juraj Klović, Rijeka",
+        "• Zima se vraća na velika vrata. Vakula najavljuje snijeg i poledicu: ‘P → Побут інших міст (Прогноз снігу для гірських регіонів Хорватії) | Сутності: Zoran Vakula, Hrvatska"
+      ],
+      "rejected_by_reason": {
+        "Побут інших міст": 14,
+        "Не за тематикою": 1,
+        "Світовий шум": 1
+      },
+      "updates_marked": 0,
+      "already_rejected": 8
+    },
+    "backlog": {
+      "total_size": 4,
+      "sources": {
+        "Zadarski list": 1,
+        "023": 3
+      }
+    },
+    "published": {
+      "total": 3,
+      "ukraine_priority": 1,
+      "with_images": 3,
+      "text_only": 0,
+      "og_images_found": 2,
+      "sources": {
+        "Zadarski list": 1,
+        "023": 2
+      }
+    },
+    "models_used": {
+      "gemini-3.6-flash": 2
+    },
+    "models_by_task": {
+      "filter": "gemini-3.6-flash",
+      "translate": "gemini-3.6-flash"
+    },
+    "model_attempts": [
+      {
+        "task": "filter",
+        "model": "gemini-3-flash-preview",
+        "outcome": "unavailable"
+      },
+      {
+        "task": "filter",
+        "model": "gemini-3.6-flash",
+        "outcome": "ok"
+      },
+      {
+        "task": "translate",
+        "model": "gemini-3.8-flash",
+        "outcome": "unavailable"
+      },
+      {
+        "task": "translate",
+        "model": "gemini-3.6-flash",
+        "outcome": "ok"
+      }
+    ],
+    "exhausted_models": [],
+    "demoted_models": [],
+    "translate_budget_deferred": [],
+    "gemini_region_blocked": false,
+    "gemini_unavailable": false,
+    "errors_count": 0,
+    "gemini_retries": 2
   }
 ]
