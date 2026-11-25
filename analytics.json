@@ -1,104 +1,5 @@
 [
   {
-    "timestamp": "2026-11-16 12:01:13",
-    "execution_time": 142.0,
-    "funnel": {
-      "scraped_total": 35,
-      "scraped_by_source": {
-        "023": 10,
-        "Slobodna dalmacija": 15,
-        "Zadarski list": 10
-      },
-      "already_seen": 18,
-      "rejected_by_keywords": 8,
-      "rejected_by_rule": {
-        "КАПС у заголовку": 2,
-        "promo": 1,
-        "sporta": 1,
-        "igrača": 1,
-        "URL /sport/": 1,
-        "тег RSS nogomet": 1,
-        "sportova": 1
-      },
-      "unclassified_by_ai": 0,
-      "duplicates_removed_by_ai": 6,
-      "rejection_reasons_list": [
-        "• Teretni brod tone u Crnom moru, Bugarska primila poziv u pomoć → Геоблок (Подія в Чорному морі біля Болгарії) | Сутності: Crno more, Bugarska, teretni brod, Egipat",
-        "• Napisao je samo jedan komentar na internetu, a onda mu je na vrata pok → Побут інших міст (Славонський Брод) | Сутності: Slavonski Brod, policija, Općinsko državno odvjetništvo, 28-godišnjak",
-        "• Festival STIFF od 25. do 28. studenoga u Rijeku donosi 37 filmova iz 2 → Побут інших міст (Рієка) | Сутності: STIFF, Rijeka, Katarina Kožul, filmski festival",
-        "• U pol’ 9 kod Sabe ponovno na okupu: Stigao album “Nismo mi nule i jedi → Побут інших міст (Загреб) | Сутності: U pol’ 9 kod Sabe, Zagreb, novi album",
-        "• Nova šefica klinike u Jankomiru: “Pokazalo se i ovog vikenda da pacije → Вже публікувалось (Клініка Sveti Ivan вже в історії) | Сутності: Klinika Sveti Ivan, Jankomir, Lidija Hrastić-Novak",
-        "• U Rijeku stiže Picastro – bend na sjecištu eksperimenta, ranjivosti i  → Побут інших міст (Рієка) | Сутності: Picastro, Rijeka, The Beertija, Liz Hysen"
-      ],
-      "rejected_by_reason": {
-        "Геоблок": 1,
-        "Побут інших міст": 4,
-        "Вже публікувалось": 1
-      },
-      "updates_marked": 0,
-      "already_rejected": 12,
-      "rejected_by_code_examples": [
-        "[КАПС у заголовку] OSVOJI KINO ULAZNICE Darujemo 4 kino ulaznice za film “IGRE GLADI: SVITANJE NAD ŽETVOM ” u Cinestaru",
-        "[promo] Obilježavanje Dana sjećanja u Benkovcu: Paljenje svijeća u Vukovarskoj ulici i besplatna projekcija ",
-        "[КАПС у заголовку] POGLED U BUDUĆNOST NAUTIČKOG LUKSUZA: CROYA objavila datume za 2027. godinu",
-        "[sporta] Cro Cop oduševio Zadar: Prepuno kazalište na večeri ‘Licem u lice s Mirkom Filipovićem‘",
-        "[igrača] Abeceda se vraća s bodovima iz Benkovca, povijesni rezultat Paga",
-        "[URL /sport/] Predstavnice Karate kluba Kakato, sestre Agata i Marta Bjelica, ostvarile zapažene rezultate u Split",
-        "[тег RSS nogomet] Englezi su na “sedmom nebu” nakon rušenja svjetskih prvaka: “Tuchelovo savršenstvo…”",
-        "[sportova] Legendarni Eric Clapton u Zagrebu nakon 48 godina"
-      ]
-    },
-    "backlog": {
-      "total_size": 2,
-      "sources": {
-        "Zadarski list": 2
-      }
-    },
-    "published": {
-      "total": 3,
-      "ukraine_priority": 0,
-      "with_images": 3,
-      "text_only": 0,
-      "og_images_found": 0,
-      "sources": {
-        "Slobodna dalmacija": 1,
-        "Zadarski list": 2
-      }
-    },
-    "models_used": {
-      "gemini-3.6-flash": 1,
-      "gemini-3.5-flash-lite": 1
-    },
-    "models_by_task": {
-      "filter": "gemini-3.6-flash",
-      "translate": "gemini-3.5-flash-lite"
-    },
-    "model_attempts": [
-      {
-        "task": "filter",
-        "model": "gemini-3.6-flash",
-        "outcome": "ok"
-      },
-      {
-        "task": "translate",
-        "model": "gemini-3.5-flash-lite",
-        "outcome": "ok"
-      }
-    ],
-    "exhausted_models": [],
-    "demoted_models": [
-      "filter: gemini-3-flash-preview",
-      "translate: gemini-3.8-flash"
-    ],
-    "translate_budget_deferred": [
-      "gemini-3.6-flash"
-    ],
-    "gemini_region_blocked": false,
-    "gemini_unavailable": false,
-    "errors_count": 0,
-    "gemini_retries": 0
-  },
-  {
     "timestamp": "2026-11-16 13:01:20",
     "execution_time": 139.8,
     "funnel": {
@@ -10049,5 +9950,88 @@
     "gemini_unavailable": false,
     "errors_count": 0,
     "gemini_retries": 0
+  },
+  {
+    "timestamp": "2026-11-25 13:01:32",
+    "execution_time": 13.2,
+    "funnel": {
+      "scraped_total": 35,
+      "scraped_by_source": {
+        "023": 10,
+        "Slobodna dalmacija": 15,
+        "Zadarski list": 10
+      },
+      "already_seen": 17,
+      "rejected_by_keywords": 3,
+      "rejected_by_rule": {
+        "igrača": 1,
+        "igračima": 1,
+        "URL /sport/": 1
+      },
+      "unclassified_by_ai": 0,
+      "duplicates_removed_by_ai": 0,
+      "rejection_reasons_list": [],
+      "rejected_by_reason": {},
+      "updates_marked": 0,
+      "already_rejected": 8,
+      "rejected_by_code_examples": [
+        "[igrača] Četvorica policajaca s juga pokorila svijet! Ono što su napravili rijetkima polazi za rukom - pogled",
+        "[igračima] Modrić je bio miran, tvrdoglav i vjerovao je igračima. Probudio je Zadar i pokazao koliko malo treba",
+        "[URL /sport/] Futsalska momčad Rijeke želi prekinuti niz poraza: “Crnica ima kvalitetu, ali mi smo snažniji i moćn"
+      ]
+    },
+    "backlog": {
+      "total_size": 24,
+      "sources": {
+        "Slobodna dalmacija": 8,
+        "Zadarski list": 10,
+        "023": 6
+      }
+    },
+    "published": {
+      "total": 0,
+      "ukraine_priority": 0,
+      "with_images": 0,
+      "text_only": 0,
+      "og_images_found": 0,
+      "sources": {}
+    },
+    "models_used": {},
+    "models_by_task": {
+      "filter": null,
+      "translate": null
+    },
+    "model_attempts": [
+      {
+        "task": "filter",
+        "model": "gemini-3.6-flash",
+        "outcome": "unavailable"
+      },
+      {
+        "task": "filter",
+        "model": "gemini-3.5-flash-lite",
+        "outcome": "unavailable"
+      },
+      {
+        "task": "filter",
+        "model": "gemini-3.1-flash-lite",
+        "outcome": "unavailable"
+      },
+      {
+        "task": "filter",
+        "model": "gemini-3-flash-preview",
+        "outcome": "unavailable"
+      }
+    ],
+    "exhausted_models": [],
+    "demoted_models": [
+      "filter: gemini-3-flash-preview",
+      "translate: gemini-3.8-flash"
+    ],
+    "translate_budget_deferred": [],
+    "gemini_region_blocked": false,
+    "gemini_unavailable": true,
+    "errors_count": 0,
+    "gemini_retries": 4
   }
 ]
