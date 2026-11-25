@@ -1,116 +1,5 @@
 [
   {
-    "timestamp": "2026-11-16 14:01:19",
-    "execution_time": 269.5,
-    "funnel": {
-      "scraped_total": 35,
-      "scraped_by_source": {
-        "023": 10,
-        "Slobodna dalmacija": 15,
-        "Zadarski list": 10
-      },
-      "already_seen": 16,
-      "rejected_by_keywords": 6,
-      "rejected_by_rule": {
-        "тег RSS lifestyle": 1,
-        "КАПС у заголовку": 2,
-        "sport": 1,
-        "тег RSS nogomet": 2
-      },
-      "unclassified_by_ai": 0,
-      "duplicates_removed_by_ai": 9,
-      "rejection_reasons_list": [
-        "• Lepoglavskoj čipki oznaka podrijetla za obrtnički i industrijski proiz → Не за тематикою (Маркування лепоглавського мережива) | Сутності: Lepoglavska čipka, EU, Državni zavod za intelektualno vlasništvo, Lepoglava",
-        "• Nagrada Luka Ritz uručena Zvonku Šiljcu i Tinu Boršiću → Побут інших міст (Вручення нагороди у Загребі) | Сутності: Luka Ritz, Tomislav Tomašević, Zvonko Šiljac, Tin Boršić, Zagreb",
-        "• Zadarska podružnica udruge leukemija i limfomi organizirala koncert i  → Вже публікувалось (Благодійний концерт у Задарі) | Сутності: Zadar, Život za život, udruga leukemija i limfomi, Ivana Kindl",
-        "• Ministarstvo financija, Hanfa i HNB predstavili portal financijske pis → Не за тематикою (Презентація порталу фінансової грамотності) | Сутності: Ministarstvo financija, Hanfa, HNB, Hrvatska",
-        "• Ovom vozaču više neće pasti na pamet popiti i kap alkohola a potom sje → Побут інших міст (П'яний водій у Метковичі) | Сутності: Metković, Pogradina, Policijska postaja Metković",
-        "• “Za ljubav” Marka Škopa : Filmska priča o ljubavi, gubitku i odnosima  → Побут інших міст (Прем'єра фільму на фестивалі у Загребі) | Сутності: Marko Škop, Zagreb Film Festival, Kaptol Boutique Cinema, Zagreb",
-        "• I mladi u Zadru idu u štrajk! Oglasili se oganizatori, ističu četiri k → Вже публікувалось (Подробиці про страйк молоді в Задарі) | Сутності: Zadar, Štrajk mladih, Zadarski studenti",
-        "• Koncert “Kap kulture na dlanu najpotrebnijih” održan u Trsatskom sveti → Побут інших міст (Благодійний концерт у Рієці) | Сутності: Trsatsko svetište, Rijeka, Udruga Dijamant klasika Rijeka",
-        "• Riječki odvjetnik Velimir Došen gost je sutrašnjeg Podcasta Nove TV → Не за тематикою (Анонс інтерв'ю в подкасті) | Сутності: Velimir Došen, Nova TV, Rijeka, Goli otok"
-      ],
-      "rejected_by_reason": {
-        "Не за тематикою": 3,
-        "Побут інших міст": 4,
-        "Вже публікувалось": 2
-      },
-      "updates_marked": 0,
-      "already_rejected": 11,
-      "rejected_by_code_examples": [
-        "[тег RSS lifestyle] Višekratne vrećice za kupnju najbolje je oprati nakon svake upotrebe, a način ovisi o materijalu",
-        "[КАПС у заголовку] OSVOJI KINO ULAZNICE Darujemo 4 kino ulaznice za film “IGRE GLADI: SVITANJE NAD ŽETVOM ” u Cinestaru",
-        "[sport] Gradska vijećnica prelazi iz GKZD u Županiju. SDP: Novi institut zapošljavanja koji još nije uvršten",
-        "[КАПС у заголовку] POGLED U BUDUĆNOST NAUTIČKOG LUKSUZA: CROYA objavila datume za 2027. godinu",
-        "[тег RSS nogomet] UEFA mijenja službenog dobavljača lopti za Ligu prvaka, Europsku ligu i Konferencijsku ligu",
-        "[тег RSS nogomet] Slaven Bilić i članovi njegova stožera nakon pobjede na Češkom obišli spomen mjesta u Vukovaru"
-      ]
-    },
-    "backlog": {
-      "total_size": 7,
-      "sources": {
-        "023": 1,
-        "Zadarski list": 5,
-        "Slobodna dalmacija": 1
-      }
-    },
-    "published": {
-      "total": 3,
-      "ukraine_priority": 1,
-      "with_images": 2,
-      "text_only": 1,
-      "og_images_found": 0,
-      "sources": {
-        "Zadarski list": 1,
-        "Slobodna dalmacija": 1,
-        "023": 1
-      }
-    },
-    "models_used": {
-      "gemini-3.6-flash": 2
-    },
-    "models_by_task": {
-      "filter": "gemini-3.6-flash",
-      "translate": "gemini-3.6-flash"
-    },
-    "model_attempts": [
-      {
-        "task": "filter",
-        "model": "gemini-3-flash-preview",
-        "outcome": "unavailable"
-      },
-      {
-        "task": "filter",
-        "model": "gemini-3.6-flash",
-        "outcome": "ok"
-      },
-      {
-        "task": "translate",
-        "model": "gemini-3.8-flash",
-        "outcome": "unavailable"
-      },
-      {
-        "task": "translate",
-        "model": "gemini-3.5-flash-lite",
-        "outcome": "unavailable"
-      },
-      {
-        "task": "translate",
-        "model": "gemini-3.6-flash",
-        "outcome": "ok"
-      }
-    ],
-    "exhausted_models": [],
-    "demoted_models": [],
-    "translate_budget_deferred": [
-      "gemini-3.6-flash"
-    ],
-    "gemini_region_blocked": false,
-    "gemini_unavailable": false,
-    "errors_count": 0,
-    "gemini_retries": 3
-  },
-  {
     "timestamp": "2026-11-16 15:01:17",
     "execution_time": 104.9,
     "funnel": {
@@ -10047,5 +9936,94 @@
     "gemini_unavailable": false,
     "errors_count": 0,
     "gemini_retries": 2
+  },
+  {
+    "timestamp": "2026-11-25 15:01:22",
+    "execution_time": 11.0,
+    "funnel": {
+      "scraped_total": 35,
+      "scraped_by_source": {
+        "023": 10,
+        "Slobodna dalmacija": 15,
+        "Zadarski list": 10
+      },
+      "already_seen": 20,
+      "rejected_by_keywords": 6,
+      "rejected_by_rule": {
+        "тег RSS lifestyle": 1,
+        "košarke": 1,
+        "igrača": 1,
+        "тег RSS nogomet": 2,
+        "turnira": 1
+      },
+      "unclassified_by_ai": 0,
+      "duplicates_removed_by_ai": 0,
+      "rejection_reasons_list": [],
+      "rejected_by_reason": {},
+      "updates_marked": 0,
+      "already_rejected": 9,
+      "rejected_by_code_examples": [
+        "[тег RSS lifestyle] Talijanski penicilin: pileća juha s orzo tjesteninom, parmezanom i limunom gotova za sat vremena",
+        "[košarke] Legendarni Pino proslavio 89. rođendan u društvu zadarskih legendi. Falio je samo Grdović, evo zašto",
+        "[igrača] Četvorica policajaca s juga pokorila svijet! Ono što su napravili rijetkima polazi za rukom - pogled",
+        "[тег RSS nogomet] Lazio priprema novi ugovor za Gattusa. U klubu su oduševljeni njegovim radom",
+        "[turnira] Rijeka domaćin prvog Trivia Troops turnira uživo: Kviz, strategija i Ivanka Mazurkijević u Palachu",
+        "[тег RSS nogomet] Pep Guardiola ne razmišlja o novom klubu. Objavio je da je njegova sljedeća želja – reprezentacija"
+      ]
+    },
+    "backlog": {
+      "total_size": 27,
+      "sources": {
+        "Slobodna dalmacija": 10,
+        "Zadarski list": 13,
+        "023": 4
+      }
+    },
+    "published": {
+      "total": 0,
+      "ukraine_priority": 0,
+      "with_images": 0,
+      "text_only": 0,
+      "og_images_found": 0,
+      "sources": {}
+    },
+    "models_used": {},
+    "models_by_task": {
+      "filter": null,
+      "translate": null
+    },
+    "model_attempts": [
+      {
+        "task": "filter",
+        "model": "gemini-3.6-flash",
+        "outcome": "unavailable"
+      },
+      {
+        "task": "filter",
+        "model": "gemini-3.1-flash-lite",
+        "outcome": "unavailable"
+      },
+      {
+        "task": "filter",
+        "model": "gemini-3-flash-preview",
+        "outcome": "unavailable"
+      },
+      {
+        "task": "filter",
+        "model": "gemini-3.5-flash-lite",
+        "outcome": "unavailable"
+      }
+    ],
+    "exhausted_models": [],
+    "demoted_models": [
+      "filter: gemini-3-flash-preview",
+      "filter: gemini-3.5-flash-lite",
+      "translate: gemini-3.8-flash"
+    ],
+    "translate_budget_deferred": [],
+    "gemini_region_blocked": false,
+    "gemini_unavailable": true,
+    "errors_count": 0,
+    "gemini_retries": 4
   }
 ]
