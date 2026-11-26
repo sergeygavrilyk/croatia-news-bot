@@ -1,118 +1,5 @@
 [
   {
-    "timestamp": "2026-11-17 15:01:22",
-    "execution_time": 156.7,
-    "funnel": {
-      "scraped_total": 35,
-      "scraped_by_source": {
-        "023": 10,
-        "Slobodna dalmacija": 15,
-        "Zadarski list": 10
-      },
-      "already_seen": 19,
-      "rejected_by_keywords": 6,
-      "rejected_by_rule": {
-        "sportaše": 1,
-        "тег RSS sport": 2,
-        "nogometne": 1,
-        "тег RSS nogomet": 1,
-        "promo": 1
-      },
-      "unclassified_by_ai": 0,
-      "duplicates_removed_by_ai": 10,
-      "rejection_reasons_list": [
-        "• Idete sutra u Škabrnju? Kiša bi trebala padati noću, ali ni jutarnji p → Вже публікувалось (Погода в Шкабрні вже згадувалась у контексті заходів) | Сутності: Škabrnja, DHMZ, vrijeme",
-        "• Javni poziv za sufinanciranje troškova smještaja senjskih učenika i st → Побут інших міст (Локальні справи міста Сень) | Сутності: Senj, učenici, studenti",
-        "• Kako smanjiti rizik kad od vas traže da putovnicu ili osobnu iskaznicu → Світовий шум (Загальні поради з кібербезпеки) | Сутності: putovnica, osobna iskaznica, sigurnost",
-        "• Odbor za zdravstvo: Rasprava o Jankomiru 25. studenoga, o sustavu 1. p → Вже публікувалось (Політичні дискусії щодо системи охорони здоров'я) | Сутності: Sabor, Jankomir, psihijatrija",
-        "• Prvi električni Bentley rasprodan unaprijed bez obzira na prilično pap → Світовий шум (Новини авторинку) | Сутності: Bentley, automobili, luksuz",
-        "• Vukovaru u spomen održano edukativno predavanje za senjske srednjoškol → Вже публікувалось (Заходи до річниці Вуковара в іншому місті) | Сутності: Vukovar, Senj, škola",
-        "• U Opatiji izložba o hotelu Ambasador, ikoni modernizma arhitekta Zdrav → Побут інших міст (Локальна виставка в Опатії) | Сутності: Opatija, hotel Ambasador, arhitektura",
-        "• HGSS spasio muškarca koji se ozlijedio radeći na vijaduktu u Novom Vin → Побут інших міст (Локальна подія в Новому Вінодольському) | Сутності: HGSS, Novi Vinodolski, nesreća",
-        "• Akcija na nabujaloj Mrežnici: Karlovački HGSS spasio tri života → Побут інших міст (Локальна подія в Карловацькій жупанії) | Сутності: HGSS, Mrežnica, spašavanje",
-        "• Riječke tržnice u srijedu ne rade → Побут інших міст (Графік роботи ринків у Рієці) | Сутності: Rijeka, tržnice, blagdan"
-      ],
-      "rejected_by_reason": {
-        "Вже публікувалось": 3,
-        "Побут інших міст": 5,
-        "Світовий шум": 2
-      },
-      "updates_marked": 1,
-      "already_rejected": 14,
-      "rejected_by_code_examples": [
-        "[sportaše] Glazbom i velikim srcem za zadarske sportaše; Humanitarni koncert Danka Tomanića i prijatelja odušev",
-        "[тег RSS sport] Ponos grada sporta; Gradonačelnik Erlić ugostio 180 zadarskih sportaša, 28 klubova dobilo dodatna sr",
-        "[nogometne] Vatreni u Vukovaru uoči Dana sjećanja; Izbornik Slaven Bilić i stožer odali počast poginulim branite",
-        "[тег RSS sport] Rekordan odaziv u Zemuniku Donjem: djeca učila taekwondo i hrvatski znakovni jezik na Sportskom danu",
-        "[тег RSS nogomet] Xavi Hernandez je u šoku nakon petarde protiv Njemačke: “Nismo igrali nogomet, nismo imali duha. Ne ",
-        "[promo] Movember u Merkuru – panel o humoru, mentalnom zdravlju i preventivnim pregledima"
-      ]
-    },
-    "backlog": {
-      "total_size": 8,
-      "sources": {
-        "Slobodna dalmacija": 2,
-        "023": 6
-      }
-    },
-    "published": {
-      "total": 0,
-      "ukraine_priority": 0,
-      "with_images": 0,
-      "text_only": 0,
-      "og_images_found": 0,
-      "sources": {}
-    },
-    "models_used": {
-      "gemini-3.1-flash-lite": 1
-    },
-    "models_by_task": {
-      "filter": "gemini-3.1-flash-lite",
-      "translate": null
-    },
-    "model_attempts": [
-      {
-        "task": "filter",
-        "model": "gemini-3.5-flash-lite",
-        "outcome": "unavailable"
-      },
-      {
-        "task": "filter",
-        "model": "gemini-3.1-flash-lite",
-        "outcome": "ok"
-      },
-      {
-        "task": "translate",
-        "model": "gemini-3.8-flash",
-        "outcome": "unavailable"
-      },
-      {
-        "task": "translate",
-        "model": "gemini-3.5-flash-lite",
-        "outcome": "unavailable"
-      },
-      {
-        "task": "translate",
-        "model": "gemini-3.6-flash",
-        "outcome": "unavailable"
-      }
-    ],
-    "exhausted_models": [],
-    "demoted_models": [
-      "filter: gemini-3-flash-preview",
-      "filter: gemini-3.6-flash",
-      "translate: gemini-3.8-flash",
-      "translate: gemini-3.5-flash-lite"
-    ],
-    "translate_budget_deferred": [
-      "gemini-3.6-flash"
-    ],
-    "gemini_region_blocked": false,
-    "gemini_unavailable": true,
-    "errors_count": 0,
-    "gemini_retries": 4
-  },
-  {
     "timestamp": "2026-11-17 16:01:28",
     "execution_time": 125.8,
     "funnel": {
@@ -9949,5 +9836,107 @@
     "gemini_unavailable": false,
     "errors_count": 0,
     "gemini_retries": 1
+  },
+  {
+    "timestamp": "2026-11-26 17:01:16",
+    "execution_time": 119.2,
+    "funnel": {
+      "scraped_total": 35,
+      "scraped_by_source": {
+        "023": 10,
+        "Slobodna dalmacija": 15,
+        "Zadarski list": 10
+      },
+      "already_seen": 21,
+      "rejected_by_keywords": 3,
+      "rejected_by_rule": {
+        "тег RSS zabava": 1,
+        "sport": 1,
+        "URL /sport/": 1
+      },
+      "unclassified_by_ai": 0,
+      "duplicates_removed_by_ai": 16,
+      "rejection_reasons_list": [
+        "• Produženo radno vrijeme ugostiteljskih objekata u Senju za vrijeme Adv → Побут інших міст (Сений) | Сутності: Сений, Желько Томлянович, Адвент",
+        "• Sutra kreće Advent na Vojnoviću uz bezvremenske hitove popularne grupe → Побут інших міст (Дубровник) | Сутності: Дубровник, Адвент, Магазин",
+        "• Večer pjesme i blagdanskog ugođaja na Poluotoku; Leteći odred sutra pj → Вже публікувалось (Задар) | Сутності: Задар, Адвент, Летечий одред, Трг Петра Зоранича",
+        "• Određen pritvor Nepalcu osumnjičenom za ubojstvo sunarodnjaka u Zagreb → Геоблок (Загреб) | Сутності: Загреб, Непал, Жупанійський суд",
+        "• Dva dana do otvaranja Adventa u Gradu: Na Stradunu više borića nego če → Побут інших міст (Дубровник) | Сутності: Дубровник, Страдун, Силенте",
+        "• U Insuli otvorena božićna izložba rukotvorina pacijenata → Побут інших міст (Раб) | Сутності: Раб, Поліклініка Інсула, Теа Станічич",
+        "• Imate stan na moru koji treba urediti? Crni petak može biti dobra pril → Світовий шум | Сутності: Чорна п'ятниця, Меблі, Туристична оренда",
+        "• Veljko Radić u Loparu obišao ulaganja u komunalnu i društvenu infrastr → Побут інших міст (Лопар) | Сутності: Лопар, Велько Радич, Міністерство регіонального розвитку",
+        "• Liječnici istražili vezu između popularnih lijekova za mršavljenje i p → Світовий шум | Сутності: Оземпік, Діабет, Сперма, Тестостерон",
+        "• “Što biste voljeli da odrasli znaju?” Rapski osnovnoškolci podijelili  → Побут інших міст (Раб) | Сутності: Раб, Школа Івана Рабляніна, День дітей",
+        "• Oporba: Zbog nagodbi Pleslić i Žalac nikada nećemo saznati tko je AP → Вже публікувалось (Загреб) | Сутності: Йосипа Плеслич, Габріела Жалац, АП, Мірела Ахметович",
+        "• Dubrovački vam u novom broju daruje poseban prilog o prednostima studi → Побут інших міст (Дубровник) | Сутності: Дубровник, Мато Шундрица, Ніко Катушич",
+        "• ACI preuzima projekt marine Porto Baroš od Lürssenovog GITONE Kvarnera → Побут інших міст (Рієка) | Сутності: АЦІ, Порто Барош, Рієка, Гітоне Кварнер",
+        "• Zamutili se Palata, Šumet i Zavrelje, voda nije za piće. Evo gdje su i → Побут інших міст (Дубровник) | Сутності: Дубровник, Водопровід, Палата, Шумет",
+        "• Klinika za tumore opovrgnula da je u 4 godine otišlo 70 posto onkologa → Вже публікувалось (Загреб) | Сутності: Клініка пухлин, КБС Сестри милосердя, Онкологи",
+        "• Kekin najavila pokretanje upravnog spora protiv odluke Povjerenstva: “ → Геоблок (Загреб) | Сутності: Івана Кекін, Комісія з питань конфлікту інтересів, Загреб"
+      ],
+      "rejected_by_reason": {
+        "Побут інших міст": 9,
+        "Вже публікувалось": 3,
+        "Геоблок": 2,
+        "Світовий шум": 2
+      },
+      "updates_marked": 0,
+      "already_rejected": 16,
+      "rejected_by_code_examples": [
+        "[тег RSS zabava] Lunapark Madi ove godine na novoj lokaciji na Višnjiku: službeno otvorenje danas u 16 sati",
+        "[sport] Više od milijun eura za sport u kvartovima; Grad Zadar gradi i obnavlja igrališta u Crnom, Arbanasim",
+        "[URL /sport/] Josip Varvodić: “Završila je revizija, nadam se i negativna priča koja je pratila HOO”"
+      ]
+    },
+    "backlog": {
+      "total_size": 7,
+      "sources": {
+        "Slobodna dalmacija": 2,
+        "Zadarski list": 4,
+        "023": 1
+      }
+    },
+    "published": {
+      "total": 3,
+      "ukraine_priority": 0,
+      "with_images": 3,
+      "text_only": 0,
+      "og_images_found": 2,
+      "sources": {
+        "023": 3
+      }
+    },
+    "models_used": {
+      "gemini-3.5-flash-lite": 2
+    },
+    "models_by_task": {
+      "filter": "gemini-3.5-flash-lite",
+      "translate": "gemini-3.5-flash-lite"
+    },
+    "model_attempts": [
+      {
+        "task": "filter",
+        "model": "gemini-3.5-flash-lite",
+        "outcome": "ok"
+      },
+      {
+        "task": "translate",
+        "model": "gemini-3.5-flash-lite",
+        "outcome": "ok"
+      }
+    ],
+    "exhausted_models": [],
+    "demoted_models": [
+      "filter: gemini-3-flash-preview",
+      "filter: gemini-3.6-flash",
+      "translate: gemini-3.8-flash"
+    ],
+    "translate_budget_deferred": [
+      "gemini-3.6-flash"
+    ],
+    "gemini_region_blocked": false,
+    "gemini_unavailable": false,
+    "errors_count": 0,
+    "gemini_retries": 0
   }
 ]
