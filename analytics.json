@@ -1,124 +1,5 @@
 [
   {
-    "timestamp": "2026-11-16 20:01:16",
-    "execution_time": 251.5,
-    "funnel": {
-      "scraped_total": 35,
-      "scraped_by_source": {
-        "023": 10,
-        "Slobodna dalmacija": 15,
-        "Zadarski list": 10
-      },
-      "already_seen": 13,
-      "rejected_by_keywords": 7,
-      "rejected_by_rule": {
-        "тег RSS lifestyle": 5,
-        "тег RSS nogomet": 2
-      },
-      "unclassified_by_ai": 0,
-      "duplicates_removed_by_ai": 17,
-      "rejection_reasons_list": [
-        "• U centru Ravne Gore uskoro će biti otvorena autopraonica i novi fitnes → Побут інших міст (Равна Гора) | Сутності: Ravna Gora, Mišel Šćuka, autopraonica",
-        "• Dean Skira: ‘Svjetleći tepih može Stradunu dati blagdanski ugođaj, ali → Побут інших міст (Дубровник) | Сутності: Dean Skira, Stradun, Dubrovnik, Rijeka",
-        "• Zaklada FIPRO dodjeljuje novac za inovacijske projekte riječkih poduze → Побут інших міст (Рієка) | Сутності: Zaklada FIPRO, Grad Rijeka, poduzetnici",
-        "• Moćni mural Torcide Korkyra slavi junake Vukovara, Korčulanima je vrlo → Дубль (Дублікат новини 9) | Сутності: Torcida Korkyra, Korčula, Vukovar",
-        "• U Ljubljani predstavljena Rijeka kao cjelogodišnja turistička destinac → Побут інших міст (Рієка) | Сутності: TZG Rijeke, HTZ, Ljubljana, Rijeka",
-        "• U Korčuli trajan spomen na žrtvu Grada heroja: mural Torcide Korkyra s → Побут інших міст (Корчула) | Сутності: Torcida Korkyra, Korčula, Vukovar",
-        "• Godišnja dodjela priznanja Rivijera Crikvenica: za uspjehe, projekte,  → Побут інших міст (Цриквениця) | Сутності: Rivijera Crikvenica, Crikvenica, hotel Miramare",
-        "• Na Filozofskom fakultetu održano kulturno-povijesno događanje o 500 go → Побут інших міст (Рієка) | Сутності: Filozofski fakultet, Rijeka, Mohačka bitka",
-        "• Lovačko društvo Vranjak Ploče slavi pedeset godina djelovanja. Sve je  → Побут інших міст (Плоче) | Сутності: Lovačko društvo Vranjak, Ploče, dolina Neretve",
-        "• Koncert “Biseri popularne klasike” za 150. obljetnicu Narodne čitaonic → Побут інших міст (Кострена) | Сутності: Kostrena, Narodna čitaonica, Vanja Zelčić",
-        "• General Boris Zdilar: “Moje imenovanje nije suprotno Zakonu o službi u → Вже публікувалось (Скандал навколо клініки) | Сутності: Boris Zdilar, Vlada, Klinika Sveti Ivan",
-        "• Nova uhićenja u slučaju smrti Kristiana Periša, policija privodi ostal → Геоблок (Подія у Загребі) | Сутності: Kristian Josip Periš, Jutarnji list, policija",
-        "• Odbor za stanovanje u EP saslušao predstavnicu Stanara zajedno oko kra → Не за тематикою (Європарламент) | Сутності: Stanari zajedno, Melis Mladineo Brničević, Europski parlament",
-        "• Izdano 10,5 posto manje građevinskih dozvola nego lani: evo koliki se  → Не за тематикою (Статистика дозволів) | Сутності: DZS, Hrvatska, građevinske dozvole",
-        "• Druga procjena DZS-a: Inflacija u listopadu 4,9 posto → Не за тематикою (Інфляція) | Сутності: DZS, Hrvatska, inflacija",
-        "• Ustavni sud otvorio dio sjednica za medije. Sjednici prisustvovalo 7 o → Не за тематикою (Уставний суд) | Сутності: Ustavni sud, Zagreb",
-        "• U Hrvatsku dolaze novi avioprijevoznici, uvode se nove linije i poveća → Не за тематикою (Авіасполучення) | Сутності: HTZ, Hrvatska, zračne luke"
-      ],
-      "rejected_by_reason": {
-        "Побут інших міст": 9,
-        "Дубль": 1,
-        "Вже публікувалось": 1,
-        "Геоблок": 1,
-        "Не за тематикою": 5
-      },
-      "updates_marked": 0,
-      "already_rejected": 8,
-      "rejected_by_code_examples": [
-        "[тег RSS lifestyle] Pileći curry Nigelle Lawson sa zelenom tajlandskom pastom gotov je za manje od pola sata",
-        "[тег RSS lifestyle] Prhki kolačići s jabukama i cimetom: tijesto dva sata u hladnjaku, pečenje 20 minuta",
-        "[тег RSS lifestyle] Kako sami odčepiti sudoper: klip, sajla i sifon prije poziva vodoinstalateru",
-        "[тег RSS lifestyle] Nordijski domovi ostaju topli i na minus 30 zahvaljujući izolaciji i izboru energenta",
-        "[тег RSS lifestyle] Narančasti plamen na plinskom štednjaku: što znači i kako ponovno dobiti stabilan plavi plamen",
-        "[тег RSS nogomet] Posljednji sastav engleske Premier lige ima novog trenera. Prošle sezone je imao neuspješnu epizodu ",
-        "[тег RSS nogomet] Slovačka remijem u Astani proslavila promociju u Ligu B Lige nacija"
-      ]
-    },
-    "backlog": {
-      "total_size": 6,
-      "sources": {
-        "Slobodna dalmacija": 2,
-        "Zadarski list": 3,
-        "023": 1
-      }
-    },
-    "published": {
-      "total": 3,
-      "ukraine_priority": 1,
-      "with_images": 2,
-      "text_only": 1,
-      "og_images_found": 1,
-      "sources": {
-        "Zadarski list": 1,
-        "023": 2
-      }
-    },
-    "models_used": {
-      "gemini-3.5-flash-lite": 2
-    },
-    "models_by_task": {
-      "filter": "gemini-3.5-flash-lite",
-      "translate": "gemini-3.5-flash-lite"
-    },
-    "model_attempts": [
-      {
-        "task": "filter",
-        "model": "gemini-3-flash-preview",
-        "outcome": "unavailable"
-      },
-      {
-        "task": "filter",
-        "model": "gemini-3.6-flash",
-        "outcome": "unavailable"
-      },
-      {
-        "task": "filter",
-        "model": "gemini-3.5-flash-lite",
-        "outcome": "ok"
-      },
-      {
-        "task": "translate",
-        "model": "gemini-3.8-flash",
-        "outcome": "unavailable"
-      },
-      {
-        "task": "translate",
-        "model": "gemini-3.5-flash-lite",
-        "outcome": "ok"
-      }
-    ],
-    "exhausted_models": [],
-    "demoted_models": [],
-    "translate_budget_deferred": [
-      "gemini-3.6-flash"
-    ],
-    "gemini_region_blocked": false,
-    "gemini_unavailable": false,
-    "errors_count": 0,
-    "gemini_retries": 3
-  },
-  {
     "timestamp": "2026-11-17 08:01:21",
     "execution_time": 229.0,
     "funnel": {
@@ -10011,5 +9892,107 @@
     "gemini_unavailable": false,
     "errors_count": 0,
     "gemini_retries": 1
+  },
+  {
+    "timestamp": "2026-11-26 09:01:18",
+    "execution_time": 121.1,
+    "funnel": {
+      "scraped_total": 35,
+      "scraped_by_source": {
+        "023": 10,
+        "Slobodna dalmacija": 15,
+        "Zadarski list": 10
+      },
+      "already_seen": 23,
+      "rejected_by_keywords": 4,
+      "rejected_by_rule": {
+        "тег RSS sport": 1,
+        "promo": 1,
+        "nogometnih": 1,
+        "тег RSS košarka": 1
+      },
+      "unclassified_by_ai": 0,
+      "duplicates_removed_by_ai": 3,
+      "rejection_reasons_list": [
+        "• Djeca sad moraju i na klanjanje u crkvu? Roditelji zaratili zbog pravi → Не за тематикою (Релігійні правила для першопричасників) | Сутності: першопричасники, церква, Хорватія, батьки",
+        "• OVO MORATE PROBATI! U “Slatkoj tajni” pronađite Cinnmon Roll palačinke → Реклама (Промо-акція закладу громадського харчування) | Сутності: Слатка тайна, Задар, палачинки",
+        "• Od Kronen Zeitunga do kineskih influencera: Zadarsku županiju ove su g → Не за тематикою (Статистика туристичних візитів) | Сутності: Задарська жупанія, туристична спілка, журналісти, агенти"
+      ],
+      "rejected_by_reason": {
+        "Не за тематикою": 2,
+        "Реклама": 1
+      },
+      "updates_marked": 0,
+      "already_rejected": 17,
+      "rejected_by_code_examples": [
+        "[тег RSS sport] Bužimljani zauzeli prva dva mjesta među slijepima, Vlado Juratovac najbolji među slabovidnima na Mem",
+        "[promo] BLACK FRIDAY U FASHION&FRIENDS I FASHION COMPANY TRGOVINAMA: 30 % POPUSTA NA SVE!",
+        "[nogometnih] Nadbiskup Uzinić majkama poginulih branitelja darovao potpisani dres Luke Modrića",
+        "[тег RSS košarka] VIDEO LeBron James je izazvao potpunu euforiju u Philadelphiji. Zabio je ludih 14 poena zaredom!"
+      ]
+    },
+    "backlog": {
+      "total_size": 4,
+      "sources": {
+        "023": 3,
+        "Slobodna dalmacija": 1
+      }
+    },
+    "published": {
+      "total": 0,
+      "ukraine_priority": 0,
+      "with_images": 0,
+      "text_only": 0,
+      "og_images_found": 2,
+      "sources": {}
+    },
+    "models_used": {
+      "gemini-3.5-flash-lite": 1
+    },
+    "models_by_task": {
+      "filter": "gemini-3.5-flash-lite",
+      "translate": null
+    },
+    "model_attempts": [
+      {
+        "task": "filter",
+        "model": "gemini-3-flash-preview",
+        "outcome": "unavailable"
+      },
+      {
+        "task": "filter",
+        "model": "gemini-3.6-flash",
+        "outcome": "unavailable"
+      },
+      {
+        "task": "filter",
+        "model": "gemini-3.5-flash-lite",
+        "outcome": "ok"
+      },
+      {
+        "task": "translate",
+        "model": "gemini-3.6-flash",
+        "outcome": "unavailable"
+      },
+      {
+        "task": "translate",
+        "model": "gemini-3.5-flash-lite",
+        "outcome": "unavailable"
+      },
+      {
+        "task": "translate",
+        "model": "gemini-3.8-flash",
+        "outcome": "unavailable"
+      }
+    ],
+    "exhausted_models": [],
+    "demoted_models": [
+      "translate: gemini-3.8-flash"
+    ],
+    "translate_budget_deferred": [],
+    "gemini_region_blocked": false,
+    "gemini_unavailable": true,
+    "errors_count": 0,
+    "gemini_retries": 5
   }
 ]
