@@ -1,114 +1,5 @@
 [
   {
-    "timestamp": "2026-11-17 16:01:28",
-    "execution_time": 125.8,
-    "funnel": {
-      "scraped_total": 35,
-      "scraped_by_source": {
-        "023": 10,
-        "Slobodna dalmacija": 15,
-        "Zadarski list": 10
-      },
-      "already_seen": 20,
-      "rejected_by_keywords": 5,
-      "rejected_by_rule": {
-        "sportaše": 1,
-        "тег RSS sport": 2,
-        "nogometne": 1,
-        "тег RSS nogomet": 1
-      },
-      "unclassified_by_ai": 0,
-      "duplicates_removed_by_ai": 10,
-      "rejection_reasons_list": [
-        "• LPG tanker potonuo kod bugarske obale → Геоблок (Подія у Болгарії) | Сутності: LPG tanker, Bugarska, Crno more, Gas Husky",
-        "• Prijatelji životinja: Jadransko more plaća cijenu još dviju godina koć → Не за тематикою (Захист морського дна) | Сутності: Jadransko more, Prijatelji životinja, Ministarstvo poljoprivrede, koćarenje",
-        "• Luka Ploče dala pozajmicu društvu Energia Naturalis d.o.o. → Не за тематикою (Фінансова операція компанії) | Сутності: Luka Ploče, Energia Naturalis, Zagrebačka burza",
-        "• Rinčić na otvorenju Sinergane: U tijeku je javni poziv za ulazak prvih → Побут інших міст (Рієка) | Сутності: Sinergana, Rijeka, inkubator, IT industrija",
-        "• Od ponedjeljka privremena regulacija prometa zbog radova na sustavu ob → Побут інших міст (Дубровник) | Сутності: Montovjerna, Batala, Ulica bana Josipa Jelačića, oborinska odvodnja",
-        "• Božinović: Policija će istražiti sve okolnosti curenja snimke iz Janko → Вже публікувалось (Коментар щодо інциденту в лікарні) | Сутності: Davor Božinović, Jankomir, Klinika za psihijatriju, MUP",
-        "• Na otoku Krku alkoholizirani vozač izazvao prometnu nesreću upravljaju → Побут інших міст (Острів Крк) | Сутності: Krk, Županje, alkoholizirani vozač, prometna nesreća",
-        "• Noć kazališta: Obilazak Galerije Zajc uz stručno vodstvo i nastup izne → Побут інших міст (Локальна подія в Рієці) | Сутності: HNK Ivana pl. Zajca, Rijeka, Noć kazališta, Galerija Zajc",
-        "• Kako je ničiji favorit, mimo svih najava, izabran za najpoznatijeg fil → Світовий шум (Вибір актора на роль агента 007) | Сутності: Robert Pattinson, James Bond, 007",
-        "• Privremena obustava isporuke plina u dijelu općine Čavle → Побут інших міст (Громада Чавле) | Сутності: Čavle, Energo, isporuka plina, vodno-komunalna infrastruktura"
-      ],
-      "rejected_by_reason": {
-        "Геоблок": 1,
-        "Не за тематикою": 2,
-        "Побут інших міст": 5,
-        "Вже публікувалось": 1,
-        "Світовий шум": 1
-      },
-      "updates_marked": 0,
-      "already_rejected": 16,
-      "rejected_by_code_examples": [
-        "[sportaše] Glazbom i velikim srcem za zadarske sportaše; Humanitarni koncert Danka Tomanića i prijatelja odušev",
-        "[тег RSS sport] Ponos grada sporta; Gradonačelnik Erlić ugostio 180 zadarskih sportaša, 28 klubova dobilo dodatna sr",
-        "[nogometne] Vatreni u Vukovaru uoči Dana sjećanja; Izbornik Slaven Bilić i stožer odali počast poginulim branite",
-        "[тег RSS sport] Rekordan odaziv u Zemuniku Donjem: djeca učila taekwondo i hrvatski znakovni jezik na Sportskom danu",
-        "[тег RSS nogomet] Šokatno priznanje engleske nogometne legende: “Došao bih kući, zaključao se na dva dana i samo pio…”"
-      ]
-    },
-    "backlog": {
-      "total_size": 8,
-      "sources": {
-        "Slobodna dalmacija": 2,
-        "023": 6
-      }
-    },
-    "published": {
-      "total": 0,
-      "ukraine_priority": 0,
-      "with_images": 0,
-      "text_only": 0,
-      "og_images_found": 0,
-      "sources": {}
-    },
-    "models_used": {
-      "gemini-3.5-flash-lite": 1
-    },
-    "models_by_task": {
-      "filter": "gemini-3.5-flash-lite",
-      "translate": null
-    },
-    "model_attempts": [
-      {
-        "task": "filter",
-        "model": "gemini-3.5-flash-lite",
-        "outcome": "ok"
-      },
-      {
-        "task": "translate",
-        "model": "gemini-3.8-flash",
-        "outcome": "unavailable"
-      },
-      {
-        "task": "translate",
-        "model": "gemini-3.5-flash-lite",
-        "outcome": "unavailable"
-      },
-      {
-        "task": "translate",
-        "model": "gemini-3.6-flash",
-        "outcome": "unavailable"
-      }
-    ],
-    "exhausted_models": [],
-    "demoted_models": [
-      "filter: gemini-3-flash-preview",
-      "filter: gemini-3.6-flash",
-      "translate: gemini-3.8-flash",
-      "translate: gemini-3.6-flash",
-      "translate: gemini-3.5-flash-lite"
-    ],
-    "translate_budget_deferred": [
-      "gemini-3.6-flash"
-    ],
-    "gemini_region_blocked": false,
-    "gemini_unavailable": true,
-    "errors_count": 0,
-    "gemini_retries": 3
-  },
-  {
     "timestamp": "2026-11-17 17:01:17",
     "execution_time": 295.1,
     "funnel": {
@@ -9938,5 +9829,119 @@
     "gemini_unavailable": false,
     "errors_count": 0,
     "gemini_retries": 0
+  },
+  {
+    "timestamp": "2026-11-26 20:01:26",
+    "execution_time": 385.4,
+    "funnel": {
+      "scraped_total": 35,
+      "scraped_by_source": {
+        "023": 10,
+        "Slobodna dalmacija": 15,
+        "Zadarski list": 10
+      },
+      "already_seen": 15,
+      "rejected_by_keywords": 6,
+      "rejected_by_rule": {
+        "тег RSS lifestyle": 2,
+        "URL /sport/": 3,
+        "тег RSS nogomet": 1
+      },
+      "unclassified_by_ai": 0,
+      "duplicates_removed_by_ai": 14,
+      "rejection_reasons_list": [
+        "• Upoznajte Tajne agente 010: Vraćaju se na mjesto radnje, ovaj put može → Побут інших міст (Культурна подія в Рієці) | Сутності: Tajne agente 010, Rijeka, klub Crkva, Devet i pol dejtova",
+        "• Mitomanija ‘Srpske diplomatije‘ i Treće Dubrovačke Republike: Njima je → Геоблок (Історично-політичні дебати про Дубровник) | Сутності: Dubrovnik, Dubrovačka Republika, Cavtat, Srpska diplomatija",
+        "• Počeo kongres SSSH, Novosel ponovno kandidat za predsjednika → Не за тематикою (Конгрес профспілок у Тухельських Топлицях) | Сутності: SSSH, Mladen Novosel, Tuheljske Toplice, Sindikat",
+        "• Evo tko će sutra biti bez vode zbog radova → Побут інших міст (Відключення води в Дубровнику) | Сутності: Dubrovnik, Vodovod, Ulica Vladimira Nazora",
+        "• Skup o prevenciji femicida: Za unaprjeđenje sustava zaštite žena → Не за тематикою (Науковий круглий стіл у Загребі) | Сутності: Zagreb, Pravni fakultet, Femicid, Paritet",
+        "• Viktor Matić: Oni koji koriste Dubrovačku Republiku kao krunski argume → Не за тематикою (Лекція про історію Дубровника) | Сутності: Viktor Matić, Matica hrvatska, Dubrovnik, Dalmacija",
+        "• Obustavljen postupak izdavanja dozvole za najvažniju fazu CGO-a Lučino → Побут інших міст (Центр утилізації відходів у Дубровнику) | Сутності: Blaž Pezo, Lučino razdolje, Hrvatske vode, Magnum Supra",
+        "• Mladi dubrovački autori oživjeli priče o letećim knjigama, zavičajnim  → Побут інших міст (Дитячий літературний захід у Дубrovнику) | Сутності: Dubrovnik, Narodna knjižnica Grad, Forum mladih, Saloča od zrcala",
+        "• Privremeno zatvoren prolaz na plaži Vila Ružić → Побут інших міст (Ремонт пляжу в Рієці) | Сутності: Rijeka, Plaža Vila Ružić, Pajol, Pomorsko dobro",
+        "• U Zagrebu održan Promilje Fest, festival tradicijskih proizvoda Promin → Побут інших міст (Регіональний фестиваль продуктів у Загребі) | Сутності: Zagreb, Promilje Fest, Drniš, Hotel Dubrovnik",
+        "• Ventex Business Day: Umjetna inteligencija mijenja pravila igre → Побут інших міст (Бізнес-конференція в Бакарі) | Сутності: Kukuljanovo, Ventex, Bakar, Danko Venturini",
+        "• Novi udarac za zadarski SDP: Ivica Ošap odlazi i proziva vodstvo Erola → Вже публікувалось (Внутрішньопартійна криза в задарському SDP) | Сутності: Ivica Ošap, SDP, Zadar, Erol Gaši",
+        "• Ranko Mladenić, Ivana Liverić i Dorotea Kundić dobili povelje Obrtničk → Побут інших міст (Захід ремісників у Вишково) | Сутності: Viškovo, Ranko Mladenić, Obrtnička komora PGŽ, Kastav",
+        "• Za novu zamjenicu pučke pravobraniteljice predložena Nikolina Patalen. → Не за тематикою (Призначення заступника омбудсмена) | Сутності: Tena Šimonović Einwalter, Nikolina Patalen, Hrvatski sabor, Ministarstvo pravosuđa"
+      ],
+      "rejected_by_reason": {
+        "Побут інших міст": 8,
+        "Геоблок": 1,
+        "Не за тематикою": 4,
+        "Вже публікувалось": 1
+      },
+      "updates_marked": 0,
+      "already_rejected": 11,
+      "rejected_by_code_examples": [
+        "[тег RSS lifestyle] Pretraga kolesterola i triglicerida: kada na vađenje krvi treba doći natašte",
+        "[тег RSS lifestyle] Odzračite radijatore prije zime: tijekom sezone grijanja mogli biste uštedjeti oko 100 eura",
+        "[URL /sport/] Dubrovčanin Toni Ruso s tri pogotka predvodio mini Vatrene do uvjerljive pobjede protiv Kube na SP-u",
+        "[URL /sport/] Jug AO izgubio nakon dramatične završnice i peteraca",
+        "[тег RSS nogomet] Jerko Leko doživio prvi poraz na klupi Modrih, Dinamo je izgledao kao nedorasli suparnik",
+        "[URL /sport/] Mladost i Jadran izborili finale Kupa. Žapci lako protiv Solarisa, Splićanima peterci protiv Juga"
+      ]
+    },
+    "backlog": {
+      "total_size": 3,
+      "sources": {
+        "Zadarski list": 3
+      }
+    },
+    "published": {
+      "total": 3,
+      "ukraine_priority": 0,
+      "with_images": 3,
+      "text_only": 0,
+      "og_images_found": 1,
+      "sources": {
+        "023": 1,
+        "Slobodna dalmacija": 1,
+        "Zadarski list": 1
+      }
+    },
+    "models_used": {
+      "gemini-3.5-flash-lite": 2
+    },
+    "models_by_task": {
+      "filter": "gemini-3.5-flash-lite",
+      "translate": "gemini-3.5-flash-lite"
+    },
+    "model_attempts": [
+      {
+        "task": "filter",
+        "model": "gemini-3-flash-preview",
+        "outcome": "unavailable"
+      },
+      {
+        "task": "filter",
+        "model": "gemini-3.6-flash",
+        "outcome": "unavailable"
+      },
+      {
+        "task": "filter",
+        "model": "gemini-3.5-flash-lite",
+        "outcome": "ok"
+      },
+      {
+        "task": "translate",
+        "model": "gemini-3.8-flash",
+        "outcome": "unavailable"
+      },
+      {
+        "task": "translate",
+        "model": "gemini-3.5-flash-lite",
+        "outcome": "ok"
+      }
+    ],
+    "exhausted_models": [],
+    "demoted_models": [],
+    "translate_budget_deferred": [
+      "gemini-3.6-flash"
+    ],
+    "gemini_region_blocked": false,
+    "gemini_unavailable": false,
+    "errors_count": 0,
+    "gemini_retries": 3
   }
 ]
