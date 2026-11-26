@@ -1,102 +1,5 @@
 [
   {
-    "timestamp": "2026-11-17 09:01:19",
-    "execution_time": 73.6,
-    "funnel": {
-      "scraped_total": 35,
-      "scraped_by_source": {
-        "023": 10,
-        "Slobodna dalmacija": 15,
-        "Zadarski list": 10
-      },
-      "already_seen": 19,
-      "rejected_by_keywords": 3,
-      "rejected_by_rule": {
-        "тег RSS sport": 3
-      },
-      "unclassified_by_ai": 0,
-      "duplicates_removed_by_ai": 8,
-      "rejection_reasons_list": [
-        "• Mostovi i arhitektura: druga edukativna radionica namijenjena učenicim → Побут інших міст (Дубровник) | Сутності: Дубровник, Центр за дјецу, ТХП, Радионица",
-        "• Međunarodni studentski filmski festival STIFF donosi 37 filmskih ostva → Побут інших міст (Рієка) | Сутності: Рієка, STIFF, Кінофестиваль, Арт-кіно",
-        "• Predstave na TranziT-u propituju suodnos fikcije i fakcije te svjesnog → Побут інших міст (Рієка) | Сутності: Рієка, TranziT, Тоні Флего, Театр",
-        "• Jubilej koji se rijetko viđa! Ova časna sestra iz Neretve proslavila j → Не за тематикою (Особистий ювілей в Неретві) | Сутності: Неретва, Кармела Баришич, Століття, Віджу",
-        "• Ministarstvo kulture i medija: ‘Odbacujemo navode o Praškom kvadrijena → Вже публікувалось (Празьке квадрієнале) | Сутності: Міністерство культури, Празьке квадрієнале, Марко Тадич, Матія Ферлін",
-        "• Jako jugo i kiša večeras, a nakon toplog početka tjedna stiže zahlađen → Вже публікувалось (Прогноз погоди) | Сутності: Задар, ДХМЗ, Погода, Юго",
-        "• Kesteni u kuhinji: kako ih pravilno ispeći, skuhati i jednostavno ogul → Світовий шум (Поради з кулінарії) | Сутності: Кестені, Рецепт, Приготування",
-        "• Evo što se događa s vašim tijelom kada redovito pijete crni čaj → Світовий шум (Користь чаю) | Сутності: Чорний чай, Здоров'я, Окислення, Camellia sinensis"
-      ],
-      "rejected_by_reason": {
-        "Побут інших міст": 3,
-        "Не за тематикою": 1,
-        "Вже публікувалось": 2,
-        "Світовий шум": 2
-      },
-      "updates_marked": 0,
-      "already_rejected": 13,
-      "rejected_by_code_examples": [
-        "[тег RSS sport] Talentirani Drnišanin od 202 cm stiže u Zadar: “Velika mu je želja bila doći baš u naš klub”",
-        "[тег RSS sport] Zadar nakon osam kola ima najbolji napad i najbolju obranu Premijer lige, a u ABA ligi nitko ne prim",
-        "[тег RSS sport] Laura Župan i Leni Matulić donijeli Zadru dvije bronce, na Višnjiku 550 plivača i dva nova kadetska "
-      ]
-    },
-    "backlog": {
-      "total_size": 5,
-      "sources": {
-        "023": 3,
-        "Zadarski list": 1,
-        "Slobodna dalmacija": 1
-      }
-    },
-    "published": {
-      "total": 0,
-      "ukraine_priority": 0,
-      "with_images": 0,
-      "text_only": 0,
-      "og_images_found": 1,
-      "sources": {}
-    },
-    "models_used": {
-      "gemini-3.5-flash-lite": 1
-    },
-    "models_by_task": {
-      "filter": "gemini-3.5-flash-lite",
-      "translate": null
-    },
-    "model_attempts": [
-      {
-        "task": "filter",
-        "model": "gemini-3.5-flash-lite",
-        "outcome": "ok"
-      },
-      {
-        "task": "translate",
-        "model": "gemini-3.8-flash",
-        "outcome": "unavailable"
-      },
-      {
-        "task": "translate",
-        "model": "gemini-3.6-flash",
-        "outcome": "unavailable"
-      },
-      {
-        "task": "translate",
-        "model": "gemini-3.5-flash-lite",
-        "outcome": "unavailable"
-      }
-    ],
-    "exhausted_models": [],
-    "demoted_models": [
-      "filter: gemini-3-flash-preview",
-      "filter: gemini-3.6-flash"
-    ],
-    "translate_budget_deferred": [],
-    "gemini_region_blocked": false,
-    "gemini_unavailable": true,
-    "errors_count": 0,
-    "gemini_retries": 3
-  },
-  {
     "timestamp": "2026-11-17 10:01:21",
     "execution_time": 40.3,
     "funnel": {
@@ -9995,5 +9898,115 @@
     "gemini_unavailable": true,
     "errors_count": 0,
     "gemini_retries": 5
+  },
+  {
+    "timestamp": "2026-11-26 11:01:20",
+    "execution_time": 200.0,
+    "funnel": {
+      "scraped_total": 35,
+      "scraped_by_source": {
+        "023": 10,
+        "Slobodna dalmacija": 15,
+        "Zadarski list": 10
+      },
+      "already_seen": 17,
+      "rejected_by_keywords": 6,
+      "rejected_by_rule": {
+        "тег RSS sport": 1,
+        "utakmica": 1,
+        "oglasi": 1,
+        "URL /sport/": 2,
+        "promo": 1
+      },
+      "unclassified_by_ai": 0,
+      "duplicates_removed_by_ai": 8,
+      "rejection_reasons_list": [
+        "• Zbog krađe u Rijeci uhićena 33-godišnjakinja: operirala je po trgovina → Побут інших міст (Кримінал у Рієці) | Сутності: Рієка, 33-річна жінка, поліція, крадіжка",
+        "• Emilija Kokić, Filip Bach i Wings for Life među dobitnicima nagrade Pr → Дубль (Дублює новину ID 6) | Сутності: Providurova palača, Zadarska županija, Nagrada Premium, Emilija Kokić",
+        "• U zaleđu Crikvenice “pao” 71-godišnji diler: našli mu tri vage, marihu → Побут інших міст (Арешт дилера в Crikvenica) | Сутності: Crikvenica, Vinodolska općina, droga, policija",
+        "• U Zagrebu je nestala Martina Perić s Pelješca, nema je već deset dana; → Побут інших міст (Зникнення людини в Загребі) | Сутності: Zagreb, Trnje, Martina Perić, Pelješac",
+        "• Zadar ove godine ostaje bez klizališta na Forumu: Državna komisija pon → Вже публікувалось (Дублює тему скасування klizališta iz ID 1) | Сутності: Zadar, DKOM, Wonderland Factory, Arctic d.o.o.",
+        "• Oštra poruka Plenkovića Crnoj Gori: Nema ulaska u EU bez dogovora o Pr → Вже публікувалось (Повторення заяви Пленковича з ID 11) | Сутності: Andrej Plenković, Bruxelles, Crna Gora, Prevlaka",
+        "• U noćnom klubu u Kninu brutalno pretučen mladi policajac, dok je jedan → Побут інших міст (Інцидент у Книні) | Сутності: Knin, policajac, PU šibensko-kninska, tučnjava",
+        "• Bivša državna tajnica Pleslić i ministrica Žalac osuđene nakon priznan → Дубль (Дублює новину ID 20) | Сутності: Josipa Pleslić, Gabrijela Žalac, Zagreb, Afera Vjetroelektrane"
+      ],
+      "rejected_by_reason": {
+        "Побут інших міст": 4,
+        "Дубль": 2,
+        "Вже публікувалось": 2
+      },
+      "updates_marked": 0,
+      "already_rejected": 10,
+      "rejected_by_code_examples": [
+        "[тег RSS sport] Marko Popović i Ive Ivanov na terenu s djecom; U petak na Višnjiku turnir u inkluzivnoj košarci",
+        "[utakmica] Legenda HNL-a uvjerljivo odvela Šibenik do titule jesenskog prvaka: ‘Ovo je tek početak našeg trnovi",
+        "[oglasi] Stiže Crni petak, a s njime i najveće prijevare u online kupovini. Evo savjeta kako se zaštititi",
+        "[URL /sport/] Loša Hezonjina večer, Cleveland poražen kod prvaka: bez poen, jedan promašaj....",
+        "[URL /sport/] Jannik Sinner ipak neće nastupiti na Australian Openu. Nakon operacije koljena slijedi pauza",
+        "[promo] BLACK FRIDAY VIKEND VAS OČEKUJE U TOWERU"
+      ]
+    },
+    "backlog": {
+      "total_size": 10,
+      "sources": {
+        "Slobodna dalmacija": 1,
+        "023": 5,
+        "Zadarski list": 4
+      }
+    },
+    "published": {
+      "total": 3,
+      "ukraine_priority": 0,
+      "with_images": 3,
+      "text_only": 0,
+      "og_images_found": 1,
+      "sources": {
+        "023": 1,
+        "Slobodna dalmacija": 1,
+        "Zadarski list": 1
+      }
+    },
+    "models_used": {
+      "gemini-3.5-flash-lite": 2
+    },
+    "models_by_task": {
+      "filter": "gemini-3.5-flash-lite",
+      "translate": "gemini-3.5-flash-lite"
+    },
+    "model_attempts": [
+      {
+        "task": "filter",
+        "model": "gemini-3.5-flash-lite",
+        "outcome": "ok"
+      },
+      {
+        "task": "translate",
+        "model": "gemini-3.8-flash",
+        "outcome": "unavailable"
+      },
+      {
+        "task": "translate",
+        "model": "gemini-3.6-flash",
+        "outcome": "unavailable"
+      },
+      {
+        "task": "translate",
+        "model": "gemini-3.5-flash-lite",
+        "outcome": "ok"
+      }
+    ],
+    "exhausted_models": [],
+    "demoted_models": [
+      "filter: gemini-3-flash-preview",
+      "filter: gemini-3.6-flash",
+      "translate: gemini-3.8-flash",
+      "translate: gemini-3.6-flash",
+      "translate: gemini-3.5-flash-lite"
+    ],
+    "translate_budget_deferred": [],
+    "gemini_region_blocked": false,
+    "gemini_unavailable": false,
+    "errors_count": 0,
+    "gemini_retries": 2
   }
 ]
