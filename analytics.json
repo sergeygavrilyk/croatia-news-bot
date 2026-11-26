@@ -1,113 +1,5 @@
 [
   {
-    "timestamp": "2026-11-17 12:01:19",
-    "execution_time": 130.3,
-    "funnel": {
-      "scraped_total": 35,
-      "scraped_by_source": {
-        "023": 10,
-        "Slobodna dalmacija": 15,
-        "Zadarski list": 10
-      },
-      "already_seen": 16,
-      "rejected_by_keywords": 6,
-      "rejected_by_rule": {
-        "тег RSS sport": 2,
-        "URL /sport/": 2,
-        "promo": 1,
-        "тег RSS nogomet": 1
-      },
-      "unclassified_by_ai": 0,
-      "duplicates_removed_by_ai": 11,
-      "rejection_reasons_list": [
-        "• Nastupi u Palachu: Grč u petak, “A Ride on Heavy Metal” u subotu → Побут інших міст (Культурні події у Рієці) | Сутності: Rijeka, Palach, Grč, Amethyst",
-        "• Predstavljeni detalji ‘Adventa na Vojnoviću‘: evo tko će vas zabavljat → Побут інших міст (Адвент у Дубровнику) | Сутності: Dubrovnik, Studentski centar, Advent",
-        "• Rapski srednjoškolci glumom, pjesmom i ugostiteljskim vještinama prosl → Побут інших міст (Ювілей школи на Рабі) | Сутності: Rab, Srednja škola, Damir Paparić",
-        "• I to se dogodilo: dvije godine nakon roka putnički terminal u Šibeniku → Побут інших міст (Термінал у Шибенику) | Сутності: Šibenik, Lučka uprava, Paško Dželalija",
-        "• Andrej Plenković primio Gorana Hausera: Studenti su u fokusu razvoja S → Побут інших міст (Зустріч у Рієці) | Сутності: Andrej Plenković, Goran Hauser, Rijeka",
-        "• U Dubrovniku održan simpozij ‘Upravljanje antibioticima i infekcije u  → Побут інших міст (Медичний симпозиум у Дубровнику) | Сутності: Dubrovnik, simpozij, antibiotici",
-        "• Održan tradicionalni lovački bal novljanskih lovaca → Побут інших міст (Лovaцький бал у Крмпотах) | Сутності: Krmpote, Lovačka udruga, Gradina",
-        "• Gradi se cesta Vid - Nova Sela, radove obišli Pezo i Bačić → Побут інших міст (Будівництво дороги у Метковичі) | Сутності: Vid, Nova Sela, Branko Bačić, Blaž Pezo",
-        "• Važna obavijest policije za sve koji sutra idu u Škabrnju; Zatvara se  → Вже публікувалось (Дубль новини 9) | Сутності: Škabrnja, policija, DC-56",
-        "• U petak u Galeriji Otok otvorenje izložbe Davora Lucianovića → Побут інших міст (Виставка на Ластові) | Сутності: Lastovo, Galerija Otok, Davor Lucianović",
-        "• Humanitarna večer ‘Moji kapelini‘ autorice Marije Kisić Kamić u Umjetn → Побут інших міст (Благодійна вечірка в Дубровнику) | Сутності: Dubrovnik, Marija Kisić Kamić, Udruga Rina Mašera"
-      ],
-      "rejected_by_reason": {
-        "Побут інших міст": 10,
-        "Вже публікувалось": 1
-      },
-      "updates_marked": 0,
-      "already_rejected": 11,
-      "rejected_by_code_examples": [
-        "[тег RSS sport] Rekordan odaziv u Zemuniku Donjem: djeca učila taekwondo i hrvatski znakovni jezik na Sportskom danu",
-        "[тег RSS sport] Sjajan nastup zadarskih karataša; KK Optimist osvojio čak 20 medalja u Dalmatinskoj ligi!",
-        "[URL /sport/] Čestitka župana Blaža Peza Ivi Oberan: ‘Dubrovniku i našoj Županiji donijela si još jedan razlog za ",
-        "[URL /sport/] Bronca Ive Oberan obilježila Grand Prix Zagreb: ‘Sad iz svoje države s medaljom idem na Grand Slam u",
-        "[promo] Tradicija, kvaliteta i povjerenje potrošača: PIK šunke broj jedan u Hrvatskoj",
-        "[тег RSS nogomet] Španjolci bruje o hrvatskom čudu: “Odbio je Barcelonu,  želi samo u Real Madrid”"
-      ]
-    },
-    "backlog": {
-      "total_size": 9,
-      "sources": {
-        "023": 7,
-        "Slobodna dalmacija": 2
-      }
-    },
-    "published": {
-      "total": 3,
-      "ukraine_priority": 0,
-      "with_images": 2,
-      "text_only": 1,
-      "og_images_found": 2,
-      "sources": {
-        "023": 3
-      }
-    },
-    "models_used": {
-      "gemini-3.5-flash-lite": 2
-    },
-    "models_by_task": {
-      "filter": "gemini-3.5-flash-lite",
-      "translate": "gemini-3.5-flash-lite"
-    },
-    "model_attempts": [
-      {
-        "task": "filter",
-        "model": "gemini-3.5-flash-lite",
-        "outcome": "ok"
-      },
-      {
-        "task": "translate",
-        "model": "gemini-3.8-flash",
-        "outcome": "unavailable"
-      },
-      {
-        "task": "translate",
-        "model": "gemini-3.6-flash",
-        "outcome": "unavailable"
-      },
-      {
-        "task": "translate",
-        "model": "gemini-3.5-flash-lite",
-        "outcome": "ok"
-      }
-    ],
-    "exhausted_models": [],
-    "demoted_models": [
-      "filter: gemini-3-flash-preview",
-      "filter: gemini-3.6-flash",
-      "translate: gemini-3.8-flash",
-      "translate: gemini-3.6-flash",
-      "translate: gemini-3.5-flash-lite"
-    ],
-    "translate_budget_deferred": [],
-    "gemini_region_blocked": false,
-    "gemini_unavailable": false,
-    "errors_count": 0,
-    "gemini_retries": 2
-  },
-  {
     "timestamp": "2026-11-17 13:01:20",
     "execution_time": 269.2,
     "funnel": {
@@ -10001,5 +9893,77 @@
     "gemini_unavailable": false,
     "errors_count": 0,
     "gemini_retries": 1
+  },
+  {
+    "timestamp": "2026-11-26 14:01:14",
+    "execution_time": 14.1,
+    "funnel": {
+      "scraped_total": 35,
+      "scraped_by_source": {
+        "023": 10,
+        "Slobodna dalmacija": 15,
+        "Zadarski list": 10
+      },
+      "already_seen": 17,
+      "rejected_by_keywords": 3,
+      "rejected_by_rule": {
+        "тег RSS zabava": 1,
+        "sport": 1,
+        "тег RSS nogomet": 1
+      },
+      "unclassified_by_ai": 0,
+      "duplicates_removed_by_ai": 0,
+      "rejection_reasons_list": [],
+      "rejected_by_reason": {},
+      "updates_marked": 0,
+      "already_rejected": 10,
+      "rejected_by_code_examples": [
+        "[тег RSS zabava] Lunapark Madi ove godine na novoj lokaciji na Višnjiku: službeno otvorenje danas u 16 sati",
+        "[sport] Više od milijun eura za sport u kvartovima; Grad Zadar gradi i obnavlja igrališta u Crnom, Arbanasim",
+        "[тег RSS nogomet] FIFA je bila žrtva kibernetičkog napada. Odgovornost preuzela skupina Handsome Boy Hacking Club"
+      ]
+    },
+    "backlog": {
+      "total_size": 28,
+      "sources": {
+        "Slobodna dalmacija": 11,
+        "023": 8,
+        "Zadarski list": 9
+      }
+    },
+    "published": {
+      "total": 0,
+      "ukraine_priority": 0,
+      "with_images": 0,
+      "text_only": 0,
+      "og_images_found": 0,
+      "sources": {}
+    },
+    "models_used": {
+      "gemini-3.5-flash-lite": 1
+    },
+    "models_by_task": {
+      "filter": "gemini-3.5-flash-lite",
+      "translate": null
+    },
+    "model_attempts": [
+      {
+        "task": "filter",
+        "model": "gemini-3.5-flash-lite",
+        "outcome": "ok"
+      }
+    ],
+    "exhausted_models": [],
+    "demoted_models": [
+      "filter: gemini-3-flash-preview",
+      "filter: gemini-3.6-flash",
+      "translate: gemini-3.8-flash",
+      "translate: gemini-3.6-flash"
+    ],
+    "translate_budget_deferred": [],
+    "gemini_region_blocked": false,
+    "gemini_unavailable": false,
+    "errors_count": 1,
+    "gemini_retries": 0
   }
 ]
