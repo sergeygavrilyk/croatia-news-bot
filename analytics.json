@@ -1,122 +1,5 @@
 [
   {
-    "timestamp": "2026-11-16 17:01:18",
-    "execution_time": 300.9,
-    "funnel": {
-      "scraped_total": 35,
-      "scraped_by_source": {
-        "023": 10,
-        "Slobodna dalmacija": 15,
-        "Zadarski list": 10
-      },
-      "already_seen": 18,
-      "rejected_by_keywords": 7,
-      "rejected_by_rule": {
-        "тег RSS lifestyle": 3,
-        "КАПС у заголовку": 1,
-        "sport": 1,
-        "тег RSS nogomet": 1,
-        "utakmice": 1
-      },
-      "unclassified_by_ai": 0,
-      "duplicates_removed_by_ai": 13,
-      "rejection_reasons_list": [
-        "• Bugarska spasila posadu broda s pšenicom potopljenog u Crnom moru → Геоблок (Аварія судна біля узбережжя Болгарії) | Сутності: Bugarska, Crno more, m/v BETUL 8, Rumunjska",
-        "• Talijanski sud odredio nadzor poslovanja Revoluta → Геоблок (Рішення суду в Мілані) | Сутності: Revolut, Sud u Milanu, Italija, Revolut Bank UAB",
-        "• Treća sreća za HDZ-ova bivšeg vijećnika! Bilić na čelu šibenskog teatr → Побут інших міст (Призначення директора театру в Шибенику) | Сутності: Jakov Bilić, Šibenik, HNK u Šibeniku, HDZ",
-        "• Kako u aplikaciji Google Photos isključiti značajke Geminija i zaštiti → Світовий шум (Поради з налаштування додатків) | Сутності: Google Photos, Gemini, Android, Ask Photos",
-        "• Na jugu Hrvatske zabrinuti ReMaL-om: Smjet ćeš naložiti par metara drv → Побут інших міст (Облік дров'яних печей у Дубровнику) | Сутності: Dubrovnik, ReMaL, kotlovi za rakiju",
-        "• Rano otkrivanje ključno je za sprječavanje ozbiljnih komplikacija → Побут інших міст (Місцевий захід з перевірки здоров'я у Госпичі) | Сутності: Gospić, Ljekarna Ličko-senjske županije, Svjetski dan šećerne bolesti",
-        "• Ode Studenac iz Dubrovnika! Pao je natpis, odmah je osvanuo novi. A ev → Побут інших міст (Зміна власника магазинів у Дубровнику) | Сутності: Dubrovnik, Studenac, Ribola, PEMO centar",
-        "• Raye i Rosalia vode u nominacijama za Grammy → Світовий шум (Номінації на музичну премію) | Сутності: Raye, Rosalia, Grammy, Los Angeles",
-        "• Nagradu “Oboji svijet” osvojilo 183 učenička rada o prihvaćanju različ → Не за тематикою (Шкільний конкурс малюнків) | Сутності: Forum za slobodu odgoja, Oboji svijet, Tatjana Katkić Stanić",
-        "• Vujčić: Umjetna inteligencija i dug rizici za financijsku stabilnost e → Світовий шум (Заява ЄЦБ про фінансові ризики) | Сутності: Boris Vujčić, ECB, eurozona",
-        "• Robert Pattinson novi je James Bond! “Ovo mi je najveća čast u životu” → Світовий шум (Новини шоу-бізнесу) | Сутності: Robert Pattinson, James Bond, Daniel Craig, London",
-        "• Gospić se sutra klanja žrtvi Vukovara i Škabrnje → Побут інших міст (Місцеві заходи вшанування у Госпичі) | Сутності: Gospić, Vukovar, Škabrnja, Vukovarska ulica",
-        "• Ponovno otvorena obalna šetnica u blizini Hotela Ičići → Побут інших міст (Ремонт променаду в Ічичі) | Сутності: Ičići, Hotel Ičići, Opatija"
-      ],
-      "rejected_by_reason": {
-        "Геоблок": 2,
-        "Побут інших міст": 6,
-        "Світовий шум": 4,
-        "Не за тематикою": 1
-      },
-      "updates_marked": 0,
-      "already_rejected": 8,
-      "rejected_by_code_examples": [
-        "[тег RSS lifestyle] Nordijski domovi ostaju topli i na minus 30 zahvaljujući izolaciji i izboru energenta",
-        "[тег RSS lifestyle] Narančasti plamen na plinskom štednjaku: što znači i kako ponovno dobiti stabilan plavi plamen",
-        "[тег RSS lifestyle] Višekratne vrećice za kupnju najbolje je oprati nakon svake upotrebe, a način ovisi o materijalu",
-        "[КАПС у заголовку] OSVOJI KINO ULAZNICE Darujemo 4 kino ulaznice za film “IGRE GLADI: SVITANJE NAD ŽETVOM ” u Cinestaru",
-        "[sport] Gradska vijećnica prelazi iz GKZD u Županiju. SDP: Novi institut zapošljavanja koji još nije uvršten",
-        "[тег RSS nogomet] Vincent Kompany nakon tri tjedna ponovo vodio trening Bayerna",
-        "[utakmice] Četrnaest Torcidaša iz kortea na slobodi"
-      ]
-    },
-    "backlog": {
-      "total_size": 11,
-      "sources": {
-        "Zadarski list": 7,
-        "Slobodna dalmacija": 3,
-        "023": 1
-      }
-    },
-    "published": {
-      "total": 3,
-      "ukraine_priority": 0,
-      "with_images": 2,
-      "text_only": 1,
-      "og_images_found": 0,
-      "sources": {
-        "Slobodna dalmacija": 1,
-        "023": 1,
-        "Zadarski list": 1
-      }
-    },
-    "models_used": {
-      "gemini-3.6-flash": 2
-    },
-    "models_by_task": {
-      "filter": "gemini-3.6-flash",
-      "translate": "gemini-3.6-flash"
-    },
-    "model_attempts": [
-      {
-        "task": "filter",
-        "model": "gemini-3.6-flash",
-        "outcome": "ok"
-      },
-      {
-        "task": "translate",
-        "model": "gemini-3.8-flash",
-        "outcome": "unavailable"
-      },
-      {
-        "task": "translate",
-        "model": "gemini-3.5-flash-lite",
-        "outcome": "unavailable"
-      },
-      {
-        "task": "translate",
-        "model": "gemini-3.6-flash",
-        "outcome": "ok"
-      }
-    ],
-    "exhausted_models": [],
-    "demoted_models": [
-      "filter: gemini-3-flash-preview",
-      "translate: gemini-3.8-flash",
-      "translate: gemini-3.5-flash-lite"
-    ],
-    "translate_budget_deferred": [
-      "gemini-3.6-flash"
-    ],
-    "gemini_region_blocked": false,
-    "gemini_unavailable": false,
-    "errors_count": 0,
-    "gemini_retries": 2
-  },
-  {
     "timestamp": "2026-11-16 20:01:16",
     "execution_time": 251.5,
     "funnel": {
@@ -10030,5 +9913,103 @@
     "gemini_unavailable": false,
     "errors_count": 0,
     "gemini_retries": 4
+  },
+  {
+    "timestamp": "2026-11-26 08:01:21",
+    "execution_time": 313.7,
+    "funnel": {
+      "scraped_total": 35,
+      "scraped_by_source": {
+        "023": 10,
+        "Slobodna dalmacija": 15,
+        "Zadarski list": 10
+      },
+      "already_seen": 6,
+      "rejected_by_keywords": 3,
+      "rejected_by_rule": {
+        "тег RSS sport": 1,
+        "nogometnih": 1,
+        "тег RSS košarka": 1
+      },
+      "unclassified_by_ai": 0,
+      "duplicates_removed_by_ai": 13,
+      "rejection_reasons_list": [
+        "• Projekt za jedan euro i utrka s vremenom. Danas se očekuje ključna odl → Побут інших міст (Бізнес-рішення щодо марини в Рієці) | Сутності: ACI, Porto Baroš, Rijeka, Ankica Kruljac",
+        "• Obitelj iza domaćih proizvoda na Tommyjevim policama: „Ne bismo kupcu  → Реклама (Промоція товарів мережі супермаркетів Tommy) | Сутності: Tommy, Poljoprivreda, Hrvatska",
+        "• U Gospiću obilježen Međunarodni dan borbe protiv nasilja nad ženama → Побут інших міст (Локальна акція в місті Госпич) | Сутності: Gospić, Ličko-senjska županija, Međunarodni dan borbe protiv nasilja nad ženama",
+        "• Deset godina je imala kućicu u Gradu, a sad odustaje: ‘Mislila sam da  → Побут інших міст (Організація Адвенту в Дубровнику) | Сутності: Advent, Dubrovnik, Stradun, Gruž",
+        "• Na Virskom lignjolovu za pobjednike izvanbrodski motor i gumenjak, pri → Спорт (Змагання з лову кальмарів на острові Вір) | Сутності: Virski lignjolov, Vir, Honda, Garmin",
+        "• Musk dijeli gotovo 18 milijardi dolara. Kaže da će svako dijete u SAD- → Геоблок (Події в США, що не стосуються українців) | Сутності: Elon Musk, SpaceX, SAD, Anthropic",
+        "• Uz očuvanje baštine ide i zaštita prirode: ‘Kad vidite sliku ‘otoka‘ o → Побут інших міст (Екологічні питання півдня Хорватії) | Сутності: Dubrovačko primorje, Plastika, Kulturna baština",
+        "• Različite slike u očima Vile Velebita. Refleksije Dana hrvatskog turiz → Вже публікувалось (Реакція Лики на результати туристичного форуму) | Сутності: Dani hrvatskog turizma, Poreč, Lika, Ernest Petry",
+        "• Jakov Milatović o graničnom pitanju s Hrvatskom: Nemojte očekivati od  → Вже публікувалось (Коментар президента Чорногорії щодо кордону) | Сутності: Jakov Milatović, Crna Gora, Hrvatska, EU",
+        "• Pad čovjeka kojeg nazivaju srpskim Goebbelsom: ‘Ovo nije uhićenje novi → Геоблок (Арешт медійника в Сербії) | Сутності: Dragan J. Vučićević, Informer, Srbija, Beograd",
+        "• “Ki gre, ki ne gre, ja gren”: Neobična izložba riječkog fotografa stiž → Побут інших міст (Локальна виставка фотографа в Рієці) | Сутності: Karlo Čargonja, Rijeka, Galerija Kortil, Grobnik",
+        "• Jedna fotografija izdvojila se među 848 radova. Ovo je pobjednik riječ → Побут інших міст (Фотоконкурс у місті Рієка) | Сутності: Dražen Tirić, Rijeka, Salon crno-bijele fotografije, Galerija Pasaž",
+        "• Riječki muzeji mijenjaju način posjeta. Uvode senzorne ruksake i prila → Побут інших міст (Інклюзивні проєкти в музеях Рієки) | Сутності: Rijeka, MMSU, Muzej grada Rijeke, Branka Benčić"
+      ],
+      "rejected_by_reason": {
+        "Побут інших міст": 7,
+        "Реклама": 1,
+        "Спорт": 1,
+        "Геоблок": 2,
+        "Вже публікувалось": 2
+      },
+      "updates_marked": 2,
+      "already_rejected": 6,
+      "rejected_by_code_examples": [
+        "[тег RSS sport] Bužimljani zauzeli prva dva mjesta među slijepima, Vlado Juratovac najbolji među slabovidnima na Mem",
+        "[nogometnih] Nadbiskup Uzinić majkama poginulih branitelja darovao potpisani dres Luke Modrića",
+        "[тег RSS košarka] VIDEO LeBron James je izazvao potpunu euforiju u Philadelphiji. Zabio je ludih 14 poena zaredom!"
+      ]
+    },
+    "backlog": {
+      "total_size": 3,
+      "sources": {
+        "023": 3
+      }
+    },
+    "published": {
+      "total": 3,
+      "ukraine_priority": 0,
+      "with_images": 3,
+      "text_only": 0,
+      "og_images_found": 3,
+      "sources": {
+        "023": 3
+      }
+    },
+    "models_used": {
+      "gemini-3-flash-preview": 1,
+      "gemini-3.6-flash": 1
+    },
+    "models_by_task": {
+      "filter": "gemini-3-flash-preview",
+      "translate": "gemini-3.6-flash"
+    },
+    "model_attempts": [
+      {
+        "task": "filter",
+        "model": "gemini-3-flash-preview",
+        "outcome": "ok"
+      },
+      {
+        "task": "translate",
+        "model": "gemini-3.8-flash",
+        "outcome": "unavailable"
+      },
+      {
+        "task": "translate",
+        "model": "gemini-3.6-flash",
+        "outcome": "ok"
+      }
+    ],
+    "exhausted_models": [],
+    "demoted_models": [],
+    "translate_budget_deferred": [],
+    "gemini_region_blocked": false,
+    "gemini_unavailable": false,
+    "errors_count": 0,
+    "gemini_retries": 1
   }
 ]
