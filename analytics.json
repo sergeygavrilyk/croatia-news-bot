@@ -1,116 +1,5 @@
 [
   {
-    "timestamp": "2026-11-17 10:01:21",
-    "execution_time": 40.3,
-    "funnel": {
-      "scraped_total": 35,
-      "scraped_by_source": {
-        "023": 10,
-        "Slobodna dalmacija": 15,
-        "Zadarski list": 10
-      },
-      "already_seen": 14,
-      "rejected_by_keywords": 6,
-      "rejected_by_rule": {
-        "тег RSS sport": 3,
-        "URL /sport/": 3
-      },
-      "unclassified_by_ai": 0,
-      "duplicates_removed_by_ai": 13,
-      "rejection_reasons_list": [
-        "• Blokada proračuna. Europi prijeti raskol zbog 45 milijardi eura za Kij → Вже публікувалось (Фінансова допомога Україні) | Сутності: Єврокомісія, Україна, 45 мільярдів євро, Кредит",
-        "• Mladić (23) pokušao pobjeći kroz šumu u Župi, ali nije bio dovoljno br → Побут інших міст (Кримінал у Дубровнику) | Сутності: Поліція, Дубровник, Жупа, Наркотики",
-        "• VIDEO Srušio se borbeni avion vojske Srbije. Pilot je poginuo, uzrok n → Геоблок (Авіакатастрофа в Сербії) | Сутності: Сербія, МіГ-29, Белград, Авіакатастрофа",
-        "• Faričić: Zaustavimo haranje Jadranom! Tko ima pravo zajedničko prirodn → Дубль (Повтор новини про вилов риби) | Сутності: Йосип Фаричич, Університет Задара, Рибальство",
-        "• Poplave u Vinodolu: Građani imaju rok do 1. prosinca za prijavu štete → Побут інших міст (Повінь у Вінодолі) | Сутності: Вінодол, Повінь, Збитки",
-        "• 10 stvari koje morate znati o Središnjem registru stanovništva → Вже публікувалось (Центральний реєстр населення) | Сутності: Реєстр населення, Хорватія, Документи",
-        "• Pupovac zapalio svijeću za žrtve Vukovara i Škabrnje: “Pamtimo sve koj → Вже публікувалось (Вшанування пам'яті жертв) | Сутності: Милорад Пуповац, Вуковар, Шкабрня, СДСС",
-        "• Od Grada do Trakošćana: ‘Druga strana povijesti‘ oživjela glazbu plemi → Побут інших міст (Культурна подія в Дубровнику) | Сутності: Дубровник, Вараждин, Культура",
-        "• Grabovača na međunarodnom speleološkom skupu: Znanost i tajne krša pri → Побут інших міст (Подія в Пазіні) | Сутності: Грабавача, Пазін, Спелеологія",
-        "• Gdje danas na marendu: jelovnici zadarskih restorana svako jutro od 10 → Реклама (Огляд ресторанних меню) | Сутності: Задар, Ресторани, Меню",
-        "• Zbog mimohoda za Vukovar i Škabrnju večeras se obustavlja promet dijel → Побут інших міст (Перекриття доріг у Цриквениці) | Сутності: Цриквениця, Вуковарська вулиця, Рух транспорту",
-        "• Glazba i poezija u istoj priči: Opatijski komorni orkestar priredio ve → Побут інших міст (Концерт в Опатії) | Сутності: Опатія, Оркестр, Концерт",
-        "• HEP ulaže 480 milijuna eura u golemi projekt u Lici. Nastaje jezero s  → Побут інших міст (Будівництво ГЕС у Ліці) | Сутності: HEP, Ліка, Косинь, ГЕС"
-      ],
-      "rejected_by_reason": {
-        "Вже публікувалось": 3,
-        "Побут інших міст": 7,
-        "Геоблок": 1,
-        "Дубль": 1,
-        "Реклама": 1
-      },
-      "updates_marked": 1,
-      "already_rejected": 9,
-      "rejected_by_code_examples": [
-        "[тег RSS sport] Sjajan nastup zadarskih karataša; KK Optimist osvojio čak 20 medalja u Dalmatinskoj ligi!",
-        "[тег RSS sport] Talentirani Drnišanin od 202 cm stiže u Zadar: “Velika mu je želja bila doći baš u naš klub”",
-        "[тег RSS sport] Zadar nakon osam kola ima najbolji napad i najbolju obranu Premijer lige, a u ABA ligi nitko ne prim",
-        "[URL /sport/] Čestitka župana Blaža Peza Ivi Oberan: ‘Dubrovniku i našoj Županiji donijela si još jedan razlog za ",
-        "[URL /sport/] Bronca Ive Oberan obilježila Grand Prix Zagreb: ‘Sad iz svoje države s medaljom idem na Grand Slam u",
-        "[URL /sport/] Jakov Puljić i Ante Majstorović saznali kazne za nepromišljene crvene kartone zarađene u Puli"
-      ]
-    },
-    "backlog": {
-      "total_size": 7,
-      "sources": {
-        "023": 6,
-        "Slobodna dalmacija": 1
-      }
-    },
-    "published": {
-      "total": 0,
-      "ukraine_priority": 0,
-      "with_images": 0,
-      "text_only": 0,
-      "og_images_found": 3,
-      "sources": {}
-    },
-    "models_used": {
-      "gemini-3.1-flash-lite": 1
-    },
-    "models_by_task": {
-      "filter": "gemini-3.1-flash-lite",
-      "translate": null
-    },
-    "model_attempts": [
-      {
-        "task": "filter",
-        "model": "gemini-3.5-flash-lite",
-        "outcome": "unavailable"
-      },
-      {
-        "task": "filter",
-        "model": "gemini-3.1-flash-lite",
-        "outcome": "ok"
-      },
-      {
-        "task": "translate",
-        "model": "gemini-3.8-flash",
-        "outcome": "unavailable"
-      },
-      {
-        "task": "translate",
-        "model": "gemini-3.6-flash",
-        "outcome": "unavailable"
-      },
-      {
-        "task": "translate",
-        "model": "gemini-3.5-flash-lite",
-        "outcome": "unavailable"
-      }
-    ],
-    "exhausted_models": [],
-    "demoted_models": [
-      "filter: gemini-3-flash-preview",
-      "filter: gemini-3.6-flash"
-    ],
-    "translate_budget_deferred": [],
-    "gemini_region_blocked": false,
-    "gemini_unavailable": true,
-    "errors_count": 0,
-    "gemini_retries": 4
-  },
-  {
     "timestamp": "2026-11-17 11:01:16",
     "execution_time": 135.2,
     "funnel": {
@@ -10008,5 +9897,115 @@
     "gemini_unavailable": false,
     "errors_count": 0,
     "gemini_retries": 2
+  },
+  {
+    "timestamp": "2026-11-26 12:01:24",
+    "execution_time": 119.7,
+    "funnel": {
+      "scraped_total": 35,
+      "scraped_by_source": {
+        "023": 10,
+        "Slobodna dalmacija": 15,
+        "Zadarski list": 10
+      },
+      "already_seen": 17,
+      "rejected_by_keywords": 6,
+      "rejected_by_rule": {
+        "sport": 1,
+        "тег RSS sport": 1,
+        "utakmica": 1,
+        "oglasi": 1,
+        "URL /sport/": 1,
+        "тег RSS nogomet": 1
+      },
+      "unclassified_by_ai": 0,
+      "duplicates_removed_by_ai": 8,
+      "rejection_reasons_list": [
+        "• Josipa Pleslić dosad uplatila 70.000 novčanih kazni od ukupno dosuđeni → Вже публікувалось (Афера Ветероелектрани) | Сутності: Josipa Pleslić, Uskok, Zagreb, Vjetroelektrane",
+        "• Šibenska kapa i vjenčanje u Hrvatskoj: Lijepa naša u novoj epizodi Sim → Не за тематикою (Серіал Сімпсони) | Сутності: Simpsoni, Hrvatska, Instagram",
+        "• Pijani vozač u Dubrovniku udario dijete dok je uredno prelazilo pješač → Побут інших міст (ДТП у Дубровнику) | Сутності: Dubrovnik, Prometna nesreća, Policija",
+        "• Vukšić proslavio svoju zaštitnicu svetu Katu; Mnoštvo vjernika na sveč → Не за тематикою (Церковне свяτο у Вукшичі) | Сутності: Vukšić, Sveta Kata, Crkva",
+        "• Nema dogovora o ustavnim sucima, samo svađa u Saboru: svi se zalažu za → Вже публікувалось (Вибори уставних суддів) | Сутності: Hrvatski sabor, Ustavni sud, Ivan Malenica",
+        "• Snažna poruka iz Bruxellesa; Europski parlament odao počast žrtvama Vu → Вже публікувалось (Резолюція щодо Вukovara) | Сутності: Europski parlament, Vukovar, Brüsszel",
+        "• Lions klub KORZO organizira „Veseli buvljak“, ovoga petka u ZTC-u → Побут інших міст (Благодійна барахолка в Рієці) | Сутності: Rijeka, ZTC, Lions klub Korzo",
+        "• Josipi Rimac uvjetna kazna zbog afere Vjetroelektrane. Žalac ide u zat → Вже публікувалось (Вирок у справі Ветероелектрани) | Сутності: Josipa Pleslić, Gabrijela Žalac, Zagreb, Vjetroelektrane"
+      ],
+      "rejected_by_reason": {
+        "Вже публікувалось": 4,
+        "Не за тематикою": 2,
+        "Побут інших міст": 2
+      },
+      "updates_marked": 2,
+      "already_rejected": 10,
+      "rejected_by_code_examples": [
+        "[sport] Više od milijun eura za sport u kvartovima; Grad Zadar gradi i obnavlja igrališta u Crnom, Arbanasim",
+        "[тег RSS sport] Marko Popović i Ive Ivanov na terenu s djecom; U petak na Višnjiku turnir u inkluzivnoj košarci",
+        "[utakmica] Legenda HNL-a uvjerljivo odvela Šibenik do titule jesenskog prvaka: ‘Ovo je tek početak našeg trnovi",
+        "[oglasi] Stiže Crni petak, a s njime i najveće prijevare u online kupovini. Evo savjeta kako se zaštititi",
+        "[URL /sport/] Loša Hezonjina večer, Cleveland poražen kod prvaka: bez poen, jedan promašaj....",
+        "[тег RSS nogomet] Uprava Bayerna namjerava smanjiti plaću igraču koju pamti od neuroloških problema. Javio se dokapeta"
+      ]
+    },
+    "backlog": {
+      "total_size": 14,
+      "sources": {
+        "Slobodna dalmacija": 2,
+        "023": 8,
+        "Zadarski list": 4
+      }
+    },
+    "published": {
+      "total": 0,
+      "ukraine_priority": 0,
+      "with_images": 0,
+      "text_only": 0,
+      "og_images_found": 2,
+      "sources": {}
+    },
+    "models_used": {
+      "gemini-3.5-flash-lite": 1
+    },
+    "models_by_task": {
+      "filter": "gemini-3.5-flash-lite",
+      "translate": null
+    },
+    "model_attempts": [
+      {
+        "task": "filter",
+        "model": "gemini-3.6-flash",
+        "outcome": "unavailable"
+      },
+      {
+        "task": "filter",
+        "model": "gemini-3.5-flash-lite",
+        "outcome": "ok"
+      },
+      {
+        "task": "translate",
+        "model": "gemini-3.5-flash-lite",
+        "outcome": "unavailable"
+      },
+      {
+        "task": "translate",
+        "model": "gemini-3.8-flash",
+        "outcome": "unavailable"
+      },
+      {
+        "task": "translate",
+        "model": "gemini-3.6-flash",
+        "outcome": "unavailable"
+      }
+    ],
+    "exhausted_models": [],
+    "demoted_models": [
+      "filter: gemini-3-flash-preview",
+      "translate: gemini-3.8-flash",
+      "translate: gemini-3.6-flash"
+    ],
+    "translate_budget_deferred": [],
+    "gemini_region_blocked": false,
+    "gemini_unavailable": true,
+    "errors_count": 0,
+    "gemini_retries": 4
   }
 ]
