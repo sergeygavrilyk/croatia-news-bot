@@ -1,120 +1,5 @@
 [
   {
-    "timestamp": "2026-11-17 14:01:22",
-    "execution_time": 268.3,
-    "funnel": {
-      "scraped_total": 35,
-      "scraped_by_source": {
-        "023": 10,
-        "Slobodna dalmacija": 15,
-        "Zadarski list": 10
-      },
-      "already_seen": 18,
-      "rejected_by_keywords": 6,
-      "rejected_by_rule": {
-        "тег RSS sport": 2,
-        "nogometne": 1,
-        "promo": 1,
-        "тег RSS nogomet": 2
-      },
-      "unclassified_by_ai": 0,
-      "duplicates_removed_by_ai": 10,
-      "rejection_reasons_list": [
-        "• Rijeku očekuju nepovoljni vremenski uvjeti: Na snazi narančasti meteoa → Побут інших міст (Погода у Рієці) | Сутності: Rijeka, DHMZ, narandžasti meteoalarm",
-        "• Limitirana serija Mlade Graševine Vinarije Kutjevo berbe 2026. je u pr → Реклама (Продіж нового вина) | Сутності: Vinarija Kutjevo, Mlada Graševina, 2026",
-        "• Gradski toranj u Rijeci sutra po prvi put svijetli u novom ruhu i to u → Побут інших міст (Ілюмінація у Рієці) | Сутності: Rijeka, Gradski toranj, Vukovar",
-        "• Nastavlja se blagdansko ukrašavanje Grada: Jelka zablistala ispred Sve → Побут інших міст (Прикрашання міста) | Сутності: Dubrovnik, Stradun, Advent",
-        "• VIO Žrnovnica Crikvenica Vinodol: Zamućena voda za ljudsku potrošnju → Побут інших міст (Замучення води в Цриквениці) | Сутності: Crikvenica, Novi Vinodolski, VIO Žrnovnica",
-        "• Apel Općine Ston: ‘Građani nam strahuju, ovo je pitanje javne sigurnos → Побут інших міст (Небезпечні об'єкти в Стоні) | Сутності: Ston, Općina Ston, stara jezgra",
-        "• Marinko Koljanin zadovoljan što će riječko Gradsko vijeće raspravljati → Побут інших міст (Дискусія у міськраді Рієки) | Сутності: Rijeka, Marinko Koljanin, Gradsko vijeće",
-        "• Šibenski vaterpolisti slave povratak svog ključnog čovjeka, uskoro ih  → Спорт (Ватерполісти Шибеника) | Сутності: Šibenik, Solaris, Marin Šparada",
-        "• Nakon ‘Kafetarije‘ i ‘Ribarskih svađa‘, dubrovačku publiku očekuje još → Побут інших міст (Театральна прем'єра в Дубровнику) | Сутності: Dubrovnik, Kazalište Marina Držića, Carlo Goldoni",
-        "• ‘Hitno je potrebno postupanje nadležnih institucija zbog derutnih, zap → Дубль (Дублює новину 7) | Сутності: Ston, Općina Ston"
-      ],
-      "rejected_by_reason": {
-        "Побут інших міст": 7,
-        "Реклама": 1,
-        "Спорт": 1,
-        "Дубль": 1
-      },
-      "updates_marked": 0,
-      "already_rejected": 14,
-      "rejected_by_code_examples": [
-        "[тег RSS sport] Ponos grada sporta; Gradonačelnik Erlić ugostio 180 zadarskih sportaša, 28 klubova dobilo dodatna sr",
-        "[nogometne] Vatreni u Vukovaru uoči Dana sjećanja; Izbornik Slaven Bilić i stožer odali počast poginulim branite",
-        "[тег RSS sport] Rekordan odaziv u Zemuniku Donjem: djeca učila taekwondo i hrvatski znakovni jezik na Sportskom danu",
-        "[promo] Movember u Merkuru – panel o humoru, mentalnom zdravlju i preventivnim pregledima",
-        "[тег RSS nogomet] Andrej Plenković:  “Moj stav o novom stadionu Maksimir identičan je od prvog trenutka”",
-        "[тег RSS nogomet] Davor Šuker u velikom intervjuu za kultni španjolski dnevnik: “Luka Modrić je jedan od najboljih na "
-      ]
-    },
-    "backlog": {
-      "total_size": 8,
-      "sources": {
-        "023": 7,
-        "Slobodna dalmacija": 1
-      }
-    },
-    "published": {
-      "total": 0,
-      "ukraine_priority": 0,
-      "with_images": 0,
-      "text_only": 0,
-      "og_images_found": 1,
-      "sources": {}
-    },
-    "models_used": {
-      "gemini-3.5-flash-lite": 1
-    },
-    "models_by_task": {
-      "filter": "gemini-3.5-flash-lite",
-      "translate": null
-    },
-    "model_attempts": [
-      {
-        "task": "filter",
-        "model": "gemini-3-flash-preview",
-        "outcome": "unavailable"
-      },
-      {
-        "task": "filter",
-        "model": "gemini-3.6-flash",
-        "outcome": "unavailable"
-      },
-      {
-        "task": "filter",
-        "model": "gemini-3.5-flash-lite",
-        "outcome": "ok"
-      },
-      {
-        "task": "translate",
-        "model": "gemini-3.5-flash-lite",
-        "outcome": "unavailable"
-      },
-      {
-        "task": "translate",
-        "model": "gemini-3.8-flash",
-        "outcome": "unavailable"
-      },
-      {
-        "task": "translate",
-        "model": "gemini-3.6-flash",
-        "outcome": "unavailable"
-      }
-    ],
-    "exhausted_models": [],
-    "demoted_models": [
-      "translate: gemini-3.8-flash"
-    ],
-    "translate_budget_deferred": [
-      "gemini-3.6-flash"
-    ],
-    "gemini_region_blocked": false,
-    "gemini_unavailable": true,
-    "errors_count": 0,
-    "gemini_retries": 5
-  },
-  {
     "timestamp": "2026-11-17 15:01:22",
     "execution_time": 156.7,
     "funnel": {
@@ -9960,5 +9845,109 @@
     "gemini_unavailable": false,
     "errors_count": 0,
     "gemini_retries": 2
+  },
+  {
+    "timestamp": "2026-11-26 16:01:17",
+    "execution_time": 216.2,
+    "funnel": {
+      "scraped_total": 35,
+      "scraped_by_source": {
+        "023": 10,
+        "Slobodna dalmacija": 15,
+        "Zadarski list": 10
+      },
+      "already_seen": 17,
+      "rejected_by_keywords": 2,
+      "rejected_by_rule": {
+        "тег RSS zabava": 1,
+        "sport": 1
+      },
+      "unclassified_by_ai": 0,
+      "duplicates_removed_by_ai": 15,
+      "rejection_reasons_list": [
+        "• Al Pacino ne posustaje ni s 87: Pogledajte ga u traileru za nadolazeći → Геоблок (Голлівудський фільм) | Сутності: Al Pacino, Killing Castro, SAD",
+        "• Veganske kobasice i biljni čvarci umjesto tradicionalnog kolinja? Prij → Світовий шум (Зоозахисна ініціатива) | Сутності: Prijatelji životinja, Hrvatska",
+        "• Rasprava u slučaju Revelin odgođena, Vlahušićev odvjetnik imao prometn → Побут інших міст (Суд у Спліті) | Сутності: Andro Vlahušić, Split, Dubrovnik, USKOK",
+        "• Riječki kapucini prisjetili se fra Ante Tomičića: Odlikovale su ga jed → Побут інших міст (Церковна подія в Рієці) | Сутності: Rijeka, fra Ante Tomičić, Gospe Lurdske",
+        "• Europski parlament usvojio prvu rezoluciju o Vukovaru, a Škabrnji u nj → Вже публікувалось (Резолюція про Вуковар) | Сутності: Vukovar, Škabrnja, Strasbourg, Europski parlament",
+        "• U prometnoj nesreći na Ilijinoj glavici ozlijeđena pješakinja → Побут інших міст (ДТП у Дуброўніку) | Сутності: Dubrovnik, Ilijina glavica, Ulica Vladimira Nazora",
+        "• Izabran novi sastav svećeničkog vijeća u Riječkoj nadbiskupiji → Побут інших міст (Рієцька наддієцезія) | Сутності: Rijeka, Riječka nadbiskupija, Prezbitersko vijeće",
+        "• Koliko košta zadarski Advent? Donosimo iznose honorara svih izvođača i → Вже публікувалось (Витрати на задрський Адвент) | Сутності: Zadar, Tržnica Zadar, Advent",
+        "• Francuski glumac Gérard Depardieu morat će na suđenje zbog optužbe za  → Геоблок (Суд у Франції) | Сутності: Gérard Depardieu, Charlotte Arnould, Pariz",
+        "• Projekti, turističke zone i gospodarenje otpadom u fokusu kolegija žup → Побут інших міст (Колегія жупана в Дубровнику) | Сутності: Blaž Pezo, Dubrovnik, Dubrovačko-neretvanska županija",
+        "• Drugo Vijeće građana Rijeke: Provjerite svoje poštanske sandučiće i pr → Побут інших міст (Рада громадян у Рієці) | Сутності: Rijeka, Iva Rinčić",
+        "• Krenuli u \"šoping\" na Voštarnici, ali zaštitar im pokvario planove... → Вже публікувалось (Крадіжка на Воштарніці) | Сутності: Zadar, Voštarnica",
+        "• Pioniri grindcore metala Carcass u Hrvatskoj nastupaju prvi put nakon  → Побут інших міст (Концерт у Загребі) | Сутності: Carcass, Zagreb, Boogaloo",
+        "• Odbio testiranje na droge i ostao bez vozačke: 28-godišnjak kažnjen vi → Вже публікувалось (Порушення ПДР у Біограді) | Сутності: Biograd, Jankolovica",
+        "• Što u Crnoj Gori govore o razgraničenju na Prevlaci 24 godine nakon po → Світовий шум (Історія розмежування на Превлаці) | Сутності: Prevlaka, Crna Gora, Tonino Picula"
+      ],
+      "rejected_by_reason": {
+        "Геоблок": 2,
+        "Світовий шум": 2,
+        "Побут інших міст": 7,
+        "Вже публікувалось": 4
+      },
+      "updates_marked": 0,
+      "already_rejected": 9,
+      "rejected_by_code_examples": [
+        "[тег RSS zabava] Lunapark Madi ove godine na novoj lokaciji na Višnjiku: službeno otvorenje danas u 16 sati",
+        "[sport] Više od milijun eura za sport u kvartovima; Grad Zadar gradi i obnavlja igrališta u Crnom, Arbanasim"
+      ]
+    },
+    "backlog": {
+      "total_size": 16,
+      "sources": {
+        "Zadarski list": 8,
+        "Slobodna dalmacija": 4,
+        "023": 4
+      }
+    },
+    "published": {
+      "total": 3,
+      "ukraine_priority": 0,
+      "with_images": 3,
+      "text_only": 0,
+      "og_images_found": 2,
+      "sources": {
+        "023": 2,
+        "Zadarski list": 1
+      }
+    },
+    "models_used": {
+      "gemini-3.5-flash-lite": 2
+    },
+    "models_by_task": {
+      "filter": "gemini-3.5-flash-lite",
+      "translate": "gemini-3.5-flash-lite"
+    },
+    "model_attempts": [
+      {
+        "task": "filter",
+        "model": "gemini-3-flash-preview",
+        "outcome": "unavailable"
+      },
+      {
+        "task": "filter",
+        "model": "gemini-3.5-flash-lite",
+        "outcome": "ok"
+      },
+      {
+        "task": "translate",
+        "model": "gemini-3.5-flash-lite",
+        "outcome": "ok"
+      }
+    ],
+    "exhausted_models": [],
+    "demoted_models": [
+      "filter: gemini-3.6-flash",
+      "translate: gemini-3.8-flash"
+    ],
+    "translate_budget_deferred": [
+      "gemini-3.6-flash"
+    ],
+    "gemini_region_blocked": false,
+    "gemini_unavailable": false,
+    "errors_count": 0,
+    "gemini_retries": 1
   }
 ]
