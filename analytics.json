@@ -1,122 +1,5 @@
 [
   {
-    "timestamp": "2026-11-17 13:01:20",
-    "execution_time": 269.2,
-    "funnel": {
-      "scraped_total": 35,
-      "scraped_by_source": {
-        "023": 10,
-        "Slobodna dalmacija": 15,
-        "Zadarski list": 10
-      },
-      "already_seen": 17,
-      "rejected_by_keywords": 5,
-      "rejected_by_rule": {
-        "nogometne": 1,
-        "тег RSS sport": 1,
-        "тег RSS nogomet": 1,
-        "URL /sport/": 1,
-        "promo": 1
-      },
-      "unclassified_by_ai": 0,
-      "duplicates_removed_by_ai": 12,
-      "rejection_reasons_list": [
-        "• Što se događa u Jadranu? Hrvatska mora ukloniti 35 ribarica ili riskir → Вже публікувалось (Тема вилову риби вже висвітлена в інших новинах) | Сутності: Hrvatska, Ivan Birkić, HGK, Jadran",
-        "• Zadarski policajac Ante Verunica europski je prvak! Osvojio zlato u ki → Спорт (Перемога у кікбоксингу) | Сутності: Ante Verunica, Zadar, WAKO, Skopje",
-        "• Jesenska gospodarska prognoza Europske komisije 2026.: Kontinuirani ra → Не за тематикою (Загальноєвропейський економічний прогноз) | Сутності: Europska komisija, BDP, EU, Inflacija",
-        "• ‘Što se događa oko nas, a ne vidimo?‘; don Ante Bulat najavio intrigan → Не за тематикою (Анонс лекції про релігію) | Сутності: Ante Bulat, Sveučilište u Zadru, Zadar, Egzorcizam",
-        "• Nagrada Janko Polić Kamov dodijeljena je Semezdinu Mehmedinoviću za kn → Не за тематикою (Літературна премія в Загребі) | Сутності: Janko Polić Kamov, Semezdin Mehmedinović, Zagreb, Hrvatsko društvo pisaca",
-        "• Dubrovnik dobitnik međunarodne nagrade ‘Global Model of Sustainable To → Побут інших міст (Нагорода Дубровника) | Сутності: Dubrovnik, Global Forum on Human Settlements, Antalya, Turska",
-        "• Izaslanstvo Grada Opatije odalo počast poginulim hrvatskim braniteljim → Побут інших міст (Вшанування пам'яті в Опатії) | Сутності: Opatija, Fernando Kirigin, Dan sjećanja, Vukovar",
-        "• Iz trgovine u Bibinjama nestali kozmetički proizvodi, policija otkrila → Вже публікувалось (Повтор новини про крадіжку в Бібіньє) | Сутності: Bibinje, PU zadarska, Krađa, Kozmetika",
-        "• Noćna kontrola na Ugljanu: 44-godišnjak odbio daljnje testiranje, slij → Вже публікувалось (Аналогічний інцидент вже був у списку) | Сутності: Ugljan, PU zadarska, Policija, Droge",
-        "• ‘Puno naših je poginulo. Plovili smo pod napadima, evakuirali ljude, p → Вже публікувалось (Спогади про війну) | Сутності: Jadrolinija, Domovinski rat, Vukovar, Škabrnja",
-        "• Kreću radovi: ovo su četiri projekta koja će ukloniti uska grla u Zada → Дубль (Дублює новину 4) | Сутності: Zadarska županija, Promet, Infrastruktura, Ugovor",
-        "• Butković o željezničkoj vezi Zračna luka - Gaženica, ‘Generalskoj luci → Вже публікувалось (Коментар міністра до вже відомих проектів) | Сутності: Oleg Butković, Zračna luka Zadar, Gaženica, Infrastruktura"
-      ],
-      "rejected_by_reason": {
-        "Вже публікувалось": 5,
-        "Спорт": 1,
-        "Не за тематикою": 3,
-        "Побут інших міст": 2,
-        "Дубль": 1
-      },
-      "updates_marked": 3,
-      "already_rejected": 14,
-      "rejected_by_code_examples": [
-        "[nogometne] Vatreni u Vukovaru uoči Dana sjećanja; Izbornik Slaven Bilić i stožer odali počast poginulim branite",
-        "[тег RSS sport] Rekordan odaziv u Zemuniku Donjem: djeca učila taekwondo i hrvatski znakovni jezik na Sportskom danu",
-        "[тег RSS nogomet] Davor Šuker u velikom intervjuu za kultni španjolski dnevnik: “Luka Modrić je jedan od najboljih na ",
-        "[URL /sport/] FOTO Vlada RH svečano potpisala sporazum o izgradnji nacionalnog centra za vodene sportove u Zagrebu",
-        "[promo] Tradicija, kvaliteta i povjerenje potrošača: PIK šunke broj jedan u Hrvatskoj"
-      ]
-    },
-    "backlog": {
-      "total_size": 7,
-      "sources": {
-        "Slobodna dalmacija": 1,
-        "023": 6
-      }
-    },
-    "published": {
-      "total": 3,
-      "ukraine_priority": 0,
-      "with_images": 3,
-      "text_only": 0,
-      "og_images_found": 2,
-      "sources": {
-        "023": 3
-      }
-    },
-    "models_used": {
-      "gemini-3.1-flash-lite": 1,
-      "gemini-3.6-flash": 1
-    },
-    "models_by_task": {
-      "filter": "gemini-3.1-flash-lite",
-      "translate": "gemini-3.6-flash"
-    },
-    "model_attempts": [
-      {
-        "task": "filter",
-        "model": "gemini-3.5-flash-lite",
-        "outcome": "unavailable"
-      },
-      {
-        "task": "filter",
-        "model": "gemini-3.1-flash-lite",
-        "outcome": "ok"
-      },
-      {
-        "task": "translate",
-        "model": "gemini-3.5-flash-lite",
-        "outcome": "unavailable"
-      },
-      {
-        "task": "translate",
-        "model": "gemini-3.8-flash",
-        "outcome": "unavailable"
-      },
-      {
-        "task": "translate",
-        "model": "gemini-3.6-flash",
-        "outcome": "ok"
-      }
-    ],
-    "exhausted_models": [],
-    "demoted_models": [
-      "filter: gemini-3-flash-preview",
-      "filter: gemini-3.6-flash",
-      "translate: gemini-3.8-flash",
-      "translate: gemini-3.6-flash"
-    ],
-    "translate_budget_deferred": [],
-    "gemini_region_blocked": false,
-    "gemini_unavailable": false,
-    "errors_count": 0,
-    "gemini_retries": 3
-  },
-  {
     "timestamp": "2026-11-17 14:01:22",
     "execution_time": 268.3,
     "funnel": {
@@ -9965,5 +9848,117 @@
     "gemini_unavailable": false,
     "errors_count": 1,
     "gemini_retries": 0
+  },
+  {
+    "timestamp": "2026-11-26 15:01:20",
+    "execution_time": 129.7,
+    "funnel": {
+      "scraped_total": 35,
+      "scraped_by_source": {
+        "023": 10,
+        "Slobodna dalmacija": 15,
+        "Zadarski list": 10
+      },
+      "already_seen": 22,
+      "rejected_by_keywords": 3,
+      "rejected_by_rule": {
+        "тег RSS zabava": 1,
+        "sport": 1,
+        "promo": 1
+      },
+      "unclassified_by_ai": 0,
+      "duplicates_removed_by_ai": 17,
+      "rejection_reasons_list": [
+        "• Plenković ima 9 posebnih savjetnika, a Anušić ukupno 7. Evo koliko zar → Не за тематикою (Політичні радники у Загребі) | Сутності: Andrej Plenković, Ivan Anušić, Nina Mikulandra, Zagreb",
+        "• Centar za djecu, mlade i obitelj Dubrovnik donosi preko 70 programskih → Побут інших міст (Дубровник) | Сутності: Dubrovnik, Advent, Uvala Lapad, TUP",
+        "• Alen Vitasović i Šajeta u Exportdrvu: Večer posvećena njihovim najveći → Побут інших міст (Концерт у Рієці) | Сутності: Alen Vitasović, Šajeta, Rijeka, Exportdrvo",
+        "• Četiri meksičke lepezaste palme hitno trebaju orezivanje: grane joj pa → Побут інших міст (Дубровник) | Сутності: Dubrovnik, Pemo, palme, Washingtonia robusta",
+        "• Kanadski punk rockeri Simple Plan stižu 12. lipnja 2027. u Tvornicu ku → Побут інших міст (Концерт у Загребі) | Сутності: Simple Plan, Zagreb, Tvornica kulture, LAA",
+        "• Gaši o debaklu s adventskim klizalištem: “Iz rubrike vjerovali ili ne  → Вже публікувалось (Скасування klizališta u Zadru) | Сутності: Grad Zadar, Erol Gaši, SDP, DKOM",
+        "• Paljenje adventskog svjetla na kvartovskom druženju u parkiću „Lino“ → Побут інших міст (Рієка) | Сутності: Rijeka, Školjić-Stari grad, OŠ Nikola Tesla, Advent",
+        "• Veliko okupljanje HDZ-ovaca u Šibeniku, stižu Plenković, ministri i do → Побут інших міст (Сабор HDZ у Шибенику) | Сутності: Šibenik, HDZ, Andrej Plenković, Amadria Park",
+        "• KBC Rijeka demantira tvrdnje o 65 posto sputanih pacijenata: Danas se  → Побут інших міст (Клініка в Рієці) | Сутності: KBC Rijeka, Ivana Kekin, psihijatrija",
+        "• Danas je posljednji ispraćaj radnika tragično stradalog na radnom mjes → Побут інших міст (Плоче) | Сутності: Luka Ploče, Stanko Čelić-Ćane, DVD Kula Norinska",
+        "• Marko Kuljanac: “Nije bilo namijenjeno uopće njoj, već našem debilnom  → Побут інших міст (Єленє) | Сутності: Jelenje, Marko Kuljanac, Izabela Nemaz, PGS",
+        "• Rijetke su ženske klape poput ‘Skradinki‘. A trenutno se posebno raduj → Побут інших міст (Шибеник) | Сутності: Skradinke, Šibenik, klapa, KUM",
+        "• Održana završna konferencija projekta „Energetska obnova Gimnazije Gos → Побут інших міст (Госпирич) | Сутності: Gospić, Gimnazija Gospić, Strukovna škola Gospić",
+        "• Objavljene pravovaljane liste za kotarske izbore, evo tko je na njima → Побут інших міст (Дубровник) | Сутності: Dubrovnik, Gradsko vijeće, izbori",
+        "• ST-ov plamen “Još gori”: „Izdrži još malo u svijetu u kojem je sve već → Побут інших міст (Рієка) | Сутності: Rijeka, Pogon, Aleksandar Stojković ST",
+        "• Veteranka dubrovačkog adventa: ‘Nakon 10 godina - odustajem! Zašto se  → Побут інших міст (Дубровник) | Сутності: Dubrovnik, Advent, Stradun, Gruž",
+        "• Napeta završnica audicija: Kandidati Supertalenta love posljednja mjes → Реклама (Шоу Supertalent) | Сутності: Supertalent, Nova TV, žiri"
+      ],
+      "rejected_by_reason": {
+        "Не за тематикою": 1,
+        "Побут інших міст": 14,
+        "Вже публікувалось": 1,
+        "Реклама": 1
+      },
+      "updates_marked": 0,
+      "already_rejected": 4,
+      "rejected_by_code_examples": [
+        "[тег RSS zabava] Lunapark Madi ove godine na novoj lokaciji na Višnjiku: službeno otvorenje danas u 16 sati",
+        "[sport] Više od milijun eura za sport u kvartovima; Grad Zadar gradi i obnavlja igrališta u Crnom, Arbanasim",
+        "[promo] Hotel Bellevue proglašen najboljim wellness hotelom u Hrvatskoj"
+      ]
+    },
+    "backlog": {
+      "total_size": 18,
+      "sources": {
+        "Slobodna dalmacija": 7,
+        "Zadarski list": 5,
+        "023": 6
+      }
+    },
+    "published": {
+      "total": 3,
+      "ukraine_priority": 0,
+      "with_images": 3,
+      "text_only": 0,
+      "og_images_found": 2,
+      "sources": {
+        "023": 2,
+        "Slobodna dalmacija": 1
+      }
+    },
+    "models_used": {
+      "gemini-3.5-flash-lite": 2
+    },
+    "models_by_task": {
+      "filter": "gemini-3.5-flash-lite",
+      "translate": "gemini-3.5-flash-lite"
+    },
+    "model_attempts": [
+      {
+        "task": "filter",
+        "model": "gemini-3.6-flash",
+        "outcome": "unavailable"
+      },
+      {
+        "task": "filter",
+        "model": "gemini-3.5-flash-lite",
+        "outcome": "ok"
+      },
+      {
+        "task": "translate",
+        "model": "gemini-3.8-flash",
+        "outcome": "unavailable"
+      },
+      {
+        "task": "translate",
+        "model": "gemini-3.5-flash-lite",
+        "outcome": "ok"
+      }
+    ],
+    "exhausted_models": [],
+    "demoted_models": [
+      "filter: gemini-3-flash-preview"
+    ],
+    "translate_budget_deferred": [
+      "gemini-3.6-flash"
+    ],
+    "gemini_region_blocked": false,
+    "gemini_unavailable": false,
+    "errors_count": 0,
+    "gemini_retries": 2
   }
 ]
