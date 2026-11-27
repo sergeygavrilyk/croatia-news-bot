@@ -1,122 +1,5 @@
 [
   {
-    "timestamp": "2026-11-18 14:01:25",
-    "execution_time": 213.1,
-    "funnel": {
-      "scraped_total": 35,
-      "scraped_by_source": {
-        "023": 10,
-        "Slobodna dalmacija": 15,
-        "Zadarski list": 10
-      },
-      "already_seen": 20,
-      "rejected_by_keywords": 5,
-      "rejected_by_rule": {
-        "тег RSS lifestyle": 1,
-        "URL /sport/": 1,
-        "тег RSS nogomet": 1,
-        "nogometnog": 1,
-        "тег RSS košarka": 1
-      },
-      "unclassified_by_ai": 0,
-      "duplicates_removed_by_ai": 10,
-      "rejection_reasons_list": [
-        "• “Progovori čez hartu – kratke štorije”: predstavljena nova zbirka Kate → Побут інших міст (Культурна подія в Гробнику) | Сутності: Grobnik, Katedra Čakavskog sabora, književnost",
-        "• Tragedija na putu za Škabrnju: troje poginulih u stravičnom sudaru dva → Вже публікувалось (Трагедія на шляху до Шкабрні) | Сутності: Slunj, D1, Škabrnja, prometna nesreća",
-        "• Evo kako je izgledao zadarski porat osamdesetih. Možda nekoga i prepoz → Не за тематикою (Історичні фотографії порту) | Сутності: Zadar, Gradska luka, retro fotografije",
-        "• Zbog velikog interesa za novo izdanje Off.line Speed datinga dodan još → Не за тематикою (Локальний захід знайомств) | Сутності: Off.line Speed dating, Zadar",
-        "• Bruno Šimleša u Saloči od zrcala predstavlja putopis ‘U srcu divljine‘ → Побут інших міст (Подія в Дубровнику) | Сутності: Bruno Šimleša, Dubrovnik, Narodna knjižnica",
-        "• Gotovina: “Škabrnja i Vukovar su tragedije s početka Domovinskog rata  → Вже публікувалось (Коментар генерала до дня пам'яті) | Сутності: Ante Gotovina, Škabrnja, Vukovar",
-        "• General Gotovina iz Škabrnje: ‘Bili smo slabo naoružani, ali stvorili  → Дубль (Повтор заяви генерала) | Сутності: Ante Gotovina, Škabrnja, Vukovar",
-        "• Odgođen sutrašnji ABBA tribute koncert u Pogonu → Побут інших міст (Скасування концерту в Рієці) | Сутності: ABBA tribute, Rijeka, Pogon",
-        "• Učenici Područne škole Luka Šipanska iskazali poštovanje prema stradal → Побут інших міст (Шкільна акція в Дубровнику) | Сутності: Luka Šipanska, Vukovar, Škabrnja",
-        "• Kapelica se prisjeća žrtve Vukovara i Škabrnje, a velika hrvatska band → Вже публікувалось (Вшанування пам'яті) | Сутності: Vukovar, Škabrnja, Kapelica"
-      ],
-      "rejected_by_reason": {
-        "Побут інших міст": 4,
-        "Вже публікувалось": 3,
-        "Не за тематикою": 2,
-        "Дубль": 1
-      },
-      "updates_marked": 0,
-      "already_rejected": 12,
-      "rejected_by_code_examples": [
-        "[тег RSS lifestyle] Studija na 340.000 odraslih povezala vrstu alkoholnog pića s rizikom smrti od srčanih bolesti",
-        "[URL /sport/] Ante Delija potpisao novi ugovor s UFC-om na četiri borbe",
-        "[тег RSS nogomet] Hrvatska je pala za jedno mjesto u odnosu na listopada na najnovijoj rang listi FIFA-e",
-        "[nogometnog] U prometnoj nesreći poginuo i predsjednik NK Topusko Miroslav Žugaj: išli su u Škabrnju",
-        "[тег RSS košarka] Kirci pobijedili Pulu i izborili osminu finala Kupa “Krešimir Ćosić”. U Crikvenicu dolazi – Split"
-      ]
-    },
-    "backlog": {
-      "total_size": 2,
-      "sources": {
-        "023": 2
-      }
-    },
-    "published": {
-      "total": 0,
-      "ukraine_priority": 0,
-      "with_images": 0,
-      "text_only": 0,
-      "og_images_found": 0,
-      "sources": {}
-    },
-    "models_used": {
-      "gemini-3.1-flash-lite": 1
-    },
-    "models_by_task": {
-      "filter": "gemini-3.1-flash-lite",
-      "translate": null
-    },
-    "model_attempts": [
-      {
-        "task": "filter",
-        "model": "gemini-3-flash-preview",
-        "outcome": "unavailable"
-      },
-      {
-        "task": "filter",
-        "model": "gemini-3.6-flash",
-        "outcome": "unavailable"
-      },
-      {
-        "task": "filter",
-        "model": "gemini-3.5-flash-lite",
-        "outcome": "unavailable"
-      },
-      {
-        "task": "filter",
-        "model": "gemini-3.1-flash-lite",
-        "outcome": "ok"
-      },
-      {
-        "task": "translate",
-        "model": "gemini-3.6-flash",
-        "outcome": "unavailable"
-      },
-      {
-        "task": "translate",
-        "model": "gemini-3.5-flash-lite",
-        "outcome": "unavailable"
-      },
-      {
-        "task": "translate",
-        "model": "gemini-3.8-flash",
-        "outcome": "unavailable"
-      }
-    ],
-    "exhausted_models": [],
-    "demoted_models": [
-      "translate: gemini-3.8-flash"
-    ],
-    "translate_budget_deferred": [],
-    "gemini_region_blocked": false,
-    "gemini_unavailable": true,
-    "errors_count": 0,
-    "gemini_retries": 6
-  },
-  {
     "timestamp": "2026-11-18 15:01:23",
     "execution_time": 48.2,
     "funnel": {
@@ -9934,5 +9817,101 @@
     "gemini_unavailable": false,
     "errors_count": 0,
     "gemini_retries": 0
+  },
+  {
+    "timestamp": "2026-11-27 16:01:33",
+    "execution_time": 206.7,
+    "funnel": {
+      "scraped_total": 35,
+      "scraped_by_source": {
+        "023": 10,
+        "Slobodna dalmacija": 15,
+        "Zadarski list": 10
+      },
+      "already_seen": 20,
+      "rejected_by_keywords": 2,
+      "rejected_by_rule": {
+        "тег RSS lifestyle": 1,
+        "nogometaši": 1
+      },
+      "unclassified_by_ai": 0,
+      "duplicates_removed_by_ai": 8,
+      "rejection_reasons_list": [
+        "• Milatović: Hrvatska ucjenjuje Crnu Goru. Milanović: Nije ucjena, event → Вже публікувалось (Зустріч та заяви президентів Хорватії та Чорногорії) | Сутності: Jakov Milatović, Zoran Milanović, Hrvatska, Crna Gora, Zagreb",
+        "• Pristupni ključevi umjesto lozinki: što se događa s njima kad izgubite → Світовий шум (Поради з кібербезпеки та управління паролями) | Сутності: Apple Passwords, Google Password Manager, Microsoft, Nacionalni CERT",
+        "• HAC će radnicima slati lažne mailove da vide hoće li tko nasjesti. Za  → Реклама (Тендер компанії HAC на фішингові тести) | Сутності: Hrvatske autoceste, HAC, Elektronički oglasnik javne nabave",
+        "• Grad Senj poziva na uključivanje u Europsku platformu za žene u poljop → Побут інших міст (Заклик міста Сенj до платформи для жінок) | Сутності: Grad Senj, Europska komisija, Women in Farming Platform",
+        "• Roditelji njegovatelji: Bojimo se da bi najavljena naknada mogla biti  → Вже публікувалось (Протест батьків-вихователів біля міністерства) | Сутності: Ministarstvo rada, Marica Mikulić, Malo čudo",
+        "• Možemovca pod optužnicom imenovali u Vijeće za prevenciju kriminala. B → Побут інших міст (Призначення у загребському мікрорайоні Трнє) | Сутності: Sandra Benčić, Možemo, Goran Đulić, Zagreb, Trnje",
+        "• Novi uzorci vode u Lici bez PFAS spojeva. Privatni bunari nisu obuhvać → Побут інших міст (Аналіз води в регіоні Ліка) | Сутності: Hrvatski zavod za javno zdravstvo, HZJZ, Lika, Calcit Lika",
+        "• Maršalevski dao ostavku, sad ga razrješavaju članstva u Vijeću za nadz → Вже публікувалось (Відставка та розгляд щодо Маршавського) | Сутності: Aleksandar Maršavelski, Sabor, Zagreb"
+      ],
+      "rejected_by_reason": {
+        "Вже публікувалось": 3,
+        "Світовий шум": 1,
+        "Реклама": 1,
+        "Побут інших міст": 3
+      },
+      "updates_marked": 1,
+      "already_rejected": 12,
+      "rejected_by_code_examples": [
+        "[тег RSS lifestyle] Zašto je mokraća ponekad jarko žuta i kada se zbog toga treba javiti liječniku",
+        "[nogometaši] Ovi mladi navijači ‘potegli‘ su iz doline Neretve do Poljuda; pogledajte kako su navijali, snimile s"
+      ]
+    },
+    "backlog": {
+      "total_size": 4,
+      "sources": {
+        "Zadarski list": 4
+      }
+    },
+    "published": {
+      "total": 3,
+      "ukraine_priority": 0,
+      "with_images": 3,
+      "text_only": 0,
+      "og_images_found": 1,
+      "sources": {
+        "023": 1,
+        "Slobodna dalmacija": 1,
+        "Zadarski list": 1
+      }
+    },
+    "models_used": {
+      "gemini-3.5-flash-lite": 2
+    },
+    "models_by_task": {
+      "filter": "gemini-3.5-flash-lite",
+      "translate": "gemini-3.5-flash-lite"
+    },
+    "model_attempts": [
+      {
+        "task": "filter",
+        "model": "gemini-3.6-flash",
+        "outcome": "unavailable"
+      },
+      {
+        "task": "filter",
+        "model": "gemini-3.5-flash-lite",
+        "outcome": "ok"
+      },
+      {
+        "task": "translate",
+        "model": "gemini-3.5-flash-lite",
+        "outcome": "ok"
+      }
+    ],
+    "exhausted_models": [],
+    "demoted_models": [
+      "filter: gemini-3-flash-preview",
+      "translate: gemini-3.8-flash"
+    ],
+    "translate_budget_deferred": [
+      "gemini-3.6-flash"
+    ],
+    "gemini_region_blocked": false,
+    "gemini_unavailable": false,
+    "errors_count": 0,
+    "gemini_retries": 1
   }
 ]
