@@ -1,130 +1,5 @@
 [
   {
-    "timestamp": "2026-11-17 20:01:20",
-    "execution_time": 182.3,
-    "funnel": {
-      "scraped_total": 35,
-      "scraped_by_source": {
-        "023": 10,
-        "Slobodna dalmacija": 15,
-        "Zadarski list": 10
-      },
-      "already_seen": 12,
-      "rejected_by_keywords": 10,
-      "rejected_by_rule": {
-        "тег RSS lifestyle": 5,
-        "sportaše": 1,
-        "sporta": 1,
-        "URL /sport/": 1,
-        "тег RSS košarka": 1,
-        "тег RSS nogomet": 1
-      },
-      "unclassified_by_ai": 0,
-      "duplicates_removed_by_ai": 13,
-      "rejection_reasons_list": [
-        "• Moldavija zatvorila svoj zračni prostor zbog upada drona → Геоблок (Подія в Молдові) | Сутності: Молдова, Кишинів, Shahed, дрон",
-        "• Marko Novaselić izabran za predsjednika Udruge Dalmatinaca Sveti Jeron → Побут інших міст (Локальна подія в Рієці) | Сутності: Марко Новаселіч, Рієка, Удруга Далматинаца",
-        "• Zadarska vina, paški sir i gin u Opatiji: dvadesetak proizvođača preds → Вже публікувалось (Подія вже була в історії) | Сутності: Задар, Опатія, вино, сир",
-        "• Još nisu stigli, a kad će ne znamo?! Odgođena revolucija na šibenskim  → Побут інших міст (Локальні проблеми Шибеника) | Сутності: Шибеник, автобуси, громадський транспорт",
-        "• Centar za autizam Rijeka obilježio 30 godina djelovanja, planiraju nov → Побут інших міст (Локальна подія в Рієці) | Сутності: Рієка, Центр аутизму, Іва Рінчич",
-        "• Pločanski branitelji podijeili osam tona mandarina djeci u Vukovaru i  → Вже публікувалось (Подія вшанування пам'яті) | Сутності: Плоче, Вуковар, мандарини, ветерани",
-        "• Trump kaže da “vrlo ozbiljno” shvaća potencijalnu iransku prijetnju Wa → Геоблок (Події в США) | Сутності: Дональд Трамп, Іран, Вашингтон",
-        "• OŠ Ivana Gundulića čuva uspomenu na Vukovar i Škabrnju: Siniša Glavaše → Вже публікувалось (Вшанування пам'яті) | Сутності: Дубровник, Вуковар, Шкабрня",
-        "• Linardići dobili novo dječje igralište → Побут інших міст (Локальна подія на острові Крк) | Сутності: Лінардічі, дитячий майданчик, Врбнік",
-        "• Čekaonice u Dalmaciji pune ovakvih slučajeva. Gripa ili viroza prođu,  → Світовий шум (Поради щодо здоров'я) | Сутності: Далмація, грип, віруси",
-        "• Mreža podrške pomogla 6.000 žrtava i svjedoka kaznenih djela, djeluju  → Побут інших міст (Локальна подія в Рієці) | Сутності: Рієка, Мережа підтримки, жертви злочинів",
-        "• U Vukovarskoj ulici i ispred crkve sv. Vlaha zapaljene svijeće u znak  → Вже публікувалось (Вшанування пам'яті) | Сутності: Вуковар, Шкабрня, свічки",
-        "• Jasminki Ledić nagrada za životno djelo Zaklade Sveučilišta u Rijeci → Побут інших міст (Локальна подія в Рієці) | Сутності: Рієка, Ясмінка Ледіч, Університет"
-      ],
-      "rejected_by_reason": {
-        "Геоблок": 2,
-        "Побут інших міст": 6,
-        "Вже публікувалось": 4,
-        "Світовий шум": 1
-      },
-      "updates_marked": 1,
-      "already_rejected": 11,
-      "rejected_by_code_examples": [
-        "[тег RSS lifestyle] Nutricionist s Harvarda Walter Willett za ručak jede kruh, maslac od kikirikija i mrkvu",
-        "[тег RSS lifestyle] Rajčice, citrusi i slana jela ne bi se trebali zamatati u aluminijsku foliju, savjetuje dijetetičark",
-        "[тег RSS lifestyle] Jabuke u hladnjaku ostaju svježe šest do osam tjedana, a na kuhinjskom pultu tek do dva",
-        "[тег RSS lifestyle] Kako zgusnuti prerijetku juhu bez brašna: kuhari preporučuju krumpir i krumpirov škrob",
-        "[тег RSS lifestyle] Omjer struka i visine: kako kod kuće provjeriti imate li previše masnoće oko trbuha",
-        "[sportaše] Glazbom i velikim srcem za zadarske sportaše; Humanitarni koncert Danka Tomanića i prijatelja odušev",
-        "[sporta] Dovršetak glavnih građevinskih radova na vanjskom olimpijskom bazenu trebao bi biti u prvim mjesecim",
-        "[URL /sport/] Nexe nakon rušenja Zagreba ostvario veliku europsku pobjedu. Riječki rukometaši zabio čak 12 golova",
-        "[тег RSS košarka] Hrvatske košarkašice poražene od Španjolske u Poreču. To je drugi poraz Bralićeva sastava",
-        "[тег RSS nogomet] Hrvatska U-21 golovima Segečića i Topića svladala Njemačku na kišnoj Rujevici"
-      ]
-    },
-    "backlog": {
-      "total_size": 2,
-      "sources": {
-        "Zadarski list": 1,
-        "Slobodna dalmacija": 1
-      }
-    },
-    "published": {
-      "total": 3,
-      "ukraine_priority": 0,
-      "with_images": 2,
-      "text_only": 1,
-      "og_images_found": 0,
-      "sources": {
-        "023": 3
-      }
-    },
-    "models_used": {
-      "gemini-3.1-flash-lite": 1,
-      "gemini-3.5-flash-lite": 1
-    },
-    "models_by_task": {
-      "filter": "gemini-3.1-flash-lite",
-      "translate": "gemini-3.5-flash-lite"
-    },
-    "model_attempts": [
-      {
-        "task": "filter",
-        "model": "gemini-3-flash-preview",
-        "outcome": "unavailable"
-      },
-      {
-        "task": "filter",
-        "model": "gemini-3.6-flash",
-        "outcome": "unavailable"
-      },
-      {
-        "task": "filter",
-        "model": "gemini-3.5-flash-lite",
-        "outcome": "unavailable"
-      },
-      {
-        "task": "filter",
-        "model": "gemini-3.1-flash-lite",
-        "outcome": "ok"
-      },
-      {
-        "task": "translate",
-        "model": "gemini-3.8-flash",
-        "outcome": "unavailable"
-      },
-      {
-        "task": "translate",
-        "model": "gemini-3.5-flash-lite",
-        "outcome": "ok"
-      }
-    ],
-    "exhausted_models": [],
-    "demoted_models": [],
-    "translate_budget_deferred": [
-      "gemini-3.6-flash"
-    ],
-    "gemini_region_blocked": false,
-    "gemini_unavailable": false,
-    "errors_count": 0,
-    "gemini_retries": 4
-  },
-  {
     "timestamp": "2026-11-18 08:01:19",
     "execution_time": 281.4,
     "funnel": {
@@ -9937,5 +9812,96 @@
     "gemini_unavailable": false,
     "errors_count": 0,
     "gemini_retries": 2
+  },
+  {
+    "timestamp": "2026-11-27 09:01:22",
+    "execution_time": 156.5,
+    "funnel": {
+      "scraped_total": 35,
+      "scraped_by_source": {
+        "023": 10,
+        "Slobodna dalmacija": 15,
+        "Zadarski list": 10
+      },
+      "already_seen": 18,
+      "rejected_by_keywords": 3,
+      "rejected_by_rule": {
+        "URL /sport/": 1,
+        "košarkaška": 1,
+        "sport": 1
+      },
+      "unclassified_by_ai": 0,
+      "duplicates_removed_by_ai": 9,
+      "rejection_reasons_list": [
+        "• Advent na Lošinju – u znaku zajedništva i blagdanske čarolije → Побут інших міст (Адвент у Малі-Lošinj) | Сутності: Lošinj, Mali Lošinj, Ciplići, Advent",
+        "• Silente otvara Advent u Gradu, evo što nas sve čeka u prvom tjednu! → Побут інших міст (Адвент у Дубровнику) | Сутності: Silente, Advent u Gradu",
+        "• Grad na Rječini mjesec dana živjet će u blagdanskom duhu: Više lokacij → Побут інших міст (Адвент у Рієці) | Сутності: Rijeka, Rijeka Advent, Korzo",
+        "• Bogat program u novoj adventskoj zoni: Arena, Titov park i Kaštel → Побут інших міст (Адвент у Пулі) | Сутності: Pula, Arena Pula, Kaštel",
+        "• Četiri novogodišnja dočeka, za različite generacijame i glazbene ukuse → Побут інших міст (Адвент у Поречі) | Сутності: Poreč, Advent Poreč, Trg Matije Gupca",
+        "• Poduzetnička četvorka sumnjiči se za 19 kaznenih djela, oteli više od  → Не за тематикою (Економічний злочин у Б'єловарі) | Сутності: Bjelovar, Prozorje, Porezna uprava, 1.16 milijuna eura",
+        "• U Lici palo nešto snijega i već otežalo promet preko planinskih prijev → Побут інших міст (Погода та підтоплення в Ліці) | Сутності: Gospić, Lika, Donje Pazarište, Ličko Lešće",
+        "• Interpretacijski centar pomorske baštine otoka Krka: impresivno blago  → Побут інших міст (Музей спадщини на острові Крк) | Сутності: Krk, Željko Skomeršić, Interpretacijski centar",
+        "• Jeste li znali da je lov kančenicom jedan od najstarijih udičarskih pr → Світовий шум (Поради та факти про риболовлю) | Сутності: kančenica, ribolovna tehnika"
+      ],
+      "rejected_by_reason": {
+        "Побут інших міст": 7,
+        "Не за тематикою": 1,
+        "Світовий шум": 1
+      },
+      "updates_marked": 0,
+      "already_rejected": 9,
+      "rejected_by_code_examples": [
+        "[URL /sport/] Studeni za povijest u Judo klubu Fortitudo!",
+        "[košarkaška] Hrvatska večeras lovi plasman na Svjetsko prvenstvo, a reprezentaciju krasi i snažan zadarski potpis",
+        "[sport] Sport koji ne poznaje granice stiže u Zadar: Na Višnjiku će se igrati inkluzivni Baskin"
+      ]
+    },
+    "backlog": {
+      "total_size": 7,
+      "sources": {
+        "Zadarski list": 1,
+        "023": 6
+      }
+    },
+    "published": {
+      "total": 3,
+      "ukraine_priority": 0,
+      "with_images": 3,
+      "text_only": 0,
+      "og_images_found": 2,
+      "sources": {
+        "023": 2,
+        "Slobodna dalmacija": 1
+      }
+    },
+    "models_used": {
+      "gemini-3.6-flash": 2
+    },
+    "models_by_task": {
+      "filter": "gemini-3.6-flash",
+      "translate": "gemini-3.6-flash"
+    },
+    "model_attempts": [
+      {
+        "task": "filter",
+        "model": "gemini-3.6-flash",
+        "outcome": "ok"
+      },
+      {
+        "task": "translate",
+        "model": "gemini-3.6-flash",
+        "outcome": "ok"
+      }
+    ],
+    "exhausted_models": [],
+    "demoted_models": [
+      "filter: gemini-3-flash-preview",
+      "translate: gemini-3.8-flash"
+    ],
+    "translate_budget_deferred": [],
+    "gemini_region_blocked": false,
+    "gemini_unavailable": false,
+    "errors_count": 0,
+    "gemini_retries": 0
   }
 ]
