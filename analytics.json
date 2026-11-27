@@ -1,88 +1,5 @@
 [
   {
-    "timestamp": "2026-11-18 12:01:21",
-    "execution_time": 59.1,
-    "funnel": {
-      "scraped_total": 35,
-      "scraped_by_source": {
-        "023": 10,
-        "Slobodna dalmacija": 15,
-        "Zadarski list": 10
-      },
-      "already_seen": 26,
-      "rejected_by_keywords": 3,
-      "rejected_by_rule": {
-        "URL /sport/": 2,
-        "тег RSS nogomet": 1
-      },
-      "unclassified_by_ai": 0,
-      "duplicates_removed_by_ai": 4,
-      "rejection_reasons_list": [
-        "• Xi osobno dočekao Trumpa na aerodromu i odstupio od protokola → Геоблок (Події в Китаї без прямого зв'язку з Україною чи Хорватією) | Сутності: Donald Trump, Xi Jinping, Vladimir Putin, Kina, Shenzhen",
-        "• Centar za starije osobe predstavljen javnosti: smještaj za 100 korisni → Побут інших міст (Подія у місті Дрніш) | Сутності: Grad Drniš, Centar za starije osobe, Drniš, Zlatne godine",
-        "• Plenković iz Kolone sjećanja: “Neće biti popuštanja prema Srbiji i Crn → Вже публікувалось (Повторення теми зниклих та відносин із Сербією з історії) | Сутності: Andrej Plenković, Vukovar, Srbija, Crna Gora",
-        "• Gradonačelnik Mato Franković sa suradnicima posjetio Dječji dom sveta  → Побут інших міст (Подія у Вінковцях та Дубровнику) | Сутності: Mato Franković, Grad Dubrovnik, Vinkovci, Dječji dom sveta Ana"
-      ],
-      "rejected_by_reason": {
-        "Геоблок": 1,
-        "Побут інших міст": 2,
-        "Вже публікувалось": 1
-      },
-      "updates_marked": 0,
-      "already_rejected": 19,
-      "rejected_by_code_examples": [
-        "[URL /sport/] Tiger Woods se nakon dvije godine vraća natjecateljskom golu. Posljednju pobjedu ostvario je 2019.",
-        "[тег RSS nogomet] Orbanovim padovom završilo je vrijeme izdašnog financiranja mađarskih nogometnih klubova. Neki se ve",
-        "[URL /sport/] Matjaž Kek se oglasio nakon medijskih naklapanja da preuzima Makedoniju: “Nisam došao u Rijeku na tr"
-      ]
-    },
-    "backlog": {
-      "total_size": 0,
-      "sources": {}
-    },
-    "published": {
-      "total": 1,
-      "ukraine_priority": 1,
-      "with_images": 1,
-      "text_only": 0,
-      "og_images_found": 0,
-      "sources": {
-        "Zadarski list": 1
-      }
-    },
-    "models_used": {
-      "gemini-3.5-flash-lite": 1,
-      "gemini-3.6-flash": 1
-    },
-    "models_by_task": {
-      "filter": "gemini-3.5-flash-lite",
-      "translate": "gemini-3.6-flash"
-    },
-    "model_attempts": [
-      {
-        "task": "filter",
-        "model": "gemini-3.5-flash-lite",
-        "outcome": "ok"
-      },
-      {
-        "task": "translate",
-        "model": "gemini-3.6-flash",
-        "outcome": "ok"
-      }
-    ],
-    "exhausted_models": [],
-    "demoted_models": [
-      "filter: gemini-3-flash-preview",
-      "filter: gemini-3.6-flash",
-      "translate: gemini-3.8-flash"
-    ],
-    "translate_budget_deferred": [],
-    "gemini_region_blocked": false,
-    "gemini_unavailable": false,
-    "errors_count": 0,
-    "gemini_retries": 0
-  },
-  {
     "timestamp": "2026-11-18 13:01:21",
     "execution_time": 128.5,
     "funnel": {
@@ -9904,5 +9821,111 @@
     "gemini_unavailable": false,
     "errors_count": 0,
     "gemini_retries": 0
+  },
+  {
+    "timestamp": "2026-11-27 14:01:23",
+    "execution_time": 297.5,
+    "funnel": {
+      "scraped_total": 35,
+      "scraped_by_source": {
+        "023": 10,
+        "Slobodna dalmacija": 15,
+        "Zadarski list": 10
+      },
+      "already_seen": 18,
+      "rejected_by_keywords": 6,
+      "rejected_by_rule": {
+        "тег RSS lifestyle": 1,
+        "oglasi": 1,
+        "nogometaši": 2,
+        "sporta": 1,
+        "promo": 1
+      },
+      "unclassified_by_ai": 0,
+      "duplicates_removed_by_ai": 10,
+      "rejection_reasons_list": [
+        "• Mara Brkić opjevala pravi Božić. Hoće li ovo konačno zamijeniti Mariah → Не за тематикою (Реліз дитячої пісні) | Сутності: Mara Brkić, Mariah Carrey, Hej, Božić je",
+        "• Božo Lasić: ‘Tamo su mi rekli da je Dubrovnik ‘najveće srpsko mjesto g → Побут інших міст (Подія та заяви у Дубровнику) | Сутності: Božo Lasić, Dubrovnik, Stega – Europski klub 28, Čilipi",
+        "• Autotrolej postavlja nove “e-paper” displeje. Javljaju o dolasku autob → Побут інших міст (Транспортна інфраструктура Рієки) | Сутності: Autotrolej, Rijeka, e-paper",
+        "• Anušić o zapošljavanju mlade šibenske HDZ-ovke u fotelju ministarstva: → Не за тематикою (Політичні суперечки щодо призначення) | Сутності: Ivan Anušić, Nina Mikulandra, HDZ, Šibenik",
+        "• Talijanska drama nastavlja rođendansko slavlje, svi su pozvani! → Побут інших міст (Театральний захід у Рієці) | Сутності: Talijanska drama, HNK Ivana pl. Zajca, Rijeka, Sergio Pavat",
+        "• Pravna klinika iz Zagreba u Rijeci u srijedu, nude besplatnu pravnu po → Побут інших міст (Локальна юридична допомога в Рієці) | Сутності: Pravna klinika, Zagreb, Rijeka, SOS Rijeka",
+        "• Kako kupiti stan u Dubrovniku? ‘Ako nemate ovoliku plaću i partnera, n → Побут інших міст (Нерухомість та зарплати в Дубровнику) | Сутності: Dubrovnik, Državni zavod za statistiku, Tonći Svilokos",
+        "• Završena sanacija oštećenja u garaži Zagrad B → Побут інших міст (Ремонт паркінгу в Рієці) | Сутності: Zagrad B, Rijeka plus, Rijeka",
+        "• Preventivni pregledi i humanitarno brijanje u Šibenku: I omiljeni prof → Побут інших міст (Локальний захід у Шибенику) | Сутності: Šibenik, Bradata aukcija, Opća bolnica Šibensko-kninske županije",
+        "• HDZ i SDP kreću u pripreme za izbore: “Koliko je još snažan autoritet  → Не за тематикою (Партійна аналітика та підготовка до виборів) | Сутності: HDZ, SDP, Andrej Plenković, Šibenik"
+      ],
+      "rejected_by_reason": {
+        "Не за тематикою": 3,
+        "Побут інших міст": 7
+      },
+      "updates_marked": 1,
+      "already_rejected": 12,
+      "rejected_by_code_examples": [
+        "[тег RSS lifestyle] Zašto je mokraća ponekad jarko žuta i kada se zbog toga treba javiti liječniku",
+        "[oglasi] Zbog jedne greške pri online kupnji danas možete ostati bez svega; Policija objavila ključna pravila",
+        "[nogometaši] Ovi mladi navijači ‘potegli‘ su iz doline Neretve do Poljuda; pogledajte kako su navijali, snimile s",
+        "[nogometaši] Ovi mladi navijači ‘potegli‘ su iz doline Neretve do Poljuda; pogledajte kako su navijali, snimile s",
+        "[sporta] Dječjim vrtićima i mladim talentima donirana sredstva i oprema za razvoj sporta",
+        "[promo] HUB upozorava na internetske prijevare uoči Crnog petka: Veliki popusti ne smiju zasjeniti oprez"
+      ]
+    },
+    "backlog": {
+      "total_size": 4,
+      "sources": {
+        "Slobodna dalmacija": 1,
+        "Zadarski list": 3
+      }
+    },
+    "published": {
+      "total": 3,
+      "ukraine_priority": 0,
+      "with_images": 3,
+      "text_only": 0,
+      "og_images_found": 2,
+      "sources": {
+        "Slobodna dalmacija": 1,
+        "023": 2
+      }
+    },
+    "models_used": {
+      "gemini-3.6-flash": 1,
+      "gemini-3.5-flash-lite": 1
+    },
+    "models_by_task": {
+      "filter": "gemini-3.6-flash",
+      "translate": "gemini-3.5-flash-lite"
+    },
+    "model_attempts": [
+      {
+        "task": "filter",
+        "model": "gemini-3-flash-preview",
+        "outcome": "unavailable"
+      },
+      {
+        "task": "filter",
+        "model": "gemini-3.6-flash",
+        "outcome": "ok"
+      },
+      {
+        "task": "translate",
+        "model": "gemini-3.8-flash",
+        "outcome": "unavailable"
+      },
+      {
+        "task": "translate",
+        "model": "gemini-3.5-flash-lite",
+        "outcome": "ok"
+      }
+    ],
+    "exhausted_models": [],
+    "demoted_models": [],
+    "translate_budget_deferred": [
+      "gemini-3.6-flash"
+    ],
+    "gemini_region_blocked": false,
+    "gemini_unavailable": false,
+    "errors_count": 0,
+    "gemini_retries": 2
   }
 ]
