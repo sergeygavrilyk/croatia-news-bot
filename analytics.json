@@ -1,115 +1,5 @@
 [
   {
-    "timestamp": "2026-11-17 17:01:17",
-    "execution_time": 295.1,
-    "funnel": {
-      "scraped_total": 35,
-      "scraped_by_source": {
-        "023": 10,
-        "Slobodna dalmacija": 15,
-        "Zadarski list": 10
-      },
-      "already_seen": 21,
-      "rejected_by_keywords": 5,
-      "rejected_by_rule": {
-        "тег RSS lifestyle": 1,
-        "sportaše": 1,
-        "тег RSS sport": 2,
-        "nogometne": 1
-      },
-      "unclassified_by_ai": 0,
-      "duplicates_removed_by_ai": 8,
-      "rejection_reasons_list": [
-        "• Svečanim činom prisege u Rijeci 164 osobe stekle su pravo na hrvatsko  → Побут інших міст (Отримання громадянства в Рієці) | Сутності: Рієка, хрватське громадянство, PU primorsko-goranska",
-        "• Riječ Libertas posebno zvoni na istoku i jugu Lijepe naše: Vukovar je  → Не за тематикою (Історичне партнерство Вуковара та Дубровника) | Сутності: Вуковар, Дубровник, 1993, Libertas",
-        "• Tomašević očekuje nove sankcije u klinici u kojoj je ubijen Periš. Jav → Побут інших міст (Коментар щодо інциденту в лікарні Загреба) | Сутності: Томашевич, Загреб, Клініка Sveti Ivan, Kristian Josip Periš",
-        "• Bloomberg: Američke financijske institucije neće financirati Južnu int → Геоблок (Фінансування газового проекту в Боснії) | Сутності: Bloomberg, EXIM Bank, США, Боснія і Герцеговина",
-        "• Sidrene cijene od danas se zovu bazne i postaju trajne: tko prodaje hr → Вже публікувалось (Набрання чинності правилами про базові ціни) | Сутності: Міністерство господарства, базові ціни, Хорватія",
-        "• Novi veliki problemi u SAD-u, sad je pala mreža za špijune. Opet kažu  → Геоблок (Збій мережі АНБ у США) | Сутності: США, NSA, CNN",
-        "• HOK objavio upute za obrtnike o baznim cijenama i objavi cjenika → Вже публікувалось (Роз'яснення HOK щодо базових цін) | Сутності: HOK, базові ціни, обртники",
-        "• Obilježena 35. godišnjica stradanja Vukovara i Škabrnje te Dan sjećanj → Побут інших міст (Місцеві покладання квітів у Рієці) | Сутності: Рієка, Вуковар, Шкабрня, PU primorsko-goranska"
-      ],
-      "rejected_by_reason": {
-        "Побут інших міст": 3,
-        "Не за тематикою": 1,
-        "Геоблок": 2,
-        "Вже публікувалось": 2
-      },
-      "updates_marked": 0,
-      "already_rejected": 18,
-      "rejected_by_code_examples": [
-        "[тег RSS lifestyle] Omjer struka i visine: kako kod kuće provjeriti imate li previše masnoće oko trbuha",
-        "[sportaše] Glazbom i velikim srcem za zadarske sportaše; Humanitarni koncert Danka Tomanića i prijatelja odušev",
-        "[тег RSS sport] Ponos grada sporta; Gradonačelnik Erlić ugostio 180 zadarskih sportaša, 28 klubova dobilo dodatna sr",
-        "[nogometne] Vatreni u Vukovaru uoči Dana sjećanja; Izbornik Slaven Bilić i stožer odali počast poginulim branite",
-        "[тег RSS sport] Rekordan odaziv u Zemuniku Donjem: djeca učila taekwondo i hrvatski znakovni jezik na Sportskom danu"
-      ]
-    },
-    "backlog": {
-      "total_size": 5,
-      "sources": {
-        "Zadarski list": 1,
-        "Slobodna dalmacija": 1,
-        "023": 3
-      }
-    },
-    "published": {
-      "total": 3,
-      "ukraine_priority": 0,
-      "with_images": 3,
-      "text_only": 0,
-      "og_images_found": 0,
-      "sources": {
-        "023": 1,
-        "Zadarski list": 1,
-        "Slobodna dalmacija": 1
-      }
-    },
-    "models_used": {
-      "gemini-3.6-flash": 1,
-      "gemini-3.5-flash-lite": 1
-    },
-    "models_by_task": {
-      "filter": "gemini-3.6-flash",
-      "translate": "gemini-3.5-flash-lite"
-    },
-    "model_attempts": [
-      {
-        "task": "filter",
-        "model": "gemini-3-flash-preview",
-        "outcome": "unavailable"
-      },
-      {
-        "task": "filter",
-        "model": "gemini-3.6-flash",
-        "outcome": "ok"
-      },
-      {
-        "task": "translate",
-        "model": "gemini-3.8-flash",
-        "outcome": "unavailable"
-      },
-      {
-        "task": "translate",
-        "model": "gemini-3.5-flash-lite",
-        "outcome": "ok"
-      }
-    ],
-    "exhausted_models": [],
-    "demoted_models": [
-      "translate: gemini-3.8-flash",
-      "translate: gemini-3.6-flash",
-      "translate: gemini-3.5-flash-lite"
-    ],
-    "translate_budget_deferred": [
-      "gemini-3.6-flash"
-    ],
-    "gemini_region_blocked": false,
-    "gemini_unavailable": false,
-    "errors_count": 0,
-    "gemini_retries": 2
-  },
-  {
     "timestamp": "2026-11-17 20:01:20",
     "execution_time": 182.3,
     "funnel": {
@@ -9943,5 +9833,109 @@
     "gemini_unavailable": false,
     "errors_count": 0,
     "gemini_retries": 3
+  },
+  {
+    "timestamp": "2026-11-27 08:01:23",
+    "execution_time": 248.0,
+    "funnel": {
+      "scraped_total": 35,
+      "scraped_by_source": {
+        "023": 10,
+        "Slobodna dalmacija": 15,
+        "Zadarski list": 10
+      },
+      "already_seen": 6,
+      "rejected_by_keywords": 7,
+      "rejected_by_rule": {
+        "тег RSS sport": 1,
+        "sport": 1,
+        "тег RSS nogomet": 3,
+        "тег RSS košarka": 1,
+        "URL /sport/": 1
+      },
+      "unclassified_by_ai": 0,
+      "duplicates_removed_by_ai": 10,
+      "rejection_reasons_list": [
+        "• Pariz i Berlin do kraja godine žele dogovor o proračunu EU-a “otporan  → Вже публікувалось (Обговорення бюджету ЄС та фінансування України) | Сутності: Pariz, Berlin, Europska unija, Ukrajina",
+        "• Nova cesta u dolini Neretve, 30 stanova u Metkoviću i dulji lukobran u → Побут інших міст (Меткович та Приградиця) | Сутності: dolina Neretve, Metković, Prigradica, Dubrovačko-neretvanska županija",
+        "• Mještani traže javnu sjednicu Općinskog vijeća Brod Moravica, u fokusu → Побут інших міст (Брод Моравиці) | Сутності: Brod Moravice, Mario Šutej, Općinsko vijeće",
+        "• Pogledajte što sve možete pročitati u novom broju Dubrovačkog vjesnika → Побут інших міст (Дубровник) | Сутності: Dubrovački vjesnik, Stradun, Miomir Žužul, Dubrovnik",
+        "• VIDEO Kad vozila putuju po vodi: pogledajte nestvarne prizore na mostu → Побут інших міст (Новиград та Пореч) | Сутності: DC75, most Antenal, Novigrad, Poreč, Istra",
+        "• Ako nemate ovoliku plaću i partnera, nemojte uopće ulaziti u banku! → Побут інших міст (Дубровник) | Сутності: Dubrovačko-neretvanska županija, Dubrovnik, DZS",
+        "• Saznali smo koliko Grad Rijeku košta novogodišnja disco groznica na Ko → Побут інших міст (Рієка) | Сутності: Grad Rijeka, Korzo, Rijeka",
+        "• Riječki neboder već tjednima nema grijanje, “zaleđena” jedna od najpoz → Побут інших міст (Рієка) | Сутності: Riječki neboder, Trpimirova ulica, Energo, Rijeka",
+        "• Zaklada Hanžeković dodijelila nagradu za najbolji znanstveni rad iz po → Не за тематикою | Сутності: Zaklada Hanžeković, Marko Ledić, Ivica Rubil",
+        "• Reakcije na polaganje vijenaca crnogorske delegacije u Konavlima: ‘Ovi → Побут інших міст (Конавле) | Сутності: Konavle, Čilipi, Dragan Samardžić, Crna Gora"
+      ],
+      "rejected_by_reason": {
+        "Вже публікувалось": 1,
+        "Побут інших міст": 8,
+        "Не за тематикою": 1
+      },
+      "updates_marked": 0,
+      "already_rejected": 6,
+      "rejected_by_code_examples": [
+        "[тег RSS sport] Tri zlata za Titan na Malti, Niku Grubiću finale u najjačoj kategoriji izmaklo za jedan bod",
+        "[sport] Sport koji ne poznaje granice stiže u Zadar: Na Višnjiku će se igrati inkluzivni Baskin",
+        "[тег RSS nogomet] VIDEO Nekoliko navijača Levskog završilo u bolnici. Brojniji Francuzi su ih napali na tribinama Velo",
+        "[тег RSS nogomet] Trener Osijeka o radu Matjaža Keka: “Vedran Jugović puno mi je govorio o njemu”",
+        "[тег RSS nogomet] Legenda Osijeka s Rijekom je osvojila duplu krunu: “Sviđa mi se Bessone, ali ako Fruk bude imao svoj",
+        "[тег RSS košarka] Hrvatski košarkaši večeras mogu matematički osigurati plasman na Svjetsko prvenstvo u Katar",
+        "[URL /sport/] Futsalska momčad Rijeke večeras protiv Crnice: “Moramo se nametnuti posjedom i energijom”"
+      ]
+    },
+    "backlog": {
+      "total_size": 7,
+      "sources": {
+        "023": 6,
+        "Slobodna dalmacija": 1
+      }
+    },
+    "published": {
+      "total": 3,
+      "ukraine_priority": 0,
+      "with_images": 3,
+      "text_only": 0,
+      "og_images_found": 3,
+      "sources": {
+        "023": 3
+      }
+    },
+    "models_used": {
+      "gemini-3.6-flash": 2
+    },
+    "models_by_task": {
+      "filter": "gemini-3.6-flash",
+      "translate": "gemini-3.6-flash"
+    },
+    "model_attempts": [
+      {
+        "task": "filter",
+        "model": "gemini-3-flash-preview",
+        "outcome": "unavailable"
+      },
+      {
+        "task": "filter",
+        "model": "gemini-3.6-flash",
+        "outcome": "ok"
+      },
+      {
+        "task": "translate",
+        "model": "gemini-3.8-flash",
+        "outcome": "unavailable"
+      },
+      {
+        "task": "translate",
+        "model": "gemini-3.6-flash",
+        "outcome": "ok"
+      }
+    ],
+    "exhausted_models": [],
+    "demoted_models": [],
+    "translate_budget_deferred": [],
+    "gemini_region_blocked": false,
+    "gemini_unavailable": false,
+    "errors_count": 0,
+    "gemini_retries": 2
   }
 ]
