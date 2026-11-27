@@ -1,99 +1,5 @@
 [
   {
-    "timestamp": "2026-11-18 13:01:21",
-    "execution_time": 128.5,
-    "funnel": {
-      "scraped_total": 35,
-      "scraped_by_source": {
-        "023": 10,
-        "Slobodna dalmacija": 15,
-        "Zadarski list": 10
-      },
-      "already_seen": 24,
-      "rejected_by_keywords": 3,
-      "rejected_by_rule": {
-        "тег RSS košarka": 1,
-        "URL /sport/": 1,
-        "тег RSS nogomet": 1
-      },
-      "unclassified_by_ai": 0,
-      "duplicates_removed_by_ai": 6,
-      "rejection_reasons_list": [
-        "• \"I u mom gradu Vukovar svijetli\": Šibenčani odali počast gradu heroju  → Побут інших міст (Шибеник) | Сутності: Шибеник, Вуковар, Трґ палих бранітєля, Желько",
-        "• Ordinacija dentalne medicine Jurković 25. obljetnicu obilježila presel → Побут інших міст (Опатія) | Сутності: Опатія, Ординація Юркович, Трамонтана Малл, Кварнер",
-        "• Od Nove godine nova pravila igre: cijene zakupa gradskih poslovnih pro → Побут інших міст (Кнін) | Сутності: Кнін, міська управа, ділові приміщення",
-        "• Ovoga petka u Crikvenici svečana projekcija filma “Goranski risovi: pr → Побут інших міст (Цриквеньиця) | Сутності: Цриквеньиця, 138 бригада, зал Зора, Горські рисі",
-        "• VIDEO Moćna poruka s mora: pogledajte kako su u Šibeniku odali počast  → Побут інших міст (Шибеник) | Сутності: Шибеник, Шкабрня, Shadow Nautics, Вуковар",
-        "• “Human” je riječ godine: izbor kao podsjećanje što znači biti čovjek → Світовий шум (Лондон) | Сутності: Лондон, Кембридж, Франческа Вудворд, Human"
-      ],
-      "rejected_by_reason": {
-        "Побут інших міст": 5,
-        "Світовий шум": 1
-      },
-      "updates_marked": 0,
-      "already_rejected": 16,
-      "rejected_by_code_examples": [
-        "[тег RSS košarka] Kirci pobijedili Pulu i izborili osminu finala Kupa “Krešimir Ćosić”. U Crikvenicu dolazi – Split",
-        "[URL /sport/] Tiger Woods se nakon dvije godine vraća natjecateljskom golu. Posljednju pobjedu ostvario je 2019.",
-        "[тег RSS nogomet] Orbanovim padovom završilo je vrijeme izdašnog financiranja mađarskih nogometnih klubova. Neki se ve"
-      ]
-    },
-    "backlog": {
-      "total_size": 2,
-      "sources": {
-        "023": 2
-      }
-    },
-    "published": {
-      "total": 0,
-      "ukraine_priority": 0,
-      "with_images": 0,
-      "text_only": 0,
-      "og_images_found": 2,
-      "sources": {}
-    },
-    "models_used": {
-      "gemini-3.5-flash-lite": 1
-    },
-    "models_by_task": {
-      "filter": "gemini-3.5-flash-lite",
-      "translate": null
-    },
-    "model_attempts": [
-      {
-        "task": "filter",
-        "model": "gemini-3.5-flash-lite",
-        "outcome": "ok"
-      },
-      {
-        "task": "translate",
-        "model": "gemini-3.6-flash",
-        "outcome": "unavailable"
-      },
-      {
-        "task": "translate",
-        "model": "gemini-3.5-flash-lite",
-        "outcome": "unavailable"
-      },
-      {
-        "task": "translate",
-        "model": "gemini-3.8-flash",
-        "outcome": "unavailable"
-      }
-    ],
-    "exhausted_models": [],
-    "demoted_models": [
-      "filter: gemini-3-flash-preview",
-      "filter: gemini-3.6-flash",
-      "translate: gemini-3.8-flash"
-    ],
-    "translate_budget_deferred": [],
-    "gemini_region_blocked": false,
-    "gemini_unavailable": true,
-    "errors_count": 0,
-    "gemini_retries": 3
-  },
-  {
     "timestamp": "2026-11-18 14:01:25",
     "execution_time": 213.1,
     "funnel": {
@@ -9927,5 +9833,106 @@
     "gemini_unavailable": false,
     "errors_count": 0,
     "gemini_retries": 2
+  },
+  {
+    "timestamp": "2026-11-27 15:01:24",
+    "execution_time": 140.0,
+    "funnel": {
+      "scraped_total": 35,
+      "scraped_by_source": {
+        "023": 10,
+        "Slobodna dalmacija": 15,
+        "Zadarski list": 10
+      },
+      "already_seen": 16,
+      "rejected_by_keywords": 4,
+      "rejected_by_rule": {
+        "тег RSS lifestyle": 1,
+        "oglasi": 1,
+        "nogometaši": 1,
+        "URL /sport/": 1
+      },
+      "unclassified_by_ai": 0,
+      "duplicates_removed_by_ai": 14,
+      "rejection_reasons_list": [
+        "• Zimska priča iz Benčića donosi Cirkus na 100 načina i još štošta. Otkr → Побут інших міст (Локальний різдвяний захід у Рієці) | Сутності: Benčić, Rijeka, Gradska knjižnica Rijeka",
+        "• Stanovnici Elafita dva dana odsječeni od svijeta iako se vrijeme smiri → Побут інших міст (Паромне сполучення в регіоні Дубровника) | Сутності: Elafiti, Dubrovnik, Jadrolinija",
+        "• Studenti prava upoznali se s policijskim projektima → Побут інших міст (Захід для студентів у Рієці) | Сутності: Pravni fakultet u Rijeci, PU primorsko-goranska, Rijeka",
+        "• Počela sadnja košćela na Vojnoviću → Побут інших міст (Озеленення вулиці в Дубровнику) | Сутності: Ulica Iva Vojnovića, Dubrovnik, košćela",
+        "• Krk u 2027. s proračunom od 23,7 milijuna eura: manje prostora za nove → Побут інших міст (Міський бюджет острова Крк) | Сутності: Krk, Darijo Vasilić, Dubravka Dijanić",
+        "• Anita Bonačić Obradović objasnila zašto na kotarskim izborima nema str → Побут інших міст (Районні вибори в Дубровнику) | Сутності: Anita Bonačić Obradović, SDP, Dubrovnik",
+        "• Robert Funčić i Tina Vukov ponovo u duetu: “Ljubav nije ovdje slučajno → Не за тематикою (Презентація пісні місцевого дуету) | Сутності: Robert Funčić, Tina Vukov, Chansonfest",
+        "• Zadar tijekom Adventa uvodi dvije noćne autobusne linije: prijevoz će  → Вже публікувалось (Новина про автобуси в Задарі вже публікувалась) | Сутності: Zadar, Advent, Liburnija",
+        "• U nedjelju hodočašće pomoraca u Kraljevicu → Побут інших міст (Релігійна подія в Кралєвиці) | Сутності: Kraljevica, Rijeka, Lučka kapetanija",
+        "• Zadar raspisuje novi natječaj za socijalne stanove, uređuje Sinjoretov → Вже публікувалось (Про соцжитло в Задарі вже публікувалось) | Сутності: Šime Erlić, Zadar, Sinjoretovo",
+        "• Najavljen Novi Advent: Grad Vinodolskog zakona i ove će godine zasjati → Побут інших міст (Адвент у Нові-Винодолські) | Сутності: Novi Vinodolski, Novi Advent, Trg Vinodolskog zakona",
+        "• Predstavljene “Hreljanske besede” – Rječnik hreljinske čakavštine → Побут інших міст (Презентація книги в Хрелїні) | Сутності: Hreljin, Bakarski zbornik, Marina Tijan Hajdinić",
+        "• Skup “Zajedno jači” za hrvatske branitelje: “Naša je želja bila da se  → Побут інших міст (Захід для ветеранів у Рієці) | Сутності: Claudio Vukonić, Rijeka, hrvatski branitelji",
+        "• Udruga Vida o izazovima resocijalizacije ovisnika: “Drogiranje je u po → Побут інших міст (Конференція про залежності в Рієці) | Сутності: Udruga Vida, Rijeka, Hrvatski zavod za socijalni rad"
+      ],
+      "rejected_by_reason": {
+        "Побут інших міст": 11,
+        "Не за тематикою": 1,
+        "Вже публікувалось": 2
+      },
+      "updates_marked": 0,
+      "already_rejected": 9,
+      "rejected_by_code_examples": [
+        "[тег RSS lifestyle] Zašto je mokraća ponekad jarko žuta i kada se zbog toga treba javiti liječniku",
+        "[oglasi] Zbog jedne greške pri online kupnji danas možete ostati bez svega; Policija objavila ključna pravila",
+        "[nogometaši] Ovi mladi navijači ‘potegli‘ su iz doline Neretve do Poljuda; pogledajte kako su navijali, snimile s",
+        "[URL /sport/] Hrvatske rukometašice u Labinu se pripremaju za EP. Slijedi novi test ogled protiv Slovenije"
+      ]
+    },
+    "backlog": {
+      "total_size": 2,
+      "sources": {
+        "Zadarski list": 2
+      }
+    },
+    "published": {
+      "total": 3,
+      "ukraine_priority": 0,
+      "with_images": 3,
+      "text_only": 0,
+      "og_images_found": 1,
+      "sources": {
+        "023": 1,
+        "Slobodna dalmacija": 1,
+        "Zadarski list": 1
+      }
+    },
+    "models_used": {
+      "gemini-3.6-flash": 1,
+      "gemini-3.5-flash-lite": 1
+    },
+    "models_by_task": {
+      "filter": "gemini-3.6-flash",
+      "translate": "gemini-3.5-flash-lite"
+    },
+    "model_attempts": [
+      {
+        "task": "filter",
+        "model": "gemini-3.6-flash",
+        "outcome": "ok"
+      },
+      {
+        "task": "translate",
+        "model": "gemini-3.5-flash-lite",
+        "outcome": "ok"
+      }
+    ],
+    "exhausted_models": [],
+    "demoted_models": [
+      "filter: gemini-3-flash-preview",
+      "translate: gemini-3.8-flash"
+    ],
+    "translate_budget_deferred": [
+      "gemini-3.6-flash"
+    ],
+    "gemini_region_blocked": false,
+    "gemini_unavailable": false,
+    "errors_count": 0,
+    "gemini_retries": 0
   }
 ]
