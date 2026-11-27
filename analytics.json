@@ -1,89 +1,5 @@
 [
   {
-    "timestamp": "2026-11-18 10:01:14",
-    "execution_time": 5.7,
-    "funnel": {
-      "scraped_total": 35,
-      "scraped_by_source": {
-        "023": 10,
-        "Slobodna dalmacija": 15,
-        "Zadarski list": 10
-      },
-      "already_seen": 18,
-      "rejected_by_keywords": 2,
-      "rejected_by_rule": {
-        "URL /sport/": 1,
-        "тег RSS nogomet": 1
-      },
-      "unclassified_by_ai": 0,
-      "duplicates_removed_by_ai": 14,
-      "rejection_reasons_list": [
-        "• Škabrnja 35 godina poslije: župan Bilaver prisjetio se dana u podrumu, → Вже публікувалось (Річниця подій у Шкабрні) | Сутності: Škabrnja, Oleg Butković, Tonči Glavina, Bilaver",
-        "• Putinov veliki povratak. Sprema li se nova Jalta, koja će Europi u Ukr → Геоблок (Зустріч світових лідерів) | Сутності: Vladimir Putin, Donald Trump, Xi Jinping, Shenzhen",
-        "• Mato Franković oštro povodom Dana sjećanja: ‘Da Vukovarci nisu bili za → Вже публікувалось (Коментар щодо річниці) | Сутності: Mato Franković, Vukovar, Škabrnja, Facebook",
-        "• Svećenik kod Brčkog sinoć izboden nožem: ‘Borio se s napadačem i uspio → Геоблок (Інцидент у Боснії) | Сутності: Filip Maršić, Brčko, Boće, BiH",
-        "• Noć kazališta i ‘Pjesme o djeci‘ u subotu u Kazalištu Marina Držića → Побут інших міст (Дитяча вистава у Дубровнику) | Сутності: Dubrovnik, Kazalište Marina Držića, Noć kazališta",
-        "• Veliki hakerski napad na korisnike iPhonea i iPada, oštećeni nisu mora → Світовий шум (Глобальна кібератака) | Сутності: Apple, iPhone, iPad, Optimizely, Report URI",
-        "• Teško ozlijeđen maloljetni vozač mopeda, hitno je prebačen u splitsku  → Побут інших міст (ДТП у Книні) | Сутності: Knin, Ulica svetog Ante, moped, splitska bolnica",
-        "• Prekinuli su uzimati lijek za mršavljenje, pa završili u bolnici zbog  → Світовий шум (Медичне дослідження) | Сутності: GLP-1, Mounjaro, Zepbound, tirzepatid",
-        "• Filmska priča o boksaču Rockyju emotivna je posveta upornosti gubitnik → Світовий шум (Кінорецензія) | Сутності: Rocky, Michael Jackson, Whitney Houston, Freddie Mercury",
-        "• Kolona sjećanja u Vukovaru. Plenković: ‘Od nove vlasti u Srbiji očekuj → Вже публікувалось (Колона пам'яті у Вukovari) | Сутності: Andrej Plenković, Vukovar, Bolnica Dr. Juraj Njavro, Srbija",
-        "• Cijene ne prestaju rasti! U ovoj dalmatinskoj županiji sve se teže spa → Побут інших міст (Ціни у Шибенику) | Сутності: Šibensko-kninska županija, košarica, cijene",
-        "• Et Ješua poziva na izložbu dubrovačkih slikara s donacijskom namjenom  → Побут інших міст (Виставка у Дубровнику) | Сутності: Et Ješua, Antun Zanini, Dominikanski samostan, Dubrovnik",
-        "• VIDEO Pljuskovi i nevere na Jadranu, poslijepodne smirivanje: DHMZ obj → Вже публікувалось (Прогноз погоди) | Сутності: DHMZ, Jadran, Hrvatska, prognoza",
-        "• Osigurano 40.000 eura: Županija dijeli potpore za ribarstvo i marikult → Побут інших міст (Гранти у Шибенику) | Сутності: Šibensko-kninska županija, ribarstvo, marikultura"
-      ],
-      "rejected_by_reason": {
-        "Вже публікувалось": 4,
-        "Геоблок": 2,
-        "Побут інших міст": 5,
-        "Світовий шум": 3
-      },
-      "updates_marked": 0,
-      "already_rejected": 13,
-      "rejected_by_code_examples": [
-        "[URL /sport/] Matjaž Kek se oglasio nakon medijskih naklapanja da preuzima Makedoniju: “Nisam došao u Rijeku na tr",
-        "[тег RSS nogomet] “Gospodin hladnokrvni” je okrunio ludi preokret i ponovo podsjetio na legendarnog Gerda Mullera"
-      ]
-    },
-    "backlog": {
-      "total_size": 0,
-      "sources": {}
-    },
-    "published": {
-      "total": 0,
-      "ukraine_priority": 0,
-      "with_images": 0,
-      "text_only": 0,
-      "og_images_found": 0,
-      "sources": {}
-    },
-    "models_used": {
-      "gemini-3.5-flash-lite": 1
-    },
-    "models_by_task": {
-      "filter": "gemini-3.5-flash-lite",
-      "translate": null
-    },
-    "model_attempts": [
-      {
-        "task": "filter",
-        "model": "gemini-3.5-flash-lite",
-        "outcome": "ok"
-      }
-    ],
-    "exhausted_models": [],
-    "demoted_models": [
-      "filter: gemini-3-flash-preview",
-      "filter: gemini-3.6-flash"
-    ],
-    "translate_budget_deferred": [],
-    "gemini_region_blocked": false,
-    "gemini_unavailable": false,
-    "errors_count": 0,
-    "gemini_retries": 0
-  },
-  {
     "timestamp": "2026-11-18 11:01:18",
     "execution_time": 168.9,
     "funnel": {
@@ -9903,5 +9819,99 @@
     "gemini_unavailable": false,
     "errors_count": 0,
     "gemini_retries": 2
+  },
+  {
+    "timestamp": "2026-11-27 12:01:18",
+    "execution_time": 134.5,
+    "funnel": {
+      "scraped_total": 35,
+      "scraped_by_source": {
+        "023": 10,
+        "Slobodna dalmacija": 15,
+        "Zadarski list": 10
+      },
+      "already_seen": 18,
+      "rejected_by_keywords": 7,
+      "rejected_by_rule": {
+        "oglasi": 1,
+        "nogometaši": 2,
+        "URL /sport/": 3,
+        "тег RSS nogomet": 1
+      },
+      "unclassified_by_ai": 0,
+      "duplicates_removed_by_ai": 6,
+      "rejection_reasons_list": [
+        "• Dubrovački uzgajivači ptica osvojili 28 medalja na prestižnoj međunaro → Побут інших міст (Успіхи птахівників з Дубровника) | Сутності: Dubrovnik, Udruga za zaštitu i uzgoj ptica Dubrovnik, Modena, Italija",
+        "• Zdravstvena ispravnost vode potvrđena i u Crikvenici i Vinodolu → Побут інших міст (Якість питної води у Кріквениці та Винодолі) | Сутності: Crikvenica, Vinodol, VIO Žrnovnica Crikvenica Vinodol",
+        "• Dan D za Sućuraj! Divlje svinje uništavaju maslinike i vrtove, lovci k → Побут інших міст (Полювання на кабанів на острові Хвар) | Сутності: Sućuraj, Hvar, maslinici",
+        "• Ružičasti advent Udruge Srce za nju ove subote donosi gastro ponudu kv → Побут інших міст (Локальний захід у Рієці) | Сутності: Rijeka, Ružičasti advent, Udruga Srce za nju, Trg 128. brigade HV-a",
+        "• Vozač u Dubrovniku na pješačkom prijelazu udario pješakinju, s teškim  → Побут інших міст (ДТП з пішоходом у Дубровнику) | Сутності: Dubrovnik, Ulica Vladimira Nazora, pješakinja",
+        "• U Dvorani kulture Yoga u svakodnevnom životu u Rijeci ove subote preze → Побут інших міст (Танцювальний проект у Рієці) | Сутності: Rijeka, Dvorana kulture Yoga, Izvan okvira, OŠ Vežica"
+      ],
+      "rejected_by_reason": {
+        "Побут інших міст": 6
+      },
+      "updates_marked": 1,
+      "already_rejected": 12,
+      "rejected_by_code_examples": [
+        "[oglasi] Zbog jedne greške pri online kupnji danas možete ostati bez svega; Policija objavila ključna pravila",
+        "[nogometaši] Ovi mladi navijači ‘potegli‘ su iz doline Neretve do Poljuda; pogledajte kako su navijali, snimile s",
+        "[nogometaši] Ovi mladi navijači ‘potegli‘ su iz doline Neretve do Poljuda; pogledajte kako su navijali, snimile s",
+        "[URL /sport/] Studeni za povijest u Judo klubu Fortitudo!",
+        "[тег RSS nogomet] Carlos Tevez organizira “oproštajku”. Moguć je posljednji sudar Lionela Messija i Cristiana Ronalda",
+        "[URL /sport/] Odbojkaši Rijeke saznali suparnika u četvrtfinalu Kupa Vinka Dobrića",
+        "[URL /sport/] VIDEO Matjaž Kek najavio gostovanje na Opus Areni: “Jedna utakmica gdje je puno toga u igri…”"
+      ]
+    },
+    "backlog": {
+      "total_size": 10,
+      "sources": {
+        "Zadarski list": 4,
+        "Slobodna dalmacija": 1,
+        "023": 5
+      }
+    },
+    "published": {
+      "total": 3,
+      "ukraine_priority": 0,
+      "with_images": 3,
+      "text_only": 0,
+      "og_images_found": 3,
+      "sources": {
+        "023": 3
+      }
+    },
+    "models_used": {
+      "gemini-3.6-flash": 1,
+      "gemini-3.5-flash-lite": 1
+    },
+    "models_by_task": {
+      "filter": "gemini-3.6-flash",
+      "translate": "gemini-3.5-flash-lite"
+    },
+    "model_attempts": [
+      {
+        "task": "filter",
+        "model": "gemini-3.6-flash",
+        "outcome": "ok"
+      },
+      {
+        "task": "translate",
+        "model": "gemini-3.5-flash-lite",
+        "outcome": "ok"
+      }
+    ],
+    "exhausted_models": [],
+    "demoted_models": [
+      "filter: gemini-3-flash-preview",
+      "translate: gemini-3.8-flash"
+    ],
+    "translate_budget_deferred": [
+      "gemini-3.6-flash"
+    ],
+    "gemini_region_blocked": false,
+    "gemini_unavailable": false,
+    "errors_count": 0,
+    "gemini_retries": 0
   }
 ]
