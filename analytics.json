@@ -1,113 +1,5 @@
 [
   {
-    "timestamp": "2026-11-18 08:01:19",
-    "execution_time": 281.4,
-    "funnel": {
-      "scraped_total": 35,
-      "scraped_by_source": {
-        "023": 10,
-        "Slobodna dalmacija": 15,
-        "Zadarski list": 10
-      },
-      "already_seen": 7,
-      "rejected_by_keywords": 6,
-      "rejected_by_rule": {
-        "тег RSS lifestyle": 1,
-        "тег RSS nogomet": 2,
-        "тег RSS košarka": 2,
-        "URL /sport/": 1
-      },
-      "unclassified_by_ai": 0,
-      "duplicates_removed_by_ai": 16,
-      "rejection_reasons_list": [
-        "• Arapski zastupnici zadali udarac Netanyahuovu taboru, u parlamentu odj → Геоблок (Події в Ізраїлі) | Сутності: Matan Kahana, Benjamin Netanyahu, Izrael, parlament",
-        "• Smolić se vratio na čelo županijske obrtničke komore: \"Moramo poticati → Побут інших міст (Шибеник) | Сутності: Joso Smolić, Šibensko-kninska županija, Obrtnička komora",
-        "• Krčani odali počast Vukovaru, Škabrnji i svim žrtvama Domovinskog rata → Вже публікувалось (Вуковар і Шкабрня) | Сутності: Vukovar, Škabrnja, Krk, Domovinski rat",
-        "• Članovi KUD-a ‘Sv. Juraj‘ Osojnik paljenjem lampiona odali počast žrtv → Вже публікувалось (Вуковар і Шкабрня) | Сутності: Osojnik, Vukovar, Škabrnja, KUD Sv. Juraj",
-        "• Stravičan sudar dva kamiona i dva auta kod Slunja. Troje je poginulih  → Побут інших міст (Слунь) | Сутності: Slunj, Blagaj, D1, prometna nesreća",
-        "• Želite li provesti praznik u omiljenom izletištu budite na oprezu! Na  → Побут інших міст (Парк Крка) | Сутності: Nacionalni park Krka, Skradinski buk, kiša",
-        "• Iznadprosječno je toplo, ali meteorologinja otkriva kad će doći do nag → Вже публікувалось (Загальна погода) | Сутності: Hrvatska, DHMZ, prognoza, kiša",
-        "• Karla Vukić, učenica dubrovačke Opće gimnazije: ‘Ni zid dotaknuti da n → Вже публікувалось (Вуковар) | Сутності: Karla Vukić, Vukovar, Dubrovnik",
-        "• Xi uoči sastanka s Putinom i Trumpom pozvao na slobodnu trgovinu: ‘Otv → Геоблок (Світова політика) | Сутності: Xi Jinping, Donald Trump, Vladimir Putin, Kina",
-        "• Vukšićani zapalili svijeće za žrtve Vukovara i Škabrnje → Вже публікувалось (Вуковар і Шкабрня) | Сутності: Vukšić, Vukovar, Škabrnja, fra Božo Mandarić",
-        "• Iznad dozvoljenih vrijednosti: obilne oborine izazvale poteškoće, evo  → Побут інших міст (Буковица і Проміна) | Сутності: Bukovica, Promina, Miljacka, voda",
-        "• Trideset pet godina od 18. studenoga: 2717 vukovarskih imena, 86 škabr → Вже публікувалось (Річниця подій) | Сутності: Vukovar, Škabrnja, 1991, Domovinski rat",
-        "• Lucija Kovačević predstavila svoju četvrtu knjigu ‘Maslina‘: Kroz djel → Побут інших міст (Дубровник) | Сутності: Lucija Kovačević, Maslina, Katja Bakija, Dubrovnik",
-        "• Povodom obilježavanja 35. obljetnice pada Vukovara otvoren grafit posv → Вже публікувалось (Плоче) | Сутності: Ploče, Vukovar, Vladimir Nazor, Hajduk",
-        "• Nakon jutarnje kiše srijeda donosi sunce i 18°C, ali vikend u Zadru no → Вже публікувалось (Прогноз погоди у Задарі) | Сутності: Zadar, prognoza, kiša, temperatura",
-        "• Sukošanci u tišini prošli mjestom i zapalili lampione kod murala na zg → Вже публікувалось (Сукошан) | Сутності: Sukošan, Vukovar, Škabrnja, Pošta"
-      ],
-      "rejected_by_reason": {
-        "Геоблок": 2,
-        "Побут інших міст": 5,
-        "Вже публікувалось": 9
-      },
-      "updates_marked": 0,
-      "already_rejected": 7,
-      "rejected_by_code_examples": [
-        "[тег RSS lifestyle] Štiti li crno vino srce? Dijetetičarka British Heart Foundationa o resveratrolu i dokazima",
-        "[тег RSS nogomet] “Gospodin hladnokrvni” je okrunio ludi preokret i ponovo podsjetio na legendarnog Gerda Mullera",
-        "[тег RSS košarka] VIDEO Ušao je u igru dok je Dončić odmarao, zabio je tricu u posljednjoj sekundi i odveo Lakerse u p",
-        "[тег RSS košarka] VIDEO Iako nije bio starter s 40 poena odveo Utah do druge pobjede. Pistonsi prekinuli niz Spursa",
-        "[URL /sport/] Članovi Kluba dizača utega Rječina 75 osvojili tri zlatne medalje na pojedinačnom PH",
-        "[тег RSS nogomet] Ivica Olić nakon rujevičke pobjede: “Dečki su već pokazali da imaju karakter za izvući se iz teških "
-      ]
-    },
-    "backlog": {
-      "total_size": 2,
-      "sources": {
-        "023": 2
-      }
-    },
-    "published": {
-      "total": 3,
-      "ukraine_priority": 0,
-      "with_images": 3,
-      "text_only": 0,
-      "og_images_found": 3,
-      "sources": {
-        "023": 3
-      }
-    },
-    "models_used": {
-      "gemini-3.5-flash-lite": 1,
-      "gemini-3.8-flash": 1
-    },
-    "models_by_task": {
-      "filter": "gemini-3.5-flash-lite",
-      "translate": "gemini-3.8-flash"
-    },
-    "model_attempts": [
-      {
-        "task": "filter",
-        "model": "gemini-3-flash-preview",
-        "outcome": "unavailable"
-      },
-      {
-        "task": "filter",
-        "model": "gemini-3.6-flash",
-        "outcome": "unavailable"
-      },
-      {
-        "task": "filter",
-        "model": "gemini-3.5-flash-lite",
-        "outcome": "ok"
-      },
-      {
-        "task": "translate",
-        "model": "gemini-3.8-flash",
-        "outcome": "ok"
-      }
-    ],
-    "exhausted_models": [],
-    "demoted_models": [],
-    "translate_budget_deferred": [],
-    "gemini_region_blocked": false,
-    "gemini_unavailable": false,
-    "errors_count": 0,
-    "gemini_retries": 2
-  },
-  {
     "timestamp": "2026-11-18 09:01:19",
     "execution_time": 209.9,
     "funnel": {
@@ -9872,6 +9764,103 @@
       "sources": {
         "023": 2,
         "Slobodna dalmacija": 1
+      }
+    },
+    "models_used": {
+      "gemini-3.6-flash": 2
+    },
+    "models_by_task": {
+      "filter": "gemini-3.6-flash",
+      "translate": "gemini-3.6-flash"
+    },
+    "model_attempts": [
+      {
+        "task": "filter",
+        "model": "gemini-3.6-flash",
+        "outcome": "ok"
+      },
+      {
+        "task": "translate",
+        "model": "gemini-3.6-flash",
+        "outcome": "ok"
+      }
+    ],
+    "exhausted_models": [],
+    "demoted_models": [
+      "filter: gemini-3-flash-preview",
+      "translate: gemini-3.8-flash"
+    ],
+    "translate_budget_deferred": [],
+    "gemini_region_blocked": false,
+    "gemini_unavailable": false,
+    "errors_count": 0,
+    "gemini_retries": 0
+  },
+  {
+    "timestamp": "2026-11-27 10:01:20",
+    "execution_time": 176.9,
+    "funnel": {
+      "scraped_total": 35,
+      "scraped_by_source": {
+        "023": 10,
+        "Slobodna dalmacija": 15,
+        "Zadarski list": 10
+      },
+      "already_seen": 15,
+      "rejected_by_keywords": 4,
+      "rejected_by_rule": {
+        "oglasi": 1,
+        "URL /sport/": 1,
+        "košarkaška": 1,
+        "sport": 1
+      },
+      "unclassified_by_ai": 0,
+      "duplicates_removed_by_ai": 12,
+      "rejection_reasons_list": [
+        "• Ovo je nevjerojatno! Potpuno suludi pokušaj srpske propagande još jedn → Не за тематикою (Дубровник) | Сутності: Dubrovnik, Dubrovačka Republika, Aleksandar Aco Apolonija, propaganda",
+        "• Jesu li interesi ribarskog sektora važniji od očuvanja mora? Prijatelj → Не за тематикою (екологічна ініціатива ГО) | Сутності: Prijatelji životinja, pridneno koćarenje, ribarski sektor, javno savjetovanje",
+        "• Kako i za koga se to u Šibeniku kroje prostorni planovi? Zelena površi → Побут інших міст (Шибеник) | Сутності: Šibenik, prostorni planovi, Zelena površina, vrtić",
+        "• »The Journey« je novo izdanje majstorice jazza Lele Kaplowitz: Blues a → Не за тематикою (музичний альбом) | Сутності: Lela Kaplowitz, The Journey, blues album, jazz",
+        "• Voda i dalje zamućena, evo gdje su danas cisterne s pitkom vodom → Побут інших міст (Дубровник) | Сутності: Dubrovnik, Palata, Zavrelje, cisterne s pitkom vodom",
+        "• Muškarac (31) u Vodicama udario šakom u glavu policajca na zadatku. Pr → Побут інших міст (Водиці) | Сутності: Vodice, 31-godišnjak, napad na policajca, Prisila prema službenoj osobi",
+        "• Okusi koji Advent u Hrvatskoj čine posebnim → Світовий шум (гастрономічний огляд) | Сутності: Advent, Hrvatska, fritule, sarma",
+        "• Pavil1on – topla adventska oaza za sve generacije → Побут інших міст (Рієка) | Сутності: Rijeka, Pavil1on, tržnica, Advent",
+        "• »Čarolija Varoša« obogaćuje program Najljepšeg otočnog adventa → Побут інших міст (острів Раб) | Сутності: Rab, Najljepši otočni advent, Čarolija Varoša",
+        "• Dora Ruždjak Podolski: “Svi u sebi nosimo neku dječju ranu” → Не за тематикою (театральне інтерв'ю) | Сутності: Dora Ruždjak Podolski, Arterarij, kazalište, Zagreb",
+        "• Bogat adventski program oživjet će cijelu crikveničku rivijeru → Побут інших міст (Цриквениця) | Сутності: Crikvenica, Advent, Dramalj, Selce",
+        "• Nove atrakcije, koncerti i panoramski pogled na grad → Вже публікувалось (Задар концерт Грдовича) | Сутності: Zadar, Advent u Zadru, Mladen Grdović, Dan grada"
+      ],
+      "rejected_by_reason": {
+        "Не за тематикою": 4,
+        "Побут інших міст": 6,
+        "Світовий шум": 1,
+        "Вже публікувалось": 1
+      },
+      "updates_marked": 0,
+      "already_rejected": 7,
+      "rejected_by_code_examples": [
+        "[oglasi] Zbog jedne greške pri online kupnji danas možete ostati bez svega; Policija objavila ključna pravila",
+        "[URL /sport/] Studeni za povijest u Judo klubu Fortitudo!",
+        "[košarkaška] Hrvatska večeras lovi plasman na Svjetsko prvenstvo, a reprezentaciju krasi i snažan zadarski potpis",
+        "[sport] Sport koji ne poznaje granice stiže u Zadar: Na Višnjiku će se igrati inkluzivni Baskin"
+      ]
+    },
+    "backlog": {
+      "total_size": 8,
+      "sources": {
+        "Zadarski list": 2,
+        "023": 6
+      }
+    },
+    "published": {
+      "total": 3,
+      "ukraine_priority": 0,
+      "with_images": 3,
+      "text_only": 0,
+      "og_images_found": 1,
+      "sources": {
+        "Zadarski list": 2,
+        "023": 1
       }
     },
     "models_used": {
