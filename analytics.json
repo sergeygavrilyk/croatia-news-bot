@@ -1,107 +1,5 @@
 [
   {
-    "timestamp": "2026-11-18 15:01:23",
-    "execution_time": 48.2,
-    "funnel": {
-      "scraped_total": 35,
-      "scraped_by_source": {
-        "023": 10,
-        "Slobodna dalmacija": 15,
-        "Zadarski list": 10
-      },
-      "already_seen": 22,
-      "rejected_by_keywords": 5,
-      "rejected_by_rule": {
-        "тег RSS lifestyle": 2,
-        "URL /sport/": 1,
-        "тег RSS nogomet": 1,
-        "nogometnog": 1
-      },
-      "unclassified_by_ai": 0,
-      "duplicates_removed_by_ai": 7,
-      "rejection_reasons_list": [
-        "• Komina zatvara uljare, a Mate je krenuo suprotnim smjerom! Njegova ide → Побут інших міст (Проблема з олійними заводами в Далмації) | Сутності: Коміна, Мате, Далматинські олійні заводи, Оливкова макуха",
-        "• Radionica “Brickzine” za srednjoškolce u art-kvartu: stvaranje i dizaj → Побут інших міст (Рієка) | Сутності: Рієка, Міська бібліотека Рієки, Арт-квартал Бенчич, Расадник",
-        "• Od japanki do kaputa: ‘Izmiješala‘ su se ove srijede godišnja doba na  → Побут інших міст (Дубровник) | Сутності: Дубровник, Страдун, Вуковар, Шкабрня",
-        "• Ovoga četvrtka projekcija dokumentarnog filma „Kontraband” u Centru za → Побут інших міст (Учка та Рієка) | Сутності: Центр для відвідувачів Поклон, Вівіана Бркарич, Валтер Стойшич, Рієка",
-        "• Posveta Vukovaru, njegovim žrtvama i svima koji svojim životom, radom  → Вже публікувалось (День пам'яті жертв) | Сутності: Вуковар, Шкабрня, Маріо Обульєн, День пам'яті",
-        "• Kći vukovarskog zapovjednika još traži oca: “Umrla je, a nije mi rekla → Вже публікувалось (Пошук зниклих у Вуковарі) | Сутності: Вуковар, Катиця Павлетич, Дамян Самарджич, Саймиште",
-        "• Na Sušaku obilježen Svjetski dan prijevremeno rođene djece: Briga o pa → Побут інших міст (Рієка) | Сутності: Рієка, Сушак, Клініка педіатрії, Світовий день недоношених дітей"
-      ],
-      "rejected_by_reason": {
-        "Побут інших міст": 5,
-        "Вже публікувалось": 2
-      },
-      "updates_marked": 0,
-      "already_rejected": 17,
-      "rejected_by_code_examples": [
-        "[тег RSS lifestyle] Mišu je dovoljan otvor od šest milimetara: kako zatvoriti kuću prije hladnih mjeseci",
-        "[тег RSS lifestyle] Studija na 340.000 odraslih povezala vrstu alkoholnog pića s rizikom smrti od srčanih bolesti",
-        "[URL /sport/] Ante Delija potpisao novi ugovor s UFC-om na četiri borbe",
-        "[тег RSS nogomet] Hrvatska je pala za jedno mjesto u odnosu na listopada na najnovijoj rang listi FIFA-e",
-        "[nogometnog] U prometnoj nesreći poginuo i predsjednik NK Topusko Miroslav Žugaj: išli su u Škabrnju"
-      ]
-    },
-    "backlog": {
-      "total_size": 3,
-      "sources": {
-        "023": 3
-      }
-    },
-    "published": {
-      "total": 0,
-      "ukraine_priority": 0,
-      "with_images": 0,
-      "text_only": 0,
-      "og_images_found": 1,
-      "sources": {}
-    },
-    "models_used": {
-      "gemini-3.5-flash-lite": 1
-    },
-    "models_by_task": {
-      "filter": "gemini-3.5-flash-lite",
-      "translate": null
-    },
-    "model_attempts": [
-      {
-        "task": "filter",
-        "model": "gemini-3.5-flash-lite",
-        "outcome": "ok"
-      },
-      {
-        "task": "translate",
-        "model": "gemini-3.8-flash",
-        "outcome": "unavailable"
-      },
-      {
-        "task": "translate",
-        "model": "gemini-3.5-flash-lite",
-        "outcome": "unavailable"
-      },
-      {
-        "task": "translate",
-        "model": "gemini-3.6-flash",
-        "outcome": "unavailable"
-      }
-    ],
-    "exhausted_models": [],
-    "demoted_models": [
-      "filter: gemini-3-flash-preview",
-      "filter: gemini-3.6-flash",
-      "translate: gemini-3.8-flash",
-      "translate: gemini-3.6-flash",
-      "translate: gemini-3.5-flash-lite"
-    ],
-    "translate_budget_deferred": [
-      "gemini-3.6-flash"
-    ],
-    "gemini_region_blocked": false,
-    "gemini_unavailable": true,
-    "errors_count": 0,
-    "gemini_retries": 3
-  },
-  {
     "timestamp": "2026-11-18 16:01:25",
     "execution_time": 237.5,
     "funnel": {
@@ -9913,5 +9811,103 @@
     "gemini_unavailable": false,
     "errors_count": 0,
     "gemini_retries": 1
+  },
+  {
+    "timestamp": "2026-11-27 17:01:26",
+    "execution_time": 244.2,
+    "funnel": {
+      "scraped_total": 35,
+      "scraped_by_source": {
+        "023": 10,
+        "Slobodna dalmacija": 15,
+        "Zadarski list": 10
+      },
+      "already_seen": 24,
+      "rejected_by_keywords": 2,
+      "rejected_by_rule": {
+        "тег RSS lifestyle": 1,
+        "nogometaši": 1
+      },
+      "unclassified_by_ai": 0,
+      "duplicates_removed_by_ai": 8,
+      "rejection_reasons_list": [
+        "• Prvi Dan otvorenih vrata Sveučilišta u Rijeci: Informacije o uvjetima  → Побут інших міст (День відкритих дверей у Рієці) | Сутності: Sveučilište u Rijeci, Rijeka, UNIRI",
+        "• Deset mladih poljskih jasena zasađeno ispred Zdravstvenog centra u Mat → Побут інших міст (Озеленення території у Матулі) | Сутності: Matulji, Parkovi d.o.o. Opatija, Croatia naturally yours",
+        "• Anušić: Mikulandru sam zaposlio zbog prosjeka 5.0, a ne iskaznice HDZ- → Не за тематикою (Коментар міністра щодо кадрового призначення) | Сутності: Ivan Anušić, Nina Mikulandra, HDZ, Ministarstvo obrane",
+        "• AI agenti mogli bi već 2027. preuzimati kupnju, rezervacije i korisnič → Світовий шум (Прогнози щодо розвитку штучного інтелекту) | Сутності: Infobip, UI agenti, 2027",
+        "• Nakon višegodišnje obnove, otvoren Kulturni centar Susajda, mjesto sus → Побут інших міст (Відкриття культурного центру на острові Црес) | Сутності: Cres, Kulturni centar Susajda, Toni Štimac, Marin Gregorović",
+        "• Rijeka Tattoo Expo otvoren plesom među štandovima → Побут інших міст (Тату-виставка у Кострені) | Сутності: Rijeka Tattoo Expo, Kostrena, Mia Mohorić Stipanić",
+        "• Predstavljene mogućnosti zapošljavanja osoba s invaliditetom → Побут інших міст (Семінар щодо працевлаштування в Рієці) | Сутності: Rijeka, Primorsko-goranska županija, Mirela Smojver, Crikvenica",
+        "• Crna Gora odobrila 18 milijuna eura odštete hrvatskim zatočenicima Mor → Вже публікувалось (Компенсація в'язням табору Морінь) | Сутності: Crna Gora, Morinj, 18 milijuna eura, Hrvatska"
+      ],
+      "rejected_by_reason": {
+        "Побут інших міст": 5,
+        "Не за тематикою": 1,
+        "Світовий шум": 1,
+        "Вже публікувалось": 1
+      },
+      "updates_marked": 0,
+      "already_rejected": 15,
+      "rejected_by_code_examples": [
+        "[тег RSS lifestyle] Zašto je mokraća ponekad jarko žuta i kada se zbog toga treba javiti liječniku",
+        "[nogometaši] Ovi mladi navijači ‘potegli‘ su iz doline Neretve do Poljuda; pogledajte kako su navijali, snimile s"
+      ]
+    },
+    "backlog": {
+      "total_size": 2,
+      "sources": {
+        "Zadarski list": 2
+      }
+    },
+    "published": {
+      "total": 3,
+      "ukraine_priority": 0,
+      "with_images": 3,
+      "text_only": 0,
+      "og_images_found": 2,
+      "sources": {
+        "023": 2,
+        "Zadarski list": 1
+      }
+    },
+    "models_used": {
+      "gemini-3.6-flash": 1,
+      "gemini-3.5-flash-lite": 1
+    },
+    "models_by_task": {
+      "filter": "gemini-3.6-flash",
+      "translate": "gemini-3.5-flash-lite"
+    },
+    "model_attempts": [
+      {
+        "task": "filter",
+        "model": "gemini-3-flash-preview",
+        "outcome": "unavailable"
+      },
+      {
+        "task": "filter",
+        "model": "gemini-3.6-flash",
+        "outcome": "ok"
+      },
+      {
+        "task": "translate",
+        "model": "gemini-3.8-flash",
+        "outcome": "unavailable"
+      },
+      {
+        "task": "translate",
+        "model": "gemini-3.5-flash-lite",
+        "outcome": "ok"
+      }
+    ],
+    "exhausted_models": [],
+    "demoted_models": [],
+    "translate_budget_deferred": [
+      "gemini-3.6-flash"
+    ],
+    "gemini_region_blocked": false,
+    "gemini_unavailable": false,
+    "errors_count": 0,
+    "gemini_retries": 2
   }
 ]
