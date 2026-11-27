@@ -1,113 +1,5 @@
 [
   {
-    "timestamp": "2026-11-18 16:01:25",
-    "execution_time": 237.5,
-    "funnel": {
-      "scraped_total": 35,
-      "scraped_by_source": {
-        "023": 10,
-        "Slobodna dalmacija": 15,
-        "Zadarski list": 10
-      },
-      "already_seen": 23,
-      "rejected_by_keywords": 6,
-      "rejected_by_rule": {
-        "košarkaši": 1,
-        "тег RSS lifestyle": 2,
-        "URL /sport/": 2,
-        "тег RSS nogomet": 1
-      },
-      "unclassified_by_ai": 0,
-      "duplicates_removed_by_ai": 6,
-      "rejection_reasons_list": [
-        "• Delegacija Grada Dubrovnika sudjelovala u Koloni sjećanja u gradu prij → Вже публікувалось (Колона пам'яті у Вуковарі) | Сутності: Dubrovnik, Vukovar, Mato Franković",
-        "• Policija objavila uzrok teške nesreće s tri poginula: Kobno je bilo pr → Побут інших міст (ДТП у Карловаці) | Сутності: Karlovac, Blagaj, Policija",
-        "• Župan Pezo na obilježavanju 35. obljetnice stradanja Škabrnje → Вже публікувалось (Коментар посадовця щодо події у Шкабрні) | Сутності: Blaž Pezo, Škabrnja, Dubrovačko-neretvanska županija",
-        "• Mukkake Band rasplesao El Rio: Publika tražila bis, a bend već dobio p → Побут інших міст (Концерт у Рієці) | Сутності: Mukkake Band, Rijeka, El Rio",
-        "• Zamjenik župana Cebalo u Vukovaru povodom Dana sjećanja → Вже публікувалось (Коментар посадовця щодо події у Вуковарі) | Сутності: Joško Cebalo, Vukovar, Kolona sjećanja",
-        "• Poginuo radnik iz Makedonije na željezničkom mostu preko Save: pao na  → Побут інших міст (Нещасний випадок у Загребі) | Сутності: Zagreb, Velika Gorica, Policija"
-      ],
-      "rejected_by_reason": {
-        "Вже публікувалось": 3,
-        "Побут інших міст": 3
-      },
-      "updates_marked": 0,
-      "already_rejected": 18,
-      "rejected_by_code_examples": [
-        "[košarkaši] Košarkaši Zadra kod murala na Bilom brigu odali počast žrtvama Vukovara i Škabrnje",
-        "[тег RSS lifestyle] Mišu je dovoljan otvor od šest milimetara: kako zatvoriti kuću prije hladnih mjeseci",
-        "[тег RSS lifestyle] Studija na 340.000 odraslih povezala vrstu alkoholnog pića s rizikom smrti od srčanih bolesti",
-        "[URL /sport/] Ante Delija potpisao novi ugovor s UFC-om na četiri borbe",
-        "[URL /sport/] Carlos Alcaraz svladao i Danila Medeveda, ali Španjolac još nije izborio polufinale",
-        "[тег RSS nogomet] Hrvatska je pala za jedno mjesto u odnosu na listopada na najnovijoj rang listi FIFA-e"
-      ]
-    },
-    "backlog": {
-      "total_size": 0,
-      "sources": {}
-    },
-    "published": {
-      "total": 3,
-      "ukraine_priority": 0,
-      "with_images": 3,
-      "text_only": 0,
-      "og_images_found": 0,
-      "sources": {
-        "023": 3
-      }
-    },
-    "models_used": {
-      "gemini-3.1-flash-lite": 1,
-      "gemini-3.6-flash": 1
-    },
-    "models_by_task": {
-      "filter": "gemini-3.1-flash-lite",
-      "translate": "gemini-3.6-flash"
-    },
-    "model_attempts": [
-      {
-        "task": "filter",
-        "model": "gemini-3.5-flash-lite",
-        "outcome": "unavailable"
-      },
-      {
-        "task": "filter",
-        "model": "gemini-3.1-flash-lite",
-        "outcome": "ok"
-      },
-      {
-        "task": "translate",
-        "model": "gemini-3.8-flash",
-        "outcome": "unavailable"
-      },
-      {
-        "task": "translate",
-        "model": "gemini-3.5-flash-lite",
-        "outcome": "unavailable"
-      },
-      {
-        "task": "translate",
-        "model": "gemini-3.6-flash",
-        "outcome": "ok"
-      }
-    ],
-    "exhausted_models": [],
-    "demoted_models": [
-      "filter: gemini-3-flash-preview",
-      "filter: gemini-3.6-flash",
-      "translate: gemini-3.8-flash",
-      "translate: gemini-3.6-flash",
-      "translate: gemini-3.5-flash-lite"
-    ],
-    "translate_budget_deferred": [
-      "gemini-3.6-flash"
-    ],
-    "gemini_region_blocked": false,
-    "gemini_unavailable": false,
-    "errors_count": 0,
-    "gemini_retries": 3
-  },
-  {
     "timestamp": "2026-11-18 17:01:19",
     "execution_time": 192.0,
     "funnel": {
@@ -9868,6 +9760,111 @@
       "sources": {
         "023": 2,
         "Zadarski list": 1
+      }
+    },
+    "models_used": {
+      "gemini-3.6-flash": 1,
+      "gemini-3.5-flash-lite": 1
+    },
+    "models_by_task": {
+      "filter": "gemini-3.6-flash",
+      "translate": "gemini-3.5-flash-lite"
+    },
+    "model_attempts": [
+      {
+        "task": "filter",
+        "model": "gemini-3-flash-preview",
+        "outcome": "unavailable"
+      },
+      {
+        "task": "filter",
+        "model": "gemini-3.6-flash",
+        "outcome": "ok"
+      },
+      {
+        "task": "translate",
+        "model": "gemini-3.8-flash",
+        "outcome": "unavailable"
+      },
+      {
+        "task": "translate",
+        "model": "gemini-3.5-flash-lite",
+        "outcome": "ok"
+      }
+    ],
+    "exhausted_models": [],
+    "demoted_models": [],
+    "translate_budget_deferred": [
+      "gemini-3.6-flash"
+    ],
+    "gemini_region_blocked": false,
+    "gemini_unavailable": false,
+    "errors_count": 0,
+    "gemini_retries": 2
+  },
+  {
+    "timestamp": "2026-11-27 20:01:17",
+    "execution_time": 241.2,
+    "funnel": {
+      "scraped_total": 35,
+      "scraped_by_source": {
+        "023": 10,
+        "Slobodna dalmacija": 15,
+        "Zadarski list": 10
+      },
+      "already_seen": 17,
+      "rejected_by_keywords": 7,
+      "rejected_by_rule": {
+        "тег RSS lifestyle": 3,
+        "sporta": 1,
+        "nogometnog": 1,
+        "URL /sport/": 1,
+        "тег RSS nogomet": 1
+      },
+      "unclassified_by_ai": 0,
+      "duplicates_removed_by_ai": 11,
+      "rejection_reasons_list": [
+        "• Provjerite jeste li na popisu! → Побут інших міст (Відключення електроенергії в селищі Радовчичі) | Сутності: Elektrojug, Radovčići, prekid opskrbe, Dubrovnik",
+        "• Loparski advent donosi radionice, koncert, sajam i žive jaslice → Побут інших міст (Локальна святкова програма в містечку Лопар) | Сутності: Lopar, Advent u Loparu, Rab, Sorinj",
+        "• Evo koliko je kazni i protupravno stečene imovinske koristi oduzeto Du → Побут інших міст (Штрафи за нелегальне здавання житла в Дубровнику) | Сутності: Dubrovnik, Državni inspektorat, nekomercijalni smještaj, kazne",
+        "• VW odao počast kultnom Golfu GTI iz 1976.-e obljetničkim modelom u lim → Геоблок (Презентація ювілейного авто Volkswagen на автосалоні в Німеччині) | Сутності: Volkswagen, Golf GTI, Essen, Sajam u Essenu",
+        "• Plenković i Medved u Škabrnji: ‘Učenici osmih razreda obilazit će novo → Вже публікувалось (Візит Пленковича до Шкабрні вже висвітлювався в історії) | Сутності: Andrej Plenković, Tomo Medved, Škabrnja, Memorijalni centar",
+        "• Za otvorenje Adventa u Rabu posebna regulacija prometa i besplatan pri → Побут інших міст (Зміна схеми руху під час святкувань на острові Раб) | Сутності: Rab, Advent u Rabu, Željko Bebek, regulacija prometa",
+        "• Grad Zagreb: Zbog klizišta na području ulica Bijenik i Podfuščak poduz → Побут інших міст (Локальний зсув ґрунту в Загребі) | Сутності: Grad Zagreb, Bijenik, Podfuščak, klizište",
+        "• Udruga Žmergo bila domaćin sastanka velikog Erasmus projekta o otporno → Побут інших міст (Зустріч учасників проєкту Erasmus в Опатії) | Сутності: Udruga Žmergo, Opatija, Erasmus+, Ready-for-Crisis",
+        "• Domaće underground pop snage Mate Ponjević i Reper iz Sobe nastupaju z → Побут інших міст (Концерт місцевих виконавців у клубі Загреба) | Сутності: Mate Ponjević, Reper iz Sobe, Vintage Industrial Bar, Zagreb",
+        "• U Nadbiskupiji susreti za rastavljene i ponovno civilno vjenčane osobe → Побут інших міст (Заходи єпархіального розраду в Рієці) | Сутності: Riječka nadbiskupija, Mate Uzinić, Rijeka, pastoralni program",
+        "• Tomašević u Klinici Sv. Ivan o sigurnosnim mjerama i nedostatku kadra → Побут інших міст (Інспекція мера Загреба в місцевій клініці) | Сутності: Tomislav Tomašević, Klinika Sveti Ivan, Zagreb, Kristian Josip Periš"
+      ],
+      "rejected_by_reason": {
+        "Побут інших міст": 9,
+        "Геоблок": 1,
+        "Вже публікувалось": 1
+      },
+      "updates_marked": 0,
+      "already_rejected": 8,
+      "rejected_by_code_examples": [
+        "[тег RSS lifestyle] Parenje lica kod kuće: kozmetičarka objašnjava kako pomaže koži i tko ga treba izbjegavati",
+        "[тег RSS lifestyle] Kako luksuzni hoteli zadržavaju toplinu u sobama i što od toga možete primijeniti kod kuće",
+        "[тег RSS lifestyle] Zašto je mokraća ponekad jarko žuta i kada se zbog toga treba javiti liječniku",
+        "[sporta] Pri odabiru sadnica stabala vodilo se računa o autohtonim vrstama",
+        "[nogometnog] Sve o ‘novom Šubićevcu‘: 5625 sjedećih mjesta. Pod krovom! I hibridni travnjak s grijanjem... Cijena",
+        "[URL /sport/] FOTO Đorđe Rosić s pet pogodaka odveo Riječane do pobjede protiv Crnice. Bijeli prekinuli mini niz p",
+        "[тег RSS nogomet] Istra 1961 na krilima Nika Škafara Žužića slomila Varaždince i stigla na treću poziciju"
+      ]
+    },
+    "backlog": {
+      "total_size": 0,
+      "sources": {}
+    },
+    "published": {
+      "total": 2,
+      "ukraine_priority": 0,
+      "with_images": 2,
+      "text_only": 0,
+      "og_images_found": 0,
+      "sources": {
+        "Zadarski list": 2
       }
     },
     "models_used": {
