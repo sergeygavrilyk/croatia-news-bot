@@ -1,95 +1,5 @@
 [
   {
-    "timestamp": "2026-11-18 09:01:19",
-    "execution_time": 209.9,
-    "funnel": {
-      "scraped_total": 35,
-      "scraped_by_source": {
-        "023": 10,
-        "Slobodna dalmacija": 15,
-        "Zadarski list": 10
-      },
-      "already_seen": 25,
-      "rejected_by_keywords": 6,
-      "rejected_by_rule": {
-        "тег RSS lifestyle": 1,
-        "тег RSS nogomet": 2,
-        "тег RSS košarka": 2,
-        "URL /sport/": 1
-      },
-      "unclassified_by_ai": 0,
-      "duplicates_removed_by_ai": 3,
-      "rejection_reasons_list": [
-        "• Franković: ‘Vukovar nikad nije pokoren, a imam jasnu poruku za sve one → Вже публікувалось (Коментар щодо річниці у Вukovari) | Сутності: Mato Franković, Vukovar, Domovinski rat, Škabrnja",
-        "• Claudio je čelnik primorsko-goranskih branitelja: “Mi smo antifašisti  → Побут інших міст (Асоціація ветеранів у Рієці) | Сутності: Claudio Vukonić, Primorsko-goranska županija, Zlatko Tomašić, Marinko Žuža",
-        "• Od groblja tenkova do sloma obrane. Ovih deset trenutaka obilježilo je → Вже публікувалось (Історія битви за Вуковар) | Сутності: Vukovar, JNA, Domovinski rat, Hrvatska"
-      ],
-      "rejected_by_reason": {
-        "Вже публікувалось": 2,
-        "Побут інших міст": 1
-      },
-      "updates_marked": 0,
-      "already_rejected": 20,
-      "rejected_by_code_examples": [
-        "[тег RSS lifestyle] Štiti li crno vino srce? Dijetetičarka British Heart Foundationa o resveratrolu i dokazima",
-        "[тег RSS nogomet] “Gospodin hladnokrvni” je okrunio ludi preokret i ponovo podsjetio na legendarnog Gerda Mullera",
-        "[тег RSS košarka] VIDEO Ušao je u igru dok je Dončić odmarao, zabio je tricu u posljednjoj sekundi i odveo Lakerse u p",
-        "[тег RSS košarka] VIDEO Iako nije bio starter s 40 poena odveo Utah do druge pobjede. Pistonsi prekinuli niz Spursa",
-        "[URL /sport/] Članovi Kluba dizača utega Rječina 75 osvojili tri zlatne medalje na pojedinačnom PH",
-        "[тег RSS nogomet] Ivica Olić nakon rujevičke pobjede: “Dečki su već pokazali da imaju karakter za izvući se iz teških "
-      ]
-    },
-    "backlog": {
-      "total_size": 0,
-      "sources": {}
-    },
-    "published": {
-      "total": 2,
-      "ukraine_priority": 0,
-      "with_images": 0,
-      "text_only": 2,
-      "og_images_found": 1,
-      "sources": {
-        "023": 2
-      }
-    },
-    "models_used": {
-      "gemini-3.5-flash-lite": 1,
-      "gemini-3.6-flash": 1
-    },
-    "models_by_task": {
-      "filter": "gemini-3.5-flash-lite",
-      "translate": "gemini-3.6-flash"
-    },
-    "model_attempts": [
-      {
-        "task": "filter",
-        "model": "gemini-3.5-flash-lite",
-        "outcome": "ok"
-      },
-      {
-        "task": "translate",
-        "model": "gemini-3.8-flash",
-        "outcome": "unavailable"
-      },
-      {
-        "task": "translate",
-        "model": "gemini-3.6-flash",
-        "outcome": "ok"
-      }
-    ],
-    "exhausted_models": [],
-    "demoted_models": [
-      "filter: gemini-3-flash-preview",
-      "filter: gemini-3.6-flash"
-    ],
-    "translate_budget_deferred": [],
-    "gemini_region_blocked": false,
-    "gemini_unavailable": false,
-    "errors_count": 0,
-    "gemini_retries": 1
-  },
-  {
     "timestamp": "2026-11-18 10:01:14",
     "execution_time": 5.7,
     "funnel": {
@@ -9892,5 +9802,106 @@
     "gemini_unavailable": false,
     "errors_count": 0,
     "gemini_retries": 0
+  },
+  {
+    "timestamp": "2026-11-27 11:01:22",
+    "execution_time": 247.1,
+    "funnel": {
+      "scraped_total": 35,
+      "scraped_by_source": {
+        "023": 10,
+        "Slobodna dalmacija": 15,
+        "Zadarski list": 10
+      },
+      "already_seen": 16,
+      "rejected_by_keywords": 5,
+      "rejected_by_rule": {
+        "oglasi": 1,
+        "URL /sport/": 2,
+        "košarkaška": 1,
+        "sport": 1
+      },
+      "unclassified_by_ai": 0,
+      "duplicates_removed_by_ai": 10,
+      "rejection_reasons_list": [
+        "• Terminal Jadranska vrata na Brajdici otvorio vrata najmlađima → Побут інших міст (Захід для дітей у Рієці) | Сутності: Jadranska vrata, Brajdica, Rijeka",
+        "• Marin Krstulović, Srđ je Grad: ‘Pred birače idem kao građanin, kad puk → Побут інших міст (Місцева політика Дубровника) | Сутності: Marin Krstulović, Srđ je Grad, Dubrovnik",
+        "• Ukinuta preporuka prokuhavanja vode na području Rijeke i riječkog prst → Побут інших міст (Скасування обмежень щодо води в Рієці) | Сутності: KD Vodovod i kanalizacija, Rijeka, питна вода",
+        "• Ni pješački više nisu sigurni! Vozač udario 71-godišnjakinju i teško j → Побут інших міст (ДТП у Дубровнику) | Сутності: Dubrovnik, Ulica Vladimira Nazora, ДТП",
+        "• Gorivo bi od utorka trebalo pojeftiniti, za dizel se spominje sedam ce → Вже публікувалось (Про зміну цін на пальне вже повідомлялося) | Сутності: ціни на пальне, дизель, євросупер, Хорватія",
+        "• U središtu Rijeke 73-godišnji vozač izazvao nesreću, žena teško ozlije → Побут інших міст (ДТП у Рієці) | Сутності: Rijeka, Cambierieva ulica, ДТП",
+        "• Tko danas gradi Dubrovnik za našu djecu? → Побут інших міст (Міська забудова Дубровника) | Сутності: Dubrovnik, Lapad, Gruž",
+        "• Piše Kim Cuculić: 80 godina Talijanske drame → Побут інших міст (Ювілей театру в Рієці) | Сутності: Talijanska drama, HNK Ivana pl. Zajca, Rijeka",
+        "• Otvorena izložba fotografija »Priče koje nas povezuju – Talijanska dra → Побут інших міст (Виставка у Рієці) | Сутності: Talijanska drama, HNK Ivana pl. Zajca, Rijeka",
+        "• Dubrovački računalni stručnjak savjetuje kako kupovati online i upozor → Побут інших міст (Поради з онлайн-покупок з Дубровника) | Сутності: Dubrovnik, Crni petak, онлайн-покупки"
+      ],
+      "rejected_by_reason": {
+        "Побут інших міст": 9,
+        "Вже публікувалось": 1
+      },
+      "updates_marked": 0,
+      "already_rejected": 9,
+      "rejected_by_code_examples": [
+        "[oglasi] Zbog jedne greške pri online kupnji danas možete ostati bez svega; Policija objavila ključna pravila",
+        "[URL /sport/] Studeni za povijest u Judo klubu Fortitudo!",
+        "[košarkaška] Hrvatska večeras lovi plasman na Svjetsko prvenstvo, a reprezentaciju krasi i snažan zadarski potpis",
+        "[sport] Sport koji ne poznaje granice stiže u Zadar: Na Višnjiku će se igrati inkluzivni Baskin",
+        "[URL /sport/] VIDEO Matjaž Kek najavio gostovanje na Opus Areni: “Jedna utakmica gdje je puno toga u igri…”"
+      ]
+    },
+    "backlog": {
+      "total_size": 9,
+      "sources": {
+        "Slobodna dalmacija": 1,
+        "Zadarski list": 2,
+        "023": 6
+      }
+    },
+    "published": {
+      "total": 3,
+      "ukraine_priority": 0,
+      "with_images": 3,
+      "text_only": 0,
+      "og_images_found": 3,
+      "sources": {
+        "023": 3
+      }
+    },
+    "models_used": {
+      "gemini-3.6-flash": 2
+    },
+    "models_by_task": {
+      "filter": "gemini-3.6-flash",
+      "translate": "gemini-3.6-flash"
+    },
+    "model_attempts": [
+      {
+        "task": "filter",
+        "model": "gemini-3-flash-preview",
+        "outcome": "unavailable"
+      },
+      {
+        "task": "filter",
+        "model": "gemini-3.6-flash",
+        "outcome": "ok"
+      },
+      {
+        "task": "translate",
+        "model": "gemini-3.8-flash",
+        "outcome": "unavailable"
+      },
+      {
+        "task": "translate",
+        "model": "gemini-3.6-flash",
+        "outcome": "ok"
+      }
+    ],
+    "exhausted_models": [],
+    "demoted_models": [],
+    "translate_budget_deferred": [],
+    "gemini_region_blocked": false,
+    "gemini_unavailable": false,
+    "errors_count": 0,
+    "gemini_retries": 2
   }
 ]
