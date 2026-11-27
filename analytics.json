@@ -1,107 +1,5 @@
 [
   {
-    "timestamp": "2026-11-18 11:01:18",
-    "execution_time": 168.9,
-    "funnel": {
-      "scraped_total": 35,
-      "scraped_by_source": {
-        "023": 10,
-        "Slobodna dalmacija": 15,
-        "Zadarski list": 10
-      },
-      "already_seen": 23,
-      "rejected_by_keywords": 3,
-      "rejected_by_rule": {
-        "URL /sport/": 2,
-        "тег RSS nogomet": 1
-      },
-      "unclassified_by_ai": 0,
-      "duplicates_removed_by_ai": 6,
-      "rejection_reasons_list": [
-        "• Ministri u Škabrnji odali počast žrtvama: ‘Istinu o Domovinskom ratu m → Вже публікувалось (Шкабрня річниця вже згадувалась) | Сутності: Škabrnja, Tonči Glavina, Oleg Butković, Vlada RH",
-        "• Hrvatska još uvijek traži 1725 nestalih u Domovinskom ratu: “Na potezu → Вже публікувалось (Тема зниклих у Вуковарі вже є в історії) | Сутності: Vukovar, Gordan Grlić Radman, Srbija, Nestali",
-        "• Harry Styles, Billie Eilish i Cher glavne zvijezde britanskog Glastonb → Геоблок (Музичний фестиваль у Великій Британії) | Сутності: Glastonbury, Harry Styles, Billie Eilish, Cher",
-        "• U Gradu heroju traje program Dana sjećanja na žrtvu Vukovara, ministar → Вже публікувалось (День пам'яті у Вуковарі) | Сутності: Vukovar, Bolnica Dr. Juraj Njavro, Domovinski rat",
-        "• Čitatelj upozorava na potpuno izbrazdani pločnik ispred pošte u Novoj  → Побут інших міст (Проблема з тротуаром у Дубровнику) | Сутності: Nova Mokošica, Dubrovnik, Pločnik, Pošta",
-        "• Ženi nogom razbio ulazna vrata poslovnog prostora, policija ga strpala → Не за тематикою (Дрібний кримінал у Дрніші) | Сутності: Drniš, Policija, Oštećenje tuđe stvari"
-      ],
-      "rejected_by_reason": {
-        "Вже публікувалось": 3,
-        "Геоблок": 1,
-        "Побут інших міст": 1,
-        "Не за тематикою": 1
-      },
-      "updates_marked": 0,
-      "already_rejected": 18,
-      "rejected_by_code_examples": [
-        "[URL /sport/] Tiger Woods se nakon dvije godine vraća natjecateljskom golu. Posljednju pobjedu ostvario je 2019.",
-        "[тег RSS nogomet] Orbanovim padovom završilo je vrijeme izdašnog financiranja mađarskih nogometnih klubova. Neki se ve",
-        "[URL /sport/] Matjaž Kek se oglasio nakon medijskih naklapanja da preuzima Makedoniju: “Nisam došao u Rijeku na tr"
-      ]
-    },
-    "backlog": {
-      "total_size": 0,
-      "sources": {}
-    },
-    "published": {
-      "total": 2,
-      "ukraine_priority": 0,
-      "with_images": 2,
-      "text_only": 0,
-      "og_images_found": 0,
-      "sources": {
-        "Zadarski list": 1,
-        "Slobodna dalmacija": 1
-      }
-    },
-    "models_used": {
-      "gemini-3.5-flash-lite": 2
-    },
-    "models_by_task": {
-      "filter": "gemini-3.5-flash-lite",
-      "translate": "gemini-3.5-flash-lite"
-    },
-    "model_attempts": [
-      {
-        "task": "filter",
-        "model": "gemini-3-flash-preview",
-        "outcome": "unavailable"
-      },
-      {
-        "task": "filter",
-        "model": "gemini-3.6-flash",
-        "outcome": "unavailable"
-      },
-      {
-        "task": "filter",
-        "model": "gemini-3.5-flash-lite",
-        "outcome": "ok"
-      },
-      {
-        "task": "translate",
-        "model": "gemini-3.8-flash",
-        "outcome": "unavailable"
-      },
-      {
-        "task": "translate",
-        "model": "gemini-3.6-flash",
-        "outcome": "unavailable"
-      },
-      {
-        "task": "translate",
-        "model": "gemini-3.5-flash-lite",
-        "outcome": "ok"
-      }
-    ],
-    "exhausted_models": [],
-    "demoted_models": [],
-    "translate_budget_deferred": [],
-    "gemini_region_blocked": false,
-    "gemini_unavailable": false,
-    "errors_count": 0,
-    "gemini_retries": 4
-  },
-  {
     "timestamp": "2026-11-18 12:01:21",
     "execution_time": 59.1,
     "funnel": {
@@ -9869,6 +9767,99 @@
         "Zadarski list": 4,
         "Slobodna dalmacija": 1,
         "023": 5
+      }
+    },
+    "published": {
+      "total": 3,
+      "ukraine_priority": 0,
+      "with_images": 3,
+      "text_only": 0,
+      "og_images_found": 3,
+      "sources": {
+        "023": 3
+      }
+    },
+    "models_used": {
+      "gemini-3.6-flash": 1,
+      "gemini-3.5-flash-lite": 1
+    },
+    "models_by_task": {
+      "filter": "gemini-3.6-flash",
+      "translate": "gemini-3.5-flash-lite"
+    },
+    "model_attempts": [
+      {
+        "task": "filter",
+        "model": "gemini-3.6-flash",
+        "outcome": "ok"
+      },
+      {
+        "task": "translate",
+        "model": "gemini-3.5-flash-lite",
+        "outcome": "ok"
+      }
+    ],
+    "exhausted_models": [],
+    "demoted_models": [
+      "filter: gemini-3-flash-preview",
+      "translate: gemini-3.8-flash"
+    ],
+    "translate_budget_deferred": [
+      "gemini-3.6-flash"
+    ],
+    "gemini_region_blocked": false,
+    "gemini_unavailable": false,
+    "errors_count": 0,
+    "gemini_retries": 0
+  },
+  {
+    "timestamp": "2026-11-27 13:01:23",
+    "execution_time": 150.7,
+    "funnel": {
+      "scraped_total": 35,
+      "scraped_by_source": {
+        "023": 10,
+        "Slobodna dalmacija": 15,
+        "Zadarski list": 10
+      },
+      "already_seen": 23,
+      "rejected_by_keywords": 3,
+      "rejected_by_rule": {
+        "oglasi": 1,
+        "nogometaši": 2
+      },
+      "unclassified_by_ai": 0,
+      "duplicates_removed_by_ai": 10,
+      "rejection_reasons_list": [
+        "• Uspješni na festivalima, snimani kod nas: U Art-kinu sedmi Kvarner u k → Побут інших міст (Кінопоказ у Рієці) | Сутності: Art-kino, Kvarnerska filmska komisija, Primorsko-goranska županija, Kvarner u kratkom",
+        "• Županija povećava satnicu pomoćnicima u nastavi → Побут інших міст (Підвищення зарплат у Дубровнику) | Сутності: Dubrovačko-neretvanska županija, Blaž Pezo, Dubrovnik",
+        "• Riječka luka investicijom uz bok Barcelone i Hamburga: “Čemu sva ulaga → Побут інших міст (Інфраструктурний проєкт у Рієці) | Сутності: Lučka uprava Rijeka, Končar, Oleg Butković, Rijeka",
+        "• Konačno se zna kada električni busevi stižu u Šibenik, Bulat odgovorio → Побут інших міст (Міський транспорт у Шибенику) | Сутності: Šibenik, Bulat, električni autobusi",
+        "• Nađeno rješenje za čuvanje djece → Побут інших міст (Дитячий садок у Ґоспичі) | Сутності: Gospić, Darko Milinović, Dječji vrtić Pahuljica",
+        "• Zadarska pravnica: ‘Sve više žena nam se obraća zbog nasilja. A ovo su → Вже публікувалось (Коментар до дня боротьби з насильством) | Сутності: Zadar, Međunarodni dan borbe protiv nasilja nad ženama, zadarska pravnica",
+        "• Aquatika nakon prvog desetljeća: Gotovo 680.000 posjetitelja, rast pri → Побут інших міст (Результати акваріуму в Карловаці) | Сутності: Aquatika, Karlovac, Slatkovodne ribe Hrvatske",
+        "• Enu će svladati emocije, a zatim chefovi preuzimaju glavnu riječ u kuh → Не за тематикою (Телешоу MasterChef) | Сутності: MasterChef, Ena, Jakov, Stjepan",
+        "• U ponedjeljak povremeni prekidi isporuke toplinske energije na Turniću → Побут інших міст (Відключення опалення у Рієці) | Сутності: Turnić, Energo, Rijeka",
+        "• Čudesni svjetovi Sunčeva sustava Ante Radonića zaključili ovogodišnji  → Побут інших міст (Лекція в парку Учка) | Сутності: Ante Radonić, Park prirode Učka, Poklon"
+      ],
+      "rejected_by_reason": {
+        "Побут інших міст": 8,
+        "Вже публікувалось": 1,
+        "Не за тематикою": 1
+      },
+      "updates_marked": 0,
+      "already_rejected": 14,
+      "rejected_by_code_examples": [
+        "[oglasi] Zbog jedne greške pri online kupnji danas možete ostati bez svega; Policija objavila ključna pravila",
+        "[nogometaši] Ovi mladi navijači ‘potegli‘ su iz doline Neretve do Poljuda; pogledajte kako su navijali, snimile s",
+        "[nogometaši] Ovi mladi navijači ‘potegli‘ su iz doline Neretve do Poljuda; pogledajte kako su navijali, snimile s"
+      ]
+    },
+    "backlog": {
+      "total_size": 6,
+      "sources": {
+        "Zadarski list": 4,
+        "023": 2
       }
     },
     "published": {
