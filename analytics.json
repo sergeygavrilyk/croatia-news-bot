@@ -1,101 +1,5 @@
 [
   {
-    "timestamp": "2026-11-19 13:01:19",
-    "execution_time": 124.8,
-    "funnel": {
-      "scraped_total": 35,
-      "scraped_by_source": {
-        "023": 10,
-        "Slobodna dalmacija": 15,
-        "Zadarski list": 10
-      },
-      "already_seen": 17,
-      "rejected_by_keywords": 1,
-      "rejected_by_rule": {
-        "nogometnog": 1
-      },
-      "unclassified_by_ai": 0,
-      "duplicates_removed_by_ai": 13,
-      "rejection_reasons_list": [
-        "• Sastali se Trump, Xi i Putin. Jedan od njih jako uživao u pompi: “Stva → Геоблок (Саміт світових лідерів поза Україною та Хорватією) | Сутності: Trump, Xi Jinping, Putin, Kina, Rusija",
-        "• Franković predlaže ekološki doprinos za goste s kruzera: 15 eura po os → Побут інших міст (Екологічний внесок для туристів у Дубровнику) | Сутності: Mato Franković, Dubrovnik, Gradsko vijeće",
-        "• Nvidia objavila rezultate, imali dvostruko više prihode i dobit. Poseb → Світовий шум (Фінансові результати технологічного гіганта) | Сутності: Nvidia, Vera Rubin, SAD",
-        "• Noćni sukob dvojice muškaraca na benzinskoj u Kninu završio dramatično → Побут інших міст (Інцидент у Книні) | Сутності: Knin, Policijska postaja, teška tjelesna ozljeda",
-        "• Brinju nestao sef s novcem i nakitom → Побут інших міст (Крадіжка сейфа у Бриню) | Сутності: Brinje, Ličko-senjska, Policijska uprava",
-        "• Lažni brokeri i policajci pokrali četvero građana u PGŽ za 62.000€. Uv → Вже публікувалось (Шахрайства у Рієці та на Крку) | Сутності: Rijeka, Krk, PU primorsko-goranska",
-        "• “Zdrava zajednica – zdrav okoliš”: U petak besplatno predavanje inicij → Побут інших міст (Лекція у Рієці) | Сутності: Rijeka, Gradska vijećnica, Rijeka za ljude",
-        "• Bonačić Obradović: ‘Za mlade, obrazovane i sposobne ljude nema mjesta  → Побут інших міст (Політична заява у Дубровнику) | Сутності: Dubrovnik, SDP, Anita Bonačić Obradović",
-        "• Izašao Grand Theft Auto VI, priliku iskoristilo i ministarstvo Grlića  → Не за тематикою (Вихід відеоігри та промоція МВЕП) | Сутності: GTA VI, MVEP, Grlić Radman",
-        "• Norvežani najavili dolazak prave zime, temperature idu u minus... Evo  → Вже публікувалось (Прогноз погоди на найближчі дні) | Сутності: Hrvatska, DHMZ, Norvežani",
-        "• Počinje rekonstrukcija prometnice u Rabu od Vele rive do Slavije → Побут інших міст (Реконструкція доріг на Рабі) | Сутності: Rab, Dundovo, Vela riva",
-        "• Zadranin preuzeo građevinski materijal vrijedan više od šest tisuća eu → Вже публікувалось (Новина вже була в історії раніше) | Сутності: Zadar, Policijska postaja, građevinski materijal",
-        "• O žalbi na izbor Dijane Zadravec tek idućeg tjedna: “Potrebne su još n → Побут інших міст (Рішення лікарні у Загребі) | Сутності: KBC Sestre milosrdnice, Dijana Zadravec, Željko Krznarić"
-      ],
-      "rejected_by_reason": {
-        "Геоблок": 1,
-        "Побут інших міст": 7,
-        "Світовий шум": 1,
-        "Вже публікувалось": 3,
-        "Не за тематикою": 1
-      },
-      "updates_marked": 0,
-      "already_rejected": 7,
-      "rejected_by_code_examples": [
-        "[nogometnog] Rab domaćin nogometnog kampa Real Madrid Foundation za mlade od 6 do 17 godina"
-      ]
-    },
-    "backlog": {
-      "total_size": 7,
-      "sources": {
-        "Zadarski list": 2,
-        "Slobodna dalmacija": 1,
-        "023": 4
-      }
-    },
-    "published": {
-      "total": 3,
-      "ukraine_priority": 0,
-      "with_images": 1,
-      "text_only": 2,
-      "og_images_found": 0,
-      "sources": {
-        "023": 2,
-        "Slobodna dalmacija": 1
-      }
-    },
-    "models_used": {
-      "gemini-3.5-flash-lite": 2
-    },
-    "models_by_task": {
-      "filter": "gemini-3.5-flash-lite",
-      "translate": "gemini-3.5-flash-lite"
-    },
-    "model_attempts": [
-      {
-        "task": "filter",
-        "model": "gemini-3.5-flash-lite",
-        "outcome": "ok"
-      },
-      {
-        "task": "translate",
-        "model": "gemini-3.5-flash-lite",
-        "outcome": "ok"
-      }
-    ],
-    "exhausted_models": [],
-    "demoted_models": [
-      "filter: gemini-3-flash-preview",
-      "filter: gemini-3.6-flash",
-      "translate: gemini-3.8-flash",
-      "translate: gemini-3.6-flash"
-    ],
-    "translate_budget_deferred": [],
-    "gemini_region_blocked": false,
-    "gemini_unavailable": false,
-    "errors_count": 0,
-    "gemini_retries": 0
-  },
-  {
     "timestamp": "2026-11-19 14:01:16",
     "execution_time": 234.0,
     "funnel": {
@@ -9823,5 +9727,77 @@
     "gemini_unavailable": false,
     "errors_count": 0,
     "gemini_retries": 1
+  },
+  {
+    "timestamp": "2026-11-28 15:01:17",
+    "execution_time": 8.9,
+    "funnel": {
+      "scraped_total": 35,
+      "scraped_by_source": {
+        "023": 10,
+        "Slobodna dalmacija": 15,
+        "Zadarski list": 10
+      },
+      "already_seen": 28,
+      "rejected_by_keywords": 4,
+      "rejected_by_rule": {
+        "igrač": 1,
+        "URL /sport/": 2,
+        "тег RSS nogomet": 1
+      },
+      "unclassified_by_ai": 0,
+      "duplicates_removed_by_ai": 3,
+      "rejection_reasons_list": [
+        "• Snažna bura srušila štandove pripremljene za Ružičasti advent → Побут інших міст (Локальний інцидент у Рієці) | Сутності: Рієка, Ružičasti advent, бура, Udruga Srce za nju",
+        "• Zubato sunce i bura: Na Stradunu nijedan sloj odjeće danas nije bio vi → Побут інших міст (Опис погоди у Дубровнику) | Сутності: Дубровник, Страдун, бура, погода",
+        "• Krenule su prijave timova koji će se natjecati u pripremi “ušćipaka” → Побут інших міст (Локальний захід в місті Оточаць) | Сутності: Оточаць, Zlatni ušćipak, Адвент в Оточці, кулінарне змагання"
+      ],
+      "rejected_by_reason": {
+        "Побут інших міст": 3
+      },
+      "updates_marked": 0,
+      "already_rejected": 20,
+      "rejected_by_code_examples": [
+        "[igrač] Netko je sinoć pogodio svih sedam brojeva i postao bogatiji za 10 milijuna eura",
+        "[URL /sport/] Grmi podno Srđa, večeras svi u Gospino polje: Square ide po skalp Torcide!",
+        "[тег RSS nogomet] Nogometaši Orijenta pali s desetoricom u 88. minuti i doživjeli treći uzastopni poraz",
+        "[URL /sport/] Tysonu Furyju odobren nastup protiv Anthonyja Joshue. Ipak ne boluje od shizofrenije"
+      ]
+    },
+    "backlog": {
+      "total_size": 0,
+      "sources": {}
+    },
+    "published": {
+      "total": 0,
+      "ukraine_priority": 0,
+      "with_images": 0,
+      "text_only": 0,
+      "og_images_found": 0,
+      "sources": {}
+    },
+    "models_used": {
+      "gemini-3-flash-preview": 1
+    },
+    "models_by_task": {
+      "filter": "gemini-3-flash-preview",
+      "translate": null
+    },
+    "model_attempts": [
+      {
+        "task": "filter",
+        "model": "gemini-3-flash-preview",
+        "outcome": "ok"
+      }
+    ],
+    "exhausted_models": [],
+    "demoted_models": [
+      "translate: gemini-3.8-flash"
+    ],
+    "translate_budget_deferred": [],
+    "gemini_region_blocked": false,
+    "gemini_unavailable": false,
+    "errors_count": 0,
+    "gemini_retries": 0
   }
 ]
