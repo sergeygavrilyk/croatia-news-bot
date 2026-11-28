@@ -1,102 +1,5 @@
 [
   {
-    "timestamp": "2026-11-19 10:01:28",
-    "execution_time": 121.9,
-    "funnel": {
-      "scraped_total": 35,
-      "scraped_by_source": {
-        "023": 10,
-        "Slobodna dalmacija": 15,
-        "Zadarski list": 10
-      },
-      "already_seen": 20,
-      "rejected_by_keywords": 5,
-      "rejected_by_rule": {
-        "тег RSS sport": 1,
-        "promo": 1,
-        "sporta": 1,
-        "тег RSS košarka": 1,
-        "igračima": 1
-      },
-      "unclassified_by_ai": 0,
-      "duplicates_removed_by_ai": 9,
-      "rejection_reasons_list": [
-        "• Sastanak Trumpa, Xija i Putina oko rata u Ukrajini i Iranu, nuklearnog → Геоблок (Саміт світових лідерів) | Сутності: Trump, Xi, Putin, Ukrajina, SAD",
-        "• Novi medicinski uređaj u Thalassotherapiji Crikvenica: od sada precizn → Побут інших міст (Цриквеница) | Сутності: Thalassotherapia Crikvenica, Crikvenica, plemizmograf",
-        "• ACI marina Dubrovnik tradicionalnom ACI Staff regatom obilježila završ → Спорт (Вітрильна регата) | Сутності: ACI marina Dubrovnik, Dubrovnik, ACI Staff regata",
-        "• Razina vitamina D pada u jesen i zimi. Evo kako osigurati dovoljan uno → Світовий шум (Поради про вітаміни) | Сутності: Vitamin D, imunitet, zdravlje",
-        "• Večer klapske pjesme, tradicije i zajedništva u Centru za kulturu Korč → Побут інших міст (Корчула) | Сутності: Centar za kulturu Korčula, Korčula, Martinovo lito",
-        "• Jesenska subotnja špica u City Galleriji: popusti do 70% u više od 30  → Реклама (Знижки в ТЦ) | Сутності: City Galleria, Zadar, Viktor, Gligora",
-        "• Prozračujete li pravilno tijekom zime? Najčešće pogreške zbog kojih gu → Світовий шум (Поради щодо провітрювання) | Сутності: zima, prozračivanje, dom",
-        "• Naš Vlaho pokazao stan Gorana Ivaniševića u kojem živi s njegovom bivš → Світовий шум (Шоу-бізнес) | Сутності: Goran Ivanišević, Tatjana Dragović, Vlaho Arbulić, Zagreb",
-        "• Misa povodom 100 godina Mješovitog katedralnog zbora → Побут інших міст (Дубровник) | Сутності: Mješoviti katedralni zbor, Dubrovnik, Roko Glasnović"
-      ],
-      "rejected_by_reason": {
-        "Геоблок": 1,
-        "Побут інших міст": 3,
-        "Спорт": 1,
-        "Світовий шум": 3,
-        "Реклама": 1
-      },
-      "updates_marked": 0,
-      "already_rejected": 12,
-      "rejected_by_code_examples": [
-        "[тег RSS sport] Olimpijska i svjetska prvakinja u maratonu suspendirana zbog dopinga",
-        "[promo] Od dnevnog svjetla do privatnosti: zavjese koje rade više od ukrasa",
-        "[sporta] Sofascore osvojio Ameriku: Google ga je proglasio najboljom sportskom aplikacijom",
-        "[тег RSS košarka] Hezonja briljirao, ali Cleveland je izgubio na nevjerojatan način. Lakersima prekinut niz pobjeda",
-        "[igračima] GTA 6 izaziva globalnu ludnicu, milijuni ljudi otvaraju bolovanje: ‘Ovo je poput slijetanja na Mjese"
-      ]
-    },
-    "backlog": {
-      "total_size": 1,
-      "sources": {
-        "Slobodna dalmacija": 1
-      }
-    },
-    "published": {
-      "total": 3,
-      "ukraine_priority": 0,
-      "with_images": 1,
-      "text_only": 2,
-      "og_images_found": 1,
-      "sources": {
-        "023": 3
-      }
-    },
-    "models_used": {
-      "gemini-3.5-flash-lite": 2
-    },
-    "models_by_task": {
-      "filter": "gemini-3.5-flash-lite",
-      "translate": "gemini-3.5-flash-lite"
-    },
-    "model_attempts": [
-      {
-        "task": "filter",
-        "model": "gemini-3.5-flash-lite",
-        "outcome": "ok"
-      },
-      {
-        "task": "translate",
-        "model": "gemini-3.5-flash-lite",
-        "outcome": "ok"
-      }
-    ],
-    "exhausted_models": [],
-    "demoted_models": [
-      "filter: gemini-3-flash-preview",
-      "filter: gemini-3.6-flash",
-      "translate: gemini-3.8-flash",
-      "translate: gemini-3.6-flash"
-    ],
-    "translate_budget_deferred": [],
-    "gemini_region_blocked": false,
-    "gemini_unavailable": false,
-    "errors_count": 0,
-    "gemini_retries": 0
-  },
-  {
     "timestamp": "2026-11-19 11:01:23",
     "execution_time": 312.8,
     "funnel": {
@@ -9874,5 +9777,96 @@
     "gemini_unavailable": false,
     "errors_count": 0,
     "gemini_retries": 1
+  },
+  {
+    "timestamp": "2026-11-28 12:01:27",
+    "execution_time": 130.7,
+    "funnel": {
+      "scraped_total": 35,
+      "scraped_by_source": {
+        "023": 10,
+        "Slobodna dalmacija": 15,
+        "Zadarski list": 10
+      },
+      "already_seen": 20,
+      "rejected_by_keywords": 5,
+      "rejected_by_rule": {
+        "igrač": 1,
+        "URL /sport/": 2,
+        "тег RSS košarka": 1,
+        "тег RSS nogomet": 1
+      },
+      "unclassified_by_ai": 0,
+      "duplicates_removed_by_ai": 7,
+      "rejection_reasons_list": [
+        "• FOTO Parni valjak, S.A.R.S. i Peki stižu u Crikvenicu: Otvoren Advent  → Побут інших міст (Crikvenica) | Сутності: Advent u Crikvenici, Crikvenica, Parni valjak, S.A.R.S.",
+        "• Prestalo je zamućenje Šumeta i Zavrelja, ali ne i na izvorištu Palata. → Побут інших міст (Dubrovnik) | Сутності: Vodovod Dubrovnik, Šumet, Zavrelje, Palata",
+        "• 525 tisuća eura godišnje za privezani brod. Domovinski pokret traži re → Побут інших міст (Rijeka) | Сутності: Domovinski pokret, Ivica Kukavica, brod Galeb, Rijeka",
+        "• Franković: Dok je SDP u Dubrovniku bio na vlasti, građanima je bilo on → Побут інших міст (Dubrovnik) | Сутності: Mato Franković, Dubrovnik, SDP, kotarski izbori",
+        "• Uređen Trg Nikole Tesle ispred Kulturno-informativnog centra Gospić → Побут інших міст (Gospić) | Сутності: Trg Nikole Tesle, KIC Gospić, Gospić",
+        "• Putnici spavali na klupama, nisu dobili ni vodu. Iz Croatia Airlinesa  → Вже публікувалось (Croatia Airlines) | Сутності: Croatia Airlines, Zagreb, Dubrovnik, let OU664",
+        "• Croatia Airlines objasnio zašto putnicima nije osigurao hotel: ‘Polici → Вже публікувалось (Croatia Airlines) | Сутності: Croatia Airlines, Zagreb, Dubrovnik, let OU664"
+      ],
+      "rejected_by_reason": {
+        "Побут інших міст": 5,
+        "Вже публікувалось": 2
+      },
+      "updates_marked": 0,
+      "already_rejected": 14,
+      "rejected_by_code_examples": [
+        "[igrač] Netko je sinoć pogodio svih sedam brojeva i postao bogatiji za 10 milijuna eura",
+        "[URL /sport/] Grmi podno Srđa, večeras svi u Gospino polje: Square ide po skalp Torcide!",
+        "[URL /sport/] Tysonu Furyju odobren nastup protiv Anthonyja Joshue. Ipak ne boluje od shizofrenije",
+        "[тег RSS košarka] Trener FSV-a uoči domaćeg susreta s Plamen Požegom: “Na domaćem terenu ne smijemo se nikoga bojati”",
+        "[тег RSS nogomet] Lionel Messi je i drugi put u tri nastupa ispao u prvom krugu doigravanja MLS lige"
+      ]
+    },
+    "backlog": {
+      "total_size": 0,
+      "sources": {}
+    },
+    "published": {
+      "total": 3,
+      "ukraine_priority": 0,
+      "with_images": 3,
+      "text_only": 0,
+      "og_images_found": 0,
+      "sources": {
+        "Slobodna dalmacija": 1,
+        "Zadarski list": 2
+      }
+    },
+    "models_used": {
+      "gemini-3.6-flash": 1,
+      "gemini-3.5-flash-lite": 1
+    },
+    "models_by_task": {
+      "filter": "gemini-3.6-flash",
+      "translate": "gemini-3.5-flash-lite"
+    },
+    "model_attempts": [
+      {
+        "task": "filter",
+        "model": "gemini-3.6-flash",
+        "outcome": "ok"
+      },
+      {
+        "task": "translate",
+        "model": "gemini-3.5-flash-lite",
+        "outcome": "ok"
+      }
+    ],
+    "exhausted_models": [],
+    "demoted_models": [
+      "filter: gemini-3-flash-preview",
+      "translate: gemini-3.8-flash"
+    ],
+    "translate_budget_deferred": [
+      "gemini-3.6-flash"
+    ],
+    "gemini_region_blocked": false,
+    "gemini_unavailable": false,
+    "errors_count": 0,
+    "gemini_retries": 0
   }
 ]
