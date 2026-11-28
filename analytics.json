@@ -1,100 +1,5 @@
 [
   {
-    "timestamp": "2026-11-18 17:01:19",
-    "execution_time": 192.0,
-    "funnel": {
-      "scraped_total": 35,
-      "scraped_by_source": {
-        "023": 10,
-        "Slobodna dalmacija": 15,
-        "Zadarski list": 10
-      },
-      "already_seen": 23,
-      "rejected_by_keywords": 6,
-      "rejected_by_rule": {
-        "тег RSS lifestyle": 3,
-        "košarkaši": 1,
-        "URL /sport/": 2
-      },
-      "unclassified_by_ai": 0,
-      "duplicates_removed_by_ai": 6,
-      "rejection_reasons_list": [
-        "• Američki dužnosnik: Trump će se u Kini u četvrtak sastati s Putinom u  → Геоблок (Зустріч лідерів у Китаї) | Сутності: Donald Trump, Vladimir Putin, Xi Jinping, APEC, Shenzhen",
-        "• Trump će se u Kini sastati s Putinom u četiri oka → Дубль (Зустріч лідерів у Китаї) | Сутності: Donald Trump, Vladimir Putin, Shenzhen",
-        "• Demokrati nominirali Jeffriesa za sljedećeg predsjednika Zastupničkog  → Геоблок (Політика США) | Сутності: Hakeem Jeffries, Zastupnički dom, Kongres SAD",
-        "• Svijeće i vijenci u Mokošici za ubijenog dubrovačkog branitelja Zdravk → Побут інших міст (Вшанування пам'яті у Дубровнику) | Сутності: Zdravko Gavrić, Mokošica, Dubrovnik",
-        "• Učenici Područne škole Selce odali poštovanje braniteljima → Побут інших міст (Шкільний захід у Селце) | Сутності: Selce, Vukovar, Škabrnja",
-        "• Predstavljeno jubilarno 30. izdanje PoZiCe u Gradskoj knjižnici Crikve → Побут інших міст (Літературний збірник у Цриквениці) | Сутності: Crikvenica, Poreč, Zabok, PoZiCa"
-      ],
-      "rejected_by_reason": {
-        "Геоблок": 2,
-        "Дубль": 1,
-        "Побут інших міст": 3
-      },
-      "updates_marked": 0,
-      "already_rejected": 19,
-      "rejected_by_code_examples": [
-        "[тег RSS lifestyle] Kruh od kefira i brašna traži deset minuta rada, a okusom podsjeća na kiselo tijesto",
-        "[košarkaši] Košarkaši Zadra kod murala na Bilom brigu odali počast žrtvama Vukovara i Škabrnje",
-        "[тег RSS lifestyle] Mišu je dovoljan otvor od šest milimetara: kako zatvoriti kuću prije hladnih mjeseci",
-        "[тег RSS lifestyle] Studija na 340.000 odraslih povezala vrstu alkoholnog pića s rizikom smrti od srčanih bolesti",
-        "[URL /sport/] Ante Delija potpisao novi ugovor s UFC-om na četiri borbe",
-        "[URL /sport/] Carlos Alcaraz svladao i Danila Medeveda, ali Španjolac još nije izborio polufinale"
-      ]
-    },
-    "backlog": {
-      "total_size": 0,
-      "sources": {}
-    },
-    "published": {
-      "total": 0,
-      "ukraine_priority": 0,
-      "with_images": 0,
-      "text_only": 0,
-      "og_images_found": 0,
-      "sources": {}
-    },
-    "models_used": {
-      "gemini-3.1-flash-lite": 1
-    },
-    "models_by_task": {
-      "filter": "gemini-3.1-flash-lite",
-      "translate": null
-    },
-    "model_attempts": [
-      {
-        "task": "filter",
-        "model": "gemini-3-flash-preview",
-        "outcome": "unavailable"
-      },
-      {
-        "task": "filter",
-        "model": "gemini-3.6-flash",
-        "outcome": "unavailable"
-      },
-      {
-        "task": "filter",
-        "model": "gemini-3.5-flash-lite",
-        "outcome": "unavailable"
-      },
-      {
-        "task": "filter",
-        "model": "gemini-3.1-flash-lite",
-        "outcome": "ok"
-      }
-    ],
-    "exhausted_models": [],
-    "demoted_models": [
-      "translate: gemini-3.8-flash",
-      "translate: gemini-3.5-flash-lite"
-    ],
-    "translate_budget_deferred": [],
-    "gemini_region_blocked": false,
-    "gemini_unavailable": false,
-    "errors_count": 0,
-    "gemini_retries": 3
-  },
-  {
     "timestamp": "2026-11-18 20:01:12",
     "execution_time": 244.9,
     "funnel": {
@@ -9906,5 +9811,109 @@
     "gemini_unavailable": false,
     "errors_count": 0,
     "gemini_retries": 2
+  },
+  {
+    "timestamp": "2026-11-28 08:01:16",
+    "execution_time": 230.6,
+    "funnel": {
+      "scraped_total": 35,
+      "scraped_by_source": {
+        "023": 10,
+        "Slobodna dalmacija": 15,
+        "Zadarski list": 10
+      },
+      "already_seen": 5,
+      "rejected_by_keywords": 5,
+      "rejected_by_rule": {
+        "тег RSS sport": 1,
+        "košarkaš": 1,
+        "URL /sport/": 1,
+        "тег RSS košarka": 1,
+        "тег RSS nogomet": 1
+      },
+      "unclassified_by_ai": 0,
+      "duplicates_removed_by_ai": 13,
+      "rejection_reasons_list": [
+        "• Povijesni politički zaokret. Krajnja desnica mogla bi ući u španjolsku → Геоблок (Вибори в Іспанії) | Сутності: Španjolska, PSOE, Vox, Pedro Sánchez",
+        "• Drama na letu Croatia Airlinesa, avion za Dubrovnik se vratio za Zagre → Дубль (Подія з літаком у новині №2) | Сутності: Croatia Airlines, Zagreb, Dubrovnik, OU664",
+        "• Ospice bi se mogle vratiti, a u jednoj nama susjednoj zemlji prvu dozu → Світовий шум (Загальна статистика ВООЗ про кір) | Сутності: WHO, ospice, Sjeverna Amerika, Europa",
+        "• Avion za Dubrovnik u zadnji tren se vratio u Zagreb: putnici ostavljen → Дубль (Подія з літаком у новині №2) | Сутності: Croatia Airlines, Zagreb, Dubrovnik, OU664",
+        "• Pirandello progovorio riječki. Slavna drama dobila hrvatski, talijansk → Побут інших міст (Театральна прем'єра в Рієці) | Сутності: Rijeka, HNK Ivana pl. Zajca, Luigi Pirandello",
+        "• Jeste li pripremili auto za zimu? Dubrovački automehaničar otkriva na  → Світовий шум (Поради щодо підготовки авто до зими) | Сутності: Dubrovnik, automehaničar, zimska oprema",
+        "• FOTO Korzo je ponovno modna pista! Pogledajte zanimljive odjevne kombi → Побут інших міст (Вулична мода Рієки) | Сутності: Rijeka, Korzo, moda",
+        "• Dio Obale kneza Branimira danas je zatvoren za sav promet, vozači mora → Вже публікувалось (Перекриття Браннімірової вже є в історії) | Сутності: Zadar, Obala kneza Branimira, Filius d.o.o.",
+        "• Koncertom Magazina počeo Advent na Vojnoviću: Večer ispunjena glazbom, → Побут інших міст (Концерт у Дубровнику) | Сутності: Dubrovnik, Magazin, Advent na Vojnoviću",
+        "• Svjedočenje Andrije Jarka ima težinu koja nadilazi zidove varaždinske  → Побут інших міст (Судовий процес у Вараждині) | Сутності: Varaždin, Andrija Jarak, Marko Franić",
+        "• Istraživanje otkriva što se događa u zagrebačkim klubovima. Četvrtina  → Побут інших міст (Дослідження наркоспоживання в клубах Загреба) | Сутності: Zagreb, Institut Ivo Pilar, kokain",
+        "• ‘Tražimo primjenu prava Europske unije i učinkovitu pravnu zaštitu‘ → Побут інших міст (Протести робітників у Плоче) | Сутності: Ploče, Plobest, azbest",
+        "• Izložba plakata i programskih knjižica Kolarina → Побут інших міст (Виставка в Дубровнику) | Сутності: Dubrovnik, Kolarin, ART UP galerija"
+      ],
+      "rejected_by_reason": {
+        "Геоблок": 1,
+        "Дубль": 2,
+        "Світовий шум": 2,
+        "Побут інших міст": 7,
+        "Вже публікувалось": 1
+      },
+      "updates_marked": 2,
+      "already_rejected": 4,
+      "rejected_by_code_examples": [
+        "[тег RSS sport] Hrvatski košarkaši nakon 13 godina idu na Svjetsko prvenstvo, u Poljskoj su igrali i Zadrani Dominik",
+        "[košarkaš] Proslavljeni srpski košarkaš podnio ostavku na zastupničku dužnost. Objasnio zašto se povlači",
+        "[URL /sport/] Odbojkaši Rijeke dočekuju europski moćnu Mladost: “Želimo pokazati naše pravo lice”",
+        "[тег RSS košarka] VIDEO Victor Wembanyama izbacio Luku Dončića iz NBA kupa. Ivica Zubac uhvatio 16 skokova protiv LeBr",
+        "[тег RSS nogomet] Nogometaši Orijenta na gostovanju kod posljednje momčadi lige žele izbjeći treći uzastopni poraz"
+      ]
+    },
+    "backlog": {
+      "total_size": 4,
+      "sources": {
+        "Zadarski list": 1,
+        "023": 3
+      }
+    },
+    "published": {
+      "total": 3,
+      "ukraine_priority": 0,
+      "with_images": 3,
+      "text_only": 0,
+      "og_images_found": 2,
+      "sources": {
+        "023": 2,
+        "Slobodna dalmacija": 1
+      }
+    },
+    "models_used": {
+      "gemini-3-flash-preview": 1,
+      "gemini-3.6-flash": 1
+    },
+    "models_by_task": {
+      "filter": "gemini-3-flash-preview",
+      "translate": "gemini-3.6-flash"
+    },
+    "model_attempts": [
+      {
+        "task": "filter",
+        "model": "gemini-3-flash-preview",
+        "outcome": "ok"
+      },
+      {
+        "task": "translate",
+        "model": "gemini-3.8-flash",
+        "outcome": "unavailable"
+      },
+      {
+        "task": "translate",
+        "model": "gemini-3.6-flash",
+        "outcome": "ok"
+      }
+    ],
+    "exhausted_models": [],
+    "demoted_models": [],
+    "translate_budget_deferred": [],
+    "gemini_region_blocked": false,
+    "gemini_unavailable": false,
+    "errors_count": 0,
+    "gemini_retries": 1
   }
 ]
