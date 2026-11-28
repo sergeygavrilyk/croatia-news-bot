@@ -1,118 +1,5 @@
 [
   {
-    "timestamp": "2026-11-19 11:01:23",
-    "execution_time": 312.8,
-    "funnel": {
-      "scraped_total": 35,
-      "scraped_by_source": {
-        "023": 10,
-        "Slobodna dalmacija": 15,
-        "Zadarski list": 10
-      },
-      "already_seen": 20,
-      "rejected_by_keywords": 4,
-      "rejected_by_rule": {
-        "тег RSS nogomet": 1,
-        "тег RSS sport": 2,
-        "promo": 1
-      },
-      "unclassified_by_ai": 0,
-      "duplicates_removed_by_ai": 6,
-      "rejection_reasons_list": [
-        "• Velika fešta u Kistanjama; Ana i Božo krstili su svoje 10. dijete! ‘Bo → Не за тематикою (Приватна подія хрещення) | Сутності: Kistanje, Zadarska nadbiskupija, Ana Antić",
-        "• Guillermo Varela predvodi novo poglavlje Anantara Adriatic Istria Reso → Побут інших міст (Туристичний об'єкт в Істрії) | Сутності: Savudrija, Istra, Anantara Hotels",
-        "• Koncert u Dvoru: Komorni orkestar Tijardović iz Splita po prvi put gos → Побут інших міст (Концерт у Дубровнику) | Сутності: Dubrovnik, Komorni orkestar Tijardović, Knežev dvor",
-        "• Što sve donosi Advent u Crikvenici? Dolaze Parni valjak, S.A.R.S., Pek → Побут інших міст (Локальна подія в Цриквениці) | Сутності: Crikvenica, Advent, Parni valjak",
-        "• Sindikat znanosti uz mlade u štrajku: Društvu trebaju mladi koji se bo → Вже публікувалось (Реакція на студентський страйк) | Сутності: Sindikat znanosti, Štrajk mladih, Hrvatska",
-        "• Preporuka prokuhavanja vode i dalje je na snazi, započelo ispiranje vo → Побут інших міст (Водопостачання в Рієці) | Сутності: Rijeka, Vodovod i kanalizacija, Voda"
-      ],
-      "rejected_by_reason": {
-        "Не за тематикою": 1,
-        "Побут інших міст": 4,
-        "Вже публікувалось": 1
-      },
-      "updates_marked": 1,
-      "already_rejected": 13,
-      "rejected_by_code_examples": [
-        "[тег RSS nogomet] FIFA potvrdila: Infantino ima dva protukandidata u borbi za novi mandat",
-        "[тег RSS sport] Vlada RH nagradila Filipa Hrgovića za svjetski naslov. Evo o kojem iznosu se radi",
-        "[тег RSS sport] Olimpijska i svjetska prvakinja u maratonu suspendirana zbog dopinga",
-        "[promo] Od dnevnog svjetla do privatnosti: zavjese koje rade više od ukrasa"
-      ]
-    },
-    "backlog": {
-      "total_size": 3,
-      "sources": {
-        "Zadarski list": 1,
-        "023": 1,
-        "Slobodna dalmacija": 1
-      }
-    },
-    "published": {
-      "total": 3,
-      "ukraine_priority": 0,
-      "with_images": 1,
-      "text_only": 2,
-      "og_images_found": 0,
-      "sources": {
-        "023": 2,
-        "Slobodna dalmacija": 1
-      }
-    },
-    "models_used": {
-      "gemini-3.1-flash-lite": 1,
-      "gemini-3.5-flash-lite": 1
-    },
-    "models_by_task": {
-      "filter": "gemini-3.1-flash-lite",
-      "translate": "gemini-3.5-flash-lite"
-    },
-    "model_attempts": [
-      {
-        "task": "filter",
-        "model": "gemini-3-flash-preview",
-        "outcome": "unavailable"
-      },
-      {
-        "task": "filter",
-        "model": "gemini-3.6-flash",
-        "outcome": "unavailable"
-      },
-      {
-        "task": "filter",
-        "model": "gemini-3.5-flash-lite",
-        "outcome": "unavailable"
-      },
-      {
-        "task": "filter",
-        "model": "gemini-3.1-flash-lite",
-        "outcome": "ok"
-      },
-      {
-        "task": "translate",
-        "model": "gemini-3.8-flash",
-        "outcome": "unavailable"
-      },
-      {
-        "task": "translate",
-        "model": "gemini-3.6-flash",
-        "outcome": "unavailable"
-      },
-      {
-        "task": "translate",
-        "model": "gemini-3.5-flash-lite",
-        "outcome": "ok"
-      }
-    ],
-    "exhausted_models": [],
-    "demoted_models": [],
-    "translate_budget_deferred": [],
-    "gemini_region_blocked": false,
-    "gemini_unavailable": false,
-    "errors_count": 0,
-    "gemini_retries": 5
-  },
-  {
     "timestamp": "2026-11-19 12:01:19",
     "execution_time": 119.9,
     "funnel": {
@@ -9859,6 +9746,87 @@
     "exhausted_models": [],
     "demoted_models": [
       "filter: gemini-3-flash-preview",
+      "translate: gemini-3.8-flash"
+    ],
+    "translate_budget_deferred": [
+      "gemini-3.6-flash"
+    ],
+    "gemini_region_blocked": false,
+    "gemini_unavailable": false,
+    "errors_count": 0,
+    "gemini_retries": 0
+  },
+  {
+    "timestamp": "2026-11-28 13:01:20",
+    "execution_time": 24.0,
+    "funnel": {
+      "scraped_total": 35,
+      "scraped_by_source": {
+        "023": 10,
+        "Slobodna dalmacija": 15,
+        "Zadarski list": 10
+      },
+      "already_seen": 28,
+      "rejected_by_keywords": 4,
+      "rejected_by_rule": {
+        "igrač": 1,
+        "URL /sport/": 2,
+        "тег RSS košarka": 1
+      },
+      "unclassified_by_ai": 0,
+      "duplicates_removed_by_ai": 2,
+      "rejection_reasons_list": [
+        "• Advent na Vojnoviću nastavlja donositi blagdansku atmosferu, druženje  → Побут інших міст (Захід у Дубровнику) | Сутності: Advent na Vojnoviću, Dubrovnik, Studentski centar",
+        "• Može li burger postati gastronomska senzacija? Šibenski chef Dino Bebi → Побут інших міст (Локальна новина Шибеника) | Сутності: Dino Bebić, Šibenik, burger"
+      ],
+      "rejected_by_reason": {
+        "Побут інших міст": 2
+      },
+      "updates_marked": 0,
+      "already_rejected": 20,
+      "rejected_by_code_examples": [
+        "[igrač] Netko je sinoć pogodio svih sedam brojeva i postao bogatiji za 10 milijuna eura",
+        "[URL /sport/] Grmi podno Srđa, večeras svi u Gospino polje: Square ide po skalp Torcide!",
+        "[URL /sport/] Tysonu Furyju odobren nastup protiv Anthonyja Joshue. Ipak ne boluje od shizofrenije",
+        "[тег RSS košarka] Trener FSV-a uoči domaćeg susreta s Plamen Požegom: “Na domaćem terenu ne smijemo se nikoga bojati”"
+      ]
+    },
+    "backlog": {
+      "total_size": 0,
+      "sources": {}
+    },
+    "published": {
+      "total": 1,
+      "ukraine_priority": 0,
+      "with_images": 1,
+      "text_only": 0,
+      "og_images_found": 0,
+      "sources": {
+        "Zadarski list": 1
+      }
+    },
+    "models_used": {
+      "gemini-3-flash-preview": 1,
+      "gemini-3.5-flash-lite": 1
+    },
+    "models_by_task": {
+      "filter": "gemini-3-flash-preview",
+      "translate": "gemini-3.5-flash-lite"
+    },
+    "model_attempts": [
+      {
+        "task": "filter",
+        "model": "gemini-3-flash-preview",
+        "outcome": "ok"
+      },
+      {
+        "task": "translate",
+        "model": "gemini-3.5-flash-lite",
+        "outcome": "ok"
+      }
+    ],
+    "exhausted_models": [],
+    "demoted_models": [
       "translate: gemini-3.8-flash"
     ],
     "translate_budget_deferred": [
