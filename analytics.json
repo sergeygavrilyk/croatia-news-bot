@@ -1,123 +1,5 @@
 [
   {
-    "timestamp": "2026-11-18 20:01:12",
-    "execution_time": 244.9,
-    "funnel": {
-      "scraped_total": 35,
-      "scraped_by_source": {
-        "023": 10,
-        "Slobodna dalmacija": 15,
-        "Zadarski list": 10
-      },
-      "already_seen": 11,
-      "rejected_by_keywords": 8,
-      "rejected_by_rule": {
-        "тег RSS lifestyle": 4,
-        "košarkaši": 1,
-        "sport": 1,
-        "URL /sport/": 1,
-        "тег RSS nogomet": 1
-      },
-      "unclassified_by_ai": 0,
-      "duplicates_removed_by_ai": 12,
-      "rejection_reasons_list": [
-        "• Članice Primorskog Hrvata iz Rijeke sudjelovale na seminaru tradicijsk → Побут інших міст (Культурна подія в Рієці та Metković) | Сутності: Primorski Hrvat, Rijeka, Metković, U jablana visokoga",
-        "• ‘Srce za srce, život za život‘: snažne spone OŠ Lapad iz Dubrovnika i  → Побут інших міст (Шкільна подія в Дубровнику) | Сутності: OŠ Lapad, Dubrovnik, OŠ Dragutina Tadijanovića, Vukovar",
-        "• I u nastavku konstitutivne sjednice srbijanskog parlamenta Vučićevi mo → Геоблок (Політичні події в Сербії) | Сутності: Скупщина Сербії, Александр Вучич, Ана Брнабіч, Белград",
-        "• Nutricionistice iz KBC-a Split o prehrani i tumorima: pomaže li gladov → Світовий шум (Поради з медицини та дієти) | Сутності: КБЦ Спліт, питання харчування, пухлини",
-        "• Komemorativna svečanost na trgu ispred tržnice u Opatiji → Вже публікувалось (День пам'яті у Вуковарі та Шкабрні) | Сутності: Опатія, Хорватський офіцерський клуб, День пам'яті",
-        "• ’Život ide dalje, ali na ovaj dan... Škabrnja stane’ → Вже публікувалось (35-та річниця трагедії в Шкабрні) | Сутності: Шкабрня, Рівнокотарське село, 35-та річниця",
-        "• Svijeće u Rabu i Loparu za žrtve Vukovara, Škabrnje i Domovinskog rata → Вже публікувалось (Вшанування пам'яті у Рабі та Лопарі) | Сутності: Раб, Лопар, День пам'яті",
-        "• Ovo se zove pravda! Ministru punom testosterona glave će doći dama koj → Геоблок (Кадрові зміни у Пентагоні) | Сутності: Пріт Хегсет, адмірал Лакор, армія США",
-        "• Samo dan nakon pada Vukovara i Škabrnje trebao je pasti i Gospić → Вже публікувалось (Історичні події війни в Хорватії) | Сутності: Госпич, Вуковар, 1991 рік",
-        "• Pet Friendly turizam: Besplatna Matuljicious edukacija za iznajmljivač → Побут інших міст (Туристична освітня подія в Матулях) | Сутності: Матулі, Pet Friendly туризм, Matuljicious",
-        "• Na Gradskoj uri 35 treptaja za 35 godina sjećanja na žrtvu Vukovara i  → Вже публікувалось (Вшанування пам'яті у Рієці) | Сутності: Рієка, Міський годинник, Вуковар",
-        "• Ansambl LADO i  „Vrijeme plesa” u „Zajcu“ u subotu, 21. studenog → Побут інших міст (Концерт ансамблю в Рієці) | Сутності: Ансамбль ЛАДО, Рієка, ХНК Івана п. Зайца"
-      ],
-      "rejected_by_reason": {
-        "Побут інших міст": 4,
-        "Геоблок": 2,
-        "Світовий шум": 1,
-        "Вже публікувалось": 5
-      },
-      "updates_marked": 0,
-      "already_rejected": 10,
-      "rejected_by_code_examples": [
-        "[тег RSS lifestyle] Komad aluminijske folije na zidu za dva dana otkriva dolazi li vlaga iz zraka ili iz zida",
-        "[тег RSS lifestyle] Kruh od kefira i brašna traži deset minuta rada, a okusom podsjeća na kiselo tijesto",
-        "[košarkaši] Košarkaši Zadra kod murala na Bilom brigu odali počast žrtvama Vukovara i Škabrnje",
-        "[тег RSS lifestyle] Mišu je dovoljan otvor od šest milimetara: kako zatvoriti kuću prije hladnih mjeseci",
-        "[тег RSS lifestyle] Studija na 340.000 odraslih povezala vrstu alkoholnog pića s rizikom smrti od srčanih bolesti",
-        "[sport] Hrvatska atletičarka i ultramaratonka, Jelena Barčot od Prevlake do Dunava trčala je 18 dana za stra",
-        "[URL /sport/] Ante Delija potpisao novi ugovor s UFC-om na četiri borbe",
-        "[тег RSS nogomet] Bivši trener Rijeke suspendiran na tri mjeseca. Rasistički je vrijeđao hrvatskog nogometaša"
-      ]
-    },
-    "backlog": {
-      "total_size": 4,
-      "sources": {
-        "023": 3,
-        "Zadarski list": 1
-      }
-    },
-    "published": {
-      "total": 0,
-      "ukraine_priority": 0,
-      "with_images": 0,
-      "text_only": 0,
-      "og_images_found": 2,
-      "sources": {}
-    },
-    "models_used": {
-      "gemini-3.5-flash-lite": 1
-    },
-    "models_by_task": {
-      "filter": "gemini-3.5-flash-lite",
-      "translate": null
-    },
-    "model_attempts": [
-      {
-        "task": "filter",
-        "model": "gemini-3-flash-preview",
-        "outcome": "unavailable"
-      },
-      {
-        "task": "filter",
-        "model": "gemini-3.6-flash",
-        "outcome": "unavailable"
-      },
-      {
-        "task": "filter",
-        "model": "gemini-3.5-flash-lite",
-        "outcome": "ok"
-      },
-      {
-        "task": "translate",
-        "model": "gemini-3.8-flash",
-        "outcome": "unavailable"
-      },
-      {
-        "task": "translate",
-        "model": "gemini-3.5-flash-lite",
-        "outcome": "unavailable"
-      },
-      {
-        "task": "translate",
-        "model": "gemini-3.6-flash",
-        "outcome": "unavailable"
-      }
-    ],
-    "exhausted_models": [],
-    "demoted_models": [],
-    "translate_budget_deferred": [
-      "gemini-3.6-flash"
-    ],
-    "gemini_region_blocked": false,
-    "gemini_unavailable": true,
-    "errors_count": 0,
-    "gemini_retries": 5
-  },
-  {
     "timestamp": "2026-11-19 08:01:18",
     "execution_time": 252.2,
     "funnel": {
@@ -9910,6 +9792,101 @@
     ],
     "exhausted_models": [],
     "demoted_models": [],
+    "translate_budget_deferred": [],
+    "gemini_region_blocked": false,
+    "gemini_unavailable": false,
+    "errors_count": 0,
+    "gemini_retries": 1
+  },
+  {
+    "timestamp": "2026-11-28 09:01:23",
+    "execution_time": 289.6,
+    "funnel": {
+      "scraped_total": 35,
+      "scraped_by_source": {
+        "023": 10,
+        "Slobodna dalmacija": 15,
+        "Zadarski list": 10
+      },
+      "already_seen": 19,
+      "rejected_by_keywords": 3,
+      "rejected_by_rule": {
+        "igrač": 1,
+        "тег RSS sport": 1,
+        "košarkaš": 1
+      },
+      "unclassified_by_ai": 0,
+      "duplicates_removed_by_ai": 8,
+      "rejection_reasons_list": [
+        "• Ruski diplomat tvrdi da je svijet sve bliže nuklearnom ratu i optužuje → Геоблок (Заяви російського дипломата у Відні) | Сутності: Dmitrij Poljanski, NATO, Beč, OESS",
+        "• Leteći odred rasplesao Zadar: Večer ispunjena hitovima i odličnom atmo → Вже публікувалось (Звіт про концерт уже є в історії) | Сутності: Leteći odred, Zadar, Advent",
+        "• Mladi riječki kipar Juraj Makarun osvojio prvu nagradu za spomenik Mil → Побут інших міст (Конкурс скульптури у Вараждині) | Сутності: Juraj Makarun, Varaždin, Miljenko Stančić",
+        "• Ivan Viđen održao predavanje o gradskom župniku dum Niku Gjivanoviću,  → Побут інших міст (Локальна лекція в Дубровнику) | Сутності: Ivan Viđen, Dubrovnik, Niko Gjivanović",
+        "• VIDEO Može li Hrvatska postati globalni tehnološki čimbenik? Kod Macan → Не за тематикою (Обговорення в телепередачі) | Сутності: Infobip, Damir Prusac, Marin Trošelj, Špica s Macanom",
+        "• Policija traži nepoznatog vozača koji je autom usmrtio pješaka u Samob → Побут інших міст (ДТП у Самоборі) | Сутності: Samobor, Zagrebačka policija, Ulica Ludvić",
+        "• Musk ima plan za milijun satelita oko Zemlje. Znanstvenici upozoravaju → Геоблок (Космічний проект у США) | Сутності: Elon Musk, SpaceX, FCC, Starmind",
+        "• Američka vojska intervenirala zbog šest dronova iznad britanske baze.  → Геоблок (Інцидент з дронами у Британії) | Сутності: RAF Lakenheath, Financial Times, Iran, SAD"
+      ],
+      "rejected_by_reason": {
+        "Геоблок": 3,
+        "Вже публікувалось": 1,
+        "Побут інших міст": 3,
+        "Не за тематикою": 1
+      },
+      "updates_marked": 1,
+      "already_rejected": 12,
+      "rejected_by_code_examples": [
+        "[igrač] Netko je sinoć pogodio svih sedam brojeva i postao bogatiji za 10 milijuna eura",
+        "[тег RSS sport] Hrvatski košarkaši nakon 13 godina idu na Svjetsko prvenstvo, u Poljskoj su igrali i Zadrani Dominik",
+        "[košarkaš] Proslavljeni srpski košarkaš podnio ostavku na zastupničku dužnost. Objasnio zašto se povlači"
+      ]
+    },
+    "backlog": {
+      "total_size": 3,
+      "sources": {
+        "Zadarski list": 2,
+        "023": 1
+      }
+    },
+    "published": {
+      "total": 3,
+      "ukraine_priority": 0,
+      "with_images": 3,
+      "text_only": 0,
+      "og_images_found": 2,
+      "sources": {
+        "Zadarski list": 1,
+        "023": 2
+      }
+    },
+    "models_used": {
+      "gemini-3.6-flash": 2
+    },
+    "models_by_task": {
+      "filter": "gemini-3.6-flash",
+      "translate": "gemini-3.6-flash"
+    },
+    "model_attempts": [
+      {
+        "task": "filter",
+        "model": "gemini-3-flash-preview",
+        "outcome": "unavailable"
+      },
+      {
+        "task": "filter",
+        "model": "gemini-3.6-flash",
+        "outcome": "ok"
+      },
+      {
+        "task": "translate",
+        "model": "gemini-3.6-flash",
+        "outcome": "ok"
+      }
+    ],
+    "exhausted_models": [],
+    "demoted_models": [
+      "translate: gemini-3.8-flash"
+    ],
     "translate_budget_deferred": [],
     "gemini_region_blocked": false,
     "gemini_unavailable": false,
